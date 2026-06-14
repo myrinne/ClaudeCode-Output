@@ -8,13 +8,18 @@ This is a personal Claude Code workspace and configuration repository. It stores
 
 ## Git Workflow
 
-Always commit and push after completing any meaningful task:
+Commit and push to GitHub **throughout the session** — after every meaningful unit of work (a new file, a config change, a completed feature). Do not batch everything into one commit at the end. This ensures work is never lost and the history is easy to navigate.
 
 ```powershell
 git add <specific-files>
 git commit -m "Short imperative message describing the change"
 git push
 ```
+
+Commit message rules:
+- Imperative mood, present tense: "Add X", "Fix Y", "Update Z"
+- One line, concise — describe what changed and why if non-obvious
+- Never use vague messages like "updates" or "misc changes"
 
 Remote: `origin` → `https://github.com/myrinne/ClaudeCode-Output.git` (branch: `master`)
 
