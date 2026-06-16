@@ -7,3 +7,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# career-ops is its own independent git repo, not tracked here
+career-ops/
