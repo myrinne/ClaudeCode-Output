@@ -136,7 +136,8 @@ def main():
         hbsag_positif=hbsag, anti_hbs_diperiksa=anti_hbs_diperiksa, anti_hbs_positif=anti_hbs_positif,
         kreatinin_status=kreatinin, riwayat_ggk=riwayat_ggk,
         kolesterol_status=kolesterol, trigliserida_status=trigliserida,
-        gdp_status=gdp, asam_urat_status=asam_urat, urinalisa_status=urinalisa,
+        gdp_status=gdp, asam_urat_status=asam_urat,
+        urinalisa_status_list=([urinalisa] if urinalisa else []),
         rontgen_dilakukan=rontgen_dilakukan, rontgen_status=rontgen_status,
         ekg_dilakukan=ekg_dilakukan, ekg_status=ekg_status,
     )

@@ -14,3 +14,9 @@ __pycache__/
 
 # career-ops is its own independent git repo, not tracked here
 career-ops/
+
+# MCU: patient PHI (nama, NIP, hasil lab/vital) - never goes into git history
+MCU/queue.json
+MCU/draft_fase3.json
+MCU/notes.md
+MCU/notes_*.md
