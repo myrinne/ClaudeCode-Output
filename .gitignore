@@ -18,5 +18,9 @@ career-ops/
 # MCU: patient PHI (nama, NIP, hasil lab/vital) - never goes into git history
 MCU/queue.json
 MCU/draft_fase3.json
+
+# OCR working files: decks converted here carry clinical findings tied to
+# staff initials. Track the converter, never the documents it processes.
+OCR pdf to ppt/output folder/
 MCU/notes.md
 MCU/notes_*.md
