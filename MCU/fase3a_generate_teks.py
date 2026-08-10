@@ -97,6 +97,13 @@ GANTI_SARAN_PASIEN_DOKTER = {
     "Konsultasi Dokter Umum Klinik Pratama untuk tatalaksana abnormal EKG, "
     "bila perlu konsultasi Sp.PD Divisi KKV":
         "Lakukan konsultasi ke Dokter Spesialis Penyakit Dalam-KKV untuk tatalaksana temuan EKG",
+    # Kreatinin naik sendirian, eGFR normal (dikonfirmasi Anda, kasus dr.
+    # Noto Dwimartutie NRM 401-87-34) -- sama seperti kasus EKG di atas,
+    # tidak masuk akal menyuruh dokter konsultasi ke Dokter Umum Poli
+    # Pegawai untuk temuannya sendiri.
+    "Cek ulang kreatinin dan konsultasi Dokter Umum Poli Pegawai bila perlu terkait "
+    "peningkatan kreatinin":
+        "Cek ulang kreatinin dan bila perlu lakukan tatalaksana terkait peningkatan kreatinin",
 }
 
 
