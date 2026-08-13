@@ -513,7 +513,7 @@ KATA_KUNCI_TANPA_SARAN_GENERIK = KATA_KUNCI_FIBROSIS_KALSIFIKASI + KATA_KUNCI_ST
 KATA_KUNCI_ARAH_SP_PARU = ("tbc", "tb paru", "pneumonia", "nodul")
 
 # Temuan struktural paru kronis (fibrosis + bronkiektasis/bulae/hiperinflasi,
-# "DD/ proses lama") diarahkan ke Sp.PD-PMPK -- dikonfirmasi dr. Vidya,
+# "DD/ proses lama") diarahkan ke Sp.PD-PMK -- dikonfirmasi dr. Vidya,
 # 2026-08-13, kasus 428-45-13 ("Fibrosis dengan bronkiektasis dan multipel
 # bulae ... hiperinflasi paru kanan-kiri, DD/ proses lama"). BEDA dari Sp.
 # Paru (infeksi/nodul di atas) dan dari Bedah (lesi massa/tulang) -- ini pola
@@ -566,7 +566,7 @@ def hanya_fibrosis_kalsifikasi(teks_kesimpulan_radiologi: str) -> bool:
     lain yang jauh lebih bermakna dalam kalimat yang sama (mis. "Opasitas
     dan fibrosis pada lapangan atas paru kanan, DD/ TB Paru, pneumonia." --
     dikonfirmasi dr. Vidya, 2026-08-04, kasus Ikhsanudin NRM 387-63-73).
-    Kalau baris itu JUGA menyebut kata kunci infeksi paru/nodul/PD-PMPK,
+    Kalau baris itu JUGA menyebut kata kunci infeksi paru/nodul/PD-PMK,
     jangan anggap baris itu "cuma fibrosis" -- itu bug yang bisa membungkam
     kecurigaan TB/pneumonia/nodul/bronkiektasis sepenuhnya (tanpa flag,
     tanpa saran sama sekali) hanya krn kata "fibrosis" kebetulan ikut
@@ -601,7 +601,7 @@ def tanpa_saran_respirologi_generik(teks_kesimpulan_radiologi: str) -> bool:
         return False
     kata_kunci = KATA_KUNCI_TANPA_SARAN_GENERIK + KATA_KUNCI_TULANG
     # Sama seperti hanya_fibrosis_kalsifikasi() -- baris yang JUGA menyebut
-    # kata kunci infeksi paru/nodul/PD-PMPK tidak boleh dianggap "aman" walau
+    # kata kunci infeksi paru/nodul/PD-PMK tidak boleh dianggap "aman" walau
     # kebetulan ikut menyebut fibrosis/kalsifikasi/tulang dst (kasus
     # Ikhsanudin NRM 387-63-73, 2026-08-04; diperluas 2026-08-13).
     kata_kunci_pengecualian = KATA_KUNCI_ARAH_SP_PARU + KATA_KUNCI_ARAH_PD_PMPK
@@ -882,7 +882,7 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                 # dr. Vidya 2026-08-13, kasus 435-84-59) -- itu diarahkan ke
                 # Sp. Paru, bukan Bedah (Bedah utk lesi massa/tulang/
                 # kemungkinan keganasan lain saja). ATAU kalau mengarah
-                # Sp.PD-PMPK (fibrosis + bronkiektasis/bulae/hiperinflasi,
+                # Sp.PD-PMK (fibrosis + bronkiektasis/bulae/hiperinflasi,
                 # "DD/ proses lama" -- pola penyakit paru struktural kronis,
                 # dikonfirmasi dr. Vidya 2026-08-13, kasus 428-45-13).
                 if _ada_kata_kunci_di_baris_temuan(hasil.kesimpulan_radiologi, KATA_KUNCI_ARAH_SP_PARU):
@@ -895,7 +895,7 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                     # di bawah, yang memang sengaja saling menutupi).
                 elif _ada_kata_kunci_di_baris_temuan(hasil.kesimpulan_radiologi, KATA_KUNCI_ARAH_PD_PMPK):
                     tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
-                                  "Konsultasi ke Sp.PD-PMPK terkait temuan rontgen thorax", False)
+                                  "Konsultasi ke Sp.PD-PMK terkait temuan rontgen thorax", False)
                     # TIDAK set bedah_generik_ditambahkan, alasan sama spt di atas.
                 else:
                     tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
