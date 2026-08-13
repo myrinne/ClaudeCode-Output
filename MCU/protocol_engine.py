@@ -493,7 +493,12 @@ def ada_kecurigaan_infeksi_paru(teks_kesimpulan_radiologi: str) -> bool:
 # pengantar. Ditambahkan 2026-08-04 supaya fase1_baca.py bisa pakai fungsi
 # ini juga utk deteksi "ada baris temuan di luar tidak-tampak-kelainan"
 # tanpa salah anggap baris pembuka ini sebagai temuan tak dikenal.
-KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibandingkan")
+# "tidak membesar" = varian kalimat "jantung kesan tidak membesar" --
+# secara klinis sama dengan tidak tampak kelainan jantung (kardiomegali
+# negatif), cuma beda redaksi radiolog -- ditambahkan 2026-08-13 (kasus
+# Hijranul Aryanto Arif NRM 486-93-31: baris ini keliru dianggap temuan tak
+# dikenal dan memicu rujukan Sp. Bedah, padahal jantung normal).
+KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibandingkan", "tidak membesar")
 
 
 def _baris_temuan_radiologi(teks_kesimpulan_radiologi: str) -> list:
@@ -777,6 +782,20 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                 # konsultasi Sp.PD Respirologi -- tetap dicatat sbg temuan
                 # (masuk hitungan Langkah 2), tapi tanpa saran rujukan.
                 tambah_temuan("Fibrosis/kalsifikasi paru (tanpa temuan lain)", None, False)
+            elif hasil.kesimpulan_radiologi and not _baris_temuan_radiologi(hasil.kesimpulan_radiologi):
+                # SEMUA baris deskripsi ternyata frasa normal-equivalent
+                # (tidak tampak kelainan / jantung tidak membesar / dst) --
+                # tidak ada temuan tekstual sama sekali, jadi TIDAK usah
+                # dikasih rujukan spesialis generik walau "kesan" radiolog di
+                # EHR sempat ditandai "ada temuan perlu review" (beda dari
+                # baris kosong krn ekstraksi gagal -- itu tetap jatuh ke
+                # cabang generik di bawah lewat tanpa_saran_respirologi_
+                # generik() yg return False utk teks kosong). Catatan manual
+                # "PERLU_CEK_MANUAL: radiologi ada temuan" (konverter_queue.py)
+                # tetap ada supaya Anda tetap review kenapa kesan-nya "ada
+                # temuan" padahal deskripsi normal -- dikonfirmasi dr. Vidya,
+                # 2026-08-13, kasus Hijranul Aryanto Arif NRM 486-93-31.
+                pass
             elif not tanpa_saran_respirologi_generik(hasil.kesimpulan_radiologi):
                 # Temuan radiologi di luar kata kunci yang dikenali (bukan
                 # cuma fibrosis/kalsifikasi/struma/tulang) -- dulu TIDAK
