@@ -493,25 +493,41 @@ def ekstrak_temuan_struma(teks_kesimpulan_radiologi: str) -> Optional[str]:
 # sama-sama masuk kategori "tidak perlu saran". Penebalan hilus ditambahkan
 # 2026-08-13 (kasus Tri Erlani NRM 347-08-97) -- temuan jinak, tidak masuk
 # akal dirujuk ke Sp. Bedah (yang bisa diapakan bedah dari penebalan hilus?).
+# "aorta elongasi" (urutan kata terbalik dari "elongasi aorta") ditambahkan
+# 2026-08-13 (kasus 319-05-14) -- radiolog kadang menulis urutan katanya
+# terbalik, substring match "elongasi aorta" tidak menangkap variasi ini
+# sehingga keliru dianggap temuan tak dikenal dan memicu rujukan Bedah.
 KATA_KUNCI_FIBROSIS_KALSIFIKASI = ("fibrosis", "kalsifikasi", "calcification",
-                                     "kardiomegali", "elongasi aorta", "penebalan hilus")
+                                     "kardiomegali", "elongasi aorta", "aorta elongasi",
+                                     "penebalan hilus")
 KATA_KUNCI_TANPA_SARAN_GENERIK = KATA_KUNCI_FIBROSIS_KALSIFIKASI + KATA_KUNCI_STRUMA
 
-# Temuan mengarah infeksi paru (TBC/pneumonia) -- dikonfirmasi dr. Vidya,
-# 2026-08-04, kasus Ambar Setiyowati NRM 350-26-11 ("Opasitas hingga
-# konsolidasi ... DD/ TBC paru, pneumonia"). BEDA rujukan dari saran generik
-# Sp. Bedah (utk lesi massa/tulang/kemungkinan keganasan, lihat kasus
-# Handayani Meytri NRM 400-54-82 di bawah) -- infeksi paru diarahkan ke
-# Dokter Spesialis Paru (Respirologi), BUKAN Bedah.
-KATA_KUNCI_INFEKSI_PARU = ("tbc", "tb paru", "pneumonia")
+# Temuan yang diarahkan ke Sp. Paru (Respirologi), BUKAN Sp. Bedah -- infeksi
+# paru (TBC/pneumonia, dikonfirmasi dr. Vidya, 2026-08-04, kasus Ambar
+# Setiyowati NRM 350-26-11: "Opasitas hingga konsolidasi ... DD/ TBC paru,
+# pneumonia") dan nodul paru (dikonfirmasi dr. Vidya, 2026-08-13, kasus
+# 435-84-59: "suspek nodul paru" -- workup awal nodul paru ke Sp. Paru,
+# BUKAN langsung ke Bedah walau kemungkinan keganasan belum disingkirkan).
+# BEDA dari saran generik Sp. Bedah (utk lesi massa/tulang/kemungkinan
+# keganasan lain, lihat kasus Handayani Meytri NRM 400-54-82 di bawah).
+KATA_KUNCI_ARAH_SP_PARU = ("tbc", "tb paru", "pneumonia", "nodul")
+
+# Temuan struktural paru kronis (fibrosis + bronkiektasis/bulae/hiperinflasi,
+# "DD/ proses lama") diarahkan ke Sp.PD-PMPK -- dikonfirmasi dr. Vidya,
+# 2026-08-13, kasus 428-45-13 ("Fibrosis dengan bronkiektasis dan multipel
+# bulae ... hiperinflasi paru kanan-kiri, DD/ proses lama"). BEDA dari Sp.
+# Paru (infeksi/nodul di atas) dan dari Bedah (lesi massa/tulang) -- ini pola
+# penyakit paru struktural/kronis, bukan infeksi akut atau lesi butuh biopsi.
+KATA_KUNCI_ARAH_PD_PMPK = ("bronkiektasis", "bulae", "hiperinflasi")
 
 
-def ada_kecurigaan_infeksi_paru(teks_kesimpulan_radiologi: str) -> bool:
-    """True kalau ADA (tidak perlu SEMUA) baris temuan yang menyebut
-    TBC/pneumonia -- dipakai utk mengalihkan saran generik dari Sp. Bedah ke
-    Sp. Paru saat temuan radiologi mengarah infeksi, bukan lesi massa."""
+def _ada_kata_kunci_di_baris_temuan(teks_kesimpulan_radiologi: str, kata_kunci: tuple) -> bool:
+    """True kalau ADA (tidak perlu SEMUA) baris temuan yang menyebut salah
+    satu kata_kunci -- dipakai utk mengalihkan saran generik dari Sp. Bedah
+    ke tujuan spesialis lain yang lebih sesuai berdasarkan kata kunci
+    temuan."""
     baris_temuan = _baris_temuan_radiologi(teks_kesimpulan_radiologi)
-    return any(any(k in b.lower() for k in KATA_KUNCI_INFEKSI_PARU) for b in baris_temuan)
+    return any(any(k in b.lower() for k in kata_kunci) for b in baris_temuan)
 
 # Baris yang dianggap BUKAN temuan sama sekali (dibuang dari perhitungan
 # "hanya X" di bawah) -- normal kardiopulmoner, dan lateralisasi vertebra
@@ -550,16 +566,19 @@ def hanya_fibrosis_kalsifikasi(teks_kesimpulan_radiologi: str) -> bool:
     lain yang jauh lebih bermakna dalam kalimat yang sama (mis. "Opasitas
     dan fibrosis pada lapangan atas paru kanan, DD/ TB Paru, pneumonia." --
     dikonfirmasi dr. Vidya, 2026-08-04, kasus Ikhsanudin NRM 387-63-73).
-    Kalau baris itu JUGA menyebut kata kunci infeksi paru, jangan anggap
-    baris itu "cuma fibrosis" -- itu bug yang bisa membungkam kecurigaan
-    TB/pneumonia sepenuhnya (tanpa flag, tanpa saran sama sekali) hanya
-    krn kata "fibrosis" kebetulan ikut disebut."""
+    Kalau baris itu JUGA menyebut kata kunci infeksi paru/nodul/PD-PMPK,
+    jangan anggap baris itu "cuma fibrosis" -- itu bug yang bisa membungkam
+    kecurigaan TB/pneumonia/nodul/bronkiektasis sepenuhnya (tanpa flag,
+    tanpa saran sama sekali) hanya krn kata "fibrosis" kebetulan ikut
+    disebut (kasus Ikhsanudin NRM 387-63-73, 2026-08-04; diperluas
+    2026-08-13 kasus 428-45-13, "Fibrosis dengan bronkiektasis...")."""
     baris_temuan = _baris_temuan_radiologi(teks_kesimpulan_radiologi)
     if not baris_temuan:
         return False
+    kata_kunci_pengecualian = KATA_KUNCI_ARAH_SP_PARU + KATA_KUNCI_ARAH_PD_PMPK
     return all(
         any(k in b.lower() for k in KATA_KUNCI_FIBROSIS_KALSIFIKASI)
-        and not any(k in b.lower() for k in KATA_KUNCI_INFEKSI_PARU)
+        and not any(k in b.lower() for k in kata_kunci_pengecualian)
         for b in baris_temuan
     )
 
@@ -582,11 +601,12 @@ def tanpa_saran_respirologi_generik(teks_kesimpulan_radiologi: str) -> bool:
         return False
     kata_kunci = KATA_KUNCI_TANPA_SARAN_GENERIK + KATA_KUNCI_TULANG
     # Sama seperti hanya_fibrosis_kalsifikasi() -- baris yang JUGA menyebut
-    # kata kunci infeksi paru tidak boleh dianggap "aman" walau kebetulan
-    # ikut menyebut fibrosis/kalsifikasi/tulang dst (kasus Ikhsanudin NRM
-    # 387-63-73, 2026-08-04).
+    # kata kunci infeksi paru/nodul/PD-PMPK tidak boleh dianggap "aman" walau
+    # kebetulan ikut menyebut fibrosis/kalsifikasi/tulang dst (kasus
+    # Ikhsanudin NRM 387-63-73, 2026-08-04; diperluas 2026-08-13).
+    kata_kunci_pengecualian = KATA_KUNCI_ARAH_SP_PARU + KATA_KUNCI_ARAH_PD_PMPK
     return all(
-        any(k in b.lower() for k in kata_kunci) and not any(k in b.lower() for k in KATA_KUNCI_INFEKSI_PARU)
+        any(k in b.lower() for k in kata_kunci) and not any(k in b.lower() for k in kata_kunci_pengecualian)
         for b in baris_temuan
     )
 
@@ -856,18 +876,27 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                 # catatan_manual "PERLU_CEK_MANUAL: radiologi ada temuan"
                 # (konverter_queue.py) tetap menandai perlu ditinjau dia juga.
                 #
-                # KECUALI kalau temuan mengarah infeksi paru (TBC/pneumonia,
-                # dikonfirmasi dr. Vidya 2026-08-04, kasus Ambar Setiyowati
-                # NRM 350-26-11) -- itu diarahkan ke Sp. Paru, bukan Bedah
-                # (Bedah utk lesi massa/tulang/kemungkinan keganasan saja).
-                if ada_kecurigaan_infeksi_paru(hasil.kesimpulan_radiologi):
+                # KECUALI kalau temuan mengarah Sp. Paru (infeksi TBC/
+                # pneumonia, dikonfirmasi dr. Vidya 2026-08-04, kasus Ambar
+                # Setiyowati NRM 350-26-11; atau nodul paru, dikonfirmasi
+                # dr. Vidya 2026-08-13, kasus 435-84-59) -- itu diarahkan ke
+                # Sp. Paru, bukan Bedah (Bedah utk lesi massa/tulang/
+                # kemungkinan keganasan lain saja). ATAU kalau mengarah
+                # Sp.PD-PMPK (fibrosis + bronkiektasis/bulae/hiperinflasi,
+                # "DD/ proses lama" -- pola penyakit paru struktural kronis,
+                # dikonfirmasi dr. Vidya 2026-08-13, kasus 428-45-13).
+                if _ada_kata_kunci_di_baris_temuan(hasil.kesimpulan_radiologi, KATA_KUNCI_ARAH_SP_PARU):
                     tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
                                   "Konsultasi ke Dokter Spesialis Paru terkait temuan rontgen thorax", False)
                     # TIDAK set bedah_generik_ditambahkan -- rujukan Paru
-                    # (infeksi) tidak menggantikan/menutupi rujukan
+                    # (infeksi/nodul) tidak menggantikan/menutupi rujukan
                     # Orthopaedi kalau kebetulan ADA temuan tulang terpisah
                     # di pasien yang sama (beda dari kasus Bedah/lesi massa
                     # di bawah, yang memang sengaja saling menutupi).
+                elif _ada_kata_kunci_di_baris_temuan(hasil.kesimpulan_radiologi, KATA_KUNCI_ARAH_PD_PMPK):
+                    tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
+                                  "Konsultasi ke Sp.PD-PMPK terkait temuan rontgen thorax", False)
+                    # TIDAK set bedah_generik_ditambahkan, alasan sama spt di atas.
                 else:
                     tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
                                   "Konsultasi ke Dokter Spesialis Bedah terkait temuan rontgen thorax", False)

@@ -45,7 +45,7 @@ import asyncio
 from datetime import datetime
 
 from protocol_engine import (_baris_temuan_radiologi, KATA_KUNCI_TANPA_SARAN_GENERIK,
-                              KATA_KUNCI_TULANG, KATA_KUNCI_INFEKSI_PARU)
+                              KATA_KUNCI_TULANG, KATA_KUNCI_ARAH_SP_PARU, KATA_KUNCI_ARAH_PD_PMPK)
 from konverter_queue import ekstrak_kesimpulan_radiologi
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -379,15 +379,18 @@ async def baca_radiologi(page):
         kesimpulan_terisolasi = ekstrak_kesimpulan_radiologi(potongan)
         baris_temuan = _baris_temuan_radiologi(kesimpulan_terisolasi)
         kata_kunci_sudah_dikenal = KATA_KUNCI_TANPA_SARAN_GENERIK + KATA_KUNCI_TULANG
-        # Baris yang JUGA menyebut kata kunci infeksi paru (TBC/pneumonia)
+        # Baris yang JUGA menyebut kata kunci infeksi paru/nodul (TBC/
+        # pneumonia/nodul) atau PD-PMPK (bronkiektasis/bulae/hiperinflasi)
         # TIDAK BOLEH dianggap "sudah dikenal" walau kebetulan ikut menyebut
         # fibrosis/kalsifikasi/tulang dst dalam kalimat yang sama --
         # sebelumnya kata "fibrosis" saja cukup membungkam kecurigaan TB/
         # pneumonia sepenuhnya, tanpa flag PERLU_CEK_MANUAL sama sekali
         # (dikonfirmasi dr. Vidya, 2026-08-04, kasus Ikhsanudin NRM
-        # 387-63-73: "Opasitas dan fibrosis ... DD/ TB Paru, pneumonia.").
+        # 387-63-73: "Opasitas dan fibrosis ... DD/ TB Paru, pneumonia.";
+        # diperluas 2026-08-13, kasus 428-45-13).
+        kata_kunci_pengecualian = KATA_KUNCI_ARAH_SP_PARU + KATA_KUNCI_ARAH_PD_PMPK
         ada_temuan_belum_dikenal = any(
-            any(k in b.lower() for k in KATA_KUNCI_INFEKSI_PARU)
+            any(k in b.lower() for k in kata_kunci_pengecualian)
             or not any(k in b.lower() for k in kata_kunci_sudah_dikenal)
             for b in baris_temuan
         )
