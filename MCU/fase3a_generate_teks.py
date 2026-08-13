@@ -104,6 +104,13 @@ GANTI_SARAN_PASIEN_DOKTER = {
     "Cek ulang kreatinin dan konsultasi Dokter Umum Poli Pegawai bila perlu terkait "
     "peningkatan kreatinin":
         "Cek ulang kreatinin dan bila perlu lakukan tatalaksana terkait peningkatan kreatinin",
+    # ISK (leukosituria/bakteriuria) -- dikonfirmasi dr. Vidya, 2026-08-13,
+    # kasus Monik Ediana Miranda NRM 402-86-48 -- sama seperti kasus kreatinin
+    # di atas, tidak masuk akal menyuruh dokter konsultasi ke Dokter Umum
+    # Poli Pegawai untuk temuannya sendiri.
+    "Cek ulang urinalisa (terutama bila ada keluhan) dan konsultasi Dokter Umum "
+    "Poli Pegawai untuk dugaan ISK":
+        "Cek ulang urinalisa (terutama bila ada keluhan) dan lakukan tatalaksana terhadap dugaan ISK",
 }
 
 
