@@ -288,8 +288,8 @@ def interpretasi_ginjal(status: str, riwayat_ggk: bool) -> Optional[tuple]:
                 "Cek ulang kreatinin dan konsultasi Dokter Umum Poli Pegawai (bila perlu Sp.PD Divisi Ginjal Hipertensi) "
                 "untuk peningkatan kreatinin (suspek gangguan fungsi ginjal)", False)
     if status == "naik_egfr_turun_ureum_naik":
-        return ("Impaired kidney function", "Suspek/impaired kidney function",
-                "Konsultasi Sp.PD-KGH untuk suspek/impaired kidney function", False)
+        return ("Suspek gangguan fungsi ginjal", "Suspek gangguan fungsi ginjal",
+                "Konsultasi Sp.PD-KGH untuk suspek gangguan fungsi ginjal", False)
     return None
 
 

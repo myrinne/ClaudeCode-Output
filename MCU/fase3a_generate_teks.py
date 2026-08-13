@@ -111,6 +111,10 @@ GANTI_SARAN_PASIEN_DOKTER = {
     "Cek ulang urinalisa (terutama bila ada keluhan) dan konsultasi Dokter Umum "
     "Poli Pegawai untuk dugaan ISK":
         "Cek ulang urinalisa (terutama bila ada keluhan) dan lakukan tatalaksana terhadap dugaan ISK",
+    # Proteinuria ringan -- dikonfirmasi dr. Vidya, 2026-08-13, kasus Edward
+    # Faisal NRM 404-30-06 -- sama seperti kasus ISK di atas.
+    SARAN_PROTEINURIA_RINGAN:
+        "Lakukan tatalaksana terhadap temuan urin terutama bila ada keluhan",
 }
 
 
