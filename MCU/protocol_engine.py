@@ -459,9 +459,11 @@ def ekstrak_temuan_struma(teks_kesimpulan_radiologi: str) -> Optional[str]:
 
 # Fibrosis/kalsifikasi TIDAK dapat saran apa pun. Kardiomegali dan elongasi
 # aorta SENDIRIAN juga diabaikan (dikonfirmasi dr. Vidya, 2026-07-24) --
-# sama-sama masuk kategori "tidak perlu saran".
+# sama-sama masuk kategori "tidak perlu saran". Penebalan hilus ditambahkan
+# 2026-08-13 (kasus Tri Erlani NRM 347-08-97) -- temuan jinak, tidak masuk
+# akal dirujuk ke Sp. Bedah (yang bisa diapakan bedah dari penebalan hilus?).
 KATA_KUNCI_FIBROSIS_KALSIFIKASI = ("fibrosis", "kalsifikasi", "calcification",
-                                     "kardiomegali", "elongasi aorta")
+                                     "kardiomegali", "elongasi aorta", "penebalan hilus")
 KATA_KUNCI_TANPA_SARAN_GENERIK = KATA_KUNCI_FIBROSIS_KALSIFIKASI + KATA_KUNCI_STRUMA
 
 # Temuan mengarah infeksi paru (TBC/pneumonia) -- dikonfirmasi dr. Vidya,
