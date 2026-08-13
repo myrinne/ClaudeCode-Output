@@ -84,6 +84,7 @@ PREFIX_POLI_PEGAWAI = "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama unt
 PREFIX_TATALAKSANA_MANDIRI = "Memerlukan tatalaksana terhadap "
 PREFIX_SPPD_HOM = "Cek ulang dan bila perlu konsultasi ke Sp.PD Divisi HOM terkait temuan "
 PREFIX_CEK_ULANG_POLI_PEGAWAI = "Cek ulang dan bila perlu konsultasi ke Dokter Umum Poli Pegawai terkait temuan "
+PREFIX_CEK_ULANG_TATALAKSANA_MANDIRI = "Cek ulang dan bila perlu lakukan tatalaksana terkait temuan "
 PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI = ("Cek ulang urinalisa (terutama bila ada keluhan) dan konsultasi "
                                             "Dokter Umum Poli Pegawai untuk ")
 SARAN_PROTEINURIA_RINGAN = "Cek ulang urin, bila perlu konsultasi ke Dokter Umum Poli Pratama"
@@ -202,13 +203,19 @@ def gabung_saran_anemia_berat_hom(daftar_saran: list) -> list:
     return [gabungan] + lainnya
 
 
-def gabung_saran_cek_ulang_poli_pegawai(daftar_saran: list) -> list:
+def gabung_saran_cek_ulang_poli_pegawai(daftar_saran: list, pasien_dokter: bool = False) -> list:
     """Sama seperti gabung_saran_sppd_hom() tapi utk saran 'Cek ulang ...
     terkait temuan X' yang menuju Dokter Umum Poli Pegawai (mis. LED) --
     dikonfirmasi dr. Vidya, 2026-07-31 (LED dipindah dari Sp.PD Divisi HOM
     ke sini). Dipisah dari gabung_saran_poli_pegawai() krn pola kalimatnya
-    beda ('Cek ulang ... terkait temuan' vs 'Konsultasi ... untuk')."""
-    return _gabung_saran_by_prefix(daftar_saran, PREFIX_CEK_ULANG_POLI_PEGAWAI)
+    beda ('Cek ulang ... terkait temuan' vs 'Konsultasi ... untuk').
+
+    Kalau pasien_dokter=True, prefix diganti 'Cek ulang dan bila perlu
+    lakukan tatalaksana terkait temuan X' -- sama alasan spt
+    gabung_saran_poli_pegawai() (dikonfirmasi dr. Vidya, 2026-08-13, kasus
+    Indah NRM 387-49-32)."""
+    prefix_final = PREFIX_CEK_ULANG_TATALAKSANA_MANDIRI if pasien_dokter else PREFIX_CEK_ULANG_POLI_PEGAWAI
+    return _gabung_saran_by_prefix(daftar_saran, PREFIX_CEK_ULANG_POLI_PEGAWAI, prefix_final)
 
 
 def gabung_saran_urinalisa_proteinuria(daftar_saran: list) -> list:
@@ -344,7 +351,7 @@ def format_saran(hasil, nama: str = "") -> str:
     daftar = gabung_saran_poli_pegawai(daftar, pasien_dokter)
     daftar = gabung_saran_sppd_hom(daftar)
     daftar = gabung_saran_anemia_berat_hom(daftar)
-    daftar = gabung_saran_cek_ulang_poli_pegawai(daftar)
+    daftar = gabung_saran_cek_ulang_poli_pegawai(daftar, pasien_dokter)
     daftar = gabung_saran_urinalisa_proteinuria(daftar)
     daftar = gabung_saran_kristal_proteinuria(daftar)
     daftar = gabung_saran_cek_ulang_darah_urinalisa(daftar)
