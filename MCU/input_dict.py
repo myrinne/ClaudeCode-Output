@@ -289,6 +289,21 @@ def klasifikasi_gdp(gdp: Optional[float], rujukan: Optional[str] = None) -> Opti
     return "suspek_dm"
 
 
+def klasifikasi_hba1c(hba1c: Optional[float]) -> Optional[str]:
+    """Batas ADA/PERKENI (dikonfirmasi dr. Vidya, 2026-08-13, kasus Tri
+    Erlani NRM 347-08-97): <5.7% normal, 5.7-6.4% prediabetes, >6.4% DM
+    tipe 2. Hardcode (bukan dari rujukan EHR) -- sama seperti batas
+    suspek_dm di klasifikasi_gdp(), rujukan EHR utk HbA1c juga cuma kasih
+    1 batas normal, bukan 2 tier."""
+    if _kosong(hba1c):
+        return None
+    if hba1c < 5.7:
+        return "normal"
+    elif hba1c <= 6.4:
+        return "prediabetes"
+    return "dm2"
+
+
 # ---------------------------------------------------------------------------
 # ASAM URAT
 # ---------------------------------------------------------------------------

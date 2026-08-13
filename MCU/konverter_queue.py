@@ -25,7 +25,7 @@ from protocol_engine import DataPegawai, proses_pegawai
 from input_dict import (
     klasifikasi_hb, klasifikasi_leukosit, klasifikasi_trombosit,
     klasifikasi_led, klasifikasi_eritrosit_darah, klasifikasi_sgot_sgpt, klasifikasi_kreatinin,
-    klasifikasi_kolesterol, klasifikasi_trigliserida, klasifikasi_gdp,
+    klasifikasi_kolesterol, klasifikasi_trigliserida, klasifikasi_gdp, klasifikasi_hba1c,
     klasifikasi_asam_urat, klasifikasi_urinalisa, klasifikasi_bilirubin_direk,
 )
 
@@ -301,8 +301,9 @@ def interpretasi_ekg_existing(kes_existing, ekg_asli=None):
 TES_SUDAH_DIKENAL = (
     "hemoglobin", "leukosit", "trombosit", "laju endap", "led",
     "sgpt", "alt", "sgot", "ast", "bilirubin direk", "kreatinin", "egfr",
-    "ureum", "kolesterol total", "trigliserida", "trigliserid",
-    "glukosa puasa", "gdp", "glukosa 2 jam", "gd2pp", "asam urat", "urat", "hbsag", "anti hbs", "anti-hbs",
+    "ureum", "kolesterol total", "kolesterol ldl", "ldl", "kolesterol hdl", "hdl",
+    "trigliserida", "trigliserid",
+    "glukosa puasa", "gdp", "glukosa 2 jam", "gd2pp", "hba1c", "asam urat", "urat", "hbsag", "anti hbs", "anti-hbs",
     # Dikonfirmasi dr. Vidya (2026-07-24): MCV/MCH/MCHC dan Hematokrit
     # abnormal SENDIRIAN (tanpa penurunan Hb) tidak bermakna klinis --
     # abaikan, jangan dilaporkan lewat catch-all. Kalau Hb memang turun,
@@ -453,13 +454,21 @@ def queue_ke_datapegawai(entry):
     # salah tangkap "Kolesterol HDL"/"Kolesterol LDL" kalau namanya mirip.
     kolesterol = bersih(cari_lab_angka(lab, "kolesterol total"))
     rujukan_kolesterol, catatan_kolesterol = cari_lab_rujukan(lab, "kolesterol total")
-    hdl_ldl_diperiksa = (any("hdl" in n.lower() for n in lab)
-                         and any("ldl" in n.lower() for n in lab))
+    # LDL/HDL: status langsung dari flag H/L EHR (bukan angka+rujukan) --
+    # sama seperti hb_meningkat/gd2pp_meningkat di bawah. None kalau tidak
+    # diperiksa sama sekali, supaya interpretasi_lipid() bisa bedakan
+    # "diperiksa & normal" vs "tidak diperiksa" (dikonfirmasi dr. Vidya,
+    # 2026-08-13, kasus Utri Heryani NRM 410-26-87).
+    ldl_diperiksa = any("ldl" in n.lower() for n in lab)
+    hdl_diperiksa = any("hdl" in n.lower() for n in lab)
+    ldl_status = ("tinggi" if cari_lab_flag(lab, "ldl") == "H" else "normal") if ldl_diperiksa else None
+    hdl_status = ("rendah" if cari_lab_flag(lab, "hdl") == "L" else "normal") if hdl_diperiksa else None
     trigliserida = bersih(cari_lab_angka(lab, "trigliserida", "trigliserid"))
     rujukan_trigliserida, _ = cari_lab_rujukan(lab, "trigliserida", "trigliserid")
     gdp = bersih(cari_lab_angka(lab, "glukosa puasa", "gdp"))
     rujukan_gdp, _ = cari_lab_rujukan(lab, "glukosa puasa", "gdp")
     gd2pp_meningkat = cari_lab_flag(lab, "glukosa 2 jam", "gd2pp") == "H"
+    hba1c = bersih(cari_lab_angka(lab, "hba1c"))
     asam_urat = bersih(cari_lab_angka(lab, "asam urat", "urat"))
     rujukan_asam_urat, _ = cari_lab_rujukan(lab, "asam urat", "urat")
 
@@ -532,10 +541,12 @@ def queue_ke_datapegawai(entry):
         ),
         riwayat_ggk=entry.get("riwayat_ggk", False),
         kolesterol_status=klasifikasi_kolesterol(kolesterol, rujukan_kolesterol, catatan_kolesterol),
-        hdl_ldl_diperiksa=hdl_ldl_diperiksa,
+        ldl_status=ldl_status,
+        hdl_status=hdl_status,
         trigliserida_status=klasifikasi_trigliserida(trigliserida, rujukan_trigliserida),
         gdp_status=klasifikasi_gdp(gdp, rujukan_gdp),
         gd2pp_meningkat=gd2pp_meningkat,
+        hba1c_status=klasifikasi_hba1c(hba1c),
         asam_urat_status=klasifikasi_asam_urat(asam_urat, rujukan_asam_urat),
         urinalisa_tidak_dilakukan=urinalisa_tidak_dilakukan,
         urinalisa_status_list=urinalisa_status_list,

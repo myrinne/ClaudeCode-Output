@@ -43,10 +43,12 @@ class DataPegawai:
     kreatinin_status: Optional[str] = None  # "normal" | "naik_egfr_turun_ureum_normal" | "naik_egfr_turun_ureum_naik"
     riwayat_ggk: bool = False
     kolesterol_status: Optional[str] = None  # "normal" | "batas_tinggi" | "tinggi" | "dislipidemia"
-    hdl_ldl_diperiksa: bool = False  # True kalau HDL & LDL juga diperiksa (bukan cuma Kolesterol Total)
+    ldl_status: Optional[str] = None  # "normal" | "tinggi" | None kalau LDL tidak diperiksa -- flag 'H' dari EHR
+    hdl_status: Optional[str] = None  # "normal" | "rendah" | None kalau HDL tidak diperiksa -- flag 'L' dari EHR
     trigliserida_status: Optional[str] = None  # "normal" | "tinggi"
     gdp_status: Optional[str] = None  # "normal" | "naik" | "suspek_dm"
     gd2pp_meningkat: bool = False  # flag 'H' dari EHR utk Glukosa 2 Jam PP -- dipakai bareng gdp_status utk "Suspek DM 2" (dikonfirmasi dr. Vidya)
+    hba1c_status: Optional[str] = None  # "normal" | "prediabetes" | "dm2" -- dikonfirmasi dr. Vidya, 2026-08-13
     asam_urat_status: Optional[str] = None  # "normal" | "hiperurisemia"
     urinalisa_tidak_dilakukan: bool = False
     urinalisa_status_list: list = field(default_factory=list)  # list kosong = normal; bisa >1 status sekaligus (mis. ["leukosituria_bakteriuria", "glukosuria"]) -- lihat klasifikasi_urinalisa() input_dict.py
@@ -293,29 +295,45 @@ def interpretasi_ginjal(status: str, riwayat_ggk: bool) -> Optional[tuple]:
     return None
 
 
-def interpretasi_lipid(kolesterol: str, trigliserida: str, hdl_ldl_diperiksa: bool = False) -> list:
+def interpretasi_lipid(kolesterol: str, trigliserida: str,
+                        ldl_status: Optional[str] = None, hdl_status: Optional[str] = None) -> list:
     """
-    kolesterol tinggi -> "Dislipidemia" HANYA kalau HDL & LDL JUGA diperiksa
-    (profil lipid lengkap). Kalau cuma Kolesterol Total sendirian yang
-    tinggi (tanpa HDL/LDL) -> "Hiperkolesterolemia" (dikonfirmasi Anda —
-    revisi setelah kasus Avita Ziendy Meitasari).
+    kolesterol total tinggi DAN (LDL tinggi ATAU HDL rendah) -> "Dislipidemia".
+    Kolesterol total tinggi SENDIRIAN (LDL/HDL normal atau tidak diperiksa)
+    -> "Hiperkolesterolemia" (dikonfirmasi Anda — revisi setelah kasus Avita
+    Ziendy Meitasari).
+
+    LDL tinggi / HDL rendah TANPA kolesterol total tinggi (mis. cuma
+    batas_tinggi, atau kolesterol total normal) -> temuan sendiri
+    "Peningkatan LDL" / "Penurunan HDL", TIDAK ikut jadi Dislipidemia --
+    dikonfirmasi dr. Vidya, 2026-08-13 (kasus Utri Heryani NRM 410-26-87:
+    LDL 164 (H), HDL 62.30 (L) belum ada aturan interpretasinya).
     """
     hasil = []
+    ldl_tinggi = ldl_status == "tinggi"
+    hdl_rendah = hdl_status == "rendah"
+    kolesterol_tinggi = kolesterol in ("tinggi", "dislipidemia")
     if kolesterol == "batas_tinggi":
         hasil.append(("Kolesterol batas tinggi", "Kolesterol batas tinggi",
                        "Modifikasi gaya hidup, olahraga 3x/minggu @30 menit dan diet rendah lemak", False))
-    elif kolesterol in ("tinggi", "dislipidemia"):
+    elif kolesterol_tinggi:
         # Teks tujuan disamakan dengan grup "Konsultasi ke Dokter Umum Poli
         # Pegawai/Klinik Pratama untuk X" supaya digabung otomatis oleh
         # gabung_saran_poli_pegawai() di fase3a_generate_teks.py (dikonfirmasi
         # Anda, kasus dr. Rian Hidayatullah — sebelumnya "Kontrol ke Dokter
         # Umum Poli Pratama" tidak ke-dedup karena beda kata & tujuan).
-        if hdl_ldl_diperiksa:
+        if ldl_tinggi or hdl_rendah:
             hasil.append(("Dislipidemia", "Dislipidemia",
                            "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk dislipidemia", False))
         else:
             hasil.append(("Hiperkolesterolemia", "Hiperkolesterolemia",
                            "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk hiperkolesterolemia", False))
+    if ldl_tinggi and not kolesterol_tinggi:
+        hasil.append(("Peningkatan LDL", "Peningkatan LDL",
+                       "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk peningkatan LDL", False))
+    if hdl_rendah and not kolesterol_tinggi:
+        hasil.append(("Penurunan HDL", "Penurunan HDL",
+                       "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk penurunan HDL", False))
     if trigliserida == "tinggi":
         hasil.append(("Hipertrigliserida", "Hipertrigliserida",
                        "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk hipertrigliserida", False))
@@ -329,6 +347,19 @@ def interpretasi_gdp(status: str) -> Optional[tuple]:
     if status == "suspek_dm":
         return ("Suspek DM", "Suspek DM",
                 "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk suspek DM", False)
+    return None
+
+
+def interpretasi_hba1c(status: str) -> Optional[tuple]:
+    """Batas ADA/PERKENI (dikonfirmasi dr. Vidya, 2026-08-13, kasus Tri
+    Erlani NRM 347-08-97): <5.7% normal, 5.7-6.4% prediabetes, >6.4% DM
+    tipe 2 -- lihat klasifikasi_hba1c() di input_dict.py."""
+    if status == "prediabetes":
+        return ("Prediabetes (HbA1c)", "Prediabetes berdasarkan HbA1c",
+                "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk prediabetes", False)
+    if status == "dm2":
+        return ("Suspek DM tipe 2 (HbA1c)", "Suspek DM tipe 2 berdasarkan HbA1c",
+                "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk suspek DM tipe 2", False)
     return None
 
 
@@ -689,11 +720,13 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             tambah_temuan(kesimpulan, saran, wajib)
 
     # --- Lipid ---
-    for _, kesimpulan, saran, wajib in interpretasi_lipid(d.kolesterol_status, d.trigliserida_status, d.hdl_ldl_diperiksa):
+    for _, kesimpulan, saran, wajib in interpretasi_lipid(d.kolesterol_status, d.trigliserida_status,
+                                                            d.ldl_status, d.hdl_status):
         hasil.kesimpulan_lab.append(kesimpulan)
         tambah_temuan(kesimpulan, saran, wajib)
 
     # --- GDP ---
+    suspek_dm2_via_gdp = False
     if d.gdp_status:
         if d.gdp_status in ("naik", "suspek_dm") and d.gd2pp_meningkat:
             # Dikonfirmasi dr. Vidya (2026-07-24, kasus Rangga Surya NRM
@@ -703,12 +736,24 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             kesimpulan = "Suspek DM 2"
             hasil.kesimpulan_lab.append(kesimpulan)
             tambah_temuan(kesimpulan, "Cek HbA1c, dan konsultasi Dokter Umum Poli Pegawai", False)
+            suspek_dm2_via_gdp = True
         else:
             r = interpretasi_gdp(d.gdp_status)
             if r:
                 _, kesimpulan, saran, wajib = r
                 hasil.kesimpulan_lab.append(kesimpulan)
                 tambah_temuan(kesimpulan, saran, wajib)
+
+    # --- HbA1c ---
+    if d.hba1c_status and not (d.hba1c_status == "dm2" and suspek_dm2_via_gdp):
+        # Kalau GDP+GD2PP sudah sama-sama meningkat (suspek_dm2_via_gdp),
+        # dan HbA1c juga dm2, jangan ditulis dobel -- "Suspek DM 2" dari GDP
+        # di atas sudah mewakili temuan yang sama.
+        r = interpretasi_hba1c(d.hba1c_status)
+        if r:
+            _, kesimpulan, saran, wajib = r
+            hasil.kesimpulan_lab.append(kesimpulan)
+            tambah_temuan(kesimpulan, saran, wajib)
 
     # --- Asam urat ---
     if d.asam_urat_status:
