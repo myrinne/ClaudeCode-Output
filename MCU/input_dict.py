@@ -219,6 +219,16 @@ def klasifikasi_kreatinin(kreatinin: Optional[float], egfr: Optional[float],
     ureum_naik = (ureum is not None and atas_ureum is not None
                   and ureum > atas_ureum)
 
+    # eGFR sangat rendah (<75% batas bawah rujukan) -- dikonfirmasi dr.
+    # Vidya, 2026-08-14: dicek TERPISAH dari & SEBELUM tier lain di bawah,
+    # murni dari nilai eGFR (tidak perlu kreatinin/ureum ikut naik). Curiga
+    # pasien sudah dalam kontrol rutin Sp.PD-KGH (mungkin sudah hemodialisa)
+    # -- lihat interpretasi_ginjal() di protocol_engine.py utk wording saran.
+    egfr_sangat_rendah = (egfr is not None and bawah_egfr is not None
+                           and egfr < 0.75 * bawah_egfr)
+    if egfr_sangat_rendah:
+        return "egfr_sangat_rendah"
+
     if not kreatinin_naik and not egfr_turun:
         return "normal"
     if kreatinin_naik and egfr_turun and ureum_naik:

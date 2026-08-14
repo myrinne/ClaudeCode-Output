@@ -40,7 +40,7 @@ class DataPegawai:
     hbsag_positif: Optional[bool] = None
     anti_hbs_diperiksa: bool = False
     anti_hbs_positif: Optional[bool] = None
-    kreatinin_status: Optional[str] = None  # "normal" | "naik_egfr_turun_ureum_normal" | "naik_egfr_turun_ureum_naik"
+    kreatinin_status: Optional[str] = None  # "normal" | "naik_egfr_turun_ureum_normal" | "naik_egfr_turun_ureum_naik" | "egfr_sangat_rendah"
     riwayat_ggk: bool = False
     kolesterol_status: Optional[str] = None  # "normal" | "batas_tinggi" | "tinggi" | "dislipidemia"
     ldl_status: Optional[str] = None  # "normal" | "tinggi" | None kalau LDL tidak diperiksa -- flag 'H' dari EHR
@@ -137,11 +137,14 @@ def interpretasi_td(sistolik: int, diastolik: int) -> tuple:
 # BAGIAN 3 — LABORATORIUM
 # ---------------------------------------------------------------------------
 
+SARAN_ANEMIA_SEDANG = ("Konsultasi Dokter Umum Poli Pegawai untuk tatalaksana anemia, terutama bila ada keluhan "
+                        "(bila diperlukan konsultasi Sp.PD Divisi KHOM)")
+
+
 def interpretasi_hb(status: str) -> Optional[tuple]:
     mapping = {
         "anemia_ringan": ("Anemia ringan mikrositik hipokromik", None, False),
-        "anemia_sedang": ("Anemia sedang mikrositik hipokromik",
-                           "Konsultasi Dokter Umum Poli Pegawai untuk tatalaksana anemia, terutama bila ada keluhan (bila diperlukan konsultasi Sp.PD Divisi KHOM)", False),
+        "anemia_sedang": ("Anemia sedang mikrositik hipokromik", SARAN_ANEMIA_SEDANG, False),
         "anemia_berat": ("Anemia berat",
                           "Segera lakukan konsultasi ke Dokter Spesialis Penyakit Dalam Divisi KHOM untuk anemia berat", True),  # wajib intervensi
     }
@@ -277,6 +280,16 @@ def interpretasi_ginjal(status: str, riwayat_ggk: bool) -> Optional[tuple]:
     if riwayat_ggk:
         return ("Riwayat GGK", "Riwayat gagal ginjal kronik",
                 "Lakukan konsultasi RUTIN ke Sp.PD Divisi KGH untuk tatalaksana gagal ginjal dan hipertensi", True)
+    if status == "egfr_sangat_rendah":
+        # eGFR <75% batas bawah rujukan -- dikonfirmasi dr. Vidya, 2026-08-14:
+        # curiga pasien sudah dalam kontrol rutin Sp.PD-KGH (mungkin sudah
+        # hemodialisa), jadi wording "rutin" (bukan "cek ulang"/"suspek" spt
+        # tier lain di bawah) dan flag MERAH -- lihat proses_pegawai() utk
+        # flag_alasan & suppression saran anemia terkait.
+        return ("Gangguan fungsi ginjal berat (eGFR sangat rendah)",
+                "Gangguan fungsi ginjal berat (eGFR sangat rendah, curiga sudah dalam kontrol rutin Sp.PD-KGH, "
+                "kemungkinan hemodialisa)",
+                "Konsultasi rutin ke Sp.PD-KGH terkait temuan gangguan fungsi ginjal", True)
     if status == "naik_ringan":
         # Kreatinin naik sendirian, eGFR masih normal (dikonfirmasi dr.
         # Vidya, 2026-08-03, kasus Hendi Muslim NRM 418-38-36) -- tidak
@@ -738,6 +751,18 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             _, kesimpulan, saran, wajib = r
             hasil.kesimpulan_lab.append(kesimpulan)
             tambah_temuan(kesimpulan, saran, wajib)
+            if d.kreatinin_status == "egfr_sangat_rendah":
+                hasil.flag = "merah"
+                hasil.flag_alasan.append(
+                    "eGFR sangat rendah (<75% rujukan) — curiga sudah kontrol rutin Sp.PD-KGH "
+                    "(mungkin hemodialisa), cek riwayat sebelum approve")
+                # Anemia dianggap konsekuensi wajar gangguan ginjal (anemia
+                # renal) kalau sudah dalam kontrol rutin Sp.PD-KGH -- saran
+                # "Poli Pegawai" utk anemia sedang jadi redundan (dikonfirmasi
+                # dr. Vidya, 2026-08-14). Anemia berat (destinasi Sp.PD-KHOM
+                # urgent, bukan Poli Pegawai) SENGAJA tidak disentuh di sini.
+                if SARAN_ANEMIA_SEDANG in saran_set:
+                    saran_set.remove(SARAN_ANEMIA_SEDANG)
 
     # --- Lipid ---
     for _, kesimpulan, saran, wajib in interpretasi_lipid(d.kolesterol_status, d.trigliserida_status,
