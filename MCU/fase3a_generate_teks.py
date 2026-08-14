@@ -493,8 +493,16 @@ def format_catatan_tambahan(hasil, pasien_dokter: bool = False) -> str:
     radiologi", entah digabung dengan alasan temuan lain (kasus NRM
     491-98-01/398-33-27: 'Laik kerja dengan catatan X dan melengkapi
     pemeriksaan radiologi') atau berdiri sendiri kalau tidak ada temuan lain
-    ('Laik kerja dengan catatan melengkapi pemeriksaan radiologi')."""
+    ('Laik kerja dengan catatan melengkapi pemeriksaan radiologi'). Kalau
+    hasil.kelaikan BUKAN template 'Laik kerja...' (mis. kalimat LANGKAH 1
+    'Saat ini belum dapat diberikan status kelaikan kerja...' krn data lain
+    -- vital/EKG -- belum lengkap), JANGAN disambung -- 'Mohon melengkapi
+    pemeriksaan radiologi' di saran sudah cukup, menyambungnya di sini
+    menghasilkan kalimat rusak (dikonfirmasi dr. Vidya, 2026-08-14, kasus
+    NRM 495-01-99: vital belum lengkap + radiologi belum lengkap
+    sekaligus)."""
     teks = hasil.kelaikan
+    kelaikan_normal = hasil.kelaikan.startswith("Laik kerja")
     if "dengan catatan" in hasil.kelaikan:
         if pasien_dokter:
             alasan = "melakukan tatalaksana terhadap temuan MCU"
@@ -507,7 +515,7 @@ def format_catatan_tambahan(hasil, pasien_dokter: bool = False) -> str:
         if hasil.radiologi_belum_lengkap:
             alasan = f"{alasan} dan melengkapi pemeriksaan radiologi"
         teks = f"{hasil.kelaikan} {alasan}"
-    elif hasil.radiologi_belum_lengkap:
+    elif hasil.radiologi_belum_lengkap and kelaikan_normal:
         teks = f"{hasil.kelaikan} dengan catatan melengkapi pemeriksaan radiologi"
 
     if "Direkomendasikan untuk diberikan vaksin Hepatitis B" in hasil.saran:
