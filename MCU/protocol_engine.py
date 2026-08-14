@@ -850,8 +850,13 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
         if d.hamil:
             hasil.kesimpulan_radiologi = "Tidak dilakukan rontgen (kehamilan)"
         else:
+            # Dikonfirmasi dr. Vidya, 2026-08-14: rontgen belum dilakukan/
+            # laporan PACS belum masuk TIDAK LAGI memblokir auto-approve
+            # (sebelumnya masuk data_belum_lengkap -> flag merah wajib
+            # approve manual). Teks tetap jujur "Belum dilakukan" (bukan
+            # menebak isi laporan), tapi kelaikan/flag sekarang murni
+            # ditentukan dari temuan lain seperti biasa.
             hasil.kesimpulan_radiologi = "Belum dilakukan"
-            data_belum_lengkap.append("Rontgen thorax belum dilakukan")
     else:
         if d.rontgen_status == "normal":
             # Dikonfirmasi dr. Vidya (kasus Fadilatul Qoyyimah, skoliosis

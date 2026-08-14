@@ -118,6 +118,20 @@ GANTI_SARAN_PASIEN_DOKTER = {
     # Faisal NRM 404-30-06 -- sama seperti kasus ISK di atas.
     SARAN_PROTEINURIA_RINGAN:
         "Lakukan tatalaksana terhadap temuan urin terutama bila ada keluhan",
+    # Hematuria -- dikonfirmasi dr. Vidya, 2026-08-14, kasus NRM 411-99-72 --
+    # sama seperti kasus ISK di atas (pola sama, temuan beda).
+    "Cek ulang urinalisa (terutama bila ada keluhan) dan konsultasi Dokter Umum "
+    "Poli Pegawai untuk hematuria":
+        "Cek ulang urinalisa (terutama bila ada keluhan) dan lakukan tatalaksana terhadap hematuria",
+    # Obesitas grade 2 -- dikonfirmasi dr. Vidya, 2026-08-14, kasus NRM
+    # 397-28-53 -- caveat "(atau Pelayanan Konseling Gizi bila tidak ada
+    # Sp.GK)" adalah fallback utk pasien BIASA kalau RS tidak punya Sp.GK;
+    # tidak relevan disebutkan ke pasien yang dokter sendiri, cukup dihapus
+    # (beda dari kasus lain di atas -- di sini TIDAK diganti ke pola
+    # "tatalaksana mandiri", cuma caveat-nya yang dibuang).
+    "Konsultasi ke Dokter Spesialis Gizi Klinik (atau Pelayanan Konseling Gizi bila tidak ada Sp.GK) "
+    "untuk obesitas grade 2":
+        "Konsultasi ke Dokter Spesialis Gizi Klinik untuk obesitas grade 2",
 }
 
 

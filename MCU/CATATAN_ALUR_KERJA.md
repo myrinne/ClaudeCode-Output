@@ -195,8 +195,10 @@ flag hijau) — 8 field + approve+kirim berhasil terverifikasi.
   menunggu sampai 20 detik sebelum menyerah, supaya tidak salah pilih
   kunjungan yang jauh lebih lama sebagai fallback.
 - **Radiologi kosong** (laporan PACS belum masuk ke EHR) — otomatis
-  terdeteksi, tidak disalahartikan sebagai "ada temuan". Kelaikan jadi
-  merah "data belum lengkap", bukan menebak isi laporan.
+  terdeteksi, tidak disalahartikan sebagai "ada temuan", teks tetap jujur
+  "Belum dilakukan". **Tidak lagi memblokir auto-approve** (direvisi
+  dr. Vidya, 2026-08-14 — sebelumnya flag merah wajib approve manual);
+  kelaikan/flag sekarang murni ditentukan dari temuan lain seperti biasa.
 
 ---
 
