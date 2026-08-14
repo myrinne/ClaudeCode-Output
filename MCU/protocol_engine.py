@@ -1017,6 +1017,15 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
         if saran_urinalisa_standalone in saran_final:
             saran_final.remove(saran_urinalisa_standalone)
             semua_lengkapi.append("pemeriksaan urinalisa")
+        # Radiologi belum lengkap SAMA polanya dengan urinalisa di atas --
+        # digabung ke kalimat "Mohon segera lengkapi" yang sama, bukan jadi
+        # baris "Mohon melengkapi pemeriksaan radiologi" terpisah (dikonfirmasi
+        # dr. Vidya, 2026-08-14, kasus NRM 495-01-99: vital DAN radiologi
+        # sama-sama belum lengkap, dua kalimat "Mohon..." terasa dobel).
+        saran_radiologi_standalone = "Mohon melengkapi pemeriksaan radiologi"
+        if saran_radiologi_standalone in saran_final:
+            saran_final.remove(saran_radiologi_standalone)
+            semua_lengkapi.append("pemeriksaan radiologi")
         hasil.kelaikan = "Saat ini belum dapat diberikan status kelaikan kerja sampai dilakukan pemeriksaan kesehatan dengan lengkap"
         hasil.catatan_tambahan = "; ".join(data_belum_lengkap)
         hasil.saran = saran_final + [f"Mohon segera lengkapi: {', '.join(semua_lengkapi)}"]
