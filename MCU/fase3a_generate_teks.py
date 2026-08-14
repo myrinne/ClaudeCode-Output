@@ -89,6 +89,8 @@ PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI = ("Cek ulang urinalisa (terutama bila a
                                             "Dokter Umum Poli Pegawai untuk ")
 SARAN_PROTEINURIA_RINGAN = "Cek ulang urin, bila perlu konsultasi ke Dokter Umum Poli Pratama"
 SARAN_KRISTAL = "Cek ulang urinalisa untuk kristal dalam urin"
+SARAN_KRISTAL_PROTEINURIA = "Cek ulang urinalisa untuk kristal dalam urin, proteinuria, bila perlu konsultasi ke Dokter Umum Poli Pratama"
+SARAN_ALBUMINURIA_HEMATURIA = "Konsultasi dokter untuk albuminuria dan hematuria"
 
 # Saran yang diganti langsung ke spesialis (skip Dokter Umum/Poli Pratama)
 # kalau pasien_dokter=True — dikonfirmasi Anda per kasus, ditambah satu-satu
@@ -261,8 +263,7 @@ def gabung_saran_kristal_proteinuria(daftar_saran: list) -> list:
     if SARAN_KRISTAL not in daftar_saran or SARAN_PROTEINURIA_RINGAN not in daftar_saran:
         return daftar_saran
     lainnya = [s for s in daftar_saran if s not in (SARAN_KRISTAL, SARAN_PROTEINURIA_RINGAN)]
-    gabungan = "Cek ulang urinalisa untuk kristal dalam urin, proteinuria, bila perlu konsultasi ke Dokter Umum Poli Pratama"
-    return [gabungan] + lainnya
+    return [SARAN_KRISTAL_PROTEINURIA] + lainnya
 
 
 def gabung_saran_cek_ulang_darah_urinalisa(daftar_saran: list) -> list:
@@ -314,6 +315,65 @@ def gabung_saran_cek_ulang_darah_proteinuria(daftar_saran: list) -> list:
     lainnya = [s for s in daftar_saran if s not in (baris_darah, SARAN_PROTEINURIA_RINGAN)]
     gabungan = (f"Cek ulang darah dan urin, bila perlu konsultasi ke Dokter Umum Poli Pegawai "
                 f"terkait temuan {alasan_darah}, terutama bila ada keluhan")
+    return [gabungan] + lainnya
+
+
+def gabung_saran_cek_ulang_darah_kristal(daftar_saran: list) -> list:
+    """Sama logikanya dengan gabung_saran_cek_ulang_darah_proteinuria(), tapi
+    utk baris urin yang sudah digabung dengan kristal ('Cek ulang urinalisa
+    untuk kristal dalam urin, proteinuria, ... Poli Pratama' -- SARAN_KRISTAL
+    _PROTEINURIA, hasil gabung_saran_kristal_proteinuria()) ATAU kristal
+    sendirian tanpa proteinuria (SARAN_KRISTAL). Baris darah (leukositosis/
+    LED, PREFIX_CEK_ULANG_POLI_PEGAWAI) + baris urin sama-sama muncul
+    dianggap tujuan sama (Poli Pegawai = Poli Pratama), digabung jadi SATU
+    kalimat -- dikonfirmasi dr. Vidya, 2026-08-14, kasus NRM 451-88-65
+    (Leukositosis + LED + kristal + proteinuria: dua baris 'cek ulang'
+    terpisah terasa dobel, sama seperti kasus proteinuria standalone).
+
+    HARUS dipanggil SETELAH gabung_saran_cek_ulang_poli_pegawai() dan
+    gabung_saran_kristal_proteinuria() supaya baris darah sudah maksimal 1
+    baris dan kristal+proteinuria (kalau ada keduanya) sudah tergabung jadi
+    satu baris urin sebelum ikut digabung lagi di sini."""
+    baris_urin = SARAN_KRISTAL_PROTEINURIA if SARAN_KRISTAL_PROTEINURIA in daftar_saran else (
+        SARAN_KRISTAL if SARAN_KRISTAL in daftar_saran else None)
+    if baris_urin is None:
+        return daftar_saran
+    baris_darah = next((s for s in daftar_saran if s.startswith(PREFIX_CEK_ULANG_POLI_PEGAWAI)), None)
+    if baris_darah is None:
+        return daftar_saran
+    alasan_darah = baris_darah[len(PREFIX_CEK_ULANG_POLI_PEGAWAI):]
+    alasan_urin = "kristal dalam urin, proteinuria" if baris_urin == SARAN_KRISTAL_PROTEINURIA else "kristal dalam urin"
+    lainnya = [s for s in daftar_saran if s not in (baris_darah, baris_urin)]
+    gabungan = (f"Cek ulang darah dan urinalisa (terutama bila ada keluhan) untuk {alasan_urin}, "
+                f"bila perlu konsultasi ke Dokter Umum Poli Pegawai terkait temuan {alasan_darah}")
+    return [gabungan] + lainnya
+
+
+def gabung_saran_cek_ulang_darah_albuminuria_hematuria(daftar_saran: list) -> list:
+    """Kalau saran albuminuria+hematuria bersamaan (SARAN_ALBUMINURIA_HEMATURIA,
+    'Konsultasi dokter untuk albuminuria dan hematuria' -- teks ini beda pola
+    dari saran urinalisa lain krn tidak lewat PREFIX_CEK_ULANG_URINALISA_
+    POLI_PEGAWAI, lihat interpretasi_urinalisa() di protocol_engine.py)
+    muncul BERSAMA baris cek-ulang darah (PREFIX_CEK_ULANG_POLI_PEGAWAI,
+    mis. LED/leukositosis), gabung jadi SATU kalimat generik "Cek ulang
+    darah dan urin, bila perlu konsultasi ke Dokter Umum Poli Pratama
+    terkait temuan darah dan urin" -- dikonfirmasi dr. Vidya, 2026-08-14,
+    kasus NRM 418-38-58: dua baris 'konsultasi dokter'/'cek ulang' terpisah
+    terasa dobel, tujuan dianggap sama (Poli Pratama = Poli Pegawai, tapi
+    hanya 'Poli Pratama' yang dituliskan). Sengaja TIDAK menyebut nama
+    temuan spesifik di frasa penutup (beda dari pola gabungan lain) --
+    dikonfirmasi Anda secara eksplisit saat kasus ini.
+
+    HARUS dipanggil SETELAH gabung_saran_cek_ulang_poli_pegawai() supaya
+    baris darah sudah maksimal 1 baris."""
+    if SARAN_ALBUMINURIA_HEMATURIA not in daftar_saran:
+        return daftar_saran
+    baris_darah = next((s for s in daftar_saran if s.startswith(PREFIX_CEK_ULANG_POLI_PEGAWAI)), None)
+    if baris_darah is None:
+        return daftar_saran
+    lainnya = [s for s in daftar_saran if s not in (baris_darah, SARAN_ALBUMINURIA_HEMATURIA)]
+    gabungan = ("Cek ulang darah dan urin, bila perlu konsultasi ke Dokter Umum Poli Pratama "
+                "terkait temuan darah dan urin")
     return [gabungan] + lainnya
 
 
@@ -382,6 +442,8 @@ def format_saran(hasil, nama: str = "") -> str:
     daftar = gabung_saran_kristal_proteinuria(daftar)
     daftar = gabung_saran_cek_ulang_darah_urinalisa(daftar)
     daftar = gabung_saran_cek_ulang_darah_proteinuria(daftar)
+    daftar = gabung_saran_cek_ulang_darah_kristal(daftar)
+    daftar = gabung_saran_cek_ulang_darah_albuminuria_hematuria(daftar)
     return "\n".join(daftar)
 
 
