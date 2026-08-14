@@ -199,6 +199,10 @@ flag hijau) — 8 field + approve+kirim berhasil terverifikasi.
   "Belum dilakukan". **Tidak lagi memblokir auto-approve** (direvisi
   dr. Vidya, 2026-08-14 — sebelumnya flag merah wajib approve manual);
   kelaikan/flag sekarang murni ditentukan dari temuan lain seperti biasa.
+  Saran **tetap** menyertakan "Mohon melengkapi pemeriksaan radiologi", dan
+  kesimpulan/catatan tambahan tetap menyebut eksplisit "...dengan catatan
+  melengkapi pemeriksaan radiologi" (digabung dengan alasan temuan lain
+  kalau ada) — cuma statusnya yang tidak lagi memblokir approve.
 
 ---
 
