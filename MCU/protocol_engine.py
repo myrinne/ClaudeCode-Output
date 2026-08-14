@@ -78,6 +78,7 @@ class HasilInterpretasi:
     flag: str = "hijau"  # hijau | kuning | merah
     flag_alasan: list = field(default_factory=list)
     wajib_intervensi: bool = False  # kategori Langkah 3
+    radiologi_belum_lengkap: bool = False  # rontgen belum dilakukan/laporan PACS belum masuk (bukan hamil)
 
 
 # ---------------------------------------------------------------------------
@@ -854,9 +855,19 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             # laporan PACS belum masuk TIDAK LAGI memblokir auto-approve
             # (sebelumnya masuk data_belum_lengkap -> flag merah wajib
             # approve manual). Teks tetap jujur "Belum dilakukan" (bukan
-            # menebak isi laporan), tapi kelaikan/flag sekarang murni
-            # ditentukan dari temuan lain seperti biasa.
+            # menebak isi laporan), kelaikan/flag murni ditentukan dari
+            # temuan lain seperti biasa -- TAPI saran "Mohon melengkapi
+            # pemeriksaan radiologi" tetap harus ada (mirip pola urinalisa
+            # di atas: ditambah langsung ke saran_set, TIDAK lewat
+            # tambah_temuan, supaya tidak ikut dihitung jumlah_temuan/wajib),
+            # dan kelaikan akhir tetap harus menyebut "dengan catatan
+            # melengkapi pemeriksaan radiologi" -- lihat radiologi_belum_
+            # lengkap & format_catatan_tambahan() di fase3a_generate_teks.py.
             hasil.kesimpulan_radiologi = "Belum dilakukan"
+            hasil.radiologi_belum_lengkap = True
+            saran_radiologi = "Mohon melengkapi pemeriksaan radiologi"
+            if saran_radiologi not in saran_set:
+                saran_set.append(saran_radiologi)
     else:
         if d.rontgen_status == "normal":
             # Dikonfirmasi dr. Vidya (kasus Fadilatul Qoyyimah, skoliosis

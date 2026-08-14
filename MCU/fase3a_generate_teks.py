@@ -484,7 +484,16 @@ def format_catatan_tambahan(hasil, pasien_dokter: bool = False) -> str:
       hasil MCU'
     Kalau ada rekomendasi vaksin Hepatitis B di antara saran, tambahkan
     eksplisit 'dan diberikan vaksinasi Hepatitis B' di akhir (dikonfirmasi
-    Anda) — supaya tidak tenggelam di daftar saran."""
+    Anda) — supaya tidak tenggelam di daftar saran.
+
+    Kalau rontgen belum dilakukan/laporan PACS belum masuk
+    (hasil.radiologi_belum_lengkap, lihat protocol_engine.py) -- auto-approve
+    TETAP jalan seperti biasa (dikonfirmasi dr. Vidya, 2026-08-14), TAPI
+    kelaikan HARUS tetap menyebut "dengan catatan melengkapi pemeriksaan
+    radiologi", entah digabung dengan alasan temuan lain (kasus NRM
+    491-98-01/398-33-27: 'Laik kerja dengan catatan X dan melengkapi
+    pemeriksaan radiologi') atau berdiri sendiri kalau tidak ada temuan lain
+    ('Laik kerja dengan catatan melengkapi pemeriksaan radiologi')."""
     teks = hasil.kelaikan
     if "dengan catatan" in hasil.kelaikan:
         if pasien_dokter:
@@ -495,7 +504,11 @@ def format_catatan_tambahan(hasil, pasien_dokter: bool = False) -> str:
                 alasan = "memerlukan konsultasi dengan dokter terkait temuan hasil MCU"
             else:
                 alasan = "melakukan tatalaksana terhadap hasil MCU"
+        if hasil.radiologi_belum_lengkap:
+            alasan = f"{alasan} dan melengkapi pemeriksaan radiologi"
         teks = f"{hasil.kelaikan} {alasan}"
+    elif hasil.radiologi_belum_lengkap:
+        teks = f"{hasil.kelaikan} dengan catatan melengkapi pemeriksaan radiologi"
 
     if "Direkomendasikan untuk diberikan vaksin Hepatitis B" in hasil.saran:
         teks = f"{teks} dan diberikan vaksinasi Hepatitis B"
