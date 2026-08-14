@@ -132,6 +132,14 @@ GANTI_SARAN_PASIEN_DOKTER = {
     "Konsultasi ke Dokter Spesialis Gizi Klinik (atau Pelayanan Konseling Gizi bila tidak ada Sp.GK) "
     "untuk obesitas grade 2":
         "Konsultasi ke Dokter Spesialis Gizi Klinik untuk obesitas grade 2",
+    # GDP naik (belum sampai suspek_dm) -- dikonfirmasi dr. Vidya, 2026-08-14,
+    # kasus NRM 350-70-58 -- sama alasan spt kasus-kasus lain di atas, tidak
+    # masuk akal menyuruh dokter konsultasi ke Poli Pegawai untuk temuannya
+    # sendiri. Missed sebelumnya krn wordingnya beda dari pola "Konsultasi ke
+    # Dokter Umum Poli Pegawai/Klinik Pratama untuk X" yang sudah ke-cover
+    # oleh gabung_saran_poli_pegawai().
+    "Cek GD2PP dan konsultasi Poli Pegawai untuk GDP terganggu":
+        "Cek GD2PP dan bila perlu lakukan tatalaksana terkait GDP terganggu",
 }
 
 

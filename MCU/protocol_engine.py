@@ -37,6 +37,8 @@ class DataPegawai:
     sgot_sgpt_status: Optional[str] = None  # "normal" | "naik"
     ggt_status: Optional[str] = None  # "normal" | "naik"
     bilirubin_direk_status: Optional[str] = None  # "normal" | "naik"
+    bilirubin_indirek_status: Optional[str] = None  # "normal" | "naik"
+    bilirubin_total_status: Optional[str] = None  # "normal" | "naik"
     hbsag_positif: Optional[bool] = None
     anti_hbs_diperiksa: bool = False
     anti_hbs_positif: Optional[bool] = None
@@ -228,13 +230,22 @@ def interpretasi_eritrosit_darah(selisih_dari_rujukan_atas: float, hb_meningkat:
             f"Cek ulang dan bila perlu konsultasi ke Sp.PD Divisi HOM terkait temuan {kesimpulan}", False)
 
 
-def interpretasi_hepar(sgot_sgpt: str, ggt: str, bilirubin_direk: str = None) -> list:
+def interpretasi_hepar(sgot_sgpt: str, ggt: str, bilirubin_direk: str = None,
+                        bilirubin_indirek: str = None, bilirubin_total: str = None) -> list:
     """
     sgot_sgpt dua tingkat (dikonfirmasi Anda):
     - "naik_ringan" (>5 poin di atas rujukan, belum 2x lipat) -> "Peningkatan
       enzim fungsi hati", saran Konsultasi Poli Pegawai
     - "naik_suspek" (>=2x lipat rujukan) -> "Suspek gangguan fungsi hati",
       saran Konsultasi Sp.PD-KGEH untuk tatalaksana
+
+    Bilirubin: SEMUA fraksi yang naik (Direk/Indirek/Total) digabung jadi
+    SATU temuan "Peningkatan Bilirubin X, Y, Z" -- hanya menyebut fraksi
+    yang BENAR-BENAR naik, urutan tetap Direk/Indirek/Total (dikonfirmasi
+    dr. Vidya, 2026-08-14, kasus NRM 350-70-58: sebelumnya cuma Direk yang
+    dicek, Indirek & Total yang sama-sama naik jatuh ke catch-all "belum
+    ada aturan interpretasinya"). Saran generik "...untuk peningkatan
+    Bilirubin" (TANPA sebut fraksi lagi -- sudah disebut di kesimpulan).
     """
     hasil = []
     if sgot_sgpt == "naik_ringan":
@@ -247,10 +258,18 @@ def interpretasi_hepar(sgot_sgpt: str, ggt: str, bilirubin_direk: str = None) ->
         hasil.append(("Gamma GT/Fosfatase Alkali naik", "Sumbatan saluran empedu",
                        "Konsultasi Poli Pegawai (ringan) atau Sp.PD-KGEH (bila gangguan fungsi hati sudah jelas) "
                        "untuk peningkatan Gamma GT/Fosfatase Alkali", False))
+    fraksi_naik = []
     if bilirubin_direk == "naik":
-        hasil.append(("Peningkatan Bilirubin Direk", "Peningkatan Bilirubin Direk",
+        fraksi_naik.append("Direk")
+    if bilirubin_indirek == "naik":
+        fraksi_naik.append("Indirek")
+    if bilirubin_total == "naik":
+        fraksi_naik.append("Total")
+    if fraksi_naik:
+        label = f"Peningkatan Bilirubin {', '.join(fraksi_naik)}"
+        hasil.append((label, label,
                        "Bila perlu konsultasi ke Dokter Spesialis Penyakit Dalam Divisi Gastro-Hepatologi "
-                       "untuk peningkatan Bilirubin Direk", False))
+                       "untuk peningkatan Bilirubin", False))
     return hasil
 
 
@@ -730,7 +749,9 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             tambah_temuan(kesimpulan, saran, wajib)
 
     # --- Fungsi hati ---
-    for _, kesimpulan, saran, wajib in interpretasi_hepar(d.sgot_sgpt_status, d.ggt_status, d.bilirubin_direk_status):
+    for _, kesimpulan, saran, wajib in interpretasi_hepar(
+            d.sgot_sgpt_status, d.ggt_status,
+            d.bilirubin_direk_status, d.bilirubin_indirek_status, d.bilirubin_total_status):
         hasil.kesimpulan_lab.append(kesimpulan)
         tambah_temuan(kesimpulan, saran, wajib)
 

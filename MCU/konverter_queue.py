@@ -300,7 +300,7 @@ def interpretasi_ekg_existing(kes_existing, ekg_asli=None):
 
 TES_SUDAH_DIKENAL = (
     "hemoglobin", "leukosit", "trombosit", "laju endap", "led",
-    "sgpt", "alt", "sgot", "ast", "bilirubin direk", "kreatinin", "egfr",
+    "sgpt", "alt", "sgot", "ast", "bilirubin direk", "bilirubin indirek", "bilirubin total", "kreatinin", "egfr",
     "ureum", "kolesterol total", "kolesterol ldl", "ldl", "kolesterol hdl", "hdl",
     "trigliserida", "trigliserid",
     "glukosa puasa", "gdp", "glukosa 2 jam", "gd2pp", "hba1c", "asam urat", "urat", "hbsag", "anti hbs", "anti-hbs",
@@ -444,6 +444,15 @@ def queue_ke_datapegawai(entry):
     rujukan_sgot, _ = cari_lab_rujukan(lab, "sgot", "ast")
     bilirubin_direk = bersih(cari_lab_angka(lab, "bilirubin direk"))
     rujukan_bilirubin_direk, _ = cari_lab_rujukan(lab, "bilirubin direk")
+    # Indirek/Total -- dikonfirmasi dr. Vidya, 2026-08-14, kasus NRM
+    # 350-70-58: sebelumnya cuma Direk yang dibaca, Total & Indirek yang
+    # SAMA-SAMA naik jatuh ke catch-all "belum ada aturan interpretasinya"
+    # padahal seharusnya digabung jadi satu temuan "Peningkatan Bilirubin
+    # X, Y, Z" (lihat interpretasi_hepar() di protocol_engine.py).
+    bilirubin_indirek = bersih(cari_lab_angka(lab, "bilirubin indirek"))
+    rujukan_bilirubin_indirek, _ = cari_lab_rujukan(lab, "bilirubin indirek")
+    bilirubin_total = bersih(cari_lab_angka(lab, "bilirubin total"))
+    rujukan_bilirubin_total, _ = cari_lab_rujukan(lab, "bilirubin total")
     kreatinin = bersih(cari_lab_angka(lab, "kreatinin"))
     rujukan_kreatinin, _ = cari_lab_rujukan(lab, "kreatinin")
     egfr = bersih(cari_lab_angka(lab, "egfr"))
@@ -533,6 +542,8 @@ def queue_ke_datapegawai(entry):
         sgot_sgpt_status=klasifikasi_sgot_sgpt(sgpt, sgot, rujukan_sgpt, rujukan_sgot),
         ggt_status=None,
         bilirubin_direk_status=klasifikasi_bilirubin_direk(bilirubin_direk, rujukan_bilirubin_direk),
+        bilirubin_indirek_status=klasifikasi_bilirubin_direk(bilirubin_indirek, rujukan_bilirubin_indirek),
+        bilirubin_total_status=klasifikasi_bilirubin_direk(bilirubin_total, rujukan_bilirubin_total),
         hbsag_positif=hbsag_positif,
         anti_hbs_diperiksa=anti_hbs_cek,
         anti_hbs_positif=anti_hbs_pos,
