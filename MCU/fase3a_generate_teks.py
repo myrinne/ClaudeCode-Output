@@ -291,6 +291,32 @@ def gabung_saran_cek_ulang_darah_urinalisa(daftar_saran: list) -> list:
     return [gabungan] + lainnya
 
 
+def gabung_saran_cek_ulang_darah_proteinuria(daftar_saran: list) -> list:
+    """Kalau saran 'cek ulang' darah (LED/leukositosis, PREFIX_CEK_ULANG_
+    POLI_PEGAWAI) DAN proteinuria ringan SENDIRIAN (SARAN_PROTEINURIA_RINGAN,
+    tanpa ISK/hematuria -- kalau ada, sudah digabung ke baris ISK/hematuria
+    duluan oleh gabung_saran_urinalisa_proteinuria()) SAMA-SAMA muncul,
+    gabung jadi SATU kalimat "Cek ulang darah dan urin, bila perlu
+    konsultasi ke Dokter Umum Poli Pegawai terkait temuan X, terutama bila
+    ada keluhan" -- dikonfirmasi dr. Vidya, 2026-08-14, kasus Wahyu Fitri
+    Yuliati NRM 350-72-85 (Leukositosis + proteinuria: dua baris 'cek ulang'
+    ke Poli Pegawai vs Poli Pratama terasa dobel, dianggap tujuan sama saja).
+
+    HARUS dipanggil SETELAH gabung_saran_cek_ulang_poli_pegawai() dan
+    gabung_saran_urinalisa_proteinuria() supaya baris darah sudah maksimal
+    1 baris dan proteinuria belum "diserap" ke baris ISK/hematuria."""
+    if SARAN_PROTEINURIA_RINGAN not in daftar_saran:
+        return daftar_saran
+    baris_darah = next((s for s in daftar_saran if s.startswith(PREFIX_CEK_ULANG_POLI_PEGAWAI)), None)
+    if baris_darah is None:
+        return daftar_saran
+    alasan_darah = baris_darah[len(PREFIX_CEK_ULANG_POLI_PEGAWAI):]
+    lainnya = [s for s in daftar_saran if s not in (baris_darah, SARAN_PROTEINURIA_RINGAN)]
+    gabungan = (f"Cek ulang darah dan urin, bila perlu konsultasi ke Dokter Umum Poli Pegawai "
+                f"terkait temuan {alasan_darah}, terutama bila ada keluhan")
+    return [gabungan] + lainnya
+
+
 SARAN_TD_PREHIPERTENSI = "Periksa tekanan darah secara teratur, modifikasi gaya hidup"
 SARAN_TD_PREHIPERTENSI_SINGKAT = "Periksa tekanan darah secara teratur"
 
@@ -355,6 +381,7 @@ def format_saran(hasil, nama: str = "") -> str:
     daftar = gabung_saran_urinalisa_proteinuria(daftar)
     daftar = gabung_saran_kristal_proteinuria(daftar)
     daftar = gabung_saran_cek_ulang_darah_urinalisa(daftar)
+    daftar = gabung_saran_cek_ulang_darah_proteinuria(daftar)
     return "\n".join(daftar)
 
 
