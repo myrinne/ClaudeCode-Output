@@ -187,6 +187,23 @@ flag hijau) — 8 field + approve+kirim berhasil terverifikasi.
   Spekulasi itu tetap ada di `flag_alasan` internal (console/notes.md,
   bukan field EHR) untuk membantu reviewer manusia menilai sebelum
   approve — kasus pemicu: NRM 421-89-50, ditahan lalu diperbaiki manual.
+- **Tidak ada Sp. Paru di RSCM** (revisi dr. Vidya, 2026-08-20): temuan
+  radiologi infeksi paru/nodul yang tadinya diarahkan "Konsultasi ke
+  Dokter Spesialis Paru" sekarang ke "Konsultasi ke Dokter Spesialis
+  Penyakit Dalam Divisi KP terkait temuan rontgen thorax".
+- **Rujukan generik radiologi thorax tak dikenal** (revisi dr. Vidya,
+  2026-08-20, kasus NRM 404-07-18, menggantikan keputusan Sp. Bedah
+  2026-08-04): default sekarang "Konsultasi ke Dokter Spesialis Penyakit
+  Dalam Divisi KP terkait temuan rontgen thorax", bukan Sp. Bedah lagi.
+- **EKG abnormal**: saran langsung "Konsultasi Sp.PD Divisi KKV untuk
+  tatalaksana abnormal EKG" (dikonfirmasi dr. Vidya, 2026-08-20) — bukan
+  lagi lewat Dokter Umum Klinik Pratama dulu.
+- **Typo "Dibandingan" (huruf "k" hilang) pada kalimat pembuka
+  perbandingan radiologi** (ditemukan dr. Vidya, 2026-08-20, kasus NRM
+  404-07-18): dulu tidak ter-filter sebagai baris pembuka, sehingga
+  kardiomegali tunggal keliru dianggap "temuan tak dikenal" dan memicu
+  rujukan generik. Filter kata kunci diperluas dari "dibandingkan" jadi
+  substring "dibanding" supaya menangkap kedua ejaan.
 
 ---
 

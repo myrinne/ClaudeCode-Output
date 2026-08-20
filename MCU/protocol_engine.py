@@ -581,7 +581,13 @@ def _ada_kata_kunci_di_baris_temuan(teks_kesimpulan_radiologi: str, kata_kunci: 
 # negatif), cuma beda redaksi radiolog -- ditambahkan 2026-08-13 (kasus
 # Hijranul Aryanto Arif NRM 486-93-31: baris ini keliru dianggap temuan tak
 # dikenal dan memicu rujukan Sp. Bedah, padahal jantung normal).
-KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibandingkan", "tidak membesar")
+# "dibanding" (bukan "dibandingkan" penuh) -- radiolog kadang salah ketik
+# "Dibandingan" (huruf "k" hilang, kasus NRM 404-07-18, 2026-08-20): baris
+# pembuka perbandingan itu jadi tidak ter-filter dan keliru dianggap temuan
+# tak dikenal, memicu rujukan Sp. Bedah untuk kardiomegali tunggal yang
+# seharusnya tidak dapat saran apa pun. Substring "dibanding" menangkap
+# kedua ejaan.
+KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibanding", "tidak membesar")
 
 
 def _baris_temuan_radiologi(teks_kesimpulan_radiologi: str) -> list:
@@ -951,8 +957,10 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                 # "DD/ proses lama" -- pola penyakit paru struktural kronis,
                 # dikonfirmasi dr. Vidya 2026-08-13, kasus 428-45-13).
                 if _ada_kata_kunci_di_baris_temuan(hasil.kesimpulan_radiologi, KATA_KUNCI_ARAH_SP_PARU):
+                    # Tidak ada Sp. Paru di RSCM -- diarahkan ke Sp.PD Divisi
+                    # KP, dikonfirmasi dr. Vidya, 2026-08-20.
                     tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
-                                  "Konsultasi ke Dokter Spesialis Paru terkait temuan rontgen thorax", False)
+                                  "Konsultasi ke Dokter Spesialis Penyakit Dalam Divisi KP terkait temuan rontgen thorax", False)
                     # TIDAK set bedah_generik_ditambahkan -- rujukan Paru
                     # (infeksi/nodul) tidak menggantikan/menutupi rujukan
                     # Orthopaedi kalau kebetulan ADA temuan tulang terpisah
@@ -963,8 +971,11 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                                   "Konsultasi ke Sp.PD-PMK terkait temuan rontgen thorax", False)
                     # TIDAK set bedah_generik_ditambahkan, alasan sama spt di atas.
                 else:
+                    # Default generik diganti dari Sp. Bedah ke Sp.PD Divisi
+                    # KP -- dikonfirmasi dr. Vidya, 2026-08-20 (kasus NRM
+                    # 404-07-18), menggantikan keputusan Sp. Bedah 2026-08-04.
                     tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
-                                  "Konsultasi ke Dokter Spesialis Bedah terkait temuan rontgen thorax", False)
+                                  "Konsultasi ke Dokter Spesialis Penyakit Dalam Divisi KP terkait temuan rontgen thorax", False)
                     bedah_generik_ditambahkan = True
             # else: HANYA struma (dan/atau fibrosis/kalsifikasi) tanpa temuan
             # lain -- dikonfirmasi dr. Vidya (2026-07-24): saran generik
@@ -1018,7 +1029,9 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             # Format "Abnormal, <temuan>" (dikonfirmasi dr. Vidya, 2026-07-24).
             deskripsi = (d.ekg_abnormal_deskripsi or "").strip()
             hasil.kesimpulan_ekg = f"Abnormal, {deskripsi}" if deskripsi else "Abnormal"
-            tambah_temuan("Abnormal EKG", "Konsultasi Dokter Umum Klinik Pratama untuk tatalaksana abnormal EKG, bila perlu konsultasi Sp.PD Divisi KKV", False)
+            # Langsung ke Sp.PD Divisi KKV (bukan Dokter Umum dulu) --
+            # dikonfirmasi dr. Vidya, 2026-08-20.
+            tambah_temuan("Abnormal EKG", "Konsultasi Sp.PD Divisi KKV untuk tatalaksana abnormal EKG", False)
     else:
         hasil.kesimpulan_ekg = "Tidak dilakukan"
 
