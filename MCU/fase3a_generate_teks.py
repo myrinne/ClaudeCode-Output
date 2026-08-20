@@ -88,6 +88,10 @@ PREFIX_CEK_ULANG_TATALAKSANA_MANDIRI = "Cek ulang dan bila perlu lakukan tatalak
 PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI = ("Cek ulang urinalisa (terutama bila ada keluhan) dan konsultasi "
                                             "Dokter Umum Poli Pegawai untuk ")
 SARAN_PROTEINURIA_RINGAN = "Cek ulang urin, bila perlu konsultasi ke Dokter Umum Poli Pratama"
+# Sama pola dengan proteinuria ringan di atas, teks beda ("urinalisa" bukan
+# "urin") krn sumbernya interpretasi urobilinogenuria terpisah di
+# protocol_engine.py -- lihat gabung_saran_urinalisa_proteinuria().
+SARAN_UROBILINOGENURIA = "Cek ulang urinalisa, bila perlu konsultasi ke Dokter Umum Poli Pratama"
 SARAN_KRISTAL = "Cek ulang urinalisa untuk kristal dalam urin"
 SARAN_KRISTAL_PROTEINURIA = "Cek ulang urinalisa untuk kristal dalam urin, proteinuria, bila perlu konsultasi ke Dokter Umum Poli Pratama"
 SARAN_ALBUMINURIA_HEMATURIA = "Konsultasi dokter untuk albuminuria dan hematuria"
@@ -97,9 +101,15 @@ SARAN_ALBUMINURIA_HEMATURIA = "Konsultasi dokter untuk albuminuria dan hematuria
 # saat muncul (bukan aturan umum otomatis, karena tujuan spesialisnya
 # beda-beda tergantung temuan).
 GANTI_SARAN_PASIEN_DOKTER = {
-    "Konsultasi Dokter Umum Klinik Pratama untuk tatalaksana abnormal EKG, "
-    "bila perlu konsultasi Sp.PD Divisi KKV":
-        "Lakukan konsultasi ke Dokter Spesialis Penyakit Dalam-KKV untuk tatalaksana temuan EKG",
+    # Key diperbarui 2026-08-20 mengikuti teks EKG abnormal baru di
+    # protocol_engine.py ("Konsultasi Sp.PD Divisi KKV untuk tatalaksana
+    # abnormal EKG", bukan lagi lewat Dokter Umum Klinik Pratama dulu) --
+    # key lama sempat tertinggal (tidak diupdate saat teks sumbernya
+    # berubah) sehingga lookup exact-match diam-diam gagal dan pasien
+    # dokter (kasus dr. Herikurniawan NRM 429-26-60) tetap dapat saran
+    # rujukan spesialis padahal seharusnya tatalaksana mandiri.
+    "Konsultasi Sp.PD Divisi KKV untuk tatalaksana abnormal EKG":
+        "Bila diperlukan lakukan tatalaksana terhadap abnormal EKG",
     # Kreatinin naik sendirian, eGFR normal (dikonfirmasi Anda, kasus dr.
     # Noto Dwimartutie NRM 401-87-34) -- sama seperti kasus EKG di atas,
     # tidak masuk akal menyuruh dokter konsultasi ke Dokter Umum Poli
@@ -244,32 +254,42 @@ def gabung_saran_cek_ulang_poli_pegawai(daftar_saran: list, pasien_dokter: bool 
 
 def gabung_saran_urinalisa_proteinuria(daftar_saran: list) -> list:
     """Kalau saran ISK/hematuria ('Cek ulang urinalisa ... Poli Pegawai
-    untuk X') muncul BERSAMA saran proteinuria ringan sendirian ('Cek ulang
-    urin, bila perlu konsultasi ke Dokter Umum Poli Pratama'), gabung jadi
-    SATU baris cek ulang ke Poli Pegawai saja, alasan dipisah koma --
-    dikonfirmasi dr. Vidya, 2026-08-03, kasus Martha Susanty NRM 185-10-73:
+    untuk X') muncul BERSAMA saran proteinuria ringan dan/atau
+    urobilinogenuria sendirian ('Cek ulang urin(alisa), bila perlu
+    konsultasi ke Dokter Umum Poli Pratama'), gabung jadi SATU baris cek
+    ulang ke Poli Pegawai saja, alasan dipisah koma -- dikonfirmasi dr.
+    Vidya, 2026-08-03, kasus Martha Susanty NRM 185-10-73 (proteinuria):
     dua baris 'cek ulang urin(alisa)' terpisah terasa dobel/redundan untuk
     dibaca walau tujuan aslinya beda (Poli Pegawai vs Poli Pratama).
+    Diperluas ke urobilinogenuria 2026-08-20 (kasus Desti Indrawantri NRM
+    406-53-41: ISK + urobilinogenuria masih tertulis 2 baris terpisah krn
+    urobilinogenuria belum pernah dicakup di fungsi ini).
 
     Kombinasi urinalisa lain (mis. proteinuria + silinder/glukosuria/
     albuminuria, tanpa ISK/hematuria) BELUM dicakup di sini -- baris
-    proteinuria dibiarkan apa adanya kalau tidak ada saran ISK/hematuria
-    yang bisa jadi tujuan gabungan (sesuai pola 'ditambah satu-satu saat
-    muncul' di GANTI_SARAN_PASIEN_DOKTER)."""
-    if SARAN_PROTEINURIA_RINGAN not in daftar_saran:
+    proteinuria/urobilinogenuria dibiarkan apa adanya kalau tidak ada saran
+    ISK/hematuria yang bisa jadi tujuan gabungan (sesuai pola 'ditambah
+    satu-satu saat muncul' di GANTI_SARAN_PASIEN_DOKTER)."""
+    standalone_hadir = [s for s in (SARAN_PROTEINURIA_RINGAN, SARAN_UROBILINOGENURIA) if s in daftar_saran]
+    if not standalone_hadir:
         return daftar_saran
     alasan_urin = None
     lainnya = []
     for s in daftar_saran:
         if s.startswith(PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI):
             alasan_urin = s[len(PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI):]
-        elif s == SARAN_PROTEINURIA_RINGAN:
+        elif s in standalone_hadir:
             continue  # dibuang, digabung ke baris ISK/hematuria di bawah
         else:
             lainnya.append(s)
     if alasan_urin is None:
-        return daftar_saran  # proteinuria sendirian, tidak ada yang digabung
-    gabungan = PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI + f"{alasan_urin}, proteinuria"
+        return daftar_saran  # standalone sendirian, tidak ada yang digabung
+    alasan_tambahan = []
+    if SARAN_PROTEINURIA_RINGAN in standalone_hadir:
+        alasan_tambahan.append("proteinuria")
+    if SARAN_UROBILINOGENURIA in standalone_hadir:
+        alasan_tambahan.append("urobilinogenuria")
+    gabungan = PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI + ", ".join([alasan_urin] + alasan_tambahan)
     return [gabungan] + lainnya
 
 
