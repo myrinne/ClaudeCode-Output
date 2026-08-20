@@ -305,10 +305,13 @@ def interpretasi_ginjal(status: str, riwayat_ggk: bool) -> Optional[tuple]:
         # curiga pasien sudah dalam kontrol rutin Sp.PD-KGH (mungkin sudah
         # hemodialisa), jadi wording "rutin" (bukan "cek ulang"/"suspek" spt
         # tier lain di bawah) dan flag MERAH -- lihat proses_pegawai() utk
-        # flag_alasan & suppression saran anemia terkait.
-        return ("Gangguan fungsi ginjal berat (eGFR sangat rendah)",
-                "Gangguan fungsi ginjal berat (eGFR sangat rendah, curiga sudah dalam kontrol rutin Sp.PD-KGH, "
-                "kemungkinan hemodialisa)",
+        # flag_alasan & suppression saran anemia terkait. Kesimpulan
+        # ditulis singkat ("Gangguan fungsi ginjal" saja, tanpa spekulasi
+        # eGFR/Sp.PD-KGH/hemodialisa) -- dikonfirmasi dr. Vidya, 2026-08-17,
+        # spekulasi itu cukup di flag_alasan internal untuk reviewer, bukan
+        # ditulis ke field EHR pasien.
+        return ("Gangguan fungsi ginjal",
+                "Gangguan fungsi ginjal",
                 "Konsultasi rutin ke Sp.PD-KGH terkait temuan gangguan fungsi ginjal", True)
     if status == "naik_ringan":
         # Kreatinin naik sendirian, eGFR masih normal (dikonfirmasi dr.

@@ -180,6 +180,13 @@ flag hijau) — 8 field + approve+kirim berhasil terverifikasi.
 - **Urinalisa**: albumin+darah bersamaan & keduanya cuma "Trace" → saran
   ringan "Cek ulang urinalisa, bila perlu konsultasi ke Dokter Umum
   Klinik Pratama" (bukan "Konsultasi dokter" biasa).
+- **eGFR sangat rendah** (revisi dr. Vidya, 2026-08-17): kesimpulan yang
+  ditulis ke field EHR (lab & kesimpulan gabungan) cukup "Gangguan fungsi
+  ginjal" saja — TIDAK menyebut "berat", angka eGFR, atau spekulasi
+  "curiga sudah dalam kontrol rutin Sp.PD-KGH, kemungkinan hemodialisa".
+  Spekulasi itu tetap ada di `flag_alasan` internal (console/notes.md,
+  bukan field EHR) untuk membantu reviewer manusia menilai sebelum
+  approve — kasus pemicu: NRM 421-89-50, ditahan lalu diperbaiki manual.
 
 ---
 
