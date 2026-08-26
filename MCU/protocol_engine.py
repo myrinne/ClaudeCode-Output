@@ -420,8 +420,13 @@ def interpretasi_urinalisa(status: str, leukosituria_detail: Optional[str] = Non
         "proteinuria_ringan": ("Proteinuria", "Proteinuria",
                                 "Cek ulang urin, bila perlu konsultasi ke Dokter Umum Poli Pratama"),
         "albuminuria": ("Albuminuria", "Albuminuria", "Konsultasi dokter untuk albuminuria"),
+        # Direvisi dr. Vidya, 2026-08-25: saran lama "Konsultasi dokter untuk
+        # albuminuria dan hematuria" diganti pola "Cek ulang urin ... Poli
+        # Pegawai" spt temuan urinalisa lain (hematuria/leukosituria dst),
+        # supaya konsisten -- bukan langsung "konsultasi dokter" tanpa cek
+        # ulang dulu.
         "albuminuria_hematuria": ("Albuminuria dan hematuria", "Ditemukan albumin dan darah pada urin",
-                                   "Konsultasi dokter untuk albuminuria dan hematuria"),
+                                   "Cek ulang urin dan bila perlu konsultasi Dokter Umum Poli Pegawai untuk temuan urinalisa"),
         # Albumin & darah SAMA-SAMA cuma trace -> saran lebih ringan (dikonfirmasi Anda)
         "albuminuria_hematuria_trace": ("Albuminuria dan hematuria (trace)", "Ditemukan albumin dan darah pada urin (trace)",
                                           "Cek ulang urinalisa, bila perlu konsultasi ke Dokter Umum Klinik Pratama"),

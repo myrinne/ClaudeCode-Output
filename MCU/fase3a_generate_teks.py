@@ -94,7 +94,8 @@ SARAN_PROTEINURIA_RINGAN = "Cek ulang urin, bila perlu konsultasi ke Dokter Umum
 SARAN_UROBILINOGENURIA = "Cek ulang urinalisa, bila perlu konsultasi ke Dokter Umum Poli Pratama"
 SARAN_KRISTAL = "Cek ulang urinalisa untuk kristal dalam urin"
 SARAN_KRISTAL_PROTEINURIA = "Cek ulang urinalisa untuk kristal dalam urin, proteinuria, bila perlu konsultasi ke Dokter Umum Poli Pratama"
-SARAN_ALBUMINURIA_HEMATURIA = "Konsultasi dokter untuk albuminuria dan hematuria"
+SARAN_ALBUMINURIA_HEMATURIA = "Cek ulang urin dan bila perlu konsultasi Dokter Umum Poli Pegawai untuk temuan urinalisa"
+PREFIX_MOHON_MELENGKAPI = "Mohon melengkapi pemeriksaan "
 
 # Saran yang diganti langsung ke spesialis (skip Dokter Umum/Poli Pratama)
 # kalau pasien_dokter=True — dikonfirmasi Anda per kasus, ditambah satu-satu
@@ -423,6 +424,19 @@ SARAN_TD_PREHIPERTENSI = "Periksa tekanan darah secara teratur, modifikasi gaya 
 SARAN_TD_PREHIPERTENSI_SINGKAT = "Periksa tekanan darah secara teratur"
 
 
+def gabung_saran_mohon_melengkapi(daftar_saran: list) -> list:
+    """Saran urinalisa belum dilakukan ('Mohon melengkapi pemeriksaan
+    urinalisa') dan radiologi belum dilakukan ('Mohon melengkapi pemeriksaan
+    radiologi') masing-masing ditambahkan berdiri sendiri ke saran_set kalau
+    tidak lewat cabang LANGKAH 1 data_belum_lengkap (lihat protocol_engine.py
+    -- LANGKAH 1 sudah punya penggabungannya sendiri ke kalimat 'Mohon segera
+    lengkapi: ...'). Kalau keduanya muncul BERSAMA di jalur biasa ini, gabung
+    jadi SATU kalimat 'Mohon melengkapi pemeriksaan urinalisa, radiologi' --
+    dikonfirmasi dr. Vidya, 2026-08-25: dua kalimat 'Mohon...' terpisah
+    terasa dobel, sama pola dengan gabungan saran lain di file ini."""
+    return _gabung_saran_by_prefix(daftar_saran, PREFIX_MOHON_MELENGKAPI)
+
+
 def dedup_modifikasi_gaya_hidup(daftar_saran: list) -> list:
     """Kalau saran TD Pre-hipertensi ('...modifikasi gaya hidup') muncul
     BERSAMA saran lain yang sudah menyebut 'modifikasi gaya hidup' sendiri
@@ -474,6 +488,7 @@ def format_saran(hasil, nama: str = "") -> str:
     daftar = hasil.saran
     if pasien_dokter:
         daftar = [GANTI_SARAN_PASIEN_DOKTER.get(s, s) for s in daftar]
+    daftar = gabung_saran_mohon_melengkapi(daftar)
     daftar = gabung_saran_obesitas_kolesterol_gaya_hidup(daftar)
     daftar = dedup_modifikasi_gaya_hidup(daftar)
     daftar = gabung_saran_poli_pegawai(daftar, pasien_dokter)
