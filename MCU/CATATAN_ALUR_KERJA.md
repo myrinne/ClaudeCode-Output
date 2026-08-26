@@ -207,6 +207,13 @@ flag hijau) — 8 field + approve+kirim berhasil terverifikasi.
 - **Leukopenia** (revisi dr. Vidya, 2026-08-26): saran "Cek ulang dan bila
   perlu konsultasi ke Dokter Umum Poli Pegawai terkait temuan Leukopenia"
   — dipindah dari Sp.PD Divisi HOM, disamakan dengan pola leukositosis.
+- **CTR (Cardio-Thoracic Ratio) pada rontgen thorax** (dikonfirmasi dr.
+  Vidya, 2026-08-26): baris "Cor CTR=NN%" dengan CTR ≤55% diabaikan
+  sepenuhnya (bukan temuan, tidak dapat saran apa pun — kasus pemicu:
+  "Cor CTR= 51%" sempat keliru dianggap temuan tak dikenal dan memicu
+  rujukan generik Sp.PD Divisi KP). CTR >55% dapat saran "Konsultasi ke
+  Dokter Spesialis Penyakit Dalam divisi KKV terkait temuan rontgen
+  thorax".
 
 ---
 

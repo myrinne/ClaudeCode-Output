@@ -6,6 +6,7 @@ Program ini MURNI KALKULATOR TEKS. Tidak membuka browser, tidak menyentuh
 website RSCM, tidak menyimpan data ke mana pun. Input manual -> output teks.
 """
 
+import re
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -593,12 +594,46 @@ def _ada_kata_kunci_di_baris_temuan(teks_kesimpulan_radiologi: str, kata_kunci: 
 # kedua ejaan.
 KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibanding", "tidak membesar")
 
+# CTR (Cardio-Thoracic Ratio) baris (mis. "Cor CTR=51%", "CTR =51 %") --
+# dikonfirmasi dr. Vidya, 2026-08-26: CTR sampai dengan 55% diabaikan
+# (tidak perlu saran, sama seperti kata kunci kardiomegali di atas -- masih
+# dalam batas normal/borderline), CTR > 55% baru dianggap temuan sungguhan
+# dan diarahkan ke Sp.PD Divisi KKV (lihat _ada_ctr_tinggi() dan pemanggilan
+# di proses_pegawai() di bawah). Kasus pemicu: "Cor CTR= 51%" keliru
+# dianggap temuan tak dikenal dan memicu rujukan generik Sp.PD Divisi KP.
+CTR_BATAS_ABAIKAN = 55.0
+
+
+def _ctr_persen(baris: str) -> Optional[float]:
+    """Ekstrak angka CTR (%) dari satu baris rontgen. Radiolog kadang beda
+    spasi di sekitar '=' dan '%' (mis. 'CTR=51%', 'CTR =51 %', 'CTR= 51%')
+    -- regex ini menangkap semua variasi itu. Return None kalau baris tidak
+    menyebut CTR sama sekali."""
+    m = re.search(r'ctr\s*=?\s*(\d+(?:[.,]\d+)?)\s*%', baris, re.IGNORECASE)
+    if not m:
+        return None
+    return float(m.group(1).replace(",", "."))
+
+
+def _ada_ctr_tinggi(teks_kesimpulan_radiologi: str) -> bool:
+    """True kalau ADA baris temuan yang menyebut CTR > CTR_BATAS_ABAIKAN."""
+    baris_temuan = _baris_temuan_radiologi(teks_kesimpulan_radiologi)
+    return any((ctr := _ctr_persen(b)) is not None and ctr > CTR_BATAS_ABAIKAN for b in baris_temuan)
+
 
 def _baris_temuan_radiologi(teks_kesimpulan_radiologi: str) -> list:
     if not teks_kesimpulan_radiologi:
         return []
     baris_list = [b.strip().lstrip("-").strip() for b in teks_kesimpulan_radiologi.split("\n") if b.strip()]
-    return [b for b in baris_list if not any(k in b.lower() for k in KATA_KUNCI_BUKAN_TEMUAN)]
+    hasil = []
+    for b in baris_list:
+        if any(k in b.lower() for k in KATA_KUNCI_BUKAN_TEMUAN):
+            continue
+        ctr = _ctr_persen(b)
+        if ctr is not None and ctr <= CTR_BATAS_ABAIKAN:
+            continue  # CTR <=55% diabaikan, bukan temuan (dikonfirmasi dr. Vidya, 2026-08-26)
+        hasil.append(b)
+    return hasil
 
 
 def hanya_fibrosis_kalsifikasi(teks_kesimpulan_radiologi: str) -> bool:
@@ -959,8 +994,16 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                 # kemungkinan keganasan lain saja). ATAU kalau mengarah
                 # Sp.PD-PMK (fibrosis + bronkiektasis/bulae/hiperinflasi,
                 # "DD/ proses lama" -- pola penyakit paru struktural kronis,
-                # dikonfirmasi dr. Vidya 2026-08-13, kasus 428-45-13).
-                if _ada_kata_kunci_di_baris_temuan(hasil.kesimpulan_radiologi, KATA_KUNCI_ARAH_SP_PARU):
+                # dikonfirmasi dr. Vidya 2026-08-13, kasus 428-45-13). ATAU
+                # CTR > 55% (dikonfirmasi dr. Vidya, 2026-08-26) -- diarahkan
+                # ke Sp.PD Divisi KKV, bukan default generik (CTR <=55%
+                # sudah difilter jadi bukan-temuan di _baris_temuan_radiologi(),
+                # jadi tidak akan sampai ke cabang ini sama sekali).
+                if _ada_ctr_tinggi(hasil.kesimpulan_radiologi):
+                    tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
+                                  "Konsultasi ke Dokter Spesialis Penyakit Dalam divisi KKV terkait temuan rontgen thorax", False)
+                    # TIDAK set bedah_generik_ditambahkan, alasan sama spt kasus Paru/PMK di bawah.
+                elif _ada_kata_kunci_di_baris_temuan(hasil.kesimpulan_radiologi, KATA_KUNCI_ARAH_SP_PARU):
                     # Tidak ada Sp. Paru di RSCM -- diarahkan ke Sp.PD Divisi
                     # KP, dikonfirmasi dr. Vidya, 2026-08-20.
                     tambah_temuan("Kelainan radiologis thorax (perlu konfirmasi Anda untuk saran spesialis)",
