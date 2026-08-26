@@ -204,6 +204,9 @@ flag hijau) — 8 field + approve+kirim berhasil terverifikasi.
   kardiomegali tunggal keliru dianggap "temuan tak dikenal" dan memicu
   rujukan generik. Filter kata kunci diperluas dari "dibandingkan" jadi
   substring "dibanding" supaya menangkap kedua ejaan.
+- **Leukopenia** (revisi dr. Vidya, 2026-08-26): saran "Cek ulang dan bila
+  perlu konsultasi ke Dokter Umum Poli Pegawai terkait temuan Leukopenia"
+  — dipindah dari Sp.PD Divisi HOM, disamakan dengan pola leukositosis.
 
 ---
 

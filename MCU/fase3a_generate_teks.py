@@ -200,8 +200,10 @@ def gabung_saran_poli_pegawai(daftar_saran: list, pasien_dokter: bool = False) -
 
 def gabung_saran_sppd_hom(daftar_saran: list) -> list:
     """Sama seperti gabung_saran_poli_pegawai() tapi utk saran yang menuju
-    Sp.PD Divisi HOM (trombositosis, leukopenia, eritrosit, kombinasi
-    Hb+eritrosit) — dikonfirmasi dr. Vidya, 2026-07-28."""
+    Sp.PD Divisi HOM (trombositosis, eritrosit, kombinasi Hb+eritrosit) —
+    dikonfirmasi dr. Vidya, 2026-07-28. Leukopenia DIKELUARKAN dari grup
+    ini 2026-08-26 — cukup ke Dokter Umum Poli Pegawai, lihat
+    interpretasi_leukosit() di protocol_engine.py."""
     return _gabung_saran_by_prefix(daftar_saran, PREFIX_SPPD_HOM)
 
 
@@ -210,11 +212,13 @@ SARAN_ANEMIA_BERAT = "Segera lakukan konsultasi ke Dokter Spesialis Penyakit Dal
 
 def gabung_saran_anemia_berat_hom(daftar_saran: list) -> list:
     """Kalau anemia berat (SARAN_ANEMIA_BERAT, wajib/urgent) muncul BERSAMA
-    saran lain yang menuju Sp.PD Divisi HOM (leukopenia/trombositosis/
-    eritrosit/LED, PREFIX_SPPD_HOM), gabung jadi SATU baris -- keduanya
-    sebenarnya divisi yang sama (HOM/KHOM cuma beda penulisan), jadi terasa
-    dobel kalau dipisah 2 kalimat -- dikonfirmasi dr. Vidya, 2026-08-05,
-    kasus Aris Miyanti NRM 204-06-63 (anemia berat + leukopenia). Tetap
+    saran lain yang menuju Sp.PD Divisi HOM (trombositosis/eritrosit/LED,
+    PREFIX_SPPD_HOM), gabung jadi SATU baris -- keduanya sebenarnya divisi
+    yang sama (HOM/KHOM cuma beda penulisan), jadi terasa dobel kalau
+    dipisah 2 kalimat -- dikonfirmasi dr. Vidya, 2026-08-05, kasus Aris
+    Miyanti NRM 204-06-63 (anemia berat + leukopenia, saat itu leukopenia
+    masih menuju Sp.PD HOM juga; sejak 2026-08-26 leukopenia dipindah ke
+    Dokter Umum Poli Pegawai dan tidak lagi ikut tergabung di sini). Tetap
     pakai kalimat 'Segera lakukan' (urgent) krn anemia berat wajib
     intervensi; naming diseragamkan jadi 'Sp.PD Divisi HOM'.
 

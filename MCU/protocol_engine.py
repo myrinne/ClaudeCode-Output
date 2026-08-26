@@ -169,15 +169,14 @@ def interpretasi_leukosit(status: str) -> Optional[tuple]:
         return (kesimpulan, kesimpulan,
                 f"Cek ulang dan bila perlu konsultasi ke Dokter Umum Poli Pegawai terkait temuan {kesimpulan}", False)
     if status == "leukopenia":
-        # Wording disamakan persis dengan pola "...terkait temuan X" yang
-        # dipakai LED/eritrosit di bawah (dikonfirmasi dr. Vidya,
-        # 2026-07-28) -- supaya kalau >1 temuan sama-sama mengarah ke
-        # Sp.PD Divisi HOM, digabung otomatis oleh gabung_saran_sppd_hom()
-        # di fase3a_generate_teks.py, bukan jadi 2 kalimat terpisah yang
-        # keduanya bilang "konsultasi Sp.PD Divisi HOM".
+        # Direvisi dr. Vidya, 2026-08-26: leukopenia cukup ke Dokter Umum
+        # Poli Pegawai saja (bukan langsung Sp.PD Divisi HOM) -- disamakan
+        # dgn pola leukositosis di atas, supaya kalau >1 temuan sama-sama
+        # mengarah ke Poli Pegawai, digabung otomatis oleh
+        # gabung_saran_cek_ulang_poli_pegawai() di fase3a_generate_teks.py.
         kesimpulan = "Leukopenia"
         return (kesimpulan, kesimpulan,
-                f"Cek ulang dan bila perlu konsultasi ke Sp.PD Divisi HOM terkait temuan {kesimpulan}", False)
+                f"Cek ulang dan bila perlu konsultasi ke Dokter Umum Poli Pegawai terkait temuan {kesimpulan}", False)
     return None
 
 
