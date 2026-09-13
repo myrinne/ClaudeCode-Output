@@ -151,6 +151,14 @@ GANTI_SARAN_PASIEN_DOKTER = {
     # oleh gabung_saran_poli_pegawai().
     "Cek GD2PP dan konsultasi Poli Pegawai untuk GDP terganggu":
         "Cek GD2PP dan bila perlu lakukan tatalaksana terkait GDP terganggu",
+    # Urinalisa trace/silinder (albuminuria_hematuria_trace, silinder,
+    # silinder_albuminuria, silinder_albuminuria_trace -- semua share teks
+    # saran yang sama persis di protocol_engine.py) -- dikonfirmasi dr.
+    # Vidya, 2026-09-13, kasus NRM 433-06-75 -- sama alasan spt kasus-kasus
+    # lain di atas, tidak masuk akal menyuruh dokter konsultasi ke Dokter
+    # Umum Klinik Pratama untuk temuannya sendiri.
+    "Cek ulang urinalisa, bila perlu konsultasi ke Dokter Umum Klinik Pratama":
+        "Cek ulang urinalisa, bila perlu lakukan tatalaksana terhadap temuan urinalisa",
 }
 
 
