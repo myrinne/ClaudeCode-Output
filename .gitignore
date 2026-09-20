@@ -24,3 +24,7 @@ MCU/draft_fase3.json
 OCR pdf to ppt/output folder/
 MCU/notes.md
 MCU/notes_*.md
+
+# Screenshot Sorter: manifest holds extracted text from personal screenshots
+Screenshot Sorter/data/
+Screenshot Sorter/.env

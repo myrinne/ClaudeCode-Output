@@ -1,0 +1,26 @@
+{
+  "screenshot_dir": "C:/Users/vidya/OneDrive/Pictures(1)/Screenshots 1",
+  "to_delete_dir": "C:/Users/vidya/OneDrive/Pictures(1)/Screenshots 1_to-delete",
+  "vault_dir": "C:/Users/vidya/OneDrive/Documents/Obsidian-Vidya",
+  "daily_notes_dir": "0. INBOX (Daily Notes)",
+  "daily_template": "6. TEMPLATES (Format Catatan Otomatis)/Template Daily Notes.md",
+  "category_root": "3. RESOURCES (Pusat Referensi & Minat)/Screenshots",
+  "attachments_dir": "99. ATTACHMENTS/Screenshots",
+  "review_note": "88. AI AGENTS WORKPLACE/03. Active Processing (WIP)/Screenshot Review.md",
+  "model": "claude-haiku-4-5",
+  "price_per_mtok": { "input": 1.0, "output": 5.0 },
+  "max_image_edge": 1568,
+  "phash_distance": 4,
+  "categories": {
+    "thesis":     { "folder": "Tesis",                "tags": ["domain/thesis"] },
+    "board-exam": { "folder": "Board Exam",           "tags": ["domain/board-exam"] },
+    "occ-med":    { "folder": "Okupasi Klinis",       "tags": ["domain/occupational-medicine"] },
+    "env-health": { "folder": "Kesehatan Lingkungan", "tags": ["domain/environmental-health"] },
+    "ai-tools":   { "folder": "AI Tools",             "tags": ["domain/ai-tools"] },
+    "chat":       { "folder": "Chat",                 "tags": ["source/meeting"] },
+    "schedule":   { "folder": "Jadwal",               "tags": [] },
+    "reference":  { "folder": "Referensi",            "tags": ["source/article"] },
+    "personal":   { "folder": "Personal",             "tags": [] },
+    "sensitive":  { "folder": "Sensitive",            "tags": ["airestricted"] }
+  }
+}
