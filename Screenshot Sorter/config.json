@@ -21,6 +21,7 @@
     "schedule":   { "folder": "Jadwal",               "tags": [] },
     "reference":  { "folder": "Referensi",            "tags": ["source/article"] },
     "personal":   { "folder": "Personal",             "tags": [] },
+    "admin":      { "folder": "Administrasi & Organisasi", "tags": [] },
     "sensitive":  { "folder": "Sensitive",            "tags": ["airestricted"] }
   }
 }

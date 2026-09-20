@@ -158,7 +158,7 @@ def build_schema():
 
     class Extraction(BaseModel):
         category: Literal["thesis", "board-exam", "occ-med", "env-health", "ai-tools",
-                          "chat", "schedule", "reference", "personal", "sensitive"]
+                          "chat", "schedule", "reference", "personal", "admin", "sensitive"]
         title: str = Field(description="Short descriptive title, max 80 characters")
         summary: str = Field(description="1-3 sentences capturing what this screenshot is about")
         key_facts: list[str] = Field(description="Bullet-ready facts: names, numbers, dates, decisions, action items — verbatim where possible")
@@ -189,6 +189,7 @@ CATEGORIES (choose exactly one):
 - schedule: timetables, agendas, event posters, webinar announcements, calendars, deadlines
 - reference: articles, journal abstracts, social media posts (Instagram/X/LinkedIn), quotes, general knowledge, book pages that do not fit a domain above
 - personal: receipts, orders, shopping, travel bookings, photos, memes, family, hobbies, misc
+- admin: organizational/administrative work — PERDOKI, IOMU, PPDS/FKUI administration, event registration, invoices for professional events, membership, forms, letters
 - sensitive: patient-identifiable data, medical record numbers (NRM), ID cards/passports, bank or card details, passwords. ONLY use this if the data is truly identifying — anonymised clinical teaching material is NOT sensitive.
 
 LANGUAGE: write title, summary and key_facts in the same language as the screenshot's dominant text (Indonesian or English). If there is no text, use Indonesian. Tags are always English.
@@ -544,6 +545,47 @@ def cmd_apply(cfg: dict, args) -> None:
     print(f"\nApplied: {counts}")
 
 
+def cmd_prepare_manual(cfg: dict, args) -> None:
+    """Write a queue of pending screenshots for extraction inside a Claude Code session
+    (uses the subscription instead of API credits). Pair with `import-manual`."""
+    records = load_manifest()
+    recs = select_records(cfg, records, args)
+    save_manifest(records)
+    queue = [{"id": r["id"], "filename": r["filename"], "path": r["path"], "taken_at": r["taken_at"]}
+             for r in recs if r["status"] == "new"]
+    out = DATA_DIR / "manual_queue.json"
+    out.write_text(json.dumps(queue, ensure_ascii=False, indent=1), encoding="utf-8")
+    dups = sum(1 for r in recs if r.get("dup_of"))
+    print(f"Queued {len(queue)} screenshot(s) for manual extraction ({dups} duplicate(s) auto-flagged) -> {out}")
+
+
+def cmd_import_manual(cfg: dict, args) -> None:
+    """Merge extraction JSON produced in-session: a list of objects, each = Extraction fields + "id"."""
+    records = load_manifest()
+    schema = build_schema()
+    imported = 0
+    for file in args.files:
+        items = json.loads(Path(file).read_text(encoding="utf-8"))
+        for item in items:
+            rec = records.get(item.get("id"))
+            if rec is None:
+                print(f"  unknown id {item.get('id')}, skipping")
+                continue
+            parsed = schema.model_validate({k: v for k, v in item.items() if k != "id"})
+            rec["extraction"] = parsed.model_dump()
+            if parsed.sensitive:
+                rec["extraction"]["category"] = "sensitive"
+                rec["extraction"]["suggested_action"] = "keep"
+            rec["status"] = "extracted"
+            rec["usage"] = None  # subscription-billed, no API cost
+            rec["extracted_at"] = datetime.now().isoformat(timespec="seconds")
+            rec["extracted_by"] = "manual"
+            imported += 1
+    save_manifest(records)
+    review = write_review_note(cfg, [r for r in records.values() if r["status"] == "extracted"])
+    print(f"Imported {imported} extraction(s). Review note: {review}")
+
+
 def cmd_status(cfg: dict, args) -> None:
     records = load_manifest()
     files = scan_screenshots(cfg)
@@ -580,11 +622,18 @@ def main() -> None:
     selection(p)
     p.add_argument("--dry-run", action="store_true", help="show what would happen, write nothing")
 
+    p = sub.add_parser("prepare-manual", help="queue pending screenshots for in-session (Claude Code) extraction")
+    selection(p)
+
+    p = sub.add_parser("import-manual", help="merge extraction JSON files produced in-session into the manifest")
+    p.add_argument("files", nargs="+")
+
     sub.add_parser("status", help="show manifest counts and cost")
 
     args = ap.parse_args()
     cfg = load_config()
-    {"extract": cmd_extract, "apply": cmd_apply, "status": cmd_status}[args.cmd](cfg, args)
+    {"extract": cmd_extract, "apply": cmd_apply, "status": cmd_status,
+     "prepare-manual": cmd_prepare_manual, "import-manual": cmd_import_manual}[args.cmd](cfg, args)
 
 
 if __name__ == "__main__":
