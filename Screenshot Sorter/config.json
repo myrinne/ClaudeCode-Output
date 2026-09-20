@@ -7,6 +7,7 @@
   "category_root": "3. RESOURCES (Pusat Referensi & Minat)/Screenshots",
   "attachments_dir": "99. ATTACHMENTS/Screenshots",
   "review_note": "88. AI AGENTS WORKPLACE/03. Active Processing (WIP)/Screenshot Review.md",
+  "write_daily_notes": false,
   "model": "claude-haiku-4-5",
   "price_per_mtok": { "input": 1.0, "output": 5.0 },
   "max_image_edge": 1568,
