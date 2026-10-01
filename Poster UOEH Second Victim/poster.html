@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Second Victim Poster UOEH</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  @page { size: 900mm 1800mm; margin: 0; }
+  :root{
+    --g900:#0B4A3A; --g700:#2E6B57; --g500:#5E8F79; --sage:#8FAE9B; --sage-l:#DCE6DE;
+    --cream:#F7F5EC; --lime:#C5D86D; --lime-d:#9DB33F; --ink:#1E2B26; --muted:#5B6B64; --grey:#CBD2CE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:900mm;height:1800mm}
+  body{background:var(--cream);font-family:Inter,Arial,sans-serif;color:var(--ink);font-size:29pt;line-height:1.34}
+  .poster{width:900mm;height:1800mm;position:relative;overflow:hidden;display:flex;flex-direction:column}
+  sup{font-size:.6em;line-height:0}
+  b,strong{font-weight:700}
+
+  /* header */
+  header{background:var(--g900);color:#fff;padding:22mm 40mm 18mm;display:grid;grid-template-columns:150mm 1fr 95mm;align-items:center;gap:20mm;position:relative}
+  header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5mm;background:var(--lime)}
+  .logo-box{background:#fff;border-radius:6mm;display:flex;align-items:center;justify-content:center;padding:6mm}
+  .logo-box img{max-width:100%;max-height:62mm;display:block}
+  h1{font-size:68pt;line-height:1.08;font-weight:800;letter-spacing:-.5pt}
+  .authors{margin-top:8mm;font-size:32pt;font-weight:600;color:var(--lime)}
+  .affil{margin-top:3mm;font-size:21pt;color:#d6e3dc;line-height:1.35}
+
+  main{flex:1;padding:16mm 40mm 0;display:flex;flex-direction:column;gap:20mm}
+
+  /* key numbers */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10mm}
+  .stat{background:#fff;border-radius:8mm;padding:9mm 10mm;border-top:5mm solid var(--g900);box-shadow:0 1mm 0 var(--grey)}
+  .stat .n{font-size:92pt;font-weight:900;color:var(--g900);line-height:1}
+  .stat .n small{font-size:.5em;font-weight:800;color:var(--g700)}
+  .stat .l{font-size:22pt;color:var(--muted);margin-top:3mm;line-height:1.25}
+  .stat.accent{border-top-color:var(--lime-d)}
+
+  /* cards */
+  .row{display:grid;gap:12mm}
+  .card{background:#fff;border-radius:8mm;padding:11mm 12mm}
+  .h{display:flex;align-items:center;gap:5mm;font-size:38pt;font-weight:800;color:var(--g900);margin-bottom:6mm;line-height:1.1}
+  .h .ic{width:17mm;height:17mm;border-radius:50%;background:var(--g900);display:flex;align-items:center;justify-content:center;flex:none}
+  .h .ic svg{width:10mm;height:10mm}
+  .num{display:inline-flex;width:15mm;height:15mm;border-radius:50%;background:var(--lime);color:var(--g900);font-size:24pt;font-weight:900;align-items:center;justify-content:center;flex:none}
+  ul{padding-left:9mm} li{margin-bottom:3mm}
+  li::marker{color:var(--g500)}
+  .sub{font-weight:700;color:var(--g700)}
+  .kv{display:grid;grid-template-columns:44mm 1fr;gap:3mm 6mm;font-size:25pt}
+  .kv dt{font-weight:700;color:var(--g700)}
+
+  /* pathway */
+  .main-visual{background:#fff;border-radius:8mm;padding:12mm 12mm 12mm}
+  .mv-grid{display:grid;grid-template-columns:470mm 1fr;gap:12mm}
+  .tier{border-radius:6mm;padding:6mm 7mm 7mm;margin-bottom:6mm;position:relative}
+  .tier .tl{font-size:21pt;font-weight:800;letter-spacing:1pt;text-transform:uppercase;margin-bottom:4mm;display:flex;justify-content:space-between}
+  .tier .tl span:last-child{font-weight:600;text-transform:none;letter-spacing:0;opacity:.85}
+  .t1{background:#EAF0EC}.t1 .tl{color:var(--g700)}
+  .t2{background:#F1F5DD}.t2 .tl{color:#6E7F22}
+  .t3{background:#E2ECE6}.t3 .tl{color:var(--g900)}
+  .step{display:grid;grid-template-columns:15mm 1fr;gap:5mm;align-items:center;background:#fff;border-radius:4mm;padding:5mm 7mm;font-size:25.5pt;line-height:1.27;position:relative}
+  .step + .step{margin-top:6mm}
+  .step + .step::before{content:"";position:absolute;left:13.5mm;top:-6mm;height:6mm;border-left:1.2mm solid var(--sage)}
+  .step .num{width:13mm;height:13mm;font-size:20pt}
+  .t1 .num{background:var(--g700);color:#fff}
+  .t3 .num{background:var(--g900);color:#fff}
+  .branch{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:6mm}
+  .br{border-radius:4mm;padding:5mm 7mm;font-size:23.5pt;line-height:1.25;border:1mm solid}
+  .br.ok{border-color:var(--sage);background:#fff}
+  .br.ref{border-color:var(--lime-d);background:#FAFCEF}
+  .br b{display:block;font-size:24.5pt;margin-bottom:1mm}
+  .twoway{display:flex;align-items:center;gap:3mm;font-weight:700;color:var(--g700);font-size:21pt;margin-top:2mm}
+  .foot{font-size:18pt;color:var(--muted);margin-top:2mm}
+
+  .hero{width:100%;display:block}
+  .svest{background:var(--cream);border-radius:6mm;padding:8mm 9mm;margin-top:4mm}
+  .svest .h{font-size:30pt;margin-bottom:3mm}
+  .svest p{font-size:21.5pt;line-height:1.3;margin-bottom:4mm}
+  .bar{display:grid;grid-template-columns:1fr 55mm 22mm;align-items:center;gap:3mm;font-size:21pt;margin-bottom:3mm}
+  .bar .track{height:7mm;background:var(--sage-l);border-radius:3.5mm;position:relative}
+  .bar .fill{position:absolute;left:0;top:0;bottom:0;width:75%;background:var(--sage);border-radius:3.5mm}
+  .bar .cut{position:absolute;top:-2mm;bottom:-2mm;left:75%;border-left:1.2mm solid var(--g900)}
+  .bar .v{font-weight:700;color:var(--g900);text-align:right}
+
+  .legend{font-size:20pt;color:var(--muted)}
+  .ind{font-size:22.5pt;line-height:1.27}
+  .ind .dom{font-weight:800;color:var(--g700);margin:3mm 0 1.5mm;font-size:20pt;text-transform:uppercase;letter-spacing:.8pt}
+  .ind div.i{display:grid;grid-template-columns:9mm 1fr auto;gap:3mm;margin-bottom:1.6mm;align-items:baseline}
+  .ck{color:var(--g700);font-weight:900}.nx{color:#A0A9A4;font-weight:900}
+  .tag{display:inline-block;background:var(--lime);color:var(--g900);font-size:14pt;font-weight:800;border-radius:2mm;padding:0 2mm;margin-left:2mm;vertical-align:middle}
+  .val{font-weight:700;color:var(--g900);white-space:nowrap}
+
+  .disc{columns:2;column-gap:14mm;font-size:26pt;line-height:1.36}
+  .disc p{break-inside:avoid;margin-bottom:4.5mm}
+  .disc p b{color:var(--g900)}
+
+  .concl{background:var(--g900);color:#fff;border-radius:8mm;padding:11mm 14mm;display:grid;grid-template-columns:auto 1fr;gap:10mm;align-items:center}
+  .concl .lab{font-size:38pt;font-weight:900;color:var(--lime);line-height:1.05}
+  .concl p{font-size:28pt;line-height:1.32;font-weight:500}
+
+  footer{padding:20mm 40mm 16mm;font-size:18.5pt;line-height:1.3;color:var(--muted);display:grid;grid-template-columns:1fr;gap:2mm}
+  footer h4{font-size:22pt;color:var(--g900);margin-bottom:2mm}
+  footer ol{padding-left:9mm;columns:2;column-gap:12mm}
+  footer li{margin-bottom:1.6mm;break-inside:avoid}
+</style>
+</head>
+<body>
+<div class="poster">
+
+<header>
+  <div class="logo-box"><img src="assets/Logo RSCM.png" alt="RSCM"></div>
+  <div>
+    <h1>Second Victim Support System and Wellness Warriors: An Integrative Strategy for Safeguarding Healthcare Worker Well-being in Hospitals</h1>
+    <div class="authors">Astri Mulyantini Monik<sup>1</sup>, Vidya Cecilia<sup>2</sup></div>
+    <div class="affil"><sup>1</sup> Dr. Cipto Mangunkusumo National General Hospital, Jakarta, Indonesia &nbsp;·&nbsp; <sup>2</sup> Occupational Medicine Residency Program, Faculty of Medicine, Universitas Indonesia, Jakarta, Indonesia</div>
+  </div>
+  <div class="logo-box"><img src="assets/Logo UI.png" alt="Universitas Indonesia"></div>
+</header>
+
+<main>
+
+  <section class="stats">
+    <div class="stat"><div class="n">280</div><div class="l">healthcare workers identified and offered support</div></div>
+    <div class="stat"><div class="n">9<small>/9</small></div><div class="l">sentinel event RCAs with second victim follow-up</div></div>
+    <div class="stat"><div class="n">136</div><div class="l">Wellness Warriors trained across 57 units</div></div>
+    <div class="stat accent"><div class="n">8<small>/11</small></div><div class="l">international consensus indicators achieved</div></div>
+  </section>
+
+  <section class="row" style="grid-template-columns:1fr 1fr">
+    <div class="card">
+      <div class="h"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C5D86D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17.5v.5"/></svg></span>Background</div>
+      <ul>
+        <li>Patient safety incidents can turn involved healthcare workers (HCWs) into <b>second victims</b>: psychological distress, burnout, and loss of professional confidence.</li>
+        <li>Most support programmes depend on <b>self-referral</b>, so the affected population remains unknown.</li>
+        <li>International consensus now uses <i>support provided / second victims identified</i> as a core indicator,<sup>1</sup> yet reports from Southeast Asia are scarce.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="h"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C5D86D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="#C5D86D"/></svg></span>Objective &amp; Methods</div>
+      <p style="margin-bottom:5mm">To describe how Wellness Warriors are integrated with second victim management and root cause analysis (RCA), and to map programme performance against 11 international consensus indicators.</p>
+      <dl class="kv">
+        <dt>Design</dt><dd>Descriptive implementation study, document review</dd>
+        <dt>Setting</dt><dd>RSCM, Indonesia's national referral hospital (~5,300 staff, 57 units)</dd>
+        <dt>Period</dt><dd>January to August 2026</dd>
+        <dt>Framework</dt><dd>Scott's three-tiered model;<sup>2</sup> 25-item Indonesian SVEST;<sup>3</sup> 11 consensus indicators<sup>1</sup></dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="main-visual">
+    <div class="h"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C5D86D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9z"/></svg></span>Wellness Warriors Support Pathway</div>
+    <div class="mv-grid">
+      <div>
+        <div class="tier t1">
+          <div class="tl"><span>Tier 1 · Unit-level identification</span><span>Quality Team &amp; IKL-K3RS</span></div>
+          <div class="step"><span class="num">1</span><div><b>Sentinel / adverse event</b> occurs and an incident report is filed.</div></div>
+          <div class="step"><span class="num">2</span><div>The <b>Quality Team</b> (Risk Management, Quality and Cost Control) conducts a <b>non-punitive RCA</b>.</div></div>
+          <div class="step"><span class="num">3</span><div><b>IKL-K3RS</b> joins the RCA and identifies staff involved who may be second victims.</div></div>
+          <div class="step"><span class="num">4</span><div>IKL-K3RS sends <b>SVEST</b> to the unit and to the Wellness Warriors.
+            <div class="twoway">IKL-K3RS <svg width="70" height="22" viewBox="0 0 70 22"><path d="M8 11h54M8 11l7-7M8 11l7 7M62 11l-7-7M62 11l-7 7" stroke="#2E6B57" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg> Wellness Warriors</div></div></div>
+        </div>
+        <div class="tier t2">
+          <div class="tl"><span>Tier 2 · Peer support</span><span>Wellness Warriors</span></div>
+          <div class="step"><span class="num">5</span><div>Wellness Warriors give <b>Psychological First Aid (PFA)</b> and distribute SVEST to affected staff.</div></div>
+          <div class="step"><span class="num">6</span><div>Staff complete SVEST and return it via Wellness Warriors to IKL-K3RS.</div></div>
+        </div>
+        <div class="tier t3">
+          <div class="tl"><span>Tier 3 · Professional support</span><span>Occupational Medicine</span></div>
+          <div class="step"><span class="num">7</span><div><b>Occupational Medicine</b> reviews SVEST scores across 7 domains.</div></div>
+          <div class="branch">
+            <div class="br ok"><b>8a · All domains below cut-off</b>Report and close follow-up.</div>
+            <div class="br ref"><b>8b · Any domain ≥ cut-off</b>Occupational Medicine interview (fitness to work), then referral to a psychiatrist.</div>
+          </div>
+          <div class="step" style="margin-top:6mm"><span class="num">9</span><div><b>Reporting:</b> IKL-K3RS → Quality Team → Board of Directors.</div></div>
+        </div>
+        <div class="foot">IKL-K3RS: Environmental Health and Hospital Occupational Safety and Health Installation · PFA: Psychological First Aid · SVEST: Second Victim Experience and Support Tool</div>
+      </div>
+
+      <div>
+        <img class="hero" src="assets/hero.png" alt="Healthcare worker supported by colleagues and Wellness Warriors">
+        <div class="svest">
+          <div class="h" style="font-size:30pt">SVEST: 25 items, 7 domains</div>
+          <p>Likert 0 to 4. Positively worded support items are reverse-scored, so a higher score always means a worse condition. Cut-off = 75% of each domain maximum.</p>
+          <div class="bar"><span>Psychological distress</span><span class="track"><span class="fill"></span><span class="cut"></span></span><span class="v">≥12/16</span></div>
+          <div class="bar"><span>Physical distress</span><span class="track"><span class="fill"></span><span class="cut"></span></span><span class="v">≥12/16</span></div>
+          <div class="bar"><span>Colleague support</span><span class="track"><span class="fill"></span><span class="cut"></span></span><span class="v">≥12/16</span></div>
+          <div class="bar"><span>Supervisor support</span><span class="track"><span class="fill"></span><span class="cut"></span></span><span class="v">≥12/16</span></div>
+          <div class="bar"><span>Institutional support</span><span class="track"><span class="fill"></span><span class="cut"></span></span><span class="v">≥9/12</span></div>
+          <div class="bar"><span>Non-work-related support</span><span class="track"><span class="fill"></span><span class="cut"></span></span><span class="v">≥6/8</span></div>
+          <div class="bar"><span>Professional self-efficacy</span><span class="track"><span class="fill"></span><span class="cut"></span></span><span class="v">≥12/16</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row" style="grid-template-columns:1fr 1.18fr">
+    <div class="card">
+      <div class="h"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C5D86D" stroke-width="2.4" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Results</div>
+      <svg viewBox="0 0 400 300" style="width:100%;display:block">
+        <g font-family="Inter,Arial" text-anchor="middle">
+          <path d="M0 0H400L370 68H30Z" fill="#0B4A3A"/>
+          <text x="200" y="34" fill="#fff" font-size="30" font-weight="900">280</text>
+          <text x="200" y="56" fill="#DCE6DE" font-size="13">identified and offered support</text>
+          <path d="M34 76H366L336 144H64Z" fill="#2E6B57"/>
+          <text x="200" y="110" fill="#fff" font-size="30" font-weight="900">202</text>
+          <text x="200" y="132" fill="#DCE6DE" font-size="13">staff in 6 of 9 completed cases</text>
+          <path d="M68 152H332L302 220H98Z" fill="#8FAE9B"/>
+          <text x="200" y="186" fill="#0B4A3A" font-size="30" font-weight="900">32</text>
+          <text x="200" y="208" fill="#0B4A3A" font-size="13">SVEST returned (15.8%)*</text>
+          <path d="M102 228H298L268 296H132Z" fill="#C5D86D"/>
+          <text x="200" y="262" fill="#0B4A3A" font-size="30" font-weight="900">0</text>
+          <text x="200" y="284" fill="#0B4A3A" font-size="13">at or above any cut-off</text>
+        </g>
+      </svg>
+      <ul style="margin-top:6mm;font-size:22pt">
+        <li>Median 32 HCWs per event (range 18 to 52)</li>
+        <li>Most affected: <b>trainees and nurses</b></li>
+        <li>3 of 9 cases still in progress</li>
+        <li>Mean time from incident to first contact: <b>[___ days]</b></li>
+      </ul>
+      <div class="legend" style="margin-top:3mm">*Response rate = 32 / 202 × 100% = 15.8%; data collection ongoing.</div>
+    </div>
+
+    <div class="card">
+      <div class="h"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C5D86D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>Consensus Indicators<sup style="font-size:.45em;margin-left:-3mm">1</sup></div>
+      <div style="display:grid;grid-template-columns:118mm 1fr;gap:8mm;align-items:start">
+        <div>
+          <svg id="ring" viewBox="0 0 200 200" style="width:100%;display:block"></svg>
+          <div class="legend" style="margin-top:3mm;line-height:1.5"><b style="color:#0B4A3A">4 newly introduced</b> (NEW)<br>
+            <span style="color:#2E6B57">■</span> Awareness<br><span style="color:#5E8F79">■</span> Process / structure<br><span style="color:#C5D86D">■</span> Impact<br><span style="color:#CBD2CE">■</span> Not yet measured
+          </div>
+        </div>
+        <div class="ind">
+          <div class="dom">Awareness</div>
+          <div class="i"><span class="ck">✓</span><span>Support / activation requests</span><span class="val">9/9</span></div>
+          <div class="i"><span class="ck">✓</span><span>Support / SV identified<span class="tag">NEW</span></span><span class="val">280/280</span></div>
+          <div class="i"><span class="ck">✓</span><span>HCWs aware of programme</span><span class="val">100%</span></div>
+          <div class="dom">Process / structure</div>
+          <div class="i"><span class="ck">✓</span><span>Time from incident to first contact<span class="tag">NEW</span></span><span class="val">[__ d]</span></div>
+          <div class="i"><span class="ck">✓</span><span>Approved institutional policy</span><span class="val">SOP</span></div>
+          <div class="i"><span class="ck">✓</span><span>Trained / total peer supporters</span><span class="val">136/136</span></div>
+          <div class="i"><span class="ck">✓</span><span>HCWs trained on SV topic<span class="tag">NEW</span></span><span class="val">57 units</span></div>
+          <div class="dom">Impact</div>
+          <div class="i"><span class="ck">✓</span><span>Perceived benefit after peer support: support from supervisors, colleagues, organisation</span><span class="val"></span></div>
+          <div class="i"><span class="nx">○</span><span>Distress before and after support</span><span class="val"></span></div>
+          <div class="i"><span class="nx">○</span><span>Qualitative feedback from SV</span><span class="val"></span></div>
+          <div class="i"><span class="nx">○</span><span>Lost workdays, SV vs total<span class="tag">NEW</span></span><span class="val"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="h"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C5D86D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></span>Discussion</div>
+    <div class="disc">
+      <p><b>From self-referral to proactive case-finding.</b> Linking second victim identification to every sentinel event RCA produced a known denominator of 280 HCWs across 9 events. This puts into practice the observation that institutions can screen at-risk professionals immediately after an event,<sup>4</sup> and makes the consensus indicator <i>support provided / second victims identified</i> measurable.<sup>1</sup></p>
+      <p><b>Peer support first.</b> In the SVEST validation study, the most desired form of support was a respected peer to discuss what happened.<sup>3</sup> Wellness Warriors (136 in 57 units) put this into practice as Tier 2, in line with the European recommendation for peer support programmes.<sup>5</sup></p>
+      <p><b>Patient safety and worker well-being in one pathway.</b> Embedding support in a non-punitive RCA connects incident learning with staff care and supports a just culture.<sup>5</sup></p>
+      <p><b>Early SVEST data.</b> Returns are still low (15.8%) because collection is ongoing, and no respondent has reached a domain cut-off so far. These early results should be interpreted with caution.</p>
+      <p><b>Next step: impact indicators.</b> Second victim distress has been linked to turnover intention and absenteeism, mediated by organisational support.<sup>6</sup> Measuring distress before and after support, qualitative feedback, and lost workdays is the next priority.</p>
+      <p><b>Limitations.</b> Single-centre document review; the Indonesian SVEST validation is unpublished institutional data.</p>
+    </div>
+  </section>
+
+  <section class="concl">
+    <div class="lab">Conclusion</div>
+    <p>Integrating Wellness Warriors, second victim management, and system-based RCA establishes a non-punitive organisational framework. It can be implemented in hospitals with existing incident review structures and is a foundation for sustainable healthcare worker well-being.</p>
+  </section>
+
+</main>
+
+<footer>
+  <h4>References</h4>
+  <ol>
+    <li>Guerra-Paiva S, Carrillo I, Mira J, Fernandes J, Strametz R, Gil-Hernández E, et al. Developing core indicators for evaluating second victim programs: an international consensus approach. Int J Public Health. 2024;69:1607428.</li>
+    <li>Scott SD, Hirschinger LE, Cox KR, McCoig M, Hahn-Cover K, Epperly KM, et al. Caring for our own: deploying a systemwide second victim rapid response team. Jt Comm J Qual Patient Saf. 2010;36(5):233-40.</li>
+    <li>Burlison JD, Scott SD, Browne EK, Thompson SG, Hoffman JM. The Second Victim Experience and Support Tool: validation of an organizational resource for assessing second victim effects and the quality of support resources. J Patient Saf. 2017;13(2):93-102.</li>
+    <li>Scott SD, Hirschinger LE, Cox KR, McCoig M, Brandt J, Hall LW. The natural history of recovery for the healthcare provider "second victim" after adverse patient events. Qual Saf Health Care. 2009;18(5):325-30.</li>
+    <li>Mira J, Carillo I, Tella S, Vanhaecht K, Panella M, Seys D, et al. The European Researchers' Network Working on Second Victim (ERNST) policy statement on the second victim phenomenon for increasing patient safety. Public Health Rev. 2024;45:1607175.</li>
+    <li>Burlison JD, Quillivan RR, Scott SD, Johnson S, Hoffman JM. The effects of the second victim phenomenon on work-related outcomes: connecting self-reported caregiver distress to turnover intentions and absenteeism. J Patient Saf. 2021;17(3):195-9.</li>
+  </ol>
+  <div style="margin-top:1mm">Indonesian SVEST validation: unpublished institutional data.</div>
+</footer>
+
+</div>
+<script>
+// 11-segment indicator ring: domain colour if achieved, grey if not yet
+const segs=[["#2E6B57",1],["#2E6B57",1],["#2E6B57",1],["#5E8F79",1],["#5E8F79",1],["#5E8F79",1],["#5E8F79",1],["#C5D86D",1],["#CBD2CE",0],["#CBD2CE",0],["#CBD2CE",0]];
+const svg=document.getElementById('ring'),cx=100,cy=100,R=92,r=62,n=segs.length,gap=2.2;
+const pt=(rad,a)=>[cx+rad*Math.cos(a),cy+rad*Math.sin(a)];
+segs.forEach(([c],i)=>{
+  const a0=(-90+i*360/n+gap/2)*Math.PI/180,a1=(-90+(i+1)*360/n-gap/2)*Math.PI/180;
+  const [x0,y0]=pt(R,a0),[x1,y1]=pt(R,a1),[x2,y2]=pt(r,a1),[x3,y3]=pt(r,a0);
+  const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+  p.setAttribute('d',`M${x0} ${y0}A${R} ${R} 0 0 1 ${x1} ${y1}L${x2} ${y2}A${r} ${r} 0 0 0 ${x3} ${y3}Z`);
+  p.setAttribute('fill',c);svg.appendChild(p);
+});
+svg.insertAdjacentHTML('beforeend','<text x="100" y="104" text-anchor="middle" font-family="Inter,Arial" font-weight="900" font-size="40" fill="#0B4A3A">8/11</text><text x="100" y="126" text-anchor="middle" font-family="Inter,Arial" font-size="12" fill="#5B6B64">achieved</text>');
+</script>
+</body>
+</html>
