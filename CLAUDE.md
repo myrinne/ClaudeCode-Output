@@ -32,7 +32,7 @@ Defined in `.claude/commands/`:
 
 ## Integrations
 
-**Obsidian MCP** (user-scoped, global): reads the vault at `C:\Users\LENOVO\OneDrive\Documents\Obsidian-Vidya`. Requires Obsidian to be open with the Local REST API community plugin running. Configured via `claude mcp` with `OBSIDIAN_API_KEY`.
+**Obsidian MCP** (user-scoped, global): reads the active vault at `C:\Users\vidya\OneDrive\Documents\ClaudeCode Vault` (read its `00_AGENT_README.md` first). The old vault `Obsidian-Vidya` is a read-only backup since 2026-10-01 — do not write to it. Requires Obsidian to be open with the Local REST API community plugin running. Configured via `claude mcp` with `OBSIDIAN_API_KEY`.
 
 **Python**: available at `C:\Users\LENOVO\AppData\Local\Python\pythoncore-3.14-64\`. Scripts (pip-installed CLIs) live in the `Scripts\` subdirectory of that path — add it to PATH when running Python tools from shell.
 
