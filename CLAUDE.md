@@ -6,6 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a personal Claude Code workspace and configuration repository. It stores custom slash commands, Claude settings, and project outputs. All work is version-controlled and pushed to GitHub after each meaningful change.
 
+## Session Start: Identity from the Vault
+
+Context about the owner lives in `C:\Users\vidya\OneDrive\Documents\ClaudeCode Vault`, not in this repo. At the start of every session:
+
+1. Read `ClaudeCode Vault/00_AGENT_README.md`, then `Identity/User.md`, `Identity/soul.md`, `Identity/identity.md`.
+2. Use `Projects/`, `People/`, `Areas/`, `Knowledge/` there when a task touches them.
+3. **Hats** (`identity.md`): when she says "switch ke <hat>" / "pakai hat <x>", apply that hat's scope, standards, and checks. If no hat is named, ask. Every hat asks for the output format before generating.
+
+**Outputs always go to this repo (`ClaudeCode Output`)**, never into the vault, unless she explicitly asks for a vault note.
+
 ## Git Workflow
 
 Commit and push to GitHub **throughout the session** — after every meaningful unit of work (a new file, a config change, a completed feature). Do not batch everything into one commit at the end. This ensures work is never lost and the history is easy to navigate.
