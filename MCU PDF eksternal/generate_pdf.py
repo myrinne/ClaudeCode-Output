@@ -73,6 +73,20 @@ def _tambah_lengkapi(saran, item):
     return list(saran) + [f"Mohon melengkapi pemeriksaan {item}"]
 
 
+def _kelaikan_tambah_lab(teks):
+    """Lab darah tidak ada -> kelaikan ikut menyebutnya. Format dikonfirmasi dr. Vidya
+    (2026-10-03, NRM 493-14-16): 'Laik kerja dengan catatan melengkapi laboratorium darah, radiologi'."""
+    if "melengkapi pemeriksaan " in teks:
+        return teks.replace("melengkapi pemeriksaan ", "melengkapi laboratorium darah, ", 1)
+    if not teks.startswith("Laik kerja"):
+        return teks
+    vaksin = teks.endswith(SUFFIX_VAKSIN)
+    inti = teks[: -len(SUFFIX_VAKSIN)] if vaksin else teks
+    inti = f"{inti} dan melengkapi laboratorium darah" if "dengan catatan" in inti \
+        else f"{inti} dengan catatan melengkapi laboratorium darah"
+    return inti + (SUFFIX_VAKSIN if vaksin else "")
+
+
 def generate_draft_pdf(entry):
     """Return dict: nama, nip, draft, catatan_manual, flag, flag_alasan, kelaikan."""
     d, catatan_manual, override_urinalisa = queue_ke_datapegawai(entry)
@@ -104,6 +118,7 @@ def generate_draft_pdf(entry):
     if not lab_darah and teks_lab.startswith("Laboratorium :\nNormal"):
         teks_lab = teks_lab.replace("Laboratorium :\nNormal", "Laboratorium :\nBelum dilakukan", 1)
         hasil.saran = _tambah_lengkapi(hasil.saran, "laboratorium darah")
+        catatan_tambahan = _kelaikan_tambah_lab(catatan_tambahan)
     teks_ekg = format_hasil_ekg(hasil)
     draft = {
         "ringkasan_jasmani": teks_jasmani,
