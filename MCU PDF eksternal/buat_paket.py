@@ -43,7 +43,8 @@ FOLDER_LAMA = _jalur.FOLDER_LAMA
 FILE_PIPELINE = ["ambil_pdf.py", "kamus_lab.py", "pdf_ke_queue.py", "generate_pdf.py",
                  "proses_pdf.py", "ehr_akses.py"]
 FILE_ENGINE = ["protocol_engine.py", "input_dict.py", "konverter_queue.py",
-               "fase0_buka_pasien.py", "fase1_baca.py", "fase3a_generate_teks.py"]
+               "fase0_buka_pasien.py", "fase1_baca.py", "fase3a_generate_teks.py",
+               "kelaikan_final.py"]
 
 JALUR_PAKET = '''"""Menyambungkan script ke folder engine/ (salinan protocol_engine dkk di dalam paket ini)."""
 

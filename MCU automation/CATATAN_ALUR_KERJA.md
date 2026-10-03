@@ -80,6 +80,26 @@ python fase_batch.py 406-66-04 123-45-67 ...        # preview saja, tidak menuli
   Catatan manual (mis. trombositosis) tetap ditulis lengkap di `notes.md`
   supaya Anda tetap bisa baca setelahnya.
 
+**Mode MCU final (`--final`, ditambahkan 2026-10-03)** — untuk MCU yang sudah
+ditutup, saat tidak akan ada lagi TTV/EKG/lab/rontgen yang masuk:
+
+```
+python fase_batch.py --ya --final 406-66-04 123-45-67 ...   # tulis + approve
+python fase_batch.py --final 406-66-04 ...                  # preview mode final
+```
+
+- Data belum lengkap → kelaikan **tetap diberikan**, mis. "Laik kerja dengan
+  catatan melengkapi pemeriksaan EKG" / "Laik kerja dengan catatan memerlukan
+  konsultasi dengan dokter terkait temuan hasil MCU dan melengkapi pemeriksaan
+  tanda vital" / "...melengkapi laboratorium darah, radiologi". Saran "Mohon
+  segera lengkapi: ..." tetap ada. Pasien ini **langsung di-approve** (🟡).
+- Tetap **approve manual** (🔴): merah dari temuan nyata (eGFR berat / curiga
+  hemodialisa) dan kelaikan yang tetap tidak bisa dihitung. Lab rusak/tidak
+  terbaca tetap tidak ditulis sama sekali.
+- Logikanya di `kelaikan_final.py`, dipakai bersama pipeline `MCU PDF eksternal`.
+- **Tanpa `--final` perilaku lama tidak berubah** ("Saat ini belum dapat
+  diberikan status kelaikan kerja..." + tidak di-approve).
+
 **Approve Dokter (`FNDx0000000641`)** dipastikan lewat inspeksi DOM langsung
 (bukan tebakan): radio button Ya/Tidak di panel Kesimpulan yang sama dengan
 8 field lain (`frmfinding_PNL_x000000457`), auto-save lewat
@@ -144,6 +164,7 @@ flag hijau) — 8 field + approve+kirim berhasil terverifikasi.
 | `konverter_queue.py` | Jembatan `queue.json` → `protocol_engine.py` |
 | `protocol_engine.py` | Mesin interpretasi klinis murni (kalkulator teks, tidak menyentuh browser) |
 | `fase3a_generate_teks.py` | Susun draft teks 8 field EHR dari hasil `protocol_engine.py` |
+| `kelaikan_final.py` | Mode MCU final: kelaikan tetap diberikan walau data belum lengkap (`fase_batch.py --final` + pipeline PDF eksternal) |
 | `fase3b_tulis_ehr.py` | Tulis draft ke EHR (mode `--tulis --ya` = tulis sungguhan; tanpa argumen = preview saja) |
 | `Protokol_Interpretasi_MCU_Draft.md` | Dasar aturan klinis (kategori, ambang, logika kelaikan) — dikonfirmasi Anda |
 | `PETA_FIELD_EHR.md` | Pemetaan ID field HTML form RSCM |

@@ -19,6 +19,17 @@ KEBIJAKAN APPROVE OTOMATIS (dikonfirmasi dr. Vidya):
     Approve Dokter otomatis di-set "Ya" + tombol Kirim panel diklik.
     Catatan manual (mis. trombositosis) tetap lengkap di notes.md.
 
+MODE --final (MCU sudah final, tidak akan ada lagi TTV/EKG/lab/rontgen yang
+masuk -- dikonfirmasi dr. Vidya, 2026-10-03):
+  - Data belum lengkap TIDAK lagi "belum dapat diberikan status kelaikan
+    kerja" -- kelaikan tetap diberikan + "dan melengkapi pemeriksaan X"
+    (logika di kelaikan_final.py, sama dengan pipeline PDF eksternal), dan
+    pasien seperti ini LANGSUNG di-approve.
+  - Tetap ditahan (approve manual): merah dari temuan nyata (mis. eGFR berat
+    / curiga hemodialisa) dan kelaikan yang tetap tidak bisa dihitung.
+    DATA LAB TIDAK TERBACA tetap tidak ditulis sama sekali.
+  - Tanpa --final, perilaku lama tidak berubah sama sekali.
+
 Approve Dokter (FNDx0000000641) adalah RADIO Ya/Tidak di panel Kesimpulan
 yang sama dgn 8 field lain (frmfinding_PNL_x000000457), auto-save lewat
 submit_panelfinding persis seperti field lain begitu diklik -- dipastikan
@@ -33,6 +44,8 @@ NRM berikutnya.
 Cara pakai:
     python fase_batch.py --ya 406-66-04 123-45-67      # tulis + approve sungguhan
     python fase_batch.py 406-66-04 123-45-67           # preview saja, tidak menulis apa pun
+    python fase_batch.py --ya --final 406-66-04        # MCU final: kelaikan tetap diberikan + approve
+    python fase_batch.py --final 406-66-04             # preview mode final
 """
 
 import sys
@@ -47,6 +60,7 @@ from fase0_buka_pasien import cari_pasien, cari_kandidat_kunjungan_mcu, render_f
 from fase1_baca import baca_halaman_aktif, buka_tab_kesimpulan, baca_identitas
 from fase3a_generate_teks import generate_draft, FIELD_TARGET
 from fase3b_tulis_ehr import cari_elemen_editable, tulis_field
+from kelaikan_final import generate_draft_final
 
 FIELD_APPROVE = "FNDx0000000641"
 PANEL_KESIMPULAN = "PNL_x000000457"
@@ -109,7 +123,7 @@ async def buka_pasien_dari_nrm(page, nrm):
     return False, f"Tidak ada kandidat kunjungan yang berhasil me-render form klinis penuh (pasien: {nama})."
 
 
-async def proses_satu_pasien(page, nrm, mode_tulis):
+async def proses_satu_pasien(page, nrm, mode_tulis, mode_final=False):
     """Proses 1 NRM penuh: buka -> baca -> draft -> tulis field -> approve.
     Return dict ringkasan untuk notes.md. TIDAK melempar exception ke luar --
     semua kegagalan ditangkap dan direkam di dict."""
@@ -125,7 +139,12 @@ async def proses_satu_pasien(page, nrm, mode_tulis):
     hasil["nama"] = pesan
 
     entry = await baca_halaman_aktif(page)
-    nama, draft, catatan_manual, flag, flag_alasan, nip = generate_draft(entry)
+    if mode_final:
+        h = generate_draft_final(entry)
+        nama, draft, catatan_manual, flag, flag_alasan, nip = (
+            h["nama"], h["draft"], h["catatan_manual"], h["flag"], h["flag_alasan"], h["nip"])
+    else:
+        nama, draft, catatan_manual, flag, flag_alasan, nip = generate_draft(entry)
     hasil.update(nama=nama, nip=nip, flag=flag, draft=draft,
                  catatan_manual=catatan_manual, flag_alasan=flag_alasan)
 
@@ -154,7 +173,10 @@ async def proses_satu_pasien(page, nrm, mode_tulis):
 
     semua_field_ok = all(ok for _, ok, _ in hasil["field_writes"])
 
-    if flag == "merah":
+    if flag == "merah" and mode_final:
+        hasil["status"] = "ditahan_perlu_cek_manual"
+        hasil["detail"] = "; ".join(flag_alasan) if flag_alasan else "Flag merah."
+    elif flag == "merah":
         hasil["status"] = "ditahan_data_belum_lengkap"
         hasil["detail"] = "; ".join(flag_alasan) if flag_alasan else "Data pemeriksaan belum lengkap."
     elif not semua_field_ok:
@@ -201,6 +223,7 @@ def format_notes_entry(h):
     status_map = {
         "approved_terkirim": "✅ Ditulis & di-approve otomatis + terkirim",
         "ditahan_data_belum_lengkap": f"🔴 Ditulis, TIDAK di-approve (data belum lengkap: {h['detail']}) — approve manual",
+        "ditahan_perlu_cek_manual": f"🔴 Ditulis, TIDAK di-approve (mode final, perlu cek: {h['detail']}) — approve manual",
         "ditulis_sebagian_tidak_di_approve": f"⚠️ {h['detail']}",
         "ditulis_approve_gagal": f"⚠️ Field klinis tertulis, approve GAGAL: {h['detail']} — approve manual",
         "gagal": f"⚠️ Gagal: {h['detail']}",
@@ -219,14 +242,17 @@ def format_notes_entry(h):
 async def main():
     argv = sys.argv[1:]
     mode_tulis = "--ya" in argv
-    nrm_list = [a for a in argv if a != "--ya"]
+    mode_final = "--final" in argv
+    nrm_list = [a for a in argv if a not in ("--ya", "--final")]
 
     if not nrm_list:
-        print("Cara pakai: python fase_batch.py [--ya] <NRM1> <NRM2> ...")
+        print("Cara pakai: python fase_batch.py [--ya] [--final] <NRM1> <NRM2> ...")
         return
 
+    label_mode = ('TULIS + APPROVE OTOMATIS' if mode_tulis else 'PREVIEW (tidak menulis apa pun)') \
+        + (' — MCU FINAL (kelaikan tetap diberikan walau data belum lengkap)' if mode_final else '')
     print("=" * 70)
-    print(f"FASE BATCH — {'TULIS + APPROVE OTOMATIS' if mode_tulis else 'PREVIEW (tidak menulis apa pun)'}")
+    print(f"FASE BATCH — {label_mode}")
     print(f"NRM ({len(nrm_list)}): {', '.join(nrm_list)}")
     print("=" * 70)
 
@@ -247,7 +273,7 @@ async def main():
         for nrm in nrm_list:
             print(f"\n--- Memproses NRM {nrm} ---")
             try:
-                hasil = await proses_satu_pasien(page, nrm, mode_tulis)
+                hasil = await proses_satu_pasien(page, nrm, mode_tulis, mode_final)
             except Exception as e:
                 hasil = {"nrm": nrm, "status": "gagal", "detail": f"Exception tak terduga: {e}",
                          "nama": None, "nip": None, "flag": None, "draft": None, "field_writes": [],
@@ -256,7 +282,8 @@ async def main():
             semua_hasil.append(hasil)
 
     notes_path = notes_path_hari_ini()
-    header = f"# Batch {datetime.now().strftime('%Y-%m-%d %H:%M')} ({'TULIS+APPROVE' if mode_tulis else 'PREVIEW'})\n"
+    header = (f"# Batch {datetime.now().strftime('%Y-%m-%d %H:%M')} ({'TULIS+APPROVE' if mode_tulis else 'PREVIEW'}"
+              f"{', MCU FINAL' if mode_final else ''})\n")
     isi = "\n\n".join(format_notes_entry(h) for h in semua_hasil)
     with open(notes_path, "a", encoding="utf-8") as f:
         f.write("\n" + header + "\n" + isi + "\n")
