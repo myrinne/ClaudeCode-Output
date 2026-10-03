@@ -71,7 +71,9 @@ def _kelaikan_tetap_diberikan(d, hasil, pasien_dokter):
     vaksin = teks.endswith(SUFFIX_VAKSIN)
     if vaksin:
         teks = teks[: -len(SUFFIX_VAKSIN)]
-    lengkapi = f"melengkapi {gabung_temuan_dan(belum)}"
+    # "melengkapi pemeriksaan EKG, tanda vital dan radiologi" -- kata "pemeriksaan"
+    # cukup sekali (dikonfirmasi dr. Vidya, 2026-10-03).
+    lengkapi = f"melengkapi pemeriksaan {gabung_temuan_dan([b.replace('pemeriksaan ', '', 1) for b in belum])}"
     teks = f"{teks} dan {lengkapi}" if "dengan catatan" in teks else f"{teks} dengan catatan {lengkapi}"
     if vaksin:
         teks += SUFFIX_VAKSIN
@@ -105,15 +107,16 @@ def _tambah_lengkapi(saran, item):
 
 def _kelaikan_tambah_lab(teks):
     """Lab darah tidak ada -> kelaikan ikut menyebutnya. Format dikonfirmasi dr. Vidya
-    (2026-10-03, NRM 493-14-16): 'Laik kerja dengan catatan melengkapi laboratorium darah, radiologi'."""
+    (2026-10-03): 'Laik kerja dengan catatan melengkapi pemeriksaan laboratorium darah,
+    EKG, tanda vital dan radiologi' ("pemeriksaan" cukup sekali)."""
     if "melengkapi pemeriksaan " in teks:
-        return teks.replace("melengkapi pemeriksaan ", "melengkapi laboratorium darah, ", 1)
+        return teks.replace("melengkapi pemeriksaan ", "melengkapi pemeriksaan laboratorium darah, ", 1)
     if not teks.startswith("Laik kerja"):
         return teks
     vaksin = teks.endswith(SUFFIX_VAKSIN)
     inti = teks[: -len(SUFFIX_VAKSIN)] if vaksin else teks
-    inti = f"{inti} dan melengkapi laboratorium darah" if "dengan catatan" in inti \
-        else f"{inti} dengan catatan melengkapi laboratorium darah"
+    inti = f"{inti} dan melengkapi pemeriksaan laboratorium darah" if "dengan catatan" in inti \
+        else f"{inti} dengan catatan melengkapi pemeriksaan laboratorium darah"
     return inti + (SUFFIX_VAKSIN if vaksin else "")
 
 
