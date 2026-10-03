@@ -104,17 +104,12 @@ async def cari_pasien(page, nrm):
     return m.group(1), nama, None
 
 
-async def cari_kandidat_kunjungan_mcu(page, maks_hari=90):
-    """Baca tabel Daftar Kunjungan, filter Pembayaran='MCU Pegawai' AND
-    Unit/Dept='Medical Check Up', urutkan terbaru dulu.
-    Return (daftar_kandidat_terurut, semua_baris_untuk_debug, error).
-    maks_hari: kunjungan terbaru lebih tua dari ini -> ditolak (cek manual).
-    90 utk alur biasa; fase_batch.py --final memakai 180 (dikonfirmasi
-    dr. Vidya, 2026-10-03 -- MCU final menutup kunjungan lama, mis. 30 Juni).
-    TIDAK langsung memutuskan satu -- caller yang coba render tiap kandidat
-    (beberapa kunjungan berlabel sama ternyata cuma sub-visit vaksin, bukan
-    MCU lengkap -- lihat kasus Mia Harisandi)."""
-    baris = await page.evaluate('''() => {
+URL_DAFTAR_KUNJUNGAN_LENGKAP = "http://ehr.rscm.co.id/ehr/index.php?X_ehr=40&show_more=100"
+
+
+async def _baca_baris_kunjungan(page):
+    """Baris tabel Daftar Kunjungan yang punya link adm_id (kunjungan Batal tidak punya)."""
+    return await page.evaluate('''() => {
         const trs = document.querySelectorAll('tr');
         const out = [];
         for (const tr of trs) {
@@ -135,11 +130,37 @@ async def cari_kandidat_kunjungan_mcu(page, maks_hari=90):
         return out;
     }''')
 
+
+def _filter_mcu(baris):
+    return [b for b in baris
+            if b["pembayaran"] == "MCU Pegawai" and b["unit_dept"] == "Medical Check Up"]
+
+
+async def cari_kandidat_kunjungan_mcu(page, maks_hari=90):
+    """Baca tabel Daftar Kunjungan, filter Pembayaran='MCU Pegawai' AND
+    Unit/Dept='Medical Check Up', urutkan terbaru dulu.
+    Return (daftar_kandidat_terurut, semua_baris_untuk_debug, error).
+    maks_hari: kunjungan terbaru lebih tua dari ini -> ditolak (cek manual).
+    90 utk alur biasa; fase_batch.py --final memakai 180 (dikonfirmasi
+    dr. Vidya, 2026-10-03 -- MCU final menutup kunjungan lama, mis. 30 Juni).
+    TIDAK langsung memutuskan satu -- caller yang coba render tiap kandidat
+    (beberapa kunjungan berlabel sama ternyata cuma sub-visit vaksin, bukan
+    MCU lengkap -- lihat kasus Mia Harisandi)."""
+    baris = await _baca_baris_kunjungan(page)
+
     if not baris:
         return [], baris, "Tidak ada baris 'Daftar Kunjungan' ditemukan sama sekali."
 
-    kandidat = [b for b in baris
-                if b["pembayaran"] == "MCU Pegawai" and b["unit_dept"] == "Medical Check Up"]
+    if not _filter_mcu(baris) and page.url != URL_DAFTAR_KUNJUNGAN_LENGKAP:
+        # Halaman pasien default cuma menampilkan 10 kunjungan terbaru. Pasien
+        # yg sering kontrol poli setelah MCU -> kunjungan MCU terdorong keluar
+        # (kasus dr. Telly Kamelia NRM 418-38-92, 2026-10-03: MCU 1 Sept ada
+        # di baris ke-11). Muat ulang daftar lengkap lalu cari lagi.
+        await page.goto(URL_DAFTAR_KUNJUNGAN_LENGKAP)
+        await page.wait_for_load_state("networkidle")
+        baris = await _baca_baris_kunjungan(page) or baris
+
+    kandidat = _filter_mcu(baris)
 
     if not kandidat:
         return [], baris, (
