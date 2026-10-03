@@ -91,7 +91,7 @@ TES = {
         konversi={"10^3/ul": 1, "/ul": 0.001}),
     "trombosit": dict(
         nama_rscm="Jumlah Trombosit", satuan="10^3/uL", kategori="mesin",
-        alias=["trombosit", "jumlah trombosit", "platelet", "plt", "thrombocyte"],
+        alias=["trombosit", "jumlah trombosit", "platelet", "plt", "thrombocyte", "thrombosit", "trombosit plt"],
         konversi={"10^3/ul": 1, "/ul": 0.001}),
     "led": dict(
         nama_rscm="Laju Endap Darah", satuan="mm/jam", kategori="mesin",
@@ -182,18 +182,18 @@ TES_INFO = [
     "vitamin d 25-oh total", "vitamin d", "25-oh vitamin d",
     "hs-crp", "hscrp", "crp",
     "glukosa sewaktu", "gds", "gula darah sewaktu", "luc", "jumlah neutrofil absolut", "jumlah limfosit absolut",
-    "rasio neutrofil limfosit", "netrofil",
+    "rasio neutrofil limfosit", "netrofil", "netrofil limfosit ratio", "neutrofil limfosit ratio",
     "cea", "psa", "free psa", "afp", "ca 125", "ca 19-9",
     "d-dimer", "apo-b", "apo b", "ck", "cpk",
     "protein total", "albumin", "globulin", "urea n", "bun",
     "hba1c ifcc", "estimasi glukosa rata-rata", "estimasi glukosa rata-rata eag", "eag",
     "rdw", "rdw-cv", "rdw-sd", "mpv", "pdw", "pct",
-    "basofil", "eosinofil", "neutrofil", "neutrophil", "limfosit", "monosit",
+    "basofil", "eosinofil", "basophil", "eosinophil", "neutrofil", "neutrophil", "limfosit", "monosit",
     "basofil absolut", "eosinofil absolut", "neutrofil absolut", "limfosit absolut", "monosit absolut",
     "neutrofil limfosit ratio", "nlr", "nrbc", "nrbc absolut",
     "adp 1 0 um", "adp 2 0 um", "adp 5 0 um", "adp 10 0 um", "kesan",
     "morphine", "morphin", "cocaine", "coccain", "amphetamine", "amphetamin", "thc",
-    "methamphetamine", "methamphetamin", "bzo", "soma", "benzodiazepin", "morfin", "metamphetamine", "metamfetamin", "benzodiazepine", "kokain", "mariyuana", "marijuana", "ganja", "amfetamin", "ganja/thc", "opiat", "metamfetamin", "opiate", "cannabis", "benzodiazepin",
+    "methamphetamine", "methamphetamin", "bzo", "soma", "benzodiazepin", "morfin", "metamphetamine", "metamfetamin", "benzodiazepine", "kokain", "mariyuana", "marijuana", "ganja", "amfetamin", "ganja/thc", "opiat", "metamfetamin", "opiate", "cannabis", "benzodiazepin", "canabis", "cocain", "mdma", "metamphetamin",
 ]
 
 # Tes info yang TETAP harus dilaporkan ke dr. Vidya kalau abnormal krn bisa
@@ -252,15 +252,28 @@ for _nama, _alias in URIN.items():
         _INDEKS_URIN[norm_nama(_a)] = _nama
 
 
+def _varian(nama_vendor: str):
+    """Nama asli, lalu tanpa singkatan dalam kurung ('Hemoglobin (HGB)' -> 'Hemoglobin',
+    'Netrofil Limfosit Ratio(NLR)' -> 'Netrofil Limfosit Ratio'), lalu tanpa akhiran urin."""
+    tanpa_kurung = re.sub(r"\([^)]*\)", " ", nama_vendor or "")
+    hasil = [norm_nama(nama_vendor), norm_nama(tanpa_kurung)]
+    hasil.append(re.sub(r"\s+urin[e]?$", "", hasil[-1]))
+    return hasil
+
+
 def cari_tes(nama_vendor: str):
     """Return (kunci_tes | None, adalah_info: bool)."""
-    n = norm_nama(nama_vendor)
-    if n in _INDEKS_TES:
-        return _INDEKS_TES[n], False
-    if n in _INDEKS_INFO:
-        return None, True
+    for n in _varian(nama_vendor):
+        if n in _INDEKS_TES:
+            return _INDEKS_TES[n], False
+    for n in _varian(nama_vendor):
+        if n in _INDEKS_INFO:
+            return None, True
     return None, False
 
 
 def cari_urin(nama_vendor: str) -> Optional[str]:
-    return _INDEKS_URIN.get(norm_nama(nama_vendor))
+    for n in _varian(nama_vendor):
+        if n in _INDEKS_URIN:
+            return _INDEKS_URIN[n]
+    return None
