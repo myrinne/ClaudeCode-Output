@@ -84,3 +84,12 @@ di PDF terbaru (dikonfirmasi 2026-10-03) -- tetap dicatat di notes.
 | `pdf_ke_queue.py` | Ekstrak → format `queue.json`, gabung dgn EHR, cek identitas |
 | `generate_pdf.py` | Draft 8 field (fase3a lama + aturan kelaikan data belum lengkap) |
 | `proses_pdf.py` | Orkestrasi: EHR, cek ulang ekstrak, tabel verifikasi, notes, tulis (tanpa approve) |
+
+## Paket untuk rekan ("automation external pdf")
+
+`python buat_paket.py` → `dist/automation external pdf.zip` (dist/ tidak masuk git). Paket mandiri:
+salinan engine sendiri, tanpa fase_batch/fase3b (tidak ada batch & auto-approve), kunci
+`SATU_NRM_SAMPAI_APPROVE = True` (NRM baru ditolak sampai NRM terakhir di-approve, dicek ke EHR),
+README + CLAUDE.md khusus di `paket/`. Nama pasien & NRM di komentar disamarkan; builder membuktikan
+kode tidak berubah (AST) dan menolak membuat zip kalau masih ada nama/NRM. Jalankan ulang setiap
+kali protokol berubah, lalu kirim zip baru.
