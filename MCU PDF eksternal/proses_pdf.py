@@ -7,10 +7,13 @@ Prasyarat: ekstrak/<NRM>.json sudah diisi (hasil baca PDF, lihat README.md).
     python proses_pdf.py 385-45-12 --tanpa-ehr   # uji offline: tanpa Chrome, identitas dari PDF, TIDAK bisa menulis
     python proses_pdf.py 385-45-12               # baca EHR + gabung + draft, PREVIEW saja (tidak menulis)
     python proses_pdf.py 385-45-12 --tulis       # tulis 8 field ke EHR
+    python proses_pdf.py 385-45-12 --tulis --approve  # tulis + Approve Dokter (hanya kalau pengaturan.BOLEH_APPROVE_OTOMATIS)
 
-APPROVE DOKTER TIDAK PERNAH DISENTUH oleh script ini (dikonfirmasi dr.
-Vidya, 2026-10-03: approve manual dulu sampai alur PDF terbukti andal).
-Beda dari fase3b/fase_batch lama yang auto-approve flag hijau/kuning.
+APPROVE DOKTER hanya disentuh dengan --approve DAN pengaturan.BOLEH_APPROVE_OTOMATIS = True
+(versi dr. Vidya: batch langsung approve, review lewat notes harian -- dikonfirmasi 2026-10-03).
+Tidak pernah di-approve kalau: identitas tidak cocok, hasil baca PDF tidak cocok text layer,
+ada field gagal ditulis, atau record sudah terkunci. Paket rekan: --approve ditolak & file
+ehr_approve.py tidak ikut.
 
 Urutan (mode dengan EHR):
   1. Buka pasien by NRM (fungsi fase0 lama), baca SEMUA data layar (fase1 lama)
@@ -36,6 +39,10 @@ from fase3a_generate_teks import FIELD_TARGET
 from pdf_ke_queue import gabung, muat_ekstrak, cek_identitas, ke_tanggal
 from generate_pdf import generate_draft_pdf
 from pengaturan import SATU_NRM_SAMPAI_APPROVE
+try:
+    from pengaturan import BOLEH_APPROVE_OTOMATIS
+except ImportError:
+    BOLEH_APPROVE_OTOMATIS = False
 
 FOLDER_INI = Path(__file__).resolve().parent
 assert "FNDx0000000641" not in FIELD_TARGET.values(), "Approve Dokter TIDAK BOLEH ada di FIELD_TARGET"
@@ -221,7 +228,7 @@ def cetak_ringkas(nrm, ident_status, ident_pesan, lap, hasil, masalah_baca, dari
     print()
 
 
-async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
+async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan, mode_approve=False):
     from playwright.async_api import async_playwright
     from fase1_baca import baca_halaman_aktif, buka_tab_kesimpulan, baca_identitas
     from ehr_akses import buka_pasien_dari_nrm, tulis_field, sudah_approve, cek_approve_nrm
@@ -310,6 +317,14 @@ async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
                               if not gagal else f"⚠️ Sebagian gagal ditulis: {'; '.join(gagal)}")
                     if jumlah > len(gagal):
                         catat_nrm_terakhir(nrm)  # ada yg tertulis -> wajib di-approve sebelum NRM berikutnya
+                    if mode_approve:
+                        if gagal:
+                            status += " — TIDAK di-approve (ada field gagal ditulis)"
+                        else:
+                            from ehr_approve import approve_dokter  # tidak ada di paket rekan
+                            ok_a, psn_a = await approve_dokter(frame_form)
+                            status = (f"✅ {jumlah} field ditulis{ket} & DI-APPROVE otomatis — {psn_a}" if ok_a
+                                      else f"⚠️ {jumlah} field ditulis{ket}, APPROVE GAGAL: {psn_a} — approve manual")
         print(f"\nStatus: {status}")
         notes = simpan(nrm, format_notes(nrm, st, psn, lap, hasil, masalah_baca, dari_scan, status, ekstrak),
                        hasil, entry, lap)
@@ -333,7 +348,14 @@ def main():
         print("Mode --tanpa-ehr: TIDAK ada yang ditulis, notes tidak dibuat.")
         return
 
-    asyncio.run(mode_ehr(nrm, ekstrak, "--tulis" in args, masalah_baca, dari_scan))
+    mode_approve = "--approve" in args
+    if mode_approve and not BOLEH_APPROVE_OTOMATIS:
+        print("⛔ --approve tidak diizinkan di versi ini (pengaturan.py). Approve manual di EHR.")
+        sys.exit(1)
+    if mode_approve and "--tulis" not in args:
+        print("--approve hanya bisa bersama --tulis.")
+        sys.exit(1)
+    asyncio.run(mode_ehr(nrm, ekstrak, "--tulis" in args, masalah_baca, dari_scan, mode_approve))
 
 
 if __name__ == "__main__":

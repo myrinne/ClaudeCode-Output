@@ -17,10 +17,11 @@ Prasyarat sama dgn pipeline lama: Chrome debug port 9222 sudah terbuka & login E
    Unduh ke `pdf_masuk/<NRM>/`, simpan teks + gambar per halaman.
 2. **Baca PDF → `ekstrak/<NRM>.json`** — dilakukan Claude di sesi (bukan API):
    halaman teks dibaca dari `.txt`, halaman scan/EKG dari `.png`. Format di bawah.
-3. **Tulis langsung** — `python proses_pdf.py <NRM> --tulis` setiap kali selesai membaca 1 NRM,
-   TANPA menunggu konfirmasi per pasien (dikonfirmasi dr. Vidya, 2026-10-03: dia membaca sendiri
-   sebelum approve). **Approve Dokter tidak pernah disentuh** — approve manual.
-   Opsional: `--tanpa-ehr` (uji offline tanpa Chrome) atau tanpa flag (preview, tidak menulis).
+3. **Tulis + approve (mode batch, sejak 2026-10-03)** — `python proses_pdf.py <NRM> --tulis --approve`
+   setiap kali selesai membaca 1 NRM, langsung lanjut ke NRM berikutnya. dr. Vidya mereview lewat
+   `notes_pdf_<tanggal>.md`. Approve TETAP tidak dilakukan kalau: identitas tidak cocok, hasil baca PDF
+   tidak cocok text layer, ada field gagal ditulis, atau record sudah terkunci.
+   Opsional: tanpa `--approve` (tulis saja), tanpa flag (preview), `--tanpa-ehr` (offline).
 
 Semua run (kecuali `--tanpa-ehr`) dicatat di `notes_pdf_<tanggal>.md` + `draft/<NRM>.json`.
 
@@ -37,7 +38,7 @@ Semua run (kecuali `--tanpa-ehr`) dicatat di `notes_pdf_<tanggal>.md` + `draft/<
 | >1 PDF beda tanggal | Hasil terbaru dipakai, yang lama jadi "riwayat" di tabel. Tes yang cuma ada di PDF lama → dipakai + catatan PERLU_CEK_MANUAL. |
 | GDP naik + HbA1c DM | (di protocol_engine.py, berlaku utk kedua pipeline) Satu temuan saja: **"Suspek DM tipe 2"** (baris & saran GDP dibuang, GDP tidak dihitung sbg temuan terpisah utk kelaikan). GDP+GD2PP naik tetap ditangani protokol lama ("Suspek DM 2"). |
 | Saran GD2PP | (di protocol_engine.py) Kalau HbA1c sudah diperiksa, saran "Cek GD2PP ... GDP terganggu" dibuang (temuan GDP tetap). |
-| Approve | Manual dulu sampai alur ini terbukti andal. Kalau sudah di-approve, field terkunci -> script tidak menulis. |
+| Approve | Versi ini: otomatis dgn `--approve` (batch, review via notes harian). Paket rekan: selalu manual. Record yang sudah di-approve terkunci -> tidak ditulis ulang. |
 
 Batas eGFR protokol = 60 (KDIGO, dikonfirmasi 2026-10-03); kalau vendor tidak mencetak eGFR,
 dihitung CKD-EPI 2021 dari kreatinin. Hasil dari PDF lama boleh dipakai kalau tes itu tidak ada

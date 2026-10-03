@@ -68,6 +68,7 @@ JANGAN diubah ke False.
 """
 
 SATU_NRM_SAMPAI_APPROVE = True
+BOLEH_APPROVE_OTOMATIS = False  # paket tidak berisi ehr_approve.py; approve selalu manual
 '''
 
 # ---------------------------------------------------------------------------
