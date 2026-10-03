@@ -36,6 +36,19 @@ PREFIX_BELUM_LENGKAP = "Saat ini belum dapat diberikan status kelaikan kerja"
 SARAN_GD2PP_GDP = "Cek GD2PP dan konsultasi Poli Pegawai untuk GDP terganggu"
 SUFFIX_VAKSIN = " dan diberikan vaksinasi Hepatitis B"
 
+# Dikonfirmasi dr. Vidya, 2026-10-03 (NRM 385-45-12): GDP naik + HbA1c DM ->
+# SATU temuan saja "Suspek DM tipe 2" (baris GDP & sarannya dibuang, dan GDP
+# tidak dihitung sbg temuan terpisah utk kelaikan). Kasus GDP+GD2PP naik sudah
+# digabung sendiri oleh protocol_engine ("Suspek DM 2") -> tidak disentuh di sini.
+KESIMPULAN_GDP = ("Peningkatan GDP / Dugaan GDP terganggu", "Suspek DM")
+SARAN_GDP = (SARAN_GD2PP_GDP, "Konsultasi ke Dokter Umum Poli Pegawai/Klinik Pratama untuk suspek DM")
+KESIMPULAN_HBA1C_DM = "Suspek DM tipe 2 berdasarkan HbA1c"
+KESIMPULAN_DM_GABUNGAN = "Suspek DM tipe 2"
+
+
+def _gdp_digabung_ke_hba1c(d) -> bool:
+    return d.hba1c_status == "dm2" and d.gdp_status in ("naik", "suspek_dm") and not d.gd2pp_meningkat
+
 
 def _kelaikan_tetap_diberikan(d, hasil, pasien_dokter):
     """Return (teks_catatan_tambahan, daftar_yang_belum_lengkap) untuk kasus data belum lengkap."""
@@ -55,6 +68,7 @@ def _kelaikan_tetap_diberikan(d, hasil, pasien_dokter):
         # Ada penyebab "belum lengkap" lain yg belum ditangani di sini -- jangan menebak.
         return None, belum
     hasil2.radiologi_belum_lengkap = False  # ditangani sendiri lewat 'belum' di bawah
+    hasil2.saran = list(hasil.saran)  # alasan "konsultasi dokter" dinilai dari saran yg BENAR2 ditulis
     teks = format_catatan_tambahan(hasil2, pasien_dokter)
     vaksin = teks.endswith(SUFFIX_VAKSIN)
     if vaksin:
@@ -72,6 +86,16 @@ def generate_draft_pdf(entry):
     hasil = proses_pegawai(d)
     if d.hba1c_status is not None:
         hasil.saran = [s for s in hasil.saran if s != SARAN_GD2PP_GDP]
+    d_kelaikan = d
+    if _gdp_digabung_ke_hba1c(d):
+        # Teks dari run asli (GDP dibuang, HbA1c diganti nama); kelaikan & jumlah temuan dari
+        # run TANPA GDP. gdp_status=None TIDAK dipakai utk teks krn mengubah saran glukosuria.
+        d_kelaikan = dataclasses.replace(d, gdp_status=None)
+        hasil_k = proses_pegawai(d_kelaikan)
+        hasil.kesimpulan_lab = [KESIMPULAN_DM_GABUNGAN if x == KESIMPULAN_HBA1C_DM else x
+                                for x in hasil.kesimpulan_lab if x not in KESIMPULAN_GDP]
+        hasil.saran = [s for s in hasil.saran if s not in SARAN_GDP]
+        hasil.kelaikan, hasil.temuan, hasil.catatan_tambahan = hasil_k.kelaikan, hasil_k.temuan, hasil_k.catatan_tambahan
     pasien_dokter = pasien_adalah_dokter(d.nama)
 
     flag = hasil.flag
@@ -83,7 +107,7 @@ def generate_draft_pdf(entry):
 
     catatan_tambahan = format_catatan_tambahan(hasil, pasien_dokter)
     if hasil.kelaikan.startswith(PREFIX_BELUM_LENGKAP):
-        teks, belum = _kelaikan_tetap_diberikan(d, hasil, pasien_dokter)
+        teks, belum = _kelaikan_tetap_diberikan(d_kelaikan, hasil, pasien_dokter)
         if teks:
             catatan_tambahan = teks
             flag_alasan = [f"Data belum lengkap ({gabung_temuan_dan(belum)}) -- kelaikan tetap diberikan "

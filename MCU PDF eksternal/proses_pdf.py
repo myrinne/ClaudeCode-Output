@@ -251,12 +251,22 @@ async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
             else:
                 frame_form = await buka_tab_kesimpulan(page)
                 nip_hal = (await baca_identitas(frame_form)).get("nip")
+                approve_ya = await frame_form.query_selector("#FNDx0000000641Ya")
+                sudah_approve = bool(approve_ya) and await approve_ya.is_checked()
                 if nip_hal != hasil["nip"]:
                     status = f"🔴 TIDAK ditulis — NIP halaman ({nip_hal}) beda dgn data yang dibaca ({hasil['nip']})"
+                elif sudah_approve:
+                    # Field terkunci setelah approve (ditemukan 2026-10-03, NRM 385-45-12) --
+                    # jangan coba menulis; perubahan harus lewat dr. Vidya (un-approve manual).
+                    status = ("⛔ TIDAK ditulis — Approve Dokter sudah 'Ya', field terkunci. "
+                              "Kalau perlu diubah: un-approve manual dulu, lalu jalankan ulang --tulis")
                 else:
                     gagal, dilewati = [], []
                     for kunci, fid in FIELD_TARGET.items():
-                        ok_t, psn_t = await tulis_field(frame_form, fid, hasil["draft"][kunci])
+                        try:
+                            ok_t, psn_t = await tulis_field(frame_form, fid, hasil["draft"][kunci])
+                        except Exception as ex:  # mis. field terkunci -> Playwright timeout
+                            ok_t, psn_t = False, f"error: {str(ex).splitlines()[0][:150]}"
                         # Pasien tanpa order lab RSCM: 577 cuma tabel import otomatis ("Kosong"),
                         # tidak ada textarea (dicek DOM 2026-10-03, NRM 489-56-50). Isi lab sudah
                         # masuk field Kesimpulan (581) -> bukan kegagalan.

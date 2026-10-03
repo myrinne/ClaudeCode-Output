@@ -36,8 +36,9 @@ Semua run (kecuali `--tanpa-ehr`) dicatat di `notes_pdf_<tanggal>.md` + `draft/<
 | Data belum lengkap | Tetap "Mohon segera lengkapi …" di saran, **tapi kelaikan tetap diberikan**: "Laik kerja dengan catatan … dan melengkapi pemeriksaan X". |
 | Tes di luar protokol | LDL/HDL, Vit D, dst tidak masuk ringkasan. Yang bisa mengubah kelaikan (hs-CRP, tumor marker, D-dimer, NAPZA) → catatan di notes kalau abnormal. |
 | >1 PDF beda tanggal | Hasil terbaru dipakai, yang lama jadi "riwayat" di tabel. Tes yang cuma ada di PDF lama → dipakai + catatan PERLU_CEK_MANUAL. |
+| GDP naik + HbA1c DM | Satu temuan saja: **"Suspek DM tipe 2"** (baris & saran GDP dibuang, GDP tidak dihitung sbg temuan terpisah utk kelaikan). GDP+GD2PP naik tetap ditangani protokol lama ("Suspek DM 2"). |
 | Saran GD2PP | Kalau HbA1c sudah diperiksa, saran "Cek GD2PP ... GDP terganggu" dibuang (temuan GDP tetap). |
-| Approve | Manual dulu sampai alur ini terbukti andal. |
+| Approve | Manual dulu sampai alur ini terbukti andal. Kalau sudah di-approve, field terkunci -> script tidak menulis. |
 
 Batas eGFR protokol = 60 (KDIGO, dikonfirmasi 2026-10-03); kalau vendor tidak mencetak eGFR,
 dihitung CKD-EPI 2021 dari kreatinin. Hasil dari PDF lama boleh dipakai kalau tes itu tidak ada
