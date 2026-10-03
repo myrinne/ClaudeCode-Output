@@ -254,13 +254,22 @@ async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
                 if nip_hal != hasil["nip"]:
                     status = f"🔴 TIDAK ditulis — NIP halaman ({nip_hal}) beda dgn data yang dibaca ({hasil['nip']})"
                 else:
-                    gagal = []
+                    gagal, dilewati = [], []
                     for kunci, fid in FIELD_TARGET.items():
                         ok_t, psn_t = await tulis_field(frame_form, fid, hasil["draft"][kunci])
+                        # Pasien tanpa order lab RSCM: 577 cuma tabel import otomatis ("Kosong"),
+                        # tidak ada textarea (dicek DOM 2026-10-03, NRM 489-56-50). Isi lab sudah
+                        # masuk field Kesimpulan (581) -> bukan kegagalan.
+                        if not ok_t and kunci == "ringkasan_lab" and "tidak ditemukan" in psn_t:
+                            print(f"– {kunci}: dilewati (tidak ada textarea; lab sudah ada di Kesimpulan)")
+                            dilewati.append(kunci)
+                            continue
                         print(f"{'✓' if ok_t else '✗ GAGAL'} {kunci}: {psn_t}")
                         if not ok_t:
                             gagal.append(f"{kunci} ({psn_t})")
-                    status = ("✍️ 8 field ditulis — **APPROVE MANUAL** (script tidak menyentuh Approve Dokter)"
+                    jumlah = len(FIELD_TARGET) - len(dilewati)
+                    ket = f" (dilewati: {', '.join(dilewati)} — tidak ada textarea)" if dilewati else ""
+                    status = (f"✍️ {jumlah} field ditulis{ket} — **APPROVE MANUAL** (script tidak menyentuh Approve Dokter)"
                               if not gagal else f"⚠️ Sebagian gagal ditulis: {'; '.join(gagal)}")
         print(f"\nStatus: {status}")
         notes = simpan(nrm, format_notes(nrm, st, psn, lap, hasil, masalah_baca, dari_scan, status, ekstrak),
