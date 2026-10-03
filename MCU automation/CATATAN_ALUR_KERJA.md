@@ -96,6 +96,7 @@ python fase_batch.py --final 406-66-04 ...                  # preview mode final
 - Tetap **approve manual** (🔴): merah dari temuan nyata (eGFR berat / curiga
   hemodialisa) dan kelaikan yang tetap tidak bisa dihitung. Lab rusak/tidak
   terbaca tetap tidak ditulis sama sekali.
+- Kunjungan MCU terbaru boleh s.d. **180 hari** lalu (alur biasa 90 hari).
 - Logikanya di `kelaikan_final.py`, dipakai bersama pipeline `MCU PDF eksternal`.
 - **Tanpa `--final` perilaku lama tidak berubah** ("Saat ini belum dapat
   diberikan status kelaikan kerja..." + tidak di-approve).
