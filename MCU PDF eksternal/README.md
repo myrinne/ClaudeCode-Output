@@ -17,11 +17,10 @@ Prasyarat sama dgn pipeline lama: Chrome debug port 9222 sudah terbuka & login E
    Unduh ke `pdf_masuk/<NRM>/`, simpan teks + gambar per halaman.
 2. **Baca PDF → `ekstrak/<NRM>.json`** — dilakukan Claude di sesi (bukan API):
    halaman teks dibaca dari `.txt`, halaman scan/EKG dari `.png`. Format di bawah.
-3. **Uji offline** — `python proses_pdf.py <NRM> --tanpa-ehr` (tanpa Chrome).
-4. **Preview dengan EHR** — `python proses_pdf.py <NRM>`
-   Buka pasien, baca EHR, cek identitas, gabung, tampilkan tabel verifikasi + draft.
-5. **Tulis** — `python proses_pdf.py <NRM> --tulis` → 8 field ditulis.
-   **Approve Dokter tidak pernah disentuh** — approve manual.
+3. **Tulis langsung** — `python proses_pdf.py <NRM> --tulis` setiap kali selesai membaca 1 NRM,
+   TANPA menunggu konfirmasi per pasien (dikonfirmasi dr. Vidya, 2026-10-03: dia membaca sendiri
+   sebelum approve). **Approve Dokter tidak pernah disentuh** — approve manual.
+   Opsional: `--tanpa-ehr` (uji offline tanpa Chrome) atau tanpa flag (preview, tidak menulis).
 
 Semua run (kecuali `--tanpa-ehr`) dicatat di `notes_pdf_<tanggal>.md` + `draft/<NRM>.json`.
 
@@ -36,8 +35,8 @@ Semua run (kecuali `--tanpa-ehr`) dicatat di `notes_pdf_<tanggal>.md` + `draft/<
 | Data belum lengkap | Tetap "Mohon segera lengkapi …" di saran, **tapi kelaikan tetap diberikan**: "Laik kerja dengan catatan … dan melengkapi pemeriksaan X". |
 | Tes di luar protokol | LDL/HDL, Vit D, dst tidak masuk ringkasan. Yang bisa mengubah kelaikan (hs-CRP, tumor marker, D-dimer, NAPZA) → catatan di notes kalau abnormal. |
 | >1 PDF beda tanggal | Hasil terbaru dipakai, yang lama jadi "riwayat" di tabel. Tes yang cuma ada di PDF lama → dipakai + catatan PERLU_CEK_MANUAL. |
-| GDP naik + HbA1c DM | Satu temuan saja: **"Suspek DM tipe 2"** (baris & saran GDP dibuang, GDP tidak dihitung sbg temuan terpisah utk kelaikan). GDP+GD2PP naik tetap ditangani protokol lama ("Suspek DM 2"). |
-| Saran GD2PP | Kalau HbA1c sudah diperiksa, saran "Cek GD2PP ... GDP terganggu" dibuang (temuan GDP tetap). |
+| GDP naik + HbA1c DM | (di protocol_engine.py, berlaku utk kedua pipeline) Satu temuan saja: **"Suspek DM tipe 2"** (baris & saran GDP dibuang, GDP tidak dihitung sbg temuan terpisah utk kelaikan). GDP+GD2PP naik tetap ditangani protokol lama ("Suspek DM 2"). |
+| Saran GD2PP | (di protocol_engine.py) Kalau HbA1c sudah diperiksa, saran "Cek GD2PP ... GDP terganggu" dibuang (temuan GDP tetap). |
 | Approve | Manual dulu sampai alur ini terbukti andal. Kalau sudah di-approve, field terkunci -> script tidak menulis. |
 
 Batas eGFR protokol = 60 (KDIGO, dikonfirmasi 2026-10-03); kalau vendor tidak mencetak eGFR,
