@@ -78,6 +78,23 @@ def _kelaikan_tetap_diberikan(d, hasil, pasien_dokter):
     return teks, belum, hasil2
 
 
+PREFIX_SEGERA_LENGKAPI = "Mohon segera lengkapi: "
+
+
+def _saran_lengkapi_rapi(saran, belum):
+    """Ganti kalimat engine 'Mohon segera lengkapi: EKG belum dilakukan (usia >= 35
+    tahun), ...' (terdengar seperti catatan internal) jadi 'Mohon melengkapi
+    pemeriksaan EKG, tanda vital' (dikonfirmasi dr. Vidya, 2026-10-03, hanya
+    mode final/PDF; rekam yg sudah di-approve dibiarkan)."""
+    for i, x in enumerate(saran):
+        if x.startswith(PREFIX_SEGERA_LENGKAPI):
+            item = [b.replace("pemeriksaan ", "", 1) for b in belum]
+            if "pemeriksaan urinalisa" in x and "urinalisa" not in item:
+                item.append("urinalisa")
+            return saran[:i] + [f"Mohon melengkapi pemeriksaan {', '.join(item)}"] + saran[i + 1:]
+    return list(saran)
+
+
 def _tambah_lengkapi(saran, item):
     """Sisipkan item ke kalimat 'Mohon (segera) lengkapi/melengkapi ...' yg sudah ada; kalau belum ada, buat baru."""
     for i, x in enumerate(saran):
@@ -114,6 +131,7 @@ def generate_draft_final(entry, sumber="mode MCU final"):
         teks, belum, hasil2 = _kelaikan_tetap_diberikan(d, hasil, pasien_dokter)
         if teks:
             catatan_tambahan = teks
+            hasil.saran = _saran_lengkapi_rapi(hasil.saran, belum)
             # Alasan merah lain dari engine (mis. eGFR berat) TETAP dipertahankan;
             # hanya alasan "belum lengkap" yang diganti.
             flag_alasan = [a for a in flag_alasan if a != ALASAN_ENGINE_BELUM_LENGKAP]
