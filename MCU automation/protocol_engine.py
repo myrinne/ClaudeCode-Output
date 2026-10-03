@@ -592,7 +592,13 @@ def _ada_kata_kunci_di_baris_temuan(teks_kesimpulan_radiologi: str, kata_kunci: 
 # tak dikenal, memicu rujukan Sp. Bedah untuk kardiomegali tunggal yang
 # seharusnya tidak dapat saran apa pun. Substring "dibanding" menangkap
 # kedua ejaan.
-KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibanding", "tidak membesar")
+# "tidak tampak opasitas/infiltrat bermakna" -- kesimpulan normal versi radiolog
+# RSPI Sulianti Saroso (2026-10-03, pasien PDF eksternal), sebelumnya keliru
+# memicu rujukan Sp.PD Divisi KP. Sengaja frasa lengkap (bukan cuma "tidak
+# tampak opasitas") supaya baris "tidak tampak opasitas, namun tampak nodul"
+# tetap terbaca sbg temuan.
+KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibanding", "tidak membesar",
+                           "tidak tampak opasitas/infiltrat bermakna")
 
 # CTR (Cardio-Thoracic Ratio) baris (mis. "Cor CTR=51%", "CTR =51 %") --
 # dikonfirmasi dr. Vidya, 2026-08-26: CTR sampai dengan 55% diabaikan
