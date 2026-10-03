@@ -20,7 +20,7 @@ import re
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-from protocol_engine import proses_pegawai
+from protocol_engine import proses_pegawai, SARAN_ANEMIA_SEDANG
 from konverter_queue import queue_ke_datapegawai
 
 
@@ -159,6 +159,53 @@ GANTI_SARAN_PASIEN_DOKTER = {
     # Umum Klinik Pratama untuk temuannya sendiri.
     "Cek ulang urinalisa, bila perlu konsultasi ke Dokter Umum Klinik Pratama":
         "Cek ulang urinalisa, bila perlu lakukan tatalaksana terhadap temuan urinalisa",
+    # Kreatinin naik + eGFR turun + ureum naik ("suspek gangguan fungsi
+    # ginjal") -- dikonfirmasi dr. Vidya, 2026-09-26, kasus Adhitya Sigit
+    # Ramadianto NRM 420-10-87 -- variant eGFR NORMAL sudah ada di atas,
+    # tapi variant ini (eGFR turun) belum, jadi lookup diam-diam gagal dan
+    # dr. Adhitya tetap dapat saran "konsultasi Dokter Umum Poli Pegawai"
+    # untuk temuannya sendiri. Diperbaiki manual oleh dr. Vidya di EHR;
+    # entry ini supaya tidak terulang di pasien dokter berikutnya.
+    "Cek ulang kreatinin dan konsultasi Dokter Umum Poli Pegawai (bila perlu Sp.PD Divisi Ginjal Hipertensi) "
+    "untuk peningkatan kreatinin (suspek gangguan fungsi ginjal)":
+        "Cek ulang kreatinin dan bila perlu lakukan tatalaksana untuk temuan peningkatan kreatinin",
+    # Anemia sedang -- dikonfirmasi dr. Vidya, 2026-09-26, ditemukan lewat
+    # audit proaktif setelah kasus kreatinin di atas (belum pernah muncul
+    # di pasien dokter secara langsung). Pakai referensi variabel
+    # SARAN_ANEMIA_SEDANG (bukan string hardcode) supaya kalau teks
+    # sumbernya diedit di protocol_engine.py, key ini otomatis ikut update
+    # -- menghindari failure mode "key jadi stale" yang sama seperti kasus
+    # EKG (lihat catatan di atas).
+    SARAN_ANEMIA_SEDANG:
+        "Lakukan tatalaksana untuk temuan anemia sedang",
+    # Albuminuria + hematuria (NON-trace) -- dikonfirmasi dr. Vidya,
+    # 2026-09-26, ditemukan lewat audit yang sama -- variant trace-nya
+    # sudah ada di atas ("Klinik Pratama"), tapi variant non-trace ini
+    # ("Poli Pegawai") belum.
+    "Cek ulang urin dan bila perlu konsultasi Dokter Umum Poli Pegawai untuk temuan urinalisa":
+        "Cek ulang urin dan bila perlu lakukan tatalaksana untuk temuan urinalisa",
+    # Urobilinogenuria (standalone) -- dikonfirmasi dr. Vidya, 2026-09-26,
+    # ditemukan lewat audit yang sama. Pakai referensi variabel
+    # SARAN_UROBILINOGENURIA (sudah didefinisikan di atas) bukan string
+    # hardcode, sama alasan spt SARAN_ANEMIA_SEDANG di atas.
+    SARAN_UROBILINOGENURIA:
+        "Cek ulang urinalisa, bila perlu lakukan tatalaksana untuk temuan urobilinogenuria",
+    # Suspek DM 2 lewat kombinasi GDP+GD2PP sama-sama naik -- dikonfirmasi
+    # dr. Vidya, 2026-09-26, ditemukan lewat audit yang sama.
+    "Cek HbA1c, dan konsultasi Dokter Umum Poli Pegawai":
+        "Cek HbA1c, dan bila perlu lakukan tatalaksana untuk temuan Suspek DM 2",
+    # Glukosuria berdiri sendiri (tanpa GDP darah naik) -- dikonfirmasi dr.
+    # Vidya, 2026-09-26, SEKALIGUS dengan revisi teks saran non-dokternya
+    # di protocol_engine.py (lihat catatan di sana) -- key di sini HARUS
+    # sinkron dengan teks baru itu.
+    "Cek ulang urinalisa, bila perlu cek GDP dan GD2PP untuk temuan glukosuria dan konsultasi ke Dokter Umum Poli Pratama":
+        "Cek ulang urinalisa, bila perlu cek GDP dan GD2PP untuk temuan glukosuria dan lakukan tatalaksana untuk temuan tersebut",
+    # Albuminuria (standalone) -- dikonfirmasi dr. Vidya, 2026-09-26 --
+    # beda pola dari kasus-kasus lain di atas (teks aslinya generik
+    # "Konsultasi dokter", bukan "Dokter Umum Poli X"), tapi tetap absurd
+    # disuruh ke pasien yang dokter sendiri.
+    "Konsultasi dokter untuk albuminuria":
+        "Cek ulang dan bila perlu lakukan tatalaksana terhadap albuminuria",
 }
 
 
@@ -278,11 +325,20 @@ def gabung_saran_urinalisa_proteinuria(daftar_saran: list) -> list:
     406-53-41: ISK + urobilinogenuria masih tertulis 2 baris terpisah krn
     urobilinogenuria belum pernah dicakup di fungsi ini).
 
+    Proteinuria ringan + urobilinogenuria BERSAMA tanpa ISK/hematuria (jadi
+    tidak ada baris Poli Pegawai yang bisa jadi jangkar gabungan) -- dulu
+    dibiarkan sebagai 2 baris terpisah yang nyaris identik ("Cek ulang
+    urin, bila perlu konsultasi ke Dokter Umum Poli Pratama" vs "Cek ulang
+    urinalisa, bila perlu konsultasi ke Dokter Umum Poli Pratama"), sekarang
+    digabung jadi satu baris juga -- dikonfirmasi dr. Vidya, 2026-09-26,
+    kasus Lalan Pradika NRM 381-88-63.
+
     Kombinasi urinalisa lain (mis. proteinuria + silinder/glukosuria/
     albuminuria, tanpa ISK/hematuria) BELUM dicakup di sini -- baris
     proteinuria/urobilinogenuria dibiarkan apa adanya kalau tidak ada saran
-    ISK/hematuria yang bisa jadi tujuan gabungan (sesuai pola 'ditambah
-    satu-satu saat muncul' di GANTI_SARAN_PASIEN_DOKTER)."""
+    ISK/hematuria ATAU pasangannya (proteinuria+urobilinogenuria) yang bisa
+    jadi tujuan gabungan (sesuai pola 'ditambah satu-satu saat muncul' di
+    GANTI_SARAN_PASIEN_DOKTER)."""
     standalone_hadir = [s for s in (SARAN_PROTEINURIA_RINGAN, SARAN_UROBILINOGENURIA) if s in daftar_saran]
     if not standalone_hadir:
         return daftar_saran
@@ -292,10 +348,13 @@ def gabung_saran_urinalisa_proteinuria(daftar_saran: list) -> list:
         if s.startswith(PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI):
             alasan_urin = s[len(PREFIX_CEK_ULANG_URINALISA_POLI_PEGAWAI):]
         elif s in standalone_hadir:
-            continue  # dibuang, digabung ke baris ISK/hematuria di bawah
+            continue  # dibuang, digabung ke baris ISK/hematuria (atau pasangannya) di bawah
         else:
             lainnya.append(s)
     if alasan_urin is None:
+        if len(standalone_hadir) >= 2:
+            gabungan = "Cek ulang urin, bila perlu konsultasi ke Dokter Umum Poli Pratama terkait temuan urinalisa"
+            return [gabungan] + lainnya
         return daftar_saran  # standalone sendirian, tidak ada yang digabung
     alasan_tambahan = []
     if SARAN_PROTEINURIA_RINGAN in standalone_hadir:

@@ -852,10 +852,20 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             hasil.kesimpulan_lab.append(kesimpulan)
             tambah_temuan(kesimpulan, "Cek HbA1c, dan konsultasi Dokter Umum Poli Pegawai", False)
             suspek_dm2_via_gdp = True
+        elif d.hba1c_status == "dm2":
+            # GDP naik/suspek DM + HbA1c DM -> SATU temuan saja "Suspek DM
+            # tipe 2" (ditulis di blok HbA1c di bawah). Baris & saran GDP
+            # dibuang dan TIDAK dihitung sbg temuan terpisah utk kelaikan --
+            # dikonfirmasi dr. Vidya, 2026-10-03 (kasus NRM 385-45-12).
+            pass
         else:
             r = interpretasi_gdp(d.gdp_status)
             if r:
                 _, kesimpulan, saran, wajib = r
+                if d.hba1c_status and saran and saran.startswith("Cek GD2PP"):
+                    # HbA1c sudah diperiksa -> cek GD2PP tidak perlu, temuan
+                    # GDP tetap ditulis (dikonfirmasi dr. Vidya, 2026-10-03).
+                    saran = None
                 hasil.kesimpulan_lab.append(kesimpulan)
                 tambah_temuan(kesimpulan, saran, wajib)
 
@@ -867,6 +877,8 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
         r = interpretasi_hba1c(d.hba1c_status)
         if r:
             _, kesimpulan, saran, wajib = r
+            if d.hba1c_status == "dm2" and d.gdp_status in ("naik", "suspek_dm"):
+                kesimpulan = "Suspek DM tipe 2"  # gabungan GDP + HbA1c, lihat blok GDP di atas
             hasil.kesimpulan_lab.append(kesimpulan)
             tambah_temuan(kesimpulan, saran, wajib)
 
@@ -910,7 +922,12 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
                 # perlu konsul Poli Pratama. Kalau GDP darah SUDAH
                 # meningkat, saran GDP sendiri (di atas) sudah cukup, tidak
                 # perlu saran tambahan di sini supaya tidak duplikatif.
-                saran = f"Cek ulang urin, bila perlu konsul ke Dokter Umum Poli Pratama terhadap temuan {kesimpulan}"
+                # Direvisi dr. Vidya, 2026-09-26: tambah anjuran cek GDP dan
+                # GD2PP eksplisit di saran (bukan cuma "cek ulang urin").
+                # Kalau ada perubahan lagi di sini, update juga key-nya di
+                # GANTI_SARAN_PASIEN_DOKTER (fase3a_generate_teks.py) --
+                # lihat catatan failure mode di [[mcu-doctor-patient-wording]].
+                saran = "Cek ulang urinalisa, bila perlu cek GDP dan GD2PP untuk temuan glukosuria dan konsultasi ke Dokter Umum Poli Pratama"
             tambah_temuan(kesimpulan, saran, wajib)
     else:
         hasil.kesimpulan_lab.append("Urinalisa : Dalam batas normal")

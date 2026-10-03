@@ -12,6 +12,11 @@ Thumbs.db
 __pycache__/
 *.pyc
 
+# Virtual environments (large, machine-specific, never tracked)
+.venvs/
+venv/
+.venv/
+
 # career-ops is its own independent git repo, not tracked here
 career-ops/
 
@@ -24,3 +29,10 @@ MCU/draft_fase3.json
 OCR pdf to ppt/output folder/
 MCU/notes.md
 MCU/notes_*.md
+
+# MCU folder renamed MCU/ -> "MCU automation/" (2026-10-03): same PHI rules
+MCU automation/queue.json
+MCU automation/draft_fase3.json
+MCU automation/notes.md
+MCU automation/notes_*.md
+MCU automation/Notes history/
