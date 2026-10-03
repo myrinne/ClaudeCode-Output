@@ -1,0 +1,6 @@
+# Data pasien (PDF eksternal, hasil ekstraksi, draft, notes) -- PHI, tidak
+# pernah masuk git. Yang di-track cuma script & dokumentasi.
+pdf_masuk/
+ekstrak/
+draft/
+notes_*.md
