@@ -31,6 +31,9 @@ from fase3a_generate_teks import (format_ringkasan_jasmani, format_ringkasan_lab
                                   pasien_adalah_dokter)
 
 PREFIX_BELUM_LENGKAP = "Saat ini belum dapat diberikan status kelaikan kerja"
+# Dikonfirmasi dr. Vidya, 2026-10-03 (NRM 385-45-12): kalau HbA1c sudah diperiksa,
+# saran cek GD2PP utk GDP terganggu tidak perlu. Temuan GDP-nya tetap ditulis.
+SARAN_GD2PP_GDP = "Cek GD2PP dan konsultasi Poli Pegawai untuk GDP terganggu"
 SUFFIX_VAKSIN = " dan diberikan vaksinasi Hepatitis B"
 
 
@@ -67,6 +70,8 @@ def generate_draft_pdf(entry):
     """Return dict: nama, nip, draft, catatan_manual, flag, flag_alasan, kelaikan."""
     d, catatan_manual, override_urinalisa = queue_ke_datapegawai(entry)
     hasil = proses_pegawai(d)
+    if d.hba1c_status is not None:
+        hasil.saran = [s for s in hasil.saran if s != SARAN_GD2PP_GDP]
     pasien_dokter = pasien_adalah_dokter(d.nama)
 
     flag = hasil.flag
