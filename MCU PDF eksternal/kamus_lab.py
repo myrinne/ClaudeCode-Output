@@ -181,6 +181,8 @@ TES_INFO = [
     "cholesterol hdl", "kolesterol hdl", "hdl", "hdl cholesterol",
     "vitamin d 25-oh total", "vitamin d", "25-oh vitamin d",
     "hs-crp", "hscrp", "crp",
+    "glukosa sewaktu", "gds", "gula darah sewaktu", "luc", "jumlah neutrofil absolut", "jumlah limfosit absolut",
+    "rasio neutrofil limfosit", "netrofil",
     "cea", "psa", "free psa", "afp", "ca 125", "ca 19-9",
     "d-dimer", "apo-b", "apo b", "ck", "cpk",
     "protein total", "albumin", "globulin", "urea n", "bun",
@@ -191,7 +193,7 @@ TES_INFO = [
     "neutrofil limfosit ratio", "nlr", "nrbc", "nrbc absolut",
     "adp 1 0 um", "adp 2 0 um", "adp 5 0 um", "adp 10 0 um", "kesan",
     "morphine", "morphin", "cocaine", "coccain", "amphetamine", "amphetamin", "thc",
-    "methamphetamine", "methamphetamin", "bzo", "soma", "benzodiazepin",
+    "methamphetamine", "methamphetamin", "bzo", "soma", "benzodiazepin", "morfin", "metamphetamine", "metamfetamin", "benzodiazepine", "kokain", "mariyuana", "marijuana", "ganja", "amfetamin", "ganja/thc", "opiat", "metamfetamin", "opiate", "cannabis", "benzodiazepin",
 ]
 
 # Tes info yang TETAP harus dilaporkan ke dr. Vidya kalau abnormal krn bisa
@@ -200,7 +202,8 @@ TES_INFO = [
 PENTING_KALAU_ABNORMAL = ("hs-crp", "hscrp", "crp", "cea", "psa", "afp", "ca 125", "ca 19-9",
                           "d-dimer", "morphine", "morphin", "cocaine", "coccain", "amphetamine",
                           "amphetamin", "thc", "methamphetamine", "methamphetamin", "bzo", "soma",
-                          "benzodiazepin")
+                          "benzodiazepin", "morfin", "metamphetamine", "metamfetamin", "benzodiazepine", "kokain", "mariyuana",
+                          "marijuana", "ganja", "amfetamin")
 
 
 # ---------------------------------------------------------------------------
@@ -216,11 +219,11 @@ URIN = {
     "Albumin": ["albumin", "albumin urine", "protein", "protein urine", "albumin urin", "protein urin"],
     "Glukosa": ["glukosa", "glukosa urin", "glukosa urine", "glucose", "reduksi"],
     "Keton": ["keton", "ketone", "keton urin"],
-    "Darah / Hb": ["darah", "darah urin", "darah blood", "blood", "darah / hb", "hb urin"],
+    "Darah / Hb": ["darah", "darah urin", "darah blood", "blood", "darah / hb", "darah/hb", "hb urin"],
     "Bilirubin": ["bilirubin", "bilirubin urin"],
     "Urobilinogen": ["urobilinogen"],
     "Nitrit": ["nitrit", "nitrite"],
-    "Leukosit Esterase": ["leukosit esterase", "lekosit esterase", "leukocyte esterase", "leukosit esterase dipstick"],
+    "Leukosit Esterase": ["leukosit esterase", "lekosit esterase", "leukocyte esterase", "leukosit esterase dipstick", "leukosit strip", "leukosit dipstick"],
     "Leukosit": ["leukosit", "lekosit", "leukosit sedimen", "wbc"],
     "Eritrosit": ["eritrosit", "eritrosit sedimen", "rbc"],
     "Silinder": ["silinder", "silinder hialin", "silinder lain", "cylinder", "cast"],

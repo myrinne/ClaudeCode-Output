@@ -314,9 +314,14 @@ def bangun_urin(ekstrak: dict):
                 flag = "*" if m > atas else ""
             elif _positif_dipstick(h):
                 flag = "*"
+        elif nama in URIN_DIPSTICK and ke_float(h) is not None and atas is not None:
+            # Vendor flowcytometry (mis. Fatmawati: Bakteri 122.5 /uL, rujukan <=385.8) --
+            # angka dinilai thd rujukan, BUKAN dianggap "positif" krn bukan teks Negatif.
+            flag = "*" if ke_float(h) > atas else ""
         elif nama in URIN_DIPSTICK:
             flag = "*" if _positif_dipstick(h) else ""
-        rujukan_rscm = "Negatif" if nama in URIN_DIPSTICK or nama == "Silinder" else (
+        angka_vs_rujukan = ke_float(h) is not None and atas is not None and nama not in ("Silinder", "Urobilinogen")
+        rujukan_rscm = fmt_rentang(bawah, atas) if angka_vs_rujukan else "Negatif" if nama in URIN_DIPSTICK or nama == "Silinder" else (
             "Normal" if nama == "Urobilinogen" else fmt_rentang(bawah, atas))
 
         if nama in hasil:  # baris kedua utk nama RSCM yg sama (mis. Kristal Normal + Kristal Abnormal)

@@ -65,6 +65,14 @@ def _kelaikan_tetap_diberikan(d, hasil, pasien_dokter):
     return teks, belum
 
 
+def _tambah_lengkapi(saran, item):
+    """Sisipkan item ke kalimat 'Mohon (segera) lengkapi/melengkapi ...' yg sudah ada; kalau belum ada, buat baru."""
+    for i, x in enumerate(saran):
+        if x.startswith("Mohon segera lengkapi: ") or x.startswith("Mohon melengkapi pemeriksaan "):
+            return saran[:i] + [f"{x}, pemeriksaan {item}" if x.startswith("Mohon segera") else f"{x}, {item}"] + saran[i + 1:]
+    return list(saran) + [f"Mohon melengkapi pemeriksaan {item}"]
+
+
 def generate_draft_pdf(entry):
     """Return dict: nama, nip, draft, catatan_manual, flag, flag_alasan, kelaikan."""
     d, catatan_manual, override_urinalisa = queue_ke_datapegawai(entry)
@@ -90,6 +98,12 @@ def generate_draft_pdf(entry):
 
     teks_jasmani = format_ringkasan_jasmani(hasil)
     teks_lab = format_ringkasan_lab(hasil, override_urinalisa)
+    # Tidak ada lab darah sama sekali (PDF cuma vital/PF, mis. RSKD Duren Sawit 2026-10-03):
+    # engine menulis "Laboratorium : Normal" -- menyesatkan. Ganti "Belum dilakukan" + minta lengkapi.
+    lab_darah = {k: v for k, v in (entry.get("laboratorium") or {}).items() if k != "_error"}
+    if not lab_darah and teks_lab.startswith("Laboratorium :\nNormal"):
+        teks_lab = teks_lab.replace("Laboratorium :\nNormal", "Laboratorium :\nBelum dilakukan", 1)
+        hasil.saran = _tambah_lengkapi(hasil.saran, "laboratorium darah")
     teks_ekg = format_hasil_ekg(hasil)
     draft = {
         "ringkasan_jasmani": teks_jasmani,

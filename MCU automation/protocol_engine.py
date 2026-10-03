@@ -597,8 +597,13 @@ def _ada_kata_kunci_di_baris_temuan(teks_kesimpulan_radiologi: str, kata_kunci: 
 # memicu rujukan Sp.PD Divisi KP. Sengaja frasa lengkap (bukan cuma "tidak
 # tampak opasitas") supaya baris "tidak tampak opasitas, namun tampak nodul"
 # tetap terbaca sbg temuan.
+# "cor dan pulmo dalam batas normal" / "tak tampak tb paru" -- kesimpulan normal
+# radiolog RSKD Duren Sawit (2026-10-03). Frasa negasi TB WAJIB lengkap ("tak/
+# tidak tampak tb paru") -- kalau cuma "tb paru", baris itu justru memicu rujukan
+# Sp.PD Divisi KP lewat KATA_KUNCI_ARAH_SP_PARU.
 KATA_KUNCI_BUKAN_TEMUAN = ("tidak tampak kelainan", "lateralisasi", "dibanding", "tidak membesar",
-                           "tidak tampak opasitas/infiltrat bermakna")
+                           "tidak tampak opasitas/infiltrat bermakna",
+                           "cor dan pulmo dalam batas normal", "tak tampak tb paru", "tidak tampak tb paru")
 
 # CTR (Cardio-Thoracic Ratio) baris (mis. "Cor CTR=51%", "CTR =51 %") --
 # dikonfirmasi dr. Vidya, 2026-08-26: CTR sampai dengan 55% diabaikan
