@@ -104,7 +104,10 @@ async def approve_dokter(frame_form):
     return True, pesan
 
 
-async def buka_pasien_dari_nrm(page, nrm):
+MAKS_HARI_KUNJUNGAN_FINAL = 180  # --final: kunjungan MCU boleh s.d. 180 hari lalu (alur biasa 90)
+
+
+async def buka_pasien_dari_nrm(page, nrm, maks_hari=90):
     """Gabungan logika fase0: cari pasien, pilih kunjungan MCU terbaru, render
     form klinis. Return (berhasil: bool, pesan: str) -- TIDAK menebak kalau
     ambigu, sama seperti fase0_buka_pasien.py asli."""
@@ -112,7 +115,7 @@ async def buka_pasien_dari_nrm(page, nrm):
     if error:
         return False, error
 
-    kandidat, semua_baris, error = await cari_kandidat_kunjungan_mcu(page)
+    kandidat, semua_baris, error = await cari_kandidat_kunjungan_mcu(page, maks_hari)
     if error:
         return False, f"{error} (pasien: {nama})"
 
@@ -131,7 +134,8 @@ async def proses_satu_pasien(page, nrm, mode_tulis, mode_final=False):
              "flag": None, "draft": None, "field_writes": [], "approve": None,
              "catatan_manual": [], "flag_alasan": []}
 
-    ok, pesan = await buka_pasien_dari_nrm(page, nrm)
+    ok, pesan = await buka_pasien_dari_nrm(
+        page, nrm, MAKS_HARI_KUNJUNGAN_FINAL if mode_final else 90)
     if not ok:
         hasil["status"] = "perlu_cek_manual"
         hasil["detail"] = pesan

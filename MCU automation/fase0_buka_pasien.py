@@ -104,10 +104,13 @@ async def cari_pasien(page, nrm):
     return m.group(1), nama, None
 
 
-async def cari_kandidat_kunjungan_mcu(page):
+async def cari_kandidat_kunjungan_mcu(page, maks_hari=90):
     """Baca tabel Daftar Kunjungan, filter Pembayaran='MCU Pegawai' AND
     Unit/Dept='Medical Check Up', urutkan terbaru dulu.
     Return (daftar_kandidat_terurut, semua_baris_untuk_debug, error).
+    maks_hari: kunjungan terbaru lebih tua dari ini -> ditolak (cek manual).
+    90 utk alur biasa; fase_batch.py --final memakai 180 (dikonfirmasi
+    dr. Vidya, 2026-10-03 -- MCU final menutup kunjungan lama, mis. 30 Juni).
     TIDAK langsung memutuskan satu -- caller yang coba render tiap kandidat
     (beberapa kunjungan berlabel sama ternyata cuma sub-visit vaksin, bukan
     MCU lengkap -- lihat kasus Mia Harisandi)."""
@@ -153,7 +156,7 @@ async def cari_kandidat_kunjungan_mcu(page):
     kandidat_valid.sort(key=lambda k: k["_dt"], reverse=True)
 
     umur_hari = (datetime.now() - kandidat_valid[0]["_dt"]).days
-    if umur_hari > 90:
+    if umur_hari > maks_hari:
         return [], baris, (
             f"Kunjungan MCU Pegawai/Medical Check Up TERBARU untuk pasien ini adalah "
             f"{kandidat_valid[0]['tanggal']} ({umur_hari} hari lalu) -- terlalu lama, "
