@@ -1,0 +1,25 @@
+{
+  "nrm": "NNN-NN-NN",
+  "sumber": [
+    {"berkas": "berkas1", "vendor": "Lab Contoh", "tanggal": "2026-01-15", "isi": "lab darah + urin + rontgen; hal 1-2 teks, hal 3 scan"}
+  ],
+  "identitas_pdf": {"nama": "Tn. CONTOH PASIEN, S.Kom", "tgl_lahir": "1990-05-20", "jenis_kelamin": "L", "nip": null},
+  "tanda_vital": {"td_sistolik": 120, "td_diastolik": 80, "tinggi_badan": 170, "berat_badan": 68, "lingkar_perut": 84, "nadi": 78},
+  "lab": [
+    {"nama": "Hemoglobin", "hasil": "14.2", "satuan": "g/dL", "rujukan": "13.2 - 17.3", "flag_vendor": "", "vendor": "Lab Contoh", "tanggal": "2026-01-15", "berkas": "berkas1", "halaman": 1, "dibaca_dari": "teks"},
+    {"nama": "SGPT", "hasil": "38", "satuan": "U/L", "rujukan": "< 50", "flag_vendor": "", "vendor": "Lab Contoh", "tanggal": "2026-01-15", "berkas": "berkas1", "halaman": 1, "dibaca_dari": "teks"},
+    {"nama": "Glukosa Puasa", "hasil": "94", "satuan": "mg/dL", "rujukan": "70 - 99", "flag_vendor": "", "vendor": "Lab Contoh", "tanggal": "2026-01-15", "berkas": "berkas1", "halaman": 1, "dibaca_dari": "teks"},
+    {"nama": "Anti-HBs", "hasil": "Reaktif (Kons. 120)", "nilai_angka": "120", "satuan": "mIU/mL", "rujukan": ">= 10", "flag_vendor": "", "vendor": "Lab Contoh", "tanggal": "2026-01-15", "berkas": "berkas1", "halaman": 2, "dibaca_dari": "teks"}
+  ],
+  "urin": [
+    {"nama": "Protein", "hasil": "Negatif", "satuan": "", "rujukan": "Negatif", "vendor": "Lab Contoh", "tanggal": "2026-01-15", "berkas": "berkas1", "halaman": 2, "dibaca_dari": "teks"},
+    {"nama": "Leukosit", "hasil": "0-2", "satuan": "/LPB", "rujukan": "0 - 5", "vendor": "Lab Contoh", "tanggal": "2026-01-15", "berkas": "berkas1", "halaman": 2, "dibaca_dari": "teks"}
+  ],
+  "radiologi": {
+    "ada": true, "vendor": "Lab Contoh", "tanggal": "2026-01-15", "berkas": "berkas1", "halaman": 3,
+    "deskripsi": "Jantung tidak membesar, CTR < 50%. Kedua paru tidak tampak infiltrat.",
+    "kesimpulan": "Tidak tampak kelainan radiologis pada jantung dan paru."
+  },
+  "ekg": {"ada": true, "kesan": "Normal", "deskripsi": "Sinus rhythm"},
+  "lain": ["Contoh: surat keterangan sehat dari RS pengirim"]
+}

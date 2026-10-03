@@ -19,7 +19,7 @@ supaya Anda yang putuskan — tidak menebak.
 
 Cara pakai:
     python fase0_buka_pasien.py <NRM>
-    contoh: python fase0_buka_pasien.py 406-66-04
+    contoh: python fase0_buka_pasien.py NNN-NN-NN
 """
 
 import sys
@@ -197,7 +197,7 @@ async def render_form_klinis(page, mpi_pid, adm_id):
 async def main():
     if len(sys.argv) < 2:
         print("Cara pakai: python fase0_buka_pasien.py <NRM>")
-        print("Contoh    : python fase0_buka_pasien.py 406-66-04")
+        print("Contoh    : python fase0_buka_pasien.py NNN-NN-NN")
         return
     nrm = sys.argv[1]
 

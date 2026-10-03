@@ -35,6 +35,7 @@ from fase3a_generate_teks import FIELD_TARGET
 
 from pdf_ke_queue import gabung, muat_ekstrak, cek_identitas, ke_tanggal
 from generate_pdf import generate_draft_pdf
+from pengaturan import SATU_NRM_SAMPAI_APPROVE
 
 FOLDER_INI = Path(__file__).resolve().parent
 assert "FNDx0000000641" not in FIELD_TARGET.values(), "Approve Dokter TIDAK BOLEH ada di FIELD_TARGET"
@@ -145,6 +146,24 @@ def simpan(nrm, teks_notes, hasil, entry, lap):
 
 
 # ---------------------------------------------------------------------------
+# Kunci satu-NRM (lihat pengaturan.py)
+# ---------------------------------------------------------------------------
+
+FILE_NRM_TERAKHIR = FOLDER_INI / "nrm_terakhir_ditulis.json"
+
+
+def baca_nrm_terakhir():
+    try:
+        return json.loads(FILE_NRM_TERAKHIR.read_text(encoding="utf-8")).get("nrm")
+    except (FileNotFoundError, ValueError):
+        return None
+
+
+def catat_nrm_terakhir(nrm):
+    FILE_NRM_TERAKHIR.write_text(json.dumps({"nrm": nrm, "waktu": datetime.now().isoformat()}), encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -204,9 +223,8 @@ def cetak_ringkas(nrm, ident_status, ident_pesan, lap, hasil, masalah_baca, dari
 
 async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
     from playwright.async_api import async_playwright
-    from fase_batch import buka_pasien_dari_nrm
     from fase1_baca import baca_halaman_aktif, buka_tab_kesimpulan, baca_identitas
-    from fase3b_tulis_ehr import tulis_field
+    from ehr_akses import buka_pasien_dari_nrm, tulis_field, sudah_approve, cek_approve_nrm
 
     async with async_playwright() as p:
         try:
@@ -218,6 +236,16 @@ async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
             print("Tidak ada tab terbuka di Chrome.")
             return
         page = browser.contexts[0].pages[0]
+
+        if mode_tulis and SATU_NRM_SAMPAI_APPROVE:
+            terakhir = baca_nrm_terakhir()
+            if terakhir and terakhir != nrm:
+                bisa, approved, psn_cek = await cek_approve_nrm(page, terakhir)
+                if not bisa or not approved:
+                    alasan = psn_cek if not bisa else "belum di-approve"
+                    print(f"⛔ DITOLAK — NRM sebelumnya ({terakhir}) {alasan}.\n"
+                          f"   Baca & approve dulu {terakhir} di EHR, baru proses NRM berikutnya.")
+                    return
 
         ok, pesan = await buka_pasien_dari_nrm(page, nrm)
         if not ok:
@@ -251,11 +279,10 @@ async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
             else:
                 frame_form = await buka_tab_kesimpulan(page)
                 nip_hal = (await baca_identitas(frame_form)).get("nip")
-                approve_ya = await frame_form.query_selector("#FNDx0000000641Ya")
-                sudah_approve = bool(approve_ya) and await approve_ya.is_checked()
+                terkunci = await sudah_approve(frame_form)
                 if nip_hal != hasil["nip"]:
                     status = f"🔴 TIDAK ditulis — NIP halaman ({nip_hal}) beda dgn data yang dibaca ({hasil['nip']})"
-                elif sudah_approve:
+                elif terkunci:
                     # Field terkunci setelah approve (ditemukan 2026-10-03, NRM 385-45-12) --
                     # jangan coba menulis; perubahan harus lewat dr. Vidya (un-approve manual).
                     status = ("⛔ TIDAK ditulis — Approve Dokter sudah 'Ya', field terkunci. "
@@ -281,6 +308,8 @@ async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan):
                     ket = f" (dilewati: {', '.join(dilewati)} — tidak ada textarea)" if dilewati else ""
                     status = (f"✍️ {jumlah} field ditulis{ket} — **APPROVE MANUAL** (script tidak menyentuh Approve Dokter)"
                               if not gagal else f"⚠️ Sebagian gagal ditulis: {'; '.join(gagal)}")
+                    if jumlah > len(gagal):
+                        catat_nrm_terakhir(nrm)  # ada yg tertulis -> wajib di-approve sebelum NRM berikutnya
         print(f"\nStatus: {status}")
         notes = simpan(nrm, format_notes(nrm, st, psn, lap, hasil, masalah_baca, dari_scan, status, ekstrak),
                        hasil, entry, lap)
