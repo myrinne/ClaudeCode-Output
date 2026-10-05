@@ -29,8 +29,8 @@ def norm_title(t):
 
 
 # ---------- PubMed ----------
-def parse_pubmed():
-    txt = (SRC / "Pubmed search.txt").read_text(encoding="utf-8")
+def parse_pubmed(path=None):
+    txt = Path(path or SRC / "Pubmed search.txt").read_text(encoding="utf-8")
     pmids = re.findall(r"PMID:\s*(\d+)", txt)
     recs = []
     for i in range(0, len(pmids), 100):
@@ -39,7 +39,7 @@ def parse_pubmed():
             params={"db": "pubmed", "id": ",".join(pmids[i:i + 100]), "retmode": "xml"},
             timeout=60,
         )
-        for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", r.text, re.S):
+        for art in re.findall(r"<Pubmed(?:Book)?Article>.*?</Pubmed(?:Book)?Article>", r.text, re.S):
             pmid = re.search(r'<PMID[^>]*>(\d+)', art).group(1)
             title = clean(re.search(r"<ArticleTitle[^>]*>(.*?)</ArticleTitle>", art, re.S).group(1))
             parts = re.findall(r"<AbstractText([^>]*)>(.*?)</AbstractText>", art, re.S)
@@ -48,7 +48,7 @@ def parse_pubmed():
                 for a, b in parts
             )
             year = re.search(r"<PubDate>.*?<Year>(\d{4})", art, re.S) or re.search(r"<Year>(\d{4})", art)
-            journal = re.search(r"<Title>(.*?)</Title>", art, re.S)
+            journal = re.search(r"<Title>(.*?)</Title>", art, re.S) or re.search(r"<BookTitle[^>]*>(.*?)</BookTitle>", art, re.S)
             doi = re.search(r'<ArticleId IdType="doi">(.*?)</ArticleId>', art)
             authors = re.findall(r"<LastName>(.*?)</LastName>", art)
             ptypes = re.findall(r"<PublicationType[^>]*>(.*?)</PublicationType>", art)
@@ -94,8 +94,8 @@ def parse_scopus():
 
 
 # ---------- ProQuest ----------
-def parse_proquest():
-    txt = (SRC / "ProQuestDocuments-2026-09-16.txt").read_text(encoding="utf-8")
+def parse_proquest(path=None):
+    txt = Path(path or SRC / "ProQuestDocuments-2026-09-16.txt").read_text(encoding="utf-8")
     recs = []
     for n, chunk in enumerate(re.split(r"(?m)^_{20,}$", txt), 1):
         lines = [l for l in chunk.strip().splitlines() if l.strip()]
