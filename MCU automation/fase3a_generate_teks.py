@@ -262,6 +262,28 @@ def gabung_saran_sppd_hom(daftar_saran: list) -> list:
     return _gabung_saran_by_prefix(daftar_saran, PREFIX_SPPD_HOM)
 
 
+SARAN_LEUKOSITOSIS = PREFIX_CEK_ULANG_POLI_PEGAWAI + "Leukositosis"
+SARAN_TROMBOSITOSIS = PREFIX_SPPD_HOM + "Trombositosis"
+
+
+def gabung_saran_leukositosis_trombositosis(daftar_saran: list) -> list:
+    """Leukositosis (Poli Pegawai) + Trombositosis (Sp.PD Divisi HOM) yang
+    muncul BERSAMA digabung jadi SATU baris generik 'Cek ulang dan bila
+    perlu konsultasi ke Dokter Umum Poli Pegawai terkait temuan laboratorium'
+    (untuk pasien dokter, diganti jadi 'lakukan tatalaksana' oleh
+    gabung_saran_cek_ulang_poli_pegawai()) -- dikonfirmasi dr. Vidya,
+    2026-10-05: dua baris cek ulang darah terasa dobel, salah satu saja.
+
+    HARUS dipanggil SEBELUM gabung_saran_sppd_hom() supaya baris trombositosis
+    masih berdiri sendiri (belum tergabung dgn temuan HOM lain)."""
+    if SARAN_LEUKOSITOSIS not in daftar_saran or SARAN_TROMBOSITOSIS not in daftar_saran:
+        return daftar_saran
+    idx = daftar_saran.index(SARAN_LEUKOSITOSIS)
+    hasil = [s for s in daftar_saran if s not in (SARAN_LEUKOSITOSIS, SARAN_TROMBOSITOSIS)]
+    hasil.insert(idx, PREFIX_CEK_ULANG_POLI_PEGAWAI + "laboratorium")
+    return hasil
+
+
 SARAN_ANEMIA_BERAT = "Segera lakukan konsultasi ke Dokter Spesialis Penyakit Dalam Divisi KHOM untuk anemia berat"
 
 
@@ -563,6 +585,7 @@ def format_saran(hasil, nama: str = "") -> str:
     daftar = gabung_saran_obesitas_kolesterol_gaya_hidup(daftar)
     daftar = dedup_modifikasi_gaya_hidup(daftar)
     daftar = gabung_saran_poli_pegawai(daftar, pasien_dokter)
+    daftar = gabung_saran_leukositosis_trombositosis(daftar)
     daftar = gabung_saran_sppd_hom(daftar)
     daftar = gabung_saran_anemia_berat_hom(daftar)
     daftar = gabung_saran_cek_ulang_poli_pegawai(daftar, pasien_dokter)
