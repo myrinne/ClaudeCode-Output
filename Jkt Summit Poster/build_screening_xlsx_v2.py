@@ -17,6 +17,7 @@ from openpyxl import Workbook
 import build_screening_xlsx as b
 from decisions_r1 import D as D1
 from decisions_r1_v2 import D2
+from decisions_r1_refine import R as REFINE
 
 data = json.loads((b.HERE / "records_v2.json").read_text(encoding="utf-8"))
 to_final_no = {r["v1_no"]: r["no"] for r in data["records"] if r["v1_no"]}
@@ -30,11 +31,13 @@ def carried(v1_no):
 
 
 decisions = {r["no"]: carried(r["v1_no"]) if r["v1_no"] else D2[r["no"]] for r in data["records"]}
+decisions.update(REFINE)
 
 b.R, b.DUPS, b.COUNTS, b.D = data["records"], data["duplicates"], data["counts"], decisions
 b.CRITERIA = [c for c in b.CRITERIA if c[0] not in ("Searches", "Not restricted")] + [
     ("Searches", "Run 2026-10-05: PubMed 478, Scopus 537 (TITLE-ABS), ProQuest 128, IEEE Xplore 135 (two CSV pages). Strings in vault note 'Summit Jakarta Perdoki Keywords'. 417 duplicates removed -> 861 unique."),
-    ("Modality rules", "Pneumoconiosis/silicosis/TB CXR or CT AI: I if data come from exposed workers in screening/surveillance/occupational exams with reader/radiologist reference; M if hospital patients, public dataset or unclear. NIHL: audiogram/exam-data classification in workers -> I; exposure/risk-factor-only models in workers -> M; general population -> E1. Biomarker/omics/genetic ML -> E3."),
+    ("Population rule (P)", "Applied strictly to every study: the abstract must show the data come from workers (occupational/periodic/pre-placement exam, screening or surveillance programme, or a worker/exposed cohort). Hospital patients, public image datasets, ILO standard films only, and technical papers that do not describe a worker population -> E1."),
+    ("Input rule (I)", "Risk/prediction models count only if examination results (audiometry, laboratory, spirometry, imaging, ECG) are model inputs. Exposure/demographic/questionnaire-only inputs -> E3. Biomarker/omics/genetic ML (not routine exam data) -> E3."),
     ("Not restricted", "No date or language limit (several Chinese/Japanese/Russian-language records; English abstracts used)."),
 ]
 
