@@ -18,6 +18,7 @@ import build_screening_xlsx as b
 from decisions_r1 import D as D1
 from decisions_r1_v2 import D2
 from decisions_r1_refine import R as REFINE
+from decisions_r1_final import DATE_CUTOFF, LEAD, PREDICTION
 
 data = json.loads((b.HERE / "records_v2.json").read_text(encoding="utf-8"))
 to_final_no = {r["v1_no"]: r["no"] for r in data["records"] if r["v1_no"]}
@@ -32,13 +33,26 @@ def carried(v1_no):
 
 decisions = {r["no"]: carried(r["v1_no"]) if r["v1_no"] else D2[r["no"]] for r in data["records"]}
 decisions.update(REFINE)
+decisions.update(LEAD)
+decisions.update(PREDICTION)
+for r in data["records"]:
+    year = int(r["year"]) if str(r["year"]).isdigit() else None
+    if year and year < DATE_CUTOFF and decisions[r["no"]][0] in "IM":
+        decisions[r["no"]] = ("E", "E8", f"Published {year} (>20 years old). Earlier: {decisions[r['no']][2]}")
+
+b.REASONS = [(c, t) for c, t in b.REASONS if c != "E4"] + [
+    ("E4", "Prediction/risk model: predicts risk, susceptibility or a future outcome instead of AI analysing (classifying/detecting) the current check-up result against a reference"),
+    ("E8", f"Published before {DATE_CUTOFF} (more than 20 years old)"),
+]
+b.REASONS.sort()
 
 b.R, b.DUPS, b.COUNTS, b.D = data["records"], data["duplicates"], data["counts"], decisions
 b.CRITERIA = [c for c in b.CRITERIA if c[0] not in ("Searches", "Not restricted")] + [
     ("Searches", "Run 2026-10-05: PubMed 478, Scopus 537 (TITLE-ABS), ProQuest 128, IEEE Xplore 135 (two CSV pages). Strings in vault note 'Summit Jakarta Perdoki Keywords'. 417 duplicates removed -> 861 unique."),
     ("Population rule (P)", "Applied strictly to every study: the abstract must show the data come from workers (occupational/periodic/pre-placement exam, screening or surveillance programme, or a worker/exposed cohort). Hospital patients, public image datasets, ILO standard films only, and technical papers that do not describe a worker population -> E1."),
     ("Input rule (I)", "Risk/prediction models count only if examination results (audiometry, laboratory, spirometry, imaging, ECG) are model inputs. Exposure/demographic/questionnaire-only inputs -> E3. Biomarker/omics/genetic ML (not routine exam data) -> E3."),
-    ("Not restricted", "No date or language limit (several Chinese/Japanese/Russian-language records; English abstracts used)."),
+    ("Scope (aim)", "AI that ANALYSES medical check-up data, i.e. classifies or detects the current examination result against a physician/clinical reference. Prediction, risk, susceptibility and early-warning models are out of scope (E4)."),
+    ("Date limit", f"Published {DATE_CUTOFF} or later (last 20 years); older -> E8. No language limit (English abstracts used)."),
 ]
 
 
