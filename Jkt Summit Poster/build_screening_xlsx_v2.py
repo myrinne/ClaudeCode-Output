@@ -13,12 +13,15 @@ import json
 import re
 
 from openpyxl import Workbook
+from openpyxl.styles import Font
+from openpyxl.worksheet.datavalidation import DataValidation
 
 import build_screening_xlsx as b
 from decisions_r1 import D as D1
 from decisions_r1_v2 import D2
 from decisions_r1_refine import R as REFINE
 from decisions_r1_final import DATE_CUTOFF, LEAD, PREDICTION
+from fulltext import FT
 
 data = json.loads((b.HERE / "records_v2.json").read_text(encoding="utf-8"))
 to_final_no = {r["v1_no"]: r["no"] for r in data["records"] if r["v1_no"]}
@@ -56,6 +59,58 @@ b.CRITERIA = [c for c in b.CRITERIA if c[0] not in ("Searches", "Not restricted"
 ]
 
 
+def fulltext_sheet(wb):
+    """Full-text retrieval and eligibility for records kept at title/abstract (I or M)."""
+    ws = wb.create_sheet("Full text", 1)
+    cols = [("No.", 6), ("Record ID", 16), ("Year", 6), ("First authors", 18), ("Title", 60), ("DOI", 26),
+            ("TA decision", 9), ("FT status", 13), ("FT decision", 11), ("FT reason", 9), ("FT note", 50)]
+    b.header(ws, cols, {n: b.CFILL for n in ("FT status", "FT decision", "FT reason", "FT note")})
+    ws.freeze_panes = "F2"
+    row = 2
+    for r in data["records"]:
+        dec = decisions[r["no"]][0]
+        if dec not in "IM":
+            continue
+        st, fd, fr, fn = FT.get(r["no"], ("", "", "", ""))
+        for col, v in enumerate([r["no"], r["id"], r["year"], r["authors"], r["title"], r["doi"], dec, st, fd, fr, fn], 1):
+            ws.cell(row, col, v).alignment = b.WRAP
+        row += 1
+    last = row - 1
+    for formula, rng in [('"Retrieved,Not retrieved"', "H"), ('"Include,Exclude"', "I"),
+                         ('"' + ",".join(c for c, _ in b.REASONS) + '"', "J")]:
+        dv = DataValidation(type="list", formula1=formula, allow_blank=True)
+        ws.add_data_validation(dv)
+        dv.add(f"{rng}2:{rng}{last}")
+    ws.auto_filter.ref = f"A1:K{last}"
+    return last
+
+
+def fulltext_prisma(wb, last):
+    """Append full-text counts below the existing PRISMA rows."""
+    ws = wb["PRISMA counts"]
+    F = "'Full text'!"
+    st, fd, fr = (f"{F}${c}$2:${c}${last}" for c in "HIJ")
+    rows = [("FULL-TEXT STAGE", None, None),
+            ("Reports sought for retrieval", f"=COUNTA({F}$A$2:$A${last})", "Records kept (I/M) at title/abstract"),
+            ("Reports not retrieved", f'=COUNTIF({st},"Not retrieved")', "Not subscribed / not open access; reported, not excluded"),
+            ("Reports assessed for eligibility", f'=COUNTIF({st},"Retrieved")', ""),
+            ("Reports excluded at full text", f'=COUNTIF({fd},"Exclude")', "")]
+    rows += [(f"   {c}: {t[:70]}", f'=COUNTIFS({fd},"Exclude",{fr},"{c}")', "") for c, t in b.REASONS]
+    rows += [("Studies included in review", f'=COUNTIF({fd},"Include")', ""),
+             ("Full-text decisions still pending", f'=B{{sought}}-COUNTIF({st},"Not retrieved")-COUNTA({fd})', "Should reach 0")]
+    start = ws.max_row + 2
+    sought = start + 1
+    for i, (a, val, note) in enumerate(rows):
+        rr = start + i
+        ws.cell(rr, 1, a)
+        if val is None:
+            ws.cell(rr, 1).font = Font(bold=True, color="1F4E78")
+        else:
+            ws.cell(rr, 2, val.replace("{sought}", str(sought)))
+        if note:
+            ws.cell(rr, 3, note).alignment = b.WRAP
+
+
 def main():
     for blind, name in [(False, "Screening_TA_master.xlsx"), (True, "Screening_TA_blind_R2.xlsx")]:
         wb = Workbook()
@@ -64,6 +119,7 @@ def main():
         if not blind:
             b.dup_sheet(wb)
             b.prisma_sheet(wb, idx, last)
+            fulltext_prisma(wb, fulltext_sheet(wb))
         wb.save(b.HERE / name)
         print("saved", name)
 
