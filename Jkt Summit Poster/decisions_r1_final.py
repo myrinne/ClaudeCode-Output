@@ -44,6 +44,8 @@ LEAD = {  # review lead's edits in the workbook
     272: ("I", "", "Lead: computer classification of profusion on coal workers' radiographs"),
     358: ("I", "", "Lead: prospective validation of AI asbestosis assessment (Se/Sp/PPV/NPV)"),
     472: ("I", "", "Lead: computer-aided disability scoring vs expert assessment, silicosis"),
+    181: ("I", "", "DL classification of HRCT features in CWP patients"),
+    310: ("I", "", "DL CXR, CWP patients vs dust-exposed workers (hospital cohort)"),
 }
 
 PREDICTION = {  # remaining I/M that are risk/prediction models
