@@ -7,7 +7,7 @@ Usage:
 
 Config (env vars):
     UNPAYWALL_EMAIL   required by Unpaywall (your real email)
-    FKUI_PROXY_PREFIX EZproxy-style login prefix, e.g. https://login.ezproxy.ui.ac.id/login?url=
+    FKUI_PROXY_PREFIX EZproxy-style login prefix, default https://remote-lib.ui.ac.id/login?url= (UI EZproxy)
                       (check the exact URL on the FKUI/UI library "remote access" page)
 """
 import argparse
@@ -48,7 +48,7 @@ def main():
     if not email:
         sys.exit("Set UNPAYWALL_EMAIL first, e.g. $env:UNPAYWALL_EMAIL='you@example.com'")
     UnpywallCredentials(email)
-    proxy = os.environ.get("FKUI_PROXY_PREFIX", "")
+    proxy = os.environ.get("FKUI_PROXY_PREFIX", "https://remote-lib.ui.ac.id/login?url=")
 
     dois = [clean_doi(d) for d in a.dois]
     if a.file:
