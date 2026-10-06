@@ -21,7 +21,7 @@ from decisions_r1 import D as D1
 from decisions_r1_v2 import D2
 from decisions_r1_refine import R as REFINE
 from decisions_r1_final import DATE_CUTOFF, LEAD, PREDICTION
-from fulltext import FT
+from fulltext import EXTRA_REASONS, FT
 
 data = json.loads((b.HERE / "records_v2.json").read_text(encoding="utf-8"))
 to_final_no = {r["v1_no"]: r["no"] for r in data["records"] if r["v1_no"]}
@@ -46,7 +46,7 @@ for r in data["records"]:
 b.REASONS = [(c, t) for c, t in b.REASONS if c != "E4"] + [
     ("E4", "Prediction/risk model: predicts risk, susceptibility or a future outcome instead of AI analysing (classifying/detecting) the current check-up result against a reference"),
     ("E8", f"Published before {DATE_CUTOFF} (more than 20 years old)"),
-]
+] + EXTRA_REASONS
 b.REASONS.sort()
 
 b.R, b.DUPS, b.COUNTS, b.D = data["records"], data["duplicates"], data["counts"], decisions
