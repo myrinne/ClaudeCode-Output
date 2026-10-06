@@ -1,9 +1,36 @@
-# Full-text stage (from 2026-10-06). Keyed by record number.
-# status: "Retrieved" | "Not retrieved" | "" (pending)
-# decision: "Include" | "Exclude" | "" (pending); reason uses the same E-codes.
+# Full-text stage. Keyed by record number.
+# Decisions from the full-text screening done 2026-10-05/06 (recorded in the vault note
+# "Scoping Review - Data Extraction and Analysis"), with the review lead's corrections
+# of 2026-10-06: abstract-only records are not included (they cannot be appraised) and
+# reports whose full text could not be obtained are "Not retrieved".
+# status: "Retrieved" | "Not retrieved"; decision: "Include" | "Exclude"; reason: E-codes.
 FT = {
+    # Included (10)
+    173: ("Retrieved", "Include", "", "Heo 2019: CXR TB, annual statutory worker surveillance"),
+    41: ("Retrieved", "Include", "", "Wang 2020: CXR pneumoconiosis, dust-exposed screening setting"),
+    46: ("Retrieved", "Include", "", "Young 2020: CAD silicosis/TB, gold miners"),
+    652: ("Retrieved", "Include", "", "Charapaqui-Miranda 2020: fitness-for-work, work-entry exams (Peru)"),
+    225: ("Retrieved", "Include", "", "Ehrlich 2022: CAD silicosis/TB, ex-miner screening days"),
+    42: ("Retrieved", "Include", "", "Wang 2022/2023: CNN ECG, coal workers' periodic exams"),
+    40: ("Retrieved", "Include", "", "Li 2024: CXR pneumoconiosis, dust-exposed workers"),
+    131: ("Retrieved", "Include", "", "Liu 2026: CXR, US workers, B-reader consensus"),
+    606: ("Retrieved", "Include", "", "He 2026: ViT CXR, dust-exposed workers screened at CDC"),
+    410: ("Retrieved", "Include", "", "Vella 2026: LLM vs occupational physician, fitness-for-work"),
+    # Excluded at full text (10)
+    179: ("Retrieved", "Exclude", "E1", "Priego-Torres 2025: engineered-stone silicosis patients"),
+    50: ("Retrieved", "Exclude", "E1", "Moore 2023: compensation claimants, not a check-up population"),
+    310: ("Retrieved", "Exclude", "E1", "Dong 2022: hospital cohort"),
+    181: ("Retrieved", "Exclude", "E1", "Dong 2025: hospital cohort"),
+    122: ("Retrieved", "Exclude", "E1", "Groot Lipman 2023: asbestosis compensation applicants"),
+    358: ("Retrieved", "Exclude", "E1", "Smesseim 2025: asbestosis compensation applicants"),
+    405: ("Retrieved", "Exclude", "E4", "Prediction model of preclinical CWP"),
+    813: ("Retrieved", "Exclude", "E4", "Metabolic syndrome prediction model"),
+    507: ("Retrieved", "Exclude", "E7", "Ceramic workers: no reference-standard performance"),
+    653: ("Retrieved", "Exclude", "E9", "Jacobs 2014: micronodule CAD for grading/quantification, not screening"),
+    # Not retrieved (3)
     101: ("Not retrieved", "", "", "JOEM (Wolters Kluwer) not subscribed at UI; not open access; ProQuest/EBSCOhost searched"),
-    352: ("Not retrieved", "", "", "Chinese journal (CNKI/Wanfang) not subscribed at UI; not open access"),
-    405: ("Retrieved", "Exclude", "E4", "Full text: prediction model (review lead)"),
-    578: ("Not retrieved", "", "", "SPIE conference paper, SPIE Digital Library not subscribed at UI; ProQuest/EBSCOhost searched"),
+    352: ("Not retrieved", "", "", "Cui 2023: Chinese journal not subscribed at UI; abstract only, cannot be appraised"),
+    578: ("Not retrieved", "", "", "SPIE conference paper; SPIE Digital Library not subscribed at UI; full text not found"),
 }
+
+EXTRA_REASONS = [("E9", "Grading/quantification task, not screening/detection at a check-up")]
