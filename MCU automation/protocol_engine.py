@@ -1109,7 +1109,11 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
             hasil.kesimpulan_ekg = f"Abnormal, {deskripsi}" if deskripsi else "Abnormal"
             # Langsung ke Sp.PD Divisi KKV (bukan Dokter Umum dulu) --
             # dikonfirmasi dr. Vidya, 2026-08-20.
-            tambah_temuan("Abnormal EKG", "Konsultasi Sp.PD Divisi KKV untuk tatalaksana abnormal EKG", False)
+            # Pengecualian: sinus bradikardi saja (tanpa temuan lain) TIDAK
+            # perlu konsul Sp.PD KKV -- dikonfirmasi dr. Vidya, 2026-10-07,
+            # kasus NRM 429-25-28. Teks "Abnormal, ..." tetap ditulis.
+            if not re.fullmatch(r"\s*sinus\s+bradi?kardi[a]?\s*\.?\s*", deskripsi, re.IGNORECASE):
+                tambah_temuan("Abnormal EKG", "Konsultasi Sp.PD Divisi KKV untuk tatalaksana abnormal EKG", False)
     else:
         hasil.kesimpulan_ekg = "Tidak dilakukan"
 
