@@ -9,7 +9,7 @@ from pptx.util import Inches, Pt
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 IMG = os.path.join(ROOT, "ai-concepts")
-OUT = os.path.join(ROOT, "IOMU 2027 Logo Concepts v1.pptx")
+OUT = os.path.join(ROOT, "IOMU 2027 Logo Concepts v2.pptx")
 
 EMERALD = RGBColor(0x21, 0x49, 0x40)
 GOLD = RGBColor(0xC6, 0x9C, 0x54)
@@ -38,6 +38,12 @@ CONCEPTS = [
         ("Batik bands", "Semen rante and parang engraving with gold scrollwork"),
         ("Kawung in the O", "Solo batik; order and integrity"),
         ("Serif wordmark", "Classic, formal, matches a scientific meeting"),
+    ]),
+    ("4", "Healthy Worker × Kawung type", "iomu2027_merge_c1-symbol_c2-type_B_v1.png", [
+        ("Symbol from Concept 1", "Thriving worker with hard-hat head, rod of Asclepius and parang ribbon"),
+        ("Type from Concept 2", "Bold geometric sans wordmark: modern and legible at small sizes"),
+        ("Crest above the M", "Ornament inspired by the carved crest of Keraton Surakarta"),
+        ("Gold rules", "Frame the full name and SOLO 2027"),
     ]),
 ]
 
@@ -90,7 +96,7 @@ def main():
     text(s, Inches(0.9), Inches(3.8), Inches(11.5), Inches(0.6),
          "19th Indonesian Occupational Medicine Updates · Solo · PERDOKI", 20, GOLD, BODY)
     text(s, Inches(0.9), Inches(4.5), Inches(11.5), Inches(0.6),
-         "Three candidates for voting · Palette: Emerald Green & Gold", 16, CREAM, BODY)
+         "Four candidates for voting · Palette: Emerald Green & Gold", 16, CREAM, BODY)
 
     # one slide per concept
     for num, name, img, notes in CONCEPTS:
@@ -130,11 +136,11 @@ def main():
     bg(s, RGBColor(0xFF, 0xFF, 0xFF))
     text(s, Inches(0.6), Inches(0.35), Inches(12), Inches(0.7), "Vote: which logo for IOMU 2027?", 30, EMERALD, HEAD)
     rule(s, Inches(0.62), Inches(1.05), Inches(1.6))
-    w = Inches(4.0)
+    w = Inches(2.95)
     for i, (num, name, img, _) in enumerate(CONCEPTS):
-        x = Inches(0.6) + i * (w + Inches(0.17))
+        x = Inches(0.6) + i * (w + Inches(0.13))
         s.shapes.add_picture(os.path.join(IMG, img), x, Inches(2.6), width=w)
-        text(s, x, Inches(4.75), w, Inches(0.5), f"{num} · {name}", 18, EMERALD, HEAD, align=PP_ALIGN.CENTER)
+        text(s, x, Inches(4.25), w, Inches(0.8), f"{num} · {name}", 15, EMERALD, HEAD, align=PP_ALIGN.CENTER)
     footer(s)
 
     prs.save(OUT)
