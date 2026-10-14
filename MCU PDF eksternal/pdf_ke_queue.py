@@ -82,6 +82,10 @@ def parse_rujukan(rujukan) -> tuple:
     """Rujukan vendor -> (bawah, atas). Menangani '13.2 - 17.3', '< 33', '<=10.0',
     '>= 40', '≤ 5', '=> 240', koma desimal. (None, None) kalau bukan angka."""
     t = str(rujukan or "").strip().replace("≤", "<=").replace("≥", ">=").replace("=>", ">=")
+    # Koma + tepat 3 digit = pemisah ribuan ('< 1,200' bakteri Prodia = 1200, bukan 1.2) --
+    # NRM 385-31-22, 2026-10-14. Rujukan lab dgn 3 desimal koma praktis tidak ada (BJ urin diabaikan).
+    if "." not in t:
+        t = re.sub(r"(\d),(\d{3})(?!\d)", r"\1\2", t)
     t = re.sub(r"(\d),(\d)", r"\1.\2", t)
     m = re.search(r"(\d+(?:\.\d+)?)\s*[-–]\s*(\d+(?:\.\d+)?)", t)
     if m:
@@ -323,6 +327,11 @@ def bangun_urin(ekstrak: dict):
         angka_vs_rujukan = ke_float(h) is not None and atas is not None and nama not in ("Silinder", "Urobilinogen")
         rujukan_rscm = fmt_rentang(bawah, atas) if angka_vs_rujukan else "Negatif" if nama in URIN_DIPSTICK or nama == "Silinder" else (
             "Normal" if nama == "Urobilinogen" else fmt_rentang(bawah, atas))
+        # klasifikasi_urinalisa() menilai positif dari teks hasil != "negatif" kalau rujukan "Negatif",
+        # jadi hasil tak-berflag spt "Negatif (Normal)" (Prodia) / "0" (silinder flowcytometry)
+        # harus jadi "Negatif" -- kasus NRM 385-31-22, 2026-10-14 (glukosuria & silinder palsu).
+        if not flag and rujukan_rscm == "Negatif":
+            h = "Negatif"
 
         if nama in hasil:  # baris kedua utk nama RSCM yg sama (mis. Kristal Normal + Kristal Abnormal)
             lama = hasil[nama]
