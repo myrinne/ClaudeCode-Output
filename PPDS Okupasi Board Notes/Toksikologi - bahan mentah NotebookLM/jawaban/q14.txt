@@ -1,0 +1,151 @@
+Duduk siap, Dokter. Sebagai seorang calon Spesialis Kedokteran Okupasi (Sp.Ok), Anda harus memahami bahwa penegakan diagnosis Penyakit Akibat Kerja (PAK) bukan sekadar latihan klinis di atas kertas, melainkan **tindakan medis-legal yang memiliki konsekuensi yuridis, kompensasi finansial, dan tanggung jawab hukum ketenagakerjaan**. 
+
+Banyak residen gagal di meja ujian dewan penguji (*board examination*) karena gagap memadukan antara payung hukum kompensasi jaminan sosial dengan algoritma klinis penegakan diagnosis okupasi.
+
+---
+
+### 1. Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja
+
+Perpres No. 7 Tahun 2019 merupakan instrumen hukum tertinggi di Indonesia yang secara spesifik mengatur tentang jenis-jenis Penyakit Akibat Kerja sebagai tindak lanjut amanat Pasal 48 ayat (3) PP No. 44 Tahun 2015 tentang Penyelenggaraan Program Jaminan Kecelakaan Kerja (JKK) dan Jaminan Kematian.
+
+```
+                     [ ARSITEKTUR PERPRES NO. 7 TAHUN 2019 ]
+                                       │
+         ┌─────────────────────────────┼─────────────────────────────┐
+         ▼                             ▼                             ▼
+   [ PASAL 2 AYAT 1-2 ]          [ PASAL 2 AYAT 3 ]             [ PASAL 6 ]
+   Hak Manfaat JKK:              Empat Kelompok PAK:            Mencabut & Menyatakan
+   • Berlaku meski hubungan      I.   Pajanan Aktivitas Kerja   Tidak Berlaku:
+     kerja telah berakhir        II.  Sistem Target Organ       Keppres No. 22 Th 1993
+   • Batas klaim: MAKSIMAL       III. Kanker Akibat Kerja       (31 jenis PAK lama)
+     3 TAHUN pasca-PHK/pensiun   IV.  Spesifik Lainnya
+```
+
+#### a. Pencabutan Regulasi Historis
+Berdasarkan **Pasal 6 Perpres No. 7 Tahun 2019**, regulasi lama yaitu **Keputusan Presiden Nomor 22 Tahun 1993 tentang Penyakit Yang Timbul Karena Hubungan Kerja resmi dicabut dan dinyatakan tidak berlaku**. Keppres 22/1993 yang hanya memuat daftar kaku 31 penyakit digantikan oleh Perpres 7/2019 yang mengadopsi standar klasifikasi modern *International Labour Organization* (ILO List of Occupational Diseases).
+
+#### b. Hak Jaminan Kecelakaan Kerja (JKK) Hingga 3 Tahun Pasca-Kerja
+Salah satu pasal paling krusial bagi dokter penilai kecacatan dan okupasi adalah **Pasal 2 ayat (1) dan ayat (2)**:
+*   Pekerja yang didiagnosis menderita PAK berdasarkan surat keterangan dokter **berhak atas manfaat JKK meskipun hubungan kerja telah berakhir**.
+*   Hak atas manfaat JKK tersebut diberikan apabila Penyakit Akibat Kerja timbul dalam jangka waktu **paling lama 3 (tiga) tahun terhitung sejak hubungan kerja berakhir**.
+*   *Rasional Toksikologi-Klinis Okupasi:* Banyak penyakit okupasi memiliki masa laten (*latency period*) yang panjang (misalnya silikosis, kanker akibat kerja, atau intoksikasi kumulatif logam berat yang gejalanya baru bermanifestasi klinis setelah pekerja pensiun atau berhenti bekerja). Klausul 3 tahun ini memberikan jaminan perlindungan sosial bagi pekerja purnatugas.
+
+#### c. Klasifikasi 4 Kelompok Utama PAK (Pasal 2 ayat 3 dan Lampiran)
+Perpres 7/2019 mengelompokkan PAK ke dalam 4 divisi besar:
+1.  **Kelompok I: Penyakit yang Disebabkan Pajanan Faktor yang Timbul dari Aktivitas Pekerjaan:**
+    *   *Faktor Kimia:* Terdiri dari **39 butir** agen spesifik (termasuk berbagai logam berat, pelarut, gas asfiksian, pestisida, hingga butir terbuka nomor 39 untuk bahan kimia lain yang dibuktikan secara ilmiah).
+    *   *Faktor Fisika:* Terdiri dari **7 butir** (gangguan pendengaran akibat bising, kelainan getaran/muskuloskeletal, kelainan udara bertekanan, radiasi optik/UV/inframerah, radiasi mengion, iklim kerja panas/dingin, serta faktor fisika lain).
+    *   *Faktor Biologi dan Penyakit Infeksi/Parasit:* Terdiri dari **9 butir** (brucellosis, hepatitis B/C, HIV, tetanus, tuberkulosis, antraks, leptospirosis, penyakit infeksi lain akibat kerja).
+2.  **Kelompok II: Penyakit Berdasarkan Sistem Target Organ:**
+    *   *Penyakit Saluran Pernafasan (12 butir):* Pneumokoniosis fibrogenik (silikosis, antrakosilikosis, asbestosis), silikotuberkulosis, siderosis, **penyakit bronkhopulmoner debu logam keras**, bissinosis, asma kerja, alveolitis alergika, PPOK okupasi, penyakit paru aluminium, serta kelainan saluran napas atas.
+    *   *Penyakit Kulit (3 butir):* Dermatosis kontak alergika & urtikaria, dermatosis kontak iritan, dan vitiligo okupasi.
+    *   *Gangguan Otot dan Kerangka (8 butir):* Radial styloid tenosynovitis (De Quervain), tenosinovitis kronis pergelangan tangan, bursitis olekranon, bursitis prepatelar, epikondilitis, lesi meniskus, dan *Carpal Tunnel Syndrome* (CTS).
+    *   *Gangguan Mental dan Perilaku (2 butir):* Gangguan stres pasca trauma (*Post-Traumatic Stress Disorder* / PTSD) dan gangguan mental/perilaku lain akibat risiko kerja.
+3.  **Kelompok III: Penyakit Kanker Akibat Kerja:**
+    Memuat **21 butir** zat/proses karsinogenik terbukti (antara lain: asbes, benzidin, benzena, kromium VI, vinil klorida, senyawa nikel, arsen, berilium, kadmium, debu kayu, emisi oven arang, radiasi mengion, serta virus Hepatitis B & C).
+4.  **Kelompok IV: Penyakit Spesifik Lainnya:**
+    Penyakit yang memiliki hubungan langsung spesifik dengan proses kerja tertentu, dicontohkan dalam regulasi: **nystagmus pada penambang**.
+
+#### d. Kewenangan Diagnosis dan Klausul Terbuka (*Open-Ended Clause*)
+*   **Kewenangan Medis (Pasal 3):** Diagnosis PAK ditegakkan berdasarkan surat keterangan dokter yang dilakukan oleh **dokter atau dokter spesialis yang berkompeten di bidang kesehatan kerja**.
+*   **Klausul PAK di Luar Lampiran (Pasal 4):** Bila ditemukan penyakit yang belum tercantum dalam lampiran, penyakit tersebut tetap dapat diakui sebagai PAK dengan syarat **memiliki hubungan langsung dengan pajanan yang dibuktikan secara ilmiah dengan metode yang tepat**, yang penetapannya dilakukan melalui Keputusan Presiden.
+
+---
+
+### 2. Permenkes No. 11 Tahun 2022 tentang Pelayanan Kesehatan Penyakit Akibat Kerja
+
+Jika Perpres 7/2019 adalah payung legal kompensasi, maka **Permenkes No. 11 Tahun 2022** adalah standar operasional dan tata laksana klinis bagi tenaga medis di fasilitas pelayanan kesehatan (FKTP dan FKRTL).
+
+```
+                     [ ALUR PELAYANAN PERMENKES 11 TAHUN 2022 ]
+                                         │
+        ┌────────────────────────────────┼────────────────────────────────┐
+        ▼                                ▼                                ▼
+  [ RUANG LINGKUP PELAYANAN ]    [ 7 LANGKAH DIAGNOSIS ]        [ 2 KATEGORI KASUS ]
+  • Penegakan Diagnosis          1. Diagnosis Klinis            1. PAK Spesifik Pekerjaan
+  • Tata Laksana (Medis &        2. Pajanan Tempat Kerja           (FKTP & FKRTL, Dokter & Sp)
+    Okupasi: Individu/Komunitas) 3. Hubungan Kausal             2. Dugaan PAK
+  • Sistem Rujukan               4. Besaran Pajanan                (FKRTL, Dokter Spesialis
+  • Pencatatan & Pelaporan       5. Faktor Individu                berkompeten bidang PAK)
+  • Surveilans Kesehatan Kerja   6. Faktor Luar Tempat Kerja
+                                 7. KESIMPULAN DIAGNOSIS PAK
+```
+
+#### a. Pencabutan Regulasi
+Berdasarkan **Pasal 15 Permenkes No. 11 Tahun 2022**, peraturan sebelumnya yaitu **Peraturan Menteri Kesehatan Nomor 56 Tahun 2016 tentang Penyelenggaraan Pelayanan Penyakit Akibat Kerja resmi dicabut dan dinyatakan tidak berlaku**.
+
+#### b. Ruang Lingkup Pelayanan dan Tata Laksana Okupasi (Pasal 4 & 9)
+Pelayanan PAK mencakup 5 domain: **penegakan diagnosis, tata laksana, rujukan, pencatatan/pelaporan, dan surveilans**.
+Khusus pada tata laksana (Pasal 9), penanganan dibagi dua secara tegas:
+1.  **Tata Laksana Medis:** Aspek kuratif klinis farmakoterapi dan intervensi medis konvensional.
+2.  **Tata Laksana Okupasi:**
+    *   *Pada Individu:* Pencegahan perburukan/keparahan (*harm reduction*), eliminasi pajanan individual, kelaikan kerja (*fitness for work*), dan pencegahan kecacatan.
+    *   *Pada Komunitas Pekerja:* Tindakan intervensi di tempat kerja untuk **melindungi pekerja lain yang sejenis** (*cluster prevention*), surveilans lingkungan, serta penemuan dini kasus serupa (*early case finding*).
+
+#### c. Tujuh Langkah Penegakan Diagnosis Okupasi (Pasal 5)
+Ini adalah algoritma baku (*mandatory protocol*) yang wajib Anda sebutkan secara berurutan tanpa cela di hadapan penguji:
+
+1.  **Langkah 1: Penentuan Diagnosis Klinis.**
+    Ditegakkan melalui anamnesis klinis, pemeriksaan fisik komprehensif, serta pemeriksaan penunjang laboratorium/radiologi sesuai standar medis (menegakkan diagnosis kerja berbasis ICD).
+2.  **Langkah 2: Penentuan Pajanan yang Dialami Pekerja di Tempat Kerja.**
+    Menggali riwayat pekerjaan secara kronologis (*occupational history*), deskripsi tugas harian (*job description*), bahan baku, produk sampingan, metode kerja, serta identifikasi potensi bahaya kimia, fisik, biologi, ergonomi, dan psikososial di tempat kerja.
+3.  **Langkah 3: Penentuan Hubungan Antara Pajanan dengan Diagnosis Klinis.**
+    Menilai bukti ilmiah (*evidence-based medicine*) dan plausibilitas toksikologis: apakah pajanan yang teridentifikasi pada langkah 2 secara epidemiologis dan patofisiologis terbukti dapat menyebabkan penyakit klinis pada langkah 1.
+4.  **Langkah 4: Penentuan Besarnya Pajanan.**
+    Menilai kuantitas dan intensitas pajanan secara obyektif maupun kualitatif: konsentrasi lingkungan kerja (dibandingkan dengan NAB/Permenaker 5/2018), hasil pemantauan biologis (IPB/BEI), masa kerja (*years of exposure*), jam kerja per hari, rute masuk tubuh, serta kepatuhan dan keandalan pemakaian Alat Pelindung Diri (APD).
+5.  **Langkah 5: Penentuan Faktor Individu yang Berperan.**
+    Mengevaluasi faktor kerentanan internal pejamu (*host susceptibility*): riwayat atopi/alergi, penyakit komorbiditas dasar, status imunisasi, usia, jenis kelamin, serta variasi genetik yang relevan.
+6.  **Langkah 6: Penentuan Faktor Lain di Luar Tempat Kerja.**
+    Menilai pajanan non-okupasi yang dapat memicu atau memperberat penyakit: kebiasaan merokok (*smoking status*), konsumsi alkohol, hobi di rumah (misalnya mengecat atau menggunakan pestisida rumah tangga), pajanan lingkungan tempat tinggal, hingga pekerjaan sampingan (*second job*).
+7.  **Langkah 7: Penentuan Diagnosis Penyakit Akibat Kerja.**
+    Mensintesis seluruh langkah 1–6 untuk menarik kesimpulan klinis-okupasi secara kategorik:
+    *   **Penyakit Akibat Kerja (PAK):** Pajanan di tempat kerja merupakan faktor kausal utama/dominan.
+    *   **Penyakit Diperberat oleh Pekerjaan (*Work-Aggravated Disease*):** Penyakit umum yang diperparah oleh kondisi lingkungan kerja.
+    *   **Bukan Penyakit Akibat Kerja:** Penyakit timbul murni akibat faktor non-okupasi.
+
+#### d. Dua Kategori Dugaan Kasus PAK (Pasal 6, 7, dan 8)
+Permenaker membagi kasus PAK menjadi dua jalur kewenangan faskes:
+*   **Kategori 1 — PAK yang Spesifik pada Jenis Pekerjaan Tertentu (Pasal 7):**
+    Jenis PAK yang daftar diagnosisnya telah baku dan tercantum dalam lampiran regulasi. Diagnosisnya **dapat langsung ditegakkan di FKTP (Puskesmas/Klinik Pratama) maupun FKRTL** oleh dokter yang memiliki kompetensi kesehatan kerja atau dokter spesialis terkait.
+*   **Kategori 2 — Dugaan Penyakit Akibat Kerja (Pasal 8):**
+    Penyakit kompleks yang memiliki etiologi multifaktor atau melibatkan beberapa pajanan kerja yang saling berinteraksi. Penegakan diagnosis kategori ini **hanya dapat dilakukan oleh dokter spesialis yang berkompeten di bidang PAK di fasilitas kesehatan rujukan tingkat lanjutan (FKRTL / Rumah Sakit)**.
+
+---
+
+### 3. Penyakit Akibat Kerja Terkait Logam Berat Menurut Perpres No. 7 Tahun 2019
+
+Hafalkan posisi yuridis dan klasifikasi lampiran untuk 10 logam berat berikut sesuai naskah asli Perpres No. 7 Tahun 2019:
+
+| Logam Berat | Klasifikasi Lampiran Perpres 7/2019 | Butir Spesifik & Nomenklatur Regulasi | Implikasi Klinis & Aspek Kanker Terkait |
+| :--- | :--- | :--- | :--- |
+| **Timbal (Pb)** | **Lampiran I.a (Faktor Kimia)** | **Butir 8:** *"Penyakit yang disebabkan oleh timbal atau persenyawaannya"*. | Saturnismus: ensefalopati, neuropati motorik perifer (*wrist drop*), anemia mikrositik hipokromik dengan *basophilic stippling*, kolik abdomen, disfungsi tubulus ginjal. |
+| **Merkuri / Raksa (Hg)** | **Lampiran I.a (Faktor Kimia)** | **Butir 7:** *"Penyakit yang disebabkan oleh raksa atau persenyawaannya"*. | Tremor intensional, eretismus merkuralis (perubahan psikologis/labilitas emosi), sindrom nefrotik, stomatitis, ataksia konstriksi lapang pandang (pada metilmerkuri). |
+| **Arsen (As)** | **Lampiran I.a (Faktor Kimia)**<br>& **Lampiran III (Kanker)** | • **Lampiran I.a Butir 6:** *"Penyakit yang disebabkan oleh arsen atau persenyawaannya"*.<br>• **Lampiran III Butir 15:** *"Arsen dan persenyawaannya"*. | Hiperkeratosis telapak tangan/kaki, hiperpigmentasi kulit (*raindrop pigmentation*), polineuropati perifer, hemangiosarkoma, serta **Kanker Paru, Kanker Kulit, dan Kanker Kandung Kemih**. |
+| **Kadmium (Cd)** | **Lampiran I.a (Faktor Kimia)**<br>& **Lampiran III (Kanker)** | • **Lampiran I.a Butir 2:** *"Penyakit yang disebabkan oleh cadmium atau persenyawaannya"*.<br>• **Lampiran III Butir 17:** *"Cadmium dan persenyawaannya"*. | Nefropati tubulointestinal kronis, proteinuria berat molekul rendah (\\(\beta_2\\)-mikroglobulin), osteomalasia/fraktur patologis (*Itai-itai disease*), emfisema, dan **Kanker Paru**. |
+| **Kromium (Cr)** | **Lampiran I.a (Faktor Kimia)**<br>& **Lampiran III (Kanker)** | • **Lampiran I.a Butir 4:** *"Penyakit yang disebabkan oleh krom atau persenyawaannya"*.<br>• **Lampiran III Butir 4:** *"Persenyawaan chromium VI"*. | Ulkus berlubang pada kulit dan mukosa (*chrome holes*), perforasi septum nasi, asma kerja, dermatitis kontak alergi, serta **Kanker Paru dan Kanker Sinonasal**. |
+| **Mangan (Mn)** | **Lampiran I.a (Faktor Kimia)** | **Butir 5:** *"Penyakit yang disebabkan oleh mangan atau persenyawaannya"*. | Manganisme / Parkinsonisme sekunder okupasi: gangguan langkah kokpit (*cock-walk gait*), tremor distonia, rigiditas ekstrapiramidal, serta psikosis mania (*manganese madness*). |
+| **Nikel (Ni)** | **Lampiran I.a (Faktor Kimia)**<br>& **Lampiran III (Kanker)** | • **Lampiran I.a Butir 24:** *"Penyakit yang disebabkan oleh nikel atau persenyawaannya"*.<br>• **Lampiran III Butir 13:** *"Persenyawaan nikel"*. | Dermatitis kontak alergi (*nickel itch*), asma kerja, pneumonitis kimiawi (nikel karbonil), serta **Kanker Paru dan Kanker Rongga Hidung / Sinus Paranasal**. |
+| **Berilium (Be)** | **Lampiran I.a (Faktor Kimia)**<br>& **Lampiran III (Kanker)** | • **Lampiran I.a Butir 1:** *"Penyakit yang disebabkan oleh berillium dan persenyawaannya"*.<br>• **Lampiran III Butir 16:** *"Beryllium dan persenyawaannya"*. | Penyakit Paru Berilium Kronis (*Chronic Beryllium Disease* / CBD, pneumonitis granulomatosa non-kaseosa mirip sarkoidosis), sensitisasi berilium (BeS via BeLPT positif), dan **Kanker Paru**. |
+| **Kobalt (Co)** | **Lampiran II.a (Target Organ Paru)**<br>& **Lampiran I.a (Faktor Kimia)** | • **Lampiran II.a Butir 5:** *"Penyakit bronkhopulmoner yang disebabkan oleh debu logam keras"*.<br>• **Lampiran I.a Butir 39:** *"Bahan kimia lain..."*. | *Hard Metal Lung Disease* (HMLD) / *Giant Cell Interstitial Pneumonia* (GIP) akibat debu tungsten karbida berikat kobalt, asma kerja sensitisasi kobalt, kardiomiopati kobalt, dermatitis alergi. |
+| **Talium (Tl)** | **Lampiran I.a (Faktor Kimia)** | **Butir 25:** *"Penyakit yang disebabkan oleh thalium atau persenyawaannya"*. | Alopesia difusa akut (kebotakan khas pasca-intoksikasi), neuropati perifer sensorimotor berat (*burning feet syndrome*), takikardia, ataksia, nyeri gastrointestinal berat. |
+
+---
+
+### Rujukan Dokumen Terkait (*Source Grounding*):
+1.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019** *tentang Penyakit Akibat Kerja*:
+    *   *Batang Tubuh:* Pasal 1 (Definisi PAK dan JKK), Pasal 2 (Hak JKK hingga 3 Tahun Pasca Hubungan Kerja Berakhir), Pasal 3 (Kewenangan Dokter dan Dokter Spesialis), Pasal 4 (Klausul Pembuktian Ilmiah PAK di Luar Lampiran), Pasal 5 (Pencatatan dan Pelaporan Nasional), Pasal 6 (Pencabutan Keppres No. 22 Tahun 1993).
+    *   *Lampiran:* Bagian I.a Faktor Kimia (Butir 1 Berilium, 2 Kadmium, 4 Krom, 5 Mangan, 6 Arsen, 7 Raksa, 8 Timbal, 24 Nikel, 25 Talium, 39 Bahan Kimia Lain); Bagian II.a Saluran Pernafasan (Butir 5 Debu Logam Keras / Kobalt); Bagian III Penyakit Kanker Akibat Kerja (Butir 4 Krom VI, 13 Nikel, 15 Arsen, 16 Berilium, 17 Kadmium); Bagian IV Penyakit Spesifik Lainnya (Nystagmus).
+2.  **Peraturan Menteri Kesehatan Republik Indonesia Nomor 11 Tahun 2022** *tentang Pelayanan Kesehatan Penyakit Akibat Kerja*:
+    *   *Batang Tubuh:* Pasal 1–3 (Definisi, Hak Semua Pekerja Formal/Informal/ASN/TNI/Polri), Pasal 4 (Ruang Lingkup Pelayanan), Pasal 5 (Tujuh Langkah Penegakan Diagnosis Okupasi), Pasal 6–8 (Dua Kategori Dugaan Kasus: Spesifik Jenis Pekerjaan Tertentu vs Dugaan PAK), Pasal 9 (Tata Laksana Medis & Tata Laksana Okupasi Individu/Komunitas), Pasal 10 (Sistem Rujukan), Pasal 11 (Pencatatan & Pelaporan Terintegrasi Jaminan), Pasal 15 (Pencabutan Permenkes No. 56 Tahun 2016).
+3.  **Peraturan Pemerintah Republik Indonesia Nomor 28 Tahun 2024** *tentang Peraturan Pelaksanaan UU No. 17 Tahun 2023 tentang Kesehatan*:
+    *   Pasal 232–239: Penyelenggaraan Upaya Kesehatan Kerja Komprehensif (Promotif, Preventif, Kuratif, Rehabilitatif Medik/Kerja, Paliatif), Dukungan Pendanaan Jaminan Sosial Ketenagakerjaan (JKK), dan Kelaikan Kerja (*Return to Work*).
+4.  **Prof. Dr. dr. Muchtaruddin Mansyur, MS, Sp.Ok, Subsp.Tok-Ko.** *Keganasan dan Pajanan Lingkungan Kerja*:
+    *   Kajian Kanker Akibat Kerja Logam Berat: Hubungan Kausal Kanker Paru pada Pekerja Terpajan Cr(VI), Arsen, Berilium, Kadmium, dan Nikel Sesuai IARC Monograph 100C dan Perpres 7/2019.
+5.  **Adams et al. (Cobalt Related Interstitial Lung Disease).** *Respiratory Medicine*:
+    *   Patogenesis *Hard Metal Lung Disease* (HMLD) Akibat Debu Kobalt Bersama Tungsten Karbida pada Industri *Bonded Diamond Tooling* dan Pemotongan Logam Keras.
+
+Pahami seluruh pasal rujukan ini dengan matang, Dokter. Sebagai calon spesialis, Anda adalah benteng penegak keadilan klinis dan perlindungan jaminan bagi tenaga kerja Indonesia.
+
+---
+
+⚖️ Apakah Anda ingin kita simulasikan latihan kasus ujian oral: seorang mantan pekerja peleburan logam yang pensiun 2 tahun lalu datang dengan keluhan batuk darah dan massa paru, lalu bagaimana Anda menerapkan **7 langkah diagnosis Permenkes 11/2022** serta memproses **klaim JKK pasca-kerja berdasarkan Perpres 7/2019**?

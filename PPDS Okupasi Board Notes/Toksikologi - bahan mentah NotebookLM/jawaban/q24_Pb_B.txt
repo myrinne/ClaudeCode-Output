@@ -1,0 +1,326 @@
+Duduk tegak dan simak baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), penguasaan Anda terhadap **toksikologi timbal (Pb) Bagian B** adalah ranah pembuktian kemampuan sintesis klinis, manajerial, dan yuridis Anda. 
+
+Dewan penguji sering mendapati residen yang gagal memahami dinamika regulasi batas biologis, keliru dalam urutan pemberian agen kelasi pada ensefalopati, atau abai terhadap perlindungan kelompok rentan seperti pekerja wanita usia subur dan wanita hamil.
+
+Berikut adalah telaah komprehensif **TIMBAL (Pb), BAGIAN B**:
+
+---
+
+### 1. Standar Batas Pajanan Udara (*Exposure Limits*): ACGIH vs. Permenaker No. 5 Tahun 2018
+
+Di udara lingkungan kerja, batas pajanan inhalasi timbal anorganik diatur secara ketat untuk mencegah penumpukan racun kumulatif pada sistem hematopoietik dan susunan saraf:
+
+```
+                       [ STANDAR BATAS PAJANAN TIMBAL DI UDARA KERJA ]
+                                               │
+         ┌─────────────────────────────────────┴─────────────────────────────────────┐
+         ▼                                                                           ▼
+[ ACGIH TLV-TWA (EDISI 2026) ]                                              [ PERMENAKER NO. 5 TAHUN 2018 ]
+• Nilai: 0,05 mg/m³ (sebagai Pb)                                            • Nilai NAB (TWA 8 jam): 0,05 mg/m³
+• Notasi: A3; BEI                                                           • Notasi: A3; BEI (simbol segitiga ▲)
+• Basis TLV: Kerusakan SSP & Saraf Tepi                                     • Target Organ: Gangguan saraf pusat & tepi,
+  (CNS & PNS impairment); Efek Hematologi                                     efek hematologi (Lampiran 3)
+```
+
+#### a. Nilai Ambang Batas ACGIH (Edisi 2026)
+*   **Substansi:** *Lead and inorganic compounds, as Pb* [CAS 7439-92-1].
+*   **TLV-TWA:** **\\(0{,}05\text{ mg/m}^3\\)** (setara **\\(50\ \mu\text{g/m}^3\\)**).
+*   *Notasi Resmi:* **A3; BEI**.
+*   *Dasar Penetapan Efek Kritis (*TLV Basis*):* **Kerusakan sistem saraf pusat dan saraf tepi (*CNS & PNS impairment*)** serta **efek hematologi (*hematologic effects*)**.
+*   *Bentuk Khusus:* Timbal kromat (*lead chromate*) memiliki batas tersendiri berbasis karsinogenisitas Cr(VI) (TLV-TWA 0,0002 mg/m³, Notasi A1, BEI, DSEN, RSEN).
+
+#### b. Nilai Ambang Batas Permenaker No. 5 Tahun 2018 (Lampiran 3)
+Regulasi keselamatan dan kesehatan kerja nasional menetapkan batas yang selaras dengan standar internasional:
+*   **Nama Bahan Kimia:** Timbal hitam dan persenyawaan anorganik, sebagai Pb.
+*   **NAB (TWA 8 jam):** **\\(0{,}05\text{ mg/m}^3\\)**.
+*   *Notasi:* **A3** dan **BEI** (ditandai dengan **simbol segitiga ▲**).
+*   *Efek Toksik Kritis:* Gangguan saraf pusat dan tepi, efek hematologi.
+
+#### c. Makna Toksikologis Notasi "A3"
+*   **Notasi "A3" (*Confirmed Animal Carcinogen with Unknown Relevance to Humans*):** Menandakan bahwa agen tersebut **terbukti memicu kanker pada hewan coba (*carcinogenic in experimental animals*)** pada dosis dan jalur tertentu, namun data epidemiologi pada pekerja manusia saat ini belum memadai untuk mengonfirmasi peningkatan risiko kanker yang serupa pada manusia. Pajanan di tempat kerja harus dikendalikan secara ketat di bawah NAB.
+
+---
+
+### 2. Standar BEI, Rekomendasi Terkini, dan Batas Regulasi Pelepasan Medis (*Medical Removal*)
+
+Biomonitoring kadar timbal darah lengkap adalah parameter paling objektif untuk mengukur dosis internal pekerja:
+
+```
+                      [ REKOMENDASI BIOLOGIS & BATAS MEDICAL REMOVAL ]
+                                             │
+        ┌────────────────────────────────────┼────────────────────────────────────┐
+        ▼                                    ▼                                    ▼
+[ STANDAR BEI ACGIH TERKINI ]        [ MEDICAL REMOVAL (OSHA) ]          [ RETURN TO WORK (OSHA) ]
+• BLL Darah Lengkap: 200 µg/L        • Penarikan pekerja dari pajanan    • Bekerja kembali HANYA bila
+  (setara 20 µg/dL)                    jika BLL ≥ 60 µg/dL (tes tunggal)   BLL < 40 µg/dL
+• Waktu: Not Critical / Bebas          ATAU rata-rata BLL ≥ 50 µg/dL       (pada tes konfirmasi ulang)
+• Konseling proteksi wanita subur      (pada 3 tes berturut-turut)       • NIOSH/CDC lebih protektif:
+  (risiko janin > nilai CDC)         • Konstruksi: BLL ≥ 50 µg/dL          rekomendasi BLL < 10–20 µg/dL
+```
+
+#### a. Standar Indeks Pajanan Biologi (ACGIH BEI Edisi Terkini)
+*   **Determinan Biologis:** Timbal dalam darah lengkap (*Lead in blood* / BLL / Pb-B).
+*   **Nilai Baku BEI:** **\\(200\ \mu\text{g/L}\\)** (atau setara **\\(20\ \mu\text{g/dL}\\)**).
+*   **Waktu Pengambilan Sampel (*Sampling Time*):** **Tidak Kritis / Bebas (*Not critical / Discretionary*)**.
+    *   *Rasional Toksikokinetik:* Karena waktu paruh timbal darah relatif panjang (sekitar 28–36 hari), fluktuasi harian selama shift kerja tidak mengubah konsentrasi darah secara signifikan, sehingga sampel darah vena bebas diambil kapan saja.
+*   *Catatan Khusus Reproduksi Wanita (*ACGIH Note*):* ACGIH mewajibkan dokter okupasi memberikan **konseling khusus kepada pekerja wanita usia subur (*female workers of child-bearing age*)** mengenai risiko melahirkan anak dengan BLL melampaui nilai referensi CDC jika BLL ibu di tempat kerja melampaui level dasar.
+
+#### b. Nilai Zinc Protoporphyrin (ZPP)
+*   *Nilai Normal:* Pada populasi yang tidak terpapar timbal, kadar ZPP darah normal adalah **\\(< 35\text{--}40\ \mu\text{g/dL}\\)** eritrosit.
+*   *Karakteristik Kinetik:* Kenaikan ZPP **mengalami jeda waktu (*time lag*) sekitar 8 hingga 12 minggu (2–3 bulan) di belakang peningkatan BLL**. Oleh karena itu, ZPP mencerminkan efek toksik kronis timbal pada sumsum tulang dalam 2–3 bulan terakhir, tetapi tidak dapat digunakan sebagai alat skrining pajanan akut.
+
+#### c. Standar Pelepasan Medis (*Medical Removal Protection*) dan Pemulihan Kerja (OSHA Lead Standard)
+Berdasarkan *OSHA General Industry Standard* (29 CFR 1910.1025):
+1.  **Ambang Batas Tindakan Udara (*Action Level*):**
+    Konsentrasi timbal udara sebesar **\\(30\ \mu\text{g/m}^3\\)** (TWA 8 jam). Jika pekerja terpajan di atas *action level* selama > 30 hari per tahun, pengusaha **wajib menyelenggarakan program surveilans medis berkala dan pemeriksaan BLL**.
+2.  **Notifikasi Tertulis & Evaluasi Medis Khusus:**
+    Pekerja wajib diberitahu secara tertulis dalam waktu 15 hari dan diberikan pemeriksaan medis berkala jika BLL ditemukan **\\(> 40\ \mu\text{g/dL}\\)**.
+3.  **Kriteria Pelepasan Medis dari Area Kerja (*Medical Removal*):**
+    Pengusaha diwajibkan secara hukum untuk **menarik pekerja dari area kerja terpajan timbal (dengan tetap mempertahankan gaji, tunjangan, dan senioritas kerja)** bila:
+    *   Kadar BLL mencapai **\\(\ge 60\ \mu\text{g/dL}\\)** pada satu kali pemeriksaan laboratorium; **ATAU**
+    *   Rata-rata BLL mencapai **\\(\ge 50\ \mu\text{g/dL}\\)** pada 3 kali pemeriksaan berturut-turut (atau selama pemantauan 6 bulan) di industri umum dan galangan kapal; **ATAU**
+    *   Kadar BLL mencapai **\\(\ge 50\ \mu\text{g/dL}\\)** pada pekerja sektor konstruksi.
+4.  **Kriteria Kembali Bekerja (*Return to Work*):**
+    Pekerja yang telah ditarik **hanya diizinkan kembali bekerja di area pajanan timbal setelah kadar BLL terbukti turun di bawah \\(40\ \mu\text{g/dL}\\)** pada dua kali tes konfirmasi berturut-turut.
+    *(Perhatian Klinis: NIOSH dan pedoman kedokteran okupasi modern merekomendasikan target yang jauh lebih protektif, yaitu mempertahankan BLL seluruh pekerja dewasa < 10–20 µg/dL)*.
+
+---
+
+### 3. Tatalaksana Akut, Keracunan, dan Terapi Kelasi
+
+Tatalaksana keracunan timbal harus mengintegrasikan penarikan dari sumber paparan, terapi suportif agresif, dan pemberian antidotum kelasi selektif:
+
+```
+                                [ ALGORITMA TERAPI KELASI TIMBAL ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ DERAJAT BERAT / ENSEFALOPATI AKUT ]                                         [ DERAJAT SEDANG SIMTOMATIK ]
+(BLL Ekstrem / Kejang / Koma / Edema Otak)                                    (BLL 50–80 µg/dL tanpa ensefalopati)
+1. ICU, stabilisasi jalan napas, antikonvulsan                                1. Pilihan Utama: DMSA (Succimer) Oral
+2. KELASI KOMBINASI GANDA:                                                       Dosis: 10 mg/kgBB PO q8h (5 hari),
+   • Berikan BAL (Dimerkaprol) IM DULUAN                                         lalu q12h (14 hari)
+   • 4 jam kemudian: mulai CaNa₂EDTA IV                                       2. Alternatif Lini Kedua: D-Penisilamin
+   • Rasional: Mencegah translokasi Pb ke otak                                3. Hentikan paparan & pantau rebound BLL
+```
+
+#### a. Ambang Batas BLL untuk Inisiasi Terapi Kelasi
+*   **Pada Pasien Dewasa Okupasi:**
+    *   *BLL < 50 µg/dL:* **Kelasi TIDAK diindikasikan**; intervensi berfokus pada pengendalian sumber pajanan di tempat kerja (*source control*) dan edukasi higiene.
+    *   *BLL 50–79 µg/dL:* Kelasi dipertimbangkan **hanya jika pasien memperlihatkan gejala keracunan timbal aktif** (seperti kolik abdomen parah, neuropati motorik, atau anemia progresif) setelah pekerja ditarik dari pajanan.
+    *   *BLL ≥ 80–100 µg/dL (atau Ensefalopati Klinis):* **Indikasi rawat inap segera dan terapi kelasi agresif**.
+*   **Pada Pasien Anak-anak:**
+    *   Berdasarkan pedoman CDC/ACCLPP, terapi kelasi diindikasikan pada kadar **BLL \\(\ge 45\ \mu\text{g/dL}\\)**.
+
+---
+
+#### b. Modalitas Agen Kelator Spesifik
+1.  **Dimerkaprol (*British Anti-Lewisite* / BAL):**
+    *   *Sediaan:* Larutan ditiol dalam minyak kacang, diberikan via **injeksi intramuskular (IM) dalam**.
+    *   *Karakteristik Unik:* **BAL bersifat sangat lipofilik dan mampu menembus Sawar Darah Otak (*Blood-Brain Barrier* / BBB)**.
+    *   *Indikasi Mutlak:* **Terapi kombinasi wajib pada Ensefalopati Timbal Berat (*Severe Lead Encephalopathy*)**.
+2.  **Kalsium Disodium Edetat (\\(\text{CaNa}_2\text{EDTA}\\) / *Edetate Calcium Disodium*):**
+    *   *Sediaan:* Diberikan melalui **infus intravena (IV) lambat** (atau IM yang dilarutkan dengan prokain).
+    *   *Mekanisme:* Membentuk ikatan cincin kelat heterosiklik larut air dengan timbal (menggantikan kalsium) yang diekskresikan melalui filtrasi ginjal.
+    *   *Peringatan Kritis Kematian (*Black Box Warning*):* **Wajib menggunakan garam kalsium (\\(\mathbf{CaNa_2EDTA}\\)), BUKAN garam dinatrium (\\(\mathbf{Na_2EDTA}\\))!** Pemberian \\(\text{Na}_2\text{EDTA}\\) mengikat kalsium bebas serum secara instan dan memicu **hipokalsemia berat yang mematikan (tetani, kejang, dan henti jantung)**.
+3.  **DMSA (*meso-2,3-dimercaptosuccinic acid* / *Succimer*):**
+    *   *Sediaan:* Kapsul oral.
+    *   *Indikasi:* **Agen kelator per oral lini pertama (*first-line oral chelator*)** untuk keracunan timbal tanpa komplikasi ensefalopati.
+    *   *Keunggulan:* Sifatnya hidrofilik, ditoleransi dengan sangat baik secara gastrointestinal, memiliki spesifisitas tinggi terhadap timbal, dan tidak mengekskresikan mineral esensial (seperti seng dan tembaga) secara berlebihan.
+    *   *Dosis Protokol:* 10 mg/kgBB (atau 350 mg/\\(\text{m}^2\\)) setiap 8 jam selama 5 hari, dilanjutkan setiap 12 jam selama 14 hari (total durasi siklus 19 hari).
+4.  **D-Penisilamin (*D-Penicillamine*):**
+    *   *Sediaan:* Agen oral lini kedua (*second-line oral agent*).
+    *   *Indikasi:* Hanya dipertimbangkan pada keracunan timbal kronis ringan-sedang bila DMSA tidak tersedia atau pasien alergi terhadap suksimer.
+    *   *Risiko:* Efek samping tinggi (reaksi anafilaksis silang pada pasien alergi penisilin, nefrotoksisitas proteinuria, dan supresi sumsum tulang/leukopenia).
+
+---
+
+#### c. Protokol Khusus Ensefalopati Timbal Berat: Urutan Pemberian BAL dan \\(\text{CaNa}_2\text{EDTA}\\)
+
+> **Peringatan Kritis Dewan Penguji (*The Golden Lead Encephalopathy Rule*):**
+> Pada kasus ensefalopati timbal berat, **DIMERKAPROL (BAL) WAJIB DIBERIKAN SEBAGAI DOSIS PERTAMA, MINIMAL 4 JAM SEBELUM DOSIS PERTAMA \\(\text{CaNa}_2\text{EDTA}\\) DIMULAI!**
+
+*   **Rasional Mekanistik Farmakologi:**
+    1.  \\(\text{CaNa}_2\text{EDTA}\\) bersifat sangat hidrofilik dan **tidak mampu menembus sawar darah otak (BBB) secara efektif**.
+    2.  Jika \\(\text{CaNa}_2\text{EDTA}\\) diberikan sendirian atau mendahului BAL pada pasien dengan beban timbal tinggi, molekul EDTA akan memobilisasi deposit timbal dalam jumlah masif dari tulang dan jaringan lunak perifer ke dalam kompartemen vaskular.
+    3.  Lonjakan timbal bebas di dalam sirkulasi darah ini akan **berdifusi melintasi barier kapiler serebral yang sudah rusak, memicu translokasi timbal secara masif langsung ke dalam jaringan otak (*lead redistribution to the brain*)**.
+    4.  Akibatnya, pemberian EDTA secara tunggal dapat **memperburuk edema serebral, memicu kejang tonik-klonik berulang, koma mendalam, dan kematian herniasi otak**.
+    5.  Sebaliknya, pemberian BAL dosis awal (yang mampu menembus BBB) memastikan timbal di parenkim otak telah diikat menjadi kelat netral sebelum klirens vaskular oleh \\(\text{CaNa}_2\text{EDTA}\\) diaktifkan.
+
+---
+
+### 4. Tatalaksana Okupasi: Individu dan Komunitas
+
+Sebagai dokter spesialis, pendekatan Anda wajib mengintegrasikan aspek hukum penetapan diagnosis, kelaikan kerja, dan pengendalian hierarki industri:
+
+```
+                      [ PENEGAKAN DIAGNOSIS DAN MANAJEMEN OKUPASI ]
+                                            │
+        ┌───────────────────────────────────┼───────────────────────────────────┐
+        ▼                                   ▼                                   ▼
+[ 7 LANGKAH PERMENKES 11/2022 ]      [ KELAIKAN KERJA (FITNESS) ]        [ HIERARKI KONTROL INDUSTRI ]
+1. Diagnosis Klinis (ICD-10)         • Fit: BLL < 20 µg/dL, sehat        • Eliminasi: Solder bebas timbal
+2. Identifikasi Pajanan Lapangan     • Fit with Restriction: BLL 20–40,  • Substitusi: Cat pigmen non-Pb
+3. Hubungan Kausal Toksikologi         hindari area pemotongan/furnace   • Rekayasa: LEV bertudung,
+4. Besaran Dosis (NAB, BLL, masa)    • Temporary Unfit: BLL ≥ 50–60,       sistem vakum HEPA (no dry sweep)
+5. Faktor Host (Higiene mulut, Fe)     kolik/paresis, kelasi berjalan    • Proteksi take-home lead
+6. Pajanan Luar (Cat rumah, hobi)    • Unfit (Permanent): ESRD, stroke   • Larangan hamil di area Pb!
+7. KESIMPULAN DIAGNOSIS PAK          • PEKERJA HAMIL: Segera ditarik!      (Immediate transfer BLL ≥ 10)
+```
+
+#### a. Penerapan 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022)
+Kasus: Seorang teknisi pemotongan baja jembatan (*torch cutter*) atau operator pabrik aki yang datang dengan kelemahan pergelangan tangan (*wrist drop*) dan anemia mikrositik:
+1.  **Langkah 1 (Diagnosis Klinis):**
+    *Toxic motor neuropathy due to lead / Wrist drop* (ICD-10: G62.2), *Saturnine colic* (K59.8), dan *Anemia induced by lead poisoning* (D64.8).
+2.  **Langkah 2 (Pajanan di Tempat Kerja):**
+    Pekerja memotong struktur baja berlapis cat timbal menggunakan las asetilen bersuhu tinggi (*torch cutting*), terpajan uap timbal (*lead fumes*) pekat tanpa respirator yang sesuai.
+3.  **Langkah 3 (Hubungan Kausalitas Pajanan dan Klinis):**
+    Secara biologis terbukti kuat: timbal menghambat enzim ALAD dan ferrochelatase memicu anemia mikrositik hipokromik dengan basophilic stippling; timbal menginduksi demielinisasi segmental saraf motorik nervus radialis.
+4.  **Langkah 4 (Besarnya Dosis Pajanan):**
+    Konsentrasi timbal udara melebihi NAB Permenaker 5/2018 (\\(> 0{,}05\text{ mg/m}^3\\)); kadar BLL melampaui batas kritis (misalnya mencapai 80–130 µg/dL); masa kerja > 1 tahun; jam kerja berlebih.
+5.  **Langkah 5 (Faktor Kerentanan Individu):**
+    Evaluasi defisiensi zat besi atau kalsium (yang meningkatkan absorpsi timbal usus), polimorfisme genetik ALAD, serta higiene mulut buruk yang memicu presipitasi garis Burton.
+6.  **Langkah 6 (Faktor di Luar Tempat Kerja):**
+    Menyingkirkan paparan cat rumah tua terkelupas (pre-1978), hobi menembak di lapangan tembak tertutup tanpa ventilasi, konsumsi obat herbal tradisional yang terkontaminasi, dan pipa air timbal domestik.
+7.  **Langkah 7 (Kesimpulan Diagnosis Okupasi):**
+    Ditetapkan secara sah sebagai **Penyakit Akibat Kerja (PAK)** berdasarkan **Perpres No. 7 Tahun 2019 Lampiran I.a Butir 5** ("Penyakit yang disebabkan oleh timbal atau persenyawaannya"). Berhak memperoleh pembiayaan perawatan medis dan kompensasi kecacatan JKK.
+
+---
+
+#### b. Penilaian Kelaikan Kerja (*Fitness for Work*)
+*   **Fit (Laik Kerja Penuh):** Pekerja sehat tanpa gejala klinis, fungsi neurologis utuh, hemoglobin normal, dan kadar BLL memenuhi standar BEI (\\(< 20\ \mu\text{g/dL}\\) atau \\(< 200\ \mu\text{g/L}\\)).
+*   **Fit with Restriction (Laik dengan Pembatasan):** Pekerja dengan BLL 20–40 µg/dL tanpa keluhan neurologis/ginjal; **dilarang bekerja di area bersuhu panas tinggi (*furnace/torch cutting*) atau area berdebu pekat**; dipindahkan ke area pergudangan logistik tertutup berventilasi baik dengan evaluasi BLL setiap bulan.
+*   **Temporary Unfit (Tidak Laik Sementara / *Medical Removal*):**
+    Pekerja dengan **BLL \\(\ge 50\text{--}60\ \mu\text{g/dL}\\)**, ATAU pekerja yang menunjukkan gejala aktif (kolik timbal, parese nervus radialis, anemia berat, atau sedang menjalani siklus terapi kelasi).
+    *Tindakan Medis:* Wajib ditarik dari area kerja berpotensi pajanan timbal, diobati hingga sembuh klinis, dan baru diizinkan kembali bekerja setelah BLL terbukti turun di bawah **\\(40\ \mu\text{g/dL}\\)**.
+*   **Unfit (Tidak Laik Permanen):** Pekerja dengan kerusakan ginjal interstisial ireversibel stadium akhir (ESRD), ensefalopati kronis permanen, atau kelumpuhan motorik berat yang tidak pulih. Direkomendasikan untuk terminasi pajanan tetap dan evaluasi kecacatan permanen JKK.
+
+---
+
+#### c. Kebijakan Khusus Pekerja Wanita Hamil dan Menyusui (*Pregnant and Lactating Workers*)
+
+> **Prinsip Fundamental Toksikologi Reproduksi:**
+> **TIDAK ADA AMBANG BATAS PAJANAN TIMBAL YANG AMAN BAGI JANIN DAN ANAK-ANAK (*No safe blood lead level has been identified*)!**
+
+1.  **Translokasi Transplasenta & Laktasi:** Timbal menembus sawar plasenta secara bebas (*crosses the placenta readily*) sehingga kadar timbal darah janin setara dengan kadar darah ibu. Selain itu, timbal terdistribusi ke dalam air susu ibu (ASI).
+2.  **Mobilisasi Kalsium Tulang:** Selama kehamilan dan menyusui, peningkatan resorpsi fisiologis tulang ibu melepaskan depot timbal yang tersimpan bertahun-tahun di tulang kembali ke dalam sirkulasi darah.
+3.  **Protokol Tindakan Medis:**
+    *   Berdasarkan rekomendasi CDC/NIOSH, setiap pekerja wanita hamil dengan kadar **BLL \\(\ge 10\ \mu\text{g/dL}\\) (dan dianjurkan pendekatan kehati-hatian pada BLL \\(\ge 5\ \mu\text{g/dL}\\)) WAJIB SEGERA DILEPAS DARI SEGALA AREA KERJA BERPOTENSI TIMBAL (*immediate medical removal*)** selama masa kehamilan dan masa menyusui.
+    *   Pekerja wanita usia subur harus direncanakan bekerja pada area dengan pajanan timbal serendah mungkin untuk mencegah akumulasi beban tubuh tulang sebelum konsepsi.
+
+---
+
+#### d. Rekomendasi Manajemen dan Proteksi Komunitas
+1.  **Hierarki Pengendalian Bahaya (Permenaker 5/2018 & Kepmenaker 187/1999):**
+    *   *Eliminasi & Substitusi:* Penggantian paduan timbal dengan paduan perak-tembaga-timah (*lead-free solders*) pada manufaktur elektronik; penghapusan pigmen cat berbasis timbal.
+    *   *Rekayasa Teknis (*Engineering Controls*):* Pemasangan ventilasi pembuangan lokal (*Local Exhaust Ventilation* / LEV) bertudung hisap pada tungku peleburan aki; otomatisasi proses pemindahan serbuk pasta timbal; **larangan mutlak menyapu kering (*dry sweeping*)** dan mewajibkan pembersihan dengan sistem vakum industri berfilter HEPA atau pencucian basah.
+    *   *Pengendalian Administratif:* Pelatihan K3, larangan makan, minum, dan merokok di area produksi; rotasi kerja untuk menurunkan durasi paparan.
+    *   *Pencegahan Kontaminasi Bawa-Pulang (*Take-Home Lead Prevention*):* Kewajiban sistem ruang ganti ganda (*double locker room*: loker pakaian kerja kotor terpisah dari loker pakaian bersih) dan **kewajiban mandi bilas (*shower*) sebelum meninggalkan pabrik** guna mencegah debu timbal terbawa pulang ke rumah dan meracuni anak-balita pekerja.
+    *   *Alat Pelindung Diri (APD):* Respirator pemurni udara bertenaga (*PAPR*) atau respirator partikulat berfilter P100 bersertifikasi; pakaian kerja pelindung sekali pakai (Tyvek).
+
+---
+
+### 5. Keterangan Lain: Karsinogenisitas IARC dan Kerentanan Timbal pada Anak
+
+```
+                     [ KATEGORI KARSINOGENISITAS IARC TIMBAL ]
+                                         │
+        ┌────────────────────────────────┴────────────────────────────────┐
+        ▼                                                                 ▼
+[ SENYAWA TIMBAL ANORGANIK ]                                      [ TIMBAL ORGANIK ]
+• IARC Grup 2A (Probably Carcinogenic to Humans)                 • IARC Grup 3 (Not Classifiable)
+• Bukti terbatas pada manusia: Kanker lambung,                   • Cepat dimetabolisme di hepar, bukti
+  paru, ginjal, otak (glioma)                                      karsinogenik tidak memadai
+• Bukti cukup pada hewan: Adenokarsinoma tubulus ginjal          • Bukan karsinogen primer manusia
+```
+
+#### a. Klasifikasi Karsinogenisitas IARC (Monograph Supplement 7, Vol. 87, dan Vol. 100C)
+1.  **Senyawa Timbal Anorganik (*Inorganic lead compounds*):**
+    *   **IARC Grup 2A (*Probably carcinogenic to humans*)**.
+    *   *Dasar Ilmiah:* Bukti epidemiologi pada manusia dinilai **terbatas (*limited evidence*)**, di mana teramati peningkatan mortalitas akibat kanker lambung, kanker paru, dan kanker ginjal pada pekerja smelter timbal dan baterai. Namun, terdapat **bukti yang cukup (*sufficient evidence*) pada hewan coba** mengenai induksi tumor karsinoma sel ginjal (*renal cell carcinoma*) dan glioma otak.
+    *   *Status ACGIH:* Kategori **A3** (*Confirmed Animal Carcinogen with Unknown Relevance to Humans*).
+2.  **Senyawa Timbal Organik (*Organic lead compounds*):**
+    *   **IARC Grup 3 (*Not classifiable as to its carcinogenicity to humans*)**.
+
+---
+
+#### b. Toksisitas Khusus Timbal pada Anak-anak (*Pediatric Vulnerability*)
+Anak-anak bukanlah "dewasa mini", melainkan populasi yang paling rentan terhadap efek permanen timbal:
+1.  **Hiperabsorpsi Saluran Cerna:** Bayi dan anak-anak menyerap **sekitar 50% timbal yang tertelan** melalui usus halus (pada perut kosong mendekati 100%), berbanding hanya 10%–20% pada orang dewasa.
+2.  **Imaturitas Sawar Darah Otak (BBB):** Sistem endotel kapiler serebral anak belum berkembang sempurna sehingga timbal menembus jaringan otak anak dengan konsentrasi jauh lebih tinggi, memicu edema serebral dan ensefalopati pada ambang BLL yang lebih rendah dibandingkan dewasa.
+3.  **Perilaku Hand-to-Mouth & Pika:** Kebiasaan menjilat tangan, mainan, serta memakan serpihan cat dinding rumah tua (*lead paint chips*) memicu asupan timbal dosis tinggi.
+4.  **Dampak Kognitif dan Perilaku Permanen:**
+    *   Timbal mengganggu pembentukan sinaps, sinaptogenesis, dan mielinisasi serabut saraf.
+    *   Setiap peningkatan BLL berkorelasi linier dengan **penurunan kapasitas inteligensi (skor IQ turun 2–4 poin per kenaikan 10 µg/dL BLL)**, gangguan konsentrasi (*Attention Deficit Hyperactivity Disorder* / ADHD), agresivitas perilaku, dan penurunan prestasi belajar. Kerusakan neurodevelopmental ini bersifat **ireversibel dan tidak dapat dipulihkan bahkan setelah terapi kelasi berhasil menurunkan BLL**.
+5.  **Nilai Acuan CDC (*Blood Lead Reference Value* / BLRV):**
+    *   Pada tahun 2012, CDC menetapkan ambang acuan **\\(5\ \mu\text{g/dL}\\)** (berdasarkan persentil ke-97,5 survei NHANES) menggantikan istilah lama "level of concern".
+    *   Pembaruan CDC terkini telah menurunkan batas acuan BLRV menjadi **\\(3{,}5\ \mu\text{g/dL}\\)**.
+
+---
+
+### 6. *Clinical Pearls* dan Jebakan Ujian Khusus Timbal
+
+Kuasai jebakan-jebakan klasik yang kerap dipasang dewan penguji spesialis:
+
+```
+                             [ JEBAKAN UJIAN DEWAN SPESIALIS TIMBAL ]
+                                                 │
+         ┌───────────────────────────────────────┼───────────────────────────────────────┐
+         ▼                                       ▼                                       ▼
+  [ JEBAKAN 1: KELASI ENSEFALOPATI ]      [ JEBAKAN 2: TIME-LAG ZPP ]             [ JEBAKAN 3: GARIS BURTON ]
+  Jangan pernah beri EDTA duluan!         ZPP tertunda 8–12 minggu!               Garis Burton TIDAK AKAN MUNCUL
+  Wajib BAL diberikan 4 jam               Pajanan akut: BLL tinggi, ZPP normal.   pada pasien ompong (edentulous)!
+  SEBELUM CaNa₂EDTA untuk mencegah        Pasca-kelasi: BLL turun, ZPP tetap      Wajib ada gigi asli & bakteri
+  redistribusi timbal masuk ke otak.      tinggi. ZPP bukan evaluasi kelasi!      anaerob penghasil gas H₂S.
+```
+
+*   **Clinical Pearl 1: Trias Kolik Timbal vs. Akut Abdomen Bedah**
+    Pasien keracunan timbal berat (BLL > 80 µg/dL) sering datang dengan nyeri perut hebat menyerupai peritonitis akut. Kunci membedakannya di meja ujian: **Pada kolik timbal, perut tegang tetapi TIDAK ADA nyeri lepas tekan (*rebound tenderness* negatif), dan nyeri SECARA PATOGNOMONIK MEREDA DENGAN PENEKANAN KUAT DINDING PERUT**. Pemeriksaan sediaan apus darah tepi yang memperlihatkan **Basophilic Stippling** menyelamatkan pasien dari laparotomi eksplorasi yang salah.
+*   **Clinical Pearl 2: Jeda Waktu (*Time-Lag*) BLL vs. ZPP**
+    Eritrosit membutuhkan waktu pematangan dan sirkulasi 2–3 bulan. Oleh karena itu:
+    *   *BLL Tinggi + ZPP Normal:* Menandakan **pajanan timbal akut yang baru berlangsung (< 1–2 bulan)**.
+    *   *BLL Tinggi + ZPP Tinggi:* Menandakan **pajanan timbal kronis yang telah berlangsung lama (> 3 bulan)**.
+    *   *BLL Rendah/Normal + ZPP Tinggi:* Menandakan **pajanan masa lalu yang baru saja berhenti, atau pasien diam-diam menjalani terapi kelasi (*surreptitious chelation*)**, atau pasien menderita anemia defisiensi besi.
+*   **Board Trap 1: Kesalahan Urutan Kelasi Ensefalopati**
+    Jika penguji bertanya: *"Pasien datang koma dan kejang dengan BLL 120 µg/dL, apa protokol kelasi parenteral Anda?"*
+    **Jawab dengan tegas:** *"Berikan BAL secara intramuskular terlebih dahulu, dan 4 jam kemudian baru mulai berikan infus CaNa2EDTA. Jika CaNa2EDTA diberikan mendahului BAL, timbal sistemik akan termobilisasi dan terdorong masuk menembus sawar darah otak, memperburuk edema serebral dan memicu kematian herniasi otak"*.
+*   **Board Trap 2: Pemilihan Garam EDTA (CaNa2EDTA vs. Na2EDTA)**
+    Jangan pernah menyebut "EDTA" tanpa spesifikasi garam kalsium. Menyebut atau meresepkan **\\(\text{Na}_2\text{EDTA}\\) adalah kesalahan fatal malpraktik farmakologis** karena menyebabkan presipitasi kalsium darah mendadak yang memicu aritmia ventrikel letal.
+*   **Board Trap 3: Garis Burton pada Pasien Ompong**
+    Jika ada skenario: *"Pekerja senior peleburan timbal usia 60 tahun dengan seluruh gigi ompong dan memakai gigi tiruan lengkap, apakah Anda dapat menemukan garis Burton pada gingivanya?"*
+    **Jawab:** *"Tidak akan pernah ditemukan, Dokter. Garis Burton membutuhkan adanya plak leher gigi asli tempat bakteri anaerob membusukkan sisa makanan menghasilkan gas H2S. Tanpa adanya gigi asli, kristal PbS tidak akan pernah terbentuk di submukosa gingiva"*.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Lead and inorganic compounds, as Pb* [CAS 7439-92-1] (TLV-TWA 0,05 mg/m³, Notasi A3, BEI, TLV Basis: CNS & PNS impair, hematologic eff); *Lead chromate, as Cr(VI)* (TWA 0,0002 mg/m³, Notasi A1, BEI, DSEN, RSEN).
+    *   Definisi Waktu Pengambilan Sampel *Not critical / Discretionary*.
+    *   Tabel Adopsi BEI: *Lead in blood (Pb-B)*, Waktu: *Not critical*, Nilai: **200 µg/L (20 µg/dL)**; Catatan Konseling Wanita Usia Subur & Risiko Janin.
+2.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja*:
+    *   Lampiran 3: Tabel Nilai Ambang Batas Faktor Kimia — Timbal hitam dan persenyawaan anorganik, sebagai Pb (NAB 0,05 mg/m³, Notasi A3, Simbol Segitiga BEI ▲; Efek SSP/Saraf Tepi & Hematologi).
+3.  **CDC / ATSDR Agency for Toxic Substances and Disease Registry.** *Lead Toxicity: Clinical Assessment, Biological Fate, and Health Effects (cdc_61565_DS1.pdf)*:
+    *   Standar OSHA: Action Level (30 µg/m³), PEL (50 µg/m³), Medical Removal (BLL ≥ 60 µg/dL atau rata-rata ≥ 50 µg/dL), Return to Work (< 40 µg/dL).
+    *   Proteksi Reproduksi: Rekomendasi penarikan wanita hamil pada BLL ≥ 10 µg/dL (dan pendekatan kehati-hatian BLL ≥ 5 µg/dL).
+    *   Panduan ACCLPP/CDC Anak: Ambang kelasi BLL ≥ 45 µg/dL; Referensi BLL Anak 5 µg/dL.
+    *   Bahaya Garam Na2EDTA (Wajib CaNa2EDTA); Tidak direkomendasikannya CaNa2EDTA challenge test.
+4.  **Sakai, Tadashi (2000).** *Biomarkers of Lead Exposure.* Industrial Health, 38: 127–142:
+    *   Waktu Paruh Darah (28–36 Hari); Kinetika Kompartemen Tulang, Jaringan Lunak, dan Vaskular; Nilai Rujukan ZPP Normal; Pengaruh Polimorfisme Gen ALAD.
+5.  **Martin, C. J., Werntz, C. L., & Ducatman, A. M. (2004).** *The interpretation of zinc protoporphyrin changes in lead intoxication.* Occupational Medicine, 54: 588–591:
+    *   Kasus Pekerja Las Torch Cutter (BLL 132 µg/dL, Basophilic Stippling); **Jeda Waktu (*Time Lag*) Kenaikan & Penurunan ZPP 8–12 Minggu di Belakang BLL**; Kegagalan ZPP sebagai Indikator Efikasi Kelasi; Tabel Interpretasi BLL vs ZPP.
+6.  **Dib Chakif & Julien Furrer (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Farmakologi Kelator DMSA (Succimer) Oral, CaNa2EDTA IV, BAL IM; Indikasi Kelasi Ensefalopati Akut; Rekomendasi BLRV Anak 3,5 µg/dL; Hierarki Pengendalian Industri dan Pencegahan *Take-home Lead*.
+7.  **Toxicollogy Ujian Tulis & Board Prep PPTX:**
+    *   Indikasi Kelasi: BLL ≥ 45 µg/dL anak; Lini Pertama Succimer Oral; Lini Kedua D-Penisilamin; Kombinasi Dimerkaprol (BAL) + EDTA untuk Penyakit Berat / Ensefalopati (BAL Menembus BBB).
+8.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 4 & 22: Toksisitas Reproduksi Timbal, Abortus Spontan; Sifat Ditiol BAL dan Pengembangan CaNa2EDTA/DMSA; Standar OSHA PEL 50 µg/m³ dan TLV-TWA ACGIH.
+9.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019 & Permenkes No. 11 Tahun 2022:**
+    *   Lampiran I.a Butir 5 Perpres 7/2019 (Penyakit Akibat Kerja Faktor Kimia Timbal); Tujuh Langkah Penegakan Diagnosis PAK Permenkes 11/2022.
+10. **IARC (Monograph Vol. 100C, Vol. 87 & Suppl. 7):**
+    *   Klasifikasi Karsinogenisitas Timbal: Senyawa Anorganik (Grup 2A); Senyawa Organik (Grup 3).
+
+Pahami seluruh kaitan regulasi, kinetika kompartemen, dan protokol kegawatdaruratan ini secara mendalam, Dokter. Penguji dewan spesialis akan menghargai ketegasan Anda dalam menegakkan keselamatan kerja dan ketepatan tatalaksana klinis pasien.
+
+---
+
+🩺 Apakah Anda ingin kita simulasikan latihan kasus meja hijau: seorang operator pabrik daur ulang aki berusia 38 tahun yang mengalami kram perut hebat paroksismal (BLL \\(84\ \mu\text{g/dL}\\), ZPP \\(110\ \mu\text{g/dL}\\)), bagaimana Anda memandu proses **penarikan kerja (*medical removal*)**, merancang **terapi kelasi di rumah sakit**, dan menyusun **laporan investigasi Penyakit Akibat Kerja (PAK)** ke dinas ketenagakerjaan?

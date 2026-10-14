@@ -1,0 +1,359 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), penguasaan Anda terhadap **toksikologi mangan (Mn)** adalah salah satu materi wajib yang paling sering dijadikan instrumen penguji untuk membedakan residen yang sekadar menghafal dengan klinisi yang memahami patofisiologi sistemik.
+
+Mangan adalah unsur yang unik: di satu sisi merupakan **logam esensial (*essential trace element*)** yang dibutuhkan tubuh sebagai kofaktor enzimatik esensial, namun di sisi lain memiliki kurva dosis-respons berbentuk huruf U (*hormetic U-shaped curve*), di mana kelebihan beban kerja memicu sindrom neurotoksik ekstrapiramidal berat yang dikenal sebagai **manganisme (*manganism*)**. Dewan penguji akan menguji ketajaman Anda dalam membedakan rute masuk olfaktorius langsung ke otak, patologi selektif pada **globus pallidus**, interpretasi pencitraan **MRI T1 (*Pallidal Index*)**, hingga kemampuan Anda membedakan manganisme dengan **Penyakit Parkinson idiopatik** di meja hijau.
+
+Berikut adalah telaah mendalam **MANGAN (Mn), BAGIAN A**:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Spesiasi Mangan
+
+Mangan (nomor atom 25, berat atom 54,94 g/mol) terletak pada Golongan VIIB (logam transisi) periode 4 tabel periodik. Karakteristik fisik-kimia dan klasifikasinya terbagi ke dalam bentuk anorganik dan organik:
+
+```
+                                [ KLASIFIKASI SPESIASI MANGAN ]
+                                                │
+         ┌──────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                      ▼                                      ▼
+[ MANGAN ELEMENTAL (Mn⁰) ]              [ GARAM & OKSIDA ANORGANIK ]          [ SENYAWA ORGANIK (ALKIL Mn) ]
+• Logam transisi padat, berkilau        • MnO₂ (Mangan Dioksida / Pirolusit)  • MMT (Metilsiklopentadienil
+  keperakan, keras namun rapuh            - Bilangan oksidasi: +4               Mangan Trikarbonil)
+• Bilangan oksidasi: 11 variasi           - Tidak larut air, serbuk hitam       - Senyawa organologam lipofilik
+  (paling stabil: +2, +3, +4, +7)         - Komponen bijih tambang primer       - Cairan volatil, diserap kulit
+• Titik leleh: 1244°C; didih: 1962°C    • MnSO₄ (Mangan Sulfat) & MnCl₂       - Antiknock additive bensin
+• Membentuk aerosol uap debu              - Bilangan oksidasi: divalen (+2)   • Pestisida Etilenbisditiokarbamat:
+  saat pengelasan bersuhu tinggi          - Sangat larut air, bioavailabel      Maneb & Mancozeb (kompleks Mn/Zn)
+```
+
+1.  **Mangan Elemental [Mn(0)] [CAS 7439-96-5]:**
+    Logam berkilau abu-abu keperakan (*lustrous, brittle, silvery solid*), rapuh, reaktif, dan mudah teroksidasi di udara bebas. Mangan memiliki densitas 7,20 g/cm³, titik leleh 1244°C (2271°F), dan titik didih 1962°C. Logam ini mampu membentuk hingga 11 status bilangan oksidasi yang berbeda, dengan status paling stabil dan penting dalam toksikologi adalah **\\(\text{Mn}^{2+}\\) (divalen / manganous), \\(\text{Mn}^{3+}\\) (trivalen / manganic), \\(\text{Mn}^{4+}\\), dan \\(\text{Mn}^{7+}\\) (permanganat)**.
+2.  **Mangan Dioksida (\\(\text{MnO}_2\\)) / Pirolusit [CAS 1313-13-9]:**
+    Senyawa anorganik dengan bilangan oksidasi +4. Berupa serbuk kristal berwarna hitam kecokelatan yang praktis tidak larut dalam air. Merupakan bentuk mineral utama yang ditambang di alam (mineral pirolusit) dan bahan baku utama katoda baterai kering.
+3.  **Mangan Sulfat (\\(\text{MnSO}_4\\)) dan Mangan Klorida (\\(\text{MnCl}_2\\)):**
+    Senyawa garam anorganik divalen (+2). Bersifat sangat larut dalam air (*water-soluble*), memiliki bioavailabilitas biologis sistemik yang jauh lebih tinggi dibanding bentuk oksida, dan menjadi agen pemicu stres oksidatif seluler yang cepat.
+4.  **Senyawa Mangan Organik (*Organomanganese*):**
+    *   **Metilsiklopentadienil Mangan Trikarbonil (*Methylcyclopentadienyl Manganese Tricarbonyl* / MMT) [CAS 12108-13-3]:** Cairan organik berwarna kuning-jingga pekat dengan aroma khas, sangat lipofilik, mudah menguap, dan **mampu menembus kulit utuh (*dermal absorption*)**. Digunakan sebagai aditif peningkat oktan pengganti timbal (*antiknock agent*) dalam bensin tanpa timbal.
+    *   **Fungisida Maneb (*Manganese ethylene-bis-dithiocarbamate*) dan Mancozeb:** Senyawa pestisida ditiokarbamat kompleks yang mengandung mangan dan seng, digunakan luas di sektor agrikultur.
+
+---
+
+### 2. Sumber dan Penggunaan Industri
+
+Pajanan okupasi terhadap aerosol debu, uap (*fumes*), dan senyawa mangan ditemukan pada sektor-sektor kunci:
+
+```
+                                  [ SEKTOR INDUSTRI UTAMA PAJANAN MANGAN ]
+                                                     │
+         ┌───────────────────────────┬───────────────┴───────────────┬───────────────────────────┐
+         ▼                           ▼                               ▼                           ▼
+[ PEKERJAAN PENGELASAN (WELDING) ]  [ INDUSTRI BAJA & ALOI LOGAM ]  [ PENAMBANGAN & PEMURNIAN ]  [ BATERAI, PESTISIDA & MMT ]
+• Pengelasan baja lunak & keras     • Pabrik feromangan & siliko-   • Ekstraksi mineral batu     • Baterai kering & alkaline
+• Fluks kawat elektroda las elektrod  mangan (furnace smelter)        pirolusit (MnO₂) di tambang• Fungisida Maneb & Mancozeb
+• Uap kondensasi MnO / Mn₃O₄ respir • Pembuatan baja tahan karat    • Penghancuran bijih (crush) • Aditif bensin MMT (kilang)
+```
+
+1.  **Pekerjaan Pengelasan Logam (*Welding Operations*):**
+    *   Merupakan **sumber pajanan okupasi mangan paling umum di era industri modern**.
+    *   Mangan terkandung dalam kawat inti las maupun lapisan fluks elektroda (*welding rods*) untuk meningkatkan kekuatan mekanis sambungan dan mengikat sulfur.
+    *   Pemanasan busur listrik (> 3000°C) menguapkan mangan, yang saat bersentuhan dengan udara terkondensasi menjadi **aerosol asap uap halus kompleks (\\(\text{Mn}_3\text{O}_4\\) dan \\(\text{MnO}\\)) berukuran respirabel dan nanopartikel (\\(< 0{,}1\text{--}1\ \mu\text{m}\\))**.
+2.  **Industri Pembuatan Baja dan Paduan Aloi (*Steel and Alloy Metallurgy*):**
+    *   Mangan adalah bahan baku mutlak dalam pembuatan baja karbon dan baja nirkarat (*stainless steel*), bertindak sebagai agen deoksidasi dan desulfurisasi.
+    *   Pekerja di pabrik peleburan feromangan (*ferromanganese smelters*) terpajan debu konsentrat mangan konsentrasi tinggi.
+    *   Paduan mangan-aluminium digunakan untuk kaleng kemasan minuman guna meningkatkan elastisitas dan ketahanan korosi.
+3.  **Penambangan dan Penghancuran Mineral Mangan (*Mining and Milling*):**
+    *   Penambang bawah tanah (*underground miners*) dan pekerja fasilitas pemecah batu mineral pirolusit (\\(\text{MnO}_2\\)) terpajan aerosol debu batu silika-mangan konsentrasi ekstrem tanpa ventilasi adekuat.
+4.  **Manufaktur Baterai Kering dan Sel Alkaline (*Dry-Cell Battery Manufacturing*):**
+    *   Menggunakan bubuk pirolusit (\\(\text{MnO}_2\\)) sintetis dan alami sebagai material katoda depolarisator sel Leclanché dan baterai litium-mangan.
+5.  **Sektor Agrikultur (Pestisida Fungisida):**
+    *   Petani dan pekerja perkebunan terpajan aerosol debu pestisida ditiokarbamat berbasis mangan, yaitu **Maneb** dan **Mancozeb**, yang disemprotkan untuk mengendalikan jamur daun tanaman.
+6.  **Industri Petrokimia (Bahan Aditif Bensin MMT):**
+    *   Pekerja kilang minyak dan mekanik yang menangani pencampuran senyawa **MMT** sebagai zat antiketuk bensin.
+
+---
+
+### 3. Toksikokinetik Komprehensif (ADME dan Transpor Khusus SSP)
+
+Kinetika biologis mangan memperlihatkan rute penetrasi sawar saraf yang sangat khas:
+
+```
+                            [ MODEL KINETIK DAN PENETRASI MANGAN KE OTAK ]
+                            
+               [ INGESTI SALURAN CERNA ]                     [ INHALASI UDARA KERJA ]
+               • Absorpsi normal: Rendah (3–5%)              • Deposisi alveolar: 40–60% serap kapiler
+               • Melonjak 3–5x lipat bila:                   • JALUR KHUSUS BULBUS OLFAKTORIUS:
+                 DEFISIENSI BESI (DMT-1 terinduksi)            Partikulat halus menembus mukosa nasal ──►
+                          │                                    transpor aksonal retrograd melintasi
+                          ▼                                    lamina kribrosa ──► LANGSUNG KE OTAK!
+                 Sirkulasi Vena Porta                                     │
+                          │                                               │
+                          ▼                                               │
+               [ METABOLISME HEPAR: FIRST-PASS ]                          │
+               • Hepatosit menyerap Mn masif                              │
+               • EKSKRESI BILIER PRIMER (> 95%) ──► Feses                 │
+                          │ (Fraksi lolos first-pass)                     │
+                          ▼                                               ▼
+               [ KOMPARTEMEN DARAH VASKULAR ] ════════════════════════════╡
+               • Terikat Transferin (Mn³⁺) & Albumin (Mn²⁺)               │
+                          │                                               │
+                          ▼                                               ▼
+               [ PENEMBUSAN SAWAR DARAH OTAK (BBB) ]                      │
+               • Via Transporter DMT-1, ZIP8, TfR, OATP                   │
+                          │                                               │
+                          └──────────────────────┬────────────────────────┘
+                                                 ▼
+                                     [ AKUMULASI SELEKTIF OTAK ]
+                                     • PREDILIKSI TERTINGGI: GLOBUS PALLIDUS
+                                     • Substantia Nigra pars reticulata (SNpr)
+                                     • Putamen & Nukleus Kaudatus
+                                     • Akumulasi 50x lipat lebih pekat di ASTROSIT!
+```
+
+#### a. Absorpsi
+1.  **Inhalasi (Portal Primer Okupasi):**
+    *   *Penyerapan Alveolar-Sistemik:* Partikulat respirabel terhirup masuk ke kantung alveoli, diserap 40%–60% melintasi endotel kapiler paru masuk ke peredaran darah sistemik.
+    *   *Jalur Khusus Transnasal Olfaktorius (*Olfactory Nerve Translocation* - Kritis untuk Ujian):*
+        Partikulat aerosol halus dan nanopartikel uap mangan yang terdeposit di mukosa epitel olfaktorius kavum nasi dapat **diserap langsung oleh badan sel saraf olfaktorius, lalu ditranspor secara retrograd melintasi lamina kribrosa tulang etmoid menuju bulbus olfaktorius otak tanpa melewati sirkulasi darah dan tanpa harus melintasi Sawar Darah Otak (*Blood-Brain Barrier* / BBB)**. Hal ini menjelaskan mengapa pekerja pengelasan dan peleburan dapat mengalami neurotoksisitas otak berat meskipun kadar mangan dalam darah sistemiknya tidak meningkat tajam.
+2.  **Ingesti (Saluran Cerna):**
+    *   *Kondisi Normal:* Saluran cerna manusia dewasa memiliki barier homeostatik ketat, di mana **hanya sekitar 3% hingga 5% mangan diet yang diabsorpsi**.
+    *   *Regulasi Kompetitif dengan Zat Besi (DMT-1):* Mangan diserap di enterosit duodenum memanfaatkan transporter kation divalen (**DMT-1 / Nramp2 / SLC11A2**). Karena berkompetisi pada situs ikatan yang sama, **kondisi defisiensi zat besi (*iron deficiency* / anemia) akan menginduksi upregulasi ekspresi DMT-1, sehingga penyerapan mangan gastrointestinal melonjak drastis hingga 3–5 kali lipat (15%–20%)**, melipatgandakan kerentanan pekerja wanita usia subur atau individu malnutrisi terhadap intoksikasi mangan.
+3.  **Dermal (Kulit):**
+    Senyawa anorganik praktis tidak menembus kulit utuh, namun senyawa organomangan **MMT diserap secara cepat dan masif secara perkutan**.
+
+#### b. Distribusi Jaringan dan Predileksi Anatomi Sentral
+*   Di dalam kompartemen vaskular, ion \\(\text{Mn}^{2+}\\) terikat pada albumin plasma dan \\(\beta_1\\)-globulin, sedangkan ion teroksidasi \\(\text{Mn}^{3+}\\) terikat kuat pada **transferin (*transferrin*)**.
+*   **Penembusan Sawar Darah Otak (BBB):** Mangan menembus BBB memanfaatkan berbagai mekanisme transpor: endositosis termediasi reseptor transferin (TfR), transporter kation DMT-1, ZIP8, transporter monokarboksilat, dan polipeptida transporter anion organik (OATP).
+*   **Predileksi Anatomi Ganglia Basalis (*Selective Basal Ganglia Tropism*):**
+    Di dalam parenkim otak, mangan memiliki afinitas ikatan jaringan yang sangat selektif dan tidak terdistribusi secara merata:
+    *   **Konsentrasi Akumulasi Tertinggi:** Terletak secara konsisten pada **Globus Pallidus** (terutama segmen internal dan eksternal).
+    *   *Area Terdampak Lainnya:* **Substantia Nigra pars reticulata (SNpr)**, nukleus subtalamikus, putamen, dan nukleus kaudatus (striatum).
+    *   *Area yang Relatif Terhindar (*Spared*):* **Substantia Nigra pars compacta (SNpc)** dan lokus seruleus secara histopatologis relatif terlindungi dari kerusakan primer pada manganisme.
+*   **Akumulasi di Astrosit Otak:**
+    Di tingkat seluler susunan saraf pusat, **sel astrosit mengakumulasi mangan lebih dari 50 kali lipat lebih pekat dibandingkan sel neuron (*astrocytes accumulate >50-fold greater concentrations of Mn than neurons*)**. Astrosit bertindak sebagai depot penyerap utama, namun beban mangan yang berlebih melumpuhkan regulasi astrosit terhadap homeostasis neurotransmiter.
+
+#### c. Metabolisme
+Sebagai unsur logam murni, mangan anorganik **tidak mengalami biotransformasi atau degradasi enzimatik** di dalam tubuh. Toksikokinetiknya hanya melibatkan perubahan status bilangan oksidasi antara \\(\text{Mn}^{2+}\\) (yang stabil) dan \\(\text{Mn}^{3+}\\) (yang memiliki reaktivitas radikal bebas tinggi). Senyawa MMT dimetabolisme di hepar menghasilkan metabolit mangan anorganik dan alkil terhidroksilasi.
+
+#### d. Ekskresi
+*   **Rute Ekskresi Primer Mutlak: Jalur Hepatobilier ke Feses (> 95%–98%):**
+    *   Hepatosit menyerap mangan dari darah secara efisien dan **mengekskresikannya ke dalam cairan empedu (*biliary excretion*)** melalui pompa transporter membran kanalikular.
+    *   Empedu mengalirkan mangan ke lumen duodenum, lalu keluar dari tubuh melalui **feses**.
+    *   *Sirkulasi Enterohepatik:* Sebagian fraksi mangan empedu mengalami reabsorpsi di usus halus kembali ke hepar (*enterohepatic circulation*).
+*   **Ekskresi Ginjal (Urin) Sangat Minimal (< 1%–2%):**
+    Hanya fraksi kation bebas plasma yang sangat kecil yang mampu difiltrasi di glomerulus ginjal. Oleh karena itu, **ekskresi mangan melalui urin secara kuantitatif sangat rendah dan tidak mencerminkan besaran beban tubuh total**.
+*   *Catatan Pasien Gagal Hati (*Hepatic Failure*):* Pada pasien sirosis hepatis atau kolestasis bilier, eliminasi mangan empedu terhambat total, memicu lonjakan kadar mangan otak dan sindrom neurotoksik ensefalopati hepatik sekunder.
+
+---
+
+### 4. Toksikodinamik: Mekanisme Molekuler Kerusakan Organ Sasaran
+
+Toksisitas seluler mangan pada susunan saraf pusat dipicu oleh gangguan bioenergetika organel dan kaskade peradangan glia:
+
+```
+                                  [ KASKADE TOKSIKODINAMIK MANGAN ]
+                                                  │
+         ┌────────────────────────────────────────┼────────────────────────────────────────┐
+         ▼                                        ▼                                        ▼
+[ STRES OKSIDATIF MITOKONDRIA ]         [ NEUROINFLAMASI ASTROSIT/GLIA ]         [ DISREGULASI NEUROTRANSMITER ]
+• Masuk matriks mitokondria via Ca²⁺    • Akumulasi 50x di astrosit ──► GFAP     • Inhibisi transporter glutamat
+  uniporter (MCU) ──► Kalsium overload  • Aktivasi NF-κB (p50/p65) mikroglia       EAAT2/GLAST astrosit via YY1
+• Hambat Kompleks I rantai respirasi    • Pelepasan masif: TNF-α, IL-6, IL-1β      ──► Eksitotoksisitas Glutamat
+• Deplesi sintesis ATP seluler           dan iNOS (Nitric Oxide berlebih)        • Penurunan sintesis GABA striatum
+• Pembukaan mPTP ──► Pelepasan Sitokrom C• Interneuron striatal degenerasi       • Auto-oksidasi dopamin ──► Kuinon
+• Kaskade Kaspase-3 ──► Belah PKC-δ     • Peroksidasi lipid membran lipid          & blokade pasca-sinaps striatal
+```
+
+#### a. Stres Oksidatif Mitokondria dan Apoptosis Seluler
+1.  **Gangguan Homeostasis Kalsium Mitokondria:**
+    Kation \\(\text{Mn}^{2+}\\) menembus membran dalam mitokondria memanfaatkan uniporter kalsium mitokondria (*Mitochondrial Calcium Uniporter* / MCU). Karena efluks mangan keluar dari mitokondria berlangsung sangat lambat, terjadi penumpukan mangan di dalam matriks mitokondria yang memicu **kelebihan beban kalsium (*calcium overload*)** dan kolaps potensial membran mitokondria (\\(\Delta\Psi_m\\)).
+2.  **Penghambatan Rantai Fosforilasi Oksidatif:**
+    Mangan secara spesifik **menghambat Kompleks I (NADH dehidrogenase) dan Kompleks II** dari rantai transpor elektron mitokondria, melumpuhkan sintesis ATP secara drastis.
+3.  **Kaskade Apoptosis Termediasi PKC-\\(\delta\\) (*Protein Kinase C-delta*):**
+    Kerusakan membran mitokondria membuka pori transisi permeabilitas mitokondria (*mPTP*), melepaskan **sitokrom C** ke sitosol. Pelepasan ini memicu aktivasi bertingkat **kaspase-9 dan kaspase-3**. Caspase-3 secara proteolitik membelah kinase pro-apoptotik **PKC-\\(\delta\\)**, menghasilkan fragmen katalitik aktif terbelah yang bertranslokasi ke dalam nukleus dan menginduksi **fragmentasi DNA ireversibel serta apoptosis neuron**.
+4.  **Siklus Redoks Mn²⁺/Mn³⁺ dan Pembentukan Radikal Bebas:**
+    Ion \\(\text{Mn}^{2+}\\) sitosol dapat teroksidasi menjadi \\(\text{Mn}^{3+}\\), suatu zat pengoksidasi kuat yang mampu menginduksi auto-oksidasi katekolamin dan melumpuhkan molekul antioksidan glutation (GSH), memicu peroksidasi lipid membran saraf.
+
+#### b. Neuroinflamasi Termediasi Astrosit dan Mikroglia
+*   **Disfungsi Astrosit dan Eksitotoksisitas Glutamat:**
+    Penumpukan mangan di astrosit meningkatkan aktivitas faktor transkripsi represor **Ying Yang 1 (YY1)**. Upregulasi YY1 menekan ekspresi gen promotor transporter glutamat astrosit (**EAAT2 / GLAST**). Akibatnya, pembersihan neurotransmiter eksitatorik glutamat dari celah sinaps gagal, memicu **akumulasi glutamat ekstraseluler dan eksitotoksisitas reseptor NMDA** yang membunuh interneuron striatum.
+*   **Aktivasi Mikroglia:**
+    Mangan mengaktifkan faktor transkripsi **NF-\\(\kappa\\)B (p50/p65)** pada sel mikroglia, memicu pelepasan badai sitokin pro-inflamasi masif: **TNF-\\(\alpha\\), Interleukin-6 (IL-6), Interleukin-1\\(\beta\\) (IL-1\\(\beta\\))**, serta ekspresi berlebih enzim **iNOS (*inducible Nitric Oxide Synthase*)** yang memproduksi radikal peroksinitrit sitotoksik.
+
+#### c. Gangguan Sistem Neurotransmiter Dopamin dan GABA
+*   **Disfungsi Dopaminergik Pasca-Sinaps:**
+    Mangan mempercepat auto-oksidasi dopamin bebas menjadi metabolit reaktif dopamin-o-kuinon yang neurotoksik. Namun, titik tangkap kerusakan paling destruktif pada manganisme bukan pada badan sel dopamin substantia nigra, melainkan pada **integritas jaras persinyalan pasca-sinaps di globus pallidus dan striatum**, sehingga transmisi dopaminergik terputus secara struktural.
+*   **Penurunan Transmisi GABA (*GABAergic Depletion*):**
+    Pajanan kronis mangan menurunkan sintesis dan ambilan asam gama-aminobutirat (GABA) di striatum dan globus pallidus, memicu hilangnya inhibisi tonik motorik dan memunculkan gejala klinis distonia serta spasme otot yang parah.
+
+---
+
+### 5. Biomonitoring Okupasi: Parameter Biologis, MRI T1, dan Keterbatasannya
+
+Evaluasi biologis pekerja terpajan mangan membutuhkan pemahaman kritis mengenai keterbatasan matriks laboratorium:
+
+```
+                      [ STRATEGI EVALUASI BIOMONITORING MANGAN ]
+                                          │
+        ┌─────────────────────────────────┼─────────────────────────────────┐
+        ▼                                 ▼                                 ▼
+[ KADAR MANGAN DARAH (Mn-B) ]      [ KADAR MANGAN URIN (Mn-U) ]      [ MRI KEPALA: PALLIDAL INDEX (PI) ]
+• Whole blood (darah lengkap)      • Ekskresi urin < 1% total!       • Baku Emas Penumpukan Jaringan Otak
+• Nilai normal: 4–15 µg/L          • Nilai normal: < 1–2 µg/L        • Sifat Paramagnetik ion Mn²⁺ mempersingkat T1
+• Indikator pajanan TERKINI saja   • Variabilitas sangat ekstrem     • HIPERINTENSITAS T1 BILATERAL GLOBUS PALLIDUS
+• TIDAK BERKORELASI dengan beban   • TIDAK DIREKOMENDASIKAN untuk    • Keterbatasan: Menghilang pasca-pajanan usai,
+  akumulasi otak atau manganisme     penilaian dosis individu          sedangkan kerusakan klinis menetap ireversibel!
+```
+
+#### a. Mangan Darah Lengkap (*Whole Blood Manganese* / Mn-B)
+*   *Matriks:* Darah vena lengkap (*whole blood*) dengan antikoagulan kalium EDTA/heparin bebas kontaminasi logam.
+*   *Nilai Normal Latar Belakang:* Berkisar antara **4 hingga 15 µg/L (rata-rata 7–10 µg/L)** pada populasi umum sehat.
+*   *Signifikansi Okupasi:* Mn-B terutama bertindak sebagai biomarker **pajanan kelompok terkini (*recent group exposure*) dalam beberapa hari hingga beberapa minggu terakhir**.
+*   *Keterbatasan Diagnostik Kritis (Wajib Dipahami):*
+    1.  Kadar Mn-B **TIDAK berkorelasi secara kuantitatif dengan keparahan gejala neurologis klinis pekerja**.
+    2.  Kadar Mn-B **TIDAK mencerminkan total beban timbunan mangan di dalam parenkim otak (*brain body burden*)**. Karena klirens plasma berlangsung cepat melalui ekskresi empedu, kadar Mn-B dapat kembali normal dalam waktu singkat setelah pekerja berhenti terpajan, meskipun pekerja tersebut telah menderita cacat manganisme permanen.
+
+#### b. Mangan dalam Urin (*Urinary Manganese* / Mn-U)
+*   *Nilai Normal:* Pada populasi yang tidak terpajan, konsentrasi Mn-U sangat rendah, umumnya **\\(< 1\text{--}2\ \mu\text{g/L}\\)**.
+*   *Keterbatasan Mutlak:* Karena **rute ekskresi utama mangan adalah empedu ke feses (>95%)**, fraksi yang keluar lewat filtrasi ginjal sangat kecil dan tidak stabil. Konsentrasi Mn-U memperlihatkan variabilitas intra- dan inter-individu yang sangat tinggi, sehingga **pemeriksaan Mn-U tidak memiliki nilai diagnostik yang memadai untuk menilai dosis akumulasi individu pekerja**.
+
+#### c. Pencitraan MRI Kepala T1-Weighted dan *Pallidal Index* (PI)
+Pencitraan resonansi magnetik (MRI) otak merupakan **alat biomarker penumpukan organ target paling objektif dalam kedokteran okupasi**:
+1.  **Sifat Paramagnetik Mangan:**
+    Kation divalen \\(\text{Mn}^{2+}\\) memiliki 5 elektron tidak berpasangan (*unpaired electrons*) yang memberikan sifat **paramagnetik kuat**. Sifat ini memperpendek waktu relaksasi spin-kisi (*T1 relaxation time*) pada molekul air di sekitarnya.
+2.  **Gambaran Neuroimaging Patognomonik:**
+    Pada pemindaian MRI otak sekuens T1-weighted konvensional tanpa kontras, akumulasi mangan menghasilkan **peningkatan intensitas sinyal tinggi simetris bilateral yang sangat mencolok (*bilateral, symmetrical T1-hyperintensity*) pada Globus Pallidus**, serta dapat meluas ke substantia nigra pars reticulata, putamen, dan pedunkulus serebri.
+3.  **Pallidal Index (PI):**
+    Merupakan rasio semi-kuantitatif yang dihitung dengan membagi intensitas sinyal T1 pada globus pallidus terhadap intensitas sinyal T1 pada substansia alba subkortikal lobus frontalis:
+    \\[\text{Pallidal Index (PI)} = \frac{\text{Intensitas Sinyal T1 Globus Pallidus}}{\text{Intensitas Sinyal T1 Frontal White Matter}} \times 100\\]
+    *   *Nilai Normal:* Pada individu non-terpapar adalah sekitar **\\(< 100\text{--}105\\)**.
+    *   *Pekerja Terpajan:* Mengalami peningkatan PI hingga **\\(> 110\text{--}120\\)**, yang berkorelasi linear dengan intensitas pajanan udara kerja kumulatif beberapa bulan terakhir.
+4.  **Keterbatasan Kritis MRI T1 (Jebakan Ujian Utama):**
+    *   **Hiperintensitas T1 Globus Pallidus MENCERMINKAN PENUMPUKAN MANGAN TERKINI, BUKAN KERUSAKAN NEURONAL PERMANEN!**
+    *   Jika pekerja yang terpajan ditarik dari lingkungan kerjanya selama 6 hingga 12 bulan, deposit mangan paramagnetik di globus pallidus akan dibersihkan secara lambat, sehingga **gambaran hiperintensitas T1 pada MRI akan memudar hingga NORMAL KEMBALI**.
+    *   Namun, **kerusakan neurodegeneratif, gejala distonia, dan disabilitas ekstrapiramidal pada pasien manganisme TETAP BERLANGSUNG DAN BERSIFAT IREVERSIBEL**. Oleh karena itu, MRI normal pada mantan pekerja las tidak dapat menyingkirkan diagnosis manganisme kronis.
+
+---
+
+### 6. Waktu Paruh Eliminasi Biologis (*Biological Half-Life* / \\(T_{1/2}\\))
+
+Eliminasi mangan mengikuti kinetika multi-kompartemen dengan retensi yang sangat timpang antara kompartemen darah dan parenkim saraf pusat:
+
+| Kompartemen Biologis | Estimasi Waktu Paruh (\\(T_{1/2}\\)) | Karakteristik Kinetika Eliminasi | Sumber Rujukan |
+| :--- | :--- | :--- | :--- |
+| **Darah Lengkap (Whole Blood)** | **10 hingga 30 hari** (rata-rata ~13–20 hari) | Eliminasi fase cepat; mencerminkan klirens vaskular aktif melalui penyerapan cepat oleh hepatosit dan ekskresi ke empedu. | |
+| **Jaringan Lunak Tubuh (Hepar & Saluran Cerna)** | **Beberapa hari hingga 2–3 minggu** | Fase kinetika menengah yang berada dalam keseimbangan dinamis dengan sirkulasi enterohepatik. | |
+| **Parenkim Otak (Khususnya Globus Pallidus)** | **50 hingga 220 hari** (berbulan-bulan, beberapa literatur menyebutkan eliminasi lokal hingga >1 tahun) | **Sangat lambat (*highly prolonged*)**. Ketiadaan mekanisme transpor aktif efluks mangan keluar menembus sawar darah otak menyebabkan retensi bertahun-tahun pada pajanan kronis. | |
+| **Beban Tubuh Total (*Whole-Body Elimination*)** | **30 hingga 40 hari** | Rata-rata waktu pembersihan kompartemen sistemik melalui eliminasi feses bilier pada manusia sehat. | |
+
+---
+
+### 7. Efek Biologis Toksik Akut
+
+Inhalasi akut uap atau debu mangan konsentrasi tinggi terutama menyerang sistem traktus respiratorius:
+
+```
+                              [ SPEKTRUM MANIFESTASI MANGAN AKUT ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ DEMAM UAP LOGAM (METAL FUME FEVER) ]                                        [ PNEUMONITIS KIMIAWI & PNEUMONIA MANGAN ]
+• Pajanan uap kondensasi pengelasan bersuhu tinggi                            • Iritasi saluran napas akut difus
+• Mula gejala: 4–12 jam pasca-pekerjaan                                       • Batuk produktif, sesak napas, nyeri dada
+• Sindrom pseudo-influenza akut:                                              • Infiltrat alveolar & edema paru toksik
+  Menggigil hebat, demam tinggi, malaise, nyeri otot                          • PNEUMONIA MANGAN (Manganese Pneumonia):
+• Rasa logam pahit di mulut, batuk kering, sesak                                Toksisitas makrofag alveolar melumpuhkan
+• Bersifat jinak & sembuh spontan dalam 24–48 jam                               fagositosis ──► INFEKSI PNEUMOKOKUS FULMINAN
+```
+
+1.  **Demam Uap Logam (*Metal Fume Fever* / *Welder's Shakes* / *Smelter Chills*):**
+    *   *Etiologi Okupasi:* Terjadi pada pekerja las (*welders*) atau pemotong baja paduan yang menghirup uap oksida mangan segar (\\(\text{MnO}\\) / \\(\text{Mn}_3\text{O}_4\\)) yang baru terbentuk dari kondensasi uap busur listrik.
+    *   *Manifestasi Klinis:* Setelah masa laten 4 hingga 8 jam pasca-kerja, timbul **sensasi rasa logam di mulut (*metallic taste*)**, iritasi faring kering, batuk spasmodik, disusul **menggigil hebat yang mendadak, demam tinggi, nyeri kepala, mual, lemas, dan mialgia menyeluruh (*flu-like illness*)**. Kondisi ini umumnya bersifat transien dan mereda spontan dalam 24 hingga 48 jam dengan terapi suportif.
+2.  **Pneumonitis Kimiawi Akut dan "Pneumonia Mangan" (*Manganese Pneumonia*):**
+    *   *Patogenesis:* Inhalasi partikulat debu oksida mangan konsentrasi tinggi menginduksi reaksi inflamasi akut yang parah pada epitel bronkiolus dan alveoli, disertai **sitotoksisitas selektif pada makrofag alveolar paru**.
+    *   *Gambaran Klinis:* Terjadi batuk berat, dispnea akut, ronki basah difus, nyeri dada substernal, penurunan volume cadangan paru (penurunan \\(\text{FEV}_1\\) dan FVC), dan infiltrat nodular difus pada radiografi toraks.
+    *   *Kerentanan Infeksi Sekunder:* Karena fungsi fagositosis dan pembersihan mukosiliar makrofag alveolar dilumpuhkan oleh mangan, pekerja memiliki **angka insiden dan mortalitas yang luar biasa tinggi terhadap infeksi bakteri sekunder pneumonia lobaris (*Streptococcus pneumoniae*)**, yang dikenal dalam literatur kedokteran okupasi sebagai **Pneumonia Mangan**.
+
+---
+
+### 8. Efek Biologis Kronis: Manganisme vs. Penyakit Parkinson Idiopatik
+
+Pajanan inhalasi kerja jangka panjang (> 6 bulan hingga bertahun-tahun) memicu entitas neurodegeneratif klasik yang disebut **Manganisme (*Manganism*)**. Perjalanan penyakit manganisme berlangsung melalui **dua stadium klinis bifasik**:
+
+```
+                                [ TAHAPAN PERJALANAN KLINIS MANGANISME ]
+                                                   │
+         ┌─────────────────────────────────────────┴─────────────────────────────────────────┐
+         ▼                                                                                   ▼
+[ FASE AWAL / PSIKIATRIK: LOCURA MANGÁNICA ]                                [ FASE LANJUT: NEUROLOGIS EKSTRAPIRAMIDAL ]
+• Mula timbul: Bulan-bulan pertama pajanan                                   • Mula timbul: 1–5 tahun pasca-pajanan kronis
+• Gangguan Neuropsikiatrik Berat:                                           • Sindrom Ganglia Basalis Permanen:
+  - Emosi labil, euforia semu berganti depresi                                - Rigiditas otot generalized ("lead-pipe" & cogwheel)
+  - Tertawa patologis tak beralasan, menangis spontan                         - Wajah topeng kaku (masked facies), distonia
+  - Agresivitas kompulsif, ledakan amarah, kekerasan                         - Bradikinesia berat, gangguan menulis (mikrografia)
+  - Halusinasi visual/auditorik, delusi paranoid                             - Tanda Patognomonik: GAIT "COCK-WALK" (jinjit)
+  - Insomnia berat, kelelahan fisik ekstrem (asthenia)                        - KECENDERUNGAN JATUH KE BELAKANG (Retropulsi)
+• FASE INI REVERSIBEL jika pajanan segera diputus!                          • FASE INI IREVERSIBEL DAN TERUS PROGRESIF!
+```
+
+#### a. Fase Awal / Neuropsikiatrik: *"Locura Mangánica"* (Manganese Madness)
+*   Merupakan stadium prodromal yang sangat dramatis dan kerap disalahartikan sebagai gangguan jiwa skizofrenia atau episode manik bipolar. Istilah **Locura Mangánica** berasal dari pengamatan para pekerja tambang mangan di Chili dan Peru.
+*   *Manifestasi Psikiatrik:* Ditandai dengan **labilitas emosional ekstrem, euforia yang tidak wajar, ledakan tawa atau tangis yang tidak terkendali (*pathological laughter and crying*), agresivitas impulsif, tindak kekerasan mendadak, halusinasi visual, dan delusi paranoid**. Gejala ini disertai keluhan somatik berupa nyeri kepala konstan, insomnia membandel, mimpi buruk mengerikan, hipersomnia siang hari, anoreksia, dan **keletihan fisik yang melumpuhkan (*debilitating asthenia*)**.
+*   *Reversibilitas:* **Fase psikiatrik ini MASIH BERSIFAT REVERSIBEL** jika pekerja segera dievakuasi permanen dari sumber pajanan mangan.
+
+#### b. Fase Lanjut / Defisit Neurologis Ekstrapiramidal
+Jika pajanan terus berlanjut tanpa intervensi, penyakit beralih ke fase neurologis permanen akibat degenerasi neuronal globus pallidus:
+1.  **Facies Masking dan Gangguan Bicara:** Wajah kaku tanpa ekspresi (*masked facies* / distonia wajah), penurunan kedipan mata, disfonia, dan disartria berat dengan pola bicara monoton dan cadel (*slurred speech*).
+2.  **Rigiditas dan Bradikinesia:** Kekakuan otot menyeluruh tipe plastik (*lead-pipe rigidity*) atau fenomena roda bergerigi (*cogwheel rigidity*), serta gerakan motorik lambat (*bradykinesia*).
+3.  **Distonia Ekstremitas dan Mikrografia:** Distonia fokal atau segmental pada tangan dan kaki; tulisan tangan mengecil progresif (*micrographia*).
+
+---
+
+#### c. Perbedaan Kritis Manganisme vs. Penyakit Parkinson Idiopatik (Tabel Komparatif Wajib Ujian)
+
+> **Peringatan Dewan Penguji (*High-Yield Board Table*):**
+> Anda dijamin akan diuji mengenai diferensiasi antara **Manganisme Okupasi** dengan **Penyakit Parkinson Idiopatik (IPD)**. Hafalkan seluruh parameter komparatif ini di luar kepala:
+
+| Parameter Diferensial | Manganisme Okupasi (*Manganism*) | Penyakit Parkinson Idiopatik (IPD) | Signifikansi Patofisiologi & Sumber |
+| :--- | :--- | :--- | :--- |
+| **Respons terhadap Terapi Levodopa (L-Dopa)** | **Buruk atau Tidak Berespons Sama Sekali (*Poor / absent response*)** | **Respons Dramatis dan Sangat Baik (*Dramatic / excellent response*)** | Manganisme merusak neuron target pasca-sinaps di globus pallidus; IPD merusak sel presinaps dopaminergik SNpc. |
+| **Karakteristik Tremor Dominan** | **Tremor Intensi / Postural / Kinetik** (Tremor istirahat sangat jarang ditemukan) | **Tremor Istirahat Klasik (*Resting tremor* / *Pill-rolling tremor*, 4–6 Hz)** | Manganisme dominan mengenai sirkuit pallido-subtalamikus; IPD melibatkan striatonigral asimetris. |
+| **Pola Berjalan (*Gait Abnormality*)** | **Gait "Cock-Walk" (*Cock-walk gait*)** | **Shuffling Gait (Langkah Menyeret) dengan *Festination*** | *Cock-walk gait:* Pasien berjalan jinjit di atas bantalan jari-jari kaki dengan panggul dan lutut fleksi kaku akibat distonia otot fleksor. |
+| **Instabilitas Postur dan Arah Jatuh** | **Kecenderungan JATUH KE BELAKANG (*Retropulsion / Falling backward*) yang Sangat Dini dan Menonjol** | Instabilitas timbul pada stadium lanjut; kecenderungan jatuh ke depan (*propulsion*) | Manganisme melumpuhkan refleks postural batang tubuh secara dini akibat kerusakan fokal pallidum. |
+| **Lokasi Kerusakan Neuropatologi Utama** | **Globus Pallidus** (segmen internal/eksternal) dan **Substantia Nigra pars reticulata (SNpr)** | **Substantia Nigra pars compacta (SNpc)** dan Lokus Seruleus | Pada manganisme, neuron dopaminergik SNpc dan lokus seruleus secara histopatologis relatif utuh (*spared*). |
+| **Protein Inklusi Intraseluler (*Inclusion Bodies*)** | **TIDAK DIJUMPAI Badan Lewy (*No Lewy bodies*)** | **Dijumpai Badan Lewy (*Lewy bodies* positif, agregat \\(\alpha\\)-sinuklein)** | Manganisme adalah polineuropati toksik sekunder, bukan sinukleinopati primer. |
+| **Pencitraan PET-Scan [¹⁸F]-Fluorodopa (FDOPA)** | **NORMAL atau Relatif Terpelihara** | **ABNORMAL:** Penurunan ambilan FDOPA yang berat pada putamen posterior | Menunjukkan integritas sintesis dan ambilan presinaps dopamin di terminal striatum masih berfungsi pada manganisme. |
+| **Pencitraan MRI T1-Weighted Kepala** | **HIPERINTENSITAS T1 Bilateral Simetris pada Globus Pallidus** (selama ada pajanan aktif) | **Normal** (tidak menunjukkan hiperintensitas T1 pada ganglia basalis) | Akumulasi paramagnetik ion \\(\text{Mn}^{2+}\\) mempersingkat waktu relaksasi T1 di globus pallidus. |
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Caito, S. & Aschner, M.** *Neurotoxicity of Metals (Handbook of Clinical Neurology, Vol. 131, Elsevier, 2015)*:
+    *   *Karakteristik & Valensi:* Sifat Mangan (Unsur ke-12 melimpah, valensi +2, +3, +4, +7; Mineral Pirolusit MnO2; Penggunaan Industri Baja, Aloi Al, Elektroda Las, Katoda Baterai, Aditif Bensin MMT, dan Fungisida Maneb/Mancozeb) [hlm. 179–180].
+    *   *ADME & Neuropatologi:* Transpor BBB via DMT1, ZIP8, TfR; Akumulasi Selektif di Globus Pallidus dan Substantia Nigra pars reticulata [hlm. 179–180]; Konsentrasi Akumulasi 50 Kali Lebih Tinggi di Astrosit Dibanding Neuron [hlm. 180]; serta Induksi Enzim iNOS, TNF-α, dan Stres Oksidatif [hlm. 180].
+    *   *Perbedaan Manganisme vs Penyakit Parkinson:* Ketiadaan Badan Lewy pada Manganisme; Integritas Neuron Dopaminergik SNpc; Respons Buruk / Tidak Responsif terhadap Levodopa; Pola Gait *Cock-Walk*; Retropulsi Postural; Nilai Pencitraan MRI T1 *Pallidal Index*; serta Normalitas Uji [¹⁸F]-FDOPA PET Scan [hlm. 180–181].
+2.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   *Transnasal Olfactory Transport:* Penyerapan Partikulat Mangan Melintasi Mukosa Hidung dan Lamina Kribrosa Langsung ke Bulbus Olfaktorius Tanpa Menembus BBB (Bab 2 & 20) [hlm. 20, 266].
+    *   *Toksikodinamik Seluler:* Kaskade Mitokondria MCU, Deplesi ATP, Pelepasan Sitokrom C, Aktivasi Kaspase-3, dan Pemotongan Proteolitik PKC-δ (Bab 7) [hlm. 81, 84, 87].
+    *   *Neuroinflamasi Glia:* Regulasi Represor YY1 yang Menghambat Transporter Glutamat EAAT2/GLAST di Astrosit Memicu Eksitotoksisitas; serta Aktivasi NF-κB Mikroglia (Bab 7) [hlm. 86–87, 93].
+    *   *Sumber Pajanan:* Paparan Pengelasan, Debu Tambang, MMT Bensin, dan Fungisida Pertanian Maneb/Mancozeb (Bab 7 & 20) [hlm. 86, 266].
+3.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 1, 9, 15: Sifat Mangan sebagai Logam Esensial dengan Kurva U-Shaped (hlm. 8, 49); Ekskresi Hepatobilier Melalui Empedu ke Feses dan Siklus Enterohepatik (hlm. 216–218, 278); Endotel Capillary Damage dan Edema Otak (hlm. 308); serta Gangguan Motorik Akibat Pajanan Debu Tambang dan Pengelasan (hlm. 303, 311).
+4.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   *Manganese compounds and fume (as Mn)* [CAS 7439-96-5]: Sifat Fisik Silvery Solid; Inkompatibilitas; Gejala Manganisme Parkinson's, Asthenia, Mental Confusion; Metal Fume Fever; Pneumonitis Kimia; IDLH 500 mg/m³ [hlm. 191].
+    *   *Methyl cyclopentadienyl manganese tricarbonyl (MMT)* [CAS 12108-13-3]: Aditif Antiknock Bensin, Sifat Penetrasi Kulit (*Skin Notation*), Toksisitas SSP Akut [hlm. 206].
+    *   *Manganese tetroxide* [CAS 1317-35-7]: Debu Oksida Fumes dari Pemanasan Mangan [hlm. 192].
+5.  **ACGIH (2026 Edition).** *TLVs® and BEIs®*:
+    *   Tabel Adopsi TLV: *Manganese, elemental and inorganic compounds, as Mn* [CAS 7439-96-5] (TLV-TWA 0,02 mg/m³ Respirable fraction; 0,1 mg/m³ Inhalable fraction; Notasi A4; TLV Basis: CNS impairment).
+    *   *Manganese cyclopentadienyl tricarbonyl (as Mn)* (TLV-TWA 0,1 mg/m³, Notasi Skin).
+    *   *Methylcyclopentadienyl manganese tricarbonyl (as Mn)* (TLV-TWA 0,2 mg/m³, Notasi Skin).
+6.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018 (Lampiran 3):**
+    *   Tabel Nilai Ambang Batas Faktor Kimia: Mangan dan senyawa anorganiknya sebagai Mn (NAB 0,1 mg/m³ Inhalabel; Notasi A4); Mangan siklopentadienil trikarbonil (NAB 0,1 mg/m³, Notasi Kulit).
+7.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019:**
+    *   Lampiran I.a Butir 7: Penyakit Akibat Kerja yang Disebabkan oleh Mangan atau Persenyawaannya.
+8.  **StatPearls / NCBI Bookshelf (2023):**
+    *   *Metal Fume Fever*: Etiologi Inhalasi Uap Oksida Mangan dan Seng pada Pekerjaan Pengelasan; Masa Laten 4–12 Jam; Sindrom Pseudo-Flu; serta Penanganan Suportif.
+
+Kuasai perbedaan biokinetika, dinamika lisosom, penyerapan olfaktorius, dan tabel komparatif diferensial manganisme ini dengan presisi tinggi, Dokter. Di meja ujian dewan spesialis, penguji akan menguji kesiapan Anda mengintegrasikan aspek biokimiawi seluler ini ke dalam manajemen kasus penyakit akibat kerja di fasilitas manufaktur baja dan industri pengelasan.
+
+---
+
+📋 Apakah Anda ingin kita lanjutkan ke **MANGAN (Mn), BAGIAN B**, yaitu telaah komprehensif mengenai **standar batas paparan udara (TLV-TWA ACGIH fraksi inhalabel vs. respirabel, notasi A4, perbandingan dengan NAB Permenaker No. 5 Tahun 2018), tidak adanya nilai resmi BEI ACGIH dan rujukan internasional, tatalaksana intoksikasi akut & kronis (protokol kelasi CaNa₂EDTA, kontraindikasi BAL, serta terapi simtomatik obat dopamin agonis/antikolinergik), 7 langkah diagnosis PAK manganisme, kelaikan kerja (*fitness for work*), serta *clinical pearls* dan jebakan ujian dewan spesialis**?

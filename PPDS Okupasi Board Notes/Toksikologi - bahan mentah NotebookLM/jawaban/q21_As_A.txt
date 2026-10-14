@@ -1,0 +1,339 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), penguasaan Anda terhadap **toksikologi arsenik (As)** adalah ujian pembuktian ketajaman diagnostik Anda. Arsenik bukan sekadar logam, melainkan **metalloid karsinogenik legendaris** dengan dinamika spesiasi yang rumit: memiliki bentuk anorganik beracun tinggi, bentuk organik yang bervariasi dari sangat toksik hingga tidak berbahaya (*arsenobetaine* makanan laut), serta bentuk gas hidrida (**gas arsin / \\(\text{AsH}_3\\)**) yang mematikan dengan mekanisme hemolisis masif.
+
+Di meja ujian dewan penguji (*board examination*), Anda wajib menguraikan perbedaan biokimiawi tingkat oksidasi, siklus biotransformasi metilasi, jebakan interpretasi biomonitoring urin, hingga spektrum patologi klinisnya secara sistematis.
+
+Berikut adalah telaah komprehensif **ARSEN (As), BAGIAN A**:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Spesiasi Arsenik
+
+Arsenik (nomor atom 33, berat atom 74,92 g/mol) terletak pada Golongan VA periode 4 tabel periodik. Arsenik diklasifikasikan sebagai **metalloid (semi-logam)** karena memiliki sifat fisika-kimia peralihan antara logam dan non-logam. Di alam dan proses industri, arsenik memiliki 4 bilangan oksidasi: **\\(-3\\), \\(0\\), \\(+3\\), dan \\(+5\\)**.
+
+```
+                                [ KLASIFIKASI SPESIASI ARSENIK ]
+                                                │
+         ┌──────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                      ▼                                      ▼
+[ ARSEN ANORGANIK (iAs) ]               [ ARSEN ORGANIK ]                     [ GAS ARSIN (AsH₃) ]
+• Trivalen [As(III), Arsenit]:         • Asam Monometilarsonat (MMA)          • Bilangan oksidasi: -3
+  As₂O₃, NaAsO₂, AsCl₃                 • Asam Dimetilarsinat (DMA)            • Gas hidrida, bau bawang putih
+• Pentavalen [As(V), Arsenat]:         • Arsenobetain & Arsenokolin           • Sangat volatil, non-iritatif
+  As₂O₅, H₃AsO₄, Pb₃(AsO₄)₂              (Senyawa organik laut, NON-TOKSIK)   • Hemolisis intravaskular masif
+• Karsinogenik IARC Grup 1             • IARC Grup 2B (MMA/DMA) & Grup 3      • Toksisitas akut paling mematikan
+```
+
+1.  **Arsenik Elemental [As(0)]:**
+    Memiliki bentuk alotrop padat (abu-abu, kuning, dan hitam). Bentuk abu-abu (*gray arsenic*) adalah bentuk semilogam yang paling stabil secara termodinamika, rapuh, dan digunakan dalam pembuatan aloi semikonduktor.
+2.  **Arsenik Anorganik (*Inorganic Arsenic* / iAs):**
+    Merupakan bentuk arsenik yang paling toksik dan berbahaya bagi manusia di lingkungan kerja dan lingkungan hidup:
+    *   **Arsenik Trivalen [As(III) / Arsenit]:** Mengalami reduksi; contohnya **arsenik trioksida (\\(\text{As}_2\text{O}_3\\))**, natrium arsenit (\\(\text{NaAsO}_2\\)), dan arsenik triklorida (\\(\text{AsCl}_3\\)). Memiliki sifat lipofilik, reaktivitas kimiawi sangat tinggi, serta afinitas kuat terhadap gugus tiol/sulfhidril.
+    *   **Arsenik Pentavalen [As(V) / Arsenat]:** Bentuk teroksidasi yang dominan di perairan beroksigen; contohnya **arsenik pentoksida (\\(\text{As}_2\text{O}_5\\))**, asam arsenat (\\(\text{H}_3\text{AsO}_4\\)), timbal arsenat, dan kalsium arsenat. Memiliki struktur isoelektronik dan isostruktural dengan fosfat anorganik (\\(\text{PO}_4^{3-}\\)).
+3.  **Arsenik Organik (*Organoarsenic compounds*):**
+    Senyawa di mana atom arsenik terikat langsung secara kovalen pada gugus karbon alifatik atau aromatik:
+    *   *Metabolit Metilasi Mamalia:* **Asam Monometilarsonat (\\(\text{MMA}^{\text{V}}\\) / \\(\text{MMA}^{\text{III}}\\))** dan **Asam Dimetilarsinat (\\(\text{DMA}^{\text{V}}\\) / \\(\text{DMA}^{\text{III}}\\) / Asam Kakodilat)**.
+    *   *Senyawa Organik Bahari (Seafood Arsenicals):* **Arsenobetain (*Arsenobetaine* / AsB)** dan **Arsenokolin (*Arsenocholine* / AsC)**. Terdapat melimpah pada ikan laut, udang, kepiting, dan kerang. Senyawa ini **stabil secara metabolisme, tidak terurai dalam tubuh manusia, cepat diekskresikan lewat urin tanpa menimbulkan efek toksik sistemik, dan tergolong non-karsinogenik (IARC Grup 3)**.
+4.  **Gas Arsin (*Arsine Gas* / \\(\text{AsH}_3\\)) [CAS 7784-42-1]:**
+    *   Gas hidrida anorganik tidak berwarna, tidak mengiritasi mata/saluran napas, dengan densitas uap lebih berat dari udara (2,69 kali udara), dan memiliki aroma khas seperti **bawang putih (*garlic-like odor*) atau bau amis ikan pada konsentrasi tinggi**.
+    *   *Sifat Toksik:* **Merupakan bentuk arsenik yang paling mematikan dengan potensi intoksikasi akut tercepat** (TLV-TWA ACGIH hanya **\\(0{,}005\text{ ppm}\\)**). Berbeda dengan garam arsenik, gas arsin secara selektif menyerang eritrosit dan memicu **hemolisis intravaskular masif yang fatal**.
+
+---
+
+### 2. Sumber dan Sektor Penggunaan Industri
+
+Pajanan okupasi dan lingkungan terhadap arsenik terjadi pada beberapa sektor primer dan teknologi tinggi:
+
+```
+                                  [ SEKTOR UTAMA PAJANAN ARSENIK ]
+                                                  │
+         ┌────────────────────────┬───────────────┴───────────────┬────────────────────────┐
+         ▼                        ▼                               ▼                        ▼
+ [ PELEBURAN LOGAM ]     [ SEMIKONDUKTOR ]              [ PENGAWET KAYU & PESTISIDA ]  [ SUMBER AIR TANAH ]
+• Smelter Tembaga (Cu),  • Gallium Arsenide (GaAs)      • Chromated Copper Arsenate    • Air sumur artesis
+  Timbal (Pb), Seng (Zn) • Gas Arsin (AsH₃) sebagai       (CCA) kayu luar ruangan        (Taiwan, Bangladesh)
+• Produk sampingan uap     gas dopan n-type             • Pestisida historis: timbal   • Pelepasan mineral
+  debu cerobong (flue)   • Pembuatan chip LED & laser     arsenat, kalsium arsenat       batuan alami
+```
+
+1.  **Industri Peleburan dan Pemurnian Logam Non-Ferrous (*Smelting and Refining*):**
+    *   Bijih tembaga, timbal, dan seng di alam sering kali terkontaminasi oleh mineral arsenopirit (\\(\text{FeAsS}\\)). 
+    *   Selama proses pemanggangan (*roasting*) dan peleburan bersuhu tinggi, arsenik menguap dan teroksidasi menjadi **aerosol debu arsenik trioksida (\\(\text{As}_2\text{O}_3\\))** yang terkonsentrasi pada cerobong pembuangan (*flue dust*). Pekerja peleburan (*smelter workers*) menghadapi risiko tinggi pajanan inhalasi debu karsinogenik ini.
+2.  **Industri Semikonduktor, Mikroelektronika, dan Optoelektronik:**
+    *   Menggunakan kristal **Galium Arsenida (*Gallium Arsenide* / GaAs)** dan Indium Arsenida sebagai substrat sirkuit terpadu frekuensi tinggi, sel fotovoltaik surya, dioda laser, dan lampu LED.
+    *   Menggunakan **gas arsin murni (\\(\text{AsH}_3\\)) bertekanan tinggi** sebagai bahan dopan gas (*doping gas*) untuk menanamkan atom arsenik ke dalam kisi kristal silikon. Bahaya timbul saat kebocoran tabung, pemeliharaan reaktor (*maintenance/cleaning*), atau reaksi reduksi residu arsenik.
+3.  **Pengawet Kayu Industri (*Wood Preservatives*):**
+    *   Secara historis menyerap hingga 90% produksi arsenik trioksida dunia, diformulasikan sebagai **larutan *Chromated Copper Arsenate* (CCA)** untuk perlakuan kayu bertekanan (*pressure-treated timber*) agar tahan terhadap serangan jamur dan rayap. Pekerja di kilang pemotongan kayu dan pertukangan terpajan aerosol debu kayu yang mengandung residu tembaga-kromium-arsenik.
+4.  **Pestisida, Insektisida, dan Herbisida:**
+    *   Senyawa anorganik historis: Timbal arsenat (*lead arsenate*), kalsium arsenat, natrium arsenit, dan tembaga asetoarsenit (*Paris green*).
+    *   Senyawa organik modern: Monosodium metanearsonat (MSMA) dan disodium metanearsonat (DSMA) yang digunakan sebagai herbisida selektif tanaman kapas.
+5.  **Kontaminasi Geogenik Air Tanah (*Geogenic Groundwater Contamination*):**
+    *   Pelepasan alami arsenik dari lapisan batuan sedimen aluvial ke dalam air sumur bor/artesis. Fenomena ini menjadi bencana kesehatan masyarakat terbesar di dunia yang mengenai puluhan juta penduduk di **Bangladesh, Benggala Barat (India), Taiwan barat daya, dan Chili utara**, yang memicu endemik arsenikosis kronis dan penyakit vaskular perifer.
+
+---
+
+### 3. Toksikokinetik Komprehensif (ADME dan Siklus Metilasi)
+
+Nasib biologis arsenik ditentukan oleh spesiasi dan valensinya:
+
+```
+                            [ MODEL METABOLISME METILASI ARSENIK INTRASELULER ]
+                            
+              Arsenat [As(V)] ────(Transporter Fosfat NaPi-IIb)────► Masuk Sel
+                     │
+                     ▼ (Reduksi Enzimatik: GAPDH, GSH, Tiol)
+              Arsenit [As(III)] ──(Kanal AQP7, AQP9, Hexose)───────► Masuk Sel Bebas
+                     │
+                     ▼ ◄─── Ditambah SAM (Donor Metil) + Katalisis AS3MT
+              [ Asam Monometilarsonat: MMA(V) ]
+                     │
+                     ▼ (Reduksi Tioredoksin / GSH)
+              [ MMA(III) Trivalen ] ──► SANGAT TOKSIK & GENOTOKSIK!
+                     │
+                     ▼ ◄─── Ditambah SAM + Katalisis AS3MT
+              [ Asam Dimetilarsinat: DMA(V) ]
+                     │
+                     ▼ (Reduksi Bertahap)
+              [ DMA(III) Trivalen ] ──► Dimetiltioarsinat (DMMTA)
+                     │
+                     ▼
+              Ekskresi Cepat Ginjal ke dalam URIN:
+              60–70% DMA, 10–20% MMA, 10–30% iAs Tak Berubah
+```
+
+#### a. Absorpsi
+*   **Ingesti (Oral):** Senyawa arsenik anorganik terlarut (seperti natrium arsenit dan asam arsenat) diserap secara sangat efisien di usus halus (**80% hingga 95% dosis tertelan diabsorpsi**). Arsenik tidak larut (seperti arsenik trisulfida atau galium arsenida) memiliki daya serap gastrointestinal yang sangat rendah dan sebagian besar keluar lewat feses.
+*   **Inhalasi:** Partikulat debu respirabel (\\(< 2{,}5\ \mu\text{m}\\)) dan uap arsenik trioksida diabsorpsi secara luas di saluran napas bagian bawah (60–85%). Sebaliknya, **gas arsin (\\(\text{AsH}_3\\)) diabsorpsi secara instan dan sempurna (hampir 100%)** melintasi membran kapiler alveolar langsung ke peredaran darah.
+*   **Dermal (Kulit):** Penetrasi perkutan arsenik anorganik melalui stratum korneum utuh sangat rendah (**\\(< 1\%\\)**). Namun, pajanan debu arsenik trioksida murni dapat mengiritasi dan merusak lapisan epidermis secara lokal.
+
+#### b. Mekanisme Penembusan Membran Sel
+*   **Arsenat [As(V)]:** Masuk ke dalam enterosit, hepatosit, dan sel target dengan memanfaatkan sistem kotranspor aktif natrium-fosfat (**transporter fosfat NaPi-IIb** / SLC34A2) melalui penyamaran struktur anion mimetik fosfat.
+*   **Arsenit [As(III)]:** Pada pH fisiologis berada dalam bentuk netral tidak bermuatan (asam arsenit, \\(\text{As(OH)}_3\\)), menembus membran sel melalui saluran air dan gliserol (**Aquaglyceroporin 7 dan 9 / AQP7 dan AQP9**) serta melalui transporter heksosa (*glucose transporter-1* / GLUT1). Karena masuk melalui kanal fasilitas ini, arsenit diserap ke dalam sitosol jauh lebih cepat daripada arsenat.
+
+#### c. Distribusi Jaringan
+*   Di dalam kompartemen vaskular, arsenik dieliminasi dari plasma secara cepat dalam 24 jam pertama. 
+*   Didistribusikan secara sistemik ke seluruh organ, dengan akumulasi awal pada **hati, ginjal, paru, limpa, dan dinding saluran cerna**.
+*   Arsenit memiliki afinitas luar biasa terhadap protein struktural yang kaya akan asam amino sistein/keratin bertaut sulfhidril; akibatnya, arsenik terakumulasi dalam jangka panjang pada **epidermis kulit, folikel rambut, dan lempeng kuku**.
+*   Arsenat mampu menggantikan fosfat dalam kisi kristal hidroksiapatit dan terdeposit di dalam **matriks tulang** selama bertahun-tahun. Arsenik juga **mampu menembus plasenta secara bebas**, namun penembusannya ke sawar darah otak (BBB) pada orang dewasa relatif minimal.
+
+#### d. Biotransformasi (Siklus Reduksi dan Metilasi Oksidatif)
+Metabolisme utama berlangsung di dalam hepatosit melalui kaskade enzimatik bertingkat yang bertujuan memfasilitasi ekskresi ginjal:
+1.  **Reduksi Awal As(V) menjadi As(III):** Arsenat sitosolik direduksi secara cepat menjadi arsenit oleh enzim pereduksi (seperti *Glyceraldehyde-3-Phosphate Dehydrogenase* / GAPDH) dengan bantuan glutation (GSH).
+2.  **Siklus Metilasi Enzimatik AS3MT:**
+    Dikatalisis oleh enzim tunggal **Arsenic (+3 oxidation state) Methyltransferase (AS3MT)** dengan memanfaatkan **S-adenosilmetionin (SAM)** sebagai donor gugus metil dan tioredoksin/GSH sebagai kofaktor pereduksi:
+    *   *Tahap 1:* \\(\text{As}^{\text{III}} + \text{SAM} \xrightarrow{\text{AS3MT}} \text{Monomethylarsonic acid } (\text{MMA}^{\text{V}})\\).
+    *   *Tahap 2:* \\(\text{MMA}^{\text{V}} \xrightarrow{\text{Reduksi Tiol}} \text{Monomethylarsonous acid } (\mathbf{\text{MMA}^{\text{III}}})\\).
+    *   *Tahap 3:* \\(\text{MMA}^{\text{III}} + \text{SAM} \xrightarrow{\text{AS3MT}} \text{Dimethylarsinic acid } (\text{DMA}^{\text{V}})\\).
+    *   *Tahap 4:* \\(\text{DMA}^{\text{V}} \xrightarrow{\text{Reduksi Tiol}} \text{Dimethylarsinous acid } (\mathbf{\text{DMA}^{\text{III}}})\\).
+*   *Prinsip Toksikologi Mutakhir:* Dahulu proses metilasi dianggap sebagai detoksifikasi murni. Kini terbukti bahwa **produk antara trivalen tereduksi (\\(\text{MMA}^{\text{III}}\\) dan \\(\text{DMA}^{\text{III}}\\)) memiliki sitotoksistas dan genotoksisitas puluhan kali lebih dahsyat daripada arsenik anorganik induknya (\\(\text{As}^{\text{III}}\\))**. Individu dengan polimorfisme genetik AS3MT yang menghasilkan rasio \\(\text{MMA}/\text{DMA}\\) urin tinggi memiliki risiko kanker kandung kemih dan kulit yang jauh lebih besar.
+
+#### e. Ekskresi
+*   Ekskresi primer berlangsung melalui **filtrasi ginjal ke dalam urin**.
+*   Komposisi profil metabolit arsenik dalam urin pekerja/manusia yang terpajan arsenik anorganik stabil pada proporsi: **60%–70% Dimetilarsinat (\\(\text{DMA}\\))**, **10%–20% Monometilarsonat (\\(\text{MMA}\\))**, dan **10%–30% Arsenik anorganik tak berubah (\\(\text{iAs}\\))**.
+*   Fraksi trivalen juga diekskresikan melalui empedu terikat kompleks tri-glutation [\\(\text{As(SG)}_3\\)] via pompa transporter MRP2/ABCC2. Sebagian kecil dibuang permanen melalui deskuamasi sel kulit, pertumbuhan kuku, dan helaian rambut.
+
+---
+
+### 4. Toksikodinamik dan Mekanisme Hemolisis Arsin
+
+Perbedaan valensi memicu titik tangkap kerusakan biokimiawi yang spesifik:
+
+```
+                                  [ KASKADE TOKSIKODINAMIK ARSENIK ]
+                                                  │
+         ┌────────────────────────────────────────┼────────────────────────────────────────┐
+         ▼                                        ▼                                        ▼
+[ ARSENIT: INHIBISI TIOL (-SH) ]        [ ARSENAT: ARSENOLISIS FOSFAT ]          [ ARSIN: HEMOLISIS ERITROSIT ]
+• Mengikat gugus dihidrolipoil          • Menyerupai Fosfat Anorganik            • Menembus membran eritrosit
+• Melumpuhkan Kompleks PDH              • Uncoupling Fosforilasi Oksidatif       • Hambat enzim Katalase intra-sel
+• Siklus Krebs terhenti total           • Membentuk 1-arseno-3-fosfogliserat     • Akumulasi H₂O₂ ──► Peroksidasi lipid
+• Deplesi sintesis ATP sitosol            yang labil (Glikolisis defisit ATP)    • Kebocoran K⁺, ruptur membran eritrosit
+• Hambat enzim DNA repair PARP-1        • Menghabiskan energi seluler            • Hemoglobinuria ──► Nekrosis Tubulus Ginjal
+```
+
+#### a. Arsenit [As(III)]: Inhibisi Enzim Sulfhidril (-SH) dan Stres Oksidatif
+*   **Inaktivasi Kompleks Piruvat Dehidrogenase (PDH):**
+    Arsenit bereaksi secara kovalen dengan **dua gugus sulfhidril vicinal (-SH) yang berdekatan pada kofaktor asam lipoat (dihidrolipoil)** yang menyusun subunit dihidrolipoil transasetilase (E2) dari kompleks PDH dan kompleks \\(\alpha\\)-ketoglutarat dehidrogenase. Ikatan cincin kelat heterosiklik yang stabil ini **melumpuhkan konversi piruvat menjadi asetil-KoA**, memblokade pintu masuk siklus asam sitrat (Krebs), dan menghentikan produksi energi aerobik sel.
+*   **Inhibisi Enzim Perbaikan DNA (*DNA Repair Inhibition*):**
+    \\(\text{As}^{\text{III}}\\) dan metabolit \\(\text{MMA}^{\text{III}}\\) mengikat gugus sistein pada domain jari seng (*zinc-finger*) dari enzim perbaikan DNA, terutama **Poly(ADP-ribose) Polymerase-1 (PARP-1)** dan protein XPA, melumpuhkan mekanisme *Nucleotide Excision Repair* (NER) dan *Base Excision Repair* (BER) yang memicu instabilitas genom dan ko-karsinogenesis.
+
+#### b. Arsenat [As(V)]: Peniru Fosfat dan Fenomena Arsenolisis
+*   Karena memiliki radius ionik dan muatan yang mirip dengan fosfat anorganik (\\(\text{P}_{\text{i}}\\)), arsenat berkompetisi dengan fosfat dalam reaksi biokimia pembentukan energi.
+*   **Arsenolisis pada Glikolisis:** Pada langkah glikolisis yang dikatalisis oleh gliseraldehida-3-fosfat dehidrogenase (GAPDH), arsenat menggantikan fosfat menghasilkan produk intermediat yang tidak stabil: **1-arseno-3-fosfogliserat**. Senyawa ini terhidrolisis secara spontan menjadi 3-fosfogliserat dan arsenat bebas **tanpa menghasilkan molekul ATP**.
+*   Akibatnya, terjadi fenomena pemutusan rantai fosforilasi (*uncoupling of oxidative phosphorylation*), yang menguras cadangan ATP seluler (*ATP depletion*) tanpa sintesis energi.
+
+#### c. Mekanisme Khusus Hemolisis Masif oleh Gas Arsin (\\(\text{AsH}_3\\))
+Toksisitas gas arsin berlangsung melalui jalur hemolitik yang sangat spesifik dan independen dari keracunan garam arsenik biasa:
+1.  **Penetrasi dan Oksidasi Intraseluler:** Gas arsin yang terhirup berdifusi menembus membran eritrosit dan berinteraksi dengan oksihemoglobin membentuk kompleks intermediat radikal arsenik trivalen dan methemoglobin.
+2.  **Inhibisi Katalase dan Penumpukan Hidrogen Peroksida:** Arsin secara spesifik menginaktivasi enzim **katalase eritrosit**, melumpuhkan kemampuan sel darah merah mendetoksifikasi hidrogen peroksida (\\(\text{H}_2\text{O}_2\\)).
+3.  **Destruksi Membran dan Hemolisis:** Akumulasi \\(\text{H}_2\text{O}_2\\) memicu kaskade stres oksidatif hebat, peroksidasi lipid membran eritrosit, kegagalan pompa ion membran (kebocoran kalium masif ke plasma), dan lisis mekanis dinding sel darah merah.
+4.  **Patofisiologi Gagal Ginjal Akut:** Hemolisis intravaskular masif membanjiri sirkulasi dengan **hemoglobin bebas dalam jumlah sangat besar (> 2 g/dL)**. Kompleks haptoglobin terlampaui tuntas; hemoglobin bebas terfiltrasi di glomerulus dan **mempresipitasi sebagai silinder pigmen (*pigment casts*) di dalam lumen tubulus proksimal dan distal**, memicu hipoksia vaskular ginjal, nekrosis tubular akut (ATN), dan gagal ginjal anurik yang mengancam jiwa.
+
+---
+
+### 5. Biomonitoring Okupasi: Biomarker, Spesiasi, dan Jebakan Makanan Laut
+
+Dalam surveilans kedokteran kerja, evaluasi pajanan arsenik membutuhkan matriks dan metode analitis yang sangat spesifik:
+
+```
+                     [ STRATEGI BIOMONITORING ARSENIK SPESIASI ]
+                                         │
+        ┌────────────────────────────────┴────────────────────────────────┐
+        ▼                                                                 ▼
+[ SPESIMEN URIN: METABOLIT SPESIASI ]                            [ RAMBUT & KUKU: RIWAYAT KRONIS ]
+• Baku Emas Okupasi: iAs + MMA + DMA                             • Mengukur akumulasi pada gugus tiol keratin
+• Standar BEI: 15 µg/g kreatinin (End of workweek)               • Menggambarkan pajanan minggu hingga bulan
+• JEBAKAN MAKANAN LAUT:                                          • Kuku: Terbentuk garis Mees (Mees' lines)
+  Mengandung Arsenobetain (AsB) NON-TOKSIK                       • Kelemahan: Kontaminasi debu eksternal
+  Total Arsenik urin melonjak palsu drastis!                       pada pekerja industri / smelter
+  Wajib puasa seafood 48–72 jam ATAU uji spesiasi
+```
+
+#### a. Biomarker Urin: Baku Emas Pajanan Okupasi
+*   **Determinan Biologis Resmi (ACGIH & Regulasi Internasional):**
+    **Arsenik Anorganik ditambah Metabolit Termetilasi dalam Urin (*Inorganic arsenic plus methylated metabolites in urine* / \\(\mathbf{\Sigma[\text{iAs} + \text{MMA} + \text{DMA}]}\\))**.
+*   *Waktu Pengambilan Sampel (*Sampling Time*):* **Akhir gilir kerja di akhir minggu kerja (*End of shift at end of workweek*)**.
+*   *Nilai Rujukan Baku Biologis:*
+    *   **ACGIH BEI (Revisi 2023 / Adopsi 2026):** **15 µg/g kreatinin** (notasi *Population-based / Pop*).
+    *   *Nilai Latar Belakang Populasi Umum (Non-Terpajan):* < 10 µg/g kreatinin (atau < 10–20 µg/L).
+
+#### b. Jebakan Ujian Fatal: Bahaya Makanan Laut (*The Seafood / Arsenobetaine Interference*)
+> **Peringatan Dewan Penguji (*Board Examination Alert*):**
+> Jika Anda hanya memeriksa **Total Arsenik Urin (*Total Urinary Arsenic*)**, Anda akan melakukan malpraktik diagnostik!
+
+*   **Rasional Toksikologis:** Ikan laut, kepiting, udang, dan rumput laut mengandung konsentrasi arsenik organik yang sangat tinggi dalam bentuk **Arsenobetain (AsB)** dan arsenokolin. Jika seorang pekerja mengonsumsi hidangan laut malam sebelum pemeriksaan laboratorium, total arsenik urinnya dapat **melonjak tajam hingga ratusan bahkan ribuan µg/L**, padahal tubuhnya sama sekali bebas dari arsenik anorganik beracun.
+*   **Protokol Tindakan Dokter Okupasi:**
+    1.  Instruksikan pekerja untuk **pantang/puasa mengonsumsi segala bentuk makanan laut (*seafood abstinence*) selama minimal 48 hingga 72 jam** sebelum penampungan spesimen urin.
+    2.  Wajib meminta laboratorium rujukan melakukan **uji spesiasi arsenik (*arsenic speciation test*)** menggunakan metode kromatografi cair kinerja tinggi yang digandengkan dengan spektrometri massa plasma (*HPLC-ICP-MS*) atau *Hydride Generation Atomic Absorption Spectrometry* (HG-AAS). Metode ini memisahkan fraksi toksik (iAs, MMA, DMA) dari fraksi non-toksik (arsenobetain).
+
+#### c. Biomarker Rambut Kepala dan Potongan Kuku (*Hair and Nails*)
+*   *Indikasi:* Digunakan untuk melacak **riwayat pajanan masa lampau atau pajanan kronis terintegrasi** berminggu-minggu hingga berbulan-bulan sebelumnya.
+*   *Mekanisme:* Arsenit yang berikatan kovalen dengan keratin tertanam stabil di folikel rambut dan matriks kuku seiring pertumbuhannya.
+*   *Limitasi Okupasi:* Analisis rambut pada pekerja pabrik peleburan atau industri semikonduktor rentan menghasilkan **positif palsu akibat kontaminasi eksogen debu udara (*external surface contamination*)** yang menempel pada kutikula rambut dan sulit dihilangkan dengan pencucian laboratorium.
+
+---
+
+### 6. Waktu Paruh Eliminasi Biologis (*Biological Half-Life* / \\(T_{1/2}\\))
+
+Eliminasi arsenik dari tubuh mengikuti kinetika eliminasi multi-kompartemen:
+
+| Kompartemen Biologis | Waktu Paruh (\\(T_{1/2}\\)) | Karakteristik Kinetika Eliminasi | Sumber Rujukan |
+| :--- | :--- | :--- | :--- |
+| **Darah Vaskular (Fase Cepat)** | **1 hingga 2 jam** | Klirens sangat cepat dari plasma; redistribusi ke jaringan organ lunak dan eritrosit. | |
+| **Darah (Fase Eliminasi Sistemik)** | **24 hingga 48 jam** | Eliminasi metabolit terikat plasma menuju filtrasi ginjal. | |
+| **Urin (Fraksi Arsenik Anorganik / iAs)** | **\\(\sim 10\text{--}24\text{ jam}\\)** | Diekskresikan paling awal pasca-pajanan inhalasi atau ingesti. | |
+| **Urin (Fraksi Metabolit MMA dan DMA)** | **20 hingga 40 jam** (DMA: 20–30 jam; MMA: ~24–40 jam) | Mencerminkan waktu yang dibutuhkan untuk proses metilasi hepatik; seluruh metabolit urin dibersihkan dalam 3–5 hari. | |
+| **Jaringan Keratin (Rambut dan Kuku)** | **Permanen / Berbulan-bulan** | Tidak mengalami metabolisme aktif; menetap stabil sepanjang usia lempeng kuku/rambut hingga dipotong/rontok. | |
+| **Matriks Tulang** | **Bertahun-tahun** | Depot fiksasi jangka panjang pengganti fosfat dalam hidroksiapatit. | |
+
+---
+
+### 7. Efek Biologis Toksik Akut
+
+Manifestasi keracunan akut bergantung pada bentuk senyawa kimiawinya:
+
+```
+                              [ SINDROM KERACUNAN AKUT ARSENIK ]
+                                               │
+         ┌─────────────────────────────────────┴─────────────────────────────────────┐
+         ▼                                                                           ▼
+[ INGESTI GARAM ANORGANIK (As₂O₃) ]                                         [ INHALASI GAS ARSIN (AsH₃) ]
+• Mula gejala: 30 menit – 2 jam                                             • Mula gejala: Terlambat 2–24 jam
+• Gastroenteritis Fulminan:                                                 • Trias Klasik Arsin:
+  Muntah, nyeri kolik abdomen hebat, diare profus                             1. Hemolisis intravaskular masif (pucat)
+  cair menyerupai cucian beras ("rice-water stools")                          2. Hemoglobinuria (urin kehitaman/cola)
+• Kolaps Vaskular & Syok Distributif                                          3. Gagal Ginjal Akut (ATN anuria)
+• Kardiotoksisitas: Pemanjangan Interval QT ──► Torsades de Pointes         • Jaundice & Bronze Skin (warna kulit tembaga)
+• Tanda Kuku Tertunda: Garis Mees (Mees' Lines) 2–6 minggu pasca-akut       • Bukan intoksikasi arsenik biasa!
+```
+
+#### a. Keracunan Akut Ingesti Arsenik Anorganik (misalnya \\(\text{As}_2\text{O}_3\\))
+1.  **Gastroenteritis Toksik Akut Berat:** Timbul dalam 30 menit hingga 2 jam pasca-ingesti. Ditandai rasa terbakar hebat pada faring dan esofagus, disfagia, mual, muntah proyektil, nyeri kolik abdomen difus, serta **diare cair profus bercampur lendir dan darah yang menyerupai feses air cucian beras (*rice-water stools*)** mirip penyakit kolera. Kondisi ini dipicu oleh vasodilatasi kapiler splanknikus masif dan kerusakan trans-epitel usus.
+2.  **Kolaps Kardiovaskular dan Syok:** Kehilangan cairan masif memicu syok hipovolemik, hipotensi refrakter, depresi miokardium, dan asidosis laktat.
+3.  **Elektrokardiografi (EKG):** Arsenit merusak kanal repolarisasi kalium miokard, memicu **pemanjangan interval QT (*QT prolongation*)**, perubahan segmen ST, inversi gelombang T, yang rentan berkembang menjadi aritmia ventrikel mematikan: **Torsades de Pointes** dan fibrilasi ventrikel.
+4.  **Ensefalopati dan Neuropati Akut:** Delirium, ensefalopati toksik, edema serebral, kejang, disusul kelemahan motorik ekstremitas simetris akut. Kematian dapat terjadi dalam 24 jam hingga 4 hari akibat gagal sirkulasi.
+5.  **Garis Mees (*Mees' Lines / Leukonychia Striata*):**
+    *   Tanda fisik patognomonik pada kuku berupa **pita garis putih horizontal melintang yang tidak berlekuk (*transverse white bands*) pada seluruh lempeng kuku jari tangan dan kaki**.
+    *   *Patofisiologi:* Arsenik mengganggu proses keratinisasi normal pada matriks kuku (*nail bed*) selama fase intoksikasi akut. Garis putih ini **mulai terlihat sekitar 2 hingga 6 minggu setelah kejadian keracunan akut** dan bergerak perlahan ke arah distal mengikuti pertumbuhan alami kuku (sekitar 0,1 mm/hari), sehingga dapat digunakan sebagai alat forensik untuk memperkirakan saat terjadinya pajanan.
+
+#### b. Keracunan Akut Gas Arsin (\\(\text{AsH}_3\\))
+Pajanan gas arsin memberikan gambaran klinis yang sama sekali berbeda dari garam arsenik:
+*   *Masa Laten:* Pasien sering kali tidak merasakan iritasi awal; **gejala baru muncul setelah masa laten 2 hingga 24 jam pasca-inhalasi**.
+*   *Trias Patognomonik Arsin:*
+    1.  **Hemolisis Intravaskular Akut Masif:** Anemia hemolitik berat yang berlangsung hingga 96 jam, haptoglobin plasma runtuh menjadi nol, hemoglobin bebas plasma meningkat drastis (> 2 g/dL), sediaan apus darah tepi menunjukkan fragmentasi eritrosit, *ghost cells*, dan *basophilic stippling*.
+    2.  **Hemoglobinuria:** Urin berubah warna menjadi merah tua, cokelat tua, jingga, hingga **kehitaman pekat menyerupai air teh kental atau kola (*port-wine / dark-brown urine*)**.
+    3.  **Gagal Ginjal Akut Anurik (*Acute Renal Failure* / ATN):** Obstruksi mekanis dan sitotoksisitas presipitasi silinder hemoglobin pada tubulus ginjal memicu oliguria hingga **anuria total dalam 24–72 jam**.
+*   *Tanda Kulit:* Terjadi diskolorasi kulit dan sklera menjadi **kuning-keemasan gelap atau kecokelatan seperti warna tembaga (*bronze-tinted skin / bronze jaundice*)**, yang merupakan perpaduan antara ikterus hemolitik dan sianosis hipoksia.
+
+---
+
+### 8. Efek Biologis Toksik Kronis
+
+Pajanan okupasi dan lingkungan jangka panjang (arsenikosis) menghasilkan kelainan multisistem yang khas:
+
+```
+                                [ SPEKTRUM PENYAKIT KRONIS ARSENIK ]
+                                                 │
+         ┌───────────────────────┬───────────────┴───────────────┬───────────────────────┐
+         ▼                       ▼                               ▼                       ▼
+ [ KELAINAN KULIT KHAS ] [ NEUROPATI PERIFER ]           [ PENYAKIT VASKULAR ]   [ KARSINOGENESIS IARC 1 ]
+• Raindrop hyperpigment  • Polineuropati sensorimotor   • Penyakit Kaki Hitam   • Kanker Kulit (BCC, SCC)
+• Palmar-plantar           simetris (aksonopati)           (Blackfoot Disease)  • Kanker Paru Bronkogenik
+  hyperkeratosis         • Pola "Glove and Stocking"    • Gangren ekstremitas   • Karsinoma Urotelial
+• Penyakit Bowen         • "Drop foot" / wrist drop     • Aterosklerosis parah    Kandung Kemih
+```
+
+1.  **Dermatologis: Tanda Patognomonik Arsenikosis Kronis (*The Cutaneous Hallmarks*)**
+    Kelainan kulit adalah tanda klinis paling awal, paling sensitif, dan paling khas dari intoksikasi arsenik kronis:
+    *   **Hiperpigmentasi Tetesan Hujan (*Raindrop-shaped Hyperpigmentation*):** Bercak-bercak pigmentasi melanositik gelap kecokelatan difus yang diselingi makula-makula kecil hipopigmentasi pucat menyerupai tetesan air hujan yang jatuh di atas permukaan berdebu (*"raindrops on a dusty road"*). Terdistribusi secara simetris terutama pada batang tubuh (dada, leher, punggung, dan perut) serta paha.
+    *   **Hiperkeratosis Palmo-Plantar (*Palmo-plantar Hyperkeratosis*):** Penebalan stratum korneum epidermis fokal berupa nodul-nodul keratotik keras, menonjol, menyerupai jagung (*corn-like verrucous papules*), atau plak bersisik tebal pada **telapak tangan (*palms*) dan telapak kaki (*soles*)**. Pada stadium lanjut, lesi dapat retak (*fissuring*), menimbulkan nyeri saat berjalan, dan mengalami transformasi keganasan.
+2.  **Neuropati Perifer Okupasi (*Peripheral Neuropathy*):**
+    *   *Patologi:* Terjadi degenerasi aksonal simetris (*dying-back axonopathy*) yang mengenai saraf perifer bermielin panjang.
+    *   *Klinis:* Dimulai dengan gangguan sensorik distal: rasa kebas, kesemutan, parestesia, dan sensasi terbakar (*painful dysesthesia*) dengan distribusi **"kaus kaki dan sarung tangan" (*glove-and-stocking pattern*)**.
+    *   *Progresi Motorik:* Pada pajanan berat berkembang menjadi kelemahan motorik bilateral, penurunan refleks tendon dalam (achilles), atrofi otot intrinsik kaki/tangan, dan kelumpuhan jalan menjatuhkan kaki (**kaki lemas lunglai / *bilateral foot drop***).
+3.  **Vaskulopati Perifer dan Penyakit Kaki Hitam (*Blackfoot Disease* / BFD):**
+    *   *Definisi & Endemisitas:* Vaskulopati obliteratif perifer berat yang secara endemik menyerang penduduk di pesisir barat daya Taiwan yang mengonsumsi air sumur bor artesis tinggi arsenik selama beberapa dekade.
+    *   *Patogenesis:* Arsenik memicu disfungsi endotel vaskular, penghambatan enzim *endothelial Nitric Oxide Synthase* (eNOS), stimulasi stres oksidatif, dan remodeling pembuluh darah progresif.
+    *   *Klinis:* Terjadi arteritis obliterans dan aterosklerosis perifer ekstrem, diawali dengan klaudikasio intermiten, akrosianosis, mati rasa dingin pada jari kaki, pembentukan tromboangitis, dan berujung pada **gangren kering nekrotik kehitaman spontan pada jari dan telapak kaki (*black gangrene*)**, yang membutuhkan tindakan amputasi bedah.
+4.  **Karsinogenesis Okupasi: Kanker Kulit, Paru, dan Kandung Kemih**
+    Arsenik anorganik diakui oleh seluruh konsensus ilmiah internasional sebagai karsinogen manusia tanpa nilai ambang aman:
+    *   **Status Regulasi Legal:**
+        *   **IARC:** **Grup 1** (*Carcinogenic to humans*) untuk Arsenik dan seluruh persenyawaan arsenik anorganik.
+        *   **ACGIH:** Kategori **A1** (*Confirmed Human Carcinogen*).
+        *   **GHS:** **Kategori 1A** (H350: *May cause cancer*).
+        *   **Permenaker No. 5 Tahun 2018:** Kategori **A1**.
+        *   **Perpres No. 7 Tahun 2019:** Lampiran III Butir 15 (Penyakit Kanker Akibat Kerja: Arsen dan persenyawaannya).
+    *   *Kanker Target Organ Spesifik:*
+        1.  **Kanker Kulit (*Skin Cancers*):** Sangat khas berupa **Karsinoma Sel Skuamosa (*Squamous Cell Carcinoma* / SCC)** yang timbul dari lesi hiperkeratosis atau penyakit Bowen (*Bowen's disease* / karsinoma sel skuamosa *in situ*), serta multipel **Karsinoma Sel Basal (*Basal Cell Carcinoma* / BCC)** yang timbul di area tubuh tertutup yang tidak terpajan sinar matahari.
+        2.  **Kanker Paru (*Lung Cancer*):** Karsinoma bronkogenik (sel skuamosa dan adenokarsinoma) yang terbukti melalui studi epidemiologi pekerja peleburan tembaga (*copper smelters*) akibat inhalasi uap arsenik, serta kohort konsumsi air tanah di Taiwan dan Chili.
+        3.  **Kanker Kandung Kemih (*Urinary Bladder Cancer*):** Karsinoma sel transisional / urotelial (*urothelial cell carcinoma*). Metabolit aktif seperti \\(\text{MMA}^{\text{III}}\\) dan \\(\text{DMA}^{\text{III}}\\) terkonsentrasi di dalam lumen urin dan berkontak langsung dengan mukosa urotelium kandung kemih, memicu aberasi kromosom dan mutasi neoplastik.
+        4.  *Keganasan Lain:* Bukti epidemiologi juga menunjukkan peningkatan risiko kanker ginjal (*renal cell & pelvik*), kanker hati (*hepatic angiosarcoma* & hepatoseluler), dan kanker prostat.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **IARC (2012).** *A Review of Human Carcinogens: Arsenic, Metals, Fibres, and Dusts (IARC Monographs Vol. 100C)*:
+    *   *Exposure Data:* Sifat Fisik-Kimia Valensi As(-3, 0, +3, +5); Senyawa Anorganik vs Organik vs Arsin; Penggunaan Peleburan Tembaga, Semikonduktor GaAs, Pengawet Kayu CCA, Air Sumur Artesis [hlm. 41–47].
+    *   *Epidemiological Studies:* Kanker Paru Pekerja Smelter Tembaga Lee-Feldstein [hlm. 48–51]; Kanker Kandung Kemih dan Penyakit Blackfoot di Taiwan Chen et al. [hlm. 51–54]; Kanker Kulit SCC & BCC Hutchinson [hlm. 54–55].
+    *   *ADME & Biotransformasi:* Transporter NaPi-IIb Fosfat vs AQP7/AQP9 Gliserol; Enzim AS3MT & Kaskade Metilasi SAM (MMA/DMA); Aduk Oksidatif Reaktif MMA(III)/DMA(III); Inhibisi PARP-1 NER/BER; Profil Ekskresi Urin 60–70% DMA, 10–20% MMA, 10–30% iAs; serta Evaluasi Grup 1 [hlm. 68–80].
+2.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 4 & Bab 10: Klasifikasi Valensi As(III), As(V), dan Gas Arsin AsH3 (hlm. 54); Pengikatan Gugus Sulfhidril (-SH) Dihidrolipoil Enzim PDH Siklus Krebs; Fenomena Uncoupling Arsenolisis Menyerupai Fosfat (hlm. 236); Toksisitas Akut Gastroenteritis Cucian Beras (hlm. 54); Gejala Kronis Hiperpigmentasi, Hiperkeratosis, Neuropati Sensori Simetris, dan Gangren Blackfoot Disease (hlm. 54).
+3.  **Agency for Toxic Substances and Disease Registry (ATSDR) / MMG Series:**
+    *   *Medical Management Guidelines for Arsine (AsH3)*: CAS 7784-42-1; Bau Bawang Putih; Penggunaan Dopan Semikonduktor & Peleburan Bijih Logam; Mekanisme Inhibisi Katalase Eritrosit & Penumpukan H2O2; Hemolisis Intravaskular Masif; Anemia Hemolitik Akut (Hb Bebas > 2 g/dL); Hemoglobinuria Urin Gelap; Nekrosis Tubular Akut (ATN) Gagal Ginjal; Kulit Tembaga (Bronze Skin); dan Kontraindikasi Terapi Kelasi Rutin pada Arsin.
+4.  **Dib Chakif & Julien Furrer (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Tinjauan Toksisitas Logam Berat: Jalur Pajanan Geogenik & Industri Semikonduktor; Model ADME Arsenik (Absorpsi Oral 80–90%, Dermal Rendah); Kinetika Eliminasi Urin; Matriks Biomonitoring Speciated Urinary Arsenic (iAs + MMA + DMA); Jebakan Interferensi Makanan Laut Arsenobetain (Wajib Puasa 48–72 Jam); Rasio MMA/DMA sebagai Prediktor Kerentanan Genetik AS3MT; Manifestasi Raindrop Hyperpigmentation & Palmar-Plantar Keratosis; Pemanjangan Interval QT EKG; serta Garis Mees Kuku [hlm. 1–25].
+5.  **Caito, S. & Aschner, M.** *Neurotoxicity of metals*:
+    *   Bab 11: Sejarah King of Poisons; Alotrop Arsenik Abu-abu, Kuning, Hitam; Penggunaan Semikonduktor & Aloi GaAs; Neuropati Perifer Axonal Degeneration; Tanda Kulit Raindrop Pigmentation & Hyperkeratosis; serta Uji Diagnostik Spesiasi Urin [hlm. 177–186].
+6.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology*:
+    *   Bab 11 & 14: Lesi Karsinoma Sel Basal & Skuamosa Kulit; Disfungsi Vaskular Endotel eNOS; Inhibisi Enzim Sulfhidril; Perbedaan Toksisitas Trivalen vs Pentavalen; serta Protokol Antidotum Dimercaprol.
+7.  **ACGIH (2026 Edition).** *TLVs® and BEIs®*:
+    *   Tabel Adopsi Nilai Ambang Batas: *Arsenic and inorganic compounds, as As* (TLV-TWA 0,01 mg/m³, Notasi A1, BEI); *Arsine* (TLV-TWA 0,005 ppm); serta Indeks Pajanan Biologi (BEI) Arsenik Urin (Inorganic arsenic plus methylated metabolites in urine, 15 µg/g kreatinin, *End of shift at end of workweek*).
+8.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   Profil Kimia & Batas Pajanan: *Arsenic (inorganic compounds, as As)* (PEL 0,010 mg/m³, Ulserasi Septum Nasi, Hiperpigmentasi, Karsinogen Paru/Limfatik); *Arsine* (PEL 0,05 ppm, Toksisitas Darah, Ginjal, Liver).
+9.  **Peraturan Presiden RI No. 7 Tahun 2019 & Permenaker No. 5 Tahun 2018:**
+    *   Penyakit Akibat Kerja Faktor Kimia Arsen dan Persenyawaannya (Lampiran I.a Butir 6); Kanker Akibat Kerja Arsen (Lampiran III Butir 15); serta Standar NAB Udara Kerja Lampiran 3 Permenaker 5/2018.
+
+Kuasai perbedaan mekanisme molekuler ini dengan presisi tinggi, Dokter. Penguji dewan spesialis akan menguji kesiapan Anda mengintegrasikan aspek biokimiawi seluler ini ke dalam manajemen kasus keracunan di instalasi gawat darurat dan surveilans pabrik.
+
+---
+
+📋 Apakah Anda ingin kita lanjutkan ke **ARSEN (As), BAGIAN B**, yaitu pembahasan mengenai **standar exposure limit (TLV ACGIH vs. NAB Permenaker 5/2018), tatalaksana intoksikasi akut garam arsenik vs. kegawatdaruratan hemolisis gas arsin (protokol hidrasi/alkalinisasi, exchange transfusion, hemodialisis), protokol terapi kelasi (BAL, DMSA, DMPS) dan mengapa kelasi tidak efektif pada arsin, 7 langkah penegakan diagnosis PAK arsenikosis, kelaikan kerja (*fitness for work*), serta *clinical pearls* dan jebakan ujian dewan penguji**?

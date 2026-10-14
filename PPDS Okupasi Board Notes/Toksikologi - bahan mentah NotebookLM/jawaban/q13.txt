@@ -1,0 +1,189 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), Anda harus menguasai instrumen yuridis ketenagakerjaan di Indonesia. Menghafal teori toksikologi tidak akan ada artinya di lapangan jika Anda buta terhadap regulasi wajib (*statutory standards*). 
+
+**Permenaker No. 5 Tahun 2018 tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja** adalah "kitab suci" higiene industri dan toksikologi okupasi di Indonesia. Bersama dengan **Kepmenaker No. KEP.187/MEN/1999**, kedua produk hukum ini membentuk arsitektur proteksi komprehensif bagi tenaga kerja dari ancaman bahaya kimiawi industri.
+
+Berikut adalah telaah sistematis regulasi tersebut untuk persiapan ujian dewan spesialis Anda:
+
+---
+
+### 1. Ruang Lingkup Permenaker No. 5 Tahun 2018
+
+Berdasarkan Pasal 2, Pasal 3, dan Pasal 5, ruang lingkup Permenaker No. 5 Tahun 2018 mencakup **penyelenggaraan syarat-syarat K3 Lingkungan Kerja** yang bertujuan menciptakan lingkungan kerja yang aman, sehat, dan nyaman melalui dua kegiatan utama:
+1.  **Pengukuran dan Pengendalian Lingkungan Kerja**, yang meliputi 5 faktor bahaya:
+    *   **Faktor Fisika:** Iklim kerja (ISBB), kebisingan, getaran, gelombang radio/mikro, radiasi ultra ungu (UV), medan magnet statis, tekanan udara ekstrim, dan pencahayaan.
+    *   **Faktor Kimia:** Pengendalian kontaminan udara (gas, uap, debu, mist, fume) agar berada di bawah Nilai Ambang Batas (NAB).
+    *   **Faktor Biologi:** Mikroorganisme (bakteri, jamur) dan produknya, alergen/toksin tumbuhan dan hewan, serta serangga pembawa penyakit.
+    *   **Faktor Ergonomi:** Postur janggal, desain stasiun kerja tidak sesuai antropometri, dan penanganan beban manual (*manual handling*).
+    *   **Faktor Psikologi Kerja:** Ketaksaan peran, konflik peran, beban kerja kualitatif/kuantitatif berlebih, dan pengembangan karir.
+2.  **Penerapan Higiene dan Sanitasi**, yang meliputi persyaratan bangunan tempat kerja, fasilitas kebersihan, pemenuhan kebutuhan udara (ventilasi & KUDR), serta tata laksana kerumahtanggaan (*housekeeping*).
+
+---
+
+### 2. Peraturan yang Dicabut dan Dinyatakan Tidak Berlaku
+
+Ketika Permenaker No. 5 Tahun 2018 diundangkan pada tanggal **27 April 2018** (Pasal 74), berdasarkan **Pasal 73**, terdapat 3 regulasi historis yang resmi **dicabut dan dinyatakan tidak berlaku lagi**:
+1.  **Peraturan Menteri Perburuhan Nomor 7 Tahun 1964** tentang Syarat Kesehatan, Kebersihan serta Penerangan dalam Tempat Kerja.
+2.  **Peraturan Menteri Tenaga Kerja dan Transmigrasi Nomor PER.13/MEN/X/2011** tentang Nilai Ambang Batas Faktor Fisika dan Faktor Kimia di Tempat Kerja.
+3.  **Surat Edaran Menteri Tenaga Kerja dan Transmigrasi Nomor SE.01/MEN/1978** tentang Nilai Ambang Batas untuk Iklim Kerja dan Nilai Ambang Batas untuk Kebisingan di Tempat Kerja.
+
+---
+
+### 3. Kewajiban Pengusaha/Pengurus Terkait Faktor Kimia
+
+Bagi tempat kerja yang memiliki potensi bahaya bahan kimia, pengusaha atau pengurus memiliki kewajiban hukum yang mengikat secara pidana maupun administratif (Pasal 2, 7, 20, dan 71):
+
+```
+                     [ KEWAJIBAN PENGUSAHA UNTUK FAKTOR KIMIA ]
+                                         │
+        ┌────────────────────────────────┼────────────────────────────────┐
+        ▼                                ▼                                ▼
+[ PENGUKURAN & PENGUJIAN ]        [ KEPATUHAN NILAI AMBANG ]       [ HIERARKI PENGENDALIAN ]
+• Internal & Eksternal            • Kadar udara < NAB             • Eliminasi
+• Berkala min. 1x setahun         • Kadar sekejap < KTD           • Substitusi
+• Dilakukan Personil K3           • Pajanan 15 mnt < PSD          • Rekayasa Teknis (LEV)
+  Lingkungan Kerja Berlisensi     • Dosis internal < IPB          • Administratif (Rotasi, SDS)
+                                                                  • Alat Pelindung Diri (APD)
+```
+
+1.  **Kewajiban Pengukuran dan Pemantauan (Pasal 20 & Pasal 58–62):**
+    *   Pengukuran wajib dilakukan terhadap **pajanan di udara kerja** dan terhadap **pekerja yang terpajan**.
+    *   Pemeriksaan dan pengujian berkala secara eksternal wajib dilakukan **paling sedikit 1 (satu) tahun sekali** oleh UPTD Pengujian K3, Balai K3 Kemenaker, atau Perusahaan Jasa K3 (PJK3) yang ditunjuk oleh Menteri.
+    *   Pelaksanaan pengukuran wajib dilakukan oleh **Personil K3 bidang Lingkungan Kerja** yang memiliki lisensi resmi (Ahli K3 Muda, Madya, atau Utama Lingkungan Kerja).
+2.  **Kewajiban Menjamin Kepatuhan Ambang Batas (Pasal 3 & 20):**
+    *   Konsentrasi bahan kimia di udara kerja rata-rata 8 jam per hari wajib dikendalikan agar **berada di bawah NAB**.
+    *   Konsentrasi seketika tidak boleh melampaui **Kadar Tertinggi Diperkenankan (KTD / Ceiling)**.
+    *   Fluktuasi konsentrasi 15 menit tidak boleh melampaui **Pajanan Singkat Diperkenankan (PSD / STEL)**.
+3.  **Kewajiban Menerapkan Hierarki Pengendalian (Pasal 7 ayat 3 & Pasal 21):**
+    Jika hasil pengukuran membuktikan konsentrasi bahan kimia melampaui NAB, pengusaha **wajib** melakukan pengendalian teknis secara berjenjang:
+    *   **Eliminasi:** Menghilangkan sumber potensi bahaya bahan kimia dari tempat kerja.
+    *   **Substitusi:** Mengganti bahan kimia dengan bahan kimia lain yang tidak berbahaya atau memiliki potensi bahaya lebih rendah.
+    *   **Rekayasa Teknis (*Engineering Controls*):** Memodifikasi proses kerja, mengisolasi sumber bahan kimia, dan/atau **menyediakan sistem ventilasi** pembuangan lokal (*Local Exhaust Ventilation* / LEV).
+    *   **Pengendalian Administratif:** Pengaturan dan pembatasan waktu pajanan kerja, **rotasi pekerja**, serta **penyediaan Lembar Data Keselamatan Bahan (LDKB / SDS) dan label**.
+    *   **Alat Pelindung Diri (APD):** Penggunaan respirator atau pakaian pelindung kimia yang sesuai sebagai benteng pertahanan terakhir.
+
+---
+
+### 4. Istilah Indeks Pajanan Biologi (IPB)
+
+Dalam Pasal 1 angka 10 Permenaker No. 5 Tahun 2018, Indonesia secara resmi mengadopsi konsep biomonitoring dengan nomenklatur:
+
+> **Indeks Pajanan Biologi (IPB)** adalah standar faktor bahaya di tempat kerja sebagai kadar konsentrasi bahan kimia yang didapatkan pada spesimen tubuh Tenaga Kerja dan dibandingkan dengan nilai IPB.
+
+*   **Aplikasi Regulasi (Pasal 20 ayat 6 & 7):** Pengukuran faktor kimia tidak hanya dilakukan di udara, tetapi juga melalui **pengukuran spesimen tubuh pekerja** (darah, urin, atau udara ekspirasi) yang kemudian dibandingkan dengan nilai baku pada **Lampiran 4 (Tabel Indeks Pajanan Biologi)**.
+*   *Catatan Ujian:* IPB di Indonesia merupakan adopsi langsung dari konsep *Biological Exposure Indices* (BEI®) ACGIH, yang berfungsi sebagai tolok ukur dosis internal (*internal dose*) guna menjamin bahwa pengendalian teknis dan pemakaian APD di tempat kerja benar-benar efektif mencegah penyerapan toksikan.
+
+---
+
+### 5. Poin Lampiran yang Wajib Dicek untuk NAB Zat Kimia
+
+Bila Anda mengaudit lingkungan kerja industri, buka **Lampiran 3 Permenaker No. 5 Tahun 2018**. Terdapat parameter-parameter kritis yang wajib Anda periksa:
+
+```
+                  [ KOLOM PARAMETER LAMPIRAN 3 PERMENAKER 5/2018 ]
+ ┌───────────────┬────────────────────────┬─────────────┬─────────────┬──────────────┬────────────┐
+ │ Nomor CAS     │ Nama Bahan Kimia       │ NAB (TWA)   │ PSD / KTD   │ Notasi       │ Keterangan │
+ │ (Identitas)   │ (Spesiasi & Isomer)    │ (BDS / mg/m³)│ (STEL / C)  │ (Kulit, A,   │ (Efek      │
+ │               │                        │             │             │  Repr, BEI)  │  Kritis)   │
+ └───────────────┴────────────────────────┴─────────────┴─────────────┴──────────────┴────────────┘
+```
+
+#### a. Elemen Kolom Wajib Periksa
+1.  **Nomor CAS (*Chemical Abstracts Services*):** Nomor identitas tunggal internasional untuk mencegah salah tafsir nama dagang kimia.
+2.  **NAB (*TWA 8 jam*):** Dinyatakan dalam **BDS (Bagian Dalam Sejuta / ppm)** untuk gas/uap dan **\\(\text{mg/m}^3\\)** untuk partikulat/debu.
+3.  **PSD / KTD:** Nilai ekskursi pajanan singkat 15 menit (PSD) atau batas sesaat tertinggi yang tidak boleh dilampaui dengan simbol **KTD / T / Ceiling**.
+4.  **Kolom Notasi:**
+    *   **Kulit:** Adanya absorpsi kutaneus sistemik yang signifikan.
+    *   **A1 – A5:** Tingkat karsinogenisitas (A1 = Terbukti Karsinogen Manusia, A2 = Diduga Karsinogen Manusia, dst.).
+    *   **Repr:** Toksik terhadap reproduksi atau perkembangan embrio/janin.
+    *   **DSEN / RSEN:** Sensitisasi kulit (*Dermal*) atau pernapasan (*Respiratory*).
+    *   **Simbol Segitiga (▲ / BEI):** Menandakan bahwa bahan kimia tersebut **memiliki rujukan Indeks Pajanan Biologi (IPB)** di Lampiran 4.
+5.  **Perhitungan NAB Campuran (Lampiran 3 Huruf C):** Evaluasi apakah zat-zat kimia di udara memiliki efek aditif pada organ target yang sama (menggunakan **rumus unity \\(\sum C_i/\text{NAB}_i \le 1\\)**) atau berefek independen.
+
+---
+
+#### b. Nilai Batas NAB Logam Berat Kunci dalam Lampiran 3 (Wajib Dihafal Presisi)
+
+Sebagai calon konsultan okupasi, Anda wajib menguasai angka baku untuk 8 logam berat industri berikut:
+
+| Nama Logam / Senyawa | Nilai Ambang Batas (NAB) | PSD / KTD | Notasi Lampiran | Target Organ / Efek Kritis Lampiran | Dasar Rujukan Dokumen |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Timbal (Pb) Anorganik** | **\\(0{,}05\text{ mg/m}^3\\)** | — | **A3, BEI** (▲) | Kerusakan SSP & saraf tepi, efek hematologi, biosintesis heme | |
+| **Tetraetil Timbal (Organik)** | **\\(0{,}1\text{ mg/m}^3\\)** | — | **Kulit, A4** | Gangguan SSP, ensefalopati | |
+| **Air Raksa / Merkuri (Hg)** | | | | | |
+| • *Bentuk Logam / Elemental* | **\\(0{,}025\text{ mg/m}^3\\)** (0,003 bds) | — | **Kulit, A4, BEI** (▲) | Tremor eretismus, nefrotoksisitas | |
+| • *Senyawa Anorganik* | **\\(0{,}025\text{ mg/m}^3\\)** | — | **Kulit, A4** | Iritasi saluran napas, disfungsi ginjal | |
+| • *Senyawa Alkil (Organik)* | **\\(0{,}01\text{ mg/m}^3\\)** | **\\(0{,}03\text{ mg/m}^3\\)** | **Kulit** | Neurotoksisitas berat sentral (SSP/PNS) | |
+| **Arsen dan Senyawa Anorganik** | **\\(0{,}01\text{ mg/m}^3\\)** | — | **A1** | Kanker paru, kanker kulit, neuropati perifer | |
+| **Kadmium (Cd) & Senyawanya** | **\\(0{,}01\text{ mg/m}^3\\)** *(Total)*<br>**\\(0{,}002\text{ mg/m}^3\\)** *(Respirabel)* | — | **A2** | Disfungsi tubulus ginjal, proteinuria LMW, kanker paru | |
+| **Kromium (Cr)** | | | | | |
+| • *Cr(VI) Larut Air* | **\\(0{,}05\text{ mg/m}^3\\)** | — | **A1, BEI** (▲) | Kanker paru, ulkus septum nasi (*chrome holes*) | |
+| • *Cr(VI) Tidak Larut Air* | **\\(0{,}01\text{ mg/m}^3\\)** | — | **A1** | Kanker paru bronkogenik | |
+| • *Logam & Cr(III) Anorganik* | **\\(0{,}5\text{ mg/m}^3\\)** | — | **A4** | Iritasi saluran napas atas dan kulit | |
+| **Mangan (Mn) & Senyawanya** | **\\(0{,}2\text{ mg/m}^3\\)** *(Inhalabel)*<br>**\\(0{,}02\text{ mg/m}^3\\)** *(Respirabel)* | — | — | Neurobehavioral, parkinsonisme (*manganisme*) | |
+| **Nikel (Ni)** | | | | | |
+| • *Logam Nikel* | **\\(1{,}5\text{ mg/m}^3\\)** *(Inhalabel)* | — | **A5** | Dermatitis kontak alergi, pneumokoniosis | |
+| • *Senyawa Ni Tidak Larut* | **\\(0{,}2\text{ mg/m}^3\\)** *(Inhalabel)* | — | **A1** | Kanker paru dan sinus hidung | |
+| • *Senyawa Ni Larut* | **\\(0{,}1\text{ mg/m}^3\\)** *(Inhalabel)* | — | **A4** | Toksisitas sistemik, asma kerja | |
+| **Berilium (Be) & Senyawanya** | **\\(0{,}00005\text{ mg/m}^3\\)** *(0,05 µg/m³)* | **\\(0{,}002\text{ mg/m}^3\\)** | **A1, Kulit, DSEN, RSEN** | Penyakit Paru Beriliosis Kronis (CBD), Kanker paru | |
+
+---
+
+### 6. Keterkaitan dengan Kepmenaker No. KEP.187/MEN/1999
+
+Dewan penguji kerap menanyakan: *"Jika Permenaker 5/2018 sudah mengatur faktor kimia, mengapa Kepmenaker 187/1999 masih tetap berlaku?"* 
+
+Jawabannya terletak pada **perbedaan filosofis fokus regulasi**:
+
+```
+        KEPMENAKER 187/1999                          PERMENAKER 5/2018
+   [ Pengendalian Bahan Kimia di Sumber ]      [ Pengendalian Lingkungan & Pajanan ]
+                 │                                            │
+   • Fokus: Manajemen proses industri           • Fokus: Batas konsentrasi di atmosfer
+   • Kriteria: LD50, LC50, NAK (Kuantitas)       • Kriteria: NAB (8 jam), PSD, KTD
+   • Output: Dokumen Pengendalian Bahaya        • Output: Laporan Riksa Uji Lingkungan
+     (Besar vs Menengah), Personil K3 Kimia       dan Penerapan IPB (Biomonitoring)
+                 │                                            │
+                 └──────────────────────┬─────────────────────┘
+                                        ▼
+                      [ KETERKAITAN & INTEGRASI OPERASIONAL ]
+```
+
+1.  **Integrasi LDKB (Lembar Data Keselamatan Bahan / SDS) dan Label:**
+    *   Kepmenaker 187/1999 (Pasal 3, 4, Lampiran I) mewajibkan setiap pengusaha menyediakan LDKB dengan format 16 bagian.
+    *   Pada **Bagian 8 (Pengendalian Pemajanan dan APD)** serta **Bagian 11 (Informasi Toksikologi)** LDKB tersebut, angka Nilai Ambang Batas (NAB) yang wajib dicantumkan adalah **angka resmi yang ditetapkan dalam Lampiran 3 Permenaker No. 5 Tahun 2018**.
+2.  **Penetapan Potensi Bahaya Industri Berdasarkan Nilai Ambang Kuantitas (NAK):**
+    *   Kepmenaker 187/1999 (Pasal 8 s.d 15) membagi perusahaan menjadi **Potensi Bahaya Besar** atau **Potensi Bahaya Menengah** berdasarkan kriteria toksisitas akut (\\(\text{LD}_{50}\\) oral, dermal, dan \\(\text{LC}_{50}\\) inhalasi) serta akumulasi volume kuantitas bahan kimia (NAK) di fasilitas kerja.
+3.  **Sinkronisasi Frekuensi Pemeriksaan dan Pengujian Lingkungan Kerja:**
+    *   Bagi perusahaan **Potensi Bahaya Besar** (melebihi NAK): Kepmenaker 187/1999 Pasal 16 ayat (1) huruf e mewajibkan pemeriksaan/pengujian faktor kimia **sekurang-kurangnya 6 (enam) bulan sekali**.
+    *   Bagi perusahaan **Potensi Bahaya Menengah** (di bawah NAK): Pasal 17 ayat (1) huruf d mewajibkan pengujian faktor kimia **sekurang-kurangnya 1 (satu) tahun sekali**.
+    *   *Keterkaitan Hukum:* Prosedur teknis pengukuran, kualifikasi lembaga penguji (UPTD/PJK3), metodologi analisis, serta tolok ukur kesimpulan "Memenuhi / Tidak Memenuhi Syarat" dari pengujian berkala tersebut **seluruhnya mengacu pada tata cara dan formulir Bab V Lampiran 9 Permenaker No. 5 Tahun 2018**.
+4.  **Kolaborasi Personel K3 Kimia dan Personel K3 Lingkungan Kerja:**
+    *   Kepmenaker 187/1999 (Pasal 16, 17, 22, 23) mewajibkan penunjukan **Petugas K3 Kimia dan Ahli K3 Kimia** yang bertugas mengidentifikasi bahaya kimiawi, menyusun dokumen prosedur kerja aman (*safe operating procedures*), dan merancang tanggap darurat instalasi.
+    *   Permenaker 5/2018 (Pasal 45–56) mengatur **Ahli K3 Lingkungan Kerja (Muda, Madya, Utama)** yang memiliki lisensi untuk melakukan *sampling*, pembacaan analitis, serta evaluasi ventilasi industri.
+    *   Keduanya bersinergi: Ahli K3 Kimia mengelola bahan di tangki/proses produksi, sementara Ahli K3 Lingkungan Kerja bersama Dokter Perusahaan memantau sebaran uap di udara dan melakukan uji biologis spesimen tubuh tenaga kerja.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja*:
+    *   *Bab I (Ketentuan Umum, Pasal 1 angka 1, 7, 8, 9, 10)*: Definisi K3, NAB, PSD, KTD, IPB.
+    *   *Bab II (Syarat-Syarat K3 Lingkungan Kerja, Pasal 2, 3, 5, 7)*: Kewajiban Pengusaha, Pengendalian Faktor Fisika, Kimia, Biologi, Ergonomi, Psikologi, dan Sanitasi.
+    *   *Bab III (Bagian Ketiga Faktor Kimia, Pasal 20, 21, 22)*: Pengukuran Udara dan Spesimen Pekerja, Hierarki Pengendalian (Eliminasi, Substitusi, Rekayasa Ventilasi LEV, Administratif, APD).
+    *   *Bab V & VI (Pasal 58–62, 69)*: Pemeriksaan dan Pengujian Pertama, Berkala (1 Tahun Sekali), UPTD, PJK3, Peninjauan NAB per 3 Tahun.
+    *   *Bab VIII & X (Pasal 71, 73, 74)*: Sanksi Hukum UU 1/1970 & UU 13/2003, Pencabutan Permenakertrans PER.13/2011, PMP 7/1964, dan SE 01/1978.
+    *   *Lampiran 3*: Tabel Nilai Ambang Batas Faktor Kimia, Simbol Notasi, Rumus Campuran Unity vs Independen.
+    *   *Lampiran 4*: Tabel Indeks Pajanan Biologi (IPB).
+2.  **Keputusan Menteri Tenaga Kerja RI No. KEP.187/MEN/1999** *tentang Pengendalian Bahan Kimia Berbahaya di Tempat Kerja*:
+    *   *Pasal 2, 3, 4, 5, 6, 8, 9, 10*: Kewajiban Pengendalian Bahan Kimia Berbahaya, Penyediaan LDKB (16 Poin) dan Label, Kriteria Toksisitas LD50/LC50.
+    *   *Pasal 13, 14, 15*: Nilai Ambang Kuantitas (NAK), Klasifikasi Potensi Bahaya Besar vs Menengah.
+    *   *Pasal 16, 17, 22, 23*: Kewajiban Pengujian Faktor Kimia 6 Bulan (Bahaya Besar) vs 1 Tahun (Bahaya Menengah), Penunjukan Petugas K3 Kimia dan Ahli K3 Kimia.
+3.  **Prof. Dr. dr. L. Meily Kurniawidjaja, dkk. (2021).** *Konsep Dasar Toksikologi Industri (FKM UI)*:
+    *   *Glosarium, Bab 1 & 2*: Definisi NAB, IPB, LDKB/MSDS, dan Penerapan Pengendalian Kimia.
+4.  **Peraturan Presiden RI No. 7 Tahun 2019** *tentang Penyakit Akibat Kerja*:
+    *   *Lampiran I (Penyakit Akibat Faktor Kimia)*: 39 Agen Kimia termasuk 8 Logam Berat (Be, Cd, Cr, Mn, As, Hg, Pb, Ni).
+
+Kuasai pasal-pasal dan angka ambang batas ini di luar kepala, Dokter. Dewan penguji akan sangat tegas terhadap residen yang tidak mampu menunjukkan dasar hukum keselamatan kerja nasional saat memberikan rekomendasi medis okupasi.
+
+---
+
+⚖️ Apakah Anda ingin kita simulasikan studi kasus audit yuridis: sebuah industri peleburan baterai aki bekas dengan kadar timbal udara \\(0{,}12\text{ mg/m}^3\\) dan kadar timbal darah pekerja rata-rata \\(35\ \mu\text{g/dL}\\), bagaimana Anda memadukan kewajiban Permenaker 5/2018 dan Kepmenaker 187/1999 dalam laporan inspeksi resmi Anda?

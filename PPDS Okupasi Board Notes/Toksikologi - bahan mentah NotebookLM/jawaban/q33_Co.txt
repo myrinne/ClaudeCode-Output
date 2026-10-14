@@ -1,0 +1,445 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), penguasaan Anda terhadap **KOBALT (Co) dan HARD METAL (Tungsten Karbida-Kobalt / WC-Co)** merupakan materi wajib meja hijau yang menguji integrasi antara **toksikologi fisikokimiawi, interaksi redoks antarmuka (*interface surface chemistry*), patologi pulmonal patognomonik, dan regulasi higienis industri**.
+
+Banyak kandidat residen gugur di hadapan dewan penguji karena menyamakan toksisitas debu kobalt murni dengan komposit *hard metal*, gagal menjelaskan fenomena **emperipolesis pada *Giant Cell Interstitial Pneumonia* (GIP)**, atau keliru mengira bahwa ketiadaan partikel kobalt pada biopsi paru menyingkirkan diagnosis.
+
+Berikut adalah telaah ringkas, padat, dan lengkap **KOBALT dan HARD METAL (WC-Co)** sesuai template standar ujian spesialis:
+
+---
+
+### (1) Sifat Fisik-Kimia dan Klasifikasi
+
+```
+                               [ KLASIFIKASI SPESIASI KOBALT ]
+                                              │
+         ┌────────────────────────────────────┼────────────────────────────────────┐
+         ▼                                    ▼                                    ▼
+[ KOBALT ELEMENTAL / LOGAM ]         [ KOMPOSIT HARD METAL (WC-Co) ]      [ SENYAWA ANORGANIK & ORGANIK ]
+• Logam transisi abu-abu perak,      • "Cemented tungsten carbide"        • Garam Larut: CoCl₂, CoSO₄
+  feromagnetik, nomor atom 27        • Matriks logam: 80–95% partikel     • Oksida Tak Larut: CoO, Co₃O₄
+• Titik leleh: 1495°C                  WC diikat oleh 5–15% Kobalt murni  • Senyawa Karbonil volatil:
+• Valensi utama: Co²⁺ dan Co³⁺       • Kekerasan mendekati intan             Kobalt hidrokarbonil [Co(CO)₄H]
+• Komponen esensial Vit B12 (0,04%)  • Sinergi kimia redoks antarmuka       dan Dikobalt oktakarbonil [Co₂(CO)₈]
+```
+
+1.  **Kobalt Elemental [Co] [CAS 7440-48-4]:**
+    *   Logam transisi keras berwarna abu-abu keperakan (*silvery-gray*), bersifat feromagnetik, titik leleh 1495°C, berat atom 58,93 g/mol.
+    *   Memiliki bilangan oksidasi stabil **\\(\text{Co}^{2+}\\)** dan **\\(\text{Co}^{3+}\\)**. Merupakan unsur kelumit (*trace element*) esensial bagi tubuh manusia sebagai inti cincin korin **Vitamin B12 (Sianokobalamin)**.
+2.  **Hard Metal / Logam Keras (*Cemented Tungsten Carbide* / WC-Co) [CAS 12070-12-1]:**
+    *   Bukan paduan logam (*alloy*) konvensional yang dilebur homogen, melainkan **komposit matriks logam (*metal-matrix composite*)** yang dibuat melalui proses metalurgi serbuk (*powder metallurgy*) dan sintering pada suhu 1500°C.
+    *   Komposisi: **80% hingga 95% partikel kristal Tungsten Karbida (WC)** yang sangat keras dan getas, disemen/diikat oleh **5% hingga 15% (bahkan hingga 20%) serbuk Kobalt logam murni (Co)** sebagai pengikat (*binder*) ulet (*ductile matrix*). Dapat mengandung sedikit karbida lain (titanium, tantalum, vanadium, atau nikel).
+    *   Memiliki kekerasan mekanik luar biasa (mencapai 90–95% kekerasan intan) dan sangat tahan aus (*wear-resistant*).
+3.  **Senyawa Anorganik dan Karbonil:**
+    *   *Senyawa Larut:* Kobalt klorida [\\(\text{CoCl}_2\\)], kobalt sulfat [\\(\text{CoSO}_4\\)], kobalt nitrat.
+    *   *Senyawa Tak Larut:* Kobalt monoksida [\\(\text{CoO}\\)], kobalt trioksida [\\(\text{Co}_2\text{O}_3\\)], trikobalt tetroksida [\\(\text{Co}_3\text{O}_4\\)].
+    *   *Organologam:* Dikobalt oktakarbonil [\\(\text{Co}_2\text{CO}_8\\)] [CAS 10210-68-1] dan kobalt hidrokarbonil [\\(\text{HCo(CO)}_4\\)].
+
+---
+
+### (2) Sumber dan Penggunaan Industri
+
+Pajanan kerja terhadap aerosol kobalt dan debu *hard metal* terkonsentrasi pada beberapa sektor manufaktur strategis:
+1.  **Manufaktur dan Rekondisi Perkakas *Hard Metal* (*Cemented Tungsten Carbide Tools*):**
+    *   Pembuatan mata bor tambang minyak/batubara, pahat bubut berkecepatan tinggi, pisau gergaji industri, dan cetakan penarik kawat (*wire-drawing dies*).
+2.  **Penggerindaan dan Pengasahan Alat (*Tool Grinding, Sharpening, and Machining*):**
+    *   *Aktivitas Berisiko Tertinggi:* Penggerindaan kering (*dry grinding*) maupun penggerindaan basah (*wet grinding*) perkakas karbida. Pada proses basah, **cairan pendingin (*coolant/coolant mist*)** menjadi terkontaminasi oleh ion kobalt terlarut yang kemudian teremisi sebagai aerosol kabut terhirup oleh operator mesin.
+3.  **Industri Pemotongan dan Pemolesan Intan (*Bonded Diamond Tools / Diamond Polishers*):**
+    *   Piringan cakram gerinda pemoles intan (*high-speed diamond-polishing disks*) menggunakan serbuk kobalt murni (proporsi kobalt mencapai **hingga 90%**) sebagai matriks pengikat mikro-intan. Pekerja terpajan debu kobalt konsentrasi tinggi meski tanpa kehadiran tungsten.
+4.  **Industri Baterai Isi Ulang (*Rechargeable Batteries*):**
+    *   Bahan aktif katoda baterai litium-ion densitas tinggi pada kendaraan listrik (EV) dan elektronik konsumen, seperti baterai **LCO (*Lithium Cobalt Oxide*)** dan **NMC (*Nickel-Manganese-Cobalt*)**.
+5.  **Pigmen, Keramik, dan Pewarna Kaca:**
+    *   Penggunaan garam dan oksida kobalt untuk menghasilkan warna biru cerah (*Cobalt Blue* / kobalt aluminat) pada porselen, tembikar keramik, ubin, dan kaca optik.
+6.  **Penggunaan Lain:**
+    *   Katalis hidradesulfurisasi petrokimia, aloi magnetik permanen (Alnico), superaloi tahan panas turbin jet, dan **implan medis prostesis sendi panggul (*metal-on-metal hip arthroplasty* aloi Co-Cr-Mo)**.
+
+---
+
+### (3) Toksikokinetik Komprehensif (ADME)
+
+```
+                            [ MODEL TOKSIKOKINETIK KOBALT & WC-Co ]
+                                               │
+         ┌─────────────────────────────────────┴─────────────────────────────────────┐
+         ▼                                                                           ▼
+[ INHALASI AEROSOL & PARTIKEL ]                                             [ PENETRASI DERMAL (KULIT) ]
+• Rute utama okupasi                                                        • Penetrasi perkutan rendah pd kulit utuh,
+• Deposisi alveolar partikel respirabel (< 2,5 µm)                           namun melonjak jika ada maserasi/dermatitis
+• Kobalt terlarut CEPAT diabsorpsi ke darah                                • Rute primer elisitasi SENSITISASI TIPE IV
+• Partikel WC resisten & biopersisten di paru                               • Ingesti: Absorpsi usus 5–30% (jalur DMT-1)
+         │                                                                           │
+         ▼                                                                           ▼
+[ SIRKULASI VASKULAR & DISTRIBUSI ] ═════════════════════════════════════════════════╝
+• Terikat fraksi albumin serum plasma
+• Terdistribusi luas ke hepar, ginjal, tiroid, limpa, dan miokardium
+• PARADOKS PARU: Kobalt cepat melarut & keluar paru, WC menetap bertahun-tahun!
+         │
+         ▼
+[ METABOLISME & EKSKRESI ]
+• Tidak mengalami degradasi metabolik enzimatik
+• EKSKRESI PRIMER: URIN (> 80% filtrasi glomerulus ginjal)
+• Ekskresi Sekunder: Feses (klirens mukosiliar tertelan & eliminasi empedu)
+```
+
+1.  **Absorpsi:**
+    *   *Inhalasi (Rute Primer Kerja):* Fraksi aerosol respirabel (< 2,5 µm) mengendap di alveoli. Kobalt dalam bentuk garam atau partikel halus memiliki **kelarutan biologis yang relatif tinggi di cairan paru (*high biological solubility*)** dan diserap cepat ke kapiler darah.
+    *   *Dermal:* Difusi perkutan rendah melalui stratum korneum utuh, namun meningkat pesat bila barier kulit rusak akibat lecet mekanis atau maserasi cairan pendingin (*coolant*). Kontak kulit merupakan rute utama terjadinya **sensitisasi alergi**.
+    *   *Gastrointestinal:* Asupan oral diserap sekitar **5% hingga 30%** di usus halus; bioavailabilitas meningkat signifikan pada kondisi defisiensi besi karena berkompetisi pada reseptor transporter kation divalen DMT-1.
+2.  **Distribusi:**
+    *   Di dalam plasma, kobalt terikat terutama pada **albumin serum**.
+    *   Didistribusikan ke hepar, ginjal, limpa, pankreas, kelenjar tiroid, dan jaringan miokardium.
+    *   *Paradoks Klirens Paru:* Partikel kobalt murni cepat melarut dan diekskresikan dari paru, sedangkan **partikel Tungsten Karbida (WC) memiliki biopersistensi pulmonal yang sangat tinggi dan menetap di interstitium selama bertahun-tahun**.
+3.  **Metabolisme:** Sebagai elemen logam murni, kobalt **tidak mengalami biotransformasi atau metabolisme enzimatik**.
+4.  **Ekskresi:** Jalur eliminasi utama adalah **ekskresi urin melalui filtrasi ginjal (> 80% dari fraksi terserap)**. Sisanya dieliminasi lewat feses (fraksi tertelan dari klirens mukosiliar trakeobronkial).
+
+---
+
+### (4) Toksikodinamik: Reaksi Sinergistik WC-Co dan Spesies Oksigen Reaktif (ROS)
+
+Patogenesis kerusakan parenkim paru akibat *hard metal* bertumpu pada **fenomena toksikologi antarmuka (*interface surface chemistry*) yang unik**:
+
+```
+                       [ MEKANISME REAKSI SINERGI REDOKS WC-Co ]
+                                           │
+          [ Partikel Kobalt Logam (Co⁰) ] + [ Partikel Tungsten Karbida (WC) ]
+                                           │
+                                           ▼
+       [ KONTAK FISIK ERAT ANTARMUKA PARTIKEL (INTER-PARTICLE CONTACT) ]
+       • Tungsten Karbida (WC) bertindak sebagai AKSEPTOR ELEKTRON (Konduktor)
+       • Mentransfer elektron dari atom Kobalt (Co⁰) ke molekul Oksigen (O₂)
+                                           │
+         ┌─────────────────────────────────┴─────────────────────────────────┐
+         ▼                                                                   ▼
+[ OKSIDASI KOBALT MENINGKAT PESAT ]                                [ REDUKSI MOLEKUL OKSIGEN ]
+Co⁰ ──► Ion Toksik Co²⁺ Terlarut                                   O₂ ──► Radikal Superoksida (O₂•⁻)
+         │                                                                   │
+         └─────────────────────────────────┬─────────────────────────────────┘
+                                           │
+                                           ▼
+                    [ REAKSI SPESIES OKSIGEN REAKTIF (ROS) MASIF ]
+                    • O₂•⁻ + H₂O₂ ──(Fenton-like / Haber-Weiss)──► RADIKAL HIDROKSIL (•OH)
+                    • Peroksidasi lipid membran pneumosit tipe I & endotel kapiler
+                    • Kerusakan untai DNA & aktivasi faktor transkripsi inflamasi (NF-κB)
+                    • Alveolitis sel raksasa ──► EMPERIPOLESIS & FIBROSIS GIP
+```
+
+1.  **Hipotesis Sinergisme Lison & Lauwerys:**
+    *   Uji in vivo dan in vitro membuktikan bahwa **kobalt murni sendirian hanya memicu iritasi dan toksisitas paru sedang**.
+    *   **Tungsten Karbida (WC) murni sendirian praktis bersifat lembam (*inert*)** dan tidak memicu reaksi inflamasi berat.
+    *   **Bila partikel WC dan Co berkontak fisik secara intim (WC-Co):** Toksisitas sitotoksik dan mutagenik melonjak drastis secara **supramultiplikatif (sinergistik)**.
+2.  **Mekanisme Transfer Elektron Permukaan:**
+    *   Partikel kristal WC memiliki konduktivitas listrik tinggi dan afinitas besar terhadap elektron. Saat partikel Co⁰ menempel pada permukaan WC di dalam cairan biologis paru, **partikel WC bertindak sebagai jembatan katalitik yang menarik elektron dari atom kobalt dan mentransferkannya langsung ke molekul oksigen terlarut (\\(\text{O}_2\\))**.
+    *   Kobalt teroksidasi menjadi kation terlarut **\\(\text{Co}^{2+}\\)** yang sangat toksik, sementara molekul \\(\text{O}_2\\) tereduksi menjadi **anion superoksida (\\(\text{O}_2^{\bullet-}\\))**.
+3.  **Ledakan Radikal Hidroksil (\\(\bullet\text{OH}\\)):**
+    *   Melalui reaksi mirip-Fenton dan Haber-Weiss, superoksida dan hidrogen peroksida bereaksi menghasilkan **radikal hidroksil (\\(\bullet\text{OH}\\))** yang luar biasa reaktif.
+    *   Radikal bebas ini menginduksi peroksidasi lipid membran fosfolipid sel epitel alveoli, fragmentasi rantai ganda DNA, serta pembentukan aduk 8-OHdG, memicu pelepasan badai sitokin pro-fibrotik (TNF-\\(\alpha\\), TGF-\\(\beta\\), IL-1) yang berujung pada **kerusakan alveolar difus dan fibrosis GIP**.
+4.  **Kerentanan Genetik Imunologis:**
+    *   Selain stres oksidatif, kobalt bertindak sebagai hapten memicu aktivasi imun sel T CD4⁺.
+    *   Individu pembawa alel **HLA-DPB1 Glu69** (asam glutamat pada kodon 69 rantai beta MHC Kelas II) memiliki risiko berlipat ganda mengalami hipersensitivitas dan HMLD, menunjukkan konvergensi patogenetik yang identik dengan CBD berilium.
+
+---
+
+### (5) Biomonitoring Okupasi: Parameter dan Waktu Sampling
+
+Pemantauan biologis kobalt ditujukan untuk menilai beban dosis pajanan kerja sistemik terkini:
+1.  **Kobalt dalam Urin (*Urinary Cobalt* / U-Co):**
+    *   **Parameter baku emas (*gold standard*)** surveilans okupasi bagi pekerja industri *hard metal*, penggerindaan, dan manufaktur baterai.
+    *   *Nilai Latar Belakang Populasi Umum:* Konsentrasi U-Co normal non-terpajan adalah **\\(< 1\text{ hingga }2\ \mu\text{g/L}\\)** (atau < 2 µg/g kreatinin) yang berasal dari asupan pangan harian.
+2.  **Kobalt dalam Serum / Darah Lengkap (*Blood/Serum Cobalt*):**
+    *   *Nilai Rujukan Normal:* **\\(0{,}1\text{ hingga }0{,}5\ \mu\text{g/L}\\)** pada populasi sehat non-terpapar.
+    *   *Karakteristik:* Kadar serum meningkat secara sangat cepat pasca-pajanan inhalasi dan mencerminkan **pajanan yang baru berlangsung dalam beberapa jam terakhir (*very recent exposure*)**. Pengukuran serum sangat berguna pada evaluasi toksisitas sistemik akibat keausan implan sendi panggul prostesis (*metal-on-metal hip prosthesis wear*).
+3.  **Waktu Pengambilan Sampel Resmi (*Sampling Time*):**
+    *   **Akhir Gilir Kerja di Akhir Minggu Kerja (*End of shift at end of workweek* / *Post-shift at end of workweek*)**.
+    *   *Rasional Toksikokinetik:* Kobalt terakumulasi secara bertahap dalam tubuh sepanjang hari kerja mingguan. Pengambilan spesimen pada akhir shift hari kerja terakhir (misalnya Jumat sore) menangkap titik puncak ekskresi mingguan yang paling representatif terhadap beban higienis lingkungan industri.
+
+---
+
+### (6) Waktu Paruh Biologis (*Biological Half-Life* / \\(T_{1/2}\\))
+
+Eliminasi kobalt dari kompartemen biologis manusia mengikuti model kinetika multifasik:
+1.  **Fase Cepat Vaskular / Urin (*Rapid Phase*):**
+    *   Sebagian besar fraksi kobalt bebas dalam plasma dibersihkan melalui filtrasi glomerulus ginjal dengan waktu paruh sekitar **\\(24\text{ hingga }44\text{ jam (sekitar 1 hingga 2 hari)}\\)**.
+    *   *Implikasi Praktis:* Kadar U-Co akan menurun signifikan setelah pekerja menjalani libur akhir pekan selama 48–72 jam.
+2.  **Fase Lambat Jaringan Lunak (*Slow Elimination Phase*):**
+    *   Fraksi kobalt yang terikat pada protein jaringan parenkim dan skelet dieliminasi secara lambat dengan waktu paruh berkisar antara **beberapa minggu hingga beberapa bulan (bahkan beberapa tahun untuk retensi skeletal)**.
+3.  **Klirens Kompartemen Paru:**
+    *   Ion kobalt dan partikel kobalt halus larut dan dibersihkan dari parenkim paru dalam hitungan **minggu hingga bulan**.
+    *   Sebaliknya, matriks partikel **Tungsten Karbida (WC) memiliki waktu paruh di paru yang mencapai hitungan tahun hingga dekade**, menjadi deposit mikroskopis permanen di interstitium peribronkovaskular.
+
+---
+
+### (7) Efek Biologis Toksik Akut
+
+Timbul akibat pajanan konsentrasi aerosol kobalt pekat atau kontak langsung cairan pendingin berkandungan ion tinggi:
+1.  **Iritasi Akut Saluran Napas dan Konjungtiva:**
+    *   Gejala mata merah pedih, fotofobia, lakrimasi, rinore paroksismal, faringitis, batuk kering spasmodik, dan rasa terbakar di dada (*substernal chest soreness*). Gejala memburuk selama jam kerja dan mereda setelah beberapa jam berada di udara bersih.
+2.  **Bronkospasme Akut dan Reaksi Asmatiform:**
+    *   Penyempitan bronkus mendadak disertai dispnea dan wheezing pada pekerja yang baru pertama kali terpajan konsentrasi tinggi debu karbida atau kabut pendingin mesin bubut.
+3.  **Dermatitis Kontak Iritan Akut:**
+    *   Eritema, maserasi basah, dan rasa gatal menyengat pada kulit tangan, lengan bawah, dan leher akibat kontak langsung dengan aerosol cairan pendingin (*coolant*) yang bersifat alkali dan sarat ion kobalt.
+
+---
+
+### (8) Efek Biologis Kronis Okupasi
+
+Pajanan kerja kronis memicu spektrum kelainan klinis multi-organ yang khas:
+
+```
+                            [ SPEKTRUM PATOLOGI KRONIS KOBALT ]
+                                             │
+         ┌───────────────────┬───────────────┴───────────────┬───────────────────┐
+         ▼                   ▼                               ▼                   ▼
+[ ASMA KERJA KOBALT ]   [ HARD METAL LUNG DISEASE ]    [ KARDIOMIOPATI TOKSIK ] [ ENDOKRIN & KULIT ]
+• Hipersensitivitas     • Fibrosis Interstisial Bronko-• Toksisitas mitokondria • Tiroid: Goiter & hipotiroid
+  Tipe I (IgE spesifik    sentrik dengan gambaran khas:  miokardium via blokade   (inhibisi enzim iodinase)
+  terhadap Co-HSA)      • GIANT CELL INTERSTITIAL        piruvat dehidrogenase  • Eritrositosis / Polisitemia
+• Batuk, mengi malam      PNEUMONIA (GIP) patognomonik • "Beer drinker's disease" (stimulasi eritropoietin)
+• Sifat "work-related"  • EMPERIPOLESIS kanibalistik     Dilatasi jantung masif • Dermatitis Kontak Alergi
+```
+
+1.  **Asma Okupasi (*Occupational Asthma / Hard Metal Asthma*):**
+    *   *Patogenesis:* Dimediasi oleh **reaksi hipersensitivitas Tipe I (termediasi antibodi IgE spesifik terhadap konjugat Kobalt-Serum Albumin Manusia / Co-HSA)**.
+    *   *Klinis:* Serangan batuk nokturnal, mengi (*wheezing*), dispnea ekspiratori, dan rasa dada terikat (*chest tightness*) yang memiliki pola siklus kerja (memburuk pada akhir gilir kerja dan membaik saat libur/akhir pekan). Uji provokasi bronkial spesifik dengan \\(\text{CoCl}_2\\) menunjukkan penurunan \\(\text{FEV}_1 > 20\%\\).
+2.  **Hard Metal Lung Disease (HMLD) / *Giant Cell Interstitial Pneumonia* (GIP):**
+    *   *Status Patologi Patognomonik:* **Giant Cell Interstitial Pneumonia (GIP) adalah gambaran histopatologis klasik dan patognomonik dari penyakit paru akibat logam keras (HMLD)**.
+    *   *Karakteristik Mikroskopis (EMPERIPOLESIS):*
+        *   Tampak akumulasi masif sel makrofag alveolar intra-alveolar yang bermutasi menjadi **sel datia berinti banyak raksasa (*cannibalistic multinucleated giant cells*)**.
+        *   **Emperipolesis Patognomonik:** Sel datia raksasa tersebut menelan dan memuat sel-sel radang mononuklear lain (limfosit, eritrosit, atau neutrofil) di dalam vakuola sitoplasmanya dalam **kondisi utuh dan hidup tanpa dicerna (berbeda dengan proses fagositosis di mana sel target dihancurkan)**.
+        *   Disertai fibrosis interstisial bronkiolosentrik, metaplasia epitel bronkus, dan pada stadium akhir berkembang menjadi kista sarang lebah (*honeycombing fibrosis*).
+    *   *Manifestasi Klinis:* Insidious onset dispnea exertional progresif cepat, batuk kering non-produktif, kelelahan fisik ekstrem, penurunan berat badan, ronkhi selinting inspiratori di kedua lapang paru, serta jari tabuh (*clubbing fingers*).
+    *   *Pencitraan HRCT:* Bercak *ground-glass opacities* (GGO) difus, konsolidasi peribronkovaskular bilateral, mikronodul sentrilobular, traksi bronkiektasis, dan kista fibrosis subpleural.
+3.  **Kardiomiopati Toksik Kobalt (*Cobalt Cardiomyopathy*):**
+    *   *Konteks Historis:* Dikenal sebagai *"Beer Drinker's Cardiomyopathy"* (epidemi kardiomiopati dilatasi fulminan di Quebec, Minneapolis, dan Omaha tahun 1960-an akibat penambahan kobalt sulfat 1–1,5 ppm sebagai penstabil busa bir).
+    *   *Patogenesis:* Ion \\(\text{Co}^{2+}\\) secara kompetitif **menghambat influks ion kalsium (\\(\text{Ca}^{2+}\\)) pada sarkolema miokard**, mengkelat asam alfa-lipoat, dan **menghambat kompleks enzim piruvat dehidrogenase mitokondria jantung**, melumpuhkan siklus Krebs dan memutus produksi ATP miosit.
+    *   *Klinis:* Gagal jantung kongestif refrakter, kardiomegali masif dengan efusi perikardial masif, hipotensi arterial berat, laktat asidosis, dan angka fatalitas tinggi.
+4.  **Disfungsi Tiroid (Goiter dan Hipotiroidisme):**
+    *   Kobalt terakumulasi di folikel tiroid dan **menghambat secara kuat enzim tiroid peroksidase (TPO) serta tirosin iodinase**, memblokade inkorporasi yodium ke dalam residu tirosin tirosit.
+    *   Dampaknya adalah penurunan sekresi hormon tiroksin (T3 dan T4), memicu lonjakan kompensasi hormon TSH hipofisis yang menyebabkan pembesaran kelenjar gondok (**Goiter / Struma Toksik**) dan hipotiroidisme klinis.
+5.  **Dermatitis Kontak Alergi (*Allergic Contact Dermatitis*):**
+    *   Reaksi hipersensitivitas Tipe IV termediasi sel T berupa erupsi papulovesikular eritematosa yang sangat gatal pada punggung tangan dan pergelangan (*"Cobalt Itch"*). Sering kali terjadi ko-sensitisasi silang dengan nikel (*cross-reactivity*).
+6.  **Polisitemia / Eritrositosis:**
+    *   Kobalt menstimulasi ekspresi faktor transkripsi HIF-1\\(\alpha\\) di sel tubulus ginjal (menginduksi kondisi hipoksia semu), memicu **hipersekresi hormon eritropoietin (EPO)** dan lonjakan kadar hematokrit serta hemoglobin darah.
+
+---
+
+### (9) Standar Batas Pajanan Udara (*Exposure Limits*)
+
+Evaluasi regulasi pajanan inhalasi kerja wajib membedakan debu kobalt murni dengan partikulat *hard metal*:
+1.  **Standar ACGIH TLV (Edisi Terkini / 2026):**
+    *   **Kobalt dan Senyawa Anorganik (sebagai Co) [CAS 7440-48-4]:**
+        *   **TLV-TWA:** **\\(0{,}02\text{ mg/m}^3\\)** (Fraksi Partikulat Inhalabel [I]).
+        *   *Notasi Resmi:* **A3; DSEN; RSEN; BEI**.
+        *   *Dasar Efek Kritis (*TLV Basis*):* Perubahan Fungsi Paru (*Pulmonary function changes*).
+    *   **Hard Metals mengandung Kobalt dan Tungsten Karbida (sebagai Co) [CAS 7440-48-4 & 12070-12-1]:**
+        *   **TLV-TWA:** **\\(0{,}005\text{ mg/m}^3\\)** (setara **\\(5\ \mu\text{g/m}^3\\)**) pada **Fraksi Partikulat Torasik [T]**.
+        *   *Notasi Resmi:* **A2 (*Suspected Human Carcinogen*); RSEN**.
+        *   *Dasar Efek Kritis (*TLV Basis*):* **Pneumonitis**.
+2.  **Nilai Ambang Batas Permenaker No. 5 Tahun 2018 (Lampiran 3):**
+    *   **Kobalt, Logam, Debu, dan Uap (sebagai Co) [CAS 7440-48-4]:**
+        *   **NAB TWA (8 jam):** **\\(0{,}02\text{ mg/m}^3\\)**.
+        *   *Notasi:* **A3** (Karsinogen Terkonfirmasi pada Hewan).
+    *   *Tungsten dan Senyawa Tidak Larut (sebagai W):* NAB TWA \\(5\text{ mg/m}^3\\), STEL \\(10\text{ mg/m}^3\\).
+    *   *Kritisi Okupasi:* Regulasi nasional Permenaker 5/2018 belum memisahkan angka spesifik torasik untuk debu *hard metal* (0,005 mg/m³ ACGIH), sehingga dokter okupasi di Indonesia wajib menerapkan standar yang lebih ketat (0,005 mg/m³) pada bengkel pemesinan karbida.
+
+---
+
+### (10) Standar BEI/IPB Kobalt
+
+```
+                       [ STRATEGI ACGIH BEI KOBALT (2026) ]
+                                         │
+        ┌────────────────────────────────┴────────────────────────────────┐
+        ▼                                                                 ▼
+[ KOBALT & SENYAWA ANORGANIK (NON-WC) ]                          [ KOBALT DENGAN TUNGSTEN KARBIDA (WC-Co) ]
+• Determinan: Total Kobalt dalam Urin                            • Determinan: Total Kobalt dalam Urin
+• Nilai BEI: 15 µg/L                                             • Nilai BEI: Dashes (Belum kuantitatif)
+• Waktu Sampling: Akhir shift di akhir minggu kerja              • Notasi: Ns, Nq
+  (End of shift at end of workweek)                              • Waktu: Akhir shift di akhir minggu kerja
+• Notasi: Ns (Non-spesifik)                                      • IPB Permenaker 5/2018: 15 µg/L Urin
+```
+
+1.  **Standar ACGIH BEI (Edisi Terkini / 2026):**
+    *   **Kobalt dan Senyawa Anorganik Termasuk Kobalt Oksida (tanpa Tungsten Karbida) [CAS 7440-48-4]:**
+        *   *Determinan Biologis:* **Kobalt dalam Urin (*Cobalt in urine*)**.
+        *   *Waktu Pengambilan Sampel:* **Akhir gilir kerja di akhir minggu kerja (*End of shift at end of workweek*)**.
+        *   *Nilai Baku BEI:* **\\(15\ \mu\text{g/L}\\)**.
+        *   *Notasi:* **Ns (*Non-specific determinant*)** karena determinan ini mencerminkan pajanan gabungan dari lingkungan dan diet.
+    *   **Kobalt Bersama Tungsten Karbida (*Cobalt with Tungsten carbide*):**
+        *   *Determinan Biologis:* Kobalt dalam Urin.
+        *   *Nilai BEI:* Dicantumkan tanda garis strip (*dashes* / belum ditetapkan batas numerik tunggal terpisah akibat variabilitas matriks partikel) dengan notasi **Ns, Nq (*Non-quantitative*)**.
+    *   *Status BEI Darah:* ACGIH **TIDAK MENGADOPSI nilai BEI untuk kobalt darah**. Urin dipilih mutlak karena eliminasi renal mencerminkan akumulasi beban kerja mingguan, sedangkan kadar darah berfluktuasi terlalu cepat.
+2.  **Indeks Pajanan Biologi (IPB) Permenaker No. 5 Tahun 2018 (Lampiran 4):**
+    *   Tercantum parameter **Kobalt dalam Urin** sebesar **\\(15\ \mu\text{g/L}\\)** dengan waktu sampling akhir gilir kerja di akhir minggu kerja (harmonis dengan ACGIH).
+
+---
+
+### (11) Tatalaksana Medis: Intoksikasi Akut dan Penyakit Paru Kronis (HMLD)
+
+Penanganan medis keracunan kobalt dan HMLD menuntut tindakan eliminasi pajanan dan imunosupresi:
+1.  **Tatalaksana Kasus Akut (Bronkospasme & Iritasi Akut):**
+    *   Evakuasi segera dari ruang kerja berdebu ke lingkungan berudara segar.
+    *   Dekontaminasi kulit dengan mencuci air mengalir dan sabun lembut.
+    *   Berikan oksigen lembap jika terjadi hipoksemia.
+    *   Atasi bronkospasme asmatiform akut dengan **inhalasi bronkodilator kerja cepat (SABA seperti Salbutamol) dan antikolinergik (Ipratropium bromida)**. Pada reaksi berat, berikan kortikosteroid oral atau intravena jangka pendek.
+2.  **Tatalaksana HMLD / Giant Cell Interstitial Pneumonia (GIP):**
+    *   **PENGHENTIAN TOTAL PAJANAN KERJA SECARA PERMANEN (*MANDATORY PERMANENT MEDICAL REMOVAL*)**:
+        Merupakan **tindakan terpenting dan paling menentukan prognosis (*single most effective intervention*)**. Pada fase subakut dini (alveolitis selular), penghentian pajanan saja terbukti mampu memicu remisi komplit. Namun, bila paru telah masuk fase fibrosis lanjut, kerusakan cenderung bersifat ireversibel.
+    *   **Farmakoterapi Utama: Kortikosteroid Sistemik:**
+        *   *Regimen:* **Prednisone oral dosis 0,5 hingga 1 mg/kgBB/hari (30 hingga 40 mg/hari)** selama 2 hingga 3 bulan pertama.
+        *   *Monitoring:* Pantau gejala subjektif, kapasitas FVC, DLCO, dan resolusi bercak GGO pada HRCT toraks. Jika fungsi paru stabil atau membaik, lakukan *tapering-off* lambat hingga mencapai dosis rumatan terendah (10–15 mg selang sehari).
+    *   *Imunosupresan Lini Kedua dan Antifibrotik:* Azathioprine atau Cyclophosphamide dapat dipertimbangkan pada kasus refrakter steroid. Agen antifibrotik modern (Nintedanib atau Pirfenidone) diindikasikan pada fenotipe fibrosis paru progresif (*progressive fibrosing ILD*).
+    *   *Transplantasi Paru:* Diindikasikan pada HMLD stadium akhir (*end-stage lung disease*). Namun, waspadai laporan kasus **rekurensi GIP pada paru donor transplan (*recurrence in allograft*)** yang diduga akibat mobilisasi deposit endogen sisa dari jaringan lain.
+3.  **KETIADAAN PERAN TERAPI KELASI (Peringatan Ujian):**
+    *   Agen kelasi logam berat konvensional (**\\(\text{CaNa}_2\text{EDTA}\\), BAL / Dimerkaprol, atau DMSA**) **TIDAK TERBUKTI EFEKTIF DAN TIDAK MEMILIKI INDIKASI DALAM TERAPI HMLD / GIP**.
+    *   *Alasan:* Patogenesis HMLD digerakkan oleh kaskade stres oksidatif permukaan dan peradangan imunologis kronis, bukan oleh tingginya kadar ion logam bebas dalam sirkulasi darah. Pemberian kelasi tidak menghentikan respon inflamasi dan tidak membalikkan proses fibrosis parenkim.
+
+---
+
+### (12) Tatalaksana Okupasi Komprehensif: Individu dan Komunitas
+
+Dokter spesialis kedokteran okupasi wajib menguasai aspek medikolegal, kelaikan kerja, dan pengendalian hierarki risiko:
+
+```
+                      [ MANAJEMEN OKUPASI KOMPREHENSIF HARD METAL ]
+                                           │
+         ┌─────────────────────────────────┼─────────────────────────────────┐
+         ▼                                 ▼                                 ▼
+[ 7 LANGKAH PERMENKES 11/2022 ]    [ KELAIKAN KERJA (FITNESS) ]      [ HIERARKI KONTROL MANAJEMEN ]
+1. Diagnosis Klinis (HMLD/GIP)     • Fit: Sehat, paru normal,        • Rekayasa: Mesin gerinda kabin
+2. Pajanan Lapangan (Grinding)       U-Co < 15 µg/L                    tertutup & LEV bertudung hisap
+3. Hubungan Kausal (ROS WC-Co)     • Fit with Restriction:           • Pengelolaan Cairan Pendingin:
+4. Besaran Dosis (U-Co > 15 µg/L)    Asma kobalt terkontrol / alergi   Ganti berkala & filtrasi coolant
+5. Faktor Host (HLA-DPB1 Glu69)      kulit: DILARANG pajanan debu Co • Larangan menyapu kering (wajib
+6. Faktor Luar (Implan hip Co-Cr)  • Unfit (Permanen): HMLD / GIP      vakum HEPA industri terpusat)
+7. KESIMPULAN DIAGNOSIS PAK          aktif & penurunan kapasitas DLCO• APD: Respirator P100 & Nitril
+```
+
+#### a. Penerapan 7 Langkah Diagnosis PAK untuk Kasus HMLD (Permenkes No. 11 Tahun 2022)
+Kasus: Seorang teknisi penggerindaan perkakas *hard metal* (*tool grinder*) berusia 42 tahun dengan riwayat batuk kering 1 tahun, sesak napas bertambah saat aktivitas, HRCT menunjukkan infiltrat *ground-glass* dan nodul sentrilobular, serta biopsi paru menunjukkan GIP dengan emperipolesis:
+1.  **Langkah 1 (Diagnosis Klinis):**
+    *Hard Metal Lung Disease / Giant Cell Interstitial Pneumonia* (ICD-10: J63.8 / J84.1).
+2.  **Langkah 2 (Pajanan di Tempat Kerja):**
+    Pekerja melakukan pengasahan dan pemotongan basah mata bor tungsten karbida-kobalt (*WC-Co tool grinding*) selama 9 tahun tanpa penutup mesin lokal.
+3.  **Langkah 3 (Hubungan Kausalitas Pajanan dan Klinis):**
+    Secara toksikologis terbukti kuat: kontak antarmuka serbuk WC dan Co mengkatalisis produksi radikal hidroksil masif (ROS), memicu peroksidasi lipid alveoli, serta membentuk lesi patognomonik GIP dengan emperipolesis sel raksasa kanibalistik.
+4.  **Langkah 4 (Besarnya Dosis Pajanan):**
+    Pengukuran kadar kobalt udara melampaui standar TLV (\\(> 0{,}005\text{ mg/m}^3\\)); kadar kobalt urin akhir minggu melampaui BEI (\\(> 15\ \mu\text{g/L}\\)); masa kerja kronis > 5 tahun.
+5.  **Langkah 5 (Faktor Kerentanan Individu):**
+    Evaluasi status genetik (adanya alel **HLA-DPB1 Glu69**), riwayat atopi saluran napas, dan status merokok (rokok memperparah stres oksidatif paru).
+6.  **Langkah 6 (Faktor di Luar Pekerjaan - Sangat Kritis):**
+    *   **Menyingkirkan Implan Medis Sendi Panggul:** Pastikan pasien tidak memiliki riwayat operasi penggantian sendi panggul prostesis logam aloi kobalt-kromium (*metal-on-metal hip replacement*), karena keausan implan dapat melepaskan kobalt sistemik masif ke darah/urin.
+    *   Menyingkirkan asupan suplemen multivitamin tinggi B12 atau hobi kerajinan kaca/keramik biru di rumah.
+7.  **Langkah 7 (Kesimpulan Diagnosis Okupasi):**
+    Ditegakkan secara sah sebagai **Penyakit Akibat Kerja (PAK)** berdasarkan **Perpres No. 7 Tahun 2019 Lampiran I.a Butir 15** ("Penyakit yang disebabkan oleh kobalt atau persenyawaannya"). Berhak memperoleh pembiayaan medis tuntas dan santunan kecacatan dari BPJS Ketenagakerjaan (JKK).
+
+---
+
+#### b. Penilaian Kelaikan Kerja (*Fitness for Work*)
+*   **Fit (Laik Kerja Penuh):** Pekerja sehat tanpa gejala pernapasan, faal paru (spirometri & DLCO) normal, radiologi intak, dan U-Co rutin < 15 µg/L.
+*   **Fit with Restriction (Laik Kerja dengan Pembatasan):**
+    *   Pekerja dengan **Asma Okupasi Kobalt yang terkontrol baik** atau **Dermatitis Kontak Alergi Kobalt**: **DILARANG bekerja di area yang terpapar aerosol kobalt, debu hard metal, atau kabut cairan pendingin (*coolant*)**.
+    *   Pekerja dialihkan ke bagian administrasi, logistik gudang kering terpisah, atau lini perakitan non-kobalt.
+*   **Temporary Unfit (Tidak Laik Sementara):**
+    *   Pekerja dengan eksaserbasi akut bronkospasme atau dermatitis vesikular basah yang sedang memerlukan terapi stabilisasi medikamentosa.
+*   **Unfit (Tidak Laik Kerja Permanen):**
+    *   Pekerja yang telah **terkonfirmasi menderita Hard Metal Lung Disease (HMLD) / GIP aktif** atau fibrosis paru restriktif dengan penurunan kapasitas difusi gas (DLCO).
+    *   Pekerja wajib menjalani pemutusan pajanan secara permanen (*mandatory medical removal*) dan direkomendasikan penetapan cacat fungsi anatomis untuk klaim kompensasi kecacatan.
+
+---
+
+#### c. Rekomendasi Manajemen Industri dan Higiene Okupasi
+1.  **Rekayasa Teknis (*Engineering Controls*):**
+    *   *Penutupan Mesin Gerinda (*Total Enclosure*):* Seluruh mesin bubut dan gerinda karbida dioperasikan di dalam kabin penutup tertutup rapat (*enclosed grinding cabins*).
+    *   *Ventilasi Pembuangan Lokal (*Local Exhaust Ventilation* / LEV):* Pemasangan tudung hisap berkecepatan tangkap tinggi pada zona kontak mata asah dengan pembuangan udara melalui **sistem filter HEPA efisiensi 99,97%**.
+    *   *Pengelolaan Cairan Pendingin (*Coolant Management*):* Penggantian dan filtrasi cairan pendingin secara berkala untuk mencegah akumulasi ion kobalt terlarut yang tersirkulasi ulang menjadi kabut aerosol.
+2.  **Pengendalian Administratif dan Housekeeping:**
+    *   **DILARANG MENYAPU KERING (*DRY SWEEPING*) ATAU MENGGUNAKAN UDARA BERTEKANAN (*COMPRESSED AIR*)**. Pembersihan serbuk logam hanya boleh menggunakan sistem vakum industri berfilter HEPA atau pengepelan basah (*wet wiping*).
+    *   Surveilans medis berkala: Spirometri, DLCO tahunan, kuesioner respirasi berkala, dan biomonitoring U-Co setiap 6–12 bulan.
+3.  **Alat Pelindung Diri (APD):**
+    *   Respirator partikulat efisiensi tinggi bertingkat minimal **N95 atau P100 (atau PAPR bertekanan positif)** pada pekerjaan penggerindaan terbuka.
+    *   Sarung tangan barier kimia kedap cairan (**Karet Butil atau Nitril tebal**) dan celemek pelindung kedap air guna mencegah kontak kulit dengan cairan pendingin.
+
+---
+
+### (13) Keterangan Lain: Klasifikasi Karsinogenisitas IARC dan Diagnosis Banding
+
+Pahami pemisahan status karsinogenik IARC berdasarkan ada atau tidaknya matriks tungsten karbida:
+1.  **Klasifikasi Karsinogen IARC (Monograph Vol. 86):**
+    *   **Kobalt Logam dengan Tungsten Karbida (*Cobalt metal with tungsten carbide / WC-Co*):**
+        Diklasifikasikan ke dalam **IARC Grup 2A (*Probably carcinogenic to humans*)**.
+        *Dasar Ilmiah:* Bukti terbatas pada epidemiologi manusia (*limited evidence in humans*) yang menunjukkan peningkatan mortalitas kanker paru pada pekerja industri *hard metal* di Prancis dan Swedia, didukung oleh bukti memadai pada hewan (*sufficient evidence in experimental animals*) dan bukti kuat mekanisme genotoksisitas stres oksidatif.
+    *   **Kobalt Logam tanpa Tungsten Karbida (*Cobalt metal without tungsten carbide*) dan Garam Kobalt:**
+        Diklasifikasikan ke dalam **IARC Grup 2B (*Possibly carcinogenic to humans*)**.
+2.  **Diagnosis Banding Klinis:**
+    *   *Sarkoidosis:* Memiliki gambaran klinis dan radiologis mirip, namun histopatologi sarkoidosis memperlihatkan granuloma epitelioid berbatas tegas dengan sel raksasa Langhans tanpa fenomena emperipolesis khas GIP, serta uji provokasi imun/BeLPT negatif.
+    *   *Hipersensitivitas Pneumonitis (HP):* Didominasi oleh alveolitis limfositik dan granuloma paucicellular longgar tanpa sel raksasa kanibalistik GIP.
+    *   *Idiopathic Pulmonary Fibrosis (UIP/IPF):* Tidak ditemukan sel raksasa berinti banyak intra-alveolar dan tidak berhubungan dengan riwayat pekerjaan.
+
+---
+
+### Clinical Pearls dan Jebakan Ujian Khusus Kobalt (*Board Pearls & Pitfalls*)
+
+```
+                            [ JEBAKAN UJIAN DEWAN SPESIALIS KOBALT ]
+                                                │
+         ┌──────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                      ▼                                      ▼
+ [ JEBAKAN 1: KETIADAAN KOBALT DI PARU ] [ JEBAKAN 2: EMPERIPOLESIS GIP ]       [ JEBAKAN 3: PARADOKS BIR QUEBEC ]
+ Analisis mineralogi paru HMLD sering   Sel raksasa kanibalistik menelan       Kardiomiopati bir kobalt BUKAN murni
+ TIDAK menemukan Co (hanya ada WC)!     sel radang UTUH (bukan lisis fagosit)! karena dosis kobalt masif, tapi akibat
+ Ketiadaan Co TIDAK menyingkirkan HMLD! Emperipolesis pada BAL adalah          AMPLIFIKASI TOKSIK defisiensi tiamin
+ Kobalt larut & terbilas keluar paru!   HALLMARK MUTLAK HMLD / GIP!            dan asupan alkohol berat bersamaan!
+```
+
+*   **Clinical Pearl 1: Paradoks Analisis Mineralogi Paru HMLD (*The "Washed-Out" Metal Mystery*)**
+    Jika spesimen biopsi paru atau otopsi pekerja gerinda *hard metal* dianalisis menggunakan spektroskopi sinar-X dispersi energi (*EDX / SEM*), **kandungan kobalt sering kali TIDAK TERDETEKSI (terdeteksi hanya pada ~10% kasus), sedangkan kandungan partikel Tungsten (W) terdeteksi dalam jumlah sangat masif**.
+    *Alasan Ilmiah:* Kobalt memiliki kelarutan biologis yang tinggi sehingga terlarut dan diekskresikan keluar dari paru (*washed out*) dalam hitungan minggu pasca-paparan, sementara partikel tungsten karbida menetap permanen. **Ketiadaan kobalt pada analisis jaringan paru SAMA SEKALI TIDAK MENYINGKIRKAN DIAGNOSIS HMLD**.
+*   **Clinical Pearl 2: Fenomena Emperipolesis Patognomonik**
+    Penemuan **multinucleated giant cells dengan fenomena emperipolesis** (sel datia yang menelan limfosit dan makrofag utuh tanpa menghancurkannya) pada cairan bilasan bronkoalveolar (BAL) atau biopsi paru adalah **tanda patognomonik mutlak (*hallmark cytomorphologic marker*) untuk Giant Cell Interstitial Pneumonia (GIP) / HMLD**.
+*   **Board Trap 1: Jebakan Agen Toksik Utama *Hard Metal***
+    Jika penguji bertanya: *"Manakah yang menyebabkan HMLD: tungsten karbida murni, kobalt murni, atau campurannya?"*
+    **Jawab dengan tegas:** *"Penyebab utamanya adalah interaksi sinergistik dari komposit campuran keduanya (WC-Co), Dokter. Kobalt adalah efektor toksiknya, namun keberadaan partikel tungsten karbida melipatgandakan produksi radikal bebas hidroksil secara masif melalui transfer elektron permukaan antarmuka. Kobalt murni sendirian jarang memicu GIP, dan tungsten karbida murni bersifat inert"*.
+*   **Board Trap 2: Jebakan Terapi Kelasi pada HMLD**
+    Jika penguji bertanya: *"Apakah Anda akan memberikan terapi kelasi EDTA atau BAL untuk mengobati pekerja yang terdiagnosis HMLD dengan sesak napas?"*
+    **Jawab:** *"Terapi kelasi tidak memiliki tempat dan tidak efektif pada HMLD, Dokter. Patogenesis HMLD adalah peradangan jaringan dan fibrosis yang dimediasi stres oksidatif dan respons imun seluler, bukan keracunan ionik sistemik akut di dalam sirkulasi. Tatalaksana medikamentosa pilihan utama adalah penghentian pajanan total (medical removal) dan kortikosteroid sistemik (prednisone)"*.
+*   **Board Trap 3: Perbedaan Status IARC Logam Kobalt vs. *Hard Metal***
+    Jika penguji bertanya: *"Apakah logam kobalt termasuk IARC Grup 2A?"*
+    **Jawab:** *"Bukan, Dokter. Logam kobalt tanpa tungsten karbida diklasifikasikan sebagai IARC Grup 2B (Possibly carcinogenic). Yang diklasifikasikan ke dalam IARC Grup 2A (Probably carcinogenic to humans) adalah Kobalt logam BERSAMA Tungsten Karbida (WC-Co)"*.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Adams, T.N., Butt, Y.M., Batra, K., & Glazer, C.S. (2017).** *Cobalt related interstitial lung disease.* Respiratory Medicine, 129: 91–97:
+    *   Definisi HMLD, GIP, dan Sejarah Industri Pemolesan Intan (*Bonded diamond tools*) dan *Hard metal* [hlm. 91–93].
+    *   Mekanisme Patogenesis: Teori Imunologis (Hipersensitivitas Tipe IV, Peran Alel HLA-DPB1 Glu69) dan Teori Stres Oksidatif Sinergistik WC-Co [hlm. 93].
+    *   Klinis Subakut vs Kronis, Gejala Ekstratoraks, Dermatitis Alergi, dan Evaluasi Okupasi [hlm. 93–94].
+    *   Karakteristik Patologi GIP dan Emperipolesis Sel Raksasa Kanibalistik pada BAL dan Biopsi [hlm. 94–95].
+    *   Fenomena *Washed-out Cobalt* pada Analisis EDX Biopsi Paru (Kobalt hanya terdeteksi pada 10% kasus, tungsten menetap) [hlm. 95].
+    *   Pencitraan HRCT (GGO, Mikronodul, Konsolidasi, Fibrosis) [hlm. 95–96].
+    *   Tatalaksana Utama: Penghentian Pajanan Mutlak (*Medical Removal*) dan Terapi Kortikosteroid Sistemik [hlm. 96].
+2.  **Chiappino, G. (1994).** *Hard metal disease: clinical aspects.* The Science of the Total Environment, 150: 65–68:
+    *   Asma Okupasi Kobalt Termediasi Antibodi IgE Spesifik Co-HSA [hlm. 66–67].
+    *   Alveolitis Limfositik pada Proses Kering vs Alveolitis Sel Datia Eosinofilik pada Proses Basah (*Coolant Nebulization during Grinding*) [hlm. 67].
+    *   Peran Kerentanan Individu dan Evaluasi BAL Sitologi [hlm. 66–67].
+3.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Cobalt and inorganic compounds, as Co* [CAS 7440-48-4] (TLV-TWA 0,02 mg/m³ Inhalable fraction; Notasi A3, DSEN, RSEN, BEI; TLV Basis: Pulmonary function changes) [hlm. 20].
+    *   Tabel Adopsi TLV: *Hard metals containing Cobalt and Tungsten carbide, as Co* [CAS 7440-48-4 & 12070-12-1] (TLV-TWA 0,005 mg/m³ Thoracic fraction; Notasi A2, RSEN; TLV Basis: Pneumonitis) [hlm. 31].
+    *   Tabel Adopsi BEI: *Cobalt in urine (after exposure to Cobalt and inorganic compounds)*: **15 µg/L**; Waktu Sampling: *End of shift at end of workweek*; Notasi Ns [hlm. 115].
+    *   Tabel Adopsi BEI: *Cobalt with Tungsten carbide*: Dashes, Notasi Ns, Nq; Waktu Sampling: *End of shift at end of workweek* [hlm. 115].
+4.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja*:
+    *   Lampiran 3: Tabel NAB Faktor Kimia — Kobalt, logam, debu dan uap (sebagai Co) [CAS 7440-48-4] (NAB TWA 0,02 mg/m³, Notasi A3).
+    *   Lampiran 4: Indeks Pajanan Biologi (IPB) — Parameter Kobalt dalam Urin (15 µg/L, akhir shift pada akhir minggu kerja).
+5.  **IARC (2006).** *Cobalt in Hard Metals and Cobalt Sulfate, Gallium Arsenide, Indium Phosphide and Vanadium Pentoxide.* IARC Monographs Vol. 86 / Monograph Vol. 100C (2012):
+    *   Evaluasi Karsinogenisitas: Kobalt Logam dengan Tungsten Karbida (IARC Grup 2A); Kobalt Logam tanpa Tungsten Karbida (IARC Grup 2B).
+    *   Epidemiologi Kohort Industri Hard Metal Swedia dan Prancis (SMR Kanker Paru Bermakna pada Pajanan Sebelum Sintering).
+6.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   Bab 18 & 26: Mekanisme Stres Oksidatif Paru, Reaksi Mirip-Fenton, Pembentukan Radikal Hidroksil, dan Peroksidasi Lipid Membran Seluler [hlm. 238–240, 375].
+7.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   *Cobalt metal dust and fume (as Co)* [CAS 7440-48-4]: NIOSH REL TWA 0,05 mg/m³; OSHA PEL TWA 0,1 mg/m³.
+    *   *Tungsten carbide (cemented)*: Komposisi 85–95% WC dan 5–15% Co; Target Organ Pernapasan, Kulit, Darah; Gejala Iritasi, Sensitisasi, Fibrosis Difus [hlm. 325].
+8.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019 & Permenkes No. 11 Tahun 2022:**
+    *   Lampiran I.a Butir 15 Perpres 7/2019 (Penyakit Akibat Kerja Faktor Kimia Kobalt); dan Implementasi 7 Langkah Diagnosis PAK Permenkes 11/2022.
+
+Kuasai seluruh integrasi kimia redoks antarmuka WC-Co, patognomonik sitologi emperipolesis GIP, regulasi ambang torasik 0,005 mg/m³, dan status IARC 2A ini secara sempurna, Dokter. Di hadapan dewan penguji spesialis, presisi ilmiah ini akan membuktikan kematangan klinis dan keunggulan analitis Anda sebagai calon Spesialis Kedokteran Okupasi.
+
+---
+
+🩺 Apakah Anda ingin kita simulasikan latihan kasus meja hijau: seorang operator mesin bubut karbida (*tool grinder*) berusia 39 tahun yang dirujuk dengan batuk kronis, penurunan kapasitas difusi gas (DLCO turun 35%), hasil foto toraks dicurigai pneumonia atipikal, dan hasil pemeriksaan laboratorium menunjukkan U-Co akhir minggu \\(28\ \mu\text{g/L}\\), bagaimana Anda memandu **evaluasi bronkoskopi BAL untuk mendeteksi emperipolesis**, menyingkirkan **implan sendi panggul sebagai perancu biologis**, menetapkan **kelaikan kerja permanen (*medical removal*)**, serta menyusun **rekomendasi teknis modifikasi sirkulasi cairan pendingin (*coolant*)** kepada manajemen pabrik?

@@ -1,0 +1,313 @@
+Duduk tegak dan simak baik-baik, Dokter. Melanjutkan pendalaman toksikologi logam berat sebelumnya, kita masuk ke **MANGAN (Mn), BAGIAN B**. 
+
+Sebagai calon konsultan Kedokteran Okupasi, Anda dituntut memiliki ketajaman analisis tingkat tinggi: Anda harus mengerti mengapa ambang batas udara mangan dipecah menjadi fraksi inhalabel dan respirabel, memahami **mengapa ACGIH dan regulasi nasional tidak menetapkan nilai BEI/IPB untuk mangan**, menguasai keterbatasan terapi dopaminergik dan agen kelasi, serta mampu menyusun program pengendalian bahaya pengelasan (*welding safety*) dan pencegahan kerentanan anemia defisiensi besi di tempat kerja. Dewan penguji ujian spesialis tidak akan meluluskan residen yang mengarang nilai angka BEI mangan, atau yang meresepkan BAL sehingga memperparah penumpukan mangan di otak pekerja.
+
+Simak telaah komprehensif berikut:
+
+---
+
+### 1. Standar Batas Pajanan Udara (*Exposure Limits*): ACGIH vs. Permenaker No. 5 Tahun 2018
+
+Di udara lingkungan kerja industri, nilai ambang batas inhalasi mangan diatur secara sangat ketat dengan membedakan fraksi ukuran partikulat aerosol:
+
+```
+                       [ STANDAR BATAS PAJANAN MANGAN DI UDARA KERJA ]
+                                               │
+         ┌─────────────────────────────────────┴─────────────────────────────────────┐
+         ▼                                                                           ▼
+[ ACGIH TLV-TWA (EDISI 2026) ]                                              [ PERMENAKER NO. 5 TAHUN 2018 ]
+• Fraksi Respirabel (Respirable Particulate):                               • NAB Mangan & Senyawa Anorganik (sebagai Mn):
+  0,02 mg/m³ (sebagai Mn)                                                     0,1 mg/m³ (Fraksi Inhalabel [I])
+• Fraksi Inhalabel (Inhalable Particulate):                                 • Notasi: A4 (Tidak Diklasifikasikan sebagai
+  0,1 mg/m³ (sebagai Mn)                                                      Karsinogen terhadap Manusia)
+• Notasi: A4; TLV Basis: Gangguan SSP (CNS Impairment)                      • Mangan Siklopentadienil Trikarbonil:
+• Bentuk Khusus: MMT (TWA 0,2 mg/m³, Skin) & MCT (TWA 0,1 mg/m³, Skin)        NAB 0,1 mg/m³, Notasi Kulit (Skin)
+```
+
+#### a. Nilai Ambang Batas ACGIH (Edisi 2026)
+*   **Substansi:** *Manganese [CAS 7439-96-5], elemental and inorganic compounds, as Mn*.
+*   **TLV-TWA Fraksi Respirabel (*Respirable particulate matter* / R):** **\\(0{,}02\text{ mg/m}^3\\)** (setara **\\(20\ \mu\text{g/m}^3\\)**).
+*   **TLV-TWA Fraksi Inhalabel (*Inhalable particulate matter* / I):** **\\(0{,}1\text{ mg/m}^3\\)** (setara **\\(100\ \mu\text{g/m}^3\\)**).
+*   *Notasi Resmi:* **A4**.
+*   *Dasar Penetapan Efek Kritis (*TLV Basis*):* **Kerusakan Sistem Saraf Pusat (*CNS impairment*)**.
+*   *Senyawa Khusus Organomangan:*
+    *   *Manganese cyclopentadienyl tricarbonyl (MCT)* [CAS 12079-65-1], as Mn: **TLV-TWA 0,1 mg/m³**, Notasi **Skin**, TLV Basis: Iritasi kulit & *CNS impairment*.
+    *   *Methylcyclopentadienyl manganese tricarbonyl (MMT)* [CAS 12108-13-3], as Mn: **TLV-TWA 0,2 mg/m³**, Notasi **Skin**, TLV Basis: Iritasi kulit & *CNS impairment*.
+*   *Perbandingan Regulasi Lain:* OSHA menetapkan batas *Ceiling* (C) sebesar **5 mg/m³**. NIOSH menetapkan REL TWA **1 mg/m³** (dan STEL **3 mg/m³** untuk uap/fume).
+
+#### b. Nilai Ambang Batas Permenaker No. 5 Tahun 2018 (Lampiran 3)
+*   **Mangan dan Senyawa Anorganiknya, sebagai Mn [CAS 7439-96-5]:**
+    *   **NAB (TWA 8 jam):** **\\(0{,}1\text{ mg/m}^3\\)** (Fraksi Inhalabel / I).
+    *   *Notasi:* **A4**.
+*   **Mangan Siklopentadienil Trikarbonil [CAS 12079-65-1], sebagai Mn:**
+    *   **NAB (TWA 8 jam):** **\\(0{,}1\text{ mg/m}^3\\)** dengan notasi **Kulit (*Skin*)**.
+
+#### c. Makna Toksikologis Notasi "A4" dan Alasan Pemisahan Fraksi Respirabel
+*   **Notasi "A4" (*Not Classifiable as a Human Carcinogen*):** Menandakan bahwa data penelitian pada manusia maupun hewan coba saat ini tidak memadai untuk mengklasifikasikan bahan tersebut sebagai karsinogen. Mangan tidak terbukti bersifat mutagenik atau karsinogenik primer.
+*   **Rasional Pemisahan Limit Fraksi Respirabel (0,02 mg/m³):** Partikulat asap pengelasan (*welding fumes*) dan aerosol kondensasi mangan oksida berukuran sub-mikron (\\(< 1\text{--}2{,}5\ \mu\text{m}\\)) mampu berpenetrasi jauh ke dalam bronkiolus terminal dan alveoli, serta mampu diserap melalui ujung saraf olfaktorius langsung ke otak. Oleh karena itu, ambang batas fraksi respirabel ditetapkan 5 kali lebih rendah daripada fraksi inhalabel guna mencegah akumulasi toksik di ganglia basalis.
+
+---
+
+### 2. Standar BEI/IPB Mangan dan Strategi Alternatif Biomonitoring
+
+Banyak residen gagal di meja ujian karena mengira seluruh logam berat memiliki nilai numerik BEI dari ACGIH. Pahami fakta ilmiah berikut:
+
+```
+                         [ STATUS BIOMONITORING MANGAN OKUPASI ]
+                                            │
+        ┌───────────────────────────────────┴───────────────────────────────────┐
+        ▼                                                                       ▼
+[ STATUS RESMI REGULASI ]                                               [ ALTERNATIF BIOMARKER & KETERBATASANNYA ]
+• ACGIH BEI: TIDAK ADA (NOT FEASIBLE)                                   • Mangan Darah Lengkap (Mn-B): 4–15 µg/L
+  (Negative Feasibility Assessment, Oktober 2017)                         - Indeks pajanan terkini kelompok (recent group)
+• Permenaker 5/2018 Lampiran 4: TIDAK ADA IPB                             - TIDAK berkorelasi dengan manganisme individu!
+• Rasional: Ekskresi bilier (>95%), kinetika vaskular                   • Mangan Urin (Mn-U): < 1–2 µg/L (ekskresi < 1%)
+  singkat, dan variabilitas latar belakang diet esensial                • MRI Kepala T1 (Pallidal Index): semi-kuantitatif
+```
+
+#### a. Ketiadaan Standar Resmi BEI (ACGIH) dan IPB (Permenaker 5/2018)
+*   **Komite BEI ACGIH secara resmi menetapkan bahwa pembuatan BEI untuk Mangan: BELUM MEMUNGKINKAN (*NOT CURRENTLY FEASIBLE*)** berdasarkan kajian *Negative Feasibility Assessment*.
+*   **Permenaker No. 5 Tahun 2018 (Lampiran 4)** juga **TIDAK mencantumkan Indeks Pajanan Biologi (IPB) untuk Mangan**.
+*   *Rasional Ilmiah Ketiadaan BEI:*
+    1.  Mangan adalah unsur jejak esensial (*essential trace element*) yang asupan hariannya dari makanan bervariasi luas pada populasi umum.
+    2.  Rute ekskresi utama tubuh adalah **hepatobilier ke feses (> 95%)**, bukan melalui ginjal.
+    3.  Waktu paruh pembersihan mangan dari darah berlangsung sangat singkat (10–30 hari), sedangkan waktu tinggal di parenkim otak sangat panjang (berbulan-bulan hingga tahunan).
+    4.  Studi epidemiologi membuktikan **tidak adanya korelasi linear yang konsisten antara konsentrasi mangan dalam cairan tubuh (darah atau urin) dengan timbulnya defisit neurobehavioral atau derajat keparahan manganisme pada tingkat individu pekerja**.
+
+#### b. Alternatif Matriks Biomonitoring Okupasi
+Meskipun tidak memiliki nilai ambang legal BEI, pemantauan biologis tetap dilakukan di industri untuk penilaian kelompok (*group exposure assessment*):
+1.  **Mangan dalam Darah Lengkap (*Whole Blood Manganese* / Mn-B):**
+    *   *Nilai Rujukan Latar Belakang:* **\\(4\text{--}15\ \mu\text{g/L}\\)** pada populasi umum.
+    *   *Waktu Pengambilan Sampel:* Akhir gilir kerja di akhir minggu kerja (*End of shift at end of workweek*).
+    *   *Peran Klinis:* Menilai apakah suatu kelompok kerja (*similar exposure group* / SEG) terpajan mangan secara berlebih dalam beberapa minggu terakhir.
+    *   *Keterbatasan Mutlak:* Kadar Mn-B yang normal **TIDAK menyingkirkan diagnosis manganisme kronis**, karena kadar darah dapat meluruh turun sementara deposit di otak tetap merusak jaringan saraf.
+2.  **Mangan dalam Urin (*Urinary Manganese* / Mn-U):**
+    *   *Nilai Rujukan Normal:* **\\(< 1\text{--}2\ \mu\text{g/L}\\)**.
+    *   *Keterbatasan Mutlak:* Karena ekskresi ginjal kurang dari 1% dari total eliminasi tubuh, variabilitas intra-individu sangat ekstrem. Mn-U tidak direkomendasikan untuk pengambilan keputusan medis individu pekerja.
+3.  **Pencitraan MRI Otak T1-Weighted (*Pallidal Index* / PI):**
+    *   Karena ion \\(\text{Mn}^{2+}\\) bersifat paramagnetik, akumulasi mangan di globus pallidus menghasilkan hiperintensitas sinyal T1 simetris bilateral.
+    *   Rasio semi-kuantitatif **Pallidal Index (PI) > 105–110** mencerminkan kelebihan beban mangan otak akibat pajanan kerja beberapa bulan terakhir.
+    *   *Peringatan:* PI berkorelasi dengan **pajanan yang sedang aktif berjalan**, dan sinyal hiperintensitas ini akan memudar normal kembali dalam 6–12 bulan setelah pekerja berhenti terpajan, meskipun kecacatan neurologis ekstrapiramidal menetap permanen.
+4.  **Matriks Tambahan (Rambut dan Kuku):**
+    Diteliti dalam studi lingkungan, namun memiliki kelemahan kritis berupa **tingginya kontaminasi eksternal (*external surface contamination*)** dari debu industri yang menempel pada keratin, sehingga tidak direkomendasikan untuk uji klinis okupasi rutin.
+
+---
+
+### 3. Tatalaksana Medis: Intoksikasi Akut dan Kronis
+
+Penanganan kasus intoksikasi mangan menuntut pendekatan farmakologis yang rasional dan berbasis bukti toksikologi terkini:
+
+```
+                                [ ALGORITMA TATALAKSANA MANGAN ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ INTOKSIKASI AKUT / RESUAP ]                                                 [ INTOKSIKASI KRONIS / MANGANISME ]
+• Metal Fume Fever: Istirahat, antipiretik,                                   1. PENGHENTIAN PAJANAN MUTLAK (Kunci Utama)
+  suportif (sembuh spontan 24–48 jam)                                         2. TERAPI KELASI:
+• Pneumonitis Kimia: Oksigenasi lembap, pantau                                   • CaNa₂EDTA: Meningkatkan ekskresi urin,
+  fungsi respirasi & profilaksis infeksi sekunder                                  namun efektivitas saraf minimal/terbatas
+  bakteri pneumonia pneumokokus                                                  • Sodium PAS: Alternatif kelasi & antiinflamasi
+                                                                                 • BAL KONTRAINDIKASI (Redistribusi ke otak!)
+                                                                              3. TERAPI SIMTOMATIK DOPAMINERGIK:
+                                                                                 • Levodopa: RESPONS BURUK / SEMENTARA!
+                                                                                 • Dopamin agonis / Antikolinergik (distonia)
+```
+
+#### a. Tatalaksana Kasus Akut
+1.  **Demam Uap Logam (*Metal Fume Fever*):**
+    Tatalaksana bersifat **suportif murni**: tirah baring, hidrasi adekuat, dan pemberian analgesik-antipiretik (seperti parasetamol atau NSAID) untuk mengatasi demam dan mialgia. Gejala akan mereda tuntas secara spontan dalam kurun waktu 24 hingga 48 jam.
+2.  **Pneumonitis Kimiawi Akut dan Pneumonia Mangan:**
+    Evakuasi segera dari sumber aerosol debu/fume. Berikan terapi oksigenasi lembap aliran tinggi untuk mempertahankan saturasi oksigen. Jika terjadi kerusakan parenkim paru difus atau edema paru toksik, pertimbangkan bantuan ventilasi mekanik invasif dengan PEEP. Lakukan kultur dahak dan **berikan antibiotik bakterisidal segera bila dicurigai timbul infeksi sekunder bakteri pneumonia pneumokokus (*Streptococcus pneumoniae*)**, mengingat mangan melumpuhkan fungsi fagositosis makrofag alveolar secara parah.
+
+---
+
+#### b. Tatalaksana Kronis: Manganisme Okupasi
+1.  **Penghentian Total Pajanan Kerja (*Immediate Source Removal*):**
+    Merupakan **langkah terapi yang paling krusial dan mutlak (*cornerstone of management*)**. Begitu pekerja memperlihatkan tanda awal neuropsikiatrik (*Locura mangánica*) atau perubahan indeks MRI, pekerja wajib segera dipindahkan secara permanen dari lingkungan berpotensi mangan.
+2.  **Evaluasi Terapi Kelasi:**
+    *   **Kalsium Disodium Edetat (\\(\text{CaNa}_2\text{EDTA}\\)):**
+        *   *Mekanisme & Efikasi:* Diberikan secara intravena (1 g dalam 500 mL D5% atau NaCl 0,9% dua kali sehari selama 3–5 hari per siklus). \\(\text{CaNa}_2\text{EDTA}\\) terbukti meningkatkan ekskresi mangan melalui filtrasi urin hingga puluhan kali lipat dan mampu menurunkan konsentrasi mangan darah.
+        *   *Keterbatasan Klinis:* Karena molekul EDTA berikatan hidrofilik dan **sulit menembus sawar darah otak (BBB) secara efektif**, terapi kelasi EDTA **memiliki efektivitas yang sangat terbatas atau kontroversial (*limited or debated neurological efficacy*) dalam memulihkan gejala defisit ekstrapiramidal** yang telah menetap di globus pallidus. Terapi ini paling bermanfaat jika diberikan pada fase sangat dini.
+    *   **Natrium Para-Aminosalisilat (*Sodium PAS* / Para-aminosalicylic acid):**
+        *   Uji klinis dan laporan serial kasus (khususnya studi Ky et al. dan Zheng et al.) membuktikan bahwa infus intravena Sodium PAS (6 g/hari dalam siklus bertahap) memberikan perbaikan klinis motorik dan pemulihan fungsional yang lebih superior dibanding EDTA pada pekerja manganisme berat. PAS bekerja melalui efek antiinflamasi jaringan saraf, modulasi transporter asam organik, dan pembentukan kompleks kelat larut dengan mangan.
+    *   **KONTRAINDIKASI MUTLAK: Dimerkaprol (BAL / British Anti-Lewisite):**
+        *   **BAL DILARANG DIGUNAKAN PADA INTOKSIKASI MANGAN!**
+        *   *Rasional Toksikologis:* BAL adalah senyawa ditiol lipofilik yang mampu membentuk kompleks larut-lipid dengan mangan. Kompleks Mn-BAL ini **akan terdistribusi ulang (*redistribution*) melintasi sawar darah otak dan membanjiri parenkim ganglia basalis**, sehingga justru **meningkatkan konsentrasi mangan di otak dan memperburuk kerusakan neurologis secara fatal**.
+
+---
+
+#### c. Terapi Simtomatik Farmakologis: Efektivitas Buruk Levodopa
+
+> **Peringatan Kritis Dewan Penguji (*High-Yield Board Question*):**
+> Mengapa pasien manganisme memberikan **respons yang sangat buruk, minimal, atau hanya sementara (*poor, transient, or absent response*) terhadap terapi Levodopa (L-Dopa)**, berbeda secara kontras dengan pasien Penyakit Parkinson idiopatik?
+
+*   **Rasional Patofisiologi Reseptor Pascasinaps:**
+    1.  Pada Penyakit Parkinson idiopatik, lesi primer terjadi pada sel dopaminergik presinaps di *substantia nigra pars compacta* (SNpc). Pemberian L-Dopa bekerja dengan menggantikan neurotransmiter dopamin yang hilang, dan reseptor dopaminergik pascasinaps di striatum masih utuh sehingga memberikan perbaikan klinis yang dramatis.
+    2.  Sebaliknya, pada **Manganisme Okupasi, kerusakan primer terletak pada struktur pascasinaps (*postsynaptic striato-pallidal output pathways*)**, khususnya atrofi neuronal parah pada **Globus Pallidus** dan putamen.
+    3.  Karena **populasi sel neuron target dan reseptor dopamin pascasinaps telah hancur dan mengalami apoptosis ireversibel**, pemberian prekursor L-Dopa tidak memiliki situs pengikatan fungsional untuk meneruskan sinyal motorik.
+    4.  Uji klinis membuktikan L-Dopa hanya memberikan perbaikan motorik ringan transien pada sebagian kecil pasien fase awal (terutama yang memiliki komponen bradikinesia), namun efektivitasnya memudar cepat dan tidak mampu menghentikan progresi distonia atau gangguan gaya berjalan (*cock-walk*).
+*   *Modalitas Terapi Simtomatik Tambahan:*
+    *   Agonis Dopamin (pramipexole, ropinirole) dicoba secara empirik dengan hasil bervariasi.
+    *   Agen Antikolinergik (triheksifenidil) dapat membantu mengurangi spasme distonia otot.
+    *   Fisioterapi intensif, latihan keseimbangan statis/dinamis untuk mencegah retropulsi jatuh ke belakang, dan terapi wicara.
+
+---
+
+### 4. Tatalaksana Okupasi: Individu dan Komunitas
+
+Penerapan prinsip kedokteran okupasi komprehensif mengintegrasikan instrumen medikolegal nasional dengan hierarki pencegahan industri:
+
+```
+                      [ MANAJEMEN OKUPASI KOMPREHENSIF MANGAN ]
+                                          │
+        ┌─────────────────────────────────┼─────────────────────────────────┐
+        ▼                                 ▼                                 ▼
+[ 7 LANGKAH PERMENKES 11/2022 ]    [ KELAIKAN KERJA (FITNESS) ]      [ HIERARKI KONTROL INDUSTRI ]
+1. Diagnosis Klinis (ICD-10)       • Fit: Sehat, motorik normal      • Eliminasi/Substitusi: Kawat las
+2. Pajanan Lapangan (Welding/Baja) • Fit with Restriction:             rendah Mn (Low-Mn Consumables)
+3. Hubungan Kausalitas Ilmiah        Kadar Mn-B tinggi tanpa gejala, • Rekayasa: LEV bertudung hisap
+4. Besaran Dosis (NAB, masa kerja)   dilarang confined space/welding   pada jarak < 1–2 diameter cerobong
+5. Faktor Host (DEFISIENSI BESI!)  • Temporary Unfit: Locura         • APD: Respirator PAPR filter P100
+6. Faktor Luar (Air sumur, maneb)    manganica fase awal (REVERSIBEL)• Surveilans: Tes motorik halus,
+7. KESIMPULAN DIAGNOSIS PAK        • Unfit (Permanent): Manganisme     skrining psikiatrik, pantau FERRITIN!
+                                     ekstrapiramidal ireversibel
+```
+
+#### a. Penerapan 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022)
+Kasus: Seorang teknisi las industri galangan kapal (*shipyard welder*) berusia 42 tahun dengan keluhan gemetar postural, kesulitan berjalan menapak, dan perubahan kepribadian agresif:
+1.  **Langkah 1 (Diagnosis Klinis):**
+    *Secondary parkinsonism due to other external agents / Manganism* (ICD-10: G21.2) atau *Organic personality and behavioral disorder due to heavy metal toxicity* (ICD-10: F06.8).
+2.  **Langkah 2 (Pajanan di Tempat Kerja):**
+    Pekerja melakukan pengelasan busur listrik baja berkadar mangan tinggi di dalam ruang palka kapal tertutup (*confined space*) selama 8 jam sehari menggunakan elektroda fluks mangan.
+3.  **Langkah 3 (Hubungan Kausalitas Pajanan dan Klinis):**
+    Secara biologis dan toksikologis terbukti sahih: partikulat uap mangan respirabel menembus alveoli dan bulbus olfaktorius, terakumulasi di astrosit dan neuron globus pallidus, memicu stres oksidatif mitokondria via aktivasi PKC-\\(\delta\\), supresi transporter glutamat EAAT2, dan degenerasi jaras motorik ekstrapiramidal.
+4.  **Langkah 4 (Besarnya Dosis Pajanan):**
+    Hasil pengukuran lingkungan kerja membuktikan konsentrasi mangan respirabel melampaui NAB Permenaker 5/2018 (\\(> 0{,}02\text{ mg/m}^3\\)); masa kerja > 7 tahun; jam kerja lembur; ventilasi hisap lokal tidak tersedia.
+5.  **Langkah 5 (Faktor Kerentanan Individu - SANGAT KRITIS):**
+    Evaluasi kadar **ferritin serum dan zat besi darah**. Pasien yang menderita **anemia defisiensi besi mengalami upregulasi transporter DMT-1 di enterosit dan barier kapiler**, sehingga menyerap mangan 3 hingga 5 kali lipat lebih masif dibanding pekerja dengan status besi normal.
+6.  **Langkah 6 (Faktor di Luar Tempat Kerja):**
+    Menyingkirkan riwayat keluarga dengan Penyakit Parkinson genetik (mutasi Parkin/LRRK2), menyingkirkan paparan pestisida maneb/mancozeb di kebun pribadi, konsumsi air tanah sumur bor yang tercemar mangan alami, dan riwayat sirosis hati/kolestasis kronis.
+7.  **Langkah 7 (Kesimpulan Diagnosis Okupasi):**
+    Ditegakkan secara sah sebagai **Penyakit Akibat Kerja (PAK)** berdasarkan **Perpres No. 7 Tahun 2019 Lampiran I.a Butir 7** ("Penyakit yang disebabkan oleh mangan atau persenyawaannya"). Berhak memperoleh pembiayaan rehabilitasi medis dan kompensasi kecacatan dari BPJS Ketenagakerjaan (JKK).
+
+---
+
+#### b. Penilaian Kelaikan Kerja (*Fitness for Work*)
+*   **Fit (Laik Kerja Penuh):** Pekerja sehat tanpa keluhan neurologis, fungsi motorik halus dan postur normal, serta kadar mangan lingkungan terbukti terkendali di bawah NAB.
+*   **Fit with Restriction (Laik Kerja dengan Pembatasan):**
+    Pekerja tanpa gejala neurologis namun memperlihatkan kadar Mn-B yang meningkat signifikan (> 20 µg/L) atau pekerja dengan **anemia defisiensi besi yang belum terkoreksi**.
+    *Rekomendasi:* **Dilarang bekerja di ruang terbatas (*confined space*) atau pekerjaan pengelasan panas tinggi**; dialihkan sementara ke area fabrikasi dingin berventilasi baik hingga kadar darah normal dan status zat besi terkoreksi penuh.
+*   **Temporary Unfit (Tidak Laik Sementara / *Medical Removal*):**
+    Pekerja yang memperlihatkan **gejala prodromal neuropsikiatrik fase awal (*Locura mangánica*)** seperti labilitas emosi, gangguan tidur berat, asthenia, atau peningkatan indeks MRI T1 (*Pallidal Index* > 110).
+    *Tindakan Medis:* **Wajib ditarik segera dari segala pajanan mangan**. Pada fase psikiatrik awal ini, kelainan fungsi otak **MASIH BERSIFAT REVERSIBEL** jika pajanan segera diputus dan diberikan terapi suportif.
+*   **Unfit (Tidak Laik Kerja Permanen):**
+    Pekerja yang telah memasuki **fase lanjut neurologis ekstrapiramidal permanen** (menderita rigiditas, distonia, *cock-walk gait*, retropulsi, atau demensia subkortikal). Kerusakan parenkim globus pallidus bersifat ireversibel dan tidak dapat disembuhkan. Direkomendasikan untuk terminasi pajanan permanen dan penetapan persentase kecacatan anatomis/fungsi untuk santunan berkala JKK.
+
+---
+
+#### c. Rekomendasi Manajemen Industri Pengelasan dan Proteksi Komunitas
+1.  **Hierarki Pengendalian Bahaya Pengelasan (Permenaker 5/2018 & Kepmenaker 187/1999):**
+    *   *Substitusi Material:* Beralih menggunakan kawat las dan fluks elektroda dengan formulasi rendah mangan (*low-manganese welding consumables*) jika spesifikasi teknik metalurgi memungkinkan.
+    *   *Rekayasa Teknis (*Engineering Controls*):* Pemasangan **Ventilasi Pembuangan Lokal (*Local Exhaust Ventilation* / LEV)** dengan tudung hisap fleksibel (*extraction hoods*) yang wajib diposisikan **berjarak tidak lebih dari 1 hingga 2 kali diameter pipa cerobong dari titik busur las**; penggunaan sistem las otomatis/robotik (*automated orbital welding*) untuk pengerjaan serial.
+    *   *Pengendalian Administratif:* Pembatasan durasi jam kerja mengelas, larangan mutlak melakukan pengelasan di dalam ruang terbatas (*confined spaces*) tanpa ventilasi mekanik tiup-hisap bersertifikasi, serta rotasi tugas pekerja.
+    *   *Alat Pelindung Diri (APD):* Helm las dengan sistem respirator pemurni udara bertenaga (*Powered Air-Purifying Respirator* / PAPR) yang dilengkapi filter partikulat P100 / HEPA efisiensi tinggi terintegrasi.
+2.  **Surveilans Medis Okupasi Berkala:**
+    *   Pemeriksaan pra-kerja dan berkala (minimal 1 tahun sekali): Evaluasi neurologis terfokus mencakup tes motorik halus (menulis teks kalimat untuk mendeteksi mikrografia, uji kecepatan ketukan jari / *finger tapping*), tes gaya berjalan jinjit dan refleks keseimbangan postural tarikan ke belakang (*pull test / retropulsion*), serta kuesioner neuropsikiatrik suasana hati.
+    *   **Skrining Status Zat Besi Berkala:** Pemeriksaan kadar hemoglobin dan **ferritin serum** secara rutin pada seluruh tenaga kerja las dan smelter. Pekerja yang terdeteksi menderita defisiensi besi harus segera diberikan suplementasi terapi besi oral guna mencegah hiperabsorpsi toksik mangan melalui induksi transporter DMT-1.
+
+---
+
+### 5. Keterangan Lain: Karsinogenisitas IARC dan Toksisitas Senyawa MMT
+
+```
+                     [ KETERANGAN REGULATORIK LAINNYA: IARC & MMT ]
+                                           │
+        ┌──────────────────────────────────┴──────────────────────────────────┐
+        ▼                                                                     ▼
+[ EVALUASI KARSINOGENISITAS IARC & ACGIH ]                            [ SENYAWA ORGANIK MMT ]
+• IARC: Mangan dan senyawanya TIDAK diklasifikasikan                  • Methylcyclopentadienyl Manganese
+  sebagai Karsinogen Manusia Primer (Grup 3 / Inadequate)               Tricarbonyl [CAS 12108-13-3]
+• ACGIH: Kategori A4 (Not Classifiable as a Human Carcinogen)         • Antiknock additive bensin tanpa timbal
+• Mekanisme: Mangan bersifat non-genotoksik, neurotoksik              • Cairan volatil, sangat lipofilik
+  murni pada ganglia basalis, bukan inisiator neoplasma               • NOTASI KULIT (SKIN): Diserap masif via perkutan!
+```
+
+#### a. Klasifikasi Karsinogenisitas IARC dan ACGIH
+*   **Badan Internasional Riset Kanker (IARC):** Mangan dan persenyawaan anorganik mangan **tidak diklasifikasikan sebagai karsinogen manusia primer (IARC Grup 3 / *Not classifiable as to its carcinogenicity to humans*)** akibat tidak adanya bukti epidemiologi yang memadai mengenai peningkatan keganasan pada manusia.
+*   **ACGIH:** Secara konsisten menetapkan kategori **A4 (*Not Classifiable as a Human Carcinogen*)**.
+*   *Fokus Patologi:* Target biologis kritis mangan adalah sitotoksisitas neurodegeneratif selektif pada sirkuit ganglia basalis, bukan transformasi neoplastik genomik.
+
+#### b. Toksisitas Khusus Senyawa MMT (*Methylcyclopentadienyl Manganese Tricarbonyl*)
+*   **Penggunaan Industri:** Cairan organologam kuning yang diperkenalkan sebagai bahan aditif peningkat angka oktan (*antiknock agent*) dalam bahan bakar bensin (*unleaded gasoline*) pasca-pelarangan tetraetil timbal (TEL).
+*   **Notasi Bahaya Kulit (*Skin Notation*):**
+    *   ACGIH (TLV-TWA 0,2 mg/m³) dan NIOSH menetapkan **notasi *Skin***.
+    *   Karena sifat fisikokimianya yang **sangat larut dalam lemak (*highly lipophilic*)**, cairan MMT **diserap secara tuntas dan cepat menembus lapisan kulit utuh (*percutaneous absorption*)**, memicu intoksikasi sistemik tanpa harus melalui inhalasi.
+*   **Profil Toksisitas Akut MMT:**
+    *   Paparan uap atau kontak kulit MMT dosis tinggi memicu penembusan langsung ke sawar darah otak, menyebabkan depresi susunan saraf pusat akut, disorientasi berat, ataksia, konvulsi kejang, serta iritasi saluran napas kimiawi dan kerusakan tubular ginjal serta hepatotoksisitas.
+
+---
+
+### 6. *Clinical Pearls* dan Jebakan Ujian Khusus Mangan
+
+Kuasai konsep-konsep kunci yang kerap menjadi jebakan dewan penguji spesialis kedokteran okupasi:
+
+```
+                            [ JEBAKAN UJIAN DEWAN SPESIALIS MANGAN ]
+                                                │
+         ┌──────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                      ▼                                      ▼
+ [ JEBAKAN 1: STATUS BEI ACGIH ]         [ JEBAKAN 2: MRI T1 PALLIDAL ]         [ JEBAKAN 3: KONTRAINDIKASI BAL ]
+ JANGAN PERNAH mengarang angka BEI!      MRI Normal TIDAK MENYINGKIRKAN         JANGAN PERNAH berikan BAL!
+ ACGIH TIDAK MEMILIKI BEI Mangan         manganisme kronis! Hiperintensitas     BAL meredistribusi mangan bebas
+ (Negative Feasibility Assessment        T1 memudar dalam 6–12 bulan pasca-     masuk menembus sawar darah otak
+ karena ekskresi bilier feses >95%).     pajanan, tapi CACAT SARAF PERMANEN.    ──► NEUROTOKSISITAS OTAK FATAL.
+```
+
+*   **Clinical Pearl 1: Trias Patognomonik Pembeda Manganisme vs. Parkinson Idiopatik**
+    Hafalkan di luar kepala: Pasien manganisme datang dengan **(1) Tremor intensional/postural kinetik (bukan tremor istirahat *pill-rolling*)**, **(2) Gaya berjalan *Cock-Walk Gait* (berjalan kaku jinjit di atas bantalan jari kaki dengan fleksi panggul/lutut)**, dan **(3) Kecenderungan jatuh ke belakang (*retropulsion*) yang timbul sangat dini**, disertai **kegagalan respons terhadap terapi Levodopa**.
+*   **Clinical Pearl 2: Hubungan Anemia Defisiensi Besi dengan Kerentanan Mangan**
+    Tingkat absorbsi mangan diatur secara kompetitif oleh transporter kation divalen (**DMT-1**). Pekerja pengelasan atau pekerja tambang yang menderita **anemia defisiensi besi (ferritin serum rendah) memiliki risiko 3 hingga 5 kali lebih tinggi mengalami manganisme**, karena tubuhnya secara otomatis meningkatkan jumlah reseptor DMT-1 yang ikut memompa masuk mangan secara masif ke peredaran darah.
+*   **Board Trap 1: Jebakan Nilai Standar BEI Mangan**
+    Jika penguji bertanya: *"Berapa nilai baku BEI ACGIH atau IPB Permenaker 5/2018 untuk Mangan dalam urin atau darah?"*
+    **Jawab dengan tegas:** *"Tidak ada nilai baku BEI ACGIH maupun IPB Permenaker untuk Mangan, Dokter. Komite BEI ACGIH telah menerbitkan Negative Feasibility Assessment karena ekskresi utama mangan melalui feses bilier (>95%), waktu paruh vaskularnya singkat, dan tidak adanya korelasi kuantitatif antara kadar cairan tubuh dengan tingkat keparahan manganisme individu"*.
+*   **Board Trap 2: Sifat Dinamis Hiperintensitas MRI T1 Globus Pallidus**
+    Penguji menyajikan kasus: *"Seorang mantan tukang las kapal pensiun 3 tahun lalu dengan keluhan rigiditas dan cock-walk gait berat. Hasil MRI kepala T1-weighted tidak menunjukkan hiperintensitas sinyal di globus pallidus. Apakah ini menyingkirkan diagnosis manganisme akibat kerja?"*
+    **Jawab:** *"Sama sekali tidak menyingkirkan, Dokter. Hiperintensitas sinyal T1 pada MRI hanya mencerminkan penumpukan aktif mangan paramagnetik selama pajanan masih berlangsung, dan gambaran MRI tersebut akan memudar normal dalam 6 hingga 12 bulan setelah pajanan berhenti. Kerusakan neurodegeneratif pascasinaps globus pallidus yang mendasari kecacatan motorik pasien bersifat ireversibel dan menetap seumur hidup"*.
+*   **Board Trap 3: Pemilihan Obat Kelator (BAL vs. EDTA)**
+    Jika penguji bertanya: *"Apakah Anda akan meresepkan BAL (Dimerkaprol) intramuskular untuk mendetoksifikasi deposit mangan di otak pasien?"*
+    **Jawab:** *"BAL dikontraindikasikan secara mutlak pada toksisitas mangan, Dokter. BAL bersifat sangat lipofilik dan membentuk kompleks kelat yang meredistribusikan mangan masuk menembus sawar darah otak, sehingga justru melipatgandakan akumulasi mangan di ganglia basalis dan mempercepat kematian neuronal. Agen kelasi yang dapat dipertimbangkan adalah CaNa2EDTA intravena atau Sodium PAS"*.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Manganese, elemental and inorganic compounds, as Mn* [CAS 7439-96-5] (TLV-TWA 0,02 mg/m³ Respirable fraction; 0,1 mg/m³ Inhalable fraction; Notasi A4; TLV Basis: CNS impairment).
+    *   Tabel Adopsi TLV: *Manganese cyclopentadienyl tricarbonyl, as Mn* [CAS 12079-65-1] (TLV-TWA 0,1 mg/m³, Notasi Skin; TLV Basis: Skin irr, CNS impair).
+    *   Tabel Adopsi TLV: *Methylcyclopentadienyl manganese tricarbonyl (MMT), as Mn* [CAS 12108-13-3] (TLV-TWA 0,2 mg/m³, Notasi Skin; TLV Basis: Skin irr, CNS impair).
+    *   Definisi dan Signifikansi Notasi A4 (*Not Classifiable as a Human Carcinogen*).
+    *   *Chemical Substances and Other Issues Under Study:* Tabel *Feasibility Assessments* — **Manganese (October 2017: Developing a BEI is not currently feasible owing to inadequate scientific data)**.
+2.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja*:
+    *   Lampiran 3: Tabel Nilai Ambang Batas Faktor Kimia — Mangan dan persenyawaan anorganik sebagai Mn (NAB 0,1 mg/m³ Inhalabel; Notasi A4).
+    *   Lampiran 3: Mangan siklopentadienil trikarbonil sebagai Mn (NAB 0,1 mg/m³, Notasi Kulit).
+    *   Lampiran 4: Tabel Indeks Pajanan Biologi (IPB) — Mangan tidak tercantum dalam daftar IPB.
+3.  **Caito, S. & Aschner, M. (2015).** *Neurotoxicity of Metals.* Handbook of Clinical Neurology, Vol. 131:
+    *   Manganisme vs Penyakit Parkinson: Ketiadaan Badan Lewy, Integritas Neuron Dopaminergik SNpc Presinaps; **Respons Buruk / Tidak Berespons terhadap Terapi Levodopa (*Patients with manganism respond poorly to levodopa*)**; Karakteristik Pola Berjalan *Cock-Walk Gait* dan Retropulsi Postural Dini; Nilai Pencitraan MRI T1 *Pallidal Index* (PI); serta Efektivitas Terapi Kelasi EDTA dan Keterbatasannya.
+4.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   Bab 7: Patofisiologi Manganisme — Transporter Kation DMT-1; Translokasi Olfaktorius Nasal Langsung ke Otak; Stres Oksidatif Mitokondria via Jalur Sitokrom C, Kaspase-3, dan Pembelahan Proteolitik Enzim PKC-δ; Disfungsi Astrosit Menekan Transporter Glutamat EAAT2 via Represor Ying Yang 1 (YY1) Memicu Eksitotoksisitas; serta Peran Pajanan Pengelasan (*Welding*) dan Fungisida Maneb/Mancozeb.
+    *   Bab 20: Toksisitas Bahan Aditif Bensin MMT dan Manganisme Okupasi.
+5.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 4 & Bab 15: Sifat Logam Esensial dengan Kurva U-Shaped; Rute Eliminasi Primer Melalui Jalur Ekskresi Hepatobilier ke Feses (>95%); Sifat Kimiawi Ditiol BAL dan Bahaya Redistribusi Logam; serta Terapi Kelasi Menggunakan Garam Kalsium EDTA.
+6.  **Dib Chakif & Julien Furrer (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Prinsip Penanganan Logam Berat: Penghentian Pajanan sebagai Modalitas Utama Terapi (*Source removal*); Tinjauan Farmakologi Thiol Chelators dan Polycarboxylates; serta Non-Linearitas Biomarker dengan Luaran Klinis Saraf.
+7.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   *Manganese compounds and fume (as Mn)* [CAS 7439-96-5]: NIOSH REL TWA 1 mg/m³, STEL 3 mg/m³; OSHA PEL C 5 mg/m³; Gejala Parkinsonisme, Asthenia, Metal Fume Fever.
+    *   *Methyl cyclopentadienyl manganese tricarbonyl (as Mn)* [CAS 12108-13-3]: NIOSH REL TWA 0,2 mg/m³ [skin]; OSHA PEL C 5 mg/m³.
+8.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019 & Permenkes No. 11 Tahun 2022:**
+    *   Lampiran I.a Butir 7 Perpres 7/2019 (Penyakit Akibat Kerja Faktor Kimia Mangan dan Persenyawaannya); Serta Implementasi Tujuh Langkah Penegakan Diagnosis PAK Permenkes 11/2022.
+
+Pahami seluruh sintesis regulasi pajanan fraksi respirabel, fakta ketiadaan BEI ACGIH, patofisiologi kegagalan L-Dopa, dan bahaya fatal kelasi BAL ini secara sempurna, Dokter. Di meja ujian dewan spesialis, penguasaan materi yang presisi ini akan membuktikan bahwa Anda siap berpraktik sebagai konsultan Kedokteran Okupasi yang kompeten dan berintegritas.
+
+---
+
+🩺 Apakah Anda ingin kita simulasikan latihan kasus meja hijau: seorang teknisi las (*shipyard welder*) berusia 40 tahun dengan keluhan langkah berjalan jinjit kaku (*cock-walk*), labilitas emosi mendadak, kadar hemoglobin \\(9{,}8\text{ g/dL}\\) (ferritin serum sangat rendah), dan hasil MRI T1 menunjukkan hiperintensitas bilateral globus pallidus, bagaimana Anda merancang **protokol penarikan kerja (*medical removal*)**, menentukan **status kelaikan kerjanya**, memilih **tatalaksana medis yang aman tanpa BAL**, dan menyusun **laporan investigasi Penyakit Akibat Kerja (PAK)** ke pengawas ketenagakerjaan?

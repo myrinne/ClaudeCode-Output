@@ -1,0 +1,322 @@
+Duduk tegak dan simak baik-baik, Dokter. Sebagai calon konsultan Kedokteran Okupasi, penguasaan Anda terhadap **toksikologi logam kromium** adalah tolok ukur utama kompetensi klinis dan higienis Anda. Banyak dokter gagal membedakan nasib biologis dan profil bahaya antara ion trivalent dan heksavalen, padahal keduanya memiliki kinetika membran dan potensi patologis yang bertolak belakang. 
+
+Berikut adalah telaah komprehensif **Kromium (Cr VI vs. Cr III) Bagian A** yang wajib Anda kuasai untuk menghadapi dewan penguji:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi
+
+Kromium (Cr, nomor atom 24) adalah unsur logam transisi yang dapat berada dalam berbagai tingkat oksidasi mulai dari **\\(-2\\) hingga \\(+6\\)**. Namun, dalam konteks kimiawi lingkungan dan toksikologi okupasi, hanya dua tingkat valensi yang memiliki signifikansi biologis utama: **Kromium Trivalen [Cr(III)]** dan **Kromium Heksavalen [Cr(VI)]**, di samping bentuk unsur bebasnya **Kromium Elemental [Cr(0)]**.
+
+```
+                                [ SPECTRUM VALENSI KROMIUM ]
+                                              │
+         ┌────────────────────────────────────┼────────────────────────────────────┐
+         ▼                                    ▼                                    ▼
+   [ KROMIUM ELEMENTAL / Cr(0) ]       [ KROMIUM TRIVALEN / Cr(III) ]       [ KROMIUM HEKSAVALEN / Cr(VI) ]
+• Bilangan Oksidasi: 0               • Bilangan Oksidasi: +3              • Bilangan Oksidasi: +6
+• Padatan abu-abu baja keras         • Bentuk paling stabil di alam       • Sangat jarang di alam; produk industri
+• Titik lebur tinggi (~1900°C)       • Nutrien esensial (jejak)           • Oksidator kuat, toksik & karsinogenik
+• Logam murni & paduan alloy         • Muatan kation terhidrasi besar     • Bentuk anion oksi: CrO4^2- & HCrO4^-
+• Permeabilitas membran: NIHIL       • Permeabilitas membran: SANGAT RENDAH• Permeabilitas membran: SANGAT TINGGI
+```
+
+#### a. Karakteristik Tiga Bentuk Valensi Utama
+1.  **Kromium Elemental [Cr(0)] (CAS 7440-47-3):**
+    Berupa padatan logam berwarna abu-abu baja berkilau, keras, dan tahan korosi. Digunakan dalam pembuatan paduan logam baja tahan karat (*stainless steel*). Logam murni ini secara biologis bersifat lembam (*inert*) dan tidak mampu menembus membran sel tanpa proses pelarutan atau ionisasi.
+2.  **Kromium Trivalen [Cr(III)]:**
+    Merupakan bentuk oksidasi yang paling melimpah dan stabil secara termodinamika di alam. Pada tingkat fisiologis rendah, Cr(III) berperan sebagai mikronutrien esensial dalam metabolisme glukosa dan lipid. Dalam larutan berair, Cr(III) berada sebagai kation berkoordinasi heksahedral (oktahedral) dengan molekul air atau ligan hidroksil yang bermuatan positif. Muatan dan radius hidrasi yang besar ini menyebabkan **Cr(III) tidak dapat melintasi membran sel biologis secara difusi pasif**.
+3.  **Kromium Heksavalen [Cr(VI)]:**
+    Merupakan tingkat oksidasi kedua paling stabil, namun **hampir tidak pernah ditemukan secara alami** dan merupakan hasil antropogenik proses industri. Cr(VI) memiliki daya oksidasi yang sangat tinggi (*strong oxidizing agent*). Dalam larutan berair fisiologis (pH 6–8), Cr(VI) tidak berada sebagai kation bebas, melainkan membentuk oksi-anion terionisasi: **kromat (\\(\text{CrO}_4^{2-}\\))** dan **hidrokromat/bikromat (\\(\text{HCrO}_4^-\\))**.
+
+#### b. Klasifikasi Kelarutan Senyawa Cr(VI) (OSHA dan IARC)
+Kelarutan senyawa Cr(VI) dalam air menentukan sifat toksikokinetik, retensi jaringan, dan potensi karsinogenisitasnya. Berdasarkan klasifikasi *Occupational Safety and Health Administration* (OSHA) dan IARC, senyawa Cr(VI) dibagi menjadi tiga kelompok:
+
+| Kategori Kelarutan | Rentang Kelarutan Air | Contoh Senyawa Industri Kunci | Sifat Fisik & Karakteristik Toksikologi | Sumber Rujukan |
+| :--- | :--- | :--- | :--- | :--- |
+| **Sangat Larut Air (*Highly Soluble*)** | **\\(\ge 500\text{ g/L}\\)** | • **Natrium kromat (\\(\text{Na}_2\text{CrO}_4\\))** [873 g/L]<br>• **Kalium kromat (\\(\text{K}_2\text{CrO}_4\\))** [629 g/L]<br>• **Kromium trioksida / Asam kromat (\\(\text{CrO}_3\\))**<br>• **Amonium dikromat (\\((\text{NH}_4)_2\text{Cr}_2\text{O}_7\\))** | Berwarna kuning terang hingga merah tua; cepat diabsorpsi ke sirkulasi darah; memicu efek korosif akut masif, nekrosis jaringan, dan ekskresi urin cepat. | |
+| **Kelarutan Sedang / Sedikit Larut (*Slightly Soluble*)** | **\\(0{,}01\text{ s.d. } 500\text{ g/L}\\)** | • **Kalsium kromat (\\(\text{CaCrO}_4\\))**<br>• **Stronsium kromat (\\(\text{SrCrO}_4\\))**<br>• **Seng kromat (*Zinc chromates*)** | Berwarna kuning; memiliki retensi lebih lama di epitel bronkus paru; karsinogen paru yang sangat kuat pada model hewan coba dan pekerja pabrik pigmen. | |
+| **Tidak Larut Air (*Water-Insoluble*)** | **\\(< 0{,}01\text{ g/L}\\)** | • **Timbal kromat (\\(\text{PbCrO}_4\\))** [0,17 mg/L]<br>• **Barium kromat (\\(\text{BaCrO}_4\\))** [2,6 mg/L] | Padatan kristal kuning/jingga pigmen; tertahan bertahun-tahun di parenkim paru dan makrofag alveolar; memicu transformasi neoplastik lambat. | |
+| *Bentuk Khusus Cairan* | *Terurai dalam air* | • **Kromil klorida (\\(\text{CrO}_2\text{Cl}_2\\))** | Cairan berasap merah tua pekat; menguap cepat; terhidrolisis instan di udara lembap menjadi ion kromat dan asam klorida (HCl). | |
+
+---
+
+### 2. Sumber dan Sektor Penggunaan Industri
+
+Pajanan okupasi terhadap kromium terjadi pada berbagai proses manufaktur berat, konstruksi, dan pengolahan kimia:
+
+```
+                                  [ SEKTOR INDUSTRI TERPAJAN KROMIUM ]
+                                                   │
+         ┌─────────────────────────┬───────────────┴───────────────┬─────────────────────────┐
+         ▼                         ▼                               ▼                         ▼
+ [ PELAPISAN KROM ]     [ PENGELASAN STAINLESS ]         [ PENYAMAKAN KULIT ]        [ SEMEN & PIGMEN ]
+• Hard / Decorative       • Stainless Steel Welding        • Agen penyamak: Cr(III)    • Cr(VI) pengotor semen
+  Chrome Plating            (FCAW > GMAW > SMAW > TIG)     • Oksidasi sekunder         • Pigmen cat: PbCrO4,
+• Asam Kromat (CrO3)      • Fume Cr(VI) terbentuk            menjadi Cr(VI)              ZnCrO4, SrCrO4
+• Aerosol kabut mists       sebagai produk sampingan       • Ruang drum putar          • Industri aviasi/pesawat
+```
+
+1.  **Pelapisan Logam Krom (*Electroplating*):**
+    *   *Proses & Bahan:* Menggunakan bak rendam (*plating bath*) yang mengandung larutan **asam kromat / kromium trioksida (\\(\text{CrO}_3\\))** cair untuk menghasilkan lapisan krom keras (*hard chrome*) pada suku cadang mesin atau lapisan krom dekoratif pada peralatan.
+    *   *Bahaya Okupasi:* Gelembung gas hidrogen yang meletup di permukaan bak melontarkan aerosol kabut asam kromat (*chromic acid mist*) ke zona pernapasan pekerja pelapis (*platers*).
+2.  **Pengelasan dan Pemotongan Baja Tahan Karat (*Stainless Steel Welding & Cutting*):**
+    *   *Proses:* Baja tahan karat mengandung 11–30% kromium. Proses pengelasan bersuhu tinggi mengoksidasi logam kromium dan melepaskan uap serta aerosol partikulat halus yang mengandung **Cr(VI) sebagai produk sampingan (*by-product*)**.
+    *   *Hierarki Emisi Teknik Las:* Studi membuktikan bahwa konsentrasi uap Cr(VI) tertinggi dihasilkan oleh teknik pengelasan kawat berinti fluks (*Flux-Cored Arc Welding* / FCAW), diikuti oleh *Gas Metal Arc Welding* (GMAW), *Shielded Metal Arc Welding* (SMAW), dan terendah pada *Tungsten Inert Gas* (TIG). Konsentrasi ekstrem teramati saat pengelasan dilakukan di ruang terbatas (*confined spaces*, seperti di dalam pipa baja industri) tanpa ventilasi lokal (*Local Exhaust Ventilation* / LEV).
+3.  **Penyamakan Kulit (*Leather Tanning*):**
+    *   *Proses:* Industri penyamakan kulit secara primer menggunakan garam **kromium trivalen basic sulfate [\\(\text{Cr(OH)SO}_4\\)]** untuk mengikat serat kolagen kulit mentah.
+    *   *Bahaya Oksidasi:* Di bawah pengaruh suhu tinggi, pH basa, dan zat pengoksidasi, fraksi Cr(III) dapat **teroksidasi sekunder menjadi Cr(VI)**. Pekerja terpajan debu kulit olahan krom (*leather dust*) dan residu garam kromat pada tahap pencampuran drum putar.
+4.  **Industri Semen dan Konstruksi (*Portland Cement*):**
+    *   *Proses:* Batuan kalsium karbonat dan tanah liat yang dibakar dalam tanur semen melepaskan sejumlah kecil **Cr(VI) yang larut air sebagai pengotor alami (*impurity*)** dalam serbuk semen Portland.
+    *   *Bahaya Okupasi:* Kontak langsung adonan semen basah yang bersifat sangat alkalis menembus kulit pekerja konstruksi.
+5.  **Pembuatan Cat, Tinta, dan Pigmen Warna:**
+    *   *Bahan:* Senyawa kromat yang memiliki warna kuning cerah hingga jingga (misalnya **timbal kromat / *chrome yellow*, seng kromat, dan stronsium kromat**) digunakan sebagai pigmen anti-korosi pada primer badan pesawat terbang (industri aviasi/dirgantara), cat kapal laut, dan plastik.
+    *   *Bahaya Okupasi:* Terjadi saat pengeringan, pencampuran pigmen serbuk, penyemprotan cat (*spray painting*), serta pengamplasan cat lama (*abrasive blasting*).
+
+---
+
+### 3. Toksikokinetik Komprehensif (ADME dan Model Uptake-Reduksi)
+
+Perbedaan toksisitas antara Cr(VI) dan Cr(III) ditentukan oleh fenomena biokimiawi yang dikenal sebagai **"Model Uptake-Reduksi Wetterhahn" (*Wetterhahn's Uptake-Reduction Model*)**.
+
+```
+                               [ MODEL UPTAKE-REDUKSI WETTERHAHN ]
+                               
+                               RUANG EKSTRASELULER / PLASMA
+       ┌────────────────────────────────────────────────────────────────────────┐
+       │                                                                        │
+       │   Cr(III) ──(Muatan besar / terhidrasi)──► X [DITOLAK MEMBRAN SEL]    │
+       │                                                                        │
+       │   Cr(VI)  ──(Mimetik Anion SO4^2-)───────► [SALURAN ANION BAND 3]      │
+       │     │                                                 │                │
+       └─────┼─────────────────────────────────────────────────┼────────────────┘
+             │ (Reduksi Ekstraseluler: Fe2+, Asam Lambung)     │
+             ▼                                                 ▼
+      [ DETOKSIFIKASI ]                                 MASUK KE DALAM SITOSOL
+    (Cr III tak dapat masuk)                                   │
+                                                               ▼
+                                                  [ REDUKSI INTRASELULER ]
+                                                  • Reduktor Utama: Ascorbate (90%)
+                                                    & Non-Protein Thiols (GSH, Cys)
+                                                  • Terbentuk Intermediat Reaktif:
+                                                    Kromium Radikal: Cr(V) & Cr(IV)
+                                                    Radikal Oksigen: •OH, ROS, RNS
+                                                               │
+                                                               ▼
+                                                  [ PEMBENTUKAN LESI INTRASEL ]
+                                                  • Cr(III) Akhir Mengikat Makromolekul
+                                                  • Terbentuk Aduk Biner Cr-DNA
+                                                  • Terbentuk Aduk Ternari (Asc-Cr-DNA)
+                                                  • DNA-Protein Crosslinks (DPC)
+```
+
+#### a. Absorpsi
+1.  **Inhalasi (Rute Utama Okupasi):**
+    Fraksi uap dan partikulat halus Cr(VI) dengan ukuran aerodinamis **\\(< 5\ \mu\text{m}\\)** mencapai alveoli dan **diabsorpsi sebesar 53% hingga 85% ke dalam peredaran darah**, di mana senyawa yang mudah larut diserap jauh lebih cepat dibanding senyawa tidak larut. Sebaliknya, senyawa Cr(III) yang terhirup hanya diserap sangat minimal (hanya 5%–30%) dan sebagian besar dibersihkan oleh eskalator mukosiliar.
+2.  **Kulit / Dermal:**
+    Cr(VI) mampu menembus stratum korneum kulit secara perkutan dengan koefisien permeabilitas (\\(K_p\\)) mencapai **\\(1{,}0\text{--}2{,}7 \times 10^{-3}\text{ cm/jam}\\)**. Penetrasi meningkat drastis jika kulit mengalami maserasi basah, abrasi mekanik, atau luka bakar asam. Sebaliknya, Cr(III) hampir tidak berpenetrasi menembus sawar stratum korneum utuh.
+3.  **Saluran Cerna (Gastrointestinal):**
+    Penyerapan oral Cr(VI) pada manusia adalah sekitar **6,9%**, berbanding hanya **0,13% pada Cr(III)**. Asam klorida lambung dan cairan getah lambung mereduksi sebagian besar Cr(VI) yang tertelan menjadi Cr(III) sebelum mencapai usus, yang bertindak sebagai barier detoksifikasi alami.
+
+#### b. Mekanisme Penembusan Membran Sel (*Anion Mimicry*)
+*   **Cr(VI):** Memiliki struktur geometri tetrahedral yang **isostruktural dan isoelektronik dengan ion sulfat (\\(\text{SO}_4^{2-}\\)) dan fosfat (\\(\text{HPO}_4^{2-}\\))**. Oleh karena itu, Cr(VI) dapat "mengelabui" sistem transpor seluler dan **masuk secara bebas ke dalam semua jenis sel tubuh melalui protein transpor membran anion non-spesifik** (terutama *anion exchanger Band 3* / SLC4A1 pada eritrosit dan permease sulfat).
+*   **Cr(III):** Berada sebagai kation oktahedral terkoordinasi yang **ditolak oleh kanal anion dan tidak mampu menembus membran sel**, sehingga penyerapan intraselulernya sangat rendah.
+
+#### c. Distribusi
+*   Di dalam kompartemen darah, Cr(VI) menembus eritrosit, direduksi di dalam sel darah merah, lalu terperangkap dan berikatan stabil dengan rantai beta globin hemoglobin. Akibatnya, **konsentrasi kromium di dalam sel darah merah (Cr-RBC) jauh melampaui konsentrasinya di dalam plasma darah**.
+*   Cr(VI) yang lolos didistribusikan ke seluruh parenkim tubuh, dengan akumulasi residu tertinggi ditemukan pada **korteks ginjal, hepar, serta matriks tulang**. Partikel kromat tidak larut bertahan lama di kelenjar getah bening hilus dan parenkim paru.
+
+#### d. Metabolisme (Reduksi Intraseluler Cr VI \\(\to\\) Cr III)
+*   **Reduksi Ekstraseluler = Detoksifikasi:** Reduksi Cr(VI) menjadi Cr(III) di ruang ekstraseluler (oleh eritrosit membran luar, asam lambung, asam askorbat plasma) merupakan proses netralisasi, karena Cr(III) yang terbentuk gagal menembus sel target.
+*   **Reduksi Intraseluler = Bioaktivasi Toksik (*Metabolic Toxification*):** Sekali Cr(VI) berhasil masuk ke dalam sitosol sel target, ia mengalami kaskade reduksi enzimatik dan non-enzimatik bertingkat menjadi Cr(III):
+    1.  *Asam Askorbat (Vitamin C):* Merupakan reduktor fisiologis primer *in vivo* di jaringan manusia (menyumbang **\\(\sim 90\%\\) kapasitas reduksi Cr(VI)**). Askorbat mentransfer 2 elektron secara langsung, menghasilkan intermediat **Kromium Tetravalen [Cr(IV)]**.
+    2.  *Tiol Non-Protein (Glutation / GSH dan Sistein):* Mentransfer 1 elektron, memicu pembentukan intermediat **Kromium Pentavalen [Cr(V)]** dan radikal bebas tiil (*thiyl radicals*).
+    3.  *Produk Akhir:* Seluruh reaksi reduksi intraseluler ini bermuara pada pembentukan **Kromium Trivalen [Cr(III)]** di dalam nukleus dan sitosol.
+
+#### e. Ekskresi
+*   Kromium yang terserap secara sistemik dieliminasi hampir seluruhnya melalui **filtrasi glomerulus ginjal ke dalam urin**.
+*   Fraksi kecil diekskresikan melalui rambut, kuku, empedu, dan keringat.
+*   Kromium yang tertelan namun tidak diserap di usus dibuang langsung melalui feses.
+
+---
+
+### 4. Toksikodinamik dan Mekanisme Kerusakan Genom
+
+Cr(VI) murni secara termodinamika **bersifat tidak reaktif terhadap DNA telanjang (*naked DNA*)**. Daya hancur biologis kromium timbul dari interaksi langsung antara produk akhir Cr(III), intermediat transien Cr(V)/Cr(IV), dan spesies radikal bebas terhadap makromolekul inti sel:
+
+```
+                                  [ KASKADE TOKSIKODINAMIK Cr(VI) ]
+                                                  │
+                 ┌────────────────────────────────┴────────────────────────────────┐
+                 ▼                                                                 ▼
+      [ KERUSAKAN OKSIDATIF (ROS) ]                                     [ KERUSAKAN GENOM LANGSUNG ]
+• Intermediat Cr(V) bereaksi via Reaksi                           • Aduk Biner: Cr(III) terikat gugus fosfat DNA
+  Fenton dengan H2O2 menghasilkan •OH                             • Aduk Ternari: Ligand-Cr(III)-DNA Adducts
+• Deplesi Glutation (GSH runtuh, GSSG naik)                         (Ascorbate-Cr-DNA, GSH-Cr-DNA, Cys-Cr-DNA)
+• Peroksidasi Lipid Membran (MDA meningkat)                       • DNA-Protein Crosslinks (DPC) stabil
+• Oksidasi Basa Guanin: Pembentukan 8-OHdG                        • Kerusakan Mismatch Repair (Hilangnya hMLH1)
+• Destabilisasi Mitokondria & Apoptosis                           • Aberasi Kromosom & Pembentukan Mikronukleus
+```
+
+1.  **Pembentukan Aduk DNA (*DNA Adducts*):**
+    *   Ion Cr(III) hasil reduksi intraseluler berkoordinasi secara kovalen dengan atom oksigen pada tulang punggung fosfat DNA serta atom nitrogen pada posisi **N7-guanin**.
+    *   *Aduk Ternari (*Ternary Adducts*):* Merupakan lesi dominan (mencakup 75–95% aduk), di mana atom Cr(III) berfungsi sebagai jembatan silang antara rantai DNA dengan molekul ligan intraseluler pereduksinya, membentuk **Ascorbate-Cr(III)-DNA, GSH-Cr(III)-DNA, atau Cysteine-Cr(III)-DNA**. Kelat askorbat-Cr-DNA adalah lesi primutagenik yang memicu mutasi titik replikasi.
+2.  **Ikatan Silang DNA-Protein (*DNA-Protein Crosslinks* / DPC):**
+    Cr(III) mengikatkan untai DNA secara kovalen pada protein nukleus (seperti histon, aktin inti, dan faktor transkripsi) membentuk ikatan silang DPC yang sangat stabil. Lesi DPC memblokade enzim helikase dan RNA polimerase, melumpuhkan proses replikasi dan transkripsi gen.
+3.  **Generasi Stres Oksidatif dan Reaksi Mirip-Fenton (*Fenton-like Reaction*):**
+    Intermediat Cr(V) dan Cr(IV) bereaksi dengan hidrogen peroksida intraseluler (\\(\text{H}_2\text{O}_2\\)) menghasilkan **radikal hidroksil bebas (\\(^{\bullet}\text{OH}\\))**. Radikal ini menyerang asam lemak tak jenuh membran sel memicu **peroksidasi lipid (lonjakan Malondialdehida / MDA)**, menguras cadangan glutation (GSH), serta mengoksidasi basa guanin membentuk **8-hidroksi-2'-deoksiguanosin (8-OHdG)**.
+4.  **Kegagalan Sistem Perbaikan DNA (*Aberrant Mismatch Repair*):**
+    Aduk Cr-DNA yang terbentuk memicu aktivasi sistem *Mismatch Repair* (MMR). Namun, enzim MMR tidak mampu memotong aduk kromat dengan benar, memicu terbentuknya **pemutusan untai ganda DNA (*Double-Strand Breaks* / DSBs)** berulang pada fase G2 siklus sel. Kegagalan ini menyeleksi sel-sel yang kehilangan protein perbaikan DNA (terjadi **inaktivasi gen *hMLH1***) yang melanggengkan instabilitas mikrosatelit (*microsatellite instability*) dan memacu klon sel kanker.
+5.  **Perubahan Epigenetik:**
+    Pajanan Cr(VI) menginduksi hipermetilasi regio promotor gen penekan tumor **p16INK4a dan TP53**, membungkam ekspresi gen pelindung siklus sel tersebut.
+
+---
+
+### 5. Biomonitoring Okupasi: Biomarker dan Waktu Sampling
+
+Dalam surveilans kedokteran kerja, evaluasi pajanan kromium mengombinasikan biomarker dosis internal dengan biomarker efek biologis:
+
+```
+                     [ STRATEGI BIOMONITORING KROMIUM OKUPASI ]
+                                         │
+        ┌────────────────────────────────┴────────────────────────────────┐
+        ▼                                                                 ▼
+[ BIOMARKER EKSPOSUR / DOSIS ]                                   [ BIOMARKER EFEK BIOLOGIS ]
+• Total Cr Urin (Cr-U) ──► Rutin Industri                        • Genotoksik: Mikronukleus (MN) limfosit
+• Cr Eritrosit (Cr-RBC) ──► Spesifik Cr(VI)                        & Comet Assay leukosit
+• Cr Plasma / Serum (Cr-P / Cr-S) ──► Pajanan Akut               • Stres Oksidatif: 8-OHdG & MDA urin
+• Cr Kondensat Udara Ekspirasi (Cr-EBC) ──► Dosis Paru           • Nefrotoksisitas: KIM-1 & β2M urin
+```
+
+#### a. Biomarker Dosis Internal (Eksposur)
+1.  **Total Kromium Urin (Cr-U):**
+    *   *Karakteristik:* Merupakan parameter pemantauan biologis yang paling luas digunakan di dunia industri. Mengukur seluruh kromium yang diekskresikan ginjal, namun tidak mampu membedakan spesiasi asal apakah dari Cr(VI) atau Cr(III).
+    *   *Standar Nilai Rujukan & BEI:*
+        *   **ACGIH BEI (2020):** **25 µg/L** pada akhir shift di akhir minggu kerja (*End of shift at end of workweek*); ATAU peningkatan selama shift sebesar **10 µg/L** (*Increase during shift*, membandingkan urin pre- vs. post-shift).
+        *   **ACGIH BEI (2026):** Menetapkan nilai panduan berbasis populasi (*Population-based / Pop*) sebesar **0,7 µg/L** pada akhir shift di akhir minggu kerja.
+        *   **Nilai Batas Biologis Eropa (BLV):** Prancis (ANSES) dan Belanda menetapkan batas ketat **2,5 µg/L (1,8 µg/g kreatinin)**; HSE Inggris (BMGV) menetapkan **10 µmol/mol kreatinin (\\(\approx 6{,}3\ \mu\text{g/L}\\))**.
+        *   *Populasi Umum Non-Terpajan:* DFG Jerman (BAR) = **0,6 µg/L**; Belgia (URL) = **0,55 µg/L**.
+2.  **Kromium Sel Darah Merah (*Erythrocyte / Red Blood Cell Chromium* / Cr-RBC):**
+    *   *Karakteristik:* **Merupakan biomarker spesifik murni untuk pajanan internal Cr(VI)**. Hal ini karena Cr(III) di sirkulasi tidak dapat menembus membran eritrosit. Sekali Cr(VI) masuk ke dalam eritrosit, ia direduksi menjadi Cr(III) dan terperangkap stabil mengikat hemoglobin sepanjang sisa usia sel darah merah.
+    *   *Aplikasi Klinis:* Menggambarkan dosis akumulatif terintegrasi pajanan Cr(VI) selama **120 hari terakhir** (masa hidup eritrosit). Waktu sampling: bebas / tidak kritis (*discretionary*).
+3.  **Kromium Plasma dan Serum (Cr-P / Cr-S):**
+    *   *Karakteristik:* Mengukur fraksi kromium bebas di sirkulasi ekstraseluler. Cr(VI) di plasma cepat dibersihkan atau direduksi, sehingga Cr-P mencerminkan pajanan yang sangat baru terjadi (beberapa jam terakhir). Rasio Cr-RBC terhadap Cr-Plasma digunakan dalam riset untuk membedakan intoksikasi Cr(VI) vs Cr(III).
+4.  **Kromium dalam Kondensat Udara Ekspirasi (*Exhaled Breath Condensate* / Cr-EBC):**
+    *   *Karakteristik:* Metode non-invasif dengan mengembunkan udara napas pekerja untuk mengukur deposisi langsung senyawa Cr(VI) pada cairan lapisan epitel saluran napas (*target organ dose*) sebelum mengalami absorpsi sistemik.
+
+#### b. Biomarker Efek Biologis (*Biomarkers of Effect*)
+Diterapkan untuk mendeteksi lesi praklinis reversibel pada pekerja terpajan:
+*   **Biomarker Kerusakan Genom:** Uji **Mikronukleus (MN)** pada limfosit darah tepi atau sel epitel mukosa bukal (mengukur aberasi kromosom struktural), serta **Comet Assay** leukosit (mengukur pemutusan untai DNA).
+*   **Biomarker Stres Oksidatif:** Kadar **8-OHdG urin** (aduk oksidasi DNA) dan kadar **Malondialdehida (MDA)** serum/urin (peroksidasi lipid) yang terbukti meningkat linier pada pekerja pelapisan krom dan pengelasan.
+*   **Biomarker Disfungsi Tubulus Ginjal:** Peningkatan ekskresi urin **\\(\beta_2\\)-mikroglobulin (\\(\beta_2\text{M}\\))**, enzim lisosom **NAG (*N-acetyl-\\(\beta\\)-D-glucosaminidase*)**, serta protein **KIM-1 (*Kidney Injury Molecule-1*)** sebagai penanda kerusakan tubulus proksimal ginjal dini.
+
+---
+
+### 6. Waktu Paruh Eliminasi Biologis (*Biological Half-Life* / \\(T_{1/2}\\))
+
+Ekskresi kromium urin pasca-pajanan inhalasi tidak mengikuti kinetika satu kompartemen sederhana, melainkan berlangsung melalui **model eliminasi multi-fasik (dua atau tiga fase ekskresi)**:
+
+```
+                                [ FASE ELIMINASI KROMIUM URIN ]
+                                
+   Fase 1 (Klirens Cepat)         Fase 2 (Klirens Menengah)         Fase 3 (Klirens Lambat)
+   ───────────────────────         ─────────────────────────         ───────────────────────
+   • T1/2: ~ 7 jam (7–8 jam)       • T1/2: ~ 15 – 30 hari            • T1/2: ~ 3 – 5 TAHUN
+   • Klirens fraksi larut          • Pelepasan dari kompartemen      • Pelepasan lambat dari depot
+     dari darah & cairan ECF         jaringan lunak (hati/ginjal)      matriks tulang & parenkim paru
+   • Dasar sampling END OF SHIFT   • Akumulasi mingguan (END OF      • Sumber persistensi kadar dasar
+                                     THE WORKWEEK)                     pada pekerja senior
+```
+
+1.  **Fase Cepat (\\(T_{1/2} \approx 7\text{--}8\text{ jam}\\)):**
+    Mencerminkan pembersihan fraksi kromat yang sangat larut air dari kompartemen vaskular dan filtrasi langsung oleh ginjal. Fase inilah yang mendasari rekomendasi pengambilan sampel urin pada **akhir shift (*End of Shift*)**.
+2.  **Fase Menengah (\\(T_{1/2} \approx 15\text{--}30\text{ hari}\\)):**
+    Mencerminkan pelepasan bertahap kromium yang sempat terikat pada protein intraseluler di jaringan lunak (terutama hepar dan korteks ginjal).
+3.  **Fase Lambat (\\(T_{1/2} \approx 3\text{--}5\text{ tahun}\\)):**
+    Mencerminkan eliminasi sangat lambat dari depot fiksasi jangka panjang, terutama dari matriks hidroksiapatit tulang dan retensi partikel kromat tidak larut di dalam makrofag parenkim paru.
+4.  *Kompartemen Eritrosit (Cr-RBC):* Tidak mengalami eliminasi metabolik aktif; waktu paruhnya dikendalikan secara biologis oleh **masa hidup sel darah merah itu sendiri (\\(T_{1/2} \approx 60\text{ hari}\\), dengan eliminasi tuntas dalam 120 hari)** saat eritrosit mengalami hemolisis fisiologis di limpa.
+
+---
+
+### 7. Efek Biologis Toksik Akut
+
+Intoksikasi akut kromium terutama dipicu oleh sifat kaustik korosif asam kromat dan daya oksidasi destruktif senyawa Cr(VI) dosis tinggi:
+
+1.  **Iritasi Akut dan Kerusakan Saluran Pernapasan:**
+    Inhalasi akut uap asam kromat atau aerosol debu Cr(VI) konsentrasi tinggi memicu iritasi hebat membran mukosa: bersin paroksismal, rinorea, faringitis, laringitis, batuk darah, spasme laring, trakeobronkitis akut, hingga **edema paru akut non-kardiogenik (*acute chemical pulmonary edema*)** yang mengancam jiwa.
+2.  **Luka Bakar Korosif Kulit dan Mata:**
+    *   *Mata:* Percikan larutan Cr(VI) (seperti asam kromat atau kromil klorida) menyebabkan konjungtivitis kimiawi hebat, kemosis, kekeruhan kornea, ulserasi kornea dalam, hingga kebutaan permanen akibat nekrosis koagulatif sklera.
+    *   *Kulit:* Mengakibatkan luka bakar kimiawi dalam (*chemical burns*) yang terinfeksi dan lambat sembuh.
+3.  **Toksisitas Sistemik Masif Akibat Tertelan (*Acute Ingestion*):**
+    Konsumsi tidak sengaja senyawa kromat larut air (seperti kalium dikromat) memicu sindrom intoksikasi fulminan:
+    *   *Saluran Cerna:* Gastroenteritis korosif berat, sensasi terbakar mulut dan epigastrium, hematemesis, melena, dan perforasi lambung.
+    *   *Ginjal:* **Nekrosis Tubular Akut (*Acute Tubular Necrosis* / ATN)** dengan oliguria, anuria, dan gagal ginjal akut berat akibat toksisitas sitotoksik langsung kromium pada epitel tubulus proksimal.
+    *   *Hepar:* Nekrosis hepatoseluler sentrilobular akut disertai ikterus dan kegagalan fungsi hati akut.
+    *   *Kardiovaskular:* Kolaps sirkulasi kardiovaskular, syok hipovolemik hemoragik, ensefalopati uremikum, dan kematian.
+
+---
+
+### 8. Efek Biologis Toksik Kronis Okupasi
+
+Pajanan jangka panjang di lingkungan kerja menimbulkan spektrum patologi spesifik organ target:
+
+```
+                                [ SPEKTRUM PENYAKIT KRONIS KROMIUM ]
+                                                 │
+         ┌───────────────────────┬───────────────┴───────────────┬───────────────────────┐
+         ▼                       ▼                               ▼                       ▼
+[ ULKUS & PERFORASI ]   [ DERMATITIS KONTAK ]           [ ASMA KERJA / RSEN ]   [ KEGANASAN / KANKER ]
+• Chrome Holes di kulit • Kontak Iritan (DKI)           • Hipersensitivitas     • Kanker Paru Bronkogenik
+• Ulkus Septum Nasi     • Kontak Alergi (DKA - Tipe IV)   Saluran Napas           (Karsinoma Sel Skuamosa)
+• Perforasi Septum      • "Cement Dermatitis"           • Bronkospasme Kerja    • Kanker Sinonasal
+  Kartilago Permanen      akibat Cr(VI) semen           • Notasi RSEN ACGIH     • Karsinogen Grup 1 IARC
+```
+
+1.  **Ulkus Kulit Krom (*Chrome Ulcers / Chrome Holes*):**
+    *   *Patogenesis:* Timbul ketika larutan Cr(VI) kontak dengan kulit yang mengalami mikrotrauma atau lecet. Penetrasi asam kromat menyebabkan nekrosis sentral avaskular.
+    *   *Karakteristik Klinis:* Berupa ulkus bergaung (*punched-out ulcer*) berbentuk bulat berbatas tegas dengan tepi meninggi yang mengeras (*indurated*), bagian dasar tertutup jaringan nekrotik kekuningan, biasanya berlokasi di punggung tangan, sela jari, atau lengan bawah. Lesi ini sangat lambat sembuh dan meninggalkan jaringan parut sikatriks atrofi yang khas.
+2.  **Ulkus dan Perforasi Septum Nasi (*Nasal Septum Perforation*):**
+    *   *Patogenesis:* Terjadi akibat terhirupnya kabut aerosol asam kromat (misalnya pada pekerja *electroplating* yang tidak memakai pelindung pernapasan atau tanpa LEV yang memadai).
+    *   *Progresi Lesi:* Diawali dengan rhinitis kronis, hiperemia, dan epistaksis berulang; berlanjut menjadi ulserasi mukosa septum nasi (terutama di area pleksus Kiesselbach); dan akhirnya terjadi nekrosis iskemik pada **tulang rawan septum quadrangularis yang berujung pada perforasi septum nasi permanen**. Menariknya, tulang rawan yang telah berlubang tidak menimbulkan nyeri hebat karena ujung saraf setempat telah mengalami nekrosis.
+3.  **Dermatitis Kontak Okupasi:**
+    *   *Dermatitis Kontak Iritan (DKI):* Akibat efek sitotoksik dan daya desikasi kimiawi langsung dari asam kromat berkonsentrasi tinggi.
+    *   *Dermatitis Kontak Alergi (DKA - Reaksi Hipersensitivitas Tipe IV):* Terjadi sensitisasi imunologis yang dimediasi oleh sel limfosit T. Cr(VI) menembus stratum korneum, direduksi di epidermis menjadi Cr(III), lalu Cr(III) berikatan silang dengan protein seluler bertindak sebagai **hapten fungsional (*neoantigen*)**. Dipresentasikan oleh sel Langerhans ke kelenjar getah bening. Saat terpajan ulang, timbul erupsi eksematosa pruritik kronis, vesikel, dan likenifikasi.
+    *   *Contoh Lapangan Kritis:* ***Cement Dermatitis*** pada pekerja bangunan, yang dipicu oleh kombinasi efek abrasi mekanik pasir, sifat iritan alkalis semen, dan sensitisasi alergi terhadap kandungan Cr(VI).
+4.  **Asma Kerja (*Occupational Asthma*) dan Sensitisasi Pernapasan:**
+    *   Garam kromium heksavalen yang larut air diakui secara resmi oleh ACGIH membawa notasi **RSEN (*Respiratory Sensitization*)** dan **DSEN (*Dermal Sensitization*)**.
+    *   Pekerja mengalami hiperresponsivitas bronkus yang dimediasi oleh mekanisme imunologis pasca-pajanan uap kromat atau *fume* pengelasan *stainless steel*, bermanifestasi sebagai wheezing, batuk nokturnal, dispnea, dan penurunan nilai FEV1 kerja.
+5.  **Karsinogenesis Okupasi: Kanker Paru dan Rongga Hidung / Sinonasal:**
+    *   *Status Klasifikasi Legal:*
+        *   **IARC:** **Grup 1** (*Carcinogenic to humans*) untuk seluruh persenyawaan Kromium Heksavalen.
+        *   **ACGIH:** Kategori **A1** (*Confirmed Human Carcinogen*).
+        *   **GHS:** **Kategori 1A** (H350: *May cause cancer*).
+        *   **Permenaker No. 5 Tahun 2018:** Kategori **A1**.
+        *   **Perpres No. 7 Tahun 2019:** Lampiran III Butir 4 menetapkan persenyawaan Cr(VI) sebagai agen penyebab Kanker Akibat Kerja resmi.
+    *   *Target Organ Spesifik:*
+        1.  **Kanker Paru Bronkogenik (*Bronchogenic Carcinoma*):** Terutama tipe karsinoma sel skuamosa (*squamous cell*) dan karsinoma sel kecil (*small cell carcinoma*). Risiko relatif kanker paru pada pekerja industri peleburan kromat dan pigmen dilaporkan meningkat **hingga lebih dari 20 kali lipat** dibandingkan populasi umum non-terpajan. Partikel kromat yang sedikit larut (kalsium, stronsium, dan seng kromat) melepaskan ion kromat secara perlahan di dekat epitel bronkus, melanggengkan kaskade DPC, aduk ternari, dan mutasi DNA.
+        2.  **Kanker Sinonasal (*Sino-nasal Cancer*):** Karsinoma pada mukosa kavum nasi dan sinus paranasal (sinus maksilaris dan etmoidalis) akibat deposisi fisik langsung aerosol kromat berukuran besar di saluran napas bagian atas.
+
+---
+
+### Sumber Dokumen Terkait (*Source Grounding*):
+1.  **IARC (2012).** *A Review of Human Carcinogens: Arsenic, Metals, Fibres, and Dusts (IARC Monographs Vol. 100C)* — Bagian *Chromium (VI) Compounds*: Sifat Fisika-Kimia [349–353]; Penggunaan Industri; Pajanan Okupasi [357–361]; Karsinogenisitas Hewan; ADME Inhalasi/GI/Dermal [363–365]; Model Uptake-Reduksi Wetterhahn; Kinetika Askorbat vs GSH; Aduk Ternari Ascorbate-Cr-DNA; DPC & ICL; Mismatch Repair MLH1; Reaksi Mirip-Fenton & ROS; Evaluasi Grup 1.
+2.  **Verdonck, J. et al. (2021).** *Systematic review of biomonitoring data on occupational exposure to hexavalent chromium.* International Journal of Hygiene and Environmental Health, 236: 113799:
+    *   Valensi Cr(0), Cr(III), Cr(VI); Industri Pengelasan, Pelapisan, Tanning [222, 267–270]; Kinetika Waktu Paruh Eliminasi Multi-Fasik (7 jam, 15–30 hari, 3–5 tahun); Standar BEI ACGIH (25 µg/L & 10 µg/L shift); Standar BLV Prancis (2,5 µg/L) dan BMGV Inggris (10 µmol/mol); Nilai BAR Jerman (0,6 µg/L); Biomarker Spesifik Cr-RBC dan Cr-EBC; Hierarki Emisi Las FCAW > GMAW > SMAW > TIG.
+3.  **Ventura, Célia et al. (2021).** *Biomarkers of effect as determined in human biomonitoring studies on hexavalent chromium and cadmium (2008–2020).* Environmental Research, 197: 110998:
+    *   Mekanisme AOP Cr(VI); Intermediat Cr(IV) dan Cr(V); Biomarker Genotoksik (Mikronukleus limfosit, Comet assay); Biomarker Stres Oksidatif (8-OHdG, MDA urin, Deplesi GSH & SOD); Biomarker Nefrotoksisitas (KIM-1, \\(\beta_2\text{M}\\), NAG); Metilasi Gen p16 & TP53.
+4.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., Wiley)*:
+    *   Bab 4 & Bab 11: Toksisitas Senyawa Cr(VI), Absorpsi Membran Paru/GI, Ekskresi Ginjal Cepat, Ulkus Kulit, Perforasi Septum Nasi, dan Karsinoma Bronkogenik (Peningkatan Risiko 20 Kali Lipat).
+5.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   Profil Kimia & Gejala Klinis: *Chromic acid and chromates* [117–119]; *Chromium(II) and (III) compounds* [120–121]; *Chromium metal*; *Chromyl chloride*; Korosifitas, Ulserasi Kulit, dan Kerusakan Paru.
+6.  **ACGIH (2026 Edition).** *TLVs® and BEIs®*:
+    *   Tabel Nilai Ambang Batas: Cr(VI) senyawa larut air (TWA 0,0002 mg/m³, STEL 0,0005 mg/m³, Notasi A1, Skin, DSEN, RSEN, BEI); Cr(0) (0,5 mg/m³); Cr(III) (0,003 mg/m³, A4, DSEN, RSEN); Kromil klorida; serta Tabel Adopsi BEI Kromium Urin (0,7 µg/L Notasi Pop).
+7.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018:**
+    *   Lampiran 3: NAB Persenyawaan Krom VI Larut Air (0,05 mg/m³, A1, Simbol Segitiga BEI) dan Tidak Larut Air (0,01 mg/m³, A1).
+8.  **Peraturan Presiden RI No. 7 Tahun 2019:**
+    *   Lampiran I.a Butir 4 (Penyakit Akibat Kerja Faktor Kimia Kromium) dan Lampiran III Butir 4 (Kanker Akibat Kerja Persenyawaan Chromium VI).
+
+Pelajari dan pahami rantai integrasi patofisiologi ini secara presisi, Dokter. Penguji dewan spesialis akan menguji kesiapan Anda mengaitkan mekanisme molekuler seluler ini dengan program pemantauan kesehatan pekerja di fasilitas industri.
+
+---
+
+🔬 Apakah Anda ingin kita lanjutkan ke **KROMIUM BAGIAN B**, yaitu simulasi penyusunan **protokol surveilans medis industri (*medical surveillance protocol*)**, termasuk desain pemeriksaan pra-kerja, pemeriksaan berkala, uji fungsi paru/spirometri, serta manajemen klinis pekerja yang terdiagnosis mengalami ulkus septum nasi atau perforasi septum?

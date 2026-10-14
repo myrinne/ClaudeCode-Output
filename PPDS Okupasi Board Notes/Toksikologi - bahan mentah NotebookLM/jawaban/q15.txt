@@ -1,0 +1,127 @@
+Duduk tegap dan perhatikan baik-baik, Dokter. Pertanyaan ini menguji ketelitian Anda terhadap dinamika hukum kesehatan nasional terkini pasca-diundangkannya **Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan (*Omnibus Law*)**. Seorang calon Spesialis Kedokteran Okupasi (Sp.Ok) tidak boleh menggunakan regulasi kedaluwarsa dalam merancang program kesehatan kerja perusahaan maupun saat menjawab pertanyaan dewan penguji.
+
+---
+
+### Klarifikasi Ketersediaan Dokumen Sumber di *Notebook*
+Perlu saya tegaskan terlebih dahulu: **naskah mandiri utuh dari Peraturan Pemerintah (PP) No. 88 Tahun 2019 tentang Kesehatan Kerja TIDAK TERDAPAT dalam daftar sumber dokumen di *notebook* ini**. 
+
+Namun, status keberlakuan, kedudukan hukum, serta hubungan keterkaitannya dengan regulasi terbaru dapat dibuktikan secara otentik melalui dokumen **PP No. 28 Tahun 2024** dan **Permenkes No. 11 Tahun 2022** yang tersedia di dalam *notebook*.
+
+---
+
+### 1. Status Keberlakuan PP No. 88 Tahun 2019 dan Hubungannya dengan PP No. 28 Tahun 2024
+
+Secara hierarki hukum, jawabannya tegas: **PP No. 88 Tahun 2019 RESMI DICABUT DAN DINYATAKAN TIDAK BERLAKU oleh PP No. 28 Tahun 2024**.
+
+*   **Latar Belakang Transisi Regulasi:** PP No. 88 Tahun 2019 sebelumnya diundangkan sebagai aturan turunan dari UU No. 36 Tahun 2009 tentang Kesehatan. Dengan disahkannya UU No. 17 Tahun 2023 yang mencabut UU 36/2009, pemerintah menerbitkan **PP No. 28 Tahun 2024 tentang Peraturan Pelaksanaan UU No. 17 Tahun 2023 tentang Kesehatan** sebagai regulasi konsolidatif berskala besar (*omnibus regulation*) yang menyatukan puluhan peraturan pemerintah di bidang kesehatan ke dalam satu payung hukum tunggal.
+*   **Pencabutan Yuridis (Pasal 1170 PP 28/2024):**
+    Di dalam **Bab XIII Ketentuan Penutup, Pasal 1170**, dinyatakan secara tertulis:
+    > *"Pada saat Peraturan Pemerintah ini mulai berlaku: ... Peraturan Pemerintah Nomor 88 Tahun 2019 tentang Kesehatan Kerja ... dicabut dan dinyatakan tidak berlaku"*.
+*   **Penyelamatan Regulasi Turunan (Pasal 1169 PP 28/2024):**
+    Meskipun PP 88/2019 dicabut, berdasarkan **Pasal 1169 huruf w**:
+    > *"Semua peraturan perundang-undangan yang merupakan peraturan pelaksanaan dari: ... Peraturan Pemerintah Nomor 88 Tahun 2019 tentang Kesehatan Kerja ... dinyatakan masih tetap berlaku sepanjang tidak bertentangan dengan ketentuan dalam Peraturan Pemerintah ini"*.
+    *Artinya:* Peraturan Menteri turunan dari PP 88/2019—khususnya **Permenkes No. 11 Tahun 2022 tentang Pelayanan Kesehatan Penyakit Akibat Kerja**—**tetap sah dan memiliki kekuatan hukum mengikat**, sepanjang pasalnya tidak berbenturan dengan PP 28/2024.
+
+---
+
+### 2. Pengaturan Kesehatan Kerja dalam PP No. 28 Tahun 2024
+
+Pengaturan kesehatan kerja diatur secara komprehensif pada **Bab IV (Upaya Kesehatan), Bagian Kedua Belas: Upaya Kesehatan Kerja, mulai dari Pasal 232 sampai dengan Pasal 244**, serta pasal-pasal terkait jejaring fasyankes dan pelindungan tenaga kesehatan.
+
+```
+                 [ ARSITEKTUR KESEHATAN KERJA PP NO. 28 TAHUN 2024 ]
+                                         │
+        ┌────────────────────────────────┼────────────────────────────────┐
+        ▼                                ▼                                ▼
+  [ RUANG LINGKUP & SUBJEK ]      [ LIMA PILAR UPAYA ]             [ INFRASTRUKTUR & JEJARING ]
+  • Pekerja formal & informal      1. Promotif (Gizi, PHBS, Jiwa)   • SDM: Dokter & Nakes Kerja
+  • Fasyankes & Lingkungan Matra   2. Preventif (MCU, Fit to Work)  • Unit Kesehatan Kerja (UKK)
+  • Orang lain di tempat kerja     3. Kuratif (P3K, Tata Laksana)   • Fasyankes & Koordinasi PKM
+  (Pasal 232 & 242)                4. Rehabilitatif (Return to Work)• Pendanaan: BPJS JKK & JKN
+                                   5. Paliatif (Kasus Terminal PAK) (Pasal 234–240, 799)
+                                   (Pasal 233)
+```
+
+#### a. Tujuan dan Ruang Lingkup (Pasal 232)
+1.  **Tujuan:** Melindungi pekerja dan **orang lain yang ada di tempat kerja** agar hidup sehat dan terbebas dari gangguan kesehatan serta pengaruh buruk yang diakibatkan oleh pekerjaan dan gangguan kesehatan lainnya.
+2.  **Integrasi K3:** Upaya kesehatan kerja ditegaskan sebagai **bagian tidak terpisahkan dari Keselamatan dan Kesehatan Kerja (K3)**.
+3.  **Cakupan Sektor:** Wajib diselenggarakan di tempat kerja pada **sektor formal, sektor informal, Fasilitas Pelayanan Kesehatan (Fasyankes)**, serta berlaku untuk pekerjaan di **lingkungan matra** (darat, laut, udara).
+
+---
+
+#### b. Lima Pilar Penyelenggaraan Upaya Kesehatan Kerja (Pasal 233)
+Pasal 233 ayat (1) menetapkan bahwa upaya kesehatan kerja diselenggarakan melalui lima kontinum pelayanan terintegrasi:
+
+1.  **Upaya Promotif (Pasal 233 ayat 2–3):**
+    Dilaksanakan di tempat kerja, meliputi: identifikasi risiko/bahaya dan masalah kesehatan; peningkatan pengetahuan; pembudayaan Perilaku Hidup Bersih dan Sehat (PHBS); pembudayaan K3; pemenuhan gizi seimbang pekerja; peningkatan kesehatan fisik dan jiwa; serta kesehatan reproduksi.
+2.  **Upaya Preventif (Pasal 233 ayat 4–5):**
+    Bertujuan mencegah penyakit akibat kerja dan penyakit lainnya di tempat kerja. Dilaksanakan paling sedikit melalui:
+    *   Identifikasi, penilaian, dan pengendalian potensi bahaya kesehatan.
+    *   Pemenuhan persyaratan kesehatan lingkungan kerja.
+    *   Perlindungan kesehatan reproduksi.
+    *   **Pemeriksaan kesehatan pekerja**.
+    *   **Penilaian kelaikan kerja (*fitness for work*)**.
+    *   Pemberian imunisasi dan/atau profilaksis bagi pekerja berisiko tinggi.
+    *   Pelaksanaan kewaspadaan standar dan **surveilans kesehatan kerja**.
+3.  **Upaya Kuratif (Pasal 233 ayat 6):**
+    Meliputi: pertolongan pertama pada kecelakaan/cedera dan sakit di tempat kerja (P3K); **diagnosis dan tata laksana penyakit menular, penyakit tidak menular, dan/atau yang diakibatkan oleh pekerjaan dan lingkungan kerja (PAK)**; serta penanganan kegawatdaruratan medik dan/atau rujukan.
+4.  **Upaya Rehabilitatif (Pasal 233 ayat 7–9):**
+    Terdiri atas:
+    *   *Pemulihan Medis:* Diberikan sesuai dengan kebutuhan medis.
+    *   *Pemulihan Kerja:* Dilaksanakan melalui penilaian kondisi dan lingkungan kerja, evaluasi kelayakan kerja, serta **program kembali bekerja (*return to work program*)** sesuai standar peraturan perundang-undangan.
+5.  **Upaya Paliatif (Pasal 233 ayat 10):**
+    Diberikan untuk meningkatkan kualitas hidup pada penyakit yang mengancam kehidupan dan fase akhir kehidupan pada pekerja yang berhubungan dengan **kecelakaan kerja dan penyakit akibat kerja (PAK)**.
+
+---
+
+#### c. Pemeriksaan Kesehatan Pekerja dalam PP 28/2024
+Ketentuan pemeriksaan kesehatan pekerja ditegaskan dalam beberapa pasal operasional:
+1.  **Instrumen Preventif Wajib (Pasal 233 ayat 5 huruf d & e):** Pemeriksaan kesehatan merupakan instrumen wajib yang hasilnya ditindaklanjuti dengan penetapan **status kelaikan kerja (*fit, fit with restriction, temporary unfit, atau unfit*)**.
+2.  **Pemeriksaan Kesehatan Jiwa Kerja (Pasal 96 ayat 4–6):**
+    Pemeriksaan kesehatan jiwa wajib dilakukan bagi pekerja dengan karakteristik khusus:
+    *   Pejabat publik yang membuat keputusan penting.
+    *   Pekerjaan yang dapat membahayakan diri sendiri atau orang lain.
+    *   Pekerjaan yang berhubungan dengan kelompok rentan.
+    *   Pekerjaan/jabatan lain yang ditetapkan peraturan perundang-undangan.
+    *   *Waktu Evaluasi:* Pemeriksaan kesehatan jiwa dilakukan **sebelum bekerja, serta dapat diulang selama dan sesudah melaksanakan pekerjaan/jabatan tertentu** sesuai kebutuhan.
+3.  **Pelindungan Khusus Tenaga Medis dan Tenaga Kesehatan (Pasal 728):** Pimpinan Fasyankes wajib menyelenggarakan K3 Fasyankes yang mencakup pemeriksaan kesehatan berkala guna mencegah kecelakaan kerja dan penyakit akibat kerja pada tenaga medis/nakes.
+
+---
+
+#### d. Penyakit Akibat Kerja (PAK) dalam PP 28/2024
+Penanganan PAK diatur secara holistik di sepanjang siklus kerja:
+1.  **Pencegahan dan Surveilans (Pasal 233 ayat 4–5 & Pasal 799):** Pencegahan PAK didasarkan pada pengendalian bahaya dan surveilans kesehatan kerja terpadu. Dalam sistem pelayanan dasar, **Puskesmas bertanggung jawab mengoordinasikan struktur jejaring tempat kerja** (sektor formal, informal, fasyankes, dan lingkungan matra) untuk melakukan surveilans penyakit akibat kerja dan kecelakaan akibat kerja serta membina pos Upaya Kesehatan Kerja (Pos UKK).
+2.  **Tata Laksana Klinis dan Kuratif (Pasal 233 ayat 6 huruf b):** Fasilitas pelayanan kesehatan dan dokter pemeriksa wajib menegakkan diagnosis serta memberikan tata laksana medis paripurna terhadap penyakit yang diakibatkan oleh pekerjaan dan lingkungan kerja.
+3.  **Pemulihan Kerja (*Return to Work*) (Pasal 233 ayat 9):** Pekerja yang mengalami disabilitas atau keterbatasan pasca-PAK tidak boleh langsung diputus hubungan kerjanya; melainkan harus melalui evaluasi ergonomi tempat kerja dan program rehabilitasi kembali bekerja.
+4.  **Pendanaan dan Jaminan Sosial (Pasal 239):**
+    *   Pendanaan pelayanan kesehatan pekerja akibat kecelakaan kerja dan PAK didukung melalui **integrasi program jaminan sosial ketenagakerjaan (JKK)** dan **jaminan sosial kesehatan (JKN)** sesuai peraturan perundang-undangan.
+    *   Dapat dilengkapi melalui asuransi kesehatan komersial tambahan atau pembiayaan penuh langsung oleh pemberi kerja.
+5.  **Peralatan Keselamatan dan APD (Pasal 238):** Tempat kerja wajib menyediakan sarana pengukuran, alat pemeriksaan, serta Alat Pelindung Diri (APD) yang sesuai dengan potensi bahaya PAK yang teridentifikasi.
+
+---
+
+#### e. Sumber Daya Manusia dan Kelembagaan (Pasal 234–241)
+1.  **Kompetensi SDM (Pasal 235 & 236):** Tenaga Medis dan Tenaga Kesehatan yang menyelenggarakan upaya kesehatan kerja **wajib memiliki kompetensi** yang diperoleh melalui pendidikan dan/atau **pelatihan di bidang kedokteran kerja atau kesehatan kerja**.
+2.  **Unit Kesehatan Kerja / Klinik Perusahaan (Pasal 237):** Tempat kerja dapat menyelenggarakan upaya kesehatan kerja melalui pembentukan **unit kesehatan kerja** mandiri di tempat kerja atau bekerja sama dengan Fasilitas Pelayanan Kesehatan luar, yang wajib berkoordinasi dengan Puskesmas setempat.
+3.  **Pencatatan dan Pelaporan (Pasal 240):** Pemberi kerja, pengelola tempat kerja, dan Fasyankes wajib melaporkan data kesehatan kerja secara berkala yang **terintegrasi langsung ke dalam Sistem Informasi Kesehatan Nasional (SIKN)**.
+4.  **Dualisme Standar Regulasi (Pasal 241):**
+    Standar teknis kesehatan kerja diatur melalui **Peraturan Menteri Kesehatan** (untuk standar teknis medis kesehatan) bersinergi dengan **Peraturan Menteri Ketenagakerjaan** (untuk penerapan standar kesehatan kerja bagi pekerja di lingkungan perusahaan/industri).
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Peraturan Pemerintah Republik Indonesia Nomor 28 Tahun 2024** *tentang Peraturan Pelaksanaan Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan*:
+    *   *Bab I (Ketentuan Umum, Pasal 1 angka 1–6)*;
+    *   *Bab II (Kesehatan Jiwa pada Pekerjaan Tertentu, Pasal 96 ayat 4–6)*;
+    *   *Bab IV Bagian Kedua Belas (Upaya Kesehatan Kerja, Pasal 232 s.d. Pasal 244)* [24–38];
+    *   *Bab VII (Pelindungan K3 Fasyankes bagi Tenaga Medis/Nakes, Pasal 728)*;
+    *   *Bab VIII (Struktur Jejaring Fasyankes Berbasis Tempat Kerja dan Pos UKK, Pasal 799)*;
+    *   *Bab XIII (Ketentuan Penutup, Pasal 1169 huruf w [Keberlakuan Aturan Pelaksana PP 88/2019] dan Pasal 1170 huruf w [Pencabutan Resmi PP 88/2019])*.
+2.  **Peraturan Menteri Kesehatan Republik Indonesia Nomor 11 Tahun 2022** *tentang Pelayanan Kesehatan Penyakit Akibat Kerja*:
+    *   *Konsiderans Menimbang huruf b & Mengingat angka 5* (Rujukan historis terhadap PP No. 88 Tahun 2019 tentang Kesehatan Kerja yang melandasi terbitnya Permenkes ini).
+
+Kuasai korelasi pasal-pasal ini di luar kepala, Dokter. Dewan penguji akan langsung melihat kapasitas kepemimpinan Anda dari ketepatan menempatkan regulasi terbaru dalam tata kelola kedokteran okupasi.
+
+---
+
+🩺 Apakah Anda ingin kita telaah lebih jauh mengenai implikasi **Pasal 233 ayat (9) PP 28/2024 tentang Program Kembali Bekerja (*Return to Work*)** dan bagaimana teknis penyusunan rekomendasi kelaikan kerja bagi pekerja pasca-menderita Penyakit Akibat Kerja?

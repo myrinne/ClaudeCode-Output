@@ -1,0 +1,427 @@
+Duduk tegak dan simak baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), penguasaan Anda terhadap **toksikologi berilium (Be)** adalah tolok ukur utama dewan penguji untuk menilai pemahaman Anda mengenai **toksikologi imunologis (*immunotoxicology*) dan interaksi gen-lingkungan (*gene-environment interaction*)**. 
+
+Berilium bukan sekadar logam toksikan iritan biasa; berilium adalah prototipe antigenik di mana **penyakit tidak mengikuti kurva dosis-respons linier klasik**, melainkan dimediasi oleh **hipersensitivitas tipe IV termediasi sel T CD4⁺ yang sangat bergantung pada kerentanan alel HLA spesifik**. Di meja hijau, Anda akan diuji secara mendalam mengenai pemisahan spesiasi, mekanisme masuknya partikel melalui kulit yang menginisiasi sensitisasi imun, pembedaan antara **Sensitisasi Berilium (BeS)** dengan **Penyakit Berilium Kronik (*Chronic Beryllium Disease* / CBD)**, interpretasi **BeLPT**, serta kemiripan histopatologisnya yang kerap salah didiagnosis sebagai sarkoidosis.
+
+Berikut adalah telaah komprehensif **BERILIUM (Be), BAGIAN A** yang wajib Anda kuasai di luar kepala:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Spesiasi Berilium
+
+Berilium (nomor atom 4, berat atom 9,01 g/mol) terletak pada Golongan IIA (logam alkali tanah) periode 2 tabel periodik dengan status valensi oksidasi stabil **+2**. Klasifikasi spesiasi berilium dalam toksikologi industri mencakup empat kelompok utama:
+
+```
+                                [ KLASIFIKASI SPESIASI BERILIUM ]
+                                                │
+         ┌───────────────────────────┬──────────┴──────────┬───────────────────────────┐
+         ▼                           ▼                     ▼                           ▼
+[ BERILIUM LOGAM / ELEMENTAL ]   [ BERILIUM OKSIDA (BeO) ] [ PADUAN LOGAM (ALLOYS) ]   [ GARAM-GARAM ANORGANIK ]
+• Logam murni Be⁰ [CAS 7440-41-7]• Beryllia [CAS 1304-56-9]• Berilium-Tembaga (Cu-Be): • Garam Larut Air:
+• Padat abu-abu putih, keras,    • Keramik isolator        Mengandung 2–4% Be,         BeSO₄, BeCl₂, BeF₂,
+  sangat ringan & getas (brittle)  listrik & konduktor     kekuatan tarik tinggi,      Be(NO₃)₂
+• Densitas 1,85 g/cm³, 40% lebih   panas luar biasa        anti-percik (non-sparking) • Garam Tak Larut:
+  kaku dari baja                 • Biopersistensi paru   • Al-Be (Lockalloy) untuk     Be(OH)₂, BeCO₃,
+• Transparan thd sinar-X &         ekstrem (tahunan)       pesawat supersonik          mineral silikat alami:
+  reflektor/moderator neutron    • Stabil suhu ekstrem   • Pemicu utama kasus CBD      Beryl & Bertrandite
+```
+
+1.  **Berilium Logam / Elemental [Be(0)] [CAS 7440-41-7]:**
+    *   *Karakteristik Fisik:* Padatan berwarna abu-abu keputihan yang keras namun getas (*hard, brittle gray-white solid*) dengan titik leleh sangat tinggi mencapai 1287°C (2348°F) dan titik didih 2970°C.
+    *   *Karakteristik Mekanik & Nuklir Unik:* Merupakan **logam struktural stabil paling ringan** dengan densitas rendah (1,85 g/cm³), rasio kekuatan terhadap berat yang sangat tinggi, lebih ringan dari aluminium, namun **40% lebih kaku (*more rigid*) dibandingkan baja**.
+    *   *Sifat Radiasi & Nuklir:* Karena memiliki nomor atom sangat rendah (Z=4), berilium **sangat transparan terhadap radiasi sinar-X (*X-ray permeable*)**. Selain itu, berilium memiliki daya serap neutron yang rendah dan daya hambur neutron yang tinggi, menjadikannya **moderator dan reflektor neutron ideal** di fasilitas nuklir.
+    *   *Sifat Kimia Permukaan:* Berilium bersifat amfoterik dan memiliki afinitas tinggi terhadap oksigen, membentuk lapisan tipis berilium oksida di permukaannya yang membuatnya tahan terhadap korosi air dan asam pengoksidasi.
+2.  **Berilium Oksida (\\(\text{BeO}\\) / Beryllia) [CAS 1304-56-9]:**
+    *   Serbuk kristal putih tidak larut air dengan titik leleh sangat tinggi.
+    *   *Karakteristik Keramik Unik:* Memiliki kombinasi sifat langka: **isolator listrik yang sangat baik sekaligus konduktor panas (termal) yang luar biasa tinggi**, serta sangat stabil pada lingkungan korosif bersuhu ekstrem. Partikel BeO yang dikalsinasi suhu tinggi (*high-fired BeO*) memiliki kelarutan sangat rendah dan biopersistensi intraseluler yang sangat panjang di parenkim paru.
+3.  **Paduan Logam Berilium (*Beryllium Alloys*):**
+    *   Mencakup sekitar **75% dari total konsumsi berilium komersial**, di mana 95% di antaranya berupa **Paduan Berilium-Tembaga (*Beryllium-Copper Alloy* / Cu-Be) [CAS 11133-98-5]** yang mengandung **2% hingga 4% berilium**.
+    *   *Karakteristik Mekanis:* Memiliki kekuatan tarik ekstrem, tahan korosi, tahan kelelahan logam (*fatigue resistance*), konduktivitas listrik tinggi, dan **tidak memicu percikan api (*non-sparking*)**.
+    *   *Paduan Lain:* Paduan Berilium-Aluminium (*Al-Be / Lockalloy*) [CAS 12770-50-2] yang digunakan untuk rangka kedirgantaraan.
+4.  **Garam-Garam Berilium (*Beryllium Salts*):**
+    *   *Garam Larut Air:* **Berilium sulfat [\\(\text{BeSO}_4\\)]**, **berilium sulfat tetrahidrat [\\(\text{BeSO}_4\cdot 4\text{H}_2\text{O}\\)]**, **berilium klorida [\\(\text{BeCl}_2\\)]**, **berilium fluorida [\\(\text{BeF}_2\\)]**, dan **berilium nitrat [\\(\text{Be(NO}_3)_2\\)]**. Garam-garam ini bersifat asam, sangat mengiritasi jaringan, dan melepaskan ion \\(\text{Be}^{2+}\\) bebas secara cepat.
+    *   *Garam Tidak Larut Air & Mineral Silikat Alami:* Berilium hidroksida [\\(\text{Be(OH)}_2\\)], berilium karbonat basa [\\(\text{BeCO}_3\cdot\text{Be(OH)}_2\\)], berilium fosfat [\\(\text{BeHPO}_4\\)], serta mineral bijih tambang alami seperti **Beryl [\\(\text{Al}_2\text{Be}_3(\text{SiO}_3)_6\\)]** dan **Bertrandite [\\(\text{Be}_4\text{(OH)}_2\text{O(SiO}_3)_2\\)]**. Mineral silikat murni di alam tidak terbukti memicu sensitisasi sebelum diekstraksi menjadi garam, logam, atau keramik.
+
+---
+
+### 2. Sumber dan Penggunaan Industri
+
+Pajanan okupasi terhadap aerosol debu, uap kondensasi, dan serpihan pemesinan berilium tersebar luas pada industri berteknologi tinggi:
+
+```
+                                  [ SEKTOR INDUSTRI UTAMA PAJANAN BERILIUM ]
+                                                      │
+         ┌───────────────────────────┬────────────────┴────────────────┬───────────────────────────┐
+         ▼                           ▼                                 ▼                           ▼
+[ KEDIRGANTARAAN & PERTAHANAN ]     [ ELEKTRONIK & TELEKOMUNIKASI ]   [ ENERGI NUKLIR & RADIOLOGI ] [ DENTAL, TAMBANG & PEMESINAN ]
+• Komponen struktural satelit &     • Pegas kontak listrik, relay,    • Moderator & reflektor       • Logam paduan gigi tiruan
+  pesawat supersonik        sakelar, konektor mikro neutron reaktor nuklir (Ni-Cr-Be: crown & bridge)
+• Tameng panas rem pesawat• Substrat keramik BeO pendingin  • Tabung hulu ledak nuklir • Tambang beryl & bertrandite
+• Giroskop pemandu rudal    (heat sinks) semikonduktor • Jendela tabung transmisi    • BENGKEL PEMESINAN CU-BE:
+• Perkakas anti-percik api di       • Pengelasan titik (spot welding)   sinar-X transparan  Bubut, gerinda, milling
+  kilang minyak (refinery tools)komponen Cu-Be             • Akselerator partikel   (RISIKO CBD TERTINGGI!)
+```
+
+1.  **Industri Kedirgantaraan dan Pertahanan (*Aerospace and Defense*):**
+    *   Komponen struktural pesawat supersonik, tameng panas sistem pengereman pesawat terbang (*brake heat shields*), nozel roket, cermin optik satelit luar angkasa, rangka pemandu inersia rudal, dan giroskop navigasi.
+    *   Perkakas tangan mekanik anti-percik api (*non-sparking safety tools*) berbahan aloi Cu-Be untuk fasilitas kilang minyak dan gas yang mudah meledak.
+2.  **Industri Elektronik, Komputer, dan Telekomunikasi:**
+    *   Pegas kontak mikro, relay, sakelar instrumen presisi, soket konektor serat optik, rumah kabel bawah laut, dan komponen telepon seluler.
+    *   Keramik berilium oksida (BeO) digunakan sebagai substrat semikonduktor berdaya tinggi, pembuang panas (*electric heat sinks*), tabung gelombang mikro (*microwave devices*), dan tabung laser.
+    *   *Proses Berisiko:* Pemotongan kawat, pemanasan (*annealing*), dan pengelasan titik (*spot welding*) komponen elektronik paduan tembaga-berilium.
+3.  **Industri Energi Nuklir dan Fasilitas Radiologi:**
+    *   Digunakan sebagai moderator dan reflektor neutron pada inti reaktor atom, kelongsong bahan bakar, target akselerator partikel, serta komponen perakitan senjata hulu ledak nuklir.
+    *   Pembuatan jendela transmisi khusus pada tabung sinar-X (*X-ray tube windows*) karena sifat transparansinya terhadap radiasi foton.
+4.  **Laboratorium Teknik Gigi (*Dental Prosthetics Laboratories*):**
+    *   Penggunaan paduan logam dasar gigi tiruan (khususnya paduan nikel-kromium-berilium / Ni-Cr-Be yang mengandung 0,5%–2% Be) untuk pembuatan mahkota (*crowns*) dan jembatan gigi (*bridges*).
+    *   *Kelompok Berisiko:* **Teknisi laboratorium dental (*dental technicians*)** yang mengasah, memotong, mencor, dan memoles protesa gigi tanpa ventilasi pembuangan lokal.
+5.  **Pertambangan, Ekstraksi Primer, Pengecoran, dan Pemesinan (*Machining*):**
+    *   Penambangan dan penghancuran bijih mineral beryl dan bertrandite, serta fasilitas peleburan reduksi kimia.
+    *   *Bengkel Pemesinan (*Machining Workshops*):* **Operator mesin bubut (*machinists*), gerinda (*grinders*), pemotong milling, dan penghalus (*deburring*) paduan Cu-Be memiliki risiko sensitisasi (BeS) dan CBD tertinggi** akibat pajanan aerosol partikulat halus respirabel.
+
+---
+
+### 3. Toksikokinetik Komprehensif (ADME dan Rute Sensitisasi Kulit)
+
+Kinetika biologis berilium memiliki keunikan berupa peran rute kulit sebagai inisiator sensitisasi imun dan retensi jangka panjang pada parenkim paru serta tulang:
+
+```
+                            [ MODEL KINETIK DAN PENETRASI BERILIUM ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ INHALASI SALURAN PERNAPASAN ]                                               [ PENETRASI DERMAL (KULIT) ]
+• Rute utama pajanan okupasi                                            • Partikel mikro menembus barier stratum
+• Partikulat alveolar < 10 µm masuk alveoli                               korneum via MIKRO-ABRASI & FOLIKEL RAMBUT
+• Difagositosis makrofag alveolar                                       • Ditangkap Sel Langerhans epidermis
+• Disolusi lambat di fagolisosom ──► ion Be²⁺                      • Migrasi ke kelenjar getah bening regional
+• RETENSI PARU SANGAT PANJANG: BERTAHUN-TAHUN!                          • RUTE PRIMER INISIASI SENSITISASI (BeS)!
+         │                                                                             │
+         ▼                                                                             ▼
+[ SISTEM SIRKULASI SISTEMIK ] ═════════════════════════════════════════════════════════╝
+• Fraksi bebas plasma sangat rendah; terikat Albumin & Koloid Fosfat
+• Terdistribusi lambat ke: KELENJAR HILUS & MEDIASTINUM,
+  TULANG (SKELETON - Depot seumur hidup menggantikan Kalsium)
+         │
+         ▼
+[ METABOLISME & EKSKRESI ]
+• Tidak mengalami biotransformasi metabolik enzimatik
+• EKSKRESI SANGAT LAMBAT: Urin (< 0,5%, fluktuatif & non-korelatif)
+  dan Feses (eliminasi partikulat tertelan via eskalator mukosiliar)
+```
+
+#### a. Absorpsi
+1.  **Inhalasi (Portal Primer Toksisitas Paru):**
+    *   Partikulat aerosol berilium berukuran aerodinamis < 10 µm (khususnya fraksi respirabel alveolar) terdeposit di bronkiolus terminal dan alveoli.
+    *   Partikel yang mengendap difagositosis oleh makrofag alveolar. Di dalam lingkungan asam fagolisosom, partikel mengalami pelarutan (*dissolution*) lambat melepaskan kation divalen \\(\text{Be}^{2+}\\) yang berikatan dengan protein endogen.
+2.  **Dermal / Kulit (Rute Sensitisasi Imun Primer - Kritis untuk Ujian):**
+    *   Meskipun ion \\(\text{Be}^{2+}\\) anorganik dalam larutan air memiliki koefisien permeabilitas kulit utuh yang rendah, **partikel debu mikro berilium mampu menembus barier epidermis melalui abrasi mekanis mikro, laserasi, luka gesekan, folikel rambut, dan maserasi keringat**.
+    *   *Peran Imunologis Kulit:* Penelitian okupasi membuktikan bahwa **permukaan kulit bertindak sebagai rute primer masuknya antigen yang memicu sensitisasi berilium (BeS)**. Partikel di epidermis diproses oleh sel dendritik (sel Langerhans) yang bermigrasi ke kelenjar getah bening regional untuk menginisiasi klon sel T memori spesifik berilium. Oleh karena itu, penggunaan respirator saja terbukti gagal mencegah BeS jika kulit pekerja tidak terlindungi dari kontaminasi debu.
+3.  **Gastrointestinal / Saluran Cerna:**
+    *   Penyerapan berilium melalui saluran cerna **sangat buruk dan dapat diabaikan (< 1%)**. Di dalam usus halus, ion berilium segera berikatan dengan fosfat membentuk endapan berilium fosfat yang tidak larut (*insoluble precipitates*) dan dikeluarkan utuh bersama feses.
+
+#### b. Distribusi Jaringan
+*   **Depot Retensi Paru dan Kelenjar Limfatik Regional:**
+    Sebagian besar beban tubuh berilium pasca-inhalasi menetap secara lokal di parenkim paru (terkapsulasi di dalam granuloma) serta ditranslokasikan melalui saluran limfatik menuju **kelenjar getah bening hilus dan mediastinum**.
+*   **Penyebaran Tulang (*Skeletal Tropism*):**
+    Fraksi kecil ion berilium yang terserap ke dalam peredaran darah sistemik terikat pada albumin serum dan membentuk koloid fosfat. Organ target penimbunan sistemik terbesar adalah **tulang (skelet)**. Ion \\(\text{Be}^{2+}\\) memiliki radius ionik yang mirip dengan kation fisiologis, sehingga dapat menggantikan kalsium dan terinkorporasi secara stabil ke dalam matriks kristal hidroksiapatit tulang dengan retensi biologis seumur hidup. Sebagian kecil didistribusikan ke hepar dan limpa.
+
+#### c. Metabolisme
+Sebagai unsur logam murni, berilium **tidak mengalami degradasi metabolik ataupun biotransformasi enzimatik** di dalam tubuh mamalia. Dinamika biologisnya murni melibatkan perubahan kelarutan partikel, disolusi intraseluler, dan pembentukan ikatan koordinasi dengan makromolekul inang.
+
+#### d. Ekskresi
+*   **Ekskresi Berilium Berlangsung Sangat Lambat dan Tidak Efisien:**
+    *   *Urin:* Hanya fraksi bebas plasma yang sangat kecil yang diekskresikan melalui filtrasi glomerulus ginjal. Kadar ekskresi urin sangat rendah, fluktuatif, dan **tidak mencerminkan total beban timbunan tubuh di paru (*lung body burden*)**.
+    *   *Feses:* Merupakan jalur eliminasi utama bagi partikel berilium yang tidak terserap di saluran cerna serta fraksi inhalasi yang dibersihkan oleh eskalator mukosiliar saluran napas menuju faring lalu tertelan.
+
+---
+
+### 4. Toksikodinamik: Mekanisme Molekuler Hipersensitivitas Tipe IV, Alel HLA-DPB1 Glu69, dan Granulomatogenesis
+
+Patogenesis CBD adalah model klasik respon imun adaptif termediasi sel T yang dipicu oleh interaksi spesifik kompleks histokompatibilitas mayor (MHC Kelas II):
+
+```
+                            [ KASKADE IMUNOPATOLOGIS CBD ]
+                                          │
+       [ Inhalasi Partikulat Be ] ──► [ Difagositosis Makrofag Paru ]
+                                          │
+                                          ▼
+             [ PELEPASAN ION Be²⁺ DI DALAM LISOSOM INTRASELULER ]
+                                          │
+                                          ▼
+   [ BERILIUM BERTINDAK SEBAGAI HAPTEN: BERIKATAN DENGAN PEPTIDA INANG ]
+                                          │
+                                          ▼
+      [ DIPRESENTASIKAN OLEH MOLEKUL MHC KELAS II: HLA-DPB1 Glu69 ]
+      • Asam glutamat bermuatan negatif pada posisi 69 rantai beta (E69)
+        menciptakan kantung pengikat elektrostatik unik bagi kation Be²⁺!
+                                          │
+                                          ▼
+       [ REKOGNISI OLEH RESEPTOR SEL T (TCR) LIMFOSIT CD4⁺ SPESIFIK ]
+                                          │
+                                          ▼
+          [ PROLIFERASI KLONAL & DIFERENSIASI KE ARAH FENOTIPE Th1 ]
+                                          │
+         ┌────────────────────────────────┴────────────────────────────────┐
+         ▼                                                                 ▼
+[ SEKRESI MASIF SITOKIN Th1 ]                      [ KEMOKIN AMPLIFIKASI ]
+• Interleukin-2 (IL-2): Proliferasi seluler T autokrin           • CCR5, CXCR3, ICAM-1
+• Interferon-gamma (IFN-γ): Aktivasi makrofag alveolar           • Rekrutmen monosit darah
+• Tumor Necrosis Factor-alpha (TNF-α): Inflamasi jaringan          dan limfosit ke interstisial
+                                          │
+                                          ▼
+                 [ AKUMULASI MONOSIT & FUSI SEL MAKROFAG ]
+                                          │
+                                          ▼
+      [ PEMBENTUKAN GRANULOMA EPITELOID NON-KASEOSA DI PARENKIM PARU ]
+```
+
+#### a. Peran Berilium sebagai Hapten Imunogenik
+Ion berilium (\\(\text{Be}^{2+}\\)) adalah kation anorganik sederhana yang bertindak sebagai **hapten yang berikatan secara koordinasi dengan residu asam amino pada peptida inang endogen (*self-peptides*)** di dalam alur pengikat antigen (*antigen-binding cleft*) molekul kompleks histokompatibilitas mayor Kelas II (MHC-II).
+
+#### b. Kerentanan Genetik Kritis: Alel HLA-DPB1 Glu69 (E69)
+
+> **Peringatan Dewan Penguji (*Core Board Question*):**
+> Mengapa hanya 2% hingga 16% pekerja terpajan berilium yang mengalami CBD, dan apa peran molekuler dari penanda genetik **HLA-DPB1 Glu69**?
+
+1.  **Dasar Molekuler HLA-DPB1 Glu69:**
+    *   Gen MHC Kelas II manusia yang mengkode rantai beta molekul HLA-DP (**HLA-DPB1**) memiliki polimorfisme pada kodon 69.
+    *   Adanya substitusi asam amino **Asam Glutamat (*Glutamic acid* / Glu / E)** yang bermuatan negatif pada posisi rantai beta ke-69 (**Glu69 atau E69**) mengubah konformasi kantung pengikat antigen (*Pocket 4*) pada molekul HLA-DP.
+    *   Muatan negatif karboksilat dari residu Glu69 menciptakan lingkungan elektrostatik ideal untuk **menangkap dan mengoordinasikan kation divalen berilium (\\(\text{Be}^{2+}\\)) yang bermuatan positif ganda**, memfasilitasi presentasi kompleks Be-peptida ke reseptor sel T (*T-cell receptor* / TCR).
+2.  **Korelasi Risiko Klinis:**
+    *   Individu yang memiliki alel **HLA-DPB1 Glu69 memiliki peningkatan risiko (*odds ratio*) yang sangat signifikan** untuk mengalami Sensitisasi Berilium (BeS) dan CBD dibandingkan individu tanpa alel tersebut.
+    *   Alel ini ditemukan pada **sebagian besar pasien yang menderita CBD (hingga 86%)**, dibandingkan frekuensi yang jauh lebih rendah pada populasi umum kontrol.
+    *   *Penanda Genetik Terkait Lainnya:* **HLA-DRB1 Glu71** (substitusi asam glutamat pada posisi 71), serta **HLA-DR\\(\beta\\text{Phe47}\\)** pada individu yang negatif untuk E69.
+3.  **Keterbatasan Penggunaan Klinis (*Low Positive Predictive Value*):**
+    *   Meskipun sensitivitasnya tinggi, **HLA-DPB1 Glu69 memiliki nilai prediksi positif (*Positive Predictive Value* / PPV) yang rendah**, karena sekitar **30% hingga 40% pekerja terpajan yang membawa alel Glu69 tidak pernah mengalami BeS maupun CBD**. Oleh karena itu, pengujian genetik ini **TIDAK direkomendasikan sebagai uji skrining pra-kerja mutlak (*pre-employment exclusion testing*)**, melainkan sebagai instrumen penelitian epidemiologi.
+
+#### c. Kaskade Sitokin Th1 dan Pembentukan Granuloma
+*   Presentasi antigen Be-MHC-II mengaktivasi reseptor TCR pada klon sel limfosit **T-helper CD4⁺ spesifik berilium**.
+*   Aktivasi ini memicu ekspansi klonal lokal dan polarisasi ke arah respons imun **Th1**, yang ditandai dengan sekresi sitokin inflamasi masif:
+    1.  **Interleukin-2 (IL-2):** Memicu proliferasi seluler T autokrin.
+    2.  **Interferon-gamma (IFN-\\(\gamma\\)):** Sitokin efektor utama yang mengaktivasi makrofag alveolar dan meningkatkan ekspresi MHC-II.
+    3.  **Tumor Necrosis Factor-alpha (TNF-\\(\alpha\\)):** Memperkuat peradangan jaringan dan memelihara arsitektur granuloma.
+*   Kemokin seperti reseptor CCR5 dan molekul adhesi ICAM-1 merekrut monosit sirkulasi dan limfosit ke interstitium paru, membentuk alveolitis limfositik (*T-cell alveolitis*).
+*   Agregasi makrofag yang teraktivasi mengalami transformasi fenotipik menjadi **sel epiteloid (*epithelioid histiocytes*)** dan saling melebur membentuk **sel raksasa berinti banyak (*multinucleated giant cells*)**, yang dikelilingi oleh cincin limfosit T CD4⁺, membentuk **granuloma non-kaseosa khas berilium (*non-caseating epithelioid granuloma*)** di parenkim paru.
+
+---
+
+### 5. Biomonitoring Okupasi: Uji BeLPT, Kriteria Sensitisasi vs. CBD, dan Keterbatasan Matriks Biologis
+
+Surveilans medis pekerja terpajan berilium mengandalkan evaluasi imunologis fungsional *in vitro*:
+
+```
+                      [ STRATEGI BIOMONITORING & DIAGNOSIS BERILIUM ]
+                                             │
+        ┌────────────────────────────────────┴────────────────────────────────────┐
+        ▼                                                                         ▼
+[ UJI PROLIFERASI LIMFOSIT: BeLPT ]                              [ MATRIKS LOGAM: Be URIN & DARAH ]
+• Baku Emas Deteksi Sensitisasi Imun In Vitro                   • Pengukuran kadar analitik Be via ICP-MS
+• Matriks: Darah Tepi (Blood BeLPT) / Cairan BAL (BAL BeLPT)   • KETERBATASAN MUTLAK:
+• Inkubasi kultur sel mononuklear + BeSO₄ + Timidin Tritiasi (³H)     - Hanya indikator pajanan terkini
+• Stimulation Index (SI) = Radioaktif Terstimulasi / Kontrol          - TIDAK berkorelasi dgn beban Be di paru
+• KRITERIA KONFIRMASI SENSITISASI (BeS):                    - TIDAK berkorelasi dgn derajat sensitisasi
+  - Minimal 2 hasil Blood BeLPT Abnormal, ATAU                             - TIDAK berkorelasi dgn keparahan CBD!
+  - 1 Abnormal + 1 Borderline, ATAU                                      • ACGIH BEI: TIDAK ADA (NOT FEASIBLE, 2010)
+  - 1 Hasil Abnormal pada Cairan BAL BeLPT!                     • TIDAK DIGUNAKAN untuk diagnosis individual!
+```
+
+#### a. Beryllium Lymphocyte Proliferation Test (BeLPT)
+*   *Prinsip Dasar:* Merupakan uji proliferasi seluler *in vitro* yang mengukur imunitas termediasi sel (*cell-mediated immune response*) spesifik terhadap antigen berilium.
+*   *Metodologi Laboratorium:*
+    1.  Sel mononuklear darah tepi (*peripheral blood mononuclear cells* / PBMC) atau limfosit cairan bilasan bronkoalveolar (*bronchoalveolar lavage* / BAL) diisolasi dan dikultur dalam tabung uji.
+    2.  Sel dipaparkan pada garam berilium sulfat (\\(\text{BeSO}_4\\)) dalam tiga gradien konsentrasi berbeda selama dua hingga tiga periode waktu inkubasi.
+    3.  Ke dalam kultur ditambahkan timidin tertritiasi (**\\(^3\text{H-thymidine}\\)**) untuk mengukur laju sintesis DNA limfosit yang berproliferasi.
+    4.  *Stimulation Index (SI):* Dihitung dengan membagi laju pencacahan radioaktif pada sel yang distimulasi berilium terhadap laju pencacahan sel kontrol tanpa stimulasi:
+        \\[\text{Stimulation Index (SI)} = \frac{\text{Counts per minute (cpm) sel terstimulasi Be}}{\text{Counts per minute (cpm) sel kontrol tanpa Be}}\\]
+*   *Interpretasi Hasil Uji Laboratorium Tunggal:*
+    *   **Normal:** Nilai SI berada di bawah nilai batas ambang laboratorium (*cut-off*).
+    *   **Borderline:** Terdapat 1 konsentrasi stimulasi dengan nilai SI di atas *cut-off*.
+    *   **Abnormal:** Terdapat 2 atau lebih konsentrasi stimulasi yang memperlihatkan nilai SI di atas ambang laboratorium.
+
+---
+
+#### b. Kriteria Konfirmasi Diagnosis: Sensitisasi Berilium (BeS) vs. Penyakit Berilium Kronik (CBD)
+Penguji dewan spesialis akan menuntut Anda membedakan status sensitisasi asimtomatik dengan penyakit parenkim paru aktif:
+
+| Parameter Evaluasi | Sensitisasi Berilium (*Beryllium Sensitization* / BeS) | Penyakit Berilium Kronik (*Chronic Beryllium Disease* / CBD) |
+| :--- | :--- | :--- |
+| **Status Imunologis (BeLPT)** | **Terkonfirmasi Positif / Abnormal:** Memenuhi **\\(\ge 2\\) hasil BeLPT darah abnormal**, ATAU **1 abnormal + 1 borderline**, ATAU **\\(\ge 1\\) hasil abnormal pada cairan BAL BeLPT**. | **Terkonfirmasi Positif / Abnormal** pada BeLPT darah tepi atau BAL BeLPT. |
+| **Pencitraan Radiologis (Foto Toraks / HRCT)** | **NORMAL** (tidak ada nodul atau infiltrat parenkim). | **ABNORMAL:** Ditemukan nodul peribronkovaskular lobus atas, penebalan septa, limfadenopati hilus, atau pola sarang lebah (*honeycombing*). |
+| **Fungsi Paru (PFT / Spirometri & DLCO)** | **NORMAL** (kapasitas vital dan difusi gas intak). | **Terganggu:** Defek ventilasi restriktif dan/atau **penurunan kapasitas difusi gas (DLCO)**. |
+| **Histopatologi Paru (Transbronchial Biopsy)** | **NORMAL** (tidak ditemukan inflamasi granulomatosa). | **Ditemukan Granuloma Epitelioid Non-Kaseosa (*Non-caseating granulomas*)** di parenkim paru atau biopsi kelenjar. |
+| **Analisis Cairan Bronkoalveolar (BAL)** | Limfosit BAL normal (< 15–20%). | **Limfositosis BAL Bermakna (> 20% limfosit)** dengan rasio CD4/CD8 meningkat. |
+| **Definisi Klinis Ringkas** | Respon imunologik murni terhadap berilium tanpa bukti kelainan struktural organ target. | **CBD = Sensitisasi Berilium (BeLPT Positif) + Bukti Granuloma Non-Kaseosa Paru pada Biopsi / BAL!** |
+
+---
+
+#### c. Biomonitoring Logam (Berilium Darah dan Urin) serta Keterbatasannya
+*   **Kadar Berilium dalam Urin (Be-U) dan Serum/Darah (Be-B):**
+    Dapat diukur menggunakan instrumen spektrometri massa plasma induktif (*ICP-MS*).
+    *Nilai Populasi Sehat:* Sangat rendah, konsentrasi Be-U pada populasi non-terpapar umumnya < 0,1 µg/L (rata-rata 0,22 µg/g kreatinin pada survei NHANES III).
+*   **KETERBATASAN MUTLAK BIOMONITORING LOGAM (Jebakan Ujian Utama):**
+    1.  Kadar Be-U dan Be-B **hanya mencerminkan pajanan inhalasi yang sangat baru (*recent exposure*)**.
+    2.  Kadar Be-U dan Be-B **TIDAK berkorelasi dengan total beban deposit berilium di dalam parenkim paru (*lung burden*)**.
+    3.  Kadar Be-U dan Be-B **SAMA SEKALI TIDAK BERKORELASI dengan ada atau tidaknya Sensitisasi Berilium (BeS) maupun derajat keparahan CBD**. Pasien dengan kadar Be urin normal dapat menderita CBD stadium lanjut, dan sebaliknya.
+*   **Status Baku Mutu ACGIH BEI (2026):**
+    Komite BEI ACGIH menerbitkan **Feasibility Assessment (November 2010): *Developing a BEI for Beryllium is NOT CURRENTLY FEASIBLE*** karena ketiadaan data ilmiah mengenai korelasi kuantitatif antara biomarker cairan tubuh dengan efek kesehatan pekerja.
+
+#### d. Waktu dan Jadwal Pemantauan Medis Okupasi (*Surveillance Timing*)
+*   **Pemeriksaan Pra-Kerja (*Baseline*):** Uji BeLPT darah tepi wajib dilakukan sebelum penempatan kerja di area berilium untuk menetapkan status imunologis dasar.
+*   **Pemeriksaan Berkala (*Periodic Surveillance*):**
+    Uji BeLPT darah diulang **secara serial setiap 1 hingga 2 tahun (minimal setiap 2–3 tahun)** selama masa kerja aktif.
+*   **Pemeriksaan Purnatugas / Terminasi:** Mengingat **masa laten CBD dapat mencapai 10 hingga 40 tahun setelah pajanan kerja berakhir**, evaluasi BeLPT dianjurkan saat pekerja berhenti dan dilanjutkan pemantauan klinis jangka panjang jika teridentifikasi BeS.
+
+---
+
+### 6. Waktu Paruh Biologis (*Biological Half-Life* / \\(T_{1/2}\\)) di Paru-Paru
+
+Eliminasi partikulat berilium dari saluran pernapasan bawah memperlihatkan persistensi biologis yang luar biasa:
+
+```
+                      [ SPEKTRUM WAKTU PARUH BERILIUM DI PARU ]
+                      
+  Fase Cepat (Klirens Mukosiliar Bronkus)       Fase Lambat (Parenkim Paru & Granuloma)
+  ──────────────────────────────────────       ───────────────────────────────────────
+  • Durasi: Beberapa hari hingga minggu         • DURASI: BERBULAN-BULAN HINGGA TAHUNAN!
+  • Klirens partikulat terperangkap pada          (Estimasi manusia: 2 hingga 10+ TAHUN)
+    saluran konduksi udara via eskalator        • Partikel Be terdeteksi di granuloma
+    mukosiliar menuju faring lalu tertelan        pekerja RATA-RATA 9 TAHUN pasca-kerja!
+```
+
+*   **Waktu Paruh Paru Fase Lambat (*Deep Lung Clearance*):**
+    Klirens eliminasi fraksi partikulat berilium yang tidak larut (terutama partikel berilium oksida keramik dan paduan Cu-Be) dari kompartemen interstisial paru berlangsung sangat lambat, dengan **waktu paruh biologis pulmonal (\\(T_{1/2}\\)) berkisar antara bulanan hingga bertahun-tahun (estimasi rata-rata manusia: 2 hingga lebih dari 10 tahun)**.
+*   *Bukti Retensi Jaringan Jangka Panjang:* Pemeriksaan spektroskopi massa ion sekunder (*SIMS*) membuktikan bahwa **partikel berilium masih terdeteksi di dalam inti lesi granuloma paru pekerja hingga rata-rata 9 tahun setelah pemutusan total pajanan kerja**. Retensi berkepanjangan ini menjadi stimulus antigenik kronis yang memicu pembentukan granuloma progresif.
+
+---
+
+### 7. Efek Biologis Toksik Akut
+
+Inhalasi akut uap atau garam berilium konsentrasi tinggi serta kontak dermal langsung memicu manifestasi lokal berat:
+
+```
+                              [ SPEKTRUM MANIFESTASI BERILIUM AKUT ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ PENYAKIT BERILIUM AKUT (ABD) / PNEUMONITIS KIMIA ]                 [ MANIFESTASI KULIT & MUKOSA AKUT ]
+• Terjadi pd konsentrasi udara tinggi: 25–100 µg/m³                      • Iritasi mata: Konjungtivitis akut berat
+• Mula gejala mendadak: Faringitis, trakeobronkitis hebat                • Dermatitis Kontak Iritan / Alergi:
+• Batuk kering paroksismal, dispnea progresif cepat                        Eritema, papulovesikel akibat garam asam
+• Radiografi: Infiltrat alveolar bilateral difus 1–3 minggu pasca-onset  • BERYLLIUM ULCER (Ulkus Berilium):
+• Mortalitas ~10%; sembuh dlm bbrp minggu/bulan; ~17% menetap > 1 thn      Implantasi serpihan partikel Be pada luka ──►
+• Praktis tereliminasi pasca-adopsi standar PEL 2 µg/m³ tahun 1949     ulkus indolen kronis, SEMBUH HANYA DENGAN EKSISI!
+```
+
+1.  **Penyakit Berilium Akut (*Acute Beryllium Disease* / ABD) / Pneumonitis Kimiawi Akut:**
+    *   *Konteks Pajanan Historis:* Ditemukan pada pekerja ekstraksi primer dan manufaktur lampu fluoresen sebelum pelarangan tahun 1949 yang terpajan aerosol garam larut (BeSO₄, BeF₂) konsentrasi masif (**konsentrasi udara 25 hingga 100 µg/m³**).
+    *   *Manifestasi Klinis:* Diawali dengan konjungtivitis, faringitis, dan laringotrakeobronkitis akut. Pasien mengalami **batuk kering spasmodik, dispnea exertional progresif cepat, nyeri dada substernal, dan sianosis**.
+    *   *Pencitraan & Prognosis:* Foto toraks awalnya tampak normal, lalu dalam 1 hingga 3 minggu berkembang menjadi **infiltrat alveolar bilateral difus yang menyerupai edema paru toksik atau ARDS**. Angka kematian kasus mencapai sekitar **10%**. Pasien yang selamat umumnya pulih dalam hitungan minggu hingga bulan, namun sekitar 17% mengalami kelainan respirasi persisten yang berprogresi menjadi CBD. Sejak penerapan standar batas 2 µg/m³ pada tahun 1949, kasus ABD praktis sudah tidak ditemukan lagi.
+2.  **Manifestasi Dermatologis Akut dan Ulkus Berilium (*Beryllium Ulcers*):**
+    *   *Dermatitis Kontak Akut:* Kontak kulit dengan garam asam berilium memicu dermatitis kontak iritan atau elisitasi alergi berupa erupsi makulopapular gatal dan vesikulasi.
+    *   *Ulkus Berilium (*Beryllium Ulcer* - Patognomonik):* Terjadi jika serpihan logam atau kristal garam berilium **terimplantasi menembus abrasi kulit atau luka tusuk kerja**. Terbentuk ulkus kronis bernodul yang indolen, sangat nyeri, nekrotik di tengah, dan **tidak dapat sembuh dengan salep antibiotik biasa**. **Ulkus berilium hanya dapat sembuh tuntas bila serpihan benda asing berilium dieksisi secara bedah (*surgical excision*)**.
+
+---
+
+### 8. Efek Biologis Kronis: Sensitisasi (BeS), Penyakit Paru Granulomatosa (CBD), dan Karsinoma Paru
+
+Pajanan kerja kronis memicu kelainan imunopatologis granulomatosa pada sistem pernapasan dan neoplasma ganas paru:
+
+```
+                                [ SPEKTRUM PENYAKIT KRONIS BERILIUM ]
+                                                  │
+         ┌────────────────────────┬───────────────┴───────────────┬────────────────────────┐
+         ▼                        ▼                               ▼                        ▼
+[ SENSITISASI BERILIUM (BeS) ]   [ PENYAKIT BERILIUM KRONIK (CBD) ] [ RADIOLOGI & HISTOLOGI ] [ KARSINOMA PARU BRONKOGENIK ]
+• Fase imunologis subklinis  • Granulomatosis paru progresif  • HRCT: Nodul peribronko- • IARC GRUP 1: Karsinogen Manusia
+• BeLPT positif konfirmasi  • Masa laten: 4 bln – 40 tahun!    vaskular lobus atas,     • ACGIH: Notasi A1
+• Paru, foto toraks, & spirometri  (rata-rata 10–20 tahun) limfadenopati hilus,     • Kohort 7 Pabrik Pemurnian AS
+  masih normal utuh         • Batuk kering kronis, dispnea     penebalan septa    (Ward et al., SMR 1,26–1,69)
+• Laju progresi ke CBD:            saat aktivitas (DOE), anoreksia, • Biopsi: Granuloma      • US Beryllium Case Registry:
+  6–8% per tahun!        kelelahan fisik ekstrem     Epitelioid Non-Kaseosa    SMR kanker paru total 2,00
+                                                                    (mirip sarkoidosis!)  dan 2,32 pd kasus ABD
+```
+
+#### a. Sensitisasi Berilium (*Beryllium Sensitization* / BeS)
+*   Merupakan stadium imunologis subklinis di mana pekerja telah membentuk klon limfosit T memori teraktivasi spesifik berilium, **ditandai dengan hasil BeLPT darah terkonfirmasi positif (minimal 2 kali abnormal atau 1 abnormal + 1 borderline)**.
+*   Pada fase ini, pekerja **tidak memiliki gejala respirasi, foto toraks normal, dan fungsi spirometri intak**.
+*   *Laju Progresi Klinis:* BeS merupakan prekursor mutlak bagi CBD. Studi kohort prospektif (Newman et al., 2005) membuktikan bahwa **pekerja dengan BeS mengalami progresi menjadi CBD aktif dengan laju sekitar 6% hingga 8% per tahun**, dengan proporsi kumulatif mencapai > 31% dalam masa tindak lanjut.
+
+#### b. Penyakit Berilium Kronik (*Chronic Beryllium Disease* / CBD)
+*   *Masa Laten (*Latency Period*):* CBD memiliki masa laten klinis yang bervariasi dan dapat sangat panjang; berkisar antara **4 bulan hingga 10 hingga 40 tahun setelah kontak kerja pertama atau bahkan setelah pekerja pensiun**.
+*   *Manifestasi Klinis:*
+    *   Keluhan respiratori utama berupa **dispnea saat aktivitas (*progressive dyspnea on exertion*)** dan **batuk kering non-produktif (*chronic dry cough*)**, disertai nyeri dada dan rasa terikat (*chest tightness*).
+    *   Gejala konstitusional sistemik: **kelelahan fisik yang melumpuhkan (*debilitating fatigue*)**, penurunan berat badan drastis, anoreksia, keringat malam, dan mialgia/artralgia.
+    *   Tanda fisik stadium lanjut: ronkhi basah basal inspiratori, takipnea, jari tabuh (*digital clubbing*), sianosis, tanda-tanda hipertensi pulmonal, kor pulmonale, dan edema perifer.
+*   *Fisiologi Paru (PFT):* Gangguan ventilasi tipe **restriktif murni atau campuran** (penurunan FVC dan TLC), serta tanda awal berupa **penurunan kapasitas difusi gas karbon monoksida (*DLCO impairment*)** akibat blokade membran alveolo-kapiler oleh infiltrat granuloma.
+
+---
+
+#### c. Karakteristik Pencitraan Radiologis (Foto Toraks dan HRCT)
+*   **Foto Toraks Konvensional (CXR):** Awalnya dapat tampak normal, lalu berkembang menjadi infiltrat retikulonodular difus, densitas nodular halus milier (terutama di zona paru atas dan tengah), serta **limfadenopati hilus dan mediastinum bilateral**.
+*   **Tomografi Terkomputasi Resolusi Tinggi (*High-Resolution Computed Tomography* / HRCT):**
+    *   Merupakan pemeriksaan radiologi paling sensitif untuk mengevaluasi CBD.
+    *   Ditemukan **nodul-nodul kecil multipel dengan distribusi peribronkovaskular dan subpleural predominan di zona paru atas dan tengah**.
+    *   Penebalan septa interlobular, bayangan bercak *ground-glass opacities* (GGO), limfadenopati hilus bilateral, serta pada stadium fibrosis lanjut timbul distorsi arsitektur, traksi bronkiektasis, dan destruksi kistik **pola sarang lebah (*honeycombing*)**.
+
+---
+
+#### d. Karakteristik Histopatologi: Granuloma Epitelioid Non-Kaseosa
+
+> **Kunci Jawaban Ujian Patologi (*Board Pathology Milestone*):**
+> Gambaran lesi histopatologis patognomonik dari CBD adalah **Granuloma Epitelioid Non-Kaseosa / Non-Nekrotikans (*Non-caseating / non-necrotizing epithelioid granuloma*) yang secara morfologis IDENTIK DAN TIDAK DAPAT DIBEDAKAN dari lesi Sarkoidosis (*histopathologically indistinguishable from sarcoidosis*)**!
+
+*   *Struktur Mikroskopis:*
+    *   Granuloma tersusun atas agregat padat sel-sel histiosit epiteloid berdiferensiasi matur dengan sitoplasma luas dan inti vesikuler.
+    *   Terdapat sel datia raksasa berinti banyak tipe Langhans (*Langhans multinucleated giant cells*).
+    *   Granuloma dikelilingi oleh cincin infiltrat sel radang mononuklear yang padat (terutama **limfosit T CD4⁺**) serta fibroblas di tepi perifer.
+    *   **TIDAK DITEMUKAN NEKROSIS KASEOSA SENTRAL (*Absence of caseous necrosis*)**, yang membedakannya secara tegas dari infeksi tuberkulosis (*Mycobacterium tuberculosis*).
+    *   *Badan Inklusi Intraseluler:* Di dalam sitoplasma sel datia sering dijumpai inklusi kalsifikasi seperti **Schaumann bodies** (badan konhoid basofilik berlapis) dan **Asteroid bodies** (inklusi berbentuk bintang), yang juga lazim ditemukan pada sarkoidosis.
+*   *Prinsip Diferensiasi Sarkoidosis vs. CBD:*
+    Karena histopatologinya identik, pasien dengan gambaran klinis, radiologis, dan biopsi granuloma non-kaseosa **HANYA DAPAT DIBUKTIKAN SEBAGAI CBD MELALUI PENELUSURAN RIWAYAT KERJA PAJANAN BERILIUM DAN KONFIRMASI HASIL POSITIF UJI BeLPT DARAH/BAL**. Banyak kasus yang didiagnosis salah sebagai sarkoidosis idiopatik terbukti merupakan CBD akibat kerja setelah diuji dengan BeLPT.
+
+---
+
+#### e. Karsinogenisitas Okupasi: Kanker Paru Bronkogenik
+*   **Klasifikasi Karsinogen Resmi:**
+    *   **Badan Internasional Riset Kanker (IARC Monograph Vol. 100C):** **IARC Grup 1 (*Carcinogenic to humans*)** untuk Berilium dan Senyawa Berilium.
+    *   **ACGIH (2026):** Notasi **A1 (*Confirmed Human Carcinogen*)**.
+    *   **Perpres No. 7 Tahun 2019:** Lampiran III Butir 1 (Kanker Akibat Kerja: Berilium dan senyawanya).
+*   *Bukti Epidemiologi Manusia:*
+    *   *Studi Kohort Tujuh Pabrik Pemurnian Berilium di AS (Ward et al., 1992):* Membuktikan peningkatan risiko mortalitas karsinoma paru bronkogenik yang bermakna secara statistik pada 9.225 pekerja dengan **Standardized Mortality Ratio (SMR) sebesar 1,26 (95% CI: 1,12–1,42)**, dengan lonjakan risiko tertinggi pada pabrik generasi awal Lorain, Ohio (SMR 1,69; 95% CI: 1,28–2,19).
+    *   *Analisis US Beryllium Case Registry (Steenland & Ward, 1991):* Menunjukkan **SMR kanker paru sebesar 2,00 (95% CI: 1,33–2,89)** pada pasien yang terdaftar dengan penyakit berilium. Risiko kanker paru melonjak menjadi **SMR 2,32 (95% CI: 1,35–3,72) pada subkelompok pekerja yang memiliki riwayat menderita Penyakit Berilium Akut (ABD / pneumonitis kimiawi)**, membuktikan bahwa nekrosis jaringan akut dan hiperplasia regeneratif memfasilitasi transformasi keganasan.
+    *   *Studi Kasus-Kelola Bersarang (*Nested Case-Control Study* - Sanderson et al., Schubauer-Berigan et al.):* Menunjukkan hubungan dosis-respons yang bermakna antara pajanan berilium kumulatif dengan peningkatan risiko kanker paru setelah mengoreksi faktor perancu kebiasaan merokok dan menerapkan model *lagged exposure* 10 tahun.
+*   *Mekanisme Onkogenesis:* Berilium memicu stres oksidatif intraseluler pembentuk radikal bebas, menginduksi pembelahan kromosom abnormal (*aneuploidy* dan aberasi kromosom), menekan ekspresi gen reparasi DNA, serta peradangan kronis persisten oleh sel T CD4⁺ yang melepaskan sitokin mitogenik pemicu proliferasi sel epitelial abnormal.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **IARC (2012).** *Beryllium and Beryllium Compounds (IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Vol. 100C)*:
+    *   *Sifat Fisikokimiawi & Valensi:* Valensi +2, Logam Ringan Densitas 1,85 g/cm³, Kekakuan 40% di Atas Baja, Titik Leleh 1287°C, Transparansi Sinar-X, Sifat Moderator & Reflektor Neutron [hlm. 95–97].
+    *   *Katalog Senyawa & Paduan:* Be Logam [CAS 7440-41-7], Be-Cu [CAS 11133-98-5], BeO [CAS 1304-56-9], BeSO₄ [CAS 13510-49-1], Beryl & Bertrandite [hlm. 96–97].
+    *   *Penggunaan Industri:* Aerospace, Nuklir, Telekomunikasi, Dental Alloys, Non-sparking Tools, Pemesinan [hlm. 98–101].
+    *   *Biokinetika:* Partikulat Alveolar < 10 µm, Disolusi Fagolisosom, Retensi Paru > 9 Tahun pada Granuloma, Deposisi Tulang & Ekskresi Urin Minimal [hlm. 104–106].
+    *   *Epidemiologi Kanker Paru:* IARC Grup 1, Kohort 7 Pabrik AS Ward et al. (SMR 1,26 & 1,69), Beryllium Case Registry Steenland & Ward (SMR 2,00 total & 2,32 pada kasus ABD) [hlm. 101–104, 114].
+2.  **Mayer, A.S., Hamzeh, N., & Maier, L.A. (2014).** *Sarcoidosis and Chronic Beryllium Disease: Similarities and Differences.* Seminars in Respiratory and Critical Care Medicine, 35(3): 316–329:
+    *   *Perjalanan Klinis & Komparasi Sarkoidosis:* Granuloma Epitelioid Non-Kaseosa Identik [hlm. 316, 323]; Ketiadaan Kurva Dosis-Respons Klasik [hlm. 317]; Sejarah Lampu Fluoresen & Penurunan Kasus ABD Pasca-PEL 2 µg/m³ 1949 [hlm. 317]; Sektor Industri & Aloi Cu-Be [hlm. 318].
+    *   *Toksikodinamik:* Presentasi MHC Kelas II, Peran HLA-DPB1 Glu69 (E69) dan HLA-DRB1 Glu71 [hlm. 322]; Polarisasi Th1 (IL-2, IFN-γ, TNF-α), Sel Epiteloid, dan Badan Inklusi Schaumann/Asteroid [hlm. 322–323].
+    *   *Uji Laboratorium BeLPT:* Metodologi Sel Mononuklear Darah & BAL, Stimulation Index (SI) ³H-Timidin, Kriteria Sensitisasi (Minimal 2 Abnormal / 1 Abnormal + 1 Borderline) vs CBD (Sensitisasi + Granuloma Biopsi Paru / Limfositosis BAL > 20%) [hlm. 322, 324].
+    *   *Manifestasi Klinis:* Masa Laten 4 Bulan hingga 40 Tahun [hlm. 321]; Gambaran Nodul Peribronkovaskular HRCT [hlm. 320]; Ulkus Berilium Dermal Bedah Eksisi [hlm. 321]; serta Laju Progresi BeS ke CBD 6–8% per Tahun [hlm. 317].
+3.  **Santo Tomas, Linus H. (2009).** *Beryllium hypersensitivity and chronic beryllium lung disease.* Current Opinion in Pulmonary Medicine, 15: 165–169:
+    *   *Epidemiologi BeS & CBD:* Prevalensi 2%–16% pada Pekerja Terpajan [hlm. 165, 167]; Rute Kulit sebagai Inisiator Sensitisasi Primer (Cummings et al., Day et al.) [hlm. 166]; Laju Progresi Newman et al. 31% dalam Follow-up Longitudinal (6–8% per tahun) [hlm. 166]; serta Asosiasi Kausal HLA-DPB1 Glu69 dan HLA-DRβPhe47 [hlm. 167].
+4.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   *Bab 18:* Imunotoksikologi Berilium — Hipersensitivitas Tipe IV, Kompleks Hapten-Protein, Klon Sel T CD4⁺ Spesifik, Peran Kunci HLA-DPB1 Glu69 (OR Meningkat Signifikan), Variasi Sitokin TNF-α dan IL-1α, serta Industri Terpajan [hlm. 238–240].
+5.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   *Bab 19:* Reaksi Hipersensitivitas Tipe IV Lambat (DTH) — Presentasi Antigen oleh Sel Langerhans Epidermis ke Sel Limfosit T Memori di Kelenjar Getah Bening Regional [hlm. 415–416]; serta Toksisitas Paru Berilium (Acute Pneumonitis, Tracheobronchitis, dan Chronic Beryllium Disease sebagai Respon Imun Tipe IV Spesifik Berilium) [hlm. 414].
+6.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Beryllium and compounds, as Be* [CAS 7440-41-7] (TLV-TWA 0,00005 mg/m³ Inhalable fraction; Notasi A1, RSEN; Soluble compounds: Skin, DSEN; TLV Basis: Beryllium sens; chronic beryllium disease / berylliosis) [hlm. 16].
+    *   *Feasibility Assessments:* Beryllium (November 2010: Developing a BEI is not currently feasible owing to inadequate scientific data) [hlm. 127].
+7.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   *Beryllium & beryllium compounds (as Be)* [CAS 7440-41-7]: Sifat Fisik Logam Keras Putih Abu-abu; NIOSH REL Ca (C 0,0005 mg/m³); OSHA PEL TWA 0,002 mg/m³, C 0,005 mg/m³, Peak 0,025 mg/m³; Gejala Berylliosis, Anoreksia, Batuk, Clubbing Fingers, Sianosis, Kanker Paru; IDLH Ca 4 mg/m³ [hlm. 28].
+8.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019:**
+    *   Lampiran I.a Butir 2 (Penyakit Akibat Kerja Faktor Kimia Berilium atau Persenyawaannya); dan Lampiran III Butir 1 (Kanker Akibat Kerja: Berilium dan Senyawanya).
+
+Kuasai patofisiologi imunologis, peran penanda genetik HLA-DPB1 Glu69, kriteria konfirmasi BeLPT, dan histopatologi pembeda granuloma sarkoidosis ini secara komprehensif, Dokter. Di meja ujian dewan spesialis, ketajaman ilmiah Anda dalam menguraikan mekanisme molekuler ini akan membuktikan kompetensi Anda sebagai calon Spesialis Kedokteran Okupasi yang paripurna.
+
+---
+
+📋 Apakah Anda ingin kita lanjutkan ke **BERILIUM (Be), BAGIAN B**, yaitu telaah mendalam mengenai **standar batas paparan udara (revisi ekstrem TLV-TWA ACGIH 0,00005 mg/m³ inhalabel, notasi A1, RSEN, DSEN, Skin vs. OSHA PEL dan NAB Permenaker No. 5 Tahun 2018), tata laksana medikamentosa CBD (kortikosteroid imunosupresif sistemik, durasi terapi, ketiadaan antidotum/kelasi), 7 langkah diagnosis PAK berilium, kelaikan kerja (*fitness for work*: pekerja tersensitisasi BeS vs CBD aktif), hierarki pencegahan industri (kebijakan *Beryllium Worker Protection*, respiratorik & proteksi kulit total), serta *clinical pearls* dan jebakan ujian dewan spesialis**?

@@ -1,0 +1,277 @@
+Duduk kembali di kursi Anda, Dokter. Kita lanjutkan ke **KROMIUM (Cr VI vs. Cr III) BAGIAN B**. 
+
+Jika pada Bagian A Anda telah membuktikan pemahaman dasar tentang sifat molekuler, kinetika seluler, dan karsinogenesis kromium, maka pada Bagian B ini dewan penguji akan menguji **kompetensi klinis, manajerial, regulatori, dan keahlian mediko-legal Anda di dunia nyata**. Seorang calon Spesialis Kedokteran Okupasi (Sp.Ok) harus mampu menetapkan diagnosis kausalitas penyakit akibat kerja, menentukan kelaikan kerja, memandu tata laksana darurat toksikologi, serta mengaudit kepatuhan ambang batas regulasi fasilitas industri.
+
+---
+
+### 9. Standar Batas Pajanan di Udara (*Occupational Exposure Limits*)
+
+Penguji sering menguji kejelian residen dalam membedakan angka OEL internasional mutakhir dengan baku mutu yuridis nasional Indonesia.
+
+```
+                [ HIERARKI NILAI AMBANG BATAS UDARA KROMIUM ]
+                                      │
+         ┌────────────────────────────┴────────────────────────────┐
+         ▼                                                         ▼
+  [ ACGIH TLV (2026) ]                                  [ PERMENAKER NO. 5 TAHUN 2018 ]
+• Cr(VI) Senyawa: 0,0002 mg/m³ (I)                      • Cr(VI) Larut Air: 0,05 mg/m³ (A1, BEI)
+  STEL: 0,0005 mg/m³ (I)                                • Cr(VI) Tidak Larut: 0,01 mg/m³ (A1)
+  Notasi: A1, DSEN, RSEN, BEI (Skin utk larut)          • Cr(III) Senyawa: 0,5 mg/m³ (A4)
+• Cr(III) Senyawa: 0,003 mg/m³ (I), A4                  • Logam Cr(0): 0,5 mg/m³ (A4)
+• Logam Cr(0): 0,5 mg/m³ (I)                            • Kromil Klorida: 0,025 bds (0,16 mg/m³)
+```
+
+#### a. ACGIH TLVs® (Edisi 2026 Adopted Values)
+ACGIH telah memperbarui nilai ambang batas kromium secara signifikan untuk melindungi pekerja dari risiko kanker paru dan hiperresponsivitas saluran napas:
+1.  **Hexavalent Chromium Compounds [Cr(VI)] (sebagai Cr):**
+    *   **TLV-TWA:** **\\(0{,}0002\text{ mg/m}^3\\) (\\(0{,}2\ \mu\text{g/m}^3\\))** — diukur sebagai fraksi inhalabel (*Inhalable fraction* / I).
+    *   **TLV-STEL:** **\\(0{,}0005\text{ mg/m}^3\\) (\\(0{,}5\ \mu\text{g/m}^3\\))** — fraksi inhalabel (15 menit).
+    *   **Notasi Kritis:**
+        *   **A1:** *Confirmed Human Carcinogen* (Terbukti Karsinogen Manusia).
+        *   **DSEN:** *Dermal Sensitization* (Sensitisasi Kulit).
+        *   **RSEN:** *Respiratory Sensitization* (Sensitisasi Pernapasan / Asma Kerja).
+        *   **BEI:** Memiliki rujukan Indeks Pajanan Biologi urin.
+        *   **Skin:** Khusus untuk **senyawa kromat yang larut air (*water-soluble compounds only*)**, dicantumkan notasi *Skin* karena potensi penyerapan perkutan yang signifikan.
+2.  **Trivalent Chromium Compounds [Cr(III)] (sebagai Cr):**
+    *   **TLV-TWA:** **\\(0{,}003\text{ mg/m}^3\\) (\\(3\ \mu\text{g/m}^3\\))** — fraksi inhalabel (I).
+    *   **Notasi:** **A4** (*Not Classifiable as a Human Carcinogen*); khusus senyawa larut air memiliki notasi **DSEN** dan **RSEN**.
+3.  **Metallic Chromium [Cr(0)] (sebagai Cr):**
+    *   **TLV-TWA:** **\\(0{,}5\text{ mg/m}^3\\)** — fraksi inhalabel (I).
+    *   **Notasi:** Tidak ada notasi karsinogen/sensitisasi (efek kritis: iritasi saluran pernapasan).
+4.  **Kromil Klorida (*Chromyl Chloride* / \\(\text{CrO}_2\text{Cl}_2\\), sebagai Cr VI):**
+    *   **TLV-TWA:** **\\(0{,}0001\text{ ppm}\\)** (IFV); **TLV-STEL:** **\\(0{,}00025\text{ ppm}\\)** (IFV); Notasi: **Skin, DSEN, RSEN, A1**.
+
+#### b. Nilai Ambang Batas Nasional (Permenaker No. 5 Tahun 2018, Lampiran 3)
+Secara hukum di Indonesia, pengusaha dan dokter perusahaan wajib patuh pada angka berikut:
+*   **Persenyawaan Krom VI Larut di Air (NOC):** NAB = **\\(0{,}05\text{ mg/m}^3\\)**; Notasi: **A1, BEI (simbol segitiga)**.
+*   **Persenyawaan Krom VI Tidak Larut dalam Air (NOC):** NAB = **\\(0{,}01\text{ mg/m}^3\\)**; Notasi: **A1**.
+*   **Kromit, Proses Tambang (Kromat) sebagai Cr:** NAB = **\\(0{,}05\text{ mg/m}^3\\)**; Notasi: **A1**.
+*   **Logam Kromium dan Persenyawaan Anorganik Cr(III):** NAB = **\\(0{,}5\text{ mg/m}^3\\)**; Notasi: **A4**.
+*   **Kromil Klorida:** NAB = **\\(0{,}025\text{ bds}\\) (\\(0{,}16\text{ mg/m}^3\\))**; Notasi: Iritasi membran mukosa dan kulit.
+
+---
+
+### 10. Standar Pemantauan Biologis (BEI / IPB) dan Waktu Sampling
+
+Pemantauan biologis (*biomonitoring*) kromium dilakukan melalui pengukuran kadar kromium total dalam spesimen urin:
+
+```
+                     [ EVOLUSI PARAMETER BIOMONITORING ACGIH ]
+                                         │
+        ┌────────────────────────────────┴────────────────────────────────┐
+        ▼                                                                 ▼
+[ BEI ACGIH HISTORIS / TRADISIONAL ]                             [ BEI ACGIH 2026 / POPULATION ]
+• Peningkatan Selama Shift: 10 µg/L                              • Total Kromium Urin: 0,7 µg/L
+• Akhir Shift Akhir Minggu Kerja: 25 µg/L                        • Waktu: Akhir Shift Akhir Minggu Kerja
+• Korelasi TLV udara lama: 0,05 mg/m³                            • Notasi: Pop (Population-based background)
+```
+
+1.  **Standar ACGIH BEI® Tradisional (Adopsi Permenaker 5/2018 Lampiran 4 IPB):**
+    *   **Pilihan 1 (Kinetika Akut Harian):** Total kromium urin meningkat selama shift kerja (**Increase during shift** = selisih urin post-shift dikurangi pre-shift) sebesar **10 µg/L**.
+    *   **Pilihan 2 (Akumulasi Mingguan):** Total kromium urin diambil pada **akhir shift kerja di akhir minggu kerja (*End of shift at end of workweek*)** sebesar **25 µg/L**.
+    *   *Konteks Penurunan:* Nilai 25 µg/L ini diturunkan saat TLV-TWA Cr(VI) udara masih berada pada angka \\(0{,}05\text{ mg/m}^3\\).
+2.  **Standar ACGIH BEI® Terbaru (Buku Referensi TLV/BEI 2026):**
+    *   Seiring pemotongan TLV udara Cr(VI) menjadi \\(0{,}0002\text{ mg/m}^3\\), ACGIH mengadopsi nilai panduan berbasis populasi (*Population-based biomarker* / **Pop**):
+    *   **Determinan:** Total kromium dalam urin (*Total chromium in urine*).
+    *   **Waktu Sampling:** **Akhir shift di akhir minggu kerja (*End of shift at end of workweek*)**.
+    *   **Nilai BEI:** **\\(0{,}7\ \mu\text{g/L}\\)** (Notasi: **Pop**).
+3.  **Standar Komparasi Internasional Eropa:**
+    *   **Prancis (ANSES BLV):** **\\(2{,}5\ \mu\text{g/L}\\)** (\\(1{,}8\ \mu\text{g/g kreatinin}\\)) pada akhir minggu kerja.
+    *   **Inggris (HSE BMGV):** **\\(10\ \mu\text{mol/mol kreatinin}\\)** (setara **\\(\approx 6{,}3\ \mu\text{g/L}\\)**) pada akhir shift.
+    *   **Jerman (DFG BAR):** **\\(0{,}6\ \mu\text{g/L}\\)** untuk populasi umum non-terpajan.
+4.  **Waktu Sampling Khusus Eritrosit (Cr-RBC):**
+    Kromium dalam sel darah merah mencerminkan dosis kumulatif Cr(VI) murni selama 120 hari; waktu pengambilan sampel darah heparin bersifat **bebas / tidak kritis (*not critical / discretionary*)**.
+
+---
+
+### 11. Tata Laksana Klinis dan Toksikologi Darurat Keracunan Akut
+
+Keracunan akut senyawa Cr(VI) (seperti asam kromat atau kalium dikromat) adalah kegawatdaruratan toksikologi yang mengancam jiwa.
+
+```
+                              [ ALGORITMA GAWAT DARURAT INTOKSIKASI Cr(VI) ]
+                                                    │
+         ┌──────────────────────────────────────────┼──────────────────────────────────────────┐
+         ▼                                          ▼                                          ▼
+   [ PAJANAN INGESTI ]                     [ KONTAK DERMAL / MATA ]                   [ INHALASI AKUT ]
+• KONTRAINDIKASI EMESIS!                 • Dekontaminasi air mengalir 15–20 mnt     • Evakuasi ke udara bersih
+  (Risiko perforasi kaustik)             • Asam Askorbat (Vit C) Topikal 10%        • O2 lembap + Bronkodilator
+• Asam Askorbat Oral 2–10 g segera         reduksi Cr(VI) jadi Cr(III) non-toksik   • Waspada Edema Paru Lambat
+• Resusitasi IV agresif cegah ATN        • Debridement luka bakar kimiawi             (Observasi ICU 24–48 jam)
+• Hemodialisis bila anuria/uremia        • Irigasi mata salin normal 15–30 mnt
+```
+
+#### a. Ingesti Akut Cr(VI) (Tertelan Garam Kromat / Cairan Asam Kromat)
+1.  **Kontraindikasi Mutlak:** **DILARANG melakukan induksi muntah (*emesis induction*)** dan bilas lambung (*gastric lavage*) dengan selang kaku tanpa visualisasi, karena asam kromat bersifat korosif kuat sehingga memicu risiko ruptur esofagus atau aspirasi asam. Pemberian arang aktif (*activated charcoal*) tidak efektif karena daya adsorpsi arang terhadap ion logam berat sangat buruk.
+2.  **Antidotum Kimiawi Lambung (Asam Askorbat / Vitamin C):**
+    *   *Mekanisme:* Asam askorbat bertindak sebagai reduktor kuat yang mentransfer elektron ke Cr(VI) di dalam lumen lambung, mengubahnya secara instan menjadi kation **Cr(III) yang praktis tidak diserap oleh mukosa gastrointestinal**, lalu diekskresikan aman lewat feses.
+    *   *Dosis:* Segera berikan larutan **asam askorbat oral dosis 2 sampai 10 gram** dilarutkan dalam air (atau via selang nasogastrik lunak jika jalan napas terlindungi).
+3.  **Resusitasi Cairan dan Proteksi Ginjal:**
+    Penyebab kematian utama dalam 24–72 jam pertama adalah **gagal ginjal akut (*Acute Tubular Necrosis* / ATN)** akibat toksisitas sitotoksik langsung kromium pada tubulus proksimal dan syok hipovolemik. Berikan hidrasi intravena agresif (kristaloid NaCl 0,9%) untuk memelihara *urine output* tinggi (>100–200 mL/jam) disertai pemantauan keseimbangan cairan ketat.
+4.  **Peran Kelasi dan Hemodialisis:**
+    *   *Kelasi Sistemik:* Agen kelasi sulfhidril konvensional (BAL / Dimercaprol) memiliki efikasi terbatas dan toksisitas tinggi; **DMSA (Succimer) atau Kalsium Disodium EDTA (\\(\text{CaNa}_2\text{EDTA}\\))** dapat dipertimbangkan pada fase awal untuk meningkatkan eliminasi Cr(III) bebas di urin, namun harus digunakan dengan pemantauan fungsi ginjal ekstra hati-hati karena EDTA sendiri berpotensi nefrotoksik.
+    *   *Hemodialisis:* Diindikasikan segera bila pasien jatuh ke dalam oliguria/anuria, hiperkalemia, asidosis refrakter, dan uremia. Meskipun hemodialisis tidak efektif membersihkan kromium yang telah terperangkap di dalam eritrosit, tindakan ini mutlak menyelamatkan nyawa dari gagal ginjal akut.
+
+#### b. Kontak Kulit dan Mata (*Dermal & Ocular Decontamination*)
+1.  *Kulit:* Buka seluruh pakaian yang terkontaminasi dan masukkan ke kantong ganda (*double-bagging*). Basuh kulit dengan air mengalir dalam jumlah masif selama minimal 15–20 menit.
+2.  *Aplikasi Asam Askorbat Topikal:* Oleskan kasa yang dibasahi **larutan asam askorbat 10% atau salep asam askorbat** langsung ke area luka bakar kimiawi; reduksi Cr(VI) menjadi Cr(III) pada permukaan dermis terbukti mencegah timbulnya ulkus bergaung (*chrome holes*) dan menekan absorpsi perkutan sistemik.
+3.  *Mata:* Irigasi segera dengan salin normal steril atau air steril secara kontinu selama minimal 15–30 menit, eversi kelopak mata, evaluasi pH konjungtiva, dan rujuk darurat ke dokter spesialis mata.
+
+#### c. Inhalasi Akut (Uap Asam Kromat / Aerosol Cr VI Pekat)
+1.  Pindahkan korban segera dari zona bahaya (*Hot Zone*) ke udara bersih.
+2.  Berikan suplementasi oksigen lembap 100%.
+3.  Bila terjadi bronkospasme, berikan terapi aerosol bronkodilator agonis beta-2 (salbutamol).
+4.  *Waspada Edema Paru Kimiawi Lambat:* Karena senyawa kromat dapat memicu kerusakan membran alveolar-kapiler yang tertunda (*delayed chemical pneumonitis/pulmonary edema*), **pasien wajib diobservasi ketat di ruang rawat intensif (ICU) selama 24 hingga 48 jam** dengan pemantauan serial foto toraks dan analisis gas darah arterial.
+
+---
+
+### 12. Tata Laksana Individu dan Komunitas Okupasi
+
+Penerapan menyeluruh standar pelayanan Kedokteran Okupasi di faskes dan manajemen perusahaan mengacu pada **Permenkes No. 11 Tahun 2022** dan regulasi K3 nasional:
+
+```
+                     [ PENERAPAN 7 LANGKAH DIAGNOSIS OKUPASI ]
+                                         │
+        ┌────────────────────────────────┼────────────────────────────────┐
+        ▼                                ▼                                ▼
+  [ KANKER PARU BRONKOGENIK ]     [ ULKUS SEPTUM NASI ]        [ DERMATITIS KONTAK (DKA) ]
+  • Riwayat: Plating/welder       • Riwayat: Aerosol asam      • Riwayat: Kontak semen/larutan
+  • Masa laten: > 10–20 tahun       kromat tanpa LEV             kromat pada tangan
+  • Bukti: Sitologi / Histologi   • Klinis: Ulkus bergaung /   • Bukti: Patch Test Positif
+  • Hubungan kausal Cr(VI) A1       perforasi septum nasi        terhadap Kalium Dikromat
+  • Evaluasi rokok (sinergisme)   • Dosis internal: Cr-U naik  • Resolusi saat libur kerja
+```
+
+#### a. Aplikasi 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022)
+
+##### Kasus A: Karsinoma Paru Bronkogenik pada Pekerja Pengelasan Stainless Steel / Hard Chrome
+*   **Langkah 1 (Diagnosis Klinis):** Karsinoma Sel Skuamosa Paru Lobus Superior Dextra stadium IIIA (ICD-10: C34.1) ditegakkan via CT-Scan toraks, bronkoskopi, dan biopsi histopatologi.
+*   **Langkah 2 (Pajanan di Tempat Kerja):** Bekerja selama 18 tahun sebagai *welder* baja tahan karat (*stainless steel*) menggunakan teknik FCAW dan SMAW di ruang tertutup (*confined space* tangki industri). Terpajan *fume* mengandung senyawa Cr(VI) dan nikel.
+*   **Langkah 3 (Hubungan Kausal Berdasarkan Bukti Ilmiah):** IARC Monograph 100C dan dokumen ACGIH menetapkan senyawa Cr(VI) sebagai karsinogen paru manusia terbukti (Grup 1 / A1) dengan masa laten rata-rata 10–30 tahun.
+*   **Langkah 4 (Besaran Pajanan):** Hasil pemantauan higiene industri masa lalu menunjukkan konsentrasi Cr(VI) di udara kerja mencapai \\(0{,}015\text{ mg/m}^3\\) (melampaui TLV \\(0{,}0002\text{ mg/m}^3\\) dan NAB \\(0{,}01\text{ mg/m}^3\\)); respirasi tanpa respirator standar particulate filter P100.
+*   **Langkah 5 (Faktor Individu):** Laki-laki, usia 52 tahun, tidak ada riwayat defisiensi imun atau radiasi toraks sebelumnya.
+*   **Langkah 6 (Faktor Luar Tempat Kerja):** Riwayat merokok 10 batang per hari selama 15 tahun (Indeks Brinkman sedang: 150). *Catatan Toksikologi:* Merokok dan pajanan kromium memiliki efek multiplikatif/sinergis terhadap karsinogenesis paru, namun keberadaan faktor merokok tidak menggugurkan kontribusi pajanan karsinogen industri Cr(VI) yang substansial.
+*   **Langkah 7 (Kesimpulan Diagnosis):** **Penyakit Akibat Kerja (PAK)** — Kanker Paru Akibat Kerja Persenyawaan Kromium VI (Perpres 7/2019 Lampiran III Butir 4).
+
+##### Kasus B: Ulkus dan Perforasi Septum Nasi pada Pekerja Electroplating
+*   **Langkah 1 (Diagnosis Klinis):** Perforasi Septum Nasi Kartilago Anterior (ICD-10: J34.8) via pemeriksaan rhinoskopi anterior dan endoskopi nasal.
+*   **Langkah 2 (Pajanan Kerja):** Bekerja 6 tahun di area bak pelapisan krom (*electroplating bath*) yang menggunakan larutan \\(\text{CrO}_3\\).
+*   **Langkah 3 (Hubungan Kausal):** Asam kromat adalah agen kaustik korosif spesifik yang memicu iskemia dan nekrosis avaskular kartilago septum quadrangularis.
+*   **Langkah 4 (Besaran Pajanan):** Kadar Cr(VI) udara bak \\(0{,}08\text{ mg/m}^3\\) (melebihi NAB \\(0{,}05\text{ mg/m}^3\\)); total kromium urin akhir shift = **\\(38\ \mu\text{g/L}\\)** (melebihi BEI 25 µg/L).
+*   **Langkah 5 (Faktor Individu):** Higiene perorangan buruk; kebiasaan mengucek hidung dengan tangan kerja yang terkontaminasi.
+*   **Langkah 6 (Faktor di Luar Kerja):** Tidak ada riwayat trauma wajah, penyalahgunaan kokain intranasal, infeksi tuberkulosis, sifilis, atau penyakit autoimun (granulomatosis Wegener negatif).
+*   **Langkah 7 (Kesimpulan):** **Penyakit Akibat Kerja (PAK)** — Penyakit Saluran Pernapasan Akibat Senyawa Kromium (Perpres 7/2019 Lampiran I.a Butir 4).
+
+##### Kasus C: Dermatitis Kontak Alergi pada Pekerja Konstruksi / Semen
+*   **Langkah 1 (Diagnosis Klinis):** Dermatitis Kontak Alergi (ICD-10: L23.0 akibat logam).
+*   **Langkah 2 (Pajanan Kerja):** Pekerja plesteran semen basah selama 4 tahun; kontak kutaneus harian dengan semen Portland.
+*   **Langkah 3 (Hubungan Kausal):** Semen Portland mengandung Cr(VI) larut air yang bertindak sebagai hapten kuat penginduksi hipersensitivitas tipe IV.
+*   **Langkah 4 (Besaran Pajanan):** Sarung tangan kain rembes; uji tempel (*Patch Test*) positif kuat (++) terhadap **Kalium Dikromat 0,5% dalam petrolatum**.
+*   **Langkah 5 (Faktor Individu):** Riwayat atopi kulit sebelumnya negatif.
+*   **Langkah 6 (Faktor di Luar Kerja):** Tidak menggunakan produk kulit rumah tangga yang mengandung garam kromium.
+*   **Langkah 7 (Kesimpulan):** **Penyakit Akibat Kerja (PAK)** — Dermatosis Kontak Alergika Akibat Kerja (Perpres 7/2019 Lampiran II.b Butir 1).
+
+---
+
+#### b. Penilaian Kelaikan Kerja (*Fitness for Work*)
+Status kelaikan kerja pekerja ditentukan secara kasuistik dan dinamis:
+
+| Kondisi Klinis Pekerja | Status Kelaikan Kerja | Rekomendasi Medis Okupasi & Batasan Kerja (*Restrictions*) |
+| :--- | :--- | :--- |
+| **Kanker Paru Karsinoma Bronkogenik** | **Tidak Laik Kerja Permanen (*Permanently Unfit for Work*)** | • Pembebasan mutlak dari seluruh pajanan karsinogen industri.<br>• Rujuk ke tim onkologi untuk tata laksana kuratif/paliatif (PP 28/2024 Pasal 233 ayat 10).<br>• Proses **klaim kompensasi kecacatan JKK BPJS Ketenagakerjaan**. |
+| **Perforasi Septum Nasi Stabil (Asimtomatik)** | **Laik Kerja dengan Catatan / Batasan (*Fit with Restriction*)** | • **DILARANG terpajan uap/kabut asam kromat dan gas iritan napas**.<br>• Relokasi ke divisi kering/bersih non-pajanan.<br>• Perawatan mukosa hidung berkala (irigasi salin nasal, salep pelumas mukosa). |
+| **Ulkus Septum Nasi Aktif / Chrome Holes Kulit** | **Tidak Laik Kerja Sementara (*Temporarily Unfit for Work*)** | • Lepas kerja sementara dari area basah hingga ulkus mengalami epitelisasi tuntas.<br>• Perawatan lokal luka bakar kromium dengan asam askorbat topikal.<br>• Evaluasi ulang setelah 2–4 minggu. |
+| **Dermatitis Kontak Alergi Sensitisasi Cr(VI)** | **Tidak Laik Kerja untuk Unit Terpajan (*Unfit for Specific Job*)** | • **REMOVAL PERMANEN** dari unit kerja yang berkontak dengan larutan kromat atau debu semen basah (sensitisasi sel T bersifat permanen sepanjang hidup).<br>• Rekomendasi mutasi pekerjaan ke bagian administrasi/logistik non-kimiawi (*Job Transfer*). |
+
+---
+
+#### c. Rekomendasi Intervensi Manajemen: Hierarki Pengendalian dan Program Surveilans
+Sebagai dokter spesialis, Anda wajib menyerahkan laporan audit lingkungan dan rekomendasi teknis kepada *Top Management*:
+
+```
+                           [ HIERARKI PENGENDALIAN Cr(VI) DI INDUSTRI ]
+                                                │
+         ┌──────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                      ▼                                      ▼
+   [ ELIMINASI / SUBSTITUSI ]            [ REKAYASA TEKNIK (LEV) ]            [ ALAT PELINDUNG DIRI ]
+• Ganti pelapisan Cr(VI) dengan         • Local Exhaust Ventilation (LEV)      • Respirator Partikulat N95/P100
+  teknologi Krom Trivalen [Cr(III)]       tipe slot pada bibir bak plating       atau PAPR HEPA (Las Stainless)
+• Reduksi Cr(VI) semen dengan           • Penambahan chemical mist             • Sarung tangan panjang Butil/Nitril
+  Ferrous Sulfate (FeSO4)                 suppressant (busa pencegah aerosol)  • Apron kimia & pelindung mata
+```
+
+1.  **Hierarki Pengendalian Teknis (Pasal 21 Permenaker 5/2018):**
+    *   *Substitusi:* Mengganti proses *electroplating* asam kromat Cr(VI) dengan sistem **pelapisan krom trivalen Cr(III)** yang jauh lebih aman dan non-karsinogenik; menambahkan **besi sulfat (\\(\text{FeSO}_4\\))** pada adonan semen Portland untuk mereduksi Cr(VI) terlarut menjadi Cr(III) yang tidak larut air.
+    *   *Rekayasa Teknik (*Engineering Controls*):* Memasang sistem ventilasi pembuangan lokal (*Local Exhaust Ventilation* / LEV) lateral atau tipe *push-pull* pada bibir bak pelapisan asam kromat dengan kecepatan hisap minimal **\\(0{,}5\text{ m/detik}\\)**; menggunakan bola-bola plastik penutup permukaan cairan bak (*polypropylene balls*) dan zat penekan kabut (*chemical mist suppressants*) untuk mencegah loncatan gelembung aerosol Cr(VI).
+    *   *Pengendalian Administratif:* Rotasi waktu kerja harian; pembersihan area ceceran dengan metode vakum basah (HEPA *vacuum*); penyediaan fasilitas mandi bilas dan wastafel terpisah (*double-locker system*) guna mencegah kontaminasi silang ke rumah (*take-home exposure*).
+    *   *Alat Pelindung Diri (APD):* Respirator pemurni udara dengan filter partikulat efisiensi tinggi (N100/P100) atau respirator udara bertenaga (*Powered Air-Purifying Respirator* / PAPR) saat mengelas *stainless steel*; sarung tangan karet butil/nitril tebal; serta pelindung wajah (*face shield*).
+2.  **Protokol Surveilans Kesehatan Kerja Berkala (Medical Surveillance):**
+    *   *Pemeriksaan Pra-Kerja (*Pre-employment*):* Anamnesis riwayat asma/atopi kulit, pemeriksaan fisik kulit dan membran mukosa hidung dasar, rontgen toraks PA, dan spirometri dasar (FVC dan FEV1).
+    *   *Pemeriksaan Berkala (*Periodic Surveillance*):*
+        *   **Inspeksi Rhinoskopi Anterior:** Wajib dilakukan **setiap 6 bulan sekali** pada seluruh pekerja *electroplating* untuk mendeteksi dini eritema, krusta, atau erosi septum nasi sebelum terjadi perforasi kartilago.
+        *   **Pemeriksaan Kulit Tangan dan Lengan:** Skrining lesi ulkus bergaung (*chrome holes*) dan eksema.
+        *   **Uji Fungsi Paru (Spirometri):** Minimal **1 tahun sekali** untuk mendeteksi dini penurunan laju FEV1 akibat asma kerja atau bronkitis kronis.
+        *   **Biomonitoring Rutin:** Pengukuran Total Kromium Urin (Cr-U) post-shift pada akhir minggu kerja secara berkala.
+
+---
+
+### 13. Keterangan Regulasi, Status Karsinogenisitas, dan Nilai Pembanding
+
+Untuk menjawab pertanyaan perbandingan antar-lembaga regulasi global:
+
+| Lembaga / Badan Regulasi | Status / Angka Regulasi Cr(VI) | Nilai Pembanding Cr(III) / Logam | Makna Regulasi & Catatan Khusus |
+| :--- | :--- | :--- | :--- |
+| **IARC (WHO)** | **Grup 1** (*Carcinogenic to humans*) | **Grup 3** (*Not classifiable*) | Seluruh persenyawaan Cr(VI) terbukti karsinogen paru dan sinonasal pada manusia. Cr(III) dan Cr(0) masuk Grup 3. |
+| **ACGIH (2026)** | **TLV-TWA \\(0{,}0002\text{ mg/m}^3\\) (I)**<br>**TLV-STEL \\(0{,}0005\text{ mg/m}^3\\) (I)** | Cr(III): **\\(0{,}003\text{ mg/m}^3\\)**<br>Cr(0): **\\(0{,}5\text{ mg/m}^3\\)** | Menggunakan fraksi inhalabel; Notasi A1, Skin (larut air), DSEN, RSEN, BEI. |
+| **Permenaker 5/2018** | **NAB \\(0{,}05\text{ mg/m}^3\\)** (Larut Air)<br>**NAB \\(0{,}01\text{ mg/m}^3\\)** (Tak Larut) | Cr(III): **\\(0{,}5\text{ mg/m}^3\\)**<br>Cr(0): **\\(0{,}5\text{ mg/m}^3\\)** | Angka baku yuridis di Indonesia; Notasi A1, Segitiga BEI. |
+| **OSHA PEL (AS)** | **PEL-TWA \\(0{,}005\text{ mg/m}^3\\) (\\(5\ \mu\text{g/m}^3\\))**<br>*Action Level* = **\\(0{,}0025\text{ mg/m}^3\\)** | Cr(II/III): **\\(0{,}5\text{ mg/m}^3\\)**<br>Cr Metal: **\\(1{,}0\text{ mg/m}^3\\)** | Standar hukum di AS; *Action Level* memicu kewajiban surveilans medis rutin berkala. |
+| **NIOSH REL (AS)** | **REL-TWA \\(0{,}001\text{ mg/m}^3\\) (\\(1\ \mu\text{g/m}^3\\))**<br>IDLH: **\\(15\text{ mg/m}^3\\) {sebagai Cr(VI)}** | Cr(II/III): **\\(0{,}5\text{ mg/m}^3\\)**<br>Cr Metal: **\\(0{,}5\text{ mg/m}^3\\)** | Ditetapkan dengan klasifikasi *Potential Occupational Carcinogen* (Ca). |
+
+---
+
+### Clinical Pearl dan Jebakan Ujian Khusus Kromium (*Examiner's Traps*)
+
+Catat baik-baik poin krusial berikut agar Anda tidak tergelincir saat sesi tanya-jawab ujian oral:
+
+> 💎 **CLINICAL PEARL:**
+> 1.  **Pemberian Asam Askorbat (Vitamin C) Efektif Secara Topikal dan Oral, TETAPI DILARANG DIBERIKAN INTRAVENA DOSIS TINGGI.** 
+>     Di lumen saluran cerna atau permukaan kulit luar, asam askorbat mereduksi Cr(VI) menjadi Cr(III) yang non-absorbable (detoksifikasi). Namun, jika asam askorbat diinjeksikan secara intravena dalam dosis masif, askorbat intraseluler justru mempercepat reduksi Cr(VI) menjadi radikal Cr(V)/Cr(IV) di dalam organel seluler yang menghasilkan kaskade stres oksidatif dan pembentukan ikatan silang DNA-protein (bioaktivasi toksik).
+> 2.  **Perforasi Septum Nasi Kromium Tidak Menimbulkan Nyeri Hebat.**
+>     Pekerja pelapis logam sering datang dengan lubang septum nasi yang sudah tembus tanpa keluhan nyeri hebat karena daya korosif asam kromat telah menghancurkan ujung-ujung saraf sensorik lokal di mukosa hidung (*painless perforation*).
+>
+> ⚠️ **JEBAKAN UJIAN DEWAN SPESIALIS (*EXAM TRAPS*):**
+> *   *Jebakan 1: "Apakah semua senyawa kromium karsinogenik?"*
+>     **SALAH.** Hanya **Kromium Heksavalen [Cr(VI)]** yang karsinogenik (IARC Grup 1, ACGIH A1). Kromium Trivalen [Cr(III)] dan Logam Kromium [Cr(0)] tergolong IARC Grup 3 dan ACGIH A4. Jangan pernah menjawab "kromium karsinogenik" tanpa menyebutkan tingkat valensinya!
+> *   *Jebakan 2: "Apakah kromium urin (Cr-U) dapat membedakan pajanan Cr(VI) vs Cr(III)?"*
+>     **TIDAK BISA.** Pemeriksaan spektrometri ICP-MS atau AAS pada urin mengukur **Total Kromium Elemental**. Untuk membuktikan pajanan internal spesifik Cr(VI), biomarker yang digunakan adalah **Kromium Sel Darah Merah (Cr-RBC)**, karena Cr(III) di plasma ditolak oleh saluran membran anion eritrosit.
+> *   *Jebakan 3: "Bolehkah pekerja yang mengalami perforasi septum nasi dimutasi ke area yang memiliki pajanan uap nikel atau asam?"*
+>     **DILARANG KERAS.** Tulang rawan septum yang telah kehilangan sawar mukosa protektif sangat rentan mengalami infeksi sekunder, destruksi vaskular, dan karsinoma bila terpajan kontaminan asam atau senyawa karsinogenik lain.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **ACGIH (2026 Edition).** *Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel *Adopted Values*: Hexavalent Chromium Compounds [CAS 7440-47-3] as Cr(VI) (TWA 0,0002 mg/m³ [I], STEL 0,0005 mg/m³ [I], Notasi A1, Skin [Water-soluble only], DSEN, RSEN, BEI, hlm. 22); Trivalent Chromium as Cr(III) (TWA 0,003 mg/m³ [I], A4, DSEN, RSEN, hlm. 22); Metallic Chromium Cr(0) (TWA 0,5 mg/m³ [I], hlm. 22); Chromyl Chloride (hlm. 22); serta Tabel Adopsi BEI Total Chromium in Urine (0,7 µg/L Notasi Pop pada akhir shift akhir minggu kerja, hlm. 122).
+2.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018:**
+    *   Lampiran 3: Batas Kadar Faktor Kimia untuk Krom VI Larut di Air NOC (NAB 0,05 mg/m³, A1, BEI), Krom VI Tidak Larut Air NOC (NAB 0,01 mg/m³, A1), Logam dan Persenyawaan Anorganik Cr(III) (NAB 0,5 mg/m³, A4), Kromil Klorida (hlm. 104–105).
+    *   Lampiran 4: Standar Indeks Pajanan Biologi (IPB) Kromium.
+3.  **Peraturan Presiden RI No. 7 Tahun 2019:**
+    *   Pasal 2, Lampiran I.a Butir 4 (Penyakit Faktor Kimia Kromium) dan Lampiran III Butir 4 (Kanker Akibat Kerja Persenyawaan Kromium VI).
+4.  **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022:**
+    *   Pasal 5 (Tujuh Langkah Diagnosis Okupasi), Pasal 7–9 (Tata Laksana Medis dan Okupasi: Kelaikan Kerja dan Pemulihan Kerja).
+5.  **Peraturan Pemerintah RI No. 28 Tahun 2024:**
+    *   Pasal 232 s.d. 239 (Penyelenggaraan Upaya Kesehatan Kerja Komprehensif, Pencegahan PAK, Kelaikan Kerja, dan Pelayanan Paliatif).
+6.  **IARC (2012).** *A Review of Human Carcinogens: Arsenic, Metals, Fibres, and Dusts (IARC Monographs Vol. 100C)*:
+    *   Monograf *Chromium (VI) Compounds*: Klasifikasi Kelarutan OSHA, Karsinogenesis Paru Bronkogenik dan Sinonasal, Reduksi Intraseluler Askorbat, dan Evaluasi Grup 1.
+7.  **Verdonck, J. et al. (2021).** *Systematic review of biomonitoring data on occupational exposure to hexavalent chromium.* Int. J. Hyg. Environ. Health, 236: 113799:
+    *   Nilai Rujukan BEI ACGIH Tradisional (10 µg/L shift & 25 µg/L akhir minggu), Nilai BLV Prancis (2,5 µg/L), Nilai BMGV Inggris (10 µmol/mol), dan Nilai BAR Jerman (0,6 µg/L); Biomarker Cr-RBC dan Cr-Urin.
+8.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   Profil *Chromic acid and chromates*: REL TWA 0,001 mg/m³ (Ca), PEL TWA 0,005 mg/m³ (as CrO3); Profil *Chromium(III)* dan *Chromium metal*: REL TWA 0,5 mg/m³, PEL TWA 1 mg/m³.
+9.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., Wiley)*:
+    *   Bab 4 & Bab 21: Toksisitas Akut Gastrointestinal dan Ginjal (ATN), Penanganan Gawat Darurat Toksikologi, Asam Askorbat, Kontraindikasi Emesis Korosif, dan Hemodialisis.
+
+Pelajari seluruh uraian klinis dan yuridis ini dengan saksama, Dokter. Anda sekarang telah memiliki amunisi keilmuan yang lengkap untuk membedah kasus kromium di hadapan dewan penguji spesialis.
+
+---
+
+💼 Apakah Anda ingin kita simulasikan ujian lisan (*viva voce*) mengenai **penyusunan laporan penyelidikan medis dan komunikasi risiko** saat Anda menemukan klaster 3 orang pekerja *electroplating* yang semuanya mengalami erosi mukosa hidung dengan kadar Cr-U melampaui batas IPB?

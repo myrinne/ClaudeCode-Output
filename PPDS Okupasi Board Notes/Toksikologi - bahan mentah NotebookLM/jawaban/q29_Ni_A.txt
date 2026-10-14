@@ -1,0 +1,364 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), penguasaan Anda terhadap **toksikologi nikel (Ni)** adalah salah satu parameter krusial kelulusan di hadapan dewan penguji. 
+
+Nikel memiliki keunikan toksikologis yang sangat luas: mulai dari statusnya sebagai **penyebab dermatitis kontak alergi kerja nomor satu di dunia**, potensi kedaruratan fatal intoksikasi uap **nikel karbonil [\\(\text{Ni(CO)}_4\\)]**, hingga sifat karsinogenisitas multi-situsnya (**kanker paru dan kanker sinonasal**) yang dimediasi oleh mekanisme **epigenetik dan gangguan perbaikan DNA**. 
+
+Banyak kandidat spesialis gagal di meja ujian karena rancu mengelompokkan spesiasi nikel (senyawa larut air vs. tidak larut air), keliru memahami biopersistensi intraseluler partikulat sulfida/oksida, atau abai terhadap fase laten bifasik yang menipu pada keracunan nikel karbonil.
+
+Berikut adalah telaah mendalam **NIKEL (Ni), BAGIAN A** yang wajib Anda kuasai di luar kepala:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Spesiasi Nikel
+
+Nikel (nomor atom 28, berat atom 58,69 g/mol) terletak pada Golongan VIIIB (kelompok logam transisi besi-kobalt-nikel) periode 4 tabel periodik. Dalam toksikologi industri dan kimia analitik okupasi, nikel diklasifikasikan ke dalam **empat fraksi spesiasi utama** berdasarkan kelarutan dan reaktivitas kimianya:
+
+```
+                                [ KLASIFIKASI SPESIASI NIKEL ]
+                                               │
+         ┌───────────────────────────┬─────────┴─────────┬───────────────────────────┐
+         ▼                           ▼                   ▼                           ▼
+[ NIKEL ELEMENTAL / LOGAM ]  [ SENYAWA LARUT AIR ]   [ SENYAWA TIDAK LARUT AIR ]   [ NIKEL KARBONIL ]
+• Logam murni Ni⁰ & aloi     • NiSO₄ (Nikel Sulfat)  • Ni₃S₂ (Nikel Subsulfida)    • Ni(CO)₄ (Tetrakarbonil)
+• Sangat tahan korosi        • NiCl₂ (Nikel Klorida) • NiS (Nikel Monosulfida)     • Cairan volatil, sangat
+• Titik leleh: 1453°C        • Ni(NO₃)₂ (Nitrat)     • NiO (Oksida hijau & hitam)    lipofilik (Mond Process)
+• Melarut lambat oleh asam   • Bioavailabilitas darah • Biopersistensi paru lama    • Titik didih: 43°C (110°F)
+  organik keringat (keringat)  tinggi, urin cepat     • Fagositosis intraseluler    • Paling toksik akut!
+```
+
+1.  **Nikel Logam / Elemental [Ni(0)] [CAS 7440-02-0]:**
+    *   *Karakteristik:* Logam transisi padat berwarna putih keperakan (*lustrous, silvery solid*), memiliki sifat feromagnetik, konduktor panas dan listrik yang baik, tahan terhadap oksidasi dan korosi basa, titik leleh 1453°C (2831°F), dan titik didih 2837°C (5139°F).
+    *   *Reaktivitas Biologis:* Bentuk bongkahan padatnya bersifat lembam (*inert*), namun bubuk partikulat halus nikel logam dapat larut secara lambat oleh asam lemah atau cairan biologis. Pada kontak kulit yang lama, nikel logam **terlarut secara perlahan oleh asam organik dan natrium klorida di dalam keringat (*sweat dissolution*)**, melepaskan kation divalen (**\\(\text{Ni}^{2+}\\)**) yang memicu sensitisasi imun.
+2.  **Senyawa Nikel Larut Air (*Soluble Nickel Compounds*):**
+    *   *Senyawa Kunci:* **Nikel sulfat heksahidrat [\\(\text{NiSO}_4\cdot 6\text{H}_2\text{O}\\)]**, **nikel klorida [\\(\text{NiCl}_2\cdot 6\text{H}_2\text{O}\\)]**, dan **nikel nitrat [\\(\text{Ni(NO}_3)_2\\)]**.
+    *   *Karakteristik:* Sangat mudah larut dalam air (*water-soluble*), membentuk ion heksahidrat kehijauan [\\(\text{Ni(H}_2\text{O})_6^{2+}\\)] di dalam larutan netral.
+    *   *Perilaku Biologis:* Diabsorpsi secara cepat melintasi mukosa saluran cerna dan epitel kapiler paru ke dalam darah vaskular, serta **dieliminasi secara cepat melalui ekskresi filtrasi ginjal ke dalam urin**.
+3.  **Senyawa Nikel Tidak Larut Air (*Insoluble / Sparingly Soluble Nickel Compounds*):**
+    *   *Senyawa Kunci:* 
+        *   *Fraksi Sulfida:* **Nikel subsulfida [\\(\alpha\text{-Ni}_3\text{S}_2\\)]**, nikel monosulfida kristalin [\\(\text{NiS}\\)], dan heksasulfida.
+        *   *Fraksi Oksida & Hidroksida:* **Nikel monoksida [\\(\text{NiO}\\)]** (baik varian *green nickel oxide* yang dikalsinasi suhu tinggi maupun *black nickel oxide* yang lebih reaktif), nikel trioksida [\\(\text{Ni}_2\text{O}_3\\)], nikel hidroksida [\\(\text{Ni(OH)}_2\\)], dan nikel karbonat.
+    *   *Karakteristik:* Praktis tidak larut dalam air dan tahan terhadap degradasi ekstraseluler.
+    *   *Perilaku Biologis (Sangat Penting):* Partikulat kristalin senyawa ini memiliki **biopersistensi pulmonal yang sangat tinggi (*high lung biopersistence*)**. Partikel tidak langsung larut di mukus, melainkan **diinternalisasi ke dalam sel-sel epitel bronkial dan makrofag melalui proses endositosis/fagositosis aktif**. Di dalam vakuola lisosom intraseluler, partikel mengalami pelarutan lambat secara berkesinambungan, bertindak sebagai **depot intraseluler pelepasan ion \\(\text{Ni}^{2+}\\) pekat langsung ke inti sel (nukleus)**.
+4.  **Nikel Karbonil / Tetrakarbonil Nikel [\\(\text{Ni(CO)}_4\\)] [CAS 13463-39-3]:**
+    *   *Karakteristik Fisik-Kimia:* Senyawa organologam kompleks koordinasi berbentuk **cairan tak berwarna hingga kekuningan yang sangat mudah menguap (*volatile liquid*)** dengan aroma khas seperti jamur/musty odor. 
+    *   *Konstanta Fisik:* Memiliki berat molekul 170,7 g/mol, titik didih sangat rendah yaitu **43°C (110°F)** (sehingga menjadi gas pada suhu ruang hangat), titik beku -25°C, dan tekanan uap yang luar biasa tinggi (**315 mmHg pada 20°C**). Bersifat mudah terbakar (*Class IB Flammable Liquid*) dan dapat meledak bila bereaksi dengan udara atau oksigen.
+    *   *Kelarutan:* Sangat larut dalam pelarut organik non-polar dan **sangat lipofilik (*highly lipophilic*)**, memungkinkannya melintasi membran fosfolipid alveolo-kapiler dan sawar darah otak secara instan.
+
+---
+
+### 2. Sumber dan Penggunaan Industri
+
+Pajanan okupasi terhadap aerosol, debu, kabut cairan, dan uap nikel tersebar luas di berbagai rantai manufaktur modern:
+
+```
+                                  [ SEKTOR INDUSTRI UTAMA PAJANAN NIKEL ]
+                                                     │
+         ┌───────────────────────────┬───────────────┴───────────────┬───────────────────────────┐
+         ▼                           ▼                               ▼                           ▼
+[ PELEBURAN & PEMURNIAN NIKEL ]     [ STAINLESS STEEL & ALOI ]      [ PELAPISAN & ELEKTROPLATING ]  [ BATERAI, KATALIS & KONSUMEN ]
+• Smelter pirometalurgi (matte)     • Industri baja tahan karat     • Pelapisan krom-nikel hiasan   • Katoda Baterai: Ni-Cd, NiMH,
+• Hidrometalurgi / elektrolisis       (seri 300: 8–12% Ni)            dan protektif korosi logam      Litium-ion (NMC, NCA)
+• Proses Mond (pembentukan Ni(CO)₄) • Paduan superaloi Monel/Inconel• Bak larutan NiSO₄ & NiCl₂    • Katalis Raney Nickel hidrogenasi
+• Debu sulfida & kalsinasi oksida   • Pengelasan stainless steel    • Kabut aerosol asam pelapis   • Perhiasan, tindik, koin, ritsleting
+```
+
+1.  **Peleburan dan Pemurnian Nikel Primer (*Nickel Smelting and Refining*):**
+    *   *Pirometalurgi & Pemanggangan (*Roasting/Sintering*):* Pengolahan bijih sulfida (pentlandite) menghasilkan konsentrat *nickel matte*, di mana pekerja terpajan konsentrasi tinggi debu **nikel subsulfida [\\(\text{Ni}_3\text{S}_2\\)] dan nikel oksida [\\(\text{NiO}\\)]** pada tanur kalsinasi.
+    *   *Proses Mond / Nikel Karbonil:* Pemurnian nikel tingkat kemurnian tinggi (>99,9%) di mana logam nikel kasar direaksikan dengan gas karbon monoksida (CO) pada suhu 50°C membentuk gas **\\(\text{Ni(CO)}_4\\)**, yang kemudian didekomposisi kembali menjadi pelet nikel murni pada suhu 230°C. Kebocoran sistem pipa pada proses ini memicu tragedi keracunan akut massal.
+    *   *Elektrolisis Hidrometalurgi:* Pekerja di tangki pemurnian elektrolisis terpajan aerosol kabut garam **nikel sulfat dan nikel klorida** dari bak rendaman asam.
+2.  **Manufaktur Baja Nirkarat dan Paduan Aloi Khusus (*Stainless Steel & Superalloys*):**
+    *   Mengonsumsi **sekitar 65%–70% dari total produksi nikel global**.
+    *   Baja nirkarat austenitik (seperti seri AISI 304 dan 316) mengandung 8% hingga 12% nikel untuk meningkatkan ketahanan korosi dan kekuatan mekanik.
+    *   Paduan superaloi nikel (*Inconel, Monel, Hastelloy, Nichrome*) digunakan luas pada bilah turbin pesawat terbang, reaktor nuklir, dan elemen pemanas listrik.
+    *   Pekerja peleburan aloi, penuangan logam (*foundry*), dan **pengelasan baja nirkarat (*stainless steel welders*)** terpajan asap uap nikel dan kromium heksavalen secara simultan.
+3.  **Industri Pelapisan Logam (*Electroplating and Electroless Plating*):**
+    *   Penggunaan garam **nikel sulfat heksahidrat dan nikel klorida** sebagai elektrolit utama dalam bak elektroplating untuk memberikan lapisan dasar mengkilap dan anti-karat sebelum dilapisi kromium. Pekerja terpajan kabut aerosol cairan (*liquid mists*) akibat semburan gas hidrogen pada anoda.
+4.  **Manufaktur Baterai Isi Ulang (*Rechargeable Batteries*):**
+    *   Produksi baterai tradisional **Nikel-Kadmium (Ni-Cd)** dan **Nikel-Metal Hidrida (NiMH)** menggunakan nikel hidroksida dan nikel oksida pada pelat elektrodanya.
+    *   Pada industri kendaraan listrik modern (EV), nikel merupakan komponen katoda utama dalam sel baterai litium-ion densitas energi tinggi, seperti **NMC (Nikel-Mangan-Kobalt)** dan **NCA (Nikel-Kobalt-Aluminium)**.
+5.  **Katalis Kimiawi Industri (*Industrial Catalysts*):**
+    *   Penggunaan **nikel Raney (*Raney nickel*)** dan nikel oksida berpori sebagai katalisator reaksi hidrogenasi minyak nabati (pembuatan margarin), desulfurisasi fraksi minyak bumi, sintesis amonia, dan perengkahan hidrokarbon.
+6.  **Barang Konsumen dan Kontak Kulit Non-Okupasi:**
+    *   Penggunaan logam nikel pada perhiasan imitasi murah, tindik daun telinga (*ear piercing*), kancing celana jin, kepala sabuk, ritsleting (*zipper*), koin mata uang, kawat gigi ortodonti, implan prostesis medis, hingga penutup luar telepon genggam (*cell phones*).
+
+---
+
+### 3. Toksikokinetik Komprehensif (ADME Tiap Bentuk Spesiasi)
+
+Nasib kinetika nikel dalam tubuh manusia ditentukan secara fundamental oleh status kelarutan spesiasinya:
+
+```
+                           [ MODEL TOKSIKOKINETIK SPESIASI NIKEL ]
+                                              │
+         ┌────────────────────────────────────┼────────────────────────────────────┐
+         ▼                                    ▼                                    ▼
+[ SENYAWA LARUT (NiSO₄ / NiCl₂) ]    [ SENYAWA TAK LARUT (Ni₃S₂ / NiO) ]    [ NIKEL KARBONIL Ni(CO)₄ ]
+• Inhalasi: Absorpsi cepat di alveoli• Inhalasi: Mengendap di mukosa,       • Inhalasi: Penetrasi membran
+• Masuk kapiler darah vaskular         fagositosis aktif oleh makrofag/sel    alveolo-kapiler instan (lipofilik)
+• 75% terikat albumin & histidin       epitel paru (T1/2 berbulan-bulan)    • Lolos Sawar Darah Otak (BBB) bebas
+• EKSKRESI URIN CEPAT & MASIF        • Disolusi intraseluler lambat ──►     • Di eritrosit & jaringan: Terurai
+  (T1/2 vaskular: 20–34 jam)           pelepasan ion Ni²⁺ konstan ke nukleus  menjadi [ Ni²⁺ + 4 CO ]
+• Dermal: Penetrasi dibantu keringat • Sebagian klirens mukosiliar ──► feses• Ekskresi: Paru (uap utuh) & Urin
+```
+
+#### a. Absorpsi
+1.  **Inhalasi (Rute Primer Okupasi):**
+    *   *Senyawa Larut Air (NiSO₄, NiCl₂):* Mengendap pada saluran napas bawah, **diserap secara cepat dan ekstensif melintasi epitel alveoli ke kapiler darah** dengan waktu paruh klirens paru hanya sekitar **32 jam** pada model hewan.
+    *   *Senyawa Tidak Larut (Ni₃S₂, NiO):* Mengalami deposisi di percabangan trakeobronkial dan alveoli. Partikel tidak diserap langsung ke darah, melainkan **dieliminasi secara sangat lambat melalui eskalator mukosiliar menuju faring lalu tertelan**, atau **diinternalisasi melalui fagositosis aktif ke dalam sel epitel bronkial dan makrofag alveolar**. Waktu tinggal di paru sangat panjang: 4,6 hari untuk nikel subsulfida, dan mencapai **120 hingga 130 hari (bahkan hingga bertahun-tahun pada manusia) untuk nikel oksida hijau**.
+    *   *Nikel Karbonil [Ni(CO)₄]:* Karena berwujud gas/uap volatil dan memiliki kelarutan lipid yang ekstrem, **hampir 100% uap terhirup menembus barier alveolo-kapiler paru secara difusi pasif instan** menuju sirkulasi sistemik.
+2.  **Dermal (Penetrasi Perkutan):**
+    *   Penetrasi perkutan ion nikel anorganik melalui stratum korneum utuh dipicu oleh **pelarutan nikel oleh cairan keringat (*sweat dissolution*)**.
+    *   *Peran Kounter-Ion:* Laju difusi perkutan sangat bergantung pada jenis garamnya; **ion \\(\text{Ni}^{2+}\\) dari larutan nikel klorida menembus kulit hingga 50 kali lebih cepat dibandingkan dari larutan nikel sulfat**.
+    *   Koefisien permeabilitas kulit standar untuk nikel adalah \\(K_p \approx 2 \times 10^{-4}\text{ cm/jam}\\). Penyerapan meningkat drastis jika sawar stratum korneum rusak oleh maserasi keringat, deterjen pelarut lemak, abrasi mekanis, atau luka tindik kulit (*piercing*).
+3.  **Ingesti (Saluran Gastrointestinal):**
+    *   Asupan nikel harian populasi umum dari makanan dan air minum berkisar antara 0,1 hingga 0,3 mg/hari.
+    *   *Bioavailabilitas Saluran Cerna:* Penyerapan garam nikel larut pada saluran cerna manusia sangat rendah, yaitu **hanya sekitar 1% hingga 5% bila tertelan bersama makanan**, namun dapat melonjak hingga **20% hingga 40% pada kondisi lambung kosong (*fasting state*)**. Senyawa tidak larut praktis tidak diserap di usus dan keluar utuh lewat feses.
+
+#### b. Distribusi Jaringan
+*   **Di Dalam Kompartemen Vaskular:**
+    Begitu ion \\(\text{Ni}^{2+}\\) memasuki sirkulasi darah, sekitar **75% nikel plasma terikat kuat pada fraksi protein serum**: terutama **albumin serum (berikatan spesifik pada residu histidin di situs pengikatan tembaga N-terminal)**, \\(\alpha_2\\)-makroglobulin, serta membentuk kompleks dengan asam amino bebas **L-histidin**. Sebagian kecil terikat erat pada glikoprotein spesifik yang disebut **nikeloplasmin**.
+*   **Penyebaran Organ:**
+    Nikel terdistribusi luas ke seluruh jaringan lunak dengan konsentrasi tertinggi ditemukan pada **paru-paru** (terutama pasca-inhalasi partikulat yang menetap bertahun-tahun), disusul oleh **korteks ginjal, hepar, kelenjar adrenal, limpa, dan kelenjar tiroid**.
+*   **Penembusan Sawar Khusus oleh Nikel Karbonil:**
+    Berbeda dengan ion \\(\text{Ni}^{2+}\\) anorganik yang sulit melintasi membran lipid pelindung, molekul **\\(\text{Ni(CO)}_4\\) utuh melintasi Sawar Darah Otak (*Blood-Brain Barrier* / BBB) dan sawar plasenta secara bebas**, mendistribusikan racun langsung ke parenkim otak dan jaringan janin.
+
+#### c. Metabolisme dan Biotransformasi
+*   **Nikel Logam dan Senyawa Anorganik:** Sebagai kation unsur murni, nikel **tidak mengalami degradasi metabolik enzimatik** di dalam tubuh mamalia. Dinamika biologisnya murni melibatkan pertukaran ligan koordinasi kelat dan reaksi redoks transien antara \\(\text{Ni}^{2+}\\) dan \\(\text{Ni}^{3+}\\).
+*   **Nikel Karbonil [\\(\text{Ni(CO)}_4\\)]:** Di dalam eritrosit dan sitoplasma sel endotel vaskular hepar dan paru, molekul lipofilik \\(\text{Ni(CO)}_4\\) mengalami dekomposisi intraseluler dan oksidasi bertahap:
+    \\[\text{Ni(CO)}_4 \xrightarrow{\text{Oksidasi Intraseluler}} \text{Ni}^{2+} + 4\ \text{CO}\\]
+    Proses ini melepaskan **gas karbon monoksida (CO)** yang berikatan dengan hemoglobin membentuk karboksihemoglobin (HbCO dalam kadar rendah-sedang), serta melepaskan **kation \\(\text{Ni}^{2+}\\) sitotoksik bebas berkonsentrasi tinggi** di dalam sitosol sel target.
+
+#### d. Ekskresi
+*   **Rute Ekskresi Primer Mutlak: Urin (Filtrasi Ginjal):**
+    Fraksi nikel yang terserap ke dalam sirkulasi darah diekskresikan secara efisien melalui **filtrasi glomerulus ginjal ke dalam urin**, terlepas dari rute awal pajanannya. Ekskresi urin mencakup lebih dari 90% dari total eliminasi nikel sistemik yang diserap.
+*   **Rute Ekskresi Sekunder (Feses, Keringat, dan Rambut):**
+    *   *Feses:* Merupakan jalur eliminasi utama bagi nikel yang tidak diserap di usus halus serta fraksi partikulat inhalasi yang dibersihkan oleh mukosiliar saluran napas dan tertelan ke lambung. Sebagian kecil nikel sistemik diekskresikan melalui sekresi empedu ke lumen usus (*enterohepatic circulation*).
+    *   *Keringat & Deskuamasi:* Kehilangan nikel melalui keringat cukup bermakna pada kondisi iklim panas dan kerja fisik berat.
+
+---
+
+### 4. Toksikodinamik: Mekanisme Molekuler Kerusakan Organ Sasaran
+
+Toksisitas nikel mencakup respons imunologis seluler, kaskade transformasi keganasan epigenetik, dan sitotoksisitas membran:
+
+```
+                                  [ KASKADE TOKSIKODINAMIK NIKEL ]
+                                                  │
+         ┌───────────────────────────┬────────────┴────────────┬───────────────────────────┐
+         ▼                           ▼                         ▼                           ▼
+[ IMUNOLOGI: ALERGI TIPE IV ]   [ EPIGENETIK & KANKER ]   [ STRES OKSIDATIF & DNA ]   [ TOKSISITAS NIKEL KARBONIL ]
+• Hapten ion Ni²⁺ ikat albumin  • Disolusi intraseluler   • Siklus redoks Ni²⁺/Ni³⁺   • Penetrasi membran sel instan
+• Diproses sel Langerhans kulit   partikel sulfida/oksida   memicu reaksi mirip-Fenton• Lepaskan CO & kation Ni²⁺ bebas
+• Aktivasi sel T CD4⁺/CD8⁺      • Hipermetilasi DNA pulau • Kerusakan basa 8-OHdG     • Inhibisi RNA polimerase,
+• Sekresi IFN-γ & TNF-α           CpG ──► Silencing p16   • Hambat enzim repair DNA     sintesis protein, & rantai ATP
+• Respons elicitation memicu    • Hambat demetilase histon  (NER: inaktivasi XPA)     • Peroksidasi lipid endotel kapiler
+  eksim & NICKEL ITCH             Jumonji via geser Fe²⁺  • DNA-protein crosslinks      ──► EDEMA PARU NON-KARDIOGENIK
+```
+
+#### a. Imunopatologi Alergi Tipe IV (Dermatitis Kontak Alergi / *Nickel Itch*)
+*   **Konsep Hapten dan Pembentukan Neo-Antigen:** Kation divalen \\(\text{Ni}^{2+}\\) memiliki berat molekul yang terlalu kecil untuk memicu respons imun sendiri. Namun, ion \\(\text{Ni}^{2+}\\) bertindak sebagai **hapten reaktif yang berikatan secara koordinasi kovalen/koordinat dengan residu asam amino spesifik (seperti histidin dan sistein) pada protein karier inang (khususnya serum albumin atau molekul MHC)**, membentuk kompleks hapten-karier imunogenik.
+*   **Fase Sensitisasi (*Induction Phase*):**
+    1.  Kompleks nikel-protein ditangkap dan diproses oleh sel dendritik epidermis khusus: **Sel Langerhans**.
+    2.  Sel Langerhans mengalami maturasi dan bermigrasi melalui pembuluh limfatik aferen menuju kelenjar getah bening regional.
+    3.  Di kelenjar limfa, sel Langerhans mempresentasikan fragmen peptida nikel melalui molekul **MHC Kelas II kepada sel limfosit T CD4+ naif**, dan melalui **MHC Kelas I kepada sel T sitotoksik CD8+**.
+    4.  Terjadi proliferasi dan ekspansi klonal menghasilkan populasi **sel T memori tersensitisasi (*nickel-specific memory T cells*)** yang memiliki *homing receptor* spesifik ke jaringan kulit.
+*   **Fase Elisitasi (*Elicitation Phase*):**
+    Pada kontak kulit berulang, sel T memori mengenali antigen nikel dan melepaskan badai sitokin pro-inflamasi Th1: **Interferon-gamma (IFN-\\(\gamma\\)), Tumor Necrosis Factor-alpha (TNF-\\(\alpha\\)), dan interleukin**, yang merekrut infiltrat mononuklear ke epidermis, memicu spongiosis intraepidermal, vesikulasi, eritema hebat, dan pruritus intens yang dikenal sebagai **Nickel Itch**.
+*   *Aktivasi Reseptor TLR4 Manusia Langsung:* Penelitian imunologi modern membuktikan bahwa ion \\(\text{Ni}^{2+}\\) mampu **mengikat dan mengaktivasi reseptor imun bawaan Toll-Like Receptor 4 (TLR4) secara langsung** pada manusia melalui koordinasi non-imunologis dengan dua residu histidin non-konservatif (His456 dan His458), memicu sinyal bahaya inflamasi bahkan sebelum presentasi antigen konvensional berlangsung.
+
+#### b. Karsinogenesis Epigenetik dan Gangguan Perbaikan DNA
+Berbeda dengan karsinogen kimia klasik (seperti benzopiren atau aflatoksin), nikel **tidak membentuk aduk kovalen langsung dengan rantai DNA (*does not form covalent DNA adducts*)** dan bersifat mutagen lemah pada uji bakteri. Karsinogenisitas nikel dimediasi oleh **mekanisme epigenetik canggih dan pelumpuhan mekanisme reparasi genom**:
+1.  **Hipermetilasi DNA dan Pembungkaman Gen Penekan Tumor (*Gene Silencing*):**
+    Ion \\(\text{Ni}^{2+}\\) intraseluler berikatan dengan heterokromatin inti sel, menginduksi kondensasi kromatin abnormal dan memicu **hipermetilasi residu sitosin pada pulau-pulau CpG (*CpG islands*) di regio promotor gen penekan tumor (*tumor suppressor genes*)**, seperti gen **p16INK4a, p53, dan RASSF1A**, sehingga transkripsinya dibungkam secara permanen (*epigenetic silencing*).
+2.  **Inhibisi Enzim Demetilase Histon via Pendesakan Ion Besi (\\(\text{Fe}^{2+}\\)):**
+    Nikel menggantikan kation besi divalen (**\\(\text{Fe}^{2+}\\)**) yang terkoordinasi secara esensial pada situs katalitik keluarga enzim **Jumonji-domain histone demethylases (JHDMs)** dan enzim TET DNA demetilase. Akibatnya, demetilasi histon terhenti, memicu penumpukan tanda histon represif seperti **H3K9me2/me3 dan H3K27me3**, yang memfasilitasi transformasi keganasan seluler.
+3.  **Pelumpuhan Enzim Perbaikan DNA (*Inhibition of DNA Repair*):**
+    Nikel secara kuat menghambat jalur perbaikan eksisi nukleotida (**Nucleotide Excision Repair / NER**) dan eksisi basa (BER). Ion \\(\text{Ni}^{2+}\\) secara kompetitif **menggeser kation seng (\\(\text{Zn}^{2+}\\)) dari domain jari seng (*zinc-finger motifs*) protein reparasi DNA esensial XPA (*Xeroderma Pigmentosum group A*)**, menginaktivasi fungsi pengenalan lesi DNA dan membiarkan mutasi spontan terakumulasi tanpa koreksi.
+4.  **Induksi Keadaan Hipoksia Semu (*Pseudohypoxia Pathway*):**
+    Nikel menonaktifkan enzim **Prolil Hidroksilase (PHD)** yang bergantung pada kofaktor \\(\text{Fe}^{2+}\\) dan \\(\alpha\\)-ketoglutarat. Hambatan ini mencegah degradasi proteasomal faktor transkripsi **HIF-1\\(\alpha\\) (*Hypoxia-Inducible Factor 1-alpha*)**, memicu stabilisasi HIF-1\\(\alpha\\) di bawah kondisi oksigen normal (pseudohipoksia) dan mengaktifkan transkripsi gen-gen angiogenesis (VEGF), glikolisis anaerob, serta transisi epitelial-mesenkimal (EMT) yang mendorong invasi kanker.
+
+#### c. Stres Oksidatif dan Ikatan Silang Makromolekul
+Meskipun aktivitas redoksnya lebih rendah dibanding besi, ion \\(\text{Ni}^{2+}\\) dapat teroksidasi oleh hidrogen peroksida menjadi \\(\text{Ni}^{3+}\\), mengkatalisis reaksi mirip-Fenton yang menghasilkan **radikal hidroksil (\\(\cdot\text{OH}\\))**. Radikal bebas ini menginduksi peroksidasi lipid membran, pembentukan lesi DNA teroksidasi **8-hidroksideoksiguanosin (8-OHdG)**, serta pembentukan **ikatan silang DNA-Protein (*DNA-Protein Crosslinks* / DPC)** yang menghalangi proses replikasi sel.
+
+#### d. Mekanisme Molekuler Toksisitas Nikel Karbonil [\\(\text{Ni(CO)}_4\\)]
+*   Molekul \\(\text{Ni(CO)}_4\\) menembus membran sel epitel alveoli (pneumosit tipe I dan endotel kapiler paru) secara masif karena sifat kelarutan lipidnya yang tinggi.
+*   Di dalam kompartemen intraseluler, nikel karbonil mengalami disosiasi melepaskan karbon monoksida dan kation \\(\text{Ni}^{2+}\\) bebas dalam konsentrasi yang sangat toksik.
+*   Kation nikel bebas tersebut **menghambat enzim RNA polimerase, menghambat sintesis protein seluler, melumpuhkan rantai transpor elektron mitokondria, dan menginduksi peroksidasi lipid membran secara destruktif**.
+*   Dampaknya adalah nekrosis masif pneumosit tipe I alveoli, kolaps barier mikrovaskular, ekstravasasi cairan plasma dan eritrosit ke dalam rongga udara paru, memicu **Edema Paru Non-Kardiogenik Akut Difus / ARDS (*Acute Respiratory Distress Syndrome*)** yang mematikan.
+
+---
+
+### 5. Biomonitoring Okupasi: Matriks Biologis dan Waktu Sampling
+
+Pemantauan biologis nikel bertujuan menilai dosis internal pajanan kerja terkini guna mencegah efek toksik sistemik:
+
+```
+                      [ STRATEGI BIOMONITORING NIKEL OKUPASI ]
+                                          │
+        ┌─────────────────────────────────┴─────────────────────────────────┐
+        ▼                                                                   ▼
+[ NIKEL URIN (U-Ni / TOTAL NICKEL IN URINE) ]                      [ NIKEL SERUM / PLASMA (S-Ni) ]
+• Baku emas surveilans okupasi senyawa larut & uap                 • Biomarker pajanan yang SANGAT BARU
+• ACGIH BEI (Edisi Terkini / 2026):                                  (klirens cepat dalam 24–48 jam)
+  - Senyawa Larut (Soluble Compounds): 30 µg/L                     • Nilai normal non-terpajan: < 1–2 µg/L
+  - Logam Elemental & Senyawa Kurang Larut: 5 µg/L                 • Terutama bermanfaat pada evaluasi
+• WAKTU SAMPLING: Post-shift at end of workweek                      kedaruratan klinis nikel karbonil
+  (Akhir gilir kerja di akhir minggu kerja)                        • Rentan kontaminasi jarum stainless!
+```
+
+#### a. Nikel dalam Urin (*Urinary Nickel* / U-Ni)
+*   *Signifikansi:* Merupakan **biomarker baku emas paling valid dan praktis dalam kedokteran okupasi** untuk memantau pekerja yang terpajan aerosol nikel larut, kabut elektroplating, serta uap pengelasan.
+*   *Standar Indeks Pajanan Biologi (ACGIH BEI Edisi Terkini / 2026):*
+    1.  **Nikel dalam Urin setelah Pajanan Senyawa Nikel Larut (*Soluble compounds*):**
+        *   **Nilai Baku BEI:** **\\(30\ \mu\text{g/L}\\)**.
+    2.  **Nikel dalam Urin setelah Pajanan Nikel Elemental dan Senyawa Kurang Larut (*Elemental & poorly soluble*):**
+        *   **Nilai Baku BEI:** **\\(5\ \mu\text{g/L}\\)** dengan Notasi Latar Belakang (**B**).
+*   *Nilai Rujukan Latar Belakang:* Populasi umum non-okupasi memiliki kadar nikel urin normal **\\(< 1\text{--}3\ \mu\text{g/L}\\)** (atau < 2–3 µg/g kreatinin) yang berasal dari asupan diet pangan.
+*   *Koreksi Kreatinin:* Dapat dilaporkan dalam satuan **\\(\mu\text{g/g kreatinin}\\)** guna mengoreksi variasi hidrasi dan diuresis urin pekerja.
+
+#### b. Nikel dalam Serum / Darah Lengkap (*Serum / Blood Nickel*)
+*   *Nilai Normal:* Pada individu yang tidak terpajan secara okupasi, kadar nikel serum sangat rendah, yaitu berkisar antara **\\(0{,}2\text{ hingga }1{,}2\ \mu\text{g/L}\\)** (dan < 2,3 µg/L dalam darah lengkap).
+*   *Signifikansi Klinis:* Nikel serum mencerminkan **pajanan yang sangat baru (*very recent exposure*) dalam 24 hingga 48 jam terakhir**. Kadar serum berkorelasi linear dengan nikel urin pada pekerja elektroplating dan elektrolisis.
+*   *Peringatan Pre-Analitik Kritis (Jebakan Laboratorium):* Pengambilan sampel darah vena untuk uji trace element nikel **HARUS MENGGUNAKAN KANULA PLASTIK BEBAS LOGAM (*plastic IV cannula*) ATAU JARUM KHUSUS BEBAS KONTAMINASI**, karena penggunaan jarum suntik baja nirkarat (*stainless steel needles*) konvensional dapat **mengontaminasi spesimen darah dengan ion nikel eksogen dari paduan jarum, memicu hasil positif palsu (*false positive*)**.
+
+#### c. Waktu Pengambilan Sampel (*Sampling Time*)
+*   **Standar ACGIH dan Konsensus Okupasi:**
+    **Akhir Gilir Kerja di Akhir Minggu Kerja (*Post-shift at end of workweek* / End of shift at end of workweek)**.
+*   *Rasional Toksikokinetik:* Karena waktu paruh eliminasi nikel larut dalam darah adalah sekitar 24 hingga 32 jam, **terjadi penumpukan bertahap konsentrasi nikel tubuh sepanjang hari kerja dalam satu minggu (*weekly accumulation*)**. Pengambilan sampel pada hari Jumat sore (setelah 4–5 hari kerja berturut-turut) menangkap puncak ekskresi mingguan yang paling representatif terhadap beban pajanan lingkungan kerja.
+
+#### d. Biomonitoring Khusus Kedaruratan Nikel Karbonil (Klasifikasi Sunderman)
+Pada pekerja yang terpapar kebocoran gas nikel karbonil, kadar nikel urin dalam **8 jam pertama pasca-kejadian** digunakan secara internasional untuk stratifikasi derajat keparahan dan penentuan indikasi terapi antidotum kelasi:
+1.  *Derajat Ringan:* Nikel urin 8 jam pertama **\\(< 100\ \mu\text{g/L}\\)** (atau < 50 µg/L dalam 24 jam). Pasien diobservasi ketat tanpa perlu kelasi agresif.
+2.  *Derajat Sedang:* Nikel urin 8 jam pertama **\\(100\text{--}500\ \mu\text{g/L}\\)**. Wajib dirawat inap dan diberikan terapi kelasi antidotum.
+3.  *Derajat Berat:* Nikel urin 8 jam pertama **\\(> 500\ \mu\text{g/L}\\)**. Mengindikasikan penyerapan dosis letal; pasien harus dirawat di ICU dan segera diberikan terapi kelasi dosis maksimal guna mencegah kematian akibat ARDS.
+
+---
+
+### 6. Waktu Paruh Eliminasi Biologis (*Biological Half-Life* / \\(T_{1/2}\\))
+
+Eliminasi nikel dari kompartemen biologis manusia memperlihatkan disparitas kinetika yang sangat tajam antara bentuk terlarut dengan partikulat biopersisten:
+
+```
+                       [ SPEKTRUM WAKTU PARUH BIOLOGIS NIKEL ]
+                       
+  Senyawa Larut (Darah & Urin)                    Senyawa Tidak Larut (Retensi Paru)
+  ────────────────────────────                    ──────────────────────────────────
+  • Fase Cepat Vaskular: 10 – 24 jam              • Ni Subsulfida (Ni₃S₂): 4,6 HARI – beberapa minggu
+  • Rata-rata Eliminasi Urin: 20 – 34 JAM         • Ni Oksida Hijau (Green NiO): 120 – 130 HARI
+    (Mencerminkan siklus eliminasi harian)          (Bahkan menetap bertahun-tahun pada paru manusia!)
+  • Klirens total urin selesai dlm bbrp hari      • Nanopartikulat Black NiO: ~ 62 HARI
+```
+
+1.  **Senyawa Larut dalam Kompartemen Darah dan Urin:**
+    *   Waktu paruh biologis eliminasi nikel larut (NiSO₄, NiCl₂) dari kompartemen vaskular dan ekskresi urin mengikuti kinetika dua fase (bifasik), dengan **waktu paruh rata-rata berkisar antara 20 hingga 34 jam (sekitar 1 hari / 24 jam)**.
+    *   *Fase Cepat:* Berlangsung sekitar 10 hingga 14 jam (pembersihan fraksi bebas plasma).
+    *   *Fase Lambat:* Berlangsung sekitar 30 hingga 60 jam (pelepasan dari ikatan protein jaringan).
+    *   *Implikasi Praktis:* Kadar nikel urin akan kembali mendekati batas dasar (*baseline*) setelah pekerja menjalani libur akhir pekan selama 48–72 jam.
+2.  **Senyawa Tidak Larut dalam Kompartemen Paru (*Pulmonary Biopersistence*):**
+    *   *Nikel Subsulfida [\\(\text{Ni}_3\text{S}_2\\)]:* Memiliki waktu paruh pembersihan dari jaringan paru sekitar **4,6 hari hingga beberapa minggu** pada hewan coba sebelum tuntas difagositosis dan dilarutkan.
+    *   *Nikel Oksida Hijau [Green NiO]:* Memiliki waktu paruh pembersihan paru yang sangat panjang, berkisar antara **120 hingga 130 hari pada tikus (dan mencapai hitungan bulan hingga tahun pada paru pekerja smelter)**.
+    *   *Nikel Oksida Hitam [Black NiO Nanoparticles]:* Memiliki waktu paruh pembersihan paru sekitar **62 hari** (lebih cepat dibersihkan dibanding oksida hijau karena ukuran partikel lebih kecil dan kelarutan asam yang sedikit lebih tinggi).
+
+---
+
+### 7. Efek Biologis Toksik Akut: Intoksikasi Nikel Karbonil
+
+Keracunan uap nikel karbonil [\\(\text{Ni(CO)}_4\\)] adalah salah satu bencana kedokteran okupasi paling mematikan. Perjalanan klinisnya memperlihatkan **karakteristik bifasik dengan fase laten yang sangat menipu (*deceptive latency*)**:
+
+```
+                           [ PERJALANAN KLINIS KERACUNAN NIKEL KARBONIL ]
+                                                 │
+         ┌───────────────────────────────────────┴───────────────────────────────────────┐
+         ▼                                                                               ▼
+[ FASE AWAL / SEGERA (IMMEDIATE: 0–4 JAM) ]                                     [ FASE TERTUNDA / PARU-SEREBRAL (DELAYED: 1–5 HARI) ]
+• Mual, muntah, sensasi logam di mulut                                          • Mula: 12–36 jam hingga beberapa hari pasca-kerja
+• Nyeri kepala berdenyut frontal, vertigo hebat                                 • PNEUMONITIS KIMIAWI BERAT & BATUK DARAH (HEMOPTISIS)
+• Rasa sesak dan terbakar di dada substernal                                    • Kerusakan difus membran alveolo-kapiler paru ──►
+• Letih fisik mendadak, menggigil, takikardia                                     EDEMA PARU NON-KARDIOGENIK / ARDS FULMINAN
+• Mereda saat keluar ke udara segar (MENIPU!)                                   • Sianosis refrakter, gagal napas berat (asfiksia)
+                                                                                • Ensefalopati toksik: Delirium, kejang, edema otak, KOMA
+                                                                                • Angka mortalitas sangat tinggi tanpa antidotum dini!
+```
+
+1.  **Fase Awal / Segera (*Immediate Symptoms / 0–4 Jam*):**
+    *   Timbul saat atau sesaat setelah pekerja menghirup uap nikel karbonil.
+    *   *Manifestasi:* Pasien mengeluhkan **nyeri kepala berdenyut terutama di regio frontal, pusing melayang (vertigo), mual, muntah, sesak napas ringan, rasa tertekan di dada, dan kelelahan fisik ekstrem (*profound fatigue*)**.
+    *   *Tanda Menipu:* Jika korban dipindahkan ke udara bersih, **gejala-gejala awal ini kerap mereda atau menghilang sama sekali dalam beberapa jam**, sehingga pasien dan dokter pemeriksa sering tertipu dan membiarkan pasien pulang tanpa pengawasan.
+2.  **Periode Laten Bebas Gejala (*Asymptomatic Latent Period / 12–36 Jam*):**
+    *   Pasien tampak relatif stabil selama 12 hingga 36 jam (bisa memanjang hingga 3–5 hari pada paparan konsentrasi rendah), namun di tingkat sub-seluler sedang berlangsung proses disosiasi intraseluler \\(\text{Ni(CO)}_4\\), pelepasan radikal bebas, dan nekrosis pneumosit tipe I alveoli.
+3.  **Fase Lanjut / Tertunda (*Delayed Severe Pulmonary and Cerebral Phase / 2–5 Hari*):**
+    *   Penyakit meledak secara dramatis menjadi sindrom distres pernapasan akut yang parah:
+        *   *Komplikasi Pulmonal:* Pasien mengalami demam tinggi, menggigil, takipnea parah, batuk kering spasmodik yang berprogresi menjadi batuk produktif bercampur darah (**hemoptisis**), nyeri dada pleuritik hebat, dan sianosis sentral refrakter. Auskultasi paru memperlihatkan ronki basah kasar difus di seluruh lapang paru. Terjadi kebocoran mikrovaskular alveolar difus yang berpuncak pada **Pneumonitis Kimiawi Akut dan Edema Paru Non-Kardiogenik Masif / ARDS**.
+        *   *Komplikasi Serebral dan Sistemik:* Penetrasi \\(\text{Ni(CO)}_4\\) menembus sawar darah otak memicu nekrosis fokal kapiler serebral, mikro-perdarahan petekie di substansia alba, dan edema serebral, bermanifestasi klinis sebagai delirium, kebingungan mental, konvulsi kejang, koma mendalam, dan kematian akibat gagal kardiorespirasi.
+4.  *Demam Uap Logam Nikel (*Nickel Fume Fever*):* Inhalasi asap pengelasan nikel bersuhu tinggi dapat memicu demam uap logam transien (demam, menggigil, mialgia) yang sembuh sendiri dalam 24–48 jam, namun **harus dibedakan secara tegas dari keracunan uap nikel karbonil yang berakibat fatal**.
+
+---
+
+### 8. Efek Biologis Kronis Okupasi
+
+Pajanan kerja jangka panjang terhadap debu, aerosol garam, dan kabut nikel memicu spektrum patologi kulit, saluran napas, dan neoplasma ganas:
+
+```
+                                [ SPEKTRUM PENYAKIT KRONIS NIKEL ]
+                                                 │
+         ┌───────────────────────┬───────────────┴───────────────┬───────────────────────┐
+         ▼                       ▼                               ▼                       ▼
+[ DERMATITIS KONTAK ALERGI ]    [ ASMA KERJA & ALERGI NAPAS ]    [ DESTRUKSI MUKOSA NASAL ]  [ KANKER PARU & SINONASAL ]
+• "Nickel Itch" (Alergi Tipe IV)• Asma okupasi via antibodi IgE  • Rinitis kronis hipertrofik• Karsinoma Paru Bronkogenik
+• Eritema, vesikel, likenifikasi  spesifik (Ni-Albumin, Tipe I)  • Ulserasi septum nasi       (Skuamosa & Adenokarsinoma)
+• Pruritus hebat pada area      • Bronkospasme, mengi, batuk     • PERFORASI SEPTUM NASI     • Karsinoma Rongga Hidung &
+  kontak logam (kancing, alat)    saat jam kerja industri          permanen (nekrosis tulang)  Sinus Paranasal (IARC GRUP 1)
+```
+
+1.  **Dermatitis Kontak Alergi (*Allergic Contact Dermatitis* / "Nickel Itch"):**
+    *   *Epidemiologi:* Merupakan **alergen kontak paling lazim pada populasi manusia**, mengenai sekitar **15% hingga 20% wanita dan 1% hingga 2% pria** di negara industri.
+    *   *Patologi:* Dimediasi oleh reaksi hipersensitivitas tipe IV (termediasi sel T).
+    *   *Manifestasi Klinis:* Diawali rasa gatal menyengat yang hebat (*intense pruritus*), timbul eritema berbatas tegas pada area kulit yang berkontak langsung dengan logam nikel, erupsi papulovesikel berair, eksudasi (*weeping*), krusta, dan pada stadium kronis berkembang menjadi plak likenifikasi yang menebal, kering, dan fisura nyeri.
+    *   *Regulasi Pelepasan Ion Uni Eropa (*EU Nickel Directive*):* Menetapkan ambang batas laju pelepasan ion nikel dari barang-barang yang berkontak langsung dan lama dengan kulit sebesar **\\(0{,}5\ \mu\text{g/cm}^2/\text{minggu}\\)** (dan 0,2 µg/\\(\text{cm}^2\\)/minggu untuk jarum tindik) guna mencegah sensitisasi primer.
+2.  **Asma Okupasi dan Rinitis Alergi (*Occupational Asthma and Rhinitis*):**
+    *   *Mekanisme Imunologis Ganda:* Berbeda dengan dermatitis yang merupakan tipe IV murni, **asma akibat kerja terhadap garam nikel larut (terutama nikel sulfat pada pekerja pelapisan logam/elektroplating) sebagian besar dimediasi oleh mekanisme hipersensitivitas Tipe I termediasi antibodi IgE spesifik** terhadap neo-antigen kompleks konjugat Nikel-Serum Albumin Manusia (HSA).
+    *   *Gejala:* Rinitis vasomotor, bersin paroksismal, rinore cair, diikuti serangan mengi (*wheezing*), batuk spasmodik, dan rasa dada terikat kencang (*chest tightness*) yang memburuk secara progresif selama gilir kerja di pabrik dan membaik saat akhir pekan atau libur kerja.
+3.  **Ulserasi dan Perforasi Septum Nasi (*Nasal Septum Perforation*):**
+    *   Inhalasi kronis aerosol partikulat debu nikel dan kabut asam elektroplating mengikis lapisan mukosa vaskular hidung.
+    *   *Patogenesis:* Terjadi iskemia lokal, nekrosis epitel bertingkat semu, krusta hidung membandel, epistaksis berulang, disusul ulserasi dalam yang menembus kartilago kuadrangularis hingga menimbulkan **lubang perforasi septum hidung permanen (*nasal septum perforation*)**. Efek korosif destruktif ini memiliki karakteristik klinis yang serupa dengan pajanan asam kromat pada pekerja pelapisan logam.
+4.  **Karsinogenesis Okupasi: Kanker Paru dan Kanker Sinonasal (*Lung and Sinonasal Cancers*):**
+    *   **Klasifikasi Karsinogen Resmi:**
+        *   **IARC (Monograph Vol. 100C & Vol. 49):** **IARC Grup 1 (*Carcinogenic to humans*)** untuk seluruh senyawa nikel (*nickel compounds*) dan campuran proses pemurnian nikel. Nikel logam elemental diklasifikasikan ke dalam **IARC Grup 2B** (meskipun Monograph 100C menegaskan bukti karsinogenisitas yang kuat pada campuran industri yang mengandung nikel logam).
+        *   **ACGIH (2026):** **A1 (*Confirmed Human Carcinogen*)** untuk nikel subsulfida dan senyawa tidak larut pada pemurnian; **A4** untuk nikel logam; dan **A3** untuk nikel karbonil.
+        *   **Perpres No. 7 Tahun 2019:** Lampiran III Butir 14 (Kanker Akibat Kerja: Nikel dan senyawanya).
+    *   *Situs Keganasan Primer (*Target Sites*):*
+        1.  **Kanker Paru Bronkogenik (*Lung Cancer*):** Terutama karsinoma sel skuamosa (*squamous cell carcinoma*) dan adenokarsinoma. Kohort historis pekerja smelter dan kilang pemurnian (*refineries*) di Norwegia (Kristiansand), Finlandia, Kanada (Ontario), dan Inggris (Clydach) menunjukkan peningkatan risiko mortalitas kanker paru hingga 3 hingga 5 kali lipat (RR 3,0–5,5).
+        2.  **Kanker Rongga Hidung dan Sinus Paranasal (*Sinonasal Cancer*):** Merupakan neoplasma langka yang memiliki asosiasi kausal yang sangat kuat dan spesifik dengan pajanan kerja nikel di fasilitas kalsinasi dan pemurnian logam. Angka kejadian kanker sinus etmoidalis dan maksilaris pada pekerja pemurnian generasi awal dilaporkan meningkat drastis hingga **70 hingga 370 kali lipat dibanding populasi umum (SMR 73–376)**.
+    *   *Hierarki Potensi Karsinogenik Spesiasi:*
+        *   Studi ICNCM (*International Committee on Nickel Carcinogenesis in Man*) dan uji bioassay inhalasi dua tahunan NTP membuktikan bahwa **spesiasi nikel yang paling poten memicu kanker paru adalah fraksi senyawa tidak larut: Nikel Subsulfida [\\(\text{Ni}_3\text{S}_2\\)] dan Nikel Oksida [\\(\text{NiO}\\)]** konsentrasi tinggi (> 10 mg/m³), karena kemampuan partikelnya bertahan lama di alveoli dan diinternalisasi lewat fagositosis.
+        *   Namun, studi kohort modern Norwegia (Grimsrud et al. dan Andersen et al.) membuktikan bahwa **paparan konsentrasi tinggi terhadap senyawa nikel larut air (seperti nikel sulfat dan nikel klorida pada tangki elektrolisis > 1 mg/m³) juga berkontribusi secara independen dan sinergis memicu peningkatan risiko kanker paru**.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Schaumlöffel, Dirk (2012).** *Nickel species: Analysis and toxic effects.* Journal of Trace Elements in Medicine and Biology, 26: 1–6:
+    *   Klasifikasi Empat Fraksi Spesiasi Nikel: Senyawa Larut (NiSO₄, NiCl₂), Sulfida (NiS, Ni₃S₂), Logam (Ni), dan Oksida (NiO, Ni₂O₃) [hlm. 1–2]; Penggunaan Industri Baterai, Stainless Steel, Katalis, Elektroplating, Perhiasan [hlm. 1]; Rute Inhalasi Pekerja vs Makanan Populasi Umum [hlm. 2]; Kinetika Waktu Paruh Paru NiSO₄ (32 jam), Ni₃S₂ (4,6 hari), dan Green NiO (120 hari) [hlm. 3]; Ikatan Protein Serum Albumin dan L-Histidin [hlm. 3]; Ekskresi Urin Utama [hlm. 3]; Mekanisme Fagositosis Partikel Tak Larut & Disolusi Intraseluler Ion Ni²⁺ [hlm. 4]; Sifat Karsinogenik Tertinggi Ni₃S₂ & Laporan ICNCM Kanker Paru/Nasal [hlm. 4]; Imunopatologi Kontak Alergi Kulit Tipe IV via Sel Langerhans & Penetrasi Keringat [hlm. 4–5].
+2.  **IARC (2012).** *Nickel and Nickel Compounds (IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Vol. 100C)*:
+    *   *Identifikasi & Sifat:* Valensi Divalen (+2) Stabil; Sifat Fisik Titik Leleh 1453°C; Senyawa Nikel Karbonil [Ni(CO)₄] [CAS 13463-39-3] Titik Didih 43°C & Tekanan Uap 315 mmHg [hlm. 169–172]; Sektor Industri Smelter Pirometalurgi, Proses Mond, Elektrolisis, Elektroplating, dan Baterai Ni-Cd [hlm. 172–175].
+    *   *Epidemiologi Kanker:* Kanker Paru dan Sinonasal Kohort Norwegia (Kristiansand), Finlandia, dan Wales (Clydach) [hlm. 177–187]; Risiko Kanker Nasal SMR hingga 376 [hlm. 187]; Peranan Mandiri Senyawa Larut (Grimsrud et al.) dan Tak Larut [hlm. 183–184].
+    *   *Bioassay & Kinetika Hewan:* Studi 2 Tahun NTP Inhalasi NiSO₄, Ni₃S₂, NiO, dan Serbuk Logam Ni [hlm. 191–197]; Retensi Paru Nanopartikulat NiO (T1/2 62 hari) [hlm. 207]; Uptake Seluler Transporter Kation DMT1 dan Saluran Kalsium [hlm. 208].
+    *   *Mekanisme Epigenetik:* Ketiadaan Aduk Kovalen DNA; Pembungkaman Gen via Hipermetilasi Promotor Pulau CpG & Inhibisi Demetilase Histon Jumonji C via Pendesakan Fe²⁺; Inaktivasi Protein Jari Seng Reparasi DNA XPA; Induksi Pseudohipoksia Jalur HIF-1α; Evaluasi Karsinogen Manusia IARC Grup 1 [hlm. 208–212].
+3.  **Savolainen, H. (1996).** *Biochemical and Clinical Aspects of Nickel Toxicity.* Reviews on Environmental Health, 11(4): 167–173:
+    *   Reaktivitas Redoks Ni²⁺/Ni³⁺; Ikatan Serum Albumin (Situs Cu N-Terminal), α2-Makroglobulin, dan Nikeloplasmin [hlm. 168]; Waktu Paruh Biologis Senyawa Larut Darah (24 Jam) & Akumulasi Mingguan (*End of Workweek Biomonitoring*) [hlm. 168–169]; Nefrotoksisitas Tubulus Proksimal (LMW Proteinuria β2-MG, NAG, dan Penurunan Tamm-Horsfall) [hlm. 170]; Mekanisme Hapten Imunologis Sel Langerhans, Sel T CD4+, dan Nilai Ambang Pelepasan Keringat 0,5 µg/cm²/minggu [hlm. 171]; serta Asma Okupasi Imunologis Tipe I Termediasi Antibodi IgE Kompleks Ni-Albumin [hlm. 171].
+4.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Nickel, elemental and inorganic compounds, as Ni* [CAS 7440-02-0] (Inhalable fraction: Elemental 1,5 mg/m³ A4; Insoluble 0,2 mg/m³ A1; Soluble 0,1 mg/m³ A4); *Nickel subsulfide* (0,1 mg/m³ Inhalable, A1, BEI); *Nickel carbonyl* [CAS 13463-39-3] (Ceiling 0,05 ppm, A3) [hlm. 43–45].
+    *   Tabel Adopsi BEI: *Nickel in urine (after exposure to elemental & poorly soluble compounds)*: **5 µg/L** (Waktu: *End of shift at end of workweek*, Notasi B); *Nickel in urine (after exposure to soluble compounds)*: **30 µg/L** (Waktu: *End of shift at end of workweek*) [hlm. 60–62].
+5.  **NIOSH Pocket Guide to Chemical Hazards (2005-149):**
+    *   *Nickel metal and other compounds (as Ni)* [CAS 7440-02-0]: Sifat Fisik Silvery Solid; NIOSH REL Ca TWA 0,015 mg/m³; OSHA PEL TWA 1 mg/m³; Target Organ Hidung, Paru, Kulit (Kanker Paru & Hidung, Sensitisasi Dermatitis, Asma Alergi) [hlm. 224].
+    *   *Nickel carbonyl (as Ni)* [CAS 13463-39-3]: Cairan Flammable Kelas IB, Titik Didih 110°F, Tekanan Uap 315 mmHg; Gejala Pusing, Sakit Kepala, Mual, Muntah, Edema Paru, Kerusakan SSP, Kematian; IDLH Ca 2 ppm [hlm. 223].
+6.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 19: Imunotoksisitas Dermatitis Kontak Alergi (ACD) Tipe IV (Mekanisme Hapten, Presentasi Sel Langerhans ke Sel T, Re-exposure Elisitasi Th1/CD8+) [hlm. 415–416]; Model Toksikokinetik Dua Kompartemen [hlm. 110–112].
+7.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   Bab 18: Klasifikasi Reaksi Hipersensitivitas Tipe IV pada Dermatitis Kontak Logam Nikel [hlm. 239]; Mekanisme Karsinogenesis Epigenetik Modifikasi Histon dan Metilasi DNA [hlm. 124].
+8.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019 & Permenaker No. 5 Tahun 2018:**
+    *   Lampiran I.a Butir 14 Perpres 7/2019 (Penyakit Akibat Kerja Faktor Kimia Nikel); Lampiran III Butir 14 (Kanker Akibat Kerja: Nikel dan Senyawanya); serta NAB Nikel Karbonil Ceiling 0,05 ppm (Notasi A3) Lampiran 3 Permenaker 5/2018.
+
+Kuasai seluruh integrasi sifat fisikokimiawi spesiasi nikel, biokinetika fagositosis intraseluler, regulasi ambang BEI urin ganda, serta manifestasi klinis bifasik nikel karbonil ini dengan ketelitian penuh, Dokter. Di hadapan dewan penguji spesialis, penguasaan materi yang runtut dan ilmiah ini akan mencerminkan kematangan Anda sebagai seorang klinisi kedokteran okupasi yang handal.
+
+---
+
+📋 Apakah Anda ingin kita lanjutkan ke **NIKEL (Ni), BAGIAN B**, yaitu telaah mendalam mengenai **standar batas paparan udara (TLV-TWA ACGIH elemental vs soluble vs insoluble vs subsulfide, notasi A1/A4/A3, perbandingan dengan NAB Permenaker No. 5 Tahun 2018), tata laksana darurat intoksikasi nikel karbonil (antidotum spesifik Ditiokarb / Natrium Dietilditiokarbamat [Na-DDC] dan Disulfiram, kegagalan BAL/EDTA), protokol uji tempel (*patch test*) dermatitis kontak nikel, penerapan 7 langkah diagnosis PAK (kanker paru, asma kerja, perforasi septum), penentuan kelaikan kerja (*fitness for work*), serta *clinical pearls* dan jebakan ujian dewan spesialis**?
