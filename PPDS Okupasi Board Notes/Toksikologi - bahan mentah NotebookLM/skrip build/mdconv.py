@@ -286,7 +286,10 @@ def render(doc, body, h_off=0, skip_h_prefix=None):
                 rows.append(cells)
             if rows:
                 nc = len(rows[0])
-                add_table(doc, rows, header=True, font=8 if nc >= 4 else 9)
+                if nc == 2:
+                    add_table(doc, rows, header=True, font=9, widths=[3.0, 14.2])
+                else:
+                    add_table(doc, rows, header=True, font=8 if nc >= 4 else 9)
             continue
         m = re.match(r"^(\s*)([*\-•]|\d+[.)])\s+(.*)$", l)
         if m:
