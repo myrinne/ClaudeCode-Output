@@ -627,10 +627,19 @@ def _ctr_persen(baris: str) -> Optional[float]:
     spasi di sekitar '=' dan '%' (mis. 'CTR=51%', 'CTR =51 %', 'CTR= 51%')
     -- regex ini menangkap semua variasi itu. Return None kalau baris tidak
     menyebut CTR sama sekali."""
-    m = re.search(r'ctr\s*=?\s*(\d+(?:[.,]\d+)?)\s*%', baris, re.IGNORECASE)
+    m = re.search(r'ctr\s*[=:]?\s*(\d+(?:[.,]\d+)?)\s*(%)?', baris, re.IGNORECASE)
     if not m:
         return None
-    return float(m.group(1).replace(",", "."))
+    nilai = float(m.group(1).replace(",", "."))
+    # Format rasio tanpa '%' (mis. "Cor CTR 0,51" = 51%) -- dikonfirmasi
+    # dr. Vidya, 2026-10-14: "Cor CTR 0,51" = normal (<55%),
+    # tidak perlu saran Sp.PD KP. Angka <=1,5 tanpa '%' dibaca sebagai rasio.
+    if not m.group(2):
+        if nilai <= 1.5:
+            return round(nilai * 100, 2)
+        if nilai < 20:
+            return None
+    return nilai
 
 
 def _ada_ctr_tinggi(teks_kesimpulan_radiologi: str) -> bool:
