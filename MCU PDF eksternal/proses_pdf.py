@@ -184,6 +184,11 @@ def jalankan(entry_ehr: dict, ekstrak: dict, masalah_baca: list):
     if masalah_baca:
         hasil["catatan_manual"].insert(0, "HASIL BACA PDF TIDAK COCOK TEXT LAYER -- " + "; ".join(masalah_baca))
         hasil["flag"] = "merah"
+    # Override kelaikan per pasien (ekstrak "kelaikan_override"), atas instruksi dr. Vidya --
+    # mis. NRM 368-96-23 (2026-10-14): PDF hanya surat, tanpa angka -> "belum dapat diberikan".
+    if ekstrak.get("kelaikan_override"):
+        hasil["draft"]["catatan_tambahan"] = ekstrak["kelaikan_override"]
+        hasil["catatan_manual"].insert(0, "Kelaikan ditimpa manual (kelaikan_override di ekstrak, instruksi dr. Vidya)")
     return entry, lap, hasil
 
 
@@ -263,6 +268,11 @@ async def mode_ehr(nrm, ekstrak, mode_tulis, masalah_baca, dari_scan, mode_appro
 
         entry_ehr = await baca_halaman_aktif(page)
         st, psn = cek_identitas(entry_ehr.get("identitas", {}), ekstrak.get("identitas_pdf", {}))
+        ip = ekstrak.get("identitas_pdf", {})
+        # PDF tanpa identitas sama sekali (screenshot app) yg DIKONFIRMASI dr. Vidya milik pasien ini --
+        # hanya berlaku kalau nama & tgl lahir PDF kosong; identitas yg BEDA tetap berhenti.
+        if st == "stop" and ekstrak.get("identitas_dikonfirmasi") and not ip.get("nama") and not ip.get("tgl_lahir"):
+            st, psn = "kuning", f"PDF tanpa identitas, dikonfirmasi dr. Vidya ({ekstrak['identitas_dikonfirmasi']}) -- {psn}"
         if st == "stop":
             notes = simpan(nrm, format_notes(nrm, st, psn, None, None, masalah_baca, dari_scan,
                                              "🔴 DIHENTIKAN — identitas PDF tidak cocok dgn EHR", ekstrak),
