@@ -150,7 +150,7 @@ TES = {
         rujukan_pedoman="< 140"),
     "hba1c": dict(
         nama_rscm="HbA1c", satuan="%", kategori="pedoman",
-        alias=["hba1c", "hba1c ngsp", "hemoglobin a1c", "hb a1c"],
+        alias=["hba1c", "hba1c ngsp", "hemoglobin a1c", "hb a1c", "gliko hb", "gliko hb hba1c", "glikohemoglobin"],
         konversi={"%": 1},
         rujukan_pedoman="< 5.7"),
     "kolesterol": dict(
