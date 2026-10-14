@@ -99,11 +99,11 @@ TES = {
         konversi={"mm/jam": 1}),
     "sgot": dict(
         nama_rscm="SGOT (AST)", satuan="U/L", kategori="mesin",
-        alias=["sgot", "ast", "ast/sgot", "sgot/ast", "got", "sgot ast", "ast sgot"],
+        alias=["sgot", "ast", "ast/sgot", "sgot/ast", "got", "sgot ast", "ast sgot", "sgot / ast", "ast / sgot"],
         konversi={"u/l": 1}),
     "sgpt": dict(
         nama_rscm="SGPT (ALT)", satuan="U/L", kategori="mesin",
-        alias=["sgpt", "alt", "alt/sgpt", "sgpt/alt", "gpt", "sgpt alt", "alt sgpt"],
+        alias=["sgpt", "alt", "alt/sgpt", "sgpt/alt", "gpt", "sgpt alt", "alt sgpt", "sgpt / alt", "alt / sgpt"],
         konversi={"u/l": 1}),
     "ggt": dict(
         nama_rscm="Gamma GT", satuan="U/L", kategori="mesin",
@@ -127,7 +127,7 @@ TES = {
         konversi={"mg/dl": 1, "mmol/l": 6.006}),
     "kreatinin": dict(
         nama_rscm="Kreatinin Darah", satuan="mg/dL", kategori="mesin",
-        alias=["kreatinin", "kreatinin darah", "creatinine", "kreatinin serum"],
+        alias=["kreatinin", "kreatinin darah", "creatinine", "kreatinin serum", "creatinin", "kreatinin darah serum"],
         konversi={"mg/dl": 1, "umol/l": 1 / 88.4}),
     "egfr": dict(
         # Pedoman: KDIGO -- <60 = penurunan bermakna. Rujukan RSCM sendiri
@@ -169,9 +169,9 @@ TES = {
         alias=["asam urat", "uric acid", "urat"],
         konversi={"mg/dl": 1, "umol/l": 1 / 59.48}),
     "hbsag": dict(nama_rscm="HBsAg", satuan="", kategori="kualitatif",
-                  alias=["hbsag", "hbs ag"], konversi={}),
+                  alias=["hbsag", "hbs ag", "hbsag semi kuantitatif", "hbsag kuantitatif"], konversi={}),
     "anti_hbs": dict(nama_rscm="Anti HBs", satuan="mIU/mL", kategori="kualitatif",
-                     alias=["anti hbs", "anti-hbs", "antihbs", "anti hbsag"], konversi={}),
+                     alias=["anti hbs", "anti-hbs", "antihbs", "anti hbsag", "anti hbs titer", "anti-hbs titer"], konversi={}),
 }
 
 # Tes yang SENGAJA tidak diinterpretasi (dikonfirmasi dr. Vidya) -- tetap
@@ -219,7 +219,7 @@ URIN = {
     "Albumin": ["albumin", "albumin urine", "protein", "protein urine", "albumin urin", "protein urin"],
     "Glukosa": ["glukosa", "glukosa urin", "glukosa urine", "glucose", "reduksi"],
     "Keton": ["keton", "ketone", "keton urin"],
-    "Darah / Hb": ["darah", "darah urin", "darah blood", "blood", "darah / hb", "darah/hb", "hb urin"],
+    "Darah / Hb": ["darah", "darah urin", "darah blood", "blood", "darah / hb", "darah/hb", "hb urin", "darah samar"],
     "Bilirubin": ["bilirubin", "bilirubin urin"],
     "Urobilinogen": ["urobilinogen"],
     "Nitrit": ["nitrit", "nitrite"],

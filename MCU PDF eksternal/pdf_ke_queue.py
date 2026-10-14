@@ -357,6 +357,9 @@ def bangun_radiologi(ekstrak: dict) -> Optional[dict]:
     if not r or not r.get("ada"):
         return None
     kes = (r.get("kesimpulan") or "").strip()
+    # "Tak tampak kelainan pada Cor dan Pulmo" (Bidakara) = frasa normal yg sama dgn "tidak tampak" --
+    # NRM 350-16-94, 2026-10-14 (tanpa ini -> saran Sp.PD KP palsu).
+    kes = re.sub(r"\btak tampak\b", "tidak tampak", kes, flags=re.IGNORECASE)
     raw = f"Radiologi {r.get('vendor', '')} {r.get('tanggal', '')}\n{r.get('deskripsi', '')}\n[Conclusion]\n{kes}"
     baris_temuan = _baris_temuan_radiologi(kes)
     sudah_dikenal = KATA_KUNCI_TANPA_SARAN_GENERIK + KATA_KUNCI_TULANG
