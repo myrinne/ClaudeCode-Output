@@ -402,6 +402,39 @@ def gabung_saran_kristal_proteinuria(daftar_saran: list) -> list:
     return [SARAN_KRISTAL_PROTEINURIA] + lainnya
 
 
+def gabung_saran_urinalisa_sisa(daftar_saran: list, pasien_dokter: bool = False) -> list:
+    """Jaring terakhir: kalau SETELAH semua penggabungan urin di atas masih ada >=2 baris
+    "Cek ulang urin(alisa) ..." (mis. silinder + glukosuria), gabung jadi SATU baris --
+    dikonfirmasi dr. Vidya, 2026-10-14, kasus NRM 385-31-22 (dua baris "Cek ulang
+    urinalisa..." terasa dobel). Glukosuria tetap menyebut cek GDP & GD2PP; alasan
+    spesifik (dugaan ISK, hematuria, proteinuria, kristal) tetap disebut. Tujuan:
+    Poli Pegawai kalau salah satu baris menuju Poli Pegawai, selain itu Poli Pratama;
+    pasien dokter -> "lakukan tatalaksana". Baris gabungan darah+urin tidak disentuh."""
+    idx_urin = [i for i, s in enumerate(daftar_saran)
+                if s.startswith("Cek ulang urin") and "darah" not in s.lower()]
+    if len(idx_urin) < 2:
+        return daftar_saran
+    baris = [daftar_saran[i] for i in idx_urin]
+    teks = " ".join(baris).lower()
+    alasan = [nama for kunci, nama in (("isk", "dugaan ISK"), ("hematuria", "hematuria"),
+                                        ("proteinuria", "proteinuria"), ("kristal", "kristal dalam urin"))
+              if kunci in teks]
+    awal = "Cek ulang urinalisa"
+    if "terutama bila ada keluhan" in teks:
+        awal += " (terutama bila ada keluhan)"
+    if "glukosuria" in teks:
+        awal += ", bila perlu cek GDP dan GD2PP untuk temuan glukosuria"
+    if pasien_dokter:
+        tujuan = "lakukan tatalaksana"
+    else:
+        tujuan = "konsultasi ke Dokter Umum " + ("Poli Pegawai" if "poli pegawai" in teks else "Poli Pratama")
+    akhir = f"terkait temuan urinalisa ({', '.join(alasan)})" if alasan else "terhadap temuan urinalisa"
+    gabungan = f"{awal} dan {tujuan} {akhir}"
+    hasil = [s for i, s in enumerate(daftar_saran) if i not in idx_urin]
+    hasil.insert(idx_urin[0], gabungan)
+    return hasil
+
+
 def gabung_saran_cek_ulang_darah_urinalisa(daftar_saran: list) -> list:
     """Kalau saran 'cek ulang' darah (LED/leukositosis, PREFIX_CEK_ULANG_
     POLI_PEGAWAI) DAN saran 'cek ulang' urinalisa (ISK/hematuria/proteinuria,
@@ -595,6 +628,7 @@ def format_saran(hasil, nama: str = "") -> str:
     daftar = gabung_saran_cek_ulang_darah_proteinuria(daftar)
     daftar = gabung_saran_cek_ulang_darah_kristal(daftar)
     daftar = gabung_saran_cek_ulang_darah_albuminuria_hematuria(daftar)
+    daftar = gabung_saran_urinalisa_sisa(daftar, pasien_dokter)
     return "\n".join(daftar)
 
 

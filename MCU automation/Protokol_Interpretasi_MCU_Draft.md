@@ -39,8 +39,8 @@
 | Temuan | Kesimpulan | Saran |
 |---|---|---|
 | Hb normal | Normal | — |
-| Anemia ringan (mikrositik hipokrom) | Anemia ringan mikrositik hipokromik | Tidak perlu tatalaksana khusus (TIDAK dihitung sebagai temuan di Langkah 2 — dikonfirmasi dr. Vidya 2026-07-31, kasus Nenni Mawati NRM 402-84-74 — tetap disebut di teks Kesimpulan tapi tidak menurunkan kelaikan ke "dengan catatan") |
-| Anemia sedang | Anemia sedang mikrositik hipokromik | Konsultasi Dokter Umum Poli Pegawai (bila perlu → Sp.PD Div. KHOM) → **tetap Laik kerja** |
+| Anemia ringan | Anemia ringan {morfologi} | Tidak perlu tatalaksana khusus (TIDAK dihitung sebagai temuan di Langkah 2 — dikonfirmasi dr. Vidya 2026-07-31, kasus Nenni Mawati NRM 402-84-74 — tetap disebut di teks Kesimpulan tapi tidak menurunkan kelaikan ke "dengan catatan") |
+| Anemia sedang | Anemia sedang {morfologi} | Konsultasi Dokter Umum Poli Pegawai (bila perlu → Sp.PD Div. KHOM) → **tetap Laik kerja** |
 | Anemia berat | (isi) | **Segera** konsultasi Sp.PD Divisi KHOM |
 | Leukositosis | Leukositosis | Cek darah ulang; bila perlu konsultasi Sp.PD Divisi HOM |
 | Leukopenia | Leukopenia | Cek ulang dan bila perlu konsultasi ke Sp.PD Divisi HOM terkait temuan Leukopenia (format diperbarui 2026-07-28, disamakan dgn LED/eritrosit supaya bisa digabung otomatis kalau >1 temuan sama-sama ke HOM) |
@@ -51,6 +51,23 @@
 | Eritrosit (RBC darah) tinggi, selisih dari rujukan atas < 1.0 | — (abaikan, belum signifikan) | — |
 | Eritrosit (RBC darah) tinggi, selisih ≥ 1.0, Hb TIDAK meningkat | **Peningkatan Eritrosit** (kata "signifikan" dihapus dari teks, 2026-07-24) | **Cek ulang dan bila perlu konsultasi ke Sp.PD Divisi HOM terkait temuan Peningkatan Eritrosit** |
 | **Eritrosit tinggi (selisih ≥ 1.0) DAN Hb JUGA meningkat (flag H) bersamaan** | **Peningkatan Hemoglobin dan Eritrosit** (Hb-nya WAJIB disebut eksplisit) | **Cek ulang darah, bila perlu konsultasi ke Sp.PD Divisi HOM** (dikonfirmasi dr. Vidya, 2026-07-24, kasus Rangga Surya NRM 367-80-01: Hb 17.6/H + Eritrosit 6.61/H) — menggantikan baris di atas, bukan tambahan |
+
+> ✅ **Morfologi anemia dari MCV/MCH (dikonfirmasi dr. Vidya, 2026-10-14, kasus
+> NRM 302-83-42: MCV 93 tapi dulu tertulis "mikrositik hipokromik").** Sebelumnya
+> teks anemia ringan/sedang SELALU "mikrositik hipokromik". Sekarang `{morfologi}`
+> ditentukan dari nilai pasien, batas dari rujukan EHR/vendor:
+>
+> | MCV | Ukuran | MCH | Warna |
+> |---|---|---|---|
+> | < batas bawah | mikrositik | < batas bawah | hipokromik |
+> | dalam rujukan | normositik | dalam rujukan | normokromik |
+> | > batas atas | makrositik | > batas atas | hiperkromik |
+>
+> Contoh: MCV & MCH normal → "Anemia ringan normositik normokromik"; MCV 69.6 &
+> MCH 21.7 → "Anemia ringan mikrositik hipokromik". Kalau MCV/MCH tidak ada atau
+> rujukannya tidak terbaca → "Anemia ringan" / "Anemia sedang" saja (tanpa
+> morfologi). Anemia berat tidak berubah. Kode: `klasifikasi_morfologi_eritrosit()`
+> (input_dict.py), dipakai kedua pipeline (EHR & PDF eksternal).
 
 ### 3b. Fungsi Hati
 | Temuan | Kesimpulan | Saran |
@@ -111,6 +128,27 @@
 | Kristal (Ca oxalat, dll) | Terdapat kristal ... dalam urin | Cek ulang urinalisa |
 | **Glukosuria, GDP darah TIDAK meningkat** | **Glukosuria** (wording diperbarui 2026-07-24, sebelumnya "Terdapat glukosa dalam urin") | **Cek ulang urin, bila perlu konsul ke Dokter Umum Poli Pratama terhadap temuan Glukosuria** (dikonfirmasi dr. Vidya, 2026-07-24) |
 | **Glukosuria, GDP darah SUDAH meningkat** | Glukosuria (kedua temuan tetap ditulis) | Tidak ada saran tambahan — saran GDP (lihat 3f) sudah cukup, tidak duplikatif |
+
+> ✅ **Saran "Cek ulang urin(alisa)" lebih dari satu → digabung jadi SATU baris
+> (dikonfirmasi dr. Vidya, 2026-10-14, kasus NRM 385-31-22: silinder + glukosuria
+> menghasilkan dua baris "Cek ulang urinalisa ..." yang terasa dobel).** Berlaku
+> sebagai jaring terakhir, SETELAH penggabungan urin yang sudah ada (ISK/hematuria
+> + proteinuria/urobilinogenuria, kristal + proteinuria, darah + urin). Bentuknya:
+>
+> "Cek ulang urinalisa [(terutama bila ada keluhan)] [, bila perlu cek GDP dan
+> GD2PP untuk temuan glukosuria] dan konsultasi ke Dokter Umum {Poli Pegawai |
+> Poli Pratama} {terkait temuan urinalisa (dugaan ISK, hematuria, proteinuria,
+> kristal dalam urin) | terhadap temuan urinalisa}"
+>
+> - Bagian glukosuria (cek GDP & GD2PP) tetap disebut kalau ada glukosuria.
+> - Alasan spesifik (dugaan ISK, hematuria, proteinuria, kristal) tetap disebut dalam kurung.
+> - Tujuan: Poli Pegawai kalau salah satu baris menuju Poli Pegawai, selain itu Poli
+>   Pratama (pola Poli Pegawai ≈ Poli Pratama digabung).
+> - Pasien dokter: "dan lakukan tatalaksana ..." menggantikan "konsultasi ke Dokter Umum ...".
+>   Contoh 385-31-22: "Cek ulang urinalisa, bila perlu cek GDP dan GD2PP untuk temuan
+>   glukosuria dan lakukan tatalaksana terhadap temuan urinalisa".
+> - Satu baris urin saja → tidak berubah. Kode: `gabung_saran_urinalisa_sisa()`
+>   (fase3a_generate_teks.py).
 
 > ✅ **KHUSUS urinalisa "tidak ada data sama sekali" (dikonfirmasi dr.
 > Vidya, 2026-07-24)**: semua pekerja wajib urinalisa, jadi kalau datanya
