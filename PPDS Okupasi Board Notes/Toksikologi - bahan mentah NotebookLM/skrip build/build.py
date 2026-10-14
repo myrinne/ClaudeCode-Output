@@ -46,16 +46,7 @@ p = doc.add_paragraph(); r = p.add_run("Bagian 1 sampai 3A: Prinsip dasar, regul
 p = doc.add_paragraph(); r = p.add_run("Catatan persiapan ujian board Kedokteran Okupasi (Sp.Ok). Disusun dari jawaban NotebookLM (notebook \"Toxicology - Heavy metals\", 56 sumber) mengikuti outline yang diberikan. Topik 3B sampai 3F, formula tambahan, dan quick table zat lain menyusul dari notebook lain."); r.font.size = Pt(9.5); r.italic = True
 doc.add_paragraph()
 p = doc.add_paragraph(); r = p.add_run("Daftar isi"); r.bold = True; r.font.size = Pt(12)
-toc = doc.add_paragraph()
-for t, instr in (("begin", None), (None, 'TOC \\o "1-2" \\h \\z \\u'), ("separate", None), ("end", None)):
-    r = toc.add_run()
-    if t:
-        c = OxmlElement("w:fldChar"); c.set(qn("w:fldCharType"), t)
-        if t == "begin": c.set(qn("w:dirty"), "true")
-        r._r.append(c)
-    elif instr:
-        i = OxmlElement("w:instrText"); i.set(qn("xml:space"), "preserve"); i.text = instr; r._r.append(i)
-doc.add_paragraph("(Klik kanan daftar isi lalu pilih Update Field bila halaman belum terisi.)").runs[0].italic = True
+toc_anchor = doc.add_paragraph()  # static clickable contents list is inserted here after the body is built
 doc.add_page_break()
 
 import extras  # defined separately: formula sheet, quick tables, OSCE, vignettes, quality notes
@@ -134,5 +125,35 @@ extras.quick_table(doc)
 doc.add_page_break()
 extras.penutup(doc)
 extras.quality(doc)
+
+# ---------- static clickable contents (H1 + H2), inserted at toc_anchor
+heads = [p for p in doc.paragraphs if p.style.name in ("Heading 1", "Heading 2")]
+bm_id = 100
+entries = []
+for n, h in enumerate(heads):
+    name = "toc_%03d" % n
+    s = OxmlElement("w:bookmarkStart"); s.set(qn("w:id"), str(bm_id + n)); s.set(qn("w:name"), name)
+    e = OxmlElement("w:bookmarkEnd"); e.set(qn("w:id"), str(bm_id + n))
+    h._p.insert(1 if h._p.pPr is not None else 0, s)
+    h._p.append(e)
+    entries.append((name, h.text, h.style.name))
+prev = toc_anchor._p
+for name, text, sty in entries:
+    p = doc.add_paragraph()
+    p.paragraph_format.space_after = Pt(1)
+    p.paragraph_format.left_indent = Cm(0 if sty == "Heading 1" else 0.8)
+    hl = OxmlElement("w:hyperlink"); hl.set(qn("w:anchor"), name); hl.set(qn("w:history"), "1")
+    r = OxmlElement("w:r"); rpr = OxmlElement("w:rPr")
+    if sty == "Heading 1":
+        rpr.append(OxmlElement("w:b"))
+    sz = OxmlElement("w:sz"); sz.set(qn("w:val"), "20" if sty == "Heading 1" else "19"); rpr.append(sz)
+    col = OxmlElement("w:color"); col.set(qn("w:val"), "1F3864"); rpr.append(col)
+    r.append(rpr)
+    t = OxmlElement("w:t"); t.set(qn("xml:space"), "preserve"); t.text = text; r.append(t)
+    hl.append(r)
+    p._p.append(hl)
+    prev.addnext(p._p)
+    prev = p._p
+
 doc.save(OUT)
 print("saved", OUT)

@@ -230,6 +230,26 @@ def render(doc, body, h_off=0, skip_h_prefix=None):
         if s == "" or s == "---" or s == "***":
             i += 1
             continue
+        # fenced code / ASCII diagram -> monospace block
+        if s.startswith("```"):
+            i += 1
+            block = []
+            while i < n and not body[i].strip().startswith("```"):
+                block.append(body[i].rstrip("\n").rstrip())
+                i += 1
+            i += 1
+            if any(x.strip() for x in block):
+                p = doc.add_paragraph()
+                p.paragraph_format.left_indent = Cm(0.3)
+                p.paragraph_format.space_after = Pt(6)
+                for k, line in enumerate(block):
+                    if k:
+                        p.add_run().add_break()
+                    r = p.add_run(line.replace("\t", "    "))
+                    r.font.name = "Consolas"
+                    r._element.rPr.rFonts.set(qn("w:eastAsia"), "Consolas")
+                    r.font.size = Pt(6.5)
+            continue
         # display math block
         if s.startswith("\\\\[") or s.startswith("\\["):
             buf = [s]
