@@ -90,6 +90,23 @@ def klasifikasi_hb(hb: Optional[float], rujukan: Optional[str] = None) -> Option
         return "anemia_berat"
 
 
+def klasifikasi_morfologi_eritrosit(mcv: Optional[float], rujukan_mcv: Optional[str],
+                                    mch: Optional[float], rujukan_mch: Optional[str]) -> Optional[str]:
+    """Morfologi anemia dari MCV (ukuran) & MCH (warna), batas dari rujukan EHR/vendor --
+    dikonfirmasi dr. Vidya, 2026-10-14 (dulu teks tetap "mikrositik hipokromik", kasus
+    NRM 302-83-42 MCV 93). Return mis. "normositik normokromik"; None kalau MCV/MCH
+    tidak ada atau rujukan tak terbaca (label anemia lalu tanpa morfologi)."""
+    if _kosong(mcv) or _kosong(mch):
+        return None
+    b_mcv, a_mcv = parse_rentang(rujukan_mcv)
+    b_mch, a_mch = parse_rentang(rujukan_mch)
+    if None in (b_mcv, a_mcv, b_mch, a_mch):
+        return None
+    ukuran = "mikrositik" if mcv < b_mcv else "makrositik" if mcv > a_mcv else "normositik"
+    warna = "hipokromik" if mch < b_mch else "hiperkromik" if mch > a_mch else "normokromik"
+    return f"{ukuran} {warna}"
+
+
 def klasifikasi_leukosit(leukosit: Optional[float], rujukan: Optional[str] = None) -> Optional[str]:
     if _kosong(leukosit):
         return None

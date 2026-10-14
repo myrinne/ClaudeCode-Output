@@ -23,7 +23,7 @@ from protocol_engine import DataPegawai, proses_pegawai
 
 # Ambil ulang fungsi klasifikasi angka mentah dari input_dict
 from input_dict import (
-    klasifikasi_hb, klasifikasi_leukosit, klasifikasi_trombosit,
+    klasifikasi_hb, klasifikasi_morfologi_eritrosit, klasifikasi_leukosit, klasifikasi_trombosit,
     klasifikasi_led, klasifikasi_eritrosit_darah, klasifikasi_sgot_sgpt, klasifikasi_kreatinin,
     klasifikasi_kolesterol, klasifikasi_trigliserida, klasifikasi_gdp, klasifikasi_hba1c,
     klasifikasi_asam_urat, klasifikasi_urinalisa, klasifikasi_bilirubin_direk,
@@ -430,6 +430,11 @@ def queue_ke_datapegawai(entry):
     hb = bersih(cari_lab_angka(lab, "hemoglobin"))
     rujukan_hb, _ = cari_lab_rujukan(lab, "hemoglobin")
     hb_meningkat = cari_lab_flag(lab, "hemoglobin") == "H"
+    # "mch/her" dulu: kata kunci "mch" saja juga cocok ke "MCHC/KHER".
+    mcv = bersih(cari_lab_angka(lab, "mcv"))
+    rujukan_mcv, _ = cari_lab_rujukan(lab, "mcv")
+    mch = bersih(cari_lab_angka(lab, "mch/her")) if cari_lab_rujukan(lab, "mch/her")[0] is not None else None
+    rujukan_mch, _ = cari_lab_rujukan(lab, "mch/her")
     leuko = bersih(cari_lab_angka(lab, "jumlah leukosit", "leukosit"))
     rujukan_leuko, _ = cari_lab_rujukan(lab, "jumlah leukosit", "leukosit")
     tromb = bersih(cari_lab_angka(lab, "jumlah trombosit", "trombosit"))
@@ -534,6 +539,7 @@ def queue_ke_datapegawai(entry):
         td_sistolik=sistolik, td_diastolik=diastolik,
         imt=bmi, lingkar_perut=lp,
         hb_status=klasifikasi_hb(hb, rujukan_hb),
+        anemia_morfologi=klasifikasi_morfologi_eritrosit(mcv, rujukan_mcv, mch, rujukan_mch),
         leukosit_status=klasifikasi_leukosit(leuko, rujukan_leuko),
         trombosit_status=klasifikasi_trombosit(tromb, rujukan_tromb),
         led_rasio_dari_rujukan_atas=klasifikasi_led(led, rujukan_led),

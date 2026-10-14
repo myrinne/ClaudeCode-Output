@@ -30,6 +30,7 @@ class DataPegawai:
 
     # Lab — isi None kalau tidak diperiksa / tidak relevan
     hb_status: Optional[str] = None  # "normal" | "anemia_ringan" | "anemia_sedang" | "anemia_berat"
+    anemia_morfologi: Optional[str] = None  # mis. "normositik normokromik" (dari MCV/MCH), None = tidak diketahui
     leukosit_status: Optional[str] = None  # "normal" | "leukositosis" | "leukopenia"
     trombosit_status: Optional[str] = None  # "normal" | "trombositosis"
     led_rasio_dari_rujukan_atas: Optional[float] = None  # mis. 1.5 artinya 1.5x nilai rujukan atas
@@ -145,10 +146,13 @@ SARAN_ANEMIA_SEDANG = ("Konsultasi Dokter Umum Poli Pegawai untuk tatalaksana an
                         "(bila diperlukan konsultasi Sp.PD Divisi KHOM)")
 
 
-def interpretasi_hb(status: str) -> Optional[tuple]:
+def interpretasi_hb(status: str, morfologi: Optional[str] = None) -> Optional[tuple]:
+    # Morfologi dari MCV/MCH (dikonfirmasi dr. Vidya, 2026-10-14) -- dulu selalu
+    # "mikrositik hipokromik". Tanpa MCV/MCH -> "Anemia ringan" saja.
+    akhiran = f" {morfologi}" if morfologi else ""
     mapping = {
-        "anemia_ringan": ("Anemia ringan mikrositik hipokromik", None, False),
-        "anemia_sedang": ("Anemia sedang mikrositik hipokromik", SARAN_ANEMIA_SEDANG, False),
+        "anemia_ringan": (f"Anemia ringan{akhiran}", None, False),
+        "anemia_sedang": (f"Anemia sedang{akhiran}", SARAN_ANEMIA_SEDANG, False),
         "anemia_berat": ("Anemia berat",
                           "Segera lakukan konsultasi ke Dokter Spesialis Penyakit Dalam Divisi KHOM untuk anemia berat", True),  # wajib intervensi
     }
@@ -767,7 +771,7 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
 
     # --- Hematologi ---
     if d.hb_status:
-        r = interpretasi_hb(d.hb_status)
+        r = interpretasi_hb(d.hb_status, d.anemia_morfologi)
         if r:
             _, kesimpulan, saran, wajib = r
             hasil.kesimpulan_lab.append(kesimpulan)
