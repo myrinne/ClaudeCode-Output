@@ -77,7 +77,7 @@ TES = {
         konversi={"%": 1}),
     "eritrosit": dict(
         nama_rscm="Eritrosit", satuan="10^6/uL", kategori="mesin",
-        alias=["eritrosit", "rbc", "erytrocyte", "erythrocyte", "jumlah eritrosit"],
+        alias=["eritrosit", "rbc", "erytrocyte", "erythrocyte", "jumlah eritrosit", "red blood cell count", "red blood cell", "rbc count"],
         konversi={"10^6/ul": 1}),
     "mcv": dict(nama_rscm="MCV/VER", satuan="fL", kategori="mesin",
                 alias=["mcv", "m c v", "ver", "mcv/ver"], konversi={"fl": 1}),
@@ -87,7 +87,7 @@ TES = {
                  alias=["mchc", "m c h c", "kher", "mchc/kher"], konversi={"g/dl": 1, "%": 1}),
     "leukosit": dict(
         nama_rscm="Jumlah Leukosit", satuan="10^3/uL", kategori="mesin",
-        alias=["leukosit", "jumlah leukosit", "lekosit", "wbc", "leucocyte", "leukocyte"],
+        alias=["leukosit", "jumlah leukosit", "lekosit", "wbc", "leucocyte", "leukocyte", "leukocytes", "white blood cell count", "wbc count"],
         konversi={"10^3/ul": 1, "/ul": 0.001}),
     "trombosit": dict(
         nama_rscm="Jumlah Trombosit", satuan="10^3/uL", kategori="mesin",
