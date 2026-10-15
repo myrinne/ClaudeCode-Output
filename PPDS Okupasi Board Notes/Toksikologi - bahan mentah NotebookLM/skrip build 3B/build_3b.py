@@ -24,6 +24,14 @@ for fn in os.listdir(IMG):
         im.thumbnail((2000, 2000))
         im.save(os.path.join(SMALL, fn[:-4] + ".jpg"), quality=88, optimize=True)
 IMG = SMALL
+IMG3B = os.path.join(TMP, "infografik3b")
+SMALL3B = os.path.join(TMP, "infografik_small3b")
+os.makedirs(SMALL3B, exist_ok=True)
+for fn in os.listdir(IMG3B):
+    if fn.startswith("3B.") and fn.lower().endswith(".png"):
+        im = Image.open(os.path.join(IMG3B, fn)).convert("RGB")
+        im.thumbnail((2000, 2000))
+        im.save(os.path.join(SMALL3B, fn[:-4] + ".jpg"), quality=88, optimize=True)
 
 
 def read(name):
@@ -149,6 +157,18 @@ for title, f in SOLV:
     doc.add_page_break()
     doc.add_heading(title, level=2)
     M.render(doc, read(f), h_off=1)
+    num = title.split(" ", 1)[0].split(".")[1]
+    for fn in sorted(os.listdir(SMALL3B)):
+        if fn.startswith("3B.%02d_" % int(num)):
+            cp = doc.add_paragraph()
+            cp.paragraph_format.keep_with_next = True
+            cr = cp.add_run("Infografik: " + title.split(" ", 1)[1])
+            cr.bold = True
+            cr.font.size = Pt(9.5)
+            ip = doc.add_paragraph()
+            ip.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            ip.add_run().add_picture(os.path.join(SMALL3B, fn), width=Cm(17.2))
+            break
 
 doc.add_page_break()
 X.formula(doc)
