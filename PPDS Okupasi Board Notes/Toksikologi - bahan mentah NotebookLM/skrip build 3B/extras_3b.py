@@ -148,18 +148,17 @@ def quality(doc):
         "**Nikel:** nilai BEI 30 dan 5 µg/L belum terverifikasi pada pustaka lain; cek buku BEI ACGIH 2026.",
         "**NAB Permenaker 5/2018 yang berbeda antar keluaran NotebookLM:** mangan (0,2 inhalabel dan 0,02 respirabel pada tabel Lampiran 3 vs 0,1 pada keluaran Bagian B) dan berilium (0,00005 mg/m3 pada tabel vs 0,002 pada keluaran Bagian B). Tabel di bagian 2.1 dipakai sebagai acuan; cek ulang PDF.",
         "**Nomor butir Perpres 7/2019:** keluaran per zat kadang berbeda dari tabel di bagian 2.2 (mis. Pb, Cd, Mn, Ni, Be, Co, Tl, Zn). Tabel bagian 2.2 dipakai sebagai acuan; cek ulang lampiran.",
-        "**Belum ada:** Permenkes 7/2019 dan regulasi BPJS, bagian 3C sampai 3F dan quick table zat lain (notebook lain), serta sumber tambahan ATSDR dan EPA.",
+        "**Belum ada:** Permenkes 7/2019 dan regulasi BPJS Ketenagakerjaan untuk PAK, serta sumber tambahan EPA IRIS (ATSDR CSEM untuk kolinesterase, nitrat/nitrit, dan asbes sudah diunduh ke folder sumber tambahan).",
         "**Seng, talium, dan kobalt** dijawab ringkas (zat minor).",
         "**Klaim yang perlu diverifikasi:** efek asam askorbat IV dosis tinggi pada kromium (bagian 3A.1).",
         "**3B, angka ACGIH yang berbeda dari pustaka yang saya ketahui (cek buku TLV/BEI 2026):** TLV xilena 20 ppm (pustaka lain 100 ppm, STEL 150, BEI MHA 1,5 g/g); BEI 2,5-HD n-heksana ACGIH 0,5 mg/L (pustaka lain 0,4 mg/L); TLV etilen glikol 25 ppm uap; TLV isopropil eter 20/50 ppm (pustaka lain 250/310); TLV etil asetat 100 ppm (pustaka lain 400); BEI MA+PGA stirena 150 mg/g (ACGIH lama 400); BEI PCE darah 0,4 mg/L.",
         "**3B, nomor butir Perpres 7/2019 dari NotebookLM** (benzena butir 12, derivat nitro/amina 13, keton/alkohol/glikol 14, eter 16, ester 17, halogen alifatik 10, CO 27, CS2 9; Lampiran III butir 4 dan 8) tidak diverifikasi ke lampiran; cek ulang.",
         "**3B, bukti terbatas:** N-asetilsistein untuk CCl4 (rasional pengisian GSH, bukan terapi baku); uji Lampu Wood urin untuk etilen glikol (sensitivitas rendah; catatan tambahan, bukan dari NotebookLM).",
-        "**3B, belum ada:** infografik per zat (hanya 3A yang punya), serta vignette hitung dan quick table zat 3C sampai 3F.",
     ], size=10)
 
 
 def intro_3b(doc):
-    para(doc, "Struktur sama dengan 3A: tabel 13 poin per zat lalu pearl dan jebakan ujian (poin 14). Sumber: notebook NotebookLM \"Toxicology - Organic Solvents\" (99 sumber). **Tidak ada infografik untuk 3B.** Poin 12 tidak merinci urutan langkah diagnosis PAK (konsisten dengan 3A). Angka NAB/IPB Permenaker 5/2018 dan TLV/BEI ACGIH yang berbeda ditampilkan berdampingan; yang bertanda \"cek ulang\" ada di bagian 7.", size=10)
+    para(doc, "Struktur sama dengan 3A: tabel 13 poin per zat lalu pearl dan jebakan ujian (poin 14). Sumber: notebook NotebookLM \"Toxicology - Organic Solvents\" (99 sumber). **Satu infografik per zat (NotebookLM Studio).** Poin 12 tidak merinci urutan langkah diagnosis PAK (konsisten dengan 3A). Angka NAB/IPB Permenaker 5/2018 dan TLV/BEI ACGIH yang berbeda ditampilkan berdampingan; yang bertanda \"cek ulang\" ada di bagian 7.", size=10)
     M.add_table(doc, [
         ["Kelompok (outline 3B)", "Zat pada catatan ini"],
         ["Aromatik", "Benzena, toluena, xilena, stirena, anilin dan nitrobenzena (methemoglobinemia)"],

@@ -1,0 +1,198 @@
+Sebagai penguji Dewan Ujian Nasional Spesialis Kedokteran Okupasi (Sp.Ok), saya menuntut presisi analitis, penguasaan toksikokinetik, patofisiologi molekuler, kepatuhan regulasi mutakhir, serta kemampuan aplikatif Anda di lapangan industri. Jangan menghafal secara dangkal; pahami logika klinis dan medikolegal di balik setiap parameter.
+
+Berikut adalah telaah komprehensif 14 poin mengenai **Silika Kristalin** untuk persiapan ujian *board* Anda:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Bentuk Polimorf:** Silika atau silikon dioksida (\\(\text{SiO}_2\\)) di lingkungan industri ditemukan dalam bentuk kristalin bebas (*free crystalline silica*) dan bentuk amorf. Tiga polimorf kristalin utama di tempat kerja adalah **kuarsa (*alpha-quartz*)**, **kristobalit (*cristobalite*)**, dan **tridimit (*tridymite*)**. Kuarsa merupakan mineral paling melimpah di batuan alam (misal pada batu pasir 67% dan granit 25–40%), sedangkan kristobalit dan tridimit terbentuk secara alami di lava vulkanik atau terbentuk sintetis melalui pemanasan kuarsa/silika amorf pada suhu ekstrem dalam pembuatan bata refraktori untuk tanur industri.
+* **Karakteristik Fisik:** Berupa padatan kristalin tidak berwarna, tidak berbau, tidak mudah terbakar (*noncombustible solid*), dengan berat molekul \\(60{,}08\text{ g/mol}\\) dan titik lebur mencapai \\(\approx 3110^\circ\text{F}\\) (\\(1710^\circ\text{C}\\)). Patahan baru (*freshly fractured silica*) memiliki radikal bebas permukaan yang sangat reaktif (*silanols* bebas), yang secara drastis melipatgandakan sitotoksisitas partikel.
+* **Klasifikasi Karsinogenisitas:**
+  * **IARC (International Agency for Research on Cancer):** **Grup 1** (*Carcinogenic to humans*) untuk silika kristalin yang dihirup dari sumber pajanan okupasi.
+  * **ACGIH (American Conference of Governmental Industrial Hygienists):** Kategori **A2** (*Suspected Human Carcinogen*).
+
+---
+
+### 2. Sumber Pajanan di Industri
+Pajanan respirabel terjadi pada proses destruksi mekanis (pemecahan, pengeboran, penggerindaan, pemotongan, atau peledakan) material yang mengandung silika bebas:
+1. **Pertambangan dan Pembuatan Terowongan (*Mining and Tunneling*):** Tambang emas, tambang batubara (pajanan lapisan batuan pasir di sekeliling batubara), tambang bijih besi.
+2. **Penggalian Batu (*Quarrying*) dan Pemecahan Batu (*Stone Crushing*):** Industri batu split, pasir silika industri.
+3. **Penyemburan Pasir (*Sandblasting*):** Pembersihan lambung kapal di galangan kapal, pembersihan logam pengecoran, serta *denim sandblasting* (proses *distressing* celana jeans) yang memicu wabah silikosis akut.
+4. **Pengecoran Logam (*Foundry*) dan Keramik/Bata Refraktori:** Penggunaan pasir silika sebagai cetakan logam cair dan bahan tahan api tungku tanur.
+5. **Konstruksi dan Semen:** Pemotongan beton, pengerjaan batu bata, *masonry*, pembongkaran gedung, dan *hydraulic fracturing* (fracking minyak dan gas).
+6. **Industri Batu Buatan (*Artificial / Engineered Stone*):** Pabrikasi meja dapur (*countertops*) dan *benchtop* kamar mandi. Komposisi batu buatan mengandung matriks **85% – 95% kuarsa kristalin hancur** yang direkatkan dengan resin polimer, pigmen, dan logam berat (jauh lebih pekat dibanding batu alam granit yang hanya 25–40% atau marmer yang sangat rendah silika).
+
+---
+
+### 3. Deposisi dan Klirens Partikel Respirabel (Toksikokinetik)
+* **Fraksi Respirabel:** Bahaya klinis utama ditentukan oleh fraksi partikel dengan diameter aerodinamis \\(<10\ \mu\text{m}\\), khususnya fraksi submikron hingga rentang \\(1\text{--}5\ \mu\text{m}\\) yang mampu menembus aparatus filtrasi hidung-faring dan mencapai bronkiolus terminalis serta kantung alveolus. Partikel berukuran besar terdeposisi di saluran napas atas dan dibersihkan oleh eskalator mukosiliar dalam waktu sekitar 8 jam.
+* **Mekanisme Deposisi & Klirens Alveolar:** Di ruang alveolus, partikel silika tidak dapat larut. Partikel dikenali oleh reseptor pembersih (*scavenger receptor class A*), terutama **MARCO (*Macrophage Receptor with Collagenous Structure*)** pada permukaan makrofag alveolar.
+* **Dinamika Aliran Limfatik:** Makrofag yang menelan partikel mengalir menuju saluran limfatik interstisial dan kelenjar getah bening peribronkial/hilus. Klirens limfatik paru digerakkan oleh tekanan arteri pulmonalis (yang fisiologisnya lebih rendah di apeks) dan ekskursi mekanis dinding dada (paling minimal di daerah posterior atas). Konsekuensinya, **klirens limfatik paling lambat dan retensi partikel silika tertinggi terjadi di zona posterior dan lobus atas paru (paru kanan lebih berat daripada kiri)**, mendasari predileksi lesi awal silikosis.
+* **Beban Berlebih (*Particle Overload*):** Pajanan konsentrasi tinggi melumpuhkan kapasitas migrasi makrofag, menyebabkan penetrasi partikel menembus pneumosit tipe I ke dalam intersisium alveolus.
+
+---
+
+### 4. Patogenesis Molekuler dan Seluler
+1. **Fagositosis dan Destabilisasi Lisosom:** Setelah partikel silika terikat pada reseptor MARCO dan difagositosis ke dalam fagosom makrofag, permukaan kristal berikatan dengan membran vakuola intarseluler yang menyebabkan pembengkakan (*swelling*) dan destabilisasi membran lisosom (ruptur lisosom).
+2. **Aktivasi NLRP3 Inflamasom:** Kebocoran enzim lisosom ke sitosol bersama dengan efluks ion kalium (\\(\text{K}^+\\)) dan pelepasan *reactive oxygen species* (ROS) oleh NADPH oksidase memicu perakitan multiprotein **NLRP3 (*NALP3*) inflammasome** melalui adaptasi protein **ASC** (*Apoptosis-associated Speck-like protein containing a CARD*).
+3. **Kaskade Sitokin Pro-inflamasi:** NLRP3 mengaktivasi **pro-kaspase-1** menjadi **kaspase-1 aktif**. Kaspase-1 membelah prekursor sitokin inaktif menjadi bentuk aktif: **Interleukin-1\\(\beta\\) (IL-1\\(\beta\\))** dan **Interleukin-18 (IL-18)**. Bersamaan dengan itu terjadi pelepasan alarmin seperti HMGB1 (*High Mobility Group Box 1*), bFGF, TNF-\\(\alpha\\), dan kemokin pengarah neutrofil (IL-8).
+4. **Siklus Kematian Makrofag Berulang (*Perpetual Lytic Cycle*):** Kerusakan membran seluler dan stres oksidatif memicu lisis makrofag (apoptosis/piroptosis). Partikel silika kristalin yang bersifat tidak dapat dicerna (*non-biodegradable*) dilepaskan kembali ke stroma intersisial, difagositosis ulang oleh makrofag baru yang direkrut, lalu memicu kembali ruptur lisosom. Siklus oto-amplifikasi destruksi ini **terus berjalan sendiri (*self-perpetuating*) bahkan setelah pekerja ditarik keluar dari paparan debu**.
+5. **Fibrogenesis Nodular:** Pelepasan berulang transforming growth factor-beta (**TGF-\\(\beta\\)**) dan IL-1\\(\beta\\) merangsang proliferasi fibroblas, transisi epitel-mesenkimal (EMT) pada sel alveolar tipe II, dan sintesis serabut kolagen secara eksesif. Terbentuklah unit lesi khas berupa **nodul silikotik (*silicotic nodule*)**: pusat aseluler terdiri dari berkas kolagen padat terhialinisasi tersusun konsentris konsentris (*whorled/onion-skin pattern*), dikelilingi zona seluler perifer berisi makrofag pengusung debu, limfosit, dan fibroblas.
+6. **Silikoproteinosis (Bentuk Akut):** Pada konsentrasi debu yang sangat masif, partikel merangsang hiperplasia dan hipertrofi pneumosit tipe II secara berlebihan, memicu sekresi lipoprotein fosfolipid surfaktan yang membanjiri seluruh rongga alveolus. Secara histologis, lumen alveolus dipenuhi materi granular amorf yang positif pada pewarnaan **Periodic Acid-Schiff (PAS)** dengan reaksi fibrosis kolagen minimal.
+
+---
+
+### 5. Diagnosis dan Pemantauan Klinis
+* **Anamnesis Okupasi:** Rekonstruksi kronologis seluruh riwayat pekerjaan (*lifetime occupational history*), agen material yang dipotong/digerus, durasi jam kerja per minggu, keberadaan ventilasi dan pelindung pernapasan, serta kemungkinan paparan pasif (*bystander exposure*).
+* **Radiologi Konvensional (Foto Toraks Berdasarkan Standar ILO):**
+  * **Opasitas kecil membulat (*small rounded opacities*):** Diberi kode berdasarkan ukuran: **p** (\\(<1{,}5\text{ mm}\\)), **q** (\\(1{,}5\text{--}3{,}0\text{ mm}\\)), atau **r** (\\(3{,}0\text{--}10{,}0\text{ mm}\\)), dengan dominansi zona atas dan tengah paru.
+  * **Profusi Opasitas:** Diderajatkan berdasarkan 12 skala perbandingan ILO (mulai dari kategori 0/- hingga 3/+).
+  * **Opasitas besar (*large opacities*):** Mengindikasikan stadium komplikata / PMF (Kategori A: diameter \\(1\text{--}5\text{ cm}\\); B: satu atau beberapa opasitas \\(>5\text{ cm}\\) dengan luas total \\(<\\) zona paru kanan atas; C: luas total melebihi zona kanan atas).
+  * **Kalsifikasi Kelenjar Getah Bening:** Gambaran kalsifikasi perifer berbentuk kulit telur (**eggshell calcification**) pada kelenjar limfa hilus dan mediastinum.
+* **High-Resolution CT (HRCT) / Low-Dose CT (LDCT):**
+  * **Sensitivitas Jauh Lebih Unggul:** Foto toraks standar memiliki sensitivitas rendah untuk deteksi dini; **17,9% pekerja batu buatan dengan foto toraks normal terbukti memiliki pola mikronodular pada evaluasi CT toraks**.
+  * **Temuan Karakteristik:** Nodul sentrilobular dan perilimfatik berbatas tegas, pseudoplaques subpleura (koalesensi nodul subpleura), *subpleural curvilinear lines*, emfisema parasikatrikal, serta pola *crazy-paving* (kombinasi *ground-glass opacity* dan penebalan septum interlobularis) pada silikoproteinosis.
+* **Modalitas Radiologi Diferensial:**
+  * **MRI Toraks:** Sangat krusial untuk **membedakan PMF dengan Karsinoma Paru**. Massa PMF kaya akan matriks kolagen hiposeluler sehingga memberikan **intensitas sinyal T2 yang rendah (hipointens)**, sedangkan kanker paru vaskular/seluler memberikan **sinyal T2 yang tinggi (hiperintens)**.
+  * **FDG PET/CT:** **Tidak dapat membedakan PMF dengan kanker paru** secara mandiri, karena massa PMF yang mengalami inflamasi kronis aktif memiliki aviditas glukosa (*FDG-avidity*) yang sama tingginya dengan lesi keganasan.
+* **Uji Fungsi Paru (Spirometri dan DLCO):**
+  * **Spirometri Awal Sering Normal:** Pada saat diagnosis awal silikosis batu buatan ditegakkan, fungsi spirometri masih normal pada **53,4%** pasien. Jika terjadi kelainan, pola restriksi (penurunan FVC) ditemukan pada 33,3% dan obstruksi (penurunan FEV1/FVC) pada 13,8%.
+  * **DLCO (*Diffusing Capacity of the Lung for Carbon Monoxide*):** Pemeriksaan paling sensitif untuk menilai gangguan fungsional interstisial dini; penurunan DLCO terjadi pada **39,2%** kasus pada saat spirometri masih dalam batas normal.
+* **Status Biomarker:**
+  * **Belum ada biomarker cairan biologis yang tervalidasi atau andal untuk skrining klinis maupun penentu stadium penyakit**. Parameter inflamasi serum seperti *Lactate Dehydrogenase* (LDH), *Angiotensin-Converting Enzyme* (ACE), dan fibrinogen ditemukan meningkat secara non-spesifik pada pasien PMF dibanding silikosis sederhana, namun peran diagnostiknya belum dapat menggantikan pencitraan.
+* **Skrining Tuberkulosis:**
+  * Wajib dilakukan uji **IGRA (*Interferon-Gamma Release Assay*)** (misal T-SPOT.TB atau QuantiFERON) atau **TST (*Tuberculin Skin Test*)** dengan nilai batas indurasi **\\(\ge 10\text{ mm}\\)** setelah menyingkirkan penyakit aktif. IGRA lebih direkomendasikan karena akurasinya lebih tinggi dan tidak dipengaruhi riwayat vaksinasi BCG. Pada kasus suspek aktif, lakukan pemeriksaan sputum mikroskopis BTA 3 kali, kultur mikobakteri, dan uji molekuler cepat (TCM/GeneXpert MTB/RIF).
+
+---
+
+### 6. Latensi dan Perjalanan Penyakit
+* **Silikosis Kronik:** Berjalan lambat (*insidious*) dengan masa latensi panjang, umumnya timbul setelah **\\(>10\text{--}20\text{ tahun}\\)** (sering kali 20 hingga 40 tahun) paparan konsentrasi rendah hingga sedang.
+* **Silikosis Akselerata:** Terjadi dengan latensi **\\(5\text{--}10\text{ tahun}\\)** akibat paparan debu berintensitas lebih tinggi. Pada kohort pekerja batu buatan (*artificial stone*), rerata masa latensi hingga diagnosis adalah **\\(13{,}5 \pm 4{,}1\text{ tahun}\\)**, dengan usia pekerja relatif muda (\\(41{,}9 \pm 5{,}6\text{ tahun}\\)).
+* **Silikosis Akut:** Masa latensi sangat singkat, gejala muncul dalam **beberapa minggu hingga \\(1\text{--}3\text{ tahun}\\)** setelah pajanan masif debu silika konsentrasi ekstrem dalam ruang terbatas tanpa proteksi.
+* **Progresivitas Independen:** Penyakit ini bersifat progresif dan tidak dapat disembuhkan; penurunan fungsi ventilasi dan perburukan radiologis tetap berlanjut meskipun pajanan kerja telah dihentikan secara total.
+
+---
+
+### 7. Bentuk Klinis: Akut, Akselerata, Kronik Sederhana vs. Komplikata (PMF)
+1. **Silikosis Akut (Silikoproteinosis):**
+   * *Patofisiologi:* Eksudasi materi lipoproteinaceous kaya surfaktan di rongga alveolar.
+   * *Klinis & Prognosis:* Sesak napas mendadak yang memburuk secara cepat, batuk kering, kelemahan, penurunan berat badan, demam, kegagalan napas akut, dan kematian dalam hitungan bulan.
+   * *Radiologi:* Konsolidasi bilateral perihilar dan basal, *ground-glass opacities* difus, serta *crazy-paving pattern*.
+2. **Silikosis Akselerata:**
+   * Memiliki gambaran histologis dan radiologis serupa dengan bentuk kronik (nodul silikotik), namun profusi nodul meningkat dengan laju yang sangat cepat dalam rentang waktu \\(5\text{--}10\\) tahun dan bertransformasi cepat menjadi PMF.
+3. **Silikosis Kronik Sederhana (*Simple Chronic Silicosis*):**
+   * Ditandai nodul individual berdiameter kecil (\\(<1\text{ cm}\\)) yang tersebar dominan di zona atas dan posterior paru.
+   * Sering kali asimtomatik atau hanya batuk kronis ringan; faal paru dapat normal atau menunjukkan restriksi ringan.
+4. **Silikosis Komplikata / Progressive Massive Fibrosis (PMF):**
+   * *Definisi:* Terbentuk akibat koalesensi (peleburan) nodul-nodul silikotik menjadi massa konglomerat fibrotik besar dengan batas radiologis **diameter \\(\ge 1\text{ cm}\\)** (kriteria ILO) atau \\(\ge 2\text{ cm}\\) secara patologis.
+   * *Manifestasi:* Retraksi dan obliterasi struktur vaskular dan percabangan bronkus, pembentukan emfisema bulosa parasikatrikal di tepi massa, migrasi massa ke arah hilus yang memunculkan tanda sayap malaikat (*angel’s wing appearance*), serta kavitasi iskemik aseptik.
+   * *Dampak:* Penurunan kapasitas ventilasi paru yang berat (restriksi berat atau obstruksi berat dengan penurunan DLCO nyata), hipoksemia saat istirahat/latihan, hipertensi pulmonal, kor pulmonale, dan gagal napas terminal.
+
+---
+
+### 8. Komplikasi Silikosis
+* **Silikotuberkulosis (Infeksi Mikobakterial):** Silikosis adalah faktor risiko kedua paling signifikan untuk terjadinya TB setelah infeksi HIV. Insidensi TB pada penderita silikosis dilaporkan **21,8 kali lipat lebih tinggi** dibandingkan individu sehat. Meta-analisis global mengonfirmasi peningkatan risiko TB pada pasien silikosis dengan *pooled risk ratio* sebesar 1,35 (95% CI: 1,18–1,53) dan meningkat tajam seiring durasi pajanan \\(>15\\) tahun (OR: 4,08) serta pada derajat keparahan nodul profusi tinggi (OR: 4,9–5,08). Mekanismenya: partikel silika merusak fagolisosom makrofag alveolar, menekan respon imun seluler tipe 1 (Th1 dan makrofag M1 yang krusial membasmi mikobakteri), membelokkan imun ke arah tipe 2 (Th2 dan M2), serta menekan ekspresi TLR2 (*Toll-like receptor 2*), sehingga kuman *Mycobacterium tuberculosis* leluasa bereplikasi intarseluler.
+* **Kanker Paru (*Bronchogenic Carcinoma*):** Silika kristalin adalah karsinogen manusia Grup 1 (IARC). Analisis kohort multisenter menunjukkan hubungan dosis-respons yang monotonik antara pajanan kumulatif silika dan mortalitas kanker paru, dengan masa latensi kanker sekitar 15 tahun.
+* **Penyakit Paru Obstruktif Kronik (PPOK):** Inhalasi debu silika menyebabkan bronkitis industri, penyempitan saluran napas kecil, dan emfisema destruktif, yang dapat timbul independen dari kebiasaan merokok (namun merokok memberikan efek multiplikatif terhadap kerusakan ventilasi).
+* **Penyakit Autoimun dan Jaringan Ikat Sistemik:** Silika bertindak sebagai adjuvan imunologis non-spesifik yang memicu hilangnya toleransi imun dan produksi autoantibodi.
+  * Prevalensi serologi autoimun positif pada pekerja batu buatan mencapai **31,4% untuk ANA**, **12,85% untuk Rheumatoid Factor (RF)**, dan **11% untuk antibodi ENA**.
+  * Entitas klinis mencakup: **Sklerosis Sistemik / Skleroderma (*Erasmus Syndrome*)**, **Artritis Reumatoid dengan pneumokoniosis nodular (*Caplan Syndrome*)**, *Systemic Lupus Erythematosus* (SLE), dan Vaskulitis terkait ANCA (*microscopic polyangiitis*).
+* **Penyakit Ginjal Kronik:** Glomerulonefritis autoimun dan nefropati interstisial kronis akibat toksisitas kompleks imun sekunder dari pajanan silika.
+
+---
+
+### 9. Nilai Batas Pajanan di Lingkungan Kerja (*Occupational Exposure Limits*)
+Sebagai calon spesialis, Anda wajib menghafal angka-angka regulasi ini secara mutlak:
+
+| Badan / Regulasi | Parameter Fraksi | Batas Pemaparan / Nilai Ambang Batas | Notasi / Keterangan |
+| :--- | :--- | :--- | :--- |
+| **ACGIH** | Fraksi Respirabel (\\(\alpha\\)-kuarsa dan kristobalit) | **\\(0{,}025\ \text{mg/m}^3\\)** (TLV-TWA 8 jam) | **A2** (*Suspected Human Carcinogen*) |
+| **Permenaker No. 5 Tahun 2018 (Indonesia)** | • \\(\alpha\\)-Kuarsa (CAS 14808-60-7)<br>• Kristobalit (CAS 14464-46-1)<br>• Tridimit (CAS 15468-32-3) | • **\\(0{,}025\ \text{mg/m}^3\\)** (Fraksi Respirabel)<br>• **\\(0{,}025\ \text{mg/m}^3\\)** (Fraksi Respirabel)<br>• **\\(0{,}05\ \text{mg/m}^3\\)** (Respirabel) / \\(0{,}025\ \text{mg/m}^3\\) | Kategori Karsinogen **A2** |
+| **NIOSH** | Fraksi Respirabel (REL TWA hingga 10 jam/hari) | **\\(0{,}05\ \text{mg/m}^3\\)** (\\(50\ \mu\text{g/m}^3\\)) | **Ca** (*Potential Occupational Carcinogen*) |
+| **OSHA** | Formula Historis (Tabel Z-3 Mineral Dusts):<br>• Kuarsa Respirabel<br>• Kristobalit & Tridimit | \\(\frac{10\ \text{mg/m}^3}{\%\text{SiO}_2 + 2}\\) atau \\(\frac{250\ \text{mppcf}}{\%\text{SiO}_2 + 5}\\)<br>Setengah (\\(1/2\\)) dari formula kuarsa | Standar modern OSHA menetapkan PEL \\(0{,}05\ \text{mg/m}^3\\) (\\(50\ \mu\text{g/m}^3\\)) |
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Regulasi:** **TIDAK ADA Indeks Pemaparan Biologis (BEI dari ACGIH) maupun IPB (Lampiran 4 Permenaker No. 5 Tahun 2018) untuk silika kristalin**.
+* **Landasan Toksikologi:** Silika kristalin adalah partikel mineral anorganik yang tidak mengalami metabolisme sistemik menjadi metabolit terlarut di urin atau darah yang berkorelasi proporsional dengan dosis internal.
+* **Bentuk Pemantauan:** Pemantauan biologis digantikan oleh **Surveilans Medis / Pemantauan Efek Biologis (*Biological Effect Monitoring*)** secara berkala (evaluasi gejala respirasi terstandar, kapasitas fungsi paru melalui spirometri dan DLCO, radiografi toraks ILO atau LDCT, serta skrining infeksi tuberkulosis).
+
+---
+
+### 11. Tatalaksana Klinis Medis
+* **Ketiadaan Terapi Kuratif:** **Tidak ada modalitas farmakologis yang terbukti menyembuhkan atau membalikkan lesi fibrosis silikosis**. Terapi kortikosteroid sistemik tidak memberikan manfaat jangka panjang pada silikosis kronik maupun akselerata dan justru berpotensi meningkatkan risiko infeksi oportunistik/TB.
+* **Penghentian Pajanan Segera:** Pemindahan pekerja secara mutlak dari segala sumber pajanan silika kristalin untuk meminimalkan beban partikel lebih lanjut.
+* **Manajemen Silikotuberkulosis & Profilaksis TB Laten (LTBI):**
+  * *Terapi TB Laten:* Bila TST \\(\ge 10\text{ mm}\\) atau IGRA positif (setelah eksklusi TB aktif melalui radiologi dan sputum BTA), berikan kemoprofilaksis: **Isoniazid (300 mg/hari) selama 6–12 bulan**, ATAU **Rifampisin (600 mg/hari) selama 4 bulan**, ATAU kombinasi **Isoniazid + Rifampisin selama 3 bulan**.
+  * *Terapi TB Aktif:* Pemberian OAT (*anti-tuberculosis drugs*) menggunakan strategi DOTS dengan durasi yang diperpanjang minimal **8 hingga 9 bulan** untuk mencegah tingginya angka relaps/reaktivasi akibat sequester kuman di dalam nodul fibrotik dan kelenjar limfa yang mengeras.
+* **Vaksinasi Profilaksis:** Imunisasi rutin tahunan terhadap **Influenza** dan vaksinasi **Pneumokokus** (PCV / PPSV23) untuk mencegah pneumonia sekunder yang dapat memicu dekompensasi respirasi akut.
+* **Penghentian Merokok (*Smoking Cessation*):** Edukasi dan program intervensi wajib untuk menghentikan konsumsi rokok guna menekan laju penurunan FEV1 dan multiplikasi risiko karsinoma bronkogenik.
+* **Terapi Simtomatik & Suportif:** Pemberian bronkodilator inhalasi (LABA/LAMA) bagi penderita dengan komponen obstruksi/PPOK, mukolitik, oksigenoterapi jangka panjang (*LTOT*) pada pasien yang mengalami hipoksemia berat (\\(\text{PaO}_2 < 55\text{ mmHg}\\) atau \\(\text{SaO}_2 < 88\%\\)), penanganan kor pulmonale, dan program rehabilitasi paru.
+* **Whole Lung Lavage (WLL):** Pembersihan paru bilateral di bawah anestesi umum; bermanfaat secara klinis pada **silikosis akut (silikoproteinosis)** untuk menguras eksudat lipoproteinaceous dan kristal silika bebas alveolar, namun tidak terbukti membalikkan fibrosis pada silikosis kronik/PMF.
+* **Transplantasi Paru (*Lung Transplantation*):** Merupakan satu-satunya terapi definitif untuk silikosis stadium akhir atau silikosis akselerata dengan gagal napas refrakter, terutama pada pekerja berusia muda.
+
+---
+
+### 12. Tatalaksana Individu dan Komunitas di Tempat Kerja
+* **Penilaian Kelaikan Kerja (*Fitness to Work*):**
+  * Pekerja yang telah terkonfirmasi menderita silikosis (terlebih silikosis akselerata, PMF, atau siliko-TB) harus dinyatakan **Tidak Laik Kerja (*Unfit*)** untuk area kerja berdebu silika.
+  * Rekomendasi medis: **Pemindahan permanen / mutasi (*Fit with Restriction*)** ke pos kerja administrasi atau lini operasional yang sepenuhnya bebas dari debu respirabel.
+* **Surveilans Kesehatan Berkala:**
+  * Pemeriksaan kesehatan awal (*pre-employment*), berkala (*periodic*), dan khusus.
+  * Jadwal berkala menurut standar ACOEM/WHO: evaluasi dasar (*baseline*), evaluasi ulang 1 tahun pertama, kemudian setiap **2 hingga 3 tahun** untuk dekade pertama, dan dilanjutkan setiap **2 tahun** sekali setelahnya (bahkan idealnya seumur hidup bagi pekerja yang pernah terpapar).
+* **Hirarki Pengendalian Bahaya (*Hierarchy of Controls*):**
+  1. *Eliminasi / Substitusi:* Menghentikan penggunaan bahan berdensitas silika tinggi. Kebijakan pelarangan total batu buatan (*engineered stone ban*) yang diterapkan di Australia (2024) adalah contoh eliminasi primer. Pada *sandblasting*, pasir silika kuarsa dilarang dan disubstitusi dengan alumina, *garnet*, *staurolite*, atau *steel grit*.
+  2. *Rekayasa Teknik (*Engineering Controls*):* Penggunaan sistem basah (*wet cutting/grinding suppression*), sistem ventilasi hisap lokal (*Local Exhaust Ventilation* / LEV) terintegrasi pada mesin pemotong, serta isolasi/kabin tertutup bertekanan positif.
+  3. *Pengendalian Administratif:* Rotasi sif kerja untuk membatasi durasi paparan kumulatif harian, larangan metode pembersihan sapu kering (wajib menggunakan *vacuum* berfilter HEPA industri atau pel basah), pemisahan ruang ganti bersih-kotor, dan pelatihan higiene industri.
+  4. *Alat Pelindung Diri (APD):* Penggunaan respirator dengan *Assigned Protection Factor* (APF) yang teruji secara kuantitatif (*fit testing* berkala): minimal respirator partikulat N95/N100 bersertifikasi NIOSH, *Powered Air-Purifying Respirator* (PAPR) berfilter HEPA, atau *Supplied-Air Respirator* (SAR) bertekanan positif untuk pengerjaan tertutup/penyemburan pasir.
+* **Rekomendasi Manajemen & Pelaporan (Notifikasi):**
+  * Melaporkan hasil pemantauan lingkungan jika melampaui NAB kepada komite K3 dan manajemen.
+  * Kewajiban notifikasi diagnosis Penyakit Akibat Kerja (PAK) ke instansi ketenagakerjaan dan dinas kesehatan setempat.
+
+---
+
+### 13. Keterangan Regulasi dan Aspek Medikolegal Indonesia
+* **Peraturan Presiden (Perpres) No. 7 Tahun 2019 tentang Penyakit Akibat Kerja:**
+  * Silikosis tercantum secara eksplisit dalam **Lampiran Jenis PAK**:
+    * **Bagian II (Penyakit Berdasarkan Sistem Target Organ), huruf a (Penyakit Saluran Pernafasan) Butir 1:** *"Pneumokoniosis yang disebabkan oleh debu mineral pembentuk jaringan parut, meliputi silikosis, antrakosilikosis, dan asbestosis"*.
+    * **Bagian II huruf a Butir 2:** *"Siliko tuberkulosis"*.
+    * **Bagian III (Penyakit Kanker Akibat Kerja) Butir 21 / Lampiran:** Kanker paru akibat agen karsinogen kerja silika kristalin.
+  * **Jangka Waktu Klaim Jaminan Kecelakaan Kerja (JKK):** Berdasarkan **Pasal 2 ayat (2)**, hak atas manfaat JKK diberikan apabila Penyakit Akibat Kerja timbul dalam jangka waktu **paling lama 3 (tiga) tahun terhitung sejak hubungan kerja berakhir**.
+* **Permenkes No. 11 Tahun 2022 tentang Pelayanan Kesehatan Penyakit Akibat Kerja:**
+  * Penegakan diagnosis PAK harus dilakukan secara ilmiah menggunakan **7 Langkah Diagnosis PAK** oleh dokter pemeriksa kesehatan tenaga kerja atau dokter spesialis kedokteran okupasi (Sp.Ok).
+* **PP No. 28 Tahun 2024 / PP No. 88 Tahun 2019:** Penyelenggaraan pelayanan kesehatan kerja komprehensif (promotif, preventif, kuratif, dan rehabilitatif), penilaian kelayakan kerja (*fitness to work*), serta program kembali bekerja (*return-to-work program*).
+
+---
+
+### 14. *Clinical Pearls* dan Jebakan Ujian *Board* (Wajib Diingat!)
+1. **Jebakan Spirometri Normal:** Jangan pernah menyingkirkan silikosis hanya karena spirometri normal. Lebih dari setengah (53,4%) pekerja batu buatan dengan silikosis terbukti memiliki nilai spirometri normal saat pertama kali terdiagnosis. **DLCO adalah uji fungsional yang paling sensitif turun lebih awal (39,2%)**.
+2. **Jebakan Foto Toraks Normal:** Foto toraks standar (CXR) memiliki sensitivitas terbatas pada tahap awal; **hampir 18% kasus silikosis mikronodular terlewatkan pada CXR dan baru terdeteksi dengan HRCT/LDCT**.
+3. **Mitos "Berhenti Bekerja Menghentikan Penyakit":** Partikel silika tidak larut dan siklus kematian makrofag berlangsung mandiri (*self-perpetuating*). Pasien yang ditarik dari paparan kerja **tetap dapat mengalami progresivitas radiologis dan fungsional menuju PMF**.
+4. **Diferensial PMF vs. Karsinoma Paru:** Pada PET-Scan, kedua lesi sama-sama hipermetabolik (FDG-avid) sehingga tidak dapat membedakan keduanya. Modalitas pembeda terbaik adalah **MRI Toraks**: massa PMF hipointens pada T2-weighted MRI (karena matriks kolagen hiposeluler yang padat), sedangkan keganasan bronkogenik hiperintens pada T2.
+5. **Kavitasi pada Silikosis:** Jika terlihat kavitasi di dalam massa PMF pada pekerja silikosis, **jangan langsung berasumsi itu adalah nekrosis iskemik aseptik**. Kecurigaan utama harus diarahkan pada **Silikotuberkulosis** (atau karsinoma paru yang mengalami kavitas) sampai dibuktikan sebaliknya dengan pemeriksaan dahak BTA/TCM mikobakteri.
+6. **Jebakan Pertanyaan BEI:** Jika penguji menanyakan *"Parameter urin/darah apa yang Anda periksa untuk BEI silika kristalin?"*, jawab dengan tegas: **Tidak ada nilai BEI (ACGIH) maupun IPB (Permenaker 5/2018) untuk silika**. Pemantauan dilakukan melalui surveilans efek biologi (*medical health surveillance*).
+
+---
+
+### Tabel Ringkasan Komprehensif: Silika Kristalin (14 Poin Evaluasi Board)
+
+| No | Komponen Evaluasi | Rangkuman Klinis & Regulasi Kedokteran Okupasi |
+| :---: | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Polimorf kristalin: \\(\alpha\\)-kuarsa, kristobalit, tridimit. Padatan non-combustible, titik lebur \\(>1700^\circ\text{C}\\). Patahan baru membentuk radikal silanol bebas. **IARC: Grup 1**; **ACGIH: A2**. |
+| **2** | **Sumber Pajanan Industri** | Tambang (emas, batubara), terowongan, *sandblasting* (galangan kapal, denim), pengecoran logam (*foundry*), keramik, refraktori, semen/konstruksi, dan **batu buatan (*artificial stone*, 85–95% kuarsa)**. |
+| **3** | **Toksikokinetik & Deposisi** | Fraksi respirabel (\\(<10\ \mu\text{m}\\), optimal \\(1\text{--}5\ \mu\text{m}\\)) menembus alveolus. Difagositosis makrofag via reseptor **MARCO**. Klirens limfatik terendah di apeks/posterior atas (paru kanan \\(>\\) kiri). |
+| **4** | **Patogenesis Molekuler** | Ruptur lisosom makrofag \\(\rightarrow\\) aktivasi **NLRP3 inflamasom** via ASC/kaspase-1 \\(\rightarrow\\) pelepasan IL-1\\(\beta\\), IL-18, TNF-\\(\alpha\\), TGF-\\(\beta\\) \\(\rightarrow\\) lisis makrofag & siklus berulang \\(\rightarrow\\) **nodul silikotik hialin konsentris**. Akut: silikoproteinosis PAS-positif. |
+| **5** | **Diagnosis & Pemantauan** | Anamnesis kerja rinci. **Foto toraks ILO:** opasitas bulat kecil (p, q, r), *eggshell calcification*. **HRCT:** deteksi dini mikronodul. **MRI:** membedakan PMF (T2 hipointens) vs kanker (T2 hiperintens). **Faal Paru:** penurunan DLCO mendahului restriksi/obstruksi spirometri. **Biomarker:** belum ada biomarker skrining andal. **TB:** skrining IGRA / TST (\\(\ge 10\text{ mm}\\)). |
+| **6** | **Latensi Penyakit** | Kronik: \\(>10\text{--}20\\) tahun (hingga 40 tahun). Akselerata: 5–10 tahun (batu buatan rerata \\(13{,}5\text{ tahun}\\)). Akut: beberapa minggu hingga 1–3 tahun. Bersifat progresif mandiri. |
+| **7** | **Bentuk Klinis & PMF** | **Akut:** silikoproteinosis, *crazy-paving*, gagal napas cepat. **Akselerata:** progresi cepat. **Kronik Sederhana:** nodul kecil \\(<1\text{ cm}\\) di lobus atas. **PMF / Komplikata:** massa fibrotik konglomerat \\(\ge 1\text{ cm}\\) (ILO), emfisema sikatrikal, retraksi hilus, kerusakan faal paru berat. |
+| **8** | **Komplikasi Sistemik** | **Silikotuberkulosis** (risiko meningkat 21,8x); Karsinoma paru (IARC 1); PPOK/Emfisema; Penyakit Autoimun (Skleroderma/Erasmus, RA/Caplan, ANA+ 31,4%, RF+ 12,8%, ENA+ 11%); Penyakit Ginjal Kronis. |
+| **9** | **Batas Pajanan Okupasi** | • **ACGIH TLV-TWA:** \\(0{,}025\ \text{mg/m}^3\\) (A2)<br>• **Permenaker 5/2018:** Kuarsa & kristobalit respirabel \\(0{,}025\ \text{mg/m}^3\\) (A2); Tridimit \\(0{,}05\ \text{mg/m}^3\\)<br>• **NIOSH REL:** \\(0{,}05\ \text{mg/m}^3\\) (Ca)<br>• **OSHA PEL:** Formula Tabel Z-3 / Standar \\(0{,}05\ \text{mg/m}^3\\). |
+| **10** | **BEI / IPB** | **TIDAK ADA nilai BEI (ACGIH) atau IPB (Permenaker 5/2018)** karena silika tidak dimetabolisme. Digantikan oleh surveilans medis berkala (kuesioner respirasi, spirometri, DLCO, radiologi dada, uji TB). |
+| **11** | **Tatalaksana Medis** | Tidak ada obat kuratif. Hentikan pajanan. Profilaksis LTBI (INH 6–12 bln / RMP 4 bln / INH+RMP 3 bln). Terapi Siliko-TB: OAT DOTS diperpanjang 8–9 bulan. Vaksin Influenza & Pneumokokus, *smoking cessation*, bronkodilator, WLL (akut), transplantasi paru. |
+| **12** | **Diagnosis & Pengendalian di Tempat Kerja** | **Kelaikan Kerja:** penderita dinilai *Unfit* untuk area berdebu silika (mutasi/fit with restriction). **Surveilans Medis:** berkala tiap 2–3 tahun. **Hierarki Kontrol:** Substitusi/pelarangan batu buatan, *wet methods*, LEV, pembersihan HEPA vacuum, APD respirator (N95/N100, PAPR, SAR ber-fit test). Notifikasi PAK. |
+| **13** | **Regulasi & Medikolegal RI** | **Perpres 7/2019:** Silikosis (Lampiran II.a.1), Siliko-TB (Lampiran II.a.2), Karsinoma silika (Lampiran III). Batas klaim JKK maksimal 3 tahun pasca putus kerja. Penegakan melalui 7 Langkah Diagnosis PAK (Permenkes 11/2022). |
+| **14** | **Clinical Pearl & Trap** | Spirometri & CXR normal tidak menyingkirkan silikosis awal (evaluasi DLCO & HRCT). Kerusakan tetap berprogresi pasca henti pajanan. Bedakan PMF vs Kanker dengan T2-MRI. Kavitasi massa PMF curigai Siliko-TB. Tidak ada BEI urin/darah. |
+
+---
+💡 *Apakah Anda ingin kita melatih skenario kasus ujian lisan (viva exam) mengenai simulasi 7 langkah diagnosis PAK pada pekerja industri batu buatan dengan kecurigaan silikotuberkulosis?*

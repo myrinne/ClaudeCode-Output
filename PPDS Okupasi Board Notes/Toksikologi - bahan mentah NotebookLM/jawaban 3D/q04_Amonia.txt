@@ -1,0 +1,260 @@
+Catatan tinjauan toksikologi okupasi ini disusun secara komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai **Amonia (\\(NH_3\\) gas dan larutan \\(NH_4OH\\))** dengan mengintegrasikan data dari *ATSDR Toxicological Profile for Ammonia*, *ATSDR Medical Management Guidelines (MMG) for Ammonia*, Permenaker No. 5 Tahun 2018, Perpres No. 7 Tahun 2019, serta literatur toksikologi industri terkait.
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas Kimia**:
+  * **Nama & Rumus**: Amonia anhidrat (*anhydrous ammonia*, \\(NH_3\\)) [CAS# 7664-41-7] dan larutan amonium hidroksida (\\(NH_4OH\\) / *aqueous ammonia*) [CAS# 1336-21-6].
+  * **Berat Molekul (BM)**: **17,03 g/mol**.
+  * **Nomor UN**: UN 1005 (amonia anhidrat / gas bertekanan atau larutan >50%), UN 2672 (larutan amonia 10%–35%), UN 2073 (larutan amonia >35%–50%).
+* **Sifat Fisik-Kimia Kunci**:
+  * **Wujud & Titik Didih**: Gas tidak berwarna dengan bau sangat tajam, menyengat, dan mencekik (*sharp, pungent, suffocating odor*). Titik didih **-33,4°C (-28°F)**; titik leleh **-77,7°C**.
+  * **Densitas Uap Relatif (Gas Density)**: **0,59 – 0,60** (udara = 1,0). Amonia gas murni **lebih ringan daripada udara** dan cenderung membubung ke atas. Namun, pada pelepasan gas amonia cair bertekanan (*liquefied gas release*), ekspansi adiabatik dan pendinginan mendadak membentuk aerosol/uap dingin yang bercampur dengan kelembapan udara menjadi kabut putih pekat yang **awalnya lebih berat dari udara dan merayap di permukaan tanah**.
+  * **Kelarutan dalam Air & Higroskopisitas**: **Sangat larut dalam air (33,1% – 34% berat pada 20°C)**; bersifat sangat higroskopis (menarik air secara masif dari jaringan biologis).
+  * **Karakteristik Asam-Basa**: Memiliki **pKa 9,25** pada 25°C. Pada pH fisiologis darah (7,4), sekitar **99% amonia berada dalam bentuk ion amonium terionisasi (\\(NH_4^+\\))** dan hanya **1% dalam bentuk molekul lipofilik bebas non-terionisasi (\\(NH_3\\))**. Larutan 1 N memiliki pH sekitar 11,6; larutan 28–30% bersifat sangat basa dan kaustik korosif (pH > 12–13).
+  * **Flamabilitas**: Batas ledak LEL **15% – 16%** dan UEL **25% – 28%**; suhu swasulut (*autoignition*) 650°C (1.204°F). Meskipun sulit menyala, tabung amonia berisiko meledak hebat pada suhu tinggi.
+  * **Faktor Konversi**: \\(1\text{ ppm} = 0,70\text{ mg/m}^3\\) (atau \\(0,707\text{ mg/m}^3\\)); \\(1\text{ mg/m}^3 = 1,41\text{ ppm}\\) (pada 25°C, 1 atm).
+* **Klasifikasi Karsinogenitas**:
+  * **IARC**: *Not Listed / Not Classifiable as to Human Carcinogenicity*.
+  * **US EPA & ACGIH**: Tidak diklasifikasikan sebagai karsinogen manusia (*Not Classifiable*).
+  * **Permenaker No. 5 Tahun 2018**: **Tidak memiliki notasi karsinogen (tanpa notasi A1, A2, maupun A3)**.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Industri Pertanian & Pupuk (Aplikasi Terbesar ~80%)**:
+  * Produksi dan aplikasi langsung amonia anhidrat cair (*liquid injection*) serta pembuatan pupuk berbasis nitrogen: urea, amonium nitrat, amonium fosfat, dan amonium sulfat.
+* **Sistem Refrigerasi Industri (*Cold Storage & Ice Plants*)**:
+  * Penggunaan amonia murni sebagai refrigeran pendingin (kode refrigeran **R-717**) pada fasilitas pembekuan makanan, pengolahan daging/ikan, pabrik es, dan gudang pendingin logistik. Kebocoran pipa kompresor bertekanan tinggi menjadi sumber kecelakaan industri tersering.
+* **Bahan Kimia Pembersih Rumah Tangga & Komersial**:
+  * Larutan amonia pembersih kaca, lantai, dan disinfektan. Konsentrasi rumah tangga berkisar **3% – 10% (\\(NH_4OH\\))**, sedangkan larutan konsentrasi komersial/industri mencapai **25% – 30%** (bersifat kaustik ekstrem).
+* **Peternakan Intensif (*Confined Animal Feeding Operations / CAFOs*)**:
+  * Dekomposisi bakteriologis anaerobik dari feses dan urine hewan pada kandang unggas (*poultry houses*), babi, dan sapi perah menghasilkan akumulasi amonia kronis (2–50 ppm) yang bercampur dengan debu organik dan endotoksin.
+* **Sintesis Kimia & Manufaktur Polimer**:
+  * Bahan baku sintesis asam nitrat, nilon, plastik, resin formaldehida, bahan peledak (dinamit, ANFO), dan perantara industri farmasi.
+
+---
+
+### 3. Mekanisme Cedera dan Toksikokinetik (ADME)
+* **Kelarutan Air Sangat Tinggi & Selektivitas Anatomi Saluran Napas**:
+  * Karena kelarutan airnya yang ekstrem, saat terinhalasi amonia gas **langsung terlarut dan tertahan (terfiltrasi/terdisolusi >80–90%) pada lapisan mukus basah saluran pernapasan atas** (konjungtiva, rongga hidung, faring, laring, dan trakea proksimal).
+  * Pada konsentrasi rendah hingga sedang (< 100 ppm), amonia sebagian besar "dibersihkan" (*scrubbed*) di saluran napas atas sehingga saluran napas bawah relatif terlindungi. Namun, pada konsentrasi masif (> 400–500 ppm) atau pajanan berkepanjangan pada korban yang terjebak di ruang tertutup, kapasitas absorpsi mukosa atas jenuh (*breakthrough*), memicu cedera korosif langsung pada bronkiolus terminal dan membran alveolar paru.
+* **Mekanisme Nekrosis Likuefaksi Basa (*Liquefactive Necrosis*)**:
+  * Ketika gas amonia berkontak dengan kelembapan jaringan, terjadi reaksi hidrasi eksotermik cepat:
+    \\[NH_3 + H_2O \rightleftharpoons NH_4OH \rightleftharpoons NH_4^+ + OH^- + \text{Panas}\\]
+  * Pelepasan ion hidroksil (\\(OH^-\\)) basa kuat memicu **saponifikasi lipid membran sel** (*lipid saponification*) dan denaturasi protein jaringan.
+  * *Perbedaan fundamental dengan korosif asam*: Asam menyebabkan nekrosis koagulatif (*coagulative necrosis*) yang membentuk eskar/keropeng keras yang membatasi penetrasi lebih lanjut. Sebaliknya, **basa amonia menyebabkan nekrosis likuefaksi (*liquefactive necrosis*)** yang melunakkan jaringan, melarutkan lipoprotein, dan mengekstrak air intraseluler secara osmotik, sehingga zat menembus jauh ke lapisan submukosa, muskularis, dan stroma yang lebih dalam tanpa hambatan pembentukan eskar.
+* **Amonia Endogen & Toksikokinetik Sistemik**:
+  * Amonia adalah metabolit endogen esensial pada mamalia, dihasilkan dari katabolisme protein, deaminasi asam amino, dan metabolisme bakteri di saluran cerna.
+  * Kadar fisiologis amonia darah normal berkisar antara **15 – 45 µg/dL (10 – 35 µmol/L)**.
+  * Amonia endogen maupun yang diabsorpsi sistemik dibersihkan secara efisien oleh hepar melalui **siklus urea (*urea cycle*)** menjadi urea, yang kemudian diekskresikan lewat ginjal/urin.
+  * Pada pajanan inhalasi okupasi biasa (< 25 ppm), tidak terjadi perubahan bermakna pada kadar nitrogen urea darah (BUN) atau ekskresi amonium urin, karena laju absorpsi sistemik tidak melebihi kapasitas klirens siklus urea hepar.
+
+---
+
+### 4. Toksikodinamik (Mekanisme Patofisiologi Seluler)
+* **Cedera Termal & Kimia Ganda**:
+  * Selain sifat kaustik alkali dari ion \\(OH^-\\), reaksi hidrasi amonia sangat eksotermik (menghasilkan panas lokal), ditambah efek *frostbite* / cedera kriogenik jika terpapar cairan amonia anhidrat dingin (-33°C).
+* **Aktivasi Refleks Saraf Sensorik & Spasme Saluran Napas**:
+  * Amonia menstimulasi kemoreseptor iritan dan serat saraf sensorik C-fiber (termasuk kanal ion TRP di mukosa respirasi), memicu lakrimasi masif, batuk paroksismal, spasme laring refleks (*protective glottic closure*), dan bronkokonstriksi hebat.
+* **Kerusakan Epitel Alveolar & Edema Paru Non-Kardiogenik**:
+  * Pada pajanan konsentrasi tinggi, amonia merusak taut erat sel epitel alveolar (tipe I dan II), menghancurkan surfaktan paru, dan meningkatkan permeabilitas kapiler mikrovaskular. Hal ini memicu kebocoran cairan plasma berprotein tinggi ke dalam rongga alveolar, menyebabkan **Acute Lung Injury (ALI) / ARDS** dan pembentukan pseudomembran nekrotik yang dapat menyumbat lumen jalan napas.
+* **Penetrasi Okular Khusus**:
+  * Amonia memiliki afinitas dan kemampuan penetrasi okular tertinggi di antara semua senyawa alkali. Molekul \\(NH_3\\) menembus kornea dalam hitungan detik (2–5 detik), memasuki kamera okuli anterior, meningkatkan pH cairan akuos humor, merusak enzim endotelial, dan memicu lisis sel stroma kornea.
+
+---
+
+### 5. Biomonitoring Okupasi dan Evaluasi Klinis Laboratorium
+* **Ketiadaan Biomarker Pajanan Spesifik**:
+  * **Tidak ada biomarker pajanan biologis spesifik (*no specific biomarker of exposure*)** yang dapat digunakan untuk pemantauan rutin amonia. Pengukuran amonia darah, urea darah (BUN), atau amonium urin tidak berkorelasi dengan tingkat pajanan inhalasi kerja karena tingginya kadar amonia endogen normal tubuh dan pesatnya metabolisme siklus urea di hepar.
+* **Pemeriksaan Laboratorium & Penunjang Kritis (Fase Akut)**:
+  * **Amonia Darah (*Blood Ammonia*)**: Hanya meningkat transien pada kasus paparan inhalasi katastropik masif dengan kegagalan hepar/resusitasi berat; bukan alat ukur diagnostik primer.
+  * **Analisis Gas Darah Arteri (AGD)**: Memantau derajat hipoksemia (\\(PaO_2\\)), hiperkapnia (\\(PaCO_2\\)), dan asidosis metabolik/respiratorik sekunder akibat obstruksi jalan napas atau edema paru.
+  * **Spirometri (Uji Fungsi Paru)**: Pada fase pasca-akut atau berkala, menilai penurunan rasio \\(FEV_1/FVC\\) (obstruksi akibat bronkospasme atau bronkiektasis) dan penurunan kapasitas vital paksa (\\(FVC\\)) akibat restriksi parenkim paru.
+  * **Rontgen Toraks (Foto Rontgen Dada)**:
+    * *Perhatian Ujian*: Foto toraks awal (dalam 12–24 jam pertama) **sering kali normal** meskipun pasien mengalami kerusakan mukosa trakeobronkial parah.
+    * Pemeriksaan serial diperlukan untuk mendeteksi infiltrat kimia, atelektasis segmental akibat sumbatan lendir nekrotik (*mucus plugging*), dan edema paru non-kardiogenik (ARDS).
+  * **Laringoskopi Fleksibel & Bronkoskopi Dini**:
+    * Merupakan baku emas untuk memvisualisasikan derajat eritema, edema glotis/supraglotis, ulserasi pita suara, deskuamasi mukosa trakeobronkial, dan pembentukan gumpalan fibrin/debris nekrotik (*bronchial casts*).
+  * **Pemeriksaan Oftalmologi Lengkap**:
+    * Pemeriksaan *slit-lamp* dengan pewarnaan fluorescein untuk menilai defek epitel kornea, iskemia limbus, edema stroma, serta pengukuran **tekanan intraokular (TIO)** berkala untuk mendeteksi glaukoma akut pasca-luka bakar kimia.
+
+---
+
+### 6. Waktu Paruh dan Perjalanan Klinis (Time Course)
+* **Kinetika Biologis Tubuh**:
+  * Waktu paruh amonia dalam sirkulasi darah sangat singkat, yaitu dalam kisaran **beberapa menit (klirens sempurna oleh siklus urea hepar)**.
+  * Waktu paruh amonia gas di atmosfer terbuka diperkirakan berkisar **beberapa hari** (terurai oleh reaksi fotokimia atau dibersihkan melalui presipitasi hujan menjadi aerosol amonium).
+* **Perjalanan Waktu Klinis (*Clinical Timeline*)**:
+  * **Detik 0 – 30**: Onset sensasi terbakar instan pada mata, hidung, dan orofaring; batuk refleks dan blefarospasme.
+  * **Menit ke-5 – 60**: Perkembangan cepat edema faring, edema laring/glotis, dan laringospasme yang mengancam patensi jalan napas.
+  * **Jam ke-6 – 24 (hingga 48 jam)**: Risiko timbulnya **edema paru non-kardiogenik tertunda (*delayed pulmonary edema*)**, trakeobronkitis nekrotikans, dan infeksi sekunder bakterial (bronkopneumonia).
+  * **Minggu ke-1 – 4**: Pelepasan lapisan kornea yang nekrotik, risiko perforasi kornea lambat, ulserasi gastrointestinal (pada kasus tertelan), dan pembentukan striktur.
+  * **Bulan hingga Tahun**: Perkembangan sekuel saluran napas permanen (RADS, bronkiektasis) dan komplikasi mata (katarak, glaukoma sekunder, simblefaron).
+
+---
+
+### 7. Efek Toksisitas Akut Berdasarkan Konsentrasi (Rentang ppm)
+Respons fisiologis dan klinis manusia terhadap inhalasi gas amonia berkorelasi kuat dengan konsentrasi atmosferik:
+
+| Konsentrasi (ppm) | Manifestasi Klinis dan Fisiologis (ATSDR / Literatur) |
+| :--- | :--- |
+| **0,04 – 5 ppm** | Konsentrasi lingkungan alami latar belakang (0,04–3 ppb); **Ambang deteksi bau (*odor threshold*) rata-rata ~5 ppm** (sebagian individu sensitif mendeteksi pada 1–5 ppm). |
+| **20 – 30 ppm** | Iritasi ringan konjungtiva dan mukosa nasofaring; bau mulai terasa sangat mengganggu (*offensive*). |
+| **50 ppm** | Iritasi nyata pada mata, hidung, dan tenggorokan; dorongan untuk batuk; peningkatan resistensi aliran udara bronkial. **Ambang batas LOAEL akut ATSDR**. |
+| **72 – 100 ppm** | Iritasi mata dan hidung yang nyata pada 20–30% individu dalam 5 menit pajanan; lakrimasi dan mata merah; tidak dapat ditoleransi oleh pekerja yang tidak terbiasa. |
+| **150 – 250 ppm** | Iritasi berat membran mukosa pernapasan; penurunan volume semenit pernapasan secara refleks; hanya dapat ditoleransi maksimal 30–60 menit. |
+| **300 ppm** | **Ambang NIOSH IDLH (*Immediately Dangerous to Life or Health*)**; iritasi saluran napas atas hebat, batuk paroksismal, spasme laring transien. |
+| **400 – 500 ppm** | Bahaya langsung terhadap kelangsungan hidup; iritasi respirasi parah, luka bakar kimia pada mukosa orofaring dan trakea, laringospasme hebat, dispnea berat. |
+| **700 – 1.000 ppm** | Kerusakan kornea akut, edema laring masif, stridor inspiratoris; risiko **edema paru akut dan kematian tertunda dalam 10–30 menit**. |
+| **1.500 – 2.500 ppm** | Spasme glotis total (*reflex glottic closure*), edema paru masif, asfiksia mekanik akut, **fatal dalam waktu 30 menit**. |
+| **5.000 – 10.000 ppm** | **Kematian cepat dalam beberapa menit** akibat destruksi nekrotik masif jalan napas, edema laring instan, depresi napas sentral, dan henti kardiorespirasi. |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Reactive Airways Dysfunction Syndrome (RADS) / Irritant-Induced Asthma**:
+  * Sekuel respirasi tersering pasca-pajanan akut konsentrasi tinggi tunggal. Ditandai dengan hiperreaktivitas bronkus persisten, wheezing, batuk kronis, dan sesak napas yang berlangsung berbulan-bulan hingga bertahun-tahun tanpa periode laten imunologis (tes metakolin positif).
+* **Bronkiektasis (*Bronchiectasis*)**:
+  * Kerusakan nekrotik transmural akibat penetrasi basa ke dinding bronkus merusak lapisan kartilago dan otot polos bronkial.
+  * Hal ini memicu dilatasi ireversibel dan penebalan lumen bronkus (didokumentasikan nyata pada korban kecelakaan anjloknya gerbong tangki amonia cair, Kass et al., 1972). Pasien mengalami batuk produktif berulang, hemoptisis, kolonisasi bakteri kronis, dan atelektasis.
+* **Penyakit Paru Obstruktif Kronis (PPOK) & Fibrosis Paru**:
+  * Penurunan faal paru kronis progresif (\\(FEV_1\\) dan \\(FVC\\)), penyakit saluran napas obstruktif kronis, serta pembentukan jaringan parut fibrotik peribronkial (*diffuse pulmonary fibrosis*).
+* **Sekuel Oftalmologis Jangka Panjang**:
+  * Vaskularisasi kornea sekunder, pembentukan jaringan parut kornea permanen, simblefaron (adhesi palpebra dengan bola mata), pembentukan **katarak**, **glaukoma sekunder sudut tertutup**, dan kebutaan total permanen.
+* **Disfungsi Olfaktori**:
+  * Kerusakan nekrotik epitel olfaktorius hidung dapat meninggalkan gejala sisa berupa hyposmia atau anosmia permanen.
+
+---
+
+### 9. Batas Pajanan Okupasi dan Standar Kesehatan (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * Amonia (\\(NH_3\\)) [CAS# 7664-41-7]:
+    * **NAB (Nilai Ambang Batas / 8-jam TWA)**: **25 BDS (ppm) atau 17 mg/m³**.
+    * **PSD (Paparan Singkat yang Diperkenankan / 15-menit STEL)**: **35 BDS (ppm) atau 24 mg/m³**.
+    * **Berat Molekul**: 17,03.
+    * *Keterangan Efek Kritis*: **Kerusakan mata; Iritasi saluran pernafasan atas**.
+* **ACGIH TLV (2018)**:
+  * **TLV-TWA (8-jam)**: **25 ppm**.
+  * **TLV-STEL (15-menit)**: **35 ppm**.
+* **NIOSH REL (Recommended Exposure Limit)**:
+  * **TWA (10-jam)**: **25 ppm (18 mg/m³)**.
+  * **STEL (15-menit)**: **35 ppm (27 mg/m³)**.
+* **OSHA PEL (Permissible Exposure Limit)**:
+  * **PEL-TWA (8-jam)**: **50 ppm (35 mg/m³)**.
+* **NIOSH IDLH (Immediately Dangerous to Life or Health)**:
+  * **300 ppm**.
+* **ATSDR Minimal Risk Levels (MRL)**:
+  * **Inhalasi Akut (≤ 14 hari)**: **1,7 ppm** (berdasarkan LOAEL minimal 50 ppm untuk iritasi mata, hidung, dan tenggorokan pada sukarelawan selama 2 jam, Verberk et al. 1977, dengan *uncertainty factor* 30).
+  * **Inhalasi Kronis (≥ 365 hari)**: **0,1 ppm** (berdasarkan NOAEL 9,2 ppm untuk fungsi paru dan gejala respirasi pada pekerja pabrik *soda ash* selama ~12 tahun, Holness et al. 1989, disesuaikan durasi pajanan dan faktor ketidakpastian).
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 4 Daftar IPB)**:
+  * Amonia **TIDAK memiliki nilai numerik IPB yang ditetapkan**.
+* **ACGIH BEI**:
+  * ACGIH **TIDAK menetapkan nilai Biological Exposure Index (BEI) untuk amonia**.
+  * *Rasional Ilmiah*: Tingginya produksi amonia endogen normal tubuh dan pesatnya pergantian metabolisme siklus urea di hati menyebabkan kadar metabolit nitrogen atau amonia darah/urin tidak sensitif dan tidak spesifik terhadap pajanan inhalasi kerja eksternal. Evaluasi kepatuhan higiene industri mengandalkan **pemantauan atmosfer lingkungan kerja (*air monitoring*)**.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Antidot
+* **Prinsip Utama: TIDAK ADA ANTIDOT SPESIFIK**:
+  * Terapi bersifat murni suportif agresif, proteksi jalan napas, dan dekontaminasi instan.
+* **Dekontaminasi Kulit & Ekstremitas**:
+  * Lepaskan seluruh pakaian korban segera (pakaian yang basah kuyup larutan amonium hidroksida melepaskan uap sekunder yang dapat meracuni tim medis di ruang IGD).
+  * **Irigasi air mengalir dalam jumlah masif (*copious water flushing*) minimal selama 15 – 20 menit**.
+  * Rawat luka bakar kulit sebagai luka bakar kimia alkali dalam; cegah hipotermia sekunder selama pencucian.
+* **Dekontaminasi & Tata Laksana Okular (Kedaruratan Ekstrem)**:
+  * Bilas mata segera dengan air bersih mengalir atau salin fisiologis **minimal 15 – 30 menit**.
+  * Pasang anestesi topikal (misal: tetrakain 0,5%) untuk mengatasi blefarospasme hebat dan gunakan retraktor kelopak mata (*eyelid retractors*) atau lensa Morgan.
+  * **Pemeriksaan pH Konjungtiva**: Terus lakukan irigasi kontinu hingga pH forniks konjungtiva kembali netral (**pH 7,0 – 7,4**) dan terbukti stabil minimal 15 menit pasca-penghentian irigasi (menurut Grant, irigasi mata harus dilanjutkan hingga pH < 8,5).
+  * Konsultasi segera ke spesialis mata (*oftalmologis*).
+* **Manajemen Saluran Napas (Airway & Breathing)**:
+  * Berikan oksigen terhumidifikasi 100% (*humidified 100% oxygen*).
+  * Berikan nebulisasi bronkodilator beta-2 agonis (salbutamol) jika terdapat bronkospasme atau wheezing.
+  * **Intubasi Endotrakeal Dini (*Early Prophylactic Intubation*)**:
+    * Jangan menunda intubasi! Jika terdapat stridor inspiratoris, suara serak (*hoarseness*), luka bakar melingkar pada leher/wajah, atau eritema/edema faring pada laringoskopi, lakukan intubasi pipa endotrakeal sesegera mungkin.
+    * Pembengkakan edema glotis dan pita suara akibat nekrosis likuefaksi dapat menutup jalan napas secara total dalam hitungan menit, membuat intubasi di kemudian waktu menjadi mustahil dan memerlukan krikotiroidotomi darurat.
+  * Terapkan strategi ventilasi mekanis protektif paru (*lung-protective ARDS ventilation*) dengan volume tidal rendah (6 mL/kgBB) dan PEEP jika berkembang edema paru toksik.
+* **KONTRAINDIKASI MUTLAK TERAPI**:
+  * **DILARANG KERAS MELAKUKAN NETRALISASI KIMIA**: Jangan pernah mencoba menetralkan amonia dengan larutan asam lemah (seperti asam asetat, cuka, atau asam borat)! Reaksi netralisasi asam-basa bersifat sangat **eksotermik**, melepaskan panas tinggi yang akan menyebabkan **luka bakar termal masif tambahan** di atas jaringan yang telah mengalami nekrosis kimia.
+  * **Pada Pajanan Ingesti**: **Dilarang memicu muntah (*do NOT induce emesis*)** karena memaparkan ulang esofagus dan mulut terhadap kaustik basa; dilarang kumbah lambung; dilarang memberikan arang aktif (*activated charcoal* tidak menyerap amonia dan mengaburkan visualisasi endoskopi). Berikan sedikit air atau susu (120–240 mL) hanya jika pasien sadar penuh untuk mengencerkan isi lambung.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Status Tidak Laik Kerja (*Unfit*)*: Calon pekerja atau pekerja dengan riwayat asma bronkial berat atau tidak terkontrol, hiperreaktivitas saluran napas non-spesifik, PPOK sedang-berat, penyakit paru interstisial, serta gangguan permukaan okular kronis (sindrom mata kering berat, ulkus kornea kronis).
+* **Surveilans Kesehatan Kerja (*Health Surveillance*)**:
+  * *Pemeriksaan Kesehatan Pra-Kerja*: Spirometri dasar lengkap (\\(FVC, FEV_1\\)), rontgen toraks PA, uji tajam penglihatan dan evaluasi segmen anterior mata, pencatatan riwayat atopi/asma.
+  * *Pemeriksaan Berkala*: Kuesioner gejala respirasi tahunan (batuk, mengi, sesak nafas), spirometri berkala untuk mendeteksi penurunan faal paru tahunan yang dipercepat, serta evaluasi oftalmologi.
+  * *Pemeriksaan Khusus*: Dilakukan wajib pasca-terjadinya insiden kebocoran instalasi pendingin atau pelepasan gas darurat.
+* **Hirarki Pengendalian Bahaya Lingkungan Kerja**:
+  * *Rekayasa Teknik (*Engineering Controls*)*:
+    * Sistem sirkuit refrigerasi tertutup (*closed-loop refrigeration systems*) dengan pemipaan berstandar ASME/ANSI.
+    * Ventilasi pembuangan darurat (*Emergency Exhaust Ventilation*) terisolasi di ruang mesin pendingin (*machinery room*) dengan kapasitas hisap otomatis.
+    * Pemasangan tirai semprotan air (*water spray / deluge curtains*) pada area tangki amonia cair (amonia gas sangat cepat diserap dan dilarutkan oleh kabut air).
+    * Pemasangan sistem **detektor gas amonia kontinu (elektrokimia/optik)** yang terkalibrasi dengan *set-point alarm* audio-visual: alarm tingkat rendah pada **25 ppm** (NAB) dan alarm evakuasi darurat pada **150–200 ppm**.
+  * *Pengendalian Administratif & Prosedur Tanggap Darurat*:
+    * Prosedur izin kerja panas (*hot-work permit*) dan ruang terbatas (*confined space permit*).
+    * Penyusunan rencana tanggap darurat (*Emergency Response Plan* / ERP) kebocoran amonia dan latihan evakuasi rutin (*emergency drill*).
+    * Pola evakuasi: Evakuasi ke arah tegak lurus arah angin (*crosswind*), lalu menjauhi angin (*upwind*) ke area yang lebih tinggi jika amonia berbentuk gas murni, namun waspadai genangan kabut uap amonia dingin di permukaan tanah dekat titik kebocoran.
+  * *Alat Pelindung Diri (APD)*:
+    * Pada kondisi konsentrasi tidak diketahui atau darurat kebocoran (area \\(\ge 300\text{ ppm}\\) / IDLH): **Wajib menggunakan pakaian pelindung kimia kedap gas (Level A Encapsulated Suit) dan SCBA (*Self-Contained Breathing Apparatus*) bertekanan positif**.
+    * Dilarang menggunakan respirator pemurni udara (*air-purifying cartridge*) pada situasi darurat atau kebocoran masif karena katrid amonia cepat jenuh dan tidak menyediakan suplai oksigen.
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Keracunan atau penyakit respirasi akibat amonia diakui sebagai PAK sah dalam **Lampiran Bagian I**:
+    * *Poin I.a*: Penyakit yang disebabkan oleh faktor kimia di tempat kerja (zat korosif dan gas iritan).
+    * *Poin II.b*: Penyakit saluran pernapasan akibat kerja, mencakup bronkopneumopati kimiawi, edema paru kimia akut, sindrom disfungsi jalan napas reaktif (RADS), dan bronkitis industri.
+  * Memberikan hak perlindungan jaminan sosial tenaga kerja (santunan JKK BPJS Ketenagakerjaan).
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Menetapkan kewajiban dokter Sp.Ok/dokter pemeriksa untuk menegakkan diagnosis melalui **7 langkah diagnosis okupasi**, pelaporan kasus PAK ke instansi ketenagakerjaan dan dinas kesehatan, serta penyusunan rekomendasi kelaikan kerja kembali (*return-to-work program*).
+* **Reaksi Berbahaya Amonia dengan Pemutih (*Bleach / Sodium Hypochlorite*)**:
+  * *Peringatan Higiene Industri & Domestik Krusial*: Pencampuran larutan pembersih amonia (\\(NH_4OH\\)) dengan pemutih pakaian natrium hipoklorit (\\(NaOCl\\)) memicu reaksi kimia berbahaya yang menghasilkan **gas kloramin (monokloramin \\(NH_2Cl\\), dikloramin \\(NHCl_2\\), dan trikloramin \\(NCl_3\\))**:
+    \\[NH_3 + NaOCl \rightarrow NH_2Cl + NaOH\\]
+  * Gas kloramin bereaksi dengan kelembapan saluran napas melepaskan radikal bebas toksik dan asam hipoklorit, memicu cedera paru akut, bronkospasme berat, dan edema paru toksik pada petugas kebersihan (*cleaning service/janitors*).
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Ambang Bau Rendah Menjamin Keamanan" (*Olfactory Fatigue Trap*)**:
+   * *Fakta Ujian*: Amonia memiliki ambang bau rendah (~5 ppm) yang memberi peringatan dini awal. Namun, amonia memicu **kelelahan atau adaptasi olfaktori (*olfactory fatigue*) yang sangat cepat**. Pekerja yang terus terpapar akan kehilangan kemampuan mencium baunya, mengira konsentrasi gas sudah turun, padahal kadar amonia di udara dapat melonjak ke tingkat toksik letal.
+2. **Dikotomi Waktu: Edema Laring Cepat vs. Edema Paru Tertunda**:
+   * *Fakta Klinis*: Karena daya larut air yang sangat tinggi, **edema laring dan spasme supraglotis dapat terjadi dalam hitungan menit**. Sebaliknya, kerusakan kapiler alveolar paru dan **edema paru non-kardiogenik (ARDS) sering kali tertunda (*delayed*) antara 12 hingga 24 (bahkan 48) jam**. Pasien yang tampak stabil pada observasi awal di IGD wajib diobservasi minimal 24 jam.
+3. **Mitos Rontgen Toraks Normal pada Jam-Jam Pertama**:
+   * Menemukan foto rontgen toraks normal pada 6–12 jam pertama pasca-pajanan **bukan bukti bahwa paru-paru aman**. Jangan memulangkan pasien berisiko tinggi hanya berdasarkan rontgen awal yang bersih.
+4. **Penetrasi Okular Paling Agresif di Antara Seluruh Alkali**:
+   * Amonia menembus stroma kornea jauh lebih cepat daripada natrium hidroksida (\\(NaOH\\)) atau kalsium hidroksida (\\(Ca(OH)_2\\)). Penampilan mata yang awalnya hanya tampak eritema ringan dapat berubah menjadi kekeruhan kornea total (*ground-glass cornea*), katarak, dan perforasi bola mata dalam hitungan hari.
+5. **Kesalahan Fatal Netralisasi Asam**:
+   * Jawaban ujian yang memilih "memberikan asam asetat/cuka encer untuk menetralkan amonia pada kulit/mata/lambung" adalah **jawaban salah yang fatal**. Netralisasi asam-basa menghasilkan panas eksotermik tinggi yang memperberat destruksi jaringan. Terapi baku hanyalah **irigasi air mengalir dalam jumlah banyak**.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Amonia (\\(NH_3\\) / \\(NH_4OH\\))
+
+| No | Poin Parameter | Rangkuman Klinis, Toksikologis, & Regulasi Kunci | Rujukan Utama |
+| :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Karsinogenitas** | Gas tak berwarna, bau tajam menusuk, BM 17,03; TD -33,4°C; densitas gas 0,59 (lebih ringan dari udara, tapi aerosol cair dingin merayap di tanah); kelarutan air sangat tinggi (33%); pKa 9,25 (99% \\(NH_4^+\\) pada pH 7,4); LEL 15%, UEL 28%. **Non-karsinogen** (IARC Group 3 / ACGIH Not Listed / Permenaker 5/2018 tanpa notasi A1–A3). | ATSDR Toxicological Profile, NIOSH Pocket Guide |
+| **2** | **Sumber & Penggunaan** | Pupuk pertanian (~80% konsumsi amonia global: urea, amonium nitrat), refrigeran pendingin industri (**R-717** di *cold storage* / pabrik es), pembersih rumah tangga (3–10%) & industri (25–30%), kandang peternakan intensif (CAFOs), sintesis plastik/peledak. | ATSDR TP & MMG, Pope & Liu 2020 |
+| **3** | **Mekanisme Cedera & Toksikokinetik** | Sangat larut air \\(\rightarrow\\) deposisi masif di mukosa pernapasan atas. Reaksi eksotermik membentuk \\(NH_4OH\\) & ion \\(OH^-\\). **Nekrosis likuefaksi (*liquefactive necrosis*)**: saponifikasi lipid membran & ekstraksi air seluler \\(\rightarrow\\) penetrasi jaringan dalam tanpa eskar. Amonia endogen (15–45 µg/dL) dimetabolisme siklus urea hepar menjadi urea (urin). | ATSDR TP, MMG Ammonia, Pope & Liu 2020 |
+| **4** | **Toksikodinamik** | Iritasi kaustik basa + luka termal eksotermik / *frostbite* cair. Stimulasi C-fiber sensorik \\(\rightarrow\\) laringospasme & bronkospasme refleks. Destruksi epitel alveolar \\(\rightarrow\\) mikrovaskular bocor \\(\rightarrow\\) ARDS / edema paru non-kardiogenik. Penetrasi kornea tercepat di antara alkali (< 5 detik). | ATSDR TP, MMG Ammonia, Mil Med 2018 |
+| **5** | **Biomonitoring & Evaluasi Medis** | **Tidak ada biomarker pajanan spesifik** (amonia darah tidak berkorelasi karena latar belakang endogen). Evaluasi klinis: AGD (hipoksemia/asidosis), spirometri serial (\\(FEV_1/FVC\\)), **foto toraks (sering normal awal, serial 24–48 jam)**, laringoskopi/bronkoskopi (visualisasi edema glotis/cast), *slit-lamp* & cek TIO mata. | ATSDR TP, MMG Ammonia, Permenaker 5/2018 |
+| **6** | **Waktu Paruh & Perjalanan Klinis** | Eliminasi darah: hitungan menit (siklus urea). Waktu paruh atmosfer: beberapa hari. Perjalanan klinis: Onset iritasi instan (0–30 dtk); edema laring/glotis (menit–jam); **edema paru toksik tertunda (12–48 jam)**; perforasi kornea (hari–minggu); sekuel RADS/bronkiektasis/katarak (bulan–tahun). | ATSDR TP & MMG Ammonia |
+| **7** | **Efek Akut per Rentang ppm** | ~5 ppm: ambang deteksi bau. 20–50 ppm: iritasi mata, hidung, tenggorokan. 50–100 ppm: batuk, refleks laringospasme. 150–250 ppm: dispnea, penurunan volume semenit. **300 ppm: NIOSH IDLH**. 400–500 ppm: bahaya langsung, luka bakar trakea. 700–1000 ppm: kerusakan kornea, edema paru. **>1500–5000 ppm: edema laring masif, asfiksia, kematian cepat**. | ATSDR TP, MMG Ammonia, J Appl Toxicol 1996 |
+| **8** | **Efek Kronis & Sekuel** | **RADS (Reactive Airways Dysfunction Syndrome)**; bronkiektasis ireversibel akibat destruksi dinding bronkial; PPOK / fibrosis peribronkial; kebutaan permanen, katarak, dan glaukoma sekunder; anosmia/hyposmia kronis. | ATSDR TP, Kass et al. 1972, Thorax 1992 |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018**: NAB = **25 BDS (17 mg/m³)**; PSD = **35 BDS (24 mg/m³)** [Mata & Sal. Napas Atas]. **ACGIH TLV**: TWA **25 ppm**, STEL **35 ppm**. **NIOSH REL**: TWA 25 ppm, STEL 35 ppm. **OSHA PEL**: TWA 50 ppm. **IDLH**: **300 ppm**. **MRL ATSDR**: Akut = **1,7 ppm**; Kronis = **0,1 ppm**. | Permenaker 5/2018, NIOSH Pocket Guide, ATSDR TP |
+| **10** | **BEI / IPB** | **Tidak ditetapkan** baik dalam Permenaker No. 5/2018 maupun ACGIH BEI (karena fluktuasi amonia endogen yang dominan). Pemantauan bertumpu pada *air monitoring* lingkungan kerja. | Permenaker 5/2018 Lampiran 4, ACGIH |
+| **11** | **Tatalaksana Akut** | **Tidak ada antidot spesifik**. Dekontaminasi: lepas pakaian, **irigasi air mengalir masif \\(\ge 15–20\\) menit** (mata: bilas hingga pH forniks netral 7,0–7,4 / <8,5). Oksigen terhumidifikasi 100%, bronkodilator nebulisasi. **Intubasi dini profilaktik** jika ada stridor/edema faring. **KONTRAINDIKASI: Dilarang netralisasi asam (reaksi eksotermik membakar jaringan)**; dilarang emesis/karbon aktif bila tertelan. | MMG Ammonia, Pope & Liu 2020 |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi asma berat, hiperreaktivitas bronkus, PPOK, penyakit kornea kronis. Pengendalian: sistem pendingin tertutup, ventilasi pembuangan darurat, tirai semprot air (*water deluge*), detektor gas \\(NH_3\\) (alarm 25 ppm & 150 ppm). APD: **SCBA bertekanan positif + pakaian Level A gas-tight** pada kondisi darurat/IDLH. Evakuasi menjauhi/tegak lurus arah angin (*crosswind/upwind*). | ATSDR MMG, NIOSH, Mil Med 2018 |
+| **13** | **Regulasi PAK & Bahaya Campuran** | **Perpres No. 7 Tahun 2019**: Lampiran I.a (faktor kimia korosif) & II.b (edema paru kimia, RADS, bronkitis kronis); klaim JKK BPJS. **Bahaya Pemutih**: Reaksi amonia + pemutih (*sodium hypochlorite*) menghasilkan **gas kloramin (\\(NH_2Cl, NHCl_2\\))** yang sangat toksik dan memicu edema paru fatal. | Perpres 7/2019, Pope & Liu 2020, PP 28/2024 |
+| **14** | **Clinical Pearls & Trap** | 1) Ambang bau rendah memberi peringatan awal, namun **adaptasi olfaktori cepat** membuat pekerja lengah di atmosfer letal. 2) Edema laring terjadi dalam hitungan menit, sedangkan **edema paru toksik dapat tertunda 12–48 jam**. 3) Rontgen toraks awal sering tampak normal. 4) Amonia adalah alkali paling cepat menembus kornea mata. 5) Netralisasi dengan asam merupakan kesalahan fatal. | ATSDR MMG, Pope & Liu 2020 |
+
+---
+
+💡 *Apakah Anda ingin kita melangkah ke bab toksikologi iritan paru berikutnya, yaitu modul komparatif antara **Gas Klorin (\\(Cl_2\\))** dan **Fosgen (\\(COCl_2\\))** untuk membedakan karakteristik klinis iritan berdaya larut sedang versus rendah?*
