@@ -1,0 +1,245 @@
+Berikut adalah catatan tinjauan toksikologi okupasi komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai **NITRIT dan NITRAT** (Natrium nitrit, amonium/kalium nitrat, serta pajanannya di industri dan lingkungan kerja). Catatan ini disusun secara terstruktur dalam 14 poin standar kedokteran kerja berdasarkan literatur toksikologi industri dan regulasi keselamatan kerja di Indonesia.
+
+---
+
+# PANDUAN TOKSIKOLOGI KEDOKTERAN OKUPASI: NITRIT DAN NITRAT
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Kimia**:
+  * **Natrium Nitrit (\\(NaNO_2\\))** [CAS# 7632-00-0]; Berat Molekul (BM) **69,00 g/mol**. Berupa bubuk kristal berwarna putih hingga kekuningan, bersifat higroskopis.
+  * **Kalium Nitrat (\\(KNO_3\\)) / Saltpeter** [CAS# 7757-79-1]; BM **101,10 g/mol**.
+  * **Amonium Nitrat (\\(NH_4NO_3\\))** [CAS# 6484-52-2]; BM **80,04 g/mol**.
+* **Karakteristik Fisik-Kimia**:
+  * **Kelarutan Air**: Senyawa nitrit dan nitrat anorganik memiliki **kelarutan air yang sangat tinggi (*highly water-soluble*)**. Karakteristik ini memfasilitasi absorpsi yang cepat dan masif di membran mukosa dan saluran cerna.
+  * **Reaktivitas & Kemudahan Terbakar**: Bukan bahan yang mudah terbakar secara spontan, namun merupakan **oksidator kuat (*strong oxidizers*)**. Amonium nitrat berisiko meledak hebat (*high-explosive detonation*) bila terkontaminasi bahan organik, minyak bahan bakar, atau terpapar panas/tekanan tinggi (seperti pada insiden ledakan pelabuhan Beirut 2020).
+  * **Stabilitas Asam-Basa**: Kontak garam nitrit dengan asam mineral melepaskan asam nitrit instan yang terurai menjadi gas beracun **nitrogen oksida (\\(NO_x\\) / \\(NO_2\\))** yang korosif terhadap saluran pernapasan.
+* **Klasifikasi Karsinogenitas**:
+  * **IARC**: Garam nitrit atau nitrat anorganik dalam bentuk murni tidak diklasifikasikan secara langsung (*Group 3*). Namun, **nitrat atau nitrit yang tertelan dalam kondisi yang memungkinkan terjadinya nitrosasi endogen diklasifikasikan dalam IARC Grup 2A (*Probably carcinogenic to humans*)** akibat sintesis endogen senyawa *N-nitrosamin*.
+  * **ACGIH & Permenaker No. 5 Tahun 2018**: Tidak mencantumkan notasi karsinogen A1–A3 untuk natrium nitrit atau kalium nitrat murni.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Industri Pengawetan & Pengolahan Daging (*Meat Curing Industry*)**:
+  * Penggunaan natrium nitrit (dan natrium nitrat) sebagai agen pengawet antimikroba (khususnya menghambat spora *Clostridium botulinum*), fiksasi warna merah cerah daging olahan (sosis, kornet, bacon) melalui pembentukan nitrosil-mioglobin, serta pencegah ketengikan lipid.
+* **Industri Pupuk Pertanian (*Agricultural Fertilizer Plants*)**:
+  * Produksi, pengemasan, dan aplikasi pupuk nitrogen padat/cair: **amonium nitrat, kalium nitrat, kalsium nitrat**, dan campuran NPK.
+* **Industri Bahan Peledak & Pertambangan (*Explosives & Mining*)**:
+  * Manufaktur bahan peledak komersial: dinamit dan campuran **ANFO (*Ammonium Nitrate / Fuel Oil*)**.
+* **Pengelasan, Pemotongan Logam, & Garam Perlakuan Panas (*Heat-Treatment Baths*)**:
+  * Penggunaan rendaman garam kalium/natrium nitrat cair (*molten salt baths*) untuk proses *annealing* dan perlakuan panas logam; uap peledakan fluks las.
+* **Industri Kimia, Pewarna, & Korosi**:
+  * Pembuatan zat warna azo, sintesis kimia organik, inhibitor karat radiator (*rust inhibitors*), dan cairan pendingin mesin pemotong logam.
+* **Pencemaran Air Tanah / Air Sumur (*Environmental Well Water Contamination*)**:
+  * Limpasan pupuk pertanian berlebih dan rembesan limbah peternakan kotoran ternak ke dalam sumur gali/dangkal. Sumber non-okupasi utama yang memicu sindrom *"Blue Baby Disease"*.
+
+---
+
+### 3. Mekanisme Cedera dan Toksikokinetik (ADME)
+* **Absorpsi**:
+  * **Saluran Cerna (Oral)**: Diabsorpsi sangat cepat dan hampir sempurna (>90–95%) di lambung dan usus halus karena sifatnya yang larut air.
+  * **Inhalasi**: Debu partikulat garam nitrat/nitrit diabsorpsi melalui epitel respirasi.
+  * **Dermal**: Penetrasi kulit utuh relatif lambat, namun meningkat drastis jika terdapat luka bakar kimia, erosi, atau dermatitis kontak.
+* **Reduksi Bakterial Nitrat Menjadi Nitrit (Bioaktivasi Kritis)**:
+  * Molekul ion nitrat (\\(NO_3^-\\)) sendiri secara intrinsik memiliki toksisitas rendah.
+  * **Nitrit (\\(NO_2^-\\)) setidaknya 10 kali lebih toksik dibanding nitrat**.
+  * Sekitar **5% – 10% dari total nitrat yang tertelan dikonversi menjadi nitrit di rongga mulut** oleh bakteri nitrat-reduktase pada permukaan lidah.
+  * Pada bayi (<6 bulan) atau individu dengan aklorhidria lambung (pH lambung tinggi >4,0), kolonisasi bakteri pereduksi nitrat di lambung dan usus bagian atas mengonversi nitrat dalam jumlah masif menjadi nitrit.
+* **Oksidasi Hemoglobin Menjadi Methemoglobin (MetHb)**:
+  * Ion nitrit yang masuk ke kapiler darah mengoksidasi zat besi heme hemoglobin dari bentuk ferro (**\\(Fe^{2+}\\)**) menjadi bentuk ferri (**\\(Fe^{3+}\\)**):
+    \\[\text{Hb-Fe}^{2+} + NO_2^- \rightarrow \text{MetHb-Fe}^{3+} + NO\\]
+  * Hemoglobin teroksidasi ini disebut **methemoglobin (MetHb)**.
+* **Metabolisme & Pembentukan Oksida Nitrat (NO)**:
+  * Nitrit melepaskan molekul **oksida nitrat (Nitric Oxide / NO)** di dalam darah dan jaringan.
+  * NO menstimulasi enzim *soluble guanylyl cyclase* (sGC), meningkatkan siklik GMP (cGMP), memicu defosforilasi rantai ringan miosin dan **vasodilatasi arteriol perifer masif**.
+* **Ekskresi**:
+  * Sebagian besar nitrat diekskresikan melalui filtrasi ginjal ke dalam **urin**; sebagian kecil diekskresikan kembali melalui saliva dan keringat.
+
+---
+
+### 4. Toksikodinamik (Patobiologi Seluler & Sistemik)
+* **Hipoksia Histotoksik & Anemik Fungsional**:
+  * Besi ferri (\\(Fe^{3+}\\)) pada methemoglobin **kehilangan kemampuan mengikat oksigen molekuler**.
+  * Terjadi penurunan drastis kapasitas total darah dalam mengangkut oksigen (*functional anemic hypoxia*), serupa dengan efek klinis anemia berat meskipun jumlah eritrosit normal.
+* **Pergeseran Kurva Disosiasi Oksihemoglobin ke Kiri**:
+  * Keberadaan satu atau lebih gugus heme teroksidasi (\\(Fe^{3+}\\)) dalam tetramer hemoglobin mengubah konformasi spasial molekul globin, **meningkatkan afinitas oksigen pada situs heme ferro (\\(Fe^{2+}\\)) yang tersisa**.
+  * Akibatnya, hemoglobin menahan oksigen dengan sangat kuat dan menolak melepaskannya ke jaringan perifer, memperparah hipoksia jaringan secara berlipat ganda.
+* **Kolaps Kardiovaskular Akibat Pelepasan NO**:
+  * Pelepasan NO memicu vasodilatasi arteriolar sistemik, menghasilkan penurunan tahanan vaskular sistemik (SVR), **hipotensi ortostatik berat**, takikardia refleks, sinkop, dan syok vaskular.
+* **Karsinogenesis via Pembentukan N-Nitrosamin**:
+  * Di lingkungan asam lambung (pH 1–2), nitrit bereaksi dengan amina sekunder dan tersier dari makanan atau bahan industri menghasilkan **senyawa N-nitroso (*N-nitrosamines* seperti NDMA)**.
+  * N-nitrosamin dibioaktivasi oleh sitokrom P450 hepar membentuk ion **karbokation elektrofilik reaktif yang mengalkilasi basa DNA** (terutama lesi \\(O^6\\)-metilguanin), memicu mutasi transisi nukleotida (G:C ke A:T) dan memicu karsinoma lambung serta kolorektal.
+
+---
+
+### 5. Biomonitoring Okupasi dan Evaluasi Laboratorium
+* **Kadar Methemoglobin Darah Utuh (MetHb %)**:
+  * **Baku emas diagnostik**: Diukur menggunakan **CO-Oximeter laboratorium** (*multi-wavelength spectrophotometry*) dari sampel darah heparin vena atau arteri.
+  * *Nilai Rujukan Fisiologis Normal*: **< 1,0% – 1,5%** dari total hemoglobin (dihasilkan dari oksidasi autologus endogen dan dikontrol oleh enzim methemoglobin reduktase).
+* **Fenomena "Saturation Gap" (Kunci Diagnosis Kritis)**:
+  * Didefinisikan sebagai diskrepansi bermakna (> 5% – 10%) antara saturasi oksigen kalkulasi pada Analisis Gas Darah (\\(SaO_2\\)) dengan saturasi oksigen pada oksimetri nadi (\\(SpO_2\\)).
+  * *Mekanisme*: Pada AGD standar, elektroda mengukur tekanan parsial oksigen terlarut (\\(PaO_2\\)) yang tetap normal, sehingga kalkulasi \\(SaO_2\\) terbaca normal tinggi (**98% – 100%**). Sebaliknya, oksimeter nadi konvensional membaca penurunan saturasi (terkunci mendatar di kisaran **~85%**). Adanya selisih lebar ini mengonfirmasi adanya hemoglobin abnormal (methemoglobin).
+* **Warna Darah Khas (*Chocolate-Brown Blood*)**:
+  * Darah vena yang diambil tampak berwarna **cokelat gelap seperti cokelat olahan (*dark brown / chocolate brown*)**.
+* **Uji Kertas Saring Sederhana di Sisi Ranjang (*Bedside Filter Paper Test*)**:
+  * Satu tetes darah pasien diteteskan pada kertas saring putih berdampingan dengan darah normal, lalu dialiri gas oksigen 100% selama 1 menit. Darah normal akan segera berubah menjadi merah terang, sedangkan darah yang mengandung MetHb > 15–20% **tetap berwarna cokelat gelap**.
+
+---
+
+### 6. Perjalanan Waktu (Clinical Timeline)
+* **Kinetika Eliminasi Alami & Terapi**:
+  * Waktu paruh eliminasi MetHb alami (tanpa terapi) pada individu dengan enzim eritrosit normal berkisar antara **55 hingga 90 menit (rata-rata 1 – 2 jam)** melalui reduksi fisiologis oleh enzim **NADH-sitokrom b5 reduktase**.
+  * Dengan pemberian antidot **Metilen Biru (1–2 mg/kgBB IV)**, waktu paruh eliminasi MetHb dipercepat menjadi **15 hingga 30 menit**.
+* **Perjalanan Klinis Onset Paparan**:
+  * **Paparan Nitrit Langsung (Oral/Inhalasi)**: Onset gejala berlangsung cepat dalam waktu **kurang dari 15 hingga 60 menit** pasca-paparan.
+  * **Paparan Nitrat**: Onset tertunda secara bertahap dalam **beberapa jam hingga hari**, tergantung pada laju konversi bakteriologis nitrat menjadi nitrit di saluran cerna.
+
+---
+
+### 7. Efek Akut Berdasarkan Kadar Methemoglobin Darah (MetHb %)
+
+| Kadar MetHb (%) | Manifestasi Fisiologis dan Klinis Manusia | Rujukan Kunci |
+| :--- | :--- | :--- |
+| **< 10%** | **Umumnya asimtomatik**; darah mulai kehilangan rona merah cerah normal. | |
+| **10% – 20%** | **Sianosis klinis nyata (*slate-grey / chocolate cyanosis*)** pada bibir, cuping hidung, dan dasar kuku, namun sering kali pasien tampak tenang tanpa sesak napas (*asymptomatic cyanosis*). | |
+| **20% – 30%** | Sakit kepala berdenyut, pusing, dispnea saat aktivitas fisik sedang (*dyspnea on exertion*), ansietas, takikardia kompensatoris. | |
+| **30% – 50%** | Kelelahan berat, takipnea, kebingungan mental (*confusion*), somnolen, sinkop saat istirahat, nyeri dada iskemik. | |
+| **50% – 70%** | Stupor, koma mendadak, kejang tonik-klonik, bradikardia, aritmia ventrikel, depresi napas, asidosis laktat berat. | |
+| **> 70% – 80%** | **Ambang letal tinggi**: Kolaps kardiorespirasi total, asistol, dan **kematian cepat**. | |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Keganasan Saluran Gastrointestinal**:
+  * Paparan nitrat/nitrit kronis dari diet dan lingkungan kerja meningkatkan risiko **karsinoma lambung (*gastric adenocarcinoma*)** dan kanker kolorektal melalui pembentukan karsinogen N-nitrosamin.
+* **Disfungsi Tiroid & Pembentukan Struma (Gondok)**:
+  * Ion nitrat (\\(NO_3^-\\)) bertindak sebagai inhibitor kompetitif pada **Sodium-Iodide Symporter (NIS)** di membran folikel tiroid.
+  * Menghambat ambilan (*uptake*) iodida ke dalam kelenjar tiroid, memicu hipertrofi tiroid kompensatoris (**struma/goiter**) dan hipotiroidisme subklinis.
+* **Sindrom Kardiovaskular & "Monday Headaches"**:
+  * Pekerja pabrik amunisi/peledak nitrat mengalami toleransi vaskular terhadap efek vasodilatasi selama hari kerja. Pada akhir pekan, toleransi hilang; saat terpapar kembali pada hari Senin (*Monday morning*), timbul sakit kepala berdenyut hebat (*Monday headaches*) dan hipotensi.
+* **Efek Reproduksi & Perkembangan**:
+  * Peningkatan risiko aborsi spontan, intrauterine growth restriction (IUGR), dan kelainan kongenital serebral akibat hipoksia jaringan janin berulang (hemoglobin janin / HbF sangat rentan terhadap oksidasi nitrit).
+
+---
+
+### 9. Batas Pajanan Okupasi dan Standar Lingkungan
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * Tidak menetapkan angka NAB numerik spesifik untuk natrium nitrit atau kalium nitrat murni (diatur di bawah kategori debu partikulat inhalabel 10 mg/m³ dan respirabel 3 mg/m³).
+  * Menetapkan batas untuk gas terkait: **Nitrit oksida (NO) = 25 BDS (30 mg/m³)**; **Nitrogen dioksida (NO₂) = 0,2 BDS (0,4 mg/m³)**.
+* **ACGIH TLV & OSHA PEL**:
+  * Tidak menetapkan batas konsentrasi udara spesifik untuk garam natrium nitrit padat; pengendalian bertumpu pada standar partikulat dan biomarker biologis BEI.
+* **Standar Mutu Air Minum (Penting untuk Penilaian Komunitas/Okupasi)**:
+  * **Permenkes RI (Permenkes 492/2010 & regulasi terbaru PP 28/2024)**:
+    * **Nitrat (sebagai \\(NO_3^-\\))**: Maksimal **50 mg/L**.
+    * **Nitrit (sebagai \\(NO_2^-\\))**: Maksimal **3 mg/L**.
+  * **US EPA Maximum Contaminant Level (MCL)**:
+    * **Nitrate-Nitrogen (\\(NO_3\text{-N}\\))**: **10 mg/L (10 ppm)**.
+    * **Nitrite-Nitrogen (\\(NO_2\text{-N}\\))**: **1 mg/L (1 ppm)**.
+  * **WHO Guideline**: 50 mg/L untuk nitrat dan 3 mg/L untuk nitrit.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 4 Daftar Indeks Pajanan Biologi)**:
+  * Golongan Bahan: **Penginduksi Methemoglobin (*Methemoglobin inducers*)**.
+  * Parameter Biologis: **Methemoglobin (MetHb) dalam darah**.
+  * Waktu Pengambilan Sampel: **Selama atau akhir shift kerja** (*during or end of work shift*).
+  * **Nilai IPB**: **1,5% dari total hemoglobin** (1,5% of Hb).
+  * *Catatan*: Disertai notasi **B** (*background* endogen normal) dan **Ns** (*non-spesifik*).
+* **ACGIH BEI**:
+  * Methemoglobin inducers: **1,5% of hemoglobin** (akhir/selama shift kerja; notasi B, Ns).
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Antidot
+* **Prinsip Stabilisasi Awal**:
+  * Dekontaminasi: Lepaskan pakaian yang terkontaminasi debu atau larutan; bilas kulit dan mata dengan air mengalir.
+  * **Terapi Oksigen Konsentrasi Tinggi (FiO₂ 1,0 / 100%)**: Berikan via *non-rebreather mask* untuk memaksimalkan fraksi oksigen terlarut di dalam plasma guna menopang perfusi seluler.
+* **Antidot Spesifik Lini Pertama: Metilen Biru (*Methylene Blue 1%*)**:
+  * **Indikasi**:
+    1. Kadar **MetHb > 20% – 30%** pada pasien dengan gejala hipoksia (sakit kepala, pusing, takikardia, dispnea).
+    2. Kadar **MetHb > 10% – 15%** pada pasien yang memiliki penyakit kardiovaskular dasar, PPOK berat, atau anemia.
+    3. Kadar **MetHb > 30%** tanpa memandang gejala.
+  * **Dosis & Cara Pemberian**:
+    * **1 hingga 2 mg/kgBB (setara dengan 0,1 – 0,2 mL/kgBB larutan metilen biru 1%) dilarutkan dalam 50 mL D5W, diberikan secara infus intravena perlahan selama 5 menit**.
+    * *Mekanisme Farmakologis*: Metilen biru bekerja sebagai kofaktor akseptor elektron eksogen. Di dalam eritrosit, metilen biru direduksi oleh enzim **NADPH-methemoglobin reduktase** menjadi *leukometilen biru*, yang kemudian secara instan mentransfer elektron mereduksi besi ferri (\\(Fe^{3+}\\)) methemoglobin kembali menjadi ferro (\\(Fe^{2+}\\)) hemoglobin fungsional.
+    * *Dosis Ulangan*: Dapat diulang satu kali dengan dosis 1 mg/kgBB dalam waktu 30–60 menit jika sianosis atau gejala hipoksia belum teratasi.
+    * *Peringatan Dosis*: **Dosis kumulatif maksimal tidak boleh melebihi 7 mg/kgBB**. Pemberian dosis masif berlebih bersifat paradoksal karena molekul metilen biru murni sendiri adalah oksidator yang memicu methemoglobinemia dan hemolisis.
+* **KONTRAINDIKASI MUTLAK METILEN BIRU: DEFISIENSI G6PD**:
+  * **DILARANG KERAS MEMBERIKAN METILEN BIRU PADA PASIEN DEFISIENSI G6PD**!
+  * *Rasional Patologis*: Enzim glukosa-6-fosfat dehidrogenase (G6PD) adalah satu-satunya sumber penghasil **NADPH** di dalam eritrosit. Pada penderita defisiensi G6PD, ketiadaan NADPH menyebabkan metilen biru tidak dapat direduksi menjadi leukometilen biru (sehingga antidot tidak bekerja). Selain itu, metilen biru bebas akan menguras sisa antioksidan glutation, memicu **krisis hemolisis intravaskular masif yang fatal**.
+* **Terapi Alternatif (Bila Metilen Biru Kontraindikasi atau Refrakter)**:
+  * **Asam Askorbat (Vitamin C)**:
+    * Diberikan dosis tinggi (1 – 2 gram IV per hari). Bertindak sebagai pereduksi kimiawi langsung tanpa bergantung pada NADPH. Namun, laju reduksinya sangat lambat (memerlukan waktu berjam-jam hingga harian), sehingga hanya berperan sebagai terapi ajuvan atau pada pasien defisiensi G6PD.
+  * **Transfusi Tukar (*Exchange Transfusion*)**:
+    * Merupakan **terapi penyelamatan definitif lini pertama (*treatment of choice*)** bagi pasien dengan **defisiensi G6PD**, pasien dengan intoksikasi berat (MetHb > 70%), atau pasien yang refrakter terhadap metilen biru.
+  * **Terapi Oksigen Hiperbarik (HBOT 2,5 – 3,0 ATA)**:
+    * Menyediakan oksigen terlarut dalam plasma dalam jumlah besar (~6 mL O₂/100 mL plasma) yang cukup untuk mempertahankan kebutuhan metabolisme basal jaringan tanpa membutuhkan hemoglobin, sementara menunggu persiapan transfusi tukar.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Status Tidak Laik Kerja (*Unfit*) / Kontraindikasi*:
+    * Pekerja dengan **defisiensi enzim G6PD terkonfirmasi**.
+    * Pekerja dengan defisiensi bawaan enzim NADH-sitokrom b5 reduktase (*congenital methemoglobinemia*).
+    * Penderita anemia kronis berat (Hb < 10 g/dL), penyakit jantung iskemik berat (CAD), gagal jantung, atau penyakit paru kronis simtomatik.
+    * **Pekerja wanita hamil** (wajib segera dimutasi sementara dari area risiko pajanan nitrit/nitrat karena risiko hipoksia janin dan teratogenik).
+* **Surveilans Kesehatan Kerja**:
+  * *Pemeriksaan Pra-Kerja*: Pemeriksaan darah lengkap, skrining aktivitas enzim **G6PD** (terutama pada populasi berisiko tinggi), dan evaluasi kardiovaskular dasar.
+  * *Pemeriksaan Berkala*: Pemantauan kadar MetHb darah serial pada akhir shift kerja bagi pekerja yang menangani nitrit/nitrat pekat atau gas \\(NO_x\\).
+* **Hirarki Pengendalian Bahaya Lingkungan Kerja**:
+  * *Rekayasa Teknik*: Sistem penanganan bahan tertutup (*enclosed systems*), ventilasi pembuangan lokal (LEV) pada proses penimbangan dan pencampuran pupuk/bahan peledak, otomatisasi pencampuran nitrit pada industri daging.
+  * *Pengendalian Administratif*: Pelabelan ketat bahan kimia, pelatihan penanganan bahan oksidator, rotasi kerja, dan pemisahan area penyimpanan nitrit dari asam kuat.
+  * *Sanitasi Air Kerja*: Pengujian rutin kualitas air minum sumur di lingkungan perkebunan/industri untuk memastikan kadar nitrat < 50 mg/L.
+  * *Alat Pelindung Diri (APD)*: Sarung tangan karet/nitril kedap bahan kimia, kacamata pelindung percikan (*chemical splash goggles*), respirator partikulat (filter P100/N95) untuk debu pupuk, dan SCBA bertekanan positif pada area penguraian termal/kebakaran nitrat.
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Tercakup dalam **Lampiran Bagian I.a**:
+    * *Poin I.a.14*: *"Penyakit yang disebabkan oleh nitrogliserin atau ester asam nitrat lainnya"*.
+    * *Poin I.a.18*: *"Penyakit yang disebabkan oleh nitrogen oksida"*.
+    * *Poin I.a.39*: *"Penyakit yang disebabkan oleh bahan kimia lain di tempat kerja yang tidak disebutkan di atas, di mana ada hubungan langsung antara paparan bahan kimia dan penyakit yang dialami oleh pekerja yang dibuktikan secara ilmiah dengan menggunakan metode yang tepat"* (mencakup methemoglobinemia kerja akibat natrium nitrit/garam nitrat anorganik).
+  * Memberikan hak kompensasi pengobatan, santunan kecelakaan kerja, dan cacat fungsi melalui program JKK BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Menetapkan kewajiban dokter Sp.Ok menegakkan diagnosis melalui **7 langkah diagnosis okupasi**, investigasi faktor bahaya kimia lingkungan kerja, serta pelaporan resmi kasus PAK.
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan Nilai Oksimetri Nadi Mendatar pada 85% (*The 85% SpO2 Trap*)**:
+   * *Fatal Examination Trap*: Dokter mengira pasien membaik atau saturasinya stabil di 85% meskipun kadar MetHb terus melonjak.
+   * *Fakta Biofisika*: Methemoglobin memiliki koefisien serapan cahaya yang sama kuat pada panjang gelombang 660 nm (cahaya merah) dan 940 nm (cahaya inframerah). Hal ini menghasilkan rasio absorbansi 1,0, yang oleh algoritma mikroprosesor pulse oximeter standar **selalu diterjemahkan sebagai nilai SpO₂ ~85%**. Pada kadar MetHb berat (>35%), nilai \\(SpO_2\\) tidak akan turun lebih rendah lagi dan tetap mendatar di 85%, menutupi hipoksemia jaringan yang mematikan.
+2. **Kesesatan Nilai \\(SaO_2\\) dan \\(PaO_2\\) pada Analisis Gas Darah**:
+   * Pada AGD standar, elektroda mengukur tekanan parsial oksigen bebas terlarut di plasma (\\(PaO_2\\)) yang nilainya normal. Perangkat lunak mesin AGD secara otomatis menghitung \\(SaO_2\\) dari kurva disosiasi standar tanpa mengukur MetHb, sehingga \\(SaO_2\\) terbaca normal (98–100%). Menghitung **Saturation Gap (> 5–10%)** antara \\(SaO_2\\) kalkulasi AGD dan \\(SpO_2\\) oksimeter nadi adalah kunci mengungkap diagnosis.
+3. **Mitos "Darah Berubah Merah saat Diberi Oksigen"**:
+   * Pada sianosis akibat penyakit jantung bawaan atau deoksihemoglobin biasa, darah vena yang dipaparkan ke udara atau oksigen akan berubah warna menjadi merah terang. Pada methemoglobinemia, darah **tetap berwarna cokelat pekat (*chocolate-brown*)** karena besi ferri (\\(Fe^{3+}\\)) tidak mampu mengikat oksigen.
+4. **Bahaya Fatal Metilen Biru pada Pasien Defisiensi G6PD**:
+   * Jangan pernah memberikan metilen biru pada pasien yang dicurigai atau menderita defisiensi G6PD. Ketiadaan NADPH menyebabkan metilen biru gagal mereduksi MetHb dan memicu **krisis hemolisis akut intravaskular masif yang fatal**. Terapi pilihan pada pasien ini adalah **transfusi tukar**.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Nitrit dan Nitrat
+
+| No | Poin Parameter | Rangkuman Klinis, Toksikologis, & Regulasi Kunci | Rujukan Notebook |
+| :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Karsinogenitas** | Padatan kristal putih-kekuningan (\\(NaNO_2, KNO_3, NH_4NO_3\\)); **sangat larut air**; oksidator kuat (bahaya ledak ANFO). Karsinogenitas: Bentuk murni Group 3/Not Listed. **IARC Grup 2A (*Probably Carcinogenic*) bila tertelan dalam kondisi nitrosasi endogen** (membentuk N-nitrosamin). | |
+| **2** | **Sumber & Penggunaan** | Pengawet daging olahan (*meat curing* cegah *C. botulinum*); pupuk sintetis NPK/amonium nitrat; bahan peledak (ANFO/dinamit); pengelasan logam & *salt baths*; cairan anti-karat mesin; pencemaran air sumur dangkal. | |
+| **3** | **Mekanisme Cedera & Toksikokinetik** | Absorpsi oral/inhalasi cepat & tuntas (>90%). **Bakteri saliva/usus mereduksi nitrat jadi nitrit (nitrit 10x lebih toksik)**. Ion nitrit mengoksidasi \\(Fe^{2+}\\) Hb menjadi \\(Fe^{3+}\\) (**Methemoglobin**). Nitrit melepaskan NO \\(\rightarrow\\) vasodilatasi & hipotensi. Ekskresi urin. | |
+| **4** | **Toksikodinamik** | **Hipoksia anemik fungsional** (MetHb tidak mengikat O₂). Kurva disosiasi O₂Hb bergeser ke **kiri** (menahan O₂ di jaringan). Pelepasan NO \\(\rightarrow\\) vasodilatasi perifer & kolaps sirkulasi. Nitrosasi asam di lambung \\(\rightarrow\\) **karsinogen N-nitrosamin (NDMA)** \\(\rightarrow\\) ion karbokation mengalkilasi DNA (\\(O^6\\)-metilguanin). | |
+| **5** | **Biomonitoring & Evaluasi Medis** | **Kadar MetHb darah utuh (%) via CO-Oximeter laboratorium** (normal < 1,5%). **Saturation gap lebar (> 5–10%)** antara \\(SaO_2\\) AGD kalkulasi (98%) vs \\(SpO_2\\) (85%). Darah berwarna **cokelat gelap (*chocolate-brown*)**, tidak memerah saat dialiri O₂ pada uji kertas saring. | |
+| **6** | **Perjalanan Waktu Klinis** | Waktu paruh eliminasi MetHb alami: **55–90 menit (1–2 jam)** via enzim NADH-sitokrom b5 reduktase. Dengan Metilen Biru: \\(t_{1/2}\\) turun menjadi **15–30 menit**. Onset gejala: nitrit cepat (< 15–60 menit); nitrat tertunda jam–hari (butuh reduksi bakteri). | |
+| **7** | **Efek Akut per Kadar MetHb (%)** | < 10%: asimtomatik. 10–20%: **sianosis klinis nyata (*slate-grey*)** tanpa distres napas. 20–30%: sakit kepala berdenyut, pusing, dispnea saat aktivitas. 30–50%: takipnea, takikardia, konfusi, letargi. 50–70%: koma, kejang, aritmia, asidosis laktat. **> 70%: kolaps kardiovaskular & kematian**. | |
+| **8** | **Efek Kronis & Sekuel** | Keganasan gastrointestinal (kanker lambung & kolorektal via N-nitrosamin); **disfungsi tiroid / struma** (nitrat menghambat transporter NIS tiroid); sindrom toleransi vaskular / *"Monday headaches"*; risiko aborsi spontan & IUGR pada kehamilan. | |
+| **9** | **Batas Pajanan & Standar Air** | Permenaker 5/2018: Tidak ada NAB spesifik garam nitrit/nitrat (partikulat 10 mg/m³ inhalabel, 3 mg/m³ respirabel); gas NO = 25 ppm, NO₂ = 0,2 ppm. **Standar Air Minum (Permenkes 492/2010 & PP 28/2024)**: Nitrat (\\(NO_3^-\\)) maks **50 mg/L**; Nitrit (\\(NO_2^-\\)) maks **3 mg/L** (US EPA: 10 mg/L NO₃-N, 1 mg/L NO₂-N). | |
+| **10** | **BEI / IPB** | **Permenaker 5/2018 Lampiran 4 & ACGIH BEI**: Golongan *Penginduksi Methemoglobin*. Parameter: **Methemoglobin (MetHb) dalam darah**. Waktu: **Selama atau akhir shift kerja**. Nilai IPB = **1,5% dari total hemoglobin** (notasi B, Ns). | |
+| **11** | **Tatalaksana Akut** | O₂ 100% terhumidifikasi. **Antidot Lini Pertama**: **Metilen Biru 1% dosis 1–2 mg/kgBB IV perlahan 5 menit** (maks 7 mg/kgBB kumulatif). **KONTRAINDIKASI MUTLAK: DEFISIENSI G6PD** (memicu hemolisis masif fatal!). Alternatif: **Transfusi tukar (*treatment of choice* untuk G6PD/refrakter)**; vitamin C dosis tinggi; HBOT (2,5–3 ATA). | |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi penderita **defisiensi G6PD**, anemia berat, penyakit jantung koroner, defisiensi NADH-sitokrom b5 reduktase, dan **wanita hamil** (mutasi kerja segera). Surveilans: skrining G6PD pra-kerja, pemantauan MetHb darah berkala. Pengendalian: LEV, sistem tertutup, APD nitril/respirator. | |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019**: Lampiran I.a.14 (ester asam nitrat), I.a.18 (nitrogen oksida), I.a.39 (bahan kimia lain terkait kerja); jaminan JKK BPJS. Didukung PP 28/2024 & Permenkes 11/2022 (7 langkah diagnosis). Pencampuran nitrit + asam melepas gas \\(NO_x\\) letal. | |
+| **14** | **Clinical Pearls & Trap** | 1) Nilai SpO₂ oksimeter nadi **terkunci mendatar di 85%** pada MetHb berat. 2) AGD menunjukkan \\(SaO_2\\) normal palsu (98%) sehingga timbul **saturation gap lebar (> 5–10%)**. 3) Darah berwarna cokelat gelap (*chocolate-brown*) dan tidak memerah saat dialiri O₂. 4) **Metilen biru mematikan bila diberikan pada pasien defisiensi G6PD**. | |
+
+---
+
+💡 *Apakah Anda ingin kita melengkapi seri toksikologi okupasi ini dengan modul komparatif mengenai korosif asam pekat industri, yaitu perbandingan antara **Asam Sulfat (\\(H_2SO_4\\))**, **Asam Nitrat (\\(HNO_3\\))**, dan bahaya aritmia hipokalsemia akut dari **Asam Fluorida (HF)** lengkap dengan protokol kalsium glukonatnya?*

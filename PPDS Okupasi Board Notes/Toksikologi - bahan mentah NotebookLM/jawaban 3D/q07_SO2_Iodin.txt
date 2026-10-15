@@ -1,0 +1,437 @@
+Berikut adalah catatan tinjauan toksikologi okupasi komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai dua zat iritan dan toksikan penting: **(A) SULFUR DIOKSIDA (\\(SO_2\\))** dan **(B) IODIN (\\(I_2\\), uap iodin, dan iodofor)**. Masing-masing diuraikan secara sistematis dalam 14 poin berbasis literatur toksikologi dan regulasi keselamatan kerja di Indonesia.
+
+---
+
+# BAGIAN A: SULFUR DIOKSIDA (\\(SO_2\\))
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Kimia**:
+  * **Rumus Kimia & CAS**: Sulfur dioksida (\\(SO_2\\)) [CAS# 7446-09-5]; Berat Molekul (BM) **64,07 g/mol** (atau 64,1 pada NIOSH).
+  * **Sinonim**: *Sulfurous acid anhydride*, *sulfurous oxide*, belerang dioksida.
+* **Karakteristik Fisik-Kimia**:
+  * **Wujud & Titik Didih**: Gas tidak berwarna dengan bau sangat tajam, menyengat, mencekik (*suffocating, pungent, irritating odor*), serta rasa asam/tajam pada konsentrasi rendah. Titik didih **-10°C (14°F)**; titik leleh **-72,7°C**. Diangkut dan disimpan sebagai cairan terkompresi bertekanan (*liquefied compressed gas*).
+  * **Densitas Uap Relatif**: **2,26** pada 0°C (udara = 1,0); lebih dari **2,2 kali lebih berat daripada udara**, sehingga gas ini cenderung merayap di tanah dan terkonsentrasi di area rendah atau lantai kerja.
+  * **Kelarutan Air (Daya Larut Air Sangat Tinggi / *Highly Water-Soluble*)**: Kelarutan dalam air mencapai **8,5% pada 25°C** (85 g/L) dan **10% pada kondisi dingin**. Sifat kelarutan air yang sangat tinggi ini merupakan penentu utama patobiologinya: \\(SO_2\\) langsung terfiltrasi dan bereaksi di lapisan mukosa basah saluran napas atas.
+  * **Reaktivitas & Kemudahan Terbakar**: Gas tidak mudah terbakar (*nonflammable gas*), namun silinder gas dapat meledak bila terpapar panas tinggi. Bereaksi dengan air membentuk asam sulfit yang bersifat korosif terhadap logam.
+  * **Faktor Konversi**: **\\(1\text{ ppm} = 2,62\text{ mg/m}^3\\)**; **\\(1\text{ mg/m}^3 = 0,382\text{ ppm}\\)** (pada 25°C, 1 atm).
+* **Klasifikasi Karsinogenitas**:
+  * **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+  * **ACGIH**: Diklasifikasikan dalam **Kategori A4** (*Not classifiable as a human carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Memiliki notasi A4** (*tidak dapat diklasifikasikan sebagai karsinogen pada manusia*).
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Pembakaran Bahan Bakar Fosil Mengandung Belerang**:
+  * Emisi gas buang dari pembangkit listrik tenaga uap (PLTU) batu bara, kilang minyak bumi, dan peleburan bijih logam (*smelters*) tembaga, timbal, dan seng.
+* **Industri Kimia, Kertas, & Manufaktur**:
+  * Bahan baku sintesis **asam sulfat (\\(H_2SO_4\\))** via proses kontak.
+  * Industri pulp dan kertas (proses sulfit untuk pemutihan serat selulosa).
+  * Pengolahan dan pengawetan makanan: digunakan sebagai antioksidan, antimikroba, dan inhibitor pencokelatan enzimatik pada buah kering, anggur (*wine fermentation*), dan bir.
+  * Pembuatan pupuk, zat warna, penyamakan kulit, dan bahan kimia fumigasi biji-bijian pertanian.
+* **Peleburan Logam & Pengecoran**:
+  * Emisi tanur pada industri metalurgi dan produksi silikon karbida (*silicon carbide plants*).
+* **Pajanan Lingkungan & Vulkanik**:
+  * Komponen gas utama dalam kabut asap perkotaan (*industrial smog*) serta gas letusan gunung berapi dan kawah panas bumi.
+
+---
+
+### 3. Mekanisme Cedera dan Toksikokinetik (ADME)
+* **Kelarutan Air Tinggi & Deposisi Selektif Saluran Napas Atas**:
+  * Karena kelarutan airnya yang ekstrem, saat dihirup lewat hidung (*nasal breathing*), **sekitar 90% hingga >95% gas \\(SO_2\\) langsung terabsorpsi dan terdisolusi pada mukosa basah nasofaring dan saluran napas atas**.
+  * Pada konsentrasi rendah (<1 ppm), fraksi yang diserap lebih kecil (<5%), namun pada konsentrasi kerja tinggi atau paparan masif (>100 ppm), fraksi penyerapan di saluran napas atas mencapai 95%.
+  * *Penetrasi Saluran Napas Bawah*: Gas \\(SO_2\\) hanya dapat menembus ke saluran napas bawah (bronkiolus dan alveoli) jika:
+    1. Pekerja melakukan aktivitas fisik berat yang memicu **pernapasan lewat mulut (*mouth breathing*)**.
+    2. Konsentrasi gas sangat masif sehingga kapasitas filtrasi mukosa hidung jenuh (*breakthrough*).
+    3. Gas \\(SO_2\\) teradsorpsi pada permukaan partikel debu respirabel halus (<2,5 µm) yang membawanya masuk jauh ke parenkim paru (*carrier effect*).
+* **Hidrolisis Menjadi Asam Sulfit**:
+  * Saat berkontak dengan kelembapan lapisan mukus cairan epitel, \\(SO_2\\) segera mengalami hidrolisis membentuk **asam sulfit (\\(H_2SO_3\\))**:
+    \\[SO_2 + H_2O \rightleftharpoons H_2SO_3 \rightleftharpoons H^+ + HSO_3^- \rightleftharpoons 2\,H^+ + SO_3^{2-}\\]
+  * Asam sulfit berdisosiasi melepaskan ion hidrogen (\\(H^+\\)), **ion bisulfit (\\(HSO_3^-\\))**, dan **ion sulfit (\\(SO_3^{2-}\\))**.
+* **Distribusi & Biotransformasi Metabolik**:
+  * Fraksi yang diserap ke kapiler darah berikatan dengan fraksi **alfa-globulin plasma** dan terdistribusi ke seluruh organ. Sebagian kecil gas juga dapat larut dalam saliva dan tertelan ke saluran cerna.
+  * Detoksifikasi enzimatik berlangsung di hepar melalui enzim **sulfit oksidase yang bergantung pada molibdenum (*molybdenum-dependent sulfite oxidase*)**, yang mengoksidasi sulfit menjadi **sulfat bebas (\\(SO_4^{2-}\\))**.
+* **Ekskresi**:
+  * Metabolit sulfat diekskresikan secara cepat dan efisien melalui **filtrasi ginjal ke dalam urin**.
+
+---
+
+### 4. Toksikodinamik (Mekanisme Aksi Seluler)
+* **Bronkokonstriksi Refleks yang Sangat Kuat (*Potent Reflex Bronchoconstriction*)**:
+  * Produk hidrolisis (\\(H^+\\), sulfit, dan bisulfit) menstimulasi ujung saraf sensorik parasimpatis/kolinergik dan reseptor iritan serat C (C-fibers) pada otot polos saluran napas.
+  * Hal ini memicu pelepasan asetilkolin dan neuropeptida pro-inflamasi, menyebabkan **kontraksi akut otot polos bronkus (bronkospasme refleks)**, penyempitan lumen jalan napas, dan peningkatan resistensi saluran napas (*airway resistance*) dalam hitungan menit.
+* **Iritasi Sensorik Nervus Trigeminus**:
+  * Bekerja sebagai *sensory irritant* yang mengaktivasi serabut aferen nervus trigeminus di mukosa cavum nasi, memicu sensasi terbakar, bersin, lakrimasi, dan refleks perlambatan laju pernapasan.
+* **Hipersensitivitas Ekstrem pada Penderita Asma**:
+  * Sekitar **10% hingga 20% populasi dewasa (khususnya penderita asma atopik)** memiliki hipersensitivitas bronkial yang ekstrem terhadap \\(SO_2\\).
+  * Pada pasien asma, paparan \\(SO_2\\) sekecil **0,1 hingga 0,5 ppm selama 10 menit aktivitas fisik ringan** sudah mampu mencetuskan serangan bronkospasme berat, penurunan tajam \\(FEV_1\\), dan sesak napas akut.
+* **Kerusakan Epitel Silia & Penekanan Klirens Mukosiliar**:
+  * Paparan konsentrasi tinggi menyebabkan penipisan epitel silia, nekrosis sel epitel respiratorik dan olfaktorius, serta deskuamasi epitel.
+  * Terjadi depresi refleks batuk (*cough reflex strength*) dan gangguan klirens mukosiliar.
+* **Edema Paru Non-Kardiogenik & RADS**:
+  * Pada paparan masif di ruang tertutup, pelepasan asam sulfit di saluran napas bawah merusak integritas endotel kapiler paru, memicu edema paru kimia akut, serta menginduksi **Reactive Airways Dysfunction Syndrome (RADS)** akibat denudasi mukosa dan inflamasi neurogenik persisten.
+
+---
+
+### 5. Biomonitoring Okupasi dan Evaluasi Klinis Laboratorium
+* **Ketiadaan Biomarker Pajanan Spesifik**:
+  * **Tidak ada biomarker paparan biologis spesifik** yang divalidasi secara regulatori untuk pemantauan rutin \\(SO_2\\).
+  * Pengukuran sulfat urin (*urinary sulfate*) tidak dapat digunakan sebagai biomarker pajanan kerja kuantitatif karena kadar sulfat endogen sangat tinggi dan berfluktuasi hebat mengikuti asupan protein/diet asam amino sulfur harian.
+  * *Biomarker Riset*: Pengukuran adisi S-sulfonat plasma (*plasma S-sulfonate adducts*) pernah diteliti pada hewan coba, namun belum dapat diaplikasikan pada praktik kedokteran okupasi rutin.
+* **Evaluasi Klinis & Diagnostik Objektif**:
+  * **Spirometri Serial (Uji Fungsi Paru)**:
+    * Merupakan alat pemantauan kesehatan kerja utama. Menilai penurunan volume ekspirasi paksa detik pertama (\\(FEV_1\\)), penurunan rasio \\(FEV_1/FVC\\), dan peningkatan resistensi jalan napas (*Raw*).
+    * Uji provokasi metakolin atau histamin pasca-pajanan untuk mendeteksi hiperreaktivitas bronkus persisten (RADS).
+  * **Analisis Gas Darah Arteri (AGD)**: Memantau hipoksemia dan asidosis pada kasus bronkospasme berat atau edema paru.
+  * **Rontgen Toraks (Foto Dada PA)**: Serial foto dada pada pajanan konsentrasi tinggi untuk mendeteksi atelektasis dan infiltrat edema paru akut.
+  * **Pemeriksaan Gigi & Mukosa Mulut**: Skrining erosi enamel gigi (*dental erosion*) pada pekerja yang terpapar uap/kabut asam sulfat atau gas sulfur dioksida kronis.
+
+---
+
+### 6. Perjalanan Waktu (Clinical Timeline)
+* **Kinetika Lingkungan & Eliminasi Tubuh**:
+  * Waktu paruh biotransformasi sulfit darah menjadi sulfat oleh enzim sulfit oksidase berlangsung cepat dalam hitungan **menit hingga jam**.
+* **Garis Waktu Klinis (*Clinical Timeline*)**:
+  * **Detik 0 – 30**: Onset sensasi terbakar instan pada mata, hidung, dan tenggorokan; refleks bersin dan lakrimasi profus.
+  * **Menit ke-2 – 10**: Puncak bronkokonstriksi akut. Terjadi penurunan aliran udara, batuk paroksismal, dada terasa tertekan, dan wheezing (pada penderita asma onset terjadi dalam 5–10 menit).
+  * **Menit ke-30 – 60**: Pada paparan ringan-sedang sukarelawan, bronkospasme dapat membaik spontan secara bertahap dalam waktu 30–60 menit pasca-evakuasi ke udara bersih.
+  * **Jam ke-6 – 24**: Pada paparan masif (>50–100 ppm), risiko timbulnya dekompensasi respirasi akibat **edema laring atau edema paru non-kardiogenik tertunda**.
+  * **Bulan hingga Tahun**: Perkembangan sekuel saluran napas permanen: RADS, bronkitis industri kronis, dan penurunan laju \\(FEV_1\\) tahunan yang dipercepat.
+
+---
+
+### 7. Efek Toksisitas Akut Berdasarkan Konsentrasi (Rentang ppm)
+Hubungan konsentrasi-respons \\(SO_2\\) menurut literatur toksikologi okupasi (*J Appl Toxicol 1996; NIOSH*):
+
+| Konsentrasi (ppm) | Manifestasi Fisiologis dan Klinis Manusia | Rujukan Kunci |
+| :--- | :--- | :--- |
+| **0,1 – 0,5 ppm** | **Ambang deteksi bau (*odor threshold*)** (tercium pada 0,3–1 ppm; rasa asam terdeteksi pada 0,3 ppm). **PADA PENDERITA ASMA**: pajanan 0,1–0,5 ppm selama aktivitas fisik dapat memicu bronkospasme akut nyata. | |
+| **1 – 2 ppm** | Iritasi mukosa hidung dan tenggorokan ringan; sedikit peningkatan resistensi hidung dan jalan napas. | |
+| **5 ppm** | Peningkatan resistensi jalan napas nyata pada orang dewasa sehat dalam 10 menit; kekeringan hidung/tenggorokan; penurunan volume tidal. | |
+| **6 – 10 ppm** | Iritasi konjungtiva dan mukosa hidung nyata; lakrimasi, batuk, epistaksis, dan iritasi trakeobronkial. | |
+| **20 ppm** | Iritasi mata dan tenggorokan berat; deskuamasi epitel olfaktorius pada model hewan; kelumpuhan refleks batuk transien. | |
+| **50 ppm** | **Ketidaknyamanan ekstrem (*extreme discomfort*)**; batuk paroksismal hebat; spasme laring/glotis refleks (*glottic closure*) dalam beberapa menit. | |
+| **100 ppm** | **Batas NIOSH IDLH (*Immediately Dangerous to Life or Health*)**; bahaya langsung bagi saluran napas. | |
+| **400 – 500 ppm** | **Sangat berbahaya bagi kelangsungan hidup (*immediate danger to life*)**; kerusakan kornea berat, edema paru masif. | |
+| **> 1.000 ppm** | **Kematian dalam waktu < 10 menit** akibat asfiksia mekanik dan depresi pernapasan (human LCLo: 3.000 ppm selama 5 menit). | |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Reactive Airways Dysfunction Syndrome (RADS)**:
+  * Sekuel persisten pasca-paparan konsentrasi tinggi tunggal (memenuhi kriteria Brooks), ditandai dengan asma kronis non-imunologis dan hiperreaktivitas bronkial.
+* **Bronkitis Kronis Industri & Penurunan Faal Paru**:
+  * Paparan okupasi berulang jangka panjang mempercepat penurunan nilai \\(FEV_1\\) tahunan, memicu hipersekresi mukus, batuk produktif kronis, dan penyakit paru obstruktif.
+* **Erosi Enamel Gigi (*Dental Erosion*)**:
+  * Paparan gas \\(SO_2\\) kronis (10–30 ppm) yang larut dalam saliva membentuk asam memicu demineralisasi dan kerusakan enamel gigi seri (*rapid and painless dental destruction*).
+* **Gangguan Olfaktori & Pengecapan**:
+  * Penurunan sensitivitas indra penghidu (*hyposmia*) dan pengecapan setelah paparan kronis bertahun-tahun.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **Sulfur dioksida (\\(SO_2\\))** [CAS# 7446-09-5]:
+    * **NAB (8-jam TWA)**: Tidak ditetapkan nilai numerik TWA dalam tabel revisi (ditandai strip "-").
+    * **PSD (Paparan Singkat yang Diperkenankan / 15-menit STEL)**: **0,25 BDS (ppm)** [Notasi: **A4**].
+    * **Berat Molekul**: 64,07.
+    * *Keterangan Efek Kritis*: **Gangguan fungsi paru; Iritasi saluran pernafasan bawah**.
+* **ACGIH TLV (2018)**:
+  * **TLV-STEL (15-menit)**: **0,25 ppm** [Notasi: **A4**].
+* **NIOSH REL**:
+  * **TWA (10-jam)**: **2 ppm (5 mg/m³)**.
+  * **STEL (15-menit)**: **5 ppm (13 mg/m³)**.
+* **OSHA PEL**:
+  * **PEL-TWA (8-jam)**: **5 ppm (13 mg/m³)**.
+* **NIOSH IDLH (Immediately Dangerous to Life or Health)**:
+  * **100 ppm**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Permenaker No. 5 Tahun 2018 & ACGIH BEI**:
+  * **TIDAK ADA nilai numerik IPB/BEI yang ditetapkan untuk sulfur dioksida**.
+  * *Rasional*: Karena sulfit dioksidasi cepat menjadi sulfat endogen tubuh, pengukuran analit urin/darah tidak memiliki spesifisitas. Higiene industri bertumpu pada **pemantauan atmosfer udara lingkungan kerja (*air monitoring*)**.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Suportif
+* **Evakuasi & Dekontaminasi**:
+  * Pindahkan korban segera ke udara bersih.
+  * Lepaskan pakaian yang terkontaminasi gas atau cairan.
+  * **Irigasi Okular & Kulit**: Bilas mata dan kulit yang terpapar dengan air mengalir atau salin fisiologis minimal 15 menit. Kontak dengan cairan \\(SO_2\\) cair dapat menimbulkan luka bakar dingin (*frostbite*) yang memerlukan pencucian hati-hati.
+* **Oksigenasi dan Terapi Bronkodilator**:
+  * Berikan oksigen 100% terhumidifikasi untuk mengoreksi hipoksemia.
+  * **Inhalasi Beta-2 Agonis (Salbutamol)**: Diberikan segera via nebulisasi untuk membalikkan bronkospasme dan menurunkan resistensi jalan napas.
+* **Kortikosteroid**:
+  * Pemberian kortikosteroid inhalasi (budesonide) atau sistemik (metilprednisolon IV) diindikasikan pada bronkospasme refrakter, pneumonitis kimia, atau pencegahan RADS pasca-paparan masif.
+* **Pemantauan Jalan Napas**:
+  * Observasi ketat tanda-tanda edema laring atau edema glotis; siapkan intubasi endotrakeal dini bila terdapat stridor inspiratoris.
+* **Observasi Klinis**:
+  * Korban paparan masif atau yang bergejala respirasi wajib diobservasi minimal 24 jam untuk mengantisipasi risiko edema paru non-kardiogenik tertunda.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Pekerja Dinyatakan Tidak Laik (*Unfit*)*: Penderita **asma bronkial aktif/labil** (kontraindikasi relatif-mutlak karena bronkokonstriksi dapat terpicu pada 0,1–0,5 ppm), PPOK berat, atau hiperreaktivitas bronkus non-spesifik.
+* **Surveilans Kesehatan Kerja**:
+  * *Pemeriksaan Pra-Kerja*: Spirometri dasar (\\(FVC, FEV_1\\)), kuesioner riwayat atopi/asma, pemeriksaan gigi dasar.
+  * *Pemeriksaan Berkala*: Spirometri tahunan (memantau penurunan \\(FEV_1\\)), evaluasi kesehatan gigi dan rongga mulut.
+* **Hirarki Pengendalian Bahaya**:
+  * *Rekayasa Teknik*: Sistem cerobong tertutup, sistem penangkap gas basa (**Alkali/Lime Scrubbers**) untuk menetralkan emisi \\(SO_2\\), ventilasi pembuangan lokal (LEV).
+  * *Detektor Gas Kontinu*: Sensor gas \\(SO_2\\) elektrokimia dengan alarm pada level 0,25 ppm (PSD) dan 2 ppm.
+  * *Alat Pelindung Diri (APD)*: Respirator katrid gas asam (*acid gas cartridge*) untuk konsentrasi rendah; **SCBA bertekanan positif** untuk situasi kebocoran darurat atau area IDLH (\\(\ge 100\text{ ppm}\\)).
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Secara eksplisit tercantum dalam **Lampiran Bagian I.a.36**: *"Penyakit yang disebabkan oleh sulfur oksida"*.
+  * Juga diakui dalam **Lampiran Bagian II.a/II.b**: Penyakit saluran pernapasan (edema paru kimia, RADS, bronkitis kronis industri). Memberikan jaminan perlindungan JKK BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Menetapkan tata laksana diagnosis okupasi melalui **7 langkah diagnosis PAK** oleh dokter Sp.Ok.
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Sensitivitas Ekstrem Pasien Asma" (*The Asthmatic Paradox*)**:
+   * *Examination Trap*: Menganggap konsentrasi 0,1–0,5 ppm aman untuk semua orang karena di bawah ambang iritasi orang normal.
+   * *Fakta Klinis*: Penderita asma mengalami bronkospasme akut dan sesak napas pada konsentrasi sekecil **0,1–0,5 ppm** saat berolahraga/bekerja.
+2. **Kelarutan Air Tinggi = Efek Saluran Napas Atas**:
+   * Berbeda dengan fosgen (larut rendah), \\(SO_2\\) sangat larut air sehingga >90% tertahan di hidung/tenggorokan, memicu batuk dan rasa terbakar seketika yang memaksa korban melarikan diri. Penetrasi alveolar hanya terjadi pada pernapasan lewat mulut atau konsentrasi masif.
+3. **Erosi Gigi Okupasi Tanpa Rasa Nyeri (*Painless Dental Erosion*)**:
+   * Temuan fisik khas pada pekerja yang terpapar kronis: hilangnya enamel gigi seri bagian depan akibat reaksi asam sulfit/sulfat dalam saliva.
+
+---
+---
+
+# BAGIAN B: IODIN (\\(I_2\\), Uap Iodin, dan Iodofor)
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Kimia**:
+  * **Nama Kimia & CAS**: Iodin molekuler (\\(I_2\\)) [CAS# 7553-56-2]; Berat Molekul (BM) **253,81 g/mol** (tabel Permenaker mencantumkan 126,91 g/mol sebagai berat atom I).
+  * **Bentuk Sediaan**: Iodin kristal padat, uap iodin (*iodine vapor*), tinktur iodin (larutan hidroalkohol dengan KI), larutan Lugol (5% \\(I_2\\) + 10% KI dalam air), serta **iodofor (*iodophors*)** seperti povidone-iodine (PVP-I, kompleks polivinilpirolidon dengan iodin).
+* **Karakteristik Fisik-Kimia**:
+  * **Wujud & Fenomena Sublimasi**: Padatan kristal bersisik berwarna ungu kehitaman (*violet-black solid*) dengan kilau metalik dan bau tajam khas menusuk. **Menyublim langsung pada suhu ruang menjadi uap gas berwarna ungu lembayung (*violet/purple vapor*)** tanpa mencair terlebih dahulu. Titik leleh **113,7°C (236°F)**; titik didih **184,3°C (365°F)**.
+  * **Densitas & Tekanan Uap**: Berat jenis kristal **4,93**; tekanan uap **0,3 mmHg pada 25°C** (memiliki volatilitas nyata pada suhu ruang). Densitas uap gas sekitar **8,8** (jauh lebih berat daripada udara).
+  * **Kelarutan Air**: Iodin murni **sangat sedikit larut dalam air murni (0,03% pada 20°C / 0,3 g/L)**. Namun, sangat larut dalam larutan kalium iodida (membentuk ion triiodida \\(I_3^-\\)) dan pelarut organik (alkohol, kloroform, eter).
+  * **Karakteristik Iodofor (*Iodophors*)**: Kompleks iodin bebas dengan pembawa polimer larut air (seperti povidone). Bersifat larut air sempurna, tidak mengiritasi sekuat iodin bebas murni, dan melepaskan iodin aktif bebas (*free iodine*) secara perlahan dalam kesetimbangan.
+  * **Reaktivitas**: Bersifat sebagai **oksidator kuat (*strong oxidizer*)** dan halogen reaktif; bereaksi dengan logam, amonia, dan bahan organik mudah terbakar.
+  * **Faktor Konversi**: **\\(1\text{ ppm} = 10,38\text{ mg/m}^3\\)**; **\\(1\text{ mg/m}^3 = 0,096\text{ ppm}\\)** (pada 25°C, 1 atm).
+* **Klasifikasi Karsinogenitas**:
+  * **IARC & US EPA**: *Not Listed* (tidak terdapat bukti karsinogenitas).
+  * **ACGIH**: Diklasifikasikan dalam **Kategori A4** (*Not classifiable as a human carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Memiliki notasi A4**.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Industri Farmasi, Antiseptik, & Kesehatan**:
+  * Pembuatan dan formulasi antiseptik, disinfektan bedah, larutan iodofor (povidone-iodine), dan obat-obatan.
+  * Aplikasi antiseptik berulang pada luka bakar luas atau irigasi luka bedah di rumah sakit (sumber absorpsi sistemik iatrogenik).
+* **Industri Sintesis Kimia & Bahan Pewarna**:
+  * Bahan intermediat sintesis organik, zat warna, katalis polimerisasi, dan pembuatan garam-garam iodida/iodat.
+* **Laboratorium Analisis & Fotografi**:
+  * Penggunaan iodin kristal dalam titrasi iodometri, histopatologi, serta proses fotografi tradisional.
+* **Industri Pangan & Pakan Ternak**:
+  * Produksi suplemen kalium iodat (\\(KIO_3\\)) untuk iodisasi garam dapur dan pakan ternak.
+* **Industri Elektronik & Semikonduktor**:
+  * Proses pemurnian logam kemurnian tinggi (seperti proses van Arkel–de Boer untuk titanium dan zirkonium) menggunakan uap iodida.
+
+---
+
+### 3. Mekanisme Cedera dan Toksikokinetik (ADME)
+* **Reaktivitas Kimia Halogen & Oksidasi Jaringan**:
+  * Iodin molekuler (\\(I_2\\)) adalah oksidator kuat. Saat berkontak dengan jaringan biologis basah (saluran napas, mata, kulit), iodin mengoksidasi gugus sulfhidril (-SH), merusak asam amino esensial, dan mengendapkan protein seluler, memicu **nekrosis koagulatif korosif lokal**.
+* **Absorpsi**:
+  * *Inhalasi*: Uap iodin diabsorpsi cepat melalui membran mukosa pernapasan dan epitel alveolar.
+  * *Dermal*: Penetrasi perkutan iodin murni dan iodofor dapat berlangsung nyata, terutama bila diaplikasikan pada permukaan kulit yang rusak, denudasi luka bakar, selaput lendir, atau pada neonatus.
+  * *Ingesti*: Garam iodida atau iodin tertelan diserap cepat dan sempurna di lambung dan usus halus.
+* **Distribusi & Reduksi Menjadi Iodida**:
+  * Di dalam sirkulasi darah dan jaringan, molekul \\(I_2\\) bebas **segera direduksi secara kimiawi menjadi ion iodida (\\(I^-\\))**.
+  * Ion iodida didistribusikan ke cairan ekstraseluler dan **dikonsentrasikan secara aktif di kelenjar tiroid** melalui transporter spesifik **Sodium-Iodide Symporter (NIS)** dengan gradien konsentrasi 20 hingga 40 kali lipat dibanding plasma. Sebagian kecil juga terkonsentrasi di kelenjar saliva dan mukosa lambung.
+* **Metabolisme Tiroid**:
+  * Di folikel tiroid, enzim *thyroid peroxidase* (TPO) mengoksidasi iodida menjadi bentuk aktif untuk iodinasi tirosil pada tiroglobulin, membentuk hormon tiroksin (\\(T_4\\)) dan triiodotironin (\\(T_3\\)).
+* **Ekskresi**:
+  * Eliminasi iodida tubuh berlangsung terutama melalui **filtrasi glomerulus ginjal ke dalam urin (>90%)**; sebagian kecil diekskresikan lewat feses, keringat, saliva, dan air susu ibu (ASI).
+
+---
+
+### 4. Toksikodinamik (Mekanisme Patobiologi Okupasi)
+* **Efek Korosif & Iritan Mukosa Lokal**:
+  * Uap iodin mengiritasi konjungtiva dan saluran napas atas; pada konsentrasi tinggi merusak membran kapiler alveolar, memicu deskuamasi epitel dan **edema paru non-kardiogenik**.
+* **Disfungsi Tiroid: Efek Wolff-Chaikoff**:
+  * Pajanan atau absorpsi berlebih ion iodida secara mendadak memicu mekanisme autoregulasi intraseluler tiroid yang dikenal sebagai **efek Wolff-Chaikoff**.
+  * Tingginya kadar iodida intratiroidal secara paradoksikal **menghambat proses organifikasi iodium dan sintesis hormon tiroid**, memicu **hipotiroidisme transien atau persisten** disertai peningkatan kompensatoris hormon TSH (*thyroid-stimulating hormone*) dari hipofisis.
+* **Efek Jod-Basedow (Hipertiroidisme Terinduksi Iodin)**:
+  * Pada individu dengan penyakit tiroid nodular otonom yang mendasari (*toxic multinodular goiter* atau riwayat defisiensi iodium), lonjakan pasokan iodin dapat memicu kelebihan sintesis hormon tiroid tanpa kendali TSH, memicu **tirotoksikosis / hipertiroidisme (fenomena Jod-Basedow)**.
+* **Sindrom Iodisme (*Iodism*)**:
+  * Toksisitas subakut/kronis akibat akumulasi iodida sistemik, bermanifestasi sebagai inflamasi kelenjar saliva (*iodide mumps*), iritasi mukosa, dan erupsi kulit akneiformis (*iododerma*).
+
+---
+
+### 5. Biomonitoring Okupasi dan Evaluasi Klinis Laboratorium
+* **Biomarker Pajanan (Urin)**:
+  * **Kadar Iodin/Iodida Urin (*Urinary Iodine Excretion*)**:
+    * Dapat diukur menggunakan metode spektrometri massa (ICP-MS) atau reaksi katalitik Sandell-Kolthoff.
+    * *Keterbatasan Okupasi*: Sangat dipengaruhi oleh asupan diet (makanan laut, garam beriodium), sehingga **tidak ada nilai baku indeks pajanan biologi (IPB/BEI) yang diadopsi secara resmi**. Namun, kadar iodin urin > 500–1.000 µg/L dapat mengindikasikan kelebihan beban iodin sistemik.
+* **Evaluasi Fungsi Tiroid (Wajib pada Surveilans)**:
+  * **Kadar TSH Serum, Free T4 (fT4), dan Free T3 (fT3)**:
+    * Parameter biologis kritis untuk mendeteksi disfungsi tiroid subklinis atau klinis (hipotiroidisme terinduksi iodin ditandai dengan TSH meningkat dan fT4 turun).
+* **Evaluasi Klinis Organ Target**:
+  * **Spirometri (Faal Paru)**: Menilai fungsi ventilasi (\\(FEV_1, FVC\\)) bagi pekerja yang terpapar uap iodin di udara.
+  * **Rontgen Toraks**: Menilai risiko pneumonitis kimia atau edema paru pasca-inhalasi uap konsentrasi tinggi.
+  * **Pemeriksaan Oftalmologi**: Evaluasi defek epitel kornea dan konjungtivitis kimiawi menggunakan *slit-lamp*.
+
+---
+
+### 6. Perjalanan Waktu (Clinical Timeline)
+* **Kinetika Eliminasi**:
+  * Waktu paruh eliminasi iodida bebas dalam plasma tubuh berkisar antara **1,5 hingga 2 hari** pada individu dengan fungsi ginjal normal (dapat memanjang pada gagal ginjal). Waktu paruh hormon tiroid (\\(T_4\\)) adalah sekitar 7 hari.
+* **Perjalanan Waktu Klinis**:
+  * **Detik 0 – 30**: Iritasi instan pada mata, hidung, dan tenggorokan; lakrimasi, batuk refleks, dan sensasi terbakar.
+  * **Menit ke-5 – 60**: Pada paparan uap pekat, timbul nyeri dada substernal, dispnea, blefarospasme, dan suara serak.
+  * **Jam ke-6 – 24**: Risiko timbulnya edema laring atau edema paru non-kardiogenik; bila tertelan timbul gastroenteritis korosif berat dan syok hipovolemik.
+  * **Hari ke-3 – 14**: Manifestasi sindrom **iodisme** (pembengkakan kelenjar ludah, lesi kulit iododerma) atau pergeseran status tiroid (efek Wolff-Chaikoff / hipotiroidisme).
+  * **Bulan**: Resolusi fungsi tiroid pasca-penghentian paparan atau perkembangan hipotiroidisme/goiter permanen bila paparan berlanjut.
+
+---
+
+### 7. Efek Toksisitas Akut Berdasarkan Konsentrasi (Rentang ppm & Dosis Ingesti)
+Hubungan konsentrasi-respons uap iodin menurut data NIOSH dan literatur toksikologi:
+
+| Konsentrasi / Dosis | Manifestasi Fisiologis dan Klinis Manusia | Rujukan Kunci |
+| :--- | :--- | :--- |
+| **0,01 ppm** | **Nilai Ambang Batas (NAB) Permenaker 5/2018 & ACGIH TLV-TWA**. | |
+| **0,1 ppm** | **Batas NIOSH REL (Ceiling) & OSHA PEL (Ceiling)**; ambang deteksi bau uap iodin tercium samar; iritasi hidung/tenggorokan minimal. | |
+| **0,2 – 0,5 ppm** | Iritasi nyata pada membran mukosa mata dan hidung; rasa perih di tenggorokan, batuk ringan. | |
+| **0,8 – 1,0 ppm** | Iritasi okular berat, lakrimasi profus, batuk paroksismal, rasa tercekik, dispnea, dan sakit kepala. | |
+| **1,5 – 2,0 ppm** | **Batas NIOSH IDLH (*Immediately Dangerous to Life or Health* = 2 ppm)**; iritasi saluran pernapasan hebat, blefarospasme, tidak dapat ditoleransi oleh manusia. | |
+| **> 2 – 5 ppm** | Trakeobronkitis nekrotikans, laringospasme, dispnea berat, dan risiko tinggi **edema paru kimia akut**. | |
+| **Tertelan 2 – 4 gram (I2 murni)** | **Dosis letal ingesti manusia**; korosi masif saluran cerna, muntah berwarna cokelat/kebiruan, kolaps kardiovaskular, dan gagal ginjal akut. | |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Disfungsi Tiroid Kronis (Hipotiroidisme / Struma)**:
+  * Paparan berulang uap iodin atau absorpsi kronis menyebabkan supresi sintesis hormon tiroid (efek Wolff-Chaikoff persisten).
+  * Bermanifestasi klinis sebagai **hipotiroidisme** (kelelahan ekstrem, intoleransi dingin, bradikardia, peningkatan TSH) dan **pembesaran kelenjar tiroid (struma/gondok)**.
+* **Sindrom Iodisme (*Chronic Iodism*)**:
+  * Gejala klasik mencakup rasa logam di mulut (*brassy/metallic taste*), sialadenitis/pembengkakan kelenjar parotis (*iodine mumps*), rinorea profus, konjungtivitis berulang, stomatitis, sakit kepala, serta erupsi kulit akneiformis atau pustular (**iododerma**).
+* **Efek Saluran Pernapasan Kronis**:
+  * Faringitis kronis, batuk berulang, penurunan kapasitas ventilasi, asma akibat kerja (*occupational asthma*), atau sindrom RADS pasca-paparan uap akut masif.
+* **Dermatitis Kontak Alergika & Iritan**:
+  * Sensitisasi kontak kulit terhadap larutan iodofor atau iodin murni (dermatitis kontak alergi atau luka bakar kimia superficial).
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **Yodium / Iodin (\\(I_2\\))** [CAS# 7553-56-2]:
+    * **NAB (8-jam TWA)**: **0,01 BDS (ppm) [Inhalable Fraction and Vapor / IFV]**.
+    * **PSD / KTD (15-menit Ceiling)**: **0,1 BDS (ppm) [Vapor / V]**.
+    * **Notasi Karsinogen**: **A4** (*tidak dapat diklasifikasikan sebagai karsinogen pada manusia*).
+    * **Berat Molekul**: 126,91 (berat atom I).
+    * *Keterangan Efek Kritis*: **Iritasi saluran pernafasan atas; Hipotiroid**.
+* **ACGIH TLV (2018)**:
+  * **TLV-TWA**: **0,01 ppm** (IFV) [Notasi: **A4**].
+  * **TLV-STEL**: **0,1 ppm** (Vapor) [Notasi: **A4**].
+* **NIOSH REL**:
+  * **Ceiling (15-menit)**: **0,1 ppm (1 mg/m³)**.
+* **OSHA PEL**:
+  * **Ceiling**: **0,1 ppm (1 mg/m³)**.
+* **NIOSH IDLH (Immediately Dangerous to Life or Health)**:
+  * **2 ppm**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Permenaker No. 5 Tahun 2018 & ACGIH BEI**:
+  * **TIDAK ADA nilai numerik IPB/BEI yang ditetapkan untuk iodin**.
+  * *Rasional*: Karena kadar iodin/iodida urin sangat dipengaruhi oleh asupan diet masyarakat (garam dapur teriodisasi, boga bahari) dan penggunaan obat-obatan (misalnya amiodaron), biomarker ekskresi urin tidak memiliki nilai spesifisitas yang memadai untuk regulasi batas biologi kerja harian.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Antidot Spesifik
+* **Dekontaminasi Inhalasi, Mata, & Kulit**:
+  * Evakuasi korban dari area paparan uap ke udara segar; berikan oksigen 100% terhumidifikasi.
+  * **Dekontaminasi Okular**: Segera irigasi mata dengan air mengalir atau salin fisiologis minimal selama 15–20 menit.
+  * **Dekontaminasi Kulit**: Cuci segera dengan air dan sabun. Noda warna cokelat iodin pada kulit dapat dihilangkan secara kimiawi dengan mencuci menggunakan larutan **Natrium Tiosulfat encer (1% – 5%)**.
+* **Terapi Spesifik & Antidot pada Kasus Ingesti (Tertelan Iodin Bebas)**:
+  1. **Natrium Tiosulfat (*Sodium Thiosulfate*) - Terapi Lini Pertama**:
+     * Berikan larutan **Natrium Tiosulfat 1% hingga 5% per oral** (misalnya 100 mL larutan 1%).
+     * *Mekanisme Kimiawi*: Tiosulfat bekerja sebagai reduktor kuat yang secara instan mereduksi molekul iodin bebas (\\(I_2\\)) yang korosif dan toksik menjadi **ion iodida (\\(I^-\\)) yang non-korosif dan larut air**:
+       \\[I_2 + 2\,S_2O_3^{2-} \rightarrow 2\,I^- + S_4O_6^{2-}\\]
+  2. **Larutan Pati / Tepung Kanji (*Starch Solution*) - Antidot Alternatif Alami**:
+     * Jika natrium tiosulfat belum tersedia, segera berikan suspensi oral **tepung kanji, maizena, tepung beras, atau bubur kentang** (15 gram tepung dilarutkan dalam 500 mL air).
+     * *Mekanisme*: Fraksi amilosa pada pati mengikat molekul iodin bebas membentuk **kompleks inklusi pati-iodin berwarna biru tua / keunguan (*deep blue starch-iodine complex*)**. Kompleks makromolekul ini menonaktifkan daya korosif iodin bebas dan mencegah absorpsi lambung.
+* **Kontraindikasi Ingesti**:
+  * **Dilarang memicu muntah (*do NOT induce emesis*)** karena paparan korosif asam halogen dapat merusak ulang dinding esofagus dan orofaring.
+* **Tatalaksana Respirasi & Hipotiroidisme**:
+  * Berikan bronkodilator nebulisasi bila terjadi bronkospasme. Lakukan intubasi profilaktik dini bila terdapat edema laring.
+  * Pasien yang mengalami hipotiroidisme terinduksi iodin (efek Wolff-Chaikoff) umumnya pulih spontan dalam beberapa minggu pasca-penghentian paparan; suplementasi levotiroksin transien diberikan bila gejala klinis berat.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Pekerja Dinyatakan Tidak Laik (*Unfit*)*: Penderita **penyakit tiroid aktif** (penyakit Hashimoto, struma nodusa toksik, riwayat tirotoksikosis), penyakit ginjal kronis (klirens iodida terganggu), serta asma bronkial berat atau dermatitis kontak alergi terhadap iodin.
+* **Surveilans Kesehatan Kerja**:
+  * *Pra-Kerja*: Skrining fungsi tiroid dasar (**TSH, fT4**), spirometri dasar, dan pemeriksaan kulit.
+  * *Berkala*: Evaluasi kadar TSH serum berkala (tiap 1–2 tahun) untuk mendeteksi hipotiroidisme subklinis, spirometri bagi pekerja yang terpapar uap, dan inspeksi kulit.
+* **Hirarki Pengendalian Lingkungan Kerja**:
+  * *Rekayasa Teknik*: Penanganan kristal iodin dan larutan pekat wajib dilakukan di dalam lemari asam (*chemical fume hood*) berventilasi baik; sistem pemipaan tertutup.
+  * *Detektor Gas*: Pemantauan kualitas udara uap halogen secara berkala di area formulasi farmasi.
+  * *Alat Pelindung Diri (APD)*:
+    * Perlindungan pernapasan: Respirator katrid khusus uap halogen/iodin; **SCBA bertekanan positif** bila konsentrasi mendekati atau melampaui IDLH (**2 ppm**).
+    * Perlindungan tubuh: Kacamata pelindung kimia (*chemical splash goggles*), sarung tangan nitril atau neoprena tebal, dan jas laboratorium tahan kimia.
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Tercakup dalam **Lampiran Bagian I.a.11**: *"Penyakit yang disebabkan oleh derivat halogen"* (karena iodin merupakan unsur golongan halogen bersama fluor, klor, dan brom).
+  * Juga terakomodasi dalam **Lampiran Bagian I.a.39**: Penyakit yang disebabkan oleh bahan kimia lain di tempat kerja yang memiliki hubungan langsung dengan pajanan (misalnya hipotiroidisme okupasi akibat iodin).
+  * Memberikan dasar hukum klaim pengobatan dan santunan kecelakaan kerja JKK BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Kewajiban dokter Sp.Ok membuktikan hubungan kausalitas gangguan fungsi tiroid atau penyakit paru pekerja melalui **pendekatan 7 langkah diagnosis PAK**.
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Batas IDLH Sangat Rendah" (*Extreme Toxicity Trap*)**:
+   * *Examination Trap*: Mengira bahwa karena iodin digunakan sebagai obat antiseptik luka, uapnya relatif aman.
+   * *Fakta Ujian*: **IDLH uap iodin adalah 2 ppm**. Ini jauh lebih toksik dibanding gas klorin (IDLH 10 ppm) atau asam sianida (IDLH 50 ppm). Uap iodin sangat merusak parenkim paru.
+2. **Karakteristik Sublimasi Fisik**:
+   * Iodin padat tidak perlu dipanaskan hingga mendidih untuk membahayakan pernapasan; kristal iodin **menyublim langsung menjadi uap gas ungu pada suhu ruangan**. Wadah kristal yang terbuka sedikit saja dapat memicu atmosfer kerja beracun.
+3. **Efek Paradoksal pada Tiroid (Wolff-Chaikoff vs. Jod-Basedow)**:
+   * *Wolff-Chaikoff*: Kelebihan iodin pada orang dengan kelenjar normal/rentan justru **menghambat sintesis hormon tiroid \\(\rightarrow\\) Hipotiroidisme dan Struma** (tercantum spesifik sebagai efek kritis Permenaker 5/2018).
+   * *Jod-Basedow*: Kelebihan iodin pada penderita nodul tiroid otonom memicu **Hipertiroidisme / Tirotoksikosis**.
+4. **Antidot Triase Lapangan: Tepung Kanji / Pati & Tiosulfat**:
+   * Menemukan korban tertelan cairan iodin: berikan suspensi **tepung kanji/maizena** di air (bereaksi menghasilkan warna biru tua) atau **natrium tiosulfat oral** untuk mengubah iodin bebas menjadi iodida tak beracun.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Sulfur Dioksida (\\(SO_2\\)) vs. Iodin (\\(I_2\\))
+
+| No | Poin Parameter | (A) SULFUR DIOKSIDA (\\(SO_2\\)) | (B) IODIN (\\(I_2\\) / Iodofor) | Rujukan Utama Notebook |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Karsinogenitas** | Gas tak berwarna, bau menyengat mencekik; BM 64,07; TD -10°C; **densitas uap 2,26 (2,2x lebih berat dari udara)**; kelarutan air sangat tinggi (8,5–10%); nonflammable. Karsinogenitas: **Non-karsinogen (IARC Grup 3, ACGIH A4, Permenaker 5/2018 A4)**. | Padatan ungu kehitaman, **menyublim jadi uap gas ungu** pada suhu ruang; bau tajam; BM 253,81; kelarutan air murni rendah (0,03%), tapi iodofor/larutan KI larut baik; oksidator kuat. Karsinogenitas: **Non-karsinogen (ACGIH A4, Permenaker 5/2018 A4)**. | |
+| **2** | **Sumber & Penggunaan** | Pembakaran batu bara/minyak (PLTU), peleburan bijih logam, sintesis asam sulfat, pulp & kertas, pengawet makanan/anggur, fumigan biji-bijian, polusi kabut asap. | Industri antiseptik/farmasi (PVP-I, Lugol), sintesis kimia, fotografi, iodisasi garam dapur, katalis, pemurnian logam semikonduktor. | |
+| **3** | **Mekanisme Cedera & Toksikokinetik** | **Kelarutan air sangat tinggi \\(\rightarrow\\) terfiltrasi >90–95% di saluran napas atas**. Hidrolisis menjadi **asam sulfit (\\(H_2SO_3\\))**, bisulfit, dan ion \\(H^+\\). Absorpsi darah via alfa-globulin, dioksidasi oleh **sulfit oksidase** hepar menjadi sulfat, ekskresi urin. | Uap terinhalasi atau perkutan/ingesti. Oksidator kuat \\(\rightarrow\\) nekrosis koagulatif mukosa. Direduksi cepat menjadi **iodida (\\(I^-\\))**, dikonsentrasikan aktif di kelenjar tiroid via **NIS symporter**. Ekskresi >90% via filtrasi ginjal ke urin. | |
+| **4** | **Toksikodinamik** | **Refleks bronkokonstriksi sangat kuat** via stimulasi saraf kolinergik/parasimpatis & serat C; iritasi nervus trigeminus; **hipersensitivitas ekstrem penderita asma (0,1–0,5 ppm)**; nekrosis silia; konsentrasi masif memicu edema paru & RADS. | Iritasi korosif saluran napas & mata. Efek endokrin: **Efek Wolff-Chaikoff** (inhibisi sintesis hormon tiroid \\(\rightarrow\\) **hipotiroidisme & struma**); atau efek Jod-Basedow (tirotoksikosis); sindrom iodisme (sialadenitis, iododerma). | |
+| **5** | **Biomonitoring & Evaluasi Medis** | **Tidak ada biomarker paparan spesifik** (sulfat urin tidak spesifik). Evaluasi: spirometri serial (penurunan \\(FEV_1\\), resistensi jalan napas), AGD, rontgen dada, skrining erosi gigi. | **Tidak ada biomarker paparan resmi/BEI** (iodin urin dipengaruhi diet). Evaluasi: **Uji fungsi tiroid (TSH, fT4, fT3)**, spirometri, rontgen dada, evaluasi mata *slit-lamp*. | |
+| **6** | **Perjalanan Waktu Klinis** | Reaksi hidrolisis & bronkospasme instan (puncak 2–10 menit). Membaik spontan dalam 30–60 menit pada paparan ringan. **Edema paru tertunda (6–24 jam)** pada paparan masif. Sekuel RADS/bronkitis kronis (bulan–tahun). | Iritasi uap instan (0–30 detik). Korosi lambung/edema paru (jam ke-1–24). **Iodisme dan hipotiroidisme/peningkatan TSH timbul dalam hitungan hari hingga minggu**. Resolusi tiroid pasca-lepas paparan. | |
+| **7** | **Efek Akut per Rentang ppm** | **0,1–0,5 ppm: pemicu asma akut**. 1–2 ppm: iritasi ringan. 5 ppm: resistensi napas meningkat. 6–10 ppm: lakrimasi, batuk. 20 ppm: deskuamasi epitel. 50 ppm: spasme glotis. **100 ppm: NIOSH IDLH**. 400–500 ppm: bahaya maut. >1000 ppm: letal <10 m. | 0,01 ppm: NAB. **0,1 ppm: NIOSH/OSHA Ceiling** (bau tercium samar). 0,2–0,5 ppm: iritasi mata & hidung. 0,8–1 ppm: batuk paroksismal, sesak. **2 ppm: NIOSH IDLH (sangat toksik!)**. >2–5 ppm: edema paru akut. Ingesti letal: 2–4 g I2. | |
+| **8** | **Efek Kronis & Sekuel** | **RADS (Reactive Airways Dysfunction Syndrome)**; bronkitis kronis industri; percepatan penurunan \\(FEV_1\\); **erosi enamel gigi (*dental erosion*)**; hiposmia/kehilangan pengecapan. | **Hipotiroidisme dan struma/gondok** (efek Wolff-Chaikoff); **Iodisme** (rasa logam, pembengkakan parotis/mumps, iododerma akneiformis); bronkitis kronis/RADS; konjungtivitis kronis. | |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018**: PSD = **0,25 BDS (ppm)** [A4]. **ACGIH TLV**: STEL **0,25 ppm** [A4]. **NIOSH REL**: TWA 2 ppm, ST 5 ppm. **OSHA PEL**: TWA 5 ppm. **IDLH: 100 ppm**. | **Permenaker 5/2018**: NAB = **0,01 BDS (IFV)**; PSD/KTD = **0,1 BDS (V)** [A4]. **ACGIH TLV**: TWA 0,01 ppm (IFV), STEL 0,1 ppm (V). **NIOSH REL**: C 0,1 ppm. **OSHA PEL**: C 0,1 ppm. **IDLH: 2 ppm**. | |
+| **10** | **BEI / IPB** | **TIDAK ADA nilai numerik IPB/BEI** yang ditetapkan (sulfat dipengaruhi diet/endogen). Pemantauan udara kerja. | **TIDAK ADA nilai numerik IPB/BEI** yang ditetapkan (iodida urin dipengaruhi diet boga bahari/garam). | [542, Permenaker 5/2018] |
+| **11** | **Tatalaksana Akut** | Evakuasi aman; lepas pakaian; irigasi mata/kulit \\(\ge 15\\) menit. **O2 100% terhumidifikasi**. **Nebulisasi beta-2 agonis (salbutamol)** segera untuk bronkospasme. Kortikosteroid inhalasi/IV. Observasi edema jalan napas/paru. | Irigasi mata & cuci kulit air/sabun. Noda kulit hilang dengan tiosulfat 1–5%. **Tertelan Iodin Bebas**: Berikan oral **Natrium Tiosulfat 1–5%** (mereduksi I2 jadi I⁻) atau **suspensi tepung kanji/pati** (membentuk kompleks biru tua non-toksik); dilarang emesis. | |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi penderita asma bronkial, PPOK, hiperreaktivitas saluran napas. Surveilans: spirometri berkala, cek gigi. Pengendalian: cerobong tertutup, *scrubber* kapur/basa, detektor gas alarm 0,25 ppm. APD: katrid gas asam / SCBA. | Kelaikan kerja: *Unfit* bagi penyakit tiroid aktif (Hashimoto, goiter nodular), asma, gagal ginjal. Surveilans: fungsi tiroid berkala (**TSH, fT4**), spirometri. Pengendalian: lemari asam, sistem tertutup. APD: respirator uap halogen / SCBA (IDLH 2 ppm). | |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019 Lampiran I.a.36** (*penyakit yang disebabkan oleh sulfur oksida*) & II.a/II.b (saluran pernapasan); klaim JKK BPJS. Didukung PP 28/2024 & Permenkes 11/2022. | **Perpres No. 7 Tahun 2019 Lampiran I.a.11** (*derivat halogen*) & I.a.39 (penyakit akibat bahan kimia lain terkait kerja); klaim JKK BPJS. Didukung PP 28/2024 & Permenkes 11/2022. | |
+| **14** | **Clinical Pearls & Trap** | 1) Penderita asma mengalami bronkospasme berat pada 0,1–0,5 ppm (ambang bau orang normal). 2) Daya larut air tinggi membatasi cedera pada saluran napas atas kecuali dosis masif. 3) Erosi gigi tanpa nyeri akibat saliva asam. | 1) IDLH sangat rendah (2 ppm), menandakan uap iodin sangat toksik bagi paru. 2) Kristal iodin menyublim langsung menjadi uap ungu di suhu ruang. 3) Efek Wolff-Chaikoff memicu hipotiroidisme/gondok. 4) Antidot lambung: tepung kanji (biru tua) & natrium tiosulfat. | |
+
+---
+
+💡 *Apakah Anda ingin kita melanjutkan modul toksikologi okupasi ini ke bab **Asam-Asam Anorganik Korosif Pekat** di industri (seperti **Asam Sulfat / \\(H_2SO_4\\)**, **Asam Nitrat / \\(HNO_3\\)**, dan bahaya aritmia hipokalsemia mematikan dari **Asam Fluorida / HF** beserta protokol kalsium glukonatnya)?*
