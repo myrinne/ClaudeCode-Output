@@ -1,0 +1,21 @@
+| Poin | Karbamat: karbaril, karbofuran, metomil, propoksur |
+|---|---|
+| **1. Sifat dan klasifikasi** | Ester asam karbamat (**N-metil karbamat**), lipofilik sedang sampai tinggi, volatilitas rendah. Karbaril (Sevin; padatan putih, BM 201,2), karbofuran (Furadan), metomil (Lannate; bau belerang ringan), propoksur (Baygon). **WHO: aldikarb Ia; karbofuran dan metomil Ib; karbaril dan propoksur II.** IARC: karbaril Grup 3. **ACGIH/Permenaker: A4** |
+| **2. Sumber** | Insektisida pertanian (wereng, penggerek, kutu daun, nematoda), kecoa/nyamuk rumah tangga (propoksur), karbaril dust kebun, veteriner. **Obat karbamat:** piridostigmin dan neostigmin (miastenia, profilaksis soman), rivastigmin (demensia), fisostigmin (glaukoma, antidot antikolinergik) |
+| **3. Toksikokinetik** | Absorpsi cepat (GI > 90%, inhalasi, kulit; kulit meningkat saat panas dan berkeringat). **Tanpa bioaktivasi (inhibitor langsung).** Detoksifikasi cepat: hidrolisis ester **karboksilesterase**, CYP3A4/2B6; aldikarb → sulfoksida (FMO1). **> 80 sampai 90% urin dalam 24 sampai 48 jam** |
+| **4. Toksikodinamik** | **Karbamilasi reversibel Ser-203 AChE; dekarbamilasi spontan t½ 30 sampai 40 menit; TIDAK ADA aging** (tidak ada gugus alkil fosfat) → enzim pulih tanpa sintesis baru. Triad muskarinik, nikotinik, SSP seperti OP. **Inhibisi NTE reversibel tanpa aging → TIDAK menyebabkan OPIDN** (karbamat pra-pajanan malah memproteksi NTE) |
+| **5. Biomonitoring** | AChE eritrosit dan BuChE plasma. **JEBAKAN: dekarbamilasi in vitro (di tabung, suhu ruang, pengenceran reagen Ellman) → hasil NORMAL PALSU.** **Sampel heparin segera didinginkan 0 sampai 4°C dan diuji cepat.** Urin: **1-naftol (karbaril)**, isopropoksifenol (propoksur); akhir shift akhir minggu |
+| **6. Waktu paruh** | Senyawa plasma **1 sampai 4 jam**; dekarbamilasi **30 sampai 40 menit**; pemulihan AChE **24 sampai 48 jam** (jauh lebih cepat dari OP) |
+| **7. Efek akut** | Krisis kolinergik identik OP (SLUDGE, bronkorea, bronkospasme, bradikardia, miosis, fasikulasi) tetapi **singkat dan self-limiting (6 sampai 24 jam)**, onset menit sampai 1 sampai 2 jam. **Sindrom intermediate sangat jarang** |
+| **8. Efek kronis** | **Tidak ada OPIDN.** Dosis tinggi: gangguan spermatogenesis (karbaril, metomil), toksisitas perkembangan embrio |
+| **9. Batas pajanan** | **Permenaker 5/2018 = ACGIH TLV-TWA:** **karbaril 0,5 mg/m3** (IFV, A4, Kulit, BEI-A); **karbofuran 0,1** (IFV, A4); **metomil 0,2** (IFV, A4, Kulit); **propoksur 0,5** (A4). NIOSH REL karbaril 5, karbofuran 0,1, metomil 2,5 mg/m3. IDLH karbaril 100 mg/m3 |
+| **10. BEI / IPB** | **Sama dengan OP: AChE eritrosit ≥ 70% baseline individu** (penurunan > 30% = pajanan berlebih), sampel kapan saja (Permenaker 5/2018 dan ACGIH, kelompok "pestisida penghambat asetilkolinesterase") |
+| **11. Tatalaksana akut** | Oksigen dahulu, lalu **atropin 1 sampai 2 mg IV digandakan tiap 5 menit sampai paru kering** (kebutuhan total jauh lebih kecil dari OP). **Oksim (2-PAM) TIDAK rutin;** karbaril: oksim dilaporkan memperburuk (kompleks karbamil-oksim, mortalitas hewan naik) → hindari pada karbamat murni ringan-sedang. **Beri 2-PAM (30 mg/kgBB IV lalu 8 sampai 10 mg/kgBB/jam) bila berat refrakter atau agen tidak jelas/campuran dengan OP.** **Suksinilkolin kontraindikasi.** Cuci kulit sabun + air; lavage + arang aktif 1 g/kgBB bila tertelan < 1 jam |
+| **12. Kelaikan kerja dan manajemen** | **Pindah sementara bila AChE RBC turun > 30% baseline atau bergejala.** **Fit bila gejala hilang dan AChE ≥ 80% baseline** (pulih 2 sampai 3 hari, vs 60 sampai 120 hari pada OP). Baseline ChE 2 kali pra-kerja. **Pengendalian:** formulasi tertutup, LEV; respirator OV/P100, sarung nitril/butil, pelindung mata, pakaian tahan kimia |
+| **13. Lain-lain** | **Perpres 7/2019 Lampiran I.a butir 35 (pestisida)**, JKK sampai 3 tahun setelah hubungan kerja berakhir; cek ulang butir |
+
+**Pearl dan jebakan ujian**
+- **Pasien jelas kolinergik tetapi ChE "normal" = dekarbamilasi in vitro (false-normal):** diagnosis dan atropin berdasarkan klinis, jangan menunggu lab.
+- **Oksim dapat memperberat karbaril:** hanya untuk kasus berat refrakter atau campuran dengan OP.
+- **Tidak ada aging, tidak ada OPIDN;** pulih 24 sampai 48 jam.
+- **Suksinilkolin tetap kontraindikasi.**

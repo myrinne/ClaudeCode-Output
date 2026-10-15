@@ -1,0 +1,267 @@
+Berikut adalah catatan tinjauan toksikologi okupasi komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai **Asam Fluorida / Hidrogen Fluorida (HF)**, yang diintegrasikan berdasarkan literatur patologi forensik kecelakaan industri, telaah sistematis kedokteran darurat, Permenaker No. 5 Tahun 2018, dan regulasi Penyakit Akibat Kerja (PAK) di Indonesia.
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Kimia**:
+  * **Nama & Rumus**: Asam fluorida / Hidrogen fluorida anhidrat (\\(HF\\)) [CAS# 7664-39-3]; Berat Molekul (BM) **20,01 g/mol** (tabel Permenaker: 20,01).
+  * **Sinonim**: *Hydrofluoric acid*, *anhydrous hydrogen fluoride* (AHF), *fluorhydric acid*.
+* **Karakteristik Fisik-Kimia Kunci**:
+  * **Wujud & Titik Didih**: Gas tidak berwarna atau cairan berasap pekat (*fuming liquid*) pada suhu di bawah **19,5°C (67°F)**; titik leleh **-83,6°C (-118°F)**. Sangat volatil dengan tekanan uap jenuh mencapai **783 mmHg pada 20°C**.
+  * **Densitas Uap Relatif**: **0,69 – 0,70** (udara = 1,0); uap murni lebih ringan dari udara, namun uap yang bercampur dengan kelembapan udara membentuk aerosol kabut asam pekat yang dapat melayang rendah.
+  * **Karakteristik Disosiasi & Sifat "Asam Lemah Secara Kimiawi"**:
+    * Memiliki konstanta disosiasi asam **\\(pKa = 3,17\\)**.
+    * *Prinsip Toksikologi Kritis*: Berbeda dari asam kuat mineral murni (seperti \\(HCl\\) atau \\(H_2SO_4\\) yang terdisosiasi sempurna), dalam larutan encer asam fluorida tergolong **asam lemah** secara termodinamika. 
+    * Sebagian besar molekul \\(HF\\) tetap berada dalam bentuk molekul netral **non-terionisasi**. Molekul netral non-polar ini sangat **lipofilik**, sehingga mampu menembus lapisan lipid ganda membran sel dan sawar stratum korneum kulit dengan kecepatan difusi yang luar biasa tanpa hambatan sawar fisik.
+  * **Kelarutan Air**: Bercampur sempurna dengan air (*miscible*) disertai reaksi hidrasi eksotermik.
+  * **Korosivitas Khusus**: Mengkorosi dan melarutkan kaca, silika, silikat, beton, serta sebagian besar logam (membentuk gas hidrogen yang mudah terbakar).
+* **Klasifikasi Karsinogenitas**:
+  * **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+  * **ACGIH**: *Not Listed* sebagai karsinogen manusia.
+  * **Permenaker No. 5 Tahun 2018**: **Tidak memiliki notasi karsinogen (tanpa notasi A1, A2, maupun A3)**; hanya memiliki notasi **Kulit** dan **BEI**.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Industri Semikonduktor & Mikroelektronika**:
+  * Digunakan secara masif untuk pembersihan wafer silikon (*silicon wafer cleaning/washing*), etsa sirkuit mikro (*microchip etching*), dan penipisan lapisan oksida.
+* **Industri Kaca & Keramik (*Glass Etching & Frosting*)**:
+  * Etsa dekoratif, pemolesan kimia kaca (*glass frosting/polishing*), dan pembuatan bola lampu.
+* **Kilang Pengolahan Minyak Bumi (*Petroleum Refining*)**:
+  * Katalis utama dalam unit alkilasi (*HF alkylation unit*) untuk memproduksi bensin oktan tinggi (*high-octane aviation/motor fuel*).
+* **Pembersih Karat & Pengkilap Aluminium (*Rust Removers & Metal Cleaners*)**:
+  * Bahan aktif formulasi penghilang noda karat tekstil, pembersih velg roda mobil (*wheel cleaners*), cairan pembersih kerak batu marmer/bata, dan cairan etsa logam paduan aluminium.
+* **Sintesis Kimia & Industri Fluorokarbon**:
+  * Bahan baku produksi gas refrigeran hidrofluorokarbon (HFC/HCFC), polimer fluoropolimer (PTFE / Teflon), serta pemisahan isotop dan pemurnian bahan bakar nuklir (sintesis uranium heksafluorida / \\(UF_6\\)).
+
+---
+
+### 3. Mekanisme Cedera dan Toksikokinetik (ADME)
+* **Mekanisme Cedera Jaringan (Toksikodinamik Lokal)**:
+  * Cedera lokal \\(HF\\) berlangsung melalui dua fase destruksi patofisiologis:
+    1. *Korosi Korosif Superfisial Awal*: Ion hidrogen (\\(H^+\\)) bebas dalam jumlah terbatas menyebabkan luka bakar asam korosif minor pada epidermis superfisial.
+    2. *Penetrasi Transmural & Pelepasan Fluorida Bebas*: Molekul \\(HF\\) netral yang sangat lipofilik menembus stratum korneum, lapisan dermis, fascia, dan periosteum tanpa hambatan. Di lingkungan intraseluler yang lebih netral, \\(HF\\) berdisosiasi melepaskan **ion fluorida bebas (\\(F^-\\))** yang sangat reaktif dan elektronegatif.
+* **Pengikatan Kation Bivalen & Pembentukan Garam Tak Larut**:
+  * Ion \\(F^-\\) bebas memiliki afinitas pengkhelat kimiawi yang ekstrem terhadap kalsium (\\(Ca^{2+}\\)) dan magnesium (\\(Mg^{2+}\\)) biologis, mengendapkannya menjadi garam yang tidak larut:
+    \\[Ca^{2+} + 2\,F^- \rightarrow CaF_2 \downarrow \quad (K_{sp} = 3,9 \times 10^{-11})\\]
+    \\[Mg^{2+} + 2\,F^- \rightarrow MgF_2 \downarrow\\]
+  * Terjadi deplesi masif kalsium dan magnesium intraseluler serta ekstraseluler, memicu **nekrosis likuefaktif (*liquefactive necrosis*)** jaringan lunak yang meluas secara progresif ke jaringan subkutan, tendon, dan melisiskan tulang (*osteolysis*).
+* **Inhibisi Pompa Na⁺/K⁺ ATPase & Pergeseran Elektrolit**:
+  * Penipisan kalsium intraseluler dan toksisitas langsung fluorida menghambat aktivitas enzim **\\(Na^+/K^+\\)-ATPase** pada membran sel dan ujung saraf sensorik.
+  * Hal ini memicu depolarisasi membran spontan dan kebocoran ion kalium ke ruang ekstraseluler secara masif (**hiperkalemia lokal dan sistemik**). Pelepasan neurotransmiter nosiseptif akibat pergeseran ionik membran saraf ini menimbulkan **nyeri berdenyut hebat yang tidak proporsional dengan lesi kulit (*pain out of proportion to physical findings*)**.
+* **Toksikokinetik Sistemik**:
+  * *Absorpsi*: Terjadi sangat cepat melalui kulit, epitel paru (inhalasi), dan mukosa lambung (ingesti).
+  * *Distribusi*: Ion fluorida yang masuk ke sirkulasi darah terdistribusi ke seluruh cairan tubuh; **sekitar 50% fraksi fluorida sistemik disimpan dan terkonsentrasi secara avid pada matriks hidroksiapatit tulang dan gigi** menggantikan gugus hidroksil membentuk fluorapatit.
+  * *Eliminasi*: Tidak mengalami biotransformasi hepar. Eliminasi berlangsung murni melalui **filtrasi glomerulus ginjal ke dalam urin (>90%)** dengan waktu paruh eliminasi plasma fase cepat berkisar antara **2 hingga 9 jam**.
+
+---
+
+### 4. Toksikodinamik Sistemik (The Lethal Metabolic Triad)
+Penyerapan ion fluorida sistemik memicu sindrom kolaps kardiovaskular fatal yang dimediasi oleh gangguan metabolik trias letal:
+* **Hipokalsemia Berat & Akut**:
+  * Presipitasi kalsium terionisasi (\\(iCa\\)) menjadi \\(CaF_2\\) menyebabkan penurunan tajam kadar kalsium aktif darah (dalam kasus fatal dapat anjlok hingga **< 0,2 – 0,5 mmol/L**; dilaporkan mencapai level kritis **0,192 mmol/L**).
+* **Hipomagnesemia Berat**:
+  * Presipitasi ion magnesium menjadi \\(MgF_2\\) dan peningkatan ekskresi magnesium urin melumpuhkan kofaktor enzim fosforilasi oksidatif.
+* **Hiperkalemia Masif**:
+  * Kebocoran kalium intraseluler akibat kelumpuhan pompa \\(Na^+/K^+\\)-ATPase, asidosis metabolik, dan lisis seluler luas membanjiri sirkulasi darah dengan kalium.
+* **Kardiotoksisitas Mematikan & Elektrokardiografi (EKG)**:
+  * *Aktivasi Adenilat Siklase*: Ion fluorida secara langsung menstimulasi enzim adenilat siklase membran miokard, meningkatkan cAMP intraseluler dan memicu iritabilitas miokard ekstrem.
+  * *Manifestasi EKG Serial*:
+    1. **Perpanjangan interval QTc (*prolonged QT interval*)** yang progresif akibat hipokalsemia berat.
+    2. Gelombang T runcing dan tinggi (*peaked T waves*), mendatarnya gelombang P, dan pelebaran kompleks QRS akibat hiperkalemia.
+    3. Takikardia ventrikel polimorfik (*Torsades de pointes*), **Fibrilasi Ventrikel (VF) rekuren/refrakter** (dapat terjadi hingga >9 episode dalam 2 jam pertama), bradikardia nodal berat, asistol, dan henti jantung.
+
+---
+
+### 5. Biomonitoring Okupasi dan Evaluasi Laboratorium
+* **Evaluasi Laboratorium Kritis Fase Akut**:
+  * **Kalsium Terionisasi Darah (*Blood Ionized Calcium / iCa*)**:
+    * Merupakan **parameter laboratorium penentu paling kritis**. Kalsium total serum sering kali tidak menggambarkan kondisi riil akibat pergeseran ikatan protein; pemeriksaan \\(iCa\\) wajib diulang serial tiap 1–2 jam selama fase resusitasi kritis.
+  * **Serum Elektrolit Lengkap Serial**: Pemantauan ketat kadar magnesium serum (\\(Mg^{2+}\\)), kalium (\\(K^+\\)), natrium, dan klorida.
+  * **Pemantauan EKG Kontinu (*Continuous Cardiac Monitoring*)**: Wajib dipasang di sisi ranjang sejak menit pertama pada seluruh pasien terpapar \\(HF\\) untuk mendeteksi pemanjangan QTc atau distorsi gelombang T.
+  * **Analisis Gas Darah (AGD) & Laktat**: Menilai derajat asidosis metabolik dan hipoksemia.
+* **Biomonitoring Paparan Okupasi (Fluorida Urin)**:
+  * **Kadar Fluorida dalam Urin (*Urinary Fluoride Excretion*)**:
+    * Diukur menggunakan metode *Ion-Selective Electrode* (ISE) atau kromatografi ion terstandarisasi.
+    * Merupakan biomarker paparan internal spesifik yang diadopsi secara resmi dalam regulasi nasional.
+  * **Standar Indeks Pajanan Biologi (IPB / BEI)**:
+    * Sesuai **Permenaker No. 5 Tahun 2018 (Lampiran 4 No. 21)** dan **ACGIH BEI (2018)** untuk bahan *Fluorida*:
+      * **Sebelum shift kerja (*Prior to shift*)**: **2 mg/L**.
+      * **Akhir shift kerja (*End of shift*)**: **3 mg/L**.
+      * *Catatan Notasi*: **B** (*background* diet normal dari air minum terfluoridasi, teh, dan makanan) serta **Ns** (*non-spesifik*).
+
+---
+
+### 6. Perjalanan Waktu dan Ambang Letal (Time Course & BSA Threshold)
+* **Karakteristik Keterlambatan Nyeri Sesuai Konsentrasi (*Delayed Pain Window*)**:
+  * **Konsentrasi < 20%**: Awitan rasa nyeri, eritema, dan kerusakan jaringan **tertunda antara 1 hingga 24 jam (paling sering 6 – 12 jam)** pasca-paparan. Korban sering tidak menyadari paparan, pulang ke rumah tanpa mencuci kulit, dan terbangun di malam hari dengan nyeri berdenyut subkutan yang sangat menyiksa.
+  * **Konsentrasi 20% – 50%**: Nyeri dan eritema timbul dalam rentang waktu **1 hingga 8 jam**.
+  * **Konsentrasi > 50% (termasuk HF Anhidrat / Murni)**: Menimbulkan rasa nyeri terbakar hebat seketika, pemucatan kulit (*blanching*), dan destruksi jaringan instan.
+* **Ambang Batas Luas Permukaan Tubuh (TBSA Threshold) yang Berpotensi Letal**:
+  * **Ambang Kematian Sangat Kecil**: Paparan asam fluorida pekat (> 50% atau anhidrat murni) pada area kulit seluas **hanya 1% – 2,5% Total Body Surface Area (TBSA)** (setara dengan ukuran satu telapak tangan korban) **SUDAH CUKUP UNTUK MEMICU KEMATIAN CEPAT** akibat hipokalsemia letal dan kolaps kardiovaskular dalam 1–2 jam pasca-paparan (seperti kasus fatal pekerja kilang minyak Tepperman dengan pajanan \\(\le 2,5\%\\) BSA, dan pekerja semikonduktor Korea dengan pajanan \\(< 5\%\\) BSA di area leher).
+  * **Aturan Kritis Toksisitas Sistemik**: Hipokalsemia berat dipastikan berkembang pada:
+    1. Luka bakar > 1% TBSA dengan konsentrasi HF > 50%.
+    2. Luka bakar > 5% TBSA dengan konsentrasi HF berapapun.
+    3. Inhalasi uap/kabut dari larutan HF dengan konsentrasi ≥ 60%.
+
+---
+
+### 7. Efek Akut Berdasarkan Konsentrasi dan Jalur Paparan
+* **Paparan Dermal (Kulit)**:
+  * *Konsentrasi < 20%*: Kulit awalnya tampak intak/normal; berkembang menjadi eritema keunguan, edema, nyeri tulang/subkutan hebat, deskuamasi, dan nekrosis subungual bila mengenai ujung jari.
+  * *Konsentrasi 20% – 50%*: Eritema berbatas tegas, terbentuk bula berisi eksudat serosanguinus, nekrosis dermo-epidermal, dan pembentukan pustul/abses mikro di taut dermo-epidermal.
+  * *Konsentrasi > 50%*: Nekrosis koagulatif-likuefaktif profunda instan; kulit memutih kelabu seperti lilin (*waxen white/blanching*), terkarbonisasi, kehilangan sensasi raba (anestetik lokal akibat destruksi saraf), penetrasi menembus fascia dan melarutkan periosteum tulang.
+* **Paparan Okular (Mata - Kedaruratan Mutlak)**:
+  * Molekul \\(HF\\) menembus stroma kornea dalam hitungan detik. Presipitasi kalsium stroma memicu kekeruhan kornea putih susu (*ground-glass cornea*), nekrosis segmen anterior bola mata, iskemia limbus, uveitis destruktif, perforasi bola mata, dan kebutaan total permanen.
+* **Paparan Inhalasi (Gas / Uap / Aerosol HF)**:
+  * Spasme laring, batuk mencekik, stridor, trakeobronkitis purulen dan ulseratif masif dengan perdarahan submukosa.
+  * Penetrasi ke alveoli merusak sawar alveolar-kapiler memicu **edema paru non-kardiogenik (ARDS) berat**, perdarahan intra-alveolar difus, hipoksemia refrakter, serta penyerapan fluorida sistemik masif yang memicu kolaps jantung instan.
+* **Paparan Ingesti (Tertelan)**:
+  * Terjadi nekrosis likuefaktif lambung dan esofagus yang parah, nyeri epigastrium hebat, hematemesis kehitaman, perforasi viskus akut, hipokalsemia fulminan, fibrilasi ventrikel, dan kematian dalam hitungan menit hingga beberapa jam.
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Fluorosis Tulang dan Rangka (*Skeletal Fluorosis*)**:
+  * Terjadi akibat akumulasi beban ion fluorida kronis di tulang selama bertahun-tahun.
+  * *Fase Dini*: Peningkatan densitas tulang trabekular (osteosklerosis) yang tampak sangat radioopak pada foto rontgen pelvis dan kolumna vertebra.
+  * *Fase Lanjut*: Osifikasi dan kalsifikasi ektopik pada ligamen dan tendon (misalnya ligamen sakrotuberosa, ligamen longitudinal spinalis), pembentukan eksostosis/osteofit luas, deformitas fleksi sendi, kifosis kaku (*poker back / crippling fluorosis*), dan nyeri tulang kronis yang membatasi mobilitas.
+* **Kerusakan Ginjal & Hepatoseluler**:
+  * Penumpukan metabolit fluorida memicu degenerasi vakuolar tubulus ginjal, penurunan klirens kreatinin kronis, dan nefrosklerosis.
+* **Efek Respirasi Kronis & RADS**:
+  * Rinitis atrofik kronis, perforasi septum nasi, bronkitis kronis industri, dan hipereaktivitas bronkial persisten (RADS) pasca-paparan uap akut.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **Hidrogen fluorida, sebagai F** [CAS# 7664-39-3]:
+    * **NAB (8-jam TWA)**: **0,5 BDS (ppm)**.
+    * **KTD / Ceiling (T)**: **T 2 BDS (ppm)**.
+    * **Berat Molekul**: 20,01.
+    * **Notasi**: **Kulit; BEI**.
+    * *Keterangan Efek Kritis*: **Iritasi saluran pernafasan atas, bawah, kulit dan mata, Fluorosis**.
+* **ACGIH TLV (2018)**:
+  * **TLV-TWA**: **0,5 ppm** (sebagai F) [Notasi: **Skin**].
+  * **TLV-Ceiling**: **2 ppm** (sebagai F).
+* **NIOSH REL**:
+  * **TWA (10-jam)**: **3 ppm (2,5 mg/m³)**.
+  * **Ceiling (15-menit)**: **6 ppm (5 mg/m³)**.
+* **OSHA PEL**:
+  * **PEL-TWA (8-jam)**: **3 ppm**.
+* **NIOSH IDLH (Immediately Dangerous to Life or Health)**:
+  * **30 ppm**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 4 No. 21)**:
+  * Bahan Kimia: **Fluorida (*Fluorides*)**.
+  * Determinan: **Fluoride dalam Urin**.
+  * Waktu Pengambilan Sampel & Nilai IPB:
+    1. **Sebelum shift kerja (*Prior to shift*)**: **2 mg/L**.
+    2. **Akhir shift kerja (*End of shift*)**: **3 mg/L**.
+* **ACGIH BEI**:
+  * Fluorides in urine:
+    * *Prior to shift*: **2 mg/L** (Notasi: B, Ns).
+    * *End of shift*: **3 mg/L** (Notasi: B, Ns).
+  * *Rasional*: Memantau eliminasi fluorida bebas ginjal guna mencegah akumulasi kronis yang memicu fluorosis skeletal.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Antidot
+* **Dekontaminasi Awal Cepat**:
+  * Penolong wajib menggunakan APD khusus tahan HF (sarung tangan neoprena/butil ganda).
+  * Lepaskan seluruh pakaian dan sepatu korban segera sambil diguyur air.
+  * **Irigasi air mengalir dalam jumlah banyak (*copious water flushing*) minimal selama 15 hingga 30 menit**.
+* **Antidot Topikal Lini Pertama: Gel Kalsium Glukonat 2,5% (*2.5% Calcium Gluconate Gel*)**:
+  * Dioleskan dan dipijat secara bebas pada area luka bakar kulit sesegera mungkin pasca-irigasi air.
+  * *Formulasi Darurat*: Jika gel komersial tidak tersedia, campurkan **10 ampul (100 mL) Kalsium Glukonat 10% ke dalam 150 gram gel peluas larut air (K-Y Jelly)**, atau larutkan 3,5 gram bubuk kalsium glukonat ke dalam 100 gram pelumas larut air.
+  * Pijat berulang setiap 15–30 menit; titrasi terapi hingga **nyeri berdenyut mereda total** (resolusi nyeri adalah indikator klinis netralisasi ion fluorida).
+* **Terapi Kalsium Glukonat Invasif (Bila Nyeri Menetap Pasca-Topikal)**:
+  1. **Injeksi Subkutan / Intradermal**:
+     * Suntikkan larutan **Kalsium Glukonat 10% dengan dosis 0,5 mL per cm² area eritema** menggunakan jarum halus (27G–30G).
+     * *Peringatan Khusus Jari Tangan*: Pada pulpa jari tangan (*fingertips*), injeksi volume cairan berlebih dapat memicu sindrom kompartemen digitalis dan nekrosis avaskular. Lebih disukai teknik *Bier block* atau infus intra-arteri.
+  2. **Bier Block (Regional Intravenous Infusion)**:
+     * Untuk luka bakar luas pada tangan/lengan: 10–15 mL Kalsium Glukonat 10% diencerkan dalam 30–40 mL salin normal, diinfuskan melalui kanula intravena di bawah torniket pneumatik ganda selama 20–30 menit.
+  3. **Infus Intra-Arteri (*Intra-Arterial Infusion*)**:
+     * Pilihan definitif pada cedera jari tangan berat yang refrakter: 10 mL Kalsium Glukonat 10% dilarutkan dalam 40–50 mL D5W, diinfuskan melalui kateter arteri radialis atau brakialis selama 4 jam.
+* **Resusitasi Kalsium dan Magnesium Sistemik**:
+  * Berikan **Kalsium Glukonat 10% IV bolus lambat (10 – 20 mL)** dalam 5–10 menit, diikuti infus rumatan kontinu yang dititrasi berdasarkan kadar kalsium terionisasi (iCa) serial dan panjangnya interval QTc EKG (dalam kasus masif dapat memerlukan dosis kumulatif kalsium sangat besar, hingga ratusan gram).
+  * **Kalsium Klorida 10% IV**: Hanya boleh diberikan melalui **akses vena sentral (*central line*)** pada henti jantung atau hipokalsemia ekstrem; dilarang via vena perifer karena risiko nekrosis ekstravasasi.
+  * **Magnesium Sulfat (MgSO₄)**: Berikan **1 hingga 2 gram IV** perlahan untuk mengoreksi hipomagnesemia refrakter.
+* **Inhalasi Uap HF**:
+  * Berikan **nebulisasi Kalsium Glukonat 2,5%** (dibuat dengan mencampur 1,5 mL kalsium glukonat 10% dengan 4,5 mL salin normal steril) disertai oksigen terhumidifikasi 100%.
+* **Hemodialisis Darurat / CRRT**:
+  * Pemasangan *Continuous Renal Replacement Therapy* (CRRT) diindikasikan segera untuk membersihkan ion fluorida bebas dari sirkulasi darah serta mengatasi hiperkalemia dan asidosis refrakter.
+* **KONTRAINDIKASI MUTLAK**:
+  * **DILARANG KERAS MENYUNTIKKAN KALSIUM KLORIDA SECARA INTRADERMAL ATAU SUBKUTAN**! Kalsium klorida bersifat kaustik iritatif berat yang akan memicu nekrosis iskemik jaringan sekunder masif. Hanya formulasi **kalsium glukonat** yang aman untuk injeksi lokal jaringan.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Status Tidak Laik Kerja (*Unfit*) / Kontraindikasi*: Pekerja dengan riwayat aritmia kordis simtomatik, perpanjangan interval QTc kongenital, penyakit ginjal kronis (klirens fluorida terganggu), hipoparatiroidisme, penyakit tulang metabolik berat, atau kelainan kulit kronis luas pada tangan.
+* **Surveilans Kesehatan Kerja**:
+  * *Pemeriksaan Pra-Kerja*: EKG 12-lead lengkap dasar, elektrolit lengkap (iCa, Mg, K), fungsi ginjal (kreatinin/eGFR), foto toraks, dan skrining fluorida urin dasar.
+  * *Pemeriksaan Berkala*: Pemantauan kadar fluorida urin berkala sebelum dan sesudah shift (evaluasi IPB 2 mg/L dan 3 mg/L), EKG berkala, dan evaluasi muskuloskeletal/tulang.
+* **Fasilitas Keselamatan Kritis di Tempat Kerja**:
+  * *Safety Showers & Eyewash Stations*: Wajib terpasang memenuhi standar ANSI Z358.1, dapat dijangkau dalam waktu **kurang dari 10 detik (jarak < 15 meter)** dari titik penanganan HF.
+  * **Stok Wajib Kalsium Glukonat di Tempat Kerja**: Perusahaan wajib menyediakan stok melimpah **gel kalsium glukonat 2,5%** di setiap kotak P3K area kerja, serta ampul kalsium glukonat 10% injeksi steril dan set nebulizer di klinik perusahaan.
+* **Alat Pelindung Diri (APD) Khusus**:
+  * *Bahan Sarung Tangan*: Wajib menggunakan sarung tangan tebal berbahan **karet butil atau neoprena** (sarung tangan lateks atau nitril tipis biasa mudah ditembus oleh molekul HF pekat).
+  * *Pakaian Kerja*: Celemek/apron butil/neoprena, pelindung wajah penuh (*full face shield*) dikombinasikan dengan *chemical goggles*, dan sepatu bot tahan asam.
+  * *Respirator*: SCBA bertekanan positif dengan masker penuh untuk situasi tumpahan darurat atau area konsentrasi uap mendekati IDLH (\\(\ge 30\text{ ppm}\\)).
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Secara spesifik diakui dalam:
+    * *Lampiran Bagian I.a.10*: *"Penyakit yang disebabkan oleh fluor atau persenyawaannya yang beracun"*.
+    * *Lampiran Bagian I.a.22*: *"Penyakit yang disebabkan oleh asam mineral"*.
+    * *Lampiran Bagian II.b*: Penyakit saluran pernapasan akibat kerja (edema paru kimia, RADS).
+  * Memberikan perlindungan klaim pengobatan penuh, santunan kecelakaan kerja, dan kompensasi cacat melalui program Jaminan Kecelakaan Kerja (JKK) BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Menetapkan kewajiban dokter Sp.Ok menegakkan diagnosis melalui **7 langkah diagnosis okupasi**, investigasi faktor bahaya kimia lingkungan kerja, serta pelaporan resmi kasus PAK ke dinas terkait.
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Nyeri yang Sangat Tidak Proporsional" (*Pain Out of Proportion Trap*)**:
+   * *Temuan Patognomonik*: Pasien datang dengan keluhan nyeri berdenyut yang luar biasa menyiksa pada jari tangan atau kulit, namun inspeksi visual hanya memperlihatkan kulit yang tampak intak atau hanya eritema sangat samar. **Jangan anggap pasien melebih-lebihkan!** Ini adalah tanda khas penetrasi fluorida ke saraf subkutan.
+2. **Jebakan "Periode Bebas Gejala 6–24 Jam" (*The Delayed Onset Trap*)**:
+   * *Fatal Examination Trap*: Pada konsentrasi HF < 20%, tidak ada rasa nyeri saat kontak awal. Pekerja terus bekerja, tidak mencuci tangan, dan baru mengalami dekompensasi atau nyeri hebat belasan jam kemudian di rumah.
+3. **Mitos "Luka Bakar Kecil Pasti Aman"**:
+   * Paparan HF pekat pada area seluas **hanya 1% – 2,5% TBSA (seukuran satu telapak tangan)** sudah cukup memicu hipokalsemia letal, fibrilasi ventrikel, dan kematian dalam 1–2 jam.
+4. **Trias Elektrolit Mematikan (*The Lethal Triad*)**:
+   * Kombinasi simultan: **Hipokalsemia berat + Hipomagnesemia berat + Hiperkalemia masif** memicu perpanjangan QTc, Torsades de pointes, dan VF refrakter.
+5. **Kesalahan Fatal Pemilihan Kalsium**:
+   * Menyuntikkan kalsium klorida secara subkutan/intradermal adalah malpraktik fatal karena kalsium klorida menyebabkan nekrosis jaringan iskemik sekunder. **Hanya larutan Kalsium Glukonat 10% yang boleh disuntikkan ke jaringan lokal**.
+6. **Kegagalan Sarung Tangan Nitril Biasa**:
+   * Sarung tangan nitril pemeriksaan (*examination gloves*) tipis tidak memberikan proteksi terhadap HF pekat; molekul HF menembusnya dalam hitungan detik.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Asam Fluorida (HF)
+
+| No | Poin Parameter | Rangkuman Klinis, Toksikologis, & Regulasi Kunci | Rujukan Utama Notebook |
+| :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Gas tak berwarna / cairan berasap (TD 19,5°C); BM 20,01; sangat volatil (VP 783 mmHg); korosif terhadap kaca & logam; **pKa 3,17 (asam lemah secara kimiawi \\(\rightarrow\\) molekul netral sangat lipofilik menembus kulit dalam)**. **Non-karsinogen** (IARC Grup 3, ACGIH Not Listed, Permenaker 5/2018 tanpa notasi A1–A3, notasi Kulit & BEI). | |
+| **2** | **Sumber & Penggunaan** | **Etsa semikonduktor & wafer silikon**, etsa/pemoles kaca (*glass frosting*), **katalis alkilasi kilang minyak bumi**, pembersih karat/velg mobil/aluminium, sintesis gas refrigeran HFC/Teflon, pemurnian nuklir (UF6). | |
+| **3** | **Mekanisme Cedera & Toksikokinetik** | Penetrasi molekul netral HF ke jaringan dalam \\(\rightarrow\\) disosiasi ion \\(F^-\\). **Ion \\(F^-\\) mengkhelat \\(Ca^{2+}\\) & \\(Mg^{2+}\\) membentuk endapan tak larut \\(CaF_2\\) & \\(MgF_2\\) \\(\rightarrow\\) nekrosis likuefaktif profunda & lisis tulang**. Hambatan \\(Na^+/K^+\\) ATPase \\(\rightarrow\\) kebocoran K+ ekstraseluler \\(\rightarrow\\) nyeri hebat tak proporsional. Distribusi: 50% terikat hidroksiapatit tulang (fluorapatit). Ekskresi ginjal (>90% urin). | |
+| **4** | **Toksikodinamik Sistemik** | **Trias Mematikan**: **Hipokalsemia berat (iCa turun drastis <0,2–0,5 mmol/L) + Hipomagnesemia + Hiperkalemia masif**. EKG: **QTc memanjang**, gelombang T runcing, QRS melebar, disritmia ventrikel refrakter, **Torsades de pointes, Fibrilasi Ventrikel (VF berulang)**, asistol. | |
+| **5** | **Biomonitoring & Evaluasi Klinis** | **Kalsium terionisasi (iCa) serial tiap 1–2 jam** (kalsium total menipu), magnesium, kalium, AGD & laktat. **Pemantauan EKG kontinu di sisi ranjang**. **Biomarker paparan spesifik**: **Fluorida urin (ISE/kromatografi ion)**. | |
+| **6** | **Perjalanan Waktu & Ambang Letal** | **Keterlambatan nyeri**: <20% awitan nyeri tertunda **1–24 jam (paling sering 6–12 jam)**; 20–50% timbul 1–8 jam; >50% instan. **Ambang Maut**: Paparan HF pekat (>50%) pada **1% – 2,5% TBSA (seukuran telapak tangan) dapat letal dalam hitungan jam**; >5% TBSA letal untuk konsentrasi berapapun. | |
+| **7** | **Efek Akut per Jalur** | **Kulit**: eritema tertunda, bula, abses dermo-epidermal, nekrosis likuefaktif putih lilin/lisis tulang. **Mata**: penetrasi stroma detik \\(\rightarrow\\) kornea putih susu (*ground-glass*) & kebutaan. **Inhalasi**: trakeobronkitis ulseratif, ARDS masif, kolaps jantung. **Ingesti**: korosi lambung, VF, dan kematian cepat. | |
+| **8** | **Efek Kronis & Sekuel** | **Fluorosis rangka (*skeletal fluorosis*)**: osteosklerosis difus, kalsifikasi ligamen/tendon, kekakuan sendi (*crippling fluorosis*), eksostosis; degenerasi tubulus ginjal; rinitis atrofik; RADS. | |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018**: NAB = **0,5 BDS (ppm)**; KTD = **T 2 BDS (ppm)** [Notasi: Kulit, BEI]. **ACGIH TLV**: TWA 0,5 ppm, Ceiling 2 ppm [Skin]. **NIOSH REL**: TWA 3 ppm (2,5 mg/m³), C 6 ppm (5 mg/m³). **OSHA PEL**: TWA 3 ppm. **IDLH: 30 ppm**. | |
+| **10** | **BEI / IPB** | **Permenaker 5/2018 Lampiran 4 No. 21 & ACGIH BEI**: Parameter: **Fluoride dalam Urin**. Waktu: **Sebelum shift kerja = 2 mg/L**; **Akhir shift kerja = 3 mg/L** (Notasi B, Ns). | |
+| **11** | **Tatalaksana Akut** | Irigasi air masif 15–30 menit. **Antidot Topikal**: **Gel Kalsium Glukonat 2,5% dipijat berulang sampai nyeri hilang**. Invasif: **Injeksi intradermal/subkutan Kalsium Glukonat 10% (0,5 mL/cm²)**, Bier block, atau infus intra-arteri. Sistemik: **Kalsium glukonat 10% IV bolus + infus kontinu**, MgSO4 IV, kalsium klorida (hanya via CVC). **Nebulisasi Kalsium Glukonat 2,5% untuk inhalasi**. CRRT/dialisis. **KONTRAINDIKASI MUTLAK: DILARANG INJEKSI LOKAL KALSIUM KLORIDA (nekrosis iskemik berat!)**. | |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi aritmia kordis, QTc panjang, penyakit ginjal kronis. Surveilans: EKG pra-kerja, fluorida urin berkala. Fasilitas: Safety shower & eyewash ANSI Z358.1 (<10 detik / 15 meter). **Stok wajib gel kalsium glukonat 2,5% di tempat kerja**. APD: **Sarung tangan & setelan karet butil/neoprena tebal** (nitril tipis gagal menahan HF pekat), SCBA untuk IDLH 30 ppm. | |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019 Lampiran I.a.10 (*senyawa fluor beracun*)** & I.a.22 (*asam mineral*); hak santunan JKK BPJS Ketenagakerjaan. Didukung PP 28/2024 & Permenkes 11/2022 (7 langkah diagnosis). | |
+| **14** | **Clinical Pearls & Trap** | 1) **Nyeri hebat yang tidak proporsional (*pain out of proportion*)** adalah tanda patognomonik. 2) Keterlambatan nyeri 6–24 jam pada HF <20% menipu klinisi. 3) **Luka bakar 1%–2,5% TBSA pada HF pekat dapat memicu kematian**. 4) Trias letal: hipokalsemia + hipomagnesemia + hiperkalemia \\(\rightarrow\\) QTc panjang & VF refrakter. 5) Kalsium klorida dilarang disuntikkan secara lokal. | |
+
+---
+
+💡 *Apakah Anda ingin kita merangkum seluruh spektrum gas dan korosif ini ke dalam sesi studi kasus simulasi ujian board Sp.Ok, atau ingin melangkah ke modul intoksikasi logam berat industri beracun tinggi (seperti **Gas Arsin / \\(AsH_3\\)** yang memicu hemolisis masif, **Merkuri**, dan **Timbal**)?*

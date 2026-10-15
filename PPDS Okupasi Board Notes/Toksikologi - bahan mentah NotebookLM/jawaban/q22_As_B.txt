@@ -1,0 +1,313 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Melanjutkan kajian toksikologi logam berat sebelumnya, kita masuk ke **ARSEN (As), BAGIAN B**. 
+
+Sebagai calon konsultan Kedokteran Okupasi, Anda dituntut memiliki penguasaan presisi dalam membedakan **standar limit pajanan udara, strategi pemantauan biologis berbasis spesiasi urin, algoritma resusitasi intoksikasi akut, serta penanganan kegawatdaruratan hemolisis gas arsin**. Dewan penguji ujian spesialis tidak akan mentoleransi residen yang menyamakan tatalaksana antara garam arsenik biasa dengan keracunan gas arsin, atau yang gagal menyingkirkan kontaminasi makanan laut dalam interpretasi biomarker urin.
+
+Simak telaah komprehensif berikut:
+
+---
+
+### 1. Standar Batas Pajanan Udara (*Exposure Limits*): ACGIH vs. Permenaker No. 5 Tahun 2018
+
+Di lingkungan kerja industri, nilai ambang batas pajanan udara ditetapkan secara spesifik menurut **spesiasi kimiawi arsenik**:
+
+```
+                       [ STANDAR BATAS PAJANAN ARSENIK DI UDARA KERJA ]
+                                               │
+         ┌─────────────────────────────────────┴─────────────────────────────────────┐
+         ▼                                                                           ▼
+[ ARSENIK DAN PERSENYAWAAN ANORGANIK ]                                      [ GAS ARSIN (AsH₃) ]
+• ACGIH TLV-TWA: 0,01 mg/m³ (sebagai As)                                    • ACGIH TLV-TWA: 0,005 ppm (0,016 mg/m³)
+  Notasi: A1 (Karsinogen Terbukti pada Manusia); BEI                          Basis TLV: Kerusakan saraf perifer, vaskular,
+  Basis TLV: Kanker Paru (Lung Cancer)                                        ginjal, dan hepar
+• Permenaker No. 5 Tahun 2018 (Lampiran 3):                                • Permenaker No. 5 Tahun 2018 (Lampiran 3):
+  NAB (TWA 8 jam): 0,01 mg/m³; Notasi: A1, BEI (simbol ▲)                     NAB (TWA 8 jam): 0,005 bds (ppm)
+```
+
+#### a. Nilai Ambang Batas ACGIH (Edisi 2026)
+1.  **Arsenik dan Senyawa Anorganik (*Arsenic and inorganic compounds, as As*) [CAS 7440-38-2]:**
+    *   **TLV-TWA:** **\\(0{,}01\text{ mg/m}^3\\)** (sebagai elemental As).
+    *   *Notasi:* **A1; BEI**.
+    *   *Dasar Penetapan Efek Kritis (*TLV Basis*):* **Kanker Paru (*Lung cancer*)**.
+2.  **Gas Arsin (*Arsine*) [CAS 7784-42-1]:**
+    *   **TLV-TWA:** **\\(0{,}005\text{ ppm}\\)** (setara **\\(0{,}016\text{ mg/m}^3\\)**).
+    *   *Dasar Penetapan Efek Kritis:* Kerusakan sistem saraf perifer dan sistem vaskular (*PNS & vascular system impairment*), serta kerusakan ginjal dan hepar (*kidney & liver impairment*).
+    *   *Perbandingan Regulasi Lain:* OSHA PEL menetapkan **0,05 ppm (0,2 mg/m³)**; NIOSH menetapkan batas *Ceiling* **0,002 mg/m³ (15 menit)** dan IDLH **3 ppm**.
+
+#### b. Nilai Ambang Batas Permenaker No. 5 Tahun 2018 (Lampiran 3)
+Regulasi keselamatan kerja nasional mengadopsi standar yang selaras dengan ACGIH:
+1.  **Arsen dan Senyawa Anorganiknya, sebagai As:**
+    *   **NAB (TWA 8 jam):** **\\(0{,}01\text{ mg/m}^3\\)**.
+    *   *Notasi:* **A1** (Karsinogenik Terbukti terhadap Manusia) dan **BEI** (ditandai dengan **simbol segitiga ▲**).
+2.  **Arsin (Gas \\(\text{AsH}_3\\)):**
+    *   **NAB (TWA 8 jam):** **\\(0{,}005\text{ bds}\\)** (Bagian Dalam Sejuta / ppm).
+
+#### c. Makna Toksikologis Notasi
+*   **Notasi "A1" (*Confirmed Human Carcinogen*):** Menandakan bahwa agen tersebut telah terbukti secara ilmiah melalui studi epidemiologi kohort manusia memicu kanker (terutama karsinoma bronkogenik paru, kanker kulit, dan karsinoma urotelial kandung kemih). Paparan di tempat kerja harus ditekan hingga level serendah mungkin (*As Low As Reasonably Achievable* / ALARA).
+*   **Notasi "BEI" / Simbol Segitiga (▲):** Mewajibkan pemantauan biologis berkala terhadap spesimen tubuh tenaga kerja untuk mengukur dosis internal yang diserap.
+
+---
+
+### 2. Standar BEI (ACGIH) dan IPB (Permenaker 5/2018) serta Waktu Sampling
+
+Dalam mengevaluasi pajanan arsenik di lingkungan industri, matriks biologis yang menjadi baku emas hukum adalah **spesimen urin spesiasi**:
+
+```
+                       [ STANDAR INDEKS PAJANAN BIOLOGI ARSENIK ]
+                                            │
+        ┌───────────────────────────────────┼───────────────────────────────────┐
+        ▼                                   ▼                                   ▼
+ [ DETERMINAN BIOLOGIS ]             [ NILAI BAKU BEI / IPB ]           [ WAKTU PENGAMBILAN SAMPEL ]
+ Arsenik Anorganik ditambah          • ACGIH BEI (2023/2026):           Akhir gilir kerja pada akhir
+ Metabolit Termetilasi dalam Urin      15 µg/g kreatinin (Notasi Pop)   minggu kerja
+ (Inorganic As + MMA + DMA)          • Permenaker 5/2018 (Lampiran 4):  (End of shift at end of workweek)
+                                       35 µg/L (atau setara kreatinin)
+```
+
+*   **Determinan Biologis Resmi:**
+    **Arsenik anorganik ditambah metabolit termetilasi dalam urin (*Inorganic arsenic plus methylated metabolites in urine* / \\(\mathbf{\Sigma[\text{iAs} + \text{MMA} + \text{DMA}]}\\))**. 
+    *(Catatan Kritis: Determinasi ini **mengecualikan galium arsenida dan gas arsin**)*.
+*   **Nilai Baku BEI (ACGIH 2026 / Adopsi 2023):**
+    **15 µg/g kreatinin** dengan **notasi *Pop* (*Population-based*)**.
+    *(Nilai ini diturunkan untuk mendekati persentil atas populasi umum non-okupasi guna mencegah akumulasi internal toksikan karsinogenik)*.
+*   **Nilai Baku IPB Permenaker No. 5 Tahun 2018 (Lampiran 4):**
+    Ditetapkan sebesar **35 µg As/L** (atau setara **\\(35\ \mu\text{g/g kreatinin}\\)** berdasarkan standar ACGIH terdahulu).
+*   **Waktu Pengambilan Sampel (*Sampling Time*):**
+    **Akhir gilir kerja di akhir minggu kerja (*End of shift at end of workweek*)**.
+    *   *Rasional Toksikokinetik Okupasi:* Pengambilan sampel dilakukan setelah minimal **4 atau 5 hari kerja berturut-turut dengan pajanan**. Waktu paruh ekskresi urin fraksi MMA dan DMA adalah sekitar 20–40 jam, sehingga sampling di akhir minggu kerja mencerminkan akumulasi beban kerja mingguan yang stabil (*steady-state weekly accumulation*).
+*   **Syarat Mutlak Pra-Analitik:** Pekerja **wajib berpuasa / berpantang makan segala hidangan laut (*seafood abstinence*) selama minimal 48–72 jam** sebelum sampel urin ditampung, untuk mencegah distorsi positif palsu dari *arsenobetaine*.
+
+---
+
+### 3. Tatalaksana Akut, Keracunan, dan Terapi Kelasi
+
+Pendekatan terapi intoksikasi arsenik terbagi secara dikotomis: **keracunan garam arsenik anorganik memerlukan terapi kelasi segera, sedangkan keracunan gas arsin menuntut tindakan resusitasi hematologi tanpa kelasi**.
+
+```
+                                [ ALGORITMA DIVERGENSI TERAPI AKUT ]
+                                                  │
+         ┌────────────────────────────────────────┴────────────────────────────────────────┐
+         ▼                                                                                 ▼
+[ KERACUNAN GARAM ANORGANIK (As₂O₃) ]                                             [ KERACUNAN GAS ARSIN (AsH₃) ]
+1. Resusitasi Cairan Agresif (Syok Distributif)                                   1. Hentikan Pajanan & Oksigenasi Segera
+2. Koreksi Elektrolit (K⁺, Mg²⁺) & EKG Pantau QT                                  2. HIDRASI & ALKALINISASI URIN:
+3. TERAPI KELASI SEGERA:                                                             Target pH urin > 7,5 & diuresis 2–3 mL/kg/jam
+   • Fase Awal / Kritis: BAL (Dimerkaprol) IM                                     3. TRANSFUSI TUKAR (EXCHANGE TRANSFUSION):
+   • Pasien Stabil / Sadar: DMSA (Succimer) Oral                                     Indikasi Hb plasma > 1,5 g/dL / hemolisis masif
+   • Alternatif Parenteral: DMPS IV/Oral                                          4. HEMODIALISIS: Atasi ATN anurik & hiperkalemia
+                                                                                  5. KELASI TIDAK BERGUNA / KONTRAINDIKASI!
+```
+
+#### a. Keracunan Akut Garam Arsenik Anorganik (misalnya \\(\text{As}_2\text{O}_3\\))
+1.  **Resusitasi Cairan dan Koreksi Hemodinamik Masif:**
+    *   Prioritas utama adalah **resusitasi cairan intravena kristaloid agresif**. Gastroenteritis cairan cucian beras memicu hipovolemia berat dan syok distributif.
+    *   Pertahankan perfusi ginjal untuk mencegah nekrosis tubular akut sekunder akibat iskemia.
+2.  **Pemantauan Elektrokardiografi (EKG) dan Koreksi Elektrolit:**
+    *   Arsenik menginduksi pemanjangan interval QT (*QT prolongation*). 
+    *   Wajib dilakukan **pemantauan EKG kontinu di ICU** dan **koreksi agresif kadar kalium serta magnesium serum** untuk mencegah degenerasi aritmia menjadi **Torsades de Pointes** yang mematikan.
+3.  **Protokol Terapi Kelasi Arsenik Anorganik:**
+    Kelasi harus diberikan sedini mungkin karena penundaan akan menurunkan efektivitasnya secara drastis:
+    *   **BAL (*British Anti-Lewisite* / Dimerkaprol):**
+        *   *Indikasi:* **Pilihan lini pertama pada keracunan akut berat dengan instabilitas hemodinamik, penurunan kesadaran, atau pasien yang tidak dapat mentoleransi obat oral akibat muntah/diare hebat**.
+        *   *Sediaan & Rute:* Larutan dalam minyak kacang, diberikan melalui **injeksi intramuskular (IM) dalam**.
+        *   *Dosis Protokol:* 3–5 mg/kgBB IM setiap 4 jam selama 2 hari pertama; lalu setiap 6 jam pada hari ke-3 dan ke-4; kemudian setiap 12 jam hingga pasien stabil dan dapat ditransisikan ke kelator oral.
+        *   *Efek Samping:* Hipertensi transien, takikardia, nyeri kepala, lakrimasi, dan abses steril di lokasi suntikan.
+    *   **DMSA (*meso-2,3-dimercaptosuccinic acid* / *Succimer*):**
+        *   *Indikasi:* Pilihan utama pada **keracunan derajat sedang yang sadar, atau sebagai terapi lanjutan setelah stabilisasi dengan BAL**.
+        *   *Rute & Dosis:* Per oral (PO), 10 mg/kgBB (atau 350 mg/\\(\text{m}^2\\)) setiap 8 jam selama 5 hari, dilanjutkan setiap 12 jam selama 14 hari (total siklus 19 hari).
+    *   **DMPS (2,3-dimerkapto-1-propanasulfonat / *Unithiol*):**
+        *   *Indikasi:* Kelator tiol larut air yang sangat poten, tersedia dalam bentuk IV maupun oral. Sangat efektif mengeliminasi arsenik anorganik dan metabolit termetilasi melalui urin. Dosis: 3–5 mg/kgBB IV setiap 4–6 jam pada fase akut.
+
+---
+
+#### b. Tatalaksana Khusus Keracunan Gas Arsin (\\(\text{AsH}_3\\))
+
+> **Peringatan Kritis Dewan Penguji (*Lethal Board Trap*):**
+> **PADA KERACUNAN GAS ARSIN, TERAPI KELASI (BAL, DMSA, DMPS) TIDAK EFEKTIF / TIDAK BERGUNA DAN BUKAN MERUPAKAN TERAPI!**
+
+*   **Rasional Mekanistik Kegagalan Kelasi:**
+    1.  Toksisitas arsin murni dipicu oleh **lisis masif eritrosit akibat peroksidasi lipid membran**, bukan oleh sirkulasi ion arsenik bebas.
+    2.  Senyawa arsin telah berikatan secara ireversibel di dalam eritrosit dan memicu destruksi selular.
+    3.  Kerusakan organ utama (gagal ginjal akut) timbul akibat **badai presipitasi pigmen hemoglobin bebas di tubulus ginjal**, bukan oleh ikatan arsenik pada parenkim ginjal.
+    4.  Uji klinis dan pedoman kedokteran darurat ATSDR menegaskan bahwa pemberian kelator seperti BAL tidak mencegah hemolisis, tidak memulihkan sel darah merah yang hancur, dan tidak membersihkan kompleks hemoglobin-arsin di ginjal.
+*   **Pilar Terapi Definitif Keracunan Arsin:**
+    1.  **Hidrasi Intravena Agresif dan Alkalinisasi Urin (*Urinary Alkalinization*):**
+        *   Segera pasang akses vena kaliber besar. Berikan cairan kristaloid (D5 dalam 0,25 normal salin) yang ditambahkan **50 hingga 100 mEq Natrium Bikarbonat per liter**.
+        *   *Target:* Pertahankan **pH urin > 7,5** dan **diuresis aktif 2 hingga 3 mL/kg/jam**.
+        *   *Tujuan Fisiologis:* Suasana basa mencegah presipitasi hemoglobin bebas menjadi kristal asam hematin yang menyumbat lumen tubulus ginjal.
+    2.  **Transfusi Tukar (*Exchange Transfusion*):**
+        *   Merupakan **terapi penyelamat jiwa lini pertama (*life-saving first-line therapy*)** pada keracunan arsin dengan hemolisis signifikan.
+        *   *Indikasi:* Kadar hemoglobin bebas plasma **\\(> 1{,}5\text{ g/dL}\\)**, oliguria mendadak, penurunan hematokrit cepat, atau tanda klinis hemolisis masif.
+        *   *Manfaat Ganda:* Membuang sisa kompleks arsin-eritrosit yang rusak, membersihkan muatan masif hemoglobin bebas dari sirkulasi vaskular sebelum terfiltrasi ke ginjal, serta mengganti kapasitas angkut oksigen jaringan dengan eritrosit donor yang utuh.
+    3.  **Hemodialisis Segera:**
+        *   Diindikasikan bila pasien masuk dalam fase gagal ginjal akut anurik/oligurik, timbul hiperkalemia refrakter (akibat pelepasan kalium intraseluler pasca-hemolisis masif), asidosis metabolik berat, atau kelebihan beban cairan (*fluid overload*).
+        *   *Catatan:* Hemodialisis menyokong fungsi ginjal pasien hingga epitel tubulus mengalami regenerasi, namun dialisis sendiri tidak dapat membersihkan silinder hemoglobin yang terlanjur membeku di tubulus.
+
+---
+
+### 4. Tatalaksana Okupasi: Individu dan Komunitas
+
+Sebagai calon spesialis, Anda wajib menguasai integrasi aspek klinis dengan instrumen hukum ketenagakerjaan:
+
+```
+                      [ MANAJEMEN OKUPASI KOMPREHENSIF ARSENIK ]
+                                          │
+        ┌─────────────────────────────────┼─────────────────────────────────┐
+        ▼                                 ▼                                 ▼
+[ 7 LANGKAH PERMENKES 11/2022 ]    [ KELAIKAN KERJA (FITNESS) ]      [ HIERARKI KONTROL INDUSTRI ]
+1. Diagnosis Klinis (ICD-10)       • Fit: Normal & terkendali        • Eliminasi: Hapus pengawet CCA
+2. Identifikasi Pajanan Lapangan   • Fit with Restriction:           • Substitusi: Gas dopan non-arsin
+3. Hubungan Kausal Ilmiah (IARC 1)   Hindari area uap/debu As        • Rekayasa: Sistem vakum tertutup
+4. Besaran Dosis (NAB & BEI)       • Temporary Unfit: Urin > BEI,      LEV HEPA filter, detektor gas
+5. Faktor Host / Genetik AS3MT       lesi aktif, kelasi berjalan     • APD: Respirator P100 / SAR
+6. Faktor Luar (Air sumur, Rokok)  • Unfit (Permanent): Karsinoma,   • Surveilans: Inspeksi kulit,
+7. KESIMPULAN DIAGNOSIS PAK          foot drop bilateral, ESRD         uji kuku Mees, BEI urin berkala
+```
+
+#### a. Penerapan 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022)
+Kasus: Pekerja industri peleburan tembaga (*copper smelter*) atau teknisi semikonduktor dengan keluhan neuropati perifer atau lesi kulit hiperkeratotik:
+1.  **Langkah 1 (Diagnosis Klinis):**
+    *Toxic polyneuropathy due to arsenic* (ICD-10: G62.2), *Arsenical palmar-plantar hyperkeratosis* (L85.1), *Carcinoma in situ / Bowen's disease* (D09.0), atau *Bronchogenic carcinoma* (C34).
+2.  **Langkah 2 (Pajanan di Tempat Kerja):**
+    Pekerja terpajan debu arsenik trioksida cerobong (*flue dust*) saat peleburan bijih tembaga, atau terpajan aerosol residu galium arsenida tanpa sungkup hisap.
+3.  **Langkah 3 (Hubungan Kausalitas Pajanan dan Klinis):**
+    Secara biologis dan toksikologis terbukti kuat (IARC Monograph 100C Grup 1): arsenit menghambat enzim tiol PDH, memicu degenerasi aksonal saraf perifer; metabolit termetilasi (\\(\text{MMA}^{\text{III}}\\) dan \\(\text{DMA}^{\text{III}}\\)) menghambat enzim perbaikan DNA PARP-1 memicu lesi hiperkeratosis dan karsinogenesis.
+4.  **Langkah 4 (Besarnya Dosis Pajanan):**
+    Konsentrasi arsenik di udara kerja melampaui NAB Permenaker 5/2018 (\\(> 0{,}01\text{ mg/m}^3\\)); kadar metabolit arsenik urin melampaui IPB (\\(> 15\ \mu\text{g/g kreatinin}\\)); masa kerja > 5 tahun; penggunaan masker debu biasa (bukan respirator kimia efisiensi tinggi).
+5.  **Langkah 5 (Faktor Kerentanan Individu):**
+    Evaluasi polimorfisme genetik enzim **AS3MT** (yang menghasilkan rasio \\(\text{MMA}/\text{DMA}\\) urin tinggi dengan risiko sitotoksisitas lebih besar), status gizi rendah protein/metionin, dan komorbiditas vaskular.
+6.  **Langkah 6 (Faktor di Luar Tempat Kerja):**
+    Evaluasi sumber air minum rumah tangga (menyingkirkan air sumur bor yang tercemar arsenik geogenik alami) dan kebiasaan merokok (faktor perancu karsinoma paru).
+7.  **Langkah 7 (Kesimpulan Diagnosis Okupasi):**
+    Ditegakkan secara sah sebagai **Penyakit Akibat Kerja (PAK)** berdasarkan **Perpres No. 7 Tahun 2019**:
+    *   Jika neuropati/keratosis: Lampiran I.a Butir 6 ("Penyakit yang disebabkan oleh arsen atau persenyawaannya").
+    *   Jika kanker paru/kandung kemih/kulit: Lampiran III Butir 15 ("Arsen dan persenyawaannya").
+    *   Pekerja berhak mendapatkan kompensasi jaminan perawatan dan kecacatan dari program JKK.
+
+---
+
+#### b. Penilaian Kelaikan Kerja (*Fitness for Work*)
+*   **Fit (Laik Kerja Penuh):** Pekerja sehat tanpa gejala neurologis/kulit, fungsi ginjal normal, hasil urin spesiasi \\(< 15\ \mu\text{g/g kreatinin}\\), dan lingkungan kerja terbukti memenuhi NAB.
+*   **Fit with Restriction (Laik Kerja dengan Pembatasan):** Pekerja dengan kadar urin mendekati BEI (10–15 µg/g kreatinin) tanpa defisit neurologis; **dilarang bekerja di area pembakaran/pemanggangan suhu tinggi atau area transfer debu konsentrat**; dipindahkan ke area pergudangan berventilasi baik hingga kadar urin normal.
+*   **Temporary Unfit (Tidak Laik Kerja Sementara):**
+    Pekerja dengan **arsenik urin > BEI**, ATAU pekerja yang memperlihatkan lesi hiperkeratosis aktif, gejala neuropati perifer sensorik, atau dalam masa pengobatan kelasi.
+    *Tindakan Medis:* **Wajib ditarik dari pajanan kerja (*Medical Removal Protection*)**, diberikan terapi medis/kelasi, dan dievaluasi berkala hingga kadar urin normal dan gejala klinis pulih.
+*   **Unfit (Tidak Laik Kerja Permanen):** Pekerja yang terdiagnosis menderita karsinoma bronkogenik paru, karsinoma kandung kemih, gangren ekstremitas permanen, atau mengalami kelumpuhan motorik berat (*bilateral drop foot* ireversibel). Direkomendasikan untuk terminasi pajanan permanen dan penetapan persentase kecacatan kerja JKK.
+
+---
+
+#### c. Rekomendasi Manajemen dan Proteksi Komunitas
+1.  **Hierarki Pengendalian Bahaya Kimiawi (Permenaker 5/2018 & Kepmenaker 187/1999):**
+    *   *Eliminasi:* Menghentikan penggunaan senyawa arsenik pengawet kayu CCA, menggantikannya dengan teknologi borat atau tembaga azol.
+    *   *Substitusi:* Mengganti gas dopan arsin dengan fosfin atau senyawa organoarsenik yang kurang volatil jika memungkinkan secara proses mikroelektronika.
+    *   *Rekayasa Teknis (*Engineering Controls*):* Penutupan total sistem perapian (*enclosed furnaces*); pemasangan ventilasi hisap lokal (*Local Exhaust Ventilation* / LEV) dengan **sistem penyaring debu elektrostatis (*electrostatic precipitator*) dan filter HEPA partikulat tinggi**; pemasangan sensor gas detektor kebocoran arsin otomatis dengan sistem alarm multi-titik.
+    *   *Pengendalian Administratif:* Pelatihan prosedur kerja aman, pembersihan debu menggunakan sistem vakum industri bersertifikasi (dilarang menyapu kering), larangan makan/minum/merokok di area operasional, penyediaan fasilitas mandi bilas dekontaminasi, dan rotasi kerja.
+    *   *Alat Pelindung Diri (APD):* Respirator pemurni udara bertenaga (*Powered Air-Purifying Respirator* / PAPR) atau respirator pasokan udara (*Supplied-Air Respirator* / SAR) bertekanan positif dengan kombinasi filter partikulat P100 dan uap kimia; pakaian pelindung kedap kimia Tyvek sekali pakai.
+2.  **Surveilans Kesehatan Komprehensif:**
+    *   Pemeriksaan pra-kerja: Pemeriksaan dasar kondisi kulit seluruh tubuh, evaluasi neurologis saraf perifer (refleks achilles, tes sensorik vibrasi garputala), urinalisis, dan foto toraks.
+    *   Pemeriksaan berkala (minimal 1 tahun sekali): Inspeksi ketat telapak tangan dan telapak kaki terhadap nodul hiperkeratosis atau perubahan pigmentasi, pemeriksaan lempeng kuku terhadap garis Mees, tes sensitivitas saraf tepi, uji fungsi paru/spirometri, serta **biomonitoring kadar arsenik spesiasi urin akhir minggu kerja**.
+
+---
+
+### 5. Keterangan Lain: Karsinogenisitas IARC, Baku Mutu Air, dan Pengaruh Makanan Laut
+
+```
+                     [ KATEGORI KARSINOGENISITAS IARC MONOGRAPH 100C ]
+                                             │
+        ┌────────────────────────────────────┼────────────────────────────────────┐
+        ▼                                    ▼                                    ▼
+[ ARSENIK ANORGANIK & AIR MINUM ]       [ METABOLIT METILASI ]               [ SENYAWA ORGANIK BAHARI ]
+• IARC Grup 1 (Karsinogen Manusia)       • MMA & DMA: IARC Grup 2B            • Arsenobetain & Arsenokolin:
+• Kanker Paru, Kulit, Kandung Kemih       (Possibly Carcinogenic to Humans)    IARC Grup 3 (Not Classifiable)
+• Tidak ada ambang batas aman            • Bukti cukup pada hewan coba        • Stabil, diekskresi utuh, NON-TOKSIK
+```
+
+#### a. Klasifikasi Karsinogenisitas IARC (Monograph Volume 100C)
+Berdasarkan tinjauan komprehensif monograf IARC 100C:
+*   **Arsenik dan Persenyawaan Arsenik Anorganik (*Arsenic and inorganic arsenic compounds*):**
+    *   **IARC Grup 1 (*Carcinogenic to humans*)**.
+    *   *Target Organ Keganasan:* Karsinoma Paru, Kanker Kulit (Karsinoma Sel Skuamosa dan Basal), serta Karsinoma Kandung Kemih. Hubungan positif juga teramati pada kanker ginjal, hati, dan prostat.
+*   **Arsenik dalam Air Minum (*Arsenic in drinking-water*):**
+    *   **IARC Grup 1 (*Carcinogenic to humans*)**.
+*   **Metabolit Termetilasi (MMA dan DMA / Asam Kakodilat):**
+    *   **IARC Grup 2B (*Possibly carcinogenic to humans*)**.
+*   **Arsenobetain dan Senyawa Organik Laut Lainnya yang Tidak Dimetabolisme:**
+    *   **IARC Grup 3 (*Not classifiable as to its carcinogenicity to humans*)**.
+
+---
+
+#### b. Baku Mutu Standar Air Minum (WHO dan Regulasi Nasional)
+*   **Standar Baku Mutu Internasional (WHO Guidelines for Drinking-water Quality):**
+    Batas konsentrasi maksimum arsenik dalam air minum ditetapkan sebesar **\\(0{,}01\text{ mg/L}\\)** (atau **\\(10\ \mu\text{g/L}\\) / 10 ppb**). Batas ini merupakan nilai panduan sementara (*provisional guideline value*) berdasarkan kelayakan deteksi analitis laboratorium dan teknologi pengolahan air, meskipun risiko kanker teoritis tetap ada pada konsentrasi rendah.
+*   **Standar Regulasi Nasional Indonesia (Permenkes No. 2 Tahun 2023):**
+    Menetapkan Parameter Wajib Standar Baku Mutu Kesehatan Lingkungan untuk Media Air Minum dengan kadar maksimum arsenik sebesar **\\(0{,}01\text{ mg/L}\\)**. Konsumsi air tanah melebihi ambang ini secara bertahun-tahun merupakan penyebab utama timbulnya lesi arsenikosis dan Penyakit Kaki Hitam (*Blackfoot disease*) pada populasi pedesaan.
+
+---
+
+#### c. Fenomena Interferensi Makanan Laut (*Seafood / Arsenobetaine Interference*)
+*   Hewan laut (udang, kepiting, kerang-kerangan, ikan laut dalam) mengakumulasi arsenik dari rantai makanan fitoplankton dalam bentuk senyawa organometalik **Arsenobetain (AsB / "fish arsenic")**.
+*   Struktur arsenobetain sangat stabil, tidak larut dalam lipid membran, tidak berinteraksi dengan gugus sulfhidril jaringan, tidak mengalami metabolisme atau metilasi di hepar manusia, dan **diekskresikan 100% dalam bentuk utuh melalui filtrasi ginjal dalam waktu 24–48 jam tanpa efek toksik**.
+*   *Distorsi Laboratorium:* Pengukuran arsenik urin tanpa metode spesiasi (*Total Urinary Arsenic*) akan membaca arsenobetain sebagai arsenik elemental, sehingga menghasilkan angka lonjakan semu yang dramatis (mencapai 500–2.000 µg/L). Hal ini kerap memicu salah diagnosis intoksikasi industri dan pemberian terapi kelasi yang tidak perlu.
+
+---
+
+### 6. *Clinical Pearls* dan Jebakan Ujian Khusus Arsenik
+
+Dewan penguji ujian spesialis kerap menguji integrasi antara konsep laboratorium analitis dengan kegawatdaruratan klinis. Pahami jebakan-jebakan klasik berikut:
+
+```
+                             [ JEBAKAN UJIAN DEWAN SPESIALIS ARSENIK ]
+                                                 │
+         ┌───────────────────────────────────────┼───────────────────────────────────────┐
+         ▼                                       ▼                                       ▼
+  [ JEBAKAN 1: TERAPI ARSIN ]             [ JEBAKAN 2: KONTAMINASI SEAFOOD ]      [ JEBAKAN 3: GARIS MEES KUKU ]
+  JANGAN PERNAH berikan kelasi            JANGAN PERIKSA Total As Urin!           Garis Mees TIDAK MUNCUL di IGD!
+  pada keracunan gas arsin!               Pasien makan udang/ikan ──►             Garis putih transversal kuku
+  Kelator TIDAK MENGOBATI hemolisis.      Total As urin melonjak ribuan µg/L      baru bermanifestasi klinis
+  Pilihan mutlak:                         positif palsu. Wajib puasa seafood      2–6 MINGGU PASCA-KERACUNAN AKUT
+  TRANSFUSI TUKAR + ALKALINISASI          48–72 jam & uji SPESIASI (iAs+MMA+DMA). mengikuti pertumbuhan kuku.
+```
+
+*   **Clinical Pearl 1: Trias Patognomonik Intoksikasi Gas Arsin (\\(\text{AsH}_3\\))**
+    Hafalkan di luar kepala: Bila seorang pekerja semikonduktor atau pembersih tangki peleburan datang dengan riwayat menghirup gas berbau bawang putih, perhatikan trias khas: **(1) Hemolisis intravaskular masif (anemia berat, pucat)**, **(2) Hemoglobinuria (urin hitam/kola)**, dan **(3) Gagal Ginjal Akut (ATN anuria)**, yang disertai diskolorasi kulit tembaga (*bronze skin*).
+*   **Clinical Pearl 2: Mengapa Transfusi Tukar, Bukan Kelasi pada Arsin?**
+    Kelator bekerja dengan mengikat ion logam yang berada di kompartemen cairan bebas. Pada keracunan arsin, kerusakan sel darah merah telah selesai terjadi, dan toksikan yang mengancam jiwa pasien adalah **badai hemoglobin bebas plasma yang membeku di dalam tubulus ginjal**. Hanya **Transfusi Tukar (*Exchange Transfusion*)** yang mampu secara instan membuang massa hemoglobin lisis tersebut dari peredaran darah sebelum meremukkan nefron ginjal.
+*   **Board Trap 1: Resep Kelator pada Pasien Arsin**
+    Jika di skenario ujian lisan penguji bertanya: *"Seorang teknisi pabrik chip semikonduktor terpajan arsin dengan urin berwarna kola dan sesak, obat kelasi apa yang Anda resepkan pertama kali?"*
+    **Jawab dengan tegas:** *"Tidak ada indikasi terapi kelasi, Dokter. Terapi kelasi seperti BAL atau DMSA tidak terbukti efektif dan tidak bermanfaat pada keracunan gas arsin. Tatalaksana utama adalah stabilisasi ABC, hidrasi agresif dengan alkalinisasi urin (target pH > 7,5), evaluasi segera untuk Transfusi Tukar, dan hemodialisis bila timbul gagal ginjal anurik"*.
+*   **Board Trap 2: Waktu Penilaian Garis Mees Kuku**
+    Penguji sering bertanya: *"Pasien datang 6 jam pasca-tertelan racun arsenik trioksida, apakah Anda dapat menemukan Garis Mees pada kuku tangannya?"*
+    **Jawab:** *"Tidak mungkin, Dokter. Garis Mees adalah pita leukonikia transversal akibat gangguan keratinisasi pada matriks kuku selama fase toksik akut, dan garis tersebut baru akan tumbuh tampak keluar dari balik lipatan kutikula proksimal kuku setelah 2 hingga 6 minggu pasca-kejadian intoksikasi akut"*.
+*   **Board Trap 3: Uji Total Arsenik Urin vs. Spesiasi Makanan Laut**
+    Bila dijumpai hasil laboratorium pekerja pabrik peleburan dengan Total Arsenik Urin mencapai \\(450\ \mu\text{g/L}\\) namun pekerja tampak sehat bugar tanpa kelainan kulit atau gejala neurologis, **jangan terburu-buru meresepkan DMSA atau melaporkan PAK**. Tanyakan riwayat makan malam sebelumnya: jika pekerja mengonsumsi hidangan laut, itu adalah **Arsenobetain non-toksik**. Lakukan penundaan, minta pekerja puasa makanan laut selama 3 hari, dan ulangi penampungan spesimen dengan **pemeriksaan spesiasi metabolit termetilasi (\\(\mathbf{\Sigma[\text{iAs} + \text{MMA} + \text{DMA}]}\\))**.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Arsenic and inorganic compounds, as As* [CAS 7440-38-2] (TLV-TWA 0,01 mg/m³, Notasi A1, BEI, TLV Basis: Lung cancer); *Arsine* [CAS 7784-42-1] (TLV-TWA 0,005 ppm, TLV Basis: PNS & vascular system impair; kidney & liver impair).
+    *   Definisi dan Signifikansi Notasi A1 (*Confirmed Human Carcinogen*).
+    *   Tabel Adopsi BEI: *Arsenic (and soluble compounds, excluding gallium arsenide and arsine)* [CAS 7440-38-2] (Adopsi 2023) — *Inorganic arsenic plus methylated metabolites in urine*, Waktu: *End of shift at end of workweek*, Nilai: **15 µg/g kreatinin** (Notasi Pop).
+    *   Definisi Waktu Pengambilan Sampel *End of shift at end of workweek* (setelah 4–5 hari kerja berturut-turut).
+2.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja*:
+    *   Lampiran 3: Tabel Nilai Ambang Batas Faktor Kimia — Arsen dan Senyawa Anorganiknya, sebagai As (NAB 0,01 mg/m³, Notasi A1, Simbol Segitiga BEI ▲); Arsin (NAB 0,005 bds).
+    *   Lampiran 4: Tabel Indeks Pajanan Biologi (IPB) — Arsen, Senyawa Anorganik (Spesies anorganik dan metabolit termetilasi dalam urin, Waktu Akhir shift pada akhir minggu kerja, Nilai rujukan IPB).
+3.  **Agency for Toxic Substances and Disease Registry (ATSDR) / MMG Series:**
+    *   *Medical Management Guidelines for Arsine (AsH3)* [CAS 7784-42-1]: Sifat Gas Bawang Putih; Absorpsi Paru Cepat Tanpa Iritasi Awal; Mekanisme Inhibisi Katalase Eritrosit & Akumulasi H2O2; Hemolisis Intravaskular Akut Masif & ARDS; Trias Hemolisis, Hemoglobinuria, Gagal Ginjal Akut; Tatalaksana Suportif, Hidrasi Agresif, dan Alkalinisasi Urin (pH > 7,5 dengan NaHCO3); Transfusi Tukar (*Exchange Transfusion*) sebagai Pilihan Utama Pembuangan Hemoglobin Bebas; Hemodialisis untuk ATN; serta **Pernyataan Mutlak Bahwa BAL dan Kelator Lainnya Tidak Efektif / Bukan Antidotum Arsin**.
+4.  **Dib Chakif & Julien Furrer (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Tinjauan Toksikologi Komprehensif Arsenik: Farmakologi Thiol Chelators (BAL, DMSA, DMPS); Indikasi Kelasi Cito pada Keracunan Akut Simtomatik iAs; Resusitasi Cairan Agresif dan Koreksi Pemanjangan Interval QT EKG; Protokol DMSA Oral vs DMPS IV/Oral vs BAL IM; Matriks Biomonitoring Spesiasi Urin (iAs + MMA + DMA); Bahaya Makanan Laut (*Seafood Interference* / Arsenobetaine) dan Wajib Puasa Seafood; serta Peran Genetik Polimorfisme AS3MT.
+5.  **IARC (2012).** *A Review of Human Carcinogens: Arsenic, Metals, Fibres, and Dusts (IARC Monographs Vol. 100C)*:
+    *   Evaluasi Karsinogenisitas Arsenik: Arsenik dan Persenyawaan Anorganik (Grup 1); Arsenik dalam Air Minum (Grup 1); Metabolit DMA dan MMA (Grup 2B); Arsenobetain Organik Laut Tak Termetabolisme (Grup 3); serta Studi Epidemiologi Kanker Paru, Kulit, dan Kandung Kemih.
+6.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 4 & Bab 22: Karakteristik Gas Arsin AsH3 dan TLV 0,05 ppm; Sejarah Pengembangan BAL (British Anti-Lewisite / 2,3-dimerkaptopropanol) sebagai Antagonis Gas Perang Arsenik Lewisite; Struktur Ditiol dan Efek Samping Toksik BAL; Pengembangan Analog DMSA (Succimer) dan DMPS; Terapi Suportif Bilas Lambung, Whole Bowel Irrigation, Hemodialisis; serta Batas Pajanan Kerja.
+7.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019** *tentang Penyakit Akibat Kerja*:
+    *   Pasal 2 (Hak Manfaat JKK hingga 3 Tahun Pasca-Kerja); Lampiran I.a Butir 6 (Penyakit Akibat Pajanan Arsen dan Persenyawaannya); serta Lampiran III Butir 15 (Kanker Akibat Kerja: Arsen dan Persenyawaannya).
+8.  **Peraturan Menteri Kesehatan Republik Indonesia Nomor 11 Tahun 2022** *tentang Pelayanan Kesehatan Penyakit Akibat Kerja*:
+    *   Pasal 5 (Tujuh Langkah Penegakan Diagnosis Okupasi); Tata Laksana Medis Kuratif dan Tata Laksana Okupasi Komunitas.
+9.  **Peraturan Menteri Kesehatan Republik Indonesia Nomor 2 Tahun 2023** *tentang Peraturan Pelaksanaan PP No. 66 Tahun 2014 tentang Kesehatan Lingkungan*:
+    *   Standar Baku Mutu Kesehatan Lingkungan untuk Media Air Minum: Batas Maksimum Kadar Arsenik Sebesar **0,01 mg/L (10 µg/L)**.
+
+Kuasai materi Arsen Bagian B ini secara mendalam, Dokter. Di hadapan dewan penguji, pemahaman komparatif yang tajam antara kegawatdaruratan arsin dan intoksikasi arsenik anorganik akan membuktikan kematangan klinis Anda sebagai dokter spesialis.
+
+---
+
+🩺 Apakah Anda ingin kita simulasikan latihan kasus meja hijau: seorang teknisi pabrik semikonduktor yang dilarikan ke IGD dengan keluhan kencing berwarna kehitaman menyerupai kola dan sesak napas akut setelah melakukan perbaikan pipa tangki gas arsin, bagaimana Anda menyusun **protokol resusitasi IGD 1 jam pertama**, menentukan **indikasi transfusi tukar**, dan menanggapi pertanyaan penguji tentang **pemberian terapi kelasi**?

@@ -1,0 +1,333 @@
+---
+
+### **A. TOLUENA (Toluene / Methylbenzene)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_7\text{H}_8\\)** atau **\\(\text{C}_6\text{H}_5\text{CH}_3\\)**; nomor CAS **108-88-3**; berat molekul **92,14 g/mol**. Sinonim: *toluol, methylbenzene, phenylmethane*.
+* **Sifat Fisik**: Cairan tidak berwarna, jernih, berbau aromatik khas (*benzene-like*), sangat mudah menguap (tekanan uap 21–28,4 mmHg pada 25°C), dan sangat mudah terbakar (*Class IB Flammable Liquid*, titik nyala ~4°C/40°F).
+* **Kelarutan**: Sangat larut dalam lemak (*lipofilik* tinggi) dan praktis tidak larut dalam air (0,07%).
+* **Klasifikasi Karsinogenisitas**: **IARC Grup 3** (*Not classifiable as to its carcinogenicity to humans*); **ACGIH A4** (*Not classifiable as a human carcinogen*); **Permenaker 5/2018 Kategori A-4**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Penggunaan Industri**: Pelarut utama dalam industri percetakan (khususnya *rotogravure printing*), cat, pernis, tiner, lak, perekat/lem (industri alas kaki/sepatu), serta bahan baku sintesis kimia (toluena diisosianat / TDI, asam benzoat, benzalkonium klorida, bahan peledak TNT).
+* **Bahan Bakar & Aditif**: Komponen fraksi hidrokarbon aromatik bensin (*gasoline/BTX mixture*) sebagai peningkat angka oktan.
+* **Penyalahgunaan Zat (*Substance Abuse*)**: Sering disalahgunakan dalam bentuk penghirupan uap lem (*glue sniffing / solvent abuse*).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional terpenting; sekitar 50% uap yang dihirup diabsorpsi secara efisien oleh alveoli paru dan cepat masuk ke sirkulasi darah.
+  * **Dermal**: Diabsorpsi lambat namun signifikan melalui kulit utuh karena sifat lipofiliknya.
+  * **Gastrointestinal**: Diabsorpsi cepat dan hampir menyeluruh jika tertelan.
+* **Distribusi**: Terdistribusi cepat ke seluruh organ dengan afinitas tertinggi pada jaringan kaya lipid seperti **sistem saraf pusat (otak, terutama serebelum)**, jaringan adiposa, hepar, dan sumsum tulang.
+* **Metabolisme**: Terjadi terutama di hepar:
+  * **Jalur Utama (~80–90%)**: Oksidasi gugus metil oleh sitokrom P450 (terutama **CYP2E1**, serta CYP1A2 dan CYP2B6) menjadi benzil alkohol. Selanjutnya diubah oleh *alcohol dehydrogenase* (ADH) menjadi benzaldehida, lalu oleh *aldehyde dehydrogenase* (ALDH) menjadi **asam benzoat**. Di mitokondria, asam benzoat dikonjugasikan dengan **glisin** menghasilkan **asam hipurat (*hippuric acid*)**.
+  * **Jalur Minor Cincin Aromatik (~1–2%)**: Oksidasi cincin aromatik menghasilkan senyawa antara epoksida (2,3- dan 3,4-toluena epoksida) yang berisomerisasi menjadi **kresol (terutama *ortho*-kresol / *o*-cresol ~0,1%**, serta *p*-kresol dan *m*-kresol).
+  * **Jalur Glutation (<2%)**: Epoksida dan benzil alkohol dikonjugasikan dengan GSH membentuk asam S-benzilmerkapturat (BMA) dan asam S-*p*-toluilmerkapturat.
+* **Ekskresi**: Sekitar 70–80% dosis yang diserap diekskresikan melalui urin dalam bentuk asam hipurat terkonjugasi; 7–14% diekshalasi tanpa perubahan melalui paru-paru; metabolit *o*-kresol (<0,1–1%) dan BMA diekskresikan melalui urin; kurang dari 2% diekskresikan melalui empedu.
+
+---
+
+#### **4. Toksikodinamik**
+* **Depresi Sistem Saraf Pusat**: Toluena bekerja langsung melarutkan lipid membran sel saraf (*membrane fluidization*), mengubah permeabilitas membran, serta memodulasi fungsi kanal ion. Toluena berperan sebagai agonis/potensiator pada kompleks **reseptor GABA\\(_A\\)-kanal klorida**, memicu influks ion klorida yang menyebabkan hiperpolarisasi neuron dan hambatan penjalaran impuls saraf. Toluena juga menghambat reseptor glutamat eksitatori (NMDA).
+* **Ototoksisitas Koklear**: Toluena merusak struktur membran sel rambut luar (*Outer Hair Cells* / OHC) organ Corti pada koklea, terutama baris ke-3 ke arah baris ke-1, serta mengganggu daur ulang ion kalium (\\(\text{K}^+\\)) koklea.
+* **Sensitisasi Miokardium**: Menginduksi sensitisasi miokardium terhadap katekolamin endogen yang berpotensi memicu aritmia ventrikel fatal.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* ***o*-Kresol Urin (*o-Cresol in urine*)**:
+  * **Peran**: Parameter spesifik untuk menilai pajanan kerja.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+* **Toluena dalam Urin (*Toluene in urine*)**:
+  * **Peran**: Pengukuran langsung senyawa induk di urin; sangat berkorelasi dengan konsentrasi udara.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+* **Toluena dalam Darah (*Toluene in blood*)**:
+  * **Peran**: Indikator beban tubuh internal (*internal dose*).
+  * **Waktu Sampling**: **Sebelum shift terakhir dari pekan kerja (*prior to last shift of workweek*)**.
+* **Asam Hipurat Urin (*Hippuric Acid* / HA-u)**:
+  * **Keterbatasan Utama**: Ditinggalkan sebagai bioindikator tunggal pada pajanan rendah (<30–50 ppm) karena **faktor perancu diet yang sangat tinggi** (makanan mengandung asam benzoat, buah kismis/prem, kopi, dan minuman bersoda berpengawet natrium benzoat yang meningkatkan asam hipurat fisiologis secara masif).
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Asam Hipurat Urin**: t\\(_{1/2}\\) eliminasi sangat cepat, berkisar **1–2 jam** (sebagian besar tuntas diekskresikan dalam 12–20 jam).
+* ***o*-Kresol Urin**: t\\(_{1/2}\\) berkisar antara **2–3 jam**, mencerminkan pajanan harian pada shift kerja terkait.
+* **Toluena Darah**: Memiliki pola eliminasi multifasik; fase awal eliminasi cepat dari darah (t\\(_{1/2}\\) ~1,5–3 jam), diikuti fase lambat akibat pelepasan perlahan dari depot jaringan adiposa (t\\(_{1/2}\\) terminal mencapai **20–40 jam**).
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Depresi SSP**: Sakit kepala, pusing berputar (*dizziness*), euforia, rasa melayang, ataksia, gangguan koordinasi motorik, mual, konfusi, penurunan kesadaran, hingga koma dan depresi pernapasan fatal pada paparan konsentrasi tinggi (>500–1.000 ppm).
+* **Iritasi Mukosa & Saluran Napas**: Iritasi mata berat, konjungtivitis, lakrimasi, batuk, faringitis, trakeobronkitis, hingga spasme bronkus dan edema paru kimiawi non-kardiogenik.
+* **Iritasi Dermal**: Reaksi eritema, rasa terbakar, kulit kering dan pecah-pecah (*defatting effect*), serta dermatitis kontak iritan.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Ensefalopati Pelarut Kronik (*Chronic Solvent-induced Encephalopathy* / CSE)**: Terjadi akibat paparan bertahun-tahun; bervariasi mulai dari sindrom astenik ringan (lemah, mudah lelah, gangguan tidur), perubahan kepribadian/afek, penurunan memori jangka pendek dan konsentrasi, hingga atrofi serebelar dan serebral ireversibel.
+* **Ototoksisitas & Kehilangan Pendengaran Sinergis dengan Bising**:
+  * Toluena bersifat ototoksik primer pada koklea.
+  * Bila terpajan bersamaan dengan **kebisingan tempat kerja (*noise co-exposure*)**, terjadi efek **sinergis supraaditif** yang mempercepat dan memperparah tuli sensorineural, bahkan pada intensitas bising di bawah 85 dBA.
+* **Gangguan Penglihatan Warna (*Dyschromatopsia*)**: Kehilangan kemampuan diskriminasi warna yang didapat (*acquired color vision impairment*), terutama pada sumbu biru-kuning (*tritan*) dan merah-hijau.
+* **Toksisitas Reproduksi & Perkembangan**:
+  * Gangguan siklus menstruasi dan peningkatan risiko abortus spontan (*pregnancy loss*).
+  * *Embryo-fetal damage / Fetal Toluene Syndrome*: Paparan maternal dapat menimbulkan mikrosefali, dismorfisme kraniofasial, kelainan susunan saraf pusat, dan retardasi pertumbuhan mirip *fetal alcohol syndrome*.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2020–2026)**:
+  * **TLV-TWA**: **20 ppm** (75,3 mg/m³).
+  * **TLV-STEL**: Tidak ditetapkan nilai numerik.
+  * **Notasi**: **OTO** (*Ototoxicant*), **A4** (*Not Classifiable as a Human Carcinogen*), **BEI**.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **20 BDS (ppm)** atau **75,3 mg/m³**.
+  * **PSD (STEL 15 menit)**: Tidak tercantum.
+  * **Notasi**: **A-4**, **BEI**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Nilai Batas BEI / IPB | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- |
+| ***o*-Kresol urin** | Urin | **Akhir shift kerja** (*End of shift*) | **0,3 mg/g kreatinin** | Notasi **B** (ACGIH) |
+| **Toluena dalam urin** | Urin | **Akhir shift kerja** (*End of shift*) | **0,03 mg/L** | Tanpa hidrolisis |
+| **Toluena dalam darah** | Darah | **Sebelum shift terakhir dari pekan kerja** (*Prior to last shift of workweek*) | **0,02 mg/L** | Mencerminkan akumulasi mingguan |
+
+---
+
+#### **11. Tatalaksana Akut & Keracunan**
+* **Prinsip**: **TIDAK ADA ANTIDOT SPESIFIK**. Penanganan murni suportif dan simtomatik.
+* **Tindakan Penyelamatan**:
+  * Pindahkan korban dari zona paparan ke udara segar; berikan terapi oksigen atau intubasi jika terjadi depresi SSP dan hipoksia.
+  * Lepaskan seluruh pakaian kerja yang terkontaminasi dan lakukan irigasi kulit/mata dengan air mengalir selama minimal 15–20 menit.
+  * **KONTRAINDIKASI INDUKSI MUNTAH** pada pajanan tertelan karena volatilitas dan viskositas rendahnya memicu risiko tinggi aspirasi paru yang berakibat fatal (*chemical pneumonitis*).
+  * **Hindari obat golongan simpatomimetik (epinefrin/norepinefrin)** untuk mengatasi hipotensi/henti jantung, guna mencegah induksi aritmia ventrikel letal akibat miokardium yang tersensitisasi pelarut aromatik.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **Penerapan 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Menegakkan diagnosis klinis (misal: Gangguan Pendengaran Sensorineural, Ensefalopati Pelarut Kronik, atau Dermatitis Kontak Iritan).
+  2. *Identifikasi Pajanan Kerja*: Melacak penggunaan toluena murni/campuran pada SDS (*Safety Data Sheet*) atau LDKB.
+  3. *Hubungan Hubungan Kausal*: Mengonfirmasi bukti toksikologis hubungan antara toluena dan kerusakan koklear/neurotoksisitas.
+  4. *Evaluasi Besaran Pajanan*: Mengukur kadar udara ruang kerja (dibandingkan NAB 20 ppm) dan biomonitoring urin (*o*-kresol vs IPB 0,3 mg/g kreatinin), masa kerja, dan kepatuhan APD.
+  5. *Faktor Kerentanan Individu*: Polimorfisme CYP2E1, riwayat konsumsi alkohol (induktor enzim), dan riwayat konsumsi obat salisilat/aspirin (yang terbukti mempotensiasi ototoksisitas toluena).
+  6. *Faktor di Luar Tempat Kerja*: Riwayat penggunaan cat/thinner di rumah, hobi rekreasi berisiko bising, merokok, dan penyalahgunaan zat (*solvent abuse*).
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja atau bukan PAK.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan gangguan neurokognitif progresif, penurunan pendengaran bermakna, neuropati perifer, atau wanita hamil (*teratogenik & fetotoksik*) dinyatakan **tidak laik (*unfit*)** berada di area kerja berpajanan toluena.
+* **Surveilans Medis Berkala**: Audiometri nada murni berkala terkoordinasi (program konservasi pendengaran terintegrasi), skrining neurobehavioral (skala Q16/Euroquest), tes diskriminasi warna (Lanthony D-15), serta pemantauan berkala fungsi hepar dan ginjal.
+* **Pengendalian di Tempat Kerja**:
+  * *Substitusi*: Menggunakan pelarut berbasis air (*water-based*) menggantikan sistem berbasis toluena.
+  * *Rekayasa Teknis*: Sistem pencampuran tertutup dan ventilasi pembuangan lokal (*Local Exhaust Ventilation* / LEV).
+  * *APD*: Sarung tangan kedap pelarut khusus (Viton, PVA, atau Teflon; **hindari lateks alami** karena mudah ditembus pelarut) dan respirator uap organik (kartrid karbon aktif).
+
+---
+
+#### **13. Keterangan Regulasi & Regulasi Terkait**
+* **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+* **Notasi**:
+  * ACGIH menetapkan notasi **OTO** (*Ototoxicant*) dan **A4**.
+  * Permenaker No. 5 Tahun 2018 menetapkan notasi **A-4** dan **BEI**.
+* **Regulasi Nasional**:
+  * **Perpres No. 7 Tahun 2019 Lampiran I.a No. 12**: Mengakui secara legal hak kompensasi untuk "*Penyakit yang disebabkan oleh benzene atau homolognya (toluene, xylene)*".
+  * **Permenkes No. 11 Tahun 2022**: Pedoman 7 langkah diagnosis PAK dan tatalaksana komprehensif tingkat individu serta komunitas.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Toluena**
+* 🩺 **Clinical Pearl**:
+  * **"The Toluene-Noise Synergism"**: Toluena merupakan zat prototipikal berlabel **OTO** (*Ototoxicant*). Kerusakan pendengaran akibat ko-pajanan toluena dan bising bukan sekadar penjumlahan aditif, melainkan **sinergis multiplikatif**. Bahkan pekerja di lingkungan dengan intensitas bising aman (<85 dBA) tetap dapat mengalami ketulian koklear permanen bila kadar uap toluena di udara melebihi nilai ambang batas.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Asam Hipurat*: Jangan memilih asam hipurat urin sebagai biomarker pilihan untuk pemantauan kadar rendah (<20 ppm). Jawaban yang benar adalah ***o*-kresol urin** atau **toluena dalam darah/urin** karena asam hipurat urin memiliki kadar dasar endogen tinggi dari makanan/minuman berbenzoat.
+  2. *Jebakan Waktu Sampling Toluena Darah*: Toluena dalam darah **TIDAK diambil di akhir shift harian biasa**, melainkan diambil **sebelum shift kerja terakhir dari pekan kerja** (*prior to last shift of workweek*).
+  3. *Jebakan Interaksi Obat (Aspirin)*: Pasien/pekerja yang rutin mengonsumsi asam asetilsalisilat (aspirin) mengalami potensiasi ganda toksisitas toluena pada pendengaran dan efek teratogenik janin.
+
+---
+---
+
+### **B. XILENA (Xylene / Dimethylbenzene)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_8\text{H}_{10}\\)** atau **\\(\text{C}_6\text{H}_4(\text{CH}_3)_2\\)**; berat molekul **106,16 g/mol**.
+* **Isomer**: Terdiri dari tiga isomer posisi cincin: ***ortho*-xilena** (CAS 95-47-6), ***meta*-xilena** (CAS 108-38-3), dan ***para*-xilena** (CAS 106-42-3); campuran komersial/teknis (*mixed xylenes*) memiliki CAS **1330-20-7**.
+* **Sifat Fisik**: Cairan jernih tidak berwarna, berbau aromatik manis khas, mudah menguap (tekanan uap ~9 mmHg pada 25°C), mudah terbakar (*Class IC Flammable Liquid*, titik nyala 27–32°C / 81°F).
+* **Kelarutan**: Sangat larut dalam lemak/lipofilik, praktis tidak larut dalam air (0,02%).
+* **Klasifikasi Karsinogenisitas**: **IARC Grup 3** (*Not classifiable as to its carcinogenicity to humans*); **ACGIH A4** (*Not classifiable as a human carcinogen*); **Permenaker 5/2018 Kategori A-4**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Industri Pengguna**: Pelarut utama dalam cat, pernis, pelapis (*coatings*), enamel, lem, resin sintesis, dan tinta percetakan.
+* **Laboratorium Medis**: Agen pembening (*clearing agent*) jaringan dan agen *deparaffinisasi* preparat pada laboratorium histopatologi dan patologi anatomi.
+* **Industri Kimia Dasar**: Bahan baku produksi asam tereftalat / dimetil tereftalat (dari *p*-xilena) untuk serat poliester/plastik PET, serta anhidrida ftalat (dari *o*-xilena) untuk *plasticizer*.
+* **Bahan Bakar**: Komponen penting dalam bahan bakar minyak/bensin (~92% campuran xilena diproduksi dari minyak bumi).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute paparan okupasional utama; uap xilena diabsorpsi cepat melalui membran kapiler-alveolar dengan retensi paru rata-rata sekitar **60–65%**.
+  * **Dermal**: Diabsorpsi perkutan melalui kontak langsung dengan cairan (menembus stratum korneum).
+  * **Gastrointestinal**: Diabsorpsi cepat dan menyeluruh jika tertelan.
+* **Distribusi**: Terdistribusi luas ke seluruh tubuh dengan akumulasi terbesar pada jaringan kaya lipid (otak/sistem saraf, jaringan lemak adiposa, hepar, dan ginjal) karena nilai partisi lipid:air yang tinggi.
+* **Metabolisme**: Lebih dari **90%** xilena yang diserap dimetabolisme secara cepat di hepar:
+  * Oksidasi salah satu gugus metil cincin dikatalisis oleh enzim mikrosomal sitokrom P450 (terutama **CYP2E1**, serta CYP1A2) menghasilkan **asam metilbenzoat (*methylbenzoic acid* / *toluic acid*)**.
+  * Di dalam mitokondria hepatosit, asam metilbenzoat dikonjugasikan dengan asam amino **glisin** menghasilkan **asam metilhipurat (*methylhippuric acid* / MHA)** (terdiri dari isomer *o*-, *m*-, dan *p*-MHA sesuai molekul induknya).
+  * Kurang dari 2% mengalami hidroksilasi cincin menjadi dimetilfenol (*xylenols*) atau konjugasi asam merkapturat dengan glutation.
+* **Ekskresi**: Sekitar **95% metabolit diekskresikan ke dalam urin sebagai asam metilhipurat (MHA)**; sekitar 4–10% dieliminasi tanpa perubahan melalui udara ekshalasi paru.
+
+---
+
+#### **4. Toksikodinamik**
+* **Depresi Sistem Saraf Pusat**: Efek narkotik dan anestesi umum akibat pelarutan senyawa lipofilik pada bilayer lipid membran saraf otak. Xilena meningkatkan fluiditas membran, mengganggu fungsi protein kanal ion membran, mempotensiasi transmisi penghambat GABA-ergik, dan menekan transmisi glutamatergik.
+* **Ototoksisitas Spesifik**: Kerusakan selektif pada sel rambut luar (*outer hair cells* / OHC) koklea, di mana isomer ***para*-xilena (*p*-xylene)** memiliki potensi ototoksik terbesar dibandingkan isomer lainnya.
+* **Iritasi Kimiawi**: Pelarutan lapisan lipid stratum korneum menyebabkan denaturasi protein jaringan, memicu pelepasan histamin dan mediator inflamasi lokal.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Asam Metilhipurat Urin (*Methylhippuric Acids in urine* / MHA)**:
+  * **Karakteristik**: Biomarker baku emas (*gold standard*) yang sangat spesifik dan sensitif untuk pajanan xilena.
+  * Mengukur total ketiga isomer (*o*-, *m*-, dan *p*-methylhippuric acids).
+  * **Keunggulan**: Berbeda dari asam hipurat pada toluena, **kadar dasar MHA di populasi umum praktis tidak terdeteksi (<0,001 g/g kreatinin)** dan tidak dipengaruhi oleh diet benzoat.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **MHA Urin**: Memiliki kinetika eliminasi bifasik; fase cepat dengan waktu paruh sekitar **1–3 jam**, dan fase lambat sekitar **5–15 jam** (seluruh metabolit tuntas diekskresikan dalam urin dalam rentang **18–24 jam** pasca-pajanan).
+* **Xilena dalam Lemak Tubuh**: Karena lipofilisitasnya yang ekstrem, xilena yang terakumulasi di jaringan adiposa memiliki t\\(_{1/2}\\) eliminasi lambat berkisar **20–40 jam**.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Depresi SSP**: Pusing (*dizziness*), vertigo, sensasi mengambang (*floating sensation*), sakit kepala, inkoordinasi motorik/ataksia, gaya berjalan goyah, konfusi, kelelahan berat, mengantuk (*drowsiness*), hingga delirium, hilang kesadaran, koma, dan henti napas.
+* **Iritasi Mata & Saluran Napas Atas**: Rasa terbakar pada mata, lakrimasi, blefarospasme, iritasi hidung dan faring, tenggorokan kering, batuk, dispnea, edema paru akut, hingga perdarahan fokal interalveolar pada paparan uap pekat masif.
+* **Iritasi Dermal**: Eritema, rasa terbakar menyengat, urtikaria kontak, kulit pecah-pecah (*cracking*), hingga pembentukan bula/vesikel akibat kontak cairan lama.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Neurotoksisitas & Ensefalopati Pelarut Kronik (*Chronic Solvent Encephalopathy*)**:
+  * Sindrom psikoorganik: penurunan konsentrasi, labilitas emosional, gangguan tidur, hendaya memori kerja, dan penurunan waktu reaksi psikomotorik.
+  * Neuropati perifer ringan (parestesia, penurunan kecepatan hantar saraf sensorik).
+* **Ototoksisitas & Kehilangan Pendengaran Sinergis dengan Bising**:
+  * Xilena (khususnya *p*-xilena) bersifat ototoksik langsung pada sel rambut sensorik koklea.
+  * Menunjukkan efek **sinergis supraaditif terhadap kebisingan**, memicu percepatan gangguan pendengaran sensorineural permanen jika pekerja terpajan pelarut bersamaan dengan bising lingkungan kerja.
+* **Gangguan Penglihatan Warna**: Penurunan kemampuan diskriminasi warna biru-kuning (*dyschromatopsia*).
+* **Toksisitas Reproduksi**: Peningkatan kejadian oligomenore/gangguan haid, risiko abortus spontan pada pekerja laboratorium dan manufaktur, serta keterlambatan osifikasi skeletal embrio (*fetotoxicity*).
+* **Efek Hepar & Ginjal**: Peningkatan ringan enzim transaminase hepar (SGOT/SGPT), hepatomegali reversibel, dan gangguan tubular ginjal subklinis.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2021–2026)**:
+  * **TLV-TWA**: **20 ppm** (87 mg/m³). *(Catatan: Diturunkan dari standar terdahulu 100 ppm guna mencegah hendaya neurokognitif dan ototoksisitas)*.
+  * **TLV-STEL**: Tidak ditetapkan nilai numerik.
+  * **Notasi**: **OTO** (*Ototoxicant*, khusus untuk *p*-xilena dan campuran mengandung *p*-xilena), **A4** (*Not classifiable as a human carcinogen*), **BEI**.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **100 BDS (ppm)** atau **434 mg/m³**.
+  * **PSD (STEL 15 menit)**: **150 BDS (ppm)** atau **651 mg/m³**.
+  * **Notasi**: **A-4**, **BEI**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2023–2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Asam Metilhipurat (*Methylhippuric acids* / MHA)** | Urin | **Akhir shift kerja** (*End of shift*) | **1,5 g/g kreatinin** | **0,3 g/g kreatinin** | Mengukur jumlah total seluruh isomer MHA |
+
+*(Catatan ACGIH: Penurunan nilai BEI menjadi 0,3 g/g kreatinin selaras dengan penurunan TLV-TWA menjadi 20 ppm; berlaku untuk xilena mutu teknis/komersial yang mengandung etilbenzena)*.
+
+---
+
+#### **11. Tatalaksana Akut & Keracunan**
+* **Prinsip**: **TIDAK ADA ANTIDOT SPESIFIK**. Penanganan bersifat suportif dan dekontaminatif.
+* **Tindakan Penyelamatan**:
+  * Evakuasi segera ke area berventilasi baik atau tempat berudara bebas.
+  * Terapi suportif jalan napas: suplementasi oksigen jika sesak napas; ventilasi mekanik bila terjadi depresi pusat pernapasan.
+  * Dekontaminasi: Lepaskan pakaian kerja tercemar; bilas kulit menggunakan air mengalir dan sabun selama 15 menit; irigasi konjungtiva mata dengan salin steril/air mengalir selama 15–20 menit.
+  * **KONTRAINDIKASI INDUKSI MUNTAH / BILAS LAMBUNG RUTIN**: Menelan xilena membawa bahaya aspirasi tinggi ke trakeobronkial yang memicu pneumonitis kimia nekrotikans.
+  * **Hindari obat golongan amina simpatomimetik (epinefrin)** karena dapat memicu disritmia ventrikel fatal akibat miokardium yang tersensitisasi oleh hidrokarbon aromatik.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **Penerapan 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Menegakkan diagnosis klinis (misal: Ensefalopati Pelarut Kronik / *Chronic Toxic Encephalopathy*, Gangguan Dengar Campuran, atau Dermatitis Kontak Iritan Kronik).
+  2. *Identifikasi Pajanan Kerja*: Melacak pajanan xilena dari lembar SDS dan observasi proses kerja (misal: teknisi laboratorium patologi atau *spray painter* mobil).
+  3. *Hubungan Kausalitas*: Membuktikan secara ilmiah mekanisme pelarut xilena terhadap jaringan target (SSP, sel rambut koklea, epitel kulit).
+  4. *Evaluasi Besaran Pajanan*: Pengukuran konsentrasi udara ruang kerja (dibandingkan NAB 100 ppm atau TLV 20 ppm) dan pengujian MHA urin akhir shift (dibandingkan IPB 1,5 g/g atau BEI 0,3 g/g kreatinin).
+  5. *Faktor Individu*: Menilai polimorfisme enzim (CYP2E1), fungsi hepar/ginjal dasar, dan status kehamilan.
+  6. *Faktor di Luar Hubungan Kerja*: Paparan hobi merakit/mengecat di rumah, paparan bising saat mendengarkan musik (*earphone*), konsumsi alkohol (inhibitor kompetitif CYP2E1 pada fase akut).
+  7. *Penetapan Diagnosis PAK*: Menetapkan keterkaitan diagnosis dengan pajanan kerja untuk hak kompensasi jaminan ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan penyakit vestibular, gangguan pendengaran berat yang tidak stabil, gangguan kognitif menetap, penyakit hati kronis, atau wanita hamil dinyatakan **tidak laik (*unfit*)** berada di area kerja dengan paparan xilena.
+* **Surveilans Medis Berkala**:
+  * Skrining audiometri nada murni berkala (program konservasi pendengaran terpadu zat kimia ototoksik + bising).
+  * Pemeriksaan neurologis dan neurobehavioral berkala.
+  * Pemeriksaan fungsi hepar dan ginjal.
+* **Pengendalian di Tempat Kerja**:
+  * *Substitusi*: Mengganti xilena dengan zat pembening alternatif di laboratorium histopatologi (seperti pelarut berbasis terpen/limonen dari minyak jeruk atau cairan substitusi berbasis ester alifatik).
+  * *Rekayasa Teknis*: Pengerjaan preparat dan pewarnaan jaringan wajib di dalam lemari asam berventilasi (*fume hood* / LEV) dengan kecepatan hisap standar (>0,5 m/detik).
+  * *Pengendalian Administratif*: Rotasi kerja bagi teknisi lab dan pengecat, pembatasan jam kerja.
+  * *APD*: Sarung tangan bahan Viton, polivinil alkohol (PVA), atau nitril tebal tahan bahan kimia (hindari sarung tangan lateks atau vinil tipis karena xilena dapat menembusnya dalam hitungan detik/menit); respirator uap organik kimia.
+
+---
+
+#### **13. Keterangan Regulasi & Regulasi Terkait**
+* **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+* **Notasi**:
+  * ACGIH menetapkan notasi **OTO** (*Ototoxicant*, untuk isomer *p*-xilena dan campuran komersial), **A4** (*Not classifiable as a human carcinogen*), dan **BEI**.
+  * Permenaker No. 5 Tahun 2018 menetapkan notasi **A-4** dan **BEI**.
+* **Kontaminasi Benzena & Etilbenzena pada Xilena Komersial**:
+  * Xilena teknis/komersial (*technical-grade xylene*) bukan merupakan zat murni, melainkan campuran isomer (m-xilena ~40–65%, p-xilena ~20%, o-xilena ~20%) yang **selalu mengandung 10–20% etilbenzena** serta **cemaran benzena (<0,1–1%)**. Etilbenzena berkompetisi memperebutkan enzim hepar sehingga menekan laju metabolisme xilena menjadi MHA. Cemaran benzena menimbulkan risiko mielotoksisitas dan leukemia tersembunyi pada pekerja yang mengira hanya terpapar xilena murni.
+* **Regulasi Terkait**: Perpres No. 7 Tahun 2019 Lampiran I.a No. 12 (penyakit akibat homolog benzena); Permenkes No. 11 Tahun 2022 (7 langkah PAK).
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Xilena**
+* 🩺 **Clinical Pearl**:
+  * **"Isomer-Selective Ototoxicity"**: Meskipun xilena digunakan di industri sebagai campuran isomer (*mixed xylenes*), efek ototoksisitasnya tidak merata pada semua isomer. Isomer ***para*-xilena (*p*-xylene)** adalah isomer utama yang merusak sel rambut koklea dan bertanggung jawab atas notasi **OTO** pada xilena.
+  * **"Clean Background Advantage"**: Berbeda dari toluena (asam hipurat) atau benzena (*t,t*-MA), asam metilhipurat (MHA) dalam urin adalah bioindikator yang "bersih" (*robust*) karena populasi umum yang tidak terpapar secara okupasional memiliki kadar mendekati nol.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Diskrepansi NAB/BEI (Permenaker vs ACGIH)*:
+     * *Jebakan*: Menjawab BEI xilena hanya 1,5 g/g kreatinin.
+     * *Koreksi*: **Permenaker 5/2018 masih mematok NAB 100 ppm dengan IPB MHA 1,5 g/g kreatinin**. Namun, **ACGIH per 2023–2026 telah menurunkan TLV-TWA menjadi 20 ppm dan nilai BEI MHA disesuaikan turun menjadi 0,3 g/g kreatinin**. Perhatikan apakah soal menanyakan regulasi nasional Indonesia atau standar internasional ACGIH.
+  2. *Jebakan Interaksi Metabolik Etilbenzena*:
+     * *Jebakan*: Mengabaikan kandungan etilbenzena pada xilena teknis saat menginterpretasi hasil biomonitoring urin.
+     * *Koreksi*: Etilbenzena pada xilena komersial menghambat metabolisme xilena oleh sitokrom hepar, sehingga ekskresi MHA urin bisa tampak sedikit lebih rendah dari paparan xilena sebenarnya.
+  3. *Jebakan Seleksi APD (Sarung Tangan)*:
+     * *Jebakan*: Memilih sarung tangan karet lateks (*latex examination gloves*) untuk perlindungan terhadap xilena di laboratorium patologi.
+     * *Koreksi*: Sarung tangan lateks biasa atau nitril tipis mengalami *breakthrough* (penetrasi pelarut) dalam hitungan menit saat terkena cairan xilena murni. Wajib menggunakan sarung tangan berbahan dasar **Viton, PVA (Polyvinyl alcohol), atau nitril tebal tahan pelarut aromatik**.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: Nilai Ambang Batas Faktor Kimia; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran Bagian I.a No. 12: Penyakit yang disebabkan oleh benzene atau homolognya).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Tujuh Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)**: *2026 TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Toluene & Xylenes entries, Ototoxicant Notation definitions).
+5. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: Toluene, m-Xylene, o-Xylene, p-Xylene entries).
+6. **Lima, A. R.** (2022). *Toluene: correlation between occupational exposure limits and biological exposure indices*. Revista Brasileira de Medicina do Trabalho, 20(4), 633–641.
+7. **Rajan, S. T., Narasimhan, M., Rao, K. B., & Jacob, T. E.** (2019). *Toxicity of xylene in occupationally exposed workers: A high-performance liquid chromatography analysis*. Journal of Oral and Maxillofacial Pathology, 23(2), 268–274.
+8. **Inoue, O., Kanno, E., Kasai, K., Ukai, H., Okamoto, S., & Ikeda, M.** (2004). *Benzylmercapturic acid is superior to hippuric acid and o-cresol as a urinary marker of occupational exposure to toluene*. Toxicology Letters, 147(2), 177–186.
+9. **Angerer, J., & Krämer, A.** (1997). *Occupational chronic exposure to organic solvents XVI. Ambient and biological monitoring of workers exposed to toluene*. International Archives of Occupational and Environmental Health, 69(2), 91–96.
+10. **Pope, C. N., & Liu, J. (Eds.)** (2020). *An Introduction to Interdisciplinary Toxicology: From Molecules to Man*. Academic Press (Chapter 19: Auditory Toxicology & Sensory Organ System Effects; Chapter 20: Neurotoxicity of Organic Solvents).
+11. **Buratti, M., et al.** (1999). *Gas chromatography-electron-capture detection of urinary methylhippuric acid isomers as biomarkers of environmental exposure to xylene*. Journal of Chromatography B, 723(1-2), 95–104.
+
+---
+
+💡 *Apakah Anda ingin melanjutkan pembahasan dengan perbandingan komparatif matriks pelarut aromatik (Benzena vs. Toluena vs. Xilena vs. Etilbenzena / BTEX) atau simulasi soal studi kasus terkait evaluasi program konservasi pendengaran pada pekerja bengkel cat?*

@@ -1,0 +1,167 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), Anda tidak boleh keliru dalam membedakan sistem klasifikasi karsinogen dunia. Kegagalan membedakan mandat **IARC**, **GHS**, dan **ACGIH** menunjukkan ketidakmatangan pemahaman epidemiologi dan toksikologi regulatori Anda. 
+
+Di meja ujian dewan penguji (*board examination*), Anda wajib menguraikan dasar bukti ilmiah (*weight of evidence*), hierarki kategori, perbedaan mendasar antara bahaya (*hazard*) dan risiko (*risk*), serta penempatan agen industri kunci secara tepat.
+
+---
+
+### 1. Klasifikasi Karsinogen Menurut IARC (*International Agency for Research on Cancer*)
+
+IARC (badan di bawah Organisasi Kesehatan Dunia / WHO) mengevaluasi potensi karsinogenisitas suatu agen berdasarkan kajian telaah ilmiah komprehensif terhadap **kekuatan bukti (*strength / weight of evidence*)** dari tiga pilar: studi epidemiologi manusia, bioasai karsinogenisitas hewan coba, serta data mekanistik.
+
+```
+                          [ SISTEM EVALUASI IARC ]
+                                     │
+         ┌───────────────────────────┼───────────────────────────┐
+         ▼                           ▼                           ▼
+  [ BUKTI MANUSIA ]          [ BUKTI HEWAN COBA ]        [ BUKTI MEKANISTIK ]
+• Sufficient               • Sufficient                • Strong (Key Characteristics)
+• Limited                  • Limited                   • Operates in humans
+• Inadequate               • Inadequate                • Inadequate
+         │                           │                           │
+         └───────────────────────────┼───────────────────────────┘
+                                     ▼
+                   [ KATEGORI KARSINOGEN IARC ]
+     ┌───────────────────┬───────────────────┬───────────────────┐
+     ▼                   ▼                   ▼                   ▼
+  GRUP 1              GRUP 2A             GRUP 2B             GRUP 3
+Carcinogenic         Probably            Possibly        Not Classifiable
+ to Humans         Carcinogenic        Carcinogenic      (Inadequate data)
+ (Sufficient in   (Limited human +   (Limited human +    (Bukan berarti
+    Humans)       Sufficient animal)  Inadequate animal)      aman!)
+```
+
+#### a. Kategori Klasifikasi IARC
+Berdasarkan *Preamble* dan Monograf IARC Volume 100C, agen dikelompokkan ke dalam kategori berikut:
+
+*   **Grup 1: Karsinogenik terhadap Manusia (*Carcinogenic to humans*)**
+    *   *Kriteria Utama:* Terdapat **bukti yang cukup (*sufficient evidence*) mengenai karsinogenisitas pada manusia** melalui studi epidemiologi yang membuktikan hubungan sebab-akibat (kausalitas) yang bebas dari bias, faktor perancu (*confounding*), atau kebetulan (*chance*).
+    *   *Kriteria Luar Biasa (*Exception*):* Bukti pada manusia kurang dari cukup (*less than sufficient*), namun terdapat **bukti yang cukup (*sufficient evidence*) pada hewan coba DAN bukti kuat pada manusia yang terpajan** bahwa agen tersebut bekerja melalui mekanisme karsinogenesis yang relevan.
+*   **Grup 2: Kategori Agen yang Buktinya Berada di Antara Cukup dan Terbatas**
+    Kategori ini dibagi menjadi dua sub-grup deskriptif kualitatif:
+    *   **Grup 2A: Mungkin Besar Karsinogenik terhadap Manusia (*Probably carcinogenic to humans*)**
+        *   Diterapkan bila terdapat **bukti terbatas (*limited evidence*) pada manusia DAN bukti cukup (*sufficient evidence*) pada hewan coba**.
+        *   Dapat juga digunakan bila bukti pada manusia tidak memadai (*inadequate evidence*), namun bukti pada hewan coba cukup (*sufficient*) disertai **bukti mekanistik yang kuat** bahwa proses karsinogenesis tersebut bekerja pada manusia.
+        *   Secara luar biasa, dapat diterapkan semata-mata atas dasar bukti terbatas (*limited evidence*) pada manusia, atau agen tersebut terbukti secara mekanistik berada dalam kelas kimiawi yang sama dengan agen Grup 1/2A lainnya.
+    *   **Grup 2B: Mungkin Karsinogenik terhadap Manusia (*Possibly carcinogenic to humans*)**
+        *   Diterapkan bila terdapat **bukti terbatas (*limited evidence*) pada manusia dan bukti kurang dari cukup (*less than sufficient*) pada hewan coba**.
+        *   Dapat diterapkan bila bukti pada manusia tidak memadai (*inadequate*), namun **bukti pada hewan coba cukup (*sufficient evidence*)**.
+        *   Dapat pula diberikan berdasarkan pertimbangan bukti kuat dari data mekanistik semata.
+*   **Grup 3: Tidak Dapat Diklasifikasikan Karsinogenisitasnya terhadap Manusia (*Not classifiable as to its carcinogenicity to humans*)**
+    *   Kategori paling banyak, digunakan bila **bukti karsinogenisitas tidak memadai (*inadequate*) pada manusia DAN tidak memadai atau terbatas (*inadequate or limited*) pada hewan coba**.
+    *   Diterapkan pula jika bukti pada hewan coba cukup (*sufficient*), tetapi terdapat bukti kuat bahwa mekanisme tumorogenesis pada hewan tersebut **tidak bekerja pada manusia**.
+    *   *Prinsip Mutlak Ujian:* Evaluasi Grup 3 **BUKAN penentuan bahwa zat tersebut aman atau non-karsinogenik**, melainkan menandakan bahwa data ilmiah yang ada belum mencukupi dan penelitian lebih lanjut masih diperlukan.
+*   *(Catatan Historis Grup 4):* Dahulu IARC memiliki Grup 4 (*Probably not carcinogenic to humans* untuk zat dengan bukti ketiadaan karsinogenisitas), namun dalam sistem modern IARC, kategori ini hampir tidak lagi digunakan.
+
+---
+
+#### b. Perbedaan Fundamental: Klasifikasi Bahaya (*Hazard*) vs. Risiko (*Risk*)
+
+Banyak residen salah kaprah mengira IARC mengukur "tingkat bahaya di lapangan". Pahami perbedaan aksiologis ini:
+
+| Parameter | Identifikasi Bahaya Karsinogen (*Carcinogenic Hazard Identification*) | Penilaian Risiko Kanker (*Carcinogenic Risk Assessment*) | Sumber Acuan Dokumen |
+| :--- | :--- | :--- | :--- |
+| **Definisi Konseptual** | Evaluasi terhadap **kapasitas intrinsik/bawaan (*inherent/intrinsic capability*)** suatu agen untuk memicu kanker dalam kondisi atau situasi apa pun. | Estimasi probabilitas matematis terjadinya kanker pada populasi pekerja/manusia yang terpajan pada **dosis, durasi, dan skenario pajanan nyata tertentu**. | |
+| **Lembaga Pelaksana** | **IARC Monographs** dan klasifikasi bahaya bahan kimia murni GHS. | **Badan Regulasi:** US-EPA, OSHA, Kemenkes (ARKL), dan higienis industri. | |
+| **Sifat Evaluasi** | **Kualitatif (*Weight of Evidence*):** Menilai seberapa meyakinkan bukti ilmiah bahwa zat tersebut *mampu* menyebabkan kanker, tanpa memandang dosis. | **Kuantitatif (*Dose-Response Modeling*):** Menghitung *Slope Factor* (CSF), *Inhalation Unit Risk* (IUR), dan *Excess Cancer Risk* (\\(\text{Risk} = \text{Dosis} \times \text{CSF}\\)). | |
+| **Rumus Hubungan** | *Hazard* adalah komponen dari risiko. | \\(\mathbf{\text{Risiko} = \text{Bahaya (Hazard)} \times \text{Besaran Pajanan (Exposure)}}\\). | |
+| **Aplikasi Praktis** | Jika zat masuk Grup 1 IARC, zat tersebut terbukti karsinogenik (misalnya debu kayu atau Cr VI). | Bila pekerja terpajan zat Grup 1 dalam sistem tertutup total dengan konsentrasi nol, maka **bahayanya tetap Grup 1, tetapi risikonya mendekati nol**. | |
+
+---
+
+### 2. Klasifikasi Karsinogen Menurut GHS (*Globally Harmonized System*)
+
+Sistem GHS PBB (Bab 3.6 *Carcinogenicity*) membagi karsinogen menjadi **dua kategori bahaya utama** dengan subkategori berdasarkan kekuatan bukti (*strength of evidence*) epidemiologi dan bioasai hewan coba:
+
+```
+                     [ KLASIFIKASI KARSINOGEN GHS BAB 3.6 ]
+                                        │
+         ┌──────────────────────────────┴──────────────────────────────┐
+         ▼                                                             ▼
+   [ KATEGORI 1 ]                                                [ KATEGORI 2 ]
+Known or Presumed Human Carcinogen                            Suspected Human Carcinogen
+         │                                                             │
+   ┌─────┴─────┐                                                       │
+   ▼           ▼                                                       ▼
+Kat 1A       Kat 1B                                             • Bukti terbatas manusia
+Bukti        Bukti hewan coba                                     atau hewan coba
+Manusia      cukup (sufficient)                                 • Piktogram: Health Hazard
+(Epidemiologi)                                                  • Signal Word: WARNING
+   │           │                                                • Hazard Statement: H351
+   └─────┬─────┘                                                  ("Suspected of causing cancer")
+         │
+• Piktogram: Health Hazard (Dada Meledak)
+• Signal Word: DANGER
+• Hazard Statement: H350 ("May cause cancer")
+```
+
+#### a. Kategori 1: *Known or Presumed Human Carcinogens*
+Zat kimia yang diketahui atau diperkirakan memiliki potensi karsinogenik pada manusia. Dibagi menjadi dua sub-kategori:
+*   **Kategori 1A (*Known to have carcinogenic potential for humans*):** Penempatan zat sebagian besar didasarkan pada **bukti nyata pada manusia (*human evidence*)** dari studi epidemiologi yang menunjukkan hubungan kausal yang meyakinkan.
+*   **Kategori 1B (*Presumed to have carcinogenic potential for humans*):** Penempatan zat sebagian besar didasarkan pada **bukti hewan coba (*animal evidence*) yang memadai (*sufficient evidence*)** (misalnya peningkatan tumor ganas pada dua spesies berbeda, atau satu studi dengan keganasan yang luar biasa). Dapat juga mencakup studi manusia dengan bukti terbatas yang didukung bukti hewan coba terbatas.
+*   **Elemen Komunikasi Bahaya Kategori 1 (1A dan 1B):**
+    *   *Piktogram:* **Health Hazard** (siluet manusia dengan bintang meledak di dada).
+    *   *Kata Sinyal (*Signal Word*):* **DANGER**.
+    *   *Pernyataan Bahaya (*Hazard Statement*):* **H350: "May cause cancer"** (Dapat menyebabkan kanker).
+    *   *Cut-off konsentrasi pada campuran:* **\\(\ge 0{,}1\%\\)** memicu klasifikasi campuran sebagai Kategori 1.
+
+#### b. Kategori 2: *Suspected Human Carcinogens*
+*   **Kriteria Penetapan:** Bukti karsinogenisitas diperoleh dari studi manusia dan/atau hewan coba, namun **tidak cukup meyakinkan untuk menempatkan zat tersebut ke dalam Kategori 1**. Didasarkan pada bukti terbatas (*limited evidence*) pada manusia atau bukti terbatas pada hewan coba.
+*   **Elemen Komunikasi Bahaya Kategori 2:**
+    *   *Piktogram:* **Health Hazard**.
+    *   *Kata Sinyal (*Signal Word*):* **WARNING**.
+    *   *Pernyataan Bahaya (*Hazard Statement*):* **H351: "Suspected of causing cancer"** (Diduga menyebabkan kanker).
+    *   *Cut-off konsentrasi pada campuran:* **\\(\ge 0{,}1\%\\) atau \\(\ge 1{,}0\%\\)** bergantung pada regulasi otoritas kompeten negara setempat.
+
+---
+
+### 3. Klasifikasi Karsinogen Menurut ACGIH (Kategori A1 sampai A5)
+
+ACGIH menerbitkan kategori karsinogenisitas okupasi melalui Lampiran A (*Appendix A: Carcinogenicity*) yang juga diadopsi secara identik dalam **Permenaker No. 5 Tahun 2018 (Lampiran 3 Huruf B)**:
+
+*   **A1 — *Confirmed Human Carcinogen* (Terbukti Karsinogen untuk Manusia):**
+    Zat terbukti bersifat karsinogenik terhadap manusia berdasarkan bobot bukti dari studi-studi epidemiologi.
+    *Tindakan Okupasi:* Pajanan pekerja harus diminimalkan serendah mungkin; untuk karsinogen A1 tanpa nilai TLV numerik (notasi L), pajanan pekerja **harus dieliminasi sepenuhnya**.
+*   **A2 — *Suspected Human Carcinogen* (Diduga/Diperkirakan Karsinogen untuk Manusia):**
+    Data pada manusia dapat diterima secara kualitas tetapi saling bertentangan atau belum cukup untuk menyatakan karsinogen terbukti; ATAU zat bersifat karsinogenik pada hewan coba pada dosis, rute, lokasi, tipe histologi, atau mekanisme yang dianggap relevan terhadap pajanan pekerja. Terutama digunakan bila bukti epidemiologi terbatas dan bukti hewan coba cukup serta didukung karakteristik kunci karsinogen.
+*   **A3 — *Confirmed Animal Carcinogen with Unknown Relevance to Humans* (Karsinogen Terbukti pada Hewan dengan Relevansi Belum Pasti pada Manusia):**
+    Zat terbukti memicu kanker pada hewan coba pada dosis relatif tinggi, rute, atau mekanisme yang belum tentu atau kurang relevan terhadap pajanan manusia di tempat kerja. Studi epidemiologi yang ada belum membuktikan adanya peningkatan risiko kanker pada manusia.
+*   **A4 — *Not Classifiable as a Human Carcinogen* (Tidak Dapat Diklasifikasikan Karsinogen terhadap Manusia):**
+    Bahan kimia yang menimbulkan kekhawatiran karsinogenik namun tidak dapat dinilai akibat ketiadaan data manusia; serta bioasai hewan coba atau uji *in vitro* tidak memberikan bukti mekanistik yang memadai untuk memasukkannya ke kategori lain.
+*   **A5 — *Not Suspected as a Human Carcinogen* (Tidak Dicurigai Karsinogen terhadap Manusia):**
+    Zat tidak dicurigai karsinogenik pada manusia berdasarkan studi epidemiologi yang dirancang baik, masa tindak lanjut (*follow-up*) panjang, riwayat pajanan jelas, dosis memadai, dan daya statistik yang cukup.
+
+---
+
+### 4. Matriks Komparasi dan Contoh Agen Okupasi Kunci
+
+Berikut adalah rangkuman komparatif status karsinogenisitas 10 agen okupasi dan logam berat penting yang tercantum dalam dokumen rujukan:
+
+| Bahan Kimia / Logam Okupasi | Klasifikasi IARC | Klasifikasi GHS | Klasifikasi ACGIH / Permenaker 5/2018 | Organ Target Kanker Terkait & Catatan Okupasi | Dasar Sumber Grounding |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Kromium Heksavalen [Cr(VI)]** | **Grup 1** | **Kategori 1A** | **A1** | **Kanker Paru, Kanker Rongga Hidung dan Sinus Paranasal**. Senyawa larut maupun tidak larut air. | |
+| **Arsen dan Senyawa Anorganik (As)** | **Grup 1** | **Kategori 1A** | **A1** | **Kanker Paru, Kanker Kulit, Kanker Kandung Kemih**. (Catatan: metabolit DMA/MMA tergolong IARC Grup 2B). | |
+| **Kadmium dan Senyawanya (Cd)** | **Grup 1** | **Kategori 1B** *(CLP Carc. 1B)* | **A2** *(Permenaker A2)* | **Kanker Paru**; bukti terbatas pada kanker prostat dan ginjal. Efek kumulatif korteks ginjal. | |
+| **Berilium dan Senyawanya (Be)** | **Grup 1** | **Kategori 1A / 1B** | **A1** *(Permenaker A1; Kulit, DSEN, RSEN)* | **Kanker Paru**. Disertai risiko hipersensitivitas paru granulomatosa kronis (CBD). | |
+| **Nikel & Senyawanya (Ni)** | **Grup 1** *(Senyawa Ni)*; **Grup 2B** *(Logam Ni)* | **Kategori 1A** *(Senyawa Ni)* | **A1** *(Nickel subsulfide & insoluble)*; **A4 / A5** *(Logam/Soluble)* | **Kanker Paru dan Kanker Rongga Hidung / Sinus**. Bukti paling kuat pada *nickel subsulfide* (\\(\text{Ni}_3\text{S}_2\\)). | |
+| **Benzena** | **Grup 1** | **Kategori 1A** | **A1** *(Permenaker A1; Kulit, BEI)* | **Leukemia Mieloid Akut (AML)**, Sindrom Mielodisplastik (MDS), kerusakan sumsum tulang kumulatif. | |
+| **Asbes (Semua bentuk serat)** | **Grup 1** | **Kategori 1A** | **A1** *(Permenaker A1; 0,1 serat/ml)* | **Mesotelioma (Pleura/Peritoneum), Kanker Paru**, Kanker Laring, Kanker Ovarium. | |
+| **Vinil Klorida Monomer (VCM)** | **Grup 1** | **Kategori 1A** | **A1** *(Permenaker A1)* | **Angiosarkoma Hati (*Hepatic Angiosarcoma*)**, Karsinoma Hepatoseluler. | |
+| **Timbal Anorganik (Pb)** | **Grup 2A** *(Inorganik Pb)*; **Grup 3** *(Organik Pb)* | **Kategori 1B / 2** | **A3** *(Inorganik Pb)*; **A2** *(Timbal kromat)*; **A4** *(Tetraetil Pb)* | Bukti terbatas pada kanker lambung, paru, dan ginjal pada manusia; tumor ginjal pada hewan coba. | |
+| **Merkuri / Raksa (Hg)** | **Grup 3** *(Elemental & Anorganik)*; **Grup 2B** *(Metilmerkuri)* | **Bukan Karsinogen** *(Not Classified)* | **A4** *(Permenaker: Bukan Karsinogen)* | Tidak dapat diklasifikasikan sebagai karsinogen manusia karena bukti epidemiologi tidak memadai. | |
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **IARC (2012).** *A Review of Human Carcinogens: Arsenic, Metals, Fibres, and Dusts (IARC Monographs Vol. 100C)* — *Preamble* (Kriteria Grup 1, 2A, 2B, 3, dan Evaluasi Bukti, hlm. 22–27); *General Remarks & Evaluations* untuk Arsenik [Grup 1, hlm. 48], Berilium [Grup 1, hlm. 102], Kadmium [Grup 1, hlm. 144], Kromium VI [Grup 1, hlm. 165], Nikel [Grup 1 senyawa vs Grup 2B logam, hlm. 197–198, 211], Asbes [Grup 1 semua bentuk, hlm. 294–295]; serta *Cumulative Cross Index*.
+2.  **United Nations (2019).** *Globally Harmonized System of Classification and Labelling of Chemicals (GHS), 8th revised edition* — Bab 1.1 (*Hazard vs. Risk*, Formula Risk = Hazard × Exposure, hlm. 5); Bab 3.6 (*Carcinogenicity*: Kriteria Kategori 1A, 1B, 2; Tabel Piktogram, Kata Sinyal Danger/Warning, Hazard Statement H350/H351, Decision Logic, dan Cut-off Campuran 0,1% vs 1,0%, hlm. 175–186).
+3.  **ACGIH (2026/Current Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances* — *Appendix A: Carcinogenicity Categories A1 to A5* (Definisi Lengkap dan Implikasi Perlindungan ALARA, hlm. 83–84) serta *Adopted Values Table* (Notasi Karsinogenitas Arsen, Asbes, Kadmium, Cr VI, Benzena, Nikel, Timbal, Merkuri).
+4.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018.** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja* — Lampiran 3: Bagian B (*Kategori Karsinogenitas A-1 sampai A-5, Repr*) dan Tabel Nilai Ambang Batas Faktor Kimia.
+5.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)* — Bab 11 (*Chemical Carcinogenesis: IARC System Table 11.3, EPA Weight of Evidence Table 23.3, Mutagenesis vs Carcinogenesis*); Bab 23 (*Cancer Risk Assessment: Non-threshold, Slope Factor, Excess Cancer Risk, Hazard Identification Step*).
+6.  **Wild et al. (2009) / Methods in Molecular Biology.** *Lung Cancer and Exposure to Metals: The Epidemiological Evidence* — Tinjauan Epidemiologi Logam: Cr(VI), Ni, Cd, Be, As (Grup 1); Timbal Inorganik (Grup 2A); dan Merkuri (Grup 3).
+7.  **Salinan Peraturan Presiden RI No. 7 Tahun 2019.** *tentang Penyakit Akibat Kerja* — Lampiran Bagian III: Daftar Kanker Akibat Kerja (Asbes, Cr VI, Vinil Klorida, Benzena, Nikel, Arsen, Berilium, Kadmium).
+
+Kuasai perbedaan definisi dan penempatan kategori ini dengan presisi tinggi, Dokter. Penguji tidak akan memberi kelulusan jika Anda masih mencampuradukkan antara penilaian bahaya kualitatif IARC dengan asesmen risiko kuantitatif regulasi.
+
+---
+
+📋 Apakah Anda ingin kita simulasikan skenario investigasi surveilans kesehatan berkala pada pekerja industri pelapisan logam (*electroplating*) yang terpajan uap Kromium Heksavalen [Cr(VI)] dan aerosol Kadmium untuk menguji kepatuhan diagnosis okupasi Anda?

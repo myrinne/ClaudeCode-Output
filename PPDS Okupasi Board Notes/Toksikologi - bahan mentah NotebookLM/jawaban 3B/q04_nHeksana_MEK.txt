@@ -1,0 +1,348 @@
+---
+
+### **A. n-HEKSANA (n-Hexane / 2,5-Heksanadion)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_6\text{H}_{14}\\)** atau **\\(\text{CH}_3(\text{CH}_2)_4\text{CH}_3\\)**; nomor CAS **110-54-3**; berat molekul **86,18 g/mol**. Merupakan hidrokarbon alifatik rantai lurus jenuh (*alkana*).
+* **Sifat Fisik**: Cairan tidak berwarna, jernih, berbau khas seperti bensin/petroleum, sangat mudah menguap (tekanan uap tinggi ~124–150 mmHg pada 25°C), dan sangat mudah terbakar (*Class IB Flammable Liquid*, titik nyala -22°C / -7°F).
+* **Kelarutan**: Sangat larut dalam lemak (*lipofilik* tinggi, koefisien partisi lemak:darah tinggi), praktis tidak larut dalam air (0,002%).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+  * **ACGIH**: Tidak diklasifikasikan sebagai karsinogen manusia (tidak memiliki notasi A1–A3).
+  * **Permenaker No. 5 Tahun 2018**: Tidak tercantum dalam kategori karsinogen A-1/A-2.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Industri Alas Kaki & Kulit**: Pelarut utama dalam lem/perekat berbasis pelarut (*solvent-based contact adhesives*) untuk pengeleman sol, perakitan bagian atas (*uppers*), dan *trimming* sepatu.
+* **Industri Ekstraksi Nabati**: Pelarut ekstraksi minyak dari biji-bijian (minyak kedelai, jagung, biji bunga matahari, dan canola).
+* **Pembersih & Degreaser**: Bahan kimia pembersih presisi industri elektronika, semprotan pembersih rem otomotif (*brake cleaner*), serta pelarut formulasi cat, tiner, dan tinta cetak *rotogravure*.
+* **Penyalahgunaan Zat (*Solvent Abuse*)**: Sering dihirup secara sengaja dalam kasus penghirupan uap lem karet (*rubber cement sniffing*).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap n-heksana diabsorpsi cepat melalui membran alveolar paru dengan retensi pulmonal rata-rata sekitar **20–25%** (pada pajanan terus-menerus retensi paru stabil sekitar 15–20%).
+  * **Dermal**: Diabsorpsi secara lambat namun nyata melalui kulit utuh saat kontak langsung dengan cairan (mendapat notasi **Skin** di ACGIH dan **Kulit** di Permenaker).
+* **Distribusi**: Terdistribusi cepat ke seluruh tubuh dengan akumulasi terbesar pada jaringan kaya lipid seperti **saraf perifer, sistem saraf pusat (otak, sumsum tulang belakang)**, jaringan adiposa, dan hepar.
+* **Metabolisme (Bioaktivasi Hepatik)**:
+  * Dimetabolisme terutama di hepar oleh sistem mikrosomal sitokrom P450 (terutama **CYP2E1**, serta CYP2B):
+  * \\(n\text{-Heksana} \rightarrow \text{2-Heksanol} \rightarrow \text{2,5-Heksanadiol} \text{ dan } \text{5-Hidroksi-2-heksanon} \rightarrow \mathbf{2,5\text{-Heksanadion (2,5-HD)}}\\).
+  * **2,5-Heksanadion (2,5-HD)** adalah senyawa diketon dengan konfigurasi karbonil \\(\gamma\\) (*\\(\gamma\\)-diketone*), yang merupakan **metabolit toksik sejati (*ultimate neurotoxicant*)**.
+  * Jalur alternatif menghasilkan 4,5-dihidroksi-2-heksanon dan metabolit asam glukuronida.
+* **Ekskresi**: Sekitar 10–20% n-heksana dieliminasi dalam bentuk utuh melalui udara ekshalasi paru; sebagian besar metabolit diekskresikan melalui ginjal ke dalam **urin sebagai 2,5-heksanadion** (bebas atau terkonjugasi).
+
+---
+
+#### **4. Toksikodinamik (Mekanisme \\(\gamma\\)-Diketon Neuropathy)**
+1. **Struktur Kritis \\(\gamma\\)-Diketon**: Toksisitas neurofilamen mutlak membutuhkan struktur diketon dengan jarak pemisah dua atom karbon antara gugus karbonil (posisi C2 dan C5).
+2. **Pembentukan Aduk Pirol (*Pyrrole Formation*)**:
+   * Gugus karbonil elektrofilik dari 2,5-HD bereaksi secara selektif dengan **gugus \\(\varepsilon\\)-amino dari residu lisin (lysine)** pada rantai polipeptida protein neurofilamen (NF-L, NF-M, NF-H).
+   * Kondensasi cincin ini membentuk aduk cincin **2,5-dimetilpirol (*2,5-dimethylpyrrole adducts*)**.
+3. **Autooksidasi & Ikatan Silang Neurofilamen (*Cross-Linking*)**:
+   * Cincin pirol mengalami autooksidasi spontan membentuk ikatan silang kovalen intra- dan antar-neurofilamen (*covalent protein cross-linking*).
+4. **Pembengkakan Aksonal & Degenerasi Aksonal Retrograd**:
+   * Agregat neurofilamen yang terikat silang menjadi kaku dan mengalami hambatan transpor aksonal lambat (*slow axonal transport arrest*) saat melewati penyempitan nodus Ranvier di bagian distal saraf.
+   * Terjadi penumpukan massa neurofilamen 10 nm di proksimal nodus Ranvier yang membentuk **pembengkakan aksonal raksasa (*giant axonal swellings*)**, diikuti retraksi selubung mielin dan demielinasi paranodal sekunder.
+   * Hambatan transpor nutrien menyebabkan iskemia distal dan pemecahan serat saraf distal, memicu **degenerasi aksonal retrograd (*dying-back central-peripheral distal axonopathy*)**. Serabut saraf panjang dan berdiameter besar di ekstremitas bawah adalah target yang paling awal dan parah terkena.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **2,5-Heksanadion dalam Urin (*Urinary 2,5-Hexanedione / 2,5-HD*)**:
+  * **Karakteristik**: Biomarker baku emas (*gold standard*) pemantauan pajanan internal n-heksana.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)** (pada hari kerja atau akhir pekan kerja).
+* **Perbedaan Analisis: Dengan Hidrolisis vs Tanpa Hidrolisis**:
+  * *Metode Lama (Dengan Hidrolisis Asam / With Acid Hydrolysis)*: Urin dipanaskan dalam asam kuat sebelum analisis. Kelemahannya: prekursor non-neurotoksik (seperti 4,5-dihidroksi-2-heksanon) secara artifisial terkonversi menjadi 2,5-HD di laboratorium, menghasilkan nilai overestimasi semu (menjadi dasar standar lama).
+  * *Metode Modern (Tanpa Hidrolisis / Without Hydrolysis / Free 2,5-HD)*: Mengukur fraksi 2,5-heksanadion bebas murni tanpa perlakuan asam. **Metode ini diadopsi resmi oleh ACGIH (sejak 2018–2026)** karena mencerminkan dosis biologis aktif yang sebenarnya.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **2,5-Heksanadion Urin**: Memiliki waktu paruh eliminasi berkisar antara **13–18 jam (~1 hari)**. Seluruh metabolit tereliminasi hampir tuntas dalam 48 jam pasca-pajanan.
+* **n-Heksana Darah & Udara Ekshalasi**: Eliminasi awal sangat cepat (t\\(_{1/2}\\) 1,5–2 jam), diikuti fase eliminasi terminal lambat dari depot jaringan lemak adiposa.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Depresi SSP**: Sakit kepala, pusing berputar (*dizziness*), mual, rasa kantuk, inkoordinasi motorik ringan, serta efek anestesi/narkotik pada konsentrasi udara sangat tinggi (>1.000–5.000 ppm).
+* **Iritasi Mukosa**: Iritasi ringan konjungtiva mata dan saluran pernapasan atas (batuk, bersin, hiperemia mukosa).
+* **Bahaya Aspirasi**: Jika tertelan, tegangan permukaan yang rendah dan volatilitas tinggi menimbulkan risiko aspirasi trakeobronkial masif yang memicu pneumonitis kimiawi berat dan edema paru.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Polineuropati Sensorimotor Distal Simetris**:
+  * **Fase Sensorik Awal**: Parestesia, rasa baal, kebas, dan sensasi terbakar (*burning sensation*) simetris dengan pola kaus kaki dan sarung tangan (*glove-and-stocking distribution*), berawal dari jari dan telapak kaki.
+  * **Fase Motorik Progresif**: Kelemahan otot distal ekstremitas bawah, drop foot (*foot drop*), gaya berjalan melangkah tinggi (*steppage gait*), atrofi otot betis dan telapak kaki (*amyotrophy*), serta penurunan atau hilangnya refleks tendon dalam (refleks Achilles dan patela).
+* **Fenomena "Coasting" (*The Coasting Phenomenon*)**:
+  * Karakteristik klinis khas di mana **gejala defisit neurologis dan kelemahan motorik terus memburuk secara progresif selama 1 hingga 4 bulan SETELAH pekerja dikeluarkan/berhenti total dari paparan n-heksana**. Hal ini terjadi karena aduk neurofilamen yang sudah terikat silang terus bergerak ke distal dan memicu degenerasi aksonal lanjutan sebelum fase regenerasi mampu berjalan.
+* **Perjalanan Pemulihan (*Recovery*)**: Regenerasi aksonal berlangsung sangat lambat (laju pertumbuhan akson ~1 mm/hari). Pemulihan fungsional membutuhkan waktu **berbulan-bulan hingga 1–3 tahun**, dan sering meninggalkan defisit fungsional permanen pada kasus berat.
+* **Efek Sistemik Lain**: Kerusakan tubulus seminiferus testis dan atrofi germinal (dibuktikan pada hewan coba).
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **50 ppm** (176 mg/m³).
+  * **TLV-STEL**: Tidak ditetapkan nilai numerik.
+  * **Notasi**: **Skin** (bahaya serapan kulit), **BEI**.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **50 BDS (ppm)** atau **176 mg/m³**.
+  * **PSD (STEL 15 menit)**: Tidak ditetapkan.
+  * **Notasi**: **Kulit**, **BEI**.
+  *(Catatan: Isomer heksana lainnya selain n-heksana memiliki NAB 500 ppm dan PSD 1000 ppm)*.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **2,5-Heksanadion dalam urin** | Urin | **Akhir shift kerja** (*End of shift*) | **0,4 mg/L** | **0,5 mg/L** | Notasi ACGIH: ** Without hydrolysis** |
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip Utama**: **TIDAK ADA ANTIDOT SPESIFIK**.
+* **Langkah Terapi & Rehabilitasi**:
+  * **Pemutusan Paparan Segera**: Pekerja wajib segera dipindahkan secara permanen dari sumber pajanan n-heksana.
+  * **Neurorehabilitasi Komprehensif**: Fisioterapi motorik dini, latihan rentang gerak sendi (*range of motion* / ROM) untuk mencegah kontraktur, dan pemasangan alat bantu jalan / ortosis seperti *Ankle-Foot Orthosis* (AFO) atau *foot-up brace* untuk mengatasi drop foot.
+  * **Manajemen Nyeri Neuropatik**: Pemberian antikonvulsan (gabapentin, pregabalin) atau antidepresan trisiklik (amitriptilin).
+  * **Pajanan Tertelan**: **Kontraindikasi induksi muntah** karena risiko pneumonitis aspirasi hidrokarbon.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Polineuropati Aksonal Sensorimotor Toksik (*Toxic Polyneuropathy*).
+  2. *Identifikasi Pajanan Kerja*: Melacak kandungan n-heksana pada lem perekat, cairan sol sepatu, atau pembersih dari SDS/LDKB.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme ikatan silang neurofilamen oleh metabolit 2,5-HD.
+  4. *Evaluasi Besaran Pajanan*: Data *air monitoring* (dibandingkan NAB 50 ppm), hasil 2,5-HD urin akhir shift, durasi kerja harian, dan ada tidaknya sistem ventilasi.
+  5. *Faktor Individu*: Riwayat neuropati diabetik, defisiensi vitamin B12, konsumsi alkohol kronis, atau gagal ginjal (uremia).
+  6. *Faktor di Luar Tempat Kerja*: Hobi mengelem/memperbaiki barang di rumah, kebiasaan menghirup zat perekat (*glue sniffing*).
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim kompensasi jaminan sosial ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan defisit neurologis motorik/sensorik, penurunan refleks tendon, atau riwayat neuropati dinyatakan **tidak laik (*unfit*)** bekerja di lingkungan berpajanan hidrokarbon alifatik neurotoksik.
+* **Surveilans Medis Berkala**:
+  * Skrining klinis neurologis (uji sensibilitas taktil/getar dan refleks fisiologis).
+  * **Uji Elektrofisiologi Saraf (NCV & EMG)**: Pemeriksaan baku penunjang; menunjukkan penurunan amplitudo *Compound Muscle Action Potential* (CMAP) dan *Sensory Nerve Action Potential* (SNAP) yang konsisten dengan aksonopati, disertai pemanjangan latensi distal dan sedikit perlambatan kecepatan hantar saraf (*nerve conduction velocity*).
+* **Hierarki Pengendalian**:
+  * *Substitusi*: Mengganti pelarut lem berbasis n-heksana dengan lem berbahan dasar air (*water-based adhesive*) atau mengganti dengan pelarut non-neurotoksik rantai bercabang (seperti isoheksana, sikloheksana, atau n-heptana).
+  * *Rekayasa Teknis*: Pemasangan meja kerja hisap berventilasi (*downdraft local exhaust tables*) pada stasiun pengeleman dan penjemuran sol sepatu.
+  * *APD*: Sarung tangan kedap pelarut (PVA, Viton, atau nitril tebal; **hindari sarung tangan katun atau lateks tipis** karena lem n-heksana langsung membasahi kulit).
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+* **Notasi Kulit**: Mendapat notasi **Skin** (ACGIH) dan **Kulit** (Permenaker 5/2018).
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 12**: Mengakui secara hukum "*Penyakit yang disebabkan oleh benzene atau homolognya, atau senyawa hidrokarbon alifatik (termasuk n-heksana)*".
+* **Permenkes No. 11 Tahun 2022**: Pedoman 7 langkah diagnosis PAK dan tatalaksana individu serta komunitas pekerja.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: n-Heksana**
+* 🩺 **Clinical Pearl**:
+  * **"The Delayed Negative Biomarker in Shoe Workers"**: 2,5-Heksanadion memiliki waktu paruh urin yang pendek (~13–18 jam). Pasien pabrik sepatu dengan kelumpuhan drop foot biasanya datang berobat berminggu-minggu setelah timbul gejala atau setelah mengambil cuti kerja sakit. Pada titik ini, **pemeriksaan 2,5-HD urin hampir selalu negatif palsu**. Jangan menyingkirkan diagnosis PAK n-heksana hanya karena 2,5-HD urin normal; tegakkan diagnosis melalui riwayat okupasi lem sepatu, pola defisit klinis, dan bukti NCV/EMG.
+  * **"Anticipate Coasting"**: Edukasi pasien dan manajemen bahwa saat pekerja dipindahkan dari tempat kerja, kelemahan kakinya masih dapat bertambah berat dalam 1–3 bulan pertama (*coasting*) sebelum perbaikan neurologis dimulai.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Hidrolisis pada Nilai BEI*:
+     * *Jebakan*: Mengabaikan keterangan metode laboratorium pada hasil biomonitoring 2,5-HD.
+     * *Koreksi*: Nilai BEI ACGIH **0,5 mg/L adalah metode TANPA HIDROLISIS (*without hydrolysis*)**. Jika laboratorium menggunakan metode lama hidrolisis asam, kadar yang keluar akan berlipat ganda karena konversi artifisial prekursor non-toksik di urin.
+  2. *Jebakan Isomer Heksana*:
+     * *Jebakan*: Menganggap semua isomer heksana menyebabkan polineuropati.
+     * *Koreksi*: **Hanya isomer n-heksana (rantai lurus C6)** yang dimetabolisme menjadi \\(\gamma\\)-diketon (2,5-HD) dan bersifat neurotoksik. Isomer bercabang seperti 2-metilpentana, 3-metilpentana, atau sikloheksana tidak membentuk 2,5-HD sehingga memiliki batas pajanan NAB yang jauh lebih longgar (500 ppm).
+
+---
+---
+
+### **B. METIL ETIL KETON (MEK) & METIL n-BUTIL KETON (MBK) (Sinergi Neurotoksik)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Metil Etil Keton (MEK / 2-Butanone) [CAS 78-93-3]**:
+  * Rumus molekul **\\(\text{C}_4\text{H}_8\text{O}\\)** atau **\\(\text{CH}_3\text{COCH}_2\text{CH}_3\\)**; berat molekul **72,11 g/mol**.
+  * Cairan tidak berwarna, berbau manis tajam mirip aseton, sangat mudah menguap (tekanan uap ~78 mmHg pada 20°C), sangat mudah terbakar (*Class IB Flammable Liquid*, titik nyala -9°C / 16°F).
+  * Cukup larut dalam air (~24–27% pada 20°C) dan larut sempurna dalam pelarut organik.
+* **Metil n-Butil Keton (MBK / 2-Hexanone) [CAS 591-78-6]**:
+  * Rumus molekul **\\(\text{C}_6\text{H}_{12}\text{O}\\)** atau **\\(\text{CH}_3\text{CO}(\text{CH}_2)_3\text{CH}_3\\)**; berat molekul **100,16 g/mol**.
+  * Cairan bening tidak berwarna, berbau tajam seperti aseton/buah, mudah terbakar (titik nyala ~25°C), kelarutan dalam air rendah (~1,4%), sangat lipofilik.
+* **Klasifikasi Karsinogenisitas**:
+  * **MEK**: **IARC Grup 3**; **ACGIH A4** (*Not classifiable as a human carcinogen*); **Permenaker 5/2018: A-4**.
+  * **MBK**: **IARC Grup 3**; **ACGIH A4**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Aplikasi MEK**: Pelarut dengan volume produksi raksasa untuk cat berbasis poliuretan/epoksi, pernis, lak, tinta cetak, perekat vinil/karet, cairan pembersih minyak (*degreasing agent*), serta bahan sintesis metil etil keton peroksida (MEKP).
+* **Aplikasi MBK (Historis & Modern)**: Dahulu digunakan sebagai pelarut resin, nitroselulosa, dan tinta cetak pada industri kain pelapis (*coated fabrics*) dan pewarnaan plastik. Sejak teridentifikasi sebagai penyebab wabah polineuropati industri (misal wabah Columbus, Ohio 1973), penggunaannya telah digantikan secara luas.
+* **Praktek Industri Campuran Pelarut**: MEK sangat sering dicampur dengan pelarut lain (seperti n-heksana, toluena, atau MBK) dalam formulasi lem sepatu dan cat semprot untuk mengatur laju penguapan (*drying time*).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute utama; MEK diserap sekitar 50% dan MBK sekitar **80–85%** melalui paru-paru.
+  * **Dermal**: Diabsorpsi cepat melalui kulit utuh karena daya penetrasi pelarut yang tinggi.
+* **Distribusi**: Terdistribusi cepat ke seluruh organ, melintasi sawar darah-otak dan plasenta.
+* **Metabolisme**:
+  * **MEK (2-Butanone)**: Dimetabolisme di hepar oleh CYP2E1 menjadi 2-butanol, 3-hidroksi-2-butanon (asetoin), dan 2,3-butandiol. **MEK BUKAN hidrokarbon C6, BUKAN \\(\gamma\\)-diketon, dan TIDAK PERNAH menghasilkan 2,5-heksanadion**.
+  * **MBK (2-Heksanon)**: Merupakan keton C6 berantai lurus; dioksidasi oleh mikrosom hepar (CYP2E1) melalui \\(\omega-1\\) oksidasi menghasilkan 5-hidroksi-2-heksanon, yang kemudian dioksidasi menjadi **2,5-heksanadion (2,5-HD)**.
+* **Ekskresi**: MEK diekskresikan ke dalam urin sebagai MEK bebas dan metabolit terkonjugasi (sebagian diekshalasi paru); MBK diekskresikan ke dalam urin dalam bentuk 2,5-HD dan metabolit hidroksilasi.
+
+---
+
+#### **4. Toksikodinamik & Fenomena Sinergi Toksik**
+1. **Toksisitas Intrinsik MEK Tunggal**:
+   * MEK mandiri hanya memiliki toksisitas neurotoksik perifer yang **sangat rendah/praktis tidak neurotoksik**. MEK terutama bekerja sebagai depresan sistem saraf pusat reversibel dan iritan mukosa.
+2. **Toksisitas Intrinsik MBK Tunggal**:
+   * Menghasilkan metabolit **2,5-HD**, sehingga menyebabkan aksonopati distal yang identik dengan n-heksana.
+   * Karena retensi paru yang jauh lebih tinggi (~85% vs ~15%) dan efisiensi konversi metabolik yang lebih langsung, **MBK memiliki potensi neurotoksik ~4 hingga 12 kali lebih kuat daripada n-heksana**.
+3. **Mekanisme Sinergi Potensiasi (MEK + n-Heksana / MEK + MBK)**:
+   * **Induksi Enzim Mikrosomal Hepar**: MEK bertindak sebagai **induktor kuat sitokrom P450 hepar (terutama CYP2E1)**.
+   * **Akselerasi Bioaktivasi 2,5-HD**: Ketika pekerja terpajan secara bersamaan terhadap MEK dan n-heksana (atau MEK dan MBK), MEK menginduksi aktivitas CYP2E1, sehingga **laju metabolisme n-heksana dan MBK menjadi 2,5-heksanadion melonjak drastis**.
+   * **Inhibisi Klirens Eliminasi**: MEK juga dilaporkan berkompetisi pada eliminasi ginjal sehingga memperpanjang retensi 2,5-HD dalam darah.
+   * **Dampak Klinis Sinergis**: Terjadi **potensiasi supraaditif masif**; masa laten timbulnya kelumpuhan memendek dari berbulan-bulan menjadi hanya beberapa minggu, dan keparahan degenerasi aksonal neurofilamen meningkat secara drastis.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **MEK dalam Urin (*MEK in urine*)**:
+  * **Karakteristik**: Pengukuran langsung senyawa induk MEK di urin tanpa hidrolisis.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+* **2,5-Heksanadion dalam Urin**:
+  * Parameter wajib dianalisis bila terdapat kecurigaan ko-pajanan dengan **MBK atau n-heksana**.
+  * Waktu sampling: **Akhir shift kerja**.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **MEK dalam Darah & Urin**: Eliminasi monofasik sangat cepat dengan t\\(_{1/2}\\) berkisar **1,5 – 4 jam**. MEK sepenuhnya tereliminasi dari tubuh dalam 16–24 jam pasca-shift kerja.
+* **MBK & Metabolit 2,5-HD**: t\\(_{1/2}\\) eliminasi 2,5-HD berkisar antara **13–18 jam**.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Iritasi Membran Mukosa Kuat**: Sensasi menyengat dan terbakar pada konjungtiva mata, lakrimasi berat, iritasi hidung, tenggorokan kering, dan batuk (ambang iritasi sensorik ~100–200 ppm).
+* **Depresi Susunan Saraf Pusat**: Sakit kepala, pusing, vertigo, somnolen, mual, ataksia, konfusi, dan efek anestesi pada kadar tinggi (>1.000 ppm).
+* **Efek Dermatologis**: Reaksi iritasi kulit akut, eritema, rasa perih, dan penghilangan lapisan lemak alami kulit (*defatting agent*).
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **MEK Terpapar Tunggal**: Dermatitis kontak iritan kronis (kulit kering, pecah-pecah, maserasi), sindrom astenik neurovegetatif ringan. **MEK tunggal tidak menyebabkan polineuropati perifer**.
+* **Ko-Pajanan Kronis MEK + n-Heksana / MEK + MBK**:
+  * Timbulnya **polineuropati perifer sensorimotor berat yang terakselerasi**.
+  * Pasien mengalami kelemahan otot motorik yang parah, atrofi otot cepat, gaya berjalan *steppage*, hilangnya refleks fisiologis, serta fenomena *coasting* yang nyata.
+* **Toksisitas MBK Kronis**: Polineuropati aksonal distal berat, penurunan berat badan nyata, dan gangguan spermatogenesis/atrofi testis (pada hewan coba).
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **Metil Etil Keton (MEK / 2-Butanone) [CAS 78-93-3]**:
+  * **ACGIH (2026)**:
+    * **TLV-TWA**: **200 ppm** (590 mg/m³).
+    * **TLV-STEL**: **300 ppm** (885 mg/m³).
+    * **Notasi**: **BEI**.
+  * **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+    * **NAB (TWA 8 jam)**: **200 BDS (ppm)** atau **590 mg/m³**.
+    * **PSD (STEL 15 menit)**: **300 BDS (ppm)** atau **885 mg/m³**.
+    * **Notasi**: **BEI**.
+* **Metil n-Butil Keton (MBK / 2-Hexanone) [CAS 591-78-6]**:
+  * **ACGIH**: TLV historis 5 ppm (ditarik/under study untuk penilaian ulang kelayakan batas).
+  * **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+    * **NAB**: **5 BDS (ppm)** atau **20 mg/m³**.
+    * **PSD**: **10 BDS (ppm)** atau **41 mg/m³**.
+    * **Notasi**: **Kulit**, **BEI**.
+  * **NIOSH REL**: TWA **1 ppm** (4 mg/m³), notasi **[skin]**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+
+| Senyawa Kimia | Parameter Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Metil Etil Keton (MEK)** | **MEK dalam urin** | Urin | **Akhir shift kerja** (*End of shift*) | **2 mg/L** | **2 mg/L** | Notasi ACGIH: **Ns** (*Non-specific*) |
+| **Metil n-Butil Keton (MBK)** | **2,5-Heksanadion urin** | Urin | **Akhir shift kerja** (*End of shift*) | *(Dianalisis sebagai 2,5-HD)* | *(Dianalisis sebagai 2,5-HD tanpa hidrolisis)* | Metabolit identik dengan n-heksana |
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip Utama**: **TIDAK ADA ANTIDOT SPESIFIK**. Penanganan murni suportif dan dekontaminasi agresif.
+* **Langkah Terapi**:
+  * Pindahkan korban ke tempat berudara segar; berikan bantuan oksigenasi bila terjadi depresi SSP.
+  * Segera lepaskan pakaian yang basah terkena pelarut; bilas kulit dan mata dengan air mengalir selama minimal 15 menit.
+  * **KONTRAINDIKASI INDUKSI MUNTAH** pada pajanan tertelan untuk mencegah aspirasi pulmonal kimiawi.
+  * Pada kasus polineuropati akibat ko-pajanan: isolasi dari seluruh paparan pelarut organik, fisioterapi intensif, pemasangan bidai kaki (*splint/AFO*), dan obat pereda nyeri neuropatik.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Polineuropati Aksonal Campuran Toksik (*Synergistic Toxic Axonopathy*) atau Dermatitis Kontak Iritan.
+  2. *Identifikasi Pajanan Kerja*: Melacak analisis komposisi pelarut dari SDS; **mewaspadai kombinasi mematikan: MEK + n-Heksana atau MEK + MBK**.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme induksi CYP2E1 oleh MEK yang memacu produksi 2,5-HD.
+  4. *Evaluasi Besaran Pajanan*: Hasil *air monitoring* gabungan dan perhitungan formula campuran aditif/sinergis sesuai Lampiran 3 Permenaker 5/2018, serta biomonitoring urin (MEK dan 2,5-HD).
+  5. *Faktor Individu*: Fungsi hepar dasar dan riwayat polimorfisme sitokrom P450.
+  6. *Faktor di Luar Tempat Kerja*: Hobi mengecat atau memakai tiner di rumah tanpa proteksi.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan kecelakaan kerja.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja yang telah mengalami tanda awal penurunan NCV atau gejala parestesia dilarang keras kembali ke area berpajanan campuran pelarut keton-alifatik.
+* **Surveilans Medis Berkala**:
+  * Pemeriksaan konduksi saraf (NCV) dan elektromiografi (EMG) berkala setiap 6–12 bulan pada kelompok pekerja berisiko ko-pajanan.
+  * Pemantauan fungsi hepar dan evaluasi dermatologis berkala.
+* **Hierarki Pengendalian**:
+  * **Eliminasi/Substitusi Kritis**: **DILARANG MENGGABUNGKAN FORMULASI PELARUT MEK DENGAN n-HEKSANA ATAU MBK**. Ganti pelarut dengan hidrokarbon rantai pendek atau ester yang tidak terbioaktivasi menjadi \\(\gamma\\)-diketon.
+  * *Rekayasa Teknis*: Bilik penyemprotan tertutup (*spray booth*) dengan ventilasi pembuangan lokal berkecepatan hisap standar.
+  * *APD Khusus*: **Sarung tangan berbahan Butil (*butyl rubber*)** merupakan perlindungan terbaik untuk MEK; sarung tangan lateks, nitril tipis, dan neoprena mudah ditembus pelarut keton dalam hitungan menit. Respirator uap organik bertaraf NIOSH.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: MEK dan MBK diklasifikasikan ke dalam **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+* **Notasi Kulit**: MBK memiliki notasi **Skin / Kulit** (serapan kulit cepat dan toksik); MEK tidak memiliki notasi kulit di Permenaker 5/2018 namun merupakan iritan kontak kuat.
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 12 & No. 15**: Mengakui secara legal penyakit yang disebabkan oleh senyawa alifatik hidrokarbon dan keton.
+* **Permenkes No. 11 Tahun 2022**: Dasar yuridis penegakan 7 langkah diagnosis PAK serta penatalaksanaan kesehatan kerja komprehensif.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: MEK & MBK**
+* 🩺 **Clinical Pearl**:
+  * **"The Innocent-Looking Booster"**: MEK sering disalahartikan sebagai pelarut yang "aman" karena nilai ambang batasnya yang tinggi (NAB 200 ppm) dan ketidakmampuannya menimbulkan neuropati perifer bila berdiri sendiri. Namun, dalam dunia kedokteran kerja, **MEK adalah "booster" toksisitas yang paling berbahaya**. Ketika MEK ditambahkan ke dalam lem yang mengandung n-heksana dosis rendah (yang seharusnya aman di bawah NAB), MEK melipatgandakan produksi 2,5-HD hingga mampu melumpuhkan pekerja dalam hitungan minggu.
+  * **"Columbus Coated Fabrics Tragedy (1973)"**: Kasus klasik epidemiologi okupasi di mana substitusi MIBK dengan MBK pada pabrik kain pelapis memicu wabah neuropati perifer mendadak pada 86 pekerja dalam 4 bulan, yang dipicu oleh sinergi kuat antara MBK dan MEK dalam formulasi pelarut pabrik.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Sifat Neurotoksik MEK*:
+     * *Soal Ujian*: "Apakah MEK menyebabkan polineuropati perifer tipe aksonopati distal?"
+     * *Jebakan*: Menjawab "Ya".
+     * *Koreksi*: **MEK murni TIDAK neurotoksik terhadap saraf tepi**. MEK hanya mempotensiasi/memperparah neurotoksisitas zat lain (n-heksana dan MBK) melalui induksi enzim mikrosomal hepar.
+  2. *Jebakan Sarung Tangan untuk Keton (MEK)*:
+     * *Jebakan*: Memilih sarung tangan nitril standar untuk menangani pelarut MEK.
+     * *Koreksi*: Keton seperti MEK menembus (*breakthrough*) bahan nitril biasa dan karet alam dalam waktu sangat singkat (<5–10 menit). **Sarung tangan karet butil (*butyl rubber*) adalah APD pilihan utama untuk pelarut golongan keton**.
+  3. *Jebakan Perbandingan Potensi MBK vs n-Heksana*:
+     * *Jebakan*: Menganggap n-heksana lebih neurotoksik daripada MBK karena kasus klinisnya lebih banyak dijumpai.
+     * *Koreksi*: **MBK secara intrinsik 4 hingga 12 kali lebih neurotoksik daripada n-heksana**. n-Heksana lebih sering ditemukan kasusnya semata-mata karena volume penggunaannya di industri lem alas kaki jauh lebih masif daripada MBK yang sudah banyak dilarang.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: NAB Faktor Kimia; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran Bagian I.a No. 12 & 15: Penyakit yang disebabkan oleh senyawa hidrokarbon alifatik dan derivat keton).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Tujuh Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (n-Hexane, Methyl ethyl ketone, Methyl n-butyl ketone entries).
+5. **Kumbara, F., Yanıktas, D., & Aras, M.** (2026). *The overlooked risk in shoe manufacturing: an evaluation through five cases of toxic polyneuropathy*. Occupational Medicine, 76(1), 71–74.
+6. **LoPachin, R. M., & Gavin, T.** (2015). *Toxic Neuropathies: Mechanistic Insights Based On A Chemical Perspective*. Neuroscience Letters, 596, 78–83.
+7. **Bos, P. M. J., et al.** (1991). *Critical review of the toxicity of methyl n-butyl ketone: Risk from occupational exposure*. American Journal of Industrial Medicine, 20(2), 175–194.
+8. **Billmaier, D., et al.** (1974). *Peripheral neuropathy in a coated fabrics plant*. Journal of Occupational Medicine, 16(10), 665–671.
+9. **Saida, K., Mendell, J. R., & Weiss, H. S.** (1976). *Peripheral nerve changes induced by methyl n-butyl ketone and potentiation by methyl ethyl ketone*. Journal of Neuropathology & Experimental Neurology, 35(3), 207–225.
+10. **Inoue, T., et al.** (1970/1980). *n-Hexane polyneuropathy among shoe manufacturing and vinyl sandal workers in Japan*. Environmental Health Perspectives / Sangyo Igaku.
+11. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: n-Hexane, 2-Hexanone, Methyl ethyl ketone entries).
+12. **Lee, K., et al.** (2023/2025). *Biomonitoring of Exposures to Solvents and Metals in Electronics Manufacturing Facilities in Batam, Indonesia*. New Solutions: A Journal of Environmental and Occupational Health Policy, 34(4), 26–28.
+
+---
+
+💡 *Apakah Anda ingin melanjutkan dengan studi kasus integratif mengenai pekerja industri alas kaki dengan keluhan drop foot dan evaluasi yuridis penetapan 7 langkah diagnosis PAK di Indonesia?*

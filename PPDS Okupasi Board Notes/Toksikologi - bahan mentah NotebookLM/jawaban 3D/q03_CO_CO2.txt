@@ -1,0 +1,449 @@
+Berikut adalah catatan tinjauan toksikologi okupasi komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** yang mencakup dua zat gas penting: **(A) Karbon Monoksida (CO)** dan **(B) Karbon Dioksida (CO₂)**. Masing-masing diuraikan secara mendalam melalui 14 poin standar kedokteran kerja berbasis literatur toksikologi dan regulasi keselamatan kerja di Indonesia.
+
+---
+
+# BAGIAN A: KARBON MONOKSIDA (CO)
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Fisik-Kimia**:
+  * **Rumus Kimia & CAS**: \\(CO\\) [CAS# 630-08-0]; Berat Molekul (BM) **28,01**.
+  * **Sifat Fisik**: Gas tidak berwarna, tidak berbau (*odorless*), tidak berasa (*tasteless*), dan **sama sekali tidak mengiritasi mukosa** (*non-irritating*), sehingga dijuluki *"The Silent Killer"*.
+  * **Densitas Relatif (Uap/Gas)**: **0,968** (sedikit lebih ringan dibanding udara yang bernilai 1,00); berdifusi dan bercampur sangat mudah serta merata di dalam atmosfer ruangan.
+  * **Sifat Termal & Kemudahan Terbakar**: Titik didih **-312,7°F (-191,5°C)**; gas mudah terbakar (*flammable gas*) dengan rentang ledak LEL **12,5%** dan UEL **74,0%**.
+  * **Kelarutan**: Sedikit larut dalam air (2,3 mL/100 mL pada 20°C).
+  * **Faktor Konversi**: \\(1\text{ ppm} = 1,15\text{ mg/m}^3\\) (pada 25°C, 1 atm); \\(1\text{ mg/m}^3 = 0,87\text{ ppm}\\).
+* **Klasifikasi Karsinogenitas & Toksisitas Reproduksi**:
+  * **ACGIH & IARC**: Tidak diklasifikasikan sebagai karsinogen manusia (*Not Listed / Group 3*).
+  * **Permenaker No. 5 Tahun 2018**: Tidak memiliki notasi karsinogen A1–A3, namun **memiliki notasi spesifik "Reproduksi" (Repr.)**, karena pajanan maternal memicu hipoksia janin berat, abortus spontan, kelainan kongenital serebral, dan berat badan lahir rendah (BBLR).
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Pembakaran Tidak Sempurna Senyawa Karbon**:
+  * Emisi gas buang mesin berbahan bakar hidrokarbon (*combustion engines*): mobil, truk, generator listrik portabel (*genset*), kompresor gas.
+  * **Pengoperasian forklift di ruang tertutup**: Forklift berbahan bakar propana/LPG, bensin, atau diesel di dalam gudang logistik tertutup atau palka kapal.
+  * Mesin perata es (*ice-resurfacer / Zamboni*) berbahan bakar propana di arena seluncur es tertutup.
+* **Industri Termal, Peleburan, & Manufaktur**:
+  * Tanur tiup (*blast furnaces*) pada industri baja, pengecoran logam (*foundries*), pabrik kokas.
+  * Kilang keramik, batu bata, dan pembakaran semen.
+  * Kebakaran struktural (*house/building fires*): gas CO merupakan gas toksik utama penyebab kematian dini korban kebakaran.
+* **Pajanan Pelarut Diklorometana (Metilen Klorida)**:
+  * **Metilen klorida (\\(CH_2Cl_2\\))** yang banyak digunakan pada cairan pengelupas cat (*paint stripper*) diabsorpsi via inhalasi/kulit dan dimetabolisme di hepar oleh enzim **CYP2E1 menghasilkan CO endogen secara berkelanjutan**, memicu intoksikasi COHb dengan onset tertunda dan waktu paruh yang jauh lebih panjang.
+* **Pajanan Non-Okupasi & Gaya Hidup**:
+  * Asap rokok tembakau (mengandung CO hingga 400–1000 ppm), pemanas air gas yang tidak berventilasi (*faulty water heater*), panggangan arang di dalam ruangan.
+
+---
+
+### 3. Toksikokinetik (ADME)
+* **Absorpsi**:
+  * Gas CO diabsorpsi sangat cepat dan sempurna melalui difusi alveolar paru menembus membran kapiler paru ke dalam darah. Kecepatan absorpsi berbanding lurus dengan konsentrasi CO atmosfer, durasi pajanan, dan laju ventilasi semenit (*minute ventilation*) pekerja.
+* **Distribusi**:
+  * Sekitar **85%** dari total CO tubuh berikatan dengan **hemoglobin** di dalam eritrosit membentuk karboksihemoglobin (COHb).
+  * Sekitar **15%** berikatan dengan protein heme ekstravaskular jaringan: **mioglobin jantung dan otot rangka, sitokrom c oksidase mitokondria, sitokrom P450, dan neuroglobin**.
+  * **Distribusi Transplasental**: CO menembus sawar plasenta secara bebas melalui difusi terfasilitasi. Hemoglobin janin (HbF) memiliki afinitas terhadap CO lebih tinggi dibanding hemoglobin dewasa (HbA), menyebabkan kadar COHb janin 10–15% lebih tinggi daripada maternal dengan eliminasi janin yang jauh lebih lambat.
+* **Metabolisme**:
+  * Kurang dari **1%** CO dioksidasi secara biologis di dalam tubuh menjadi karbon dioksida (\\(CO_2\\)). Sebagian besar CO **tidak mengalami biotransformasi metabolik**.
+* **Ekskresi**:
+  * Lebih dari **99%** CO dieliminasi dari tubuh tanpa perubahan melalui **udara ekshalasi paru**.
+  * Eliminasi bergantung pada tekanan parsial oksigen alveolar (\\(PAO_2\\)), laju ventilasi alveolar, dan aliran darah paru.
+
+---
+
+### 4. Toksikodinamik (Mekanisme Aksi Seluler)
+* **Afinitas Ekstrem terhadap Hemoglobin & Pembentukan COHb**:
+  * CO berikatan secara kompetitif pada situs koordinasi besi ferro (**\\(Fe^{2+}\\)**) hemoglobin dengan afinitas ikatan sekitar **200 hingga 250 kali lebih kuat (rata-rata 210–220 kali)** dibandingkan oksigen (\\(O_2\\)).
+  * Hal ini menurunkan kapasitas total pengangkutan oksigen oleh darah secara drastis (*anemic hypoxia*).
+* **Pergeseran Kurva Disosiasi Oksihemoglobin ke Kiri (Efek Haldane)**:
+  * Pengikatan CO pada salah satu dari empat gugus heme hemoglobin mengubah konformasi kuaterner tetramer molekul hemoglobin (*relaxed state*).
+  * Perubahan alosterik ini **meningkatkan afinitas oksigen pada situs heme yang tersisa**, sehingga molekul hemoglobin menahan oksigen dengan sangat kuat dan menolak melepaskannya ke jaringan kapiler perifer.
+  * Kurva disosiasi bergeser curam ke **kiri**, memperparah hipoksia histotoksik jaringan perifer secara eksponensial.
+* **Pengikatan Mioglobin (Karboksimioglobin)**:
+  * CO berikatan dengan mioglobin jantung dengan afinitas **60 kali lebih tinggi** dibanding oksigen.
+  * Mengakibatkan depresi kontraktilitas miokardium ventrikel kiri, hipotensi sistemik, iskemia miokardial berat, aritmia ventrikel, dan rhabdomyolysis pada otot rangka.
+* **Inhibisi Sitokrom c Oksidase & Stres Oksidatif Mitokondria**:
+  * CO memasuki sel dan berikatan dengan **sitokrom c oksidase (Kompleks IV rantai transpor elektron mitokondria)**.
+  * Memblokade respirasi aerobik mitokondria dan fosforilasi oksidatif, memicu penurunan ATP intraseluler dan asidosis laktat.
+  * Menghasilkan pelepasan radikal bebas oksigen (ROS) dan radikal hidroksil, menginduksi **peroksidasi lipid otak (brain lipid peroxidation)**, perusakan protein dasar mielin (*myelin basic protein*), dan apoptosis seluler saraf.
+* **Aktivasi Nitric Oxide (NO) & Vasodilatasi Serebral**:
+  * CO melepaskan NO dari trombosit dan sel endotel. Peningkatan NO memicu vasodilatasi pembuluh darah serebral dan hipotensi sistemik, serta pembentukan senyawa toksik **peroksinitrit (\\(ONOO^-\\))** yang memediasi cedera endotel vaskular.
+
+---
+
+### 5. Biomonitoring Okupasi dan Laboratorium
+* **Kadar Karboksihemoglobin Darah Utuh (COHb)**:
+  * Baku emas pemantauan biologis: diukur menggunakan **CO-oksimetri laboratorium** (*multiple-wavelength spectrophotometry*) dari darah vena atau darah arteri (kadar COHb pada darah vena dan arteri identik secara klinis).
+  * *Nilai Rujukan Normal*:
+    * Non-perokok: < 1,5–2,0% (berasal dari katabolisme endogen heme oleh heme oksigenase).
+    * Perokok tembakau: 5,0–10,0% (bahkan dapat mencapai 12–15% pada perokok berat).
+  * *Ambang Toksisitas*: Gejala klinis ringan timbul pada COHb > 10–15%; koma dan risiko kematian pada > 50–60%.
+* **CO Udara Ekshalasi (*End-Tidal Exhaled CO*)**:
+  * Pengukuran non-invasif konsentrasi CO dalam napas akhir (ekshalasi) menggunakan detektor elektrokimia portabel (nilai 20 ppm setara dengan COHb ±3,5%).
+* **Waktu Pengambilan Sampel (*Sampling Time*)**:
+  * Dikumpulkan pada **akhir shift kerja** (*end of work shift*).
+* **Penyulit Perokok (*Confounder Merokok*)**:
+  * Asap rokok merupakan sumber pajanan CO masif. Status merokok wajib distratifikasi dan dicatat teliti dalam pemeriksaan kesehatan kerja; interpretasi biologis pada perokok harus dibandingkan terhadap nilai dasar (*baseline*) pra-shift.
+* **Jebakan Fatal Oksimetri Nadi Standar (*Pulse Oximetry*)**:
+  * *Pulse oximeter* konvensional (2 panjang gelombang: 660 nm dan 940 nm) **TIDAK BISA membedakan oksihemoglobin (O₂Hb) dari karboksihemoglobin (COHb)** karena keduanya menyerap cahaya 660 nm dengan koefisien ekstingsi serupa.
+  * Alat akan membaca COHb sebagai O₂Hb, sehingga nilai **\\(SpO_2\\) terbaca normal tinggi (98–100%) secara palsu** pada pasien yang mengalami keracunan fatal. Evaluasi non-invasif wajib menggunakan **Pulse CO-Oximeter** khusus multi-gelombang (misalnya Masimo Rad-57).
+
+---
+
+### 6. Waktu Paruh Eliminasi COHb (Half-Life)
+Waktu paruh eliminasi COHb (\\(t_{1/2}\\)) sangat dipengaruhi oleh konsentrasi dan tekanan parsial oksigen yang dihirup:
+* **Udara Ruang Normal (FiO₂ 21%, 1 ATA)**: **240 – 320 menit (rata-rata 4 – 5 jam)**.
+* **Oksigen Normobarik 100% (NBO via Non-Rebreather Mask, 1 ATA)**: **70 – 80 menit** (berkisar antara 40–90 menit).
+* **Oksigen Aliran Tinggi / CPAP**: **36 – 48 menit**.
+* **Oksigen Hiperbarik (HBOT 100% O₂ pada tekanan 2,5 – 3,0 ATA)**: **20 – 23 menit**.
+
+---
+
+### 7. Efek Toksisitas Akut per Kadar COHb dan Konsentrasi Udara (ppm)
+
+| Kadar COHb (%) | Konsentrasi Udara (ppm) | Manifestasi Klinis Akut |
+| :--- | :--- | :--- |
+| **< 10%** | 35–50 ppm (ambang kerja) | Umumnya asimtomatik; penurunan tipis ambang angina pada penderita PJK berat; defisit persepsi visual halus. |
+| **10% – 20%** | 100–200 ppm | Sakit kepala frontal ringan hingga sedang, rasa sesak di dahi, vasodilatasi kutaneus, dispnea saat aktivitas fisik berat. |
+| **20% – 30%** | 200–400 ppm | Sakit kepala berdenyut hebat (*throbbing headache*), pusing (*dizziness*), mual, rasa lelah, gangguan koordinasi motorik halus. |
+| **30% – 40%** | 400–600 ppm | Sefalgia hebat, mual, muntah, gangguan penglihatan, kelemahan otot nyata, konfusi mental, sinkop saat aktivitas. |
+| **40% – 50%** | 600–800 ppm | Sinkop, takikardia, takipnea, kebingungan mental berat, ataksia, kolaps vaskular, iskemia miokardium. |
+| **50% – 60%** | 800–1000 ppm | Koma, kejang tonik-klonik, pernapasan Cheyne-Stokes, hipotensi, depresi kardiorespirasi. |
+| **> 60% – 70%** | > 1200 ppm (ambang IDLH) | Depresi napas sentral, henti jantung (*cardiopulmonary arrest*), kematian cepat bila tidak segera diresusitasi. |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Neurologis Tertunda (DNS)
+* **Sekuel Neurologis Tertunda (*Delayed Neurological Sequelae* / DNS)**:
+  * Terjadi pada **10% hingga 40%** korban keracunan akut sedang–berat setelah periode pemulihan klinis semu (*lucid interval*) selama **2 hingga 40 hari (paling sering 2–28 hari)** pasca-pajanan.
+  * *Gejala Klinis*: Kerusakan kognitif progresif, kehilangan memori (*amnesia*), demensia, perubahan kepribadian dramatis, psikosis, inkontinensia urin/alvi, serta sindrom ekstrapiramidal (**parkinsonisme sekunder**: rigiditas, bradikinesia, tremor).
+  * *Faktor Risiko DNS*: Usia > 36 tahun, durasi pajanan lama, riwayat kehilangan kesadaran (*LOC*) pada fase akut, asidosis metabolik berat, dan kadar COHb awal > 25%.
+  * *Temuan Neuroimaging*: MRI otak memperlihatkan lesi hiperintensitas T2/FLAIR bilateral simetris pada **ganglia basalis, terutama globus palidus**, serta demielinasi substansia alba serebri (*diffuse white matter demyelination*).
+* **Pajanan Kronis Tingkat Rendah (*Chronic Low-Level Exposure*)**:
+  * Sefalgia tumpul harian yang berulang, *chronic fatigue syndrome*, mual pagi hari, pusing, gangguan afektif/depresi, serta percepatan progresi aterosklerosis dan penurunan ambang serangan angina pektoris pada pekerja dengan penyakit jantung koroner.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **NAB (Nilai Ambang Batas / 8-jam TWA)**: **25 BDS (ppm) atau 29 mg/m³**.
+  * **Notasi**: **Reproduksi (Repr.)** dan **BEI** (memerlukan Indeks Pajanan Biologi).
+* **ACGIH TLV (2018)**:
+  * **TLV-TWA**: **25 ppm**.
+* **NIOSH REL**:
+  * **TWA (10-jam)**: **35 ppm (40 mg/m³)**; **Ceiling**: **200 ppm (229 mg/m³)**.
+* **OSHA PEL**:
+  * **PEL-TWA (8-jam)**: **50 ppm (55 mg/m³)**.
+* **IDLH (Immediately Dangerous to Life or Health)**:
+  * **1.200 ppm**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 4 Daftar IPB)**:
+  * Bahan: Karbon monoksida [CAS# 630-08-0].
+  * Parameter Biologis: **Carboxyhemoglobin (COHb) dalam darah**.
+  * Waktu Pengambilan Sampel: **Akhir shift kerja** (*end of work shift*).
+  * **Nilai IPB**: **3,5% dari total hemoglobin** (3,5% of Hb).
+  * Parameter Alternatif: **Karbon monoksida dalam udara ekshalasi** = **20 ppm** (akhir shift).
+* **ACGIH BEI**:
+  * COHb dalam darah = **3,5% of hemoglobin** (akhir shift); CO udara ekshalasi = **20 ppm**.
+  * Disertai notasi **B** (*background* endogen) dan **Ns** (*non-specific*, pengaruh asap rokok).
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Oksigen
+* **Evakuasi & Dekontaminasi**:
+  * Pindahkan korban segera dari sumber paparan ke area berudara segar oleh penolong yang menggunakan SCBA.
+* **Terapi Oksigen Normobarik 100% (NBO)**:
+  * Berikan segera **Oksigen 100% melalui masker non-rebreather (NRB) dengan reservoir bag tertutup rapat (aliran 12–15 L/menit)** atau intubasi endotrakeal jika koma.
+  * Lanjutkan terapi oksigen hingga pasien sepenuhnya asimtomatik dan kadar COHb turun di bawah **3%** (umumnya membutuhkan durasi minimal 6 jam).
+* **Indikasi Terapi Oksigen Hiperbarik (HBOT 2,5–3,0 ATA selama 90–120 menit)**:
+  1. Riwayat **kehilangan kesadaran (*syncope/loss of consciousness*)**, koma, atau kejang.
+  2. Defisit neurologis obyektif persisten, penurunan status mental, atau abnormalitas uji neuropsikologis.
+  3. Bukti **iskemia miokardium** (angina, perubahan segmen ST/T pada EKG, peningkatan enzim troponin/CK-MB).
+  4. Asidosis metabolik berat (asidosis laktat refrakter, pH < 7,25).
+  5. Kadar **COHb > 25%** pada pasien dewasa tanpa memandang gejala.
+  6. **Wanita Hamil dengan pajanan CO**: Batas ambang diturunkan menjadi **COHb > 15–20%**, atau bila terdapat tanda distres janin/gejala neurologis maternal (janin terpapar risiko mortalitas dan kecacatan ekstrem karena HbF mengikat CO lebih kuat dan lambat tereliminasi).
+
+---
+
+### 12. Manajemen Okupasi (Individu & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Unfit Permanen/Sementara*: Pekerja dengan penyakit jantung iskemik berat/CAD simtomatik, gagal jantung kongestif, anemia berat tak terkoreksi (Hb < 10 g/dL), PPOK berat, dan **pekerja wanita hamil** (wajib dipindahkan segera dari area berisiko CO).
+* **Pengendalian Lingkungan Kerja & Rekayasa Teknik**:
+  * *Substitusi*: Mengganti forklift berbahan bakar pembakaran dalam (bensin/LPG/diesel) dengan **forklift bertenaga baterai listrik** di gudang atau ruang tertutup.
+  * *Rekayasa Teknik*: Pemasangan sistem ventilasi mekanis umum (*general dilution ventilation*) berdaya hisap tinggi dan ventilasi pembuangan lokal (*Local Exhaust Ventilation* / LEV) pada bengkel uji mesin; instalasi konverter katalitik terawat pada mesin.
+  * *Detektor Gas Kontinu*: Pemasangan alarm gas CO otomatis fixed di area kerja dengan *set-point alarm* pada **25 ppm**.
+* **Prosedur Ruang Terbatas (*Confined Space Entry*)**:
+  * Penerapan uji atmosfer 4-gas (O₂, CO, H₂S, LEL) sebelum dan selama bekerja di ruang terbatas.
+* **Alat Pelindung Diri (APD)**:
+  * Penggunaan **SCBA bertekanan positif** untuk kondisi darurat, kebocoran, atau area IDLH (\\(\ge 1200\text{ ppm}\\)). Respirator pemurni udara (*air-purifying*) dilarang digunakan untuk gas CO kecuali katrid khusus oksidasi katalitik (*hopcalite*) yang memiliki limitasi kejenuhan sangat cepat.
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Tercantum dalam **Lampiran Bagian I.a.16**: *"Penyakit yang disebabkan oleh gas penyebab asfiksia seperti karbon monoksida, hidrogen sulfida, hidrogen sianida atau derivatnya"*.
+  * Memberikan perlindungan klaim santunan cacat atau pengobatan JKK BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Penegakan diagnosis PAK oleh dokter Sp.Ok wajib memenuhi **metode 7 langkah diagnosis okupasi**, menelusuri hubungan kausal pajanan CO di tempat kerja, serta menyusun program rehabilitasi dan kembali bekerja (*return-to-work*).
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Mitos Kulit Merah Terang (*Cherry-Red Skin Appearance*)**:
+   * *Jebakan Klasik Ujian*: Menganggap pasien keracunan CO yang hidup akan selalu tampak merah ceri.
+   * *Fakta Klinis*: Warna kulit *cherry-red* adalah temuan **post-mortem** pada jenazah atau hanya muncul pada keracunan stadium terminal yang masif (COHb > 40–50%). Sebagian besar pasien hidup datang dengan kulit **pucat atau sianosis ringan**.
+2. **Kesesatan Nilai \\(PaO_2\\) pada Analisis Gas Darah (AGD)**:
+   * *Fakta Ujian*: \\(PaO_2\\) mengukur tekanan parsial oksigen terlarut bebas di plasma, bukan oksigen yang terikat pada hemoglobin. Oleh karena itu, pada keracunan CO berat, **\\(PaO_2\\) dan \\(SaO_2\\) kalkulasi AGD sering kali normal**, menutupi fakta bahwa kandungan total oksigen darah (\\(CaO_2\\)) telah anjlok fatal.
+3. **Penyebab Keracunan CO "Tersembunyi" (Metilen Klorida)**:
+   * Pekerja bengkel cat/perabot yang menggunakan penghilang cat (*paint stripper*) dapat pingsan akibat keracunan CO berjam-jam setelah meninggalkan tempat kerja, karena biotransformasi hepatik metilen klorida menjadi CO berlangsung bertahap selama 24–48 jam.
+4. **Distres Janin Tanpa Gejala Maternal Berat**:
+   * Ibu hamil dengan pajanan CO ringan (COHb 10–15%) dapat melahirkan bayi yang mengalami kematian janin dalam rahim (*stillbirth*) atau ensefalopati anoksik kongenital, akibat afinitas HbF janin yang luar biasa tinggi terhadap CO.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Karbon Monoksida (CO)
+
+| No | Poin Parameter | Rangkuman Klinis, Toksikologis, & Regulasi Kunci |
+| :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Karsinogenitas** | Gas tak berwarna, tak berbau, tak mengiritasi (*Silent Killer*), BM 28,01; densitas uap 0,968; LEL 12,5%, UEL 74,0%. Non-karsinogen, tetapi memiliki **Notasi Reproduksi (Repr.)** di Permenaker 5/2018. |
+| **2** | **Sumber & Penggunaan** | Pembakaran tak sempurna (mesin kendaraan, forklift propana/diesel di gudang tertutup, genset, kebakaran bangunan, tanur baja, pabrik kokas); metabolisme hepatik pelarut **metilen klorida**. |
+| **3** | **Toksikokinetik (ADME)** | Absorpsi: Inhalasi alveolar cepat. Distribusi: 85% terikat Hb darah (COHb), 15% terikat mioglobin dan sitokrom; menembus plasenta (HbF janin mengikat lebih kuat). Metabolisme: <1% dioksidasi ke CO2. Ekskresi: >99% lewat paru/ekshalasi. |
+| **4** | **Toksikodinamik** | Afinitas Hb **200–250x > O₂**; pergeseran kurva disosiasi O₂Hb ke **kiri (Haldane effect)**; inhibisi Kompleks IV mitokondria (**sitokrom c oksidase**) \\(\rightarrow\\) penurunan ATP & asidosis laktat; peroksidasi lipid otak; pelepasan NO \\(\rightarrow\\) vasodilatasi & hipotensi. |
+| **5** | **Biomonitoring** | COHb darah utuh via CO-oksimetri laboratorium (non-perokok < 1,5–2%, perokok 5–10%, toksik > 10–15%). CO ekshalasi akhir shift. **Jebakan: Pulse oximetry standar membaca SpO2 98-100% normal palsu**. |
+| **6** | **Waktu Paruh COHb (\\(t_{1/2}\\))** | Udara ruang (FiO₂ 21%): **240–320 menit (4–5 jam)**. O₂ 100% normobarik: **70–80 menit**. HBO (2,5–3,0 ATA): **20–23 menit**. |
+| **7** | **Efek Akut per Kadar COHb** | 10–20%: sakit kepala ringan. 20–30%: sakit kepala berdenyut, mual, pusing. 30–50%: muntah, konfusi, sinkop, kolaps. 50–60%: koma, kejang, depresi napas. >60%: henti jantung & kematian. |
+| **8** | **Efek Kronis & Sekuel (DNS)** | **Delayed Neurological Sequelae (DNS)** pada 10–40% korban setelah *lucid interval* 2–40 hari (amnesia, demensia, parkinsonisme sekunder akibat nekrosis bilateral globus palidus, demielinasi substansia alba). Sefalgia kronis, percepatan CAD. |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018**: NAB = **25 BDS (ppm)** (29 mg/m³) [Repr, BEI]. **ACGIH TLV**: TWA = **25 ppm**. **NIOSH REL**: TWA 35 ppm, Ceiling 200 ppm. **OSHA PEL**: TWA 50 ppm. **IDLH**: **1.200 ppm**. |
+| **10** | **BEI / IPB** | **Permenaker 5/2018 Lampiran 4**: COHb darah akhir shift = **3,5% dari total Hb**; CO udara ekshalasi akhir shift = **20 ppm**. ACGIH BEI: 3,5% Hb (notasi B, Ns). |
+| **11** | **Tatalaksana Akut** | O₂ 100% via non-rebreather mask segera (target COHb < 3%, minimal 6 jam). **Indikasi HBO (2,5–3 ATA)**: Riwayat sinkop/koma, defisit neurologis persisten, iskemia miokardium, asidosis metabolik berat, COHb > 25%, **kehamilan dengan COHb > 15–20%**. |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* untuk CAD, PPOK berat, anemia berat, kehamilan. Rekayasa: ganti forklift bensin/gas dengan forklift elektrik di gudang tertutup, LEV bengkel, detektor gas CO kontinu (alarm 25 ppm), izin ruang terbatas (uji 4 gas), APD SCBA. |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019 Lampiran I.a.16** (Penyakit akibat gas asfiksia CO, H2S, HCN); klaim JKK BPJS Ketenagakerjaan. Didukung PP 28/2024 dan Permenkes 11/2022 (7 langkah diagnosis okupasi). |
+| **14** | **Clinical Pearls & Trap** | 1) Kulit merah ceri jarang terlihat pada pasien hidup. 2) SpO2 dan PaO2 AGD terbaca normal palsu. 3) Pelarut metilen klorida termetabolisme menjadi CO di hepar dengan efek tertunda. 4) Janin menanggung risiko kematian ekstrem pada ibu bergejala ringan. |
+
+---
+
+# BAGIAN B: KARBON DIOKSIDA (CO₂)
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Fisik-Kimia**:
+  * **Rumus Kimia & CAS**: \\(CO_2\\) [CAS# 124-38-9]; Berat Molekul (BM) **44,01**.
+  * **Sinonim**: Asam karbonat anhidrida (*carbonic acid gas*), es kering (*dry ice* - bentuk padat).
+  * **Sifat Fisik**: Gas tidak berwarna, tidak berbau pada konsentrasi rendah, namun pada konsentrasi tinggi (> 5–10%) menimbulkan sensasi bau menyengat asam dan rasa asam/pedas di lidah (*acidic/biting taste*).
+  * **Densitas Relatif (Gas)**: **1,53** (sekitar **1,5 kali lebih berat dibanding udara**). Gas ini cenderung mengalir ke bawah, mengendap, dan mengumpul di dasar ruang terbatas (*confined space*), lantai bawah tanah, parit, dan ceruk tanah.
+  * **Sifat Termal & Kemudahan Terbakar**: Tidak mudah terbakar (*noncombustible gas*); tidak mendukung pembakaran (digunakan sebagai agen pemadam api). Bentuk padat (*dry ice*) menyublim langsung menjadi gas pada suhu **-109,3°F (-78,5°C)**.
+  * **Konsentrasi Atmosfer Alami**: Sekitar **0,04% volume (±400 ppm)**.
+  * **Faktor Konversi**: \\(1\text{ ppm} = 1,80\text{ mg/m}^3\\); \\(1\text{ mg/m}^3 = 0,55\text{ ppm}\\).
+* **Klasifikasi Karsinogenitas**:
+  * **ACGIH, IARC, & Permenaker No. 5 Tahun 2018**: **Bukan karsinogen** (*Not Classifiable / Not Listed*). Diklasifikasikan dalam kategori **asfiksian sederhana (*simple asphyxiant*)**, namun memiliki toksisitas farmakologis independen yang mematikan pada dosis tinggi.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Industri Makanan, Minuman, & Fermentasi**:
+  * Proses fermentasi anaerobik di pabrik bir (*breweries*), kilang anggur (*wineries*), pengolahan ragi, dan distilasi alkohol (akumulasi gas di tangki fermentasi/tong kayu).
+  * Karbonasi minuman ringan (*soft drink bottling plants*).
+  * Penanganan es kering (*dry ice*) dalam logistik rantai dingin makanan beku dan vaksin farmasi.
+* **Pertanian dan Peternakan (Silo & Slurry Pits)**:
+  * Fermentasi pakan ternak di dalam lumbung tertutup/silo (*silo gas* fase lanjut).
+  * Penguraian kotoran ternak cair di lubang penampungan limbah (*manure pits/slurry tanks*).
+* **Industri Pengelasan & Manufaktur**:
+  * Penggunaan gas pelindung (*shielding gas*) dalam pengelasan busur logam (MIG/MAG welding).
+  * Pabrik es kering dan fasilitas daur ulang gas.
+* **Sistem Pemadam Kebakaran (*Fire Extinguishing Systems*)**:
+  * Pelepasan gas mendadak (*accidental discharge*) dari sistem pemadam kebakaran CO₂ *total flooding* di ruang mesin kapal, ruang kontrol kelistrikan, atau ruang pusat data (*server rooms*).
+* **Lingkungan Bawah Tanah & Alami (Geogenik)**:
+  * Palka kapal kargo, tambang batu bara, sumur tua, ruang meteran air (*water meter pits*), gua kapur, dan letusan gas vulkanik (seperti bencana Danau Nyos, Kamerun 1986 yang menewaskan > 1.700 orang).
+
+---
+
+### 3. Toksikokinetik (ADME)
+* **Absorpsi**:
+  * Diabsorpsi secara instan dan pasif melalui difusi membran alveolar paru sebanding dengan gradien tekanan parsial CO₂ yang dihirup.
+* **Distribusi**:
+  * Terdistribusi bebas ke seluruh kompartemen cairan tubuh. Di dalam darah, CO₂ ditranspor dalam tiga bentuk:
+    1. **Bikarbonat plasma (\\(HCO_3^-\\))**: sekitar **70% – 80%**, terbentuk melalui hidrasi CO₂ yang dikatalisis cepat oleh enzim **karbonik anhidrase** di dalam eritrosit:
+       \\[CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-\\]
+    2. **Senyawa Karbamino (Karbaminohemoglobin)**: sekitar **15% – 20%**, terikat pada gugus amino terminal rantai globin hemoglobin.
+    3. **CO₂ Terlarut Fisik**: sekitar **5% – 10%** dalam plasma (menentukan nilai \\(PaCO_2\\)).
+  * **Penetrasi Sawar Darah Otak**: Molekul gas CO₂ sangat lipofilik dan menembus sawar darah otak (*blood-brain barrier*) secara instan, jauh lebih cepat daripada ion hidrogen (\\(H^+\\)) atau bikarbonat (\\(HCO_3^-\\)). Di dalam cairan serebrospinal (CSF), CO₂ langsung berhidrasi membentuk asam karbonat, memicu asidosis CSF instan yang mendepresi fungsi neuronal.
+* **Metabolisme**:
+  * CO₂ adalah produk akhir metabolisme seluler aerobik endogen normal tubuh; **tidak mengalami metabolisme detoksifikasi enzimatik**. Keseimbangannya diatur murni oleh kinetika asam-basa.
+* **Ekskresi**:
+  * Lebih dari **99%** CO₂ dieliminasi melalui ventilasi paru (**ekshalasi pernapasan**).
+  * Pengaturan keseimbangan kronis didukung oleh ekskresi asam/bikarbonat melalui filtrasi dan sekresi tubulus ginjal (mekanisme lambat membutuhkan waktu beberapa hari).
+
+---
+
+### 4. Toksikodinamik (Mekanisme Aksi Fisiologis & Toksik)
+* **Perdebatan Konseptual: Asfiksian Sederhana vs Toksikan Sistemik**:
+  * Secara regulasi dan higene industri, CO₂ sering diklasifikasikan sebagai **asfiksian sederhana** (*simple asphyxiant*), karena di ruang tertutup CO₂ menggantikan oksigen dan menurunkan fraksi oksigen lingkungan hingga < 19,5%.
+  * **Namun secara toksikologis, CO₂ bekerja sebagai racun sistemik mandiri (*direct toxicant*)**. Penelitian toksikologi membuktikan bahwa pada konsentrasi CO₂ atmosfer > 10–15%, kematian dan henti napas dapat terjadi dalam hitungan menit **meskipun konsentrasi oksigen atmosfer dipertahankan normal (21%)**!
+* **Hiperkapnia Akut & Asidosis Respiratorik Berat**:
+  * Peningkatan konsentrasi CO₂ yang dihirup membalikkan gradien difusi alveolar-kapiler, memicu lonjakan masif kadar CO₂ arteri (**hiperkapnia akut**) dan penurunan drastis pH darah (**asidosis respiratorik dekompensasi**).
+  * Asidosis menurunkan pH intraseluler, mengganggu aktivitas enzimatik kritis, meningkatkan konsentrasi kalium ekstraseluler (hiperkalemia transien), dan merusak integritas membran sel.
+* **Stimulasi Kemoreseptor & Pola Bifasik Pernapasan**:
+  * *Fase Stimulasi (Konsentrasi 1% – 5%)*: Asidosis pada kemoreseptor sentral (medula oblongata) dan perifer (badan karotis) memicu refleks takipnea dan hiperpnea berat. Ventilasi semenit meningkat hingga 200–300% dari normal sebagai upaya kompensasi membuang kelebihan asam.
+  * *Fase Depresi / Paralisis (> 10% – 15%)*: Konsentrasi tinggi menimbulkan efek anestetik dan **narkosis CO₂ (*carbon dioxide narcosis*)**. Terjadi depresi langsung pada pusat pengendali respirasi medula oblongata, menyebabkan bradipnea, pernapasan gasping, hingga **apnea sentral total**.
+* **Efek Kardiovaskular & Hemodinamik**:
+  * Awalnya terjadi stimulasi simpatoadrenal masif (takikardia, peningkatan curah jantung, dan hipertensi sistemik).
+  * Pada fase lanjut dengan asidosis berat (pH < 7,10), terjadi vasodilatasi perifer hebat, depresi inotropik langsung pada miokardium ventrikel, blok konduksi atrioventrikular, aritmia ventrikel letal, syok sirkulasi, dan henti jantung.
+* **Vasodilatasi Serebral & Peningkatan Tekanan Intrakranial (TIK)**:
+  * Hiperkapnia adalah pemicu vasodilatasi arteriol serebral paling poten. Aliran darah serebral (*cerebral blood flow*) meningkat masif, memicu pembengkakan otak, peningkatan drastis tekanan intrakranial, sakit kepala berdenyut hebat, dan edema serebri.
+
+---
+
+### 5. Biomonitoring Okupasi dan Laboratorium
+* **Parameter Penilaian Biologis (Klinis / Gawat Darurat)**:
+  * Berbeda dengan zat kimia eksogen murni, **tidak ada metabolit kimia urin atau spesimen spesifik** yang dapat diukur karena CO₂ merupakan molekul alami endogen tubuh.
+  * Baku emas evaluasi biologis pada korban pajanan akut adalah **Analisis Gas Darah Arteri (AGD)**:
+    * **Tekanan Parsial Karbon Dioksida Arteri (\\(PaCO_2\\))**: Normal 35–45 mmHg. Pada intoksikasi akut sedang–berat, nilai \\(PaCO_2\\) melonjak > 60–80 mmHg, bahkan dapat melampaui > 100 mmHg pada korban koma.
+    * **pH Darah Arteri**: Mengalami penurunan tajam (< 7,20 hingga < 7,00) yang mencerminkan asidosis respiratorik akut.
+    * **End-Tidal CO₂ (EtCO₂)**: Pemantauan non-invasif kontinu menggunakan kapnografi di instalasi gawat darurat atau ICU.
+* **Waktu Pengambilan Sampel**: Segera (*stat*) saat evakuasi atau kedatangan di fasilitas medis.
+* **Penyulit & Perancu (*Confounders*)**:
+  * Pekerja dengan Penyakit Paru Obstruktif Kronis (PPOK tipe *chronic bronchitis*) yang telah mengalami retensi CO₂ kronis dasar (*baseline hypercapnia*).
+  * Perokok berat menunjukkan tingkat habituasi ventilasi yang sedikit lebih tinggi terhadap fluktuasi hiperkapnia ringan dibanding non-perokok.
+
+---
+
+### 6. Waktu Paruh Eliminasi CO₂ (Half-Life)
+* **Klirens Paru Normal**:
+  * Karena eliminasi CO₂ berlangsung murni melalui ventilasi paru dan difusibilitas membran alveolar CO₂ adalah **20 kali lebih cepat daripada oksigen**, pembersihan hiperkapnia berlangsung sangat cepat.
+  * Begitu korban dipindahkan ke udara bersih atau diberikan bantuan ventilasi mekanis, waktu paruh penurunan kelebihan \\(PaCO_2\\) dalam darah berkisar antara **3 hingga 10 menit**.
+  * Parameter asam-basa darah umumnya kembali ke batas fisiologis normal dalam kurun waktu 1 hingga 2 jam pada individu dengan faal paru sehat.
+
+---
+
+### 7. Efek Toksisitas Akut per Rentang Konsentrasi (% Volume dan ppm)
+
+| Konsentrasi (% dan ppm) | Manifestasi Klinis dan Fisiologis Manusia |
+| :--- | :--- |
+| **0,04% (400 ppm)** | Konsentrasi normal atmosfer bumi bebas. |
+| **0,5% (5.000 ppm)** | **Batas Pajanan Kerja 8-Jam (NAB Permenaker 5/2018 / ACGIH TLV)**. Hiperventilasi istirahat ringan yang tidak disadari. |
+| **1,0% – 2,0% (10.000 – 20.000 ppm)** | Peningkatan ventilasi semenit hingga 50%; dispnea saat kerja fisik sedang; rasa tegang di kepala, kelelahan. |
+| **3,0% (30.000 ppm)** | **Batas Pajanan Singkat (PSD 15-menit Permenaker / STEL)**. Ventilasi alveolar meningkat 100% (dua kali lipat); dispnea saat istirahat, sakit kepala ringan, denyut nadi dan tekanan darah meningkat. |
+| **4,0% – 5,0% (40.000 – 50.000 ppm)** | **Ambang IDLH (40.000 ppm)**. Hiperpnea hebat (pernapasan terengah-engah), sakit kepala berdenyut, pusing, mual, berkeringat, gangguan penglihatan, ansietas hebat. |
+| **6,0% – 8,0% (60.000 – 80.000 ppm)** | Takipnea masif, tremor motorik, kebingungan mental, gangguan daya ingat, somnolen (*drowsiness*), stupor. |
+| **10,0% (100.000 ppm)** | Gangguan koordinasi visual dan motorik berat, kejang mioklonik, kehilangan kesadaran (*loss of consciousness*) dalam beberapa menit. |
+| **15,0% – 20,0% (150.000 – 200.000 ppm)** | Koma mendadak dalam 1 menit, depresi napas meduler berat, aritmia ventrikel, kolaps kardiovaskular. |
+| **> 25% – 30% (250.000 – 300.000 ppm)** | **Knockdown instan (kolaps mendadak dalam hitungan detik / 1–2 tarikan napas)**, henti napas (apnea) dalam 1 menit, henti sirkulasi, dan kematian seketika. |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Pajanan Kronis Tingkat Rendah (Konsentrasi 1% – 3%)**:
+  * Terjadi kompensasi ginjal berupa retensi bikarbonat plasma untuk menyeimbangkan asidosis respiratorik ringan persisten.
+  * Memicu asidosis intraseluler kronis, mobilisasi kalsium dari matriks tulang (peningkatan risiko demineralisasi tulang/hiperkalsiuria), sefalgia berulang, kelelahan kronis (*fatigue*), dan penurunan performa kapasitas fisik pekerja.
+* **Sekuel Pasca-Keracunan Akut Berat**:
+  * Jika korban segera dievakuasi dan sirkulasi spontan berhasil dipertahankan sebelum henti napas berlangsung lama, **pemulihan neurologis umumnya berlangsung sempurna dalam waktu 24 hingga 48 jam tanpa gejala sisa**.
+  * Sekuel persisten (ensefalopati anoksik, defisit kognitif permanen, amnesia) hanya terjadi apabila korban mengalami **henti jantung atau apnea berkepanjangan** yang mengakibatkan kerusakan hipoksik-iskemik sekunder pada parenkim otak.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **NAB (Nilai Ambang Batas / 8-jam TWA)**: **5.000 BDS (ppm) atau 9.000 mg/m³**.
+  * **PSD (Paparan Singkat yang Diperkenankan / 15-menit STEL)**: **30.000 BDS (ppm) atau 54.000 mg/m³**.
+  * *Keterangan Kritis*: **Asfiksia**.
+* **ACGIH TLV (2018)**:
+  * **TLV-TWA**: **5.000 ppm**.
+  * **TLV-STEL**: **30.000 ppm**.
+* **NIOSH REL**:
+  * **TWA (10-jam)**: **5.000 ppm (9.000 mg/m³)**; **STEL (15-menit)**: **30.000 ppm (54.000 mg/m³)**.
+* **OSHA PEL**:
+  * **PEL-TWA (8-jam)**: **5.000 ppm (9.000 mg/m³)**.
+* **IDLH (Immediately Dangerous to Life or Health)**:
+  * **40.000 ppm (4,0% volume)**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Regulasi**:
+  * Baik **Permenaker No. 5 Tahun 2018** maupun **ACGIH BEI TIDAK MENETAPKAN nilai numerik IPB/BEI** untuk karbon dioksida.
+  * Hal ini dikarenakan CO₂ merupakan metabolit endogen tubuh yang kadarnya sangat dinamis dan berfluktuasi cepat mengikuti laju metabolisme basal serta ventilasi menit paru. Pemantauan dilakukan melalui uji kadar gas atmosfer lingkungan kerja dan parameter AGD saat kedaruratan.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Ventilasi
+* **Evakuasi Aman & Keselamatan Tim Penolong**:
+  * Evakuasi korban seketika ke tempat terbuka berudara segar. Tim penolong **WAJIB MENGGUNAKAN SCBA bertekanan positif**.
+  * Pakaian korban dilepaskan jika terkontaminasi oleh cairan CO₂ beku atau pecahan es kering.
+  * **Kontraindikasi Resusitasi Mulut-ke-Mulut di TKP**: Lakukan ventilasi dengan *bag-valve-mask* (BVM) berkatup satu arah.
+* **Oksigenasi dan Bantuan Ventilasi Mekanis Invasif**:
+  * Berikan **Oksigen konsentrasi tinggi (FiO₂ 1,0 / 100%)**.
+  * Pada korban dengan koma, bradipnea, atau apnea: Lakukan intubasi endotrakeal segera dan pasang **ventilasi mekanis invasif**. 
+  * Atur parameter ventilator (laju pernapasan dan volume tidal yang adekuat) untuk mempercepat eliminasi pencucian CO₂ (*CO₂ washout*), sehingga hiperkapnia terkoreksi dan pH darah kembali normal.
+* **Koreksi Asam-Basa**:
+  * Hindari pemberian natrium bikarbonat intravena secara agresif pada asidosis respiratorik murni tanpa koreksi ventilasi, karena bikarbonat yang diinfuskan akan diubah menjadi gas CO₂ bebas terlarut yang dapat memperburuk asidosis intratekal/serebral. Ventilasi mekanis adalah terapi definitif asidosis respiratorik.
+* **Penanganan Cedera Beku (*Frostbite*) Akibat Es Kering**:
+  * Kontak kulit dengan es kering (-78,5°C) atau ekspansi cairan CO₂ bertekanan tinggi memicu radang dingin berat (*frostbite/cryogenic burns*).
+  * Lakukan penghangatan kembali jaringan (*rewarming*) secara bertahap dalam air hangat bersuhu **38°C – 42°C selama 15–30 menit**. Jangan menggosok jaringan yang beku.
+* **Ketiadaan Peran HBOT**:
+  * Berbeda secara mutlak dengan CO, **Terapi Oksigen Hiperbarik (HBOT) TIDAK MEMILIKI INDIKASI** pada keracunan murni karbon dioksida.
+
+---
+
+### 12. Manajemen Okupasi (Individu & Tempat Kerja)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * Pekerja dinyatakan **TIDAK LAIK (*Unfit*)** bekerja di area risiko tinggi CO₂ jika memiliki riwayat: PPOK derajat sedang–berat, asma labil, apnea tidur obstruktif (OSA), penyakit jantung koroner tidak stabil, aritmia, atau gagal jantung.
+* **Prosedur Ruang Terbatas (*Confined Space Entry Permit*)**:
+  * Mengingat densitas gas yang berat (1,5x udara), CO₂ terkonsentrasi di dasar ruangan.
+  * **Uji Atmosfer Bertingkat**: Pengukuran konsentrasi gas wajib dilakukan pada tiga tingkat ketinggian: **bagian atas, tengah, dan dasar ruangan/tangki**.
+  * Ambang batas aman masuk: Kadar \\(O_2 \ge 19,5\%\\) dan konsentrasi \\(CO_2 < 5.000\text{ ppm}\\).
+* **Detektor Gas Khusus Non-Dispersive Infrared (NDIR)**:
+  * Detektor multi-gas standar sering kali tidak memuat sensor CO₂ karena sensor katalitik LEL dan sensor elektrokimia biasa **tidak mampu mendeteksi CO₂**.
+  * Wajib menyiagakan detektor optik berbasis **NDIR (*Non-Dispersive Infrared*)** dengan alarm audio-visual pada level 5.000 ppm dan 30.000 ppm.
+* **Alat Pelindung Diri (APD)**:
+  * **Wajib SCBA bertekanan positif** atau *Supplied-Air Respirator* (SAR) tipe C bertekanan positif.
+  * **DILARANG KERAS menggunakan masker filter partikel (N95) atau respirator katrid kimia pemurni udara (*air-purifying cartridge*)**, karena tidak ada bahan adsorben kimia standar yang mampu menyaring gas CO₂ dari udara di atmosfer kerja.
+* **Rekayasa Ventilasi Lingkungan**:
+  * Desain ventilasi buang lokal di tingkat lantai (*low-level exhaust ventilation*) untuk menyedot gas CO₂ yang mengendap di dasar lantai pabrik bir, ruang penyimpanan es kering, atau gudang fermentasi.
+  * Pintu darurat yang membuka ke arah luar (*outward-opening panic doors*).
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Terakomodasi dalam **Lampiran Bagian I.a.16**: *"Penyakit yang disebabkan oleh gas penyebab asfiksia..."* (mencakup asfiksian sederhana lingkungan kerja seperti nitrogen, metana, dan karbon dioksida).
+  * Memberikan perlindungan hukum kompensasi JKK jika terjadi morbiditas atau fatalitas akibat kecelakaan kerja asfiksia di ruang terbatas.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Menetapkan tata cara investigasi kesehatan kerja, surveilans lingkungan kerja B3, dan penerapan 7 langkah diagnosis PAK pada korban kecelakaan inhalasi toksik industri.
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Hanya Sekadar Asfiksian Sederhana"**:
+   * *Fatal Examination Trap*: Menjawab bahwa bahaya CO₂ semata-mata karena mendesak oksigen (*oxygen-displacement asphyxia*).
+   * *Koreksi Mutlak*: Pada konsentrasi > 10%, CO₂ adalah **toksikan sistemik mandiri yang sangat kuat**. Kematian terjadi akibat depresi napas meduler dan fibrilasi ventrikel sekunder akibat asidosis intraseluler masif, meskipun lingkungan buatan dipasok oksigen normal.
+2. **Jebakan Stratifikasi Ruang Terbatas (Gas Berat Mengendap)**:
+   * Mengambil sampel udara hanya di mulut lubang *manhole* atau bagian atas tangki sering menunjukkan udara normal, sementara di dasar tangki konsentrasi CO₂ telah mencapai 20–30% (mematikan). Pengujian wajib dilakukan hingga ke dasar tangki.
+3. **Bahaya Penolong Tanpa Pelindung (*Rescuer Fatality*)**:
+   * Statistik OSHA mencatat lebih dari **50% hingga 60% kematian di ruang terbatas melibatkan rekan kerja atau petugas yang berusaha menolong korban pertama** tanpa menggunakan SCBA.
+4. **Sublimasi Es Kering di Ruang Tertutup (Ancaman Logistik)**:
+   * Satu kilogram es kering padat menyublim menghasilkan sekitar **500 liter gas CO₂ bebas**. Mengangkut es kering di dalam mobil van tertutup atau ruang penyimpanan tanpa ventilasi aktif dapat menciptakan atmosfer letal (> 10% CO₂) dalam kurun waktu kurang dari 30 menit.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Karbon Dioksida (CO₂)
+
+| No | Poin Parameter | Rangkuman Klinis, Toksikologis, & Regulasi Kunci |
+| :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Karsinogenitas** | Gas tak berwarna, rasa asam pada konsentrasi tinggi; BM 44,01; **densitas uap 1,53 (1,5x lebih berat dari udara, mengendap di dasar)**; noncombustible (pemadam api); es kering menyublim pada -78,5°C; non-karsinogen; asfiksian sederhana dengan toksisitas sistemik mandiri. |
+| **2** | **Sumber & Penggunaan** | Pabrik minuman berkarbonasi, kilang bir (*breweries*), fermentasi anggur/ragi, pakan silo, *slurry pits*, rantai dingin es kering (*dry ice*), pengelasan MIG/MAG, sistem pemadam *total flooding*, palka kapal, sumur tua, emisi vulkanik. |
+| **3** | **Toksikokinetik (ADME)** | Absorpsi: Inhalasi alveolar instan. Distribusi: 70–80% bikarbonat (\\(HCO_3^-\\)), 15–20% karbaminohemoglobin, 5–10% larut fisik (\\(PaCO_2\\)); **menembus sawar darah otak sangat cepat \\(\rightarrow\\) asidosis CSF instan**. Metabolisme: Tidak ada (produk akhir). Ekskresi: >99% ekshalasi paru. |
+| **4** | **Toksikodinamik** | Asfiksian sederhana + **toksikan sistemik langsung**; hiperkapnia masif \\(\rightarrow\\) **asidosis respiratorik dekompensasi**. Stimulasi kemoreseptor medula/karotis pada konsentrasi rendah, namun memicu **narkosis CO₂ & paralisis napas sentral pada > 10%**; vasodilatasi serebral (peningkatan TIK); aritmia & depresi miokardium. |
+| **5** | **Biomonitoring** | Parameter klinis AGD: **PaCO₂ (> 60–80 mmHg pada toksisitas berat)** dan **pH darah (< 7,20)**; kapnografi (EtCO₂). Tidak ada biomarker urin/kimia spesifik. Penyulit: PPOK dengan retensi CO₂ kronis dasar, adaptasi perokok. |
+| **6** | **Waktu Paruh (\\(t_{1/2}\\))** | Sangat cepat: **3 hingga 10 menit** setelah pemindahan ke udara bersih atau inisiasi ventilasi mekanis dengan eliminasi paru yang adekuat. |
+| **7** | **Efek Akut per Rentang ppm/%** | 0,5% (5.000 ppm): ambang batas NAB kerja 8 jam. 1–2%: ventilasi naik 50%, dispnea saat aktivitas. 3% (30.000 ppm): PSD, ventilasi naik 100%. 4–5% (40.000 ppm): IDLH, hiperpnea berat, sefalgia berdenyut. 6–8%: konfusi, stupor. 10%: kejang, hilang kesadaran. **>25–30%: knockdown seketika 1–2 nafas, apnea 1 menit, kematian**. |
+| **8** | **Efek Kronis & Sekuel** | Pajanan kronis (1–3%): kompensasi ginjal retensi bikarbonat, asidosis intraseluler, demineralisasi tulang. Pasca-keracunan akut: jika resusitasi berhasil sebelum henti napas lama, pemulihan neurologis tuntas tanpa sekuel. Kerusakan permanen hanya akibat ensefalopati anoksik sekunder. |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018**: NAB = **5.000 BDS (ppm)** (9.000 mg/m³); PSD = **30.000 BDS (ppm)** (54.000 mg/m³) [Asfiksia]. **ACGIH TLV**: TWA 5.000 ppm, STEL 30.000 ppm. **NIOSH REL**: TWA 5.000 ppm, STEL 30.000 ppm. **OSHA PEL**: TWA 5.000 ppm. **IDLH**: **40.000 ppm (4% volume)**. |
+| **10** | **BEI / IPB** | Permenaker 5/2018 dan ACGIH **TIDAK menetapkan nilai numerik BEI/IPB** untuk CO₂. Evaluasi mengandalkan pemantauan lingkungan dan AGD klinis darurat. |
+| **11** | **Tatalaksana Akut** | Evakuasi tim dengan SCBA. **O₂ 100% dan bantuan ventilasi mekanis invasif segera** untuk mencuci kelebihan CO₂ (*CO₂ washout*). Hindari natrium bikarbonat IV agresif. Hangatkan cedera beku (*frostbite*) es kering bertahap (38–42°C). **HBOT TIDAK memiliki peran/indikasi**. |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi penderita PPOK berat, gagal jantung, CAD labil. Ruang terbatas: izin masuk, uji stratifikasi vertikal 3 level (atas, tengah, bawah). Detektor: **Wajib sensor optik NDIR CO₂**. APD: **SCBA bertekanan positif** (dilarang katrid kimia/N95). Rekayasa: ventilasi hisap tingkat lantai (*low-level LEV*). |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019 Lampiran I.a.16** (Penyakit akibat gas asfiksia di tempat kerja); klaim santunan kecelakaan kerja JKK BPJS Ketenagakerjaan. Didukung PP 28/2024 dan Permenkes 11/2022 (7 langkah diagnosis okupasi). |
+| **14** | **Clinical Pearls & Trap** | 1) Toksikan mandiri fatal pada >10% meskipun O₂ normal. 2) Berat jenis 1,5x udara membuat CO₂ menumpuk di dasar lubang/sumur/silo. 3) 50–60% korban tewas adalah rekan penolong tanpa SCBA. 4) 1 kg es kering menyublim menjadi 500 liter gas CO₂ di ruang tertutup. 5) Detektor katalitik LEL gagal mendeteksi CO₂ (butuh NDIR). |
+
+---
+
+💡 *Apakah Anda ingin kita melangkah ke modul bahaya inhalasi iritan paru kimia berikutnya, seperti perbandingan komparatif antara **Gas Klorin (Cl₂)** yang berdaya larut air sedang dan **Fosgen (COCl₂)** yang berdaya larut air rendah dengan risiko edema paru tersembunyi (*delayed pulmonary edema*)?*

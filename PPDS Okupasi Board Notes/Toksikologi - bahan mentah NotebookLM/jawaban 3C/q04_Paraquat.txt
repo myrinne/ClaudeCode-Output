@@ -1,0 +1,340 @@
+Sebagai Tim Penguji Ujian Nasional Kolegium Kedokteran Okupasi (Board Examination Sp.Ok), saya tegaskan bahwa **Paraquat** (dan pembandingnya, **Diquat**) merupakan bahan uji wajib dalam toksikologi pestisida non-antikolinesterase. Karakteristik klinisnya yang unik—yaitu afinitas selektif organ target paru dan fenomena paradoks toksisitas oksigen—menuntut calon spesialis memahami patobiologi tingkat seluler hingga preskripsi klinis di ruang gawat darurat dan surveilans pabrik/kebun.
+
+Berikut adalah catatan komprehensif 14 poin standar board examination:
+
+---
+
+# TOKSIKOLOGI OKUPASIONAL: PARAQUAT
+*(Dengan Diquat sebagai Pembanding Spesifik)*
+
+```
+                       ┌─────────────────────────────────────────────────────────┐
+                       │          HERBISIDA BIPIRIDILIUM (BIPYRIDYL)             │
+                       └────────────────────────────┬────────────────────────────┘
+                                                    │
+                 ┌──────────────────────────────────┴──────────────────────────────────┐
+                 ▼                                                                     ▼
+             PARAQUAT                                                               DIQUAT
+ • 1,1'-dimetil-4,4'-bipiridinium                          • 1,1'-etilen-2,2'-bipiridinium
+ • Jarak antar atom N: ~0,702 nm                           • Jarak antar atom N: jauh lebih pendek
+ • Substrat Transporter Poliamin Paru                      • BUKAN substrat Transporter Poliamin
+ • AKUMULASI AKTIF DI PNEUMOSIT TIPE I & II                • TIDAK BERAKUMULASI DI PARU
+ • Kematian: FIBROSIS PARU PROGRESIF                       • Kematian: GAGAL GINJAL, CNS (PERDARAHAN PONS)
+                 │                                                                     │
+                 └──────────────────────────────────┬──────────────────────────────────┘
+                                                    │
+                                                    ▼
+                                          TOKSIKODINAMIK INTI
+                               • Redoks Cycling (PQ2+ <-> PQ*+) via NADPH
+                               • Pembentukan Radikal Superoksida (O2*-) & *OH
+                               • Deplesi NADPH, Peroksidasi Lipid Membran
+                               • KONTRAINDIKASI FATAL: OKSIGEN BERLEBIHAN!
+```
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Karakteristik Fisik-Kimia:**
+  * **Paraquat (Metil Viologen):** Rumus kimia kation \\(\text{C}_{12}\text{H}_{14}\text{N}_2^{2+}\\) (sebagai diklorida: \\(\text{C}_{12}\text{H}_{14}\text{N}_2\text{Cl}_2\\); CAS No. 4685-14-7 untuk kation, 1910-42-5 untuk diklorida). Berat molekul bentuk kation **\\(186{,}3\text{ g/mol}\\)** dan bentuk garam diklorida **\\(257{,}2\text{ g/mol}\\)**. Padatan kristal putih (garam murni) atau kuning kecokelatan (konsentrat teknis) higroskopis, tidak mudah menguap (tekanan uap <\\(10^{-7}\text{ mmHg}\\)), densitas relatif \\(1{,}24\text{--}1{,}26\text{ g/cm}^3\\), sangat larut dalam air (*miscible*) dan pelarut polar, namun tidak larut dalam pelarut hidrokarbon nonpolar.
+  * **Diquat (Dibromida):** Rumus kimia kation \\(\text{C}_{12}\text{H}_{12}\text{N}_2^{2+}\\) (1,1'-etilen-2,2'-bipiridinium dibromida; CAS No. 85-00-7). Berat molekul kation **\\(184{,}3\text{ g/mol}\\)** dan garam dibromida **\\(344{,}1\text{ g/mol}\\)**. Memiliki jembatan etilen kaku antara dua cincin piridinium.
+* **Klasifikasi Bahaya WHO (*WHO Recommended Classification of Pesticides by Hazard*):**
+  * **Paraquat:** Diklasifikasikan dalam **Kelas II (Cukup Berbahaya / *Moderately Hazardous*)** untuk formulasi standar, namun formulasi konsentrat teknis cair (20%–40% w/v) memiliki mortalitas setara **Kelas Ib (Sangat Berbahaya / *Highly Hazardous*)** karena dosis letal oral manusia dewasa sangat kecil: **\\(20\text{--}40\text{ mg ion/kgBB}\\)** atau hanya **\\(10\text{--}15\text{ mL}\\) larutan konsentrat 20%**.
+  * **Diquat:** Diklasifikasikan dalam **Kelas II (Cukup Berbahaya)**; LD50 oral tikus \\(230\text{ mg/kg}\\).
+* **Klasifikasi Karsinogenisitas (IARC & ACGIH):**
+  * **IARC:** Paraquat dan Diquat **tidak diklasifikasikan sebagai karsinogen manusia** (tidak tercantum dalam Grup 1, 2A, maupun 2B).
+  * **ACGIH & Permenaker No. 5 Tahun 2018:** Keduanya dikategorikan ke dalam **Kategori A4 (Tidak diklasifikasikan sebagai karsinogen terhadap manusia / *Not classifiable as a human carcinogen*)**.
+* **Status Larangan di Indonesia dan Dunia:**
+  * **Global:** Dilarang total penggunaannya di Uni Eropa sejak tahun 2007 (dibatalkan oleh Pengadilan Tingkat Pertama Eropa atas dasar risiko kesehatan pekerja), dilarang di Swiss (negara asal produsen awal), Cina, Vietnam, Brasil, dan lebih dari 50 negara lain.
+  * **Indonesia:** Mengacu pada regulasi Kementerian Pertanian dan pengawasan B3 (PP No. 74 Tahun 2001 & PP No. 28 Tahun 2024), formulasi konsentrat tinggi paraquat diklasifikasikan sebagai **Pestisida Terbatas** yang diawasi ketat, diwajibkan memiliki izin khusus dan sertifikasi aplikator, serta ditargetkan dalam rencana penghapusan/pembatasan bertahap.
+
+---
+
+### 2. Sumber dan Penggunaan
+* **Aplikasi Agraria:** Herbisida kontak non-selektif berspektrum luas (*broad-spectrum post-emergence contact herbicide*). Digunakan untuk penyiangan cepat gulma pada tanaman perkebunan (kelapa sawit, karet, kopi, tebu), tanaman pangan (padi, jagung), serta aplikasi olah tanah konservasi (*no-till / zero-tillage farming*).
+* **Desikan Pra-Panen:** Digunakan untuk mengeringkan daun dan batang kapas, kedelai, serta bunga matahari sebelum panen mekanis guna mempermudah proses pemetikan.
+* **Inaktivasi Tanah:** Memiliki afinitas pengikatan yang sangat kuat terhadap partikel lempung (*clay*) tanah; segera teradsorpsi dan terinaktivasi secara biologis begitu menyentuh tanah, sehingga tidak diserap melalui akar tanaman.
+* **Formulasi Dagang & Modifikasi Keamanan:** Diformulasikan paling sering dalam konsentrasi larutan cair 20%–27,6% w/v (misal *Gramoxone*). Sejak pertengahan dekade 1970–2000-an, formulasi ditambahkan agen pengaman:
+  1. *Emetic agent:* Senyawa penghasil muntah cepat **PP796** (turunan pirimidin).
+  2. *Stenching agent:* Pewangi busuk menyengat (*pyridine derivative*) untuk mencegah tertelan.
+  3. *Dye:* Pewarna biru-hijau pekat (*blue-green dye*).
+  4. *Gelling agent:* Formulasi *Gramoxone Inteon* berbasis alginat yang menggumpal pada pH asam lambung untuk menunda penyerapan.
+
+---
+
+### 3. Toksikokinetik
+* **Absorpsi:**
+  * **Dermal (Rute Utama Okupasional):**
+    * **Kulit Utuh (*Intact Skin*):** Absorpsi transkutan melalui stratum korneum utuh **sangat lambat dan minimal (< 0,5% hingga 1%)**.
+    * **Kulit Rusak / Teriritasi / Abrasi:** Penetrasi melonjak berlipat ganda bila kulit mengalami abrasi, maserasi oleh keringat, dermatitis kontak, atau luka bakar kimia. Pajanan okupasional berkepanjangan pada punggung akibat tangki semprot (*knapsack sprayer*) yang bocor dapat memicu **absorpsi transkutan fatal sistemik** meskipun tanpa riwayat tertelan.
+  * **Gastrointestinal:** Absorpsi oral manusia berkisar antara **5% hingga 10%** dari total dosis. Penyerapan berlangsung terutama di usus halus; konsentrasi puncak plasma tercapai cepat dalam waktu **0,5 hingga 2 jam** setelah masuk.
+  * **Inhalasi:** Alat semprot pertanian (*nozzle sprayer*) menghasilkan aerosol dengan ukuran tetesan (*droplet size*) **> 100 µm**, yang terlalu besar untuk menembus saluran napas bawah alveoli. Droplet tersebut mengendap di nasofaring, menimbulkan efek lokal (epistaksis, faringitis), namun tidak memicu toksisitas sistemik kecuali bila terpapar kabut aerosol halus bertekanan tinggi (< 5 µm).
+* **Distribusi & Akumulasi Aktif di Paru:**
+  * Terdistribusi ke seluruh organ dengan volume distribusi \\(V_d = 1{,}2\text{--}2{,}75\text{ L/kg}\\).
+  * **Akumulasi Selektif Paru:** Konsentrasi paraquat di jaringan paru mencapai **6 hingga 10 kali lebih tinggi dibandingkan konsentrasi di dalam plasma darah**. Paraquat terakumulasi melawan gradien konsentrasi dan tertahan di parenkim paru bahkan ketika kadar plasma sudah menurun drastis.
+  * **Transporter Poliamin (*Polyamine Uptake System / PUS*):**
+    * Akumulasi selektif ini dimediasi oleh sistem transpor aktif dependen-energi (ATP-driven) yang secara fisiologis mengekspresikan ambilan poliamin endogen (putresina, spermidina, spermine).
+    * Transporter ini terdapat melimpah pada membran apikal **sel epitel alveolar tipe I, pneumosit tipe II, dan sel Clara**.
+    * *Spesifikasi Stereokimiawi:* Sistem ini mengenali dua muatan positif nitrogen kuaterner yang terpisah pada jarak **0,6 hingga 0,7 nm** (jarak \\(\text{N}^+ \text{-- } \text{N}^+\\) paraquat adalah **\\(0{,}702\text{ nm}\\)**, identik dengan putresina **\\(0{,}622\text{ nm}\\)**).
+    * **PERBEDAAN VITAL DENGAN DIQUAT:** Diquat memiliki jarak intramolekuler antar atom nitrogen yang jauh lebih pendek dan kaku akibat jembatan etilen, sehingga **Diquat BUKAN substrat sistem transpor poliamin paru dan TIDAK BERAKUMULASI di parenkim paru** (tidak memicu pneumotoksisitas/fibrosis paru).
+* **Metabolisme & Ekskresi:**
+  * Paraquat **tidak mengalami metabolisme enzimatik fase I atau fase II** di dalam tubuh mamalia; diekskresikan dalam bentuk molekul induk utuh.
+  * **Eliminasi Ginjal:** Merupakan rute ekskresi fisiologis utama (>80–90% diekskresikan melalui urin dalam 24 jam pertama) melalui filtrasi glomerulus dan sekresi aktif tubulus proksimal. Klirens ginjal paraquat pada fungsi ginjal normal melampaui klirens kreatinin.
+  * **Lingkaran Setan Gagal Ginjal (*The Vicious Cycle*):** Kerusakan tubulus ginjal (ATN) akibat paraquat menurunkan klirens ekskresi paraquat dari sirkulasi. Akibatnya, waktu paruh eliminasi meningkat drastis, kadar paraquat dalam plasma menetap tinggi, dan memfasilitasi akumulasi paraquat secara masif ke dalam pneumosit paru.
+
+---
+
+### 4. Toksikodinamik
+Kerusakan jaringan paru dan organ vital dipicu oleh kaskade biokimiawi **Redoks Siklik (*Redox Cycling*)**:
+
+```
+           NADPH           PQ2+ (Kation Paraquat)          O2 (Oksigen Melimpah)
+             │                      │                               │
+    [CYP450 Reduktase]       [Reduksi 1-e-]                   [Oksidasi Cepat]
+             │                      │                               │
+             ▼                      ▼                               ▼
+           NADP+          PQ*+ (Radikal Monokation) ────► O2*- (Radikal Superoksida)
+                                                                    │
+                 ┌──────────────────────────────────────────────────┴───────────────┐
+                 │                                                                  │
+                 ▼                                                                  ▼
+        [Dismutasi via SOD]                                                Deplesi Masif NADPH
+                 │                                                                  │
+                 ▼                                                                  ▼
+               H2O2                                                        Gangguan Reduksi GSSG -> GSH
+                 │                                                                  │
+      [Reaksi Fenton / Fe2+]                                                        ▼
+                 │                                                         Hilangnya Proteksi Antioksidan
+                 ▼                                                                  │
+         *OH (Radikal Hidroksil) ───────────────────────────────────────────────────┘
+                 │
+                 ▼
+     PEROKSIDASI LIPID MEMBRAN (LPO) + KERUSAKAN DNA + DEPLESI ATP
+                 │
+                 ▼
+       NEKROSIS PNEUMOSIT TIPE I & II ──► PROLIFERASI FIBROBLAS ──► FIBROSIS PARU
+```
+
+1. **Reduksi Enzimatik 1-Elektron:** Molekul paraquat (\\(\text{PQ}^{2+}\\)) di sitosol pneumosit direduksi oleh enzim-enzim diaforase (terutama **NADPH-sitokrom P450 reduktase**, kompleks I mitokondria, dan xantin oksidase) dengan mengambil satu elektron dari molekul **NADPH**, membentuk radikal bebas monokation paraquat (\\(\text{PQ}^{\bullet+}\\)).
+2. **Oksidasi Kembali Spontan (*Redox Cycling*):** Di bawah lingkungan aerobik paru yang kaya oksigen (tegangan alveolar \\(\text{PAO}_2\\) tinggi), radikal \\(\text{PQ}^{\bullet+}\\) secara spontan mentransfer elektronnya ke molekul oksigen (\\(\text{O}_2\\)), meregenerasi molekul \\(\text{PQ}^{2+}\\) kembali dan menghasilkan **anion radikal superoksida (\\(\text{O}_2^{\bullet-}\\))**.
+3. **Pembentukan Spesies Oksigen Reaktif (ROS) Toksik:**
+   * Enzim Superoksida Dismutase (SOD) mengubah \\(\text{O}_2^{\bullet-}\\) menjadi hidrogen peroksida (\\(\text{H}_2\text{O}_2\\)).
+   * Melalui reaksi Haber-Weiss dan reaksi Fenton yang dikatalisis oleh ion besi transisi bebas (\\(\text{Fe}^{2+}\\)), terbentuk **radikal hidroksil (\\(^{\bullet}\text{OH}\\))**, spesi oksigen paling reaktif dan destruktif dalam biologi sel.
+4. **Dampak Molekuler Terhadap Sel Paru:**
+   * **Deplesi NADPH & Kerusakan Siklus Glutation:** Konsumsi terus-menerus NADPH oleh siklus redoks paraquat melumpuhkan enzim glutation reduktase, menyebabkan glutation teroksidasi (GSSG) tidak dapat didaur ulang menjadi glutation tereduksi (GSH), mematikan sistem pertahanan antioksidan endogen.
+   * **Peroksidasi Lipid (*Lipid Peroxidation / LPO*):** Radikal hidroksil menyerang asam lemak tak jenuh ganda (*PUFA*) pada fosfolipid membran sel dan surfaktan paru, memicu disintegritas membran organel, kolaps mitokondria, dan lisis sel epitel alveolar.
+5. **Histopatologi Paru Dua Fase (*Two-Phase Pulmonary Remodeling*):**
+   * **Fase Destruktif (Hari ke 1–3):** Terjadi alveolitis akut, nekrosis koagulatif pneumosit tipe I (yang menutupi 93% permukaan alveolar) dan pneumosit tipe II, lisis membran basal, edema paru non-kardiogenik masif, hemoragik alveolar, serta infiltrasi leukosit PMN.
+   * **Fase Proliferatif / Fibrotik (Hari ke 4–21):** Integritas alveolar hilang; terjadi proliferasi masif fibroblas, diferensiasi miofibroblas, dan deposisi kolagen intra-alveolar serta interstitial secara luas (*extensive pulmonary fibrosis*), memicu obliterasi jalan napas, blokade difusi alveolar-kapiler, dan kematian akibat hipoksemia anoksik.
+
+---
+
+### 5. Biomonitoring
+* **Uji Semikuantitatif Natrium Ditionit (*Sodium Dithionite Test*):**
+  * Uji kolorimetri cepat *bedside* di instalasi gawat darurat dan klinik okupasi untuk konfirmasi pajanan sistemik.
+  * **Metode:** 10 mL urin pasien ditambahkan 2 mL larutan natrium ditionit 1% segar dalam natrium hidroksida 1 N (suasana basa).
+  * **Prinsip Reaksi:** Natrium ditionit mereduksi kation paraquat membentuk radikal bebas monokation stabil yang memendarkan **warna biru (*blue monocation radical*)** dengan puncak serapan spektrofotometri pada panjang gelombang **396 nm dan 403 nm**.
+  * **PERBEDAAN DENGAN DIQUAT:** Diquat yang direduksi ditionit dalam suasana basa menghasilkan **warna hijau (*green color*)** dengan spektrum khas 380–387 nm (atau 454–464 nm bila bercampur paraquat).
+  * **Interpretasi Prognostik Urin (24 Jam Pertama):**
+    * *Tidak berwarna / Jernih (-):* Konsentrasi paraquat < 1 µg/mL; prognosis sangat baik, toksisitas sistemik berat tidak diharapkan.
+    * *Biru Muda / Pucat (± hingga +):* Kadar 1–10 µg/mL; risiko intoksikasi sedang-berat.
+    * *Biru Tua / Navy Blue (++ hingga +++):* Kadar **> 10 µg/mL (hingga > 100 µg/mL)**; memprediksi kematian tinggi (*high probability of fatal outcome*).
+* **Kadar Plasma Paraquat & Nomogram Prognostik:**
+  * Konsentrasi paraquat plasma yang diukur menggunakan HPLC atau spektrofotometri derivatif kedua dihubungkan dengan waktu setelah tertelan (*hours post-ingestion*).
+  * **Garis Batas Kelangsungan Hidup Proudfoot (*Proudfoot Survival Curve*) / Nomogram Hart et al.:**
+    * Jam ke-4 pasca tertelan: Konsentrasi plasma **< 2,0 mg/L (µg/mL)** memprediksi kelangsungan hidup; kadar **> 2,0 mg/L** memprediksi kematian.
+    * Jam ke-6: Batas bertahan **< 0,6 mg/L**.
+    * Jam ke-10: Batas bertahan **< 0,3 mg/L**.
+    * Jam ke-16: Batas bertahan **< 0,16 mg/L**.
+    * Jam ke-24: Batas bertahan **< 0,10 mg/L**.
+  * Pasien dengan kadar plasma jauh melampaui kurva (misal > 10 mg/L pada 8 jam pertama) dipastikan meninggal dalam 24–48 jam akibat renjatan kardiogenik dan gagal multi-organ.
+* **Indeks Keparahan Keracunan Paraquat (*Severity Index of Paraquat Poisoning / SIPP*):**
+  * \\(\text{SIPP} = [\text{Kadar serum PQ (µg/mL)}] \times [\text{Waktu interval dari pajanan hingga terapi (jam)}]\\).
+  * \\(\text{SIPP} < 10\\): Pasien berpeluang besar bertahan hidup.
+  * \\(10 < \text{SIPP} < 50\\): Pasien diprediksi meninggal lambat akibat fibrosis paru progresif.
+  * \\(\text{SIPP} > 50\\): Pasien diprediksi meninggal dini (< 24–72 jam) akibat gagal sirkulasi kardiogenik.
+
+---
+
+### 6. Waktu Paruh (*Half-Life*)
+* **Kinetika Eliminasi Plasma:**
+  * Mengikuti model tiga kompartemen terbuka. Fase distribusi awal (\\(t_{1/2}\alpha\\)) sangat singkat (**beberapa menit hingga 1 jam**).
+  * **Fase Eliminasi Terminal (\\(t_{1/2}\beta\\)):** Pada fungsi ginjal normal berkisar antara **11 hingga 12 jam (rata-rata < 12 jam)**.
+  * **Pada Kondisi Gagal Ginjal Akut:** Mengalami pemanjangan masif hingga **120 jam atau lebih (> 5 hari)**, menyebabkan residu paraquat dapat dideteksi dalam urin selama berminggu-minggu.
+* **Waktu Paruh Retensi di Jaringan Paru (*Lung Tissue Half-Life*):**
+  * Paraquat mengalami sekuestrasi dalam sel epitel paru dengan waktu paruh pelepasan keluar (*efflux half-life*) mencapai **≥ 24 jam**, menjelaskan persistensi akumulasi racun di paru meskipun kadar plasma telah turun.
+
+---
+
+### 7. Efek Akut
+Tingkat keparahan klinis bergantung langsung pada dosis yang diserap:
+1. **Dosis Letal Rendah hingga Sedang (< 20 mg ion/kgBB):**
+   * Gejala saluran cerna ringan (mual, muntah, iritasi orofaring), fungsi ginjal dan hati relatif normal atau hanya transiently impaired; kapasitas difusi paru (DLCO) dapat menurun transien namun pasien dapat pulih.
+2. **Dosis Toksik Sedang hingga Berat (20–40 mg ion/kgBB / 1–2 teguk konsentrat 20%):**
+   * **Lesi Korosif Lokal Saluran Cerna:** Dalam beberapa jam terjadi eritema, edema mukosa, pembentukan pseudomembran difus pada bibir, palatum, dan lidah yang disebut ***"Paraquat Tongue"***. Esofagitis korosif dapat memicu ulserasi dalam, perforasi esofagus, pneumomediastinum, dan mediastinitis fatal.
+   * **Nekrosis Tubular Ginjal Akut (ATN):** Muncul dalam 24–48 jam, ditandai oliguria, proteinuria, glukosuria (sindrom Fanconi), dan lonjakan kreatinin/BUN.
+   * **Hepatotoksisitas:** Terjadi dalam 48–72 jam berupa nekrosis sentrilobular hepatosit, hiperbilirubinemia, dan peningkatan enzim transaminase (SGOT/SGPT).
+   * **Fibrosis Paru Progresif:** Setelah melewati fase alveolitis dan perbaikan palsu (*honeymoon period*), timbul batuk, dyspnea progresif, sianosis, dan gambaran infiltrat alveolar retikulonodular difus pada Rontgen toraks. Kematian akibat hipoksemia anoksik umumnya terjadi dalam **7 hingga 21 hari**.
+3. **Dosis Masif / Fulminan (> 40–50 mg ion/kgBB / > 1 mouthful konsentrat pekat):**
+   * Mematikan dalam **24 hingga 72 jam** akibat kegagalan multi-organ akut (*Multiple Organ Failure*), nekrosis korteks adrenal, ensefalopati, miokarditis toksik, dan syok kardiogenik refrakter sebelum lesi fibrosis paru sempat terbentuk.
+4. **Efek Lokal Akut pada Kulit, Kuku, dan Mata:**
+   * **Mata:** Percikan cairan konsentrat ke mata memicu konjungtivitis kimiawi parah, erosi kornea berat, hilangnya epitel limbus, kekeruhan kornea persisten, dan defek penglihatan.
+   * **Kuku:** Kontak lokal berulang memicu diskromia putih/kuning, alur transversal (garis Mees), pelunakan lempeng kuku, hingga kuku lepas dari dasarnya (*onycholysis / proximal nail shedding*).
+   * **Kulit:** Kontak lama memicu eritema luas, lepuh (*blistering*), hingga ulserasi nekrotik.
+
+---
+
+### 8. Efek Kronis Okupasional
+* **Sistem Pernapasan:**
+  * Paparan inhalasi kronis debu atau aerosol formulasi kerja dapat memicu iritasi saluran napas kronis, rinitis atrofi, dan **epistaksis berulang** akibat kontak lokal droplet besar pada mukosa septum nasi (*Little’s area*).
+  * Pekerja perkebunan yang terpapar kronis tanpa APD dapat mengalami penurunan fungsi paru restriktif kronis dan penurunan kapasitas difusi gas karbon monoksida (DLCO).
+* **Dermatologis & Kuku:**
+  * Dermatitis kontak iritan kronis pada tangan dan kaki, kuku rapuh (*nail dystrophy*), perubahan warna kecokelatan/kehitaman pada bantalan kuku.
+* **Kaitan Neurodegeneratif (Penyakit Parkinson):**
+  * Studi epidemiologi okupasional dan hewan membuktikan struktur molekuler paraquat sangat mirip dengan ion **\\(\text{MPP}^+\\)** (*1-methyl-4-phenylpyridinium*), metabolit aktif neurotoksin MPTP yang memicu parkinsonisme. Paraquat mampu menginduksi stres oksidatif selektif pada neuron dopaminergik *substantia nigra pars compacta* dan mempercepat agregasi protein alfa-sinuklein.
+
+---
+
+### 9. Batas Pajanan Okupasional di Udara Tempat Kerja (OELs)
+Mengacu pada **Permenaker No. 5 Tahun 2018 (Lampiran 1)**, **ACGIH TLV**, **NIOSH REL**, dan **OSHA PEL**:
+
+| Bahan Kimia | Permenaker 5/2018 (NAB) | ACGIH TLV-TWA | NIOSH REL (TWA) | OSHA PEL (TWA) | IDLH | Notasi Khusus |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Paraquat (sebagai kation)** | **\\(0{,}5\text{ mg/m}^3\\)** (IFV)<br>**\\(0{,}1\text{ mg/m}^3\\)** (Fraksi R) | \\(0{,}5\text{ mg/m}^3\\) (IFV)<br>\\(0{,}1\text{ mg/m}^3\\) (Fraksi R) | **\\(0{,}1\text{ mg/m}^3\\)** (Fraksi R) | **\\(0{,}5\text{ mg/m}^3\\)** (Debu R) | **\\(1\text{ mg/m}^3\\)** | **Kulit (*Skin*)**, A4, Kerusakan Paru |
+| **Diquat (sebagai dibromida)** | **\\(0{,}5\text{ mg/m}^3\\)** (IFV)<br>\\(0{,}1\text{ mg/m}^3\\) (Fraksi R) | \\(0{,}5\text{ mg/m}^3\\) (IFV)<br>\\(0{,}1\text{ mg/m}^3\\) (Fraksi R) | **\\(0{,}5\text{ mg/m}^3\\)** | \\(0{,}5\text{ mg/m}^3\\)* | N.D. | **Kulit (*Skin*)**, A4, Katarak |
+
+*(Notasi: **IFV** = Inhalable Fraction and Vapor; **Fraksi R** = Respirable Fraction; **Kulit** = potensi absorpsi dermal signifikan; \\(^*\\)OSHA PEL status vacated 1989).*
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Ketiadaan Batas Resmi IPB:**
+  * Baik dalam **Permenaker No. 5 Tahun 2018 (Lampiran 4)** maupun **ACGIH BEI**, **TIDAK ADA nilai angka IPB/BEI resmi yang ditetapkan untuk Paraquat maupun Diquat**.
+  * Evaluasi medis biologis di lapangan okupasi mengandalkan monitoring kualitatif urin (uji ditionit negatif) dan pemantauan faal paru (spirometri/DLCO).
+
+---
+
+### 11. Tatalaksana Medis Gawat Darurat
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│             PROTOKOL EMERGENSI INTOKSIKASI AKUT PARAQUAT               │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+       ┌────────────────────────────┼────────────────────────────┐
+       ▼                            ▼                            ▼
+1. PENCEGAHAN ABSORPSI       2. HINDARI OKSIGEN!          3. ELIMINASI & ANTI-FIBROTIK
+   • Tanah Fuller 15% (1 L)     • KONTRAINDIKASI FiO2 TINGGI • Charcoal Hemoperfusion
+     atau Bentonit 7%             KECUALI hipoksia berat       (HANYA < 2–4 jam awal)
+   • Arang Aktif 1-2 g/kgBB     • Target SpO2: 85%–88%       • Pulse Imunosupresi:
+   • Bilas Lambung: HANYA         (PaO2 50–60 mmHg)            Metilprednisolon 1 g/hr
+     < 1 jam (Waspada perforasi)• Hindari intubasi rutin       + Siklofosfamid 15 mg/kg
+       │                            │                            │
+       └────────────────────────────┼────────────────────────────┘
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │             KONTRAINDIKASI FATAL & PALIATIF             │
+       │  • DILARANG Oksigen bebas: Mempercepat radikal bebas!   │
+       │  • DILARANG Sikat kulit kasar: Abrasi memicu absorpsi!  │
+       │  • Transplantasi paru: Gagal (residu merusak graft).    │
+       │  • Terapi paliatif & analgesia adekuat pada fase akhir. │
+       └─────────────────────────────────────────────────────────┘
+```
+
+1. **Dekontaminasi Saluran Cerna Agresif (Adsorben Mineral):**
+   * Paraquat berikatan kovalen sangat kuat dengan partikel mineral lempung tanah (*clay minerals*).
+   * Berikan suspensi oral/NGT **Tanah Fuller 15% (*Fuller’s Earth*) sebanyak 1 liter** (atau **Bentonit 7%**), diikuti pemberian katartik **200 mL Manitol 20%** pada orang dewasa (dosis anak: 1–2 g adsorben/kgBB).
+   * Bila Tanah Fuller tidak tersedia, berikan **Arang Aktif (*Activated Charcoal*) dosis 1 hingga 2 g/kgBB** (maksimal 50–100 g) tersuspensi bersama cairan. Jika berada di daerah perkebunan terpencil yang jauh dari rumah sakit, suspensi tanah liat bersih (*clean clay/soil*) dapat diberikan per oral sebagai langkah darurat pra-rumah sakit.
+   * *Bilas Lambung (*Gastric Lavage*):* Hanya direkomendasikan bila pasien tiba **< 1 jam pasca tertelan** dan dilakukan bersama adsorben. **Peringatan Kritis:** Risiko perforasi esofagus/lambung sangat tinggi akibat luka bakar korosif paraquat.
+2. **KONTRAINDIKASI VITAL: PEMBERIAN OKSIGEN BERLEBIHAN:**
+   * **DILARANG KERAS memberikan oksigen suplemental konsentrasi tinggi (*high FiO2*) secara rutin pada pasien keracunan paraquat.**
+   * *Alasan Patobiologi:* Oksigen bertindak sebagai bahan bakar langsung (*substrate*) yang mempercepat reaksi *redox cycling*. Terapi oksigen hiperoksik melipatgandakan pembentukan radikal anion superoksida di alveoli dan secara drastis mempercepat proses nekrosis jaringan paru serta kematian.
+   * **Protokol Ventilasi Toleransi Hipoksia:** Suplementasi oksigen **hanya diberikan apabila pasien mengalami dispnea subjektif ekstrem atau hipoksemia berat yang mengancam nyawa (*life-threatening hypoxia*)**.
+   * **Target Saturasi Oksigen:** Pertahankan **\\(\text{SpO}_2\\) pada rentang rendah-moderat, yaitu sekitar 85% hingga 88%** (atau batas \\(\text{PaO}_2 \approx 50\text{--}60\text{ mmHg}\\) / 6,5–8,0 kPa).
+3. **Ekstrakorporeal (Hemoperfusi Arang vs Hemodialisis):**
+   * **Hemoperfusi Arang (*Charcoal Hemoperfusion / CHP*):** Memiliki klirens tinggi terhadap paraquat bebas dalam plasma (hingga 170 mL/menit). Namun, CHP **hanya memiliki manfaat klinis nyata bila dimulai sangat dini, idealnya < 2 hingga 4 jam setelah tertelan**, sebelum paraquat terdistribusi ke jaringan dan terakumulasi di pneumosit paru. Bila dimulai > 12 jam, CHP tidak mampu mengubah tingkat mortalitas akhir karena racun telah terfiksasi di dalam jaringan.
+   * **Hemodialisis (HD):** Tidak efektif membersihkan cadangan paraquat tubuh total; hemodialisis **hanya diindikasikan untuk tatalaksana komplikasi gagal ginjal akut (uremia, asidosis metabolik refrakter, hiperkalemia)**.
+4. **Terapi Imunosupresi Anti-Fibrotik (*Pulse Therapy* Lin et al.):**
+   * Bertujuan menekan kaskade alveolitis destruktif sebelum bertransformasi menjadi fibrosis ireversibel.
+   * **Protokol:** Kombinasi **Siklofosfamid \\(15\text{ mg/kgBB/hari}\\) IV selama 2 hari berturut-turut** dan **Metilprednisolon \\(1\text{ g/hari}\\) IV selama 3 hari berturut-turut**, dilanjutkan dengan pemberian Deksametason dosis tinggi. Pemantauan ketat leukosit darah mutlak dilakukan untuk mencegah infeksi sekunder/sepsis neutropenik.
+5. **Antioksidan Tambahan:** Pemberian infus N-Asetilsistein (NAC) dosis tinggi untuk menyuplai donor gugus tiol/prekursor GSH, Vitamin C, Vitamin E, serta kelator besi Deferoksamin (DFO) untuk menghambat reaksi Fenton pembentuk radikal bebas hidroksil.
+6. **Dekontaminasi Dermal:** Segera lepas pakaian, mandikan dengan air mengalir dan sabun biasa. **DILARANG MENGGUNAKAN SIKAT KASAR (*scrubbing brush*)** karena abrasi stratum korneum akan melipatgandakan penyerapan sistemik paraquat melalui kulit.
+7. **Perawatan Paliatif:** Pada pasien yang telah diprediksi fatal (berada di atas kurva Proudfoot atau \\(\text{SIPP} > 50\\)), transplantasi paru telah terbukti gagal karena residu paraquat dalam tubuh akan merusak paru donor. Fokus tatalaksana dialihkan ke terapi paliatif (morfin infus untuk meredakan haus udara/dispnea hebat dan analgesia adekuat).
+
+---
+
+### 12. Tatalaksana Okupasi, Kelaikan Kerja, dan Surveilans
+* **Penilaian Kelaikan Kerja (*Fitness for Duty Assessment*):**
+  * **Kontraindikasi Penempatan Kerja (*Pre-placement Unfit*):** Individu dengan penyakit paru obstruktif atau restriktif kronis (asma bronkiale, PPOK, riwayat TB paru dengan fibrosis luas), gangguan fungsi ginjal kronis, penyakit hati kronis, atau kelainan integritas kulit luas (eksim, psoriasis, dermatitis kontak berat) dilarang ditempatkan pada pekerjaan formulasi atau penyemprotan paraquat.
+  * **Kriteria Pemindahan Kerja (*Medical Removal*):** Pekerja yang mengalami erosi kuku (*nail damage*), dermatitis kontak vesikular, epistaksis berulang, atau terdeteksinya paraquat dalam urin via uji ditionit positif **wajib segera dibebaskan dari tugas penanganan pestisida**.
+* **Program Surveilans Kesehatan Kerja:**
+  * Pemeriksaan pra-kerja: Spirometri lengkap (FVC, FEV1) dan uji DLCO dasar, kreatinin/BUN, faal hati, dan inspeksi kulit/mukosa hidung.
+  * Pemeriksaan berkala: Uji spirometri setiap 6–12 bulan pada kelompok aplikator intensif; pemeriksaan urin ditionit berkala pasca musim semprot.
+* **Hirarki Pengendalian Bahaya Higiene Industri:**
+  * **Eliminasi & Substitusi:** Mengganti paraquat dengan herbisida berisiko toksisitas mamalia yang jauh lebih rendah (misal glifosat, glufosinat amonium, atau penyiangan mekanik).
+  * **Rekayasa Teknik:** Penggunaan sistem transfer tertutup (*closed transfer systems*) pada pengenceran konsentrat formulasi cair; pemasangan tangki semprot mekanis traktor dengan kabin tertutup bertekanan positif dan filtrasi udara.
+  * **Pengendalian Administratif:** Larangan penggunaan alat semprot punggung (*knapsack sprayer*) yang bocor; pembatasan rotasi waktu semprot (maksimal 4 jam per hari kerja); penyediaan fasilitas mandi darurat (*emergency shower*) dan cuci mata di area perkebunan; pelatihan sertifikasi operator pestisida; penyimpanan bahan kimia terkunci rapat.
+  * **Alat Pelindung Diri (APD) Wajib:**
+    * Wajah & Mata: Pelindung wajah penuh (*face shield*) dipadu kacamata pelindung kimia (*chemical splash goggles*).
+    * Kulit: Apron pelindung kimia berbahan **PVC atau karet nitril tebal**, sarung tangan nitril/butil panjang, sepatu bot karet, dan pakaian kerja lengan panjang tahan percikan air.
+    * Saluran napas: Respirator pemurni udara dengan filter partikulat efisiensi tinggi (P100 / N95).
+
+---
+
+### 13. Aspek Regulasi, Legalitas Indonesia, dan Diagnosis PAK
+* **Penetapan Diagnosis PAK (Permenkes No. 11 Tahun 2022):**
+  * Ditegakkan melalui pendekatan **7 Langkah Diagnosis PAK**:
+    1. Diagnosis klinis (misal: fibrosis paru toksik okupasional akibat paraquat, dermatitis kontak korosif, atau sindrom ulserasi mukosa toksik).
+    2. Identifikasi pajanan di lingkungan kerja (bukti tertulis LDKB/MSDS herbisida bipyridyl, catatan log aplikasi kebun).
+    3. Hubungan kausal berbasis bukti ilmiah kedokteran okupasi.
+    4. Besaran pajanan (analisis higienis konsentrasi udara dibanding NAB Permenaker 5/2018, durasi paparan, ketiadaan APD, adanya kebocoran tangki ransel pada kulit lecet).
+    5. Faktor risiko perorangan (status atopi, riwayat merokok).
+    6. Faktor di luar pekerjaan (penggunaan pestisida di pekarangan rumah tangga).
+    7. Penentuan vonis akhir apakah murni Penyakit Akibat Kerja.
+* **Pengakuan Hukum Berdasarkan Perpres No. 7 Tahun 2019:**
+  * Tercakup dalam daftar resmi penyakit akibat kerja:
+    * **Lampiran I.a.35:** *"Penyakit yang disebabkan oleh pestisida"*.
+    * **Lampiran I.c.2:** *"Penyakit sistem pernapasan akibat zat kimia, debu, atau aerosol"*.
+  * **Masa Kedaluwarsa Klaim JKK (Pasal 2 Ayat 2):** Hak atas klaim Jaminan Kecelakaan Kerja (JKK) tetap berlaku **paling lama 3 (tiga) tahun terhitung sejak hubungan kerja berakhir**.
+
+---
+
+### 14. Clinical Pearls dan Jebakan Ujian Board Sp.Ok
+1. **Jebakan Fatal Pemberian Oksigen:**
+   * Di ruang ujian, penguji menyajikan skenario pasien sesak napas pasca tertelan paraquat. Jika Anda menjawab: *"Pasang masker O2 non-rebreathing 10–15 L/menit"*, Anda **langsung gagal**. Pemberian fraksi oksigen tinggi mempercepat siklus redoks paraquat dan mempercepat kematian paru. Jawaban yang benar adalah **hindari oksigen**, pertahankan SpO2 rendah-moderat (85%–88%), dan berikan hanya jika pasien mengalami hipoksemia berat yang mengancam nyawa.
+2. **Jebakan Membedakan Toksisitas Diquat vs Paraquat:**
+   * Penguji menanyakan organ target diquat. Ingat: **Diquat TIDAK menyebabkan fibrosis paru** karena tidak menjadi substrat transporter poliamin paru. Kematian akibat diquat disebabkan oleh gagal ginjal akut berat dan **toksisitas neurologis sentral berupa infark/perdarahan batang otak (pons) serta parkinsonisme akut**.
+3. **Jebakan Warna Uji Natrium Ditionit Urin:**
+   * *Paraquat:* Bereaksi membentuk warna **BIRU (*Navy Blue*)**.
+   * *Diquat:* Bereaksi membentuk warna **HIJAU (*Green*)**.
+4. **Jebakan "Kulit Utuh" vs "Penyemprot Ransel Bocor":**
+   * Menjawab bahwa paraquat tidak dapat mematikan lewat kulit adalah kelalaian fatal. Kulit sehat memang menyerap sangat sedikit (<1%), tetapi aplikator kebun yang menggendong tangki semprot ransel bocor dengan kulit punggung tergesek/lecet dapat menyerap paraquat dalam dosis masif yang memicu kematian akibat fibrosis paru dalam 2 minggu.
+5. **Jebakan Sikat Kulit Saat Dekontaminasi:**
+   * Jangan pernah mencatat instruksi *"gosok kulit pasien dengan sikat sabun secara kuat"*. Menggosok dengan sikat abrasi justru merusak stratum korneum dan melipatgandakan absorpsi transkutan paraquat. Gunakan usapan lembut spons/kain halus dengan air sabun.
+6. **Jebakan Esofagoskopi pada Jam Awal:**
+   * Melakukan endoskopi saluran cerna atas secara agresif pada hari ke-3 hingga ke-7 sangat berbahaya karena jaringan esofagus yang mengalami ulserasi korosif sangat rapuh dan berisiko tinggi mengalami perforasi iatrogenik fatal.
+7. **Jebakan Efektivitas Hemoperfusi Arang (CHP):**
+   * Menjawab hemoperfusi pada hari ke-3 pasca pajanan tidak memiliki dasar ilmiah toksikokinetik. CHP hanya efektif dalam **2–4 jam pertama**. Setelah itu, paraquat telah terfiksasi di dalam jaringan paru.
+
+---
+
+### TABEL RINGKAS 14 POIN: PARAQUAT VS DIQUAT
+
+| No | Parameter Okupasi | HERBISIDA PARAQUAT *(1,1'-dimetil-4,4'-bipiridinium)* | HERBISIDA DIQUAT *(1,1'-etilen-2,2'-bipiridinium)* |
+| :---: | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Kation \\(\text{PQ}^{2+}\\), garam diklorida (BM 257,2), kristal higroskopis kuning/putih, larut air, tekanan uap sangat rendah. WHO: Kelas II (konsentrat cair setara Ib, dosis letal oral \\(20\text{--}40\text{ mg/kg}\\) / 10–15 mL). IARC: Tidak terklasifikasi. ACGIH/Permenaker: Kategori A4. Dilarang di Uni Eropa, dibatasi ketat di Indonesia. | Kation \\(\text{DQ}^{2+}\\), garam dibromida (BM 344,1), jembatan etilen kaku. WHO: Kelas II (LD50 oral tikus \\(230\text{ mg/kg}\\)). IARC: Tidak terklasifikasi. ACGIH/Permenaker: Kategori A4. |
+| **2** | **Sumber & Penggunaan** | Herbisida kontak non-selektif perkebunan sawit/karet/tanaman pangan, desikan panen kapas/kedelai. Terikat kuat pada lempung (*clay*) tanah. Formulasi + emetik PP796, pewarna biru, dan bau busuk. | Herbisida akuatik, pembasmi gulma pra-panen kentang/biji-bijian. Terinaktivasi di tanah. Sering dikombinasikan bersama paraquat. |
+| **3** | **Toksikokinetik** | **Absorpsi:** Oral 5–10%; inhalasi partikel besar mengendap di nasofaring; dermal kulit utuh sangat rendah (<0,5–1%), **melonjak masif bila kulit lecet/rusak**. **Akumulasi Paru:** Aktif via *Polyamine Uptake System (PUS)* di pneumosit I, II, & sel Clara (jarak \\(\text{N}^+\text{--}\text{N}^+ \sim 0{,}702\text{ nm}\\)); konsentrasi paru 6–10x plasma. Tidak dimetabolisme. Ekskresi ginjal (>80–90% utuh dlm 24 jam). Gagal ginjal memicu lingkaran setan retensi. | **Absorpsi:** Oral dan dermal rendah. **BUKAN substrat transporter poliamin paru** (jarak N-N lebih pendek dan kaku) \\(\rightarrow\\) **TIDAK TERAKUMULASI DI PARU**. Tidak dimetabolisme. Ekskresi cepat via ginjal. |
+| **4** | **Toksikodinamik** | **Redox Cycling:** Reduksi 1-e- oleh NADPH-CYP450 reduktase \\(\rightarrow \text{PQ}^{\bullet+}\\); reoksidasi oleh \\(\text{O}_2 \rightarrow \text{O}_2^{\bullet-}\\) & regenerasi \\(\text{PQ}^{2+}\\). Reaksi Fenton \\(\rightarrow\\) radikal \\(^{\bullet}\text{OH}\\). Deplesi NADPH, penipisan GSH, peroksidasi lipid membran (LPO). **Fase destruktif (alveolitis) disusul fase proliferatif (fibrosis paru ireversibel)**. | **Redox Cycling di jaringan non-paru** menghasilkan ROS dan peroksidasi lipid, namun **TIDAK MENIMBULKAN FIBROSIS PARU**. Target primer kerusakan: tubulus ginjal, hepar, dan sistem saraf pusat. |
+| **5** | **Biomonitoring** | **Tes Ditionit Urin:** Reaksi reduksi urin + NaOH + ditionit \\(\rightarrow\\) **WARNA BIRU (serapan 396 & 403 nm)**; urin > 10 µg/mL dlm 24 jam = fatal. **Plasma:** Kurva Proudfoot/Hart (batas hidup 4 jam <2,0 mg/L; 24 jam <0,1 mg/L). SIPP (kadar serum x waktu): <10 hidup, >50 mati syok. | **Tes Ditionit Urin:** Menghasilkan **WARNA HIJAU** (serapan 380–387 nm atau 454–464 nm jika bersama PQ). Penurunan kreatinin/BUN dan pemantauan elektrolit. |
+| **6** | **Waktu Paruh (\\(t_{1/2}\\))** | Plasma terminal: **11–12 jam** pada ginjal normal; **melonjak hingga > 120 jam** pada gagal ginjal. Retensi/efflux jaringan paru: **\\(\ge 24\text{ jam}\\)**. | Plasma terminal: **relatif singkat (beberapa jam hingga 1–2 hari)**; klirens bergantung pada fungsi ginjal. |
+| **7** | **Efek Akut** | *Oral:* Ulkus orofaring (*paraquat tongue*), perforasi esofagus/mediastinitis. Gagal ginjal akut (ATN), ikterus/hepatotoksik. Dosis 20–40 mg/kg: **fibrosis paru progresif fatal dlm 1–3 minggu**. Dosis >40 mg/kg: syok kardiogenik & MOF (<72 jam). *Lokal:* Kerusakan kuku lisis (*nail shedding*), ulkus kornea mata, luka bakar kulit. | Ulserasi saluran cerna, ileus paralitik, gagal ginjal akut berat (ATN), **neurotoksisitas sentral (infark/perdarahan batang otak/pons, kejang, koma, sindrom Parkinson akut)**. Tidak ada fibrosis paru. |
+| **8** | **Efek Kronis Okupasional** | Epistaksis berulang & iritasi nasofaring. Dermatitis kontak iritan kronis. Distrofi kuku (*Mees' lines*). Penurunan kapasitas difusi paru (DLCO) restriktif. Faktor risiko Penyakit Parkinson (analog struktural MPP+). | Dermatitis kontak, katarak okular (terbukti pada paparan kronis hewan/manusia), risiko gangguan neurodegeneratif ekstrapiramidal. |
+| **9** | **Batas Pajanan (Permenaker 5/2018)** | **NAB-TWA: \\(0{,}5\text{ mg/m}^3\\) (IFV) / \\(0{,}1\text{ mg/m}^3\\) (Fraksi Respirabel)**; Notasi: **Kulit**, A4, Kerusakan Paru. NIOSH: \\(0{,}1\text{ mg/m}^3\\) [skin]. OSHA: \\(0{,}5\text{ mg/m}^3\\) [skin]. IDLH: \\(1\text{ mg/m}^3\\). | **NAB-TWA: \\(0{,}5\text{ mg/m}^3\\) (IFV) / \\(0{,}1\text{ mg/m}^3\\) (Fraksi Respirabel)**; Notasi: **Kulit**, A4. NIOSH: \\(0{,}5\text{ mg/m}^3\\) [skin]. |
+| **10** | **BEI / IPB** | **TIDAK ADA nilai angka BEI/IPB resmi** di Permenaker 5/2018 maupun ACGIH. Evaluasi biologi mengandalkan tes kualitatif urin ditionit negatif. | **TIDAK ADA nilai angka BEI/IPB resmi**. Pemantauan mengandalkan evaluasi fungsi ginjal dan neurologis. |
+| **11** | **Tatalaksana Akut** | 1. **Adsorben:** Suspensi Tanah Fuller 15% (1 L) atau Bentonit 7% atau Arang Aktif (1–2 g/kgBB) + Manitol 20%. Bilas lambung HANYA <1 jam. 2. **KONTRAINDIKASI OKSIGEN BEBAS (target SpO2 85%–88% / PaO2 50–60 mmHg)**. 3. **CHP arang HANYA bermanfaat jika < 2–4 jam**. HD untuk gagal ginjal. 4. **Pulse Imunosupresi:** Siklofosfamid 15 mg/kg (2 hari) + Metilprednisolon 1 g (3 hari). 5. Dilarang sikat kulit kasar. Paliatif morfin jika prognosis fatal. | Dekontaminasi saluran cerna sama (arang aktif/Tanah Fuller). **Oksigenasi TIDAK dikontraindikasikan** (karena tidak terjadi penumpukan paru). Hemoperfusi/hemodialisis untuk gagal ginjal. Tatalaksana agresif edema serebral & suportif neurologis. |
+| **12** | **Tatalaksana Individu & Komunitas** | Kontraindikasi kerja: penyakit paru/ginjal/kulit kronis. Pindah kerja jika ada kerusakan kuku, epistaksis, atau ditionit positif. Pengendalian teknik sistem tertutup, larangan tangki ransel bocor. APD: *face shield*, kacamata pelindung, apron/sarung tangan nitril tebal, respirator P100/N95. | Penilaian medis serupa; pemantauan fungsi neurologis, ginjal, dan evaluasi lensa mata berkala (skrining katarak). APD kimia kedap air standar. |
+| **13** | **Regulasi & Aspek Legal** | 7 Langkah Diagnosis PAK (Permenkes 11/2022). Perpres 7/2019 Lampiran I.a.35 ("Pestisida") & I.c.2 ("Penyakit saluran napas akibat zat kimia"). Hak klaim JKK maksimal 3 tahun (Pasal 2 Ayat 2). Pestisida Terbatas Kementan; PP 74/2001 & PP 28/2024. | 7 Langkah Diagnosis PAK (Permenkes 11/2022). Perpres 7/2019 Lampiran I.a.35 ("Pestisida"). Standar keselamatan kimia berbahaya di tempat kerja. |
+| **14** | **Clinical Pearl & Jebakan Ujian** | 1. **Dilarang beri oksigen tinggi** (memicu percepatan fibrosis paru). 2. Tes ditionit urin paraquat = **BIRU**. 3. Paru mengakumulasi paraquat via transporter poliamin. 4. Tangki ransel bocor pada kulit lecet memicu keracunan fatal. 5. Jangan menyikat kulit kasar saat dekontaminasi. 6. Transplantasi paru terbukti gagal. | 1. Diquat **TIDAK menyebabkan fibrosis paru**. 2. Kematian diquat akibat gagal ginjal dan **infark/perdarahan batang otak (pons)**. 3. Tes ditionit urin diquat = **HIJAU**. 4. Terapi oksigen aman diberikan pada intoksikasi diquat murni. |
+
+---
+
+Apakah Anda ingin melengkapi persiapan ujian board spesialis kedokteran okupasi ini dengan topik fumigan mematikan berikutnya, yaitu **Fosfin dan Aluminium Fosfida (AlP)**?

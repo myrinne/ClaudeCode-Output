@@ -1,0 +1,376 @@
+---
+
+### **A. DIOKSIN / TCDD (2,3,7,8-Tetraklorodibenzo-p-dioksin)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_{12}\text{H}_4\text{Cl}_4\text{O}_2\\)**; nomor CAS **1746-01-6**; berat molekul **321,97 g/mol (~322 g/mol)**. Merupakan anggota paling toksik dari kelompok *Polychlorinated Dibenzo-p-Dioxins* (PCDDs).
+* **Sifat Fisik**: Padatan kristal putih atau tidak berwarna, tidak berbau, titik leleh sangat tinggi (305°C / 581°F), tekanan uap sangat rendah (**\\(2 \times 10^{-6}\\) mmHg pada 25°C**), titik didih dekomposisi termal di atas 800°C.
+* **Kelarutan**: Praktis tidak larut dalam air (**0,00000002% / ~0,2 µg/L**), sedikit larut dalam pelarut organik, dan **sangat larut dalam lemak (*lipofilik ekstrem*)** dengan koefisien partisi oktanol-air tinggi (log \\(K_{ow} \sim 6,8\\)).
+* **Stabilitas Lingkungan**: Merupakan *Persistent Organic Pollutant* (POP) yang sangat stabil terhadap degradasi kimia, termal, maupun biologis.
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 1** (*Carcinogenic to humans*) dengan bukti kausal memadai pada semua jenis kanker (*all-site carcinogen*), sarkoma jaringan lunak, limfoma non-Hodgkin, dan kanker paru.
+  * **ACGIH**: Diklasifikasikan sebagai karsinogen manusia terbukti (memiliki korelasi karsinogenisitas A1 pada senyawa terkait).
+  * **Permenaker No. 5 Tahun 2018**: Dikenal sebagai bahan kimia karsinogenik dan penginduksi klorakne.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Produk Sampingan Tanpa Kegunaan Komersial (*Unintended Byproduct*)**: TCDD **tidak pernah diproduksi secara sengaja untuk tujuan komersial** dan tidak memiliki aplikasi industri langsung. TCDD murni terbentuk sebagai kontaminan renik pada reaksi kimia klorinasi bersuhu tinggi.
+* **Manufaktur Herbisida Klorofenoksi (Historis & Agent Orange)**:
+  * Terbentuk sebagai kontaminan selama sintesis **2,4,5-triklorofenol (2,4,5-TCP)**, asam 2,4,5-triklorofenoksiasetat (**2,4,5-T**), dan heksaklorofen.
+  * Merupakan kontaminan toksik utama dalam formulasi herbisida **Agent Orange** yang digunakan secara masif sebagai defolian pada Perang Vietnam oleh militer Amerika Serikat.
+* **Bencana Industri Seveso (1976)**:
+  * Pelepasan awan uap kimia masif berisi TCDD akibat reaksi eksotermik tak terkendali pada reaktor sintesis triklorofenol di pabrik ICMESA, Seveso, Italia.
+* **Insinerasi Limbah & Industri Pulp/Kertas**:
+  * Pembakaran limbah perkotaan (*municipal waste*) dan limbah medis pada suhu yang tidak adekuat (<850–1.000°C) dengan adanya donor klorin dan materi organik karbon.
+  * Pemutihan bubur kertas (*pulp and paper bleaching*) yang menggunakan gas klorin elemental.
+* **Pajanan Rantai Makanan (Populasi Umum)**:
+  * Lebih dari **90–95% paparan manusia berasal dari konsumsi pangan hewani kaya lemak (daging, susu, telur, ikan)** akibat proses akumulasi dan biomagnifikasi sepanjang rantai makanan.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Gastrointestinal**: Rute paparan utama populasi; diabsorpsi sangat efisien di usus halus bersama lipid makanan (efisiensi penyerapan ~50–90%).
+  * **Inhalasi**: Uap gas minimal karena tekanan uap sangat rendah, namun diabsorpsi efektif saat terikat pada partikel debu halus atau abu terbang (*fly ash*) insinerator.
+  * **Dermal**: Diabsorpsi lambat namun nyata menembus sebum dan stratum korneum kulit utuh saat kontak langsung dengan tanah/minyak tercemar.
+* **Distribusi**: Terdistribusi selektif mengikuti fraksi lipid tubuh; terakumulasi terutama di **jaringan adiposa (lemak tubuh) dan hepar**. Di dalam hepar, TCDD terikat kuat pada protein mikrosomal CYP1A2. Mampu menembus sawar plasenta dan terakumulasi dalam konsentrasi tinggi di dalam air susu ibu (ASI).
+* **Metabolisme**:
+  * **Sangat resisten terhadap biotransformasi hepar**.
+  * Hanya sebagian sangat kecil fraksi TCDD yang mengalami hidroksilasi lambat oleh sitokrom P450 hepar (CYP1A1, CYP1A2) menghasilkan metabolit polar dihidroksilasi yang kemudian dikonjugasikan dengan asam glukuronida atau sulfat.
+* **Ekskresi**: Dieliminasi sangat lambat, terutama melalui **feses via sekresi empedu dan deskuamasi sel epitel usus**; fraksi ekskresi melalui urin sangat minim (<1%). Rute eliminasi signifikan pada wanita menyusui adalah melalui ASI.
+
+---
+
+#### **4. Toksikodinamik (Jalur Reseptor AhR & Transkripsi Gen)**
+1. **Ikatan Ligan-Reseptor AhR (*Aryl Hydrocarbon Receptor*)**:
+   * TCDD merupakan ligan eksogen dengan afinitas ikatan tertinggi (*high-affinity xenobiotic ligand*) terhadap reseptor sitosolik intraseluler **Aryl Hydrocarbon Receptor (AhR)**.
+2. **Translokasi Inti & Heterodimerisasi dengan ARNT**:
+   * Ikatan TCDD memicu pelepasan protein pendamping *heat-shock protein 90* (Hsp90) dari kompleks sitosol.
+   * Kompleks TCDD-AhR mengalami translokasi ke dalam nukleus sel dan membentuk heterodimer dengan protein **AhR Nuclear Translocator (ARNT)**.
+3. **Pengikatan Elemen Respons DRE/XRE**:
+   * Heterodimer AhR-ARNT berikatan secara spesifik dengan motif sekuens DNA regulator yang disebut **Dioxin-Responsive Elements (DRE)** atau *Xenobiotic-Responsive Elements* (XRE).
+4. **Induksi Transkripsi Enzim Fase I/II & Disregulasi Gen**:
+   * Memicu peningkatan transkripsi masif gen pengkode enzim pemetabolisme xenobiotik, terutama **Sitokrom P450 1A1 (CYP1A1), CYP1A2, dan CYP1B1**.
+   * Aktivasi persisten reseptor AhR mengganggu diferensiasi keratinosit (melalui disregulasi jalur EGFR), menekan proliferasi limfosit T (memicu atrofi timus), memicu stres oksidatif sekunder, serta mengacaukan regulasi siklus sel dan apoptosis, yang mendasari sifat **promotor karsinogenesis non-genotoksik**.
+
+---
+
+#### **5. Biomonitoring & Konsep TEQ**
+* **TCDD dalam Lipid Serum (*Serum Lipid-Adjusted TCDD*)**:
+  * **Baku Emas**: Pengukuran kadar TCDD murni menggunakan kromatografi gas resolusi tinggi spektrometri massa resolusi tinggi (HRGC-HRMS), dilaporkan dalam satuan **pikogram per gram lipid serum (pg/g lipid atau part per trillion / ppt lipid)**.
+  * **Waktu Sampling**: **Kapan saja (*flexible*)**, karena waktu paruhnya yang bertahun-tahun mencerminkan beban tubuh kumulatif seumur hidup (*cumulative body burden*).
+* **Konsep Faktor Ekuivalensi Toksik (*Toxic Equivalency Factor* / TEF) & Toxic Equivalent (TEQ)**:
+  * Karena dioksin di lingkungan selalu berada dalam campuran kongener, WHO menetapkan **TCDD sebagai senyawa referensi dengan TEF = 1,0**.
+  * Kongener lain (PCDD, PCDF, dan *dioxin-like* PCB/PCN) memiliki nilai TEF relatif terhadap TCDD (berkisar antara 0,00001 hingga 0,1).
+  * Konsentrasi total toksisitas dihitung sebagai **Total TEQ**:
+    \\[\text{TEQ} = \sum \left( \text{Konsentrasi kongener}_i \times \text{TEF}_i \right)\\].
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Tubuh Manusia**: Memiliki waktu paruh eliminasi biologis yang luar biasa panjang, berkisar antara **7 hingga 11 tahun** (rata-rata **~7,5–8,7 tahun**) pada manusia dewasa.
+* **Kinetika Tergantung Konsentrasi**: Pada konsentrasi darah sangat tinggi (seperti kasus keracunan masif akut Viktor Yushchenko), laju eliminasi awal lebih cepat (t\\(_{1/2}\\) ~1,5–3 tahun) akibat induksi enzim CYP hepatik dan eliminasi fekal yang terakselerasi, sebelum akhirnya melambat kembali saat kadar serum menurun.
+
+---
+
+#### **7. Efek Toksisitas Akut & Subakut**
+* **Iritasi & Gejala Konstitusional**: Iritasi mata, membran mukosa saluran napas, kelelahan fisik ekstrem (*fatigue*), mual, anoreksia, dan nyeri abdomen.
+* **Hepatotoksisitas Dini**: Peningkatan enzim transaminase hepar serum (ALT, AST) dan pembesaran hepar ringan.
+* ***Wasting Syndrome* (Hewan Coba)**: Penurunan berat badan progresif drastis, hilangnya jaringan adiposa dan massa otot total, serta atrofi timus masif yang berujung pada kematian.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Klorakne (*Chloracne*)**:
+  * **Tanda patognomonik fisik kardinal keracunan dioksin**.
+  * Lesi kistik komedonal folikular berat, papul, pustul, kista keratin epidermal kekuningan, dan hiperpigmentasi yang muncul khas di wajah (terutama area malar dan retroaurikular), leher, dada, punggung, dan genital. Lesi ini sangat resisten terhadap terapi akne biasa dan dapat menetap berpuluh-puluh tahun.
+* **Keganasan / Kanker Multi-Organ**:
+  * Peningkatan risiko mortalitas akibat **semua jenis kanker (*all-site cancer*)**, sarkoma jaringan lunak (*soft tissue sarcoma*), limfoma non-Hodgkin (NHL), dan kanker paru.
+* **Hepatotoksisitas & Porfiria**: Steatosis hepar kronis, hiperlipidemia, dan gangguan metabolisme heme berupa *Porphyria Cutanea Tarda* (PCT).
+* **Toksisitas Reproduksi & Perkembangan**:
+  * Penurunan kualitas sperma, endometriosis, peningkatan risiko abortus spontan, serta perubahan rasio jenis kelamin anak saat lahir (penurunan kelahiran anak laki-laki pasca-tragedi Seveso). Bersifat teratogenik kuat pada janin (bibir sumbing dan hidronefrosis pada hewan).
+* **Efek Endokrin & Neurologis**: Peningkatan risiko resistensi insulin dan Diabetes Melitus Tipe 2, hipotiroidisme, serta neuropati perifer sensorimotorik ringan.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**: Tidak menetapkan nilai numerik TLV di udara kerja untuk 2,3,7,8-TCDD murni karena zat ini tidak diperjualbelikan sebagai bahan kimia industri dan paparan okupasional terjadi melalui kontaminan debu/limbah.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**: Tidak mencantumkan nilai numerik batas pajanan udara spesifik untuk TCDD (senyawa terklorinasi terkait seperti kloronaftalen diatur dengan batas 0,2–0,5 mg/m³ disertai notasi klorakne).
+* **NIOSH (AS)**:
+  * **REL**: **Ca** (Potensi karsinogen okupasional; pajanan wajib ditekan serendah mungkin / *lowest feasible concentration*).
+  * **IDLH**: Tidak ditetapkan nilai numerik batas aman.
+* **Batas Asupan WHO / FAO**: *Tolerable Monthly Intake* (TMI) sebesar **70 pg TEQ/kg berat badan/bulan** (setara ~1–2 pg TEQ/kg/hari) untuk paparan lingkungan total.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+* **ACGIH (2026) & Permenaker No. 5 Tahun 2018**: **TIDAK ADA BEI / IPB RESMI**. Evaluasi biologis pajanan kumulatif mengandalkan pengukuran kadar dioksin dalam fraksi lipid serum (skrining populasi terpapar umumnya menggunakan nilai rujukan latar belakang <5–10 pg TEQ/g lipid).
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip Utama**: **TIDAK ADA ANTIDOT SPESIFIK**.
+* **Dekontaminasi Segera**: Evakuasi dari sumber; tanggalkan pakaian kerja tercemar; cuci kulit dan rambut menggunakan air hangat dan sabun secara menyeluruh.
+* **Akselerasi Eliminasi Fekal (*Interruption of Enterohepatic Circulation*)**:
+  * Pemberian pengganti lemak non-absorbable berbasis sukrosa poliester (**Olestra**) atau resin pengikat asam empedu (**Kolestiramin**). Obat ini mengikat senyawa lipofilik TCDD di lumen saluran cerna, memutus resirkulasi enterohepatik, dan melipatgandakan ekskresi TCDD melalui feses.
+* **Tatalaksana Dermatologis Klorakne**:
+  * Pemberian retinoid sistemik oral (isotretinoin), antibiotik sistemik untuk mengendalikan infeksi sekunder bakteri, serta intervensi dermatologis berupa bedah eksisi atau ablatif kista keratin.
+* **Pemantauan Medis Jangka Panjang**: Skrining berkala fungsi hepar, profil lipid darah, toleransi glukosa/HbA1c, fungsi tiroid, serta pengawasan surveilans onkologi rutin.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Klorakne Toksik, Sarkoma Jaringan Lunak, Limfoma Non-Hodgkin (NHL), atau Porfiria Kutanea Tarda.
+  2. *Identifikasi Pajanan Kerja*: Melacak riwayat operasional insinerator limbah B3, proses sintesis klorofenol, pemutihan pulp dengan klorin, atau remediasi situs tanah tercemar herbisida 2,4,5-T/Agent Orange dari SDS/LDKB.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme interaksi reseptor AhR dan mutasi/promosi karsinogenesis.
+  4. *Evaluasi Besaran Pajanan*: Hasil pengukuran kadar TCDD lipid serum (dibandingkan kadar latar belakang populasi) dan riwayat durasi kerja.
+  5. *Faktor Individu*: Riwayat keluarga, status komorbiditas diabetes melitus atau penyakit hepar.
+  6. *Faktor di Luar Hubungan Kerja*: Asupan makanan hewani berlemak tinggi dari daerah terkontaminasi atau riwayat paparan defolian masa perang.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan kecelakaan kerja dan kompensasi PAK.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan klorakne aktif berat, gagal hati, atau riwayat keganasan dinyatakan **tidak laik (*unfit*)** berada di unit pengolahan limbah insinerasi atau sintesis organoklorin.
+* **Surveilans Medis Berkala**: Pemeriksaan dermatologis menyeluruh berkala pada kulit wajah, leher, dan tubuh; evaluasi LFT serial dan profil lipid tahunan.
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * *Substitusi Proses*: Menghilangkan penggunaan gas klorin elemental pada pemutihan kertas, beralih ke proses *Elemental Chlorine-Free* (ECF) atau *Totally Chlorine-Free* (TCF).
+  * *Rekayasa Teknis Insinerator*: Mempertahankan suhu ruang bakar sekunder insinerator di atas **1.100°C dengan waktu retensi gas minimal 2 detik** untuk menghancurkan molekul dioksin; pemasangan injeksi karbon aktif dan filter kantong (*baghouse filter*) cerobong asap.
+  * *APD Khusus*: Pakaian pelindung kedap kimia menyeluruh (*Tyvek/chemical-resistant coveralls*), respirator partikulat HEPA/P100 dengan kartrid uap organik saat membersihkan abu insinerator, dan sarung tangan tahan kimia kedap cairan.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC Monograph**: TCDD tergolong **Grup 1** (*Carcinogenic to humans*).
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 10**: "*Penyakit yang disebabkan oleh derivat halogen dari senyawa hidrokarbon*".
+  * **Lampiran Bagian III No. 21**: Kanker akibat kerja yang disebabkan oleh zat karsinogen industri yang diakui secara ilmiah.
+* **Konvensi Stockholm**: TCDD tercantum dalam **Annex C** (*Unintentional Production*) sebagai polutan organik persisten yang wajib diminimalkan dan dieliminasi pelepasan lingkungannya.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Dioksin / TCDD**
+* 🩺 **Clinical Pearl**:
+  * **"The Moustache Sparing & Retroauricular Acne"**: Klorakne akibat TCDD memiliki distribusi anatomis yang unik. Berbeda dari akne vulgaris remaja yang menyerang zona-T dahi dan hidung, **klorakne berawal dari area malar luar di bawah mata, meluas ke belakang daun telinga (retroaurikular), leher, dan genital**, dengan komedo kekuningan padat non-inflamasi (*straw-yellow cysts*). Klorakne adalah "sidik jari biologis" paparan dioksin masif.
+  * **"The Decades-Long Body Burden"**: Waktu paruh TCDD pada manusia mencapai **~7–11 tahun**. Seorang veteran perang atau korban insiden industri yang terpapar puluhan tahun lalu masih akan memiliki kadar TCDD terdeteksi di dalam lemak tubuhnya saat ini.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Rute Paparan Terbanyak*:
+     * *Jebakan*: Menyatakan inhalasi udara cerobong adalah rute paparan tubuh terbesar bagi masyarakat umum.
+     * *Koreksi*: **Lebih dari 90% beban tubuh dioksin pada manusia masuk melalui rute pencernaan (oral)** akibat konsumsi lemak hewan ternak, produk susu, dan ikan yang mengalami biomagnifikasi rantai makanan.
+  2. *Jebakan Mekanisme Genotoksik*:
+     * *Jebakan*: Menjawab TCDD menyebabkan kanker karena membentuk ikatan kovalen langsung (aduk) dengan DNA.
+     * *Koreksi*: **TCDD BUKAN karsinogen genotoksik langsung**. TCDD bekerja murni melalui aktivasi reseptor transkripsi **AhR**, menginduksi enzim CYP1A1/CYP1A2 dan bertindak sebagai **promotor tumor (*tumor promoter*) yang sangat poten**, bukan inisiator mutagenik langsung.
+
+---
+---
+
+### **B. TOLUENA DIISOSIANAT (TDI / Toluene Diisocyanate)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_9\text{H}_6\text{N}_2\text{O}_2\\)** atau **\\(\text{CH}_3\text{C}_6\text{H}_3(\text{NCO})_2\\)**; berat molekul **174,16 g/mol**. Isomer utama mencakup **Toluena-2,4-diisosianat** (CAS 584-84-9) dan **Toluena-2,6-diisosianat** (CAS 91-08-7); sediaan industri dominan adalah **campuran komersial rasio 80:20 (TDI 80/20)**.
+* **Sifat Fisik**: Cairan jernih tidak berwarna hingga kuning pucat, berbau tajam dan menyengat (*sharp, pungent odor*). **Ambang deteksi bau berkisar 0,05–0,4 ppm (50–400 ppb)**, jauh melampaui nilai batas aman paparan kerja!
+* **Volatilitas**: Memiliki tekanan uap yang nyata pada suhu ruang (**~0,01–0,02 mmHg pada 20–25°C**), titik didih 251°C, titik nyala ~127–132°C. Sifat penguapannya jauh lebih tinggi dibandingkan MDI.
+* **Reaktivitas Kimia**: Gugus isosianat (**\\(-\text{N}=\text{C}=\text{O}\\)**) sangat elektrofilik; bereaksi eksotermik dengan air/kelembaban menghasilkan gas \\(\text{CO}_2\\) dan amina aromatik (toluenadiamin / TDA); bereaksi dengan poliol membentuk busa poliuretan; bereaksi kovalen dengan nukleofil protein jaringan tubuh (-SH, -NH2, -OH).
+* **Isosianat Industri Terkait Lainnya**:
+  * **MDI (*Methylene diphenyl diisocyanate*, CAS 101-68-8)**: BM 250,26; tekanan uap teramat rendah (<\\(10^{-5}\\) mmHg), berbentuk cairan kental/padat.
+  * **HDI (*Hexamethylene diisocyanate*, CAS 822-06-0)**: Diisosianat alifatik cair, volatil, banyak digunakan dalam formulasi cat semprot otomotif.
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 2B** (*Possibly carcinogenic to humans*) untuk campuran TDI.
+  * **ACGIH**: **A3** (*Confirmed Animal Carcinogen with Unknown Relevance to Humans*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-4**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Manufaktur Busa Poliuretan Fleksibel (*Flexible Polyurethane Foam*)**: Penggunaan terbesar global untuk produksi busa kasur, bantal, bantalan furnitur sofa, dan kursi jok otomotif.
+* **Cat Semprot & Pelapis Permukaan (*Surface Coatings & Spray Painting*)**: Formulasi pernis kayu, cat tahan cuaca industri, dan cat semprot otomotif (*polyurethane clear coats*).
+* **Perekat & Elastomer (*Adhesives, Sealants, Elastomers*)**: Bahan pengikat lem kemasan, laminasi tekstil, dan segel konstruksi.
+* **Pelepasan Termal / Pirolisis**: Pemanasan atau pemotongan kawat panas (*hot-wire cutting*) busa poliuretan yang melepaskan uap TDI dan aerosol pirolisis berbahaya.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap dan aerosol TDI diserap dengan cepat pada saluran napas atas dan bawah.
+  * **Dermal**: Diabsorpsi nyata menembus stratum korneum kulit utuh. **Paparan kontak dermal merupakan rute kritis induksi sensitisasi saluran pernapasan (*dermal sensitization leading to airway hyperreactivity*)**.
+* **Distribusi**: Segera bereaksi secara lokal dengan makromolekul mukosa bronkus; fraksi yang menembus kapiler darah berikatan kovalen dengan protein plasma membentuk **konjugat stabil dengan human serum albumin (TDI-HSA) dan hemoglobin**.
+* **Metabolisme**:
+  * Sebagian TDI mengalami hidrolisis in vivo menjadi **toluenadiamin (2,4-TDA dan 2,6-TDA)**.
+  * TDA mengalami asetilasi di hepar oleh *N-acetyltransferase* (NAT) menghasilkan metabolit monoasetil-TDA dan diasetil-TDA, serta sebagian mengalami konjugasi glukuronida.
+  * Sebagian TDI berikatan dengan glutation (GSH) intraseluler membentuk konjugat ditiokarbamat yang dapat terurai kembali melepaskan TDI bebas di saluran napas.
+* **Ekskresi**: Metabolit TDA bebas dan terkonjugasi diekskresikan melalui ginjal ke dalam **urin**; sebagian kecil dieliminasi melalui feses via empedu.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Hapten & Imunopatogenesis Asma)**
+1. **Peran sebagai Hapten Kimiawi Reaktif**:
+   * TDI memiliki berat molekul rendah (<1.000 Da) sehingga tidak imunogenik secara mandiri.
+   * Gugus elektrofilik isosianat berikatan kovalen dengan residu lisin pada protein endogen pembawa (*carrier protein*) seperti albumin serum manusia (HSA) di mukosa bronkus.
+   * Terbentuk **neoantigen lengkap (konjugat TDI-HSA)** yang dikenali oleh sel penyaji antigen (*antigen-presenting cells* / APC).
+2. **Mekanisme Imunologik (Sensitisasi Alergi Spesifik)**:
+   * **Reaksi Hipersensitivitas Tipe I (Humoral)**: Aktivasi limfosit B memproduksi antibodi **IgE spesifik anti-TDI-HSA** yang berikatan pada reseptor sel mast dan basofil. Paparan ulang memicu degranulasi sel mast, pelepasan histamin, leukotrien, dan bronkospasme akut.
+   * **Reaksi Hipersensitivitas Tipe IV / Sel T**: Infiltrasi limfosit T helper (Th2 dan Th1) di mukosa bronkus yang melepaskan sitokin proinflamasi (**IL-4, IL-5, IL-13, IFN-\\(\gamma\\)**), memicu perekrutan masif eosinofil, neutrofil, serta remodelling dinding saluran napas.
+3. **Mekanisme Non-Imunologik (Iritasi Neurogenik & Stres Oksidatif)**:
+   * Aktivasi langsung reseptor iritan kimia pada serabut saraf sensorik C saluran napas (**TRPA1**), memicu refleks pelepasan neuropeptida takikinin (substansi P dan neurokinin A) yang menimbulkan bronkokonstriksi neurogenik.
+   * **Penipisan Glutation Intraseluler (GSH)**: Reaksi kovalen TDI menghabiskan simpanan GSH sel epitel bronkus secara masif, memicu stres oksidatif sitotoksik dan inflamasi epitel.
+   * Paparan tunggal konsentrasi sangat tinggi (>100–200 ppb) memicu *Reactive Airways Dysfunction Syndrome* (RADS) tanpa sensitisasi imunologik.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Toluenadiamin dalam Urin (*Urinary Toluenediamine / TDA*)**:
+  * **Peran**: Parameter baku emas pemantauan paparan internal okupasional terhadap TDI. Sampel urin dihidrolisis asam kuat di laboratorium untuk melepaskan seluruh amina terkonjugasi, mengukur jumlah total **2,4-TDA dan 2,6-TDA** menggunakan GC-MS atau LC-MS/MS.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+* **Pemeriksaan Imunologis Spesifik (Biomarker Efek)**:
+  * **Antibodi IgE Spesifik anti-TDI-HSA dalam Serum**: Diukur menggunakan ImmunoCAP atau ELISA. Memiliki spesifisitas tinggi, **namun sensitivitasnya rendah (hanya terdeteksi pada 15–30% pekerja dengan asma akibat TDI terbukti)**. Hasil negatif **TIDAK PERNAH MENYINGKIRKAN** diagnosis asma akibat kerja!
+  * **Antibodi IgG Spesifik anti-TDI**: Menandakan adanya paparan imunologis masa lalu, namun tidak berkorelasi linier dengan status klinis asma aktif.
+* **Aduk Protein Darah (Riset)**: Pengukuran konjugat TDI-albumin plasma dan TDI-hemoglobin untuk menilai beban paparan kumulatif beberapa minggu sebelumnya.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **TDA Urin Fase Cepat**: Memiliki waktu paruh eliminasi berkisar antara **2 hingga 5 jam**, mencerminkan paparan pada hari/shift kerja yang sama.
+* **TDA Urin Fase Lambat**: Memiliki waktu paruh terminal berkisar **14 hingga 24 jam**, memungkinkan deteksi amina pada sampel urin Senin pagi berikutnya pada pekerja dengan paparan kumulatif tinggi.
+* **Konjugat TDI-Albumin Darah**: Memiliki waktu paruh biologis mengikuti klirens albumin serum, yaitu sekitar **20 hingga 21 hari**.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Iritasi Sensorik & Mukosa Berat**:
+  * Iritasi konjungtiva mata, lakrimasi berlebih, blefarospasme, rasa perih menyengat pada hidung dan faring, batuk iritatif paroksismal, dan sensasi terbakar pada dada.
+* **Bronkospasme Akut & Reaksi Asma**:
+  * Rasa dada tertekan (*chest tightness*), mengi (*wheezing*), dispnea akut, dan penurunan tajam volume ekspirasi paksa detik pertama (\\(\text{FEV}_1\\)).
+* **Paparan Masif Tidak Terkendali (>100–500 ppb)**:
+  * Laringospasme, bronkitis kimiawi nekrotikans, edema paru non-kardiogenik akut tertunda, dan sindrom RADS (*Reactive Airways Dysfunction Syndrome*).
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Asma Akibat Kerja (*Isocyanate-Induced Occupational Asthma* / OA)**:
+  * **Efek klinis kronis paling penting dan sering dijumpai**.
+  * Memiliki periode laten (berminggu-minggu hingga bertahun-tahun).
+  * Karakteristik pola klinis kerja: gejala sesak napas dan batuk memberat saat hari kerja, sering timbul **reaksi asma fase lambat nokturnal (malam hari setelah pulang kerja)**, membaik saat akhir pekan atau cuti panjang, dan kambuh saat kembali bekerja.
+  * **Begitu pekerja mengalami sensitisasi, paparan uap TDI konsentrasi renik (sub-ppb, jauh di bawah NAB) dapat memicu serangan asma fatal (*severe bronchospasm*)**!
+* **Penurunan Fungsi Paru Terakselerasi (*Accelerated Loss of Lung Function*)**:
+  * Penurunan nilai tahunan \\(\text{FEV}_1\\) yang jauh melebihi laju penuaan alami fisiologis (>50–100 mL/tahun), berujung pada obstruksi jalan napas permanen ireversibel mirip PPOK.
+* **Pneumonitis Hipersensitivitas (*Hypersensitivity Pneumonitis*)**:
+  * Alveolitis alergi ekstrinsik subakut/kronis dengan gejala demam, menggigil, dispnea progresif, penurunan kapasitas difusi (DLCO), gambaran infiltrat mikronodular pada rontgen toraks, dan ditemukannya antibodi IgG presipitin serum.
+* **Dermatitis Kontak Alergi (DKA)**: Eritema, pruritus hebat, dan papulovesikel pada kulit yang terpapar.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * Berlaku untuk isomer 2,4-TDI, 2,6-TDI, atau campurannya.
+  * **TLV-TWA**: **0,001 ppm (1 ppb)** (0,007 mg/m³) fraksi inhalabel dan uap (*Inhalable Fraction and Vapor* / IFV).
+  * **TLV-STEL**: **0,005 ppm (5 ppb)** (0,035 mg/m³) (IFV).
+  * **Notasi**: **A3** (*Confirmed Animal Carcinogen*), **Skin**, **DSEN** (*Dermal Sensitization*), **RSEN** (*Respiratory Sensitization*), **BEI**.
+  *(Dasar TLV: Mencegah sensitisasi pernapasan dan penurunan fungsi paru)*.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * Mengatur *Toluen-2,4 atau 2,6-diisosianat (atau sebagai campuran)*:
+  * **NAB (TWA 8 jam)**: **0,005 BDS (ppm) / 5 ppb** (0,036 mg/m³).
+  * **PSD (STEL 15 menit)**: **0,02 BDS (ppm) / 20 ppb** (0,14 mg/m³).
+  * **Notasi**: **Kategori A-4**, **Kulit**, **Sensitisasi**.
+* **OSHA PEL**: Ceiling **0,02 ppm (20 ppb)** (0,14 mg/m³).
+* **NIOSH REL**: **Ca** (Potensi karsinogen okupasional; minimalkan paparan).
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Toluenadiamin dalam urin (*Toluenediamine in urine*)** | Urin | **Akhir shift kerja** (*End of shift*) | *(Mengacu standar ACGIH)* | **5 µg/g kreatinin** | Notasi **Ns** (*Non-specific*); dianalisis dengan hidrolisis asam; jumlah isomer 2,4- dan 2,6-TDA |
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip Utama**: **TIDAK ADA ANTIDOT SPESIFIK**.
+* **Tatalaksana Serangan Asma Akut**:
+  * Pindahkan korban segera dari area berpajanan ke tempat berudara segar.
+  * Amankan patensi jalan napas; berikan suplementasi oksigen lembap aliran tinggi.
+  * Inhalasi bronkodilator kerja cepat: agonis beta-2 adrenergik (salbutamol) dikombinasikan dengan antikolinergik (ipratropium bromida) via nebulisasi.
+  * Berikan **Kortikosteroid Sistemik Dini** (metilprednisolon IV 1–2 mg/kgBB atau prednison oral 40–60 mg) untuk menekan kaskade inflamasi imunologik bronkus.
+* **Dekontaminasi Kulit & Mata**: Tanggalkan seluruh pakaian kerja yang terkontaminasi; bilas kulit dengan air mengalir dan sabun selama minimal 15 menit. Irigasi mata dengan salin steril selama 15–20 menit.
+* **TINDAKAN MEDIS TERPENTING: PEMINDAHAN PERMANEN DARI SUMBER PAPARAN (*PERMANENT MEDICAL REMOVAL*)**.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Asma Akibat Kerja (*Occupational Asthma*) Terinduksi Isosianat, Sindrom RADS, atau Pneumonitis Hipersensitivitas.
+  2. *Identifikasi Pajanan Kerja*: Melacak operasional pembusaan poliuretan, pencampuran resin isosianat, atau pengecatan semprot cat poliuretan dari SDS/LDKB.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme pembentukan hapten neoantigen TDI-HSA dan sensitisasi saluran pernapasan.
+  4. *Evaluasi Besaran Pajanan*: Hasil *air monitoring* (dibandingkan NAB 5 ppb atau TLV 1 ppb), kadar TDA urin akhir shift (dibandingkan BEI 5 µg/g kreatinin), dan riwayat insiden tumpahan (*overexposure spills*).
+  5. *Faktor Individu*: Riwayat atopi, riwayat merokok aktif (catatan: asma isosianat dapat terjadi pada pekerja non-atopi).
+  6. *Faktor di Luar Hubungan Kerja*: Hobi mengecat mobil/furnitur di rumah tangga, riwayat asma masa kanak-kanak.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan sosial kecelakaan kerja dan kompensasi PAK.
+* **Protokol Surveilans Medis & Pemantauan Fungsi Paru**:
+  * **Pemantauan Arus Puncak Ekspirasi Serial (*Serial Peak Expiratory Flow* / PEF Monitoring)**:
+    - Pasien melakukan pencatatan nilai PEF mandiri menggunakan *peak flow meter* minimal **4 kali sehari selama 2–4 minggu** (mencakup 2 minggu hari kerja vs 2 minggu hari libur/cuti).
+    - Adanya variabilitas diurnal PEF **>20%** yang konsisten menurun pada hari kerja membuktikan diagnosis asma akibat kerja secara objektif.
+  * **Spirometri Pre- dan Post-Shift**: Evaluasi penurunan akut \\(\text{FEV}_1 > 10–15\%\\) sepanjang jam kerja.
+  * **Uji Tantang Bronkus Spesifik (*Specific Inhalation Challenge* / SIC)**: Dilakukan di laboratorium rujukan khusus sebagai baku emas konfirmasi diagnosis.
+* **Protokol Perlindungan Pemindahan Medis (*Medical Removal Protection*)**:
+  * Begitu diagnosis sensitisasi asma TDI tegak, pekerja **WAJIB SEGERA DAN PERMANEN DIPINDAHKAN DARI SELURUH AREA BERPAJANAN ISOSIANAT**. Penundaan pemindahan >6–12 bulan berkorelasi langsung dengan terjadinya asma persisten kronis seumur hidup meskipun paparan dihentikan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja yang tersensitisasi diisosianat dinyatakan **TIDAK LAIK PERMANEN (*PERMANENTLY UNFIT*)** untuk segala jenis pekerjaan yang mengandung senyawa isosianat (TDI, MDI, HDI).
+* **Hierarki Pengendalian Bahaya**:
+  * **Substitusi Aman**: **Mengganti TDI dengan MDI (*Methylene diphenyl diisocyanate*)** yang memiliki tekanan uap jauh lebih rendah (<\\(10^{-5}\\) mmHg) sehingga risiko inhalasi uap berkurang drastis pada aplikasi pembusaan dan perekat.
+  * *Rekayasa Teknis*: Operasi pembusaan busa wajib dilakukan di dalam terowongan tertutup (*enclosed continuous foaming tunnel*) dengan sistem ventilasi pembuangan lokal (LEV) berkecepatan hisap tinggi.
+  * *APD Khusus*:
+    - **Proteksi Pernapasan**: **Wajib menggunakan Respirator Suplai Udara Bertekanan Positif (*Supplied-Air Respirator*)** pada pekerjaan penyemprotan cat atau perbaikan kebocoran; respirator kartrid pemurni udara biasa tidak memadai untuk konsentrasi tinggi.
+    - **Proteksi Kulit**: Pakaian pelindung berlapis kimia dan sarung tangan bahan **karet Butil atau Nitril tebal** (**sarung tangan lateks medis biasa mudah ditembus pelarut isosianat**).
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 2B** (*Possibly carcinogenic to humans*).
+* **Notasi ACGIH & Nasional**:
+  * ACGIH menetapkan notasi **A3**, **Skin**, **DSEN**, **RSEN**, dan **BEI**.
+  * Permenaker No. 5 Tahun 2018 menetapkan notasi **Kategori A-4**, **Kulit**, dan **Sensitisasi**.
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 34**: Mengakui secara yuridis eksplisit hak kompensasi untuk **"Penyakit yang disebabkan oleh isosianat"**.
+  * **Lampiran Bagian I.a No. 11**: "*Kelainan saluran pernafasan atas yang disebabkan oleh sensitisasi atau iritasi zat yang ada dalam proses pekerjaan*".
+* **Permenkes No. 11 Tahun 2022**: Pedoman yuridis penetapan 7 langkah diagnosis PAK dan surveilans kesehatan okupasional terpadu.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Toluena Diisosianat (TDI)**
+* 🩺 **Clinical Pearl**:
+  * **"The Monday Night Wheeze Clue"**: Asma akibat TDI memiliki karakteristik unik berupa reaksi asma fase lambat (*late-phase asthmatic response*). Pasien sering tidak merasakan sesak saat berada di pabrik pada siang hari, melainkan terbangun tengah malam di rumah karena sesak napas berat dan batuk paroksismal (4–8 jam setelah shift kerja selesai). Jangan terkecoh mendiagnosis asma bronkial nokturnal biasa; tanyakan selalu variasi gejala pada siklus akhir pekan dan cuti kerja!
+  * **"The Skin Sensitization Gateway"**: Kontak dermal langsung terhadap cairan isosianat memicu sensitisasi imunologik sistemik sel T dan IgE. Di kemudian hari, paparan inhalasi uap konsentrasi sangat rendah di udara dapat langsung mencetuskan spasme bronkial masif. Perlindungan kulit sama pentingnya dengan perlindungan saluran napas pada pekerja isosianat!
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan IgE Spesifik anti-TDI Negatif*:
+     * *Soal Ujian*: "Hasil uji antibodi IgE spesifik serum anti-TDI pada pekerja pabrik busa dengan gejala asma kerja dinyatakan negatif. Apakah diagnosis asma akibat kerja terinduksi TDI dapat disingkirkan?"
+     * *Jebakan*: Menjawab "Ya, diagnosis asma okupasi tersingkirkan".
+     * *Koreksi*: **TIDAK DAPAT DISINGKIRKAN!** Antibodi IgE spesifik anti-TDI **hanya terdeteksi pada 15–30% pasien asma TDI terbukti klinis**. Mekanisme sel T (imunitas seluler) dan jalur non-IgE memegang peranan besar. Penegakan diagnosis wajib mengandalkan pemantauan PEF serial dan uji provokasi bronkus.
+  2. *Jebakan Ambang Deteksi Bau TDI*:
+     * *Jebakan*: Mengizinkan pekerja masuk ke ruangan karena uap TDI "belum tercium baunya".
+     * *Koreksi*: Ambang bau TDI adalah sekitar **0,05 ppm (50 ppb)**, sedangkan batas aman TLV-TWA ACGIH adalah **0,001 ppm (1 ppb)**! Jika bau TDI sudah dapat tercium oleh hidung manusia, konsentrasi udara telah melampaui batas aman sebesar **50 kali lipat**!
+  3. *Jebakan Menurunkan Konsentrasi di Bawah NAB*:
+     * *Jebakan*: Mengembalikan pekerja yang sudah terbukti tersensitisasi asma TDI ke lini produksi setelah sistem ventilasi diperbaiki dan kadar udara terbukti berada di bawah NAB (misal 0,5 ppb).
+     * *Koreksi*: **Pekerja yang telah tersensitisasi TIDAK BOLEH TERPAPAR KEMBALI WALAUPUN KONSENTRASI DI BAWAH NAB!** Pada individu tersensitisasi, kadar renik sub-ppb (bahkan 0,1 ppb) mampu memicu serangan asma fatal. Pemindahan permanen (*Medical Removal*) adalah harga mati.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: NAB Faktor Kimia - Toluena-2,4 atau 2,6-diisosianat; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran Bagian I.a No. 10: Derivat halogen; No. 11: Sensitisasi saluran napas; No. 34: Isosianat; Lampiran III: Kanker akibat kerja).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Pedoman 7 Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Toluene diisocyanate entries [p. 66], Notasi RSEN/DSEN/Skin/A3 [p. 66], BEI Section: Toluenediamine in urine [p. 122, 144]).
+5. **Marinković, N., et al.** (2010): *Dioxins and Human Toxicity*. Arhiv za higijenu rada i toksikologiju, 61(4), 445–453.
+6. **Daniels, R. D.** (2018): *Occupational asthma risk from exposures to toluene diisocyanate: a review and risk assessment*. American Journal of Industrial Medicine, 61(4), 282–292.
+7. **Ott, M. G., Diller, W. F., & Jolly, A. T.** (2003): *Respiratory effects of toluene diisocyanate in the workplace: a discussion of exposure-response relationships*. Critical Reviews in Toxicology, 33(1), 1–59.
+8. **Ott, M. G.** (2002): *Occupational asthma, lung function decrement, and toluene diisocyanate (TDI) exposure: a critical review of exposure-response relationships*. Applied Occupational and Environmental Hygiene, 17(12), 891–901.
+9. **Schaddelee-Scholten, B., et al.** (2020): *Biomonitoring of Diisocyanates in the Workplace: A Systematic Review*. Annals of Work Exposures and Health, 64(6), 585–599.
+10. **Fernandes, A. R., et al.** (2022): *The toxicological profile of polychlorinated naphthalenes (PCNs) and comparison with dioxins and PCBs*. Science of the Total Environment, 837, 155764.
+11. **Hodgson, E. (Ed.)** (2010): *A Textbook of Modern Toxicology*. 4th Edition. John Wiley & Sons (Chapter 1: Environmental Hazards; Chapter 14: Organ Toxicity; Chapter 22: Occupational Standards).
+12. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: 2,3,7,8-TCDD [p. 298], Toluene-2,4-diisocyanate [p. 312], MDI [p. 198], HDI [p. 156] entries).
+13. **IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 100F & Volume 69** (1997/2012): *Polychlorinated Dibenzo-para-Dioxins and Polychlorinated Dibenzofurans*. International Agency for Research on Cancer, Lyon, France.
+
+---
+
+💡 *Apakah Anda ingin membuat rangkuman ringkas seluruh determinan biomonitoring (BEI/IPB) dan nilai ambang batas (NAB/TLV) untuk seluruh senyawa toksikologi industri yang telah dipelajari sebagai persiapan menghadapi ujian?*

@@ -1,0 +1,306 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Melanjutkan pembahasan toksikologi logam berat sebelumnya, kita masuk ke **MERKURI (Hg), BAGIAN B**. 
+
+Sebagai calon konsultan Kedokteran Okupasi, Anda dituntut tidak hanya menguasai teori kinetika membran, tetapi juga memiliki **ketajaman analisis regulatori, ketepatan interpretasi biomonitoring, kehati-hatian tatalaksana antidotum, serta kepatuhan hukum ketenagakerjaan**. Dewan penguji tidak akan meluluskan kandidat yang keliru meresepkan kelator yang justru meredistribusi racun ke otak pekerja, atau yang buta terhadap instrumen hukum eliminasi merkuri nasional.
+
+Simak telaah komprehensif berikut:
+
+---
+
+### 1. Standar Batas Pajanan Udara (*Exposure Limits*): ACGIH vs. Permenaker No. 5 Tahun 2018
+
+Di lingkungan kerja industri, nilai ambang batas pajanan udara ditetapkan secara spesifik menurut **spesiasi kimiawi merkuri**:
+
+```
+                       [ PERBANDINGAN STANDAR BATAS PAJANAN MERKURI ]
+                                              │
+         ┌────────────────────────────────────┴────────────────────────────────────┐
+         ▼                                                                         ▼
+   [ BENTUK LOGAM / ELEMENTAL & ANORGANIK ]                           [ SENYAWA ORGANIK / ALKIL ]
+• ACGIH TLV-TWA: 0,025 mg/m³ (0,003 ppm)                           • ACGIH TLV-TWA: 0,01 mg/m³
+  Notasi: Skin, A4, BEI                                              ACGIH TLV-STEL: 0,03 mg/m³; Notasi: Skin
+• Permenaker 5/2018: 0,025 mg/m³ (0,003 bds)                       • Permenaker 5/2018: 0,01 mg/m³ (0,001 bds)
+  Notasi: Kulit, A4, BEI (▲)                                         PSD: 0,03 mg/m³ (0,003 bds); Notasi: Kulit
+```
+
+#### a. Nilai Ambang Batas ACGIH (Edisi 2026)
+1.  **Merkuri Elemental dan Bentuk Anorganik (*Elemental and inorganic forms, as Hg*) [CAS 7439-97-6]:**
+    *   **TLV-TWA:** **\\(0{,}025\text{ mg/m}^3\\)** (atau **\\(0{,}003\text{ ppm}\\)**).
+    *   *Notasi:* **Skin; A4; BEI**.
+    *   *Dasar Penetapan Efek Kritis (*TLV Basis*):* Kerusakan sistem saraf pusat (*CNS impairment*) dan kerusakan ginjal (*kidney damage*).
+2.  **Senyawa Alkil Merkuri Organik (*Mercury, [organo] alkyl compounds, as Hg*):**
+    *   **TLV-TWA:** **\\(0{,}01\text{ mg/m}^3\\)**.
+    *   **TLV-STEL:** **\\(0{,}03\text{ mg/m}^3\\)**.
+    *   *Notasi:* **Skin**.
+    *   *Efek Kritis:* Kerusakan neurologis SSP akut dan kumulatif, ataksia serebelum, dan iritasi kulit nyata.
+3.  **Senyawa Aril Merkuri (*Mercury, aryl compounds, as Hg*):**
+    *   **TLV-TWA:** **\\(0{,}1\text{ mg/m}^3\\)**; Notasi: **Skin**.
+
+---
+
+#### b. Nilai Ambang Batas Permenaker No. 5 Tahun 2018 (Lampiran 3)
+Kementerian Ketenagakerjaan RI mengadopsi standar ambang batas yang selaras dengan ACGIH:
+1.  **Air Raksa (Merkuri) — Logam dan Bentuk Anorganik:**
+    *   **NAB (TWA 8 jam):** **\\(0{,}025\text{ mg/m}^3\\)** (setara **\\(0{,}003\text{ bds/ppm}\\)**).
+    *   *Notasi:* **Kulit; A4; BEI (simbol ▲)**.
+2.  **Air Raksa (Merkuri) — Senyawa Alkil:**
+    *   **NAB (TWA 8 jam):** **\\(0{,}01\text{ mg/m}^3\\)** (setara **\\(0{,}001\text{ bds}\\)**).
+    *   **PSD (STEL 15 menit):** **\\(0{,}03\text{ mg/m}^3\\)** (setara **\\(0{,}003\text{ bds}\\)**).
+    *   *Notasi:* **Kulit**.
+3.  **Air Raksa (Merkuri) — Senyawa Aril:**
+    *   **NAB:** **\\(0{,}1\text{ mg/m}^3\\)**; Notasi: **Kulit; A4**.
+
+---
+
+#### c. Makna Toksikologis Notasi
+*   **Notasi "Skin" / "Kulit":** Menandakan adanya **potensi kontribusi penyerapan yang signifikan melalui rute kulit (*cutaneous/dermal absorption*)**, termasuk kontak uap, cairan, atau aerosol pada membran mukosa dan mata. Notasi ini menjadi peringatan tegas bagi dokter okupasi dan higienis industri bahwa pemantauan konsentrasi udara semata **tidak menjamin pekerja aman dari intoksikasi sistemik jika perlindungan kulit (*chemical-resistant gloves*) diabaikan**.
+*   **Notasi "A4" (*Not Classifiable as a Human Carcinogen*):** Menunjukkan bahwa zat tersebut belum dapat diklasifikasikan sebagai karsinogen manusia akibat data epidemiologi manusia yang tidak memadai dan hasil bioasai hewan coba yang belum konklusif.
+*   **Notasi "BEI" / Simbol Segitiga (▲):** Mewajibkan dilakukannya pemantauan dosis biologis internal (*biological monitoring*) yang nilainya dirujuk pada tabel Indeks Pajanan Biologi.
+
+---
+
+### 2. Standar BEI (ACGIH) dan IPB (Permenaker 5/2018) serta Waktu Sampling
+
+Dalam mengevaluasi dosis internal pekerja yang terpajan uap merkuri elemental atau garam anorganik, matriks biologis yang menjadi rujukan resmi hukum adalah **spesimen urin**:
+
+```
+                       [ STANDAR INDEKS PAJANAN BIOLOGI MERKURI ]
+                                            │
+        ┌───────────────────────────────────┼───────────────────────────────────┐
+        ▼                                   ▼                                   ▼
+ [ DETERMINAN BIOLOGIS ]             [ NILAI BAKU BEI / IPB ]           [ WAKTU PENGAMBILAN SAMPEL ]
+ Merkuri Anorganik dalam Urin        20 µg/g kreatinin                  Sebelum Gilir Kerja
+ (Total Inorganic Mercury in         (Notasi B: Background              (Prior to Shift)
+  Urine)                              non-terpajan diperhitungkan)       16 jam pasca-shift terakhir
+```
+
+*   **Determinan Biologis:** Merkuri anorganik dalam urin (*Inorganic mercury in urine*).
+*   **Nilai Baku BEI / IPB:** **20 µg/g kreatinin**.
+    *(Pada Lampiran 4 Permenaker 5/2018, nilai IPB ditetapkan identik sebesar 20 µg/g kreatinin)*.
+*   **Waktu Pengambilan Sampel (*Sampling Time*):** **Sebelum gilir kerja (*Prior to shift*)**.
+    *   *Protokol Teknis Koleksi:* Sampel urin dikumpulkan **setelah sekurang-kurangnya 16 jam pekerja bebas dari pajanan kerja**, namun dilakukan **tepat sebelum shift kerja hari pengambilan sampel dimulai**.
+    *   *Rasional Toksikokinetik Okupasi:* Eliminasi merkuri urin memiliki waktu paruh jaringan ginjal sekitar 30–60 hari. Pengambilan sampel *prior to shift* bertujuan untuk **menghindari lonjakan artefak ekskresi transien akibat inhalasi uap shift hari itu**, sehingga mencerminkan beban penumpukan merkuri yang stabil di dalam parenkim ginjal (*steady-state renal body burden*).
+*   **Notasi Latar Belakang (B):** Mengingatkan bahwa asupan makanan (seperti makanan laut) atau restorasi gigi dental amalgam dapat memberikan kontribusi konsentrasi dasar (*background levels*) pada populasi umum.
+*   **Tindakan Medis Berdasarkan Nilai Urin di Lapangan:**
+    *   *\\(< 20\ \mu\text{g/g kreatinin}\\):* Pajanan terkendali di bawah ambang batas standar okupasi.
+    *   *\\(20\text{--}50\ \mu\text{g/g kreatinin}\\):* Terjadi pajanan berlebih (*overexposure*); wajib dilakukan audit ventilasi industri, inspeksi APD, dan evaluasi ulang higiene personal.
+    *   *\\(> 50\ \mu\text{g/g kreatinin}\\) (atau \\(> 50\ \mu\text{g/L}\\)):* Ambang batas peringatan biologis; peningkatan risiko gangguan neurobehavioral subklinis dan proteinuria mikro.
+    *   *\\(> 100\ \mu\text{g/g kreatinin}\\) (atau \\(> 100\ \mu\text{g/L}\\)):* Ambang batas kritis intervensi klinis; pekerja wajib ditarik dari area pajanan (*medical removal*) dan dievaluasi untuk terapi kelasi.
+
+---
+
+### 3. Tatalaksana Akut, Keracunan, dan Terapi Kelasi
+
+Penanganan intoksikasi merkuri didasarkan pada trias: **dekontaminasi segera, stabilisasi fungsi vital organ, dan pemberian kelator pengikat tiol spesifik**.
+
+```
+                                  [ ALGORITMA TATALAKSANA KERACUNAN MERKURI ]
+                                                       │
+         ┌─────────────────────────────────────────────┴─────────────────────────────────────────────┐
+         ▼                                                                                           ▼
+[ DEKONTAMINASI & STABILISASI ]                                                             [ EVALUASI TERAPI KELASI ]
+• Inhalasi Uap Hg⁰:                                                                         • Indikasi: Pasien bergejala organ
+  Evakuasi segera, O₂ suplemental, pantau ARDS,                                               (SSP/ginjal) ATAU biomarker
+  ventilasi mekanik & PEEP bila edema paru                                                    U-Hg > 100 µg/L / B-Hg > 50 µg/L
+• Ingesti Garam Anorganik (HgCl₂):                                                          • Agen Pilihan Lini Pertama:
+  Bilas lambung hati-hati (risiko perforasi!),                                                1. DMPS (PO / IV) ──► Paling poten
+  resusitasi cairan agresif (cegah ATN),                                                      2. DMSA (Succimer, PO) ──► Aman
+  hemodialisis dini jika timbul anuria                                                      • KONTRAINDIKASI MUTLAK:
+• Kontak Kulit: Guyur air mengalir min. 15 menit                                              BAL PADA Hg⁰ & METILMERKURI!
+```
+
+#### a. Dekontaminasi dan Tindakan Suportif Akut
+1.  **Inhalasi Uap Merkuri Elemental (\\(\text{Hg}^0\\)) Konsentrasi Tinggi:**
+    *   Segera evakuasi korban ke udara bersih.
+    *   Berikan oksigenasi lembap aliran tinggi. Pantau ketat tanda-tanda gagal napas akut dalam 24–72 jam pasca-pajanan (risiko tinggi pneumonitis kimiawi, bronkiolitis, dan ARDS).
+    *   Bila terjadi ARDS, berikan ventilasi mekanik invasif dengan strategi proteksi paru (*lung-protective ventilation* / PEEP adekuat). Bronkodilator aerosol dapat diberikan bila timbul bronkospasme berat.
+2.  **Ingesti Garam Merkuri Anorganik (misalnya \\(\text{HgCl}_2\\) / Sublimat Korosif):**
+    *   *Peringatan:* Induksi muntah **dikontraindikasikan mutlak** karena sifat garam merkuri yang sangat kaustik dan korosif terhadap esofagus.
+    *   *Bilas Lambung (*Gastric Lavage*):* Hanya dapat dipertimbangkan dalam 1 jam pertama pasca-ingesti menggunakan pipa nasogastrik lentur berdiameter kecil dengan kehati-hatian tinggi terhadap risiko perforasi gaster.
+    *   *Resusitasi Cairan Intravena Agresif:* Wajib segera diguyur cairan kristaloid untuk mengatasi syok hipovolemik distributif akibat gastroenteritis hemoragik masif serta mempertahankan perfusi ginjal guna mencegah Nekrosis Tubular Akut (ATN).
+    *   *Hemodialisis:* Diindikasikan segera pada kasus gagal ginjal akut anurik untuk mengoreksi uremia dan asidosis metabolik, sekaligus membantu klirens kompleks merkuri-kelator yang larut air.
+3.  **Kontaminasi Dermal dan Mata:**
+    *   Tanggalkan seluruh pakaian kerja yang terkontaminasi (masukkan ke dalam kantong tertutup rapat sebagai limbah B3).
+    *   Bilas kulit dan mata dengan air mengalir atau salin fisiologis selama minimal 15–20 menit.
+
+---
+
+#### b. Terapi Kelasi (*Chelation Therapy*)
+Pemberian zat pengelat bertujuan membentuk ikatan kelat cincin heterosiklik yang stabil dengan ion merkuri sehingga menurunkan toksisitas jaringan bebas dan mempercepat ekskresi merkuri melalui urin:
+
+1.  **DMPS (2,3-dimerkapto-1-propanasulfonat / *Unithiol*):**
+    *   *Karakteristik:* Analog BAL larut air (*water-soluble*), tersedia dalam sediaan oral maupun intravena (sangat berguna pada pasien kritis yang tidak sadar atau mengalami muntah-muntah hebat).
+    *   *Indikasi & Efikasi:* Merupakan **agen kelator pilihan lini pertama yang paling efektif untuk intoksikasi merkuri elemental dan garam anorganik**. DMPS meningkatkan ekskresi merkuri urin hingga lebih dari 85% dan secara nyata memperbaiki gejala tremor, ataksia motorik, serta fungsi neurokognitif.
+    *   *Dosis Umum:* Fase akut 250–500 mg IV setiap 4–6 jam pada 24 jam pertama, dilanjutkan penurunan bertahap menjadi 100–250 mg oral 3–4 kali sehari selama 1–2 minggu.
+2.  **DMSA (*meso-2,3-dimercaptosuccinic acid* / *Succimer*):**
+    *   *Karakteristik:* Analog BAL larut air yang diberikan secara **per oral** dengan profil keamanan yang sangat baik dan efek samping minimal.
+    *   *Indikasi:* Pilihan utama pada intoksikasi merkuri derajat sedang hingga berat yang stabil dan dapat mentoleransi asupan oral. DMSA membentuk kompleks hidrofilik dengan merkuri dan diekskresikan melalui urin tanpa meredistribusi logam ke otak.
+    *   *Dosis Protokol:* 10 mg/kgBB (atau 350 mg/\\(\text{m}^2\\)) per oral setiap 8 jam selama 5 hari pertama, dilanjutkan setiap 12 jam selama 14 hari berikutnya (total durasi 19 hari per siklus).
+3.  **BAL (*British Anti-Lewisite* / Dimerkaprol):**
+    *   *Karakteristik:* Senyawa ditiol klasik (2,3-dimerkaptopropanol) yang dilarutkan dalam minyak kacang (*peanut oil*) dan diberikan melalui **injeksi intramuskular (IM) dalam**. Memiliki indeks terapeutik sempit dengan toksisitas inheren tinggi (hipertensi, takikardia, mual, sakit kepala).
+    *   *Penggunaan Terbatas:* Hanya digunakan sebagai terapi penyelamat (*rescue therapy*) darurat pada kasus **ingesti akut garam merkuri anorganik berat** dengan gagal ginjal, dan HANYA JIKA DMSA atau DMPS tidak tersedia.
+
+---
+
+#### c. KONTRAINDIKASI MUTLAK: Larangan Penggunaan BAL pada Uap Merkuri Elemental dan Metilmerkuri!
+
+> **Peringatan Kritis Dewan Penguji (*Lethal Board Trap*):**
+> **DIMERKAPROL (BAL) DIKONTRAINDIKASIKAN SECARA MUTLAK pada keracunan uap Merkuri Elemental (\\(\text{Hg}^0\\)) dan keracunan Merkuri Organik (Metilmerkuri / \\(\text{MeHg}\\))!**
+
+*   **Rasional Mekanistik Molekuler:**
+    1.  Molekul BAL bersifat **sangat lipofilik (*lipid-soluble*)**.
+    2.  Ketika BAL berikatan dengan ion merkuri yang ada di sirkulasi darah atau kompartemen vaskular perifer, terbentuk kompleks kelat **BAL-Merkuri yang bersifat sangat netral dan lipofilik**.
+    3.  Berbeda dengan kompleks DMSA/DMPS yang hidrofilik dan tertahan di luar otak, kompleks lipofilik BAL-Merkuri ini **dapat menembus Sawar Darah Otak (*Blood-Brain Barrier* / BBB) dengan sangat leluasa**.
+    4.  Akibatnya, pemberian BAL memicu fenomena **redistribusi merkuri sistemik masuk secara masif ke dalam parenkim otak dan susunan saraf pusat (SSP)**.
+    5.  Merkuri yang terdistribusi ke otak kemudian terperangkap permanen, memperparah nekrosis neuron serebelum, memicu ensefalopati fatal, memperburuk ataksia, dan mempercepat kematian pasien.
+*   *Aturan Baku Ujian:* Pada intoksikasi uap elemental \\(\text{Hg}^0\\) dan metilmerkuri, gunakan **hanya DMSA atau DMPS**. Jika kedua obat tersebut tidak tersedia, terapi suportif dan penarikan pajanan jauh lebih aman daripada memberikan BAL.
+
+---
+
+### 4. Tatalaksana Okupasi: Individu dan Komunitas
+
+Sebagai dokter spesialis, pendekatan Anda harus mencakup penegakan diagnosis kausalitas, evaluasi kelaikan kerja, dan proteksi lingkungan kerja industri:
+
+```
+                      [ PENEGAKAN DIAGNOSIS DAN MANAJEMEN OKUPASI ]
+                                            │
+        ┌───────────────────────────────────┼───────────────────────────────────┐
+        ▼                                   ▼                                   ▼
+[ 7 LANGKAH PERMENKES 11/2022 ]      [ KELAIKAN KERJA (FITNESS) ]        [ HIERARKI KONTROL INDUSTRI ]
+1. Diagnosis Klinis (ICD-10)         • Fit: U-Hg < 20, asimtomatik       • Eliminasi: Proses amalgam
+2. Identifikasi Pajanan Lapangan     • Fit with Restriction: Kontrol     • Substitusi: Resin komposit,
+3. Hubungan Kausal Toksikologi         ringan, dilarang area uap Hg        sel membran non-Hg
+4. Besaran Dosis (NAB & BEI)         • Temporary Unfit: Sakit aktif,     • LEV Scrubber Karbon Aktif
+5. Faktor Host / Individu              U-Hg > 50–100, kelasi berjalan    • Medical Removal Protection
+6. Pajanan Luar (Ikan/Kosmetik)      • Unfit (Permanent): Ataksia        • Respirator uap merkuri
+7. KESIMPULAN DIAGNOSIS PAK            permanen, gagal ginjal kronis
+```
+
+#### a. Penerapan 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022)
+Kasus: Seorang teknisi peleburan emas PESK atau pekerja pabrik klor-alkali yang datang dengan keluhan tremor tangan dan perubahan kepribadian:
+1.  **Langkah 1 (Diagnosis Klinis):**
+    *Encephalopathy toxic due to mercury / Mercurial tremor* (ICD-10: T56.1), stomatitis ulseratif, dan/atau nefropati toksik proteinuria.
+2.  **Langkah 2 (Pajanan di Tempat Kerja):**
+    Pekerja membakar amalgam emas menggunakan *blowtorch* di ruang tertutup tanpa sungkup hisap, terpajan uap merkuri elemental (\\(\text{Hg}^0\\)) secara inhalasi kronis.
+3.  **Langkah 3 (Hubungan Kausalitas Pajanan dan Klinis):**
+    Secara biologis terbukti bahwa uap \\(\text{Hg}^0\\) menembus BBB, dioksidasi oleh katalase intraseluler menjadi \\(\text{Hg}^{2+}\\), dan menghambat enzim tiol pada serebelum dan ganglia basalis memicu tremor intensional dan eretisme.
+4.  **Langkah 4 (Besarnya Dosis Pajanan):**
+    Konsentrasi uap merkuri di tempat kerja melampaui NAB Permenaker 5/2018 (\\(> 0{,}025\text{ mg/m}^3\\)); biomonitoring menunjukkan kadar merkuri urin (U-Hg) melampaui IPB (\\(> 20\ \mu\text{g/g kreatinin}\\), misalnya mencapai 140 µg/g kreatinin); masa kerja > 3 tahun; pekerja tidak menggunakan respirator spesifik uap merkuri.
+5.  **Langkah 5 (Faktor Kerentanan Individu):**
+    Mengevaluasi riwayat komorbiditas ginjal bawaan, defisiensi glutation, kebiasaan merokok di area kerja yang memperparah kontaminasi tangan-ke-mulut.
+6.  **Langkah 6 (Faktor di Luar Tempat Kerja):**
+    Menyingkirkan konsumsi harian ikan laut predator besar (metilmerkuri) dan menyingkirkan penggunaan krim pemutih wajah berbahan merkuri di rumah melalui wawancara mendalam.
+7.  **Langkah 7 (Kesimpulan Diagnosis Okupasi):**
+    Ditetapkan secara sah sebagai **Penyakit Akibat Kerja (PAK)** berdasarkan Perpres No. 7 Tahun 2019 Lampiran I.a Butir 7 ("Penyakit yang disebabkan oleh raksa atau persenyawaannya"). Berhak menerima manfaat Jaminan Kecelakaan Kerja (JKK).
+
+---
+
+#### b. Penilaian Kelaikan Kerja (*Fitness for Work*)
+*   **Fit (Laik Kerja Penuh):** Pekerja sehat tanpa keluhan neurologis/renal, hasil U-Hg < 20 µg/g kreatinin, dan pengendalian teknis di tempat kerja berfungsi optimal.
+*   **Fit with Restriction (Laik dengan Pembatasan):** Pekerja dengan U-Hg borderline (20–50 µg/g kreatinin) tanpa gejala defisit neurologis; **dilarang bekerja di area bersuhu panas atau area dengan kontak uap merkuri langsung**; dialihkan sementara ke tugas administratif/logistik bebas uap Hg hingga kadar urin turun.
+*   **Temporary Unfit (Tidak Laik Sementara):**
+    Pekerja dengan **U-Hg > 50–100 µg/g kreatinin**, ATAU pekerja yang memperlihatkan tanda klinis aktif (tremor, eretisme, stomatitis, proteinuria). 
+    *Tindakan Medis:* **Wajib ditarik dari pajanan kerja (*Medical Removal Protection*)**, dirawat di faskes rujukan untuk terapi kelasi DMSA/DMPS, dan dievaluasi berkala hingga biomarker urin normal dan gejala klinis membaik.
+*   **Unfit (Tidak Laik Permanen):** Pekerja yang mengalami kecacatan neurologis permanen (ataksia serebelar ireversibel, demensia/defisit kognitif parah) atau penyakit ginjal stadium akhir sekunder akibat nefropati merkuri. Direkomendasikan untuk pemutusan pajanan tetap dan program kompensasi kecacatan JKK.
+
+---
+
+#### c. Rekomendasi Manajemen dan Proteksi Komunitas
+1.  **Hierarki Pengendalian Bahaya Kimiawi (Permenaker 5/2018 & Kepmenaker 187/1999):**
+    *   *Eliminasi:* Menghentikan penggunaan merkuri cair pada proses ekstraksi bijih emas, menggantikannya dengan teknologi sianidasi atau pemisahan gravitasi non-merkuri; menghapus termometer air raksa di lingkungan fasyankes.
+    *   *Substitusi:* Mengganti sel merkuri klor-alkali dengan teknologi **sel membran (*membrane cell technology*)** yang ramah lingkungan. Mengganti tambalan amalgam gigi dengan resin komposit.
+    *   *Rekayasa Teknis (*Engineering Controls*):* Penutupan sistem proses (*enclosed automated systems*); pemasangan ventilasi pembuangan lokal (*Local Exhaust Ventilation* / LEV) yang dilengkapi **filter adsorpsi karbon aktif terimpregnasi iodin atau belerang** untuk menangkap uap merkuri bebas sebelum dilepas ke atmosfer. Pengendalian suhu ruangan (suhu dingin menurunkan penguapan merkuri cair).
+    *   *Pengendalian Administratif:* Pelatihan prosedur tumpahan (*mercury spill kit* dengan serbuk belerang / sulfur amalgamasi), larangan makan/minum/merokok di area kerja, pembersihan lantai kedap celah tanpa celah nat semen, dan rotasi shift kerja.
+    *   *Alat Pelindung Diri (APD):* Respirator pemurni udara (*air-purifying respirator*) dengan **katrid khusus uap merkuri (*mercury vapor cartridges*) yang dilengkapi indikator masa pakai**, sarung tangan karet nitril atau butil, dan pakaian kerja pelindung sekali pakai.
+2.  **Surveilans Kesehatan Berkala:**
+    *   Pemeriksaan pra-kerja (*pre-placement*): Penilaian fungsi neurologis dasar, tes koordinasi motorik halus, status neurobehavioral, dan urinalisis rutin.
+    *   Pemeriksaan berkala (*periodic medical examination*, minimal 1 tahun sekali): Uji tremor objektif (tes tulisan tangan Archimedes spiral), pemeriksaan rongga mulut/gingiva, penentuan proteinuria tubular (NAG, albumin), dan **pemeriksaan kadar merkuri urin (U-Hg) *prior to shift***.
+
+---
+
+### 5. Keterangan Lain: Karsinogenisitas IARC dan Konvensi Minamata
+
+#### a. Klasifikasi Karsinogenisitas IARC
+Berdasarkan evaluasi IARC Monograph Volume 58 dan ditegaskan dalam pembaruan Volume 100C:
+*   **Merkuri Elemental dan Senyawa Merkuri Anorganik:**
+    *   **IARC Grup 3 (*Not classifiable as to its carcinogenicity to humans*)**.
+    *   *Dasar Ilmiah:* Bukti karsinogenisitas pada manusia **tidak memadai (*inadequate evidence*)**, dan bukti pada hewan coba terbatas. Studi epidemiologi pada pekerja tambang merkuri dan industri klor-alkali rancu dengan faktor perancu (rokok, pajanan radon, atau arsenik).
+    *   *ACGIH:* Kategori **A4** (*Not classifiable as a human carcinogen*).
+*   **Senyawa Metilmerkuri (*Methylmercury compounds*):**
+    *   **IARC Grup 2B (*Possibly carcinogenic to humans*)**.
+    *   *Dasar Ilmiah:* Bukti pada manusia tidak memadai, namun terdapat **bukti yang cukup (*sufficient evidence*) pada hewan coba** mengenai induksi karsinoma tubulus ginjal pada tikus jantan.
+
+---
+
+#### b. Konvensi Minamata tentang Merkuri (*Minamata Convention on Mercury*)
+Merupakan perjanjian internasional global di bawah naungan Program Lingkungan Perserikatan Bangsa-Bangsa (UNEP) yang bertujuan melindungi kesehatan manusia dan lingkungan dari emisi serta pelepasan antropogenik merkuri:
+1.  **Ratifikasi Yuridis di Indonesia:**
+    Pemerintah Indonesia secara resmi mengesahkan konvensi ini melalui **Undang-Undang Nomor 11 Tahun 2017 tentang Pengesahan *Minamata Convention on Mercury***.
+2.  **Rencana Aksi Nasional (RAN-PPM):**
+    Ditetapkan melalui **Peraturan Presiden Nomor 21 Tahun 2019 tentang Rencana Aksi Nasional Pengurangan dan Penghapusan Merkuri (RAN-PPM)**, yang menetapkan empat target sektor prioritas:
+    *   *Sektor Manufaktur:* Menghapuskan penggunaan merkuri pada industri baterai, sakelar listrik, dan lampu fluoresen.
+    *   *Sektor Energi:* Menurunkan emisi merkuri dari pembakaran batubara di PLTU.
+    *   *Sektor Penambangan Emas Skala Kecil (PESK):* **Target penghapusan penggunaan merkuri 100% pada PESK** melalui alih teknologi pengolahan emas bebas merkuri dan penegakan hukum.
+    *   *Sektor Kesehatan:* **Target penghapusan 100% alat kesehatan bermerkuri** (penarikan dan pemusnahan seluruh termometer air raksa, tensimeter air raksa, dan larangan penggunaan amalgam gigi di seluruh fasyankes Indonesia melalui Permenkes No. 57 Tahun 2016 dan Permenkes No. 41 Tahun 2019).
+
+---
+
+### 6. *Clinical Pearls* dan Jebakan Ujian Khusus Merkuri
+
+Dewan penguji ujian spesialis kerap menyiapkan skenario jebakan (*board examination traps*). Tanamkan prinsip-prinsip ini di kepala Anda:
+
+```
+                            [ JEBAKAN UJIAN KLINIS MERKURI ]
+                                            │
+        ┌───────────────────────────────────┼───────────────────────────────────┐
+        ▼                                   ▼                                   ▼
+ [ JEBAKAN 1: KELATOR BAL ]          [ JEBAKAN 2: MATRIKS BIOMARKER ]    [ JEBAKAN 3: TERTELAN Hg⁰ ]
+ Jangan pernah berikan BAL pada      Jangan periksa urin pada kasus      Tertelan cairan termometer TIDAK
+ uap Hg⁰ atau Metilmerkuri!          Metilmerkuri!                       mematikan (Absorpsi GI < 0,01%).
+ BAL lipofilik ──► Membentuk         MeHg diekskresikan lewat feses/     Yang mematikan adalah jika
+ kelat lipofilik ──► Menembus       empedu. Gunakan DARAH LENGKAP       cairan tumpah di karpet lalu
+ BBB ──► REDISTRIBUSI RACUN         atau RAMBUT KEPALA.                 MENGUAP DAN TERHIRUP!
+ KE OTAK! Gunakan DMSA/DMPS.        (Urin hanya untuk Hg⁰/anorganik).
+```
+
+*   **Clinical Pearl 1: "Darah untuk Organik, Urin untuk Anorganik/Elemental"**
+    Hafalkan aksioma biomonitoring ini: Bila Anda berhadapan dengan pekerja terpajan uap \\(\text{Hg}^0\\) pabrik atau garam \\(\text{Hg}^{2+}\\), **periksa Urin (U-Hg) sebelum shift kerja**. Bila Anda menghadapi kasus keracunan makanan laut (metilmerkuri), **periksa Darah Lengkap (B-Hg) atau Rambut Kepala**, karena fraksi metilmerkuri terkonsentrasi 90% di eritrosit dan terikat pada keratin rambut, sementara ekskresi ginjalnya minimal.
+*   **Clinical Pearl 2: Efek "Perangkap Katalase Otak" (*The Brain Catalase Trap*)**
+    Uap \\(\text{Hg}^0\\) menembus BBB karena sifatnya yang lipofilik dan non-polar. Namun, begitu masuk ke astrosit dan neuron, enzim katalase mengoksidasinya menjadi kation divalen polar \\(\text{Hg}^{2+}\\). Kation ini bermuatan dan **tidak dapat berdifusi balik keluar menembus BBB**, menyebabkan merkuri terperangkap seumur hidup di otak. Itulah mengapa manifestasi neurologis (tremor dan eretisme) dapat menetap bertahun-tahun setelah pajanan kerja dihentikan.
+*   **Board Trap 1: Resep Kelator yang Mematikan (Pemberian BAL)**
+    Jika penguji memberikan kasus penambang emas terpajan uap merkuri dengan tremor hebat, lalu menanyakan kelator pilihan, **JANGAN PERNAH MENJAWAB BAL (Dimerkaprol)**. Menjawab BAL akan langsung menggugurkan Anda. Jelaskan dengan tegas: *"BAL dikontraindikasikan karena sifat lipofiliknya akan meredistribusi merkuri ke otak dan memperparah neurotoksisitas. Pilihan lini pertama adalah DMPS parenteral/oral atau DMSA oral"*.
+*   **Board Trap 2: Termometer Air Raksa yang Tertelan Anak / Pasien**
+    Jangan panik merekomendasikan bilas lambung atau kelasi jika pasien menelan cairan termometer air raksa utuh. **Absorpsi gastrointestinal merkuri elemental cair intak adalah < 0,01% (praktis tidak diserap)** dan akan keluar utuh bersama feses tanpa menimbulkan keracunan sistemik. Yang sangat berbahaya adalah **tumpahan cairan merkuri yang tercecer di lantai, sela ubin, atau karpet yang menguap secara perlahan dan terhirup uapnya oleh penghuni ruangan**.
+*   **Board Trap 3: Uap Merkuri Tidak Memiliki Bau (*Odorless Gas*)**
+    Jangan pernah menuliskan di laporan inspeksi K3 bahwa pekerja "dapat mencium bau merkuri". Uap \\(\text{Hg}^0\\) **tidak berwarna, tidak berbau, dan tidak berasa**. Pekerja dapat terpajan konsentrasi mematikan tanpa menyadarinya. Perlindungan hanya dapat dijamin melalui detektor gas uap merkuri (*direct-reading mercury vapor analyzer*) dan pemantauan biologis berkala.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Mercury, elemental and inorganic forms* (TWA 0,025 mg/m³, Notasi Skin, A4, BEI); *Mercury, (organo) alkyl compounds* (TWA 0,01 mg/m³, STEL 0,03 mg/m³, Notasi Skin); *Mercury, aryl compounds* (TWA 0,1 mg/m³, Notasi Skin).
+    *   Definisi dan Signifikansi Notasi *Skin* (Kontribusi Penyerapan Dermal Sistemik Nyata).
+    *   Tabel Adopsi BEI: *Mercury, elemental* — *Inorganic mercury in urine*, Waktu: *Prior to shift*, Nilai: **20 µg/g kreatinin** (Notasi B).
+    *   Definisi Waktu Pengambilan Sampel *Prior to shift* (16 jam bebas pajanan).
+2.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja*:
+    *   Lampiran 3: Tabel Nilai Ambang Batas Faktor Kimia — Air Raksa Logam dan Bentuk Anorganik (NAB 0,025 mg/m³ / 0,003 bds, Notasi Kulit, A4, Simbol Segitiga BEI ▲); Senyawa Alkil (NAB 0,01 mg/m³, PSD 0,03 mg/m³, Notasi Kulit); Senyawa Aril (NAB 0,1 mg/m³, Notasi Kulit, A4).
+    *   Lampiran 4: Tabel Indeks Pajanan Biologi (IPB) — Merkuri Anorganik dalam Urin, Waktu Sebelum Gilir Kerja, Nilai 20 µg/g kreatinin.
+3.  **Dib Chakif & Julien Furrer (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Farmakologi dan Mekanisme Kelator Thiol: DMSA, DMPS, BAL [6, 214–217]; Karakteristik DMSA Oral dan DMPS Larut Air; Indikasi Kelasi Spesiasi Logam; Matriks Biomonitoring Komparatif (U-Hg untuk Anorganik vs B-Hg/Rambut untuk MeHg); serta Prinsip Pencegahan dan Pengendalian di Tempat Kerja.
+4.  **Yun Shi et al. (2026).** *Clinical characteristics, management, and outcomes of diseases caused by mercury overexposure: a systematic review.* Frontiers in Public Health, 14: 1750332:
+    *   Kajian Sistematis 126 Kasus Merkuri: Pajanan Uap Elemental, Garam Korosif, dan Kosmetik [193–196]; Manifestasi Klinis Akut Pneumonitis dan Gagal Ginjal; Ambang Intervensi Urin > 50 µg/L dan > 100 µg/L; serta Perbedaan Profil Biomarker Spesiasi (Urin > Darah pada Inorganik vs Darah > Urin pada Metilmerkuri).
+5.  **Caito, S. & Aschner, M.** *Neurotoxicity of metals*:
+    *   Bab 11: Uji Khasiat DMPS pada Penambang Emas Tradisional (Peningkatan Ekskresi 85% dan Perbaikan Tremor/Ataksia); Bahaya Garam Anorganik Korosif dan Bilas Lambung Hati-Hati; serta Patologi Selektif Serebelum dan Korteks Oksipitalis.
+6.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 4 & 14: Sifat Ditiol BAL; Toksisitas Inheren BAL dan Pengembangan Analog DMSA/DMPS; Nefrotoksisitas Garam Divalen Hg²⁺; dan Mekanisme Kelasi Thiol.
+7.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019** *tentang Penyakit Akibat Kerja*:
+    *   Pasal 2 (Hak Manfaat JKK hingga 3 Tahun Pasca-Kerja); Lampiran I.a Butir 7 (Penyakit Akibat Pajanan Raksa dan Persenyawaannya).
+8.  **Peraturan Menteri Kesehatan Republik Indonesia Nomor 11 Tahun 2022** *tentang Pelayanan Kesehatan Penyakit Akibat Kerja*:
+    *   Pasal 5 (Tujuh Langkah Penegakan Diagnosis Okupasi); Tata Laksana Medis dan Okupasi Individu serta Komunitas.
+9.  **IARC (2012 / Monograph Vol. 100C & Vol. 58) & Carey N. Pope (2020):**
+    *   Klasifikasi Karsinogenisitas Merkuri: Logam & Anorganik (Grup 3); Metilmerkuri (Grup 2B); serta Traktat Internasional Konvensi Minamata tentang Merkuri.
+
+Kuasai materi Merkuri Bagian B ini secara menyeluruh, Dokter. Di hadapan dewan penguji, ketepatan membedakan indikasi antidotum dan penentuan kelaikan kerja pekerja akan menjadi pembuktian kelayakan Anda menyandang gelar Spesialis Kedokteran Okupasi.
+
+---
+
+🩺 Apakah Anda ingin kita simulasikan latihan kasus meja hijau: seorang dokter gigi yang mengalami tremor tangan halus progresif dan labilitas emosi dengan hasil U-Hg \\(68\ \mu\text{g/g kreatinin}\\), bagaimana Anda memandu proses **penarikan kerja (*medical removal*)**, merancang **terapi kelasi oral**, dan melakukan **audit higiene klinik dokter gigi** tersebut?

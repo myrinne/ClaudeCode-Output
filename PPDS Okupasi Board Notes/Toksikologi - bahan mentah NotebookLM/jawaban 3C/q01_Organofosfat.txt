@@ -1,0 +1,290 @@
+Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), Anda dituntut untuk menguasai toksikologi industri tidak hanya pada ranah hafalan teoretis molekuler, melainkan hingga aplikasi klinis di unit gawat darurat, penegakan diagnosis Penyakit Akibat Kerja (PAK), penilaian kelaikan kerja (*fitness for duty*), serta perancangan program higiene industri terintegrasi. 
+
+Berikut adalah ulasan komprehensif 14 poin esensial mengenai **Organofosfat (OP)** sebagai satu kelompok dan senyawa spesifiknya (diklorvos, paration, malation, klorpirifos):
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Struktur dan Karakteristik Fisik-Kimia:**
+  * Organofosfat secara umum merupakan senyawa ester sintetik dari asam fosfat atau asam tiofosfat. Rumus umum terdiri atas gugus fosforil (\\(P=O\\)) atau tiofosforil (\\(P=S\\)), dua rantai samping lipofilik (umumnya metoksi atau etoksi), dan satu gugus pergi (*leaving group* / \\(X\\)).
+  * Senyawa ini memiliki **lipofilisitas tinggi**, yang memungkinkannya menembus membran biologis, stratum korneum kulit, serta sawar darah otak (*blood-brain barrier*) dengan sangat cepat.
+  * **Sifat Spesifik:**
+    * **Diklorvos (DDVP):** Merupakan fosfat langsung (\\(P=O\\)); cairan tidak berwarna hingga kuning kecokelatan dengan tekanan uap relatif tinggi (\\(0{,}01\text{--}0{,}03\text{ mmHg}\\)), titik didih \\(140^\circ\text{C}\\) (\\(284^\circ\text{F}\\)), dan mudah menguap.
+    * **Paration (Etil-paration):** Senyawa fosforotioat (\\(P=S\\)); cairan kuning pucat hingga cokelat gelap dengan aroma khas menyerupai bawang putih (*garlic-like odor*), densitas relatif \\(1{,}26\text{--}1{,}36\text{ g/cm}^3\\), kelarutan air sangat rendah (\\(0{,}001\%\text{--}0{,}006\%\\)), dan tekanan uap rendah (\\(0{,}00001\text{ mmHg}\\)).
+    * **Malation:** Senyawa fosforoditioat (\\(P=S\\) dengan gugus karboksil ester); cairan/padatan kekuningan dengan bau belerang/merkaptan.
+    * **Klorpirifos:** Senyawa fosforotioat (\\(P=S\\)) berbentuk kristal padat putih/tak berwarna, larut dalam pelarut organik dan sangat sukar larut dalam air.
+* **Klasifikasi Bahaya (WHO Hazard Classification):**
+  * **Kelas Ia (Sangat Berbahaya / *Extremely Hazardous*):** Paration, Paration-metil.
+  * **Kelas Ib (Sangat Berbahaya / *Highly Hazardous*):** Diklorvos.
+  * **Kelas II (Cukup Berbahaya / *Moderately Hazardous*):** Klorpirifos.
+  * **Kelas III (Sedikit Berbahaya / *Slightly Hazardous*):** Malation.
+* **Klasifikasi Karsinogenisitas (IARC & ACGIH):**
+  * Berdasarkan ACGIH dan Permenaker No. 5 Tahun 2018, sebagian besar insektisida OP diklasifikasikan ke dalam **Kategori A4 (Tidak diklasifikasikan sebagai karsinogen terhadap manusia / *Not classifiable as a human carcinogen*)**, mencakup malation, paration, metil paration, diazinon, dan klorpirifos.
+  * IARC mengklasifikasikan Malation ke dalam **Group 2A (Probable human carcinogen)**, serta Diklorvos dan Paration ke dalam **Group 2B (Possible human carcinogen)**.
+
+---
+
+### 2. Sumber dan Penggunaan
+* **Pertanian dan Perkebunan:** Insektisida berspektrum luas untuk pengendalian hama tanaman pangan, hortikultura, kapas, dan tanaman perkebunan.
+* **Kesehatan Masyarakat dan Pengendalian Vektor:** Fogging/penyemprotan nyamuk vektor malaria dan demam berdarah (*malathion*), serta umpan kecoa/serangga (*chlorpyrifos*).
+* **Veteriner dan Peternakan:** Pengendalian ektoparasit pada hewan ternak, misalnya kegiatan *sheep dipping* menggunakan diazinon.
+* **Kesehatan Perorangan:** Sampo pedikulosida untuk terapi kutu rambut (*malathion*).
+* **Industri Terkait & Senjata Kimia:** Pabrik sintesis/formulasi pestisida dan aplikasi fumigasi gudang (*dichlorvos*). Senyawa gas saraf militer (*sarin, soman, tabun, VX*) memiliki struktur inti organofosfat/organofosfonat yang identik dalam mekanisme inhibisi asetilkolinesterase.
+
+---
+
+### 3. Toksikokinetik
+* **Absorpsi:**
+  * Sangat cepat diserap melalui seluruh rute paparan karena sifat lipofiliknya.
+  * **Dermal:** Merupakan rute masuk okupasional paling dominan pada petani dan formulator; diabsorpsi melalui stratum korneum secara difusi pasif.
+  * **Inhalasi:** Penyerapan aerosol, debu, atau uap bertekanan tinggi (seperti diklorvos) berlangsung sangat cepat melewati membran alveolus.
+  * **Oral / Saluran Cerna:** Penyerapan masif pada kasus tertelan yang tidak disengaja maupun intoksikasi bunuh diri.
+* **Distribusi:**
+  * Terdistribusi luas ke seluruh kompartemen jaringan tubuh dengan volume distribusi besar.
+  * Menembus sawar darah otak (*blood-brain barrier*) dan jaringan lemak tubuh. Beberapa formulasi lipofilik tinggi dapat tersimpan di depo jaringan adiposa dan dilepaskan kembali secara perlahan (*redistribution*).
+* **Metabolisme (Biotransformasi):**
+  * **Bioaktivasi (Desulfurasi Oksidatif):** Senyawa tion (\\(P=S\\), *phosphorothionate/dithionate*) seperti paration, malation, diazinon, dan klorpirifos bersifat biologis inaktif atau hanya menghambat AChE secara lemah (*indirect inhibitors*). Senyawa ini harus mengalami desulfurasi oksidatif di mikrosom hati oleh enzim Sitokrom P450 (terutama CYP3A4, CYP2B6, CYP2C19) menjadi metabolit aktif bentuk okson (\\(P=O\\), misalnya paration menjadi **paraokson**, klorpirifos menjadi **klorpirifos-okson**, malation menjadi **malaokson**). Reaksi ini melepaskan atom sulfur reaktif yang menginaktivasi enzim sitokrom P450 itu sendiri (*suicide substrate*).
+  * Senyawa bentuk fosfat langsung (\\(P=O\\)) seperti **diklorvos** tidak membutuhkan bioaktivasi fase I dan langsung aktif menghambat AChE (*direct inhibitor*).
+  * **Detoksifikasi:**
+    * Hidrolisis ikatan fosfoester oleh fosfotriesterase (*PTEs*) atau *A-esterase*, termasuk enzim **paraoksonase-1 (PON1)** di serum/hati, menghasilkan dialkil fosfat (*DAP*) dan gugus fenol/piridinol.
+    * Malation memiliki jalur detoksifikasi unik yang sangat efisien pada mamalia melalui hidrolisis ester karboksilat oleh karboksilesterase (*CES* / *B-esterase*), memecahnya menjadi metabolit inaktif asam monokarboksilat malation (*MMA*) sebelum mencapai sistem saraf pusat, sehingga toksisitasnya pada manusia jauh lebih rendah dibanding serangga.
+* **Ekskresi:**
+  * Ekskresi berlangsung cepat terutama melalui ginjal ke dalam urin (>80–90% dalam 24–48 jam) berupa metabolit terhidrolisis dan konjugat glukuronida/sulfat.
+
+---
+
+### 4. Toksikodinamik
+* **Mekanisme Primer:**
+  * Bioaktif okson bereaksi dengan situs esteratik pada enzim asetilkolinesterase (AChE), membentuk ikatan kovalen fosforilasi pada residu asam amino **Serin-203** di *catalytic triad*.
+  * Hal ini menghambat hidrolisis fisiologis neurotransmiter asetilkolin (ACh) menjadi asetat dan kolin. Terjadi akumulasi ACh di celah sinaps saraf dan *neuromuscular junction*.
+* **Proses Penuaan Enzim (*Aging*):**
+  * Kompleks terfosforilasi awalnya dapat mengalami reaktivasi spontan (hidrolisis fosfat) secara sangat lambat, atau dipicu oleh agen nukleofilik seperti oksim.
+  * Namun, kompleks tersebut dapat mengalami proses **penuaan (*aging*)**, yaitu reaksi pemutusan ikatan alkil-oksigen secara unimolekuler (\\(S_N1\\)) yang melepaskan satu gugus karbokation alkil, meninggalkan gugus monoalkilfosforil bermuatan negatif terikat kovalen pada Serin-203.
+  * Enzim yang telah mengalami *aging* **mengalami inaktivasi permanen dan tidak dapat direaktivasi oleh obat oksim apapun**; pemulihan fungsi enzimatik murni bergantung pada sintesis enzim baru (*de novo synthesis*).
+  * Laju penuaan bervariasi: rantai alkil bercabang atau senyawa dimetil mengalami *aging* sangat cepat, sedangkan dietil mengalami penuaan lebih lambat.
+* **Dampak Kelebihan Asetilkolin pada 3 Reseptor Utama:**
+  1. **Reseptor Muskarinik:** Terdapat pada organ efektor postganglionik parasimpatis, kelenjar eksokrin, dan otot polos. Menghasilkan sindrom **SLUDGEM / DUMBELS**: salivasi, lakrimasi, urinasi berlebih, diare, hipersekresi bronkus (*bronchorrhea*), bronkospasme, bradikardia, miosis pin-point, dan kram gastrointestinal.
+  2. **Reseptor Nikotinik:** Terdapat pada ganglion otonom (simpatis dan parasimpatis) serta *motor endplate* taut neuromuskular (*neuromuscular junction*). Stimulasi berlebih menyebabkan fasikulasi otot, kedutan (*twitching*), kram, disusul kelemahan otot dan paralisis flaksid (blok depolarisasi mirip suksinilkolin), takikardia, serta hipertensi.
+  3. **Sistem Saraf Pusat (SSP):** Reseptor muskarinik dan nikotinik sentral menyebabkan agitasi, kebingungan, ataksia, depresi pusat pernapasan di medula oblongata, penurunan kesadaran/koma, dan kejang hebat melalui aktivasi reseptor glutamatergik NMDA serta inhibisi GABA.
+* **Mekanisme Non-Kolinergik Tambahan:**
+  * Induksi stres oksidatif sistemik, peroksidasi lipid, penipisan glutation, disfungsi mitokondria, dan inhibisi enzim *neuropathy target esterase* (NTE).
+
+---
+
+### 5. Biomonitoring
+* **Biomarker Efek (Aktivitas Kolinesterase Darah):**
+  * **Kolinesterase Eritrosit (RBC AChE):**
+    * Merupakan enzim sejati (*true cholinesterase*) yang identik dengan enzim pada sinaps saraf.
+    * Lebih spesifik dan berkorelasi langsung dengan tingkat keparahan toksisitas neurologis sistemik serta paparan kronis kumulatif.
+    * Kecepatan regenerasinya lambat karena mengikuti laju eritropoiesis eritrosit baru dari sumsum tulang.
+  * **Kolinesterase Plasma / Serum (Pseudokolinesterase / Butirilkolinesterase / BuChE):**
+    * Diproduksi oleh organ hati; memiliki spesifisitas substrat lebih luas.
+    * Cenderung terhambat lebih awal dan lebih dalam pada beberapa jenis OP (misalnya klorpirifos, malation).
+    * Namun, BuChE kurang spesifik karena kadarnya mudah dipengaruhi oleh penyakit hati, malnutrisi, kehamilan, infeksi, obat-obatan, dan variasi genetik.
+  * **Kebutuhan Baseline Individu:**
+    * Variasi antar-individu pada populasi normal mencapai 15–25% untuk BuChE dan 10–15% untuk RBC AChE.
+    * Oleh karena itu, perbandingan dengan "rentang normal populasi" tidak sensitif. Diperlukan pemeriksaan **baseline individu sebelum terpajan** (idealnya rata-rata 2 kali pemeriksaan pra-musim). Penurunan aktivitas ≥ 15–20% dari baseline individu baru dapat dipastikan sebagai tanda penyerapan pestisida bermakna.
+* **Biomarker Pajanan (Metabolit Urin):**
+  * **Alkil Fosfat / Dialkylphosphate (DAP):**
+    * Biomarker non-spesifik yang mampu mendeteksi paparan terhadap sekitar 85% jenis insektisida OP dalam satu kali pemeriksaan.
+    * Terdiri atas 6 metabolit utama:
+      * Golongan Dimetoksi: *DMP (dimethylphosphate), DMTP (dimethylthiophosphate), DMDTP (dimethyldithiophosphate)* dari OP dimetil (misal diklorvos, malation).
+      * Golongan Dietoksi: *DEP (diethylphosphate), DETP (diethylthiophosphate), DEDTP (diethyldithiophosphate)* dari OP dietil (misal paration, klorpirifos, diazinon).
+    * *Nilai Rujukan:* Pada populasi umum tanpa paparan okupasional, persentil ke-95 total DAP urin tidak melebihi **72 µmol/mol kreatinin**. Pada populasi pekerja terpapar okupasional, batas persentil ke-95 berada pada kisaran **122 µmol/mol kreatinin**.
+  * **Metabolit Spesifik:**
+    * *para-Nitrofenol (PNP):* Spesifik untuk paration dan paration-metil.
+    * *3,5,6-Trichloro-2-pyridinol (TCPy):* Spesifik untuk pemantauan pajanan klorpirifos.
+    * *Malathion monocarboxylic acid (MMA):* Spesifik untuk pemantauan malation.
+* **Waktu Sampling:** Akhir shift kerja pada akhir pekan kerja (*end of shift at end of workweek*) untuk biomarker paparan urin, atau kapan saja bila memantau AChE eritrosit.
+
+---
+
+### 6. Waktu Paruh (*Half-Life*) dan Kecepatan Regenerasi Kolinesterase
+* **Waktu Paruh Senyawa dalam Tubuh (\\(t_{1/2}\\) Eliminasi):**
+  * Sebagian besar OP dalam darah dieliminasi relatif cepat dengan \\(t_{1/2}\\) beberapa jam hingga 1–2 hari. Namun, senyawa yang sangat lipofilik dapat terakumulasi di jaringan lemak tubuh dan memperpanjang masa detoksifikasi.
+* **Kinetika Penuaan (*Aging Half-Life*):**
+  * **OP Dimetil (misal Diklorvos, Malation):** Laju penuaan cepat, dengan \\(t_{1/2}\\) *aging* sekitar **3,7 jam**. Regenerasi spontan juga berjalan cepat dalam beberapa jam.
+  * **OP Dietil (misal Paration, Klorpirifos):** Laju penuaan lebih lambat, dengan \\(t_{1/2}\\) *aging* mencapai **41 jam** (konstanta \\(k_4 = 2{,}8 \times 10^{-4}\text{ min}^{-1}\\)), serta \\(t_{1/2}\\) regenerasi spontan mencapai **58 jam**.
+  * Sebagai pembanding ekstrem, gas saraf soman memiliki \\(t_{1/2}\\) *aging* hanya **2–5 menit**, dan DFP memiliki \\(t_{1/2}\\) penuaan sekitar **4,6 jam**.
+* **Kecepatan Regenerasi Enzim Alami (*Spontaneous De Novo Resynthesis*):**
+  * Jika enzim telah terinhibisi permanen (*aged*), pemulihan semata-mata mengandalkan biosintesis molekul enzim baru.
+  * **AChE Eritrosit:** Bergantung pada pergantian eritrosit dari sumsum tulang, dengan laju regenerasi sekitar **0,8% hingga 1,2% (rata-rata ~1%) per hari**. Diperlukan waktu sekitar **60 hingga 120 hari** untuk pemulihan aktivitas AChE eritrosit secara sempurna mendekati nilai baseline.
+  * **BuChE Plasma:** Disintesis kembali oleh hepatosit di hati dengan kecepatan regenerasi sekitar **1% hingga 2% per hari**, membutuhkan waktu pemulihan penuh sekitar **30 hingga 50 hari**.
+
+---
+
+### 7. Efek Akut
+* **Krisis Kolinergik Akut (Onset Menit hingga 24–48 Jam):**
+  * Tanda muskarinik awal: mual, muntah, kram abdomen, diare, hipersalivasi, miosis, inkontinensia urin, penglihatan kabur, dan bradikardia.
+  * Ancaman jiwa utama (*killer B’s*): kombinasi masif **Bronchorrhea, Bronchospasm, dan Bradycardia** yang memicu hipoksia dan gagal napas akut.
+  * Tanda nikotinik: fasikulasi otot halus hingga kasar, kram otot, takikardia kompensatoir, dan paralisis otot pernapasan (otot interkostal dan diafragma).
+  * Tanda sentral: konvulsi/kejang berulang, depresi pusat napas, stupor, dan koma.
+* **Sindrom Intermediate / *Intermediate Syndrome* (IMS):**
+  * Dipublikasikan pertama kali oleh Senanayake dan Karalliedde (1987).
+  * **Onset Karakteristik:** Muncul secara tersembunyi antara **24 hingga 96 jam (1–4 hari)** setelah pajanan akut, yaitu setelah krisis kolinergik awal teratasi dan sebelum timbulnya OPIDN.
+  * **Gejala Klinis:** Kelemahan motorik yang mencolok pada otot-otot proksimal ekstremitas, otot fleksor leher (*neck flexors*), saraf kranial motorik (ptosis, oftalmoplegia, kelemahan wajah, kelumpuhan bulbar), serta paralisis otot pernapasan yang memicu gagal napas akut secara mendadak.
+  * **Karakteristik Diagnostik:** Fungsi sensorik dan status mental tetap intak; refleks fisiologis tendon dapat menurun; tanda muskarinik tidak muncul.
+  * **Temuan Elektrofisiologis:** Pada stimulasi saraf repetitif (3–10 Hz) ditemukan fenomena **pure decrementing response** (penurunan progresif amplitudo potensial aksi otot/CMAP), yang mencerminkan desensitisasi reseptor asetilkolin nikotinik di *motor endplate*.
+  * Sindrom ini **tidak berespons terhadap atropin** dan respons terhadap reaktivator oksim sangat minimal/inkonsisten; tatalaksana mutlak memerlukan bantuan ventilasi mekanik (intubasi dan ventilator) selama 5–15 hari hingga pulih sempurna.
+* **Kriteria Penegakan Diagnosis Keracunan Akut:**
+  1. Riwayat kontak/pajanan jelas terhadap organofosfat (pekerjaan/penyemprotan/insiden tumpahan).
+  2. Manifestasi klinis khas sindrom toksik kolinergik (muskarinik dan nikotinik).
+  3. Konfirmasi penurunan aktivitas kolinesterase darah (AChE RBC atau BuChE plasma) di bawah rentang normal/baseline.
+  4. Perbaikan klinis sekresi paru setelah pemberian *atropine trial/challenge*.
+
+---
+
+### 8. Efek Kronis
+* **Organophosphate-Induced Delayed Neuropathy (OPIDN / OPIDP):**
+  * **Onset:** Berkembang **1 hingga 3 minggu (7–21 hari, hingga 24 hari)** setelah paparan akut terhadap organofosfat jenis neuropatik tertentu (misalnya triortokresil fosfat/TOCP, mipafox, triklorfon, leptofos, klorpirifos dosis masif).
+  * **Patogenesis:** Tidak berhubungan dengan inhibisi AChE, melainkan akibat inhibisi dan *aging* ≥ 70–80% pada enzim **Neuropathy Target Esterase (NTE)** di sitosol saraf tepi dan medula spinalis. NTE adalah protein membran 147-kDa dengan aktivitas fosfolipase. Penuaan fosforilasi NTE mengganggu homeostasis fosfolipid membran akson dan transpor aksonal.
+  * **Patologi:** Terjadi degenerasi aksonal tipe *dying-back* (degenerasi wallerian) pada serat saraf berdiameter besar dan panjang di sistem saraf tepi serta traktus asenden/desenden medula spinalis.
+  * **Manifestasi Klinis:** Dimulai dengan parestesia bilateral distal pada kaki menyerupai pola *stocking-and-glove*, nyeri tumpul betis, disusul kelemahan motorik ekstremitas bawah yang progresif, *foot drop*, gangguan gaya berjalan (*ataxic gait*), hingga paralisis flaksid ekstremitas bawah. Bila mengenai traktus kortikospinalis sentral, pada fase lanjut dapat bertransformasi menjadi paraplegia spastik dengan refleks hiperaktif yang menetap permanen. Model hewan uji baku untuk OPIDN adalah ayam betina dewasa (*mature hen*).
+* **Gangguan Neuropsikiatri dan Neurobehavioral Kronis (COPIND):**
+  * Paparan okupasional tingkat rendah berulang dalam jangka panjang (atau efek sisa dari intoksikasi akut berat) dapat menimbulkan *Chronic Organophosphate-Induced Neuropsychiatric Disorder*.
+  * Ditandai dengan defisit atensi visual berkelanjutan, penurunan memori jangka pendek, labilitas emosional, depresi, cemas, *fatigue*, serta penurunan ambang sensitivitas getar (*vibrotactile threshold impairment*) pada ekstremitas. Studi epidemiologi juga menunjukkan peningkatan risiko gangguan ekstrapiramidal/sindrom parkinsonisme pada pekerja perkebunan terpapar pestisida kronis.
+
+---
+
+### 9. Batas Pajanan di Udara Tempat Kerja (OELs)
+Berdasarkan Lampiran 1 Standar Faktor Kimia **Permenaker No. 5 Tahun 2018**, rekomendasi **ACGIH TLV (2018–2024)**, **NIOSH REL**, dan **OSHA PEL**:
+
+| Senyawa Organofosfat | Permenaker No. 5/2018 (NAB) | ACGIH TLV-TWA | NIOSH REL (TWA) | OSHA PEL (TWA) | Notasi Khusus |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Diklorvos (DDVP)** | \\(0{,}1\text{ mg/m}^3\\) (IFV) | \\(0{,}1\text{ mg/m}^3\\) (IFV) | \\(1\text{ mg/m}^3\\) | \\(1\text{ mg/m}^3\\) | Kulit (*Skin*), IDLH \\(100\text{ mg/m}^3\\) |
+| **Paration (Etil)** | \\(0{,}05\text{ mg/m}^3\\) (IFV) | \\(0{,}05\text{ mg/m}^3\\) (IFV) | \\(0{,}05\text{ mg/m}^3\\) | \\(0{,}1\text{ mg/m}^3\\) | Kulit (*Skin*), A4, BEI, IDLH \\(10\text{ mg/m}^3\\) |
+| **Metil Paration** | \\(0{,}02\text{ mg/m}^3\\) (IFV) | \\(0{,}02\text{ mg/m}^3\\) (IFV) | \\(0{,}2\text{ mg/m}^3\\) | — | Kulit (*Skin*), A4, BEI |
+| **Malation** | \\(1\text{ mg/m}^3\\) (IFV) | \\(1\text{ mg/m}^3\\) (IFV) | \\(10\text{ mg/m}^3\\) | \\(15\text{ mg/m}^3\\) | Kulit (*Skin*), A4, BEI |
+| **Klorpirifos** | \\(0{,}1\text{ mg/m}^3\\) (IFV) | \\(0{,}1\text{ mg/m}^3\\) (IFV) | \\(0{,}2\text{ mg/m}^3\\) (ST \\(0{,}6\\)) | — | Kulit (*Skin*), A4, BEI |
+| **Diazinon** | \\(0{,}01\text{ mg/m}^3\\) (IFV) | \\(0{,}01\text{ mg/m}^3\\) (IFV) | \\(0{,}1\text{ mg/m}^3\\) | — | Kulit (*Skin*), A4, BEI |
+
+*(Catatan: Notasi **IFV** = Inhalable Fraction and Vapor; **Kulit** menandakan kontribusi penyerapan dermal yang signifikan terhadap toksisitas sistemik).*
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI) dan Ambang Batas Penurunan Kolinesterase
+Mengacu pada **Permenaker No. 5 Tahun 2018 (Lampiran 4 tentang Indeks Pajanan Biologi)** dan standar **ACGIH BEI**:
+
+* **Regulasi Nasional (Permenaker 5/2018):**
+  * **Bahan Kimia:** *Acetylcholine Esterase Inhibiting Pesticides* (Pestisida Penghambat Asetilkolinesterase).
+  * **Determinan Biologis:** Aktivitas Asetilkolinesterase dalam eritrosit (*Acetylcholinesterase in red blood cells*).
+  * **Matriks Biologis:** Darah.
+  * **Waktu Pengambilan Sampel:** Dapat dilakukan kapan saja (*discretionary*).
+  * **Nilai IPB:** **70% dari baseline individu** (artinya penurunan maksimal yang masih ditoleransi adalah 30% dari kapasitas baseline pekerja; nilai aktivitas di bawah 70% baseline mengindikasikan paparan berlebih).
+* **Standar ACGIH BEI:**
+  * **Aktivitas Kolinesterase Eritrosit:** **70% dari baseline individu** (sampel diambil kapan saja).
+  * **Butirilkolinesterase (BuChE) Plasma:** Direkomendasikan batas ambang penurunan tidak melampaui **60% dari baseline individu**.
+  * **Metabolit Spesifik Paration:** Kadar *p-nitrofenol* urin = **\\(0{,}5\text{ mg/g kreatinin}\\)** pada akhir shift kerja.
+
+---
+
+### 11. Tatalaksana Medis Gawat Darurat (Intoksikasi Akut)
+1. **Resusitasi dan Oksigenasi:**
+   * Amankan patensi jalan napas (*airway*) dan berikan suplementasi oksigen segera guna mempertahankan \\(PaO_2 > 75\text{ mmHg}\\) (\\(10\text{ kPa}\\)). Koreksi hipoksia sangat vital sebelum pemberian atropin untuk meminimalkan risiko aritmia ventrikel refrakter (*torsades de pointes* / VF) akibat stimulasi simpatis/miokardium.
+2. **Dekontaminasi Agresif:**
+   * **Okupasional/Dermal:** Lepaskan seluruh pakaian kerja yang terkontaminasi sesegera mungkin; masukkan ke kantong tertutup ganda. Cuci seluruh permukaan tubuh, lipatan kulit, dan rambut menggunakan air mengalir dan sabun alkalin berulang kali. Tenaga medis wajib memakai APD lengkap (sarung tangan nitril/butil, gaun pelindung) untuk menghindari intoksikasi sekunder.
+   * **Gastrointestinal:** Bila tertelan dalam waktu < 1–2 jam dan jalan napas paten, lakukan bilas lambung (*gastric lavage*) berhati-hati, dilanjutkan arang aktif (*activated charcoal*) dosis tunggal \\(1\text{ g/kgBB}\\) (maksimal \\(50\text{ g}\\)).
+3. **Atropin (Antagonis Kompetitif Muskarinik):**
+   * Bekerja menghambat reseptor muskarinik perifer dan sentral. Tidak berefek pada reseptor nikotinik otot rangka.
+   * **Dosis Awal:** Berikan **1 hingga 2 mg IV bolus** pada orang dewasa (\\(0{,}02\text{--}0{,}05\text{ mg/kgBB}\\) pada anak).
+   * **Protokol Titrasi Cepat:** Bila respons klinis belum adekuat dalam waktu **5 menit**, dosis digandakan secara berulang (**2 mg \\(\rightarrow\\) 4 mg \\(\rightarrow\\) 8 mg \\(\rightarrow\\) 16 mg**, dan seterusnya).
+   * **Titik Akhir Atropinisasi (*Endpoints of Atropinization*):**
+     1. Suara napas bersih dari ronkhi basah kasar, hilangnya sekresi bronkus (*dry lungs / clearing of bronchorrhea*).
+     2. Frekuensi denyut jantung \\(> 80\text{ kali/menit}\\).
+     3. Tekanan darah sistolik terangkat \\(> 80\text{ mmHg}\\).
+     4. Ketiak dan kulit mengering; pupil tidak lagi miosis (tidak perlu menunggu midriasis lebar).
+   * **Dosis Rumatan:** Segera setelah stabil, pasang infus kontinu atropin dengan kecepatan **10% hingga 20% dari total dosis bolus yang dibutuhkan untuk mencapai atropinisasi per jam**.
+4. **Oksim (Reaktivator Asetilkolinesterase):**
+   * Reaktivator nukleofilik menyerang ikatan kovalen fosfoseril untuk melepaskan enzim AChE bebas sebelum terjadi *aging*. Khususnya ditujukan mengatasi kelumpuhan otot nikotinik.
+   * **Pralidoksim Klorida (2-PAM) - Rekomendasi WHO:** Dosis muat (*loading dose*) **\\(30\text{ mg/kgBB}\\) IV** diberikan perlahan dalam 30 menit, dilanjutkan dengan infus kontinu **\\(8\text{--}10\text{ mg/kgBB/jam}\\)**. Terapi dilanjutkan hingga pasien terbebas dari kebutuhan atropin dan menunjukkan perbaikan klinis stabil minimal 24–48 jam.
+   * **Obidoksim:** Bolus awal **\\(250\text{ mg}\\) IV** (atau \\(4\text{ mg/kgBB}\\)), dilanjutkan infus kontinu **\\(30\text{ mg/jam}\\)** (atau \\(750\text{ mg/hari}\\)).
+5. **Antikonvulsan (Benzodiazepin):**
+   * **Diazepam:** Berikan **\\(5\text{--}10\text{ mg}\\) IV bolus**, diulang setiap 5–10 menit bila kejang, tremor hebat, atau agitasi belum terkontrol. Diazepam menekan pelepasan neurotransmiter sentral, mencegah kerusakan otak ireversibel akibat bangkitan epileptogenik kolinergik, dan mengurangi depresi pernapasan sentral.
+6. **Intubasi dan Manufaktur Jalan Napas:**
+   * Diindikasikan bila terjadi hipoventilasi, kelelahan otot pernapasan, penurunan kesadaran (GCS < 8), atau sekresi paru refrakter.
+   * **KONTRAINDIKASI MUTLAK:** Jangan menggunakan agen relaksan otot **Suksinilkolin (*Suxamethonium*)**. Suksinilkolin dihidrolisis oleh pseudokolinesterase darah; pada intoksikasi OP, pseudokolinesterase terinhibisi total sehingga suksinilkolin menyebabkan blok neuromuskular persisten dan henti napas berkepanjangan (*prolonged apnea*) berjam-jam. Gunakan pelumpuh otot non-depolarisasi (misalnya rokuronium/vekuronium) dengan pemantauan ketat.
+
+---
+
+### 12. Tatalaksana Okupasi, Kelaikan Kerja, dan Surveilans Komunitas
+* **Kriteria Pemindahan Sementara dari Pajanan (*Temporary Removal / Stand-Down Criteria*):**
+  Mengacu pada protokol medis okupasional (WHO & Kamanyire/Karalliedde):
+  * **Penurunan Aktivitas AChE RBC < 30% dari Baseline Individu:** Efek reversibel ringan; lakukan pengawasan medis rutin, evaluasi higiene kerja, dan pastikan kepatuhan APD.
+  * **Penurunan Aktivitas AChE RBC 30% – 60% dari Baseline Individu (atau penurunan BuChE Plasma > 40–50%):** Pekerja **WAJIB SEGERA DIPINDAHKAN DARI AREA TERPAJAN PESTISIDA** (*medical removal*). Lakukan investigasi cara kerja, perbaikan ventilasi/isolasi, dan investigasi insiden.
+  * **Penurunan Aktivitas AChE RBC > 60% dari Baseline Individu:** Tanda intoksikasi berat/masif; evakuasi segera, evaluasi klinis rawat inap komprehensif, dan larangan kerja mutlak hingga pulih sempurna.
+* **Kelaikan Kerja Kembali (*Return to Work / Fit to Work*):**
+  * Pekerja hanya diizinkan kembali menangani pestisida (*return to duty*) apabila:
+    1. Seluruh gejala klinis intoksikasi akut telah pulih sempurna.
+    2. Aktivitas AChE eritrosit telah teregenerasi kembali hingga **minimal ≥ 80% dari nilai baseline pra-musim pekerja tersebut**.
+* **Program Surveilans Kesehatan Kerja:**
+  * *Pemeriksaan Pra-Kerja:* Wajib mengukur kadar kolinesterase dasar (minimal 2 kali pengukuran terpisah beberapa hari dalam kondisi tidak terpapar pestisida untuk menetapkan nilai acuan *baseline*).
+  * *Pemeriksaan Berkala:* Pemeriksaan rutin aktivitas kolinesterase (RBC AChE) dan/atau metabolit urin (DAP) setiap 1–3 bulan selama musim kerja intensif.
+  * *Pemeriksaan Khusus:* Dilakukan segera jika terjadi tumpahan cairan konsentrat ke tubuh pekerja, APD robek, atau timbul keluhan sakit kepala, pandangan kabur, atau mual.
+* **Hirarki Pengendalian Bahaya (*Hierarchy of Controls*):**
+  * *Eliminasi/Substitusi:* Mengganti OP kategori WHO Kelas Ia/Ib dengan biopestisida atau insektisida dengan rasio toksisitas mamalia yang lebih aman (misal piretroid atau bahan sintetis modern).
+  * *Rekayasa Teknik:* Sistem pencampuran tertutup (*closed mixing and loading systems*), traktor penyemprot dengan kabin bertekanan positif dan filtrasi udara karbon aktif, serta ventilasi pembuangan lokal (*local exhaust ventilation*) di area pencampuran/formulasi.
+  * *Pengendalian Administratif:* Pembatasan durasi rotasi penyemprotan (maksimal 4 jam/hari kerja), pelatihan sertifikasi aplikator pestisida berlisensi, penyediaan fasilitas dekontaminasi darurat (*emergency shower and eyewash station*), larangan merokok/makan di area kerja, dan pencucian pakaian kerja terpusat oleh perusahaan.
+  * *Alat Pelindung Diri (APD):* Penggunaan respirator kombinasi uap organik dan filter partikulat efisiensi tinggi (misal *half-face mask with OV/P100 filter* atau PAPR), sarung tangan pelindung kimia berbahan **nitril atau butil tebal** (hindari bahan lateks/katun tipis), kacamata pelindung (*chemical splash goggles* / *face shield*), serta *coverall* pelindung kimia dan sepatu bot karet tahan penetrasi.
+
+---
+
+### 13. Aspek Regulasi, Legalitas Indonesia, dan Diagnosis PAK
+* **Penetapan Diagnosis PAK (Permenkes No. 11 Tahun 2022):**
+  * Penegakan diagnosis Penyakit Akibat Kerja wajib dilaksanakan oleh dokter kompeten/Sp.Ok melalui pendekatan sistematis **7 Langkah Diagnosis PAK**:
+    1. Penentuan diagnosis klinis (misal intoksikasi organofosfat akut, IMS, atau polineuropati OPIDN).
+    2. Penentuan pajanan yang dialami pekerja di lingkungan kerja (identifikasi bahan aktif OP, formulasi, MSDS/LDKB).
+    3. Penentuan hubungan sebab-akibat antara pajanan dan diagnosis klinis berbasis bukti ilmiah kedokteran okupasi.
+    4. Penentuan besarnya pajanan (analisis higiene industri, konsentrasi lingkungan dibanding NAB, durasi, dan frekuensi pajanan).
+    5. Penentuan faktor risiko perorangan yang berperan (genetik polimorfisme PON1, status nutrisi, pemakaian obat penghambat ChE lain, higiene perorangan).
+    6. Penentuan pajanan di luar tempat kerja (penggunaan pestisida rumah tangga, pekerjaan sampingan bertani).
+    7. Penentuan diagnosis akhir PAK (apakah murni PAK, diperberat oleh pekerjaan, atau bukan PAK).
+* **Pengakuan Hukum Berdasarkan Perpres No. 7 Tahun 2019:**
+  * Diakui secara eksplisit dalam Lampiran Perpres 7/2019:
+    * **Bagian I.a.35:** *"Penyakit yang disebabkan oleh pestisida"*.
+    * **Bagian I.a.3:** *"Penyakit yang disebabkan oleh fosfor atau persenyawaannya"*.
+  * **Klausul Masa Kedaluwarsa Klaim JKK (Pasal 2 Ayat 2):** Hak atas manfaat Jaminan Kecelakaan Kerja (JKK) akibat Penyakit Akibat Kerja tetap dapat diajukan meskipun hubungan kerja telah berakhir, dengan batasan timbulnya penyakit **paling lama 3 (tiga) tahun terhitung sejak hubungan kerja berakhir**.
+* **Regulasi Terkait di Indonesia:**
+  * **Permenaker No. 5 Tahun 2018:** Mengatur Nilai Ambang Batas (NAB) kimia dan Indeks Pajanan Biologi (IPB) di tempat kerja.
+  * **PP No. 28 Tahun 2024 & PP No. 88 Tahun 2019:** Landasan implementasi kesehatan kerja nasional, surveilans faktor risiko, dan penanganan kondisi darurat bahan beracun berbahaya (B3).
+
+---
+
+### 14. Clinical Pearls dan Jebakan Ujian Board Sp.Ok
+1. **Jebakan Suksinilkolin pada Intubasi:**
+   * Menjawab penggunaan *succinylcholine* untuk intubasi pada keracunan OP di ruang ujian adalah **kesalahan fatal**. Suksinilkolin memerlukan enzim pseudokolinesterase untuk pemecahannya. Karena enzim ini diinhibisi secara total oleh OP, suksinilkolin akan memicu paralisis flaksid menetap (*prolonged apnea*) berjam-jam. Selalu pilih relaksan otot non-depolarisasi (misal rokuronium) bila intubasi membutuhkan blokade neuromuskular.
+2. **Jebakan Target Terapi Atropinisasi:**
+   * Jangan pernah menyebutkan "midriasis pupil maksimal" atau "takikardia ekstrem" sebagai target keberhasilan terapi atropin.
+   * Reseptor pada pupil dapat terdesensitisasi lambat atau dipengaruhi eksitasi simpatis nikotinik, sehingga ukuran pupil adalah indikator klinis yang tidak reliabel.
+   * **Target sejati atropinisasi adalah pengeringan sekret jalan napas (*clearing of pulmonary secretions/bronchorrhea*)**, perbaikan bronkospasme, serta denyut nadi \\(> 80\text{ bpm}\\) dan TDS \\(> 80\text{ mmHg}\\). Memberikan atropin hingga pupil midriasis lebar akan menyebabkan intoksikasi iatrogenik atropin (*central anticholinergic toxicity / delirium*).
+3. **Jebakan Sindrom Intermediate vs OPIDN:**
+   * Penguji sering mengecoh dengan menanyakan paralisis otot motorik pada hari ke-3 pasca pajanan.
+   * **Hari ke 1–4 (24–96 jam):** *Intermediate Syndrome (IMS)*, menyerang otot proksimal, fleksor leher, saraf kranial, dan pernapasan; sensorik normal; akibat desensitisasi reseptor nikotinik.
+   * **Minggu ke 1–3 (7–21 hari):** *OPIDN*, polineuropati perifer bilateral pola sensorimotor distal (*glove-and-stocking*); akibat penuaan inhibisi NTE.
+4. **Jebakan Perbedaan OP Dimetil vs Dietil:**
+   * Insektisida dimetil (diklorvos, malation) mengalami *aging* sangat cepat (\\(t_{1/2}\sim 3{,}7\text{ jam}\\)), sehingga jendela terapi reaktivasi oksim sangat sempit. Sebaliknya, insektisida dietil (paration, klorpirifos) mengalami *aging* jauh lebih lambat (\\(t_{1/2}\sim 41\text{ jam}\\)), sehingga pemberian oksim masih sangat bermanfaat bahkan pada 24–48 jam pertama pasca pajanan berat.
+5. **Jebakan Oksim pada Keracunan Karbamat murni:**
+   * Karbamat menginhibisi AChE secara reversibel (terjadi dekarbamilasi spontan dalam 30–40 menit) dan **tidak pernah mengalami aging**.
+   * Pemberian oksim pada keracunan karbamat umumnya tidak diindikasikan karena enzim dapat pulih sendiri, dan pada karbamat tertentu (*carbaryl*), oksim dilaporkan dapat memperburuk inhibisi. Namun, bila terjadi keracunan campuran yang tidak diketahui pasti antara OP dan karbamat, oksim tetap diberikan secara empiris.
+6. **Jebakan Nilai Normal Rujukan Kolinesterase:**
+   * Menilai hasil laboratorium kolinesterase pekerja tanpa membandingkannya dengan **baseline individu pekerja itu sendiri** adalah kelalaian metodologis dalam kedokteran okupasi. Karena rentang variasi normal populasi mencapai 25%, pekerja yang mengalami penurunan aktivitas AChE hingga 30% dari baseline pribadinya bisa saja masih berada di dalam "rentang normal populasi".
+
+---
+
+### Tabel Ringkas 14 Poin Evaluasi Organofosfat untuk Board Sp.Ok
+
+| No | Parameter Okupasi | Nilai Spesifik / Ringkasan Inti Berbasis Bukti Ilmiah |
+| :---: | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Ester fosfat/tiofosfat lipofilik tinggi. WHO: Paration (Ia), Diklorvos (Ib), Klorpirifos (II), Malation (III). IARC: Malation (2A), Diklorvos (2B), Paration (2B). ACGIH/Permenaker: Kategori A4. |
+| **2** | **Sumber / Penggunaan** | Insektisida pertanian luas, pembasmi kutu (*malathion*), umpan kecoa (*chlorpyrifos*), fumigasi (*dichlorvos*), *sheep dipping*, dan agen perang saraf (*sarin, VX*). |
+| **3** | **Toksikokinetik** | Absorpsi cepat via dermal (rute utama okupasi), inhalasi, oral. Bioaktivasi fase I oleh CYP450 (CYP3A4/2B6): desulfurasi \\(P=S \rightarrow P=O\\) (paration \\(\rightarrow\\) paraokson). Diklorvos langsung aktif (\\(P=O\\)). Detoksifikasi oleh PON1 dan karboksilesterase mamalia. Urin \\(>80\text{--}90\%\\) dlm 24–48 jam. |
+| **4** | **Toksikodinamik** | Fosforilasi kovalen Serin-203 AChE. Akumulasi ACh. Penuaan (*aging*) = pemutusan gugus alkil menyebabkan inaktivasi permanen. Triad reseptor: Muskarinik (SLUDGEM/bronkorhea), Nikotinik (fasikulasi/paralisis), SSP (kejang/koma). |
+| **5** | **Biomonitoring** | **RBC AChE:** Mencerminkan sinaps saraf, spesifik paparan kronis. **Plasma BuChE:** Menurun cepat, kurang spesifik. Baseline mutlak diukur. **Urin:** Total DAP (persentil 95 normal \\(\le 72\text{ µmol/mol kreatinin}\\); terpapar \\(\sim 122\text{ µmol/mol kreatinin}\\)); PNP urin spesifik paration. |
+| **6** | **Waktu Paruh & Regenerasi** | \\(t_{1/2}\\) *aging*: Dimetil \\(\sim 3{,}7\text{ jam}\\); Dietil \\(\sim 41\text{ jam}\\) (\\(t_{1/2}\\) reaktivasi spontan dietil \\(\sim 58\text{ jam}\\)). Regenerasi *de novo*: RBC AChE \\(\sim 1\%\text{ per hari}\\) (pulih penuh 60–120 hari); BuChE plasma \\(\sim 1\text{--}2\%\text{ per hari}\\) (pulih 30–50 hari). |
+| **7** | **Efek Akut** | **Krisis Akut (0–48 jam):** *Killer B's* (Bronkorhea, Bronkospasme, Bradikardia) + fasikulasi/kejang. **IMS (24–96 jam):** Kelumpuhan proksimal, leher, kranial, dan henti napas mendadak; EMG *pure decrementing response*; atropin tidak mempan, butuh ventilator. |
+| **8** | **Efek Kronis** | **OPIDN (1–3 minggu pasca pajanan):** Polineuropati perifer bilateral distal (*foot drop*), akibat inhibisi & *aging* enzim NTE \\(>70\text{--}80\%\\) (degenerasi *dying-back*). **COPIND:** Defisit neurobehavioral, atensi visual, memori, dan sindrom parkinsonisme. |
+| **9** | **Batas Pajanan (Permenaker 5/2018)** | Diklorvos: \\(0{,}1\text{ mg/m}^3\\) (IFV, Kulit); Paration: \\(0{,}05\text{ mg/m}^3\\) (IFV, Kulit); Malation: \\(1\text{ mg/m}^3\\) (IFV, Kulit); Klorpirifos: \\(0{,}1\text{ mg/m}^3\\) (IFV, Kulit). |
+| **10** | **BEI / IPB & Ambang Kolinesterase** | Permenaker 5/2018 (IPB) & ACGIH BEI: **Aktivitas AChE Eritrosit \\(\mathbf{\ge 70\%}\\) dari baseline individu** (penurunan maksimal ditoleransi \\(30\%\\)). PNP urin paration \\(= 0{,}5\text{ mg/g kreatinin}\\). |
+| **11** | **Tatalaksana Akut** | Oksigenasi lebih dahulu. Dekontaminasi kulit (air sabun) & bilas lambung/arang aktif. **Atropin:** \\(1\text{--}2\text{ mg}\\) IV, digandakan tiap 5 menit hingga paru kering. **Pralidoksim (2-PAM):** Bolus \\(30\text{ mg/kgBB}\\) lanjut \\(8\text{--}10\text{ mg/kgBB/jam}\\) infus. **Diazepam:** \\(5\text{--}10\text{ mg}\\) IV. **Hindari Suksinilkolin**. |
+| **12** | **Tatalaksana Individu & Komunitas** | Pindah kerja sementara bila RBC AChE turun \\(>30\%\\) dari baseline. Boleh kembali terpajan (*fit*) bila AChE pulih \\(\ge 80\%\\) baseline. Skrining pra-kerja (2x baseline), berkala tiap 1–3 bulan. Pengendalian teknis *closed system*, ventilasi, APD respirator OV/P100 & sarung tangan nitril. |
+| **13** | **Regulasi & Aspek Legal** | Penegakan diagnosis via 7 Langkah Diagnosis PAK (Permenkes 11/2022). Diakui dalam Perpres 7/2019 Lampiran I.a.35 ("Penyakit akibat pestisida") & I.a.3 ("Fosfor"). Hak klaim JKK berlaku hingga maksimal 3 tahun setelah hubungan kerja berakhir (Pasal 2 Ayat 2). |
+| **14** | **Clinical Pearl & Jebakan Ujian** | 1. Suksinilkolin memicu henti napas berkepanjangan. 2. Target atropinisasi adalah paru kering, bukan pupil midriasis. 3. IMS terjadi hari 1–4, OPIDN minggu 1–3. 4. OP dimetil menua lebih cepat dari dietil. 5. Evaluasi kolinesterase wajib mengacu baseline individu, bukan rerata laboratorium. |

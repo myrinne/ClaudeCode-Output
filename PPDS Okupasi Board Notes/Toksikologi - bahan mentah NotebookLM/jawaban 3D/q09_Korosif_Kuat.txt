@@ -1,0 +1,278 @@
+Berikut adalah catatan tinjauan toksikologi okupasi komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai **Zat Korosif Kuat Industri**: **(A) Asam Sulfat (\\(H_2SO_4\\))**, **(B) Asam Klorida (\\(HCl\\))**, **(C) Asam Nitrat (\\(HNO_3\\))**, dan **(D) Natrium Hidroksida (NaOH) / Kalium Hidroksida (KOH) (Soda Kaustik / Potash Kaustik)**.
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+
+* **Asam Sulfat (\\(H_2SO_4\\)) [CAS# 7664-93-9]**:
+  * *Parameter*: BM **98,08 g/mol**; cairan bening hingga cokelat gelap, kental seperti minyak (*oil of vitriol*), tidak berbau, higroskopis ekstrem; titik didih **337–340°C**, berat jenis (BJ) **1,84**.
+  * *pH & pKa*: \\(pKa_1 \approx -3\\) (asam kuat terdisosiasi sempurna), \\(pKa_2 = 1,99\\); larutan 1 N memiliki pH **0,3**, larutan pekat pH **< 0**.
+  * *Konsentrasi*: Pekat komersial **95% – 98%**; cairan pembersih saluran pipa (*drain cleaner*) konsentrasi **52% – 100%**.
+  * *Reaksi Eksotermik*: Pengenceran dengan air menghasilkan **panas eksotermik yang sangat masif** yang dapat mendidihkan air seketika dan memercikkan asam panas (*splattering*).
+  * *Karsinogenitas*: **IARC Grup 1** (*Carcinogenic to humans*) khusus untuk *"Mists of strong inorganic acids containing sulfuric acid"* (memicu kanker laring dan paru); **ACGIH A2** (*Suspected Human Carcinogen*); **Permenaker No. 5 Tahun 2018: Kategori A2** untuk kabut asam anorganik kuat yang mengandung asam sulfat.
+* **Asam Klorida / Hidrogen Klorida (\\(HCl\\)) [CAS# 7647-01-0]**:
+  * *Parameter*: BM **36,46 g/mol** (tabel Permenaker: 36,47); larutan gas hidrogen klorida dalam air (*muriatic acid*), cairan tak berwarna hingga kekuningan dengan bau menusuk dan berasap pekat (*fuming acid*) pada udara lembap; BJ **1,19** (pada 37%).
+  * *pH & pKa*: \\(pKa \approx -6\text{ hingga }-8\\); pH larutan komersial **< 0 hingga 1,0**.
+  * *Konsentrasi*: Larutan pekat industri umumnya berkadar **30% – 38%** (maksimum jenuh ~38% pada suhu ruang).
+  * *Reaksi Eksotermik*: Eksotermik sedang saat diencerkan; tekanan uap tinggi melepaskan uap gas HCl bebas yang sangat volatil dan korosif terhadap saluran pernapasan.
+  * *Karsinogenitas*: **IARC Grup 3** (*Not classifiable*); **ACGIH A4** (*Not classifiable as a human carcinogen*); **Permenaker No. 5 Tahun 2018: Notasi A4**.
+* **Asam Nitrat (\\(HNO_3\\)) [CAS# 7697-37-2]**:
+  * *Parameter*: BM **63,01 g/mol** (tabel Permenaker: 63,02); cairan jernih, kekuningan hingga kemerahan, berasap (*aqua fortis*); BJ **1,50**. Bersifat asam kuat sekaligus **oksidator kuat (*strong oxidizer*)**.
+  * *pH & pKa*: \\(pKa \approx -1,4\\); pH larutan pekat **< 1,0**.
+  * *Konsentrasi*: Larutan komersial biasa berkadar **56% – 68%**; sediaan berkadar **86% – 95%** disebut *fuming nitric acid* (mengandung oksida nitrogen / \\(NO_2\\) terlarut).
+  * *Reaksi Eksotermik*: Menghasilkan panas saat kontak dengan air dan zat organik; mengoksidasi dan dapat membakar bahan selulosa/kayu secara spontan.
+  * *Karsinogenitas*: **IARC Grup 3 / Not Listed** (namun paparan dalam bentuk kabut asam anorganik kuat secara epidemiologis masuk dalam spektrum risiko kanker saluran napas atas); **Permenaker No. 5 Tahun 2018: Tanpa notasi A1–A3**.
+* **Natrium Hidroksida (NaOH) [CAS# 1310-73-2] & Kalium Hidroksida (KOH) [CAS# 1310-58-3]**:
+  * *Parameter*: NaOH (BM **40,00 g/mol**; tabel Permenaker: 40,01), KOH (BM **56,11 g/mol**; tabel Permenaker: 56,10). Berupa padatan putih higroskopis (serpih, pelet, butiran) atau larutan pekat jernih, licin seperti sabun bila tersentuh air; tidak berbau.
+  * *pH & pKa*: Basa kuat terdisosiasi sempurna; larutan 0,1 M memiliki pH **13,0**, larutan 1 M (4%) pH **14,0**.
+  * *Konsentrasi*: Larutan industri berkadar **20% – 50%**; bentuk padat/pelet kemurnian **98% – 100%**.
+  * *Reaksi Eksotermik*: Pelarutan pelet padat NaOH/KOH ke dalam air menghasilkan **panas hidrasi eksotermik yang sangat tinggi**, berisiko mendidih mendadak dan meletup keluar wadah.
+  * *Karsinogenitas*: **IARC: Not Listed**; **ACGIH: Not Listed**; **Permenaker No. 5 Tahun 2018: Tanpa notasi karsinogen**.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Asam Sulfat (\\(H_2SO_4\\))**:
+  * Manufaktur pupuk fosfat (~60–70% penggunaan global).
+  * Industri akumulator aki timbal-asam (*lead-acid batteries*).
+  * Industri pemurnian minyak bumi, sintesis kimia, pewarna, pengawetan baja (*steel pickling*).
+  * Cairan pembersih saluran pembuangan komersial/domestik (*drain cleaners* pekat).
+* **Asam Klorida (\\(HCl\\))**:
+  * Proses pembersihan dan pengawetan kerak logam (*metal pickling*), etsa baja, dan galvanisasi.
+  * Sintesis bahan kimia organik (produksi vinil klorida/PVC) dan anorganik.
+  * Pengatur pH pada pengolahan air minum, air limbah, dan kolam renang.
+  * Pembersih porselen/kerak toilet domestik (kadar 10–20%).
+* **Asam Nitrat (\\(HNO_3\\))**:
+  * Sintesis pupuk berbasis nitrogen (**amonium nitrat**).
+  * Manufaktur bahan peledak industri dan militer (nitrogliserin, TNT, RDX, nitroselulosa).
+  * Etsa logam mulia, pemurnian tembaga dan perak (*coppersmithing*), elektroplating, dan sintesis zat warna azo.
+  * Bahan bakar pendorong roket (*rocket oxidizer*).
+* **Natrium Hidroksida (NaOH) & Kalium Hidroksida (KOH)**:
+  * Pembuatan sabun, deterjen, cairan pencuci piring komersial, dan pembersih oven/saluran pipa.
+  * Industri pulp dan kertas (proses Kraft untuk delignifikasi serat kayu).
+  * Industri tekstil (proses merserisasi katun).
+  * Sintesis kimia organik, pengolahan bauksit menjadi alumina (proses Bayer), dan regenerasi resin penukar ion.
+
+---
+
+### 3. Mekanisme Cedera Jaringan (Toksikodinamik Lokal)
+* **Asam Kuat (\\(H_2SO_4, HCl, HNO_3\\)) \\(\rightarrow\\) Nekrosis Koagulatif (*Coagulative Necrosis*)**:
+  * *Prinsip Dasar*: Asam bertindak sebagai donor proton hidrogen (\\(H^+\\)), menurunkan pH jaringan secara drastis hingga < 2.
+  * *Koagulasi Protein*: Ion \\(H^+\\)* menghidrolisis ikatan amida protein jaringan, memicu denaturasi dan presipitasi protein masif, serta trombosis mikrovaskular intramural.
+  * *Pembentukan Eskar Pelindung*: Presipitasi protein membentuk lapisan keropeng atau **eskar nekrotik yang tebal dan padat (*firm eschar*)**. Eskar ini bertindak sebagai sawar fisik mekanis yang **menghambat penetrasi asam lebih dalam ke lapisan submukosa**.
+  * *Karakteristik Spesifik per Asam*:
+    * **\\(H_2SO_4\\)**: Menimbulkan **dehidrasi seluler ekstrem** (karena sifat higroskopisitasnya yang menyedot air biologis) ditambah panas eksotermik hebat; menghasilkan **karbonisasi jaringan (*charring*) dan eskar keras berwarna hitam atau abu-abu gelap**.
+    * **\\(HCl\\)**: Memicu nekrosis koagulatif dengan **eskar berwarna putih keabu-abuan atau putih kekuningan**. Karena volatilitasnya yang tinggi, uap HCl merusak epitel mukosa respirasi secara agresif.
+    * **\\(HNO_3\\)**: Merupakan oksidator kuat yang memicu **reaksi xantoproteat (*xanthoproteic reaction*)**, yaitu nitrasi cincin aromatik pada asam amino protein jaringan (tirosin dan triptofan) menghasilkan asam xantoproteat. Hal ini membentuk lesi patognomonik berupa **eskar berwarna KUNING terang hingga COKELAT kekuningan**.
+* **Basa Kuat (NaOH / KOH) \\(\rightarrow\\) Nekrosis Likuefaktif (*Liquefactive Necrosis*)**:
+  * *Prinsip Dasar*: Basa melepaskan ion hidroksil (\\(OH^-\\)), meningkatkan pH jaringan hingga > 12–13.
+  * *Saponifikasi Lipid*: Ion \\(OH^-\\)* bereaksi dengan asam lemak bebas dan fosfolipid membran sel melalui reaksi saponifikasi ester lemak (membentuk sabun). Reaksi saponifikasi ini melepaskan panas eksotermik lokal.
+  * *Lisis Protein & Penetrasi Dalam*: Basa melarutkan protein intraseluler, kolagen, dan mukopolisakarida ekstraseluler, melunakkan jaringan, dan mengekstraksi cairan sel.
+  * *Ketiadaan Eskar*: Berbeda dari asam, **basa tidak membentuk eskar pelindung**. Jaringan melunak dan mencair (*liquefaction*), memudahkan molekul basa alkali yang lipofilik untuk **berpenetrasi secara progresif dan terus-menerus ke lapisan dinding submukosa, muskularis, hingga serosa/adventisia**. Kerusakan jaringan akibat basa berlangsung jauh lebih dalam dan destruktif dibanding asam pada konsentrasi yang setara.
+
+---
+
+### 4. Toksikodinamik Sistemik
+Meskipun zat korosif bekerja dominan secara lokal, pajanan luas (terutama ingesti atau luka bakar dermal > 10–15% LPT) memicu komplikasi sistemik fatal:
+* **Asidosis Metabolik Berat**: Penyerapan ion asam masif ke dalam sirkulasi darah sistemik membanjiri cadangan bikarbonat plasma, memicu asidosis metabolik dengan *high anion gap* ekstrem (pH darah dapat anjlok < 7,00).
+* **Hemolisis Intravaskular Akut & Gagal Ginjal**: Penyerapan asam kuat (khususnya \\(H_2SO_4\\) dan \\(HCl\\)) melisiskan membran eritrosit secara langsung, melepaskan hemoglobin bebas yang memicu nefropati pigmen, nekrosis tubular akut (ATN), dan gagal ginjal anurik.
+* **Perforasi Viseral, Mediastinitis, & Peritonitis**: Nekrosis transmural esofagus memicu kebocoran isi cerna ke mediastinum (**mediastinitis akut**), sedangkan perforasi gaster memicu **peritonitis kimiawi akut**, sepsis gram negatif, dan syok septik.
+* **Koagulopati Konsumtif / DIC**: Pelepasan masif tromboplastin jaringan dan kerusakan endotelial luas akibat nekrosis kaustik dapat mencetuskan *Disseminated Intravascular Coagulation* (DIC).
+* **Syok Hipovolemik & Vasodilatasi**: Pembentukan edema perilesional yang masif dan sekuestrasi cairan ke ruang ketiga (*third-spacing*), disertai hilangnya cairan plasma pada luka bakar luas, memicu kolaps hemodinamik.
+
+---
+
+### 5. Biomonitoring Okupasi dan Pemeriksaan Penunjang Klinis
+* **Biomonitoring Paparan**:
+  * **Tidak ada biomarker biologis pajanan spesifik** (seperti metabolit darah atau urin) untuk asam sulfat, asam klorida, asam nitrat, maupun natrium/kalium hidroksida. Sifat korosif bekerja murni melalui disosiasi ion fisiologis (\\(H^+, Cl^-, SO_4^{2-}, NO_3^-, Na^+, K^+\\)). Pemantauan higiene industri bertumpu pada **pemantauan kualitas udara lingkungan kerja (*air monitoring*)**.
+* **Pemeriksaan Laboratorium & Klinis Objektif**:
+  * **Pengukuran pH Permukaan (Kertas Lakmus / pH Strip)**: Menilai tuntasnya dekontaminasi pada kulit dan forniks konjungtiva mata (target pH netral: 7,0–7,4).
+  * **Analisis Gas Darah Arteri (AGD) & Laktat**: Menilai derajat asidosis metabolik, defisit basa (*base deficit*), dan hipoksemia.
+  * **Endoskopi Saluran Cerna Atas Dini (EGD)**:
+    * **Waktu Optimal**: Dilakukan dalam rentang **12 hingga 24 jam (maksimum sebelum 48 jam)** pasca-ingesti.
+    * *Kontraindikasi Relatif*: Tidak boleh dilakukan antara **hari ke-5 hingga hari ke-14** karena merupakan fase lisis jaringan maksimal di mana dinding viskus paling rapuh dan berisiko perforasi iatrogenik tinggi. Dilarang bila terdapat bukti perforasi (peritonitis/pneumomediastinum).
+    * **Klasifikasi Derajat Keparahan Zargar (1991)**:
+      * *Grade 0*: Mukosa normal.
+      * *Grade 1*: Edema dan eritema mukosa superficial.
+      * *Grade 2A*: Erosi superficial, friabilitas, eksudat, ulkus dangkal non-sirkumferensial.
+      * *Grade 2B*: Ulserasi dalam diskret atau sirkumferensial (risiko striktur >70%).
+      * *Grade 3A*: Area nekrosis fokal atau ulserasi dalam berwarna cokelat/hitam (risiko striktur & perforasi tinggi).
+      * *Grade 3B*: Nekrosis transmural luas (ekstensif), mukosa kehitaman/terkarbonisasi (*gangrene*) (mortalitas >65%, indikasi bedah darurat).
+  * **Foto Toraks dan Abdomen Datar (Erect/LLD)**: Skrining dini komplikasi perforasi: pneumoperitoneum (udara bebas subdiafragma), pneumomediastinum, emfisema subkutan servikal, efusi pleura, atau aspirasi paru.
+  * **Computed Tomography (CT-Scan) Toraks-Abdomen dengan Kontras**: Sangat akurat dalam menilai ketebalan dinding esofagus/gaster, nekrosis transmural, dan cairan periesofageal tanpa risiko trauma mekanik endoskopi.
+
+---
+
+### 6. Perjalanan Waktu Klinis (Clinical Timeline)
+Perjalanan patologi pasca-cedera korosif akut (khususnya traktus digestivus) mengikuti 3 fase anatomis klasik:
+1. **Fase Akut / Nekrosis Inflamatori (Hari ke-0 – 4)**:
+   * Terjadi trombosis mikrovaskular, denaturasi protein (atau saponifikasi), nekrosis seluler, edema hebat, dan infiltrasi masif neutrofil. Pasien mengalami nyeri terbakar hebat, disfagia, odinofagia, dan sialorea.
+2. **Fase Ulserasi, Laten, & Pelunakan Jaringan (Hari ke-4 – 14)**:
+   * Jaringan nekrotik mulai melonggar dan meluruh (*sloughing*), meninggalkan dasar ulkus yang tertutup jaringan granulasi baru yang sangat rapuh dengan deposisi fibroblas imatur.
+   * *The Danger Window*: Dinding esofagus dan lambung berada pada titik tertipis dan paling rentan robek. **Risiko perforasi lambat (*delayed perforation*) mencapai puncaknya pada fase ini**.
+3. **Fase Sikatriks & Pembentukan Striktur (Minggu ke-3 hingga Bulan ke-3)**:
+   * Terjadi kontraksi jaringan parut fibrotik dan deposisi kolagen imatur yang maturasi menjadi jaringan parut sikatrikal padat.
+   * Lumen esofagus atau pilorus lambung menyempit progresif, memicu **striktur esofagus (*esophageal stricture*)** dan/atau **obstruksi muara lambung (*gastric outlet obstruction*)** yang bermanifestasi sebagai disfagia mekanik total dan muntah persisten.
+
+---
+
+### 7. Efek Toksisitas Akut Berdasarkan Jalur Paparan
+* **Paparan Dermal (Kulit)**:
+  * *Derajat Luka Bakar Kimia*: Superficial (derajat I), ketebalan parsial (derajat II: eritema, bula, lepuh), hingga ketebalan penuh (*full thickness* / derajat III: kulit avaskular, kasar, keras, anestetik).
+  * *\\(H_2SO_4\\)*: Luka bakar derajat III terjadi dalam waktu < 30 detik pada konsentrasi > 50%; kulit tampak terkarbonisasi, hitam, dan kering.
+  * *\\(HCl\\)*: Nekrosis koagulatif putih pucat; rasa perih terbakar instan.
+  * *\\(HNO_3\\)*: Bula dan eskar berwarna kuning terang patognomonik (*xanthoproteic stain*) yang bertahan berminggu-minggu.
+  * *NaOH/KOH*: Kulit awalnya licin seperti sabun (*soapy*), eritema, diikuti pelunakan epidermis dan ulserasi nekrotik dalam yang meluas tanpa batas tegas.
+* **Paparan Okular (Mata - Kedaruratan Mutlak)**:
+  * Asam mengkoagulasikan epitel kornea menghasilkan kekeruhan kornea putih (*ground-glass appearance*).
+  * Basa (NaOH/KOH) menembus stroma kornea dan kamera okuli anterior dalam waktu **kurang dari 15 detik**, memicu iskemia limbus vaskular (*limbal blanching*), katarak akut, glaukoma sekunder, simblefaron, dan kebutaan permanen.
+* **Paparan Inhalasi (Uap / Kabut / Mist)**:
+  * Batuk paroksismal, rasa tercekik, suara serak (*hoarseness*), stridor inspiratoris akibat laringospasme dan edema glotis akut.
+  * Pada konsentrasi tinggi: pneumonitis kimiawi, deskuamasi trakeobronkial masif, dan **edema paru non-kardiogenik (ARDS)**. Uap asam nitrat melepaskan \\(NO_x\\) dengan risiko edema paru tertunda (12–24 jam).
+* **Paparan Ingesti (Tertelan)**:
+  * Nyeri terbakar hebat pada orofaring, retrosternal, dan epigastrium; sialorea profus (ketidakmampuan menelan air liur); muntah kehitaman (*coffee-ground* atau hematemesis) bercampur debris mukosa; stridor (ancaman edema jalan napas atas); rigiditas abdomen (tanda peritonitis akibat perforasi gaster).
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Striktur Esofagus dan Stenosis Pilorus Lambung**:
+  * Terjadi pada **> 70% pasien dengan luka bakar korosif derajat 2B dan 3**. Stenosis esofagus menyebabkan disfagia mekanik progresif dan malnutrisi berat; stenosis pilorus memicu *gastric outlet obstruction*.
+* **Peningkatan Risiko Karsinoma Sel Skuamosa Esofagus**:
+  * Pasien dengan riwayat striktur kaustik esofagus memiliki **peningkatan risiko kanker esofagus sebesar 1.000 hingga 3.000 kali lipat** dibanding populasi umum, dengan periode laten rata-rata **20 hingga 40 tahun**.
+* **Kanker Laring dan Saluran Napas Akibat Kabut Asam Kuat**:
+  * Paparan inhalasi kronis terhadap kabut asam anorganik kuat yang mengandung asam sulfat (**IARC Grup 1**) terbukti secara epidemiologis meningkatkan insiden **karsinoma laring sel skuamosa** dan kanker paru pada pekerja industri baterai, elektroplating, dan *pickling*.
+* **Erosi Enamel Gigi (*Occupational Dental Erosion*)**:
+  * Paparan kronis terhadap uap asam sulfat, asam klorida, atau asam nitrat di udara kerja (> 1–5 ppm) melarutkan hidroksiapatit email gigi, menyebabkan hilangnya permukaan email gigi seri secara bertahap tanpa rasa nyeri (*painless wedge-shaped dental defects*).
+* **Penyakit Saluran Napas Obstruktif Kronis & RADS**:
+  * Bronkitis kronis industri, penurunan nilai \\(FEV_1\\) tahunan yang dipercepat, dan sindrom disfungsi jalan napas reaktif (RADS) pasca-paparan uap akut.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+
+* **Asam Sulfat (\\(H_2SO_4\\)) [CAS# 7664-93-9]**:
+  * **Permenaker No. 5 Tahun 2018**: **NAB = 1 mg/m³** [Notasi: **A2** untuk kabut asam anorganik kuat yang mengandung asam sulfat].
+  * **ACGIH TLV (2018)**: **TLV-TWA = 0,2 mg/m³** (Fraksi toraks) [Notasi: **A2**].
+  * **NIOSH REL**: **TWA = 1 mg/m³**.
+  * **OSHA PEL**: **TWA = 1 mg/m³**.
+  * **IDLH**: **15 mg/m³**.
+* **Asam Klorida / Hidrogen Klorida (\\(HCl\\)) [CAS# 7647-01-0]**:
+  * **Permenaker No. 5 Tahun 2018**: **KTD (Ceiling) = 2 BDS (ppm) atau T 2** [Notasi: **A4**; BM 36,47].
+  * **ACGIH TLV (2018)**: **Ceiling = 2 ppm** [Notasi: **A4**].
+  * **NIOSH REL**: **Ceiling = 5 ppm (7 mg/m³)**.
+  * **OSHA PEL**: **Ceiling = 5 ppm (7 mg/m³)**.
+  * **IDLH**: **50 ppm**.
+* **Asam Nitrat (\\(HNO_3\\)) [CAS# 7697-37-2]**:
+  * **Permenaker No. 5 Tahun 2018**: **NAB = 2 BDS (5,2 mg/m³)**; **PSD = 4 BDS (10 mg/m³)** [BM 63,02; Iritasi saluran pernafasan atas & mata, erosi gigi].
+  * **ACGIH TLV (2018)**: **TLV-TWA = 2 ppm**; **TLV-STEL = 4 ppm**.
+  * **NIOSH REL**: **TWA = 2 ppm (5 mg/m³)**; **STEL = 4 ppm (10 mg/m³)**.
+  * **OSHA PEL**: **TWA = 2 ppm (5 mg/m³)**.
+  * **IDLH**: **25 ppm**.
+* **Natrium Hidroksida (NaOH) [CAS# 1310-73-2]**:
+  * **Permenaker No. 5 Tahun 2018**: **KTD (Ceiling) = 2 mg/m³** (tabel: "Sodium hidroksida = 2"; BM 40,01).
+  * **ACGIH TLV (2018)**: **Ceiling = 2 mg/m³**.
+  * **NIOSH REL**: **Ceiling = 2 mg/m³**.
+  * **OSHA PEL**: **TWA = 2 mg/m³**.
+  * **IDLH**: **10 mg/m³**.
+* **Kalium Hidroksida (KOH) [CAS# 1310-58-3]**:
+  * **Permenaker No. 5 Tahun 2018**: **KTD (Ceiling) = C 2 mg/m³** (tabel: "Potasium hidroksida = C 2"; BM 56,10).
+  * **ACGIH TLV (2018)**: **Ceiling = 2 mg/m³**.
+  * **NIOSH REL**: **Ceiling = 2 mg/m³**.
+  * **OSHA PEL**: Tidak ditetapkan nilai numerik spesifik.
+  * **IDLH**: **N.D. (Not Determined)**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Permenaker No. 5 Tahun 2018 & ACGIH BEI**:
+  * **TIDAK ADA nilai numerik IPB/BEI yang ditetapkan** untuk asam sulfat, asam klorida, asam nitrat, natrium hidroksida, maupun kalium hidroksida.
+  * *Rasional Ilmiah*: Zat-zat ini bekerja sebagai toksikan lokal korosif murni yang terdisosiasi menjadi ion-ion anorganik endogen normal tubuh (\\(H^+, Cl^-, SO_4^{2-}, NO_3^-, Na^+, K^+\\)) yang kadarnya di dalam darah dan urin sangat dinamis serta dipengaruhi oleh homeostasis asam-basa dan diet. Pemantauan kepatuhan higiene industri mengandalkan **pemantauan atmosfer lingkungan kerja (*air monitoring*)**.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Dekontaminasi Akut
+* **PRINSIP UTAMA LUKA BAKAR DERMAL & OKULAR: DEKONTAMINASI AIR MASIF**:
+  * **Irigasi Air Segera (*Copious Water Lavage*)**: Buka seluruh pakaian yang terkontaminasi dan lakukan pembilasan dengan air mengalir bertekanan rendah dalam jumlah sangat banyak **minimal selama 15 hingga 30 menit (basa kuat minimal 30–60 menit)**.
+  * *Dekontaminasi Okular*: Irigasi mata kontinu dengan salin normal atau air bersih minimal 30 menit menggunakan anestesi topikal dan retraktor kelopak mata hingga pH kantung konjungtiva netral (**pH 7,0–7,4**).
+  * **Larutan Amfoter Pengkhelat (Diphoterine®)**: Bila tersedia di fasilitas industri, larutan pembersih amfoter hipertonik (Diphoterine) dapat digunakan segera dalam 1–2 menit pertama karena mampu mengikat ion \\(H^+\\) maupun \\(OH^-\\), menghentikan reaksi eksotermik, dan menarik residu kimia keluar dari jaringan stroma.
+* **KONTRAINDIKASI MUTLAK TERAPI INGESTI**:
+  1. **DILARANG MELAKUKAN NETRALISASI KIMIA**: Jangan pernah memberikan asam lemah (cuka/jus lemon) untuk menetralkan basa, atau basa lemah (soda kue/natrium bikarbonat) untuk menetralkan asam! Reaksi asam-basa menghasilkan **panas eksotermik tinggi yang memicu luka bakar termal masif tambahan** dan melepaskan gas karbon dioksida bertekanan yang dapat meledakkan/merobek viskus lambung yang nekrotik.
+  2. **DILARANG MEMICU MUNTAH (*DO NOT INDUCE EMESIS*)**: Muntah akan memaparkan kembali mukosa esofagus, laring, dan orofaring terhadap zat korosif untuk kedua kalinya, serta memicu aspirasi paru yang fatal.
+  3. **DILARANG MEMBERIKAN ARANG AKTIF (*ACTIVATED CHARCOAL*)**: Arang aktif tidak menyerap zat asam/basa anorganik, memicu muntah, dan melapisi dinding mukosa dengan jelaga hitam pekat yang **mengaburkan visualisasi pemeriksaan endoskopi**.
+  4. **DILARANG MEMASANG PIPA LAMBUNG / NGT SECARA BUTA (*BLIND NGT PLACEMENT*)**: Tekanan mekanis ujung selang dapat menembus dinding esofagus/lambung yang telah melunak nekrotik (*iatrogenic perforation*).
+* **Tata Laksana Ingesti di Rumah Sakit**:
+  * Pasien dipuasakan total (*nil per os* / NPO); berikan hidrasi cairan intravena dan analgesia adekuat.
+  * Amankan jalan napas: Lakukan **intubasi endotrakeal dini** dengan visualisasi langsung (laringoskopi serat optik) bila terdapat edema glotis, stridor, atau luka bakar faring luas.
+  * **Konsultasi Bedah Darurat**: Laparatomi/torakotomi eksplorasi segera bila terdapat tanda perforasi viskus, peritonitis, pneumoperitoneum, atau nekrosis derajat 3B pada endoskopi/CT scan.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Status Tidak Laik Kerja (*Unfit*)*: Pekerja dengan asma bronkial berat atau tidak terkontrol, hiperreaktivitas saluran napas non-spesifik, PPOK lanjut, penyakit permukaan kornea mata kronis berat, atau dermatitis kronis luas (kontraindikasi bekerja di area penanganan asam/basa pekat).
+* **Surveilans Kesehatan Kerja**:
+  * *Pemeriksaan Pra-Kerja*: Spirometri dasar (\\(FVC, FEV_1\\)), rontgen toraks PA, pemeriksaan kesehatan gigi dasar (memeriksa enamel), dan tajam penglihatan.
+  * *Pemeriksaan Berkala*: Evaluasi spirometri tahunan dan skrining erosi gigi berkala untuk pekerja yang terpapar kabut/uap asam.
+* **Fasilitas Keselamatan Kritis di Tempat Kerja**:
+  * **Pancuran Keselamatan (*Emergency Safety Showers*) & Pembilas Mata (*Eyewash Stations*)**:
+    * Sesuai standar **ANSI/ISEA Z358.1**, wajib terpasang dan dapat dijangkau dalam waktu **kurang dari 10 detik (jarak tempuh maksimal 15–17 meter)** dari titik bahaya korosif, berada pada lintasan bebas hambatan, dan mampu mengalirkan air bersuhu suam-suam kuku (*tepid water*, 16–38°C) selama minimal **15 menit tanpa henti**.
+* **Alat Pelindung Diri (APD) Wajib**:
+  * Pelindung mata dan wajah: Kacamata pelindung percikan kimia (*chemical splash goggles*) dikombinasikan dengan pelindung seluruh wajah (*full face shield*).
+  * Pelindung tubuh: Celemek/apron dan setelan pakaian kerja tahan asam/basa pekat berbahan **karet butil, neoprena, atau PVC tebal**.
+  * Pelindung tangan: Sarung tangan kimia berpelindung lengan (*elbow-length chemical gauntlets*).
+  * Pelindung pernapasan: Respirator katrid gas asam / uap kimia atau **SCBA bertekanan positif** bila kadar uap melampaui NAB atau pada situasi tanggap darurat tumpahan.
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * *Lampiran Bagian I.a.22*: Secara spesifik mengatur *"Penyakit yang disebabkan oleh asam mineral"* (mencakup asam sulfat, asam klorida, dan asam nitrat).
+  * *Lampiran Bagian I.a.39*: Penyakit akibat bahan kimia lain yang memiliki hubungan kausal langsung di tempat kerja (mencakup basa kaustik NaOH/KOH).
+  * *Lampiran Bagian II.b*: Penyakit saluran pernapasan akibat kerja (edema paru kimia akut, RADS, bronkitis industri).
+  * *Lampiran Bagian III*: Penyakit kanker akibat kerja (kanker laring akibat kabut asam anorganik kuat).
+  * Memberikan perlindungan klaim pengobatan dan santunan cacat melalui program Jaminan Kecelakaan Kerja (JKK) BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Menetapkan kewajiban dokter Sp.Ok menegakkan diagnosis melalui **7 langkah diagnosis okupasi**, pelaporan kasus PAK ke instansi ketenagakerjaan, serta penyusunan program rehabilitasi kerja (*return-to-work*).
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Basa Terasa Licin dan Tidak Langsung Sakit"**:
+   * Kontak awal dengan basa (NaOH/KOH) sering kali tidak memicu rasa nyeri tajam seketika seperti asam, melainkan hanya sensasi licin seperti sabun. Pekerja kerap menunda mencuci tangannya, padahal saponifikasi dan likuefaksi telah menembus lapisan dermis dalam secara progresif.
+2. **Jebakan "Asam Menghitam, Nitrat Menguning, Basa Melunak"**:
+   * *H₂SO₄*: Menghasilkan eskar **hitam/terkarbonisasi (*charring*)** akibat dehidrasi jaringan dan pelepasan panas ekstrem.
+   * *HNO₃*: Menghasilkan eskar **kuning terang (*xanthoproteic reaction*)**.
+   * *HCl*: Menghasilkan eskar **putih keabu-abuan**.
+   * *NaOH/KOH*: Menghasilkan lesi **lunak, basah, transparan, dan mencair (*liquefactive*)**.
+3. **Mitos "Netralisasi dengan Asam/Basa Encer" (*The Neutralization Myth*)**:
+   * *Fatal Examination Trap*: Memilih opsi memberikan asam asetat/cuka encer untuk korban tertelan NaOH atau soda kue untuk asam sulfat. Reaksi netralisasi adalah **reaksi eksotermik yang melepaskan kalor tinggi**, membakar jaringan secara termal dan melepaskan gas yang memicu ruptur lambung. Terapi baku hanyalah **pengenceran/irigasi air masif**.
+4. **Jendela Berbahaya Endoskopi (Hari ke-5 hingga 14)**:
+   * Melakukan endoskopi pada rentang hari ke-5 hingga 14 pasca-ingesti korosif adalah kontraindikasi relatif karena jaringan berada pada fase pelunakan maksimal dengan risiko perforasi mekanik dinding esofagus tertinggi. Endoskopi aman dilakukan dalam **12–24 jam pertama**.
+5. **Karsinoma Laring vs Karsinoma Esofagus**:
+   * *Kabut asam sulfat terinhalasi*: Terbukti memicu **kanker laring dan paru** (IARC Grup 1).
+   * *Ingesti kaustik (terutama basa)*: Menghasilkan striktur sikatrikal esofagus yang memicu **karsinoma sel skuamosa esofagus** (peningkatan risiko hingga 1.000x dengan masa laten 20–40 tahun).
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Zat Korosif Kuat Industri
+
+| No | Poin Parameter | (A) Asam Sulfat (\\(H_2SO_4\\)) | (B) Asam Klorida (\\(HCl\\)) | (C) Asam Nitrat (\\(HNO_3\\)) | (D) Basa Kaustik (NaOH / KOH) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | BM 98,08; cairan kental higroskopis; eksotermik hebat; **IARC Grup 1 (khusus kabut asam anorganik kuat) \\(\rightarrow\\) Kanker Laring**; ACGIH A2; Permenaker A2. | BM 36,46; larutan gas HCl berasap; tekanan uap tinggi; uap volatil; IARC Grup 3; ACGIH A4; Permenaker A4. | BM 63,01; cairan berasap kuning-merah; oksidator kuat; IARC Grup 3 / Not Listed; Permenaker tanpa notasi A1–A3. | NaOH (BM 40,00), KOH (BM 56,11); padatan putih/pelet higroskopis; larutan licin; eksotermik hidrasi tinggi; pH >13–14; Non-karsinogen. |
+| **2** | **Sumber & Penggunaan** | Pabrik pupuk fosfat, aki timbal-asam (*battery acid*), kilang minyak, *steel pickling*, pembersih saluran pipa (*drain cleaner*). | Etsa baja (*pickling*), sintesis kimia PVC, pengatur pH pengolahan air/kolam renang, pembersih porselen/kerak toilet. | Pabrik pupuk amonium nitrat, bahan peledak (TNT/dinamit), pemurnian logam mulia/tembaga, elektroplating, propelan roket. | Pembuatan sabun/deterjen, industri pulp & kertas (proses Kraft), tekstil (merserisasi), pembersih oven/saluran, pengolahan bauksit. |
+| **3** | **Mekanisme Cedera Jaringan** | **Nekrosis koagulatif**: denaturasi protein, eskar padat menghambat penetrasi dalam. **Dehidrasi seluler ekstrem + panas eksotermik \\(\rightarrow\\) karbonisasi (*charring*) eskar hitam**. | **Nekrosis koagulatif**: presipitasi protein membentuk **eskar putih keabu-abuan**. Uap sangat mengiritasi saluran napas atas & alveoli. | **Nekrosis koagulatif**: reaksi oksidasi & **reaksi xantoproteat** (nitrasi asam amino aromatik) \\(\rightarrow\\) **eskar kuning terang hingga cokelat**. | **Nekrosis likuefaktif (*liquefaction*)**: **saponifikasi lipid membran sel & pelarutan protein**. **Tanpa eskar pelindung \\(\rightarrow\\) penetrasi transmural progresif sangat dalam**. |
+| **4** | **Toksikodinamik Sistemik** | Asidosis metabolik berat (*high anion gap*), hemolisis intravaskular akut, gagal ginjal akut pigmen, syok hipovolemik, perforasi lambung & peritonitis. | Asidosis metabolik, iritasi saluran cerna luas, perforasi gaster, kegagalan sirkulasi sekunder. | Asidosis sistemik, pelepasan uap \\(NO_x\\) sistemik, perforasi lambung akut, syok toksik. | Kerusakan transmural esofagus, mediastinitis akut, syok sepsis berat, peritonitis, trombosis mikrovaskular mesenterial. |
+| **5** | **Biomonitoring & Evaluasi Klinis** | **Tidak ada biomarker biologis spesifik** (ion sulfat/klorida/nitrat/natrium adalah endogen). Evaluasi: **kertas lakmus/pH strip (kulit/mata)**, AGD & laktat, foto toraks/abdomen (pneumoperitoneum), CT scan, **Endoskopi dini (EGD 12–24 jam, klasifikasi Zargar derajat 0–3B)**. | Idem (tidak ada biomarker spesifik). Evaluasi: uji pH permukaan, AGD, foto rontgen toraks/abdomen, EGD dini <24–48 jam. | Idem (tidak ada biomarker spesifik). Evaluasi: uji pH permukaan, AGD, rontgen dada (skrining ARDS tertunda), EGD dini. | Idem (tidak ada biomarker spesifik). Evaluasi: uji pH okular/dermal, AGD, rontgen dada/abdomen, EGD dini <24 jam (derajat Zargar). |
+| **6** | **Perjalanan Waktu Klinis** | Fase 1: Akut/inflamasi (hari 0–4). Fase 2: Pelunakan/ulserasi (*the danger window* perforasi, hari 4–14). Fase 3: Sikatriks & **pembentukan striktur (minggu 3 – bulan 3)**. | Fase akut korosi (0–48 jam) \\(\rightarrow\\) lisis jaringan \\(\rightarrow\\) striktur sikatrikal esofagus/pilorus (3 minggu–3 bulan). | Fase akut (0–48 jam; risiko edema paru \\(NO_x\\) 12–24 jam) \\(\rightarrow\\) ulserasi \\(\rightarrow\\) stenosis esofagus/gaster (minggu 3–8). | Fase akut (0–48 jam) \\(\rightarrow\\) pelunakan jaringan maksimal (hari 5–14, risiko perforasi tertinggi) \\(\rightarrow\\) **striktur densa sirkumferensial (minggu ke-3–12)**. |
+| **7** | **Efek Akut per Jalur** | Kulit: luka bakar derajat III hitam terkarbonisasi (<30 dtk). Mata: kekeruhan kornea. Inhalasi: laringospasme, edema paru. Ingesti: perforasi gaster masif. | Kulit: luka bakar eskar putih kelabu. Mata: ulserasi kornea. Inhalasi: edema glotis & paru. Ingesti: gastritis korosif berat. | Kulit: eskar **kuning terang patognomonik**. Mata: konjungtivitis nekrotik. Inhalasi: edema paru tertunda. Ingesti: ulserasi dalam. | Kulit: licin bersabun, ulkus meluas dalam. Mata: **penetrasi stroma <15 detik \\(\rightarrow\\) kebutaan**. Inhalasi: stridor. Ingesti: nekrosis esofagus masif. |
+| **8** | **Efek Kronis & Sekuel** | **Kanker laring (IARC 1)**; erosi enamel gigi; bronkitis kronis; striktur lambung/esofagus; RADS. | Erosi enamel gigi; bronkitis kronis; asma akibat kerja / RADS; striktur saluran cerna atas pasca-ingesti. | Erosi enamel gigi; bronkitis kronis; striktur lambung pasca-ingesti; disfungsi ventilasi obstruktif. | **Striktur sikatrikal esofagus berat (>70% pada Grade 2B/3)**; **karsinoma sel skuamosa esofagus (risiko naik 1.000–3.000x pasca 20–40 tahun)**. |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018: NAB = 1 mg/m³ [A2]**. ACGIH: TWA 0,2 mg/m³ (thoracic) [A2]. NIOSH/OSHA: TWA 1 mg/m³. **IDLH: 15 mg/m³**. | **Permenaker 5/2018: KTD = 2 BDS (ppm) / T 2 [A4]**. ACGIH: C 2 ppm [A4]. NIOSH/OSHA: C 5 ppm (7 mg/m³). **IDLH: 50 ppm**. | **Permenaker 5/2018: NAB = 2 BDS (5,2 mg/m³); PSD = 4 BDS (10 mg/m³)**. ACGIH: TWA 2 ppm, STEL 4 ppm. NIOSH: TWA 2, ST 4. OSHA: TWA 2 ppm. **IDLH: 25 ppm**. | **Permenaker 5/2018: NaOH KTD = 2 mg/m³; KOH KTD = C 2 mg/m³**. ACGIH: C 2 mg/m³. NIOSH: C 2 mg/m³. OSHA: TWA 2 mg/m³. **IDLH: NaOH = 10 mg/m³; KOH = N.D.** |
+| **10** | **BEI / IPB** | **TIDAK DITETAPKAN** baik dalam Permenaker 5/2018 maupun ACGIH BEI untuk seluruh zat korosif lokal. | **TIDAK DITETAPKAN**. | **TIDAK DITETAPKAN**. | **TIDAK DITETAPKAN**. |
+| **11** | **Tatalaksana Akut** | **Irigasi air mengalir masif \\(\ge 15–30\\) menit (mata: \\(\ge 30\\) menit hingga pH 7,0–7,4)**; Diphoterine bila ada. **KONTRAINDIKASI MUTLAK: DILARANG NETRALISASI ASAM-BASA, DILARANG EMESIS/MUNTAH, DILARANG ARANG AKTIF, DILARANG PASANG NGT BUTA**. NPO, intubasi dini bila ada stridor, EGD 12–24 jam, evaluasi bedah darurat. | Idem (irigasi air masif, dilarang netralisasi/emesis/arang aktif/NGT buta, proteksi jalan napas, EGD dini). | Idem (irigasi air masif, observasi edema paru tertunda 24 jam, dilarang netralisasi/emesis, EGD dini). | **Irigasi air mengalir diperpanjang (\\(\ge 30–60\\) menit)** karena basa terus berpenetrasi; irigasi mata darurat; larangan netralisasi/emesis; EGD 12–24 jam. |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi asma berat, PPOK, penyakit kornea, dermatitis kronis. Fasilitas: **Eyewash & Safety Shower ANSI Z358.1 (<10 detik / 15 meter dari bahaya, alirkan air 15 menit)**. APD: *chemical splash goggles* + *face shield*, celemek/setelan butil/neoprena/PVC, sarung tangan panjang, respirator/SCBA. | Idem (*Unfit* bagi asma/PPOK/kelainan kornea; wajib safety shower/eyewash <10 detik, ventilasi LEV, APD karet butil/nitril). | Idem (*Unfit* bagi kelainan paru/mata; fasilitas dekontaminasi air <10 detik, lemari asam, APD tahan asam nitrat pekat). | Idem (*Unfit* bagi penyakit kornea/kulit; eyewash/shower wajib tersedia dan rutin diuji, APD lengkap kedap alkali, kacamata goggle rapat). |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019 Lampiran I.a.22 (*penyakit yang disebabkan oleh asam mineral*)**, II.b (saluran napas), dan III (kanker laring); JKK BPJS Ketenagakerjaan. Didukung PP 28/2024 & Permenkes 11/2022 (7 langkah diagnosis). | **Perpres No. 7 Tahun 2019 Lampiran I.a.22 (*penyakit akibat asam mineral*)**; klaim JKK BPJS Ketenagakerjaan. | **Perpres No. 7 Tahun 2019 Lampiran I.a.22 (*penyakit akibat asam mineral*)**; klaim JKK BPJS Ketenagakerjaan. | **Perpres No. 7 Tahun 2019 Lampiran I.a.39 (*bahan kimia lain terkait kerja*)**; klaim JKK BPJS Ketenagakerjaan. |
+| **14** | **Clinical Pearls & Trap** | 1) Kabut asam sulfat memicu kanker laring (IARC 1). 2) Dehidrasi higroskopis membuat luka bakar hitam terkarbonisasi. 3) Erosi gigi tanpa nyeri. | 1) Tekanan uap tinggi melepaskan uap gas HCl yang merusak jalan napas atas. 2) Eskar berwarna putih kelabu. | 1) Reaksi xantoproteat menghasilkan warna eskar **kuning terang patognomonik**. 2) Dekomposisi melepas gas \\(NO_x\\) dengan risiko edema paru tertunda. | 1) Basa terasa licin seperti sabun dan tidak langsung nyeri, menipu korban hingga nekrosis tembus dalam. 2) Likuefaksi tanpa eskar pelindung. 3) Karsinoma esofagus timbul 20–40 tahun pasca-striktur. 4) Dilarang keras netralisasi asam-basa! |
+
+---
+
+💡 *Apakah Anda ingin kita melengkapi seri toksikologi okupasi ini dengan modul intoksikasi logam berat industri beracun tinggi (seperti **Timbal / Pb**, **Merkuri / Hg**, dan **Arsen / Gas Arsin**) lengkap dengan biomarker darah/urin dan protokol kelasi spesifiknya?*

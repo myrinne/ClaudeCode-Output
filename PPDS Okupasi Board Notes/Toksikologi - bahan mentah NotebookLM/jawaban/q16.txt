@@ -1,0 +1,239 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Sebagai calon Spesialis Kedokteran Okupasi (Sp.Ok), Anda harus memahami bahwa batas antara kesehatan lingkungan (*environmental health*) dan kesehatan kerja (*occupational health*) sangat tipis. Di era industrialisasi modern, seorang dokter okupasi tidak hanya bertugas di dalam pagar pabrik, tetapi juga kerap ditunjuk menjadi tim ahli dalam studi AMDAL, audit lingkungan industri, penanganan keluhan masyarakat sekitar kawasan industri (*fenceline communities*), hingga penetapan baku mutu keselamatan lingkungan.
+
+**Pedoman Analisis Risiko Kesehatan Lingkungan (ARKL)** yang diterbitkan oleh Direktorat Jenderal Pengendalian Penyakit dan Penyehatan Lingkungan (Ditjen PP&PL) Kementerian Kesehatan RI tahun 2012 mengadopsi kerangka ilmiah *National Research Council* (NRC) dan US-EPA. ARKL adalah instrumen prediktif-kuantitatif untuk menghitung probabilitas timbulnya efek kesehatan merugikan pada manusia akibat pajanan agen risiko fisik, biologi, atau kimiawi di media lingkungan.
+
+Berikut adalah telaah komprehensif pedoman ARKL Kemenkes 2012 untuk persiapan ujian dewan spesialis Anda:
+
+---
+
+### 1. Empat Langkah Utama ARKL (*The 4-Step Risk Assessment Paradigm*)
+
+Proses ARKL diawali dengan tahap pendahuluan berupa **perumusan masalah (*scoping / problem formulation*)** dan dilanjutkan dengan **4 langkah ilmiah baku**, yang hasilnya bermuara pada **pengelolaan risiko (*risk management*)** dan **komunikasi risiko (*risk communication*)**:
+
+```
+                           [ KERANGKA PARADIGMA ARKL KEMENKES 2012 ]
+                                              │
+                                   [ Perumusan Masalah ]
+                                              │
+         ┌────────────────────────────────────┼────────────────────────────────────┐
+         ▼                                    ▼                                    ▼
+[ 1. IDENTIFIKASI BAHAYA ]          [ 2. ANALISIS DOSIS-RESPONS ]          [ 3. ANALISIS PAJANAN ]
+• Karakterisasi agen risiko         • Karakterisasi toksisitas           • Menghitung Intake (Ink & Ik)
+• Media lingkungan (udara/air)      • Nilai acuan aman: RfD, RfC         • Jalur: Inhalasi & Ingesti
+• Konsentrasi terukur (C)           • Nilai karsinogenik: SF / CSF       • Menggunakan data antropometri
+• Efek kritis toksikologi           • Rujukan: US-EPA IRIS database        (R, tE, fE, Dt, Wb, tavg)
+         │                                    │                                    │
+         └────────────────────────────────────┼────────────────────────────────────┘
+                                              ▼
+                                 [ 4. KARAKTERISASI RISIKO ]
+                                 • Non-karsinogenik: RQ = Intake / RfD (atau RfC)
+                                 • Karsinogenik: ECR = Intake × SF
+                                              │
+                                              ▼
+                                   [ PENGELOLAAN RISIKO ]
+                                   (Jika RQ > 1 atau ECR > 1E-4)
+                                   • Formulasi Batas Aman: C, R, fE, Dt
+```
+
+1.  **Langkah 1: Identifikasi Bahaya (*Hazard Identification*):**
+    *   *Tujuan:* Mengidentifikasi jenis, sifat kimia-fisika, dan potensi merugikan yang melekat pada agen risiko di media lingkungan tertentu (udara ambien, air minum/bersih, tanah, atau bahan pangan).
+    *   *Fokus Telaah:* Menentukan agen kimia yang menjadi prioritas, menetapkan efek kritis organ target (*critical health effects*), mengidentifikasi jalur pajanan (*exposure pathways*), serta memetakan konsentrasi terukur (nilai minimal, rata-rata, dan maksimal).
+2.  **Langkah 2: Analisis Dosis-Respons (*Dose-Response Assessment*):**
+    *   *Tujuan:* Menelaah hubungan kuantitatif antara jumlah agen yang masuk/diserap tubuh dengan insiden keparahan efek kesehatan pada populasi.
+    *   *Fokus Telaah:* Mencari nilai toksisitas kuantitatif baku: **Dosis Referensi (*Reference Dose* / RfD)** atau **Konsentrasi Referensi (*Reference Concentration* / RfC)** untuk efek non-karsinogenik, serta **Faktor Kemiringan (*Slope Factor* / SF atau CSF)** untuk efek karsinogenik. Analisis ini merujuk pada pangkalan data toksikologi eksperimental terpercaya, terutama *Integrated Risk Information System* (IRIS) US-EPA (`[suspicious link removed]`).
+3.  **Langkah 3: Analisis Pajanan (*Exposure Assessment*):**
+    *   *Tujuan:* Mengukur atau mengestimasi besaran asupan harian (**Intake / \\(I\\)**) dari agen risiko yang masuk ke dalam tubuh manusia melalui jalur inhalasi, ingesti (air/makanan), atau kontak dermal.
+    *   *Fokus Telaah:* Mengombinasikan data konsentrasi lingkungan dengan faktor antropometri dan perilaku populasi (laju asupan, waktu pajanan, frekuensi, durasi, berat badan, dan periode waktu rata-rata).
+4.  **Langkah 4: Karakterisasi Risiko (*Risk Characterization*):**
+    *   *Tujuan:* Menetapkan estimasi tingkat risiko kesehatan dengan mengintegrasikan hasil analisis dosis-respons dan analisis pajanan.
+    *   *Fokus Telaah:* Menghitung **Tingkat Risiko / *Risk Quotient* (RQ)** untuk efek non-karsinogenik dan menghitung probabilitas **Lebihan Risiko Kanker / *Excess Cancer Risk* (ECR)** untuk efek karsinogenik, mengevaluasi ketidakpastian (*uncertainties*), serta menyimpulkan apakah risiko dapat diterima (*acceptable*) atau tidak aman (*unacceptable*).
+
+---
+
+### 2. Rumus Asupan (Intake) Non-Karsinogenik dan Karsinogenik
+
+Intake (\\(I\\)) menyatakan jumlah massa agen risiko (dalam mg) yang masuk ke dalam tubuh per kilogram berat badan individu per hari (\\(\text{mg/kg}\times\text{hari}\\)).
+
+#### a. Rumus Intake Non-Karsinogenik (\\(I_{\text{nk}}\\))
+Perhitungan asupan untuk zat yang menimbulkan efek non-karsinogenik:
+
+*   **Jalur Inhalasi (Pernapasan):**
+    \\[I_{\text{nk}} = \frac{C \times R \times t_E \times f_E \times D_t}{W_b \times t_{\text{avg}}}\\]
+    *(Pada beberapa literatur ARKL, jika konsentrasi udara dinyatakan dalam \\(\text{mg/m}^3\\) dan laju pernapasan \\(R\\) dalam \\(\text{m}^3/\text{hari}\\), maka variabel waktu harian \\(t_E/24\text{ jam}\\) disatukan)*.
+*   **Jalur Ingesti (Tertelan melalui Air Minum atau Makanan):**
+    \\[I_{\text{nk}} = \frac{C \times R \times f_E \times D_t}{W_b \times t_{\text{avg}}}\\]
+    *(Variabel \\(t_E\\) tidak digunakan pada ingesti karena laju konsumsi \\(R\\) sudah dihitung dalam satuan massa atau volume per hari)*.
+
+Di mana untuk non-karsinogenik:
+\\[t_{\text{avg}} = D_t \times 365\text{ hari/tahun}\\]
+
+---
+
+#### b. Rumus Intake Karsinogenik (\\(I_k\\))
+Untuk zat karsinogenik, pajanan diasumsikan memiliki risiko kumulatif sepanjang hayat (*lifetime exposure*) tanpa ambang batas aman (*no-threshold concept*):
+
+*   **Jalur Inhalasi Karsinogenik:**
+    \\[I_k = \frac{C \times R \times t_E \times f_E \times D_t}{W_b \times t_{\text{avg(k)}}}\\]
+*   **Jalur Ingesti Karsinogenik:**
+    \\[I_k = \frac{C \times R \times f_E \times D_t}{W_b \times t_{\text{avg(k)}}}\\]
+
+Di mana untuk efek karsinogenik, periode waktu rata-rata (\\(t_{\text{avg(k)}}\\)) dibakukan sepanjang umur biologis rata-rata manusia (70 tahun):
+\\[t_{\text{avg(k)}} = 70\text{ tahun} \times 365\text{ hari/tahun} = \mathbf{25.550\text{ hari}}\\]
+
+---
+
+### 3. Nilai *Default* Antropometri dan Parameter Pajanan
+
+Pedoman ARKL Kemenkes 2012 (mengacu pada Tabel 9 disadur dari Rahman 2007 dan studi antropometri Indonesia oleh Nukman et al., 2005 serta US-EPA *Exposure Factors Handbook*) menetapkan nilai baku (*default values*) berikut jika data empiris spesifik lapangan tidak tersedia:
+
+| Notasi Parameter | Definisi Parameter | Satuan | Nilai *Default* ARKL Kemenkes 2012 (Dewasa Indonesia / Asia) | Pembanding Default US-EPA / Internasional |
+| :--- | :--- | :--- | :--- | :--- |
+| **\\(C\\)** | Konsentrasi agen risiko | \\(\text{mg/m}^3\\) (udara)<br>\\(\text{mg/L}\\) (air)<br>\\(\text{mg/kg}\\) (makanan) | *Tidak ada default* (berdasarkan hasil pengukuran riil laboratorium/lapangan) | *Data riil lapangan* |
+| **\\(R\\)** | Laju asupan (*Rate*) | | | |
+| • *Inhalasi* | Volume udara terhirup | \\(\text{m}^3/\text{jam}\\) atau \\(\text{m}^3/\text{hari}\\) | **\\(0{,}83\text{ m}^3/\text{jam}\\)** (Dewasa)<br>\\(0{,}5\text{ m}^3/\text{jam}\\) (Anak 6–12 th) | **\\(20\text{ m}^3/\text{hari}\\)** (Dewasa)<br>\\(12\text{ m}^3/\text{hari}\\) (Anak) |
+| • *Air Minum* | Volume konsumsi air | \\(\text{L/hari}\\) | **2 L/hari** (Dewasa pemukiman)<br>**1 L/hari** (Anak pemukiman)<br>**1 L/hari** (Dewasa lingkungan kerja) | 2 L/hari (Dewasa)<br>1 L/hari (Anak) |
+| • *Makanan* | Konsumsi bahan pangan | \\(\text{gram/hari}\\) | Buah: **42 g/hari**<br>Sayur: **80 g/hari**<br>Ikan tangkapan: **54 g/hari** | Setara (US-EPA) |
+| **\\(t_E\\)** | Waktu pajanan harian | \\(\text{jam/hari}\\) | Residensial: Sesuai observasi (sering dipakai 14–24 jam)<br>Kerja: **8 jam/hari** | 8 jam/hari (Kerja) |
+| **\\(f_E\\)** | Frekuensi pajanan | \\(\text{hari/tahun}\\) | **350 hari/tahun** (Pemukiman/Residensial)<br>**250 hari/tahun** (Lingkungan Kerja / Industri) | 350 hari/tahun (Residensial)<br>250 hari/tahun (Industri) |
+| **\\(D_t\\)** | Durasi pajanan | \\(\text{tahun}\\) | Proyeksi seumur hidup: **30 tahun** (Residensial)<br>**25 tahun** (Lingkungan Kerja)<br>Anak-anak: **6 tahun**<br>Atau nilai *real time* lama mukim/kerja | 30 tahun (Residensial)<br>25 tahun (Industri) |
+| **\\(W_b\\)** | Berat badan populasi | \\(\text{kg}\\) | **55 kg** (Dewasa Indonesia / Asia)<br>**15 kg** (Anak-anak) | **70 kg** (Dewasa Kaukasia)<br>15 kg (Anak-anak) |
+| **\\(t_{\text{avg}}\\) / \\(t_{\text{avg(k)}}\\)** | Periode waktu rata-rata | \\(\text{hari}\\) | Non-karsinogen: \\(D_t \times 365\text{ hari}\\)<br>Karsinogen: \\(70 \times 365 = \mathbf{25.550\text{ hari}}\\) | Setara (US-EPA) |
+
+---
+
+### 4. Dosis Referensi (RfD), Konsentrasi Referensi (RfC), dan Slope Factor (SF)
+
+Parameter ini diperoleh dari langkah kedua (Analisis Dosis-Respons) melalui uji toksikologi eksperimental kronis:
+
+```
+                       [ EKSTRAPOLASI DOSIS REFERENSI ]
+                       
+     NOAEL / LOAEL (Hewan) ───► Dibagi Uncertainty Factors (UF) ───► RfD / RfC Manusia
+     (Dosis Ambang Bebas Efek)  • UF Intraspesies (10x)               (Aman Sepanjang Hayat)
+                                • UF Interspesies (10x)
+                                • UF Subkronis/LOAEL (10x)
+```
+
+1.  **Reference Dose (RfD) dan Reference Concentration (RfC):**
+    *   *Definisi:* Estimasi dosis pajanan harian (RfD, dalam \\(\text{mg/kg}\times\text{hari}\\)) atau konsentrasi di udara (RfC, dalam \\(\text{mg/m}^3\\)) bagi populasi manusia (termasuk kelompok sensitif seperti anak-anak dan lansia) yang **tidak menimbulkan risiko efek merugikan kesehatan non-karsinogenik sepanjang hayat**.
+    *   *Penurunan Matematis:* Diturunkan dari dosis eksperimental bebas efek merugikan (*No Observed Adverse Effect Level* / NOAEL) atau dosis terendah dengan efek (*Lowest Observed Adverse Effect Level* / LOAEL) yang dibagi dengan faktor ketidakpastian (*Uncertainty Factors* / UF: 10 untuk variasi manusia, 10 untuk ekstrapolasi hewan ke manusia, 10 untuk data subkronis/LOAEL).
+2.  **Cancer Slope Factor (SF atau CSF):**
+    *   *Definisi:* Estimasi batas atas kelayakan (*upper-bound estimate*) dari probabilitas respons kanker per unit asupan kimiawi harian seumur hidup.
+    *   *Satuan:* \\((\text{mg/kg}\times\text{hari})^{-1}\\) atau \\((\text{mg/kg/hari})^{-1}\\).
+    *   *Karakteristik:* Merepresentasikan kemiringan (*slope*) dari kurva dosis-respons karsinogenik linier pada dosis rendah.
+
+---
+
+### 5. Karakterisasi Risiko dan Interpretasinya
+
+Langkah keempat mengintegrasikan asupan internal tubuh dengan baku referensi toksikologis:
+
+#### a. Efek Non-Karsinogenik: *Risk Quotient* (RQ) / *Hazard Quotient* (HQ)
+Tingkat risiko non-karsinogenik dinyatakan sebagai rasio tanpa satuan (*dimensionless*) antara Intake dengan Dosis Referensi:
+
+\\[\mathbf{RQ = \frac{I_{\text{nk}}}{\text{RfD}}} \quad \text{atau untuk inhalasi} \quad \mathbf{RQ = \frac{C}{\text{RfC}}}\\]
+
+*(Jika intake inhalasi dikonversi ke satuan dosis \\(\text{mg/kg}\times\text{hari}\\), maka pembaginya adalah RfD inhalasi)*.
+
+*   **Interpretasi Tingkat Risiko (RQ):**
+    *   **\\(\mathbf{RQ \le 1}\\):** Tingkat risiko **AMAN (*acceptable / no health concern*)**. Konsentrasi agen risiko belum melampaui batas toleransi fisiologis; efek toksik non-karsinogenik tidak diperkirakan terjadi pada populasi tersebut.
+    *   **\\(\mathbf{RQ > 1}\\):** Tingkat risiko **TIDAK AMAN (*unacceptable*)**. Asupan telah melebihi dosis referensi harian; populasi berisiko mengalami gangguan kesehatan non-karsinogenik dan **wajib dilakukan tindakan pengelolaan risiko**.
+
+---
+
+#### b. Efek Karsinogenik: *Excess Cancer Risk* (ECR)
+Tingkat risiko karsinogenik menyatakan probabilitas tambahan seseorang terkena kanker sepanjang hidupnya akibat pajanan zat karsinogenik, dihitung dengan mengalikan asupan karsinogenik terhadap *Slope Factor*:
+
+\\[\mathbf{ECR = I_k \times \text{SF}}\\]
+
+Hasilnya dinyatakan dalam notasi ilmiah eksponensial (misalnya \\(1\text{E}-6\\) hingga \\(1\text{E}-4\\)).
+
+*   **Interpretasi Nilai ECR (Batas Keberterimaan US-EPA & Kemenkes):**
+    *   *Rentang Target Keberterimaan (*Acceptable Risk Range*):* **\\(10^{-6}\text{ sampai }10^{-4}\\) (atau \\(1\text{E}-6\text{ s.d. }1\text{E}-4\\))**.
+        *   \\(1\text{E}-6\\) (\\(1 \times 10^{-6}\\)) berarti terdapat potensi **1 kasus tambahan kanker per 1.000.000 populasi** terpajan sepanjang hayat.
+        *   \\(1\text{E}-4\\) (\\(1 \times 10^{-4}\\)) berarti terdapat potensi **1 kasus tambahan kanker per 10.000 populasi** terpajan sepanjang hayat.
+    *   **\\(\mathbf{ECR \le 10^{-4}}\\):** Risiko kanker dianggap **dapat diterima / ditoleransi (*acceptable / tolerable*)** oleh regulasi kesehatan lingkungan.
+    *   **\\(\mathbf{ECR > 10^{-4}}\\) (\\(> 1\text{E}-4\\)):** Risiko kanker dinyatakan **TIDAK DAPAT DITERIMA (*unacceptable*)**. Pajanan berpotensi nyata memicu kelimpahan klaster kanker di masyarakat/pekerja, sehingga **intervensi pengendalian risiko mutlak wajib dilakukan**.
+
+---
+
+### 6. Strategi Pengelolaan Risiko (*Risk Management Strategy*)
+
+Pengelolaan risiko adalah tindak lanjut yang **wajib dilakukan apabila \\(RQ > 1\\) atau \\(ECR > 1\text{E}-4\\)**. Tujuannya adalah mereduksi asupan agar nilai \\(RQ \le 1\\) atau \\(ECR \le 1\text{E}-4\\).
+
+Pedoman ARKL Kemenkes 2012 membagi pengelolaan risiko menjadi:
+1.  **Strategi Pengelolaan Risiko:** Menghitung secara matematis batas aman parameter pajanan (konsentrasi, laju asupan, waktu pajanan, frekuensi, atau durasi).
+2.  **Cara Pengelolaan Risiko:** Intervensi fisik/teknis di lapangan (pemasangan cerobong scrubber/filter LEV, isolasi proses, penyediaan air bersih substitusi, pemakaian APD respirator, dan rotasi kerja).
+
+```
+                               [ STRATEGI PENGELOLAAN RISIKO ARKL ]
+                                                │
+         ┌──────────────────────────────┬───────┴──────────────────────┬──────────────────────────────┐
+         ▼                              ▼                              ▼                              ▼
+ [ KONSENTRASI AMAN (C) ]       [ KONSUMSI AMAN (R) ]          [ FREKUENSI AMAN (fE) ]        [ DURASI AMAN (Dt) ]
+  Menurunkan kadar di media      Membatasi volume asupan        Mengurangi hari pajanan        Membatasi masa tinggal /
+  (Baku Mutu Emisi / Ambien)     makanan / air minum (Ingesti)  tahunan (Rotasi kerja)         masa kerja di lokasi
+```
+
+#### a. Penentuan Konsentrasi Aman (\\(C_{\text{aman}}\\))
+Menetapkan target konsentrasi maksimum di media lingkungan agar asupan persis berada pada batas aman (ditetapkan \\(I_{\text{nk}} = \text{RfD}\\) atau \\(I_k = \frac{10^{-4}}{\text{SF}}\\)):
+
+*   **Konsentrasi Aman Non-Karsinogenik (Inhalasi):**
+    \\[C_{\text{aman}} = \frac{\text{RfC} \times W_b \times t_{\text{avg}}}{R \times t_E \times f_E \times D_t}\\]
+    *(Bila RfC dinyatakan sebagai konsentrasi udara batas, rumus ini menormalkan faktor waktu dan antropometri populasi)*.
+*   **Konsentrasi Aman Non-Karsinogenik (Ingesti):**
+    \\[C_{\text{aman}} = \frac{\text{RfD} \times W_b \times t_{\text{avg}}}{R \times f_E \times D_t}\\]
+*   **Konsentrasi Aman Karsinogenik (Inhalasi):**
+    \\[C_{\text{aman}} = \frac{10^{-4} \times W_b \times t_{\text{avg(k)}}}{\text{SF} \times R \times t_E \times f_E \times D_t}\\]
+*   **Konsentrasi Aman Karsinogenik (Ingesti):**
+    \\[C_{\text{aman}} = \frac{10^{-4} \times W_b \times t_{\text{avg(k)}}}{\text{SF} \times R \times f_E \times D_t}\\]
+
+---
+
+#### b. Penentuan Laju Konsumsi Aman (\\(R_{\text{aman}}\\))
+*Catatan Toksikologi Kritis:* Pengendalian laju asupan (\\(R\\)) **hanya dapat diterapkan pada jalur ingesti (air minum atau makanan)**. Laju pernapasan manusia (inhalasi) ditentukan oleh kebutuhan metabolik fisiologis dan tidak dapat dikurangi secara sengaja tanpa membahayakan jiwa.
+
+*   **Laju Konsumsi Aman Non-Karsinogenik (Ingesti):**
+    \\[R_{\text{aman}} = \frac{\text{RfD} \times W_b \times t_{\text{avg}}}{C \times f_E \times D_t}\\]
+*   **Laju Konsumsi Aman Karsinogenik (Ingesti):**
+    \\[R_{\text{aman}} = \frac{10^{-4} \times W_b \times t_{\text{avg(k)}}}{\text{SF} \times C \times f_E \times D_t}\\]
+    *(Aplikasi: Membatasi konsumsi harian ikan yang tercemar logam berat atau membatasi konsumsi air sumur tercemar arsen)*.
+
+---
+
+#### c. Penentuan Frekuensi Pajanan Aman (\\(fE_{\text{aman}}\\))
+Mengurangi jumlah hari kontak pajanan per tahun (misalnya melalui kebijakan rotasi shift kerja di industri atau pengaturan jadwal operasional):
+
+*   **Frekuensi Aman Non-Karsinogenik (Inhalasi):**
+    \\[fE_{\text{aman}} = \frac{\text{RfC} \times W_b \times t_{\text{avg}}}{C \times R \times t_E \times D_t}\\]
+*   **Frekuensi Aman Karsinogenik (Inhalasi):**
+    \\[fE_{\text{aman}} = \frac{10^{-4} \times W_b \times t_{\text{avg(k)}}}{\text{SF} \times C \times R \times t_E \times D_t}\\]
+
+---
+
+#### d. Penentuan Durasi Pajanan Aman (\\(Dt_{\text{aman}}\\))
+Menghitung batas maksimum jumlah tahun seseorang diperbolehkan terpajan pada konsentrasi tersebut sebelum risiko merugikan timbul (aplikatif untuk membatasi masa dinas kerja pekerja di area berisiko tinggi atau rekomendasi relokasi mukim):
+
+*   **Durasi Aman Non-Karsinogenik:**
+    Karena \\(t_{\text{avg}} = D_t \times 365\\), variabel \\(D_t\\) saling meniadakan jika dihitung secara harian linier. Namun jika dihitung terhadap ambang batas akumulatif atau batas proyeksi:
+    \\[Dt_{\text{aman}} = \frac{\text{RfC} \times W_b \times (365\text{ hari/tahun} \times D_t)}{C \times R \times t_E \times f_E}\\]
+*   **Durasi Aman Karsinogenik (Inhalasi):**
+    \\[Dt_{\text{aman}} = \frac{10^{-4} \times W_b \times 25.550\text{ hari}}{\text{SF} \times C \times R \times t_E \times f_E}\\]
+
+---
+
+### Rujukan Dokumen Terkait (*Source Grounding*):
+1.  **Kementerian Kesehatan RI (Ditjen PP&PL - 2012).** *Pedoman / Petunjuk Teknis Analisis Risiko Kesehatan Lingkungan (ARKL)*:
+    *   *Bab II (Prinsip ARKL, hlm. 8–18)*: Perbedaan ADKL vs ARKL, 4 Langkah NRC/EPA, Diagram Alir, Glosarium (Definisi Bahaya, Ink, Ik, RQ, ECR, RfD, RfC, SF).
+    *   *Bab III (Tata Laksana ARKL, hlm. 19–40)*: Langkah 1 Identifikasi Bahaya; Langkah 2 Analisis Dosis-Respons & US-EPA IRIS; Langkah 3 Analisis Pajanan Rumus 1–4 Inhalasi & Ingesti; Tabel 9 Nilai Default Faktor Pajanan Rahman/Nukman/EPA; Langkah 4 Karakterisasi Risiko Rumus 5 & 7; Pengelolaan Risiko Rumus 8–19 Batas Aman \\(C_{\text{aman}}, R_{\text{aman}}, fE_{\text{aman}}, Dt_{\text{aman}}\\).
+    *   *Bab IV (Contoh Aplikasi Kasus, hlm. 41–55)*: ARKL Air, Makanan, Agen Karsinogenik (Contoh Benzena \\(ECR = 4{,}56\text{E}-4\\), Arsen, Timbal).
+2.  **Departemen K3 FKM UI / Rahman, A.** *Penilaian Risiko Kimia Secara Kuantitatif (Slide 1–25)*:
+    *   Model Kurva Dosis-Respons Nonkarsinogen vs Karsinogenik, Dosis Referensi RfD, Persamaan Intake Inhalasi/Ingesti/Dermal, Default Faktor Pajanan Residensial vs Komersial/Industri, Rumus ECR & RQ, serta Konsep Baku Mutu Anjuran Kesehatan (DWEL/MCLG).
+3.  **US-EPA (RAGS Part F & Part E).** *Supplemental Guidance for Inhalation & Dermal Risk Assessment*:
+    *   Prinsip Penurunan Nilai Konsentrasi Referensi (RfC), *Inhalation Unit Risk* (IUR), *Extrapolation Model*, dan Penilaian Jalur Pajanan Kontak Fisik.
+
+Pahami penurunan matematis dan filosofi interpretasi ini secara mendalam, Dokter. Di meja ujian dewan spesialis, Anda harus mampu mendemonstrasikan kalkulasi risiko ini di papan tulis dengan cepat, tepat, dan tanpa keraguan sedikit pun.
+
+---
+
+📐 Apakah Anda ingin kita simulasikan latihan hitung kuantitatif: sebuah komunitas pekerja dan warga sekitar pabrik peleburan aki yang terpajan uap Timbal (Pb) di udara ambien sebesar \\(0{,}035\text{ mg/m}^3\\) dengan nilai RfC \\(0{,}0002\text{ mg/m}^3\\), bagaimana Anda menghitung RQ-nya dan merumuskan konsentrasi aman (\\(C_{\text{aman}}\\)) sesuai standar ARKL Kemenkes?

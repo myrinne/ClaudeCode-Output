@@ -1,0 +1,451 @@
+Berikut adalah catatan tinjauan toksikologi okupasi komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai dua zat korosif dan toksikan organik penting di industri: **(A) ASAM ASETAT (Asam Cuka Glasial / \\(CH_3COOH\\))** dan **(B) FENOL (Asam Karbolat / \\(C_6H_5OH\\))**.
+
+Kedua zat diuraikan dalam dua bagian terpisah menggunakan struktur 14 poin standar kedokteran kerja, berbasis literatur toksikologi industri (*NIOSH Pocket Guide, Hodgson, Carey Pope*), Permenaker No. 5 Tahun 2018, dan regulasi Penyakit Akibat Kerja (PAK) di Indonesia.
+
+---
+
+# BAGIAN A: ASAM ASETAT (\\(CH_3COOH\\) / Asam Cuka Glasial)
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Kimia**:
+  * **Nama & Rumus**: Asam asetat / Asam etanoat (\\(CH_3COOH\\)) [CAS# 64-19-7]; Berat Molekul (BM) **60,05 g/mol** (tabel Permenaker No. 5/2018: **60**).
+  * **Sinonim**: *Glacial acetic acid* (bentuk murni anhidrat), asam cuka, *methanecarboxylic acid*, *ethanoic acid*.
+* **Karakteristik Fisik-Kimia Kunci**:
+  * **Wujud & Sifat Pembekuan Unik**: Cairan jernih tak berwarna dengan bau menusuk, asam, dan tajam khas cuka (*pungent, sour, vinegar-like odor*). 
+  * **Fenomena "Glasial"**: Memiliki titik leleh **16,6°C (62°F)** dan titik didih **118°C (244°F)**. Pada suhu ruang dingin (<16,6°C, seperti di ruang ber-AC atau gudang musim dingin), asam asetat murni **membeku menjadi massa kristal padat transparan yang menyerupai es** (karena itu dinamakan *"glasial"*).
+  * **Densitas & Volatilitas**: Berat jenis cairan **1,05**; densitas uap relatif **2,07** (sekitar 2 kali lebih berat daripada udara, uap merayap di lantai kerja). Tekanan uap berkisar **11 hingga 15,7 mmHg pada 20°C**.
+  * **Kelarutan & pKa**: Larut campur sempurna (*miscible*) dalam air, alkohol, gliserol, dan eter. Memiliki konstanta disosiasi **\\(pKa = 4,76\\)**, sehingga secara termodinamika diklasifikasikan sebagai **asam organik lemah**.
+  * **Kemudahan Terbakar**: Merupakan cairan mudah terbakar (*combustible liquid* Kelas II) dengan titik nyala (*flash point*) **39°C (102°F)** dan batas ledak udara (LEL 4,0% – UEL 19,9%).
+  * **Faktor Konversi**: **\\(1\text{ ppm} = 2,46\text{ mg/m}^3\\)**; **\\(1\text{ mg/m}^3 = 0,407\text{ ppm}\\)** (pada 25°C, 1 atm).
+* **Klasifikasi Karsinogenitas**:
+  * **IARC**: *Not Listed* (tidak terdapat bukti karsinogenitas pada manusia maupun hewan).
+  * **ACGIH**: Tidak diklasifikasikan sebagai karsinogen manusia (*Not Classifiable* / tanpa notasi A).
+  * **Permenaker No. 5 Tahun 2018**: **Tanpa notasi karsinogen A1, A2, maupun A3**.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Sintesis Kimia Organik & Polimer Skala Besar**:
+  * Bahan baku utama sintesis **Vinyl Acetate Monomer (VAM)** untuk pembuatan polivinil asetat (PVA, perekat kayu/lem emulsi cat), selulosa asetat (serat sintetis kain, filter rokok, dan film fotografi), serta asam asetat anhidrida.
+* **Pelarut Industri Asam Tereftalat (PTA)**:
+  * Digunakan sebagai media pelarut reaksi oksidasi p-xilen menjadi *Purified Terephthalic Acid* (PTA) dalam rantai manufaktur plastik poliester / botol PET.
+* **Industri Pangan & Fermentasi**:
+  * Pengawet makanan, bahan pengasam (*acidifier*), dan produksi cuka makan komersial (kadar 4% – 8%).
+* **Industri Tekstil, Penyamakan, & Pewarnaan**:
+  * Agen pengatur pH pada pencelupan serat wol/katun dan proses penyamakan kulit hewan.
+* **Laboratorium, Rumah Sakit, & Fotografi**:
+  * Fiksasi jaringan patologi histopatologi, reagen pewarnaan asam cuka pada skrining IVA serviks (kadar 3% – 5%), dan cairan penahan (*stop bath*) pada pencucian film rontgen/fotografi manual.
+
+---
+
+### 3. Mekanisme Cedera dan Toksikokinetik (ADME)
+* **Mekanisme Cedera Jaringan (Toksikodinamik Lokal)**:
+  * Meskipun memiliki pKa 4,76 (asam lemah), pada konsentrasi pekat (*glacial* >80–99%), tingginya konsentrasi ion hidrogen (\\(H^+\\)) bebas mampu mendenaturasi protein seluler dan memicu **nekrosis koagulatif superfisial**.
+  * Terjadi presipitasi protein membran membentuk eskar berwarna keputihan atau kekuningan yang bertindak sebagai sawar mekanik temporer yang menghambat penetrasi asam ke lapisan muskularis yang lebih dalam (tidak sedalam likuefaksi basa).
+* **Toksikokinetik Fisiologis**:
+  * *Absorpsi*: Uap asam asetat terabsorpsi cepat di mukosa saluran napas atas karena kelarutan airnya yang tinggi. Pada kontak dermal atau ingesti, asam asetat cepat diserap melalui dinding kapiler.
+  * *Biotransformasi Alami*: Di dalam tubuh, asetat merupakan **molekul intermediat fisiologis normal**. Ion asetat yang masuk ke sirkulasi darah segera berikatan dengan koenzim A oleh enzim **asetil-KoA sintetase** membentuk **Asetil-Koenzim A (Acetyl-CoA)** di sitoplasma dan mitokondria.
+  * *Metabolisme*: Asetil-KoA langsung masuk ke dalam **Siklus Asam Sitrat (Siklus Krebs)** untuk dioksidasi menjadi energi seluler, melepaskan karbon dioksida dan air, atau digunakan dalam sintesis asam lemak dan kolesterol.
+  * *Eliminasi*: Produk akhir dieliminasi melalui paru sebagai **gas karbon dioksida (\\(CO_2\\)) lewat ekshalasi napas (>80%)** dan sebagian kecil diekskresikan lewat ginjal ke dalam urin.
+
+---
+
+### 4. Toksikodinamik Sistemik
+* **Iritasi Korosif Mukosa & Refleks Saluran Napas**:
+  * Uap asam asetat menstimulasi ujung saraf sensorik nervus trigeminus di cavum nasi dan serabut saraf C vagal di orofaring, memicu refleks batuk, sensasi terbakar, lakrimasi, dan bronkospasme akut.
+* **Asidosis Metabolik & Hemolisis Intravaskular (Pada Ingesti Asam Glasial)**:
+  * Bila tertelan cairan glasial pekat (>50–100 mL), absorpsi asetat masif membanjiri kapasitas dapar bikarbonat plasma, memicu **asidosis metabolik berat dengan anion gap tinggi**.
+  * Sifat asam pekat merusak dinding eritrosit secara langsung di mikrosirkulasi mesenterika, memicu **hemolisis intravaskular akut masif**, hemoglobinuria, dan pelepasan hemoglobin bebas yang memicu **Acute Tubular Necrosis (ATN) dan gagal ginjal anurik**.
+* **Edema Paru Kimiawi**:
+  * Inhalasi uap konsentrasi ekstrem (>50–100 ppm) di ruang tertutup merusak integritas membran alveolar-kapiler, memicu pneumonitis kimiawi dan edema paru non-kardiogenik.
+
+---
+
+### 5. Biomonitoring Okupasi dan Pemeriksaan Laboratorium
+* **Ketiadaan Biomarker Pajanan Spesifik**:
+  * **Tidak ada biomarker paparan biologis spesifik** (seperti metabolit urin atau darah) yang divalidasi atau diadopsi secara resmi.
+  * *Rasional*: Asetat plasma adalah metabolit endogen tubuh alami yang konsentrasinya berfluktuasi bebas mengikuti asupan nutrisi karbohidrat/lemak harian.
+* **Evaluasi Medis & Uji Klinis Objektif**:
+  * **Spirometri Serial**: Alat utama evaluasi dampak inhalasi uap di tempat kerja; menilai penurunan \\(FEV_1\\), kapasitas vital paksa (\\(FVC\\)), dan rasio \\(FEV_1/FVC\\).
+  * **Pemeriksaan Kesehatan Gigi & Mulut**: Skrining klinis erosi enamel gigi seri anterior (*dental erosion*) pada pekerja yang terpapar uap asam kronis.
+  * **Analisis Gas Darah (AGD), Elektrolit, & Urinalisis**: Wajib diperiksa pada kasus keracunan akut atau kecelakaan kerja tertelan untuk mendeteksi asidosis metabolik, laktat, dan hemoglobinuria/hematuria bebas.
+  * **Rontgen Toraks PA**: Serial foto dada pada pajanan uap pekat untuk mendeteksi atelektasis dan infiltrat edema paru.
+
+---
+
+### 6. Perjalanan Waktu Klinis (Clinical Timeline)
+* **Detik 0 – 30**: Iritasi instan pada konjungtiva dan mukosa hidung; bau asam tercium menyengat, bersin, dan rasa terbakar.
+* **Menit ke-1 – 15**: Batuk paroksismal, lakrimasi hebat, rinorea, nyeri substernal, dan bronkospasme akut. Pada kontak dermal asam glasial, sensasi terbakar timbul dalam hitungan detik.
+* **Jam ke-6 – 24**: Pada paparan uap masif di ruang terbatas, timbul risiko dekompensasi respirasi akibat **edema laring atau edema paru kimiawi non-kardiogenik tertunda**. Pada kasus ingesti, risiko perforasi lambung, asidosis, dan hemolisis memuncak pada jam-jam pertama.
+* **Hari ke-3 – 14**: Resolusi epitel kornea atau mukosa saluran napas pasca-dekontaminasi adekuat; pada luka bakar dermal mulai terbentuk jaringan granulasi.
+* **Bulan hingga Tahun**: Perkembangan sekuel kronis berupa hiperreaktivitas bronkial (RADS) atau erosi enamel gigi ireversibel.
+
+---
+
+### 7. Efek Akut Berdasarkan Konsentrasi dan Jalur Paparan
+Hubungan konsentrasi uap udara dan manifestasi klinis asam asetat:
+
+| Konsentrasi / Dosis | Manifestasi Klinis dan Fisiologis Manusia | Rujukan Kunci |
+| :--- | :--- | :--- |
+| **0,4 – 1,0 ppm** | **Ambang deteksi bau (*odor threshold*)**; aroma cuka mulai terdeteksi samar. | NIOSH |
+| **10 ppm** | **Nilai Ambang Batas (NAB) kerja harian Permenaker 5/2018 & ACGIH TLV-TWA**; ditoleransi tanpa iritasi bermakna. | Permenaker 5/2018 |
+| **15 ppm** | **Batas Paparan Singkat (PSD/STEL 15-menit)**; iritasi okular dan nasal ringan mulai terasa. | Permenaker 5/2018 |
+| **20 – 30 ppm** | Iritasi nyata pada membran mukosa mata, hidung, dan tenggorokan; lakrimasi, batuk, kekeringan faring. | Hodgson, NIOSH |
+| **50 ppm** | **Batas NIOSH IDLH (*Immediately Dangerous to Life or Health*)**; iritasi pernapasan hebat, rasa tercekik, tidak tertahankan. | NIOSH Pocket Guide |
+| **> 100 – 200 ppm** | Bronkospasme berat, trakeobronkitis nekrotikans, kerusakan kornea, dan **edema paru kimiawi akut**. | NIOSH, Pope 2020 |
+| **Dermal (Glasial >80%)** | Luka bakar kimia derajat II–III, eritema, lepuh/bula, dan nekrosis koagulatif pucat dalam waktu kontak singkat. | NIOSH |
+| **Mata (Glasial / >10%)** | Kekeruhan kornea, erosi stroma, konjungtivitis kimia nekrotik, iritis, dan risiko kebutaan permanen. | NIOSH |
+| **Ingesti (Glasial murni)** | Nyeri epigastrium hebat, perforasi gaster, hematemesis, asidosis laktat masif, hemolisis, dan syok fatal. | Hodgson 2010 |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Erosi Enamel Gigi (*Occupational Dental Erosion*)**:
+  * Paparan uap asam asetat kronis (>10 ppm) di udara melarutkan hidroksiapatit kalsium email gigi seri anterior secara bertahap tanpa disertai rasa nyeri (*painless wedge-shaped dental defects*).
+* **Penyakit Saluran Pernapasan Kronis & RADS**:
+  * Bronkitis industri kronis, batuk produktif berulang, percepatan penurunan nilai \\(FEV_1\\) tahunan, serta sindrom disfungsi jalan napas reaktif (**RADS**) pasca-paparan akut uap pekat.
+* **Dermatitis Kontak Iritan & Hiperkeratosis**:
+  * Kontak berulang larutan asam asetat encer (5% – 20%) menyebabkan kulit tangan menjadi kering, pecah-pecah (*fissuring*), hiperkeratosis kecokelatan, serta kuku tangan melunak dan rapuh.
+* **Faringitis & Konjungtivitis Kronis**:
+  * Inflamasi kataral persisten pada mukosa orofaring dan konjungtiva mata pada pekerja industri esterifikasi.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **Asam asetat** [CAS# 64-19-7]:
+    * **NAB (8-jam TWA)**: **10 BDS (ppm) atau 25 mg/m³**.
+    * **PSD (15-menit STEL)**: **15 BDS (ppm) atau 37 mg/m³**.
+    * **Berat Molekul**: 60.
+    * *Keterangan Efek Kritis*: **Iritasi saluran pernafasan atas dan mata, Gangguan fungsi paru**.
+* **ACGIH TLV (2018)**:
+  * **TLV-TWA**: **10 ppm (25 mg/m³)**.
+  * **TLV-STEL**: **15 ppm (37 mg/m³)**.
+* **NIOSH REL**:
+  * **TWA (10-jam)**: **10 ppm (25 mg/m³)**.
+  * **STEL (15-menit)**: **15 ppm (37 mg/m³)**.
+* **OSHA PEL**:
+  * **PEL-TWA (8-jam)**: **10 ppm (25 mg/m³)**.
+* **NIOSH IDLH (Immediately Dangerous to Life or Health)**:
+  * **50 ppm**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Permenaker No. 5 Tahun 2018 & ACGIH BEI**:
+  * **TIDAK DITETAPKAN parameter IPB/BEI numerik untuk asam asetat**.
+  * *Rasional Toksikologis*: Karena molekul asetat diubah secara instan menjadi asetil-KoA dan dimetabolisme sempurna dalam siklus Krebs menjadi \\(CO_2\\) dan air, tidak ada metabolit urin atau darah eksogen yang unik dan spesifik untuk mengukur beban paparan eksternal pekerja. Pemantauan higiene industri bertumpu murni pada **pemantauan kualitas udara lingkungan kerja (*air monitoring*)**.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Dekontaminasi Akut
+* **Dekontaminasi Dermal & Okular (Prinsip Utama: Air Masif Segera)**:
+  * **Luka Bakar Kulit**: Buka seluruh pakaian yang terkontaminasi dan lakukan pembilasan dengan **air mengalir dalam jumlah banyak (*copious water flush*) minimal selama 15 hingga 20 menit**.
+  * **Dekontaminasi Mata**: Segera lakukan irigasi kontinu dengan air mengalir atau salin fisiologis **minimal selama 15–30 menit** hingga pH forniks konjungtiva netral (7,0–7,4).
+  * **DILARANG KERAS MELAKUKAN NETRALISASI DENGAN LARUTAN BASA (SEPERTI SODA KUE / NAHCO₃)**: Reaksi asam-basa melepaskan panas eksotermik lokal yang akan membakar jaringan kulit/mata lebih dalam secara termal.
+* **Tata Laksana Inhalasi Uap**:
+  * Pindahkan korban segera ke tempat berudara segar; berikan **oksigen terhumidifikasi 100%**.
+  * Berikan aerosol **bronkodilator beta-2 agonis (salbutamol nebulisasi)** bila terdapat wheezing atau bronkospasme akut.
+  * Observasi tanda-tanda edema laring (stridor) dan pasang jalan napas definitif (intubasi) bila diperlukan. Korban paparan uap masif wajib **diobservasi minimal 24 jam** untuk mengantisipasi edema paru kimiawi.
+* **Tata Laksana Ingesti (Bila Tertelan Asam Glasial)**:
+  * **KONTRAINDIKASI MUTLAK**: **DILARANG MEMICU MUNTAH (*DO NOT INDUCE EMESIS*)**, **DILARANG MEMBERIKAN ARANG AKTIF**, dan **DILARANG MEMASANG PIPA LAMBUNG (NGT) SECARA BUTA**.
+  * Pasien dipuasakan total (*nil per os*), berikan hidrasi cairan intravena agresif dan analgesia kuat.
+  * Pasang akses vena untuk koreksi asidosis metabolik dan evaluasi endoskopi saluran cerna atas (EGD) dini dalam 12–24 jam.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Status Tidak Laik Kerja (*Unfit*)*: Pekerja dengan asma bronkial berat atau tidak terkontrol, hiperreaktivitas saluran napas non-spesifik, PPOK lanjut, penyakit permukaan kornea kronis, atau dermatitis kontak luas.
+* **Surveilans Kesehatan Kerja**:
+  * *Pemeriksaan Pra-Kerja*: Spirometri lengkap dasar (\\(FVC, FEV_1\\)), rontgen toraks PA, pemeriksaan kesehatan gigi dasar (status email gigi).
+  * *Pemeriksaan Berkala*: Evaluasi spirometri tahunan (memantau laju penurunan \\(FEV_1\\)) dan skrining erosi gigi berkala pada pekerja unit esterifikasi.
+* **Pengendalian Bahaya di Tempat Kerja**:
+  * *Rekayasa Teknik*: Sistem transfer bahan tertutup (*closed automated piping*), lemari asam berventilasi (*fume hood*), dan ventilasi pembuangan lokal (LEV).
+  * *Fasilitas Keselamatan*: Wajib tersedia **Emergency Safety Shower & Eyewash** yang memenuhi standar ANSI Z358.1 (dapat dijangkau <10 detik / 15 meter dari titik bahaya).
+  * *Alat Pelindung Diri (APD)*:
+    * Kacamata pelindung percikan kimia (*chemical splash goggles*) dikombinasikan dengan pelindung wajah (*face shield*).
+    * Sarung tangan bahan **karet butil, neoprena, atau nitril tebal** (asam glasial dapat menembus sarung tangan lateks tipis).
+    * Celemek/apron PVC/butil dan sepatu bot karet.
+    * Respirator katrid gas asam / uap organik atau SCBA bila konsentrasi udara melampaui NAB atau mendekati IDLH (50 ppm).
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Tercakup dalam:
+    * *Lampiran Bagian I.a.39*: *"Penyakit yang disebabkan oleh bahan kimia lain di tempat kerja yang memiliki hubungan langsung dengan pajanan"* (mencakup asam organik/asam asetat).
+    * *Lampiran Bagian II.b*: Penyakit saluran pernapasan akibat kerja (edema paru kimia, RADS, bronkitis industri).
+    * *Lampiran Bagian II.c*: Penyakit kulit akibat kerja (dermatitis kontak iritan).
+  * Memberikan hak perlindungan pengobatan penuh dan santunan kecelakaan kerja melalui program Jaminan Kecelakaan Kerja (JKK) BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Penegakan diagnosis PAK wajib menerapkan **7 langkah diagnosis okupasi** oleh dokter Sp.Ok.
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Kristal Es Palsu" Asam Cuka Glasial**:
+   * *Clinical Trap*: Pada suhu ruangan dingin (<16,6°C), asam asetat glasial membeku menjadi balok kristal padat bening. Pekerja sering mengira ini bahan padat aman dan memecahkannya tanpa APD; saat mencair atau terkena panas tubuh, cairan ini langsung membakar kulit dan menguapkan gas korosif pekat.
+2. **Erosi Enamel Gigi Anterior Tanpa Nyeri (*Painless Dental Erosion*)**:
+   * Menemukan pekerja industri kimia atau pengawetan dengan defek permukaan email gigi seri depan yang terkikis tipis dan halus tanpa adanya karies gigi aktif: tanda patognomonik paparan kronis uap asam volatil di udara kerja.
+3. **Mitos "Hanya Asam Anorganik yang Membahayakan Nyawa"**:
+   * Menganggap asam asetat sebagai bumbu dapur biasa yang tidak berbahaya adalah kesalahan fatal. Tertelan asam glasial pekat memicu **trias fatal: nekrosis lambung + asidosis metabolik refrakter + hemolisis intravaskular masif**.
+4. **Dilarang Netralisasi Alkali**:
+   * Jangan sekali-kali mencoba menetralkan tumpahan asam asetat di kulit dengan bubuk soda kue secara langsung karena reaksi eksotermik asam-basa menghasilkan panas yang memperhebat luka bakar termal.
+
+---
+---
+
+# BAGIAN B: FENOL (\\(C_6H_5OH\\) / Asam Karbolat)
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Parameter Kimia**:
+  * **Nama & Rumus**: Fenol / Asam karbolat / Hidroksibenzena (\\(C_6H_5OH\\)) [CAS# 108-95-2]; Berat Molekul (BM) **94,11 g/mol** (tabel Permenaker No. 5/2018: **94,11**).
+  * **Sinonim**: *Carbolic acid*, *hydroxybenzene*, *phenyl alcohol*, *monohydroxybenzene*, asam karbol.
+* **Karakteristik Fisik-Kimia Kunci**:
+  * **Wujud & Titik Lebur**: Berupa kristal padat berbentuk jarum berwarna putih, namun cepat berubah menjadi **merah muda atau cokelat kemerahan** bila terpapar udara dan cahaya akibat pembentukan produk oksidasi kuinon. Titik leleh **40,5°C – 43°C (105°F)**; titik didih **181,7°C (359°F)**.
+  * **Fenomena Pencairan Air (*Liquefied Phenol*)**: Kristal fenol padat dapat **mencair sempurna pada suhu ruang hanya dengan penambahan sekitar 8% hingga 10% air** (menghasilkan sediaan fenol cair komersial / *liquefied phenol 90%*).
+  * **Aroma & Volatilitas**: Memiliki aroma manis tajam yang khas menusuk hidung dan berkarakter obat (*sweet, acrid, medicinal/tar-like odor*); ambang deteksi bau berkisar antara **0,05 hingga 0,5 ppm**. Tekanan uap rendah (**0,35 mmHg pada 25°C**), namun densitas uapnya **3,24** (lebih dari 3 kali lebih berat daripada udara, mengendap di dasar ruangan).
+  * **Kelarutan**: Larut sedang dalam air (**~8,3 g/100 mL pada 20°C**), namun **sangat larut dalam pelarut organik lipofilik, alkohol, gliserol, eter, kloroform, dan larutan Polietilen Glikol (PEG)**.
+  * **Karakteristik Keasaman**: Memiliki konstanta disosiasi **\\(pKa = 9,95\\)**, sehingga secara kimiawi merupakan asam yang sangat lemah, namun bersifat **toksikan protoplasma kaustik yang sangat merusak membran sel**.
+  * **Faktor Konversi**: **\\(1\text{ ppm} = 3,85\text{ mg/m}^3\\)**; **\\(1\text{ mg/m}^3 = 0,260\text{ ppm}\\)** (pada 25°C, 1 atm).
+* **Klasifikasi Karsinogenitas**:
+  * **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+  * **ACGIH**: Diklasifikasikan dalam **Kategori A4** (*Not classifiable as a human carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Memiliki notasi A4, notasi Kulit, dan notasi BEI**.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri/Lingkungan
+* **Sintesis Polimer & Resin Plastik Masif**:
+  * Bahan baku utama pembuatan **resin fenol-formaldehida (Bakelite)** yang digunakan pada lem industri kayu lapis (*plywood adhesives*), papan sirkuit elektronik, cetakan pengecoran logam, dan isolator listrik.
+  * Bahan intermediat sintesis **Bisfenol A (BPA)** untuk polikarbonat dan resin epoksi, serta **kaprolaktam** untuk pembuatan serat nilon 6.
+* **Industri Minyak Bumi & Kilang Kimia**:
+  * Pelarut selektif dalam proses pemurnian minyak pelumas mesin (*solvent refining of lubricating oils*) dan ekstraksi tar batu bara.
+* **Industri Kimia Khusus, Pewarna, & Pestisida**:
+  * Pembuatan herbisida (seperti asam 2,4-diklorofenoksiasetat / 2,4-D), zat warna tekstil, asam salisilat (aspirin), serta bahan peledak asam pikrat (trinitrofenol).
+* **Formulasi Pembersih & Stripper Cat**:
+  * Bahan pelarut aktif pada cairan pengelupas cat pesawat terbang/otomotif (*industrial paint strippers*).
+* **Sektor Kesehatan & Farmasi**:
+  * Penggunaan historis antiseptik bedah karbol (Lister), zat kauterisasi kimiawi pada tindakan dermatologi/podiatri (ablasi matriks kuku ingrown toenail dengan fenol 88%), obat kumur/tenggorokan (kadar rendah <1,5%), dan pengawet biologis dalam sediaan vaksin.
+
+---
+
+### 3. Mekanisme Cedera dan Toksikokinetik (ADME)
+* **Mekanisme Cedera Jaringan Lokal**:
+  * Fenol bekerja sebagai **racun protoplasma universal (*universal protoplasmic poison*)**. Karena sifatnya yang sangat lipofilik, fenol berpenetrasi menembus dwilapis lipid membran sel secara instan.
+  * Di dalam sel, fenol mengendapkan dan mendenaturasi protein sitoplasma serta protein struktural, menyebabkan **nekrosis koagulatif jaringan lunak**.
+* **Absorpsi Dermal Cepat & Transkutan Masif (Karakteristik Fatal)**:
+  * Berbeda dari asam mineral murni yang tertahan oleh eskar, fenol diserap menembus kulit utuh dengan **kecepatan difusi transdermal yang sangat tinggi dan masif**, setara dengan laju penyerapan melalui rute oral.
+* **Toksikokinetik & Biotransformasi Hepar**:
+  * Fenol yang terserap ke peredaran darah didistribusikan secara cepat ke seluruh organ vascular (otak, jantung, hati, ginjal).
+  * Di hepar, fenol dimetabolisme melalui dua jalur detoksifikasi fase II utama:
+    1. **Konjugasi Asam Glukuronat (UGT)**: Membentuk metabolit **fenil glukuronida** (~60% – 80% dari dosis).
+    2. **Konjugasi Sulfat (SULT)**: Membentuk metabolit **fenil sulfat** (~10% – 20% dari dosis).
+  * *Jalur Bioaktivasi Oksidatif Fase I (Sitokrom P450 / CYP2E1)*:
+    * Sebagian kecil fenol dioksidasi oleh enzim CYP2E1 hepar menghasilkan metabolit dihidroksi yang sangat reaktif dan toksik: **hidrokuinon (*hydroquinone*)** dan **katekol (*catechol*)**.
+    * Hidrokuinon dan katekol dapat mengalami siklus redoks menjadi **benzokuinon**, menghasilkan stres oksidatif masif, radikal bebas, dan peroksidasi lipid.
+* **Ekskresi Ginjal & Fenomena Urin Berubah Warna**:
+  * Metabolit fenol diekskresikan secara cepat melalui **filtrasi glomerulus dan sekresi tubulus ginjal ke dalam urin (>90%)** dengan waktu paruh eliminasi plasma berkisar antara **1 hingga 4 jam**.
+  * *Tanda Diagnostik Kritis*: Bila urin pasien yang terpapar fenol ditampung dan dibiarkan berkontak dengan udara terbuka, metabolit hidrokuinon bebas akan teroksidasi spontan membentuk kuinon terpolimerisasi, menyebabkan **warna urin berubah menjadi HIJAU TUA hingga COKELAT KEHITAMAN (*dark green or blackish-brown urine*)**.
+
+---
+
+### 4. Toksikodinamik Sistemik
+Pajanan fenol memicu sindrom intoksikasi sistemik multisistem yang mematikan dalam waktu singkat:
+* **EFEK ANESTESI LOKAL PATOGNOMONIK (*LOCAL ANESTHETIC EFFECT*)**:
+  * Fenol memiliki kemampuan melumpuhkan konduksi membran sel saraf sensorik perifer (memblokade kanal natrium dan mendenaturasi serat saraf aferen tipe C dan A-delta).
+  * Akibatnya, area kulit yang mengalami luka bakar kimia fenol **TIDAK TERASA NYERI, KEBAST, ATAU MATI RASA TOTAL (*PAINLESS BURN / LOCAL ANESTHESIA*)**. Pekerja tidak merasakan sensasi perih membakar, sehingga kerap tidak menyadari bahwa tubuhnya telah terkontaminasi dan terlambat mencuci kulit, memungkinkan racun terus diserap ke sirkulasi darah.
+* **Kardiotoksisitas Akut Mematikan**:
+  * Fenol menekan kontraktilitas miokard secara langsung (*direct myocardial depression*), melumpuhkan nodus sinoatrial, dan memperlambat konduksi intrakardial.
+  * Memicu **hipotensi refrakter berat, bradikardia berat, aritmia ventrikel ganas, fibrilasi ventrikel, dan kolaps kardiovaskular mendadak**.
+* **Neurotoksisitas Susunan Saraf Pusat (SSP)**:
+  * Fase Awal: Stimulasi SSP transien yang cepat, ditandai dengan agitasi, tremor otot, hiperventilasi, dan **kejang tonik-klonik umum**.
+  * Fase Lanjut: Diikuti secara cepat oleh depresi SSP masif, hilangnya kesadaran mendadak, koma dalam, hilangnya refleks batang otak, serta depresi pusat pernapasan medular yang berujung pada **apnea sentral dan henti napas**.
+* **Nefrotoksisitas Berat & Nekrosis Tubular Akut (ATN)**:
+  * Kerusakan sitotoksik langsung oleh fenol dan metabolit kuinon pada sel epitel tubulus proksimal ginjal, diperparah oleh presipitasi hemoglobin/mioglobin intra-tubular, menyebabkan **gagal ginjal akut anurik**.
+* **Toksisitas Hematologi: Hemolisis & Methemoglobinemia**:
+  * Metabolit oksidatif kuinon (hidrokuinon/katekol) merusak integritas membran eritrosit memicu **hemolisis intravaskular akut**.
+  * Mengoksidasi zat besi heme ferro (\\(Fe^{2+}\\)) menjadi ferri (\\(Fe^{3+}\\)), menghasilkan **methemoglobinemia (MetHb)** yang memperparah hipoksia histotoksik jaringan.
+
+---
+
+### 5. Biomonitoring Okupasi dan Evaluasi Laboratorium
+* **Biomarker Paparan Spesifik Resmi (Baku Emas)**:
+  * **Kadar Fenol Total dalam Urin (*Total Phenol in Urine*)**:
+    * Mengukur total fenol bebas dan konjugatnya (glukuronida/sulfat) pasca-hidrolisis asam menggunakan metode kromatografi gas (GC/FID) atau HPLC.
+  * **Nilai Indeks Pajanan Biologi (IPB / BEI)**:
+    * Sesuai **Permenaker No. 5 Tahun 2018 (Lampiran 4 No. 36)** dan **ACGIH BEI (2018)**:
+      * Parameter: **Phenol dalam Urin**.
+      * Waktu Pengambilan Sampel: **Akhir shift kerja (*End of shift*)**.
+      * Nilai IPB: **250 mg/g kreatinin**.
+      * *Catatan Notasi*: **B** (*background* endogen normal dari metabolisme tirosin/asam amino dan diet berkisar 10–20 mg/g kreatinin) serta **Ns** (*non-spesifik*, karena paparan benzena juga menghasilkan metabolit fenol urin).
+* **Evaluasi Laboratorium & Klinis Fase Akut**:
+  * **Pemantauan EKG Kontinu di Sisi Ranjang**: Wajib dipasang seketika untuk mendeteksi bradikardia, perpanjangan interval PR/QRS, aritmia ventrikel, atau depresi segmen ST.
+  * **Uji Fungsi Ginjal Serial**: Pemantauan ketat kadar kreatinin serum, Blood Urea Nitrogen (BUN), dan *urine output* per jam (deteksi dini anuria).
+  * **Pemeriksaan Darah Lengkap, Hemolisis, & Kadar Methemoglobin Darah**: Skrining anemia hemolitik, hemoglobin bebas plasma, dan kadar MetHb (CO-Oximeter).
+  * **Evaluasi Warna Urin Serial**: Memantau perubahan warna urin menjadi kehijauan/kehitaman sebagai indikator ekskresi metabolit kuinon masif.
+
+---
+
+### 6. Perjalanan Waktu dan Ambang Letal (Time Course & Threshold)
+* **Kecepatan Absorpsi & Onset Sistemik Instan**:
+  * Penyerapan transkutan berlangsung dalam **hitungan menit**.
+  * Nyeri lokal atau sensasi kesemutan hanya berlangsung beberapa detik sebelum area kulit menjadi mati rasa/kebas.
+  * Tanda-tanda kolaps sistemik (pusing, hipotensi, kejang, atau koma) dapat berkembang **dalam waktu 5 hingga 30 menit** pasca-kontaminasi kulit.
+  * Kematian akibat henti napas sentral atau fibrilasi ventrikel dapat terjadi dalam rentang waktu **30 menit hingga beberapa jam**.
+* **Ambang Batas Luas Permukaan Kulit (TBSA) yang Mematikan**:
+  * **Ambang Kematian Sangat Kecil**: Paparan larutan fenol pekat pada area kulit seluas **hanya 60 hingga 100 cm² (setara dengan luas satu telapak tangan atau ~1% – 2,5% TBSA)** SUDAH DAPAT MENYEBABKAN DOSIS ABSORPSI LETAL yang memicu kolaps sirkulasi dan kematian dalam hitungan jam.
+  * Kontak dermal seluas >10% TBSA dengan larutan fenol konsentrasi >50% hampir selalu berakibat fatal tanpa tindakan dekontaminasi instan yang agresif.
+
+---
+
+### 7. Efek Akut Berdasarkan Konsentrasi dan Jalur Paparan
+* **Paparan Dermal (Kulit)**:
+  * Kontak dengan fenol pekat (>50–90%): Kulit memutih kelabu seperti lilin (*waxen/white blanching*), berkerut, tanpa nyeri (kebas total); kemudian berubah menjadi cokelat terang dan mengelupas meninggalkan ulkus nekrotik dalam.
+  * Kontak larutan encer (1% – 5%): Menimbulkan eritema, edema, sensasi kebas lokal, dan dermatitis papulovesikular.
+* **Paparan Okular (Mata)**:
+  * Percikan cairan fenol memicu denaturasi protein kornea instan, nekrosis epitel dan stroma, kekeruhan kornea putih susu total, skleritis nekrotikans, dan kebutaan ireversibel.
+* **Paparan Inhalasi (Uap / Aerosol)**:
+  * Iritasi saluran napas atas, batuk, suara serak, pneumonitis kimiawi, dispnea, edema paru non-kardiogenik, disertai penyerapan uap alveolar sistemik yang memicu pusing, kejang, dan depresi napas.
+* **Paparan Ingesti (Tertelan)**:
+  * Sensasi terbakar singkat pada bibir dan lidah yang segera menjadi kebas/anestetik total; mukosa orofaring memutih nekrotik, korosi lambung, kejang mendadak, koma, kolaps vaskular, dan kematian cepat.
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Kesehatan
+* **Okronosis Okupasi (*Occupational Ochronosis*)**:
+  * Tanda patognomonik klasik akibat paparan fenol kronis bertahun-tahun. Terjadi deposisi pigmen polimer fenol/kuinon berwarna hitam kebiruan atau keabuan pada jaringan ikat elastin dan kartilago tubuh: kartilago telinga menghitam kaku, sklera mata berwarna abu-abu gelap, pigmentasi kulit wajah dan tangan, serta osteoartritis degeneratif sendi besar.
+* **Sindrom Fenolisme (*Chronic Phenolism*)**:
+  * Sindrom intoksikasi sistemik kronis pada pekerja industri karbol, ditandai dengan kelemahan fisik menyeluruh (*malaise*), sakit kepala berulang, anoreksia, penurunan berat badan progresif, rasa logam di mulut, hipersalivasi, dispepsia, dan diare kronis.
+* **Kerusakan Hati & Ginjal Kronis**:
+  * Degenerasi vakuolar hepatosit, peningkatan enzim transaminase (SGOT/SGPT), nefrosklerosis kronis, proteinuria, dan penurunan laju filtrasi glomerulus.
+* **Dermatitis Kontak Kronis**:
+  * Dermatitis kontak iritan kronis, eritema bersisik, likenifikasi, dan ekzema tangan kronis.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **Fenol** [CAS# 108-95-2]:
+    * **NAB (8-jam TWA)**: **5 BDS (ppm)** atau setara **19 mg/m³**.
+    * **Berat Molekul**: 94,11.
+    * **Notasi**: **A4; Kulit; BEI**.
+    * *Keterangan Efek Kritis*: **Iritasi saluran pernapasan atas; Kerusakan paru dan Gangguan sistem syaraf pusat**.
+* **ACGIH TLV (2018)**:
+  * **TLV-TWA**: **5 ppm (19 mg/m³)**.
+  * **Notasi**: **Skin** (bahaya absorpsi transdermal bermakna), **A4** (*Not classifiable as a human carcinogen*), **BEI**.
+* **NIOSH REL**:
+  * **TWA (10-jam)**: **5 ppm (19 mg/m³)** [Notasi: **skin**].
+  * **Ceiling (15-menit)**: **15,6 ppm (60 mg/m³)**.
+* **OSHA PEL**:
+  * **PEL-TWA (8-jam)**: **5 ppm (19 mg/m³)** [Notasi: **skin**].
+* **NIOSH IDLH (Immediately Dangerous to Life or Health)**:
+  * **250 ppm**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 4 No. 36)**:
+  * Bahan Kimia: **Phenol** [CAS# 108-95-2].
+  * Determinan: **Phenol dalam Urin** (Phenol*).
+  * Waktu Pengambilan Sampel: **Akhir shift kerja (*End of shift*)**.
+  * Nilai IPB: **250 mg/g kreatinin**.
+* **ACGIH BEI (2018)**:
+  * Determinan: Phenol in urine.
+  * Waktu: End of shift.
+  * Nilai BEI: **250 mg/g creatinine** (Notasi: **B** [background endogen], **Ns** [non-spesifik, juga dihasilkan dari metabolisme benzena]).
+
+---
+
+### 11. Tatalaksana Medis Darurat & Dekontaminasi Khusus
+* **PROTOKOL DEKONTAMINASI KULIT KHUSUS (ATURAN EMAS UJIAN SP.OK)**:
+  1. Segera lepaskan seluruh pakaian, sepatu, dan perhiasan yang terkontaminasi.
+  2. **Agen Dekontaminasi Pilihan Pertama: POLIETILEN GLIKOL (PEG 300 atau PEG 400)**:
+     * Larutan PEG 300 atau PEG 400 (atau larutan PEG dengan alkohol dalam perbandingan 50:50) merupakan cairan pengikat fenol terbaik.
+     * *Rasional*: Kelarutan fenol dalam PEG jauh lebih tinggi daripada kelarutan fenol dalam air atau lipid kulit, sehingga PEG mampu mengikat dan mengekstraksi molekul fenol bebas dari permukaan kulit dan lapisan stratum korneum secara instan.
+     * Usapkan dan bilas area kulit yang terpapar dengan larutan PEG secara bebas dan berulang-ulang menggunakan kassa tebal selama beberapa menit, lalu bilas dengan air.
+  3. **Agen Dekontaminasi Pilihan Kedua (Bila PEG Tidak Tersedia)**:
+     * Gunakan larutan **Isopropanol atau Etanol 70%** (alkohol medis). Usapkan dan basuh kulit berulang-ulang untuk melarutkan residu fenol, lalu lanjutkan dengan guyuran air mengalir.
+  4. **PERINGATAN KRITIS & FATAL TENTANG PENGGUNAAN AIR (*WATER DECONTAMINATION WARNING*)**:
+     * **DILARANG KERAS MENGELAP ATAU MEMBASUH KULIT DENGAN SEDIKIT AIR ATAU MENGGUNAKAN LAP/HANDUK BASAH MINIMAL**!
+     * *Rasional Biofisika*: Fenol memiliki kelarutan terbatas dalam air (~8%). Menyekakan sedikit air justru akan melarutkan kristal fenol pekat, meningkatkan fraksi fenol bebas dalam larutan air, menurunkan tegangan antarmuka kulit, dan **MEMPERCEPAT PENYERAPAN TRANSDERMAL FENOL KE DALAM PEMBULUH DARAH SECARA DRAMATIS**.
+     * *Aturan Penggunaan Air*: Jika PEG atau alkohol tidak tersedia, satu-satunya cara menggunakan air adalah **GUYURAN AIR BERTEKANAN DERAS DALAM VOLUME YANG SANGAT BESAR DAN TERUS-MENERUS (*COPIOUS TORRENTS OF RUNNING WATER*)** di bawah *emergency safety shower* minimal selama **15 hingga 30 menit**. Tujuannya adalah menghanyutkan molekul fenol secara mekanis sebelum sempat terserap.
+* **Resusitasi Suportif Sistemik Agresif**:
+  * Amankan jalan napas (intubasi dini bila pasien koma atau mengalami depresi napas).
+  * **Tatalaksana Kejang**: Berikan benzodiazepin IV (diazepam 5–10 mg atau lorazepam 2–4 mg IV).
+  * **Tatalaksana Aritmia & Kolaps Sirkulasi**: Pantau EKG kontinu; berikan resusitasi cairan kristaloid hati-hati dan vasopresor (norepinefrin) bila hipotensi refrakter.
+  * **Koreksi Asidosis & Proteksi Ginjal**: Berikan infus Natrium Bikarbonat untuk mengoreksi asidosis metabolik berat dan memfasilitasi alkalinisasi urin guna meminimalkan presipitasi hemoglobin/mioglobin di tubulus ginjal.
+  * **Tatalaksana Methemoglobinemia**: Bila kadar MetHb darah >20–30% atau timbul sianosis hipoksik: berikan **Metilen Biru 1% dosis 1–2 mg/kgBB IV pelan selama 5 menit** (pastikan pasien tidak menderita defisiensi G6PD).
+  * **Hemodialisis Darurat**: Meskipun fenol memiliki volume distribusi sedang, dialisis darurat diindikasikan untuk mengatasi gagal ginjal akut, hiperkalemia berat, dan membersihkan metabolit kuinon pada intoksikasi berat.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * *Status Tidak Laik Kerja (*Unfit*) Mutlak*: Pekerja dengan riwayat penyakit hati kronis (sirosis hepar/gangguan konjugasi), penyakit ginjal kronis (klirens metabolit terganggu), aritmia kordis simtomatik, riwayat kejang/epilepsi, defisiensi enzim G6PD, atau kelainan sawar kulit kronis luas pada tangan dan tubuh.
+* **Surveilans Kesehatan Kerja**:
+  * *Pemeriksaan Pra-Kerja*: Uji fungsi hati (SGOT, SGPT, bilirubin), uji fungsi ginjal (ureum, kreatinin), EKG 12-lead lengkap, darah lengkap, dan pemeriksaan status integritas kulit.
+  * *Pemeriksaan Berkala*: Pemantauan kadar **fenol total urin akhir shift kerja** secara berkala (evaluasi terhadap nilai IPB 250 mg/g kreatinin), EKG tahunan, dan evaluasi fungsi ginjal/hati.
+* **Pengendalian Bahaya Lingkungan Kerja**:
+  * *Rekayasa Teknik*: Sistem transfer bahan tertutup (*closed hermetic system*), tekanan negatif di area reaktor resin, ventilasi pembuangan lokal (LEV).
+  * *Fasilitas Tanggap Darurat*: Wajib tersedia **botol larutan Polietilen Glikol (PEG 300/400) dan/atau alkohol 70%** dalam jumlah banyak di dekat stasiun kerja, berdampingan dengan *Safety Shower & Eyewash Station* ANSI Z358.1.
+* **ALAT PELINDUNG DIRI (APD) KESELAMATAN KRITIS**:
+  * **BAHAYA DAN KEGAGALAN SARUNG TANGAN BIASA**:
+    * **DILARANG KERAS MENGGUNAKAN SARUNG TANGAN LATEKS ALAMI MAUPUN SARUNG TANGAN NITRIL TIPIS (*EXAMINATION GLOVES*)**!
+    * *Fakta Higiene Industri*: Molekul fenol yang lipofilik mampu menembus (*breakthrough*) lapisan sarung tangan lateks dan nitril tipis dalam hitungan **kurang dari beberapa detik hingga menit**, memaparkan tangan pekerja tanpa disadari di balik sarung tangan yang basah.
+  * **Bahan Sarung Tangan Wajib**:
+    * Wajib menggunakan sarung tangan tebal khusus tahan fenol berbahan **KARET BUTIL, NEOPRENA TEBAL, atau VITON**.
+  * Pelindung tubuh: Celemek/setelan pakaian kedap bahan kimia berbahan butil/neoprena, kacamata *chemical splash goggles* berpadu dengan pelindung seluruh wajah (*full face shield*), serta sepatu bot karet tahan kimia.
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Secara regulatori tercakup dalam:
+    * *Lampiran Bagian I.a.12*: *"Penyakit yang disebabkan oleh benzene atau homolognya"* (mengingat fenol merupakan derivat hidroksibenzena).
+    * *Lampiran Bagian I.a.39*: *"Penyakit yang disebabkan oleh bahan kimia lain di tempat kerja yang memiliki hubungan langsung dengan pajanan"*.
+    * *Lampiran Bagian II.c*: Penyakit kulit akibat kerja (dermatitis kontak kimiawi, okronosis).
+  * Memberikan dasar hukum sah untuk klaim pembiayaan pengobatan, santunan kecelakaan kerja, dan jaminan cacat JKK BPJS Ketenagakerjaan.
+* **PP No. 28 Tahun 2024 & Permenkes No. 11 Tahun 2022**:
+  * Mewajibkan dokter Sp.Ok membuktikan hubungan kausalitas gangguan organ (hati, ginjal, kulit) melalui **7 langkah diagnosis okupasi**, investigasi faktor bahaya kimia lingkungan kerja, serta pelaporan resmi kasus PAK ke dinas tenaga kerja dan kesehatan.
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Luka Bakar Tanpa Nyeri" (*The Painless Burn Trap*)**:
+   * *Examination Classic Trap*: Pasien tersiram cairan kimia di pabrik, datang dengan lesi kulit pucat keabuan namun tersenyum dan mengaku *"tidak merasa sakit sama sekali"*. Dokter pemeriksa mengira luka bakar derajat ringan dan menunda resusitasi.
+   * *Koreksi Fatal*: Ini adalah efek **anestesi lokal patognomonik fenol** pada saraf sensorik. Pasien berada dalam ancaman maut karena racun sedang diserap masif menuju jantung dan otak; kejang, koma, dan aritmia letal dapat timbul dalam hitungan menit.
+2. **Jebakan "Mengelap Kulit dengan Kain Basah" (*The Wet Cloth Disaster*)**:
+   * Menyekakan kain basah dengan sedikit air pada kulit yang terkena fenol adalah kesalahan fatal yang **mempercepat penyerapan perkutan fenol hingga 2–3 kali lipat**. Dekontaminasi pilihan adalah menyeka dengan **PEG 300/400 atau alkohol 70%**; bila hanya ada air, gunakan guyuran deras bervolume masif (*copious torrents*).
+3. **Urin Hijau-Hitam di Wadah Spesimen (*The Dark Green Urine Sign*)**:
+   * Sampel urin pasien yang awalnya tampak kuning jernih, saat didiamkan di meja laboratorium berubah warna menjadi **kehijauan gelap atau cokelat kehitaman**. Ini adalah tanda khas oksidasi metabolit hidrokuinon fenol oleh oksigen udara.
+4. **Kegagalan Sarung Tangan Nitril Biru di Laboratorium**:
+   * Petugas laboratorium atau pekerja pabrik sering mengira sarung tangan nitril biru pemeriksaan aman untuk semua bahan kimia. Fenol menembus nitril tipis secara instan; sarung tangan wajib adalah **karet butil, neoprena tebal, atau viton**.
+5. **Ambang Maut Hanya 1% – 2% TBSA**:
+   * Tumpahan fenol pekat pada area kulit seluas **telapak tangan korban (1%–2% TBSA)** sudah cukup memasukkan dosis letal yang memicu henti jantung dalam 30–60 menit.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Asam Asetat (\\(CH_3COOH\\)) vs. Fenol (\\(C_6H_5OH\\))
+
+| No | Poin Parameter | (A) ASAM ASETAT (\\(CH_3COOH\\)) | (B) FENOL (\\(C_6H_5OH\\) / Asam Karbolat) | Rujukan Utama Notebook |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Cairan jernih/kristal es (glasial beku pada <16,6°C); BM 60,05; TD 118°C; **pKa 4,76 (asam organik lemah)**; uap 2x lebih berat dari udara; cairan mudah terbakar (FP 39°C). Karsinogenitas: **Non-karsinogen (IARC Not Listed, ACGIH Not Classifiable, Permenaker 5/2018 tanpa notasi A1–A3)**. | Kristal putih/merah muda (cair bila +8% air); bau karbol manis menusuk; BM 94,11; TL 41°C, TD 182°C; **pKa 9,95 (asam sangat lemah)**; larut sedang di air, sangat larut di alkohol & PEG; uap 3,2x lebih berat dari udara. Karsinogenitas: **Non-karsinogen (IARC Grup 3, ACGIH A4, Permenaker 5/2018 A4, Notasi Kulit & BEI)**. | Permenaker 5/2018, NIOSH Pocket Guide, Hodgson 2010 |
+| **2** | **Sumber & Penggunaan** | Sintesis monomer vinil asetat (VAM), selulosa asetat, plastik PET (PTA), industri makanan/cuka (4–8%), tekstil/pewarna, penyamakan kulit, cairan *stop bath* fotografi. | Sintesis resin fenol-formaldehida (Bakelite), bisfenol A (BPA), nilon 6 (kaprolaktam), industri pemurnian pelumas, herbisida (2,4-D), *paint strippers*, disinfektan karbol, antiseptik. | NIOSH Pocket Guide, Hodgson 2010, Pope 2020 |
+| **3** | **Mekanisme Cedera & Toksikokinetik** | **Nekrosis koagulatif superfisial**: denaturasi protein membentuk eskar keputihan/kecokelatan. Toksikokinetik: diserap mukosa/paru/kulit; **masuk jalur fisiologis alami diubah menjadi Asetil-KoA oleh asetil-KoA sintetase \\(\rightarrow\\) Siklus Krebs \\(\rightarrow\\) dioksidasi jadi CO2 dan H2O**. Ekskresi paru (>80% CO2). | **Racun protoplasma universal**: penetrasi membran cepat \\(\rightarrow\\) denaturasi protein masif & nekrosis koagulatif. **Absorpsi transdermal sangat cepat & masif (menembus kulit utuh menit)**. Biotransformasi hepar: **konjugasi glukuronida (UGT) & sulfat (SULT)**; fraksi kecil CYP2E1 menghasilkan **hidrokuinon & katekol**. Ekskresi urin (>90%, \\(t_{1/2}\\) 1–4 jam); **urin berubah hijau/hitam di udara**. | Permenaker 5/2018, Hodgson 2010, McQueen 2025 |
+| **4** | **Toksikodinamik Sistemik** | Iritasi korosif saluran napas/mata; uap pekat memicu bronkospasme & edema paru. Ingesti glasial memicu: **asidosis metabolik berat, hemolisis intravaskular akut masif, hemoglobinuria, dan gagal ginjal akut (ATN)**. | **EFEK ANESTESI LOKAL PATOGNOMONIK (luka bakar tidak nyeri / kebas total)**. Kardiotoksisitas: depresi miokard langsung, bradikardia, **aritmia ventrikel ganas, hipotensi refrakter, kolaps vaskular**. SSP: kejang tonik-klonik \\(\rightarrow\\) koma mendadak & apnea sentral. Nefrotoksik (ATN), **hemolisis intravaskular, dan methemoglobinemia (MetHb)**. | Hodgson 2010, Pope 2020, NIOSH Pocket Guide |
+| **5** | **Biomonitoring & Evaluasi Medis** | **Tidak ada biomarker biologis spesifik** (ion asetat adalah metabolit endogen). Evaluasi: spirometri serial (FEV1), rontgen toraks PA, AGD, elektrolit, urinalisis skrining hemolisis. | **Biomarker Paparan Spesifik (Baku Emas)**: **Kadar Fenol Total dalam Urin akhir shift kerja (IPB Permenaker 5/2018 & ACGIH BEI = 250 mg/g kreatinin)**. Evaluasi klinis: **pemantauan EKG kontinu**, faal ginjal (kreatinin/BUN), faal hepar, darah lengkap & MetHb, observasi warna urin. | Permenaker 5/2018 Lampiran 4 No. 36, ACGIH BEI |
+| **6** | **Perjalanan Waktu Klinis** | Iritasi uap instan (0–30 dtk). Bronkospasme menit pertama. Edema paru tertunda (6–24 jam). Ingesti glasial: asidosis dan hemolisis memuncak jam pertama. | Absorpsi dermal menit pertama. Anestesi lokal instan (kebas). **Gejala sistemik (kejang, koma, aritmia) timbul 5–30 menit**. **Kematian dapat terjadi dalam 30 menit hingga beberapa jam**. | Hodgson 2010, NIOSH |
+| **7** | **Efek Akut per Jalur & Konsentrasi** | 0,5–1 ppm: ambang bau. **10 ppm: NAB**. 20–30 ppm: iritasi mata/hidung nyata. **50 ppm: NIOSH IDLH** (iritasi hebat, batuk). >100 ppm: edema paru. Kulit: luka bakar derajat II–III. Mata: kekeruhan kornea. Ingesti: perforasi lambung & hemolisis. | 0,05–0,5 ppm: ambang bau. **5 ppm: NAB (Kulit)**. **250 ppm: NIOSH IDLH**. **Kulit**: memucat lilin tanpa nyeri \\(\rightarrow\\) nekrosis cokelat. **Ambang Fatal Dermal: paparan fenol pekat pada area seluas hanya 1%–2,5% TBSA (~telapak tangan) dapat letal dalam hitungan jam**. Mata: nekrosis kornea. Ingesti: kejang & kolaps sirkulasi cepat. | Permenaker 5/2018, NIOSH Pocket Guide |
+| **8** | **Efek Kronis & Sekuel** | **Erosi enamel gigi anterior (*dental erosion*) tanpa nyeri**; bronkitis kronis industri; penurunan \\(FEV_1\\) dipercepat; RADS; dermatitis kontak iritan kronis. | **Okronosis Okupasi (pigmentasi hitam kebiruan pada kartilago telinga, sklera, sendi)**; **Sindrom Fenolisme (kelemahan, anoreksia, dispepsia, diare)**; kerusakan hati & ginjal kronis; dermatitis kontak iritan kronis. | Hodgson 2010, Pope 2020 |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018**: NAB = **10 BDS (25 mg/m³)**; PSD = **15 BDS (37 mg/m³)** [BM 60]. **ACGIH TLV**: TWA 10 ppm, STEL 15 ppm. **NIOSH REL**: TWA 10 ppm, STEL 15 ppm. **OSHA PEL**: TWA 10 ppm. **IDLH: 50 ppm**. | **Permenaker 5/2018**: NAB = **5 BDS (19 mg/m³)** [BM 94,11; **Notasi: A4; Kulit; BEI**]. **ACGIH TLV**: TWA **5 ppm** [Skin, A4, BEI]. **NIOSH REL**: TWA 5 ppm [skin], C 15,6 ppm (15 m). **OSHA PEL**: TWA 5 ppm [skin]. **IDLH: 250 ppm**. | Permenaker 5/2018, NIOSH Pocket Guide |
+| **10** | **BEI / IPB** | **TIDAK DITETAPKAN** (metabolit asetat teroksidasi alami via siklus Krebs). Pemantauan kualitas udara lingkungan kerja (*air monitoring*). | **Permenaker 5/2018 Lampiran 4 No. 36 & ACGIH BEI**: Parameter: **Phenol dalam Urin**. Waktu: **Akhir shift kerja**. Nilai IPB = **250 mg/g kreatinin** (Notasi B, Ns). | Permenaker 5/2018 Lampiran 4 No. 36, ACGIH BEI |
+| **11** | **Tatalaksana Akut** | Guyuran air mengalir masif segera \\(\ge 15–20\\) menit. **Dilarang netralisasi basa** (reaksi eksotermik). Inhalasi: O2 terhumidifikasi, bronkodilator nebulisasi. Ingesti: puasakan (NPO), pasang IV line, dilarang muntah/arang aktif/NGT buta, evaluasi endoskopi dini (12–24 jam). | **Dekontaminasi Kulit Khusus**: **Swab/bilas berulang dengan POLIETILEN GLIKOL (PEG 300 atau 400)**; alternatif: **Isopropanol/Etanol 70%**, lalu bilas air. **PERINGATAN: DILARANG MENYEKAP DENGAN AIR SEDIKIT (mempercepat absorpsi dermal!)**; bila tanpa PEG, guyur air deras volume sangat masif \\(\ge 15–30\\) menit. Resusitasi: benzodiazepin (kejang), bikarbonat (asidosis), metilen biru (MetHb), hemodialisis. | Hodgson 2010, NIOSH |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi asma berat, PPOK, dermatitis kronis. Fasilitas: Safety shower & eyewash ANSI Z358.1 (<10 detik). Surveilans: spirometri tahunan, cek gigi. APD: kacamata goggle, respirator gas asam, sarung tangan butil/neoprena/nitril tebal. | Kelaikan kerja: *Unfit* bagi penyakit hati/ginjal kronis, aritmia kordis, defisiensi G6PD, dermatitis luas. Fasilitas: **stok wajib PEG 300/400** & safety shower. **APD KRITIS: DILARANG LATEKS/NITRIL TIPIS (tembus dalam hitungan detik!)**; **Wajib sarung tangan KARET BUTIL, NEOPRENA TEBAL, atau VITON**. | Permenaker 5/2018, NIOSH |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019 Lampiran I.a.39** (*bahan kimia lain terkait kerja*) & II.b (saluran pernapasan); jaminan JKK BPJS Ketenagakerjaan. Didukung PP 28/2024 & Permenkes 11/2022 (7 langkah diagnosis). | **Perpres No. 7 Tahun 2019 Lampiran I.a.12** (*derivat benzene/homolog*), I.a.39, & II.c (dermatosis okupasi/okronosis); jaminan JKK BPJS Ketenagakerjaan. Didukung PP 28/2024 & Permenkes 11/2022. | Perpres 7/2019, PP 28/2024, Permenkes 11/2022 |
+| **14** | **Clinical Pearls & Trap** | 1) Asam glasial membeku seperti es pada <16,6°C (menipu pekerja). 2) Erosi enamel gigi anterior tanpa rasa nyeri. 3) Ingesti glasial memicu trias: nekrosis lambung + asidosis + hemolisis masif. 4) Dilarang netralisasi basa. | 1) **Luka bakar tidak terasa nyeri (*painless burn*)** akibat efek anestesi lokal fenol pada saraf sensorik (menipu klinisi). 2) **Menyeka air sedikit mempercepat absorpsi perkutan fatal**. Dekontaminasi pilihan: **PEG 300/400**. 3) **Urin berubah hijau tua/hitam di udara**. 4) **Sarung tangan nitril tipis gagal menahan fenol pekat**. 5) Tumpahan seluas telapak tangan (1%–2% TBSA) dapat letal. | Hodgson 2010, Permenaker 5/2018 |
+
+---
+
+💡 *Apakah Anda ingin kita melengkapi seri toksikologi okupasi ini dengan modul intoksikasi logam berat industri beracun tinggi yang sering keluar di ujian board Sp.Ok, seperti **Gas Arsin (\\(AsH_3\\))** yang memicu hemolisis masif, **Merkuri (Hg)**, dan **Timbal (Pb)** lengkap dengan interpretasi biomarker darah/urin dan protokol kelasi spesifiknya?*

@@ -1,0 +1,335 @@
+Duduk tegak dan pusatkan perhatian Anda, Dokter. Dalam ujian dewan spesialis (*board examination*) Kedokteran Okupasi, toksikologi **merkuri (raksa / hydrargyrum / Hg)** merupakan materi klasik dengan jebakan diferensiasi spesies yang sangat tinggi. Kesalahan paling fatal seorang residen adalah menyamaratakan toksikokinetik dan efek klinis antara uap merkuri elemental, garam anorganik, dan senyawa organik. Ketiganya memiliki afinitas organ sasaran, barier membran biologis, jalur eliminasi, dan pilihan biomarker yang sama sekali berbeda.
+
+Berikut adalah telaah komprehensif **Merkuri (Hg) Bagian A** yang wajib Anda kuasai secara teoritis dan aplikatif:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Spesiasi Merkuri
+
+Secara kimiawi dan toksikologis, merkuri (nomor atom 80, berat atom 200,59 g/mol) terbagi ke dalam **tiga kelas besar spesies**:
+
+```
+                                [ KLASIFIKASI SPESIASI MERKURI ]
+                                                │
+         ┌──────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                      ▼                                      ▼
+[ MERKURI ELEMENTAL / Hg⁰ ]            [ MERKURI ANORGANIK ]                  [ MERKURI ORGANIK ]
+• Logam cair pada suhu kamar           • Garam Merkuro (Hg₂²⁺, valensi +1)    • Terikat kovalen pada gugus karbon
+• Tekanan uap tinggi (mudah menguap)   • Garam Merkuri (Hg²⁺, valensi +2)     • Alkil rantai pendek: Metilmerkuri
+• Sangat lipofilik, non-polar          • Sangat korosif, larut air              (CH₃Hg⁺), Etilmerkuri (C₂H₅Hg⁺)
+• Menembus Sawar Darah Otak (BBB)      • Menolak BBB; terakumulasi ginjal     • Aril: Fenilmerkuri
+```
+
+1.  **Merkuri Elemental / Metalik (\\(\text{Hg}^0\\)):**
+    *   *Sifat Fisik-Kimia:* Logam berat murni berfase cair pada suhu dan tekanan ruangan (satu-satunya logam cair pada suhu kamar) dengan titik didih 356,7°C. Memiliki tekanan uap jenuh yang tinggi sehingga **sangat mudah menguap (*volatile*) pada suhu kamar membentuk uap merkuri bebas tak berwarna, tak berbau, dan tak berasa**.
+    *   *Kelarutan & Polaritas:* Bersifat monoatomik, non-polar, dan **sangat lipofilik (*lipid-soluble*)**, yang memungkinkannya berdifusi melintasi membran alveolar dan sawar darah otak (*blood-brain barrier* / BBB) dengan sangat bebas.
+2.  **Merkuri Anorganik / Garam Merkuri:**
+    *   *Bentuk Oksidasi:* Terdiri dari dua tingkat bilangan oksidasi:
+        *   **Merkuro / Monovalen (\\(\text{Hg}_2^{2+}\\) / \\(\text{Hg}^+\\)):** Contohnya kalomel atau merkuro klorida (\\(\text{Hg}_2\text{Cl}_2\\)), berupa garam padat putih yang kelarutannya dalam air relatif rendah.
+        *   **Merkuri / Divalen (\\(\text{Hg}^{2+}\\)):** Contohnya merkuri klorida / sublimat korosif (\\(\text{HgCl}_2\\)), merkuri oksida (\\(\text{HgO}\\)), merkuri sulfida / sinabar (\\(\text{HgS}\\)), dan merkuri nitrat.
+    *   *Sifat Fisik-Kimia:* Berupa kristal padat atau serbuk putih; garam divalen (\\(\text{Hg}^{2+}\\)) sangat larut dalam air, bersifat kaustik korosif kuat terhadap mukosa, dan berada sebagai ion hidrofilik yang **tidak dapat menembus sawar darah otak secara pasif**.
+3.  **Merkuri Organik (Organomerkuri):**
+    *   *Struktur Kimia:* Senyawa di mana atom merkuri terikat langsung secara kovalen dengan sekurang-kurangnya satu atom karbon organik (formula \\(\text{R-Hg}^+\\) atau \\(\text{R-Hg-R'}\\)).
+    *   *Klasifikasi Sub-Kelompok:*
+        *   **Alkil Rantai Pendek (*Short-chain alkyl*):** Paling toksik dan stabil, terutama **Monometilmerkuri (\\(\text{CH}_3\text{Hg}^+\\))**, Dimetilmerkuri [\\((\text{CH}_3)_2\text{Hg}\\)], dan Etilmerkuri (\\(\text{C}_2\text{H}_5\text{Hg}^+\\)). Sangat lipofilik, stabil di lingkungan akuatik, dan bioakumulatif tinggi.
+        *   **Aril dan Alkoksi-alkil (*Aryl & Alkoxyalkyl*):** Contohnya fenilmerkuri asetat dan metoksietilmerkuri. Senyawa ini lebih tidak stabil dalam tubuh mamalia dan cepat dimetabolisme/dipecah menjadi merkuri anorganik (\\(\text{Hg}^{2+}\\)).
+
+---
+
+### 2. Sumber dan Sektor Penggunaan Industri
+
+Pajanan okupasi terhadap berbagai bentuk merkuri tersebar di berbagai sektor primer dan manufaktur:
+
+```
+                                  [ SEKTOR INDUSTRI TERPAJAN MERKURI ]
+                                                   │
+         ┌─────────────────────────┬───────────────┴───────────────┬─────────────────────────┐
+         ▼                         ▼                               ▼                         ▼
+ [ PENAMBANGAN EMAS ]      [ INDUSTRI KLOR-ALKALI ]      [ ELEKTRONIK & LAMPU ]    [ MEDIS & KONSUMER ]
+• Amalgamasi bijih emas    • Sel katoda merkuri cair     • Lampu fluoresen (TL)    • Termometer / tensimeter
+• Pembakaran amalgam       • Produksi Cl₂ & NaOH murni   • Sakelar listrik & relay • Tambalan amalgam gigi
+• Uap Hg⁰ konsentrasi      • Sumber emisi global         • Baterai oksida merkuri  • Krim pencerah kulit
+  ekstrem tanpa proteksi     terbesar di masa lalu         (mercuric oxide cells)    (ammoniated mercury)
+```
+
+1.  **Penambangan Emas Skala Kecil / Rakyat (PESK / *Artisanal and Small-Scale Gold Mining*):**
+    *   *Proses:* Merupakan **sumber emisi dan pajanan uap merkuri antropogenik terbesar di dunia saat ini**. Merkuri cair elemental (\\(\text{Hg}^0\\)) dituangkan ke dalam lumpur konsentrat bijih emas untuk membentuk gumpalan amalgam (paduan emas-merkuri).
+    *   *Mekanisme Bahaya:* Penambang memanaskan amalgam menggunakan *blowtorch* di ruang terbuka atau di dalam rumah tanpa ventilasi (*retort*) guna menguapkan merkuri dan menyisakan emas murni. Proses pembakaran ini melepaskan **konsentrasi uap \\(\text{Hg}^0\\) yang sangat masif langsung ke zona pernapasan pekerja dan keluarga sekitarnya**.
+2.  **Industri Klor-Alkali (*Chlor-Alkali Plants*):**
+    *   *Proses:* Secara historis merupakan industri pengguna merkuri skala besar terbesar. Menggunakan elektrolisis larutan garam (NaCl) dengan **sel katoda merkuri cair mengalir (*mercury cell process*)** untuk memproduksi gas klorin (\\(\text{Cl}_2\\)) dan natrium hidroksida (NaOH / kaustik soda) murni.
+    *   *Bahaya Okupasi:* Penguapan uap \\(\text{Hg}^0\\) dari bak elektrolisis dan limbah lumpur sel klor-alkali.
+3.  **Manufaktur Lampu Fluoresen dan Tabung Uap:**
+    *   *Proses:* Lampu neon/fluoresen (TL) dan lampu uap merkuri bertekanan tinggi bekerja berdasarkan eksitasi listrik atom merkuri bertekanan rendah untuk memancarkan radiasi UV yang diubah menjadi cahaya tampak oleh lapisan fosfor.
+    *   *Bahaya Okupasi:* Terjadi saat pengisian cairan merkuri mikro ke tabung kaca, serta risiko akut saat **pemecahan tabung lampu secara massal pada fasilitas daur ulang limbah lampu (*lamp crushing*)**.
+4.  **Termometer, Barometer, Manometer, dan Amalgam Gigi:**
+    *   *Peralatan Medis-Laboratorium:* Termometer air raksa dan tensimeter klinis (*sphygmomanometer*) rentan pecah sehingga menumpahkan merkuri cair ke celah lantai, memicu penguapan kronis di ruang kerja tertutup.
+    *   *Kedokteran Gigi (*Dental Amalgam*):* Amalgam gigi konvensional tersusun atas **\\(\sim 50\%\\) merkuri elemental cair** yang dicampur (*triturasi*) dengan serbuk logam paduan perak (Ag), timah (Sn), tembaga (Cu), dan seng (Zn). Dokter gigi dan perawat gigi terpajan uap \\(\text{Hg}^0\\) saat manipulasi adonan amalgam, pemasangan, dan pembuangan tambalan lama.
+5.  **Industri Baterai dan Sel Elektrolit Kering:**
+    *   *Penggunaan:* Pembuatan baterai merkuri (*mercuric oxide button cells*) untuk alat bantu dengar dan jam, serta penambahan merkuri sebagai inhibitor korosi gas hidrogen pada baterai seng-karbon dan alkali.
+6.  **Kosmetik dan Farmasi:**
+    *   Garam merkuri anorganik (seperti *ammoniated mercuric chloride*) disalahgunakan secara ilegal dalam **krim pemutih/pencerah kulit (*skin-lightening creams*)** untuk menghambat enzim tirosinase pembentuk melanin; sedangkan senyawa organomerkuri (seperti thimerosal) digunakan sebagai pengawet antiseptik.
+
+---
+
+### 3. Toksikokinetik Komprehensif Berdasarkan Spesiasi (ADME)
+
+Nasib biologis merkuri ditentukan secara ketat oleh bentuk kimianya:
+
+| Parameter Kinetik | Merkuri Elemental (\\(\text{Hg}^0\\)) | Merkuri Anorganik (Garam \\(\text{Hg}^{2+}\\)) | Merkuri Organik (Metilmerkuri / \\(\text{MeHg}\\)) | Rujukan Sumber |
+| :--- | :--- | :--- | :--- | :--- |
+| **Absorpsi Inhalasi** | **Sangat Tinggi: 75%–85%** uap terinhalasi diserap secara difusi pasif instan melintasi kapiler alveolar. | Minimal; terbatas pada inhalasi aerosol debu garam kromat/merkuri. | Sangat tinggi (mencapai ~100% uap terhirup, namun jarang terjadi di alam). | |
+| **Absorpsi Saluran Cerna (GI)** | **Sangat Buruk: < 0,01%** (praktis tidak diserap; relatif tidak toksik lewat ingesti bila saluran cerna intak). | **Rendah–Sedang: 7%–15%** dari dosis tertelan diserap enterosit; memicu korosi mukosa hebat. | **Sangat Tinggi: 95%–100%** diserap tuntas di usus halus via transpor asam amino. | |
+| **Absorpsi Kulit (Dermal)** | Minimal (\\(K_p \approx 1{,}0 \times 10^{-3}\text{ cm/jam}\\)), namun uap dapat menembus kulit utuh. | Dapat menembus kulit lecet/maserasi via difusi garam larut air; memicu sensitisasi. | Dapat diserap signifikan menembus stratum korneum (terutama dimetilmerkuri yang mematikan). | |
+| **Penembusan Sawar Otak (BBB) & Plasenta** | **SANGAT TINGGI (Bebas menembus BBB & plasenta)** karena sifat lipofilik non-polar. | **SANGAT BURUK (Ditolak oleh BBB & plasenta)** karena terhidrasi dan bermuatan polar (\\(\text{Hg}^{2+}\\)). | **SANGAT TINGGI (Menembus aktif BBB & plasenta)** via mimetik asam amino L-sistein (LAT1). | |
+| **Distribusi Organ Sasaran** | **Otak (SSP)** pasca-oksidasi sitosol, dan **Korteks Ginjal**. | **Korteks Ginjal (\\(\sim 50\%\\) akumulasi di tubulus proksimal segmen S1, S2, S3)**. | **Otak (Korteks serebri & serebelum)**; eritrosit darah (90%), otot skelet, hati. | |
+| **Biotransformasi / Metabolisme** | **Dioksidasi menjadi \\(\text{Hg}^{2+}\\)** intraseluler oleh enzim **Katalase-Peroksidase (\\(\text{H}_2\text{O}_2\\))**. | Sebagian kecil direduksi kembali menjadi \\(\text{Hg}^0\\) oleh mikroflora usus. | **Mengalami demetilasi lambat menjadi \\(\text{Hg}^{2+}\\)** oleh mikrosom/mikroflora di jaringan/sel glia. | |
+| **Rute Ekskresi Utama** | **Urin (dominan kronis)**, feses, saliva, keringat, dan udara ekspirasi (fraksi \\(\text{Hg}^0\\) kecil). | **Urin dan Feses (bilier)**, cairan keringat, air susu ibu. | **Feses (\\(\sim 90\%\\) via sekresi empedu/GSH)**; hanya 10% di urin; rambut dan kuku. | |
+
+```
+                             [ PERANGKAP OKSIDASI ELEKTROFILIK Hg⁰ DI OTAK ]
+                             
+                                 SIRKULASI DARAH                  JARINGAN OTAK / GLIA
+       ┌────────────────────────────────────────────────────────┬────────────────────────────────────────┐
+       │                                                        │                                        │
+       │  Hg⁰ Elemental (Lipofilik, Gas)                        │  Hg⁰ Elemental Masuk Bebas             │
+       │            │                                           │            │                           │
+       │            ├───────────────────────────────────────────┼───────────►│                           │
+       │            │   (Menembus Sawar Darah Otak / BBB)       │            ▼ (Enzim Katalase / H₂O₂)   │
+       │            ▼                                           │       [ BIOAKTIVASI / OKSIDASI ]       │
+       │     Oksidasi Eritrosit                                 │            │                           │
+       │       menjadi Hg²⁺                                     │            ▼                           │
+       │            │                                           │       Hg²⁺ Divalen (Bermuatan Positif) │
+       │            ▼                                           │            │                           │
+       │     X DITOLAK MASUK OTAK                               │            ▼                           │
+       │     (Tertahan di Vaskular)                             │    [ TERPERANGKAP PERMANEN DI OTAK ]   │
+       │                                                        │    • Mengikat protein -SH & -SeH       │
+       │                                                        │    • Atrofi Granular Serebelum & SSP   │
+       └────────────────────────────────────────────────────────┴────────────────────────────────────────┘
+```
+
+*   **Fenomena "Perangkap Oksidasi" (*Oxidation-Trap Mechanism*):**
+    Uap \\(\text{Hg}^0\\) yang terhirup larut dalam darah. Sebagian dioksidasi di eritrosit oleh enzim katalase menjadi \\(\text{Hg}^{2+}\\), namun sebagian fraksi tetap berupa \\(\text{Hg}^0\\) terlarut yang bertahan cukup lama untuk melintasi kapiler sawar darah otak (BBB). Begitu berada di dalam parenkim otak dan sel glia, enzim **Katalase intraseluler mengoksidasi \\(\text{Hg}^0\\) menjadi kation merkuri divalen (\\(\text{Hg}^{2+}\\))**. Karena ion \\(\text{Hg}^{2+}\\) bermuatan polar dan tidak dapat berdifusi balik menembus BBB, **merkuri terperangkap (*trapped*) di dalam susunan saraf pusat**, mengikat protein fungsional dan melanggengkan neurotoksisitas kronis.
+*   **Mimetik Molekuler Metilmerkuri (*Molecular Mimicry*):**
+    Metilmerkuri membentuk ikatan kovalen dengan asam amino L-sistein, menghasilkan **kompleks \\(\text{CH}_3\text{Hg-S-Cysteinyl}\\)**. Kompleks ini memiliki ukuran, konformasi spasial, dan muatan yang **identik dengan asam amino esensial L-metionin**. Akibatnya, transporter asam amino netral besar (**L-type Large Neutral Amino Acid Transporter-1 / LAT1** atau SLC7A5) pada endotel sawar darah otak mengenali kompleks ini sebagai substrat alami dan mentranspornya secara aktif langsung ke dalam sitosol neuron.
+*   **Sirkulasi Enterohepatik (*Enterohepatic Recirculation*):**
+    Metilmerkuri dieliminasi oleh hepar ke dalam empedu terkonjugasi dengan glutation (GSH). Namun, saat mencapai lumen usus halus, mikroflora usus memecah konjugat tersebut, membebaskan \\(\text{MeHg}\\) bebas yang **direabsorpsi kembali sebesar 90% ke sirkulasi porta**, melipatgandakan waktu paruh biologisnya di dalam tubuh.
+
+---
+
+### 4. Toksikodinamik dan Afinitas Ekstrem terhadap Gugus Sulfhidril
+
+Daya rusak molekuler merkuri berakar pada sifat kimianya sebagai asam lunak (*soft acid*) yang memiliki **afinitas elektrofilik raksasa terhadap gugus nukleofilik lunak: sulfhidril/tiol (\\(-\text{SH}\\)) dan selenol (\\(-\text{SeH}\\))**:
+
+```
+                                [ KASKADE TOKSIKODINAMIK MERKURI ]
+                                                │
+                 ┌──────────────────────────────┴──────────────────────────────┐
+                 ▼                                                             ▼
+[ INAKTIVASI ENZIM & PROTEIN -SH / -SeH ]                     [ DESTRUKSI STRUKTUR SITOSKELETON ]
+• Mengikat GSH (GSH deplesi, rasio GSSG:GSH naik)             • Mengikat sulfhidril tubulin mikrotubulus
+• Hambat Glutathione Peroxidase (GPx) & Thioredoxin           • Depolimerisasi spindel mitotik sel saraf
+  Reductase (TrxR) ──► Stres Oksidatif Masif                  • Terhentinya pembelahan & migrasi neuroblas
+• Hambat Glutamine Synthetase (GS) di astrosit                  (Mikrosefali pada janin / Teratogenesis)
+  ──► Akumulasi glutamat ekstraseluler ──► Eksitotoksisitas   • Kerusakan membran filtrasi glomerulus
+• Kompleks Imun: Deposisi IgG membran basal (Nefropati)         (Proteinuria, Glomerulonefritis membranosa)
+```
+
+1.  **Pengikatan Kovalen Ligan Tiol (\\(-\text{SH}\\)):**
+    Merkuri membentuk ikatan merkaptida linear yang sangat stabil dengan residu sistein:
+    \\[\text{R-SH} + \text{Hg}^{2+} \to \text{R-S-Hg}^+ + \text{H}^+\\]
+    \\[\text{R-S-Hg}^+ + \text{R'-SH} \to \text{R-S-Hg-S-R'} + \text{H}^+\\]
+    Hal ini menginaktivasi ribuan protein esensial di seluruh organel sel.
+2.  **Inaktivasi Sistem Antioksidan Tioredoksin dan Glutation:**
+    Merkuri mengikatkan diri pada residu selenosistein situs aktif enzim **Tioredoksin Reduktase (TrxR)** dan enzim **Glutation Peroksidase (GPx)** dengan konstanta afinitas ikatan mencapai \\(10^{45}\\) (jauh melebihi afinitasnya terhadap sulfur). Inaktivasi enzim-enzim ini mematikan sistem pertahanan peroksida seluler, memicu akumulasi hidrogen peroksida, radikal superoksida, dan **peroksidasi lipid membran mitokondria**.
+3.  **Disfungsi Astrosit dan Eksitotoksisitas Glutamat:**
+    Di susunan saraf pusat, \\(\text{Hg}^{2+}\\) dan \\(\text{MeHg}\\) terkonsentrasi pada astrosit dan menghambat enzim **Glutamine Synthetase (GS)** serta transporter glutamat astrosit (GLAST / GLT-1). Akibatnya, pembersihan glutamat dari celah sinaps gagal, memicu stimulasi berlebihan reseptor NMDA (*excitotoxicity*), influks kalsium intraseluler masif, dan kematian apoptosis neuron korteks serebri dan sel granular serebelum.
+4.  **Destruksi Mikrotubulus dan Mitosis Saraf:**
+    Merkuri berikatan dengan gugus sulfhidril bebas pada heterodimer protein tubulin, menghambat polimerisasi mikrotubulus sitoskeleton aksonal dan gelendong mitosis. Ini adalah mekanisme molekuler utama terjadinya **kerusakan migrasi neuron pada otak janin** yang terpajan metilmerkuri.
+5.  **Imunopatologi Glomerulus:**
+    Pajanan garam merkuri menginduksi aktivasi poliklonal sel T helper dan limfosit B, memicu produksi autoantibodi antifibrilarin dan deposisi kompleks imun antigen-antibodi pada membran basal glomerulus ginjal (*membranous glomerulonephropathy*).
+
+---
+
+### 5. Biomonitoring Okupasi: Biomarker, Matriks, dan Waktu Sampling
+
+Dalam kedokteran okupasi, pemilihan matriks biologis bergantung mutlak pada **spesiasi kimiawi merkuri yang dihadapi pekerja**:
+
+```
+                     [ STRATEGI BIOMONITORING MERKURI SPESIASI ]
+                                         │
+        ┌────────────────────────────────┼────────────────────────────────┐
+        ▼                                ▼                                ▼
+  [ URIN SPESIMEN (U-Hg) ]      [ DARAH LENGKAP (B-Hg) ]         [ RAMBUT KEPALA (Hair-Hg) ]
+• Spesifik untuk:              • Mengukur SEMUA bentuk          • SPESIFIK untuk: Metilmerkuri
+  Hg⁰ (Vapor) & Garam Hg²⁺       (Total Hg Darah)                 (CH₃Hg⁺) dari konsumsi ikan
+• Tidak berguna untuk MeHg!    • 90% MeHg ada di eritrosit      • Mengikat gugus SH keratin rambut
+• Waktu: Prior to Shift        • Refleksi pajanan sangat baru   • Menilai riwayat kronis berbulan-bulan
+• Standar BEI: 20 µg/g kreat.    (Hg⁰) atau stabil (MeHg)       • Rasio Rambut:Darah ~ 250:1
+```
+
+#### a. Merkuri Urin (U-Hg): Baku Emas Pajanan Elemental dan Anorganik
+*   *Indikasi:* Merupakan **biomarker primer terbaik untuk pemantauan pajanan okupasi terhadap uap merkuri elemental (\\(\text{Hg}^0\\)) dan garam merkuri anorganik (\\(\text{Hg}^{2+}\\))**.
+*   *Rasional Toksikokinetik:* Ginjal adalah organ penimbun utama merkuri anorganik, dan filtrasi urin mencerminkan beban tubuh kumulatif (*body burden*) pada jaringan ginjal. Sebaliknya, **U-Hg TIDAK BERGUNA untuk memantau metilmerkuri**, karena metilmerkuri diekskresikan lewat feses/empedu dan fraksi yang lolos ke urin sangat minim (<10%).
+*   *Standar Nilai Regulasi dan BEI:*
+    *   **ACGIH BEI (2012 / 2026 Adoption):** **20 µg/g kreatinin** dalam spesimen urin yang diambil **sebelum shift kerja dimulai (*Prior to shift*)**. Pengambilan sampel *prior-to-shift* bertujuan mengukur eliminasi stabil bebas dari fluktuasi transien inhalasi harian.
+    *   *Ambang Peringatan Klinis:* Kadar U-Hg **> 50 µg/L** menandakan pajanan kerja berlebih yang signifikan; kadar **> 100 µg/L** berkorelasi kuat dengan timbulnya tanda neurologis awal (tremor subklinis dan perubahan neurobehavioral) dan memerlukan intervensi medis/rotasi kerja segera.
+    *   *Nilai Latar Belakang Populasi Umum:* < 1–2 µg/g kreatinin (normal < 10–20 µg/L).
+
+#### b. Merkuri Darah Lengkap (*Whole Blood Mercury* / B-Hg)
+*   *Indikasi:* Berguna untuk mendeteksi **pajanan uap \\(\text{Hg}^0\\) dosis tinggi akut yang baru terjadi**, ATAU sebagai **biomarker utama untuk pajanan Metilmerkuri (\\(\text{MeHg}\\))**.
+*   *Karakteristik Spesiasi Darah:*
+    *   Pada pajanan uap \\(\text{Hg}^0\\) atau garam anorganik: Merkuri terdistribusi relatif seimbang antara plasma dan eritrosit (rasio sel darah merah:plasma \\(\approx 1:1\\)). Kadar darah cepat merosot dalam beberapa hari seiring redistribusi ke jaringan.
+    *   Pada pajanan Metilmerkuri (\\(\text{MeHg}\\)): **Lebih dari 90% merkuri di dalam darah terikat kuat pada hemoglobin di dalam eritrosit** (rasio eritrosit:plasma mencapai **\\(10:1\text{ s.d. }20:1\\)**).
+*   *Waktu Sampling:* Akhir minggu kerja (*End of workweek*) untuk pekerja industri, atau sewaktu-waktu jika dicurigai toksisitas metilmerkuri makanan.
+*   *Nilai Rujukan:* Populasi normal tanpa konsumsi ikan predator: **< 5–10 µg/L**; kadar **> 50 µg/L** mengindikasikan intoksikasi klinis nyata.
+
+#### c. Merkuri Rambut Kepala (*Scalp Hair Mercury*)
+*   *Indikasi:* Biomarker khusus untuk mengintegrasikan **riwayat pajanan jangka panjang terhadap Metilmerkuri (\\(\text{MeHg}\\))** selama berminggu-minggu hingga berbulan-bulan.
+*   *Mekanisme:* Metilmerkuri di sirkulasi menembus folikel rambut yang sedang aktif tumbuh dan membentuk ikatan kovalen stabil dengan gugus sulfhidril protein keratin. Rambut tumbuh dengan kecepatan konstan sekitar **1 cm per bulan**.
+*   *Korelasi Kinetik:* Terdapat korelasi proporsional yang sangat linier antara kadar merkuri rambut dengan kadar merkuri darah rata-rata, dengan **rasio konsentrasi Rambut : Darah sekitar 250 : 1** (misalnya, 2,5 µg/g di rambut setara dengan \\(\sim 10\ \mu\text{g/L}\\) di darah).
+*   *Limitasi Okupasi:* Analisis segmental rambut **tidak direkomendasikan untuk pekerja industri uap \\(\text{Hg}^0\\)** karena kerentanan kontaminasi eksternal debu udara pada kutikula rambut yang memicu hasil positif palsu.
+*   *Batas Keamanan:* Ambang batas rambut normal adalah **< 1–2 µg/g (ppm)**.
+
+---
+
+### 6. Waktu Paruh Eliminasi Biologis (*Biological Half-Life* / \\(T_{1/2}\\))
+
+Waktu paruh eliminasi merkuri dari tubuh manusia bervariasi bergantung pada kompartemen jaringan dan bentuk kimiawinya:
+
+```
+                     [ PERBANDINGAN WAKTU PARUH BIOLOGIS Hg ]
+                     
+  Hg⁰ (Fase Cepat Darah)          Hg Anorganik (Ginjal)           Metilmerkuri (Tubuh Total)
+  ──────────────────────          ─────────────────────           ──────────────────────────
+  • T1/2: ~ 2 – 4 hari            • T1/2: ~ 30 – 60 HARI          • T1/2: ~ 50 – 70 HARI
+    (Klirens vaskular               (Eliminasi bertahap             (Eliminasi feses/empedu,
+     ke jaringan perifer)            dari tubulus ginjal)            reabsorpsi enterohepatik)
+  • Namun di OTAK:                                                • Rambut: Stabil permanen
+    Bisa bertahun-tahun!                                            selama helaian tumbuh
+```
+
+1.  **Merkuri Elemental (\\(\text{Hg}^0\\)):**
+    *   *Darah Sistemik:* Eliminasi dua fase, fase cepat awal memiliki \\(T_{1/2}\\) sekitar **2 hingga 4 hari**, diikuti fase sekunder sekitar 15–30 hari seiring ekskresi ginjal.
+    *   *Jaringan Otak (Kompartemen Terperangkap):* Kation \\(\text{Hg}^{2+}\\) hasil oksidasi intraseluler yang berikatan dengan makromolekul saraf memiliki waktu paruh eliminasi yang luar biasa panjang, berkisar antara **beberapa tahun hingga beberapa dekade**.
+2.  **Merkuri Anorganik (Garam \\(\text{Hg}^{2+}\\)):**
+    *   *Ginjal dan Ekskresi Urin:* Waktu paruh rata-rata tubuh berkisar antara **1 hingga 2 bulan (sekitar 30–60 hari, rata-rata 40 hari)**.
+3.  **Merkuri Organik (Metilmerkuri / \\(\text{MeHg}\\)):**
+    *   *Tubuh Total (*Whole-body clearance*):* Mengikuti kinetika kompartemen tunggal eliminasi orde pertama dengan waktu paruh sekitar **50 hingga 70 hari (median ~50 hari)**.
+    *   *Eliminasi:* Dieliminasi lambat terutama melalui feses via empedu setelah mengalami pemecahan ikatan karbon-merkuri oleh mikroflora usus.
+
+---
+
+### 7. Efek Biologis Toksik Akut
+
+Manifestasi keracunan akut bergantung secara mutlak pada jalur pajanan dan spesiasi senyawa:
+
+```
+                             [ MANIFESTASI TOKSISITAS AKUT MERKURI ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ INHALASI UAP Hg⁰ KONSENTRASI TINGGI ]                               [ INGESTI GARAM ANORGANIK (HgCl₂) ]
+• Target: Saluran Napas Akut & Paru                                   • Target: Saluran Cerna & Tubulus Ginjal
+• Mula gejala: 1–4 jam pasca-pajanan                                  • Rasa terbakar logam, abu-abu korosif faring
+• Batuk kering, demam, menggigil, dispnea hebat                       • Nyeri epigastrium, hematemesis, melena
+• Trakeobronkitis, Pneumonitis Kimiawi Akut                           • Syok hipovolemik distributif masif
+• Edema Paru Akut Non-Kardiogenik / ARDS                              • Nekrosis Tubular Akut (ATN) ──► Anuria ──► Gagal Ginjal
+• Stomatitis akut & hipersalivasi                                     • Mortalitas tinggi tanpa dialisis & kelasi cepat
+```
+
+1.  **Inhalasi Akut Uap Merkuri Elemental (\\(\text{Hg}^0\\)) Konsentrasi Tinggi:**
+    *   *Contoh Skenario:* Terjadi pada penambang emas PESK yang membakar amalgam di ruang sempit atau tumpahan merkuri di atas kompor/pemanas.
+    *   *Gejala Pernapasan:* Muncul dalam beberapa jam pasca-pajanan berupa sensasi tercekik, batuk iritatif, nyeri dada retrosternal, hemoptisis, faringitis, dan dispnea progresif.
+    *   *Patologi Pulmonal:* Menimbulkan **pneumonitis kimiawi akut (*acute chemical pneumonitis*)**, bronkiolitis nekrotikans, destruksi barier alveolo-kapiler, dan berkembang cepat menjadi **Sindrom Distres Pernapasan Akut (*Acute Respiratory Distress Syndrome* / ARDS)** serta edema paru non-kardiogenik yang mematikan.
+    *   *Gejala Sistemik:* Demam tinggi menyerupai flu (*metal fume-like fever*), menggigil, lemas ekstrem, sakit kepala, stomatitis akut, dan rasa logam di lidah.
+2.  **Ingesti Akut Garam Merkuri Anorganik (misalnya \\(\text{HgCl}_2\\) / Sublimat Korosif):**
+    *   *Saluran Cerna:* Garam merkuri mempresipitasi protein mukosa. Menimbulkan rasa terbakar hebat di mulut dan tenggorokan, diskolorasi membran mukosa menjadi putih keabu-abuan, disfagia, mual, muntah darah proyektil (*coffee-ground vomitus*), diare berdarah masif, tenesmus, hingga perforasi lambung/usus.
+    *   *Kardiovaskular:* Syok hipovolemik hemoragik dan kolaps sirkulasi kardiovaskular dalam beberapa jam.
+    *   *Ginjal (Nefrotoksisitas Akut):* Terjadi **Nekrosis Tubular Akut (*Acute Tubular Necrosis* / ATN)** masif pada epitel tubulus kontortus proksimal akibat pengikatan protein sulfhidril ginjal. Ditandai dengan oliguria mendadak, anuria total, hematuria, proteinuria, uremia, dan asidosis metabolik berat yang berujung pada kematian.
+
+---
+
+### 8. Efek Biologis Toksik Kronis
+
+Pajanan kerja jangka panjang menghasilkan sindrom kerusakan multiorgan yang khas:
+
+```
+                                [ SPEKTRUM PENYAKIT KRONIS MERKURI ]
+                                                 │
+         ┌───────────────────────┬───────────────┴───────────────┬───────────────────────┐
+         ▼                       ▼                               ▼                       ▼
+  [ TRIAS MERKURIALISME ] [ SINDROM EKSTRAPIRAMIDAL ]     [ GANGGUAN NEFROPATI ]  [ ENTITAS SPESIFIK ]
+  1. Tremor Intensional   • Ataksia serebelum             • Proteinuria tubular   • Akrodinia (Pink Disease)
+  2. Eretisme Kejiwaan    • Disdiadokokinesis               (LMWP: NAG, β2M)        pada anak/pekerja muda
+  3. Gingivostomatitis    • Gangguan gaya berjalan        • Nefropati membranosa  • Penyakit Minamata
+     & Ptialisme masif      (cock-walk / unsteady)        • Sindrom nefrotik        (Kerusakan SSP MeHg)
+```
+
+#### a. Trias Klasik Merkurialisme Industri (*Classical Triad of Mercurialism*)
+Merupakan tanda patognomonik klasik pada pekerja yang terpajan uap \\(\text{Hg}^0\\) kronis (historis dikenal sebagai sindrom pembuat topi / *Mad Hatter's syndrome*):
+
+1.  **Tremor Merkuri (*Asthenic Tremor / Hatters' Shakes*):**
+    *   *Karakteristik:* Bersifat **tremor intensional (*intention tremor*)** yang halus, berfrekuensi cepat (8–10 Hz) yang diselingi sentakan mioklonik kasar saat melakukan gerakan motorik halus yang terencana.
+    *   *Progresi:* Dimulai pada otot-otot intrinsik jari tangan, kelopak mata, lidah, dan bibir. Lesi menjalar ke lengan dan tungkai bawah, menyebabkan ketidakmampuan menulis (tanda klinis objektif: kemunduran progresif bentuk tulisan tangan / *handwriting deterioration*), kesulitan makan mandiri, dan ataksia motorik. Tremor menghilang saat tidur.
+2.  **Eretisme Merkuri (*Erethismus Mercurialis*):**
+    *   *Karakteristik Psikiatrik:* Perubahan kepribadian, afek, dan perilaku neuropsikiatri yang parah dan khas.
+    *   *Manifestasi:* Pasien memperlihatkan **sifat pemalu yang patologis (*pathological timidity / social phobia*)**, kecemasan ekstrem, labilitas emosional hebat, lekas marah secara mendadak (*irascibility*), ledakan agresivitas, depresi berat, insomnia kronis, delirium, kebingungan mental, halusinasi, dan hilangnya daya ingat jangka pendek.
+3.  **Gingivostomatitis dan Ptialisme:**
+    *   *Rongga Mulut:* Sekresi air liur berlebihan yang terus-menerus (**ptialisme / hipersalivasi masif**), sensasi rasa logam di lidah (*metallic taste*), stomatitis ulseratif, pembengkakan dan peradangan gingiva yang mudah berdarah, pembentukan abses periodontal, atrofi tulang alveolar rahang, hingga tanggalnya gigi secara spontan.
+    *   *Tanda Garis Merkuri:* Kadang teramati garis berpigmen biru-kehitaman (*mercurial line*) di sepanjang margin servikal gingiva akibat presipitasi merkuri sulfida oleh bakteri rongga mulut.
+
+#### b. Gangguan Ekstrapiramidal dan Serebelum
+*   Kerusakan sitotoksik merkuri pada sel purkinje dan lapisan sel granular serebelum menghasilkan **ataksia gait (jalan sempoyongan), dismetria, disdiadokokinesis, nistagmus, dan disartria (bicara cadel/patah-patah)**.
+*   Keterlibatan ganglia basalis (terutama putamen dan kaudatus) memicu rigiditas otot ekstrapiramidal, bradikinesia, distonia, dan gerakan koreoatetoid.
+
+#### c. Nefropati Kronis
+*   *Toksisitas Tubular Langsung:* Akumulasi ion \\(\text{Hg}^{2+}\\) pada lisosom dan mitokondria sel tubulus proksimal ginjal menyebabkan disfungsi absorpsi, bermanifestasi sebagai proteinuria berat molekul rendah (peningkatan enzim lisosom **NAG urin, \\(\beta_2\\)-mikroglobulin, dan KIM-1**), glukosuria tanpa hiperglikemia, dan aminoasiduria.
+*   *Glomerulopati Kompleks Imun:* Reaksi autoimun terhadap membran basal glomerulus memicu **Nefropati Membranosa (*Membranous Glomerulonephritis*)** atau *Minimal Change Disease*, yang bermanifestasi klinis sebagai **Sindrom Nefrotik (proteinuria masif > 3,5 g/hari, hipoalbuminemia, dan edema anasarka progresif)**.
+
+#### d. Akrodinia (*Acrodynia / Pink Disease / Swift's Disease*)
+*   *Definisi & Populasi:* Reaksi hipersensitivitas/idiosinkrasi metabolik terhadap merkuri yang secara historis ditemukan pada bayi/anak yang terpajan serbuk kalomel (\\(\text{Hg}_2\text{Cl}_2\\)) pada serbuk obat tumbuh gigi, atau anak yang tinggal di rumah yang tercemar uap \\(\text{Hg}^0\\) dari tumpahan termometer/amalgam.
+*   *Manifestasi Klinis:*
+    *   **Eritema dan Pembengkakan Ekstremitas:** Telapak tangan dan telapak kaki bengkak, lembap, dan berwarna merah muda menyala (*pinkish discoloration*), disertai rasa nyeri panas terbakar yang menyiksa (*burning pain / paresthesia*).
+    *   **Deskuamasi:** Terjadi pengelupasan kulit lamelar tebal (*palmar-plantar desquamation*) pada tangan dan kaki.
+    *   **Hiperaktivitas Otonom:** Berkeringat sangat deras (*profuse diaphoresis*), takikardia persisten, dan **hipertensi arterial sekunder** akibat penumpukan katekolamin (merkuri menginaktivasi enzim *S-adenosylmethionine-dependent Catechol O-Methyltransferase* / COMT).
+    *   **Perilaku:** Iritabilitas ekstrem, fotofobia intens, anak meringkuk di tempat gelap, menarik-narik rambutnya sendiri, dan anoreksia berat.
+
+#### e. Penyakit Minamata (*Minamata Disease / Intoksikasi Kronis Metilmerkuri*)
+*   *Latar Belakang Sejarah:* Bencana pencemaran lingkungan industri kimia Chisso Corp di Teluk Minamata, Jepang (1950–1960-an), di mana limbah anorganik dimetilasi oleh bakteri sedimen akuatik menjadi metilmerkuri dan mengalami biomagnifikasi di sepanjang rantai makanan ke ikan/kerang yang dikonsumsi masyarakat lokal. Tragedi serupa terjadi di Irak (1971–1972) akibat konsumsi roti gandum berbalur fungisida metilmerkuri/etilmerkuri.
+*   *Patofisiologi Saraf:* Metilmerkuri menyebabkan nekrosis dan atrofi selektif neuron pada:
+    1.  **Korteks visual di fisura kalkarina lobus oksipitalis**.
+    2.  **Lapisan sel granular serebelum**.
+    3.  **Korteks sensorik girus postsentralis**.
+*   *Manifestasi Klinis Dewasa (*Hunter-Russell Syndrome*):*
+    *   **Parestesia Ekstremitas:** Baal dan kesemutan simetris dengan pola "kaus kaki dan sarung tangan" (*glove-and-stocking paresthesia*), serta di sekitar mulut/lidah (sirkumoral).
+    *   **Penyempitan Lapang Pandang Konsentris (*Concentric Constriction of Visual Fields* / Tunnel Vision):** Kehilangan penglihatan perifer secara permanen.
+    *   **Ataksia Serebelar Berat:** Gangguan koordinasi motorik, disartria parah (bicara cadel/tidak jelas), dan ketulian neurosensorik (*sensorineural hearing loss*).
+*   *Penyakit Minamata Kongenital (*Fetal Minamata Disease*):*
+    Bayi yang dilahirkan dari ibu yang mengonsumsi ikan tercemar merkuri mengalami kerusakan saraf teratogenik yang parah, **meskipun sang ibu hanya menunjukkan gejala minimal atau tampak sehat** (karena plasenta memusatkan metilmerkuri ke darah janin). Bayi bermanifestasi dengan **mikrosefali, retardasi mental berat, palsi serebral (*cerebral palsy-like symptoms*), kebutaan, ketulian, rigiditas spastik, dan kejang berulang**.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   *Bab 3 & 4:* Sejarah Minamata Bay & Biometilasi Mikroba Akuatik (hlm. 40, 52); Penggunaan Terbesar Industri Klor-Alkali, Perbedaan Absorpsi Spesiasi Inhalasi 80% vs Oral Lemah (hlm. 46); Bentuk Fisik Elemental \\(\text{Hg}^0\\), Garam Divalen \\(\text{Hg}^{2+}\\), dan Organometilmerkuri \\(\text{CH}_3\text{Hg}^+\\) (hlm. 52–53); Afinitas Ekstrem terhadap Gugus Sulfhidril (SH) Membran Sel & Inaktivasi Enzim (hlm. 50, 53); Target Organ Toksik Ginjal dan Sistem Saraf (hlm. 51, 53); Trias Merkurialisme Tremor, Erethism, Gingivitis (hlm. 46, 53).
+    *   *Bab 6 & 14:* Biotransformatif Metilasi Enzimatik (hlm. 149); Nefrotoksisitas Merkuri, Akumulasi di Sel Tubulus Proksimal S3, Glukosuria, Proteinuria, dan Terapi Kelasi DMSA/DMPS (hlm. 294–295).
+2.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   *Bab 1, 10, 13, 20:* Sejarah Toksikologi Okupasi Alice Hamilton (hlm. 4); Penyerapan GI Metilmerkuri vs Anorganik & Peran Mikrobiota Usus (hlm. 134); Nefro意toksisitas Merkuri Anorganik pada Tubulus Proksimal S1–S3 via Ikatan Albumin dan Ligand Tiol (hlm. 169–171); Glomerulonefritis Kompleks Imun (hlm. 169, 219); Neurotoksisitas Metilmerkuri SSP, Eksitotoksisitas Glutamat, Gangguan Kalsium, dan Perangkap Oksidasi BBB (hlm. 266–267).
+3.  **Caito, S. & Aschner, M. (Neurotoxicity of Metals):**
+    *   *Bab 11:* Sejarah Industri Topi Inggris (*Mad Hatter* / Erethism), Penambangan Cinnabar; Sumber Industri Dental Amalgam (50% \\(\text{Hg}^0\\)), Klor-Alkali, Fluoresen; Toksikokinetik Absorpsi Inhalasi Uap \\(\text{Hg}^0\\); Mekanisme LAT1 Mimetik Asam Amino L-Sistein; Mekanisme Molekuler Interaksi Tiol (-SH) dan Selenol (-SeH); Gangguan Astrosit GLAST dan Inaktivasi GS; Trias Tremor Intensional, Eretisme, Stomatitis; Bencana Minamata & Irak; serta Uji Diagnostik Rambut, Darah, Urin dan Terapi DMPS (hlm. 173–185).
+4.  **Chakif, D. & Furrer, J. (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Tinjauan Mutakhir Spesiasi Merkuri (\\(\text{Hg}^0, \text{Hg}^{2+}, \text{MeHg}\\)); Emisi Global PESK (Penambangan Emas Rakyat) sebagai Sumber Terbesar Antropogenik (hlm. 3–6); Tabel Toksikokinetik ADME Komparatif (Inhalasi 75–85%, Oral MeHg 95–100%, Oral Anorganik 7–15%); Waktu Paruh Biologis Anorganik (1–2 Bulan) vs MeHg (50 Hari); Target Organ Ginjal vs SSP; Matriks Biomonitoring Urin (Anorganik/Vapor), Darah (Akut/MeHg), dan Rambut (MeHg Jangka Panjang); serta Algoritma Kelasi DMSA/DMPS (hlm. 7–31).
+5.  **Yun Shi et al. (2026).** *Clinical characteristics, management, and outcomes of diseases caused by mercury overexposure: a systematic review.* Frontiers in Public Health, 14: 1750332:
+    *   Kajian Kasus Global Merkuri (126 Kasus): Profil Pajanan Domestik (59,5%), Iatrogenik (16,7%), dan Okupasi PESK/Gilder/Gigi (13,5%); Perbedaan Karakteristik Klinis Elemental (Pneumonitis Akut, ARDS, Demam) vs Anorganik (Gastroenteritis Korosif, ATN, Gagal Ginjal) vs Organik (Ataksia Serebelar, Tunnel Vision); Manifestasi Akrodinia dan Hipertensi Anak; serta Pola Biomarker Urin > Darah pada Inorganik vs Darah > Urin pada Metilmerkuri.
+6.  **ACGIH (2026 Edition).** *TLVs® and BEIs®*:
+    *   Tabel Adopsi Nilai Ambang Batas: Alkil Merkuri (TLV-TWA 0,01 mg/m³, STEL 0,03 mg/m³, Notasi Skin); Bentuk Lain Termasuk Elemental (TLV-TWA 0,025 mg/m³, Notasi Skin, A4); serta Indeks Pajanan Biologi (BEI) Merkuri Elemental Urin (20 µg/g kreatinin, *Prior to shift*).
+7.  **US-EPA (RAGS Part E).** *Supplemental Guidance for Dermal Risk Assessment*:
+    *   Parameter Absorpsi Gastrointestinal (\\(\text{ABS}_{\text{GI}}\\)) Merkuri Anorganik (7%) vs Metilmerkuri (95–100%) dan Absorpsi Inhalasi Uap \\(\text{Hg}^0\\) (80%).
+8.  **Perpres No. 7 Tahun 2019 & Permenaker No. 5 Tahun 2018:**
+    *   Penyakit Akibat Kerja Faktor Kimia Logam Raksa / Persenyawaannya (Lampiran I.a Butir 7 Perpres 7/2019) dan Batas NAB Udara Kerja (Lampiran 3 Permenaker 5/2018).
+
+Kuasai perbedaan spesiasi dan karakteristik klinis ini secara komparatif, Dokter. Penguji dewan spesialis akan langsung menggugurkan kandidat yang merekomendasikan uji urin untuk kasus keracunan metilmerkuri atau yang gagal mengidentifikasi kaskade pneumonitis uap merkuri di fasilitas industri.
+
+---
+
+📋 Apakah Anda ingin kita lanjutkan ke **MERKURI BAGIAN B**, yaitu pembahasan mengenai **standar batas pajanan (TLV-ACGIH vs. NAB Permenaker 5/2018), tatalaksana medis darurat keracunan akut, protokol terapi kelasi (DMSA, DMPS, BAL), kontraindikasi kelasi, 7 langkah penegakan diagnosis PAK, kelaikan kerja (*fitness for work*), serta *clinical pearls* dan jebakan ujian dewan spesialis**?

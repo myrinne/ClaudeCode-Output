@@ -1,0 +1,519 @@
+---
+
+### **A. KARBON TETRAKLORIDA (Carbon Tetrachloride / \\(\text{CCl}_4\\))**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{CCl}_4\\)**; nomor CAS **56-23-5**; berat molekul **153,84 g/mol**. Sinonim: *tetrachloromethane, carbon tet, perchloromethane, Freon 10*.
+* **Sifat Fisik**: Cairan jernih tidak berwarna, berbau manis aromatik khas mirip kloroform/eter, berat jenis tinggi (1,59 g/mL, tenggelam di air), sangat mudah menguap (tekanan uap ~91–115 mmHg pada 20–25°C), dan **tidak mudah terbakar (*non-flammable*)**.
+* **Kelarutan**: Sangat larut dalam lemak (*lipofilik* tinggi), larut dalam alkohol, eter, dan benzena; sangat sedikit larut dalam air (~0,08%).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 2B** (*Possibly carcinogenic to humans*).
+  * **ACGIH**: **A2** (*Suspected Human Carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-2** (Diduga karsinogen untuk manusia).
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Sintesis Kimia & Sejarah Industri**: Dahulu digunakan dalam skala masif sebagai bahan baku sintesis refrigeran klorofluorokarbon (CFC-11 dan CFC-12) sebelum dilarang oleh Protokol Montreal; cairan pemadam api kuno (*fire extinguisher*); serta pelarut pencuci kering (*dry cleaning* historis) dan zat pembersih lemak logam (*degreaser*).
+* **Penggunaan Industri Terkendali Modern**: Perantara kimia tertutup (*closed-system intermediate*) dalam sintesis senyawa terfluorinasi, klorinasi industri pestisida, serta reagen laboratorium.
+* **Pajanan Lingkungan**: Kontaminasi air tanah pada situs limbah berbahaya (*Superfund sites*).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap \\(\text{CCl}_4\\) diabsorpsi cepat melalui membran alveolar paru-paru dengan efisiensi retensi sekitar 60%.
+  * **Dermal**: Diabsorpsi secara bermakna melalui kulit utuh saat kontak langsung dengan cairan (mendapat notasi **Skin** di ACGIH dan **Kulit** di Permenaker).
+  * **Gastrointestinal**: Diabsorpsi cepat dan hampir tuntas jika tertelan (penyerapan meningkat drastis dengan adanya makanan berlemak atau alkohol).
+* **Distribusi**: Terdistribusi luas mengikuti kelarutan lipid; terakumulasi selektif pada jaringan adiposa, hepar, ginjal, dan otak (konsentrasi di hepar dan lemak bisa ratusan kali lebih tinggi dibanding darah).
+* **Metabolisme (Dehalogenasi Reduktif Mikrosomal)**:
+  * Dimetabolisme di hepar terutama oleh enzim mikrosomal sitokrom P450, khususnya **CYP2E1** (dan sebagian CYP2B):
+  * **Tahap Reduksi**: \\(\text{CCl}_4\\) menerima satu elektron membentuk **radikal triklorometil (*·CCl\\(_3\\)*)** dan melepaskan ion klorida (\\(\text{Cl}^-\\)).
+  * **Tahap Oksidasi Radikal**: Dengan adanya oksigen molekuler, radikal *·CCl\\(_3\\)* bereaksi cepat membentuk **radikal triklorometil peroksil (*·OOCCl\\(_3\\)*)** yang memiliki reaktivitas kimia jauh lebih agresif.
+* **Ekskresi**: Sekitar 50–80% diekskresikan tanpa perubahan melalui udara ekshalasi paru; metabolit stabil diekskresikan ke dalam urin sebagai klorida dan sebagian kecil diubah menjadi karbon dioksida (\\(\text{CO}_2\\)) ekshalasi.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Peroksidasi Lipid & Nekrosis Sentrilobular)**
+1. **Peroksidasi Lipid Masif (*Lipid Peroxidation*)**:
+   * Radikal elektrofilik *·CCl\\(_3\\)* dan *·OOCCl\\(_3\\)* menyerang asam lemak tak jenuh ganda (*polyunsaturated fatty acids* / PUFA) pada membran fosfolipid retikulum endoplasma dan mitokondria hepatosit.
+   * Menghasilkan radikal lipid baru yang memicu reaksi berantai autokatalitik peroksidasi lipid, pembentukan malondialdehida (MDA), dan 4-hidroksinonenal (4-HNE).
+2. **Nekrosis Iskemik Sentrilobular (Zona 3 Asinus Hepar)**:
+   * Kerusakan membran retikulum endoplasma menghentikan sintesis apolipoprotein, memicu penumpukan trigliserida intraseluler (**degenerasi lemak / *steatosis hepatis***).
+   * Pompa kalsium membran sel rusak, memicu influks kalsium masif ke sitosol yang mengaktifkan enzim litik endonuklease dan fosfolipase, berujung pada **nekrosis sentrilobular hepar (Zona 3) masif** (karena Zona 3 memiliki konsentrasi CYP2E1 tertinggi dan tekanan oksigen terendah).
+3. **Nekrosis Tubular Akut Ginjal (*Acute Tubular Necrosis* / ATN)**:
+   * Metabolisme lokal oleh CYP2E1 di sel tubulus kontortus proksimalis ginjal menghasilkan radikal bebas yang memicu nekrosis tubular akut dan gagal ginjal oligurik/anurik.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Kadar \\(\text{CCl}_4\\) dalam Udara Ekshalasi Akhir (*End-exhaled air*)**:
+  * Parameter spesifik untuk menilai beban paparan eksternal terkini; waktu sampling: **sebelum shift kerja berikutnya**.
+* **Kadar \\(\text{CCl}_4\\) dalam Darah (*Blood \\(\text{CCl}_4\\)*)**:
+  * Pengukuran langsung konsentrasi pelarut utuh di dalam darah vena; waktu sampling: **sebelum shift kerja berikutnya**.
+* **Status BEI / IPB**: Baik ACGIH (2026) maupun Permenaker No. 5 Tahun 2018 **belum menetapkan nilai numerik BEI/IPB spesifik** untuk \\(\text{CCl}_4\\) karena penggunaannya yang telah ditekan secara ketat secara global. Evaluasi biologis difokuskan pada pemantauan berkala biomarker efek kerusakan organ target (enzim transaminase hepar ALT/AST dan kreatinin serum).
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **\\(\text{CCl}_4\\) dalam Darah**: Kinetika eliminasi multifasik; eliminasi fase awal dari darah berlangsung cepat (t\\(_{1/2}\\) ~40–60 menit), namun eliminasi terminal dari depot jaringan adiposa sangat lambat dengan waktu paruh berkisar **30 hingga 40 jam**.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Fase 1 (Jam 0 – 24 pasca-paparan): Depresi SSP Awal**:
+  * Sakit kepala berdenyut, pusing, vertigo, inkoordinasi motorik, mual, muntah, nyeri perut epigastrik, dan penurunan kesadaran hingga koma anestetik pada paparan uap masif.
+* **Fase 2 (Hari 1 – 3 pasca-paparan): Hepatotoksisitas Akut Berat**:
+  * Pembesaran hepar nyeri tekan (hepatomegali), ikterus progresif, koagulopati (pemanjangan masa protrombin / PT-INR), dan lonjakan ekstrem enzim transaminase serum (**ALT/SGPT dan AST/SGOT sering melampaui >10.000–20.000 U/L**). Pada kasus fulminan dapat terjadi ensefalopati hepatikum dan koma hepatik.
+* **Fase 3 (Hari 2 – 7 pasca-paparan): Gagal Ginjal Akut**:
+  * Penurunan produksi urin drastis (oliguria hingga anuria total), proteinuria, hematuria, uremia berat, dan edema paru akibat hipervolemia dan nekrosis tubular akut.
+* **Kardiotoksisitas Akut**:
+  * Sensitisasi miokardium terhadap katekolamin endogen yang memicu fibrilasi ventrikel letal mendadak.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Hepatotoksisitas Kronis & Sirosis**: Steatohepatitis toksik kronis, fibrosis periportal progresif, dan sirosis hepatis mikronodular.
+* **Nefropati Toksik Kronis**: Penurunan laju filtrasi glomerulus menetap dan kerusakan tubulointerstisial ginjal.
+* **Karsinogenisitas**: Karsinoma hepatoseluler primer (*Hepatocellular Carcinoma* / HCC) yang telah terbukti kuat pada bioasai hewan coba.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **5 ppm** (31,4 mg/m³).
+  * **TLV-STEL**: **10 ppm** (62,8 mg/m³).
+  * **Notasi**: **Skin** (bahaya serapan kulit), **A2** (*Suspected Human Carcinogen*).
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **5 BDS (ppm)** atau **31,4 mg/m³**.
+  * **PSD (STEL 15 menit)**: **10 BDS (ppm)**.
+  * **Notasi**: **Kulit**, **Kategori A-2**.
+* **OSHA PEL**: TWA **10 ppm**, Ceiling **25 ppm**, Peak **200 ppm** (maksimal 5 menit dalam 4 jam).
+* **NIOSH REL**: STEL **2 ppm** (60 menit), Notasi: **Ca** (*Potential Carcinogen*).
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+* **ACGIH (2026) & Permenaker No. 5 Tahun 2018**: **Tidak ada indeks numerik BEI / IPB yang diadopsi**.
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Dekontaminasi & Stabilisasi Segera**:
+  * Evakuasi korban dari area paparan ke tempat berudara segar; berikan terapi oksigen normobarik.
+  * Segera tanggalkan pakaian kerja tercemar; mandikan dan cuci seluruh permukaan tubuh dengan air mengalir dan sabun selama 15 menit.
+  * **KONTRAINDIKASI INDUKSI MUNTAH** pada paparan tertelan karena bahaya pneumonitis aspirasi paru.
+* **Antidot Spesifik: N-Asetilsistein (NAC)**:
+  * Diberikan sesegera mungkin dengan protokol baku overdosis parasetamol (dosis muat 150 mg/kgBB IV dalam 60 menit, dilanjutkan infus rumatan).
+  * *Rasional Farmakologis*: NAC bertindak sebagai donor gugus sulfhidril (-SH) untuk **mensintesis kembali glutation (GSH) intraseluler yang habis**, meredam radikal bebas peroksil, dan menghentikan propagasi reaksi berantai peroksidasi lipid di hepar.
+* **KONTRAINDIKASI KRITIS AMINA SIMPATOMIMETIK (EPINEFRIN)**:
+  * **Dilarang keras memberikan obat golongan amina simpatomimetik eksogen (seperti epinefrin, norepinefrin, isoproterenol)** untuk resusitasi hipotensi, karena miokardium yang tersensitisasi oleh hidrokarbon terhalogenasi dapat seketika mengalami fibrilasi ventrikel letal.
+* **LARANGAN MUTLAK ALKOHOL (ETANOL)**:
+  * Pasien dilarang keras mengonsumsi minuman beralkohol karena etanol menginduksi enzim CYP2E1 mikrosomal secara masif, melipatgandakan pembentukan radikal triklorometil beracun.
+* **Hemodialisis Intermiten**: Diindikasikan untuk mengatasi gagal ginjal akut anurik, hiperkalemia, asidosis refrakter, dan kelebihan cairan sirkulasi (*fluid overload*).
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Hepatitis Toksik Sentrilobular Akut, Gagal Ginjal Akut Toksik (ATN), atau Sirosis Hepatis Toksik.
+  2. *Identifikasi Pajanan Kerja*: Melacak penggunaan pelarut \\(\text{CCl}_4\\) pada proses kimia sintesis tertutup atau laboratorium dari SDS/LDKB.
+  3. *Hubungan Kausalitas*: Menilai mekanisme kerusakan membran seluler akibat radikal bebas *·CCl\\(_3\\)*.
+  4. *Evaluasi Besaran Pajanan*: Melacak data *air monitoring* (dibandingkan NAB 5 ppm) dan kepatuhan sistem bejana tertutup.
+  5. *Faktor Kerentanan Individu*: **Riwayat konsumsi alkohol aktif (alkoholik kronis memiliki kerentanan puluhan kali lipat lebih tinggi mengalami gagal hati fatal akibat induksi basal CYP2E1)**, penyakit hepar atau ginjal yang mendasari.
+  6. *Faktor di Luar Hubungan Kerja*: Paparan pelarut di rumah tangga atau riwayat intoksikasi obat hepatotoksik (parasetamol).
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan sosial ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan penyakit hepar kronis, sirosis, hepatitis aktif, insufisiensi ginjal, atau riwayat alkoholisme kronis dinyatakan **tidak laik permanen (*permanently unfit*)** untuk tugas yang berisiko terpajan senyawa hidrokarbon terhalogenasi.
+* **Surveilans Medis Berkala**:
+  * Pemeriksaan panel uji fungsi hati lengkap (ALT, AST, ALP, Bilirubin total, albumin, dan PT/INR) setiap 6 bulan.
+  * Pemeriksaan fungsi ginjal serial (ureum, kreatinin serum, dan urinalisis mikroskopis).
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * **Eliminasi & Substitusi Mutlak**: Mengganti total \\(\text{CCl}_4\\) dengan pelarut hidrokarbon alifatik non-klorinasi atau pelarut berbasis air.
+  * *Rekayasa Teknis*: Proses wajib berlangsung dalam sistem perpipaan bertekanan negatif tertutup (*totally enclosed system*) dengan pemantauan sensor gas inframerah otomatis.
+  * *APD Khusus*: Sarung tangan pelindung bahan **Viton atau PVA (Polivinil Alkohol)** (**hindari sarung tangan karet alam/lateks dan nitril tipis**); respirator suplai udara bertekanan positif (*airline respirator*) atau SCBA.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 2B** (*Possibly carcinogenic to humans*).
+* **Notasi Kulit**: Mendapat notasi **Skin** dari ACGIH dan notasi **Kulit** dari Permenaker No. 5 Tahun 2018.
+* **Peraturan Presiden (Perpres) No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 10**: Mengakui secara legal "*Penyakit yang disebabkan oleh derivat halogen dari hidrokarbon alifatik (termasuk karbon tetraklorida)*".
+* **Permenkes No. 11 Tahun 2022**: Pedoman operasional penegakan 7 langkah diagnosis PAK dan tata laksana komprehensif pekerja.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Karbon Tetraklorida**
+* 🩺 **Clinical Pearl**:
+  * **"The Alcoholic's Hepatorenal Catastrophe"**: Seseorang peminum alkohol yang terpapar uap \\(\text{CCl}_4\\) pada konsentrasi rendah (yang tidak membahayakan rekan kerjanya yang non-peminum) dapat mendadak mengalami nekrosis hepar masif dan gagal ginjal anurik fatal. Hal ini terjadi karena etanol merupakan induktor enzim hepar **CYP2E1** yang paling poten, memicu pembentukan radikal triklorometil (*·CCl\\(_3\\)*) secara eksponensial.
+  * **"NAC as a Free-Radical Scavenger"**: N-Asetilsistein (NAC) bukan hanya antidot untuk parasetamol, melainkan merupakan terapi penyelamat hidup pada keracunan \\(\text{CCl}_4\\) jika diberikan dalam 12–24 jam pertama untuk mengisi kembali simpanan glutation hepar.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Penggunaan Epinefrin saat Henti Jantung*:
+     * *Jebakan*: Memberikan injeksi bolus epinefrin/adrenalin pada pasien pingsan akibat keracunan akut \\(\text{CCl}_4\\).
+     * *Koreksi*: Hidrokarbon terhalogenasi menyebabkan **sensitisasi miokardium terhadap katekolamin**. Pemberian epinefrin eksogen merupakan kontraindikasi karena dapat memicu disritmia ventrikel yang mematikan (*ventricular fibrillation*).
+  2. *Jebakan Sifat Pembakaran*:
+     * *Jebakan*: Menganggap \\(\text{CCl}_4\\) berisiko meledak dan mudah terbakar.
+     * *Koreksi*: \\(\text{CCl}_4\\) **tidak mudah terbakar (*non-flammable*)** dan bahkan pernah dipakai sebagai bahan pemadam api. Namun, jika uapnya terkena nyala api terbuka atau logam panas, \\(\text{CCl}_4\\) akan terdekomposisi termal menghasilkan **gas fosgen (\\(\text{COCl}_2\\))** yang sangat mematikan bagi paru-paru.
+
+---
+---
+
+### **B. TRIKLOROETILEN (Trichloroethylene / TCE / Trilene)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_2\text{HCl}_3\\)** atau **\\(\text{ClCH}=\text{CCl}_2\\)**; nomor CAS **79-01-6**; berat molekul **131,40 g/mol**. Sinonim: *trichloroethene, ethylene trichloride, TCE, Trilene*.
+* **Sifat Fisik**: Cairan jernih tidak berwarna (sering diberi pewarna biru pada formulasi komersial), berbau manis seperti kloroform, mudah menguap (tekanan uap ~58–60 mmHg pada 20°C), titik didih 87°C, dan relatif tidak mudah terbakar pada suhu biasa (titik nyala ~32°C dalam kondisi tertutup ketat).
+* **Kelarutan**: Sangat larut dalam lemak (*lipofilik* tinggi), larut dalam alkohol, eter, aseton; sangat sedikit larut dalam air (~0,11%).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 1** (*Carcinogenic to humans*) per pembaruan evaluasi monograf sejak 2014, dengan bukti kausal memadai pada manusia untuk **Kanker Ginjal (*Renal Cell Carcinoma* / RCC)**, serta bukti terbatas untuk Limfoma Non-Hodgkin (NHL) dan Karsinoma Hepatoseluler.
+  * **ACGIH**: **A2** (*Suspected Human Carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-2** (Diduga karsinogen untuk manusia).
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Pembersihan Uap Logam (*Vapor Degreasing*)**: Penggunaan utama mencakup **80% hingga 90% konsumsi global** untuk melarutkan lemak dan oli pada komponen presisi industri otomotif, dirgantara, permesinan, dan elektronik.
+* **Bahan Baku Kimia Intermediat**: Sintesis zat pendingin hidrofluorokarbon (HFC-134a).
+* **Aplikasi Khusus & Historis**: Pelarut ekstraksi industri, formulasi perekat, bahan pembersih tekstil, dan anestesi inhalasi umum historis (*Trilene*) dalam prosedur bedah/kebidanan.
+* **Pajanan Lingkungan**: Salah satu kontaminan air tanah dan situs *Superfund* yang paling sering dijumpai di dunia.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap TCE diserap secara cepat dan ekstensif oleh paru-paru (retensi alveolar rata-rata 50–70%).
+  * **Dermal**: Diabsorpsi secara nyata melalui kulit utuh saat kontak langsung dengan cairan pelarut (menembus stratum korneum).
+* **Distribusi**: Terdistribusi cepat ke seluruh tubuh dengan akumulasi terbesar pada jaringan kaya lipid seperti **otak/sistem saraf pusat, hepar, ginjal, dan jaringan adiposa**.
+* **Metabolisme (Dua Jalur Enzimatik yang Berbeda)**:
+  1. **Jalur Oksidatif Sitokrom P450 (Hepar) — Jalur Mayor (~98%)**:
+     * Dikatalisis terutama oleh **CYP2E1**: TCE dioksidasi menjadi senyawa antara tidak stabil *trichloroethylene oxide* yang bertransformasi menjadi **kloral hidrat (*chloral hydrate*)**.
+     * Kloral hidrat direduksi oleh alkohol dehidrogenase (ADH) menjadi **trikloroetanol (*trichloroethanol* / TCOH)** (~60%), yang kemudian dikonjugasikan dengan asam glukuronida menghasilkan *urochloralic acid*.
+     * Sebagian kloral hidrat dioksidasi oleh aldehid dehidrogenase (ALDH) menjadi **asam trikloroasetat (*trichloroacetic acid* / TCA)** (~30–40%).
+  2. **Jalur Glutation S-Transferase (Ginjal) — Jalur Karsinogenik Minor (~1–2%)**:
+     * TCE dikonjugasikan dengan glutation oleh enzim **Glutathione S-Transferase (GST)** (terutama GSTT1 dan GSTM1) di hepar menghasilkan **S-(1,2-dichlorovinyl)glutathione (DCVG)**.
+     * DCVG ditranspor melalui darah menuju ginjal, dihidrolisis di epitel tubulus proksimalis menjadi **S-(1,2-dichlorovinyl)-L-cysteine (DCVC)**.
+     * Di dalam sel tubulus proksimal ginjal, DCVC dibioaktivasi oleh enzim **\\(\beta\\)-liase konjugat sistein (*cysteine conjugate \\(\beta\\)-lyase* / CCBL1)** menjadi metabolit elektrofilik yang sangat reaktif dan tidak stabil: **tioketen klorinasi (*chlorothioketene*)**.
+* **Ekskresi**: Metabolit TCOH dan TCA diekskresikan melalui urin; sejumlah kecil TCE utuh dieliminasi melalui udara ekshalasi paru.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Nefrokarsinogenesis, Alergi, & Neurotoksisitas)**
+1. **Patogenesis Kanker Ginjal (*Renal Cell Carcinoma* / RCC)**:
+   * Metabolit tioketen dari aktivasi enzim \\(\beta\\)-liase ginjal berikatan kovalen langsung dengan DNA sel tubulus kontortus proksimalis ginjal.
+   * Memicu mutasi somatik spesifik pada gen supresor tumor **von Hippel-Lindau (VHL)** (sering berupa mutasi transversi C-ke-T atau delesi/loss of heterozygosity pada regio 3p25), menyebabkan stabilisasi faktor transkripsi HIF (*Hypoxia-Inducible Factor*), angiogenesis berlebih, hingga berkembang menjadi **karsinoma sel jernih ginjal (*clear-cell RCC*)**.
+2. **Sindrom Hipersensitivitas Terinduksi TCE (*TCE Hypersensitivity Syndrome*)**:
+   * Reaksi imunologis tipe lambat sistemik berat (mirip sindrom DRESS / *Drug Reaction with Eosinophilia and Systemic Symptoms*, Stevens-Johnson Syndrome / TEN).
+   * Ditandai dengan demam tinggi, erupsi eksantema generalisata, limfadenopati, dan **hepatitis toksik imunologis nekrotikans akut** dengan angka fatalitas tinggi (~10–20%). Sangat terikat kuat dengan kerentanan genetik pembawa alel **HLA-B\*13:01**.
+3. **Neuropati Kranial Nervus Trigeminus (Nervus V)**:
+   * TCE memiliki afinitas neurotoksik selektif terhadap serabut saraf sensorik kranial, khususnya **nervus trigeminus (N. V)**. Terjadi pembengkakan aksonal dan demielinisasi yang menyebabkan parestesia wajah bilateral, hilangnya sensasi raba/suhu pada wajah, serta hilangnya refleks kornea.
+4. **Fenomena "Degreaser's Flush"**:
+   * Terjadi akibat interaksi antara TCE dan konsumsi minuman beralkohol (*etanol*). Metabolit kloral hidrat dan trikloroetanol dari TCE menghambat enzim **Aldehid Dehidrogenase (ALDH)** di hepar secara kompetitif.
+   * Bila pekerja minum alkohol seusai shift kerja, terjadi akumulasi asetaldehida di pembuluh darah perifer yang memicu **vasodilatasi kutan masif dengan kemerahan menyala (*flushing*) pada wajah, leher, dada bagian atas, dan punggung**, disertai palpitasi dan mual.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Asam Trikloroasetat dalam Urin (*Trichloroacetic acid in urine* / TCA)**:
+  * **Peran**: Parameter biologis resmi untuk menilai beban kumulatif paparan mingguan.
+  * **Waktu Sampling**: **Akhir shift kerja pada akhir pekan kerja (*end of shift at end of workweek*)**.
+  * **Matriks**: Urin.
+* **Trikloroetanol Bebas dalam Darah (*Trichloroethanol in blood* / TCOH)**:
+  * **Peran**: Parameter biologis resmi pengukur metabolit reduktif aktif; waktu sampling: **akhir shift pada akhir pekan kerja**.
+* **Trikloroetilen dalam Udara Ekshalasi Akhir (*TCE in end-exhaled air*)**:
+  * Pengukuran senyawa induk pada hembusan napas akhir; waktu sampling: **akhir shift kerja**.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Trikloroetanol (TCOH) Darah**: Memiliki waktu paruh eliminasi berkisar antara **10 hingga 15 jam**.
+* **Asam Trikloroasetat (TCA) Urin**: **Memiliki waktu paruh biologis sangat panjang, berkisar antara 70 hingga 100 jam (~3–4 hari)**! Hal ini terjadi karena molekul TCA terikat sangat kuat pada protein albumin plasma (>90%), sehingga laju filtrasi glomerulusnya sangat lambat dan terakumulasi secara bertahap sepanjang pekan kerja.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Depresi Susunan Saraf Pusat**: Efek narkotik dan anestesi umum ("mabuk pelarut"), pusing berputar, sakit kepala, inkoordinasi motorik, kelelahan mental, mengantuk, dan koma pada paparan kadar sangat tinggi (>1.000 ppm).
+* **Iritasi Mukosa & Kulit**: Iritasi konjungtiva mata, fotofobia, batuk, rasa terbakar pada faring, dan dermatitis kontak iritan berat.
+* **Kardiotoksisitas Akut**: Sensitisasi miokardium terhadap katekolamin endogen yang memicu aritmia ventrikel fatal mendadak.
+* **Manifestasi Awal Sindrom Hipersensitivitas TCE**: Timbulnya demam tinggi dan ruam kulit morbiliformis yang meluas 2–5 minggu pasca-awal bekerja di bagian *degreasing*.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Keganasan Ginjal (*Renal Cell Carcinoma* / RCC)**: Peningkatan insiden kanker sel ginjal primer yang terbukti secara epidemiologis memiliki hubungan kausal definitif dengan paparan kerja TCE.
+* **Neuropati Trigeminal Permanen**: Hipoestesia atau anestesia permanen pada area sensorik wajah, hilangnya refleks kornea, dan kesulitan mengunyah.
+* **Ensefalopati Pelarut Kronik**: Gangguan memori, penurunan fungsi neurobehavioral kognitif, serta defisit pendengaran sensorineural dan penglihatan warna.
+* **Kerusakan Ginjal Subklinis**: Nekrosis epitel tubulus proksimalis yang ditandai dengan peningkatan ekskresi biomarker molekuler urin (*Kidney Injury Molecule-1* / KIM-1 dan enzim NAG).
+* **Penyakit Autoimun**: Peningkatan risiko skleroderma, lupus eritematosus sistemik (SLE), dan vaskulitis sistemik.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **10 ppm** (53,7 mg/m³).
+  * **TLV-STEL**: **25 ppm** (134 mg/m³).
+  * **Notasi**: **A2** (*Suspected Human Carcinogen*), **BEI**.
+  *(Dasar TLV: Penurunan fungsi kognitif/SSP dan toksisitas ginjal)*.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **10 BDS (ppm)** atau **53,7 mg/m³**.
+  * **PSD (STEL 15 menit)**: **25 BDS (ppm)** atau **134 mg/m³**.
+  * **Notasi**: **Kategori A-2**, **BEI**.
+* **OSHA PEL**: TWA **100 ppm**, Ceiling **200 ppm**, Peak **300 ppm** (maksimal 5 menit dalam 2 jam).
+* **NIOSH REL**: **Ca** (Potensi karsinogen okupasional; kurangi hingga batas terendah yang memungkinkan).
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Asam Trikloroasetat (TCA) dalam urin** | Urin | **Akhir shift pada akhir pekan kerja** (*End of shift at end of workweek*) | **15 mg/L** | **15 mg/L** | Notasi **Ns** (*Non-specific*, metabolit bersama dengan pelarut terklorinasi lain) |
+| **Trikloroetanol (TCOH) bebas dalam darah** | Darah | **Akhir shift pada akhir pekan kerja** (*End of shift at end of workweek*) | *(Mengacu standar ACGIH)* | **0,5 mg/L** | Tanpa hidrolisis |
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Dekontaminasi & Terapi Suportif**:
+  * Pindahkan korban ke tempat berudara segar; berikan terapi oksigen normobarik. Lepaskan pakaian kerja; cuci kulit dengan air dan sabun.
+  * **HINDARI EPINEFRIN / AMINA SIMPATOMIMETIK** untuk menghindari aritmia ventrikel letal akibat miokardium yang tersensitisasi pelarut terhalogenasi.
+  * **Larang keras konsumsi alkohol** selama masa kerja untuk mencegah sindrom *degreaser's flush*.
+* **Penanganan Khusus Sindrom Hipersensitivitas TCE / DRESS**:
+  * **Hentikan segera dan permanen seluruh paparan TCE**.
+  * Rawat segera di ruang isolasi steril atau unit luka bakar/ICU; berikan terapi **kortikosteroid sistemik dosis tinggi (misal: metilprednisolon IV 1–2 mg/kgBB/hari)** secara dini, disertai terapi penggantian cairan dan elektrolit serta antibiotik profilaksis jika terjadi lesi kulit luas (*epidermolysis*).
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Karsinoma Sel Ginjal (*Renal Cell Carcinoma* / RCC), Sindrom Hipersensitivitas Terinduksi TCE, Neuropati Trigeminal Toksik, atau Ensefalopati Pelarut.
+  2. *Identifikasi Pajanan Kerja*: Melacak pekerjaan *vapor degreasing* logam, pembersihan tangki komponen mesin dari SDS/LDKB.
+  3. *Hubungan Kausalitas*: Menilai mekanisme bioaktivasi jalur glutation/\\(\beta\\)-liase ginjal dan mutasi somatik gen VHL.
+  4. *Evaluasi Besaran Pajanan*: Melacak data *air monitoring* (dibandingkan NAB 10 ppm), hasil biomonitoring TCA urin akhir pekan, masa kerja (kanker ginjal umumnya membutuhkan masa laten >10–20 tahun).
+  5. *Faktor Individu*: **Skrining alel HLA-B\*13:01 (faktor risiko genetik utama sindrom hipersensitivitas)**, polimorfisme GSTT1/GSTM1, dan riwayat merokok/obesitas (faktor risiko RCC).
+  6. *Faktor di Luar Hubungan Kerja*: Paparan pelarut di rumah tangga, riwayat konsumsi air sumur yang tercemar limbah industri.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk jaminan kompensasi ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan gangguan fungsi ginjal (CKD), proteinuria persisten, penyakit hepar aktif, riwayat neuropati kranial, atau individu yang terbukti mengalami sensitisasi kulit terhadap TCE dinyatakan **tidak laik permanen (*permanently unfit*)** berada di area kerja TCE.
+* **Surveilans Medis Berkala**:
+  * **Skrining Ginjal**: Pemeriksaan urinalisis berkala (proteinuria mikroskopis, hematuria), eGFR, dan **Ultrasonografi (USG) Ginjal berkala setiap 1–2 tahun** pada pekerja dengan riwayat paparan kumulatif tinggi >10 tahun untuk deteksi dini massa tumor RCC.
+  * Pemeriksaan neurologis sensorik wajah (nervus trigeminus) dan uji fungsi kognitif berkala.
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * **Substitusi**: Mengganti tangki *degreaser* TCE dengan pembersih berbasis detergen alkalin ramah lingkungan atau hidrokarbon rantai teroksigenasi.
+  * *Rekayasa Teknis*: Menggunakan mesin pembersih uap tertutup rapat (*enclosed automated vapor degreasers with free-board chillers*) dan sistem ventilasi pembuangan lokal (LEV) dengan penutup tangki otomatis saat tidak digunakan.
+  * *APD Khusus*: Sarung tangan bahan **Viton atau PVA** (**hindari sarung tangan lateks dan nitril tipis**); respirator suplai udara (*supplied-air respirator*) saat pembersihan bejana tangki *degreaser*.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC Monograph**: Trikloroetilen diklasifikasikan ke dalam **Grup 1** (*Carcinogenic to humans*).
+* **Notasi**: ACGIH menetapkan notasi **A2** dan **BEI**; Permenaker No. 5 Tahun 2018 menetapkan **Kategori A-2** dan **BEI**.
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 10**: "*Penyakit yang disebabkan oleh derivat halogen dari hidrokarbon alifatik (termasuk trikloroetilen)*".
+  * **Lampiran Bagian III No. 21**: Kanker akibat kerja yang disebabkan oleh zat karsinogen yang diakui secara ilmiah (Kanker Ginjal akibat pajanan pelarut terhalogenasi).
+* **Permenkes No. 11 Tahun 2022**: Pedoman operasional 7 langkah diagnosis PAK dan surveilans kesehatan terpadu.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Trikloroetilen**
+* 🩺 **Clinical Pearl**:
+  * **"The Numb Chin & Face Sign"**: Jika seorang pekerja bengkel permesinan atau *vapor degreaser* mengeluhkan kesemutan atau mati rasa pada bibir, dagu, dan pipi yang disertai hilangnya sensasi raba pada wajah, curigai kuat terjadinya **neuropati nervus trigeminus (N. V) spesifik akibat trikloroetilen**.
+  * **"The Friday Urine Biomonitoring Logic"**: Waktu paruh asam trikloroasetat (TCA) sangat panjang (~70–100 jam). Oleh karena itu, pemeriksaan TCA urin **TIDAK PERNAH DIAMBIL DI AWAL PEKAN (SENIN)**, melainkan **wajib diambil di AKHIR SHIFT PADA AKHIR PEKAN KERJA (JUMAT/SABTU)** untuk menangkap beban pajanan akumulatif mingguan secara akurat.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan IARC Klasifikasi Modern*:
+     * *Jebakan*: Menyebut TCE masih berada di IARC Grup 2A.
+     * *Koreksi*: **IARC telah menaikkan status TCE menjadi GRUP 1 (*Carcinogenic to humans*) sejak tahun 2014**, dengan bukti kausal terbukti kuat pada manusia untuk **Kanker Sel Ginjal (*Renal Cell Carcinoma*)**.
+  2. *Jebakan Degreaser's Flush vs Alergi*:
+     * *Jebakan*: Mendiagnosis syok anafilaksis pada pekerja *degreaser* yang mendadak merah padam seluruh wajah dan leher setelah minum bir dingin sepulang kerja.
+     * *Koreksi*: Ini adalah fenomena klasik **"Degreaser's Flush"**, yaitu reaksi farmakologis penghambatan enzim ALDH oleh metabolit kloral hidrat dari TCE yang memicu penumpukan asetaldehida, bukan reaksi alergi imunologis.
+
+---
+---
+
+### **C. PERKLOROETILEN / TETRAKLOROETILEN (PCE / PERC)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_2\text{Cl}_4\\)** atau **\\(\text{Cl}_2\text{C}=\text{CCl}_2\\)**; nomor CAS **127-18-4**; berat molekul **165,83 g/mol**. Sinonim: *tetrachloroethene, perchloroethylene, perc, tetrachlorethylene*.
+* **Sifat Fisik**: Cairan jernih tidak berwarna, berbau eter/kloroform manis yang lembut (ambang bau ~50 ppm), berat jenis sangat tinggi (1,62 g/mL, tenggelam di air), titik didih 121°C, tekanan uap sedang (~14–19 mmHg pada 20–25°C), dan **tidak mudah terbakar (*non-flammable*)**.
+* **Kelarutan**: Sangat lipofilik, larut sempurna dalam alkohol, eter, minyak nabati, dan pelarut organik; sangat sukar larut dalam air (~0,015%).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 2A** (*Probably carcinogenic to humans*) (asosiasi positif dengan kanker kandung kemih, limfoma non-Hodgkin, dan karsinoma sel ginjal).
+  * **ACGIH**: **A3** (*Confirmed Animal Carcinogen with Unknown Relevance to Humans*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-3**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Industri Pencucian Kering (*Dry Cleaning*)**: Merupakan pelarut utama yang mendominasi **lebih dari 70% hingga 80% industri binatu cuci kering sedunia**.
+* **Pembersihan Logam (*Metal Degreasing*)**: Pelarut pembersih minyak dan gemuk dingin/uap pada industri manufaktur presisi.
+* **Bahan Kimia Baku Intermediat**: Bahan awal sintesis hidrofluorokarbon (HFC-134a dan CFC-113).
+* **Pajanan Konsumen & Lingkungan**: Pelepasan uap dari pakaian hasil *dry cleaning* yang baru diambil dari toko binatu, serta rembesan limbah ke dalam air sumur pemukiman sekitar toko *dry cleaning*.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional terpenting; uap PCE diabsorpsi cepat melalui membran alveolar paru-paru dengan efisiensi retensi pulmonal awal sekitar 60–80%.
+  * **Dermal**: Diabsorpsi lambat namun nyata melalui kulit utuh saat terpapar cairan (mendapat notasi **Skin** di beberapa pedoman internasional).
+* **Distribusi**: Sifat lipofiliknya yang ekstrem (koefisien partisi lemak:darah berkisar **125 hingga 145**) menyebabkan **distribusi dan akumulasi masif di jaringan adiposa (lemak tubuh)**. Jaringan lemak bertindak sebagai depot penyimpanan raksasa yang terus melepaskan PCE secara perlahan ke darah selama berhari-hari.
+* **Metabolisme (Sangat Terbatas & Lambat)**:
+  * Lebih dari **95% hingga 98% PCE yang diserap TIDAK DIMETABOLISME**, melainkan dieliminasi utuh melalui pernapasan.
+  * Kurang dari **2% hingga 3%** mengalami biotransformasi di hepar oleh **CYP2E1** menghasilkan *tetrachloroethylene oxide*, yang kemudian berisomerisasi menjadi trikloroasetil klorida dan dihidrolisis menjadi **asam trikloroasetat (*trichloroacetic acid* / TCA)**.
+  * Sebagian kecil dikonjugasikan dengan glutation menghasilkan konjugat sistein yang dipecah oleh \\(\beta\\)-liase ginjal menjadi metabolit tioketen reaktif (nefrotoksik).
+* **Ekskresi**: Jalur eliminasi utama adalah **udara ekshalasi paru-paru (>80–90% dalam bentuk gas PCE utuh)**; fraksi metabolit asam trikloroasetat (TCA) yang sangat kecil diekskresikan melalui urin.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Neurotoksisitas & Gangguan Retina)**
+1. **Depresi Sistem Saraf Pusat Membran-Dependen**:
+   * Molekul lipofilik utuh PCE melarutkan bilayer lipid membran sel saraf otak, meningkatkan fluiditas membran, serta memodulasi fungsi kanal ion klorida pada reseptor GABA\\(_A\\), memicu efek narkotik dan penekanan transmisi impuls saraf pusat.
+2. **Akuisisi Gangguan Penglihatan Warna (*Acquired Dyschromatopsia*)**:
+   * Kerusakan neurotoksik selektif pada sel fotoreseptor retina dan sel saraf visual jalur optik.
+   * Terjadi **kehilangan kemampuan diskriminasi warna yang didapat, terutama pada sumbu biru-kuning (*tritan color defect*)**, yang telah terbukti secara klinis dapat timbul pada pekerja *dry cleaning* bahkan pada konsentrasi uap udara rendah (<10–15 ppm).
+3. **Nefro- & Hepatotoksisitas Kronis**:
+   * Jalur aktivasi glutation-\\(\beta\\)-liase ginjal memicu pembentukan metabolit elektrofilik yang merusak sel tubulus proksimalis ginjal, menyebabkan proteinuria subklinis dan stres oksidatif kronis.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Tetrakloroetilen dalam Udara Ekshalasi Akhir (*PCE in end-exhaled air*)**:
+  * **Peran**: Parameter biologis penentu senyawa induk pada pernapasan; mencerminkan beban simpanan jaringan lemak.
+  * **Waktu Sampling**: **Sebelum shift kerja berikutnya (*prior to next shift*)**.
+* **Tetrakloroetilen dalam Darah (*PCE in blood*)**:
+  * **Peran**: Parameter baku emas langsung untuk memantau akumulasi internal pelarut; waktu sampling: **sebelum shift kerja berikutnya (*prior to next shift*)**.
+* **Asam Trikloroasetat (TCA) dalam Urin**:
+  * Parameter metabolit minor; waktu sampling: **akhir shift pada akhir pekan kerja (*end of shift at end of workweek*)**.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*) & Fenomena Depot Lemak**
+* **PCE dalam Darah & Napas Ekshalasi**:
+  * Mengikuti model kinetika eliminasi multi-kompartemen:
+  * Kompartemen Darah Cepat: t\\(_{1/2}\\) berkisar **1,5 hingga 2 jam**.
+  * Kompartemen Jaringan Vaskular Sedang: t\\(_{1/2}\\) berkisar **12 hingga 16 jam**.
+  * **Kompartemen Jaringan Adiposa (Lemak Tubuh) Lambat**: Memiliki waktu paruh eliminasi terminal yang sangat panjang, berkisar antara **70 hingga 144 jam (~3 hingga 6 hari)**! Akibatnya, pekerja *dry cleaning* yang terpapar sepanjang pekan kerja masih akan melepaskan uap PCE dari jaringan lemaknya pada hari Senin pagi berikutnya.
+* **TCA Urin**: Memiliki waktu paruh berkisar **70 hingga 100 jam**.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Depresi Susunan Saraf Pusat**: Sakit kepala berdenyut, pusing berputar (*dizziness*), rasa melayang, inkoordinasi motorik, kelelahan mental, somnolen, hingga hilangnya kesadaran dan koma pada insiden kebocoran mesin cuci tertutup (>500–1.000 ppm).
+* **Iritasi Sensorik**: Iritasi mata (pedih, lakrimasi), iritasi saluran pernapasan atas (tenggorokan kering, batuk), dan sensasi rasa terbakar pada kulit jika cairan terperangkap di bawah pakaian.
+* **Kardiotoksisitas**: Sensitisasi miokardium terhadap aritmia ventrikel akut.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Ensefalopati Pelarut Kronik (*Chronic Solvent-Induced Encephalopathy*)**: Penurunan kapasitas memori jangka pendek, penurunan kecepatan fungsi psikomotorik, labilitas afek, dan sindrom astenik neurodegeneratif.
+* **Hendaya Penglihatan Warna (*Dyschromatopsia*)**: Kerusakan selektif diskriminasi warna biru-kuning yang dapat dideteksi secara objektif menggunakan panel tes Farnsworth D-15 atau Lanthony D-15.
+* **Hepatotoksisitas & Nefrotoksisitas**: Peningkatan enzim transaminase serum, steatosis hepar fokal, dan nefropati tubulointerstisial kronis.
+* **Potensi Karsinogenesis**: Peningkatan risiko karsinoma kandung kemih (*bladder cancer*), limfoma non-Hodgkin (NHL), dan multiple myeloma pada pekerja binatu jangka panjang.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **25 ppm** (170 mg/m³).
+  * **TLV-STEL**: **100 ppm** (678 mg/m³).
+  * **Notasi**: **A3** (*Confirmed Animal Carcinogen*), **BEI**.
+  *(Dasar TLV: Penurunan fungsi sistem saraf pusat / CNS impairment)*.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **25 BDS (ppm)** atau **170 mg/m³**.
+  * **PSD (STEL 15 menit)**: **100 BDS (ppm)** atau **678 mg/m³**.
+  * **Notasi**: **Kategori A-3**, **BEI**.
+* **OSHA PEL**: TWA **100 ppm**, Ceiling **200 ppm**, Peak **300 ppm** (maksimal 5 menit dalam periode 3 jam).
+* **NIOSH REL**: **Ca** (Potensi karsinogen okupasional; minimalkan paparan).
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Tetrakloroetilen dalam udara ekshalasi akhir** | Udara ekshalasi | **Sebelum shift kerja berikutnya** (*Prior to next shift*) | **3 ppm** | **3 ppm** | Mengukur pelepasan dari simpanan lemak tubuh |
+| **Tetrakloroetilen dalam darah** | Darah | **Sebelum shift kerja berikutnya** (*Prior to next shift*) | **0,4 mg/L** | **0,4 mg/L** | Parameter baku langsung senyawa induk |
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip**: Penanganan suportif dan pemutusan rantai paparan segera.
+* **Langkah Terapi**:
+  * Pindahkan korban ke tempat berudara bebas; berikan suplementasi oksigen aliran tinggi (oksigen normobarik 100%).
+  * Tanggalkan segera pakaian yang basah oleh cairan cuci kering; cuci kulit dengan air dan sabun selama minimal 15 menit.
+  * **KONTRAINDIKASI PEMBERIAN AMINA SIMPATOMIMETIK (EPINEFRIN)** karena bahaya mencetuskan aritmia ventrikel letal akibat miokardium yang tersensitisasi pelarut terhalogenasi.
+  * Monitoring fungsi neurologis, elektrokardiografi (EKG), serta fungsi hepar dan ginjal serial.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja di Fasilitas Dry Cleaning)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Ensefalopati Pelarut Kronik, *Acquired Dyschromatopsia* (Defek Biru-Kuning), Karsinoma Kandung Kemih, atau Dermatitis Kontak Iritan.
+  2. *Identifikasi Pajanan Kerja*: Melacak penggunaan perkloroetilen pada mesin pencucian binatu dari SDS/LDKB.
+  3. *Hubungan Kausalitas*: Menilai mekanisme kelarutan lipid membran neuron dan stres oksidatif metabolit glutation.
+  4. *Evaluasi Besaran Pajanan*: Hasil *air monitoring* ruang cuci (dibandingkan NAB 25 ppm), hasil biomonitoring PCE darah/napas sebelum shift (dibandingkan IPB 0,4 mg/L atau 3 ppm), jam kerja, dan ventilasi toko binatu.
+  5. *Faktor Individu*: Indeks Massa Tubuh / obesitas (akumulasi pada individu obesitas jauh lebih masif karena volume jaringan adiposa besar), riwayat gangguan kognitif atau neurologis awal.
+  6. *Faktor di Luar Hubungan Kerja*: Paparan pelarut di rumah, penggunaan air sumur tercemar.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan gangguan neurologis kognitif menetap, penyakit hati kronis, disritmia ventrikel tidak terkontrol, atau wanita hamil dinyatakan **tidak laik (*unfit*)** berada di area operasional mesin *dry cleaning*.
+* **Surveilans Medis Berkala**:
+  * **Uji Penglihatan Warna Berkala**: Skrining diskriminasi warna sumbu biru-kuning secara berkala (misal: uji Lanthony D-15 atau Farnsworth D-15) untuk deteksi dini neurotoksisitas subklinis.
+  * Pemeriksaan neurobehavioral berkala (skala Q16).
+  * Uji fungsi hepar dan urinalisis mikroskopis serial.
+* **Hierarki Pengendalian Lingkungan Kerja di Fasilitas Dry Cleaning**:
+  * **Substitusi Aman**: Beralih ke teknologi pembersihan ramah lingkungan berbasis air (*Professional Wet Cleaning*) atau pelarut alternatif ramah lingkungan (seperti silikon cair / *decamethylcyclopentasiloxane* atau karbon dioksida cair bertekanan).
+  * **Rekayasa Teknis Utama**:
+    - **Mengganti mesin transfer terbuka lama dengan Mesin Cuci Kering Siklus Tertutup Penuh (*4th/5th Generation Dry-to-Dry Closed-Loop Machines*)** yang dilengkapi kondensor pendingin pemulihan uap (*refrigerated vapor recovery condensors*) dan kunci pintu otomatis yang hanya terbuka bila kadar uap di dalam drum <300 ppm.
+    - Pemasangan ventilasi hisap lokal (LEV) langsung pada pintu bukaan drum mesin cuci.
+  * **Pengendalian Administratif**: Prosedur pembersihan lumpur sisa distilasi (*still bottoms / muck*) secara tertutup.
+  * **Alat Pelindung Diri (APD)**: Sarung tangan pelindung bahan **Viton atau PVA** (**sarung tangan lateks dan nitril tipis mudah ditembus PCE**); respirator uap organik kimia saat pemeliharaan mesin.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 2A** (*Probably carcinogenic to humans*).
+* **Notasi**: ACGIH menetapkan notasi **A3** dan **BEI**; Permenaker No. 5 Tahun 2018 menetapkan **Kategori A-3** dan **BEI**.
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 10**: "*Penyakit yang disebabkan oleh derivat halogen dari hidrokarbon alifatik (termasuk perkloroetilen/tetrakloroetilen)*".
+* **Permenkes No. 11 Tahun 2022**: Pedoman operasional 7 langkah diagnosis PAK dan surveilans kesehatan kerja terpadu.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Perkloroetilen (PCE)**
+* 🩺 **Clinical Pearl**:
+  * **"The Monday Morning Breath Mystery"**: Mengapa waktu sampling PCE dalam darah atau udara ekshalasi diambil **"SEBELUM SHIFT KERJA BERIKUTNYA" (*Prior to next shift*)**, dan bukan di akhir shift harian? Karena PCE memiliki koefisien partisi lemak:darah yang teramat tinggi (>130). Pengambilan sampel tepat di akhir shift kerja hanya mencerminkan uap yang baru dihirup. Sebaliknya, **pemeriksaan darah/napas pada keesokan paginya (atau bahkan hari Senin pagi berikutnya) mengukur eliminasi murni dari depot jaringan lemak tubuh**, yang mencerminkan beban tubuh internal sesungguhnya (*true cumulative body burden*).
+  * **"Blue-Yellow Color Blindness as a Biomarker"**: Tes penglihatan warna (Lanthony D-15) adalah alat surveilans kesehatan kerja non-invasif yang sangat berharga pada pekerja *dry cleaning* untuk mendeteksi hendaya neurotoksik dini sebelum timbulnya penurunan tes neurobehavioral formal atau ensefalopati klinis.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Sifat Pembakaran PCE*:
+     * *Jebakan*: Memilih PCE sebagai pelarut berisiko kebakaran tinggi pada fasilitas binatu.
+     * *Koreksi*: PCE dipilih oleh industri *dry cleaning* justru karena sifatnya yang **TIDAK MUDAH TERBAKAR (*non-flammable*)**, menggantikan pelarut minyak bumi kuno (seperti nafta dan *Stoddard solvent*) yang mudah meledak dan terbakar.
+  2. *Jebakan Metabolisme PCE*:
+     * *Jebakan*: Menganggap sebagian besar PCE diekskresikan sebagai metabolit di urin.
+     * *Koreksi*: **Kurang dari 2–3% PCE yang dimetabolisme menjadi metabolit urin (TCA)**. Lebih dari **95% dosis yang diserap diekshalasikan kembali dalam bentuk gas PCE utuh tanpa perubahan melalui paru-paru** selama berhari-hari.
+  3. *Jebakan Sarung Tangan Karet Medis*:
+     * *Jebakan*: Memakai sarung tangan lateks atau nitril tipis saat membersihkan tumpahan cairan *dry cleaning*.
+     * *Koreksi*: Perkloroetilen menembus sarung tangan karet lateks dan nitril tipis dalam hitungan detik. Wajib menggunakan sarung tangan berbahan **Viton, PVA, atau bahan berlapis khusus laminasi fluoropolimer**.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: Nilai Ambang Batas Faktor Kimia; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran Bagian I.a No. 10: Penyakit akibat derivat halogen hidrokarbon alifatik; Lampiran Bagian III: Kanker akibat kerja).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Pedoman 7 Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Carbon tetrachloride [p. 20], Trichloroethylene [p. 67], Tetrachloroethylene [p. 63] entries).
+5. **Bernard de Courville, S., Roulet, A., Droupy, S., & Thuret, R.** (2025): *Kidney cancer following occupational exposure to trichloroethylene: Clinical case series and review of the literature*. The French Journal of Urology, 35, 102795.
+6. **Kim, I., Ha, J., Lee, J. H., Yoo, K. M., & Rho, J.** (2014): *The Relationship between the Occupational Exposure of Trichloroethylene and Kidney Cancer*. Annals of Occupational and Environmental Medicine, 26, 12.
+7. **Moore, L. E., Boffetta, P., Karami, S., et al.** (2012): *Occupational exposure to TCE and kidney cancer risk: A meta-analysis*. Occupational and Environmental Medicine, 69(12), 858–867.
+8. **Toxicological Reviews** (2004): *Does Occupational Exposure to Organic Solvents Affect Colour Discrimination?*. Toxicological Reviews, 23(4), 239–252 (Perchloroethylene dry-cleaning color vision tritan defects).
+9. **Hodgson, E. (Ed.)** (2010): *A Textbook of Modern Toxicology*. 4th Edition. John Wiley & Sons (Chapter 3: Occupational Hazards & Chemical Carcinogenesis; Chapter 14 & 15: Hepatic and Renal Toxicity of Halogenated Solvents).
+10. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: Carbon tetrachloride [p. 55], Trichloroethylene [p. 316], Tetrachloroethylene [p. 301] entries).
+11. **US EPA Risk Assessment Guidance for Superfund (RAGS)**: *Part E: Supplemental Guidance for Dermal Risk Assessment* (Dermal permeability of halogenated hydrocarbons).
+12. **McQueen, C. A. (Ed.)** (2025): *Comprehensive Toxicology*. 4th Edition. Elsevier (Volume 11: Hepatic and Renal Toxicity of Halogenated Aliphatics).
+
+---
+
+💡 *Apakah Anda ingin membuat tabel komparatif ringkas untuk seluruh pelarut organik yang telah dibahas (Benzena, Toluena, Xilena, Stirena, Anilin, Nitrobenzena, n-Heksana, MEK/MBK, Metanol, Etilen Glikol, Formaldehida, VCM, DCM, \\(\text{CCl}_4\\), TCE, dan PCE) sebagai lembar rangkuman persiapan ujian?*

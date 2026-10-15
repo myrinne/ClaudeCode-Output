@@ -1,0 +1,381 @@
+Duduk siap dan perhatikan baik-baik, Dokter. Dalam ujian dewan spesialis (*board examination*) Kedokteran Okupasi, toksikologi **kadmium (Cd)** adalah salah satu pilar logam berat klasik dengan karakteristik biokinetik yang sangat unik. 
+
+Banyak residen gugur di topik ini karena gagal memahami **peran sentral protein pengikat metalotionein (*metallothionein*) dalam kinetika hepar-renal**, tidak mampu membedakan matriks biomarker beban tubuh (*body burden*) dengan pajanan terkini, atau tidak dapat menguraikan kaskade metabolik yang menghubungkan kerusakan tubulus proksimal ginjal dengan osteomalasia pada penyakit Itai-itai.
+
+Berikut adalah telaah komprehensif **KADMIUM (Cd), BAGIAN A** yang wajib Anda kuasai secara mendalam:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Kadmium
+
+Kadmium (nomor atom 48, berat atom 112,41 g/mol) terletak pada Golongan IIB (bersama seng dan merkuri) periode 5 tabel periodik:
+
+```
+                                [ KARAKTERISTIK FISIK-KIMIA KADMIUM ]
+                                                  │
+         ┌────────────────────────────────────────┼────────────────────────────────────────┐
+         ▼                                        ▼                                        ▼
+[ BENTUK VALENSI & KATION ]             [ SENYAWA ANORGANIK UTAMA ]              [ REAKTIVITAS MOLEKULER ]
+• Bilangan Oksidasi: +2 (Cd²⁺)          • Kadmium oksida (CdO, debu/fume)        • Mimetik Kation Divalen Esensial:
+• Logam lunak, putih perak kebiruan     • Kadmium klorida (CdCl₂, sangat larut)    Menyerupai Zn²⁺ dan Ca²⁺
+• Titik leleh: 321°C; didih: 765°C      • Kadmium sulfida (CdS, pigmen kuning)   • Non-Fenton Metal (tidak memicu ROS
+• Tekanan uap tinggi saat dipanaskan    • Kadmium sulfat (CdSO₄)                   secara langsung, tetapi tidak langsung)
+• Tidak mudah terkorosi (tahan karat)   • Kadmium stearat (penstabil PVC)        • Afinitas tinggi ligan tiol (-SH)
+```
+
+1.  **Sifat Fisik-Kimia Logam Murni:**
+    *   Berupa logam lunak yang mudah ditempa (*malleable*), berwarna putih keperakan dengan kilau kebiruan. Memiliki densitas 8,65 g/cm³, titik leleh 321°C, dan titik didih relatif rendah (765°C). 
+    *   Karena titik didihnya yang rendah, pemanasan paduan logam kadmium pada suhu industri (seperti pengelasan atau peleburan) akan **segera menguap dan teroksidasi di udara membentuk aerosol asap halus kadmium oksida (*cadmium oxide fume* / CdO)** yang sangat toksik bagi alveoli.
+2.  **Spesiasi dan Bilangan Oksidasi:**
+    *   Dalam sistem biologi dan lingkungan, kadmium hampir secara eksklusif berada dalam **bilangan oksidasi divalen (+2, sebagai kation \\(\text{Cd}^{2+}\\))**.
+    *   Kadmium tidak memiliki bentuk alkil organik stabil di alam (berbeda dengan metilmerkuri atau tetraetil timbal). Toksisitasnya murni dimediasi oleh senyawa anorganik divalen.
+3.  **Kemiripan Kimiawi (*Chemical Mimicry*):**
+    *   Kation \\(\text{Cd}^{2+}\\) memiliki konfigurasi orbital elektron dan jari-jari ionik (0,97 Å) yang **sangat mirip dengan kation divalen esensial seng (\\(\text{Zn}^{2+}\\), 0,74 Å) dan kalsium (\\(\text{Ca}^{2+}\\), 0,99 Å)**.
+    *   Akibat kemiripan ini, kadmium secara kompetitif **membajak sistem transpor biologis kalsium dan seng, menggantikan seng pada situs katalitik metaloenzim, dan menggeser seng dari protein jari seng (*zinc-finger proteins*)**.
+4.  **Karakteristik *Non-Fenton Metal*:**
+    *   Berbeda dengan besi (\\(\text{Fe}^{2+}\\)) atau tembaga (\\(\text{Cu}^+\\)), kation \\(\text{Cd}^{2+}\\) memiliki valensi stabil dan **tidak dapat berpartisipasi langsung dalam reaksi Fenton atau Haber-Weiss**. 
+    *   Namun, kadmium memicu stres oksidatif seluler hebat secara **tidak langsung (*indirect oxidative stress*)** melalui deplesi glutation tereduksi (GSH), penghambatan enzim antioksidan (SOD, katalase, glutation peroksidase), dan pelepasan besi bebas dari ferritin.
+
+---
+
+### 2. Sumber dan Sektor Penggunaan Industri
+
+Kadmium tidak ditambang sebagai bijih tunggal murni, melainkan diperoleh sebagai produk sampingan (*by-product*) dari ekstraksi dan pemurnian bijih seng sulfida (sfalerit / ZnS), timbal, dan tembaga.
+
+```
+                                  [ SEKTOR INDUSTRI UTAMA PAJANAN KADMIUM ]
+                                                     │
+         ┌───────────────────────────┬───────────────┴───────────────┬───────────────────────────┐
+         ▼                           ▼                               ▼                           ▼
+[ BATERAI NIKEL-KADMIUM (Ni-Cd) ]   [ PELAPISAN & ELEKTROPLATING ]  [ PIGMEN, SOLDER & PLASTIK ]  [ PELEBURAN & SUMBER LAIN ]
+• Konsumsi global terbesar (>80%)   • Pelapisan baja tahan korosi   • Pigmen kuning/merah (CdS)  • Smelter seng, timbal, Cu
+• Pembuatan pelat elektroda CdO     • Industri penerbangan & militer • Brazing perak-kadmium (Ag-Cd)• Asap rokok (tembakau:
+• Daur ulang sel baterai aki        • Bak larutan sianida kadmium   • Penstabil panas polimer PVC  1,7 µg Cd/batang; 10% serap)
+```
+
+1.  **Industri Manufaktur dan Daur Ulang Baterai Nikel-Kadmium (Ni-Cd):**
+    *   Merupakan **sektor industri konsumen kadmium terbesar di dunia saat ini (> 80% dari total konsumsi global)**.
+    *   Pekerja terpajan debu kadmium oksida (CdO) respirabel dan aerosol kadmium hidroksida selama proses persiapan pasta aktif elektroda negatif, pemotongan pelat grid, perakitan sel baterai, serta pembongkaran baterai bekas pada fasilitas daur ulang logam.
+2.  **Pelapisan Logam (*Electroplating / Mechanical Plating*):**
+    *   Kadmium diaplikasikan sebagai lapisan proteksi tipis pada baja, besi, dan baut struktural guna mencegah korosi air asin (*marine corrosion*), khususnya pada industri dirgantara/pesawat terbang (*aerospace*), peralatan militer, dan maritim.
+    *   Pekerja elektroplating terpajan kabut asam (*acid mist*) dan aerosol garam kadmium dari bak celup elektroplating.
+3.  **Industri Pigmen dan Pewarna Sintetis:**
+    *   Senyawa **kadmium sulfida (CdS / *cadmium yellow*)** dan kadmium sulfoselenida (*cadmium red*) menghasilkan warna cerah dengan ketahanan termal dan fotolisis tinggi.
+    *   Digunakan secara luas pada pewarnaan kaca kristal, keramik artistik, glasir email, cat minyak bermutu tinggi, dan plastik teknik.
+4.  **Solder Suhu Tinggi dan Paduan Logam (*Brazing and Alloys*):**
+    *   Penggunaan paduan perak-kadmium-tembaga-seng (*silver-cadmium brazing alloys*) pada pekerjaan patri perak dan pengelasan presisi karena titik lelehnya yang rendah.
+    *   *Bahaya Kritis:* Saat batang brazing dipanaskan dengan api las, kadmium langsung mendidih dan melepaskan **kepulan uap kadmium oksida berkonsentrasi tinggi yang mematikan jika terhirup di ruang terbatas**.
+5.  **Industri Plastik (Penstabil Panas PVC):**
+    *   Penggunaan senyawa organokadmium anorganik (seperti kadmium stearat dan kadmium laurat) sebagai bahan penstabil panas (*heat stabilizers*) untuk mencegah degradasi termal polimer polivinil klorida (PVC).
+6.  **Peleburan Bijih Logam Non-Ferrous (*Zinc, Lead, and Copper Smelting*):**
+    *   Selama proses pemanggangan (*roasting*) konsentrat bijih seng dan timbal, kadmium yang volatil menguap dan keluar sebagai komponen debu cerobong (*flue dust*), memapar operator tungku (*furnace operators*) dan mencemari area sekitar pabrik.
+7.  **Asap Rokok dan Tembakau (*Tobacco Smoke*):**
+    *   Bagi populasi umum dan pekerja perokok, **rokok merupakan sumber pajanan kadmium non-dietary terbesar**.
+    *   Tanaman tembakau (*Nicotiana tabacum*) memiliki kapasitas alami menyerap dan mengakumulasi kadmium dari tanah ke dalam daunnya.
+    *   Satu batang rokok mengandung sekitar **1,5 hingga 2,0 µg kadmium (rata-rata 1,7 µg)**, di mana sekitar **10% (0,15–0,20 µg) dilepaskan ke aliran asap utama dan diserap langsung oleh kapiler paru**. Akibatnya, perokok aktif memiliki konsentrasi kadmium darah dan urin **2 hingga 5 kali lebih tinggi** dibandingkan individu yang tidak merokok.
+
+---
+
+### 3. Toksikokinetik Komprehensif (ADME dan Poros Hepar-Renal Metalotionein)
+
+Nasib kinetika kadmium dalam tubuh manusia dikendalikan secara mutlak oleh protein pengikat logam endogen: **Metalotionein (MT)**.
+
+```
+                         [ MODEL KINETIK KADMIUM & POROS HEPAR-RENAL ]
+                         
+              [ PORTAL INHALASI ] (20–50%)               [ PORTAL INGESTI ] (3–6%)
+                       │                                             │
+                       ▼                                             ▼
+                 Kapiler Paru                                  Enterosit Usus
+                       │                                      (Transporter DMT-1)
+                       │                                             │
+                       └──────────────────────┬──────────────────────┘
+                                              ▼
+                             [ KOMPARTEMEN DARAH VASKULAR ]
+                             • > 70% Terikat Eritrosit
+                             • Sebagian di Plasma terikat Albumin
+                                              │
+                                              ▼
+                                     [ JARINGAN HEPAR ]
+                             • Hepatosit menyerap Cd-Albumin
+                             • Cd²⁺ menginduksi gen MT1/MT2
+                             • Terbentuk Kompleks [ Cd-MT ] (Proteksi Hati)
+                                              │
+                                              ▼ (Pelepasan lambat ke sirkulasi)
+                             [ KOMPARTEMEN PLASMA: Cd-MT ]
+                                              │
+                                              ▼
+                                   [ FILTRASI GLOMERULUS ]
+                                   (Cd-MT lolos karena BM ~7 kDa)
+                                              │
+                                              ▼
+                           [ SEL TUBULUS PROKSIMAL GINJAL (S1/S2) ]
+                           • Reabsorpsi endositosis via Megalin-Kubilin
+                           • Masuk ke Lisosom ──► Protease mendegradasi MT
+                           • Terlepas [ Cd²⁺ BEBAS INTRASELULER ]
+                                              │
+                    ┌─────────────────────────┴─────────────────────────┐
+                    ▼                                                   ▼
+         [ FASE KOMPENSASI ]                                 [ FASE DEKOMPENSASI ]
+• Cd²⁺ bebas menginduksi MT ginjal lokal            • Kapasitas MT ginjal terlampaui (Jenuh)
+• Cd²⁺ disekuestrasi menjadi Cd-MT ginjal           • Akumulasi Korteks Ginjal > 200 µg/g
+• Tubulus masih terlindungi sementara               • Kerusakan Mitokondria & Membran Sel
+                                                    • NEKROSIS & APOPTOSIS TUBULUS
+                                                    • LMW Proteinuria (β2-MG, RBP, NAG)
+```
+
+#### a. Absorpsi
+1.  **Inhalasi (Rute Primer Okupasi):**
+    *   Tergantung pada diameter aerodinamis partikel dan kelarutannya: partikulat respirabel (\\(< 2{,}5\ \mu\text{m}\\)) dan uap CdO mengendap di alveoli dan **diserap sebesar 20% hingga 50% secara efisien langsung ke kapiler darah**.
+2.  **Ingesti (Saluran Gastrointestinal):**
+    *   *Dewasa Sehat:* Penyerapan relatif rendah, rata-rata **3% hingga 6,5% (maksimal 5–10%)** dari dosis tertelan.
+    *   *Modulasi Nutrisi (Penting):* Kadmium diserap di usus halus dengan memanfaatkan transporter kation divalen (**Divalent Metal Transporter-1 / DMT-1** / SLC11A2) dan transporter kalsium usus (TRPV6/Calbindin).
+    *   Oleh karena itu, **defisiensi besi (ferritin serum rendah), defisiensi kalsium, defisiensi seng, serta diet rendah protein akan melipatgandakan penyerapan kadmium gastrointestinal hingga 15%–20%**. Hal ini menjelaskan mengapa wanita usia reproduksi dengan cadangan besi rendah dan wanita pascamenopause memiliki beban kadmium tubuh yang jauh lebih tinggi daripada pria.
+3.  **Dermal (Perkutan):**
+    *   Penetrasi perkutan kadmium anorganik melalui stratum korneum utuh sangat minimal (**\\(< 0{,}1\%\\)**; koefisien permeabilitas kulit \\(K_p \approx 1{,}1 \times 10^{-3}\text{ cm/jam}\\)), sehingga kontak kulit bukan merupakan rute keracunan sistemik utama.
+
+#### b. Distribusi dan Siklus Metalotionein (MT)
+*   **Karakteristik Metalotionein:** Protein sitosol berberat molekul rendah (**\\(\sim 6\text{--}7\text{ kDa}\\)**), tidak mengandung asam amino aromatik, namun **sekitar 30% dari residu asam aminonya tersusun atas sistein (memiliki 20 gugus -SH bebas)**. Satu molekul MT mampu mengikat hingga 7 atom ion kation divalen (\\(\text{Cd}^{2+}\\) atau \\(\text{Zn}^{2+}\\)) dengan afinitas sangat tinggi.
+*   **Poros Hepar-Renal (*Hepato-Renal Axis*):**
+    1.  Kadmium yang diserap masuk ke dalam sirkulasi porta terikat pada albumin plasma dan ditangkap secara masif oleh sel hepatosit hepar.
+    2.  Di dalam hepatosit, ion \\(\text{Cd}^{2+}\\) menstimulasi faktor transkripsi MTF-1 (*Metal-responsive Transcription Factor-1*), memicu biosintesis protein **Metalotionein (MT-1 dan MT-2)** dalam jumlah besar. Kadmium terikat ke MT membentuk kompleks **Cd-MT sitosol**, yang bertindak sebagai detoksifikasi intraseluler hepar.
+    3.  Seiring berjalannya waktu, hepatosit melepaskan kompleks **Cd-MT dalam jumlah kecil secara terus-menerus ke dalam aliran darah sistemik**.
+    4.  Karena berat molekulnya yang sangat kecil (< 7 kDa), kompleks **Cd-MT plasma lolos filtrasi glomerulus ginjal secara bebas**.
+    5.  Di lumen tubulus ginjal, Cd-MT **direabsorpsi kembali secara aktif dan tuntas (hampir 100%) oleh sel-sel epitel tubulus proksimal (segmen S1 dan S2)** melalui proses endositosis termediasi reseptor **Megalin-Kubilin**.
+    6.  Vesikel endositosis berfusi dengan **lisosom primer**. Di dalam lisosom, enzim protease asam mendegradasi bagian protein metalotionein, **melepaskan kembali kation \\(\text{Cd}^{2+}\\) bebas di dalam sitoplasma sel tubulus ginjal**.
+    7.  *Sekuestrasi Kompensasi & Titik Jenuh:* Kation \\(\text{Cd}^{2+}\\) bebas tersebut menginduksi sintesis MT ginjal lokal untuk mengikatnya kembali. Namun, jika laju akumulasi kadmium melebihi kapasitas sintesis MT ginjal (mencapai **konsentrasi kritis korteks ginjal / *critical concentration* sebesar 200 µg Cd/g berat basah jaringan**), kation \\(\text{Cd}^{2+}\\) bebas sitosol yang tidak terikat akan menghancurkan organel sel, mitokondria, dan membran basolateral.
+*   *Depot Penimbunan:* Sekitar **50% dari total muatan kadmium tubuh disimpan di korteks ginjal**, dan sekitar **15%–20% disimpan di hepar**.
+
+#### c. Metabolisme dan Eliminasi
+*   Kadmium adalah unsur anorganik yang **tidak mengalami biotransformasi atau degradasi metabolik** di dalam tubuh mamalia.
+*   *Ekskresi:* Ekskresi kadmium berlangsung sangat lambat dan tidak efisien. Rute ekskresi utama adalah melalui **urin** dan sebagian kecil melalui feses (sekresi empedu). Laju eliminasi harian kadmium tubuh manusia **kurang dari 0,01%–0,02% dari total beban tubuh per hari**.
+
+---
+
+### 4. Toksikodinamik: Mekanisme Molekuler Kerusakan Organ Sasaran
+
+Toksisitas seluler kadmium berlangsung melalui tiga mekanisme primer:
+
+```
+                                  [ KASKADE TOKSIKODINAMIK KADMIUM ]
+                                                  │
+         ┌────────────────────────────────────────┼────────────────────────────────────────┐
+         ▼                                        ▼                                        ▼
+[ KERUSAKAN TUBULUS PROKSIMAL ]         [ GANGGUAN METABOLISME KALSIUM ]         [ MIMETIK & PENGGANTIAN SENG ]
+• Inhibisi Na⁺/K⁺-ATPase membran        • Inhibisi 1α-hidroksilase renal         • Menggeser Zn²⁺ dari saku katalitik
+• Destruksi Megalin/Kubilin brush border  (Konversi Kalsitriol anjlok)             Zinc-Finger Protein (XPA, p53, PARP-1)
+• Rusak mitokondria ──► Apoptosis       • Gagal reabsorpsi Ca²⁺ di tubulus       • Melumpuhkan sistem perbaikan DNA
+• LMW Proteinuria (β2-MG, RBP, NAG)       ──► HIPERKALSIURIA MASIF                 (NER & BER terblokade) ──► Mutasi
+• Sindrom Fanconi (glukosuria, fosfaturia)• Resorpsi tulang & OSTEOMALASIA       • Inaktivasi enzim antioksidan (Cu/Zn-SOD)
+```
+
+#### a. Kerusakan Sel Epitel Tubulus Kontortus Proksimal Ginjal
+1.  **Penghambatan Pompa Ion dan Transporter Brush Border:**
+    Kation \\(\text{Cd}^{2+}\\) bebas intraseluler berikatan dengan gugus sulfhidril (-SH) enzim **\\(\text{Na}^+/\text{K}^+\text{-ATPase}\\)** pada membran basolateral serta transporter kotranspor luminal (SGLT untuk glukosa, kotransporter natrium-fosfat NaPi-IIa, dan pembawa asam amino), melumpuhkan gradien elektrokimia sel tubulus proksimal.
+2.  **Disfungsi Mitokondria dan Apoptosis:**
+    Kadmium menembus membran mitokondria, memicu kolaps potensial membran mitokondria (\\(\Delta\Psi_m\\)), membuka pori transisi permeabilitas mitokondria (*mPTP*), dan melepaskan **sitokrom C** ke sitosol. Kaskade ini mengaktifkan **kaspase-9 dan kaspase-3**, memicu kematian seluler terprogram (apoptosis) dan nekrosis epitel tubulus proksimal.
+3.  **Penghambatan Sistem Reseptor Endositosis Megalin-Kubilin:**
+    Kadmium secara langsung merusak ekspresi dan daur ulang protein reseptor endositosis megalin dan kubilin pada *brush border* tubulus proksimal. Akibatnya, seluruh protein berat molekul rendah yang difiltrasi glomerulus tidak dapat diserap kembali dan tumpah ke dalam urin (**Proteinuria Molekul Rendah / LMWP**).
+
+#### b. Gangguan Metabolisme Kalsium dan Fosfat (Patogenesis Penyakit Tulang)
+Kadmium merusak homeostasis tulang melalui efek toksik ganda (*dual action*):
+1.  **Penekanan Aktivasi Vitamin D di Ginjal:**
+    Enzim **25-hidroksivitamin D 1\\(\alpha\\)-hidroksilase** berlokasi di mitokondria sel tubulus proksimal ginjal. Kerusakan tubulus oleh kadmium menghambat sintesis enzim ini secara masif, mematikan konversi 25-hidroksivitamin D [25(OH)D] menjadi bentuk aktif hormon **1,25-dihidroksivitamin D [1,25(OH)₂D / Kalsitriol]**. Ketiadaan kalsitriol menyebabkan absorpsi kalsium di usus halus anjlok drastis.
+2.  **Hiperkalsiuria Renal dan Hiperfosfaturia:**
+    Kerusakan reabsorpsi kalsium dan fosfat di tubulus proksimal memicu **pembuangan kalsium dan fosfat secara masif ke dalam urin (*calcium wasting*)**.
+3.  **Toksisitas Langsung pada Sel Tulang:**
+    Kadmium terkonsentrasi di jaringan tulang, menstimulasi diferensiasi osteoklas (penyerapan tulang meningkat) serta menghambat proliferasi osteoblas dan sintesis kolagen tipe I, memicu osteoporosis dan osteomalasia berat.
+
+#### c. Penggantian Seng (Zn) pada Protein Jari Seng (*Zinc-Finger Displacement*)
+*   Kadmium menggantikan kation seng (**\\(\text{Zn}^{2+}\\)**) yang terkoordinasi secara alami pada domain jari seng (*zinc-finger motifs*) dari berbagai protein regulator genom dan perbaikan DNA.
+*   *Inhibisi Perbaikan DNA:* Kadmium melumpuhkan fungsi protein **XPA (*Xeroderma Pigmentosum group A*)** pada jalur *Nucleotide Excision Repair* (NER), protein **Fpg/hOGG1** pada jalur *Base Excision Repair* (BER), serta menginduksi perubahan konformasi spasial pada domain jari seng **protein penekan tumor p53**. Dampaknya, sel yang terpajan kadmium kehilangan kemampuan memperbaiki lesi DNA dan kerusakan oksidatif, memfasilitasi terjadinya mutasi neoplastik.
+
+---
+
+### 5. Biomonitoring Okupasi: Biomarker Paparan vs. Efek dan Waktu Sampling
+
+Dalam surveilans kedokteran okupasi, pemantauan kadmium terbagi secara ketat antara **biomarker dosis internal (paparan)** dan **biomarker efek subklinis tubulus ginjal**:
+
+```
+                     [ STRATEGI BIOMONITORING KADMIUM OKUPASI ]
+                                         │
+        ┌────────────────────────────────┴────────────────────────────────┐
+        ▼                                                                 ▼
+[ BIOMARKER DOSIS / PAPARAN ]                                    [ BIOMARKER EFEK TUBULUS GINJAL ]
+• Kadmium Urin (U-Cd)                                            • Beta-2 Mikroglobulin Urin (β2-MG / B2-MG)
+  - Mengukur Beban Tubuh Kumulatif (Body Burden)                   - Standar baku emas kerusakan tubulus proksimal
+  - Sangat stabil, seumur hidup ginjal                             - Labil pada urin asam (pH < 6,0)
+• Kadmium Darah (B-Cd)                                           • Retinol-Binding Protein (RBP) Urin
+  - Mengukur Pajanan Terkini (minggu–bulan terakhir)               - Identik dengan β2-MG, namun STABIL pada pH asam
+• WAKTU SAMPLING KEDUA BIOMARKER:                                • N-acetyl-β-D-glucosaminidase (NAG) Urin
+  Bebas / Kapan Saja (Not Critical / Discretionary)                - Enzim lisosom tubulus (>130 kDa)
+  karena waktu paruh biologis yang luar biasa panjang              - Indeks sitotoksisitas tubular aktif (AKI/akut)
+```
+
+#### a. Biomarker Paparan / Dosis Internal
+1.  **Kadmium Urin (U-Cd):**
+    *   *Signifikansi:* Merupakan **biomarker baku emas untuk mengukur beban tubuh kumulatif seumur hidup (*cumulative body burden*)** dan mencerminkan kadar timbunan kadmium di korteks ginjal.
+    *   *Standalisasi:* Wajib distandardisasi terhadap ekskresi kreatinin urin (**\\(\mu\text{g/g kreatinin}\\)**) untuk mengoreksi variasi volume diuresis.
+    *   *Nilai Rujukan dan Ambang Batas:*
+        *   Populasi umum non-terpapar: < 1 µg/g kreatinin.
+        *   **ACGIH BEI (2026):** **5 µg/g kreatinin**.
+        *   **HBM-GV Worker (Konsensus Eropa / HBM4EU 2021):** **2 µg/g kreatinin** (ambang proteksi dini fungsi tubulus pekerja industri).
+    *   *Dinamika Kinetika Khusus (Penting untuk Ujian):* Hubungan linear antara U-Cd dan beban tubuh **hanya berlaku selama sel tubulus ginjal belum mengalami kerusakan parah**. Jika telah terjadi nekrosis tubulus proksimal berat, sel tubulus kehilangan kemampuan menahan kadmium, memicu ekskresi kadmium urin yang melonjak drastis secara tiba-tiba yang kemudian dapat menurun secara paradoksal saat massa nefron menyusut.
+2.  **Kadmium Darah Lengkap (B-Cd):**
+    *   *Signifikansi:* Merupakan biomarker yang terutama mencerminkan **pajanan okupasi terkini (*recent exposure*) dalam beberapa minggu hingga beberapa bulan terakhir**.
+    *   *Matriks:* Darah vena lengkap (*whole blood*) dengan antikoagulan kalium EDTA atau heparin bebas kontaminasi logam.
+    *   *Nilai Baku:*
+        *   Populasi bukan perokok non-okupasi: < 1 µg/L.
+        *   Perokok: 1,4–4,0 µg/L.
+        *   **ACGIH BEI (2026):** **5 µg/L darah lengkap**.
+
+#### b. Biomarker Efek Kerusakan Tubulus Ginjal (*Effect Biomarkers*)
+1.  **Beta-2 Mikroglobulin Urin (\\(\beta_2\\)-MG / B2-MG):**
+    *   *Karakteristik:* Rantai ringan molekul MHC Kelas I berukuran kecil (**12 kDa**). Difiltrasi bebas di glomerulus dan **direabsorpsi sebesar 99,9% oleh sel tubulus proksimal**.
+    *   *Signifikansi:* Kegagalan reabsorpsi tubulus proksimal menyebabkan ekskresi \\(\beta_2\\)-MG urin meningkat hingga ribuan kali lipat.
+    *   *Interpretasi Klinis Bernard (2004) / HBM4EU:*
+        *   *\\(< 300\ \mu\text{g/g kreatinin}\\):* Nilai normal.
+        *   *\\(300\text{--}1000\ \mu\text{g/g kreatinin}\\):* Disfungsi tubulus proksimal tahap awal / insipien (**masih bersifat reversibel** jika paparan kerja segera dihentikan).
+        *   *\\(1000\text{--}10.000\ \mu\text{g/g kreatinin}\\):* **Disfungsi tubulus ireversibel** yang akan mempercepat penurunan eGFR ginjal seiring pertambahan usia.
+        *   *\\(> 10.000\ \mu\text{g/g kreatinin}\\):* Nefropati kadmium nyata (*overt nephropathy*) dengan penurunan laju filtrasi glomerulus.
+    *   *Kelemahan Analitis Kritis:* **\\(\beta_2\\)-MG sangat labil dan terdegradasi secara instan oleh hidrolisis asam pada urin dengan pH < 6,0**. Sampel urin harus diuji pH-nya saat pengambilan dan dibasakan, atau menggunakan biomarker lain yang stabil.
+2.  **Retinol-Binding Protein (RBP) Urin:**
+    *   *Karakteristik:* Protein pembawa vitamin A berukuran **21 kDa** yang difiltrasi glomerulus dan direabsorpsi di tubulus proksimal melalui reseptor megalin.
+    *   *Keunggulan Diagnostik:* Memiliki sensitivitas dan spesifisitas yang setara dengan \\(\beta_2\\)-MG dalam mendeteksi tubulopati proksimal kadmium, namun **sangat stabil di dalam urin bahkan pada kondisi urin asam (pH < 6,0)**, menjadikannya biomarker efek yang lebih unggul secara analitis di lapangan.
+3.  **N-acetyl-\\(\beta\\)-D-glucosaminidase (NAG) Urin:**
+    *   *Karakteristik:* Enzim hidrolase lisosom berukuran besar (**> 130 kDa**) yang terdapat pada mikrovili *brush border* tubulus proksimal.
+    *   *Signifikansi:* Karena ukurannya yang besar, NAG serum tidak dapat menembus saringan glomerulus. Peningkatan kadar NAG di dalam urin **murni berasal dari pelepasan enzim sel tubulus proksimal yang mengalami kerusakan/lisis membran seluler**, sehingga bertindak sebagai biomarker cedera sitotoksik tubulus yang sangat sensitif (*sensitive marker of active cellular tubular injury*).
+
+#### c. Waktu Pengambilan Sampel (*Sampling Time*)
+*   Berdasarkan pedoman resmi ACGIH dan konsensus toksikologi industri, waktu pengambilan sampel untuk **Kadmium Urin (U-Cd)** dan **Kadmium Darah (B-Cd)** adalah: **Tidak Kritis / Kapan Saja (*Not Critical / Discretionary*)**.
+*   *Rasional Ilmiah:* Karena kadmium memiliki waktu paruh eliminasi yang sangat panjang di dalam darah dan ginjal (bertahun-tahun), konsentrasi biologisnya tidak berfluktuasi secara tajam dalam satu siklus gilir kerja harian.
+
+---
+
+### 6. Waktu Paruh Eliminasi Biologis (*Biological Half-Life* / \\(T_{1/2}\\))
+
+Kadmium merupakan salah satu toksikan industri yang paling persisten dan sulit dieliminasi dari tubuh manusia:
+
+```
+                       [ SPEKTRUM WAKTU PARUH BIOLOGIS KADMIUM ]
+                       
+  Darah Lengkap (B-Cd, Fase Cepat)                Ginjal & Beban Tubuh Total
+  ────────────────────────────────                ──────────────────────────
+  • T1/2: ~ 2 – 3 BULAN (75–100 hari)             • T1/2: ~ 10 HINGGA 30 TAHUN
+    (Klirens vaskular pajanan baru)                 (Rata-rata 20–30 tahun di korteks ginjal)
+  • Fase Lambat Darah: ~ bbrp tahun               • Akumulasi permanen seumur hidup manusia
+    (Kesetimbangan depot jaringan)                • Ekskresi harian < 0,01% total beban tubuh
+```
+
+1.  **Di Dalam Darah (B-Cd):**
+    *   Mengikuti model eliminasi dua fase (bifasik):
+        *   *Fase Cepat:* Memiliki waktu paruh sekitar **2 hingga 3 bulan (sekitar 75–100 hari)**, yang mencerminkan pembersihan fraksi kadmium dari paparan okupasi yang baru berlangsung.
+        *   *Fase Lambat:* Memiliki waktu paruh beberapa tahun, mencerminkan pelepasan lambat kadmium dari cadangan kompartemen hepar dan ginjal kembali ke darah.
+2.  **Di Dalam Ginjal dan Tubuh Total (*Kidney and Whole-Body Burden*):**
+    *   Waktu paruh biologis kadmium di korteks ginjal manusia sangat panjang, berkisar antara **10 hingga 30 tahun (rata-rata 20–30 tahun, beberapa literatur menyebutkan hingga 40 tahun)**.
+    *   *Faktor Penyebab:* Ketiadaan mekanisme eliminasi aktif oleh hati atau ginjal, ditambah efisiensi reabsorpsi tubulus proksimal yang luar biasa (>99%) melalui siklus sekuestrasi intraseluler oleh metalotionein, membuat tubuh manusia terus menumpuk kadmium sepanjang hidupnya.
+
+---
+
+### 7. Efek Biologis Toksik Akut
+
+Manifestasi akut kadmium timbul akibat paparan konsentrasi masif melalui jalur inhalasi atau ingesti:
+
+```
+                              [ SPEKTRUM MANIFESTASI KADMIUM AKUT ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ INHALASI UAP/FUME KADMIUM OKSIDA ]                                          [ INGESTI GARAM KADMIUM ]
+• Paparan pengelasan / brazing perak-kadmium                                  • Kontaminasi minuman asam/makanan
+• Mula Gejala Terlambat: 4–12 jam pasca-kerja                                • Gastroenteritis Akut Korosif:
+• Gejala Awal Menipu: "Metal Fume-Like Fever"                                  Mual hebat, muntah proyektil, kram
+  (Demam, menggigil, lemas, rasa logam)                                        perut hebat, hematemesis, diare berdarah
+• Progresi Cepat: PNEUMONITIS KIMIAWI AKUT                                    • Syok hipovolemik hemoragik masif
+• Kerusakan Alveolo-Kapiler Difus ──► EDEMA PARU NON-KARDIOGENIK / ARDS       • Nekrosis Tubular Akut (ATN) & Gagal Ginjal
+• Gagal Napas Berat & Mortalitas Tinggi (20%)                                 • Kematian dapat terjadi dalam 24–48 jam
+```
+
+1.  **Inhalasi Akut Fume Kadmium Oksida (CdO) Konsentrasi Tinggi:**
+    *   *Konteks Okupasi:* Terjadi pada pekerja las, pekerja pembongkaran pipa berlapisan kadmium menggunakan obor asetilen (*torch-cutting*), atau peleburan paduan perak-kadmium tanpa ventilasi lokal.
+    *   *Masa Laten (*Delayed Latency*):* Uap kadmium tidak menimbulkan iritasi saluran napas atas yang mencolok saat dihirup, sehingga pekerja sering tidak menyadari bahayanya. **Gejala klinis baru muncul setelah masa laten 4 hingga 12 jam pasca-pekerjaan selesai**.
+    *   *Fase Awal (Menyerupai Metal Fume Fever):* Pasien mengalami iritasi tenggorokan, batuk kering, sakit kepala, menggigil, demam, nyeri otot menyeluruh (*myalgia*), dan sensasi rasa logam di mulut.
+    *   *Fase Progresif Fatal:* Berbeda dengan demam uap seng (*zinc fume fever*) yang jinak dan sembuh sendiri dalam 24–48 jam, **intoksikasi uap kadmium berprogresi menjadi Pneumonitis Kimiawi Akut (*Acute Chemical Pneumonitis*)**. 
+    *   *Komplikasi Pulmonal:* Terjadi proliferasi seluler, nekrosis epitel bronkiolus, destruksi barier alveolo-kapiler difus, yang berpuncak pada **Edema Paru Akut Non-Kardiogenik / ARDS (*Acute Respiratory Distress Syndrome*)**. Pasien mengalami dispnea berat, sianosis, hemoptisis, dan gagal napas refrakter dengan angka mortalitas mencapai **15% hingga 20%** dalam kurun waktu 3 hingga 10 hari pasca-pajanan.
+2.  **Ingesti Akut Garam Kadmium (misalnya Terkontaminasi Makanan/Minuman Asam):**
+    *   Terjadi jika makanan atau jus buah asam disimpan dalam wadah berlapis kadmium (*cadmium-plated containers*).
+    *   Kadmium mengiritasi dan mengikis mukosa gastrointestinal secara langsung, memicu mula gejala dalam 15–30 menit: rasa terbakar di mulut, hipersalivasi masif, mual hebat, **muntah-muntah proyektil terus-menerus (*persistent vomiting*), hematemesis, nyeri kolik abdomen, dan diare berdarah profus**.
+    *   Kehilangan cairan masif memicu syok hipovolemik berat, oliguria, Nekrosis Tubular Akut (ATN), dan asidosis metabolik.
+
+---
+
+### 8. Efek Biologis Toksik Kronis
+
+Pajanan okupasi dan lingkungan jangka panjang menghasilkan spektrum kelainan multisistemik yang ireversibel:
+
+```
+                                [ SPEKTRUM PENYAKIT KRONIS KADMIUM ]
+                                                 │
+         ┌───────────────────────┬───────────────┴───────────────┬───────────────────────┐
+         ▼                       ▼                               ▼                       ▼
+[ NEFROPATI TUBULAR GINJAL ]    [ OSTEOMALASIA & ITAI-ITAI ]     [ DESTRUKSI PULMONAL ]  [ KARSINOGENESIS IARC 1 ]
+• Lesi awal: Tubulus proksimal  • Nyeri tulang hebat & panggul   • Bronkitis kronis &    • Kanker Paru Bronkogenik
+• LMW Proteinuria (β2-MG, RBP)  • Fraktur patologis multipel       Emfisema Panasinar    • IARC Monograph 100C Grup 1
+• Sindrom mirip-Fanconi komplit • Pseudofraktur (Looser's zones) • Inaktivasi α1-AT &     • Tidak ada nilai ambang aman
+• Kerusakan lanjut: eGFR anjlok • Defisiensi Kalsitriol ginjal     degradasi elastase     • Mutasi via penghambatan
+  & Gagal Ginjal Terminal (ESRD)  dan hiperkalsiuria masif         paru ireversibel         sistem perbaikan DNA (NER)
+```
+
+1.  **Nefropati Tubular Proksimal Kronis (*Chronic Cadmium Nephropathy*):**
+    *   *Efek Kritis (*Critical Effect*):* Ginjal adalah organ target kritis utama dari pajanan kronis kadmium.
+    *   *Proteinuria Berat Molekul Rendah (*Low Molecular Weight Proteinuria* / LMWP):* Kegagalan endositosis tubulus proksimal menyebabkan kebocoran protein-protein kecil ke urin: **\\(\beta_2\\)-mikroglobulin, Retinol-Binding Protein (RBP), dan \\(\alpha_1\\)-mikroglobulin**.
+    *   *Sindrom Mirip-Fanconi (*Fanconi-like Syndrome*):* Kerusakan meluas pada transporter membran luminal menyebabkan glukosuria renal (kadar gula urin positif dengan glukosa darah normal), aminoasiduria menyeluruh, hiperfosfaturia, hiperurikosuria, dan hiperkalsiuria masif.
+    *   *Progresi Menuju Gagal Ginjal Terminal:* Jika pajanan terus berlanjut melampaui konsentrasi kritis korteks ginjal (> 200 µg/g), lesi meluas dari tubulus ke glomerulus dan interstisium, bermanifestasi sebagai proteinuria campuran (albuminuria), penurunan laju filtrasi glomerulus progresif (penurunan eGFR), fibrosis interstisial, dan **Penyakit Ginjal Kronis stadium akhir (*End-Stage Renal Disease* / ESRD) yang memerlukan hemodialisis seumur hidup**.
+2.  **Osteomalasia, Osteoporosis, dan Penyakit Itai-Itai (*Itai-Itai Disease*):**
+    *   *Sejarah Penyakit:* Bencana pencemaran lingkungan industri tambang seng/timbal Kamioka di sepanjang daerah aliran Sungai Jinzu, Prefektur Toyama, Jepang (1910–1960-an). Air sungai yang tercemar kadmium digunakan untuk mengairi sawah padi dan dikonsumsi oleh masyarakat setempat, terutama mengenai wanita pascamenopause dengan riwayat multiparitas.
+    *   *Terminologi:* Dinamakan **Penyakit Itai-Itai ("aduh-aduh" / *ouch-ouch disease*)** karena penderita menjerit kesakitan saat disentuh atau mencoba menggerakkan sendi tulangnya.
+    *   *Trias Manifestasi Klinis:*
+        1.  **Kerusakan Ginjal Kronis:** Proteinuria berat molekul rendah, glukosuria, hiperkalsiuria, dan penurunan eGFR.
+        2.  **Osteomalasia dan Osteoporosis Berat:** Demineralisasi matriks tulang yang ekstrem akibat hilangnya kalsium lewat urin dan ketiadaan hormon kalsitriol aktif, diperparah dengan supresi osteoblas langsung oleh kadmium.
+        3.  **Fraktur Patologis Spontan:** Terjadi garis fraktur semu pada radiografi (**zona Looser / *Looser's transformation zones***) dan fraktur multipel spontan pada iga, vertebra, femur, dan pelvis hanya karena batuk ringan atau berjalan menapak lantai, disertai deformitas pembengkokan tulang belakang dan reduksi tinggi badan yang drastis.
+3.  **Penyakit Paru Obstruktif Kronis (PPOK) dan Emfisema Paru:**
+    *   Inhalasi kronis debu atau uap kadmium di tempat kerja memicu penurunan fungsi paru obstruktif progresif yang tidak reversibel.
+    *   *Patogenesis Emfisema:* Kadmium menumpuk di alveoli, menginduksi inflamasi makrofag kronis, menstimulasi pelepasan elastase neutrofil secara masif, dan secara simultan **menginaktivasi enzim pelindung antiprotease \\(\alpha_1\\)-antitripsin (\\(\alpha_1\\)-AT)** melalui stres oksidatif.
+    *   *Akibat Patologis:* Terjadi destruksi proteolitik dinding alveoli secara progresif yang bermanifestasi klinis sebagai **Emfisema Paru Sentriasinar dan Panasinar (*panacinar emphysema*)**, disertai batuk kronis berdahak, dispnea d'effort berat, penurunan \\(\text{FEV}_1\\) dan rasio \\(\text{FEV}_1/\text{FVC}\\), serta penurunan kapasitas difusi gas (DLCO).
+4.  **Karsinogenesis Okupasi: Kanker Paru Bronkogenik (*Lung Cancer*):**
+    *   **Klasifikasi Karsinogen Resmi:**
+        *   **IARC (Monograph Vol. 100C):** **Grup 1 (*Carcinogenic to humans*)** untuk Kadmium dan seluruh persenyawaan kadmium.
+        *   **ACGIH:** Kategori **A2 (*Suspected Human Carcinogen*)**.
+        *   **Permenaker No. 5 Tahun 2018 (Lampiran 3):** Kategori **A2**.
+        *   **Perpres No. 7 Tahun 2019:** Lampiran III Butir 17 (Kanker Akibat Kerja: Kadmium dan senyawanya).
+    *   *Bukti Epidemiologi Human:* Terbukti melalui peningkatan angka mortalitas kanker paru yang signifikan pada kohort pekerja pabrik pemurnian kadmium (*cadmium recovery workers*) di Amerika Serikat (studi Lemen et al., Stayner et al., dan Sorahan & Lancashire), pekerja pabrik baterai Ni-Cd di Inggris dan Swedia (Elinder et al., Järup et al.), serta kohort populasi lingkungan di sekitar smelter seng di Belgia (Nawrot et al.).
+    *   *Mekanisme Karsinogenik Molekuler:* Kadmium adalah karsinogen non-genotoksik langsung yang bekerja melalui: (1) penghambatan enzim perbaikan DNA (NER, BER, dan *mismatch repair*) via pendesakan ion seng dari protein *zinc-finger*, (2) perusakan mekanisme *proofreading* replikasi DNA, (3) hipermetilasi promotor gen penekan tumor (*tumor suppressor genes*) seperti RASAL1, KLOTHO, dan RASSF1A, serta (4) penghambatan apoptosis sel yang mengalami mutasi genomik.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   *Bab 3 & 4:* Sejarah Wabah Lingkungan Penyakit Itai-Itai di Jepang & Kontaminasi Padi Lembah Sungai Jinzu (hlm. 40, 53); Sifat Akumulasi Kumulatif dan Waktu Paruh Biologis 30 Tahun (hlm. 40, 53); Distribusi Darah (>70% di Eritrosit) dan Akumulasi Organ Sasaran Ginjal & Hati (hlm. 40, 53); Sumber Industri Elektroplating, Pigmen Cat, Baterai Ni-Cd, dan Smelter Seng (hlm. 40, 53); Sifat Protektif & Peran Toksik Kompleks Cadmium-Metallothionein (CdMT) di Lisosom Tubulus Proksimal (hlm. 40, 53); Toksisitas Akut Pneumonitis Kimiawi & Edema Paru Inhalasi (hlm. 53); serta Karsinogenesis Paru, Prostat, dan Ginjal (hlm. 42).
+    *   *Bab 11 & 18:* Transport Metal-Binding Protein Metalotionein (BM 7 kDa, Kaya Residu SH) (hlm. 202); Ekskresi Kompleks MT Ginjal & Kerusakan Lisosom (hlm. 294); serta Emfisema dan PPOK Akibat Pajanan Debu Industri & Rokok (hlm. 381).
+2.  **IARC (2012).** *Cadmium and Cadmium Compounds (IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Vol. 100C)*:
+    *   *Exposure Data:* Sifat Kimiawi Valensi Divalen (+2); Sektor Industri Baterai Ni-Cd, Pelapisan Logam, Pigmen, Solder Paduan Ag-Cd, Penstabil PVC, dan Smelter Seng [hlm. 121–123]; Kandungan Kadmium Tembakau Rokok (1,7 µg/batang, 10% terinhalasi) dan Korelasi Kadar Darah/Urin Perokok [hlm. 123–124].
+    *   *ADME & Biotransformasi:* Absorpsi Inhalasi Partikulat Respirabel 20–50% vs Ingesti Oral Dewasa Rendah (3–6,5%) [hlm. 136]; Kinetika Transpor Kompleks Cadmium-Metallothionein Menembus Glomerulus dan Reabsorpsi Tubulus Proksimal [hlm. 136]; Degradasi Lisosomal Protein MT & Pelepasan Cd²⁺ Sitotoksik [hlm. 136]; Waktu Paruh Eliminasi Tubuh 10–30 Tahun [hlm. 136].
+    *   *Mekanisme Molekuler:* Pendesakan Ion Seng dari Protein *Zinc-Finger* (XPA, Fpg, p53, hOGG1, SP1) [hlm. 137]; Inhibisi Sistem Perbaikan DNA Nucleotide Excision Repair (NER) & Base Excision Repair (BER) [hlm. 137]; serta Evaluasi Karsinogen Manusia Grup 1 Kanker Paru [hlm. 138].
+3.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   *Bab 8, 10, 13, 22:* Transporter Usus DMT-1 dan Peningkatan Absorpsi Kadmium pada Defisiensi Besi, Kalsium, dan Seng [hlm. 134, 304]; Model Kinetik Penumpukan 50% Beban Tubuh di Ginjal Tubulus Proksimal Segmen S1 dan S2 [hlm. 169–171]; Disfungsi Enzim Mitokondria Renal 1α-hidroksilase & Gangguan Kalsitriol [hlm. 304]; serta Peranan Mikrobiota Usus dalam Sekuestrasi Kadmium [hlm. 134].
+4.  **Célia Ventura et al. / HBM4EU Initiative (2021).** *Biomarkers of effect as determined in human biomonitoring studies on hexavalent chromium and cadmium in the period 2008–2020.* Environmental Research, 197: 110998:
+    *   Tinjauan Komprehensif Biomarker Efek Nefrotoksisitas: Peran Baku Emas Beta-2 Mikroglobulin (β2-MG, 12 kDa) sebagai Penanda Disfungsi Reabsorpsi Tubulus Proksimal [hlm. 3–5]; Ketidakstabilan β2-MG pada Urin Asam (pH < 6,0) [hlm. 7]; Keunggulan Retinol-Binding Protein (RBP, 21 kDa) yang Stabil pada pH Asam [hlm. 5, 7]; Peran Enzim Lisosom N-acetyl-β-D-glucosaminidase (NAG, >130 kDa) sebagai Penanda Kerusakan Sitotoksik Tubulus Aktif [hlm. 5, 7]; Ambang U-Cd > 4 µg/g kreatinin yang Berhubungan dengan Tubulopati & Demineralisasi Tulang [hlm. 3]; serta Epigenetika Hipermetilasi KLOTHO dan RASAL1 [hlm. 8].
+5.  **Farida Lamkarkach et al. / HBM4EU Initiative (2021).** *Human biomonitoring initiative (HBM4EU): Human biomonitoring guidance values (HBM-GVs) derived for cadmium and its compounds.* Environment International, 147: 106337:
+    *   Penetapan Nilai Panduan Biomonitoring HBM-GV: HBM-GV Pekerja Industri (HBM-GVWorker) untuk U-Cd Sebesar **2 µg/g kreatinin** dan B-Cd Sebesar **5 µg/L** [hlm. 1, 6]; U-Cd sebagai Biomarker Beban Tubuh Kumulatif (Waktu Paruh 10–30 Tahun) vs B-Cd sebagai Biomarker Pajanan Beberapa Minggu-Bulan Terakhir [hlm. 4–5]; Klasifikasi Derajat Klinis Proteinuria Bernard (2004) (<300 normal, 300–1000 reversibel, 1000–10.000 ireversibel, >10.000 overt nephropathy) [hlm. 6–7]; serta Ambang Batas POD Chaumont et al. (2011) pada Pekerja Baterai Ni-Cd [hlm. 7].
+6.  **Dib Chakif & Julien Furrer (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Tinjauan Mutakhir ADME Logam Kadmium: Waktu Paruh Beban Tubuh 20–30 Tahun di Ginjal [hlm. 7, 12]; Kinetika Darah Fase Cepat (2–3 Bulan) [hlm. 12]; Tidak Adanya Transformasi Metabolik [hlm. 7]; Target Patofisiologi Tubulus Proksimal, Osteomalasia, Fraktur Tulang, dan Hipertensi [hlm. 7, 13]; serta Matriks Biomonitoring U-Cd Terstandardisasi Kreatinin [hlm. 15, 17].
+7.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi BEI: *Cadmium and inorganic compounds* — *Cadmium in urine (U-Cd)*: **5 µg/g kreatinin**; *Cadmium in blood (B-Cd)*: **5 µg/L**; Waktu Sampling: *Not Critical / Discretionary*.
+8.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019 & Permenaker No. 5 Tahun 2018:**
+    *   Penyakit Akibat Kerja Faktor Kimia Kadmium dan Persenyawaannya (Lampiran I.a Butir 8 Perpres 7/2019); Kanker Akibat Kerja Kadmium (Lampiran III Butir 17 Perpres 7/2019); serta NAB Udara Kerja Kadmium 0,01 mg/m³ (Notasi A2) Lampiran 3 Permenaker 5/2018.
+
+Kuasai perbedaan biokinetika, dinamika lisosom, dan ambang biomarker ini dengan presisi tinggi, Dokter. Penguji dewan spesialis akan menguji kesiapan Anda mengintegrasikan aspek biokimiawi seluler ini ke dalam manajemen kasus penyakit akibat kerja di fasilitas manufaktur baterai dan peleburan logam.
+
+---
+
+📋 Apakah Anda ingin kita lanjutkan ke **KADMIUM (Cd), BAGIAN B**, yaitu pembahasan komprehensif mengenai **standar exposure limit (TLV-TWA ACGIH total vs respirabel, NAB Permenaker 5/2018, notasi A2), evaluasi mendalam nilai BEI/IPB dan batasan regulasi, tatalaksana intoksikasi akut uap kadmium (edema paru/ARDS), kontraindikasi mutlak terapi kelasi pada nefropati kadmium kronis, penerapan 7 langkah diagnosis PAK tubulopati/kanker paru kadmium, kelaikan kerja (*fitness for work*), serta *clinical pearls* dan jebakan ujian dewan spesialis**?

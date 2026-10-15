@@ -1,0 +1,238 @@
+Duduk siap dan pusatkan konsentrasi Anda, Dokter. Dalam ujian dewan spesialis (*board examination*) Kedokteran Okupasi, pertanyaan mengenai **biotransformasi xenobiotik** adalah instrumen penguji untuk membedakan dokter yang sekadar menghafal nama bahan kimia dengan klinisi okupasi yang mampu menelusuri patofisiologi molekuler, merancang surveilans biologi (*biomonitoring*), dan mengintervensi intoksikasi industri secara rasional.
+
+Sebagian besar bahan kimia industri bersifat lipofilik sehingga mudah menembus membran biologis dan mengalami reabsorpsi tubulus ginjal. Biotransformasi bertujuan mengonversi senyawa lipofilik non-polar menjadi metabolit hidrofilik terionisasi yang dapat diekskresikan melalui urin atau empedu. Namun, proses metabolik ini adalah pisau bermata dua: reaksi yang dirancang untuk detoksifikasi dapat berubah menjadi **bioaktivasi (*metabolic activation*)** yang menghasilkan elektrofil reaktif atau radikal bebas perusak makromolekul seluler.
+
+---
+
+### 1. Reaksi Fase I: Fungsionalisasi (*Functionalization*)
+
+Reaksi Fase I berfungsi memasukkan (*introduce*) atau membuka (*unmask*) gugus fungsi polar yang reaktif seperti **\\(-\text{OH}\\), \\(-\text{NH}_2\\), \\(-\text{SH}\\), atau \\(-\text{COOH}\\)** ke dalam molekul xenobiotik. Modifikasi ini sedikit meningkatkan kelarutan dalam air dan mempersiapkan substrat untuk reaksi konjugasi Fase II.
+
+```
+                                [ REAKSI FASE I ]
+                                        │
+         ┌──────────────────────────────┼──────────────────────────────┐
+         ▼                              ▼                              ▼
+    [ OKSIDASI ]                   [ REDUKSI ]                    [ HIDROLISIS ]
+• CYP450 (Hemeprotein)         • Reduksi Nitro (Nitrobenzena)  • Karboksilesterase (hCE1, hCE2)
+• FMO (Ziegler's enzyme)       • Reduksi Azo                   • Epoksida Hidrolase (mEH, sEH)
+• ADH / ALDH                   • Dehalogenasi Reduktif (CCl4)  • Paraoksonase (PON1)
+• Peroksidase (MPO, COX)
+```
+
+#### a. Sistem Enzim Sitokrom P450 (CYP450)
+*   **Karakteristik & Kofaktor:** CYP450 adalah superfamili hemeprotein tipe sitokrom b pada membran retikulum endoplasma (mikrosom) yang mengandung protoporfirin IX dengan atom besi sentral. Enzim ini bekerja sama dengan enzim flavoprotein **NADPH-sitokrom P450 reduktase** dan memerlukan kofaktor **NADPH serta molekul oksigen (\\(\text{O}_2\\))**. 
+*   **Mekanisme Katalitik:** Dalam siklus monooksigenasi, satu atom dari molekul \\(\text{O}_2\\) dimasukkan ke dalam substrat xenobiotik (RH), sementara atom oksigen lainnya direduksi menjadi air (\\(\text{H}_2\text{O}\\)):
+    \\[\text{RH} + \text{O}_2 + \text{NADPH} + \text{H}^+ \xrightarrow{\text{CYP450}} \text{ROH} + \text{H}_2\text{O} + \text{NADP}^+\\]
+*   **Subfamili Kritis Okupasi:** 
+    *   **CYP1A1 / CYP1A2:** Mengoksidasi senyawa hidrokarbon aromatik polisiklik (PAH) dan amina aromatik.
+    *   **CYP2E1:** Enzim dengan *low affinity* namun berkapasitas tinggi; memetabolisme pelarut volatil molekul kecil (benzena, toluena, kloroform, vinil klorida, etanol). Sangat mudah diinduksi oleh etanol dan aseton.
+    *   **CYP2B6 & CYP3A4:** Berperan dominan dalam aktivasi dan degradasi pestisida organofosfat.
+*   **Tipe Reaksi Oksidasi CYP450:**
+    1.  *Hidroksilasi Alifatik & Aromatik:* Menghasilkan alkohol atau fenol (misalnya konversi toluena menjadi benzil alkohol, atau benzena menjadi fenol).
+    2.  *Epoksidasi:* Penambahan oksigen pada ikatan rangkap alkena atau cincin aromatik menghasilkan arene oxide/epoksida yang elektrofilik (misalnya benzena oksida, stirena oksida, benzo(a)pirena 7,8-epoksida).
+    3.  *Dealkilasi (N-, O-, S-dealkilasi):* Pemutusan gugus alkil yang terikat pada heteroatom melalui pembentukan intermediat hemiasetal yang tidak stabil.
+    4.  *Desulfurasi Oksidatif (*Oxidative Desulfuration*):* Penggantian sulfur dengan oksigen pada ikatan fosfor (\\(\text{P}=\text{S} \to \text{P}=\text{O}\\)) pada pestisida fosforotionat.
+    5.  *Oksidasi Heteroatom (N- dan S-oksidasi):* Oksidasi amin menjadi N-oksida atau tioeter menjadi sulfoksida dan sulfon.
+
+#### b. Enzim Oksidasi Non-CYP
+*   **Flavin-containing Monooxygenase (FMO / Enzim Ziegler):** Enzim mikrosomal yang mengandung FAD; menggunakan NADPH dan \\(\text{O}_2\\) untuk mengoksidasi nukleofil lunak seperti nitrogen, sulfur, dan fosfor pada obat dan pestisida (misalnya nikotin, fonofos, tiodikarb) tanpa membentuk metabolit epoksida.
+*   **Alkohol Dehidrogenase (ADH) & Aldehida Dehidrogenase (ALDH):** Enzim sitosolik yang bertanggung jawab atas oksidasi bertahap alkohol primer menjadi aldehida, dan aldehida menjadi asam karboksilat (contoh: etanol, metanol, etilen glikol).
+*   **Peroksidase (Myeloperoxidase / MPO):** Enzim lisosom pada neutrofil dan sel prekursor sumsum tulang; mengkatalisis bioaktivasi fenol dan hidrokuinon menjadi benzokuinon yang sangat toksik terhadap jaringan hematopoietik.
+
+#### c. Reaksi Reduksi
+Berlangsung terutama pada kondisi tekanan parsial oksigen rendah (hipoksia hepatik):
+*   *Reduksi Nitro & Azo:* Reduksi senyawa nitro aromatik (misalnya nitrobenzena) menjadi amina aromatik primer (anilin) melalui intermediat nitroso dan hidroksilamin yang methemoglobinemik.
+*   *Dehalogenasi Reduktif:* Pelepasan atom halogen melalui transfer satu elektron (misalnya pembentukan radikal triklorometil dari karbon tetraklorida).
+
+#### d. Reaksi Hidrolisis
+*   **Karboksilesterase (hCE1, hCE2):** Enzim serin hidrolase sitosol dan mikrosom yang memecah ikatan ester dan amida pada insektisida piretroid, malation, dan obat-obatan menjadi metabolit asam dan alkohol non-toksik.
+*   **Paraoksonase (PON1):** Enzim kalsium-dependen dalam plasma darah yang menghidrolisis metabolit aktif organofosfat (seperti paraokson dan klorpirifos-okson).
+*   **Epoksida Hidrolase (mEH dan sEH):** Enzim penting yang menghidrolisis cincin oksiran epoksida dengan menambahkan molekul air, menghasilkan produk *trans*-dihidrodiol yang umumnya jauh lebih aman dan mudah diekskresikan.
+
+---
+
+### 2. Reaksi Fase II: Konjugasi (*Conjugation*)
+
+Reaksi Fase II melibatkan pengikatan kovalen antara gugus fungsi xenobiotik (baik zat induk maupun metabolit Fase I) dengan molekul endogen tubuh yang bermuatan dan sangat polar. Hasil konjugasi hampir selalu bersifat hidrofilik, tidak aktif secara toksikologi, dan siap dieliminasi melalui urin atau sekresi bilier via transporter membran Fase III.
+
+```
+                                [ REAKSI FASE II ]
+                                        │
+    ┌───────────────┬───────────────────┼───────────────────┬───────────────┐
+    ▼               ▼                   ▼                   ▼               ▼
+[Glukuronidasi] [Sulfasi]      [Konjugasi Glutation]    [Asetilasi]    [Metilasi]
+  • UGT           • SULT             • GST                 • NAT1 / NAT2   • COMT, TPMT
+  • UDPGA         • PAPS             • GSH                 • Asetil-CoA    • SAM
+  • Kapasitas     • Afinitas tinggi, • Pembentukan Asam    • Polimorfisme  • Mengurangi
+    tinggi          kapasitas rendah   Merkapturat           Asetilator      ionisasi
+```
+
+#### a. Glukuronidasi
+*   **Enzim Kunci:** **UDP-glukuronosiltransferase (UGT)**, terikat pada lumen membran retikulum endoplasma. Terdiri dari keluarga multigen **UGT1** (misalnya UGT1A1, UGT1A6) dan **UGT2** (UGT2B7).
+*   **Donor / Kofaktor Endogen:** **Asam uridin-5'-difosfoglukuronat (*UDP-Glucuronic Acid* / UDPGA)**.
+*   **Mekanisme & Karakteristik:** Merupakan jalur eliminasi Fase II berkapasitas paling besar (*high capacity pathway*) di dalam tubuh. Reaksi substitusi nukleofilik (\\(\text{S}_N2\\)) menyebabkan inversi konfigurasi Walden dari alfa (pada UDPGA) menjadi **\\(\beta\text{-D-glukuronida}\\)** pada metabolit. Membentuk O-, N-, S-, dan asil-glukuronida.
+*   *Pengecualian Bioaktivasi:* Asil-glukuronida dari asam karboksilat dapat mengalami penataan ulang struktural dan mengasilasi makromolekul protein seluler.
+
+#### b. Sulfasi (*Sulfonation*)
+*   **Enzim Kunci:** **Sulfotransferase (SULT)**, berlokasi di sitosol (misalnya SULT1A1).
+*   **Donor / Kofaktor Endogen:** **3'-fosfoadenosin-5'-fosfosulfat (PAPS)**, disintesis dari 2 molekul ATP dan sulfat anorganik.
+*   **Karakteristik Kinetika:** Memiliki **afinitas sangat tinggi (*low* \\(K_m\\)) namun berkapasitas rendah (*low capacity*)** karena keterbatasan cadangan sulfat anorganik intraseluler. Pada dosis rendah, sulfasi mendominasi eliminasi fenol; pada dosis tinggi, jalur ini mengalami kejenuhan (*saturation*) dan substrat dialihkan ke glukuronidasi. SULT juga menunjukkan fenomena inhibisi substrat pada konsentrasi tinggi.
+
+#### c. Konjugasi Glutation (GSH) dan Pembentukan Asam Merkapturat
+*   **Enzim Kunci:** **Glutation S-transferase (GST)** sitosolik (famili alfa/GSTA, mu/GSTM, pi/GSTP, theta/GSTT) dan GST mikrosomal.
+*   **Donor / Kofaktor Endogen:** **Glutation tereduksi (GSH)**, suatu tripeptida (\\(\gamma\text{-L-glutamil-L-sisteinilglisin}\\)) yang melimpah di intraseluler (konsentrasi 5–10 mM).
+*   **Jalur Pembentukan Asam Merkapturat (*Mercapturic Acid Pathway*):**
+    Merupakan mekanisme pertahanan primer tubuh dalam menetralkan metabolit elektrofilik reaktif (epoksida, kuinon):
+    1.  GST mengkatalisis serangan nukleofilik gugus tiol (\\(-\text{SH}\\)) GSH pada atom elektrofilik substrat \\(\to\\) terbentuk **konjugat GSH**.
+    2.  Konjugat GSH ditranspor keluar sel dan dipecah oleh enzim membran **\\(\gamma\\)-glutamiltranspeptidase (GGT)** yang memotong residu asam glutamat.
+    3.  Enzim **sisteinilglisinase** (peptidase) memotong residu glisin, menyisakan konjugat sistein.
+    4.  Enzim sitosolik **N-asetiltransferase (NAT)** mengasetilasi gugus amino bebas sistein menggunakan Asetil-CoA, menghasilkan **Asam Merkapturat (*N-acetylcysteine conjugate*)** yang sangat larut air dan diekskresikan melalui urin.
+*   *Pengecualian Bioaktivasi:* Pada pelarut terhalogenasi seperti trikloroetilen atau heksaklorobutadiena, konjugat sistein di ginjal dipecah oleh enzim **cysteine conjugate \\(\beta\\)-lyase**, membebaskan tiol reaktif (1,2-dikloroviniltiol) yang sangat nefrotoksik.
+
+#### d. Asetilasi
+*   **Enzim Kunci:** **N-asetiltransferase sitosolik (NAT1 dan NAT2)**.
+*   **Donor / Kofaktor Endogen:** **Asetil-Koenzim A (Asetil-CoA)**.
+*   **Karakteristik & Polimorfisme Klinis:** Bertanggung jawab atas inaktivasi amina aromatik, sulfonamida, dan hidrazin. Asetilasi justru sedikit menurunkan kelarutan air. Polimorfisme genetik NAT2 membagi populasi pekerja menjadi fenotipe **asetilator cepat (*rapid*)** dan **asetilator lambat (*slow*)**. Asetilator lambat memiliki risiko tinggi menderita toksisitas hematologi dan **karsinoma kandung kemih** akibat bioaktivasi amina aromatik di uroterm.
+
+#### e. Metilasi
+*   **Enzim Kunci:** Metiltransferase, seperti **Katekol O-metiltransferase (COMT)** dan Tiopurin S-metiltransferase (TPMT).
+*   **Donor / Kofaktor Endogen:** **S-adenosil-L-metionin (SAM)**.
+*   **Karakteristik:** Berfungsi memetabolisme katekol, amina, dan gugus tiol. Tidak seperti glukuronidasi, metilasi menutupi gugus polar sehingga menurunkan kelarutan air, namun efektif menghentikan aktivitas biologis toksikan. Metilasi juga menjadi mekanisme mikroorganisme dalam melakukan **biometilasi elemen logam berat** (seperti konversi merkuri anorganik menjadi metilmerkuri yang lipofilik dan neurotoksik).
+
+---
+
+### 3. Jalur Bioaktivasi (*Metabolic Toxification*) 5 Agen Kunci Okupasi
+
+Sebagai dokter pemeriksa, perhatikan mekanisme pembentukan intermediat reaktif, organ sasaran, manifestasi klinis, dan determinan pemantauan biologis berikut:
+
+```
+[SENYAWA INDUK]     ──(Enzim Bioaktivasi)──►    [METABOLIT REAKTIF]       ──►  [DAMPAK KLINIS OKUPASI]
+Benzena             ──(CYP2E1 / MPO)───────►    Benzoquinon & Muconaldehid──►  Aplastik Anemia, AML
+Paration            ──(CYP450 Desulfurasi)─►    Paraokson                 ──►  Krisis Kolinergik Akut
+Karbon Tetraklorida ──(CYP2E1 Reduktif)────►    Radikal •CCl3 & •OOCCl3   ──►  Nekrosis Sentrilobular Hepar
+Metanol             ──(ADH / ALDH)─────────►    Asam Format (Formate)     ──►  Asidosis Anion Gap, Kebutaan
+Etilen Glikol       ──(ADH / Oksidase)─────►    Asam Glikolat & Oksalat   ──►  Gagal Ginjal Akut, Kristaluria
+```
+
+---
+
+#### 1. Benzena \\(\to\\) Epoksida / Fenol / Benzoquinon / Muconaldehyde
+*   **Enzim Kunci:**
+    *   **CYP2E1** di hepar (serta **CYP2F1 / CYP2A13** di saluran napas pada konsentrasi sub-ppm).
+    *   **Myeloperoxidase (MPO)** di dalam neutrofil dan stroma sumsum tulang.
+*   **Jalur Bioaktivasi Molekuler:**
+    1.  Benzena dioksidasi di hepar oleh CYP2E1 menjadi intermediat **benzena oksida (*benzene oxide*)** yang berada dalam kesetimbangan dengan benzena oksepin.
+    2.  *Jalur Fenolik:* Benzena oksida mengalami penataan ulang spontan non-enzimatik menjadi **fenol**. Fenol dioksidasi kembali oleh CYP2E1 menjadi **katekol** dan **hidrokuinon (*p-hydroquinone*)**.
+    3.  *Aktivasi Sumsum Tulang:* Hidrokuinon didistribusikan ke sumsum tulang. Di sana, enzim **Myeloperoxidase (MPO)** mengoksidasi hidrokuinon menjadi **1,4-benzoquinon (*p-benzoquinone*)**. Benzoquinon adalah elektrofil kuat yang mengikat gugus sulfhidril tubulin, menghambat enzim topoisomerase II, memicu aberasi kromosom, serta menghasilkan stres oksidatif radikal bebas.
+    4.  *Jalur Pembukaan Cincin:* Benzena oksepin mengalami pembukaan cincin menjadi **trans,trans-muconaldehyde** yang bersifat genotoksik langsung sebelum dioksidasi menjadi asam trans,trans-mukonat (*t,t-MA*).
+*   **Implikasi Klinis & Patologi Okupasi:** Pansitopenia, hipoplasia sumsum tulang (**anemia aplastik**), sindrom mielodisplastik (MDS), dan keganasan hematologi berupa **Leukemia Mieloid Akut (*Acute Myeloid Leukemia* / AML)**.
+*   **Biomarker Pemantauan Biologis (ACGIH BEI):**
+    *   **Asam S-fenilmerkapturat urin (S-PMA):** Hasil konjugasi benzena oksida dengan GSH via GSTT1/GSTM1. *Waktu sampling:* Akhir shift kerja. *Nilai BEI:* **25 µg/g kreatinin** (Notasi B).
+    *   **Asam trans,trans-mukonat urin (t,t-MA):** *Waktu sampling:* Akhir shift kerja. *Nilai BEI:* **500 µg/g kreatinin** (Notasi B).
+    *   *Catatan Ujian:* Fenol urin kini telah dihapus sebagai biomarker BEI primer karena spesifisitasnya yang buruk pada pajanan konsentrasi rendah (<1 ppm).
+
+---
+
+#### 2. Paration \\(\to\\) Paraokson
+*   **Enzim Kunci:**
+    *   **CYP3A4, CYP2B6, CYP2C** (Monooksigenase sitokrom P450 mikrosomal hepar).
+*   **Jalur Bioaktivasi Molekuler:**
+    *   Paration adalah insektisida organofosfat ester tionofosfat (memiliki ikatan fosfor-sulfur, \\(\text{P}=\text{S}\\)) yang secara intrinsik **tidak mampu menghambat asetilkolinesterase secara efektif**.
+    *   Di hepar, CYP450 mengkatalisis reaksi **desulfurasi oksidatif (*oxidative desulfuration*)** melalui pembentukan intermediat siklik reaktif (*phosphooxithirane*), mengubah ikatan \\(\text{P}=\text{S}\\) menjadi ikatan fosforil oksigen (\\(\text{P}=\text{O}\\)), menghasilkan **paraokson**.
+    *   *Suicide Inactivation:* Reaksi ini melepaskan atom sulfur elektrofilik aktif yang berikatan kovalen dengan apoprotein heme CYP450, menyebabkan inaktivasi enzim monooksigenase itu sendiri (*suicide substrate*).
+*   **Implikasi Klinis & Patologi Okupasi:**
+    *   Paraokson adalah inhibitor kuat yang mengikat dan memfosforilasi gugus hidroksil serin pada situs aktif enzim **Asetilkolinesterase (AChE)** pada sinaps saraf dan *neuromuscular junction*.
+    *   Akumulasi asetilkolin memicu **Krisis Kolinergik Akut**:
+        *   *Efek Muskarinik:* Miosis, bronkospasme, hipersekresi bronkus, bradikardia, lakrimasi, salivasi, diare (DUMBELS / SLUDGE).
+        *   *Efek Nikotinik:* Fasikulasi otot lurik, tremor, kelemahan otot hingga paralisis diafragma flaksid.
+        *   *Efek Sentral (SSP):* Kejang, depresi pusat pernapasan, koma.
+*   **Biomarker Pemantauan Biologis (ACGIH BEI):**
+    *   **Aktivitas Asetilkolinesterase (AChE) Sel Darah Merah:** *Waktu sampling:* Akhir shift. *Nilai BEI:* **\\(\ge 70\%\\) dari nilai dasar individu (*baseline*)**.
+    *   **Total p-Nitrofenol (PNP) Urin:** Produk hidrolisis paraokson atau paration oleh PON1. *Waktu sampling:* Akhir shift. *Nilai BEI:* **0,5 mg/g kreatinin** (Notasi Ns).
+
+---
+
+#### 3. Karbon Tetraklorida (\\(\text{CCl}_4\\)) \\(\to\\) Radikal Triklorometil (\\(\cdot\text{CCl}_3\\))
+*   **Enzim Kunci:**
+    *   **CYP2E1** mikrosomal hepar.
+*   **Jalur Bioaktivasi Molekuler:**
+    1.  Pada mikrosom hepar, CYP2E1 mengkatalisis reaksi **dehalogenasi reduktif (*reductive dechlorination*)** dengan mentransfer satu elektron ke molekul \\(\text{CCl}_4\\), memutus ikatan karbon-klorin dan menghasilkan **radikal triklorometil (*trichloromethyl radical*, \\(\cdot\text{CCl}_3\\))**.
+    2.  Dengan adanya oksigen molekuler (\\(\text{O}_2\\)), radikal \\(\cdot\text{CCl}_3\\) bereaksi membentuk **radikal triklorometilperoksi (*trichloromethylperoxy radical*, \\(\cdot\text{OOCCl}_3\\))** yang jauh lebih reaktif.
+    3.  Radikal bebas ini mengabstraksi atom hidrogen dari asam lemak tak jenuh ganda (*polyunsaturated fatty acids*) pada fosfolipid membran retikulum endoplasma dan mitokondria hepatosit, memicu kaskade **peroksidasi lipid autokatalitik**.
+    4.  Peroksidasi lipid mendestruksi integritas membran, melepaskan produk disintegrasi toksik seperti **malondialdehida (MDA)** dan 4-hidroksinonenal, memicu runtuhnya gradien kalsium intraseluler dan kematian sel.
+    5.  Radikal bebas juga mengikat kovalen apoprotein CYP2E1, memicu destruksi enzim secara ireversibel (*suicide inactivation*).
+*   **Implikasi Klinis & Patologi Okupasi:**
+    *   **Nekrosis koagulatif akut sentrilobular hepar (Zona 3 asinus hepatik)** karena konsentrasi CYP2E1 tertinggi berada di perivenular.
+    *   Hepatomegali, ikterus berat, gagal hati fulminan, serta **gagal ginjal akut (*acute tubular necrosis*)** sekunder.
+*   **Biomarker Pemantauan & Diagnostik:**
+    *   *Biomarker Efek Klinis:* Lonjakan masif enzim transaminase serum (**SGOT/AST dan SGPT/ALT**), pemanjangan *Prothrombin Time* (PT/INR), serta peningkatan kadar **Malondialdehida (MDA)** darah/urin sebagai penanda peroksidasi lipid.
+    *   *Biomarker Pajanan:* Karbon tetraklorida utuh dalam udara ekspirasi atau darah akhir shift kerja.
+
+---
+
+#### 4. Metanol \\(\to\\) Formaldehida \\(\to\\) Asam Format (Format)
+*   **Enzim Kunci:**
+    *   Langkah 1: **Alkohol Dehidrogenase (ADH)** di sitosol hepatosit (serta sistem katalase peroksisom).
+    *   Langkah 2: **Aldehida Dehidrogenase (ALDH)** sitosol dan mitokondria (khususnya *formaldehyde dehydrogenase* dependan-GSH).
+*   **Jalur Bioaktivasi Molekuler:**
+    1.  Metanol (relatif non-toksik secara intrinsik, hanya memicu narkosis ringan) dioksidasi lambat oleh ADH menjadi **formaldehida (HCHO)**.
+    2.  Formaldehida dioksidasi dengan sangat cepat oleh ALDH menjadi **asam format / format (\\(\text{HCOOH} / \text{HCOO}^-\\))**. Karena konversi ini berlangsung sangat efisien, kadar formaldehida bebas dalam jaringan postmortem hampir tidak terdeteksi.
+    3.  *Toksisitas Seluler Format:* Eliminasi format melalui jalur tetrahidrofolat berlangsung sangat lambat pada primata/manusia, sehingga ion format terakumulasi masif. Format menginhibisi secara spesifik enzim **sitokrom c oksidase (Kompleks IV)** pada rantai transpor elektron mitokondria, menyebabkan histotoksik hipoksia dan asidosis laktat.
+*   **Implikasi Klinis & Patologi Okupasi:**
+    *   **Asidosis Metabolik Berat:** Ditandai dengan *High Anion Gap Metabolic Acidosis* (HAGMA) dan peningkatan *osmolar gap*.
+    *   **Toksisitas Okular Spesifik:** Pembengkakan aksonal, edema diskus optikus, degenerasi sel ganglion retina, hingga atrofi nervus optikus yang mengakibatkan **kebutaan permanen** (*snowfield vision*).
+    *   **Nekrosis Ganglia Basalis:** Terutama nekrosis bilateral putamen otak, memicu defisit neurologis ekstrapiramidal permanen.
+    *   *Prinsip Terapi Okupasi:* Pemberian **etanol** atau **fomepizol** yang bekerja sebagai inhibitor kompetitif enzim ADH (afinitas etanol terhadap ADH 10–20 kali lebih kuat dibanding metanol), memblokade bioaktivasi pembentukan format hingga metanol utuh dapat diekskresikan atau dibuang lewat hemodialisis.
+*   **Biomarker Pemantauan Biologis (ACGIH BEI):**
+    *   **Metanol dalam urin:** *Waktu sampling:* Akhir shift kerja. *Nilai BEI:* **15 mg/L** (Notasi B, Ns).
+    *   *Biomarker Efek Klinis:* Peningkatan asam format serum/urin, defisit basa (*base deficit*), dan penurunan pH darah arterial.
+
+---
+
+#### 5. Etilen Glikol \\(\to\\) Glikolat \\(\to\\) Asam Oksalat (Oksalat)
+*   **Enzim Kunci:**
+    *   **Alkohol Dehidrogenase (ADH)** di sitosol hepar.
+    *   **Aldehida Dehidrogenase (ALDH)** / Aldehida Oksidase.
+    *   **Glikolat Oksidase / Laktat Dehidrogenase (LDH)**.
+*   **Jalur Bioaktivasi Molekuler:**
+    1.  Etilen glikol (pelarut komponen pendingin dan cairan hidrolik) dioksidasi oleh ADH menjadi **glikolaldehida**.
+    2.  Glikolaldehida dioksidasi cepat oleh ALDH menjadi **asam glikolat (*glycolic acid*)**. Asam glikolat adalah agen primer penyebab asidosis metabolik sistemik berat.
+    3.  Asam glikolat dioksidasi menjadi asam glioksilat, yang selanjutnya dikonversi menjadi **asam oksalat (*oxalic acid / oxalate*)**.
+    4.  *Pengendapan Kristal di Ginjal:* Ion oksalat bebas di sirkulasi berikatan dengan kalsium plasma (\\(\text{Ca}^{2+}\\)) membentuk garam **kalsium oksalat (*calcium oxalate*)** yang kelarutannya sangat buruk di air. Kristal kalsium oksalat monohidrat mengendap di lumen tubulus ginjal, merusak mikrovili epitel secara mekanik dan sitotoksik langsung, serta menyumbat aliran urin.
+*   **Implikasi Klinis & Patologi Okupasi:**
+    *   **Gagal Ginjal Akut (*Acute Tubular Necrosis*):** Oliguria, anuria, dan uremia akibat obstruksi intratubular kristal oksalat dan nekrosis sel tubulus proksimal.
+    *   **Hipokalsemia Akut:** Terjadi akibat presipitasi masif kalsium plasma menjadi kristal oksalat, memicu iritabilitas neuromuskular, tetani, dan disritmia jantung.
+    *   *Prinsip Terapi Okupasi:* Infus etanol atau fomepizol untuk menginhibisi enzim ADH secara kompetitif guna mencegah konversi etilen glikol menjadi glikolat dan oksalat.
+*   **Biomarker Pemantauan & Diagnostik:**
+    *   *Sedimen Urin:* Ditemukannya **kristal kalsium oksalat monohidrat (berbentuk jarum/spindel) atau dihidrat (berbentuk amplop)**.
+    *   *Biomarker Laboratorium:* Peningkatan asam oksalat urin/darah, peningkatan asam glikolat serum, penurunan kalsium ion serum, serta peningkatan kadar serum kreatinin dan BUN.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   *Bab 6 (Metabolism of Toxicants):* Fase I Monooksigenasi CYP450, Siklus Katalitik, FMO, Reaksi Hidrolisis Esterase & Epoxide Hydrolase (hlm. 115–143); Reaksi Fase II Glukuronidasi UGT, Sulfasi SULT, Konjugasi Glutation GST & Asam Merkapturat, Asetilasi NAT, Metilasi (hlm. 143–154).
+    *   *Bab 7 (Reactive Metabolites & Bioactivation):* Konsep Bioaktivasi, Bioaktivasi \\(CCl_4\\) menjadi radikal triklorometil & peroksidasi lipid, Desulfurasi Organofosfat Chlorpyrifos/Parathion, Oksidasi Metanol menjadi Asam Format, Benzo(a)pirena (hlm. 157–170).
+    *   *Bab 8 (Chemical and Physiological Effects):* Induksi & Inhibisi Enzim, Suicide Inactivation, Polimorfisme Toksikogenetik (hlm. 173–204).
+    *   *Bab 14 (Toxicology of the Kidney):* Nefrotoksisitas Etilen Glikol menjadi Asam Glikolat dan Kristal Kalsium Oksalat, serta Bioaktivasi Toksik Konjugat GSH oleh Cysteine Conjugate \\(\beta\\)-lyase (hlm. 297–299).
+2.  **Charlene McQueen (2025).** *Comprehensive Toxicology (4th ed., Elsevier)*:
+    *   *Bagian 1.07 (Biotransformation of Toxicants by G.L. Kedderis):* Pembagian Fase I, Fase II, Transporter Fase III; Stoikiometri CYP450, Karakterisasi UGT, SULT, GST, Induksi CYP2E1 oleh Etanol (hlm. 107–120).
+    *   *Bagian 1.15 (Reactive Electrophiles and Metabolic Activation by R.S. Obach & A.S. Kalgutkar):* Pembentukan Elektrofil Reaktif, Arene Oxide, Muconaldehyde, Bioaktivasi Asam Karboksilat via Asil Glukuronida (hlm. 309–347).
+3.  **Carey N. Pope & Jing Liu (2020).** *An Introduction to Interdisciplinary Toxicology (Academic Press)*:
+    *   *Bab 3 (Xenobiotic Metabolism & Disposition by G. Chen):* Struktur Hemeprotein CYP450, Siklus Monooksigenasi, Perbedaan SULT vs UGT (\\(K_m\\) dan Kapasitas), Nomenklatur GST (hlm. 29–42).
+    *   *Bab 4 & Bab 21:* Toksikokinetik & Bioaktivasi Paration menjadi Paraokson via CYP450, Inaktivasi Enzim Target AChE, Detoksifikasi oleh PON1 dan Karboksilesterase, Kompetisi Etanol pada Toksisitas Etilen Glikol (hlm. 45–56, 285–292).
+4.  **Kim, Yangwoo (2026).** *What a biological exposure index is not: lessons from benzene.* Industrial Health:
+    *   *Mekanisme Biotransformasi Benzena:* Oksidasi CYP2E1 hepatik vs CYP2F1/CYP2A13 respiratori dosis rendah, Penataan Ulang Fenol, Oksidasi MPO sumsum tulang menjadi Benzoquinon, Pembukaan Cincin Trans,trans-muconaldehyde, Konjugasi GSTT1/GSTM1 menjadi S-PMA (hlm. 9–14 & Gambar 1).
+5.  **Lucio G. Costa & David L. Eaton (2006).** *Gene-Environment Interactions: Fundamentals of Ecogenetics (Wiley)*:
+    *   *Bab 7, 8, dan 9:* Induksi dan Polimorfisme CYP2E1, Reaksi UGT, GSTM1/GSTT1 null pada Kerentanan Toksisitas Benzena, Enzim PON1 dan Epoxide Hydrolase (hlm. 95–176).
+6.  **Prof. Dr. dr. L. Meily Kurniawidjaja, dkk. (2021).** *Konsep Dasar Toksikologi Industri (FKM UI)*:
+    *   *Bab 4 (ADME):* Klasifikasi Enzim Biotransformasi Fase I & Fase II, Tabel Reaksi CYP450, dan Pembentukan Konjugat Polar.
+7.  **ACGIH (2026 Edition).** *TLVs® and BEIs®*:
+    *   Tabel Determinan Biologis Adopsi untuk Benzena (S-PMA dan t,t-MA), Paration (AChE dan p-Nitrofenol), dan Metanol.
+
+Kuasai setiap tahapan enzimatik dan implikasi klinis ini secara komprehensif, Dokter. Anda tidak akan lulus stase ini bila gagal menguraikan korelasi antara bioaktivasi xenobiotik dengan penetapan biomarker okupasi di lapangan.
+
+---
+
+💡 Apakah Anda ingin kita simulasikan kasus intoksikasi gabungan pelarut industri (misalnya interaksi kompetitif antara pajanan uap benzena dan toluena terhadap enzim CYP2E1) untuk menguji penerapan farmakokinetik klinis Anda?

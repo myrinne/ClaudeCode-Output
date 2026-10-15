@@ -1,0 +1,481 @@
+---
+
+### **A. METANOL (Methanol / Methyl Alcohol)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{CH}_3\text{OH}\\)**; nomor CAS **67-56-1**; berat molekul **32,04 g/mol**. Sinonim: *methyl alcohol, wood alcohol, carbinol*.
+* **Sifat Fisik**: Cairan jernih tidak berwarna, berbau alkohol khas yang sedikit tajam, sangat mudah menguap (tekanan uap tinggi ~97–127 mmHg pada 20–25°C), dan sangat mudah terbakar (*Class IB Flammable Liquid*, titik nyala ~11–12°C / 54°F).
+* **Kelarutan**: Larut sempurna dalam air (*freely miscible*) dan pelarut organik, koefisien partisi oktanol-air sangat rendah (hidrofilik).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+  * **ACGIH**: Tidak diklasifikasikan sebagai karsinogen manusia (tidak memiliki notasi A1–A3).
+  * **Permenaker No. 5 Tahun 2018**: Tidak tercantum dalam kategori karsinogen A-1/A-2.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Sintesis Kimia & Bahan Baku Industri**: Bahan baku (*feedstock*) masif untuk produksi formaldehida, asam asetat, metil metakrilat, *methyl tert-butyl ether* (MTBE), klorometana, serta transesterifikasi dalam industri **biodiesel**.
+* **Pelarut & Formulasi Konsumen**: Pelarut dalam cat, lak, pernis, tiner, perekat, cairan pencuci kaca mobil (*windshield washer fluid*), bahan bakar pemanas makanan kaleng (*chafing dish fuel / Sterno*), serta zat antibeku (*antifreeze*).
+* **Pajanan Non-Okupasional Kritis**: **Minuman keras oplosan (*bootleg/illicit alcohol*)**, di mana metanol industri yang murah sering dicampurkan atau disalahgunakan menggantikan etanol.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Oral**: Diabsorpsi cepat dan hampir lengkap di lambung dan usus halus; kadar puncak serum tercapai dalam 30–60 menit.
+  * **Inhalasi**: Uap metanol diserap cepat dan efisien oleh alveoli paru-paru (retensi pulmonal ~60–85%).
+  * **Dermal**: Diabsorpsi secara nyata dan cepat melalui kulit utuh karena berat molekulnya yang kecil (mendapat notasi **Skin / Kulit**).
+* **Distribusi**: Sangat hidrofilik; terdistribusi cepat mengikuti volume cairan tubuh total (*total body water*) dengan volume distribusi (\\(V_d\\)) sekitar **0,6–0,7 L/kg**. Menembus sawar darah-otak, humor akuos/vitreus mata, serta sawar plasenta.
+* **Metabolisme (Bioaktivasi Hepatik Berjenjang)**:
+  1. **Oksidasi Menjadi Formaldehida**: Berlangsung di hepar, dikatalisis oleh enzim sitosolik **Alkohol Dehidrogenase (ADH)** (isoenzim ADH1) dengan bantuan kofaktor \\(\text{NAD}^+\\). Reaksi ini berjalan lambat dan merupakan tahap penentu laju reaksi (*rate-limiting step*).
+  2. **Oksidasi Menjadi Asam Format**: Formaldehida dioksidasi secara sangat cepat (dalam hitungan menit) oleh enzim **Formaldehida Dehidrogenase / Aldehid Dehidrogenase (ALDH)** menjadi **Asam Format (*formic acid*)** yang terdisosiasi pada pH fisiologis menjadi **format (*formate*)** dan ion hidrogen (\\(\text{H}^+\\)). Akibat konversi cepat ini, kadar formaldehida bebas dalam darah hampir tidak pernah terdeteksi.
+  3. **Eliminasi Format Dependen-Folat**: Format dioksidasi menjadi **\\(\text{CO}_2\\) dan \\(\text{H}_2\text{O}\\)** melalui jalur yang mutlak membutuhkan **Tetrahidrofolat (THF)** via enzim 10-formiltetrahidrofolat sintetase dan dehidrogenase. Karena cadangan folat hepar manusia dan primata secara alami terbatas, eliminasi format berlangsung lambat, memicu **akumulasi asam format masif**.
+* **Ekskresi**: Kurang dari 3–5% metanol diekskresikan tanpa perubahan melalui urin dan sekitar 10–15% diekshalasi melalui paru-paru; metabolit format diekskresikan ke dalam urin atau tuntas dieliminasi sebagai \\(\text{CO}_2\\) ekshalasi.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Toksisitas Asam Format)**
+1. **Asidosis Metabolik Anion Gap Tinggi (*High Anion Gap Metabolic Acidosis* / HAGMA)**:
+   * Akumulasi metabolit asam format menurunkan cadangan bikarbonat serum dan melepaskan proton (\\(\text{H}^+\\)), memicu asidosis metabolik berat dengan peningkatan *anion gap*.
+2. **Inhibisi Respirasi Seluler & Kegagalan Energi**:
+   * Asam format bertindak sebagai racun mitokondria dengan menghambat enzim **Sitokrom c Oksidase (Kompleks IV)** pada rantai transpor elektron.
+   * Terjadi penghentian sintesis ATP intraseluler, stres metabolik anaerobik, dan akumulasi asam laktat sekunder yang semakin memperparah asidosis metabolik.
+3. **Retinotoksisitas & Neuropati Optik Khas**:
+   * Sel fotoreseptor retina dan sel ganglion nervus optikus memiliki densitas mitokondria tinggi dan kebutuhan energi basal yang besar.
+   * Penghambatan sitokrom oksidase oleh format menyebabkan penghentian transpor aksoplasmik lambat dan cepat, edema nervus optikus, degenerasi myelin, pembengkakan diskus optikus (*papilledema*), atrofi optik permanen, hingga **kebutaan total ireversibel**.
+4. **Nekrosis Putamen Bilateral Serebral**:
+   * Hipoksia sitotoksik dan vaskular selektif memicu iskemia dan **nekrosis likuefaktif simetris pada ganglia basalis, khususnya nukleus putamen**. Kerusakan permanen ini menimbulkan sekuele neurologis berupa sindrom ekstrapiramidal / Parkinsonisme pasca-keracunan.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Metanol dalam Urin (*Methanol in urine*)**:
+  * **Peran**: Parameter biomonitoring resmi untuk menilai paparan okupasional harian.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+  * **Matriks**: Urin.
+* **Asam Format dalam Urin (*Formic acid in urine*)**:
+  * **Peran**: Parameter metabolit; waktu sampling: **akhir shift kerja** (atau akhir pekan kerja). Memerlukan kehati-hatian karena dipengaruhi kadar endogen latar belakang.
+* **Kadar Metanol Darah (*Serum methanol concentration*)**:
+  * **Peran**: Parameter baku emas klinis dalam penetapan diagnosis keracunan akut dan penentuan indikasi dialisis. Waktu sampling: **segera saat admisi rumah sakit**.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Metanol Normal (Tanpa Hambatan ADH)**: Mengikuti kinetika eliminasi saturasi Michaelis-Menten (*zero-order* pada konsentrasi tinggi, *first-order* pada konsentrasi rendah); t\\(_{1/2}\\) berkisar **12–24 jam**.
+* **Metanol dengan Blokade ADH (Terapi Fomepizol atau Etanol)**: Karena metabolisme terhenti total dan eliminasi hanya mengandalkan klirens paru/ginjal yang lambat, waktu paruh metanol memanjang drastis menjadi **~45–54 jam (~52 jam)**.
+* **Metanol Selama Hemodialisis**: t\\(_{1/2}\\) terpangkas drastis menjadi **~2,5–3,5 jam (150–210 menit)**.
+* **Asam Format Darah**: t\\(_{1/2}\\) bervariasi luas berkisar **2,5–5 jam** (dapat memanjang belasan jam pada kasus asidosis berat atau defisiensi folat).
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Fase Laten Asimtomatik (*The Asymptomatic Latent Period*)**:
+  * Berlangsung selama **12–24 jam** (dapat memanjang hingga 36–72 jam jika metanol diminum bersamaan dengan etanol).
+  * Pada fase ini, metanol induk hanya memberikan efek euforia ringan mirip mabuk alkohol (*mild drunkenness*), mengaburkan bahaya kematian yang sedang mengintai.
+* **Fase Toksik & Manifestasi Asidosis Berat**:
+  * Timbul mual proyektil, muntah, nyeri perut epigastrik hebat (*acute hemorrhagic pancreatitis*), sakit kepala berdenyut, dispnea dengan pola **pernapasan Kussmaul** (hiperventilasi cepat dan dalam sebagai kompensasi asidosis), hipotensi, koma, hingga kejang.
+* **Gejala Gangguan Penglihatan Spesifik**:
+  * Pandangan kabur, fotofobia, penyempitan lapang pandang (*tunnel vision*), sensasi subjektif seperti berada di tengah badai salju (*"walking in a snowstorm"*), pupil melebar (midriasis) dan tidak reaktif terhadap cahaya.
+* **Kinetika Osmolal Gap vs. Anion Gap**:
+  * **Fase Dini**: **Osmolal gap meningkat tinggi** (karena tingginya molekul metanol yang belum terurai), sedangkan anion gap masih normal.
+  * **Fase Lanjut**: Seiring bioaktivasi metanol menjadi format, **osmolal gap menurun secara progresif sementara anion gap melonjak drastis** (*HAGMA*).
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Sekuele Neurologis Permanen**: Atrofi nervus optikus bilateral dengan kebutaan menetap, ensefalopati toksik, gangguan memori, serta sindrom Parkinsonisme permanen (rigiditas, bradikinesia, tremor istirahat) akibat nekrosis putamen bilateral.
+* **Pajanan Okupasional Kronis Uap**: Sakit kepala berulang, pusing, vertigo, insomnia, iritasi membran mukosa konjungtiva dan saluran napas atas, serta dermatitis kontak iritan kronis.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **200 ppm** (262 mg/m³).
+  * **TLV-STEL**: **250 ppm** (327 mg/m³).
+  * **Notasi**: **Skin** (bahaya serapan kulit), **BEI**.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **200 BDS (ppm)** atau **262 mg/m³**.
+  * **PSD (STEL 15 menit)**: **250 BDS (ppm)** atau **328 mg/m³**.
+  * **Notasi**: **Kulit**, **BEI**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Metanol dalam urin** | Urin | **Akhir shift kerja** (*End of shift*) | **15 mg/L** | **15 mg/L** | Notasi **B** (kadar endogen normal), **Ns** |
+
+---
+
+#### **11. Tatalaksana Akut & Keracunan**
+* **Stabilisasi ABC & Koreksi Asidosis Agresif**:
+  * Amankan jalan napas (intubasi jika Glasgow Coma Scale / GCS <8); berikan infus **Natrium Bikarbonat IV hipertonik** secara agresif dengan target mempertahankan **pH arteri >7,35**.
+  * *Tujuan Fisiologis*: Mempertahankan format dalam bentuk ion (\\(\text{HCOO}^-\\)), sehingga mencegah pembentukan molekul asam format non-ionik yang mudah menembus sawar darah-otak dan masuk ke cairan vitreus mata.
+* **Antidot Spesifik Penghambat Alkohol Dehidrogenase (ADH)**:
+  1. **Fomepizol (4-Metilpirazol / 4-MP) — Lini Pertama**:
+     * Afinitas terhadap ADH >8.000 kali lebih kuat dibanding etanol, profil keamanan tinggi, tidak memicu depresi SSP atau hipoglikemia.
+     * **Dosis**: *Loading dose* **15 mg/kgBB IV** (dilarutkan dalam 100 mL D5W/NaCl 0,9% diberikan dalam 30 menit). Dilanjutkan dosis rumatan **10 mg/kgBB IV setiap 12 jam (untuk 4 dosis pertama)**, kemudian ditingkatkan menjadi **15 mg/kgBB IV setiap 12 jam** (karena fomepizol menginduksi metabolismenya sendiri) sampai kadar metanol serum <20–30 mg/dL.
+     * *Penyesuaian Dialisis*: Berikan dosis setiap **4 jam** atau infus kontinu **1,0–1,5 mg/kg/jam** selama proses hemodialisis.
+  2. **Etanol Farmasi IV / Oral — Lini Alternatif**:
+     * Digunakan jika fomepizol tidak tersedia. Etanol berkompetisi memperebutkan ADH dengan afinitas 10–20 kali lebih kuat dari metanol.
+     * **Target Serum Etanol**: **100–150 mg/dL (22–33 mmol/L)**.
+     * *Dosis*: *Loading dose* 600–800 mg/kgBB IV (10% etanol dalam D5W), dilanjutkan infus rumatan 66–154 mg/kg/jam (dosis rumatan wajib dinaikkan 2 kali lipat saat pasien menjalani hemodialisis). Wajib memantau kadar etanol darah, glukosa darah, dan status kesadaran per jam.
+* **Terapi Kofaktor Folat (*Enhancement of Formate Elimination*)**:
+  * **Asam Folinat (Leukovorin)**: Dosis **1 mg/kgBB IV (maksimal 50 mg)** setiap 4–6 jam; jika tidak tersedia, berikan **Asam Folat 50 mg IV/oral setiap 4–6 jam**. Bertujuan memaksimalkan enzim folat-dependen untuk mempercepat pemecahan format menjadi \\(\text{CO}_2\\).
+* **Hemodialisis Intermiten**:
+  * Membersihkan metanol dan format secara simultan serta mengoreksi asidosis.
+  * **Indikasi Absolut Hemodialisis**:
+    1. Kadar metanol serum **>50 mg/dL (>15,6 mmol/L)**.
+    2. Adanya **gangguan penglihatan (*visual impairment*)** atau kelainan funduskopi.
+    3. Asidosis metabolik berat refrakter (**pH <7,25–7,30** meski telah diterapi bikarbonat).
+    4. Gagal ginjal akut atau ketidakseimbangan elektrolit refrakter.
+    5. Perburukan hemodinamik/tanda vital meski telah diberikan terapi suportif dan antidot optimal.
+  * Dialisis dilanjutkan hingga kadar metanol serum turun di bawah **20 mg/dL** dan asidosis teratasi tuntas.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Neuropati Optik Toksik, Ensefalopati Toksik dengan Nekrosis Putamen, atau Dermatitis Kontak Iritan.
+  2. *Identifikasi Pajanan Kerja*: Melacak penggunaan metanol pada SDS formulasi pelarut/biodiesel.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme kerusakan sel ganglion retina oleh akumulasi format.
+  4. *Evaluasi Besaran Pajanan*: Pengukuran konsentrasi udara (dibandingkan NAB 200 ppm) dan pengujian metanol urin akhir shift (dibandingkan IPB 15 mg/L).
+  5. *Faktor Kerentanan Individu*: Status nutrisi (defisiensi asam folat kronis mempercepat akumulasi format), penyakit hepar dasar.
+  6. *Faktor di Luar Hubungan Kerja*: Riwayat konsumsi alkohol ilegal/oplosan di luar jam kerja.
+  7. *Penetapan Diagnosis PAK*: Menetapkan keterkaitan kausal okupasional untuk klaim jaminan ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan gangguan penglihatan berat menetap, riwayat penyakit retina/nervus optikus, atau gangguan neurologis fokal dinyatakan **tidak laik (*unfit*)** berada di area proses industri berpajanan metanol.
+* **Surveilans Medis Berkala**: Pemeriksaan ketajaman visual (*visus*) dan lapang pandang berkala, funduskopi, pemeriksaan biomonitoring metanol urin rutin, dan tes fungsi hepar.
+* **Pengendalian di Tempat Kerja**:
+  * *Rekayasa Teknis*: Sistem perpipaan tertutup (*closed system transfer*), pemasangan ventilasi hisap lokal (LEV), instalasi sensor kebocoran uap metanol otomatis.
+  * *APD Khusus*: Sarung tangan karet **Butil (*butyl rubber*)** (lateks biasa dan nitril tipis mudah ditembus pelarut alkohol berberat molekul rendah), respirator uap organik, dan *goggles* pelindung percikan.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+* **Notasi Kulit**: Mendapat notasi **Skin** (ACGIH) dan **Kulit** (Permenaker No. 5 Tahun 2018).
+* **Fenomena Sosial Keracunan Oplosan**: Metanol adalah penyebab utama wabah keracunan massal mematikan (*outbreak mass poisoning*) di Indonesia akibat konsumsi minuman keras oplosan (*adulterated bootleg liquor*), yang sering memicu kedaruratan toksikologi massal dengan angka mortalitas mencapai 30–50%.
+* **Regulasi Terkait**: **Perpres No. 7 Tahun 2019 Lampiran I.a No. 14** ("*Penyakit yang disebabkan oleh alkohol, glikol, atau keton*"); Permenkes No. 11 Tahun 2022.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Metanol**
+* 🩺 **Clinical Pearl**:
+  * **"The Snowstorm Clue"**: Keluhan penglihatan seperti berada di tengah badai salju (*snowstorm vision*) yang disertai pernapasan Kussmaul dalam pada pasien dengan riwayat mengonsumsi alkohol adalah **tanda patognomonik keracunan metanol**. Kondisi ini menandakan edema dan demielinisasi akut nervus optikus oleh asam format dan membutuhkan hemodialisis darurat tanpa menunggu hasil laboratorium kadar metanol keluar!
+  * **"Alkalinize to Trap Formate"**: Koreksi asidosis dengan natrium bikarbonat bukan hanya menaikkan pH darah, melainkan mengubah asam format menjadi ion format (\\(\text{HCOO}^-\\)). Ion format tidak mampu menembus membran lipid sawar darah-otak dan cairan bola mata (*ion trapping*), sehingga secara langsung menyelamatkan pasien dari kebutaan dan nekrosis putamen.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Formaldehida*:
+     * *Jebakan*: Memilih formaldehida sebagai penyebab kebutaan dan asidosis metanol.
+     * *Koreksi*: Formaldehida diubah oleh ALDH dalam hitungan menit sehingga kadarnya mendekati nol. **Asam format (*formic acid*) adalah satu-satunya *ultimate toxicant* yang menyebabkan retinotoksisitas dan HAGMA**.
+  2. *Jebakan Kinetika Gap*:
+     * *Jebakan*: Menyingkirkan keracunan metanol karena *osmolal gap* normal pada pasien yang datang terlambat (>24 jam).
+     * *Koreksi*: Seiring berjalannya waktu, metanol habis termetabolisme sehingga *osmolal gap* kembali normal, namun digantikan oleh lonjakan *anion gap* yang ekstrem.
+  3. *Jebakan Perpanjangan Waktu Paruh Akibat Antidot*:
+     * *Jebakan*: Menghentikan fomepizol setelah 24 jam karena mengira metanol sudah habis tereliminasi.
+     * *Koreksi*: Pemberian fomepizol menghentikan degradasi enzimatik sehingga waktu paruh metanol memanjang dari ~12 jam menjadi **~52 jam**. Jika dialisis tidak dilakukan, fomepizol wajib diteruskan berhari-hari sampai metanol serum <20–30 mg/dL.
+
+---
+---
+
+### **B. ETILEN GLIKOL (Ethylene Glycol / 1,2-Ethanediol)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{HOCH}_2\text{CH}_2\text{OH}\\)** atau **\\(\text{C}_2\text{H}_6\text{O}_2\\)**; nomor CAS **107-21-1**; berat molekul **62,07 g/mol**. Sinonim: *1,2-ethanediol, glycol, monoethylene glycol (MEG)*.
+* **Sifat Fisik**: Cairan kental seperti sirup (*syrupy liquid*), jernih, tidak berwarna, tidak berbau, memiliki rasa manis (*sweet taste*), sangat higroskopis, titik didih tinggi 197°C, volatilitas rendah (tekanan uap rendah ~0,06 mmHg pada 20°C), titik nyala 111°C (232°F).
+* **Kelarutan**: Sangat larut dalam air (*completely miscible*) dan alkohol; praktis tidak larut dalam pelarut non-polar/minyak bumi.
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+  * **ACGIH**: **A4** (*Not classifiable as a human carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-4**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Cairan Pendingin & Antibeku**: Komponen utama larutan antibeku radiator kendaraan bermotor (*automotive antifreeze/engine coolants* ~95%), cairan pendingin mesin industri, dan cairan transfer panas HVAC.
+* **Sintesis Polimer**: Monomer kunci dalam pembuatan serat poliester (*polyethylene terephthalate* / PET) untuk botol plastik minuman kemasan, film poliester, dan resin sintetis.
+* **Aplikasi Khusus**: Cairan rem hidrolik, formulasi pencair es pesawat terbang (*de-icing fluids*), pelarut tinta cetak, dan bahan formulasi cat lateks.
+* **Penyebab Keracunan**: Tertelan secara tidak sengaja oleh anak-anak atau hewan peliharaan karena rasa manisnya yang menarik, atau tertelan secara sengaja pada upaya melukai diri (*self-harm*).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Oral**: Diabsorpsi secara cepat dan hampir menyeluruh melalui saluran cerna; konsentrasi puncak plasma tercapai dalam 1–4 jam pasca-ingesti.
+  * **Inhalasi**: Uap etilen glikol minimal dihirup pada suhu ruangan karena tekanan uapnya yang sangat rendah. Namun, **aerosol atau kabut panas (*mists/fumes*) yang dihasilkan saat mesin mendidih atau penyemprotan de-icing dapat diserap secara signifikan melalui paru-paru**.
+  * **Dermal**: Penetrasi perkutan sangat lambat dan dapat diabaikan pada kulit utuh.
+* **Distribusi**: Bersifat sangat hidrofilik; terdistribusi cepat dan merata ke seluruh cairan tubuh (*total body water*) dengan volume distribusi (\\(V_d\\)) sekitar **0,6–0,8 L/kg**. Tidak berikatan dengan protein plasma.
+* **Metabolisme (Kaskade Bioaktivasi Oksidatif di Hepar)**:
+  1. **Konversi Menjadi Glikolaldehida**: Etilen glikol dioksidasi oleh **Alkohol Dehidrogenase (ADH)** hepar menjadi **Glikolaldehida (*glycoaldehyde*)**. Ini adalah tahap penentu laju reaksi (*rate-limiting step*).
+  2. **Konversi Menjadi Asam Glikolat**: Glikolaldehida dioksidasi cepat oleh **Aldehid Dehidrogenase (ALDH)** menjadi **Asam Glikolat (*glycolic acid / glycolate*)**.
+  3. **Konversi Menjadi Asam Glioksilat**: Asam glikolat dioksidasi secara lambat oleh enzim *glycolate oxidase* atau laktat dehidrogenase (LDH) menjadi **Asam Glioksilat (*glyoxylic acid / glyoxylate*)**.
+  4. **Jalur Cabang Glioksilat**:
+     * Oksidasi Mayor: Asam glioksilat dioksidasi oleh LDH menjadi **Asam Oksalat (*oxalic acid / oxalate*)**.
+     * Detoksifikasi Kofaktor B6: Dikonversi menjadi asam amino non-toksik **glisin** oleh enzim transaminase yang bergantung pada **Piridoksin (Vitamin B6)**.
+     * Detoksifikasi Kofaktor B1: Dikonversi menjadi **\\(\alpha\\)-hidroksi-\\(\beta\\)-ketoadipat** oleh enzim yang bergantung pada **Tiamin (Vitamin B1)**.
+* **Ekskresi**: Sekitar 20–30% etilen glikol diekskresikan tanpa perubahan ke dalam urin melalui filtrasi glomerulus; metabolit asam glikolat dan asam oksalat diekskresikan melalui ginjal.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme HAGMA & Nefrotoksisitas Oksalat)**
+1. **Asidosis Metabolik Masif oleh Asam Glikolat**:
+   * **Asam glikolat adalah agen utama yang bertanggung jawab atas timbulnya asidosis metabolik anion gap tinggi (*HAGMA*)**. Akumulasi glikolat mengonsumsi cadangan bikarbonat serum dan menekan pH darah secara drastis.
+2. **Pembentukan Kristal Kalsium Oksalat & Nekrosis Tubular Ginjal**:
+   * Asam oksalat mengikat ion kalsium bebas plasma (\\(\text{Ca}^{2+}\\)) dengan afinitas sangat tinggi membentuk garam yang sangat sukar larut: **Kalsium Oksalat**.
+   * Kristal kalsium oksalat (terutama bentuk jarum/spindel monohidrat) mengendap secara masif di dalam lumen tubulus kontortus proksimalis ginjal.
+   * Terjadi **obstruksi fisik intratubular masif, kerusakan membran tubulus, nekrosis tubular akut (ATN)**, serta sitotoksisitas langsung dari asam glikolat, yang memicu **Gagal Ginjal Akut Anurik (*Acute Kidney Injury*)**.
+3. **Hipokalsemia Akut & Toksisitas Multiorgan**:
+   * Presipitasi masif kalsium oleh oksalat memicu **hipokalsemia berat** yang menyebabkan tetani, spasme karpopedal, pemanjangan interval QTc pada EKG, disritmia ventrikel, dan henti jantung.
+   * Kristal kalsium oksalat juga dapat terdeposisi di dinding pembuluh darah serebral, parenkim otak, dan miokardium.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Kadar Etilen Glikol Serum/Darah**:
+  * Pengukuran baku penunjang kuantitatif menggunakan metode GC-MS atau enzymatic assay. Waktu sampling: **segera saat admisi rumah sakit**.
+* **Kadar Asam Glikolat Serum (*Serum glycolic acid*)**:
+  * Merupakan penanda biokimia paling akurat untuk memprediksi derajat keparahan asidosis dan risiko gagal ginjal akut.
+* **Sedimen Urin (Kristaluria Oksalat)**:
+  * Pemeriksaan mikroskopis sedimen urin segar menemukan kristal **kalsium oksalat monohidrat (*spindle/needle/dumb-bell shaped*)** atau dihidrat (*envelope shaped*).
+* **Catatan Regulasi Okupasional**: Baik ACGIH maupun Permenaker No. 5 Tahun 2018 **belum menetapkan nilai batas numerik BEI/IPB spesifik** untuk etilen glikol pada pemantauan urin/darah pekerja rutin (parameter kualitatif mengandalkan evaluasi sedimen urin dan fungsi ginjal).
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Etilen Glikol Normal (Tanpa Hambatan ADH)**: t\\(_{1/2}\\) eliminasi cepat, berkisar **3–8 jam**.
+* **Etilen Glikol dengan Blokade ADH (Fomepizol)**: t\\(_{1/2}\\) memanjang menjadi **~14–20 jam (~19,7 jam)**, di mana eliminasinya murni bergantung pada klirens ginjal alami.
+* **Etilen Glikol Selama Hemodialisis**: t\\(_{1/2}\\) dipersingkat menjadi **~2,5–3,5 jam (150–210 menit)**.
+* **Asam Glikolat Serum**: t\\(_{1/2}\\) spontan sekitar **10–12 jam** (selama hemodialisis turun menjadi ~2,5 jam).
+
+---
+
+#### **7. Efek Toksisitas Akut (Tiga Stadium Klasik)**
+Perjalanan klinis keracunan etilen glikol terbagi menjadi **tiga stadium temporal khas**:
+* **Stadium 1: Gangguan Neurologis / SSP (0,5 – 12 jam pasca-ingesti)**:
+  * Pasien tampak mabuk seperti terintoksikasi alkohol (*inebriation*), ataksia, bicara cadel, nistagmus, mual, dan muntah, **namun tidak tercium bau alkohol pada napasnya**.
+  * Terjadi peningkatan **osmolal gap** yang nyata. Pada kasus berat dapat timbul konfusi, koma, kejang mioklonik, serta tetani akibat hipokalsemia.
+* **Stadium 2: Gangguan Kardiopulmonal (12 – 24 jam pasca-ingesti)**:
+  * Asidosis metabolik memuncak (**anion gap melonjak tinggi, osmolal gap menurun**).
+  * Timbul takipnea berat dengan pola **pernapasan Kussmaul**, takikardia progresif, hipertensi ringan hingga kolaps sirkulasi, gagal jantung kongestif, edema paru non-kardiogenik (*ARDS*), dan disritmia ventrikel.
+* **Stadium 3: Gangguan Renal (24 – 72 jam pasca-ingesti)**:
+  * Nyeri ketok sudut kostovertebra / nyeri pinggang bilateral (*flank pain*), hematuria, proteinuria, oliguria hingga **anuria total**.
+  * Terjadi gagal ginjal akut akibat nekrosis tubular nekrotikans masif dengan uremia berat yang memerlukan terapi pengganti ginjal.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Sekuele Ginjal Permanen**: Gagal ginjal kronis terminal (*End-Stage Renal Disease* / ESRD) pasca-nekrosis tubular berat yang membutuhkan hemodialisis seumur hidup.
+* **Sekuele Neurologis Lambat**: Kelumpuhan saraf kranial kraniofasial (terutama nervus fasialis / VII bilateral), disfasia, dan polineuropati perifer sensorimotor yang dapat muncul 1–2 minggu setelah resolusi fase akut.
+* **Efek Inhalasi Kronis di Tempat Kerja**: Iritasi saluran napas kronis, faringitis, sakit kepala, dan dermatitis kontak iritan.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **25 ppm** (fraksi uap / *vapor fraction*).
+  * **TLV-STEL**: **50 ppm** (fraksi uap) dan **10 mg/m³** (fraksi inhalabel, aerosol saja).
+  * **Notasi**: **A4** (*Not classifiable as a human carcinogen*).
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **Kadar Tertinggi Diperkenankan / Ceiling (KTD / C)**: **100 mg/m³** (aerosol) atau setara ~39,4 ppm.
+  * **Notasi**: **Kategori A-4**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+* **ACGIH (2026) & Permenaker No. 5 Tahun 2018**: **Tidak ada indeks pajanan biologi numerik (*BEI / IPB*) yang diadopsi secara resmi**. Pengawasan biologis di fasilitas kesehatan kerja difokuskan pada uji fungsi ginjal (ureum/kreatinin), analisis gas darah, dan evaluasi mikroskopis kristaluria urin.
+
+---
+
+#### **11. Tatalaksana Akut & Keracunan**
+* **Resusitasi & Koreksi Asidosis**:
+  * Stabilisasi ABC; koreksi asidosis metabolik dengan **Natrium Bikarbonat IV** (target pH >7,30).
+  * **Pemberian Kalsium Glukonat IV**: **HANYA diindikasikan bila pasien mengalami hipokalsemia simtomatik yang nyata (tetani, kejang, aritmia, pemanjangan interval QTc)**. Jangan memberikan kalsium secara agresif pada hipokalsemia asimtomatik karena kalsium eksogen akan memicu peningkatan presipitasi kalsium oksalat di jaringan ginjal!
+* **Antidot Spesifik Penghambat ADH**:
+  1. **Fomepizol (4-Metilpirazol) — Pilihan Utama**:
+     * Menghambat konversi etilen glikol menjadi glikolaldehida/glikolat.
+     * **Regimen Dosis**: *Loading dose* **15 mg/kgBB IV** dalam 30 menit; dilanjutkan **10 mg/kgBB IV setiap 12 jam (sebanyak 4 dosis)**, kemudian **15 mg/kgBB IV setiap 12 jam** sampai kadar etilen glikol serum <20 mg/dL.
+     * Dosis disesuaikan menjadi setiap **4 jam** selama proses hemodialisis.
+  2. **Etanol IV / Oral — Alternatif**:
+     * Target kadar etanol serum **100–150 mg/dL**. Diberikan jika fomepizol tidak tersedia.
+* **Kofaktor Alternatif Pemecahan Glioksilat (*Cofactor Therapy*)**:
+  * **Piridoksin (Vitamin B6)**: Dosis **100 mg IV/IM per hari** (mendorong konversi asam glioksilat menjadi glisin).
+  * **Tiamin (Vitamin B1)**: Dosis **100 mg IV per hari** (mendorong konversi glioksilat menjadi metabolit aman \\(\alpha\\)-hidroksi-\\(\beta\\)-ketoadipat).
+* **Hemodialisis Intermiten**:
+  * Efektif membersihkan etilen glikol dan asam glikolat secara tuntas.
+  * **Indikasi Absolut Hemodialisis**:
+    1. Kadar etilen glikol serum **>50 mg/dL (>8,1 mmol/L)** (bila diterapi etanol) atau kadar sangat tinggi dengan gangguan biokimia.
+    2. Asidosis metabolik berat refrakter (**pH arteri <7,25–7,30**).
+    3. **Gagal ginjal akut** (kreatinin serum meningkat drastis atau anuria/oliguria).
+    4. Gangguan elektrolit refrakter.
+    5. Deteriorasi klinis meski telah mendapat terapi antidot.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Gagal Ginjal Akut Toksik (*Toxic AKI / Acute Tubular Necrosis*).
+  2. *Identifikasi Pajanan Kerja*: Melacak pajanan aerosol antibeku radiator atau cairan hidrolik dari SDS/LDKB.
+  3. *Hubungan Kausalitas*: Menilai mekanisme kerusakan membran tubulus ginjal oleh kristal kalsium oksalat dan asam glikolat.
+  4. *Evaluasi Besaran Pajanan*: Melacak data pemantauan aerosol kerja (dibandingkan KTD 100 mg/m³), riwayat semprotan kabut tanpa ventilasi, dan kepatuhan APD.
+  5. *Faktor Individu*: Riwayat batu ginjal kalsium oksalat sebelumnya, gangguan fungsi ginjal awal.
+  6. *Faktor di Luar Hubungan Kerja*: Riwayat konsumsi produk antibeku di rumah tangga.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk jaminan kompensasi.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan penyakit ginjal kronis (CKD Stadium 3–5), riwayat nefrolitiasis berat berulang, atau mononefritis dinilai **tidak laik (*unfit*)** berada di unit kerja yang berpotensi terpajan aerosol etilen glikol panas.
+* **Surveilans Medis Berkala**: Pemeriksaan fungsi ginjal berkala (ureum, kreatinin serum, eGFR) dan urinalisis mikroskopis serial pada pekerja bengkel otomotif/radiator dan pembuat serat poliester.
+* **Pengendalian di Tempat Kerja**:
+  * **Substitusi Aman**: **Mengganti etilen glikol dengan Propilen Glikol (*propylene glycol*)** pada formulasi cairan pendingin dan de-icing. Propilen glikol dimetabolisme menjadi asam laktat dan piruvat yang tidak bersifat nefrotoksik.
+  * *Rekayasa Teknis*: Ventilasi pembuangan lokal (LEV) di area pengisian cairan radiator dan pencucian tangki mesin.
+  * *Penambahan Zat Pemahit (*Bittering Agent*)**: Penambahan zat perasa pahit ekstrem seperti **denatonium benzoat** diwajibkan secara industri untuk mencegah konsumsi oral yang tidak disengaja.
+  * *APD*: Kacamata pelindung percikan (*splash goggles*), masker respirator partikel/aerosol uap dengan filter kimia organik, dan sarung tangan tahan kimia (karet butil atau nitril tebal).
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+* **Notasi**: ACGIH menetapkan **A4**; Permenaker No. 5 Tahun 2018 menetapkan **KTD 100 mg/m³** dan notasi **A-4**.
+* **Regulasi Terkait**: **Perpres No. 7 Tahun 2019 Lampiran Bagian I.a No. 14** ("*Penyakit yang disebabkan oleh alkohol, glikol, atau keton*"); Permenkes No. 11 Tahun 2022.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Etilen Glikol**
+* 🩺 **Clinical Pearl**:
+  * **"The Wood's Lamp Urine Trick"**: Sebagian besar cairan antibeku radiator komersial ditambahkan pewarna **natrium fluoresein (*sodium fluorescein*)** agar kebocoran mesin mudah dideteksi. Pada pasien suspek keracunan etilen glikol akut di IGD, penyinaran sampel urin segar menggunakan **Lampu Wood (*Wood's lamp / ultraviolet light*)** dapat memancarkan fluoresensi hijau terang dalam 4–6 jam pertama pasca-ingesti, menjadi petunjuk visual cepat sebelum hasil laboratorium metabolit selesai!
+  * **"The Envelope Crystals"**: Temuan kristal kalsium oksalat monohidrat (bentuk jarum/spindel) atau dihidrat (bentuk amplop surat) pada sedimen urin yang disertai asidosis metabolik anion gap tinggi adalah bukti kuat nefrotoksisitas etilen glikol.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Asidosis vs Kebutaan*:
+     * *Jebakan*: Memilih etilen glikol sebagai penyebab kebutaan dan kerusakan nervus optikus.
+     * *Koreksi*: **Kebutaan adalah karakteristik metanol**. Etilen glikol menyerang **ginjal (gagal ginjal akut)** dan jantung/paru, tanpa menyebabkan retinotoksisitas selektif.
+  2. *Jebakan Pemberian Kalsium*:
+     * *Jebakan*: Memberikan bolus kalsium IV rutin pada semua pasien keracunan etilen glikol hanya karena kadar kalsium laboratorium tampak rendah.
+     * *Koreksi*: Kalsium IV **hanya boleh diberikan jika timbul gejala klinis hipokalsemia (tetani, kejang, interval QTc memanjang)**. Kalsium eksogen berlebih akan mengikat oksalat bebas dan memicu pembentukan kristal kalsium oksalat baru yang memperparah kerusakan ginjal.
+  3. *Jebakan Kofaktor Tiamin & Piridoksin*:
+     * *Jebakan*: Menggunakan leukovorin/asam folat untuk etilen glikol.
+     * *Koreksi*: Asam folat/folinat adalah kofaktor untuk metanol. Pada etilen glikol, kofaktor yang wajib diberikan adalah **Tiamin (B1)** dan **Piridoksin (B6)** untuk mengalihkan asam glioksilat ke metabolit non-toksik (glisin dan \\(\alpha\\)-hidroksi-\\(\beta\\)-ketoadipat).
+
+---
+---
+
+### **C. POLIETILEN GLIKOL (PEG / Macrogol) — Toksisitas Rendah**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Polimer sintetis linear dari etilen oksida dan air dengan rumus umum **\\(\text{H}(\text{OCH}_2\text{CH}_2)_n\text{OH}\\)**; nomor CAS **25322-68-3**. Sinonim: *PEG, macrogol, polyethylene oxide (PEO)*.
+* **Karakteristik Fisik**: Sifat fisik ditentukan oleh berat molekul rata-rata (BM 200 hingga >20.000):
+  * **PEG BM Rendah (PEG 200 – 600)**: Berupa cairan kental jernih tidak berwarna, sedikit berbau manis, higroskopis.
+  * **PEG BM Tinggi (PEG >1.000 – 20.000+)**: Berupa padatan lilin putih (*waxy solid*), serpihan (*flakes*), atau bubuk putih.
+* **Kelarutan**: Sangat larut dalam air dan banyak pelarut organik, tidak mudah menguap (*low volatility*), titik nyala tinggi (>180°C).
+* **Klasifikasi Karsinogenisitas**: **IARC Grup 3** (*Not classifiable as to its carcinogenicity to humans*); tidak diklasifikasikan sebagai karsinogen oleh ACGIH atau Permenaker 5/2018.
+
+---
+
+#### **2. Sumber Industri & Aplikasi Medis**
+* **Farmasi & Medis**: Bahan dasar salep topikal antimikroba, basis supositoria, pelarut obat parenteral/injeksi, pelapis tablet, serta bahan aktif obat **pencahar osmotik kolon (*osmotic bowel evacuants* / PEG 3350/4000)** untuk persiapan kolonoskopi.
+* **Kosmetik & Perawatan Diri**: Basis pasta gigi, krim kulit, losion, deodoran, dan pelembap bibir.
+* **Aplikasi Industri**: Pelumas dan zat anti-statik pada industri tekstil, *binder* dalam industri keramik, *plasticizer* resin sintetis, serta cairan hidrolik non-korosif.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Gastrointestinal**: Sangat minimal pada PEG berat molekul tinggi (PEG >3.000 hanya diserap <1–2% dan hampir 100% dieliminasi utuh melalui feses). PEG berat molekul rendah (PEG 200–400) dapat diserap sebagian (10–40%).
+  * **Dermal**: **Praktis tidak menembus kulit utuh**. Namun, **dapat diserap dalam jumlah masif jika diaplikasikan pada permukaan luka bakar derajat dua/tiga yang luas (*denuded/burned skin*)**.
+* **Distribusi**: Terdistribusi terutama pada kompartemen cairan ekstraseluler, tidak berikatan signifikan dengan protein jaringan.
+* **Metabolisme**: Sebagian besar diekskresikan tanpa perubahan. Hanya sebagian kecil PEG cair berbobot molekul rendah yang dapat dioksidasi oleh ADH menjadi asam monokarboksilat dan dikarboksilat terhidroksilasi (asam glikolasetat/etoksiasetat). **PEG TIDAK PERNAH DIUBAH MENJADI ASAM OKSALAT DALAM JUMLAH BERMAKNA**.
+* **Ekskresi**: Dieliminasi utuh melalui filtrasi glomerulus ginjal (untuk fraksi yang terserap) dan melalui feses (untuk fraksi oral).
+
+---
+
+#### **4. Toksikodinamik**
+* **Profil Toksisitas Intrinsik**: **Sangat aman, biokompatibel, dan memiliki toksisitas intrinsik sangat rendah**.
+* **Mekanisme Toksisitas Masif Khusus (Sindrom Salep Luka Bakar)**:
+  * Terjadi hanya bila sediaan salep berbasis PEG diaplikasikan secara masif dan berulang pada **luka bakar terbuka yang sangat luas (>20–30% luas permukaan tubuh)**.
+  * Penyerapan PEG cair dosis raksasa menyebabkan beban osmotik intravaskular masif, peningkatan tajam *osmolal gap*, akumulasi asam dikarboksilat yang memicu asidosis metabolik anion gap ringan-sedang, serta nekrosis tubular akut akibat stres osmotik ginjal.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Biomonitoring Rutin**: **TIDAK ADA indikasi pemeriksaan biomonitoring urin atau darah rutin** untuk pekerja yang menangani PEG karena tingkat toksisitasnya yang sangat rendah.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **PEG Serum**: t\\(_{1/2}\\) eliminasi ginjal berlangsung cepat, berkisar antara **2 hingga 8 jam** pada individu dengan fungsi ginjal normal.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Penggunaan Oral Lazim**: Efek pencahar fisiologis, kram perut ringan, kembung, mual, atau diare osmotik.
+* **Pajanan Masif Dermal Luka Bakar (Sangat Jarang)**: Hiperosmolalitas serum, peningkatan *osmolal gap*, oliguria, asidosis metabolik, ensefalopati uremik, dan koma.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* Tidak menimbulkan neurotoksisitas, tidak menimbulkan toksisitas reproduksi, serta tidak mutagenik maupun karsinogenik.
+* Reaksi dermatologis terbatas pada dermatitis kontak alergi tipe lambat yang sangat jarang terjadi.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH & Permenaker No. 5 Tahun 2018**: **Tidak menetapkan nilai numerik TLV maupun NAB spesifik untuk PEG** (AIHA WEEL menetapkan panduan aerosol partikulat PEG sebesar **10 mg/m³** sebagai debu iritan umum).
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+* **ACGIH & Permenaker No. 5 Tahun 2018**: **Tidak ada indeks pajanan biologi (*BEI / IPB*)**.
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip**: Penghentian paparan segera dan terapi suportif cairan.
+* **Kasus Khusus Toksisitas Luka Bakar**:
+  * Hentikan segera penggunaan salep berbasis PEG; bersihkan sisa salep dari luka bakar menggunakan larutan salin normal.
+  * Koreksi cairan dan gangguan elektrolit.
+  * **Hemodialisis**: Sangat efektif menyaring PEG dan mengoreksi hiperosmolalitas jika terjadi gagal ginjal akut.
+  * Penggunaan fomepizol atau etanol umumnya tidak diindikasikan pada PEG.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **Kelaikan Kerja**: Tidak ada pembatasan kelaikan kerja khusus untuk pekerja yang menangani PEG.
+* **Pengendalian di Tempat Kerja**: Menghindari pemakaian salep antibiotik topikal berbasis PEG pada unit penanganan luka bakar darurat di poliklinik perusahaan; penggunaan sarung tangan kerja dan kacamata debu standar industri.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 3** (*Not classifiable*).
+* **Regulasi Terkait**: **Perpres No. 7 Tahun 2019 Lampiran I.a No. 14** (masuk dalam lingkup turunan glikol).
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Polietilen Glikol (PEG)**
+* 🩺 **Clinical Pearl**:
+  * **"The Burn Unit Acidosis Mystery"**: Jika pasien luka bakar luas yang dirawat di ICU mendadak mengalami gagal ginjal akut, peningkatan *osmolal gap*, dan asidosis metabolik tanpa riwayat menelan alkohol toksik, periksa salep antibiotik luka bakarnya! Penggunaan salep berbasis polietilen glikol dosis masif pada luka terbuka luas dapat diserap langsung ke sirkulasi sistemik dan memicu sindrom toksisitas PEG.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Keracunan Oral PEG*:
+     * *Jebakan*: Menganggap konsumsi obat pencahar PEG (PEG 3350/kolonoskopi) dapat memicu gagal ginjal oksalat seperti etilen glikol.
+     * *Koreksi*: **PEG oral tidak diserap melalui usus utuh (<1%) dan TIDAK dimetabolisme menjadi asam oksalat**. Oleh karena itu, PEG aman digunakan sebagai preparat usus dan tidak membentuk kristal kalsium oksalat.
+  2. *Jebakan Antidot Fomepizol*:
+     * *Jebakan*: Memberikan fomepizol atau etanol secara rutin pada setiap kecurigaan pajanan PEG.
+     * *Koreksi*: Fomepizol adalah antidot untuk metanol dan etilen glikol murni, bukan terapi lini pertama untuk PEG.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: NAB Faktor Kimia; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran Bagian I.a No. 14: Penyakit yang disebabkan oleh alkohol, glikol, atau keton).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Pedoman 7 Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Methanol and Ethylene glycol entries).
+5. **Mégarbane, B.** (2010). *Treatment of patients with ethylene glycol or methanol poisoning: focus on fomepizole*. Open Access Emergency Medicine, 2, 67–75.
+6. **Brent, J.** (2009). *Fomepizole for ethylene glycol and methanol poisoning*. New England Journal of Medicine, 360(21), 2216–2223.
+7. **Alrashid, M., et al.** (2024). *Methanol Poisoning: A Comprehensive Review of Pathophysiology, Diagnosis, and Treatment Modalities*. Toxics, 12(12), 924.
+8. **Schep, L. J., et al.** (2009). *Diethylene glycol poisoning: a toxicological review*. Clinical Toxicology, 47(6), 525–535.
+9. **Pamies, R. J., et al.** (1993). *Methanol intoxication: How to help patients avoid permanent damage*. Postgraduate Medicine, 93(8), 183–194.
+10. **Litovitz, T.** (1986/2007). *Ethylene Glycol and Methanol Poisoning: Mechanisms of Toxicity, Clinical Course, Diagnosis and Treatment*. Journal of Emergency Medicine & Critical Care Toxicology.
+11. **Hodgson, E. (Ed.)** (2010). *A Textbook of Modern Toxicology*. 4th Edition. John Wiley & Sons (Chapter 14: Nephrotoxicity and Organic Solvents; Chapter 22: Occupational Exposure Limits).
+12. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Publication No. 2005-149: Methyl alcohol and Ethylene glycol entries).

@@ -1,0 +1,309 @@
+Duduk tegak dan simak baik-baik, Dokter. Melanjutkan kajian toksikologi logam berat sebelumnya, kita masuk ke **KADMIUM (Cd), BAGIAN B**. 
+
+Sebagai calon konsultan Kedokteran Okupasi, Anda dituntut memiliki ketajaman analitis tingkat tinggi: Anda harus mengerti mengapa ambang batas pajanan udara kadmium dibagi berdasarkan ukuran partikulat (*inhalable* vs. *respirable*), presisi dalam menginterpretasikan biomarker disfungsi tubulus proksimal, serta **tidak boleh sekalipun melakukan malpraktik farmakologis dengan meresepkan terapi kelasi pada nefropati kadmium kronis**. Dewan penguji tidak akan meluluskan residen yang membahayakan nyawa pekerja dengan terapi kelasi yang justru memicu nekrosis tubular akut fatal.
+
+Simak telaah komprehensif berikut:
+
+---
+
+### 1. Standar Batas Pajanan Udara (*Exposure Limits*): ACGIH vs. Permenaker No. 5 Tahun 2018
+
+Di udara lingkungan kerja industri, nilai ambang batas inhalasi kadmium diatur secara sangat ketat dengan membedakan fraksi partikulat aerosol:
+
+```
+                       [ STANDAR BATAS PAJANAN KADMIUM DI UDARA KERJA ]
+                                               │
+         ┌─────────────────────────────────────┴─────────────────────────────────────┐
+         ▼                                                                           ▼
+[ ACGIH TLV-TWA (EDISI TERKINI / 2026) ]                                    [ PERMENAKER NO. 5 TAHUN 2018 ]
+• Fraksi Inhalabel (Total / Inhalable Particulate):                         • Fraksi Inhalabel (Inhalable):
+  0,01 mg/m³ (sebagai Cd)                                                     NAB (TWA 8 jam): 0,01 mg/m³
+• Fraksi Respirabel (Respirable Particulate):                               • Fraksi Respirabel (Respirable):
+  0,002 mg/m³ (sebagai Cd)                                                    NAB (TWA 8 jam): 0,002 mg/m³
+• Notasi: A2 (Suspected Human Carcinogen); BEI                              • Notasi: A2; BEI (simbol segitiga ▲)
+• Basis TLV: Kerusakan Ginjal (Kidney Damage / Nephrotoxicity)              • Target Efek Kritis: Ginjal dan Karsinogenisitas
+```
+
+#### a. Nilai Ambang Batas ACGIH (Edisi 2026)
+*   **Substansi:** *Cadmium and inorganic compounds, as Cd* [CAS 7440-43-9].
+*   **TLV-TWA Fraksi Inhalabel (*Inhalable particulate matter* / I):** **\\(0{,}01\text{ mg/m}^3\\)** (setara **\\(10\ \mu\text{g/m}^3\\)**).
+*   **TLV-TWA Fraksi Respirabel (*Respirable particulate matter* / R):** **\\(0{,}002\text{ mg/m}^3\\)** (setara **\\(2\ \mu\text{g/m}^3\\)**).
+*   *Notasi Resmi:* **A2; BEI**.
+*   *Dasar Penetapan Efek Kritis (*TLV Basis*):* **Kerusakan Ginjal (*Kidney damage / nephrotoxicity*)**.
+*   *Perbandingan Regulasi Lain:* OSHA menetapkan PEL TWA **\\(0{,}005\text{ mg/m}^3\\)** (5 µg/m³) untuk seluruh senyawa kadmium, dengan batas tindakan (*Action Level*) sebesar **\\(0{,}0025\text{ mg/m}^3\\)**. NIOSH mengklasifikasikan kadmium sebagai karsinogen kerja potensial (*Ca*) dengan IDLH **\\(9\text{ mg/m}^3\\)**.
+
+#### b. Nilai Ambang Batas Permenaker No. 5 Tahun 2018 (Lampiran 3)
+Kementerian Ketenagakerjaan RI mengadopsi standar yang selaras penuh dengan ACGIH:
+*   **Nama Bahan Kimia:** Kadmium dan senyawa anorganiknya, sebagai Cd.
+*   **NAB (TWA 8 jam) Fraksi Inhalabel:** **\\(0{,}01\text{ mg/m}^3\\)**.
+*   **NAB (TWA 8 jam) Fraksi Respirabel:** **\\(0{,}002\text{ mg/m}^3\\)**.
+*   *Notasi:* **A2** (Karsinogenik Diperkirakan terhadap Manusia) dan **BEI** (simbol segitiga ▲).
+
+#### c. Makna Toksikologis Notasi "A2" dan Fraksi Respirabel
+*   **Notasi "A2" (*Suspected Human Carcinogen*):** Menandakan bahwa data epidemiologi pada pekerja manusia telah menunjukkan asosiasi kuat yang mengarah pada peningkatan risiko kanker (terutama karsinoma paru bronkogenik), didukung oleh bukti karsinogenisitas yang sangat jelas pada hewan coba.
+*   **Rasional Penetapan Limit Fraksi Respirabel (0,002 mg/m³):** Partikulat halus kadmium oksida respirabel (\\(< 2{,}5\text{--}4\ \mu\text{m}\\)) mampu menembus hingga kantung alveoli terminal, di mana laju absorpsinya mencapai 20%–50% langsung ke dalam aliran darah sistemik menuju hepar dan ginjal. Oleh karena itu, ambang fraksi respirabel ditetapkan 5 kali lebih ketat daripada fraksi inhalabel guna mencegah akumulasi kronis di korteks ginjal.
+
+---
+
+### 2. Standar BEI, Biomonitoring, dan Pembacaan Nilai \\(\beta_2\\)-Mikroglobulin
+
+Biomonitoring kadmium merupakan keharusan mutlak dalam surveilans medis pekerja industri baterai, elektroplating, dan peleburan:
+
+```
+                     [ STRATEGI BIOMONITORING KADMIUM OKUPASI ]
+                                         │
+        ┌────────────────────────────────┴────────────────────────────────┐
+        ▼                                                                 ▼
+[ DETERMINAN DOSIS INTERNAL (ACGIH BEI) ]                        [ DETERMINAN EFEK TUBULUS GINJAL ]
+• Kadmium Urin (U-Cd): 5 µg/g kreatinin (Notasi B)               • Beta-2 Mikroglobulin Urin (β2-MG)
+  - Mengukur Beban Tubuh Kumulatif (Body Burden)                   - < 300 µg/g kreatinin: Normal fisiologis
+• Kadmium Darah (B-Cd): 5 µg/L darah lengkap (Notasi B)           - 300 – 1.000 µg/g kreatinin: Insipien (REVERSIBEL)
+  - Mengukur Pajanan Terkini (recent exposure)                     - 1.000 – 10.000 µg/g kreatinin: IREVERSIBEL
+• WAKTU SAMPLING: Discretionary / Not Critical                     - > 10.000 µg/g kreatinin: Overt Nephropathy
+  (Kapan saja bebas, T1/2 tahunan)                               • Labil pada pH < 6,0! RBP sebagai alternatif stabil
+```
+
+#### a. Standar Indeks Pajanan Biologi (ACGIH BEI Edisi Terkini)
+Berdasarkan adopsi resmi ACGIH (2026):
+1.  **Kadmium dalam Urin (*Cadmium in urine* / U-Cd):**
+    *   **Nilai Baku BEI:** **\\(5\ \mu\text{g/g kreatinin}\\)**.
+    *   *Signifikansi Toksikokinetik:* Merupakan **indikator beban tubuh kumulatif seumur hidup (*cumulative body burden*)** yang mencerminkan penumpukan kadmium di dalam korteks ginjal. Nilai ini stabil dan tidak dipengaruhi oleh fluktuasi harian.
+2.  **Kadmium dalam Darah Lengkap (*Cadmium in blood* / B-Cd):**
+    *   **Nilai Baku BEI:** **\\(5\ \mu\text{g/L}\\)** darah lengkap.
+    *   *Signifikansi Toksikokinetik:* Terutama mencerminkan **pajanan okupasi terkini (*recent exposure*) dalam beberapa minggu hingga beberapa bulan terakhir**, sangat sensitif untuk mendeteksi lonjakan pajanan baru pada karyawan baru atau perubahan proses kerja industri.
+3.  **Waktu Pengambilan Sampel (*Sampling Time*):**
+    *   **Tidak Kritis / Kapan Saja (*Not Critical / Discretionary*)**.
+    *   *Rasional:* Karena waktu paruh eliminasi kadmium sangat panjang (darah berbulan-bulan, ginjal 10–30 tahun), konsentrasinya tidak berfluktuasi signifikan dalam satu siklus gilir kerja harian.
+4.  **Notasi Latar Belakang (*Background* / B):**
+    *   Mengingatkan dokter okupasi bahwa diet makanan harian (terutama beras, kerang-kerangan) dan kebiasaan merokok memberikan kontribusi latar belakang alami yang terdeteksi pada individu non-okupasi.
+5.  *Wawasan Regulasi Komparatif Internasional (HBM4EU / Konsensus Eropa 2021):*
+    Konsorsium HBM4EU dan Komite Penasihat Eropa (SCOEL) telah menetapkan nilai panduan biologis pekerja (*HBM-GVWorker*) yang lebih protektif, yaitu **\\(2\ \mu\text{g/g kreatinin}\\) untuk U-Cd** dan **\\(5\ \mu\text{g/L}\\) untuk B-Cd**, didasarkan pada studi kohort Chaumont et al. pada pekerja baterai Ni-Cd guna mencegah timbulnya disfungsi tubulus proksimal dini.
+
+---
+
+#### b. Pembacaan dan Interpretasi Klinis Nilai \\(\beta_2\\)-Mikroglobulin (\\(\beta_2\\)-MG) Urin
+\\(\beta_2\\)-MG adalah protein berat molekul rendah (12 kDa) yang difiltrasi bebas di glomerulus dan direabsorpsi 99,9% oleh sel tubulus proksimal. Penumpukan kadmium di lisosom tubulus merusak sistem reseptor megalin-kubilin, memicu kebocoran \\(\beta_2\\)-MG ke urin.
+
+Berdasarkan konsensus biomarker klinis Alfred Bernard (2004) dan adopsi HBM4EU:
+1.  **Kadar \\(< 300\ \mu\text{g/g kreatinin}\\):**
+    *   **Rentang Normal Fisiologis.** Fungsi reabsorpsi epitel tubulus kontortus proksimal ginjal masih utuh dan bekerja normal.
+2.  **Kadar \\(300\text{--}1.000\ \mu\text{g/g kreatinin}\\):**
+    *   **Disfungsi Tubulus Proksimal Awal / Insipien (*Incipient Tubular Dysfunction*).**
+    *   *Signifikansi Okupasi Kritis:* Pada stadium ini, kerusakan seluler **MASIH BERSIFAT REVERSIBEL**. Jika pekerja segera ditarik dari area pajanan (*medical removal*), kapasitas reabsorpsi tubulus ginjal memiliki peluang besar untuk pulih normal.
+3.  **Kadar \\(1.000\text{--}10.000\ \mu\text{g/g kreatinin}\\):**
+    *   **Disfungsi Tubulus Proksimal Berat dan IREVERSIBEL.**
+    *   *Prognosis:* Kerusakan membran basal dan hilangnya mikrovili *brush border* telah permanen. Meskipun pajanan kerja dihentikan total, kebocoran protein molekul rendah akan menetap dan **laju filtrasi glomerulus (eGFR) akan mengalami penurunan progresif terakselerasi seiring pertambahan usia pekerja**.
+4.  **Kadar \\(> 10.000\ \mu\text{g/g kreatinin}\\):**
+    *   **Nefropati Kadmium Nyata (*Overt Cadmium Nephropathy*).**
+    *   Telah terjadi destruksi nefron difus, sindrom mirip-Fanconi komplit, proteinuria campuran (LMWP disertai albuminuria akibat glomerulosklerosis sekunder), fibrosis interstisial, dan penurunan fungsi ginjal menuju Penyakit Ginjal Kronis stadium akhir (ESRD).
+5.  *Jebakan Analitis Pre-Analitik (Sangat Sering Diuji):*
+    **\\(\beta_2\\)-Mikroglobulin sangat labil dan terdegradasi secara instan oleh hidrolisis asam pada pH urin < 6,0**. Jika pH urin pekerja asam, pemeriksaan \\(\beta_2\\)-MG akan menghasilkan **negatif palsu (*false negative*)**. Oleh karena itu, dokter okupasi wajib mengukur pH saat penampungan spesimen atau menggunakan **Retinol-Binding Protein (RBP)** urin yang terbukti stabil pada semua rentang pH urin.
+
+---
+
+### 3. Tatalaksana Akut, Keracunan, dan Kontraindikasi Mutlak Terapi Kelasi
+
+Penanganan intoksikasi kadmium memiliki paradoks terapi yang sangat kontras dengan keracunan timbal, merkuri, atau arsenik:
+
+```
+                                [ ALGORITMA PENANGANAN KERACUNAN KADMIUM ]
+                                                    │
+         ┌──────────────────────────────────────────┴──────────────────────────────────────────┐
+         ▼                                                                                     ▼
+[ INHALASI UAP/FUME KADMIUM (CdO) ]                                                   [ KONTRAINDIKASI MUTLAK TERAPI KELASI ]
+1. Evakuasi segera ke udara bersih                                                    • PADA NEFROPATI / BEBAN KRONIS:
+2. Waspadai masa laten (4–12 jam)!                                                      KELASI (BAL, EDTA) DIKONTRAINDIKASIKAN
+3. Pantau ketat ARDS & Pneumonitis Kimiawi                                               SECARA MUTLAK (HARMFUL & FATAL)!
+4. Oksigenasi lembap, ventilator & PEEP                                               • Rasional: Mobilisasi Cd hepar ──►
+5. Pasang jalur IV, pantau balans cairan                                                membanjiri tubulus ginjal ──►
+6. Kortikosteroid aerosol/IV dipertimbangkan                                            NEKROSIS TUBULAR AKUT (ATN) MASIF!
+7. KELASI TIDAK BERPERAN / KONTRAINDIKASI                                             • Terapi definitif: SUPORTIF MURNI
+```
+
+#### a. Tatalaksana Keracunan Akut Inhalasi Uap/Fume Kadmium Oksida (CdO)
+1.  **Evakuasi dan Dekontaminasi Segera:**
+    Segera pindahkan korban dari ruang kerja terbatas ke udara bersih; tanggalkan pakaian kerja yang terkontaminasi debu CdO.
+2.  **Kewaspadaan Masa Laten (*Delayed Latency Vigilance*):**
+    Pasien yang baru menghirup uap CdO sering kali hanya merasa sedikit batuk atau iritasi ringan, menyerupai *metal fume fever* biasa. **Wajib dirawat inap untuk observasi minimal 24 hingga 72 jam** karena ancaman kegagalan respirasi akut.
+3.  **Tatalaksana Pneumonitis Kimiawi dan Edema Paru Non-Kardiogenik / ARDS:**
+    *   Berikan suplementasi oksigen lembap aliran tinggi guna mempertahankan saturasi \\(\text{SpO}_2 > 92\%\\).
+    *   Jika timbul tanda-tanda gagal napas akut, segera lakukan intubasi endotrakeal dan inisiasi **ventilasi mekanik invasif dengan strategi proteksi paru (*lung-protective mechanical ventilation*) menggunakan volume tidal rendah (6 mL/kgBB prediksi) dan PEEP adekuat** untuk mencegah kolaps alveoli.
+    *   Pemberian kortikosteroid intravena (seperti metilprednisolon) sering dipertimbangkan pada fase eksudatif dini pneumonitis kimiawi untuk meredakan badai sitokin alveolar, meskipun bukti klinisnya bersifat empirik.
+4.  **Tatalaksana Ingesti Akut Garam Kadmium:**
+    *   Induksi muntah **dikontraindikasikan** karena sifat garam kadmium yang mengikis mukosa.
+    *   Bilas lambung hanya dipertimbangkan pada kedatangan awal (< 1 jam) dengan selang nasogastrik lunak.
+    *   Berikan resusitasi cairan intravena kristaloid agresif untuk mengganti kehilangan cairan gastrointestinal masif, mempertahankan volume intravaskular, dan melindungi perfusi ginjal dari ancaman Nekrosis Tubular Akut (ATN) iskemik.
+
+---
+
+#### b. KONTRAINDIKASI MUTLAK: Larangan Penggunaan Terapi Kelasi pada Toksisitas Kadmium!
+
+> **Peringatan Kritis Dewan Penguji (*Lethal Board Trap*):**
+> **PADA KASUS KERACUNAN KADMIUM KRONIS DENGAN KERUSAKAN GINJAL, TERAPI KELASI DENGAN BAL (DIMERKAPROL) ATAU \\(\text{CaNa}_2\text{EDTA}\\) DIKONTRAINDIKASIKAN SECARA MUTLAK KARENA MEMICU GAGAL GINJAL AKUT AKSELERATIF YANG MEMATIKAN!**
+
+*   **Rasional Mekanistik Molekuler (Mengapa Kelasi Berbahaya?):**
+    1.  Di dalam tubuh, sebagian besar beban kadmium tubuh telah tersimpan di hepar dan ginjal, terikat relatif aman oleh protein endogen **Metalotionein (Cd-MT)**.
+    2.  Pemberian agen kelator ditiol seperti **BAL (Dimerkaprol)** atau agen polikarboksilat seperti **\\(\text{CaNa}_2\text{EDTA}\\)** akan bersaing dengan metalotionein, membentuk kompleks kelat baru: **Kadmium-BAL** atau **Kadmium-EDTA**.
+    3.  Kompleks kelat eksogen ini memobilisasi kadmium dalam jumlah besar dari hepar dan cadangan jaringan lunak perifer ke dalam kompartemen vaskular.
+    4.  Kompleks Kadmium-Kelat tersebut difiltrasi secara masif di glomerulus dan **mengalami disosiasi di dalam lumen tubulus ginjal**, atau direabsorpsi oleh epitel tubulus proksimal.
+    5.  Hal ini membanjiri sel-sel tubulus ginjal dengan konsentrasi **kation \\(\text{Cd}^{2+}\\) bebas yang sangat pekat secara mendadak**, melumpuhkan fungsi lisosom dan mitokondria, serta memicu **Nekrosis Tubular Akut (ATN) masif dan gagal ginjal anurik fulminan**.
+    6.  *Konsensus Kedokteran Toksikologi Modern (Chakif & Furrer, 2026):* *"For cadmium, routine chelation is generally not recommended, because evidence of benefit is limited and some chelators may increase toxicity. Supportive renal and bone care with exposure reduction is the standard"*.
+*   *Prinsip Jawaban Ujian:* Tidak ada antidotum spesifik yang aman untuk kadmium. Tatalaksana tunggal terbaik pada toksisitas kronis adalah **penghentian total pajanan kerja (*source removal*)**, proteksi fungsi ginjal, tata laksana hipertensi, serta suplementasi kalsium dan vitamin D aktif (kalsitriol) untuk menjaga densitas tulang.
+
+---
+
+### 4. Tatalaksana Okupasi: Individu dan Komunitas
+
+Sebagai dokter spesialis, pendekatan Anda wajib mencakup aspek klinis medikolegal, penentuan status kelaikan kerja, dan pengendalian lingkungan industri serta komunitas:
+
+```
+                      [ MANAJEMEN OKUPASI KOMPREHENSIF KADMIUM ]
+                                          │
+        ┌─────────────────────────────────┼─────────────────────────────────┐
+        ▼                                 ▼                                 ▼
+[ 7 LANGKAH PERMENKES 11/2022 ]    [ KELAIKAN KERJA (FITNESS) ]      [ MANAJEMEN & KOMUNITAS ]
+1. Diagnosis Klinis (ICD-10)       • Fit: Normal, U-Cd < 2–5 µg/g    • Eliminasi/Substitusi:
+2. Pajanan Lapangan (Baterai/Weld) • Fit with Restriction:             Baterai Li-ion, solder non-Cd
+3. Hubungan Kausal Ilmiah (IARC 1)   U-Cd 2–5, β2-MG < 300,          • LEV filter HEPA, wet cleaning
+4. Besaran Dosis (NAB, BEI, masa)    dilarang area uap/fume Cd       • STOP MEROKOK DI PABRIK!
+5. Faktor Host (Defisiensi Fe/Ca)  • Temporary Unfit: U-Cd > 5,        (Rokok = 1,7 µg Cd/btg + hand-to-mouth)
+6. Faktor Luar (ROKOK & BERAS)       β2-MG 300–1.000 (reversibel)    • Komunitas: Pantau limbah sawah,
+7. KESIMPULAN DIAGNOSIS PAK        • Unfit (Permanent): β2-MG >1000,   cegah bencana beras Itai-itai
+                                     ESRD, emfisema, kanker paru
+```
+
+#### a. Penerapan 7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022)
+Kasus: Pekerja pabrik manufaktur baterai Nikel-Kadmium (Ni-Cd) atau tukang patri perak (*silver brazing*) dengan proteinuria berat molekul rendah atau batuk kronis dengan emfisema:
+1.  **Langkah 1 (Diagnosis Klinis):**
+    *Toxic nephropathy due to cadmium / Low Molecular Weight Proteinuria* (ICD-10: N14.3), *Panacinar emphysema induced by cadmium* (J43.9), atau *Bronchogenic carcinoma* (C34).
+2.  **Langkah 2 (Pajanan di Tempat Kerja):**
+    Pekerja terpajan debu aerosol kadmium oksida selama perakitan pasta pelat baterai Ni-Cd atau menghirup uap *brazing* perak-kadmium tanpa sungkup hisap.
+3.  **Langkah 3 (Hubungan Kausalitas Pajanan dan Klinis):**
+    Secara biologis dan toksikologis terbukti kuat: kompleks Cd-MT difiltrasi glomerulus, didegradasi lisosom tubulus proksimal, melepaskan \\(\text{Cd}^{2+}\\) bebas yang merusak reseptor megalin-kubilin dan mitokondria memicu kebocoran \\(\beta_2\\)-MG dan RBP; inhibisi \\(\alpha_1\\)-antitripsin memicu emfisema; penghambatan enzim perbaikan DNA jari seng memicu karsinoma bronkogenik.
+4.  **Langkah 4 (Besarnya Dosis Pajanan):**
+    Konsentrasi kadmium udara kerja melebihi NAB Permenaker 5/2018 (\\(> 0{,}01\text{ mg/m}^3\\) inhalabel atau \\(> 0{,}002\text{ mg/m}^3\\) respirabel); biomonitoring menunjukkan U-Cd melampaui BEI (\\(> 5\ \mu\text{g/g kreatinin}\\)); masa kerja > 5 tahun; tidak ada respirator khusus partikulat P100.
+5.  **Langkah 5 (Faktor Kerentanan Individu):**
+    Evaluasi defisiensi zat besi serum (ferritin rendah) atau kalsium yang menstimulasi transporter DMT-1 usus sehingga melipatgandakan absorpsi kadmium; jenis kelamin wanita pascamenopause; status penyakit ginjal bawaan.
+6.  **Langkah 6 (Faktor di Luar Tempat Kerja - SANGAT KRITIS):**
+    *   **Evaluasi Riwayat Merokok (*Smoking History*):** Rokok adalah sumber pajanan kadmium terbesar di luar tempat kerja (1,7 µg Cd/batang). Wajib dinilai indeks Brinkman (batang/hari × tahun merokok).
+    *   **Konsumsi Pangan/Beras Tercemar:** Evaluasi sumber beras makanan pokok keluarga (menyingkirkan konsumsi beras dari sawah yang diairi limbah pertambangan seng/timbal).
+7.  **Langkah 7 (Kesimpulan Diagnosis Okupasi):**
+    Ditegakkan secara sah sebagai **Penyakit Akibat Kerja (PAK)** berdasarkan **Perpres No. 7 Tahun 2019**:
+    *   Jika nefropati tubular atau emfisema: Lampiran I.a Butir 8 ("Penyakit yang disebabkan oleh kadmium atau persenyawaannya").
+    *   Jika kanker paru bronkogenik: Lampiran III Butir 17 ("Kadmium dan senyawanya").
+    *   Pekerja berhak memperoleh jaminan perawatan medis dan kompensasi kecacatan dari BPJS Ketenagakerjaan (JKK).
+
+---
+
+#### b. Penilaian Kelaikan Kerja (*Fitness for Work*)
+*   **Fit (Laik Kerja Penuh):** Pekerja sehat tanpa keluhan ginjal/paru, fungsi spirometri normal, hasil U-Cd memenuhi standar (\\(< 2\text{--}5\ \mu\text{g/g kreatinin}\\)), dan \\(\beta_2\\)-MG urin normal (\\(< 300\ \mu\text{g/g kreatinin}\\)).
+*   **Fit with Restriction (Laik dengan Pembatasan):** Pekerja dengan U-Cd borderline (2–5 µg/g kreatinin) namun \\(\beta_2\\)-MG masih normal (< 300 µg/g kreatinin); **dilarang bekerja di area bersuhu panas tinggi (*brazing/furnace*) atau area pencampuran pasta debu Cd konsentrasi tinggi**; dialihkan ke area perakitan kering berventilasi baik atau logistik tertutup dengan evaluasi fungsi ginjal setiap 6 bulan.
+*   **Temporary Unfit (Tidak Laik Sementara / *Medical Removal*):**
+    Pekerja dengan **U-Cd > 5 µg/g kreatinin**, ATAU pekerja dengan **\\(\beta_2\\)-MG urin antara 300 hingga 1.000 µg/g kreatinin** (karena disfungsi tubulus pada fase ini masih reversibel jika pajanan segera diputus), atau pekerja yang baru pulih dari pneumonitis kimiawi akut.
+    *Tindakan Medis:* Wajib ditarik dari area kerja berpotensi pajanan kadmium (*medical removal protection*), diobservasi berkala, dan dilakukan audit higienis industri.
+*   **Unfit (Tidak Laik Kerja Permanen):** Pekerja dengan **\\(\beta_2\\)-MG urin > 1.000 µg/g kreatinin** (kerusakan tubulus proksimal telah permanen/ireversibel), pekerja dengan penurunan eGFR progresif/CKD, emfisema paru berat (penurunan \\(\text{FEV}_1 < 50\%\\)), atau terdiagnosis karsinoma paru. Direkomendasikan untuk terminasi pajanan permanen dan penetapan persentase kecacatan kerja JKK.
+
+---
+
+#### c. Rekomendasi Manajemen Industri dan Komunitas
+1.  **Hierarki Pengendalian Bahaya Kimiawi Industri (Permenaker 5/2018 & Kepmenaker 187/1999):**
+    *   *Eliminasi & Substitusi:* Mengganti baterai Ni-Cd dengan teknologi baterai Litium-ion (*Li-ion*) atau Nikel-Metal Hidrida (*NiMH*); beralih ke paduan patri perak bebas kadmium (*cadmium-free brazing alloys*).
+    *   *Rekayasa Teknis (*Engineering Controls*):* Penutupan total tungku peleburan dan reaktor pasta baterai; pemasangan ventilasi pembuangan lokal (*Local Exhaust Ventilation* / LEV) bertudung hisap yang dilengkapi **filter partikulat berefisiensi tinggi (HEPA)** sebelum udara dibuang ke lingkungan; pembersihan lantai secara basah (*wet vacuuming*), dilarang menyapu kering.
+    *   *Pengendalian Administratif:* Pelatihan kerja aman, rotasi shift, penyediaan fasilitas ruang ganti ganda dan fasilitas mandi dekontaminasi wajib sebelum pulang.
+    *   *Alat Pelindung Diri (APD):* Respirator pemurni udara bertenaga (*Powered Air-Purifying Respirator* / PAPR) dengan filter partikulat P100 bersertifikasi; pakaian pelindung kimia Tyvek.
+2.  **Intervensi Bahaya Rokok di Tempat Kerja (*Workplace Smoking Cessation*):**
+    *   Pekerja yang merokok di pabrik kadmium menghadapi **bahaya ganda sinergis**: (1) asupan kadmium sistemik langsung dari daun tembakau rokok (1,7 µg/batang), dan (2) kontaminasi tangan-ke-mulut (*hand-to-mouth transfer*) di mana debu kadmium yang menempel di jari pekerja berpindah ke puntung rokok dan ikut terbakar terhirup langsung ke alveoli.
+    *   *Kebijakan Manajemen:* Manajemen wajib memberlakukan **larangan merokok 100% di seluruh area pabrik** dan menyediakan klinik program konseling berhenti merokok (*smoking cessation*) bagi tenaga kerja.
+3.  **Proteksi Komunitas dan Bahaya Makanan/Beras Tercemar:**
+    *   Tanaman padi (*Oryza sativa*) memiliki afinitas penyerapan kadmium tanah yang sangat tinggi melalui sistem perakarannya.
+    *   *Pencegahan Tragedi Lingkungan:* Perusahaan wajib mengolah limbah cair industri (*wastewater treatment plant*) hingga kadar kadmium memenuhi baku mutu lingkungan ketat, dan **dilarang keras membuang air limbah ke sungai yang digunakan untuk irigasi persawahan pangan masyarakat** guna mencegah terulangnya wabah osteomalasia Penyakit Itai-Itai.
+
+---
+
+### 5. Keterangan Lain: Karsinogenisitas IARC dan Standar Baku Mutu
+
+```
+                     [ STATUS KARSINOGENISITAS KADMIUM (IARC MONOGRAPH 100C) ]
+                                                │
+         ┌──────────────────────────────────────┴──────────────────────────────────────┐
+         ▼                                                                             ▼
+[ IARC GRUP 1: KARSINOGEN MANUSIA ]                                           [ REGULASI AIR MINUM ]
+• Terbukti Karsinogenik pada Manusia (Causal association)                      • Standar WHO Guidelines:
+• KANKER PARU BRONKOGENIK (Target Organ Primer)                                  Batas Maksimum: 0,003 mg/L (3 µg/L)
+• Asosiasi Positif Teramati: Kanker Prostat & Ginjal                          • Permenkes No. 2 Tahun 2023:
+• Bekerja via Penghambatan Enzim Perbaikan DNA (NER/BER)                         Batas Maksimum: 0,003 mg/L (3 ppb)
+  melalui pendesakan seng pada protein Zinc-Finger                             • Pangan: Akumulasi tinggi pada beras & kerang
+```
+
+#### a. Klasifikasi Karsinogenisitas IARC (Monograph Volume 100C)
+Berdasarkan evaluasi komprehensif IARC Monograph Volume 100C:
+*   **Kadmium dan Persenyawaan Kadmium (*Cadmium and cadmium compounds*):**
+    *   **IARC Grup 1 (*Carcinogenic to humans*)**.
+    *   *Target Organ Keganasan Primer:* **Kanker Paru (*Cancer of the lung*)**.
+    *   *Keganasan Lain:* Hubungan positif yang secara epidemiologis bermakna juga dilaporkan pada **kanker ginjal (*kidney cancer*)** dan **kanker prostat (*prostatic cancer*)**.
+    *   *Karakteristik Biologis:* Kadmium tidak memiliki nilai ambang aman mutlak untuk efek karsinogenik; pajanan inhalasi kerja harus ditekan hingga batas serendah mungkin (*ALARA principle*).
+
+#### b. Baku Mutu Kadmium pada Air Minum
+*   **Standar Baku Mutu Internasional (WHO Guidelines for Drinking-water Quality):**
+    Konsentrasi maksimum kadmium dalam air minum ditetapkan sebesar **\\(0{,}003\text{ mg/L}\\)** (atau **\\(3\ \mu\text{g/L}\\) / 3 ppb**). Nilai panduan ini diturunkan untuk melindungi populasi umum dari akumulasi beban tubuh seumur hidup yang berisiko merusak tubulus ginjal.
+*   **Standar Regulasi Nasional Indonesia (Permenkes No. 2 Tahun 2023):**
+    Menetapkan batas maksimum kadmium dalam air minum sebesar **\\(0{,}003\text{ mg/L}\\)**.
+
+---
+
+### 6. *Clinical Pearls* dan Jebakan Ujian Khusus Kadmium
+
+Kuasai konsep-konsep krusial yang kerap menjadi batu sandungan para kandidat spesialis:
+
+```
+                            [ JEBAKAN UJIAN DEWAN SPESIALIS KADMIUM ]
+                                                │
+         ┌──────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                      ▼                                      ▼
+ [ JEBAKAN 1: TERAPI KELASI ]            [ JEBAKAN 2: URIN ASAM β2-MG ]         [ JEBAKAN 3: FUME FEVER VS CdO ]
+ JANGAN PERNAH berikan BAL atau          β2-MG labil pada urin pH < 6,0!        Jangan samakan CdO dengan seng!
+ EDTA pada nefropati kadmium!            Urin asam ──► β2-MG terdegradasi       Demam uap seng jinak & sembuh 24 jam.
+ Kelasi MEMBOBARDIR tubulus ginjal       ──► NEGATIF PALSU DISFUNGSI GINJAL.    Uap CdO memiliki masa laten 4–12 jam,
+ dengan ion Cd²⁺ bebas ──► ATN FATAL.   Wajib uji pH atau periksa RBP Urin!    lalu meledak jadi PNEUMONITIS & ARDS.
+```
+
+*   **Clinical Pearl 1: Paradoks Terapi Kelasi Kadmium**
+    Tanamkan prinsip ini: Kadmium adalah pengecualian utama dalam terapi antidotum logam berat. Pada timbal kita memberikan CaNa2EDTA, pada merkuri/arsenik kita memberikan DMPS/DMSA, namun **pada keracunan kadmium kronis, terapi kelasi adalah MALPRAKTIK**. Pemberian BAL atau EDTA memobilisasi kadmium hepar dan mengarahkannya langsung ke nefron ginjal, mengubah disfungsi tubulus kronis menjadi **Nekrosis Tubular Akut (ATN) anurik yang fatal**. Terapi definitif kadmium adalah **SUPORTIF MURNI dan PENGHENTIAN PAJANAN KERJA**.
+*   **Clinical Pearl 2: Mengapa Harus Menguji pH Urin pada Pemeriksaan \\(\beta_2\\)-MG?**
+    Bila seorang pekerja pabrik baterai Ni-Cd memiliki kadar U-Cd tinggi (\\(8\ \mu\text{g/g kreatinin}\\)) namun hasil \\(\beta_2\\)-MG urin dilaporkan normal (< 300 µg/g kreatinin), **jangan langsung menyimpulkan ginjalnya aman**. Periksa pH spesimen urin tersebut: **jika pH urin < 6,0, protein \\(\beta_2\\)-MG telah hancur oleh asam (*acid hydrolysis*)**. Minta laboratorium mengulang uji dengan menambahkan larutan dapar basa saat sampling, atau periksa **Retinol-Binding Protein (RBP)** yang stabil pada urin asam.
+*   **Board Trap 1: Jebakan Diagnosis Uap Pengelasan (Metal Fume Fever vs. CdO Fume)**
+    Penguji sering menyajikan kasus: *"Seorang tukang las mengalami demam, menggigil, dan batuk 6 jam setelah mematri paduan perak di ruang tertutup. Dokter klinik perusahaan mendiagnosis metal fume fever dan menyuruhnya pulang istirahat. Keesokan harinya pasien dibawa ke IGD dengan sianosis dan hemoptisis. Apa kesalahan fatal dokter tersebut?"*
+    **Jawab dengan tegas:** *"Dokter tersebut salah mengidentifikasi bahan; patri perak sering mengandung paduan Kadmium (Ag-Cd). Berbeda dengan demam uap seng yang jinak, inhalasi uap kadmium oksida memiliki masa laten 4–12 jam yang menipu sebelum bermanifestasi menjadi Pneumonitis Kimiawi Akut dan Edema Paru Non-Kardiogenik / ARDS yang mematikan. Pasien las paduan kadmium wajib diobservasi ketat minimal 24–48 jam di rumah sakit"*.
+*   **Board Trap 2: Penurunan Paradoksal U-Cd pada Stadium Akhir Ginjal**
+    Penguji dapat bertanya: *"Pekerja pabrik kadmium senior dengan proteinuria berat dan eGFR anjlok tiba-tiba kadar U-Cd urinnya turun dari 18 µg/g menjadi 3 µg/g kreatinin, apakah ini berarti tubuhnya membaik?"*
+    **Jawab:** *"Bukan membaik, Dokter, melainkan pertanda kerusakan ginjal stadium akhir. U-Cd mencerminkan beban kadmium yang ditahan oleh sel tubulus proksimal. Bila massa sel tubulus telah mengalami nekrosis dan fibrosis luas, ginjal kehilangan kapasitas menahan kadmium, sehingga kadar ekskresi U-Cd dapat anjlok secara paradoksal sementara beban sistemik tubuh tetap sangat toksik"*.
+
+---
+
+### Rujukan Dokumen Acuan (*Source Grounding*):
+1.  **ACGIH (2026 Edition).** *TLVs® and BEIs®: Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices*:
+    *   Tabel Adopsi TLV: *Cadmium and inorganic compounds, as Cd* [CAS 7440-43-9] (TLV-TWA Inhalable fraction: 0,01 mg/m³; Respirable fraction: 0,002 mg/m³; Notasi A2, BEI; TLV Basis: Kidney damage).
+    *   Tabel Adopsi BEI: *Cadmium in urine (U-Cd)*: **5 µg/g kreatinin** (Notasi B); *Cadmium in blood (B-Cd)*: **5 µg/L** (Notasi B); Waktu Sampling: *Not Critical / Discretionary*.
+    *   Definisi dan Signifikansi Notasi A2 (*Suspected Human Carcinogen*) dan Waktu Sampling *Discretionary* (Determinant dengan waktu paruh tahunan).
+2.  **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** *tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja*:
+    *   Lampiran 3: Tabel Nilai Ambang Batas Faktor Kimia — Kadmium dan persenyawaan anorganik, sebagai Cd (NAB Inhalabel 0,01 mg/m³, Respirabel 0,002 mg/m³, Notasi A2, Simbol Segitiga BEI ▲; Target Ginjal dan Karsinogenisitas).
+3.  **Dib Chakif & Julien Furrer (2026).** *Heavy Metal Toxicity in Clinical and Environmental Health.* International Journal of Molecular Sciences, 27(3): 03513:
+    *   Tinjauan Komprehensif Toksikologi Kadmium: Waktu Paruh Ginjal 20–30 Tahun; Biomarker Paparan U-Cd & B-Cd; **Pernyataan Kontraindikasi Terapi Kelasi Rutin pada Toksisitas Kadmium Kronis (*Benefit is limited and some chelators may worsen toxicity / increase nephrotoxicity*)**; Tatalaksana Suportif Ginjal & Tulang dengan Penghentian Pajanan; serta Asosiasi Rokok sebagai Sumber Kadmium Non-Okupasi.
+4.  **Farida Lamkarkach et al. / HBM4EU Initiative (2021).** *Human biomonitoring initiative (HBM4EU): Human biomonitoring guidance values (HBM-GVs) derived for cadmium and its compounds.* Environment International, 147: 106337:
+    *   Kajian Mendalam Biomonitoring Pekerja: Nilai Baku ACGIH BEI U-Cd 5 µg/g kreatinin dan B-Cd 5 µg/L; Rekomendasi HBM-GVWorker U-Cd 2 µg/g kreatinin dan B-Cd 5 µg/L; Kinetika Waktu Paruh U-Cd (10–40 Tahun) vs B-Cd (Beberapa Minggu-Bulan); serta Derajat Klinis Reversibilitas Proteinuria Tubulus Bernard (2004) (<300 normal, 300–1000 reversibel, 1000–10.000 ireversibel, >10.000 overt nephropathy).
+5.  **Célia Ventura et al. / HBM4EU Initiative (2021).** *Biomarkers of effect as determined in human biomonitoring studies on hexavalent chromium and cadmium in the period 2008–2020.* Environmental Research, 197: 110998:
+    *   Biomarker Efek Disfungsi Tubulus Proksimal: Peran Baku Emas Beta-2 Mikroglobulin (β2-MG, 12 kDa); **Ketidakstabilan β2-MG pada Urin Asam (pH < 6,0)**; Keunggulan Retinol-Binding Protein (RBP, 21 kDa) yang Stabil pada pH Asam; serta Enzim Lisosom NAG (>130 kDa) sebagai Penanda Kerusakan Seluler Aktif Tubulus.
+6.  **IARC (2012).** *Cadmium and Cadmium Compounds (IARC Monographs Vol. 100C)*:
+    *   Evaluasi Karsinogenisitas Manusia: IARC Grup 1 untuk Kadmium dan Senyawanya (Kanker Paru Bronkogenik, Kanker Prostat, Kanker Ginjal); Studi Pekerja Pemulihan Kadmium dan Baterai Ni-Cd [253–256]; serta Kandungan Tembakau Rokok (1,7 µg Cd/batang).
+7.  **Hodgson, E. (2010).** *A Textbook of Modern Toxicology (4th ed., John Wiley & Sons)*:
+    *   Bab 3 & 4: Sejarah Penyakit Itai-Itai di Jepang & Waktu Paruh Biologis 30 Tahun; Akumulasi Ginjal & Peran Cd-MT di Lisosom Tubulus Proksimal; Toksisitas Akut Pneumonitis Kimiawi & Edema Paru Inhalasi Uap Kadmium; Karsinogenesis Paru; serta Efek Samping Obat Kelator BAL dan EDTA.
+8.  **Peraturan Presiden Republik Indonesia Nomor 7 Tahun 2019 & Permenkes No. 11 Tahun 2022:**
+    *   Penyakit Akibat Kerja Faktor Kimia Kadmium (Lampiran I.a Butir 8 Perpres 7/2019); Kanker Akibat Kerja Kadmium (Lampiran III Butir 17 Perpres 7/2019); serta Tujuh Langkah Diagnosis Okupasi Permenkes 11/2022.
+9.  **Peraturan Menteri Kesehatan Republik Indonesia Nomor 2 Tahun 2023:**
+    *   Standar Baku Mutu Kesehatan Lingkungan untuk Media Air Minum: Batas Maksimum Kadar Kadmium Sebesar **0,003 mg/L (3 µg/L)**.
+
+Kuasai seluruh integrasi regulasi, pemahaman biomarker disfungsi tubulus proksimal, dan kehati-hatian farmakologis ini secara sempurna, Dokter. Di meja ujian dewan spesialis, argumentasi berbasis bukti ilmiah yang kuat akan membuktikan integritas profesional Anda sebagai calon Spesialis Kedokteran Okupasi.
+
+---
+
+🩺 Apakah Anda ingin kita simulasikan latihan kasus meja hijau: seorang pekerja peleburan paduan perak (*silver brazing*) berusia 44 tahun yang mengeluh sesak napas exertional dengan hasil spirometri obstruksi emfisematosa, U-Cd \\(7{,}2\ \mu\text{g/g kreatinin}\\), dan \\(\beta_2\\)-MG urin \\(650\ \mu\text{g/g kreatinin}\\), bagaimana Anda memandu proses **penarikan kerja (*medical removal*)**, mengevaluasi **reversibilitas tubulus ginjalnya**, menangani **riwayat merokoknya sebagai faktor perancu**, dan menyusun **laporan klaim Penyakit Akibat Kerja (PAK)** ke BPJS Ketenagakerjaan?

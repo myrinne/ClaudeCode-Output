@@ -1,0 +1,314 @@
+Sebagai penguji Dewan Ujian Nasional Spesialis Kedokteran Okupasi (Sp.Ok), saya mengingatkan Anda bahwa pemahaman debu organik menuntut integrasi antara toksikologi industri, imunopatologi saluran napas, aerodinamika partikel inhalabel versus torasik, serta ketelitian regulasi medikolegal nasional maupun internasional. Jangan terjebak menyamakan mekanisme debu organik dengan pneumokoniosis debu mineral anorganik; debu organik bekerja melalui efek iritasi kimiawi, pelepasan alarmin/endotoksin, hipersensitivitas imunologis (tipe I dan IV), serta karsinogenesis jaringan epitel respirasi atas.
+
+Berikut adalah catatan *board exam* komprehensif yang terbagi dalam dua bagian mandiri: **(A) Debu Kayu** dan **(B) Debu Kapas / Bisinosis**, masing-masing dijabarkan dalam 14 poin standar dewan penguji.
+
+---
+
+# BAGIAN A: DEBU KAYU (*WOOD DUST*)
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Karakteristik Fisik-Kimia:** Debu kayu merupakan bioaerosol heterogen dan mudah terbakar (*combustible solid*) yang dihasilkan dari proses mekanis pengolahan kayu. Komponen kimianya terdiri dari selulosa (40–50%), hemiselulosa (20–30%), lignin (20–30%), serta fraksi ekstraktif polar/nonpolar (asam resin, terpenoid, tanin, flavonoid, kuinon, dan stilben).
+* **Kayu Keras (*Hardwood*) vs. Kayu Lunak (*Softwood*):**
+  * **Kayu Keras (*Angiospermae* / berdaun lebar):** Contoh: pohon *beech* (*Fagus sylvatica*), *oak* (*Quercus*), mahoni, dan jati (*teak*). Kayu keras memiliki struktur serat padat dengan kandungan tanin, flavonoid, dan polifenol tinggi yang terbukti bersifat genotoksik dan karsinogenik.
+  * **Kayu Lunak (*Gymnospermae* / konifer/berdaun jarum):** Contoh: pinus, cemara (*fir*), *spruce*, dan *Western red cedar* (*Thuja plicata*). Kayu lunak kaya akan asam resin dan senyawa berberat molekul rendah seperti **asam plikatat (*plicatic acid*)** yang merupakan sensitisator kuat saluran napas.
+* **Klasifikasi Karsinogenisitas:**
+  * **IARC (International Agency for Research on Cancer):** **Grup 1** (*Carcinogenic to humans*) untuk **semua debu kayu (*wood dust*)**, dengan organ target utama karsinoma kavum nasi dan sinus paranasalis (khususnya adenokarsinoma) serta karsinoma nasofaring.
+  * **ACGIH:**
+    * Kayu Keras (*Hardwood* seperti *beech* dan *oak*): Kategori **A1** (*Confirmed Human Carcinogen*).
+    * Kayu Lunak (*Softwood*): Kategori **A4** (*Not Classifiable as a Human Carcinogen*) atau **A2/A3** tergantung spesies kayu spesifik; *Western red cedar* diberi notasi **Sensitizer (SEN)**.
+
+### 2. Sumber Pajanan di Sektor Industri
+1. **Industri Pengolahan Kayu Primer:** Tempat penggergajian kayu gelondongan (*sawmills*), pemotongan balok, dan pabrik kayu lapis (*plywood / veneer*).
+2. **Industri Mebel dan Furnitur Kayu:** Pengampelasan (*sanding*), penyerutan, pemotongan (*sawing*), dan pembubutan kayu keras (*oak*, *beech*, jati).
+3. **Konstruksi Bangunan dan Perkayuan (*Carpentry & Joinery*):** Tukang kayu konstruksi, pemasangan lantai parket kayu, pembuatan kusen, pintu, dan kabinet dapur.
+4. **Industri Bubur Kertas dan Kertas (*Pulp and Paper Mills*):** Pengupasan kulit kayu (*debarking*) dan pencacahan (*wood chipping*).
+5. **Pembuatan Alat Musik dan Kerajinan Kayu:** Pengerjaan detail menggunakan kayu eksotis yang mengandung kadar bahan kimia ekstraktif sangat iritatif.
+
+### 3. Deposisi dan Klirens Partikel (Toksikokinetik)
+* **Karakteristik Aerodinamis:** Partikel debu kayu yang dihasilkan dari pemotongan dan pengampelasan didominasi oleh partikel berukuran relatif besar (fraksi inhalabel, diameter aerodinamis \\(>10\ \mu\text{m}\\), sebagian besar berkisar antara \\(5\text{--}25\ \mu\text{m}\\)).
+* **Deposisi Impaksi:** Akibat ukurannya yang besar dan aliran turbulen di hidung, partikel debu kayu mengalami **deposisi impaksi inersial masif pada mukosa rongga hidung anterior dan turbinat media serta sinus etmoidalis**, sehingga hanya sebagian kecil fraksi respirabel (\\(<5\ \mu\text{m}\\)) yang mencapai alveolus.
+* **Klirens Mukosiliar Hidung:** Dalam keadaan fisiologis, partikel dibersihkan oleh eskalator mukosiliar nasofaring menuju orofaring untuk ditelan. Namun, bahan kimia ekstraktif kayu melumpuhkan gerakan silia epitel hidung (*ciliostasis*), memicu hipertrofi sel goblet, dan memperpanjang waktu klirens mukosiliar dari menit menjadi berjam-jam, menyebabkan retensi karsinogen lokal yang sangat lama pada mukosa hidung.
+
+### 4. Patogenesis Molekuler dan Seluler
+1. **Karsinogenesis Sinonasal (Adenokarsinoma):** Paparan kronis debu kayu keras menginduksi inflamasi berkepanjangan, metaplasia skuamosa mukosa respiratorius hidung, hilangnya aktivitas silia, dan pembentukan lesi displasia. Senyawa ekstraktif kayu (tanin, kuinon, radikal bebas) memicu mutasi somatik, termasuk mutasi dan inaktivasi transkripsional gen supresor tumor **TP53** serta aberasi kromosom pada sel epitel silindris sinus etmoidalis, yang berujung pada terbentuknya **Sino-Nasal Intestinal-Type Adenocarcinoma (ITAC)**.
+2. **Imunopatogenesis Asma Kerja (*Occupational Asthma*):**
+   * *Mekanisme Alergenik Molekul Rendah:* Asam plikatat pada kayu *Western red cedar* mengikat protein pejamu (*hapten-carrier protein complex*) membentuk antigen lengkap yang merangsang sintesis antibodi **IgE spesifik**, degranulasi sel mast, dan bronkokonstriksi akut.
+   * *Mekanisme Non-IgE / Iritatif:* Terpenoid dan asam abietat merangsang pelepasan zat neurokinin, neuropeptida (Substance P), dan stimulasi reseptor sensorik C-fiber di saluran napas, memicu hiperreaktivitas bronkus non-spesifik (*Asthma-like syndrome*).
+3. **Rinitis Okupasi:** Iritasi langsung dan degranulasi sel mast lokal di mukosa kavum nasi memicu sekresi histamin, leukotrien, dan hiperemia mukosa.
+4. **Dermatitis Kontak Akut dan Kronis:** Paparan debu kayu memicu **Dermatitis Kontak Iritan (DKI)** akibat gesekan fisik dan sifat asam kayu, serta **Dermatitis Kontak Alergi (DKA - reaksi hipersensitivitas tipe IV lambat)** yang dimediasi sel T tersensitisasi terhadap alergen kuinon eksotis (misalnya lapachol, deoksilapachol, dan seskuiterpen lakton).
+
+### 5. Diagnosis dan Pemantauan Klinis
+* **Anamnesis Okupasi:** Riwayat jenis kayu spesifik (kayu keras vs kayu lunak), durasi pajanan tahunan, ketiadaan sistem ventilasi hisap (*LEV*), gejala hidung tersumbat unilateral, epistaksis berulang, anosmia, atau serangan sesak napas yang membaik saat libur kerja.
+* **Pemeriksaan Baku Emas THT (Rinoskopi & Nasoendoskopi):** Evaluasi visual langsung rongga hidung dan meatus medius menggunakan endoskop kaku (*rigid*) atau fleksibel untuk mendeteksi hipertrofi konka, poliposis nasal, ulserasi, serta massa tumor eksofitik atau ulseratif pada dinding lateral hidung atau atap etmoid.
+* **Pencitraan Radiologis (CT & MRI Kepala/Sinus):**
+  * *CT Sinus Paranasalis (Bone Window):* Mengevaluasi opasifikasi sinus, kalsifikasi, serta destruksi atau erosi tulang lamina papirisea dan lamina kribrosa.
+  * *MRI Kepala dengan Kontras:* Menentukan perluasan massa jaringan lunak ke intrakranial, sinus kavernosus, atau orbita.
+* **Biopsi dan Histopatologi:** Baku emas definitif. Biopsi jaringan mukosa hidung menunjukkan gambaran **Intestinal-Type Adenocarcinoma (ITAC)** yang menyerupai karsinoma kolon (kelenjar atipik, musin, dan diferensiasi enterik) atau karsinoma sel skuamosa non-keratinisasi.
+* **Uji Fungsi Paru (Spirometri):** Spirometri serial untuk mendeteksi penurunan rasio FEV1/FVC (obstruksi jalan napas akibat asma kerja atau bronkitis industri).
+* **Uji Imunologi dan Patch Test:** Uji cukit kulit (*Skin Prick Test*) atau pemeriksaan IgE spesifik terhadap ekstrak kayu tertentu; serta *Patch Test* (uji tempel epikutan) menggunakan alergen standar dan serbuk kayu basah untuk konfirmasi dermatitis kontak alergi.
+
+### 6. Masa Latensi dan Perjalanan Penyakit
+* **Karsinoma Sinonasal (Adenokarsinoma & SCC):** Masa latensi sangat panjang, tipikal membentang antara **\\(20\text{--}40\text{ tahun}\\)** (rerata \\(>30\text{ tahun}\\)) sejak pertama kali terpapar debu kayu keras. Risiko tetap tinggi bahkan beberapa dekade setelah pekerja pensiun.
+* **Asma Kerja dan Rinitis:** Memiliki periode induksi sensitisasi imunologis berkisar dari **beberapa bulan hingga 2–5 tahun** awal paparan.
+* **Dermatitis Kontak:** Bentuk iritan timbul dalam hitungan jam hingga hari pertama paparan debu pekat; bentuk alergi memerlukan periode sensitisasi 1–3 minggu sebelum meletus saat kontak ulang.
+
+### 7. Spektrum Bentuk Klinis
+1. **Keganasan Sinonasal:** Hidung tersumbat unilateral kronis, sekret hidung bercampur darah (*epistaksis* berulang), nyeri wajah, hiposmia/anosmia, dan pembengkakan pipi atau deformitas orbita pada stadium lanjut.
+2. **Rinitis Okupasi:** Bersin paroksismal, rinorea encer, gatal pada hidung, dan kongesti mukosa hidung yang berulang saat bekerja di pabrik mebel.
+3. **Asma Kerja (*Occupational Asthma*):** Batuk, mengi (*wheezing*), rasa dada tertekan, dan dispnea nokturnal yang memburuk pada akhir sif kerja atau malam hari pasca kerja dan membaik saat akhir pekan/cuti.
+4. **Dermatitis Kontak Okupasi:** Erupsi eritematosa, papulovesikel, rasa gatal hebat (*pruritus*), likenifikasi, dan fisura pada sela jari, pergelangan tangan, lengan bawah, leher, dan wajah akibat deposisi debu kayu halus yang menempel pada kulit yang berkeringat.
+5. **Pneumonitis Hipersensitivitas (*Hypersensitivity Pneumonitis* / Alveolitis Alergika Ekstrinsik):** Jarang terjadi; dipicu oleh spora jamur yang mengontaminasi kayu basah/lapuk, misalnya penyakit *Suberosis* pada pengupas kulit kayu *cork oak* (*Penicillium frequentans*) atau *Sequoiosis* pada industri kayu merah *redwood* (*Aureobasidium pullulans*).
+
+### 8. Komplikasi dan Keganasan
+* **Adenokarsinoma Sinonasal (ITAC):** Komplikasi paling fatal dengan mortalitas tinggi akibat invasi lokal ke basis kranii dan metastasis jauh. Risiko adenokarsinoma hidung pada pembuat furnitur kayu keras dilaporkan meningkat hingga puluhan bahkan ratusan kali lipat dibanding populasi umum.
+* **Karsinoma Sel Skuamosa (*Squamous Cell Carcinoma* / SCC) Sinonasal:** Terkait pajanan campuran kayu keras dan kayu lunak.
+* **Karsinoma Nasofaring:** Dikonfirmasi oleh IARC memiliki korelasi kausal epidemiologis yang konsisten dengan pajanan debu kayu.
+* **Penyakit Paru Obstruktif Kronik (PPOK):** Paparan debu kayu jangka panjang menyebabkan penurunan FEV1 tahunan yang dipercepat dan memicu bronkitis kronis industri.
+* **Infeksi Sekunder:** Sinusitis bakterial purulen kronis sekunder akibat obstruksi drainase ostium sinus paranasal oleh edema mukosa atau massa tumor.
+
+### 9. Nilai Ambang Batas Pajanan Lingkungan Kerja (*OEL*)
+Wajib dikuasai secara presisi untuk parameter regulasi:
+
+| Badan / Regulasi | Parameter Spesies Kayu | Batas Pemaparan / Nilai Ambang Batas | Keterangan & Notasi |
+| :--- | :--- | :--- | :--- |
+| **Permenaker No. 5 Tahun 2018 (Indonesia)** | • **Kayu Keras tertentu** (*beech* dan *oak*)<br>• **Kayu Lunak** (*softwood*) | • **\\(1\ \text{mg/m}^3\\)** (Fraksi Inhalabel)<br>• **\\(5\ \text{mg/m}^3\\)** (BDS/STEL: **\\(10\ \text{mg/m}^3\\)**) | • **A1** (Karsinogen Terkonfirmasi pada Manusia)<br>• Efek: Asma, penurunan fungsi paru, iritasi saluran napas |
+| **ACGIH** | • *Inhalable particulate matter* (semua jenis kayu)<br>• *Western red cedar* | • **\\(1\ \text{mg/m}^3\\)** (TLV-TWA 8 jam)<br>• **\\(0{,}5\ \text{mg/m}^3\\)** (inhalabel) | Notasi **A1** (kayu keras tertentu); Notasi **SEN** (*Sensitizer*) |
+| **NIOSH** | Debu kayu semua jenis (*Wood dust*) | **\\(1\ \text{mg/m}^3\\)** (REL TWA 10 jam) | **Ca** (*Potential Occupational Carcinogen*) |
+| **OSHA** | Standar Umum (29 CFR 1910.1000):<br>• Fraksi debu total (*total dust*)<br>• Fraksi debu respirabel (*respirable fraction*) | • **\\(15\ \text{mg/m}^3\\)** (PEL TWA 8 jam)<br>• **\\(5\ \text{mg/m}^3\\)** (PEL TWA 8 jam) | Standar historis federal AS; update 1989 menetapkan TWA \\(5\ \text{mg/m}^3\\), STEL \\(10\ \text{mg/m}^3\\), dan *Western red cedar* \\(2{,}5\ \text{mg/m}^3\\) |
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Regulasi:** **TIDAK ADA Indeks Pemaparan Biologis (BEI dari ACGIH) maupun IPB (Permenaker No. 5 Tahun 2018) untuk debu kayu**.
+* **Landasan Toksikologi:** Partikel debu kayu adalah matriks selulosa polimerik kompleks non-homogen yang tidak mengalami metabolisme sistemik menjadi metabolit terlarut di urin atau darah yang berkorelasi proporsional dengan dosis internal terabsorpsi.
+* **Surveilans Pengganti:** Diwajibkan melalui **Surveilans Efek Biologis (*Biological Effect Monitoring*)**: pemeriksaan endoskopi hidung berkala tahunan bagi pekerja kayu keras berisiko tinggi, kuesioner respirasi dan rinitis terstandar, spirometri serial, serta inspeksi kulit berkala.
+
+### 11. Tatalaksana Klinis Medis
+* **Tatalaksana Onkologi (Karsinoma Sinonasal):** Reseksi bedah onkologi radikal (rinotomi lateral, maksilektomi, atau kraniofasial reseksi endoskopik) yang dikombinasikan dengan radioterapi ajuvan atau kemoradioterapi sesuai staging patologis tumor.
+* **Tatalaksana Rinitis dan Asma Kerja:**
+  * Penghentian total atau penghindaran dari paparan debu kayu penyebab sensitisasi.
+  * Farmakoterapi rinitis: kortikosteroid intranasal harian dan antihistamin generasi kedua.
+  * Farmakoterapi asma: kortikosteroid inhalasi (*ICS*) dosis rendah-sedang dikombinasikan dengan bronkodilator kerja panjang (*LABA/LAMA*) dan bronkodilator kerja singkat (*SABA*) untuk pereda gejala.
+* **Tatalaksana Dermatitis Kontak:** Kortikosteroid topikal (krim potensi sedang hingga kuat), emolien pelindung sawar kulit, kompres dingin untuk lesi vesikular akut, serta antihistamin oral sedatif untuk menekan pruritus nokturnal.
+* **Imunisasi:** Vaksinasi Influenza dan Pneumokokus dianjurkan pada penderita yang mengalami penurunan faal paru obstruktif kronis.
+
+### 12. Tatalaksana Individu dan Komunitas di Tempat Kerja
+* **Penilaian Kelaikan Kerja (*Fitness to Work*):**
+  * Pekerja yang terdiagnosis asma kerja akibat debu kayu (misal alergi *Western red cedar*) harus dinilai **Tidak Laik Kerja (*Unfit*)** untuk lingkungan berdebu kayu dan wajib dipindahkan secara permanen ke area kerja bebas kayu (*Fit with Restriction*). Pasien karsinoma sinonasal dinilai *Unfit* sementara selama masa terapi onkologi.
+* **Surveilans Kesehatan Komunitas:**
+  * Skrining pra-penempatan (*baseline*): pemeriksaan THT lengkap dan spirometri.
+  * Skrining berkala: evaluasi THT tahunan, sitologi mukosa hidung bila terindikasi, dan spirometri berkala tiap 1–2 tahun.
+* **Hierarki Pengendalian Bahaya (*Hierarchy of Controls*):**
+  1. *Substitusi:* Mengganti kayu yang bersifat karsinogenik tinggi (kayu keras tertentu) dengan kayu alternatif yang lebih aman atau bahan sintetis non-organik bila memungkinkan teknis.
+  2. *Rekayasa Teknik (*Engineering Controls*):*
+     * Pemasangan sistem ventilasi hisap lokal (**Local Exhaust Ventilation / LEV**) yang terintegrasi langsung pada kap mata pisau mesin gergaji, mesin serut, dan mesin amplas (*sander hoods*).
+     * Pemisahan ruang pengampelasan berdebu pekat dengan partisi kedap udara.
+     * Pembersihan lingkungan kerja dilarang menggunakan semprotan kompresor udara (*compressed air*) atau sapu kering; **wajib menggunakan sistem vacuum industri berfilter HEPA atau metode pembersihan basah**.
+  3. *Pengendalian Administratif:* Rotasi pekerja untuk membatasi durasi paparan kumulatif, pelatihan teknik kerja minim debu, dan isolasi area kerja.
+  4. *Alat Pelindung Diri (APD):* Respirator partikulat dengan efisiensi filtrasi terstandar minimal **N95 / N100 (atau filter partikulat FFP2/FFP3)** yang telah menjalani *fit-test* kuantitatif, kacamata pelindung debu (*goggles*), dan pakaian kerja tertutup/apron untuk mencegah dermatitis.
+* **Rekomendasi Manajemen & Pelaporan:** Melaporkan hasil pemantauan kadar debu inhalabel/respirabel kepada manajemen, serta notifikasi resmi diagnosis PAK karsinoma sinonasal atau asma kerja ke dinas ketenagakerjaan dan dinas kesehatan.
+
+### 13. Aspek Regulasi dan Medikolegal Indonesia
+* **Peraturan Presiden (Perpres) No. 7 Tahun 2019 tentang Penyakit Akibat Kerja:**
+  * **Lampiran III (Penyakit Kanker Akibat Kerja) Butir 21 / Tabel Kanker:** Mengakui secara eksplisit **kanker kavum nasi dan sinus paranasal yang disebabkan oleh debu kayu keras (*hardwood dust*)**.
+  * **Lampiran II.a.5 & II.a.6 (Penyakit Saluran Pernafasan):** Asma akibat kerja dan Rinitis akibat debu kayu sebagai agen sensitisator atau iritan tempat kerja.
+  * **Lampiran II.c (Penyakit Kulit):** Dermatitis kontak akibat debu kayu.
+  * *Tinjauan Batas Waktu Klaim JKK (Pasal 2 ayat 2):* Batas kedaluwarsa klaim santunan Jaminan Kecelakaan Kerja maksimal **3 (tiga) tahun setelah hubungan kerja berakhir**. Ini merupakan tantangan medikolegal besar pada kasus adenokarsinoma sinonasal debu kayu keras, karena masa latensinya yang dapat mencapai 20–40 tahun.
+* **Permenkes No. 11 Tahun 2022:** Penerapan **7 Langkah Diagnosis PAK** yang ditegakkan secara saintifik oleh dokter pemeriksa kesehatan tenaga kerja atau dokter spesialis kedokteran okupasi (Sp.Ok).
+* **PP No. 28 Tahun 2024:** Penyelenggaraan pelayanan kesehatan kerja komprehensif, asesmen kelaikan kerja, dan program kembali bekerja (*return-to-work*).
+
+### 14. *Clinical Pearls* dan Jebakan Ujian *Board* (Debu Kayu)
+1. **Jebakan Histopatologi Kanker Hidung:** Bila ditanya jenis kanker akibat kayu keras (*beech* dan *oak*), jawab secara spesifik: **Sino-Nasal Intestinal-Type Adenocarcinoma (ITAC)** pada sinus etmoidalis/kavum nasi, bukan karsinoma sel skuamosa biasa.
+2. **Kayu Keras Karsinogen vs Kayu Lunak Sensitisator:** Kayu keras (*hardwood*) dominan memicu **kanker sinonasal (IARC Grup 1, ACGIH A1)**, sedangkan kayu lunak konifer tertentu seperti *Western red cedar* dominan memicu **asma kerja dan rinitis alergi** yang dimediasi oleh bahan kimia ekstraktif **asam plikatat (*plicatic acid*)**.
+3. **Ukuran Partikel & Lokasi Patologi:** Partikel debu kayu adalah partikel besar fraksi inhalabel (\\(>10\ \mu\text{m}\\)), sehingga organ target primer adalah **saluran napas atas (hidung, sinus paranasalis)** akibat impaksi inersial, bukan alveolus bawah seperti halnya silikosis atau asbestosis.
+4. **Dilarang Membersihkan dengan Udara Bertekanan:** Dalam ujian aplikasi K3, bila dijumpai skenario pekerja mebel meniup debu kayu menggunakan selang kompresor udara (*air blow gun*), koreksi seketika sebagai **tindakan berbahaya (*unsafe act*)** yang mere-aerosolisasi partikel ke udara; wajib diganti dengan *vacuum* berfilter HEPA.
+5. **Ketiadaan BEI:** Jangan pernah mengusulkan pemeriksaan biopengawasan metabolit cairan tubuh (darah/urin) untuk debu kayu karena tidak ada BEI/IPB; surveilans yang benar adalah **pemeriksaan endoskopi THT dan faal paru**.
+
+---
+
+# BAGIAN B: DEBU KAPAS / BISINOSIS (*COTTON DUST*)
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Definisi & Karakteristik Mineral/Biologis:** Debu kapas (*cotton dust*) adalah bioaerosol kompleks organik yang terdispersi ke udara selama penanganan, pemrosesan, dan pemintalan serat kapas alami. Komposisinya bukan serat selulosa murni, melainkan campuran partikel daun pelindung kapas (*cotton bracts*), daun tanaman kering, kulit biji, sisa tanah, jamur, serta biomassa bakteri Gram-negatif.
+* **Agen Etiologi Kunci: Endotoksin Bakteri:**
+  * Bahan kausatif primer dari manifestasi klinis bisinosis dan penurunan FEV1 bukanlah serat selulosa itu sendiri, melainkan **endotoksin (lipopolisakarida / LPS)** dari dinding sel bakteri Gram-negatif (seperti *Enterobacter agglomerans* / *Pantoea agglomerans*, *Pseudomonas*, dan *Aerobacter cloacae*) yang hidup sebagai epifit pada tanaman kapas.
+  * Konsentrasi endotoksin dalam debu kapas bervariasi bergantung pada asal wilayah geografis panen, kelembapan iklim, serta mutu tanaman.
+* **Bahan Nabati Sejenis:** Sindrom serupa bisinosis juga dipicu oleh debu tanaman serat bast lainnya, yaitu **rami (*flax / Linum usitatissimum*)**, **soft hemp (*Cannabis sativa*)**, serta **sisal** dan **yute (*jute*)**.
+* **Klasifikasi Karsinogenisitas:**
+  * **IARC:** Debu kapas murni tidak diklasifikasikan sebagai karsinogen manusia. Menariknya, studi kohort longitudinal menunjukkan bahwa penambang atau pekerja tekstil kapas sering memiliki angka mortalitas kanker paru yang lebih rendah (*Standardized Mortality Ratio* < 1), fenomena biologis yang diduga berkaitan dengan stimulasi sistem imun antitumor oleh paparan kronis endotoksin.
+  * **ACGIH:** Mengklasifikasikan debu kapas (*cotton dust, raw*) ke dalam kategori **A4** (*Not Classifiable as a Human Carcinogen*).
+
+### 2. Sumber Pajanan di Sektor Industri Tekstil
+1. **Pabrik Pemintalan Benang Kapas (*Yarn Spinning Mills*):**
+   * **Area Carding (*Cardroom*) dan Ruang Buka Serat (*Opening / Blowing / Blowroom*):** Merupakan area kerja dengan **intensitas pajanan debu dan endotoksin paling tinggi**, tempat bal kapas dibuka, dipukul, dan disisir secara kasar.
+   * Area pemintalan (*spinning*) dan penggulungan (*winding*).
+2. **Pembersihan Limbah Tekstil (*Waste Processing & Recycling*):** Penanganan limbah kapas mentah, sortasi serat sisa (*willowing*), dan proses garnetting.
+3. **Penenunan Kain (*Weaving and Slashing*):** Proses penenunan benang menjadi kain mentah.
+4. **Pabrik Pemrosesan Serat Nabati Lain:** Pabrik pengolahan serat rami (*flax mills*), tali jerami (*hemp processing*), dan pabrik karung goni (*jute mills*).
+5. **Pengepulan Biji Kapas (*Cotton Ginning*) & Pabrik Minyak Biji Kapas:** Pemisahan serat kapas dari bijinya di perkebunan pertanian.
+
+### 3. Deposisi dan Klirens Partikel (Toksikokinetik)
+* **Fraksi Debu yang Dihirup:** Debu kapas respirabel dan torasik (diameter aerodinamis \\(<10\text{--}15\ \mu\text{m}\\), diukur sebagai debu bebas serat / *lint-free dust*) mampu menembus saluran konduksi bronkus lobaris hingga bronkiolus respiratorius. Serat serat panjang yang tampak secara kasat mata (*fly / lint*) tertahan di saluran napas atas dan dibuang oleh silia atau batuk.
+* **Klirens Mukosiliar vs. Makrofag:** Partikel debu yang menempel di bronkus dibersihkan oleh eskalator mukosiliar. Partikel submikron yang mencapai alveolus difagositosis oleh makrofag alveolar.
+* **Translokasi dan Penyerapan Endotoksin:** Komponen lipopolisakarida (LPS) yang larut dalam air segera berdifusi menembus epitel mukosa bronkus dan mengikat reseptor permukaan sel imun mononuklear dan epitel.
+
+### 4. Patogenesis Molekuler dan Seluler
+1. **Aktivasi Reseptor TLR4 oleh Endotoksin:** Molekul endotoksin (LPS) dari debu kapas berikatan dengan *Lipopolysaccharide-Binding Protein* (LBP) dan kompleks reseptor **Toll-Like Receptor 4 (TLR4) / CD14 / MD2** pada membran makrofag alveolar dan sel epitel bronkus.
+2. **Kaskade Sitokin Pro-Inflamasi & Kemotaksis Neutrofil:** Sinyal intraseluler via adaptor **MyD88** dan aktivasi faktor transkripsi **NF-\\(\kappa\text{B}** memicu sekresi alarmin masif: **Tumor Necrosis Factor-alpha (TNF-\\(\alpha\\))**, **Interleukin-1\\(\beta\\) (IL-1\\(\beta\\))**, **IL-6**, dan **Interleukin-8 (IL-8 / CXCL8)**. IL-8 merekrut neutrofil secara masif ke dalam dinding dan lumen bronkus dalam hitungan jam, menyebabkan inflamasi neutrofilik non-alergi akut.
+3. **Pelepasan Histamin Non-Imunologis:** Bahan kimia dari ekstrak daun pelindung kapas (*cotton bract extract*), khususnya fraksi tanin terkondensasi (*condensed tannins*), merangsang degranulasi langsung sel mast dan basofil saluran napas tanpa memerlukan mediasi antibodi IgE, melepaskan **histamin, prostaglandin (PGF2\\(\alpha\\)), dan tromboksan A2**, yang memicu spasme otot polos bronkus.
+4. **Mekanisme Fenomena Hari Senin (*Monday Phenomenon / Tolerance Cycle*):**
+   * Setelah pekerja libur akhir pekan selama 48 jam, mediator intraseluler sel mast dan simpanan sitokin makrofag terisi kembali penuh (*re-accumulated*).
+   * Saat kembali bekerja pada hari Senin, inhalasi endotoksin memicu pengosongan mendadak seluruh simpanan mediator, menimbulkan konstriksi bronkus hebat dan rasa dada tertekan (*chest tightness*).
+   * Pada hari-hari berikutnya (Selasa hingga Jumat), terjadi fenomena **takifilaksis (desensitisasi/toleransi reseptor TLR4)** dan deplesi simpanan histamin, sehingga gejala berkurang atau menghilang meskipun kadar debu tetap sama tinggi di tempat kerja.
+5. **Remodeling Saluran Napas dan Obstruksi Irreversibel (Bisinosis Kronis):** Pajanan endotoksin kronis bertahun-tahun menginduksi transisi inflamasi persisten, ekspansi sel dendritik paru, inversi rasio makrofag:sel dendritik, metaplasia sel goblet, hipertrofi kelenjar submukosa, dan destruksi elastin dinding bronkiolus, yang berujung pada **obstruksi saluran napas kronis ireversibel yang menyerupai PPOK (*COPD-like syndrome*)**.
+6. **Pneumokoniosis Debu Kapas / Badan Bisinosis (*Byssinosis Bodies*):** Sangat jarang; inhalasi serat selulosa kapas mikroskopis ke intersisium parenkim paru memicu granuloma benda asing dan pembentukan serat proteinaceous berlapik zat besi menyerupai serat feruginus yang disebut *byssinosis bodies*.
+
+### 5. Diagnosis, Pemantauan, dan Baku Emas Fungsional
+* **Anamnesis Okupasi Khas:** Riwayat bekerja di pabrik tekstil kapas/rami, terutama di bagian pemintalan awal (*cardroom/blowroom*), dengan keluhan dada tertekan yang memiliki siklus mingguan spesifik (timbul saat awal pekan kerja dan mereda di akhir pekan).
+* **Kriteria Derajat Klinis Schilling (*Schilling's Clinical Grading System*):**
+  Merupakan sistem klasifikasi klasik berbasis keparahan dan waktu timbulnya gejala dada tertekan:
+  * **Derajat 0 (*Grade 0*):** Tidak ada gejala sesak atau rasa dada tertekan.
+  * **Derajat 1/2 (*Grade 1/2 atau 0.5*):** Rasa dada tertekan dan/atau sesak napas yang terjadi **hanya kadang-kadang** pada hari pertama masuk kerja (hari Senin) setelah libur akhir pekan.
+  * **Derajat 1 (*Grade 1*):** Rasa dada tertekan dan/atau sesak napas yang timbul secara konsisten pada **setiap hari pertama masuk kerja (hari Senin saja)** dalam minggu kerja.
+  * **Derajat 2 (*Grade 2*):** Rasa dada tertekan dan/atau sesak napas pada **hari pertama (Senin) DAN hari-hari lain** dalam minggu kerja.
+  * **Derajat 3 (*Grade 3*):** Gejala Derajat 2 yang disertai dengan bukti **gangguan fungsi ventilasi paru permanen / kecacatan ireversibel** (gejala sesak napas saat aktivitas menetap bahkan saat tidak bekerja, disertai obstruksi kronis).
+* **Klasifikasi WHO untuk Bisinosis dan Iritasi Saluran Napas (1983):**
+  Mengombinasikan derajat gejala subjektif dengan uji fungsi paru obyektif:
+  * *Perubahan Akut Lintas-Sif (*Acute Cross-Shift FEV1 Decline* pada hari pertama):*
+    * **Tidak ada efek (*No effect*):** Penurunan FEV1 \\(<5\%\\) atau peningkatan FEV1 selama sif kerja.
+    * **Ringan (*Mild*):** Penurunan FEV1 konsisten antara **\\(5\%\text{--}10\%\\)**.
+    * **Sedang (*Moderate*):** Penurunan FEV1 konsisten antara **\\(10\%\text{--}20\%\\)**.
+    * **Berat (*Severe*):** Penurunan FEV1 konsisten **\\(\ge 20\%\\)** selama sif kerja.
+  * *Perubahan Kronis (*Chronic Changes* - Nilai Prediksi FEV1 Pasca-Bronkodilator):*
+    * **Ringan hingga Sedang:** FEV1 berkisar antara **60% – 79% dari nilai prediksi**.
+    * **Berat:** FEV1 kurang dari **\\(<60\%\\) dari nilai prediksi**.
+* **Protokol Uji Spirometri Pra- dan Pasca-Sif (*Cross-Shift Spirometry*):**
+  * Pengukuran spirometri dilakukan tepat **sebelum masuk sif pertama pada hari Senin pagi (pra-sif)** dan diulang setelah bekerja **minimal 6 jam paparan (pasca-sif)**.
+  * *Interpretasi Diagnostik:* **Penurunan FEV1 lintas-sif \\(\ge 5\%\\) (terlebih \\(>10\%\\) atau \\(>200\text{ mL}\\))** pada hari Senin merupakan bukti objektif hiperreaktivitas bronkus akut akibat debu kapas.
+* **Pemeriksaan Radiologi Toraks (Foto Rontgen & HRCT):** Pada bisinosis klasik stadium 1 dan 2, foto toraks biasanya **normal**. Pada bisinosis derajat 3 / kronis lanjut, dapat ditemukan tanda emfisema, penebalan dinding bronkus, atau hiperinflasi paru.
+* **Biomarker Tambahan:** Pengukuran fraksi oksida nitrat udara ekshalasi (**FeNO**) lintas-sif dan uji provokasi metakolin untuk mengevaluasi hiperreaktivitas bronkus non-spesifik.
+
+### 6. Masa Latensi dan Perjalanan Penyakit
+* **Bisinosis Klasik:** Umumnya memiliki masa latensi lambat, membutuhkan waktu paparan kumulatif **minimal 10 tahun atau lebih** di lingkungan pemintalan kapas.
+* **Bisinosis Akut (*Acute Form*):** Dapat muncul secara tiba-tiba dalam hitungan minggu atau bulan pertama pada pekerja baru yang sangat rentan di ruang *cardroom* pekat debu, ditandai penurunan FEV1 lintas-sif melebihi 30%.
+* **Demam Pabrik (*Mill Fever*):** Timbul akut dalam waktu **4–8 jam** pada kontak pertama pekerja baru dan mereda dalam 24–48 jam.
+* **Laju Penurunan FEV1 Tahunan:** Penambang kapas mengalami percepatan penurunan FEV1 tahunan melebihi laju penuaan alami (pada pekerja tekstil Shanghai, efek pajanan pada perokok pria mencapai **\\(-9{,}2\text{ mL/tahun}\\)** dibanding kontrol).
+
+### 7. Spektrum Bentuk Klinis
+1. **Bisinosis Klasik (*Monday Chest Tightness*):** Rasa dada tertekan seperti diikat pita ketat, napas pendek, dan batuk kering yang timbul 2–4 jam setelah mulai bekerja pada hari Senin, mereda pada hari Selasa hingga akhir pekan.
+2. **Demam Pabrik (*Mill Fever / Organic Dust Toxic Syndrome* - ODTS):** Sindrom demam non-infeksius yang terjadi pada pekerja baru dalam 4–8 jam paparan debu kapas pekat; gejala menyerupai influenza: demam ringan, menggigil, nyeri sendi/otot, sakit kepala, kelelahan, dan batuk kering tanpa infiltrat pada foto rontgen.
+3. **Penyakit Paru Obstruktif Kronik (*Cotton-Induced COPD*):** Batuk produktif kronis setiap hari dengan dahak persisten, dispnea saat aktivitas, dan obstruksi jalan napas yang tidak dapat pulih sempurna dengan bronkodilator.
+4. **Demam Pembuat Kasur / Batuk Penenun (*Mattress Maker’s Fever / Weaver’s Cough*):** Episode febris berulang yang disertai batuk berat dan sesak napas pada pekerja penenun, dipicu oleh kontaminasi bakteri *Aerobacter cloacae* atau jamur pada benang kapas basah.
+5. **Rinitis Okupasi & Iritasi Mata:** Bersin, rinorea, dan konjungtivitis iritatif pada penanganan biji kapas mentah.
+
+### 8. Komplikasi Sistemik dan Kardiopulmoner
+* **Penyakit Paru Obstruktif Kronik Berat & Emfisema:** Obstruksi saluran napas permanen dengan hilangnya kapasitas cadangan paru, terutama pada individu yang memiliki riwayat merokok.
+* **Interaksi Sinergis dengan Asap Rokok:** Kebiasaan merokok aktif mempercepat laju kerusakan paru akibat debu kapas hingga berlipat ganda, memperburuk keparahan bisinosis dan mempercepat timbulnya kecacatan permanen.
+* **Kor Pulmonale & Hipertensi Pulmonal:** Terjadi pada bisinosis derajat 3 lanjut akibat vasokonstriksi hipoksik kronis dan obliterasi mikrovaskular kapiler paru.
+* **Gagal Napas Kronis:** Kegagalan fungsi ventilasi yang memaksa pekerja pensiun dini akibat kecacatan respiratorius berat.
+
+### 9. Nilai Ambang Batas Pajanan Lingkungan Kerja (*OEL*)
+Wajib dikuasai secara presisi untuk parameter regulasi nasional dan internasional:
+
+| Badan / Regulasi | Parameter Fraksi Debu Kapas (*Cotton Dust*) | Batas Pemaparan / Nilai Ambang Batas | Keterangan & Notasi |
+| :--- | :--- | :--- | :--- |
+| **Permenaker No. 5 Tahun 2018 (Indonesia)** | Katun mentah / Debu kapas bebas serat (*raw lint-free cotton dust*) | **\\(0{,}2\ \text{mg/m}^3\\)** (\\(200\ \mu\text{g/m}^3\\)) TWA 8 jam | Lampiran 3 (Faktor Kimia); Katun, debu mentah. Kategori Karsinogen **A4** |
+| **ACGIH** | • Fraksi partikulat torasik (*thoracic particulate mass*)<br>• Fraksi debu kapas mentah bebas serat | • **\\(0{,}1\ \text{mg/m}^3\\)** (TLV-TWA 8 jam)<br>• **\\(0{,}2\ \text{mg/m}^3\\)** (TLV-TWA 8 jam) | Kategori Karsinogen **A4** (*Not Classifiable as a Human Carcinogen*) |
+| **NIOSH** | Debu kapas mentah bebas serat (*lint-free cotton dust*) | **\\(<0{,}200\ \text{mg/m}^3\\)** (\\(<200\ \mu\text{g/m}^3\\)) TWA 10 jam | Menggunakan alat ukur *Vertical Elutriator* sampler (LVE) |
+| **OSHA** | Standar Sektoral Khusus (29 CFR 1910.1043):<br>• *Yarn manufacturing & cotton washing*<br>• *Waste house & lower grade washed cotton*<br>• *Slashing and weaving*<br>• *Waste processing / recycling & garnetting* | • **\\(0{,}200\ \text{mg/m}^3\\)** (PEL TWA 8 jam)<br>• **\\(0{,}500\ \text{mg/m}^3\\)** (PEL TWA 8 jam)<br>• **\\(0{,}750\ \text{mg/m}^3\\)** (PEL TWA 8 jam)<br>• **\\(1{,}000\ \text{mg/m}^3\\)** (Tabel Z-1 PEL) | Standar federal AS; diukur dengan *Vertical Elutriator* (debu kapas bebas serat respirabel). IDLH = **\\(100\ \text{mg/m}^3\\)**. |
+
+* *Standar Endotoksin:* Meskipun belum ada batas pajanan resmi yang diadopsi oleh OSHA/Permenaker, lembaga *Health Council of the Netherlands* dan pedoman internasional merekomendasikan batas pajanan endotoksin lingkungan kerja sebesar **\\(90\ \text{EU/m}^3\\)** (sekitar \\(9\text{ ng/m}^3\\)) untuk mencegah penurunan FEV1 akut lintas-sif.
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Regulasi:** **TIDAK ADA Indeks Pemaparan Biologis (BEI dari ACGIH) maupun IPB (Lampiran 4 Permenaker No. 5 Tahun 2018) untuk debu kapas maupun endotoksin**.
+* **Landasan Toksikologi:** Endotoksin dan debu nabati kapas bekerja secara lokal pada mukosa saluran pernapasan dan tidak diekskresikan sebagai metabolit urin/darah spesifik yang berkorelasi linier dengan dosis internal.
+* **Surveilans Pengganti:** Diwajibkan melalui **Surveilans Efek Biologis (*Biological Effect Monitoring*)**: pemeriksaan spirometri pra- dan pasca-sif secara berkala (evaluasi penurunan FEV1 lintas-sif), kuesioner respirasi Schilling terstandar, dan pemantauan FEV1 serial tahunan.
+
+### 11. Tatalaksana Klinis Medis
+* **Penghentian atau Penurunan Pajanan Segera:** Pemindahan pekerja yang menunjukkan gejala bisinosis Derajat 2 atau 3 atau penurunan FEV1 lintas-sif \\(>10\%\\) ke area kerja yang memiliki kadar debu sangat rendah (misalnya bagian pemotongan kain atau pengemasan produk akhir).
+* **Penghentian Merokok (*Smoking Cessation*):** Intervensi wajib dan mutlak untuk mencegah percepatan penurunan FEV1 tahunan dan mereduksi risiko perburukan menjadi PPOK berat.
+* **Farmakoterapi Bronkodilator:**
+  * Pemberian bronkodilator kerja singkat (*SABA* seperti Salbutamol) pra-sif dapat memitigasi penurunan FEV1 lintas-sif akut pada pekerja yang terpapar.
+  * Untuk bisinosis kronis dengan obstruksi menetap: pemberian inhalasi kombinasi *LABA* (misal Salmeterol, Formoterol) atau *LAMA* (Tiotropium) dengan atau tanpa kortikosteroid inhalasi (*ICS*) sesuai protokol tata laksana PPOK/asma.
+* **Imunisasi Profilaksis:** Imunisasi tahunan terhadap **Influenza** dan vaksinasi **Pneumokokus (PCV/PPSV23)** untuk mencegah infeksi pernapasan yang memicu eksaserbasi akut.
+* **Terapi Suportif:** Oksigenoterapi jangka panjang (*LTOT*) pada pasien bisinosis stadium akhir dengan gagal napas atau kor pulmonale, serta program rehabilitasi paru terpadu.
+
+### 12. Tatalaksana Individu dan Komunitas di Tempat Kerja
+* **Penilaian Kelaikan Kerja (*Fitness to Work*):**
+  * *Bisinosis Derajat 1/2 dan 1:* Diperbolehkan bekerja dengan syarat perbaikan ventilasi area kerja dan pengawasan fungsi paru ketat (*Fit with Reservation/Condition*).
+  * *Bisinosis Derajat 2 dengan penurunan FEV1 lintas-sif \\(>10\%\\):* Dinilai **Tidak Laik Kerja (*Unfit*)** untuk area berdebu pekat (*carding/blowing*) dan wajib dimutasi permanen ke area kerja bersih (*Fit with Restriction*).
+  * *Bisinosis Derajat 3 / PPOK Berat:* Dinyatakan **Tidak Laik Kerja (*Unfit*)** untuk seluruh lingkungan industri tekstil berserat.
+* **Surveilans Kesehatan Kerja Berkala:**
+  * *Pemeriksaan Pra-Penempatan (*Pre-employment*):* Anamnesis riwayat asma/alergi, pemeriksaan fisik paru, dan spirometri dasar (*baseline*). Individu dengan riwayat asma berat tidak disarankan ditempatkan di *cardroom*.
+  * *Pemeriksaan Berkala:* Kuesioner bisinosis tahunan dan **uji spirometri pra- dan pasca-sif hari Senin setiap 6 hingga 12 bulan sekali**.
+* **Hierarki Pengendalian Bahaya (*Hierarchy of Controls*):**
+  1. *Substitusi / Perlakuan Bahan Baku:*
+     * Penggunaan kapas yang telah dicuci bersih (*washed cotton*), yang terbukti melarutkan dan mengeliminasi sebagian besar kandungan endotoksin sebelum dipintal.
+     * Aplikasi perlakuan bakterisidal pada serat kapas mentah untuk menghambat kolonisasi bakteri Gram-negatif.
+  2. *Rekayasa Teknik (*Engineering Controls*):*
+     * Penutupan total mesin penyisir (*enclosure of carding machines*).
+     * Sistem ventilasi hisap lokal (**Local Exhaust Ventilation / LEV**) berkemampuan tinggi dengan pembuangan udara melalui siklon dan filtrasi kantong (*fabric bag filters*).
+     * Pengendalian kelembapan udara ruangan (*humidity control*).
+     * **Larangan mutlak pembersihan dengan sapu kering atau semprotan angin bertekanan**; pembersihan mesin wajib menggunakan sistem vakum sentral industri.
+  3. *Pengendalian Administratif:* Rotasi pekerja keluar dari area *blowroom* dan *cardroom*, pemantauan kadar debu rutin menggunakan alat pengambil sampel debu vertikal (*Vertical Elutriator*), serta penyediaan ruang istirahat bersih.
+  4. *Alat Pelindung Diri (APD):* Penggunaan respirator partikulat minimal **N95** bersertifikasi yang pas (*fit-tested*) bagi pekerja di area berdebu tinggi jika pengendalian teknik belum mencapai NAB.
+* **Rekomendasi Manajemen & Notifikasi Medis:** Pelaporan hasil surveilans debu dan notifikasi formal Penyakit Akibat Kerja (Bisinosis) ke instansi ketenagakerjaan dan dinas kesehatan sesuai regulasi.
+
+### 13. Aspek Regulasi dan Medikolegal Indonesia
+* **Peraturan Presiden (Perpres) No. 7 Tahun 2019 tentang Penyakit Akibat Kerja:**
+  * **Lampiran II.a.8 (Penyakit Saluran Pernafasan):** Menetapkan secara eksplisit **Bisinosis** sebagai Penyakit Akibat Kerja resmi.
+  * **Lampiran II.a.9 (Penyakit Saluran Pernafasan):** Mengakui **PPOK yang disebabkan oleh menghirup debu kapas** dan debu organik lainnya.
+  * *Ketentuan Santunan JKK (Pasal 2 ayat 2):* Hak klaim kompensasi jaminan kecelakaan kerja dibatasi paling lama **3 tahun terhitung sejak hubungan kerja berakhir**.
+* **Permenkes No. 11 Tahun 2022:** Penegakan diagnosis klinis dan okupasi bisinosis wajib melalui prosedur **7 Langkah Diagnosis PAK** yang dilakukan oleh dokter yang berkompeten di bidang kesehatan kerja / Sp.Ok.
+* **PP No. 28 Tahun 2024:** Penyelenggaraan pelayanan kesehatan kerja komprehensif, evaluasi kelaikan kerja, dan program rehabilitasi medik kerja (*return-to-work program*).
+
+### 14. *Clinical Pearls* dan Jebakan Ujian *Board* (Debu Kapas)
+1. **Pola Waktu Gejala yang Unik (Hari Senin):** Berbeda dengan asma kerja biasa yang gejalanya memburuk di akhir minggu kerja, bisinosis secara klasik **paling berat pada hari pertama kerja (Senin) dan mereda di hari-hari berikutnya** akibat fenomena toleransi/desensitisasi reseptor endotoksin.
+2. **Kausa Primer adalah Endotoksin, Bukan Serat:** Bila ditanya zat spesifik apa yang memicu reaksi bisinosis, jangan menjawab serat kapas atau selulosa; jawab secara presisi: **lipopolisakarida (LPS) / endotoksin bakteri Gram-negatif** yang menempel pada daun pelindung kapas (*cotton bracts*).
+3. **Penyakit Ini Reversibel di Awal, Irreversibel di Akhir:** Bisinosis derajat 1 dan 2 bersifat fungsional dan membaik bila pajanan dihentikan, namun bila paparan berlangsung \\(>10\text{--}20\\) tahun, penyakit bertransformasi menjadi **obstruksi saluran napas kronis ireversibel (*COPD-like*)** yang tidak dapat pulih.
+4. **Alat Ukur Spesifik (Vertical Elutriator):** Standar higiene industri untuk mengukur debu kapas respirabel/bebas serat secara historis menggunakan **Vertical Elutriator (LVE)** dengan *cut-off* ukuran partikel \\(15\ \mu\text{m}\\), bukan siklon partikulat standar.
+5. **Ketiadaan Kanker Paru pada Debu Kapas:** Peneliti sering menemukan efek protektif paradoksal terhadap karsinoma bronkogenik pada pekerja tekstil kapas (karena stimulasi imun oleh endotoksin); jangan terkecoh memilih kanker paru sebagai komplikasi bisinosis di lembar ujian Anda.
+6. **Bisinosis BUKAN Pneumokoniosis Klasik:** Foto toraks pasien bisinosis stadium awal hingga sedang adalah normal; kelainan utama terletak pada fungsi saluran napas (obstruksi dan penurunan FEV1 lintas-sif), bukan gambaran infiltrat nodular parenkim paru.
+
+---
+
+### Tabel Ringkasan Komprehensif: Debu Kayu (14 Poin Evaluasi Board)
+
+| No | Komponen Evaluasi | Rangkuman Klinis, Toksikologi & Regulasi Kedokteran Okupasi |
+| :---: | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Bioaerosol mudah terbakar (*combustible solid*). **Kayu Keras (*hardwood*):** *beech*, *oak*, mahoni, jati; kaya tanin/flavonoid. **Kayu Lunak (*softwood*):** pinus, cemara, *Western red cedar* (kaya **asam plikatat**). **IARC: Grup 1** (semua debu kayu); **ACGIH:** Kayu keras **A1**, kayu lunak **A4/A2** (sensitizer). |
+| **2** | **Sumber Pajanan Industri** | Pabrik penggergajian kayu (*sawmill*), mebel/furnitur kayu keras (*sanding/sawing*), konstruksi bangunan/lantai parket, tukang kayu (*carpentry*), dan pabrik bubur kertas/kertas (*pulp & paper*). |
+| **3** | **Toksikokinetik & Deposisi** | Partikel fraksi inhalabel berukuran besar (\\(>10\ \mu\text{m}\\), rentang 5–25 \\(\mu\text{m}\\)). Mengalami **deposisi impaksi inersial masif di rongga hidung anterior, konka media, dan sinus etmoidalis**. Klirens mukosiliar hidung melambat akibat siliostasis kimiawi. |
+| **4** | **Patogenesis Molekuler** | Karsinogenesis: ekstrak kayu keras menginduksi metaplasia, displasia, dan aberasi **gen TP53** pada epitel silindris sinus etmoidalis \\(\rightarrow\\) **Sino-Nasal Intestinal-Type Adenocarcinoma (ITAC)**. Asma kerja: asam plikatat memicu reaksi **IgE-spesifik** atau pelepasan neuropeptida non-IgE. Dermatitis: DKI & DKA (reaksi hipersensitivitas tipe IV akibat kuinon). |
+| **5** | **Diagnosis & Pengendalian di Tempat Kerja** | **Diagnosis:** Rinoskopi & **Nasoendoskopi kaku/fleksibel** (baku emas evaluasi mukosa hidung); CT & MRI sinus paranasalis (destruksi tulang); Biopsi patologi (adenokarsinoma ITAC vs SCC); Spirometri (obstruksi/reversibilitas); Uji cukit kulit & *patch test*.<br>**Pengendalian:** Sistem ventilasi hisap lokal (**LEV**) terintegrasi pada mesin amplas/potong; larangan kompresor udara/sapu kering (wajib **vacuum HEPA** industri); APD respirator N95/N100; rotasi sif kerja. |
+| **6** | **Masa Latensi Penyakit** | Karsinoma Sinonasal: **\\(20\text{--}40\text{ tahun}\\)** (rerata >30 tahun). Asma Kerja & Rinitis: beberapa bulan hingga 2–5 tahun. Dermatitis kontak: jam/hari (DKI) atau 1–3 minggu sensitisasi (DKA). |
+| **7** | **Bentuk Klinis** | Karsinoma sinonasal (obstruksi hidung unilateral, epistaksis berulang, anosmia, nyeri wajah); Rinitis okupasi; Asma kerja (*work-related wheezing* membaik saat libur); Dermatitis kontak (eritema, papulovesikel, fisura); Pneumonitis hipersensitivitas (Suberosis/Sequoiosis). |
+| **8** | **Komplikasi & Keganasan** | **Adenokarsinoma Sinonasal (ITAC)**; Karsinoma Nasofaring (IARC 1); PPOK / bronkitis industri akibat debu kayu; Sinusitis purulen sekunder; Kanker kulit pada pemaparan fraksi ter kayu. |
+| **9** | **Batas Pajanan Kerja (OEL)** | • **Permenaker 5/2018:** Kayu keras tertentu (*beech/oak*) **\\(1\ \text{mg/m}^3\\)** (A1); Kayu lunak **\\(5\ \text{mg/m}^3\\)**, STEL **\\(10\ \text{mg/m}^3\\)**<br>• **ACGIH TLV-TWA:** **\\(1\ \text{mg/m}^3\\)** (inhalabel, A1); Western red cedar **\\(0{,}5\ \text{mg/m}^3\\)** (SEN)<br>• **NIOSH REL:** **\\(1\ \text{mg/m}^3\\)** (Ca)<br>• **OSHA PEL:** **\\(15\ \text{mg/m}^3\\)** (total), **\\(5\ \text{mg/m}^3\\)** (respirabel). |
+| **10** | **BEI / IPB** | **TIDAK ADA nilai BEI (ACGIH) atau IPB (Permenaker 5/2018)** karena debu kayu tidak larut dan tidak bermetabolisme sistemik. Digantikan oleh surveilans medis (pemeriksaan THT/nasoendoskopi tahunan, spirometri, dan inspeksi kulit). |
+| **11** | **Tatalaksana Medis** | Bedah onkologi radikal (rinotomi lateral, maksilektomi, reseksi kraniofasial endoskopik) + radioterapi ajuvan; Hentikan pajanan mutlak; Kortikosteroid intranasal & antihistamin; Terapi asma (ICS + LABA/LAMA); Kortikosteroid topikal untuk dermatitis; Vaksin Influenza/Pneumokokus. |
+| **12** | **Kelaikan Kerja & Manajemen** | **Kelaikan Kerja:** Asma kerja kayu dinilai *Unfit* untuk area berdebu kayu (mutasi permanen / *Fit with Restriction*); Pasien kanker dinilai *Unfit* sementara selama pengobatan. **Surveilans:** Skrining THT dan spirometri berkala. Notifikasi PAK ke instansi ketenagakerjaan. |
+| **13** | **Regulasi & Medikolegal RI** | **Perpres 7/2019:** Kanker sinus paranasal/kavum nasi kayu keras (Lampiran III.21), Asma & Rinitis kerja (Lampiran II.a.5 & II.a.6), Dermatitis (Lampiran II.c). Kendala: Pasal 2 ayat (2) batas klaim JKK maksimal 3 tahun pasca putus kerja. Penegakan via 7 Langkah Diagnosis PAK (Permenkes 11/2022). |
+| **14** | **Clinical Pearl & Trap** | Kanker khas adalah **Intestinal-Type Adenocarcinoma (ITAC)** pada sinus etmoidalis/kavum nasi, bukan karsinoma paru. Partikel inhalabel besar tertahan di saluran napas atas (hidung). Kayu keras = karsinogen (A1), kayu lunak konifer (*Western red cedar*) = asma kerja via asam plikatat (SEN). Larangan mutlak membersihkan serbuk dengan tiupan kompresor udara. Tidak ada BEI urin/darah. |
+
+---
+
+### Tabel Ringkasan Komprehensif: Debu Kapas / Bisinosis (14 Poin Evaluasi Board)
+
+| No | Komponen Evaluasi | Rangkuman Klinis, Toksikologi & Regulasi Kedokteran Okupasi |
+| :---: | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Bioaerosol organik kompleks dari serat kapas, daun pelindung (*bracts*), dan tanah. Kausa primer: **endotoksin (lipopolisakarida / LPS)** bakteri Gram-negatif (*Enterobacter/Pantoea agglomerans*). Serat sejenis: rami (*flax*), *soft hemp*, dan *jute*. **IARC:** Tidak diklasifikasikan sebagai karsinogen. **ACGIH: A4** (*Not classifiable as human carcinogen*). |
+| **2** | **Sumber Pajanan Industri** | Pabrik pemintalan benang kapas, terutama bagian pembukaan bal (*blowroom*) dan penyisiran kasar (**cardroom**) yang memiliki kadar endotoksin tertinggi; proses *waste recycling/garnetting*; penenunan kain (*slashing & weaving*); pemrosesan rami/flax; dan *cotton ginning*. |
+| **3** | **Toksikokinetik & Deposisi** | Partikel debu bebas serat (*lint-free dust*) fraksi torasik & respirabel (\\(<10\text{--}15\ \mu\text{m}\\)) mengendap di bronkus dan bronkiolus terminalis. Serat panjang terhenti di jalan napas atas. Endotoksin larut menembus mukosa bronkus dan mengikat makrofag/sel imun. |
+| **4** | **Patogenesis Molekuler** | Endotoksin mengikat reseptor **TLR4/CD14** \\(\rightarrow\\) aktivasi jalur MyD88/NF-\\(\kappa\text{B}\\) \\(\rightarrow\\) sekresi masif **IL-8, TNF-\\(\alpha\\), IL-1\\(\beta\\)** \\(\rightarrow\\) inflamasi neutrofilik akut. Ekstrak *cotton bract* (tanin) merangsang degranulasi langsung sel mast (pelepasan histamin non-IgE). **Fenomena Hari Senin:** degranulasi masif pasca libur akhir pekan, diikuti takifilaksis/toleransi reseptor di hari berikutnya. Kronis: ekspansi sel dendritik dan remodeling memicu obstruksi PPOK. |
+| **5** | **Diagnosis & Pengendalian di Tempat Kerja** | **Diagnosis:** Anamnesis siklus mingguan (sesak hari Senin); **Derajat Schilling** (0, 1/2, 1, 2, 3); **Spirometri Pra- dan Pasca-Sif** hari pertama (penurunan FEV1 lintas-sif \\(\ge 5\%\\) hingga \\(>10\%\\)); Klasifikasi WHO 1983; Foto rontgen toraks normal pada stadium awal; Evaluasi FeNO.<br>**Pengendalian:** Mesin *carding* tertutup (*enclosure*); sistem **LEV** dengan filtrasi kain; pencucian kapas mentah (*washed cotton*) untuk melarutkan endotoksin; larangan sapu kering/kompresor udara (wajib vakum sentral); APD respirator N95; rotasi pekerja. |
+| **6** | **Masa Latensi Penyakit** | Bisinosis klasik: **\\(\ge 10\text{ tahun}\\)** masa kerja. Bisinosis akut: beberapa minggu/bulan pertama pada individu rentan (penurunan FEV1 > 30%). Demam Pabrik (*Mill Fever*): timbul cepat dalam **4–8 jam** pada pekerja baru. |
+| **7** | **Bentuk Klinis** | **Bisinosis Klasik:** dada tertekan (*Monday chest tightness*) dan sesak napas pada hari Senin; **Mill Fever / ODTS:** demam akut, menggigil, lemas, nyeri otot mirip flu tanpa infiltrat rontgen; **PPOK Debu Kapas:** batuk dahak kronis dan penurunan permanen FEV1; **Weaver's Cough:** demam batuk akibat benang terkontaminasi bakteri; Rinitis/iritasi mata. |
+| **8** | **Komplikasi & Keganasan** | **Penyakit Paru Obstruktif Kronik (PPOK)** ireversibel; Eksaserbasi penurunan FEV1 dipercepat oleh **rokok (sinergi multiplikatif)**; Hipertensi pulmonal dan Kor Pulmonale terminal; Gagal napas kronis. Tidak memicu karsinoma paru (efek stimulasi imun endotoksin bersifat protektif karsinoma). |
+| **9** | **Batas Pajanan Kerja (OEL)** | • **Permenaker 5/2018:** Katun debu mentah bebas serat **\\(0{,}2\ \text{mg/m}^3\\)** (\\(200\ \mu\text{g/m}^3\\)) (A4)<br>• **ACGIH TLV-TWA:** **\\(0{,}1\ \text{mg/m}^3\\)** (partikulat torasik) atau **\\(0{,}2\ \text{mg/m}^3\\)** (raw lint-free dust) (A4)<br>• **NIOSH REL:** **\\(<0{,}200\ \text{mg/m}^3\\)** (TWA 10 jam, Vertical Elutriator)<br>• **OSHA PEL:** *Yarn spinning* **\\(0{,}2\ \text{mg/m}^3\\)**, *Slashing/weaving* **\\(0{,}75\ \text{mg/m}^3\\)**, *Waste processing* **\\(1\ \text{mg/m}^3\\)**. Standar rekomendasi endotoksin: **\\(90\ \text{EU/m}^3\\)**. |
+| **10** | **BEI / IPB** | **TIDAK ADA nilai BEI (ACGIH) atau IPB (Permenaker 5/2018)** untuk debu kapas maupun endotoksin. Digantikan oleh pemantauan efek biologis: **spirometri serial lintas-sif pra- dan pasca-kerja hari Senin**, pemantauan FEV1 tahunan, dan kuesioner respirasi berkala. |
+| **11** | **Tatalaksana Medis** | Hentikan atau kurangi pajanan (mutasi ke pos kerja bersih); **Berhenti merokok mutlak** (mencegah progresi PPOK); Bronkodilator inhalasi (SABA pra-sif dapat memitigasi bronkospasme; LABA/LAMA + ICS untuk bisinosis kronis); Vaksinasi Influenza & Pneumokokus; Terapi oksigen LTOT; Rehabilitasi paru. |
+| **12** | **Kelaikan Kerja & Manajemen** | **Kelaikan Kerja:** Bisinosis Derajat 1/2 dan 1 dinilai *Fit with Condition*; Derajat 2 dengan penurunan FEV1 lintas-sif >10% dinilai *Unfit* untuk area *cardroom* (mutasi ke area bersih / *Fit with Restriction*); Derajat 3 dinilai *Unfit* total untuk industri tekstil. **Surveilans:** Spirometri pra/pasca-sif tiap 6–12 bulan. Notifikasi PAK. |
+| **13** | **Regulasi & Medikolegal RI** | **Perpres 7/2019:** Bisinosis (Lampiran II.a.8) dan PPOK debu kapas (Lampiran II.a.9). Celah hukum Pasal 2 ayat (2): batas klaim JKK maksimal 3 tahun pasca putus kerja. Penegakan melalui 7 Langkah Diagnosis PAK (Permenkes 11/2022). PP 28/2024 untuk program *return to work*. |
+| **14** | **Clinical Pearl & Trap** | Gejala khas: **paling berat pada hari pertama kerja (Senin) dan mereda di hari kerja berikutnya** (desensitisasi/toleransi endotoksin). Agen kausatif utama: **endotoksin bakteri Gram-negatif**, bukan serat selulosa kapas. Alat ukur standar: *Vertical Elutriator* (LVE). Debu kapas **bukan faktor risiko kanker paru** (justru menunjukkan mortalitas kanker paru yang rendah/protektif). Foto rontgen toraks awal adalah normal; bukan pneumokoniosis berinfiltrat. Tidak ada BEI urin/darah. |
+
+---
+💡 *Apakah Anda ingin kita melatih simulasi skenario klinis ujian lisan mengenai pembuktian 7 langkah diagnosis PAK pada pekerja industri furnitur kayu dengan keluhan hidung tersumbat kronis unilateral atau pekerja pabrik pemintalan benang dengan keluhan sesak hari Senin?*
