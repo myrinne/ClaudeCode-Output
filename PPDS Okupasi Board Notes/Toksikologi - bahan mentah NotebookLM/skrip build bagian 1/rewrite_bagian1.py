@@ -23,7 +23,7 @@ def read(name):
 
 
 # Vignette OSCE hanya untuk topik berbasis kasus (hitungan dan biomonitoring), bukan topik konsep
-CASE_KEYS = {"1.4", "1.5", "1.6", "1.7", "1.8"}
+CASE_KEYS = set()  # kosong: Bagian 1 tanpa vignette; kasus OSCE ada di bagian 6 (rewrite_lafaz.py)
 
 P1 = [
     ("1.1", "1.1 Dosis-respons", "q01"), ("1.2", "1.2 LD50 dan LC50", "q02"), ("1.3", "1.3 NAB/TLV", "q03"),
@@ -84,7 +84,7 @@ n_before = len([k for k in body.iterchildren() if k.tag != qn("w:sectPr")])
 
 p = doc.add_paragraph()
 r = p.add_run("Bagian 1 ini ditulis ulang dalam versi panjang: jawaban lengkap NotebookLM (q01 sampai q12) dipertahankan "
-              "dengan penjelasan alasan di balik tiap angka. Topik berbasis kasus (1.4 sampai 1.8) ditutup dengan vignette OSCE dan lafaz. Bagian 2 dan seterusnya tetap versi ringkas. Angka dan nomor pasal berasal dari "
+              "dengan penjelasan alasan di balik tiap angka. Bagian 2 dan seterusnya tetap versi ringkas. Angka dan nomor pasal berasal dari "
               "keluaran NotebookLM; cek ulang ke sumber asli sebelum dihafal (lihat Bagian 7).")
 r.italic = True; r.font.size = Pt(9.5)
 
