@@ -87,20 +87,20 @@ QT_3D = {
     "d06_Klorin": ["**Klorin**", "Batuk, bronkospasme, nyeri dada; edema paru puncak 12 sampai 24 jam; RADS", "Tidak ada biomarker/IPB; spirometri, AGD, foto serial", "O2 lembab, salbutamol, nebulisasi bikarbonat (bukti terbatas), steroid dini, intubasi dini, observasi 24 sampai 48 jam"],
     "d07_Fosgen": ["**Fosgen**", "Iritasi ringan lalu laten 6 sampai 24 jam, edema paru; bronkiolitis obliterans", "Tidak ada biomarker/IPB", "Istirahat total, observasi 24 sampai 48 jam, O2, steroid; hindari tekanan positif berlebih"],
     "d08_NOx": ["**NO2 / NOx**", "Laten 3 sampai 30 jam lalu edema paru; bronkiolitis obliterans 2 sampai 6 minggu (silo filler)", "Tidak ada biomarker/IPB; Met-Hb pada NOx tinggi", "O2, steroid, observasi; kelaikan dan ventilasi silo"],
-    "d09_SO2": ["**SO2**", "Bronkospasme, asma tereksaserbasi, RADS", "Tidak ada biomarker/IPB", "Bronkodilator, O2, irigasi mata"],
-    "d10_Iodin": ["**Iodin**", "Iritasi mata, saluran napas; hipertiroid/hipotiroid", "Iodium urin; fungsi tiroid", "Irigasi, suportif; tiosulfat topikal"],
-    "d11_NitritNitrat": ["**Nitrit / nitrat**", "Methemoglobinemia, sianosis cokelat, hipotensi", "Met-Hb (co-oksimetri)", "**Biru metilen 1 sampai 2 mg/kg;** O2"],
-    "d12_KorosifKuat": ["**Korosif kuat (asam/basa)**", "Luka bakar kimia kulit/mata/saluran cerna; asam: koagulatif; basa: likuefaksi", "Tidak ada biomarker; pH irigasi, endoskopi", "Irigasi air banyak; tanpa netralisasi, tanpa emesis"],
-    "d13_HF": ["**Asam fluorida**", "Nyeri hebat tidak sebanding, hipokalsemia, hipomagnesemia, aritmia", "Ca, Mg, EKG; fluorida", "**Kalsium glukonat** topikal/intradermal/intra-arteri/IV; koreksi Mg"],
-    "d14_AsamAsetat": ["**Asam asetat**", "Luka bakar kimia (konsentrat), iritasi", "Tidak ada biomarker", "Irigasi, suportif"],
-    "d15_Fenol": ["**Fenol**", "Luka bakar putih, absorpsi kulit sistemik: SSP, aritmia, gagal ginjal", "Fenol total urin", "Dekontaminasi PEG 300/400 atau air banyak; suportif"],
+    "d09_SO2": ["**SO2**", "Bronkospasme (asma pada 0,1 sampai 0,5 ppm), batuk, edema laring/paru tertunda 6 sampai 24 jam; RADS; erosi gigi", "Tidak ada BEI; spirometri serial, AGD, foto toraks", "Pindah ke udara bersih, O2 lembab, salbutamol, steroid bila refrakter, irigasi mata; intubasi dini bila stridor"],
+    "d10_Iodin": ["**Iodin**", "Iritasi mata dan saluran napas, edema paru; hipotiroid (Wolff-Chaikoff) atau hipertiroid (Jod-Basedow); iodisme", "Tidak ada BEI; iodin urin (dikacaukan diet); TSH, fT4", "Irigasi; **ingesti: natrium tiosulfat 1 sampai 5% oral atau larutan pati (kompleks biru tua), jangan muntahkan**"],
+    "d11_NitritNitrat": ["**Nitrit / nitrat**", "Sianosis cokelat tanpa sesak, sakit kepala, hipotensi; SpO2 terkunci 85%; Monday headache", "**BEI MetHb 1,5% Hb;** CO-oksimetri, saturation gap, darah cokelat", "**Biru metilen 1 sampai 2 mg/kgBB IV (maks 7);** G6PD: transfusi tukar/vitamin C; O2 100%"],
+    "d12_KorosifKuat": ["**Korosif kuat (H2SO4, HCl, HNO3, NaOH/KOH)**", "Asam: nekrosis koagulatif (eskar hitam/putih/kuning); basa: likuefaktif, mata buta < 15 detik; striktur", "Tidak ada BEI; pH strip, endoskopi 12 sampai 24 jam (Zargar), foto toraks/abdomen", "**Irigasi air masif (mata ≥ 30 menit, pH 7,0 sampai 7,4); DILARANG netralisasi, emesis, arang aktif, NGT buta**"],
+    "d13_HF": ["**Asam fluorida (HF)**", "Nyeri hebat tidak sebanding, onset tertunda 1 sampai 24 jam (< 20%), hipokalsemia, hipomagnesemia, hiperkalemia, QTc panjang, VF", "**BEI fluorida urin 2 mg/L (pra-shift), 3 mg/L (akhir shift);** iCa serial, Mg, K, EKG", "**Gel Ca-glukonat 2,5% topikal; Ca-glukonat injeksi/Bier block/intra-arteri; Ca-glukonat IV + MgSO4; nebulisasi; CaCl2 dilarang intradermal**"],
+    "d14_AsamAsetat": ["**Asam asetat**", "Iritasi uap (NAB 10 ppm), luka bakar glasial; ingesti: asidosis, hemolisis; erosi gigi tanpa nyeri", "Tidak ada BEI; spirometri, AGD, urinalisis, inspeksi gigi", "Irigasi air; **dilarang netralisasi basa, emesis, arang aktif, NGT buta;** bronkodilator, endoskopi 12 sampai 24 jam"],
+    "d15_Fenol": ["**Fenol**", "Luka bakar putih **tanpa nyeri**, kejang, koma, aritmia dalam 5 sampai 30 menit; urin hijau-hitam; okronosis", "**BEI fenol urin 250 mg/g kreatinin (akhir shift);** EKG, kreatinin, MetHb, hemolisis", "**Dekontaminasi PEG 300/400 (atau etanol 70%), jangan sedikit air;** benzodiazepin, bikarbonat, biru metilen (cek G6PD), HD; sarung butil/neoprena/Viton"],
 }
 QT_3E = {
     "e01_Silika": ["**Silika**", "Sesak, batuk; nodul zona atas; PMF; TB, kanker, autoimun", "Tidak ada BEI; foto ILO (p, q, r), HRCT, DLCO, IGRA", "Hentikan pajanan; LTBI/OAT 8 sampai 9 bulan; WLL (akut); transplantasi; pengendalian basah/LEV/respirator"],
     "e02_Asbes": ["**Asbes**", "Asbestosis basal, plak pleura, BAPE, mesotelioma, kanker paru", "Tidak ada BEI; ILO (s, t, u), HRCT prone, DLCO, AB/serat paru (Helsinki)", "Hentikan pajanan; stop rokok; onkologi (platinum + pemetreksed, nivolumab + ipilimumab); abatement HEPA"],
-    "e03_Batubara": ["**Debu batubara**", "CWP simpleks, PMF, Caplan, bronkitis, emfisema", "Tidak ada BEI; foto ILO, spirometri", "Hentikan pajanan; suportif; kontrol debu"],
-    "e04_Kayu": ["**Debu kayu**", "Rinitis, asma, karsinoma sinonasal (adenokarsinoma)", "Tidak ada BEI; nasoendoskopi", "Hentikan pajanan; onkologi; LEV"],
-    "e05_Kapas": ["**Debu kapas**", "Bisinosis: dada sesak hari Senin", "Tidak ada BEI; FEV1 pra/pasca shift", "Hentikan pajanan; bronkodilator; kontrol debu"],
+    "e03_Batubara": ["**Debu batubara**", "CWP simpleks (makula/nodul kecil), PMF (> 1 cm), Caplan, bronkitis, emfisema, PPOK tambang", "Tidak ada BEI; foto ILO (p, q, r), spirometri, DLCO, HRCT", "Hentikan pajanan; tidak ada terapi kuratif; kontrol debu (wet suppression, ventilasi), respirator, rotasi"],
+    "e04_Kayu": ["**Debu kayu**", "Obstruksi hidung unilateral, epistaksis, anosmia (ITAC); rinitis, asma (asam plikatat), dermatitis", "Tidak ada BEI; nasoendoskopi tahunan, CT/MRI sinus, biopsi, spirometri", "Bedah onkologi + radioterapi; hentikan pajanan; LEV, vakum HEPA (dilarang kompresor/sapu kering), N95"],
+    "e05_Kapas": ["**Debu kapas**", "Bisinosis: dada sesak hari Senin (Schilling), mill fever, PPOK debu kapas", "Tidak ada BEI; **FEV1 pra-/pasca-shift hari pertama (turun ≥ 5 sampai > 10%)**, vertical elutriator", "Hentikan/kurangi pajanan, stop merokok, SABA pra-shift, LABA/LAMA + ICS; carding tertutup, pencucian kapas, vakum sentral"],
 }
 
 
@@ -130,10 +130,20 @@ OSCE_3D = [
     "**CO2:** \"CO2 di atas 10% adalah toksikan sistemik walau O2 normal; gunakan detektor NDIR dan uji atmosfer tiga tingkat, tangani dengan ventilasi mekanis, bukan HBO.\"",
     "**Amonia:** \"Edema laring dalam menit dan edema paru tertunda; irigasi mata sampai pH netral, intubasi dini, dan jangan menetralkan dengan asam.\"",
     "**Klorin:** \"Daya larut sedang merusak saluran napas atas dan bawah; observasi 24 sampai 48 jam, evakuasi ke tempat tinggi tegak lurus angin, dan pencampuran pemutih dengan asam melepas Cl2.\"",
+    "**Fosgen:** \"Fase sehat semu 6 sampai 24 jam lalu edema paru; istirahat total, tandu, observasi 24 sampai 48 jam, batasi cairan, dan curigai uap pelarut terklorinasi di dekat busur las.\"",
+    "**NO2/NOx:** \"Edema paru laten lalu bronkiolitis obliterans 2 sampai 6 minggu kemudian pada silo filler; steroid dosis tinggi berminggu-minggu mencegahnya.\"",
+    "**SO2:** \"Larut air sehingga di atas 90% tertahan di saluran napas atas, tetapi penderita asma bronkospasme pada 0,1 sampai 0,5 ppm; NAB tidak ditetapkan, hanya PSD 0,25 ppm.\"",
+    "**Iodin:** \"Organ sasaran khas adalah tiroid (Wolff-Chaikoff dan Jod-Basedow); ingesti ditangani natrium tiosulfat atau pati, jangan dimuntahkan.\"",
+    "**Nitrit/nitrat:** \"SpO2 terkunci 85% dengan saturation gap lebar dan darah cokelat adalah MetHb; biru metilen 1 sampai 2 mg/kgBB, kecuali G6PD (transfusi tukar); BEI MetHb 1,5% Hb.\"",
+    "**Korosif kuat:** \"Asam menyebabkan nekrosis koagulatif dengan eskar; basa likuefaktif menembus dalam dan mata buta dalam kurang dari 15 detik; irigasi air masif, dilarang netralisasi, emesis, arang aktif, dan NGT buta.\"",
+    "**HF:** \"Nyeri tidak sebanding dengan lesi dan onset tertunda; luka 1 sampai 2,5% TBSA dapat fatal; kalsium glukonat (gel, injeksi, Bier block, IV), pantau iCa, Mg, dan QTc; kalsium klorida dilarang intradermal.\"",
 ]
 OSCE_3E = [
     "**Silika:** \"DLCO dan HRCT mendeteksi silikosis awal saat spirometri dan foto masih normal; tidak ada BEI, skrining TB dengan IGRA, dan pekerja ditarik dari pajanan.\"",
     "**Asbes:** \"Plak pleura adalah penanda pajanan, bukan asbestosis; Helsinki 10^6 serat amfibol per gram menghasilkan 33 sampai 45% negatif palsu sehingga usulan 600 badan asbes atau 300.000 serat dipertimbangkan, dan batas klaim JKK 3 tahun tidak sesuai latensi.\"",
+    "**Debu batubara:** \"CWP simpleks tidak bergejala, PMF bila masa lebih dari 1 cm; sering ada kontribusi silika; tidak ada BEI dan tidak ada terapi kuratif, pengendalian pada sumber.\"",
+    "**Debu kayu:** \"Karsinoma sinonasal adenokarsinoma tipe intestinal pada etmoid, latensi 20 sampai 40 tahun, IARC Grup 1 kayu keras; partikel besar mengendap di saluran napas atas, surveilans nasoendoskopi.\"",
+    "**Debu kapas:** \"Zat penyebab adalah endotoksin bakteri Gram-negatif, bukan serat; gejala terberat hari Senin; spirometri pra-/pasca-shift hari pertama; tidak ada kanker paru.\"",
 ]
 
 
@@ -141,7 +151,7 @@ def penutup_3d(doc):
     folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "short3d")
     have = {f for _, f in _present(GAS, folder)}
     doc.add_heading("6.8 Lafaz OSCE: satu kalimat per zat (3D)", level=2)
-    for t, f in zip(OSCE_3D, ["d01_Sianida", "d02_H2S", "d03_CO", "d04_CO2", "d05_Amonia", "d06_Klorin"]):
+    for t, f in zip(OSCE_3D, ["d01_Sianida", "d02_H2S", "d03_CO", "d04_CO2", "d05_Amonia", "d06_Klorin", "d07_Fosgen", "d08_NOx", "d09_SO2", "d10_Iodin", "d11_NitritNitrat", "d12_KorosifKuat", "d13_HF", "d14_AsamAsetat", "d15_Fenol"]):
         if f in have:
             bullets(doc, [t])
     doc.add_heading("6.9 Vignette MCQ (3D)", level=2)
@@ -172,7 +182,7 @@ def penutup_3e(doc):
     folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "short3e")
     have = {f for _, f in _present(DUST, folder)}
     doc.add_heading("6.10 Lafaz OSCE: satu kalimat per agen (3E)", level=2)
-    for t, f in zip(OSCE_3E, ["e01_Silika", "e02_Asbes"]):
+    for t, f in zip(OSCE_3E, ["e01_Silika", "e02_Asbes", "e03_Batubara", "e04_Kayu", "e05_Kapas"]):
         if f in have:
             bullets(doc, [t])
     doc.add_heading("6.11 Vignette MCQ (3E)", level=2)
@@ -200,7 +210,9 @@ def quality_extra_3d(doc):
         "**3D, amonia dan klorin:** notebook tidak punya sumber sendiri; dijawab dengan tambahan ATSDR ToxProfile (tp126, tp172) dan MMG amonia; nomor butir Perpres 7/2019 (I.a, II.b, I.a butir 11) dan nilai evakuasi belum diverifikasi ke lampiran.",
         "**3D, batas pajanan:** NAB Permenaker 5/2018 CO 25 ppm, H2S 1 ppm (PSD 5), CO2 5.000 ppm (PSD 30.000), NH3 25 ppm (PSD 35), Cl2 0,5 ppm (PSD 1), HCN ceiling 4,7 ppm dari NotebookLM; cek ulang Lampiran 3.",
         "**3D, bukti terbatas:** nebulisasi natrium bikarbonat untuk klorin (laporan kasus), natrium nitrit untuk H2S (kontroversial), steroid dini untuk iritan paru.",
-        "**3D, nomor butir Perpres 7/2019:** sianida, H2S, CO, CO2 = Lampiran I.a butir 16 menurut NotebookLM; cek ulang.",
+        "**3D, nomor butir Perpres 7/2019:** sianida, H2S, CO, CO2 = Lampiran I.a butir 16 menurut NotebookLM; fosgen I.a butir 32, NOx I.a butir 18, sulfur oksida I.a butir 36, fluor I.a butir 10, asam mineral I.a butir 22, benzena/homolog (fenol) I.a butir 12, ester asam nitrat I.a butir 14, derivat halogen (iodin) I.a butir 11, bahan kimia lain I.a butir 39; semua dari NotebookLM dan belum dicocokkan dengan lampiran Perpres; cek ulang.",
+        "**3D, nilai yang perlu dicek:** NAB Permenaker 5/2018 untuk SO2 tidak ditetapkan (hanya PSD 0,25 ppm), iodin 0,01 ppm (PSD 0,1), HF 0,5 ppm (KTD 2), H2SO4 1 mg/m3 (ACGIH 0,2 mg/m3 toraks), HCl C 2 ppm, HNO3 2 ppm, NaOH C 2 mg/m3, asam asetat 10 ppm (PSD 15), fenol 5 ppm; BEI fluorida urin 2 dan 3 mg/L, fenol urin 250 mg/g kreatinin, MetHb 1,5% Hb; cek ulang Lampiran 3 dan 4.",
+        "**3D, klaim dengan bukti terbatas atau dari sumber tunggal:** risiko karsinoma esofagus 1.000 sampai 3.000 kali pasca-striktur kaustik, okronosis akibat fenol, Monday headache pada nitrat anorganik (lebih khas nitrogliserin), prediksi nilai Ct fosgen, dan angka konsentrasi HF < 20% dengan onset nyeri tertunda.",
     ], size=10)
 
 
