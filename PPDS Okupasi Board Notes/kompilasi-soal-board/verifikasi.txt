@@ -1,0 +1,657 @@
+# Verifikasi kunci berbasis bukti (Oktober 2026)
+# Format: "@ <id>" (= indeks anggota terkecil grup soal), lalu
+#   E: jawaban terverifikasi   K: Tinggi | Sedang | Rendah   R: sumber   X: penjelasan singkat (opsional)
+# Soal recall tanpa redaksi/opsi diberi E: "Tidak dapat diverifikasi" atau poin kunci saja.
+
+@ 529
+E: Welders / workers with frequent or continuous exposure to metal fume (PPV23).
+K: Tinggi
+R: UK Green Book ch. 25 (PPV23 untuk pajanan metal fume); JCVI 2011 (Thorax 2015;70:198); HSE EIS44
+X: "Manufacturing workers" terlalu umum; rekomendasi spesifik untuk pajanan metal fume.
+
+@ 194
+E: Smoking worsens HAVS
+K: Tinggi
+R: HSE L140 Hand-arm vibration at work; catatan Anda "hand Arm Vibration Syndrome.pdf"
+X: Rokok memperberat vasospasme. Opsi lain salah: gejala dipicu dingin, kesemutan adalah gejala awal, sarung tangan/pakaian tidak mencegah HAVS.
+
+@ 235
+E: 2000, 3000, and 4000 Hz
+K: Tinggi
+R: OSHA 29 CFR 1910.95(g)(10)(i); catatan Kompilasi Taktis Audiometri
+X: 3000–6000 Hz adalah rentang munculnya PTS/notch, bukan definisi STS.
+
+@ 292
+E: Damage to the shoulder rotator cuff
+S: sesuai
+K: Sedang
+R: NIOSH Applications Manual for the RNLE (Pub. 94-110); StatPearls Low Back Strain
+X: Cedera akibat mengangkat terutama di punggung bawah (strain otot erector spinae, diskus, HNP). Rotator cuff lebih terkait kerja overhead.
+
+@ 295
+E: Static manual material handling (bukan carrying)
+S: sesuai
+K: Sedang
+R: NIOSH Pub. 94-110 (RNLE tidak berlaku untuk carrying, pushing, pulling, lifting satu tangan, hoist)
+X: Opsi carrying, pushing, dan chain hoist pasti salah. Kunci 2026 lebih tepat daripada kunci 2022.
+
+@ 113
+E: Curie (atau becquerel, SI) untuk aktivitas radioaktif; dosis paparan = roentgen (C/kg); dosis serap = rad/gray; dosis ekuivalen = rem/sievert
+S: sesuai
+K: Sedang
+R: ICRP 103; IAEA Radiation Protection terminology
+X: Jawaban "curie" hanya benar bila yang ditanya aktivitas sumber.
+
+@ 137
+E: TLV (Threshold Limit Value)
+K: Tinggi
+R: ACGIH TLVs & BEIs, definisi TLV ("nearly all workers may be repeatedly exposed ... without adverse health effects"); ACGIH Statement of Position
+X: BEI adalah kadar determinan dalam spesimen biologis pekerja sehat yang terpajan setara TLV. Kunci Google Form 2021 (BEI) keliru; kunci Feb 2024 (TLV) benar.
+
+@ 265
+E: Creatinine correction
+K: Tinggi
+R: Barr et al., Environ Health Perspect 2005;113:192-200 (koreksi kreatinin urin untuk biomonitoring); ACGIH BEI Documentation
+X: Bootstrapping adalah metode statistik, bukan koreksi dilusi urin.
+
+@ 272
+E: Workplace air monitoring
+K: Sedang
+R: NRC 1983 Risk Assessment in the Federal Government (4 langkah); EPA NRC risk assessment paradigm
+X: Pengukuran udara termasuk exposure assessment, bukan hazard identification. "Identifying the exposed worker" juga cenderung exposure assessment, tetapi sering dimasukkan saat identifikasi bahaya di tempat kerja.
+
+@ 242
+E: Zona bawah/basal (lower zones)
+S: sesuai
+K: Rendah
+R: Radiopaedia "Asbestosis"; eMedicine Asbestosis Imaging; catatan Kompilasi ILO Radiografi Anda (asbestosis = small opacities s/t/u di basal)
+X: Sumber menyebut "lower zones/bases". Tidak ditemukan sumber yang memastikan "lower one-third" vs "lower two-thirds"; pilih opsi zona bawah sesuai redaksi buku acuan ujian.
+
+@ 342
+E: The risk of injury is 30% higher on the night shift than on the day shift
+K: Sedang
+R: Folkard & Tucker, Occup Med 2003;53:95-101; SBU review (RR malam vs pagi ≈1,36)
+X: Efek kesehatan tersering shift kerja adalah gangguan tidur/kelelahan dan GI, bukan kardiovaskular. Rotasi searah jarum jam (clockwise) lebih ditoleransi. Diabetes insulin bukan kontraindikasi absolut.
+
+@ 258
+E: Jawaban terbuka: beban kerja berlebih, jam kerja panjang, kerja shift, ambiguitas/konflik peran, kontrol rendah, dukungan sosial rendah, job insecurity, bullying/kekerasan, monoton
+S: sesuai
+K: Tinggi
+R: WHO Guidelines on Mental Health at Work 2022; ISO 45003:2021; catatan Kompilasi Psikososial Anda
+
+@ 182
+E: Dermal and inhalation (dermal paling penting pada aplikator)
+K: Tinggi
+R: WHO/ILO; US EPA Recognition and Management of Pesticide Poisonings (6th ed.)
+
+@ 530
+E: Potency
+K: Sedang
+R: ILO Encyclopaedia ch. 33 Toxicology (dose–response); Casarett & Doull's Toxicology ch. 2
+X: "Biological gradient" adalah kriteria Bradford Hill (epidemiologi), bukan sifat zat. Recall Okt 2024 (potency) lebih tepat.
+
+@ 8
+E: Fasting/starvation dan defisiensi besi, kalsium (dan zinc)
+S: koreksi
+K: Tinggi
+R: ATSDR Interaction Profile (lead) Appendix A; UK COT statement 2013
+X: Kata "cadmium" di sumber adalah salah ketik untuk calcium.
+
+@ 320
+E: IV – inhalation – subcutaneous – oral – dermal
+S: koreksi
+K: Sedang
+R: Casarett & Doull's Toxicology ch. 2 (urutan efektivitas: IV > inhalasi > intraperitoneal > subkutan > intramuskular > intradermal > oral > dermal)
+X: Jawaban peserta menempatkan oral sebelum SC.
+
+@ 82
+E: Kerangka jawaban: (1) Faktor kerja: duduk lama/kurang aktivitas, jam kerja panjang/shift, stres kerja, pajanan CO dan polusi lalu lintas, pola makan tidak teratur; plus faktor non-kerja (merokok, riwayat keluarga). (2) Konsekuensi: pengemudi bus adalah pekerjaan safety-critical; risiko aritmia/serangan di jalan membahayakan penumpang dan publik. (3) Informasi untuk RTW: fraksi ejeksi, uji latih jantung (exercise tolerance test), ada tidaknya angina/aritmia, efek obat, regulasi SIM kelompok angkutan umum; edukasi berhenti merokok dan rehabilitasi jantung; tentukan dengan 7 langkah kelaikan kerja. (4) Pekerjaan alternatif bila tidak boleh mengemudi: non-mengemudi, misalnya dispatcher/pengatur jadwal, administrasi depo, petugas tiket.
+K: Sedang
+R: DVLA Assessing Fitness to Drive (Group 2: ACS); ESC 2021 cardiac rehabilitation; catatan "Penyakit jantung akibat kerja" (Z. ETC) dan Panduan Saku Klinis & Okupasi Anda
+
+@ 83
+E: Kerangka jawaban: (1) Curiga asma kerja tipe sensitizer (bukan sekadar diperberat). Alasannya: gejala membaik saat libur/cuti dan memburuk sejak cairan sterilisasi diganti (glutaraldehid/OPA adalah sensitizer). Atopi dan riwayat keluarga hanya faktor predisposisi. (2) Anamnesis: waktu onset relatif terhadap penggantian bahan, pola hari kerja vs libur, gejala rinitis/konjungtivitis, rekan dengan keluhan serupa, ventilasi dan APD, riwayat asma sebelum bekerja di endoskopi. (3) Pemeriksaan penunjang: serial PEF minimal 3–4 minggu dengan periode tidak bekerja, spirometri + bronkodilator, uji hiperreaktivitas bronkus (metakolin) saat kerja vs libur, bila perlu specific inhalation challenge, IgE/skin prick, pengukuran lingkungan. (4) Pemeriksaan fisik: wheezing, eksim, rinitis/polip, tanda iritasi. (5) Tatalaksana: hentikan pajanan (substitusi bahan/relokasi; RPE bukan solusi utama), terapi asma standar, lapor PAK, surveilans pekerja lain.
+K: Tinggi
+R: BOHRF Occupational Asthma Guidelines 2010; ERS Task Force Occupational Asthma 2012; Rachiotis et al., Thorax 2007
+
+@ 156
+E: Hyponatremia (deplesi natrium)
+K: Tinggi
+R: StatPearls Heat Cramps; NIOSH Criteria for a Recommended Standard: Occupational Exposure to Heat and Hot Environments (2016)
+
+@ 161
+E: Grading criteria with Helsinki scale
+S: sesuai
+K: Sedang
+R: Stockholm Workshop Scale 1987 (Gemne et al.); HSE L140
+X: Skala HAVS adalah Stockholm Workshop (dan Taylor-Pelmear), bukan Helsinki. Catatan: opsi "resulting from exposure to whole-body vibration" juga salah, karena HAVS akibat getaran tangan-lengan.
+
+@ 188
+E: Low back strain/sprain, herniasi diskus (HNP), cedera bahu/rotator cuff, hernia inguinalis, fraktur atau crush injury akibat beban jatuh, cedera tangan
+K: Tinggi
+R: HSE Manual Handling Operations Regulations guidance L23; NIOSH Pub. 94-110
+
+@ 195
+E: Tidak dapat diverifikasi; dari opsi yang tercatat tidak ada yang jelas salah
+K: Rendah
+R: —
+
+@ 196
+E: Tanda cauda equina: saddle anesthesia, retensi/inkontinensia urin, kelemahan motorik tungkai bilateral. "Ankle pain" dan "direct fall" bukan tanda.
+K: Sedang
+R: StatPearls Cauda Equina Syndrome; NICE CKS Sciatica (red flags)
+X: Redaksi soal tidak lengkap.
+
+@ 200
+E: Tangan/jari (ekstremitas atas)
+K: Rendah
+R: US BLS Survey of Occupational Injuries and Illnesses (bagian tubuh tersering: tangan/jari dan punggung)
+X: Opsi tidak lengkap; statistik bervariasi antar negara.
+
+@ 202
+E: Man-made disease
+K: Sedang
+R: WHO/ILO: PAK sebagai penyakit buatan manusia yang dapat dicegah
+X: Opsi tidak lengkap.
+
+@ 207
+E: Underreporting dan underdiagnosis (PAK tidak terdiagnosis/tidak dilaporkan)
+K: Sedang
+R: ILO, Identification and recognition of occupational diseases (2014); Permenkes 56/2016 (pelaporan PAK)
+
+@ 208
+E: Wartenberg syndrome (cheiralgia paresthetica, kompresi n. radialis superfisialis)
+K: Rendah
+R: StatPearls Wartenberg Syndrome
+X: Redaksi tidak lengkap; bila yang dimaksud tenosinovitis, jawabannya de Quervain.
+
+@ 209
+E: Early diagnosis & prompt treatment (pencegahan sekunder), untuk MCU berkala
+K: Sedang
+R: Leavell & Clark, five levels of prevention
+X: MCU pra-kerja/penempatan sering dikategorikan juga sebagai pencegahan primer (specific protection/penempatan sesuai).
+
+@ 213
+E: Crocidolite paling kuat terkait mesothelioma
+K: Sedang
+R: IARC Monograph 100C (asbestos); WHO Chrysotile asbestos 2014
+
+@ 214
+E: There is a specific association between exposure and disease
+K: Sedang
+R: ILO List of Occupational Diseases 2010 (kriteria hubungan spesifik pajanan–penyakit); WHO definisi PAK vs penyakit terkait kerja
+
+@ 221
+E: Primary prevention (specific protection)
+K: Tinggi
+R: Leavell & Clark; hierarki pengendalian
+
+@ 223
+E: Tidak dapat diverifikasi (redaksi tidak lengkap)
+K: Rendah
+R: —
+
+@ 227
+E: Tidak dapat diverifikasi (redaksi tidak lengkap). Poin kunci: Leptospira dari urin tikus; risiko pada petani, pekerja saluran air, pembersih selokan, peternak.
+K: Rendah
+R: WHO Human leptospirosis guidance 2003
+
+@ 312
+E: TLV-Ceiling (TLV-C)
+K: Tinggi
+R: ACGIH TLVs & BEIs (definisi TLV-C)
+
+@ 321
+E: Protein plasma (albumin), hati dan ginjal, jaringan lemak, tulang
+S: sesuai
+K: Tinggi
+R: Casarett & Doull's Toxicology ch. 5 (Disposition: storage of toxicants)
+X: Sumsum tulang bukan situs penyimpanan utama.
+
+@ 333
+E: Symptoms usually occur immediately after exposure to the agent
+K: Sedang
+R: ERS Task Force Occupational Asthma 2012; BOHRF 2010
+X: Konfirmasi perubahan faal paru justru esensial. Gejala tidak selalu segera muncul (reaksi lambat/late asthmatic reaction sering). Kunci sumber perlu dikoreksi.
+
+@ 337
+E: RTW is best dealt with on an individual basis
+K: Sedang
+R: Society of Occupational Medicine, Return to work after long COVID: evidence review (Des 2021)
+X: Opsi A, C, D juga pernyataan SoM. Kunci "individual basis" sesuai penekanan SoM bahwa RTW berbeda untuk tiap individu.
+
+@ 345
+E: Risk is increased with increasing thickness of metal in cutting operations
+S: sesuai
+K: Sedang
+R: StatPearls Metal Fume Fever (2023); CDC/NIOSH (toleransi/tachyphylaxis)
+X: Toleransi terjadi selama minggu kerja ("Monday fever"), jadi opsi "tolerance does not develop" salah. Onset 4–12 jam, bukan segera. Kadmium menyebabkan pneumonitis. Penyakit tidak progresif.
+
+@ 351
+E: Moderately hazardous (WHO 2009: kelas II = LD50 oral 50–2000 mg/kg)
+K: Sedang
+R: WHO Recommended Classification of Pesticides by Hazard 2009
+X: Pada edisi lama (2004, padat): 500–2000 mg/kg = kelas III slightly hazardous.
+
+@ 352
+E: ≈ 76,5 dB (selisih 4 dB → tambah ±1,5 dB)
+S: sesuai
+K: Rendah
+R: Tabel penjumlahan desibel (Engineering ToolBox; sengpielaudio); 10·log(10^7,5 + 10^7,1) = 76,46 dB
+X: Antara opsi 76 dan 77 tergantung pembulatan. Metode tabel (75 + 1,5 = 76,5) sering dibulatkan ke 77.
+
+@ 360
+E: HBeAg-negative chronic HBV infection
+K: Sedang
+R: CDC Interpretation of Hepatitis B Serologic Test Results; EASL 2017 HBV guideline (nomenklatur)
+X: IgM anti-HBc lemah dapat positif saat flare infeksi kronik.
+
+@ 373
+E: Diffuse pleural thickening, round atelectasis, cancer of the larynx
+K: Tinggi
+R: IARC Monograph 100C (laring: bukti cukup untuk asbes); ATS 2004 Diagnosis of nonmalignant asbestos-related disease
+X: Pulmonary alveolar proteinosis (silikoproteinosis) dan PMF terkait silika/batubara, bukan asbes. Kunci sumber keliru.
+
+@ 376
+E: The level of exposure to causative agents is the major risk factor for occupational asthma development
+K: Tinggi
+R: Rachiotis et al., Thorax 2007 (pemulihan total ±32%); ERS Task Force 2012
+X: Opsi "80% sembuh total" salah. Kunci sumber keliru.
+
+@ 390
+E: 84 dB
+K: Tinggi
+R: Rumus Leq energi: 10·log[(4·10^7,6 + 3·10^8,2 + 1·10^9,2)/8] = 84,4 dB (ISO 9612)
+X: Desibel tidak boleh dirata-rata aritmetika.
+
+@ 396
+E: mg/m3
+K: Tinggi
+R: OSHA/NIOSH Manual of Analytical Methods; Permenaker 5/2018 (NAB debu dalam mg/m3)
+X: Fiber/mL untuk serat asbes; ppm untuk gas/uap.
+
+@ 400
+E: The results of the assessment indicate unsatisfactory control measures and immediate action is required
+K: Sedang
+R: ACGIH TLV Appendix E (mixtures, efek aditif); Permenaker 5/2018 (campuran)
+X: Toluena dan xilena sama-sama depresan SSP (aditif): 0,6 + 0,6 = 1,2 > 1, melampaui batas campuran.
+
+@ 403
+E: Ammonia
+K: Sedang
+R: Mass. Dept. of Public Health/NIOSH (amonia = iritan penyebab RADS); HSE Asthmagen list
+X: Lateks, isosianat, dan formaldehid adalah sensitizer. Zinc oxide juga bukan sensitizer (penyebab metal fume fever); amonia jawaban klasik.
+
+@ 416
+E: Kata thermometer
+K: Tinggi
+R: J Hyg (Cambridge) studi kata thermometer; IIT Kharagpur virtual lab "Kata cooling power"
+
+@ 421
+E: Chloracne
+K: Tinggi
+R: StatPearls Chloracne; Ju et al., Dermatologica Sinica 2012
+X: Distribusi malar–retroaurikular–aksila setelah pajanan herbisida terklorinasi (dioksin) khas chloracne. Kunci "acne mechanica" keliru.
+
+@ 450
+E: Tidak dapat diverifikasi (redaksi kasus tidak tercatat). Gunakan 7 langkah diagnosis PAK.
+K: Rendah
+R: Permenkes 56/2016
+
+@ 453
+E: B
+K: Sedang
+R: Kemenkes, Alur Penetapan Diagnosis Penyakit Akibat Kerja (bagan di dokumen diskusi Feb 2024: kategori B = pajanan kompleks, PAK baru, peran lintas profesi, keraguan)
+
+@ 471
+E: Occupational asthma
+K: Tinggi
+R: ERS Task Force 2012; NIOSH Isocyanates
+
+@ 476
+E: Respirator use
+K: Rendah
+R: OSHA Table 1 Silica (29 CFR 1926.1153): jackhammer → kontrol air/debu + respirator
+X: Jackhammer di jalan menghasilkan debu silika, bising, dan getaran. Tidak ada opsi kontrol bising/getaran yang spesifik; "environmentally friendly machinery" terlalu umum.
+
+@ 477
+E: Working-hour restriction to limit exposure for radiographers
+K: Tinggi
+R: Hierarki pengendalian (NIOSH); opsi lain adalah substitusi/engineering
+
+@ 487
+E: Dentist
+K: Sedang
+R: HSE L140; studi HAVS pada dokter gigi (high-speed handpiece)
+
+@ 488
+E: 23 kg
+K: Tinggi
+R: NIOSH Pub. 94-110 (load constant 23 kg / 51 lb)
+
+@ 490
+E: Respiratory rate
+K: Tinggi
+R: Soal 2016 (objective measures: respiratory rate, heart rate, metabolic rate, core temperature)
+
+@ 494
+E: Musicians
+K: Rendah
+R: StatPearls Carpal Tunnel Syndrome (faktor risiko: gerakan tangan berulang, fleksi pergelangan)
+X: Restaurant chef juga berisiko; tidak ada kunci sumber.
+
+@ 496
+E: Photokeratitis
+K: Tinggi
+R: WHO UV radiation; ILO faktor fisik
+X: Silikosis/pneumokoniosis = faktor kimia/debu, TB = biologi, bising menyebabkan tuli sensorineural.
+
+@ 497
+E: Excessive work demands and lack of control over the job
+K: Tinggi
+R: Karasek Job Demand–Control model; WHO Guidelines on Mental Health at Work 2022
+
+@ 498
+E: Silicosis (dan CWP; keduanya dapat menjadi PMF)
+K: Rendah
+R: ILO Classification 2022; ATS Silicosis
+X: PMF klasik pada silikosis komplikata dan CWP komplikata. Tanpa kunci sumber.
+
+@ 499
+E: The job demand
+K: Tinggi
+R: Panduan Saku Klinis & Okupasi Anda (7 langkah kelaikan kerja: job description → job demand → health status)
+
+@ 501
+E: Repetitive
+K: Rendah
+R: Faktor risiko ergonomi (frekuensi 50×/8 jam)
+X: Force juga relevan bila beban berat; data di soal menekankan frekuensi.
+
+@ 504
+E: Cause fatigue and reduce focus, thereby lowering productivity
+K: Tinggi
+R: WHO Guidelines on Mental Health at Work 2022
+
+@ 507
+E: The dose below which the probability of an individual responding is zero
+K: Sedang
+R: Casarett & Doull's Toxicology ch. 2 (definisi threshold)
+X: NOAEL adalah estimasi eksperimental threshold, bukan definisinya.
+
+@ 512
+E: Extensor carpi radialis brevis
+K: Tinggi
+R: StatPearls Lateral Epicondylitis
+
+@ 514
+E: Rotator cuff tendinitis
+K: Tinggi
+R: StatPearls Rotator Cuff Tendinitis; NIOSH Musculoskeletal Disorders and Workplace Factors 1997
+
+@ 515
+E: Installing proper ventilation and fume hoods in the laboratory
+K: Tinggi
+R: OSHA 29 CFR 1910.1048 Formaldehyde (engineering control)
+
+@ 518
+E: Physical and ergonomic
+K: Sedang
+R: Klasifikasi hazard (Permenaker 5/2018: fisik, kimia, biologi, ergonomi, psikologi)
+
+@ 524
+E: Rudi will feel more isolated and pressured
+K: Tinggi
+R: WHO Guidelines on Mental Health at Work 2022 (dukungan sosial)
+
+@ 540
+E: Kerangka promkes stres kerja: pembukaan, definisi stres kerja, penyebab (beban kerja, kontrol rendah, konflik/ambiguitas peran, dukungan sosial rendah, jam kerja panjang), gejala (sulit tidur, lelah, lesu, tidak bersemangat), dampak (produktivitas turun, absen, kecelakaan, penyakit kardiovaskular, depresi), koping adaptif (olahraga, tidur cukup, teknik relaksasi, manajemen waktu, dukungan sosial, konseling/EAP) vs maladaptif (rokok, alkohol), langkah perusahaan, tanya-jawab, penutup.
+K: Sedang
+R: Skrip Promkes OSCE Topik 4 Burnout dan Kompilasi Psikososial Anda; WHO Guidelines on Mental Health at Work 2022
+
+@ 542
+E: Kerangka: anamnesis klinis (onset, uni/bilateral, tinitus, vertigo, otalgia/otore, ototoksik, trauma) dan okupasi (masa kerja, level bising ruang mesin, durasi, APD/NRR, pajanan solven); PF otoskopi + tes garputala; audiometri. Diagnosis klinis: tuli sensorineural bilateral (notch 3–6 kHz). Diagnosis okupasi via 7 langkah: NIHL akibat kerja. Tatalaksana individu: hindari pajanan, alat bantu dengar, APD + fit testing, audiometri ulang. Komunitas: program konservasi pendengaran (pemetaan bising, engineering control, rotasi, APD, audiometri berkala, edukasi).
+K: Tinggi
+R: Kompilasi Taktis Audiometri dan Skrip Promkes Topik 5 NIHL Anda; Permenaker 5/2018 (NAB bising 85 dBA/8 jam)
+
+@ 556
+E: Poin kunci: Raynaud akibat getaran = vibration white finger (komponen vaskular HAVS). Fase: pucat → sianosis → merah. Dinilai dengan Stockholm Workshop Scale.
+K: Sedang
+R: HSE L140
+
+@ 557
+E: Poin kunci: CTS = n. medianus di carpal tunnel (ibu jari–jari manis radial, atrofi thenar, Tinel/Phalen +, memberat malam). Guyon = n. ulnaris di kanal Guyon (kelingking + ½ ulnar jari manis, lemah otot intrinsik, dorsum tangan tidak terkena). Tatalaksana: splint netral, modifikasi kerja, NSAID/injeksi steroid, operasi dekompresi bila berat.
+K: Sedang
+R: StatPearls CTS; StatPearls Ulnar Tunnel Syndrome; catatan Muskuloskeletal Okupasi Anda
+
+@ 564
+E: Poin kunci: efek pemurnian udara tanaman dalam ruangan dalam kondisi nyata sangat kecil; perlu 10–1000 tanaman/m² untuk menyamai ventilasi gedung. Ventilasi tetap kontrol utama.
+K: Tinggi
+R: Cummings & Waring, J Expo Sci Environ Epidemiol 2020;30:253-261
+
+@ 565
+E: Mercury vapor (di antara opsi yang tercatat)
+S: sesuai
+K: Rendah
+R: Flynn & Susi, Int J Hyg Environ Health 2009 (manganism pada welder); StatPearls Mercury Toxicity
+X: Halusinasi, perilaku aneh, gangguan gait, dan intention tremor pada welder stainless steel sangat khas manganism ("manganese madness"). Bila mangan ada di opsi asli, pilih mangan.
+
+@ 568
+E: Kerangka promkes heat stroke: definisi; gejala waspada (suhu inti >40 °C, gangguan kesadaran/perilaku, kulit panas, takikardi; bisa tetap berkeringat pada exertional); pertolongan pertama (pindahkan, cooling cepat dengan cold water immersion/evaporatif, panggil bantuan, jangan beri minum bila tidak sadar); pencegahan (aklimatisasi, minum 250 mL tiap 15–20 menit, jadwal kerja–istirahat sesuai ISBB/WBGT, pakaian, buddy system, skrining kelaikan).
+K: Tinggi
+R: Skrip Promkes OSCE Topik 2 Heat Stroke Anda; NIOSH 2016 Heat Criteria; Permenaker 5/2018 (NAB ISBB)
+
+@ 569
+E: Kerangka: interpretasi kadar Pb darah (ACGIH BEI 200 µg/L; CDC/ABLES), ZPP/FEP, apusan (basophilic stippling), anemia mikrositik, fungsi ginjal. Diagnosis: intoksikasi timbal kronik. DD: anemia defisiensi besi, talasemia, anemia penyakit kronik. Tatalaksana: hentikan pajanan, chelation bila berat (umumnya Pb darah ≥80 µg/dL atau simtomatik berat; pertimbangkan ≥45–50), surveilans, kontrol engineering, higiene (dilarang makan/merokok di area kerja).
+K: Sedang
+R: Kompilasi Toksikologi dan Skrip Promkes Topik 12 Timbal Anda; ACGIH BEI Lead; Kosnett et al., EHP 2007 (manajemen pajanan timbal dewasa)
+
+@ 570
+E: Kerangka: pilih kuesioner sesuai keluhan, misalnya SRQ-20 (skrining distres, cut-off ≥6 di Indonesia), MBI untuk burnout, DASS-21 untuk depresi/anxietas/stres, NIOSH GJSQ/JCQ untuk stresor kerja. Tatalaksana: individu (konseling, rujuk Sp.KJ bila perlu, manajemen stres) dan organisasi (redesain kerja, beban kerja, dukungan, EAP).
+K: Sedang
+R: Kompilasi Psikososial dan "Kesehatan Jiwa Kerja – Instrumen Skrining" Anda
+
+@ 571
+E: Kerangka: acceptability dan repeatability (ATS/ERS); interpretasi dengan NNT/LLN (normal/obstruksi/restriksi/campuran); LNL = 0,85 × nilai baseline − aging effect (prediksi baseline − prediksi saat ini). Signifikan bila di bawah LNL, atau turun >8% antar 2 pengukuran, atau >90 mL/tahun.
+K: Tinggi
+R: Kompilasi Spirometri Board Sp.Ok Anda (bab 8.3 LNL); Konsensus Spirometri PERDOKI
+
+@ 572
+E: Kerangka: baca sistematis (identitas → kualitas film → small opacities: bentuk/ukuran, zona, profusion → large opacities → pleura: plak, obliterasi sudut kostofrenikus, penebalan difus → simbol), isi formulir ILO, kesimpulan (susp. pneumokoniosis), DD (TB, sarkoidosis, metastasis, IPF), tatalaksana (hentikan/kurangi pajanan, rujuk, lapor PAK, surveilans).
+K: Tinggi
+R: Kompilasi ILO Radiografi dan Catatan ILO Radiograph Anda; ILO Guidelines 2022 Revised Edition
+
+@ 573
+E: Kerangka: 6 hazard ergonomi (postur janggal, postur statis, repetisi, force, kontak/kompresi, vibrasi, durasi, suhu); 6 pemeriksaan MSK sesuai keluhan (inspeksi, palpasi, ROM, kekuatan, sensorik/refleks, tes provokasi: Phalen/Tinel, Finkelstein, Neer/Hawkins, Spurling, SLR); rekomendasi sesuai hierarki (engineering workstation, administratif rotasi/microbreak, edukasi, APD/splint).
+K: Tinggi
+R: JSA – Job Safety Analysis dan MUSKULOSKELETAL OKUPASI (catatan Anda)
+
+@ 574
+E: Kerangka: 7 langkah diagnosis okupasi (penyakit jantung koroner pada sopir: pajanan stres, jam panjang, duduk lama, polusi/CO; umumnya bukan PAK, bisa diperberat pekerjaan) dan 7 langkah kelaikan kerja (sopir truk = safety-critical). Kelaikan pasca-PCI tergantung fraksi ejeksi, angina, aritmia, uji latih; umumnya temporary unfit untuk mengemudi kendaraan berat beberapa minggu (DVLA Group 2: ±6 minggu pasca-PCI elektif/ACS dengan syarat uji latih) lalu fit with restriction. Tatalaksana: rehab jantung, faktor risiko, jadwal kerja, sopir pendamping.
+K: Sedang
+R: DVLA Assessing Fitness to Drive (Group 2 cardiovascular); catatan "Penyakit jantung akibat kerja" dan Panduan Saku Klinis & Okupasi Anda
+
+@ 603
+E: Under this condition, legally his employer should relocate him
+K: Rendah
+R: HSE COSHH Guidance G402 (health surveillance for occupational asthma); HSE bakers' asthma page
+X: Pekerja tersensitisasi dianjurkan dijauhkan dari pajanan. Kewajiban hukum spesifik relokasi tidak dapat dikonfirmasi. Opsi "WEL sangat rendah" juga mendekati kewajiban COSHH (reduce as low as reasonably practicable untuk asmagen).
+
+@ 604
+E: Work rotation
+K: Sedang
+R: NIOSH Hierarchy of Controls (administrative: rotasi, jadwal, pelatihan, prosedur)
+X: Pelatihan juga termasuk kontrol administratif. Evaluasi RTW dan nutrisi bukan kontrol hazard.
+
+@ 617
+E: Noise Induced Hearing Loss
+K: Tinggi
+R: ACOEM NIHL guidance (2012); Kompilasi Taktis Audiometri Anda
+X: TTS pulih setelah bebas bising ±14 jam; notch menetap pada MCU tahunan setelah 10 tahun menunjukkan NIHL.
+
+@ 640
+E: Kerangka: 10 hazard ergonomi petugas linen (mengangkat/mendorong troli, membungkuk, memutar badan, repetisi, beban berat, postur statis, overreach, kontak tekanan, durasi, lantai licin); 6 penyakit (LBP, HNP, strain bahu/rotator cuff, CTS, epikondilitis, nyeri leher); rekomendasi sesuai hierarki.
+K: Sedang
+R: JSA – Job Safety Analysis (catatan Anda)
+
+@ 641
+E: Perfectionism (faktor individu)
+K: Sedang
+R: Maslach & Leiter 2016; Kompilasi Psikososial Anda
+X: Job insecurity dan rencana PHK adalah faktor organisasi/pekerjaan.
+
+@ 643
+E: Shoulder impingement / gangguan rotator cuff
+K: Rendah
+R: NIOSH MSD and Workplace Factors 1997 (bahu: beban dan postur)
+X: Opsi tidak lengkap.
+
+@ 644
+E: Analysis of variance (ANOVA)
+K: Tinggi
+R: Catatan Belajar Tesis Bagian D Statistik Anda
+
+@ 645
+E: Fit to work (dosis di bawah NBD 20 mSv/tahun rata-rata 5 tahun dan <50 mSv dalam satu tahun)
+K: Tinggi
+R: ICRP Publication 103 (2007); Peraturan BAPETEN No. 4 Tahun 2013 tentang Proteksi dan Keselamatan Radiasi
+
+@ 646
+E: Poin kunci: radiasi pengion merusak DNA spermatogonia (sel sangat radiosensitif) → oligospermia sementara (dosis ±0,15 Gy), azoospermia permanen pada dosis tinggi (efek deterministik); efek herediter bersifat stokastik.
+K: Sedang
+R: ICRP Publication 103; IAEA Radiation Biology handbook
+
+@ 647
+E: Fit (tekanan darah normal-tinggi) dengan edukasi gaya hidup dan pemantauan
+K: Sedang
+R: ESC/ESH 2018 hypertension guideline (130–139/85–89 = high-normal)
+
+@ 649
+E: Pengusaha/pengurus (manajemen puncak) bertanggung jawab; SHE manager/safety officer menjalankan program
+K: Rendah
+R: UU No. 1 Tahun 1970 tentang Keselamatan Kerja; PP No. 50 Tahun 2012 (SMK3)
+X: Opsi tidak lengkap.
+
+@ 651
+E: Snake bite
+K: Sedang
+R: Klasifikasi hazard biologi (hewan berbisa); dermatitis bukan hazard biologi
+X: Opsi tidak lengkap.
+
+@ 654
+E: Arterial gas embolism akibat barotrauma paru (naik cepat)
+K: Sedang
+R: US Navy Diving Manual; StatPearls Arterial Gas Embolism
+
+@ 655
+E: Diagnosis AGE terutama klinis; tatalaksana segera oksigen 100% dan rekompresi hiperbarik, tanpa menunda untuk imaging
+K: Rendah
+R: StatPearls Arterial Gas Embolism; UHMS
+X: Dari opsi tercatat tidak ada yang jelas benar.
+
+@ 656
+E: Masih dapat bekerja dengan pengurangan pajanan dan evaluasi (rinitis akibat kerja); bila progresif atau timbul asma → pindah bagian
+K: Rendah
+R: EAACI position paper Occupational rhinitis 2009
+
+@ 657
+E: Asma kerja sensitizer (baker's asthma): unfit untuk pajanan tepung; fit with restriction/relokasi ke bagian bebas pajanan
+K: Sedang
+R: BOHRF 2010; ERS Task Force 2012
+
+@ 661
+E: Kurangi/hindari pajanan debu dan surveilans berkala (spirometri dan radiologi). Kategori 0/1 belum pneumokoniosis; 1/0 sudah kategori 1.
+K: Rendah
+R: ILO Guidelines 2022; NIOSH Coal Workers' Health Surveillance Program
+X: Opsi "spirometri tiap 2 bulan" berlebihan.
+
+@ 663
+E: Poin kunci: COHb normal <1–2% (bukan perokok), perokok 5–10%; ACGIH BEI COHb 3,5%; CO terikat Hb ~200–250× lebih kuat dari O2
+K: Sedang
+R: ACGIH BEI Carbon monoxide; StatPearls CO toxicity
+
+@ 664
+E: Poin kunci: organofosfat → AChE eritrosit/BChE plasma, dialkil fosfat urin; piretroid → 3-PBA urin (biomarker pajanan piretroid); glifosat → glifosat/AMPA urin
+K: Sedang
+R: CDC National Report on Human Exposure to Environmental Chemicals
+
+@ 666
+E: Poin kunci ruang terbatas: asfiksian sederhana (N2, CO2, metana → kekurangan O2 <19,5%) dan kimia (CO, H2S, HCN)
+K: Sedang
+R: OSHA 29 CFR 1910.146 Permit-required confined spaces
+
+@ 689
+E: Kerangka: PF/PP (stigmata sirosis, varises, anemia; Hb, LFT, albumin, INR, HBV DNA, USG, endoskopi). PAK: sirosis e.c. hepatitis B (riwayat keluarga/vertikal) + alkohol 30 tahun → bukan PAK; pajanan solven sablon dapat memperberat (work-aggravated) bila terbukti, nilai dengan 7 langkah. Kelaikan: dengan sirosis Child-Pugh B, varises, dan anemia → hindari pajanan solven hepatotoksik, fit with restriction atau temporary unfit sesuai kondisi. Tatalaksana klinis (antivirus, beta-bloker, hentikan alkohol) dan okupasi (substitusi solven, ventilasi, APD, surveilans fungsi hati).
+K: Sedang
+R: OSCE Okupasi PAK vs Non-PAK dan Panduan Saku Klinis & Okupasi Anda; Permenkes 56/2016
+
+@ 691
+E: Kerangka sama dengan stase spirometri: acceptability/repeatability, interpretasi NNT, perbandingan antar waktu (LNL/8%/90 mL), rekomendasi hierarki pengendalian dan program perlindungan pernapasan.
+K: Tinggi
+R: Kompilasi Spirometri Board Sp.Ok Anda
+
+@ 693
+E: Kerangka promkes APD (bahasa Inggris): hazard (bising + debu kimia), pilihan APD dan alasan (respirator dengan cartridge + filter partikulat; earplug/earmuff dengan NRR), inspeksi, kontraindikasi (jenggot), donning, user seal check (positif/negatif), doffing, perawatan dan penyimpanan, tanya-jawab.
+K: Tinggi
+R: Skrip Promkes OSCE Topik 3 APD dan "Fit Testing Procedures and cleaning respirator" (catatan Anda); OSHA 3151 PPE
+
+@ 695
+E: Kerangka sama dengan stase ILO: baca sistematis dengan film standar, isi formulir, kesimpulan, DD, tatalaksana.
+K: Tinggi
+R: Kompilasi ILO Radiografi Anda; ILO Guidelines 2022
+
+@ 696
+E: Kerangka FTW epilepsi: hazard (lalu lintas kendaraan saat loading, ketinggian, mesin, panas, bekerja sendirian). Kelaikan: fit with restriction (tidak bekerja di ketinggian, dekat mesin bergerak/air, tidak mengemudi; tidak bekerja sendirian). Re-assessment setelah kepatuhan obat dan bebas kejang (cek kadar fenitoin, kontrol Sp.S). Edukasi pasien, keluarga, dan perusahaan (pertolongan kejang) dengan persetujuan pasien (kerahasiaan medis). Berkendara motor: tidak boleh sampai bebas kejang (umumnya 12 bulan). Helm saat berisiko jatuh. Tanggung jawab keselamatan: pemberi kerja dan pekerja.
+K: Sedang
+R: ILAE/ DVLA epilepsy & driving (bebas kejang 1 tahun); UU No. 1 Tahun 1970; Panduan Saku Klinis & Okupasi Anda
+
+@ 697
+E: Kerangka: CTS operator sewing → 7 langkah diagnosis PAK (repetisi, force, postur pergelangan, vibrasi mesin); tatalaksana klinis (splint, NSAID, injeksi, operasi) dan okupasi (redesain workstation, rotasi, microbreak), RTW.
+K: Sedang
+R: CTS – Ferry (Belajar Board) dan MUSKULOSKELETAL OKUPASI (catatan Anda)
+
+@ 698
+E: Kerangka: MFF pada welder → 7 langkah (pajanan fume ZnO, onset 4–12 jam, flu-like, toleransi selama minggu kerja/Monday fever); tatalaksana suportif, LEV, respirator, edukasi; bedakan dengan cadmium pneumonitis.
+K: Tinggi
+R: StatPearls Metal Fume Fever 2023
+
+@ 181
+E: Tidak dapat diverifikasi (opsi tidak tercatat)
+K: Rendah
+R: —
+@ 192
+E: Tidak dapat diverifikasi (opsi tidak tercatat)
+K: Rendah
+R: —
+@ 193
+E: Tidak dapat diverifikasi (redaksi tidak lengkap). Poin kunci: asbestos → mesothelioma, kanker paru, laring, ovarium (IARC 100C).
+K: Rendah
+R: IARC Monograph 100C
+@ 650
+E: Tidak dapat diverifikasi (data tidak tercatat). Rumus: OR = (a×d)/(b×c).
+K: Rendah
+R: —
+@ 653
+E: Tidak dapat diverifikasi (redaksi tidak jelas)
+K: Rendah
+R: —
+@ 658
+E: Tidak dapat diverifikasi (redaksi tidak tercatat)
+K: Rendah
+R: —
+@ 659
+E: Tidak dapat diverifikasi (redaksi tidak tercatat)
+K: Rendah
+R: —
+@ 660
+E: Tidak dapat diverifikasi (opsi tidak tercatat). Poin kunci: dokter gigi → postur statis membungkuk/fleksi leher, risiko nyeri leher/punggung; kontrol: kursi ergonomis, posisi pasien, loupe/mikroskop, microbreak.
+K: Rendah
+R: NIOSH MSD and Workplace Factors 1997
+@ 665
+E: Tidak dapat diverifikasi (redaksi tidak tercatat)
+K: Rendah
+R: —
+@ 667
+E: Tidak dapat diverifikasi (vignette tidak tercatat)
+K: Rendah
+R: —
