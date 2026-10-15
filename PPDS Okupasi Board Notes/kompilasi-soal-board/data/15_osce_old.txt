@@ -1,0 +1,55 @@
+### osce | BISING | ±2020
+Q: Station Audiometri (10 menit). Disediakan audiogram baseline, audiogram terbaru, dan lembar pemeriksaan fisik.
+S: Tentukan ambang dengar telinga kanan dan kiri pada audiogram terbaru, fungsi pendengaran normal/tidak, jenis dan derajat gangguan.
+S: Bandingkan dengan pemeriksaan fisik.
+S: Tentukan ada tidaknya STS (OSHA/Permenaker) pada masing-masing telinga (rerata 2k+3k+4k baseline vs terbaru).
+S: Rekomendasi (individu dan perusahaan).
+A: Catatan peserta: STS (+) → audiometri ulang dalam 30 hari; STS (+) dengan ambang > 25 dB dan diduga akibat bising kerja → recordable OSHA Log 300; STS (+) pada ≥ 10% pekerja → program konservasi pendengaran + hierarki pengendalian bising.
+N: Sumber: catatan "Ujian Nasional ala Sansan" (format ujian ±2020).
+### osce | PARU | ±2020
+Q: Station Spirometri (10 menit). Kasus dengan hasil spirometri dari 2 tahun berbeda; tabel hasil harus diisi dari lembar print.
+S: Nilai acceptability dan reproducibility.
+S: Kesimpulan fungsi paru.
+S: Bandingkan dengan tahun sebelumnya.
+S: Rekomendasi untuk perusahaan (hierarki pengendalian).
+N: Sumber: catatan Sansan (±2020).
+### osce | ERGO | ±2020
+Q: Station Muskuloskeletal (10 menit, ada probandus). Kasus CTS dan rotator cuff tendinitis; jenis pemeriksaan tercantum di lembar jawaban.
+S: Lakukan pemeriksaan muskuloskeletal sesuai indikasi (inspeksi, palpasi, ROM, motorik, sensibilitas, vaskularisasi; tes provokasi).
+S: Diagnosis (kanan/kiri).
+A: Catatan peserta: Neer, Hawkins, Phalen, Tinel, Yergason, Finkelstein, Spurling, injection impairment test, Allen test.
+N: Sumber: catatan Sansan (±2020).
+### osce | PSI | ±2020
+Q: Station Health Promotion (APD), dalam bahasa Inggris. Sebagai dokter perusahaan cat dengan hazard dominan bising dan debu kimia, lakukan penyuluhan kepada pekerja tentang APD yang sesuai.
+S: Jelaskan hazard, pemilihan APD dan alasannya, daya lindung (NRR), pemeriksaan kondisi APD, kontraindikasi, cara memakai, user seal check, cara melepas, perawatan dan penyimpanan.
+N: Sumber: catatan Sansan (±2020).
+### osce | ERGO | ±2020
+Q: Station JSA. Putar video di desktop, screen-capture satu postur janggal (pekerja membungkuk mengangkat kardus berulang), pindahkan ke Word dan beri tanda panah.
+S: Berapa berat beban yang diangkat dan berapa jumlah box?
+S: Data apa yang tidak ada pada gambar (4)?
+S: Sebutkan 5 penyakit yang mungkin timbul.
+S: Faktor ergonomi apa saja yang ada pada gambar (4)?
+S: Rekomendasi (2).
+A: Catatan peserta: data yang belum ada untuk RWL = HM, VM, AM, DM; penyakit: HNP lumbal, HNP servikal, epikondilitis medial/lateral, varises; faktor ergonomi dari 7 faktor (vibrasi, force, posisi, repetisi, durasi, kompresi, temperatur).
+N: Sumber: catatan Sansan (±2020).
+### osce | PARU | ±2020
+Q: Station ILO (10 menit). Baca foto toraks sesuai ILO dengan film standar pembanding dan isi lembar baca ILO.
+S: Identitas, kualitas film, kelainan parenkim (bentuk/ukuran, profusi, zona), large opacities, kelainan pleura, simbol, kesimpulan.
+N: Sumber: catatan Sansan (±2020).
+### oral | FTW | 2023
+Q: Ujian Lisan Board 2023 (penguji Prof. DS dan Prof. Kobayashi). Pekerja laki-laki 40 tahun dikirim perusahaan untuk FTW karena beberapa hari lalu jatuh dari motor; hanya laserasi di beberapa ekstremitas. Perusahaan menanyakan: apakah pasien boleh kembali bekerja? Bila boleh, mengapa dan bagaimana? Bila tidak, mengapa dan bagaimana?
+S: Informasi tambahan saat ujian: riwayat epilepsi (unspecified) ±10 tahun dari Sp.S, fenitoin 3 × 100 mg diminum tidak teratur, sering jatuh tidak sadar. Pekerjaan: penyapu/petugas sampah di area luar gudang material selama 25 tahun; non-shift, fleksibilitas tinggi; alat sapu, tong sampah, plastik; APD topi, seragam, sarung tangan, sepatu.
+S: Hazard apa yang mungkin ada di tempat kerja yang dapat memengaruhi status FTW?
+S: Kapan assessment ulang dilakukan, dan mengapa? Bagaimana bila pasien tetap tidak minum obat teratur — cara mengeceknya? Bila minum obat teratur, apakah memengaruhi waktu FTW ulang?
+S: Rekomendasi dan edukasi bagi pasien dan perusahaan.
+S: Apa yang harus diedukasikan kepada keluarga? Bagaimana bila pasien menolak keluarganya diberi tahu?
+S: Pekerjaan apa yang tidak boleh dilakukan pasien?
+S: Pasien naik motor ke tempat kerja — masih boleh? Bila tidak, kapan boleh lagi?
+S: Perlukah helm? Kapan dan mengapa — di tempat kerja saja atau di rumah juga?
+S: Siapa yang bertanggung jawab atas keselamatan pasien ini?
+### oral | ERGO | 2022
+Q: Ujian Lisan 2022 (contoh kasus yang pernah keluar): carpal tunnel syndrome pada operator produksi sepatu bagian sewing.
+N: Hanya topik yang tercatat (deck "Ujian Lisan – Review for Board 2024").
+### oral | TOX | 2020
+Q: Ujian Lisan 2020 (contoh kasus yang pernah keluar): metal fume fever pada welder.
+N: Hanya topik yang tercatat (deck "Ujian Lisan – Review for Board 2024").

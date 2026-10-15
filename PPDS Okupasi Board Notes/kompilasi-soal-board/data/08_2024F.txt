@@ -1,0 +1,158 @@
+### short | HI | Feb 2024
+Q: ____ generally indicates the concentration of a substance below which nearly all of the workers who are exposed should not experience adverse health effects.
+A: TLV.
+D: Versi Feb 2024 menulis BEI (Biological Exposure Index) lalu dikoreksi "menurutku TLV"; versi diskusi Jan 2026 = TLV. Kunci Google Form 2021 untuk soal serupa = BEI.
+### short | TOX | Feb 2024
+Q: Chemical that can cause angiosarcoma of the liver.
+A: Vinyl chloride.
+### short | EPI | Feb 2024
+Q: ____ is a form of selection bias in occupational epidemiology studies that is typically characterized by lower relative mortality and morbidity rates from all causes combined and from selected causes in an occupational cohort, possibly masking an increased risk of the disease under study.
+A: Healthy worker effect.
+### short | TOX | Feb 2024
+Q: The primary occupational disease of the cardiovascular system caused by solvents such as toluene is ____.
+A: Arrhythmia.
+### short | EPI | Feb 2024
+Q: ____ is the ability of a screening test to correctly identify those people who have the disease of interest.
+A: Sensitivity.
+### short | EPI | Feb 2024
+Q: ____ is a disease that occurs in a given geographic region or population at a higher rate than expected.
+A: Epidemic.
+### short | TOX | Feb 2024
+Q: In the automotive painting industry, what is the most important exposure to consider?
+A: Solvents: volatile organic compounds (benzene, toluene, xylene).
+### short | TOX | Feb 2024
+Q: In the automotive painting industry, what is the most important health impact to consider?
+A: Cancer (leukemia).
+### short | TOX | Feb 2024
+Q: True or False: Beta-2-microglobulinuria is the latest effect of nephrotoxicity due to chronic lead exposure.
+A: False.
+### short | BIO | Feb 2024
+Q: A nurse has active TB and is only given medication without occupational health management. What is the risk to the worker herself?
+A: Jawaban peserta: communicable disease (tidak ada kunci resmi).
+### short | BIO | Feb 2024
+Q: What is the risk to the hospital if occupational health management is not carried out (in the case of the nurse with active TB)?
+A: Jawaban peserta: nosocomial infection, reduced hospital quality, damaged hospital reputation.
+### short | HI | Feb 2024
+Q: Mention 3 environmental conditions that can affect the accuracy and usefulness of direct-reading instruments in industrial hygiene.
+A: Temperature, humidity, air pressure.
+### short | TOX | Feb 2024
+Q: What type of mercury has been classically described as nephrotoxic?
+A: Inorganic mercury.
+### short | BISING | Feb 2024
+Q: The rate of noise-induced hearing loss due to chronic noise exposure is greatest during ____ of exposure.
+A: The first 10 to 15 years.
+### short | PARU | Feb 2024
+Q: Mention at least 4 supporting examinations to diagnose occupational asthma.
+A: Serial peak flow, spirometry, bronchodilator/provocation test, skin prick test (catatan: IgE spesifik lebih tepat daripada darah rutin/rontgen).
+### short | TOX | Feb 2024
+Q: The main route of exposure to organophosphates in agricultural workers.
+A: Dermal, inhalation, ingestion.
+### short | TOX | Feb 2024
+Q: Biomarker test for toluene ____.
+A: Urine hippuric acid; o-cresol (diskusi 2026: juga p-cresol).
+### short | HI | Feb 2024
+Q: ____, usually set at ½ the TLV, requires you to take some kind of administrative or engineering control measure, and possibly monitor for exposure.
+A: Action level.
+### case | FTW | Feb 2024
+Q: MCQ no. 1–5: rangkaian soal tentang 7 Langkah Diagnosis PAK (redaksi kasus tidak tercatat).
+### mcq | BIO | Feb 2024
+Q: HBsAg positive, HBeAg negative, total anti-HBc positive, IgM anti-HBc weakly positive, IgG negative, anti-HBs negative. What is the diagnosis?
+O: Acute hepatitis B
+O: Chronic hepatitis B
+O: Hepatitis B carrier with negative HBsAg
+O: Hepatitis ... (opsi tidak lengkap)
+A: Acute hepatitis B
+### mcq | ERGO | Feb 2024
+Q: RULA score 5 — what is the recommendation? (opsi tidak tercatat)
+A: Medium risk: investigate further and change soon.
+### mcq | REG | Feb 2024
+Q: An occupational disease diagnosis that requires communication between specialists belongs to which category?
+O: A1
+O: A2
+O: B
+O: C
+A: B
+D: Versi Feb 2024 menandai C; versi diskusi Jan 2026 = B (kategori B: diagnosis klinis memerlukan pemeriksaan spesialistik/kerja sama antar dokter spesialis).
+### mcq | BIO | Feb 2024
+Q: A healthcare worker has a needlestick injury. The potential risk of acquiring hepatitis B is:
+O: 1:3
+O: 1:30
+O: 1:300
+O: 3:100
+A: 1:3
+### mcq | TOX | Feb 2024
+Q: Effect of chronic exposure to inorganic mercury:
+O: Gingivostomatitis
+O: Acute tubular necrosis
+O: (opsi tidak tercatat)
+O: Deafness
+A: Acute tubular necrosis
+### mcq | PARU | Feb 2024
+Q: Surveillance of workers exposed to silica — which is correct? (opsi tidak tercatat)
+A: Screening for TB is indicated.
+### mcq | PSI | Feb 2024
+Q: What should be considered regarding shift work exposure?
+O: Workers with insulin-treated diabetes are not recommended for shift work
+O: Cardiovascular effects
+A: Workers with insulin-treated diabetes are not recommended for shift work (jawaban peserta)
+N: Diskusi 2026 melampirkan versi lengkap soal serupa — lihat soal berikutnya.
+### mcq | PSI | Feb 2024
+Q: When considering shift work, which one of the following is the best fit?
+O: Cardiovascular disorders are the most common health effect
+O: Is contraindicated in insulin-dependent diabetics
+O: Counterclockwise rotation of shifts is generally better tolerated
+O: Shift work sleep disorder occurs in less than 10% of people
+O: The risk of injury is 30% higher on the night shift than on the day shift
+A: The risk of injury is 30% higher on the night shift than on the day shift
+D: Diskusi 2026 menandai dua opsi merah: "Cardiovascular disorders are the most common health effect" dan "risk of injury 30% higher on night shift".
+### mcq | PARU | Feb 2024
+Q: The most important demographic characteristics that must be taken into account when comparing a worker's pulmonary function test results with the expected normal range are:
+A: Age, gender, height, race.
+### mcq | EPI | Feb 2024
+Q: Any systematic error in the design, conduct, or analysis of a study that results in a mistaken estimate of an exposure's effect on the risk of disease is called:
+A: Bias.
+### mcq | FIS | Feb 2024
+Q: Which statement is correct/FALSE regarding heat stress (heat-related illness)? (versi dengan opsi "salt tablets")
+O: Salt tablets are not useful in the treatment of heat-induced illness
+O: Heat exhaustion symptoms are nausea, weakness, fatigue, myalgia, dizziness
+O: Cerebellum is one of the latest structures affected by heat stroke
+O: Heat stroke victims are classically dry
+O: Heat exhaustion laboratory findings are haemoconcentration
+A: Cerebellum is one of the latest structures affected by heat stroke
+N: Recall peserta: "yang ada salt tablet".
+### mcq | PARU | Feb 2024
+Q: Which of the following occupations is NOT at higher risk of occupational asthma?
+O: Bakery
+O: Shoemaker
+O: Hairdresser
+O: Stainless steel maker
+O: None of the above
+A: None of the above
+### mcq | FTW | Feb 2024
+Q: Someone in a factory is found to have TB; 3 others also have TB. What is the possibility?
+O: Occupational disease
+O: Work-related disease or occupational disease
+O: Disease in working population
+A: Disease in working population
+### mcq | BISING | Feb 2024
+Q: About vibration (HAVS) — which statement is correct? (opsi tidak tercatat)
+A: HAVS is aggravated by smoking.
+### mcq | PARU | Feb 2024
+Q: About occupational asthma — which statement is correct? (opsi tidak tercatat)
+A: Wheat (flour) exposure is a high-molecular-weight exposure.
+### mcq | BISING | Feb 2024
+Q: About NIHL — which statement is correct? (opsi tidak tercatat)
+A: Early noise-induced hearing loss tends to affect higher-pitched consonant sounds.
+### mcq | ERGO | Feb 2024
+Q: Things to consider regarding adequacy of room lighting, EXCEPT:
+O: Lamp color
+O: Color of tables and chairs
+O: Wall color and pattern
+O: Size and contrast of surrounding objects
+A: Size and contrast of surrounding objects
+### mcq | ERGO | Feb 2024
+Q: Conditions most commonly affecting workers doing manual handling, EXCEPT: (opsi tidak tercatat)
+A: Cauda equina / sacrum (opsi yang ada cauda equina).
+### short | EPI | Feb 2024
+Q: ____ study design is characterized by simultaneous collection of both exposure and outcome data.
+A: Cross-sectional study.

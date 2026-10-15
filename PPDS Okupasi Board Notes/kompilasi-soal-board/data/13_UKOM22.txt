@@ -1,0 +1,142 @@
+### mcq | TOX | UKOM 22 (2026)
+Q: A woman living near a zinc smelter has decreased bone density (fractures from minor bumps) and kidney disorders. This disease is often called itai-itai disease. Exposure to which heavy metal is the most common cause?
+O: Cadmium
+O: Arsenic
+O: Mercury
+O: Lead
+O: Manganese
+A: Cadmium
+N: Soal itai-itai muncul dua kali di UKOM 22 (no. 1 dan no. 13).
+### mcq | TOX | UKOM 22 (2026)
+Q: An organophosphate sprayer has SLUDGE symptoms. What is the pathophysiology?
+O: Dopamine inhibition in the brain
+O: Muscarinic activation in peripheral nerves
+O: Muscarinic antagonism in peripheral nerves
+A: Muscarinic activation in peripheral nerves
+### mcq | BISING | UKOM 22 (2026)
+Q: A worker using power tools has "Raynaud's phenomenon". Which tool can be used to evaluate the complaint?
+O: Epworth Sleepiness Scale
+O: Borg Scale
+O: Stockholm Workshop Scale
+O: Self-Reporting Questionnaire
+A: Stockholm Workshop Scale
+### mcq | PARU | UKOM 22 (2026)
+Q: A worker in building demolition has shortness of breath and cough. X-ray shows pleural plaques. What is the likely exposure?
+O: Asbestos
+O: Hardwood
+O: Silica
+O: Coal
+A: Asbestos
+### mcq | ERGO | UKOM 22 (2026)
+Q: A worker spends 30% of work time kneeling and complains of jumper's knee. Which recommendation fits this case?
+O: Job rotation
+O: Raise the work structure so the worker does not need to kneel
+O: Reduce the number of hours kneeling
+A: Raise the work structure so the worker does not need to kneel
+### mcq | PSI | UKOM 22 (2026)
+Q: A worker feels afraid to go to work because his supervisor often criticizes him rudely in public. Which psychosocial factor plays a role?
+O: Job clarity
+O: Job insecurity
+O: Burnout
+O: Bullying / intimidation
+A: Bullying / intimidation
+### mcq | BISING | UKOM 22 (2026)
+Q: The company provides ear plugs with NRR 25. Workers are exposed to: 88 dB for 3 hours, 94 dB for 3 hours, 97 dB for 2 hours. How effective are the ear plugs?
+O: Sufficient to cover all areas
+O: Not sufficient at the highest noise level
+A: Not sufficient at the highest noise level
+### mcq | TOX | UKOM 22 (2026)
+Q: A farmer has SLUDGE symptoms after spraying organophosphates. What is the management?
+O: Decontamination and atropinization
+O: Removing all clothing
+A: Decontamination and atropinization
+### mcq | TOX | UKOM 22 (2026)
+Q: A worker has hyperkeratosis of the hands and feet and hand tremor. What is the likely occupational exposure?
+O: Arsenic
+O: Mercury
+O: Lead
+O: Manganese
+O: Cadmium
+A: Arsenic
+### mcq | PSI | UKOM 22 (2026)
+Q: A worker experiences cynicism and depersonalization. These symptoms refer to which disorder?
+O: Generalized anxiety
+O: Psychotic disorder
+O: Burnout
+A: Burnout
+### mcq | PSI | UKOM 22 (2026)
+Q: A doctor has symptoms (tidak tercatat) after witnessing many deaths during/after the pandemic. The likely diagnosis is:
+O: Depression
+O: Anxiety
+O: Burnout
+O: Social anxiety
+O: PTSD
+A: PTSD
+### mcq | EPI | UKOM 22 (2026)
+Q: A study follows two groups, exposed and unexposed, until the outcome occurs. What can be obtained from this study?
+O: Odds ratio
+O: Relative risk
+O: PPV
+A: Relative risk
+### mcq | HI | UKOM 22 (2026)
+Q: Benefit of biomarker examination in workers:
+O: Early detection of abnormalities due to occupational exposure
+A: Early detection of abnormalities due to occupational exposure
+N: Opsi lain tidak tercatat.
+### mcq | EPI | UKOM 22 (2026)
+Q: A researcher wants to assess the incidence of lung cancer. Which study design is used?
+O: Cohort
+O: Case-control
+O: RCT
+O: Cross-sectional
+O: Trial
+A: Cohort
+### mcq | PSI | UKOM 22 (2026)
+Q: A worker is stressed because he cannot meet the expectations of his various supervisors. Which psychosocial factor plays a role?
+O: Role ambiguity
+O: Job insecurity
+O: Burnout
+O: Bullying / intimidation
+O: Role conflict
+A: Role conflict
+### osce | FTW | UKOM 22 (2026)
+Q: OSCE Stase 1 — Kecacatan (audiometri). Audiogram SNHL bilateral derajat sedang (NIHL).
+S: Interpretasi audiogram.
+S: Hitung persentase kecacatan (AMA).
+S: Hitung santunan (upah Rp6.500.000).
+A: Recall: SNHL bilateral dengan notch 3–6 kHz khas NIHL; cacat binaural AMA = (telinga baik × 5 + telinga buruk)/6; santunan dihitung dengan tabel + upah (dokter melaporkan % fungsi, nominal ranah administrator).
+### osce | PSI | UKOM 22 (2026)
+Q: OSCE Stase 2 — Promosi Kesehatan. 10% pekerja mengalami gangguan paru; pajanan welding dan debu; banyak perokok.
+S: Lakukan promosi kesehatan (hubungan rokok–paru, dampak pajanan, pencegahan, surveilans).
+A: Recall: rokok dan pajanan berefek aditif/sinergis; welding fume/debu → PPOK/pneumokoniosis; hierarki kontrol + respirator + berhenti merokok; spirometri berkala, LEV/ventilasi, substitusi.
+### osce | ERGO | UKOM 22 (2026)
+Q: OSCE Stase 3 — Muskuloskeletal. Pekerja sawit, nyeri leher menjalar ke lengan bawah kanan, gangguan sensorik ujung jari, kelemahan motorik.
+S: Pemeriksaan fisik.
+S: Diagnosis.
+S: Tatalaksana.
+A: Recall: ROM leher, Spurling, Lhermitte, sensorik/motorik/refleks dermatomal; radikulopati servikal (kemungkinan HNP C6–C7); konservatif, fisioterapi, pengaturan kerja, MRI bila ada red flag.
+### osce | PARU | UKOM 22 (2026)
+Q: OSCE Stase 4 — Spirometri. Sand blaster; spirogram 3 manuver (grafik + tabel nilai).
+S: Nilai kualitas (acceptability dan repeatability).
+S: Interpretasi.
+S: Tatalaksana.
+A: Recall: ATS/ERS 2019 (2 nilai tertinggi selisih ≤ 150 mL); interpretasi dengan LLN/NNT (PERDOKI), pola restriktif → curiga silikosis; hentikan pajanan, foto toraks/ILO, rujukan, surveilans.
+### osce | ERGO | UKOM 22 (2026)
+Q: OSCE Stase 5 — Ergonomi. Video operator mesin jahit/obras elektrik.
+S: Identifikasi bahaya ergonomi.
+S: Gangguan kesehatan yang mungkin.
+S: Rekomendasi untuk pekerja dan perusahaan.
+A: Recall: postur statis duduk lama, gerak repetitif tangan, fleksi leher/bahu; LBP, nyeri leher, CTS, tension neck; pekerja — peregangan, microbreak, postur netral; perusahaan — kursi ergonomis, tinggi meja, rotasi, pencahayaan.
+### osce | PARU | UKOM 22 (2026)
+Q: OSCE Stase 6 — ILO. Foto toraks dengan profusion 3/3, q/q–q/r.
+S: Interpretasi verbal.
+S: Isi formulir ILO.
+S: Diagnosis, diagnosis banding, rekomendasi.
+A: Recall: kualitas 2, profusion 3/3, q/q–q/r, zona atas–tengah kiri; pneumokoniosis lanjut; DD TB milier, sarkoidosis, metastasis; hentikan pajanan, lapor PAK, surveilans pekerja lain.
+### oral | FTW | UKOM 22 (2026)
+Q: KOMPRE (kasus panjang). Laki-laki 34 tahun, tukang sablon (4 tahun), sebelumnya penjual toko kelontong. Varises esofagus e.c. sirosis hepatis Child-Pugh B e.c. hepatitis B (on TDF). Anemia sejak 2021 (transfusi), BAB hitam, post-ligasi berulang; Hb 10. HBsAg (+), anti-HBc (+), anti-HBs (−), HCV (−); USG: sirosis + penyempitan vena porta. Ayah hepatitis B. Merokok dan alkohol 30 tahun.
+S: Pemeriksaan fisik dan penunjang yang relevan.
+S: Tentukan penyakit akibat kerja.
+S: Tentukan kelaikan kerja.
+S: Tatalaksana klinis dan okupasi.
+N: Catatan angkatan: kasus dirancang menjebak — kondisi non-PAK (hepatitis B + alkohol) menyamar sebagai PAK; siap juga ditanya refleksi perjalanan PPDS.

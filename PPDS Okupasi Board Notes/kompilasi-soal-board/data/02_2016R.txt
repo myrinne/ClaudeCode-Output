@@ -1,0 +1,165 @@
+### short | REG | 2016-Remed
+Q: In the new national insurance system, every worker has to be insured by two types of insurance, which are ____ and ____ (you can use Bahasa Indonesia).
+A: BPJS Kesehatan and BPJS Ketenagakerjaan.
+### short | HI | 2016-Remed
+Q: The level of occupational exposure below which the probability of impairing workers' health is acceptable is called ____.
+A: Occupational exposure limit.
+### short | HI | 2016-Remed
+Q: ____ is determined by averaging the concentration of the exposure with each concentration weighted based on the duration of exposure.
+A: TWA (time-weighted average).
+### short | HI | 2016-Remed
+Q: An exposure to acetone at the following concentrations and durations: 1000 ppm for 3 hours, 500 ppm for 2 hours, 200 ppm for 3 hours. The worker would have an 8-hour TWA exposure of ____ ppm.
+A: (3×1000 + 2×500 + 3×200) / 8 = (3000 + 1000 + 600) / 8 = 575 ppm.
+### short | HI | 2016-Remed
+Q: A worker is exposed to 3 chemicals whose effects are the same and additive. Chemical A: C = 500 ppm, L = 750 ppm. Chemical B: C = 100 ppm, L = 500 ppm. Chemical C: C = 50 ppm, L = 200 ppm (C = concentration, L = exposure limit). Determine whether the exposure combination is within the acceptable limit.
+A: Em = 500/750 + 100/500 + 50/200 = 0.67 + 0.20 + 0.25 = 1.12. Em > 1, so the combined exposure exceeds the acceptable limit.
+### short | BISING | 2016-Remed
+Q: Why is hearing protection not very effective?
+A: It is often not used properly; it is uncomfortable.
+### short | BISING | 2016-Remed
+Q: What is the possible negative impact of wearing hearing protective devices?
+A: Placing these on already hearing-impaired workers might make them less able to hear background warning sounds.
+### short | HI | 2016-Remed
+Q: Regarding urine specimen acceptability for BEI testing, what guidelines are indicated for acceptable specimens?
+A: Creatinine > 0.3 g/L and < 3.0 g/L, or specific gravity > 1.010 and < 1.030.
+### short | TOX | 2016-Remed
+Q: Exposure in the workplace most commonly occurs through ____.
+A: Inhalation, dermal absorption, or ingestion of xenobiotics.
+### short | PARU | 2016-Remed
+Q: ____ is a disease caused by dusts such as coal, asbestos, and silica.
+A: Pneumoconiosis.
+### short | TOX | 2016-Remed
+Q: The primary occupational disease of the cardiovascular system caused by solvents such as acetone and toluene is ____.
+A: Arrhythmia.
+### short | LING | 2016-Remed
+Q: How are the problems of disposal of industrial and domestic waste different?
+A: Industrial waste may be highly toxic but is concentrated where factories are and can be controlled. Domestic waste is usually not highly toxic (batteries may be an exception) but its production is widespread; resources and organization are needed to collect and concentrate it for treatment.
+### short | TOX | 2016-Remed
+Q: Within a given species, not all members respond to the same dose identically; some are more sensitive. List some factors that can explain intraspecies variation.
+A: Age and maturity; gender and hormonal status; genetics; state of health.
+### short | TOX | 2016-Remed
+Q: Give examples of chemical asphyxiant gases that prevent the tissues from getting enough oxygen.
+A: Carbon monoxide, cyanide.
+### short | REPRO | 2016-Remed
+Q: A number of chemicals are reactive or can be activated in the body during gestation. The degree and nature of fetal effects depend upon ____ (minimum 3 factors).
+A: Developmental stage of embryo/fetus when exposed; dose, route and exposure interval; transplacental absorption and tissue levels; ability of maternal liver and placenta to metabolize/detoxify; biologic half-life of chemical/metabolites; cell-cycle state at toxic concentration; capacity of embryonic/fetal tissue to detoxify or bioactivate; ability of damaged cells to repair.
+### short | PARU | 2016-Remed
+Q: Chemicals that produce fibrotic tissue which, if massive, blocks airways and decreases lung capacity are called ____.
+A: Fibrogenic dusts (e.g., silicates, asbestos, beryllium).
+### short | KULIT | 2016-Remed
+Q: Chemicals that increase sensitivity to light, resulting in irritation and redness, are called ____.
+A: Photosensitizers.
+### short | TOX | 2016-Remed
+Q: Some combinations of chemicals produce different effects from those attributed to each individually. Chemicals that, when combined, cause a greater-than-additive effect are called ____.
+A: Synergists.
+### short | TOX | 2016-Remed
+Q: What is the primary route of exposure for occupational lead exposure?
+A: Inhalation.
+### short | TOX | 2016-Remed
+Q: What enzyme needs to be checked in workers working with organophosphate pesticides?
+A: Cholinesterase.
+### short | TOX | 2016-Remed
+Q: What chemical is metabolized in the human body into carbon monoxide?
+A: Methylene chloride.
+### short | HI | 2016-Remed
+Q: What documents are required to be kept on site where dangerous industrial chemicals are found?
+A: MSDS (Material Safety Data Sheets).
+### short | TOX | 2016-Remed
+Q: What factors increase gastrointestinal absorption of lead?
+A: Fasting/starvation and deficiencies in iron, zinc, and cadmium.
+### short | TOX | 2016-Remed
+Q: What characteristic finding may be seen on microscopic examination of RBCs in patients with chronic lead toxicity?
+A: Basophilic stippling.
+### short | TOX | 2016-Remed
+Q: What is the most important action in decreasing lead's toxicity?
+A: Removal from the source of lead, or protecting the worker from continued exposure.
+### short | TOX | 2016-Remed
+Q: How is smoking at the workplace connected to lead toxicity?
+A: Smoking encourages hand-to-mouth behavior. Eating and drinking in the workplace have a similar effect.
+### short | TOX | 2016-Remed
+Q: What are the three forms of mercury?
+A: Elemental, inorganic, organic.
+### short | TOX | 2016-Remed
+Q: What is the primary route of absorption of elemental mercury?
+A: Inhalation.
+### short | TOX | 2016-Remed
+Q: What are the three essential steps of carcinogenesis?
+A: Initiation, promotion, progression.
+### short | TOX | 2016-Remed
+Q: What type of anemia is commonly seen in lead poisoning?
+A: Microcytic hypochromic anemia.
+### short | TOX | 2016-Remed
+Q: How can workers be monitored for chronic toluene exposure?
+A: By measuring urine hippuric acid concentration.
+### short | ERGO | 2016-Remed
+Q: What objective measures can be used to estimate work intensity?
+A: Respiratory rate; cardiac output (heart rate); metabolic rate (calorimetry, oxygen uptake); core body temperature.
+### short | ERGO | 2016-Remed
+Q: The neutral posture of a joint is determined by the ____ (minimum, maximum, resting) length of the muscle crossing that joint.
+A: Resting.
+### short | ERGO | 2016-Remed
+Q: Regarding biomechanics, the components that comprise a moment are ____ and ____.
+A: Force (weight of the object) and distance from the body (perpendicular distance from the axis of rotation).
+### short | BISING | 2016-Remed
+Q: Powered hand tools are faster, stronger, and more efficient than hand tools, but the trade-off for this increased speed and power is increased exposure to ____.
+A: Vibration.
+### short | ERGO | 2016-Remed
+Q: The NIOSH lifting equation considers 6 task variables when determining the recommended weight limit for a task or job. What are these 6 variables?
+A: Horizontal distance, vertical distance, travel distance, coupling (handles), frequency of lift, duration of lift.
+### short | BISING | 2016-Remed
+Q: What sounds may be difficult to appreciate by a worker with noise-induced hearing loss?
+A: High-pitched sounds.
+### short | BISING | 2016-Remed
+Q: List the 3 components of Hand-Arm Vibration Syndrome.
+A: Circulatory disturbances (vasospasm, white finger); sensory/motor disturbances (numbness, loss of dexterity); musculoskeletal disturbances (muscle, bone, joint).
+### short | EPI | 2016-Remed
+Q: It is very common for occupational cohorts to have lower total mortality than the general population, even if the workers are at increased risk for selected causes of death from workplace exposures. This phenomenon is called ____.
+A: The healthy worker effect.
+### short | EPI | 2016-Remed
+Q: The ability of a screening test to correctly identify those people who do not have the disease of interest is known as the test's ____.
+A: Specificity.
+### short | FIS | 2016-Remed
+Q: What body tissues are the most exquisitely radiosensitive? Name at least 3.
+A: Lymphocytes, immature hematopoietic cells, intestinal crypt cells, spermatogonia, ovarian follicles.
+### short | FIS | 2016-Remed
+Q: Name at least 2 hematological diseases associated with ionizing radiation.
+A: Leukemia, polycythemia rubra vera, myelodysplastic syndromes.
+### short | BIO | 2016-Remed
+Q: By what routes are infectious diseases transmitted in humans?
+A: Inhalation/respiratory; oral/enteral; direct contact; parenteral; arthropod vectors.
+### short | BIO | 2016-Remed
+Q: Is the common cold usually considered an occupationally related infectious disease? Why or why not?
+A: No. Occupationally related infections are those with higher rates in a specific occupational group than in the community. Common cold rates do not differ substantially between work and general environments, so it is not normally considered occupational even though its incidence at work is appreciable.
+### short | BIO | 2016-Remed
+Q: What are the estimated risks of acquiring infection from HBV, HCV, and HIV from a single needlestick?
+A: Approximately 30% for HBV, 3% for HCV, and 0.3% for HIV.
+### short | FIS | 2016-Remed
+Q: Are "heat stroke" victims wet or dry?
+A: Classically dry.
+### short | FIS | 2016-Remed
+Q: What is the treatment for heat stroke?
+A: Removal from heat, fluids, immediate cooling, and systemic medical monitoring.
+### short | FIS | 2016-Remed
+Q: What is the calculation for the Wet Bulb Globe Temperature (WBGT) heat index?
+A: Wet × 0.7 + Dry × 0.1 + Black (globe) × 0.2 = index temperature.
+### short | FTW | 2016-Remed
+Q: A ____ is something a patient can do, but should not do.
+A: Work restriction.
+### short | FTW | 2016-Remed
+Q: Name the most preferred work accommodations.
+A: Fewer work hours, working from home, a slower work pace, more autonomy in planning work tasks.
+### case | FTW | 2016-Remed, 2020
+Q: Case study 1. At the end of his shift, a 47-year-old bus driver was admitted to the emergency department with worsening severe chest pain, tightness, and shortness of breath. Strong family history of ischaemic heart disease (father and uncle had heart attacks before age 50); smoker since leaving school. Pulse 96/min with frequent premature beats, BP 130/70 mmHg. ECG: ST elevation in anterior leads. Chest X-ray: slight cardiomegaly and a few fine horizontal linear shadows at the bases. Elevated CK and AST. Diagnosed with myocardial infarction, discharged after 12 days with medication and advice to take things easily until outpatient review.
+S: What contributory factors from this man's work/environment may have contributed to his ill health?
+S: What are the consequences of his ill health upon his work?
+S: What information would be needed, and what advice should the patient be given about his return to work?
+S: What job could he do if he could not drive a bus any more?
+N: Ujian 2020 memakai kasus yang sama ("Case study 1 dan 2 sama dengan soal 2016").
+### case | PARU | 2016-Remed, 2020
+Q: Case study 2. A 35-year-old nurse has a persistent cough and wheeze that gets worse as the day goes by; 3 hospital admissions for acute exacerbations in the last 3 years. Breathlessness was intermittent at first, then more persistent; worse as the day went on, sometimes waking her at night. She felt better on weekends off and especially on holiday. Childhood eczema; daughter (6) has hay fever, son (4) has asthma. They keep cats and dogs. Ex-smoker (stopped 2 years ago, 10 cigarettes/day). Previously a medical-ward sister; returned to work as an endoscopy sister ("9 to 5") in an endoscopy suite that has changed the type of sterilising fluid used. She moved house because of her husband's job.
+S: Do you suspect occupational asthma or work-aggravated asthma? Explain your answer.
+S: What questions should you ask to establish that her asthma is occupational asthma?
+S: What further investigations should you carry out?
+S: What might you look for on physical examination?
+S: How would you treat her?
+N: Ujian 2020 memakai kasus yang sama.

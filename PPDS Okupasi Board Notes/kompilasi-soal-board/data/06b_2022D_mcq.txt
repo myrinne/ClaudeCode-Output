@@ -1,0 +1,328 @@
+### mcq | KULIT | Des 2022
+Q: Which of the following statements about allergic contact dermatitis (ACD) is FALSE?
+O: Allergic contact dermatitis is a cell-mediated (type IV), delayed-type hypersensitivity reaction caused by skin contact with an environmental allergen
+O: The clinical manifestation of acute-phase ACD is eczematous dermatitis characterized by lichenified erythematous plaques with variable hyperkeratosis and fissuring beyond the areas of direct exposure
+O: Itch and swelling are key components of the history and can be a clue to allergy
+O: Patch testing is fundamental for the identification of causal allergens and is indicated for patients with persistent or recurrent dermatitis in whom ACD is suspected
+O: The hands, feet, and face are some of the common sites for ACD
+A: The clinical manifestation of acute-phase ACD is eczematous dermatitis characterized by lichenified erythematous plaques with variable hyperkeratosis and fissuring beyond the areas of direct exposure
+### mcq | PARU | Des 2022
+Q: The following are essential in the diagnosis of occupational asthma, EXCEPT:
+O: Occupational asthma can be caused by several mechanisms, including type I immune (immediate hypersensitivity) reactions, inflammatory processes, and direct airway irritation
+O: Symptoms usually occur immediately after exposure to the agent
+O: Patients often report feeling better in evenings or during weekends and vacations
+O: The suspected diagnosis should be confirmed with changes in lung function
+O: Patients complain of dyspnea, wheezing, and/or cough that correlates with workplace exposures
+A: The suspected diagnosis should be confirmed with changes in lung function
+N: [Perlu dicek] Kunci diskusi 2026 seperti di atas; konfirmasi perubahan faal paru justru esensial, sedangkan "symptoms usually occur immediately" tidak selalu benar (bisa lambat).
+### mcq | TOX | Des 2022
+Q: Toxic chemicals are most likely to be biotransformed in which of the following organs?
+O: Pancreas
+O: Liver
+O: Central nervous system
+O: Heart
+O: Lung
+A: Liver
+### mcq | TOX | Des 2022
+Q: When chemicals A and B are administered simultaneously, their combined effects are far greater than the sum of their effects when given alone. The interaction between chemicals A and B can be described as:
+O: Functionally antagonistic
+O: Potentiation
+O: Additive
+O: Synergistic
+A: Synergistic
+### mcq | ERGO | Des 2022
+Q: A company doctor uses the Rapid Upper Limb Assessment (RULA) to evaluate a worker's activity on an assembly line. The calculated RULA score is 5. What is concluded about the posture-related risk of injury?
+O: Working in the worst posture with an immediate risk; investigate and change immediately to prevent an injury
+O: Working in the best posture with no risk
+O: Working in a poor posture with a risk of injury; investigate and change the task shortly
+O: Working in a posture that could present some risk; investigate and correct the task
+O: Cannot conclude at this time; further assessment is needed
+A: Working in a poor posture with a risk of injury; investigate and change the task shortly
+### mcq | FTW | Des 2022
+Q: In considering a return-to-work (RTW) plan for an employee with long COVID syndrome, which statement is the best fit?
+O: An RTW plan could include a phased return, flexible work, time off for rehabilitation and medical appointments, fatigue management strategies, and adapting work tasks
+O: An RTW plan should have the agreement of the manager, human resource professional, employee, and union representative
+O: Occupational health professionals can play an important role
+O: The worker with long COVID should be allowed to be actively involved in (re)designing his/her work
+O: RTW is best dealt with on an individual basis
+A: RTW is best dealt with on an individual basis
+D: Recall Des 2022 menjawab "kesepakatan dengan pihak terkait (perusahaan, serikat pekerja, dst.)"; kunci diskusi 2026: RTW is best dealt with on an individual basis.
+### mcq | PARU | Des 2022
+Q: Silicosis is a parenchymal lung disease resulting from inhalation of crystalline silicon dioxide (silica). The following statements are true about silicosis, EXCEPT:
+O: Alveolar macrophages play an important role in pathogenesis because they ingest inhaled silica and release cytokines that recruit and/or stimulate other cells
+O: Pulmonary function testing in workers with simple silicosis generally demonstrates evidence of a mild restrictive ventilatory defect
+O: Accelerated silicosis is similar to chronic silicosis except that the time span is shorter and PMF is seen more frequently
+O: Chronic silicosis is characterized by the formation of silicotic nodules in the pulmonary parenchyma and hilar lymph nodes
+O: There is an increased incidence of mycobacterial disease in silicosis
+A: Pulmonary function testing in workers with simple silicosis generally demonstrates evidence of a mild restrictive ventilatory defect
+### mcq | FTW | Des 2022
+Q: According to the World Health Organization (WHO) classification, which of the following is an example of an impairment?
+O: Loss of ability to get showered
+O: Having a cardiac pacemaker
+O: Ischemic brain damage
+O: Need for a knee brace to walk
+O: Weakness of one arm
+A: Ischemic brain damage
+### mcq | EPI | Des 2022
+Q: In the context of the Bradford Hill criteria for causation, "the greater the level and duration of exposure, the greater the severity of disease or its incidence" is the definition of:
+O: Strength of association
+O: Coherence
+O: Biological gradient
+O: Biological plausibility
+O: Temporality
+A: Biological gradient
+### mcq | FTW | Des 2022
+Q: Which of the following is NOT a useful tool for workplace rehabilitation of injured workers?
+O: Appropriate financial compensation
+O: Alternative roles
+O: Use of equipment
+O: Reduce the number of days in the working week
+O: Reduce the number of hours in the working day
+A: Appropriate financial compensation
+### mcq | PSI | Des 2022
+Q: When considering shift work, which one of the following is the best fit?
+O: Cardiovascular disorders are the most common health effect
+O: Is contraindicated in insulin-dependent diabetics
+O: Counterclockwise rotation of shifts is generally better tolerated
+O: Shift work sleep disorder occurs in less than 10% of people
+O: The risk of injury is 30% higher on the night shift than on the day shift
+A: The risk of injury is 30% higher on the night shift than on the day shift
+D: Diskusi 2026 menandai dua opsi: "Cardiovascular disorders are the most common health effect" dan "risk of injury 30% higher on night shift".
+### mcq | ERGO | Des 2022
+Q: Characteristic features of carpal tunnel syndrome are which one of the following?
+O: Ulnar nerve distribution of tingling and pain
+O: Pain or numbness worse during daytime
+O: Positive Mill's test
+O: Pain in the wrist radiating into the forearm
+O: Radial nerve distribution of absent sensation
+A: Pain in the wrist radiating into the forearm
+### mcq | HI | Des 2022
+Q: The measure of all the exposures of an individual in a lifetime and how those exposures relate to health is the definition of:
+O: Cumulative exposure
+O: Exposome
+O: Biomarker
+O: Epigenetic
+O: Polymorphic
+A: Exposome
+### mcq | TOX | Des 2022
+Q: In metal fume fever, which one of the following statements is the best fit?
+O: Risk is increased with increasing thickness of metal in cutting operations
+O: Tolerance does not develop over the working week
+O: Onset is typically immediate
+O: Is typically caused by exposure to cadmium fume
+O: Is gradually progressive
+A: Risk is increased with increasing thickness of metal in cutting operations
+D: Diskusi 2026 menandai dua opsi merah: "risk increased with thickness of metal" dan "tolerance does not develop over the working week". [Perlu dicek] Pada MFF justru terjadi toleransi selama minggu kerja ("Monday fever").
+### mcq | HI | Des 2022
+Q: Which one of the following is an example of biological effect monitoring?
+O: Measurement of cholinesterase activity for organophosphate exposure
+O: Measurement of hippuric acid in urine for toluene exposure
+O: Measurement of lead in blood for lead exposure
+O: Measurement of lead in urine for lead exposure
+O: Measurement of volatile organic compounds in exhaled air
+A: Measurement of cholinesterase activity for organophosphate exposure
+### mcq | ERGO | Des 2022
+Q: The NIOSH lifting equation is intended to analyze jobs involving:
+O: Pushing loads
+O: Static manual material handling
+O: Lifting materials with chain hoists
+O: Repetitive manual handling
+O: Carrying loads
+A: Static manual material handling
+D: Diskusi Des 2022 menjawab "carrying loads"; diskusi 2026: static manual material handling.
+### mcq | HI | Des 2022
+Q: Which of the following statements is FALSE regarding biomarkers?
+O: Objective, quantifiable characteristics of biological processes
+O: Typically, the agent or parent compound is always detected in a biological specimen
+O: It can be used to estimate exposure
+O: Biomarkers of effect should reflect early reversible changes in the organism
+O: Provides information about what chemicals get into people
+A: Typically, the agent or parent compound is always detected in a biological specimen
+### mcq | ERGO | Des 2022
+Q: A worker has a lifting-related injury. Which of the following is LEAST likely to have occurred?
+O: Lower back pain
+O: Damage to the erector spinae muscles
+O: Damage to the shoulder rotator cuff
+O: Compression damage to the intervertebral disc
+O: Herniated disc
+A: Damage to the shoulder rotator cuff
+D: Diskusi Des 2022: erector spinae; diskusi 2026: shoulder rotator cuff.
+### mcq | HI | Des 2022
+Q: A high-efficiency particulate air (HEPA) filter can theoretically remove at least ____ of airborne particles with a size of 0.3 micrometers in diameter.
+O: 89
+O: 99.97
+O: 100
+O: 98.60
+O: 95.50
+A: 99.97
+### mcq | TOX | Des 2022
+Q: According to the WHO classification, substances with an oral LD50 for the rat of 1000 mg/kg body weight are classified as:
+O: Extremely hazardous
+O: Moderately hazardous
+O: Highly hazardous
+O: Slightly hazardous
+O: Unlikely to present acute hazard
+N: Tidak ada kunci di sumber. Versi Remed Agt 2022 memakai LD50 100 mg/kg (kunci: moderately hazardous); tabel diskusi 2026: kelas II moderately hazardous = 50–2000 mg/kg.
+### mcq | BISING | Des 2022
+Q: What is the answer to the following equation: 75 dB + 71 dB = ?
+O: 80 dB
+O: 76 dB
+O: 75 dB
+O: 78 dB
+O: 77 dB
+A: 77 dB
+N: [Perlu dicek] 10·log(10^7.5 + 10^7.1) ≈ 76.5 dB (dibulatkan 76–77 dB).
+### mcq | BISING | Des 2022
+Q: Which of the following is NOT effective in reducing vibration hazards?
+O: Training and education in controlling vibration
+O: Limiting time exposed to vibration
+O: Ensuring all equipment is properly maintained
+O: Install vibration-damping seats
+O: Use a personal vibration monitor at work
+A: Use a personal vibration monitor at work
+### mcq | PARU | Des 2022
+Q: Which of the following statements is FALSE regarding the purpose of chest radiography in dust-exposed workers?
+O: Chest radiography has been a useful tool in screening dust-exposed workers
+O: Chest radiography has been a useful tool in evaluating functional impairment of the lung
+O: Chest radiography cannot provide certainty about the etiology of observed findings
+O: Chest radiography has been helpful in exposure–response relationships
+O: Chest radiography has been a useful tool in the surveillance of dust-exposed workers
+A: Chest radiography has been a useful tool in evaluating functional impairment of the lung
+### mcq | HI | Des 2022
+Q: Spot urine specimens have been used in biomonitoring of xenobiotic exposure in several epidemiological studies. However, differences in the nature of exposure may affect their reliability to represent exposure profiles in individuals. Which procedure is used to compensate for urine dilution and has been suggested to improve the predictability of chemical exposure over time?
+O: Predictive physiologically based model
+O: Creatinine correction
+O: Genotyping
+O: 24-hour specimen
+O: Bootstrapping
+A: Creatinine correction
+D: Diskusi Des 2022: bootstrapping; diskusi 2026: creatinine correction.
+### mcq | EPI | Des 2022
+Q: In evaluating health screening programs, potential bias should be considered. Which is the MOST likely bias of health screening programs?
+O: Measurement bias
+O: Observer bias
+O: Selection bias
+O: Recall bias
+O: Instrument bias
+A: Selection bias
+### mcq | FIS | Des 2022
+Q: Which of the following statements is FALSE regarding heat-related illness?
+O: Salt tablets are the primary treatment for heat-induced illness
+O: Heat exhaustion occurs in conditions of extreme heat and excessive sweating without adequate fluid and salt replacement
+O: Heat rash is a skin irritation caused by excessive sweating during hot and humid weather
+O: Heat cramps are the mildest form of heat illness and consist of painful muscle cramps and spasms
+O: Heat stroke victims are classically dry
+A: Salt tablets are the primary treatment for heat-induced illness
+### mcq | HI | Des 2022
+Q: Which of the following is TRUE of general ventilation systems?
+O: They should be used when no personal protective equipment can control the exposure situation
+O: They are more effective and economical in environments where highly toxic dust and fumes are present
+O: They should be used when a contaminant cannot be controlled by substitution, changing the process, isolation, or enclosure
+O: They are designed to capture contaminants at their source before they escape into the work environment
+O: They should be used only when small quantities of air contaminants are being released into the work environment
+A: They should be used only when small quantities of air contaminants are being released into the work environment
+### mcq | TOX | Des 2022
+Q: For different substances, the doses needed to produce an adverse effect vary widely. The concentration of the chemical in the air that kills half of the test animals during the observation period is known as the ____ value.
+O: TLV-STEL
+O: LD50/30
+O: LC50
+O: OLC50/30
+A: LC50
+### mcq | BIO | Des 2022
+Q: A healthcare worker has the following hepatitis B serology: HBsAg positive; HBeAg negative; anti-HBc IgM weak positive/negative; anti-HBc total positive; anti-HBs negative. Which is the correct interpretation?
+O: Susceptibility to HBV
+O: HBeAg-negative chronic HBV infection
+O: Acute HBV infection
+O: Response to HBV vaccine
+O: Resolved HBV infection
+A: HBeAg-negative chronic HBV infection
+D: Recall Des 2022 menjawab "active hepatitis B" (peserta menebak); kunci diskusi 2026: HBeAg-negative chronic HBV infection. Bandingkan soal serupa Feb 2024 (kunci: hepatitis B akut).
+### mcq | FIS | Des 2022
+Q: Which of the following is an index of environmental heat widely used to evaluate industrial heat?
+O: Globe temperature and humidity
+O: Globe temperature
+O: Heat strain index
+O: Dry bulb temperature
+O: Wet bulb globe temperature
+A: Wet bulb globe temperature
+### mcq | EPI | Des 2022
+Q: Which of the following statements is TRUE according to the information in the contingency table? (High exposure: disease (+) 40, disease (−) 40. Low exposure: disease (+) 20, disease (−) 60.)
+O: The odds of disease were 3 times higher among those with high exposure than among those in the low-exposure group
+O: Those in the high-exposure group are 50% more likely to develop the disease
+O: There was no difference in the risk of developing the disease between the groups
+O: High exposure is associated with a 1-fold increase in the risk of disease
+O: The risk of disease with high exposure is 67% that of the low-exposed group
+A: The odds of disease were 3 times higher among those with high exposure than among those in the low-exposure group
+### mcq | PSI | Des 2022
+Q: Which of the following statements is TRUE regarding the risks associated with long working hours?
+O: Researchers report people tend to recognize when they are too sleep-deprived to function adequately
+O: A 60-minute nap will increase alertness
+O: Most people can regularly adjust to sleeping less than 7 hours without negative consequences
+O: A 2-hour interval of rest during work shifts is associated with a reduced risk of errors and accidents
+O: Performance impairments after being awake 10 hours or more are similar to impairments due to alcohol intoxication
+A: A 2-hour interval of rest during work shifts is associated with a reduced risk of errors and accidents
+### mcq | PARU | Des 2022
+Q: In order to make a diagnosis of coal workers' pneumoconiosis (CWP):
+O: The severity of the disease always depends on the latency period
+O: Clinical evidence of the disease through computerized tomography (CT scan) is a must
+O: The ILO International Classification of Radiographs of Pneumoconioses is needed to exclude alternative diagnoses
+O: A lung biopsy is the only tool used to establish the diagnosis of CWP
+O: A history of exposure to respirable coal dust is needed
+A: A history of exposure to respirable coal dust is needed
+### mcq | BISING | Des 2022
+Q: Which of the following statements is TRUE about noise hazards at work?
+O: Noise-induced hearing loss always results from noise exposure over an extended period
+O: Tinnitus is a pathognomonic sign of noise-induced hearing loss
+O: May lead to noise-induced hearing loss, usually caused by exposure to excessively loud sounds, that can be medically or surgically corrected
+O: As noise-induced hearing loss progresses, the worker's ability to appreciate soft sound levels is not affected
+O: Early noise-induced hearing loss tends to affect higher-pitched consonant sounds
+A: Early noise-induced hearing loss tends to affect higher-pitched consonant sounds
+### mcq | K3 | Des 2022
+Q: Which of the following is NOT part of the hazard identification step of the risk assessment process?
+O: Hazardous substances identification
+O: Workplace air monitoring
+O: Identifying the sources of exposure
+O: Describing the physical/chemical properties of the toxic substances
+O: Identifying the exposed worker
+A: Workplace air monitoring
+D: Diskusi Des 2022: identifying the exposed worker; diskusi 2026: workplace air monitoring.
+### mcq | FTW | Des 2022
+Q: Which of the following statements on return to work after developing coronary heart disease is FALSE?
+O: Multicomponent interventions, including job-stimulated cardiac rehabilitation and patient education, are beneficial for the older worker with cardiac disease
+O: The cardiac rehabilitation program aims to develop a functional capacity of a minimum of 10 METs, ... so that the maximum working capacity can be achieved (redaksi tidak lengkap)
+O: It is estimated that up to 80% of patients with uncomplicated myocardial infarction will return to work
+O: An exercise stress test gives information on an individual's functional capacity, which needs to be assessed before returning to work
+O: Cardiac rehabilitation has been shown to reduce cardiovascular mortality and hospitalizations but does not reduce the risk of myocardial infarction
+A: The cardiac rehabilitation program aims to develop a functional capacity of a minimum of 10 METs, ... so that the maximum working capacity can be achieved (redaksi tidak lengkap)
+### mcq | PARU | Des 2022
+Q: According to IARC, which of the following is a group of carcinogenic agents with sufficient evidence to cause lung cancer in humans?
+O: Asbestos, benzene, DDT
+O: Acetaldehyde, silicon carbide, asbestos
+O: Chromium (VI), inorganic arsenic, and benzene
+O: Coal-tar pitch, silica dust, and diazinon
+O: Chromium (VI), nickel, and cadmium compounds
+A: Chromium (VI), nickel, and cadmium compounds
+### mcq | ERGO | Des 2022
+Q: The management of work-related musculoskeletal disorders (WMSDs) involves several approaches, including:
+O: Stretching, which is the simplest approach because it doesn't need to be specially designed but offers the benefits of increasing circulation and reducing muscle tension
+O: The use of ice (cold application) immediately after an injury is recommended in case of muscle spasm
+O: Heat application, which is recommended for muscle pain relief especially for injuries with significant inflammation and swelling
+O: Anti-inflammatory drugs, which are the first approach to treatment of WMSDs
+O: The use of splints to restrict the movement of the injured joint
+A: Stretching, which is the simplest approach because it doesn't need to be specially designed but offers the benefits of increasing circulation and reducing muscle tension
+### mcq | EPI | Des 2022
+Q: A large study of erythrocyte acetylcholinesterase levels in farmers exposed to pesticides shows the parameter is normally distributed with a mean of 7.20 U/g hematocrit and SD of 1.10 U/g hematocrit. 95% of observations lie between which limits?
+O: 5.00 and 10.50 U/g hematocrit
+O: 6.10 and 8.30 U/g hematocrit
+O: 5.00 and 9.40 U/g hematocrit
+O: 3.90 and 10.50 U/g hematocrit
+O: 6.65 and 7.75 U/g hematocrit
+A: 5.00 and 9.40 U/g hematocrit
+### mcq | PSI | Des 2022
+Q: The following factors have the LEAST influence on work performance:
+O: The general state of an individual's health
+O: Educational background
+O: Nutritional state
+O: Training or adaptation
+O: Sleep deprivation and fatigue
+A: Educational background

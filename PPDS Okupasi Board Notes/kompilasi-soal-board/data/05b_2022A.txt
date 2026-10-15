@@ -1,0 +1,99 @@
+### short | BIO | Awal 2022
+Q: [Recall] Leptospirosis — disease from rat urine ... (redaksi soal tidak lengkap)
+### short | TOX | Awal 2022
+Q: What combination of solvents is added to gasoline to elevate the octane rating?
+A: BTX (benzene, toluene, xylene).
+### short | TOX | Awal 2022
+Q: Organophosphates inhibit which enzyme in erythrocytes?
+A: Acetylcholinesterase.
+### short | TOX | Awal 2022
+Q: Type of anemia produced by lead exposure?
+A: Microcytic hypochromic anemia.
+### short | BISING | Awal 2022
+Q: Name chemical agents with ototoxic properties.
+A: Toluene, styrene, xylene.
+### short | PSI | Awal 2022
+Q: ____ is "a state of well-being in which an individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and is able to contribute to his or her community" (WHO).
+A: Mental health.
+### short | TOX | Awal 2022
+Q: The amount of a substance that entered the body and was taken up by organs or particular tissues is called ____.
+A: Internal dose.
+### short | EPI | Awal 2022
+Q: [Recall] Soal tabel 2×2 (data tidak tercatat).
+A: "50% higher risk for disease" (jawaban peserta).
+### short | BISING | Awal 2022
+Q: OSHA standard threshold shift: an average shift of ≥ 10 dB at which frequencies?
+A: 2000, 3000, 4000 Hz.
+D: Versi kedua recall menulis 3000–6000 Hz.
+### short | TOX | Awal 2022
+Q: The organic mercury form that can be found in the flesh of seawater animals is ____.
+A: Methyl mercury.
+### short | FIS | Awal 2022
+Q: Unit of radioactivity?
+A: Curie.
+### short | HI | Awal 2022
+Q: A concentration below which nearly all workers should not experience adverse health effects indicates the ____.
+A: Biological Exposure Index.
+### short | PARU | Awal 2022
+Q: Name the 3 most common causes of pneumoconiosis.
+A: Silicosis, asbestosis, coal workers' pneumoconiosis (black lung).
+### short | EPI | Awal 2022
+Q: ____ is a form of selection bias in occupational epidemiology studies, typically characterized by lower relative mortality and morbidity rates from all causes combined and from selected causes in an occupational cohort, possibly masking an increased risk of the disease under study.
+A: Healthy worker effect.
+### short | FIS | Awal 2022
+Q: [Recall] Case with mental status changes (heat illness) ... EXCEPT.
+A: Cerebellum (opsi yang dipilih).
+### short | PARU | Awal 2022
+Q: Asbestosis: irregular opacities predominantly in the ____ of the lungs.
+A: Lower one-third (jawaban recall).
+### short | PARU | Awal 2022
+Q: Name 3 chemicals that cause lung cancer.
+A: Asbestos, silica, acrylate (jawaban recall).
+### short | HI | Awal 2022
+Q: Factors that interfere with direct-reading (personal) measurement?
+A: Recall: the worker/personal factors, incorrect timing, incorrect placement on the worker's body, duration of personal measurement, equipment not calibrated regularly.
+### short | K3 | Awal 2022
+Q: Related to workplace inspection, EXCEPT:
+A: Air monitoring / air measurement.
+### short | ERGO | Awal 2022
+Q: A 39-year-old male complains of right wrist pain and grip weakness for two weeks. He works as a packaging line operator in an instant noodle factory. No visible swelling. When his right thumb is flexed and held inside a fist and he actively deviates the wrist, it causes sharp pain along the radial wrist at the first dorsal compartment. Wrist X-ray is normal. What is the name of the test that causes the sharp pain?
+A: Finkelstein test.
+### short | KULIT | Awal 2022
+Q: Latex gloves are more likely to trigger a type ____ hypersensitivity reaction due to chemical additives in the gloves.
+A: IV.
+### short | BISING | Awal 2022
+Q: With repeated exposure to noise of sufficient intensity, a permanent threshold shift (PTS) will gradually appear first in the range of ____ Hz.
+A: 3000–6000 Hz.
+### mcq | TOX | Awal 2022
+Q: A 30-year-old male presents to the emergency department with rhinorrhea and excessive lacrimation for the last 30 minutes, after excessive inhalation of an ammonia-containing cleaner one hour ago. Which finding would best predict future development of chronic lung disease?
+A: Injury to the bronchial lining on bronchoscopy.
+### short | BISING | Awal 2022
+Q: What is the name of the clinical rating scheme, introduced in 1987, for grading hand-arm vibration syndrome (HAVS)?
+A: Stockholm scale.
+### mcq | BIO | Awal 2022
+Q: A 26-year-old male has a 4-week history of low-grade fever, cough, night sweats, and fatigue. Temperature 37.8 °C. Decreased breath sounds in the right upper lobe; chest X-ray shows a right upper lobe infiltrate. Which test is best for confirming this patient's condition?
+A: Nucleic acid amplification test (NAAT).
+### mcq | EPI | Awal 2022
+Q: Given a 2 × 2 contingency table, the confidence interval (CI) that should be calculated is:
+A: CI for difference in proportion.
+### mcq | ERGO | Awal 2022
+Q: The NIOSH lifting equation considers several task variables when determining the recommended weight limit for a task or job. What are the variables?
+A: Distance and frequency (jawaban recall).
+### short | TOX | Awal 2022
+Q: ____: the combined effect produced by the action of two or more agents, being equal to the sum of their separate effects.
+A: Additive effect.
+### short | TOX | Awal 2022
+Q: Enzymes inhibited by lead?
+A: ALAD (δ-aminolevulinic acid dehydratase), ALA synthetase (jawaban recall).
+### short | FIS | Awal 2022
+Q: [Recall] Organ most sensitive to (lead/cadmium/) ionizing radiation? (redaksi tidak lengkap)
+A: Bone marrow.
+### short | TOX | Awal 2022
+Q: ACGIH carcinogen category A2 means ____.
+A: Suspected (probable) human carcinogen.
+### short | PSI | Awal 2022
+Q: List possible psychosocial hazards.
+A: Work stress, high targets, ... (jawaban recall tidak lengkap).
+### short | BISING | Awal 2022
+Q: What is used for noise frequency analysis?
+A: Octave band analyzer.

@@ -1,0 +1,192 @@
+### mcq | BIO | Okt 2025
+Q: (Kasus rinitis alergi pekerja kantor) A 24-year-old female worker in the administrative division of a multinational company was diagnosed with allergic rhinitis. Her complaints start every morning after she has worked a couple of hours. Her office is in a high-rise building with a central air-conditioning ventilation system. It is suspected that she is exposed to microorganisms from the ventilation system. What type of biologic hazard is she exposed to?
+O: Environmental biologic hazard
+O: Natural biologic hazard
+O: Work-process biologic hazard
+O: Non-occupational biologic hazard
+O: Occupational biologic hazard
+A: Environmental biologic hazard
+### mcq | BIO | Okt 2025
+Q: (Kasus sipir penjara dengan TB) Mr. S, 42 years old, works in a very overcrowded prison, bringing food to prisoners, giving prescribed medicines, and caring for sick prisoners. In the last month he has had a non-healing cough and weight loss; pulmonary TB was confirmed a week ago. What is the main question you should ask him to identify whether this is an occupational disease?
+O: How long has he worked as a prison warden?
+O: Did he have TB before he worked as a prison warden?
+O: Did he have a history of TB vaccination?
+O: Did he attend prisoners who had TB in the past month?
+A: Did he attend prisoners who had TB in the past month?
+### mcq | FTW | Okt 2025
+Q: A worker in a big wood industry was diagnosed with active pulmonary TB. After the company doctor examined other workers, 3 more workers also had TB. Pulmonary TB found among the workers can be categorized as:
+O: Occupational disease
+O: Work-related disease
+O: Disease among worker population
+O: Occupational or work-related disease
+O: Non-communicable infectious disease
+A: Disease among worker population
+### mcq | FTW | Okt 2025
+Q: A cook in a 5-star hotel was hospitalized for typhoid fever. After discharge he rested at home for one more week. He then wanted to return to work, but the company doctor declared him temporarily unfit. This decision was made mainly because:
+O: There are sufficient numbers of cooks at the hotel
+O: The worker still feels weak
+O: Recommendation from the internist
+O: The company still allows the worker to take time off
+O: There are special precautions for workers who handle food
+A: There are special precautions for workers who handle food
+### mcq | BISING | Okt 2025
+Q: A 27-year-old fitter uses a grinder to cut ferrous metal, 8 hours a day, 5 days a week, with ear plugs every day, for 5 years. The annual medical check-up audiogram shows a notch at high frequencies. The suspected diagnosis is:
+O: Noise-induced hearing loss
+O: Conductive hearing loss
+O: Temporary threshold shift
+O: Sudden deafness
+O: Presbycusis
+A: Noise-induced hearing loss
+### mcq | PSI | Okt 2025
+Q: An example of adaptive coping with work stress is:
+O: Drinking alcohol
+O: Drug abuse
+O: Conflict with coworkers
+O: Physical exercise
+O: Avoiding work altogether
+A: Physical exercise
+### mcq | EPI | Okt 2025
+Q: Which of the following statements is TRUE according to the information in the contingency table? (High exposure: disease (+) 40, disease (−) 40. Low exposure: disease (+) 20, disease (−) 60.)
+O: The odds of disease were 2 times higher among those with low exposure than among those in the high-exposure group
+O: The odds of disease were 2 times higher among those with high exposure than among those in the low-exposure group
+O: The odds of disease were 3 times higher among those with low exposure than among those in the high-exposure group
+O: There was no difference in the risk of developing the disease between the groups
+O: The odds of disease were 3 times higher among those with high exposure than among those in the low-exposure group
+A: The odds of disease were 3 times higher among those with high exposure than among those in the low-exposure group
+### mcq | ERGO | Okt 2025
+Q: [Recall] Physical examination for carpal tunnel syndrome? (opsi tidak tercatat)
+A: Tinel and Phalen signs.
+### mcq | PARU | Okt 2025
+Q: [Recall] Occupational lung disease from sugarcane dust? (opsi tidak tercatat)
+A: Bagassosis.
+### mcq | PARU | Okt 2025
+Q: [Recall] Occupational lung disease from cotton dust? (opsi tidak tercatat)
+A: Byssinosis.
+### mcq | ERGO | Okt 2025
+Q: [Recall] Neck pain requiring immediate referral? (opsi tidak tercatat)
+A: Whiplash injury with red flags (midline cervical tenderness, neurological deficit/paresthesia, dangerous mechanism — Canadian C-spine rule).
+### mcq | FIS | Okt 2025
+Q: [Recall] Glass blower's cataract — cause? (opsi tidak tercatat)
+A: Infrared radiation (thermal/heat cataract).
+### mcq | PSI | Okt 2025
+Q: The Maslach Burnout Inventory (MBI) is used to assess burnout in workers. The MBI consists of 3 main dimensions:
+O: Anxiety, depression, stress
+O: Emotional exhaustion, depersonalization, reduced personal accomplishment
+O: Fatigue, insomnia, decreased productivity
+O: Work overload, job dissatisfaction, interpersonal conflict
+O: Emotional instability, irritability, low motivation
+A: Emotional exhaustion, depersonalization, reduced personal accomplishment
+### mcq | BISING | Okt 2025
+Q: [Recall] Raynaud's phenomenon (vibration white finger) — topik soal; redaksi dan opsi tidak tercatat.
+### mcq | ERGO | Okt 2025
+Q: [Recall] Difference in symptoms and management between Guyon's canal syndrome and carpal tunnel syndrome. (redaksi dan opsi tidak tercatat)
+### mcq | TOX | Okt 2025
+Q: A jewelry plant worker presents with hyperpigmented skin lesions on the palms and soles, peripheral neuropathy, and a history of drinking well water near a smelting site. He later develops squamous cell carcinoma of the skin. Which metal is implicated?
+O: Lead
+O: Selenium
+O: Chromium VI
+O: Arsenic
+O: Iron
+A: Arsenic
+N: Opsi "Arsenic" tidak tertulis di sumber (terhapus); direkonstruksi dari tabel pembahasan.
+### mcq | BIO | Okt 2025
+Q: A worker on a cow farm is at risk of anthrax infection. Choose the right statement regarding anthrax.
+O: Vaccination is not available yet
+O: Cutaneous anthrax is the most common form
+O: Antibiotic treatment is usually not necessary
+O: Anthrax spores last up to 24 hours in the environment
+O: Cutaneous anthrax is highly contagious
+A: Cutaneous anthrax is the most common form
+N: Opsi b tidak tertulis di sumber; direkonstruksi dari pembahasan ("b. Benar — cutaneous anthrax adalah bentuk paling sering").
+### mcq | PSI | Okt 2025
+Q: The body's physiological response to acute stress is primarily mediated by:
+O: (opsi a tidak tercatat)
+O: Activation of the parasympathetic system
+O: The insulin system
+O: Decreased cortisol
+O: The renin–angiotensin system
+A: Opsi a (tidak tercatat; dari pembahasan: aktivasi aksis HPA/sistem simpatis dengan peningkatan kortisol).
+### mcq | FIS | Okt 2025
+Q: A 27-year-old construction worker was found unconscious after working six hours in the hot sun at 38–39 °C. Coworkers reported dizziness, weakness, and muscle cramps before he collapsed. In the ER: GCS E2M4V2, BP 90/60 mmHg, pulse 138/min, RR 32/min, temperature 41.2 °C; dry, reddish skin without sweating; decreased reflexes, no meningeal signs. Lab: increased CK and creatinine, metabolic acidosis, hyperkalemia. Diagnosis: heat stroke with impending rhabdomyolysis and acute kidney injury. The most dangerous complication that must be anticipated immediately is:
+O: Aspiration pneumonia due to decreased consciousness
+O: Hyperkalemia with fatal arrhythmia due to rhabdomyolysis
+O: Hyponatremia due to excessive sweating
+O: Acute hepatitis due to excessive heat
+O: Thrombocytopenia due to coagulopathy
+A: Hyperkalemia with fatal arrhythmia due to rhabdomyolysis
+N: Opsi b tidak tertulis di sumber; direkonstruksi dari pembahasan.
+### mcq | TOX | Okt 2025
+Q: A 47-year-old firefighter with 15 years of service has elevated serum cholesterol and mildly decreased kidney function. He participates in routine foam-based firefighting exercises. Laboratory analysis reveals elevated perfluorooctanoic acid (PFOA). Which health concern is most associated with chronic occupational PFAS exposure?
+O: Hypersensitivity pneumonitis
+O: Asthma and COPD
+O: Liver cirrhosis
+O: Bone marrow aplasia
+O: Kidney and testicular cancer
+A: Kidney and testicular cancer
+### mcq | FIS | Okt 2025
+Q: A 32-year-old radiographer has worked in a hospital radiology facility for 7 years, using a film badge (TLD), protective apron, drape, and gloves. He receives an average of 10 mSv per year (highest 18 mSv last year); no infertility history, normal spermatogenesis and routine labs. He asks about reproductive risks and his work eligibility. A female coworker is in early pregnancy (6 weeks) and continues to work in the X-ray room. According to IAEA/ICRP, the most appropriate action is:
+O: Temporarily transfer to the administration/non-radiation section because fetal exposure must be < 1 mSv
+O: Continue working normally as long as the maternal dose is < 20 mSv/year
+O: Stop all work activities until delivery
+O: Only be allowed to enter the X-ray room if using a double-layer dosimeter
+O: Continue working in radiology with the condition of using a double lead apron
+A: Temporarily transfer to the administration/non-radiation section because fetal exposure must be < 1 mSv
+### mcq | HI | Okt 2025
+Q: [Recall] Indoor plants for passive air filtration — topik soal; redaksi dan opsi tidak tercatat.
+### mcq | TOX | Okt 2025
+Q: A 52-year-old welder in a stainless-steel plant reports headache, giddiness, and hallucinations. Over time his family notes bizarre behavior and gait instability. Examination shows intention tremor. What is the most likely metal causing this neuropsychiatric disorder?
+O: Mercury vapor
+O: Nickel
+O: Cobalt
+O: Cadmium
+O: Chromium VI
+A: Mercury vapor
+N: [Perlu dicek] Kunci sumber = mercury vapor. Gambaran pada welder (halusinasi, perilaku aneh, gangguan gait) juga khas manganisme ("manganese madness"), tetapi mangan tidak ada di opsi yang tercatat.
+### mcq | TOX | Okt 2025
+Q: A 35-year-old paint factory worker presents with weakness, paresthesia, and decreased distal vibration sensation. He mixes solvent-based coatings containing n-hexane. Which peripheral nerve pathology is most characteristic of chronic exposure to this solvent?
+O: Axonal swelling with giant axonal degeneration
+O: Patchy immune-mediated demyelination
+O: Segmental demyelination of Schwann cells
+O: Wallerian degeneration due to ischemia
+O: End-plate degeneration at the neuromuscular junction
+A: Axonal swelling with giant axonal degeneration
+### mcq | REPRO | Okt 2025
+Q: A female worker who experienced abortion at 18 weeks of her third pregnancy consulted the company doctor to know whether the abortion was caused by her work. The company doctor identified that the worker is exposed to potential hazards that have been proven to cause abortion:
+O: Prolonged sitting
+O: Computer radiation
+O: Lead
+O: Toluene diisocyanate
+O: Wheat dust
+A: Lead
+### osce | PSI | Okt 2025
+Q: Station Promkes (10 menit): heat stroke.
+S: Gejala heat stroke yang harus diwaspadai.
+S: Tatalaksana/rekomendasi.
+### osce | TOX | Okt 2025
+Q: Station Biomonitoring (10 menit): timbal.
+S: Jelaskan interpretasi pemeriksaan penunjangnya.
+S: Diagnosis dan diagnosis banding.
+S: Tatalaksana/rekomendasi.
+### osce | PSI | Okt 2025
+Q: Station Psikososial (10 menit): disediakan beberapa kuesioner beserta skornya.
+S: Pilih 2 kuesioner yang menunjang.
+S: Tatalaksana/rekomendasi.
+### osce | PARU | Okt 2025
+Q: Station Spirometri (10 menit): diberikan 2 jenis tabel.
+S: Jelaskan interpretasi spirometri (normal/restriksi/obstruksi/campuran).
+S: Berapa LNL-nya?
+### osce | PARU | Okt 2025
+Q: Station ILO (10 menit).
+S: Jelaskan dan baca foto toraks sesuai ILO serta isi formulir (2 halaman).
+S: Kesimpulan diagnosis.
+S: Diagnosis banding dan tatalaksana.
+### osce | ERGO | Okt 2025
+Q: Station JSA & Muskuloskeletal (10 menit, ada probandus).
+S: Sebutkan 6 risiko/hazard ergonomi.
+S: Lakukan 6 jenis pemeriksaan fisik muskuloskeletal.
+S: Tatalaksana/rekomendasi.
+### oral | FTW | Okt 2025
+Q: Ujian Lisan (60 menit). Kasus sopir truk freelance pasca-PCI. Sebaiknya dikerjakan sesuai 7 langkah diagnosis okupasi dan 7 langkah kelaikan kerja.
+S: Informasi yang ingin didapatkan.
+S: Diagnosis klinis, diagnosis okupasi, kelaikan kerja.
+S: Tatalaksana.
