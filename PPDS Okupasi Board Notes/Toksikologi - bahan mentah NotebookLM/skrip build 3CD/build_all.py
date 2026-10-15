@@ -107,7 +107,7 @@ SUB = {"3C": "prinsip dasar, regulasi Indonesia, logam berat, pelarut organik, d
        "3E": "prinsip dasar, regulasi Indonesia, logam berat, pelarut organik, pestisida, gas dan korosif, serta debu dan serat"}[LAST]
 REST = {"3C": "Topik 3D (gas dan korosif) dan 3E (debu dan serat) menyusul dari notebook lain.",
         "3D": "Topik 3E (debu dan serat) menyusul.",
-        "3E": ""}[LAST]
+        "3E": "STATUS (15 Okt 2026): 3A, 3B, 3C lengkap. 3D baru sampai karbon monoksida, karbon dioksida, amonia, klorin, fosgen, dan NOx (belum: SO2, iodin, nitrit/nitrat, korosif, HF, asam asetat, fenol); infografik 3D baru untuk 4 zat pertama. 3E baru silika, asbes, dan debu batubara (belum: debu kayu dan kapas); infografik 3E belum dibuat. Pembuatan NotebookLM terhenti karena batas penggunaan AI, dilanjutkan kemudian."}[LAST]
 
 doc.add_paragraph("CATATAN BELAJAR: TOKSIKOLOGI & BIOMONITORING", style="Title")
 p = doc.add_paragraph(); r = p.add_run("Bagian 1 sampai %s: %s" % (LAST, SUB)); r.font.size = Pt(13)
