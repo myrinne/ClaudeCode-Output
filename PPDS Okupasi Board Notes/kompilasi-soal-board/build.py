@@ -127,6 +127,38 @@ def letter_of(x):
     return chr(65+bi) if best >= 0.75 else None
 
 KEY = []   # (chapter, number, x)
+GREEN = RGBColor(0x1E,0x6B,0x34)
+from collections import Counter
+CORR = []
+def load_ver():
+    import os
+    src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'verifikasi.txt'), encoding='utf-8').read()
+    out = {}
+    for blk in re.split(r'(?m)^@ ', src)[1:]:
+        lines = blk.strip().split('\n'); d = {}
+        for ln in lines[1:]:
+            m = re.match(r'^([EKRXS]): ?(.*)$', ln)
+            if m: d[m.group(1)] = m.group(2).strip()
+        out[int(lines[0].strip())] = d
+    return out
+VER = load_ver()
+def letter_from(x, text):
+    if not x['O']: return None
+    a = re.sub(r'\s*\([^)]*\)\s*$', '', text.strip()).rstrip('.').lower()
+    best, bi = 0, None
+    for i,o in enumerate(x['O']):
+        ol = o.strip().rstrip('.').lower()
+        r = 1.0 if (len(a) >= 3 and (ol.startswith(a) or a.startswith(ol))) else difflib.SequenceMatcher(None, a, ol).ratio()
+        if r > best: best, bi = r, i
+    return chr(65+bi) if best >= 0.8 else None
+def ver_status(x, v):
+    if v.get('S'): return v['S']
+    E = v['E']
+    if E.startswith('Tidak dapat diverifikasi'): return 'tidak'
+    if not x['A']: return 'baru'
+    ls, lv = letter_of(x), letter_from(x, E)
+    if ls and lv: return 'sesuai' if ls == lv else 'koreksi'
+    return 'sesuai' if merge.same_ans(x['A'], E) else 'koreksi'
 def question(n, x, chapter):
     p = para(after=1, before=5, keep=True)
     r = p.add_run(f'{n}. '); r.bold = True; r.font.color.rgb = ACC
@@ -193,6 +225,7 @@ for t in [
  'Soal yang sama dianggap satu. Setiap soal diberi label “Keluar di:” berisi semua ujian tempat soal itu muncul; label merah “(keluar n×)” menandai soal berulang — prioritas belajar.',
  'Soal dan pilihan jawaban tampil tanpa tanda jawaban. Semua kunci ada di Lampiran A (Kunci Jawaban), dengan nomor yang sama.',
  'Kunci berasal dari sumber (kunci Google Form, tanda merah/sorotan hasil diskusi angkatan, atau jawaban recall). Bila sumber berbeda pendapat, kunci ditandai “Diperdebatkan” dan semua versi ditulis. “[Perlu dicek]” menandai kunci sumber yang bertentangan dengan rujukan standar — bukan pembahasan, hanya penanda untuk diverifikasi.',
+ 'Verifikasi berbasis bukti (Oktober 2026): soal yang kuncinya diperdebatkan, ditandai [Perlu dicek], atau tidak punya kunci diberi kotak hijau “✔ Jawaban terverifikasi” di Lampiran A, lengkap dengan tingkat keyakinan dan sumber (guideline/textbook, artikel, regulasi, catatan belajar Anda). Kunci sumber yang ternyata keliru ditandai “KOREKSI” dan dirangkum di Lampiran C.',
  'Soal recall yang tidak lengkap tetap dimasukkan apa adanya (opsi atau kunci yang tidak tercatat ditulis demikian), karena topiknya pernah keluar.',
  'Susunan: Bab 1 Pilihan Ganda, Bab 2 Isian Singkat/Essay/Kasus Tulis, Bab 3 OSCE & Ujian Lisan; di dalam tiap bab dikelompokkan per topik. Soal kasus berseri ditampilkan di bawah kotak kasusnya.',
  'Label ujian: “Remed Agt 2022” = Remedial Written Test Agustus 2022 (file “Board sebelumnya”); “Des 2022” = ujian tulis Desember 2022; “Awal 2022” = recall “Soal Essay 2022” dari deck latihan Juni 2022; “2021 (Des)” = Ujian Nasional 11 & 18 Desember 2021 (Google Form); “2021 (recall peserta)” = rekap peserta 2021; “UKOM 22 (2026)” = Ujian Kompetensi edisi 22. Rincian file per label ada di Lampiran B.']:
@@ -292,6 +325,42 @@ for ch in ('A.1','A.2','A.3'):
             else:
                 rr = q.add_run('Catatan: '); rr.italic=True; rr.font.size=Pt(9); rr.font.color.rgb=GREY
                 r2 = q.add_run(nn); r2.font.size=Pt(9); r2.font.color.rgb=GREY
+        v = VER.get(min(x['members']))
+        if v:
+            st = ver_status(x, v); CORR.append((ch, num, x, v, st))
+            q = para(indent=0.8, after=0, before=1); shade(q, 'EAF4EC')
+            rr = q.add_run('✔ Jawaban terverifikasi'); rr.bold=True; rr.font.size=Pt(9); rr.font.color.rgb=GREEN
+            lab_st = {'sesuai':' (sesuai kunci sumber)','koreksi':' (KOREKSI kunci sumber)','baru':' (kunci baru)','tidak':''}[st]
+            rr = q.add_run(lab_st + f' — keyakinan {v["K"].lower()}: '); rr.font.size=Pt(9); rr.bold = st=='koreksi'
+            if st=='koreksi': rr.font.color.rgb = RED
+            L = letter_from(x, v['E'])
+            q.add_run((f'{L} — ' if L else '') + v['E']).font.size = Pt(9)
+            if v.get('X'):
+                q2 = para(indent=0.8, after=0); shade(q2, 'EAF4EC'); r3 = q2.add_run(v['X']); r3.font.size=Pt(9)
+            if v.get('R') and v['R'] != '—':
+                q3 = para(indent=0.8, after=1); shade(q3, 'EAF4EC')
+                r4 = q3.add_run('Sumber: '); r4.italic=True; r4.font.size=Pt(8.5); r4.font.color.rgb=GREY
+                r5 = q3.add_run(v['R']); r5.font.size=Pt(8.5); r5.font.color.rgb=GREY
+doc.add_page_break()
+
+# ---------- correction summary ----------
+doc.add_heading('Lampiran C. Ringkasan Verifikasi Kunci', level=1)
+cnt = Counter(c[4] for c in CORR)
+para(f'{len(CORR)} soal diverifikasi (diperdebatkan, [Perlu dicek], atau tanpa kunci): {cnt["koreksi"]} kunci sumber dikoreksi, {cnt["sesuai"]} kunci sumber terkonfirmasi, {cnt["baru"]} kunci baru untuk soal tanpa kunci, {cnt["tidak"]} tidak dapat diverifikasi karena redaksi/opsi tidak tercatat. Sumber verifikasi: textbook/guideline (ACGIH, NIOSH, OSHA, WHO, ILO, IARC, ICRP), artikel (PubMed/StatPearls), regulasi Indonesia, dan catatan belajar Anda. Prioritaskan hafalan pada kunci dengan keyakinan tinggi.', size=9.5, after=6)
+doc.add_heading('Kunci sumber yang dikoreksi', level=2)
+tb = doc.add_table(rows=1, cols=5); tb.style='Light Grid Accent 1'
+for c,h in zip(tb.rows[0].cells, ['No.','Soal (ringkas)','Kunci sumber','Jawaban terverifikasi','Keyakinan']): c.text = h
+for ch, num, x, v, st in CORR:
+    if st != 'koreksi': continue
+    row = tb.add_row().cells
+    q = x['Q'] if len(x['Q']) < 110 else x['Q'][:107].rsplit(' ',1)[0] + ' …'
+    row[0].text = f'{ch}-{num}'; row[1].text = q; row[2].text = (x['A'] or '–')[:90]; row[3].text = v['E'][:140]; row[4].text = v['K']
+for r in tb.rows:
+    for c in r.cells:
+        for p in c.paragraphs:
+            p.paragraph_format.space_after = Pt(0)
+            for run in p.runs: run.font.size = Pt(8.5)
+para('Nomor = nomor di Lampiran A (A.1 pilihan ganda, A.2 isian, A.3 OSCE/lisan).', size=8.5, italic=True, color=GREY, before=3)
 doc.add_page_break()
 
 # ---------- sources ----------
