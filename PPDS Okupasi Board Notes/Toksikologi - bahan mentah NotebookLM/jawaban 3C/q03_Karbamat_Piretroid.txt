@@ -1,0 +1,462 @@
+Sebagai Tim Penguji Ujian Nasional Kolegium Kedokteran Okupasi (Board Examination Sp.Ok), saya menuntut Anda untuk menguasai distingsi toksikologi mekanistik, biokinetika, kendala analisis laboratorium di lapangan, serta penalaran klinis-okupasional komparatif antara **Insektisida Karbamat** dan **Piretroid/Piretrin**. Pemahaman setengah-setengah di ruang ujian—terutama kesalahan dalam interpretasi uji kolinesterase atau salah memilih antidotum—akan langsung menggugurkan Anda.
+
+Berikut adalah catatan terstruktur 14 poin untuk masing-masing zat:
+
+---
+
+# BAGIAN A: INSEKTISIDA GOLONGAN KARBAMAT
+*(Karbaril, Karbofuran, Metomil, Propoksur)*
+
+```
+                       ┌─────────────────────────────────────────────────────────┐
+                       │             PESTISIDA GOLONGAN KARBAMAT                 │
+                       └────────────────────────────┬────────────────────────────┘
+                                                    │
+                 ┌──────────────────────────────────┴──────────────────────────────────┐
+                 ▼                                                                     ▼
+       TOKSIKODINAMIK INTI                                                  KENDALA BIOMONITORING
+ • Karbamilasi kovalen Serin-203 AChE                             • Reversibilitas cepat in vitro
+ • DEKARBAMILASI SPONTAN CEPAT (t1/2 30–40 mnt)                    • Efek pengenceran & suhu ruang = FALSE NORMAL
+ • TIDAK ADA PROSES AGING (Tanpa SN1 dealkilasi)                  • Sampel darah wajib segera didinginkan (0–4°C)
+ • Inhibisi NTE reversibel (TIDAK MEMICU OPIDN)                   • Penegakan diagnosis lebih mengandalkan klinis
+                 │                                                                     │
+                 └──────────────────────────────────┬──────────────────────────────────┘
+                                                    │
+                                                    ▼
+                                         TATALAKSANA & KONTROVERSI
+                                 • ATROPIN: Antidotum lini pertama utama
+                                 • KONTROVERSI OKSIM (2-PAM): Tidak rutin;
+                                   pada Karbaril dapat meningkatkan toksisitas
+                                 • SUKSINILKOLIN: KONTRAINDIKASI MUTLAK!
+```
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Karakteristik Fisik-Kimia:**
+  * Merupakan senyawa ester sintetik dari asam karbamat (\\(\text{NH}_2\text{COOH}\\)), umumnya dalam bentuk \\(N\\)-metil karbamat atau \\(N,N\\)-dimetil karbamat. Sifat toksisitas biologisnya sangat ditentukan oleh gugus fenol atau alkohol yang terikat sebagai rantai samping.
+  * Memiliki lipofilisitas sedang hingga tinggi dengan volatilitas rendah.
+  * **Spesifikasi Senyawa:**
+    * **Karbaril (*1-naphthyl methylcarbamate* / Sevin):** Padatan kristal putih hingga abu-abu, tidak berbau, berat molekul \\(201{,}2\text{ g/mol}\\), kelarutan air rendah (\\(0{,}01\%\\)), tekanan uap sangat rendah (<\\(0{,}00004\text{ mmHg}\\) pada \\(25^\circ\text{C}\\)).
+    * **Karbofuran (Furadan):** Kristal padat putih tak berbau, BM \\(221{,}3\text{ g/mol}\\), titik lebur \\(150\text{--}152^\circ\text{C}\\), kelarutan air \\(0{,}07\%\\).
+    * **Metomil (Lannate):** Kristal putih dengan aroma belerang ringan, BM \\(162{,}2\text{ g/mol}\\), titik lebur \\(78\text{--}79^\circ\text{C}\\), kelarutan air \\(5{,}8\%\text{ pada }25^\circ\text{C}\\).
+    * **Propoksur (Baygon / Aprocarb):** Kristal putih kekuningan, aroma khas lemah, BM \\(209{,}3\text{ g/mol}\\), titik lebur \\(90^\circ\text{C}\\), kelarutan air \\(0{,}2\%\\).
+* **Klasifikasi Bahaya WHO (*WHO Hazard Classification*):**
+  * **Kelas Ia (Sangat Berbahaya Ekstrem):** Aldikarb (LD50 oral tikus \\(0{,}9\text{ mg/kg}\\)).
+  * **Kelas Ib (Sangat Berbahaya):** Karbofuran (LD50 oral \\(8\text{ mg/kg}\\)), Metomil (LD50 oral \\(17\text{ mg/kg}\\)).
+  * **Kelas II (Cukup Berbahaya):** Karbaril (LD50 oral \\(250\text{ mg/kg}\\)), Propoksur (LD50 oral \\(95\text{ mg/kg}\\)).
+* **Klasifikasi Karsinogenisitas (IARC & ACGIH):**
+  * **IARC:** Karbaril diklasifikasikan ke dalam **Group 3 (Tidak dapat diklasifikasikan karsinogenisitasnya terhadap manusia)**.
+  * **ACGIH & Permenaker No. 5 Tahun 2018:** Seluruh insektisida karbamat utama (karbaril, karbofuran, metomil, propoksur) diklasifikasikan ke dalam **Kategori A4 (Tidak diklasifikasikan sebagai karsinogen terhadap manusia)**.
+
+---
+
+### 2. Sumber dan Penggunaan
+* **Pertanian dan Perkebunan:** Insektisida berspektrum luas untuk membasmi hama wereng, ulat penggerek, kutu daun, dan nematoda tanah pada tanaman pangan, hortikultura, kapas, dan tanaman hias.
+* **Kesehatan Masyarakat & Domestik:** Pengendalian vektor kecoa, nyamuk, dan lalat (*propoxur*), serta pembasmi hama kebun rumah tangga (*carbaryl dust*).
+* **Veteriner:** Sampo dan bedak pengendali ektoparasit (pinjal, kutu) pada hewan ternak dan peliharaan.
+* **Kedokteran Manusia:** Turunan karbamat kerja reversibel diaplikasikan secara terapeutik:
+  * *Piridostigmin & Neostigmin:* Terapi miastenia gravis dan profilaksis pra-pajanan terhadap senjata kimia gas saraf (soman/sarin).
+  * *Rivastigmin:* Terapi demensia pada Penyakit Alzheimer dan demensia Lewy Body.
+  * *Fisostigmin:* Terapi glaukoma dan antidotum lini akhir pada intoksikasi delirium antikolinergik murni.
+
+---
+
+### 3. Toksikokinetik
+* **Absorpsi:**
+  * Diabsorpsi cepat melalui rute saluran cerna (>90%), inhalasi debu/partikel respirabel, serta penetrasi dermal. Absorpsi transkutan meningkat drastis pada cuaca panas dan kulit yang berkeringat.
+* **Distribusi:**
+  * Terdistribusi ke seluruh kompartemen jaringan vaskular. Karbamat insektisida umumnya menembus sawar darah otak (BBB), namun beberapa karbamat kuaterner farmasi tidak menembus BBB. Kondisi stres fisik dilaporkan meningkatkan permeabilitas BBB terhadap senyawa karbamat.
+* **Metabolisme (Biotransformasi):**
+  * **Tanpa Bioaktivasi Fase I:** Karbamat tidak memerlukan desulfurasi oksidatif (berbeda dengan OP tion \\(P=S\\)); senyawa induk langsung aktif secara biologis menghambat enzim asetilkolinesterase (*direct inhibitor*).
+  * **Detoksifikasi:** Dimetabolisme cepat di hati melalui hidrolisis ester oleh enzim **karboksilesterase (*CES / B-esterase*)**, serta hidroksilasi cincin dan \\(N\\)-demetilasi oleh enzim Sitokrom P450 (CYP3A4, CYP2B6). Aldikarb mengalami bioaktivasi minor via enzim *flavin-containing monooxygenase* (FMO1) menjadi aldikarb sulfoksida.
+* **Ekskresi:**
+  * Eliminasi berlangsung sangat cepat, di mana >80–90% diekskresikan melalui urin dalam 24–48 jam sebagai metabolit hidrolisis fenolik bebas atau terkonjugasi asam glukuronat dan sulfat.
+
+---
+
+### 4. Toksikodinamik
+* **Karbamilasi Kovalen Asetilkolinesterase (AChE):**
+  * Molekul karbamat berikatan pada situs aktif esteratik enzim AChE dan memindahkan gugus karbamil ke residu asam amino **Serin-203**.
+  * Ikatan kovalen karbamil-serin ini memblokade hidrolisis asetilkolin (ACh), memicu akumulasi ACh masif di taut saraf.
+* **Dekarbamilasi Spontan Cepat (*Reversible Carbamylation*):**
+  * Ikatan kovalen karbamil-serin jauh lebih labil secara termodinamika dibandingkan ikatan fosforil-serin pada organofosfat.
+  * Enzim mengalami hidrolisis spontan (dekarbamilasi) dengan waktu paruh dekarbamilasi hanya berkisar antara **30 hingga 40 menit**.
+* **Ketiadaan Proses Penuaan Enzim (*NO AGING*):**
+  * Enzim AChE yang terkarbamilasi **TIDAK PERNAH mengalami proses penuaan (*aging*)** karena struktur kimia karbamat tidak memiliki gugus alkil fosfat yang dapat terputus via pemutusan unimolekuler \\(S_N1\\). Enzim selalu mampu pulih secara spontan tanpa memerlukan sintesis molekul baru (*de novo*).
+* **Dampak Kolinergik:**
+  * Menghasilkan sindrom kolinergik triad: muskarinik (hipersekresi bronkus/bronkorhea, bronkospasme, bradikardia, lakrimasi, salivasi, miosis), nikotinik (fasikulasi, kelemahan motorik), dan SSP (pusing, penurunan kesadaran).
+* **Efek pada Neuropathy Target Esterase (NTE):**
+  * Karbamat menginhibisi NTE secara reversibel, namun **tidak mengalami penuaan pada NTE**, sehingga karbamat **tidak mampu menyebabkan OPIDN**. Pemberian karbamat sebelum paparan OP neuropatik justru memproteksi NTE dari penuaan.
+
+---
+
+### 5. Biomonitoring
+* **Aktivitas Kolinesterase Darah (RBC AChE dan Plasma BuChE):**
+  * Determinan biologis efek utama adalah pengukuran aktivitas asetilkolinesterase eritrosit (RBC AChE) dan butirilkolinesterase (BuChE) plasma.
+  * **KENDALA DAN JEBAKAN LABORATORIUM (*In Vitro Decarbamylation*):**
+    * Karena ikatan karbamil-AChE bersifat reversibel dengan waktu dekarbamilasi 30–40 menit, **reaktivasi enzim dapat terus berlangsung secara spontan di dalam tabung sampel selama proses pengiriman dan penyimpanan pada suhu ruang**.
+    * Pengenceran sampel darah (*dilution effect*) pada reagen uji kolorimetri Ellman juga mempercepat disosiasi karbamat dari enzim.
+    * Akibatnya, pekerja yang datang dengan krisis kolinergik berat dapat menunjukkan **kadar kolinesterase darah yang tampak normal palsu (*false-normal*)** bila sampel tidak ditangani secara khusus.
+  * **Protokol Khusus Pengambilan Sampel:**
+    * Darah lengkap dengan antikoagulan heparin harus segera **didinginkan pada suhu 0–4°C dalam wadah es beku (*ice pack*)**, dihindarkan dari paparan panas, dan dianalisis di laboratorium dalam hitungan menit hingga maksimal beberapa jam tanpa pengenceran berlebih.
+* **Biomarker Pajanan (Metabolit Urin):**
+  * **1-Naftol (1-Naphthol):** Metabolit urin spesifik untuk pemantauan karbaril (diukur dengan HPLC/GC-MS).
+  * **Isopropoksifenol:** Metabolit urin spesifik untuk propoksur.
+  * Waktu sampling: Akhir shift kerja pada akhir pekan kerja (*end of shift*).
+
+---
+
+### 6. Waktu Paruh (*Elimination Half-Life*) dan Regenerasi Enzim
+* **Waktu Paruh Senyawa dalam Sirkulasi (\\(t_{1/2}\\) Eliminasi):**
+  * Karbamat dieliminasi sangat cepat dari tubuh mamalia dengan \\(t_{1/2}\\) plasma berkisar antara **1 hingga 4 jam**.
+* **Kinetika Dekarbamilasi dan Regenerasi Enzim Alami:**
+  * Waktu paruh dekarbamilasi spontan enzim AChE adalah **30 hingga 40 menit**.
+  * Pemulihan fungsional aktivitas AChE darah dan jaringan umumnya selesai dalam waktu **24 hingga 48 jam** pasca penghentian paparan tanpa meninggalkan residu defisit biokimia.
+
+---
+
+### 7. Efek Akut
+* **Krisis Kolinergik Transien (Akut):**
+  * Onset gejala sangat cepat (menit hingga 1–2 jam pasca pajanan).
+  * Gejala klinis identik dengan organofosfat (SLUDGEM/DUMBELS), dengan ancaman kematian utama berasal dari **gagal napas akut akibat bronkorhea masif, bronkospasme, dan depresi napas sentral**.
+  * **Karakteristik Unik Karbamat:** Durasi intoksikasi bersifat **singkat (*short-lived / self-limiting*)**, biasanya membaik dalam 6–24 jam karena dekarbamilasi spontan.
+* **Sindrom Intermediate (IMS):**
+  * **Sangat jarang terjadi pada keracunan karbamat murni.** Hal ini dikarenakan blokade neuromuskular nikotinik cepat teratasi sebelum terjadi desensitisasi reseptor asetilkolin nikotinik postsinaps, meskipun beberapa laporan kasus sporadis akibat konsumsi masif dosis letal telah dilaporkan.
+
+---
+
+### 8. Efek Kronis
+* **Ketiadaan Polineuropati Tertunda (NO OPIDN):**
+  * Karbamat **TIDAK MENYEBABKAN OPIDN** karena tidak mampu memicu penuaan (*aging*) pada enzim *Neuropathy Target Esterase* (NTE).
+* **Toksisitas Reproduksi dan Sistemik Kronis:**
+  * Studi okupasional dan toksikologi eksperimental dosis tinggi menunjukkan karbaril dan metomil berpotensi menimbulkan gangguan spermatogenesis (penurunan motilitas sperma, peningkatan sperma abnormal) serta toksisitas perkembangan embrio.
+
+---
+
+### 9. Batas Pajanan Okupasional di Udara Tempat Kerja (OELs)
+Mengacu pada **Permenaker No. 5 Tahun 2018 (Lampiran 1)**, **ACGIH TLV**, **NIOSH REL**, dan **OSHA PEL**:
+
+| Insektisida Karbamat | Permenaker 5/2018 (NAB) | ACGIH TLV-TWA | NIOSH REL (TWA) | OSHA PEL (TWA) | Notasi Khusus |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Karbaril (63-25-2)** | **\\(0{,}5\text{ mg/m}^3\\)** (IFV) | \\(0{,}5\text{ mg/m}^3\\) (IFV) | \\(5\text{ mg/m}^3\\) | \\(5\text{ mg/m}^3\\) | A4, Kulit, \\(\text{BEI}_A\\), IDLH \\(100\text{ mg/m}^3\\) |
+| **Karbofuran (1563-66-2)** | **\\(0{,}1\text{ mg/m}^3\\)** (IFV) | \\(0{,}1\text{ mg/m}^3\\) (IFV) | \\(0{,}1\text{ mg/m}^3\\) | \\(0{,}1\text{ mg/m}^3\\)* | A4, \\(\text{BEI}_A\\) |
+| **Metomil (16752-77-5)** | **\\(0{,}2\text{ mg/m}^3\\)** (IFV) | \\(0{,}2\text{ mg/m}^3\\) (IFV) | \\(2{,}5\text{ mg/m}^3\\) | — | A4, Kulit, \\(\text{BEI}_A\\) |
+| **Propoksur (114-26-1)** | **\\(0{,}5\text{ mg/m}^3\\)** | \\(0{,}5\text{ mg/m}^3\\) (IFV) | \\(0{,}5\text{ mg/m}^3\\) | \\(0{,}5\text{ mg/m}^3\\)* | A4, \\(\text{BEI}_A\\) |
+
+*(\\*OSHA PEL status vacated 1989; notasi **IFV** = Inhalable Fraction and Vapor; notasi **Kulit** menandakan absorpsi transkutan signifikan).*
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* Mengacu pada **Permenaker No. 5 Tahun 2018 (Lampiran 4)** dan **ACGIH BEI**:
+  * Ditentukan di bawah kelompok: *"Pestisida Penghambat Asetilkolinesterase"*.
+  * **Determinan Biologis:** Aktivitas Asetilkolinesterase dalam eritrosit (*RBC Acetylcholinesterase*).
+  * **Matriks:** Darah lengkap.
+  * **Waktu Pengambilan Sampel:** Kapan saja / bebas (*discretionary*).
+  * **Nilai IPB:** **70% dari baseline individu pekerja** (penurunan aktivitas maksimal yang ditoleransi adalah 30% dari kapasitas baseline normal pekerja).
+
+---
+
+### 11. Tatalaksana Medis Gawat Darurat
+1. **Resusitasi & Oksigenasi:**
+   * Amankan patensi jalan napas dan berikan oksigen aliran tinggi sebelum pemberian atropin guna mencegah aritmia ventrikel refrakter.
+2. **Atropin (Antidotum Utama):**
+   * Diberikan dengan dosis bolus **1 hingga 2 mg IV** pada dewasa, dititrasi dengan menggandakan dosis setiap 5 menit hingga sekresi saluran napas kering (*dry lungs*). Kebutuhan total atropin pada karbamat umumnya jauh lebih rendah daripada organofosfat karena sifat toksisitasnya yang membatasi diri (*self-limiting*).
+3. **KONTROVERSI DAN POSISI PRALIDOKSIM (2-PAM / OKSIM):**
+   * **Bukan Terapi Rutin:** Karena enzim mengalami dekarbamilasi spontan dalam 30–40 menit tanpa terjadi *aging*, sebagian besar intoksikasi karbamat sembuh cukup dengan atropin dan perawatan suportif.
+   * **Bahaya pada Karbaril (*Carbaryl Toxicity Exacerbation*):** Pada intoksikasi karbaril, pralidoksim secara klasik dilaporkan dapat membentuk kompleks karbamil-oksim yang bersifat inhibitor AChE lebih poten dan meningkatkan mortalitas hewan uji.
+   * **Rekomendasi Konsensus Okupasi & Toksikologi Kritis:**
+     * Bila terbukti pasti murni keracunan karbamat (terutama karbaril) derajat ringan-sedang: **HINDARI PEMBERIAN OKSIM**.
+     * Bila keracunan berat mengancam jiwa, gagal napas berlanjut tidak responsif terhadap atropin dosis adekuat, atau bila **agen penyebab belum jelas (keracunan campuran karbamat dan organofosfat)**: Berikan Pralidoksim klorida (2-PAM) sesuai protokol WHO (**30 mg/kgBB IV bolus** dilanjutkan **8–10 mg/kgBB/jam**).
+4. **KONTRAINDIKASI MUTLAK SUKSINILKOLIN:**
+   * Dilarang keras menggunakan *succinylcholine* untuk intubasi endotrakeal karena pseudokolinesterase terinhibisi, memicu apneu berkepanjangan.
+5. **Dekontaminasi Agresif:** Cuci kulit dengan sabun dan air mengalir; bilas lambung dan arang aktif (1 g/kgBB) bila tertelan <1 jam.
+
+---
+
+### 12. Tatalaksana Okupasi, Kelaikan Kerja, dan Surveilans
+* **Kriteria Pemindahan Kerja Sementara (*Medical Removal*):**
+  * Pekerja wajib dipindahkan dari pajanan bila aktivitas AChE eritrosit turun **> 30% dari baseline individu**, atau bila timbul gejala krisis kolinergik klinis.
+* **Kelaikan Kerja Kembali (*Return to Work*):**
+  * Pekerja dinyatakan *Fit to Work* kembali menangani karbamat apabila gejala klinis hilang sempurna dan aktivitas AChE eritrosit pulih **≥ 80% dari nilai baseline pra-pajanan**. Pemulihan biasanya tercapai dalam 2–3 hari (jauh lebih cepat dibanding OP yang membutuhkan 60–120 hari).
+* **Surveilans Kesehatan Kerja:**
+  * Pemeriksaan pra-kerja (penetapan baseline ChE individu 2 kali pengukuran terpisah).
+  * Pengendalian teknis: sistem formulasi tertutup, ventilasi pembuangan lokal (LEV).
+  * APD: Respirator uap kimia/debu kombinasi (OV/P100), sarung tangan nitril/butil tebal, pelindung mata dan pakaian kerja tahan bahan kimia.
+
+---
+
+### 13. Aspek Regulasi, Legalitas Indonesia, dan Diagnosis PAK
+* **Penegakan Diagnosis PAK (Permenkes No. 11 Tahun 2022):**
+  * Dilakukan secara legal melalui **7 Langkah Diagnosis PAK**: verifikasi diagnosis klinis intoksikasi karbamat, identifikasi pajanan okupasional, bukti hubungan kausal, analisis dosis/konsentrasi lingkungan terhadap NAB Permenaker 5/2018, faktor perorangan, faktor di luar pekerjaan, dan penetapan vonis PAK.
+* **Pengakuan Hukum Berdasarkan Perpres No. 7 Tahun 2019:**
+  * Tercantum dalam **Lampiran I.a.35:** *"Penyakit yang disebabkan oleh pestisida"*. Hak atas manfaat JKK berlaku hingga **paling lama 3 tahun setelah hubungan kerja berakhir** (Pasal 2 Ayat 2).
+
+---
+
+### 14. Clinical Pearls dan Jebakan Ujian Board Sp.Ok
+1. **Jebakan Hasil Kolinesterase Normal Palsu (*False-Normal*):** Penguji menyajikan kasus pekerja dengan tanda klinis bronkorhea masif dan miosis pasca menyemprot karbamat, namun hasil lab kolinesterase dilaporkan dalam batas normal. Residen yang tidak kompeten akan meragukan diagnosis. Residen Sp.Ok unggul menjawab: ini terjadi akibat reaktivasi spontan in vitro selama transportasi sampel; diagnosis dan terapi atropin ditegakkan berbasis klinis, bukan menunggu hasil lab.
+2. **Jebakan 2-PAM pada Karbaril:** Selalu ingat bahwa pralidoksim dapat memperburuk toksisitas karbaril. Oksim hanya diberikan jika intoksikasi berat refrakter atau dicurigai keracunan campuran dengan organofosfat.
+3. **Ketiadaan OPIDN:** Karbamat tidak menyebabkan *organophosphate-induced delayed neuropathy* karena tidak memicu reaksi penuaan (*aging*) pada enzim NTE.
+4. **Kecepatan Pemulihan:** Berbeda dengan organofosfat yang membutuhkan sintesis enzim de novo berbulan-bulan, keracunan karbamat pulih dalam 24–48 jam.
+
+---
+---
+
+# BAGIAN B: PESTISIDA GOLONGAN PIRETROID DAN PIRETRIN
+*(Permetrin, Sipermetrin, Deltametrin, Sihalotrin)*
+
+```
+                       ┌─────────────────────────────────────────────────────────┐
+                       │          PESTISIDA PIRETROID & PIRETRIN                 │
+                       └────────────────────────────┬────────────────────────────┘
+                                                    │
+                 ┌──────────────────────────────────┴──────────────────────────────────┐
+                 ▼                                                                     ▼
+        TIPE I (TANPA ALFA-SIANO)                                             TIPE II (DENGAN ALFA-SIANO)
+ • Contoh: Permetrin, Alletrin                               • Contoh: Sipermetrin, Deltametrin, Sihalotrin
+ • Kanal Na+ terbuka singkat (<10 ms)                            • Kanal Na+ terbuka lama (>10 ms - ratusan ms)
+ • Negative after-potential & repetitive firing                  • Depolarization conduction block
+ • SINDROM T: Tremor kasar, hipereksitabilitas              • SINDROM CS: Choreoathetosis, Salivasi, Kejang
+                 │                                                                     │
+                 └──────────────────────────────────┬──────────────────────────────────┘
+                                                    │
+                                                    ▼
+                                          DISTINGSI KLINIS KRITIS
+                               • Parestesia Wajah: Fenomena lokal serabut sensorik
+                               • Terapi Parestesia: Topikal Vitamin E (dl-alfa-tokoferol)
+                               • Salivasi Tipe II BUKAN muskarinik (Inhibisi kanal Cl-)
+                               • DILARANG memberikan Atropin / 2-PAM tanpa indikasi OP
+```
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Karakteristik Fisik-Kimia:**
+  * **Piretrin Alami:** Merupakan ekstrak heksana dari kepala bunga tanaman krisan (*Chrysanthemum cinerariaefolium*). Mengandung 6 ester insektisida alami: piretrin I/II, sinerin I/II, dan jasmolin I/II. Sangat fotolabil dan cepat terdegradasi oleh sinar ultraviolet dan udara.
+  * **Piretroid Sintetik:** Dirancang secara kimia untuk mengatasi kelemahan fotolabilitas piretrin alami. Memiliki struktur lipofilik tinggi, kelarutan air sangat rendah (<\\(0{,}01\text{ mg/L}\\)), volatilitas rendah, dan stabilitas lingkungan lebih tinggi.
+  * **Klasifikasi Struktural (Tipe I vs Tipe II):**
+    * **Piretroid Tipe I (Tanpa gugus \\(\alpha\\)-siano):**
+      * Struktur ester yang tidak memiliki gugus siano pada posisi karbon benzilik.
+      * Contoh: **Permetrin**, alletrin, bifentrin, resmetrin, fenotrin, tetrametrin.
+    * **Piretroid Tipe II (Mengandung gugus \\(\alpha\\)-siano):**
+      * Struktur ester fenoksibenzil yang memiliki substituen **\\(\alpha\\)-cyano-3-phenoxybenzyl**.
+      * Contoh: **Sipermetrin**, **Deltametrin**, **Sihalotrin (Lambda-sihalotrin)**, fenvalerat, siflutrin.
+      * Gugus siano meningkatkan stabilitas molekuler dan potensi neurotoksik hingga satu ordo magnitudo.
+* **Klasifikasi Bahaya WHO (*WHO Hazard Classification*):**
+  * **Kelas II (Cukup Berbahaya):**
+    * Deltametrin (LD50 oral tikus \\(52\text{--}135\text{ mg/kg}\\)).
+    * Lambda-sihalotrin (LD50 oral tikus \\(56\text{--}79\text{ mg/kg}\\)).
+    * Sipermetrin (LD50 oral tikus \\(250\text{--}4123\text{ mg/kg}\\)).
+    * Permetrin (LD50 oral tikus \\(500\text{--}4000\text{ mg/kg}\\); isomer *cis* jauh lebih toksik dibanding *trans*).
+  * **Kelas III / U:** Piretrum alami (LD50 oral tikus \\(\sim 1500\text{ mg/kg}\\)).
+* **Klasifikasi Karsinogenisitas (IARC & ACGIH):**
+  * **IARC:** Permetrin dan Deltametrin diklasifikasikan ke dalam **Group 3 (Tidak dapat diklasifikasikan karsinogenisitasnya terhadap manusia)**.
+  * **ACGIH & Permenaker No. 5 Tahun 2018:** Ekstrak Piretrum diklasifikasikan ke dalam **Kategori A4 (Tidak diklasifikasikan sebagai karsinogen manusia)**.
+
+---
+
+### 2. Sumber dan Penggunaan
+* **Pertanian dan Perkebunan:** Insektisida proteksi tanaman pangan, sayuran, dan perkebunan kapas berskala masif.
+* **Kesehatan Masyarakat & Vektor Malaria:**
+  * Kelambu berinsektisida tahan lama (*Long-Lasting Insecticidal Nets / LLINs*) menggunakan deltametrin atau permetrin.
+  * Penyemprotan dinding dalam ruangan (*Indoor Residual Spraying / IRS*) untuk vektor malaria menggunakan lambda-sihalotrin.
+  * Disinseksi aerosol kabin pesawat terbang komersial internasional (*aircraft disinsection*) menggunakan permetrin.
+* **Farmasi & Kedokteran Manusia:**
+  * Krim permetrin 5% (lini pertama terapi skabies).
+  * Losion/sampo permetrin 1% (terapi pedikulosis kapitis dan pubis).
+* **Produk Rumah Tangga:** Obat nyamuk semprot aerosol, elektrik cair/mat, dan obat nyamuk bakar.
+* **Sinergis Formulasi:** Produk komersial hampir selalu dicampur dengan agen sinergis **Piperonil Butoksida (PBO)** dalam rasio 5:1 hingga 20:1 guna menghambat metabolisme oksidatif serangga.
+
+---
+
+### 3. Toksikokinetik
+* **Absorpsi:**
+  * **Dermal:** Penyerapan transkutan manusia **sangat buruk dan lambat, mencapai maksimal <1,5% (rerata 0,1% hingga 1,2%)**. Sebagian besar dosis tertahan di stratum korneum.
+  * **Oral:** Diabsorpsi sedang (>60%), namun toksisitas sistemik teredam oleh metabolisme lintas pertama (*first-pass hepatic clearance*) yang sangat masif.
+  * **Inhalasi:** Aerosol dan partikel kabut diserap cepat melalui mukosa saluran napas.
+* **Distribusi:**
+  * Senyawa lipofilik ini berikatan dengan lipoprotein darah dan terdistribusi ke sistem saraf perifer dan sentral. Tidak mengalami sekuestrasi bertahun-tahun di jaringan lemak tubuh (berbeda total dengan organoklorin).
+* **Metabolisme (Biotransformasi):**
+  * Berlangsung sangat cepat dan efisien pada mamalia melalui dua jalur utama:
+    1. **Hidrolisis ikatan ester** oleh enzim karboksilesterase hati.
+    2. **Oksidasi cincin dan rantai samping** oleh sitokrom P450 mikrosomal (CYP2C9, CYP2C19, CYP3A4).
+  * **Perbedaan Stereoisomer:** Isomer *trans* dihidrolisis oleh karboksilesterase jauh lebih cepat daripada isomer *cis*, sehingga **isomer *cis* memiliki toksisitas mamalia yang lebih tinggi**.
+  * **Sinergisme Toksisitas:** Piperonil butoksida (PBO) menghambat sitokrom P450 mamalia pada dosis tinggi. Ko-pajanan bersama organofosfat menghambat karboksilesterase, melipatgandakan toksisitas piretroid dalam tubuh.
+* **Ekskresi:**
+  * Ekskresi berlangsung cepat; metabolit asam karboksilat dan alkohol fenoksibenzil terkonjugasi diekskresikan melalui urin dalam 24–48 jam (sebagian kecil melalui feses/empedu). Trans-permetrin tidak terdeteksi dalam plasma setelah 25 jam.
+
+---
+
+### 4. Toksikodinamik
+* **Mekanisme Molekuler Primer (Modulasi Kanal Natrium Berpintu-Voltase / VGSC):**
+  * Piretroid berikatan langsung pada subunit alfa kanal natrium berpintu-voltase di membran akson saraf.
+  * Senyawa ini menunda proses aktivasi (pembukaan) dan inaktivasi (penutupan) gerbang kanal natrium, memicu arus masuk natrium berkepanjangan yang disebut ***sodium tail current***.
+* **Distingsi Sindrom Tipe I vs Tipe II:**
+  1. **Piretroid Tipe I (Permetrin):**
+     * Memperpanjang pembukaan kanal natrium secara singkat (**< 10 milidetik**).
+     * Menghasilkan pemanjangan depolarisasi negatif (*depolarizing after-potential*), menurunkan ambang batas rangsang, dan mencetuskan **letupan potensial aksi repetitif (*repetitive trains of action potentials*)**.
+     * **Manifestasi Klinis:** Menimbulkan **SINDROM T (*Tremor Syndrome*)**, ditandai dengan hipereksitabilitas refleks, tremor halus hingga kasar di seluruh tubuh, ataksia, dan peningkatan laju metabolisme.
+  2. **Piretroid Tipe II (Sipermetrin, Deltametrin, Sihalotrin):**
+     * Memperpanjang pembukaan kanal natrium secara ekstrem (**> 10 milidetik hingga ratusan milidetik**).
+     * Menyebabkan depolarisasi membran yang masif dan persisten hingga sel saraf kehilangan kemampuan membangkitkan potensial aksi baru (***depolarization-dependent conduction block***).
+     * **Manifestasi Klinis:** Menimbulkan **SINDROM CS (*Choreoathetosis-Salivation Syndrome*)**, ditandai dengan hipersalivasi masif, gerakan korea-atetosis, spasme otot, dan kejang epileptoid.
+* **Patogenesis Parestesia Kutaneus Lokal (*Pyrethroid-Induced Paresthesia*):**
+  * Terjadi akibat kontak lokal langsung senyawa piretroid pada ujung serabut saraf sensorik intradermal di kulit (bukan efek neurotoksisitas sentral).
+  * Hanya dibutuhkan konsentrasi sangat rendah (modifikasi <1% kanal natrium) untuk memicu letupan impuls repetitif spontan pada serabut saraf sensorik tipe A dan C.
+* **Target Sekunder Tambahan (Khususnya Tipe II):**
+  * **Kanal Klorida Berpintu-Voltase (*Voltage-dependent chloride channels / Maxi Cl- channels*):** Tipe II menginhibisi kanal klorida di otot dan kelenjar saliva, menurunkan resistensi membran dan memicu salivasi masif serta miotonia.
+  * **Kompleks Reseptor GABAA:** Pada konsentrasi tinggi, Tipe II menginhibisi kanal klorida yang diatur GABA pada situs pikrotoksin, berkontribusi terhadap bangkitan kejang hebat.
+  * Stimulasi fosforilasi protein dependen-Protein Kinase C (PKC).
+
+---
+
+### 5. Biomonitoring
+* **Ketiadaan Biomarker Efek Kolinesterase:**
+  * Piretroid **TIDAK MENGINHIBISI enzim asetilkolinesterase**. Pemeriksaan AChE eritrosit maupun pseudokolinesterase plasma menunjukkan hasil normal.
+* **Biomarker Pajanan (Kuantifikasi Metabolit Urin):**
+  * Pemantauan biologi dilakukan melalui penetapan kadar metabolit spesifik dalam urin menggunakan kromatografi gas spektrometri massa (GC-MS):
+    * **3-PBA (*3-Phenoxybenzoic acid*):** Metabolit urin non-spesifik paling representatif untuk seluruh piretroid yang memiliki gugus fenoksibenzil (permetrin, sipermetrin, deltametrin, sihalotrin, fenvalerat).
+    * **cis-DCCA dan trans-DCCA (*cis/trans-3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylic acid*):** Metabolit asam spesifik untuk pajanan permetrin dan sipermetrin.
+    * **DBCA (*cis-3-(2,2-dibromovinyl)-2,2-dimethylcyclopropanecarboxylic acid*):** Metabolit spesifik untuk deltametrin.
+    * **FPBA (*4-fluoro-3-phenoxybenzoic acid*):** Metabolit spesifik untuk siflutrin.
+* **Waktu Pengambilan Sampel (*Sampling Time*):**
+  * Dilakukan pada **akhir shift kerja** atau dikumpulkan dalam urin 24 jam pasca kerja, mengingat ekskresi urin mencapai puncaknya dalam 24 jam pertama.
+
+---
+
+### 6. Waktu Paruh (*Elimination Half-Life*)
+* **Waktu Paruh Eliminasi Tubuh:**
+  * Sangat singkat dibandingkan pestisida organoklorin. Waktu paruh eliminasi plasma berkisar antara **6 hingga 12 jam** untuk isomer *trans*, dan **12 hingga 24 jam** untuk isomer *cis*.
+* **Resolusi Parestesia Sensorik Lokal:**
+  * Parestesia kutaneus bersifat reversibel sempurna dan menghilang secara spontan dalam waktu **12 hingga 24 jam** pasca penghentian kontak.
+
+---
+
+### 7. Efek Akut
+* **Parestesia Kutaneus Okupasional (Efek Paling Dominan):**
+  * Muncul 1–2 jam pasca kontak dermal. Bermanifestasi sebagai sensasi rasa terbakar (*burning*), kesemutan (*tingling*), tertusuk jarum, gatal, atau mati rasa, terutama pada wajah (pipi, kelopak mata, perioral) dan leher.
+  * Ciri khas: **Tidak disertai tanda inflamasi primer atau eritema berat** (merupakan gangguan fungsional murni serat saraf kutaneus).
+  * Eksaserbasi: Keluhan memburuk bila terpapar keringat, panas, sinar matahari, atau saat membasuh muka dengan air biasa.
+* **Toksisitas Sistemik Akut (Ingesti atau Inhalasi Masif):**
+  * Gejala awal saluran cerna: nyeri epigastrium, mual, muntah.
+  * Sistem saraf: pusing, sakit kepala, agitasi, fasikulasi otot perifer.
+  * Intoksikasi berat Tipe II: **Hipersalivasi masif profus, choreoathetosis, hipertermia, kejang tonik-klonik umum, dan koma**. Kematian umumnya disebabkan oleh status epileptikus atau aspirasi cairan sekresi.
+* **Hipersensitivitas dan Alergi Saluran Napas:**
+  * Ekstrak piretrum alami sering memicu dermatitis kontak alergika, rinitis, bronkospasme, dan serangan asma okupasional akibat residu alergen tumbuhan krisan.
+
+---
+
+### 8. Efek Kronis
+* **Ketiadaan Kerusakan Struktural Saraf (NO OPIDN):**
+  * Tidak memicu degenerasi aksonal permanen maupun polineuropati tipe *dying-back*. Parestesia yang terjadi berulang tidak menyebabkan kerusakan permanen pada serabut saraf sensorik perifer.
+* **Disfungsi Neurobehavioral & Endokrin:**
+  * Paparan aerosol kerja tingkat rendah dalam jangka panjang dapat menimbulkan iritasi mukosa kronis, rinitis vasomotor, dan sedikit peningkatan risiko sensitisasi pernapasan. Beberapa metabolit dilaporkan berinteraksi lemah dengan reseptor hormon secara in vitro.
+
+---
+
+### 9. Batas Pajanan Okupasional di Udara Tempat Kerja (OELs)
+Mengacu pada **Permenaker No. 5 Tahun 2018 (Lampiran 1)**, **ACGIH TLV**, **NIOSH REL**, dan **OSHA PEL**:
+
+| Bahan Kimia | Permenaker 5/2018 (NAB) | ACGIH TLV-TWA | NIOSH REL (TWA) | OSHA PEL (TWA) | IDLH | Notasi Khusus |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Piretrum / Pyrethrum (8003-34-7)** | **\\(5\text{ mg/m}^3\\)** | \\(5\text{ mg/m}^3\\) | \\(5\text{ mg/m}^3\\) | \\(5\text{ mg/m}^3\\) | \\(5000\text{ mg/m}^3\\) | A4 |
+| **Permetrin (52645-53-1)** | — | \\(5\text{ mg/m}^3\\)* | — | — | — | A4 |
+| **Sipermetrin (52315-07-8)** | — | — | — | — | — | Batas industri internal \\(0{,}5\text{ mg/m}^3\\) |
+| **Deltametrin (52918-63-5)** | — | — | — | — | — | Batas industri internal \\(0{,}1\text{ mg/m}^3\\) |
+
+*(\\*Rekomendasi ACGIH/pabrikan untuk debu/partikulat respirabel; Permenaker 5/2018 secara eksplisit mengatur baku mutu untuk **Piretrum** sebesar **\\(5\text{ mg/m}^3\\)** dengan notasi **A4**).*
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Ketiadaan Angka Resmi:**
+  * Baik **Permenaker No. 5 Tahun 2018** maupun **ACGIH BEI** **TIDAK memiliki nilai angka BEI/IPB resmi untuk pestisida piretroid**.
+  * Pemantauan kadar 3-PBA urin dilakukan mengacu pada nilai acuan biologis populasi non-terpapar (*reference value* <1–2 µg/g kreatinin) sebagai pembanding higiene industri.
+
+---
+
+### 11. Tatalaksana Medis Gawat Darurat
+1. **Tatalaksana Parestesia Dermal (Spesifik Okupasi):**
+   * **Dekontaminasi Segera:** Buka pakaian kerja, cuci kulit secara lembut menggunakan air dan sabun. Peringatan: Mencuci wajah dengan air dingin atau menggosok kulit secara keras dapat mengeksaserbasi rasa tertusuk dan terbakar.
+   * **Aplikasi Topikal Vitamin E (*dl-α-Tocopherol Acetate*):**
+     * Merupakan **terapi topikal spesifik lini pertama** yang terbukti paling efektif.
+     * Mengoleskan minyak/krim Vitamin E segera pasca paparan mampu **menghambat gejala parestesia hingga 98%** (dan menghambat 50% jika diberikan 4 jam kemudian).
+     * *Mekanisme:* Melarutkan dan mensekuestrasi residu lipofilik piretroid dari membran, serta melakukan blokade selektif langsung terhadap *sodium tail current* pada serabut saraf.
+     * Krim pelembap lipofilik atau minyak mineral dapat digunakan sebagai alternatif bila Vitamin E belum tersedia.
+     * **KONTRAINDIKASI TOPIKAL:** **Dilarang menggunakan pasta Seng Oksida (*Zinc Oxide*)** karena terbukti memperberat intensitas parestesia.
+2. **Pengendalian Kejang dan Hipereksitabilitas Sentral:**
+   * **Benzodiazepin (Diazepam):** Berikan **Diazepam 5 hingga 10 mg IV lambat** pada dewasa. Benzodiazepin menekan hipereksitabilitas saraf sentral dan mencegah kejang berulang.
+   * **Barbiturat (Pentobarbital / Fenobarbital):** Merupakan antikonvulsan lini kedua yang sangat efektif pada keracunan berat Tipe II karena bertindak ganda sebagai agonis kanal klorida dan penstabil membran.
+3. **KONTRAINDIKASI PEMBERIAN ATROPIN SECARA EMPIRIS:**
+   * **DILARANG memberikan Atropin secara rutin** hanya karena melihat pasien berliur (*hypersalivation*).
+   * Hipersalivasi pada piretroid Tipe II dimediasi oleh penutupan kanal klorida dan eksitasi batang otak, bukan akibat hiperstimulasi asetilkolin muskarinik. Pemberian atropin dosis masif pada pasien piretroid yang sudah mengalami takikardia dan eksitasi simpatis akan memicu krisis aritmia dan delirium iatrogenik.
+   * Atropin hanya diindikasikan bila pasien terbukti mengalami keracunan kombinasi bersama insektisida organofosfat/karbamat.
+4. **KONTRAINDIKASI REAKTIVATOR OKSIM (2-PAM):**
+   * Oksim sama sekali tidak berkhasiat karena piretroid tidak berikatan dengan kolinesterase.
+
+---
+
+### 12. Tatalaksana Okupasi, Kelaikan Kerja, dan Surveilans
+* **Penilaian Kelaikan Kerja (*Fitness for Duty*):**
+  * Gejala parestesia wajah diklasifikasikan sebagai **efek gangguan lokal sementara (*nuisance effect*) dan tanda peringatan dini (*early warning sign*)** adanya kegagalan APD atau prosedur kerja.
+  * Pekerja yang mengalami parestesia diistirahatkan sementara dari kontak penyemprotan selama **12–24 jam** hingga rasa terbakar reda sempurna. Tidak diperlukan pemindahan permanen.
+  * Pekerja dengan riwayat atopi kulit berat atau asma bronkiale tidak direkomendasikan menangani formulasi ekstrak piretrin alami.
+* **Pengendalian Higiene Industri:**
+  * Rekayasa teknik: Pemilihan metode semprot bervolume rendah, kabin traktor tertutup bertekanan positif dengan filter udara.
+  * Pengendalian administratif: Menghindari penyemprotan saat siang hari terik atau berangin kencang (suhu panas dan keringat melipatgandakan kejadian parestesia).
+  * **Alat Pelindung Diri (APD) Khusus:**
+    * Wajah & Mata: Pelindung wajah penuh (*face shield*) atau kacamata pelindung (*chemical goggles*) untuk mencegah aerosol mengenai wajah.
+    * Kulit: Pakaian *coverall* lengan panjang tertutup rapat (menghindari kontak dengan leher), sarung tangan nitril tebal.
+    * Saluran napas: Respirator pemurni udara dengan filter partikulat efisiensi tinggi (N95/P100 atau PAPR).
+
+---
+
+### 13. Aspek Regulasi, Legalitas Indonesia, dan Diagnosis PAK
+* **Penetapan Diagnosis PAK (Permenkes No. 11 Tahun 2022):**
+  * Menggunakan **7 Langkah Diagnosis PAK** (konfirmasi parestesia toksik atau asma okupasional akibat piretrin, identifikasi formulasi dan MSDS, riwayat pajanan kerja tanpa APD, eliminasi faktor domestik).
+* **Pengakuan Hukum Berdasarkan Perpres No. 7 Tahun 2019:**
+  * Diakui dalam **Lampiran I.a.35:** *"Penyakit yang disebabkan oleh pestisida"*.
+* **Regulasi Kesehatan Lingkungan (PP No. 28 Tahun 2024):**
+  * Menjadi landasan pengendalian residu insektisida dan standar operasional penyemprotan vektor kesehatan masyarakat (*Pasal 180, 246, 247, 1114*).
+
+---
+
+### 14. Clinical Pearls dan Jebakan Ujian Board Sp.Ok
+1. **Jebakan Salivasi Piretroid Tipe II vs Organofosfat:**
+   * Menemukan pasien dengan salivasi berlebih, kejang, dan fasikulasi pasca menyemprot hama sering menjebak residen untuk langsung menyuntikkan atropin dosis tinggi.
+   * **Cara Membedakan di Sisi Ranjang Pasien:**
+     * *Organofosfat/Karbamat:* Disertai bradikardia, miosis pin-point, bronkorhea masif (*wet lungs*), dan kolinesterase darah tertekan.
+     * *Piretroid Tipe II:* Pasien biasanya **takikardia**, pupil normal atau midriasis, auskultasi paru bersih, disertai **parestesia wajah/kulit**, dan **aktivitas kolinesterase darah normal 100%**.
+2. **Jebakan Penanganan Parestesia dengan Air Dingin:**
+   * Pasien yang mengeluh wajah terbakar pasca terkena piretroid sering kali mencuci wajahnya dengan air dingin berulang kali. Tindakan ini merupakan kesalahan fatal karena air memicu eksitasi lebih lanjut pada kanal natrium saraf kutaneus dan memperparah nyeri. Terapi tunggal paling terbukti adalah **olesan topikal Vitamin E (*α-tocopherol acetate*)**.
+3. **Jebakan Bahaya Formulasi Campuran (*Pyrethroid-OP Synergism*):**
+   * Di lapangan perkebunan, petani sering mencampur piretroid dengan organofosfat tanpa izin. OP menginhibisi enzim karboksilesterase inang, merusak jalur utama pemecahan metabolik piretroid, sehingga memicu intoksikasi gabungan yang mematikan.
+4. **Jebakan Permintaan Uji Kolinesterase:**
+   * Jangan pernah menjawab "memantau kadar kolinesterase rutin" untuk surveilans pekerja yang murni terpapar piretroid. Gunakan metabolit urin **3-PBA**.
+
+---
+
+### TABEL RINGKAS 14 POIN: KARBAMAT VS PIRETROID/PIRETRIN
+
+| No | Parameter Okupasi | GOLONGAN KARBAMAT *(Karbaril, Karbofuran, Metomil, Propoksur)* | GOLONGAN PIRETROID & PIRETRIN *(Permetrin, Sipermetrin, Deltametrin, Sihalotrin)* |
+| :---: | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Ester asam karbamat (\\(N\\)-metil karbamat); lipofilik sedang-tinggi. WHO: Aldikarb (Ia), Karbofuran & Metomil (Ib), Karbaril & Propoksur (II). IARC: Karbaril Grup 3. ACGIH/Permenaker: Kategori A4. | Piretrin: Ekstrak bunga krisan fotolabil. Piretroid: Sintetik fotostabil lipofilik tinggi. Tipe I (tanpa \\(\alpha\\)-siano: permetrin) vs Tipe II (dengan \\(\alpha\\)-siano: sipermetrin, deltametrin). WHO: Deltametrin/Sihalotrin/Permetrin (II). IARC: Grup 3. ACGIH: A4. |
+| **2** | **Sumber & Penggunaan** | Insektisida tanaman pangan/hortikultura, pembasmi serangga rumah tangga (*propoxur*), obat manusia (*pyridostigmine, rivastigmine, physostigmine*). | Insektisida kapas/pertanian, kelambu malaria LLINs (*deltamethrin*), sampo kutu/skabies (*permethrin*), aerosol rumah tangga (+ sinergis PBO). |
+| **3** | **Toksikokinetik** | Absorpsi cepat via oral, inhalasi, dermal. Tanpa bioaktivasi (langsung aktif). Detoksifikasi efisien via karboksilesterase & CYP450. Ekskresi renal urin cepat (>80–90% dalam 24 jam). | Absorpsi dermal sangat buruk (<1,5%, rerata ~0,1–1,2%). Lintas pertama hati masif. Dihidrolisis cepat oleh karboksilesterase & CYP450 (*trans* lebih cepat dari *cis*). Urin cepat (24–48 jam). |
+| **4** | **Toksikodinamik** | **Karbamilasi kovalen reversibel Serin-203 AChE**. Akumulasi ACh. **TIDAK ADA AGING**. Dekarbamilasi spontan cepat (\\(t_{1/2}\sim 30\text{--}40\text{ mnt}\\)). Triad muskarinik, nikotinik, SSP. NTE dihambat reversibel (tanpa aging \\(\rightarrow\\) **TIDAK ADA OPIDN**). | **Modulasi kanal Na+ berpintu-voltase (*voltage-gated*) membran akson** \\(\rightarrow\\) penundaan penutupan \\(\rightarrow\\) *sodium tail current*. Tipe I (<10 ms): *repetitive firing* \\(\rightarrow\\) **Sindrom T (Tremor)**. Tipe II (>10 ms): blok depolarisasi konduksi + inhibisi kanal Cl- \\(\rightarrow\\) **Sindrom CS (Choreoathetosis, Salivasi masif, Kejang)**. **Parestesia lokal serabut sensorik kulit**. |
+| **5** | **Biomonitoring** | **RBC AChE & BuChE darah**. **KENDALA: Reversibilitas cepat in vitro & pengenceran memicu NORMAL PALSU**. Sampel darah wajib didinginkan 0–4°C segera dan diuji cepat. Urin: 1-naftol (karbaril). | **Kolinesterase NORMAL 100% (tidak menghambat AChE)**. **Biomarker Urin:** **3-PBA** (metabolit fenoksibenzil umum); cis/trans-DCCA (permetrin/sipermetrin); DBCA (deltametrin). Sampling: akhir shift. |
+| **6** | **Waktu Paruh (\\(t_{1/2}\\))** | Senyawa plasma: **1–4 jam**. Dekarbamilasi spontan enzim AChE: **30–40 menit**. Pemulihan fungsi enzimatik lengkap: **24–48 jam**. | Senyawa plasma: **6–12 jam (*trans*)** dan **12–24 jam (*cis*)**. Resolusi parestesia kutaneus spontan: **12–24 jam**. |
+| **7** | **Efek Akut** | Krisis kolinergik akut mirip OP (bronkorhea, bronkospasme, bradikardia, miosis, fasikulasi), namun **singkat (*self-limiting*, 6–24 jam)**. Sindrom Intermediate sangat langka. | **Parestesia wajah kutaneus (terbakar, tertusuk, kesemutan tanpa inflamasi)**. Sistemik: mual, muntah, tremor (Tipe I), salivasi profus, korea-atetosis, kejang (Tipe II). Alergi asma/rinitis (piretrin alami). |
+| **8** | **Efek Kronis** | **TIDAK menyebabkan OPIDN**. Toksisitas reproduksi pada dosis tinggi (gangguan motilitas sperma karbaril & metomil). | **TIDAK ada kerusakan struktural saraf permanen / NO OPIDN**. Parestesia reversibel total. Iritasi mukosa pernapasan kronis. |
+| **9** | **Batas Pajanan (Permenaker 5/2018)** | Karbaril: \\(0{,}5\text{ mg/m}^3\\) (IFV, A4, Kulit). Karbofuran: \\(0{,}1\text{ mg/m}^3\\) (IFV, A4). Metomil: \\(0{,}2\text{ mg/m}^3\\) (IFV, A4, Kulit). Propoksur: \\(0{,}5\text{ mg/m}^3\\) (A4). | Piretrum: **\\(5\text{ mg/m}^3\\)** (A4). Permetrin: \\(5\text{ mg/m}^3\\) (rekomendasi ACGIH). |
+| **10** | **BEI / IPB** | Permenaker 5/2018 & ACGIH: **AChE Eritrosit \\(\ge 70\%\\) dari baseline individu** (penurunan maksimal toleransi 30%). | **TIDAK ADA nilai angka BEI/IPB resmi** di Permenaker 5/2018 maupun ACGIH. Evaluasi menggunakan data acuan biologis populasi (BAR). |
+| **11** | **Tatalaksana Akut** | **Oksigenasi awal.** **Atropin:** 1–2 mg IV bolus digandakan tiap 5 mnt hingga paru kering. **Pralidoksim (2-PAM): TIDAK RUTIN; KONTRAINDIKASI RELATIF pada Karbaril** (memperburuk toksisitas); diberikan HANYA jika berat/refrakter atau keracunan campuran dengan OP. **HINDARI SUKSINILKOLIN**. | **Parestesia Dermal: Oleskan TOPIKAL VITAMIN E (*dl-α-tocopherol acetate*)** (inhibisi 98%); hindari pasta seng oksida. **Kejang: Diazepam 5–10 mg IV**, Pentobarbital. **KONTRAINDIKASI ATROPIN RUTIN** (salivasi bukan efek muskarinik). Dilarang oksim. |
+| **12** | **Tatalaksana Individu & Komunitas** | Pemindahan sementara jika AChE turun >30% baseline. Fit to work jika AChE \\(\ge 80\%\\) baseline (tercapai dlm 2–3 hari). Surveilans baseline pra-kerja. APD: respirator OV/P100, sarung tangan nitril. | Parestesia = *nuisance effect* & *early warning sign*; istirahat pajanan 12–24 jam. Evaluasi pekerja asma/atopi. Hindari semprot saat terik/keringat. APD: *face shield*, kacamata, respirator N95/P100, baju lengan panjang. |
+| **13** | **Regulasi & Aspek Legal** | 7 Langkah Diagnosis PAK (Permenkes 11/2022). Diakui dalam Perpres 7/2019 Lampiran I.a.35 ("Penyakit akibat pestisida"). Kedaluwarsa klaim JKK maksimal 3 tahun (Pasal 2 Ayat 2). | 7 Langkah Diagnosis PAK (Permenkes 11/2022). Perpres 7/2019 Lampiran I.a.35 ("Pestisida"). Standar mutu lingkungan vektor & residu kimiawi dalam PP No. 28 Tahun 2024. |
+| **14** | **Clinical Pearl & Jebakan Ujian** | 1. Jebakan kolinesterase normal palsu akibat reaktivasi in vitro. 2. Oksim dapat memperberat toksisitas karbaril. 3. Tidak ada aging & tidak ada OPIDN. 4. Suksinilkolin memicu apneu persisten. | 1. Salivasi Tipe II disertai takikardia (bukan bradikardia kolinergik); dilarang beri atropin rutin. 2. Membasuh muka dengan air dingin memperparah parestesia; terapi definitif adalah Vitamin E topikal. 3. Sinergisme fatal jika dicampur organofosfat. 4. Kolinesterase normal 100%. |
+
+---
+
+Apakah Anda ingin kita melengkapi seri toksikologi pestisida ini dengan membedah golongan herbisida bipyridyl (**Paraquat** dan **Diquat**) serta gas fumigan (**Aluminium Fosfida / Fosfin**) sesuai format uji kompetensi board Sp.Ok?

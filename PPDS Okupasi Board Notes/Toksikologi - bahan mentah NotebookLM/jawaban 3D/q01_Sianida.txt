@@ -1,0 +1,283 @@
+Berikut adalah catatan komprehensif tinjauan toksikologi okupasi untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai **Hidrogen Sianida (HCN) dan Natrium/Kalium Sianida (NaCN/KCN)**, yang disusun secara sistematis berdasarkan literatur dan regulasi terkait:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Hidrogen Sianida (HCN)** [CAS# 74-90-8]:
+  * **Sifat fisik**: Gas atau cairan mudah menguap, tidak berwarna hingga biru pucat pada suhu di atas titik didihnya. 
+  * **Parameter fisik-kimia**: Berat molekul (BM) 27,03; titik didih 78°F (25,6–26°C); tekanan uap 630 mmHg pada 20°C; berat jenis cairan 0,69; sangat mudah terbakar (*flammable gas/liquid* Class IA) dengan *flash point* 0°F (-17,8°C), batas ledak LEL 5,6% dan UEL 40,0%; larut sempurna dalam air (*miscible*).
+  * **Karakteristik ionisasi**: Memiliki pKa 9,2. Pada pH fisiologis darah normal (7,35–7,45), sebagian besar fraksi sianida berada dalam bentuk molekul **HCN non-terionisasi** yang sangat lipofilik dan mudah menembus membran biologis.
+  * **Aroma**: Memiliki aroma khas *bitter almond* (almond pahit) yang samar.
+* **Natrium Sianida (NaCN)** [CAS# 143-33-9] dan **Kalium Sianida (KCN)** [CAS# 151-50-8]:
+  * **Sifat fisik**: Padatan kristal atau granular berwarna putih dengan bau samar almond.
+  * **Parameter fisik-kimia**: BM NaCN 49,0; titik leleh 1047°F (564°C); titik didih 2725°F (1496°C); kelarutan dalam air 58%. BM KCN 65,1; titik leleh 1173°F (634°C); titik didih 2957°F (1625°C); kelarutan dalam air 72%. Keduanya padatan tidak mudah terbakar (*noncombustible solid*), namun bereaksi keras dengan asam menghasilkan gas HCN yang sangat toksik dan mudah terbakar.
+* **Klasifikasi Karsinogenitas (IARC / ACGIH / Permenaker No. 5/2018)**:
+  * Sianida, HCN, NaCN, dan KCN **tidak diklasifikasikan sebagai karsinogen pada manusia** (*Not Classifiable as to Human Carcinogenicity*) oleh IARC (Group 3) maupun ACGIH (Not Listed / Non-carcinogen). 
+  * Dalam **Permenaker No. 5 Tahun 2018**, bahan-bahan ini tidak memiliki notasi karsinogen A1, A2, maupun A3.
+
+---
+
+### 2. Sumber dan Penggunaan di Industri serta Lingkungan
+* **Elektroplating & Pelapisan Logam**: Penggunaan larutan rendaman garam sianida logam (seperti seng sianida, tembaga sianida, emas sianida) untuk pembersihan, pelapisan listrik, dan pasivasi permukaan logam.
+* **Pertambangan Emas & Perak (Metalurgi)**: Proses ekstraksi dan sianidasi (*gold cyanidation/leaching*) untuk melarutkan dan memisahkan bijih emas dan perak dari batuan.
+* **Sintesis Kimia & Manufaktur Polimer**: Bahan baku intermediat sintesis kimia organik, termasuk sintesis *methyl methacrylate* (Perspex/akrilik), *hexamethylenediamine* (pembuatan nilon), nitril, dan intermediat farmasi.
+* **Fumigasi, Pestisida, dan Rodentisida**: Digunakan sebagai insektisida fumigan kapal/gudang dan rodentisida.
+* **Asap Kebakaran (Smoke Inhalation)**: Sumber paparan inhalasi akut terbesar pada populasi pekerja pemadam kebakaran dan masyarakat umum. Pembakaran atau pirolisis material polimer sintetik dan alami yang mengandung nitrogen—seperti poliakrilonitril (PAN), nilon, melamin, busa poliuretan (*polyurethane foam*), wol, dan sutra—melepaskan gas HCN dalam konsentrasi letal.
+
+---
+
+### 3. Toksikokinetik (ADME)
+* **Absorpsi**:
+  * *Inhalasi*: Gas HCN diabsorpsi secara instan dan masif melalui membran alveolar paru ke dalam sirkulasi kapiler, menimbulkan efek sistemik dalam hitungan detik.
+  * *Ingesti*: Garam NaCN/KCN diserap cepat melalui mukosa lambung dan saluran cerna atas setelah kontak dengan asam lambung (HCl) yang mengubah garam menjadi gas HCN terlarut.
+  * *Dermal*: Penetrasi perkutan berlangsung cepat melalui kontak langsung dengan cairan HCN, larutan pekat NaCN/KCN, atau debu sianida pada kulit lembap/rusak (membawa notasi **Kulit/Skin**). Paparan dermal sering menunjukkan keterlambatan onset klinis (*delayed onset*) dibandingkan inhalasi.
+* **Distribusi**:
+  * Terdistribusi cepat ke seluruh kompartemen vaskular dan jaringan tubuh.
+  * Sekitar 60–70% sianida dalam sirkulasi terkonsentrasi di dalam eritrosit melalui pengikatan dengan methemoglobin eritrosit.
+  * Fraksi bebas di plasma (didominasi bentuk non-terionisasi HCN) mudah menembus sawar darah otak (*blood-brain barrier*) dan membran sel. Organ dengan laju konsumsi oksigen tertinggi—**otak (sistem saraf pusat) dan miokardium (sistem kardiovaskular)**—merupakan organ target kritis.
+* **Metabolisme**:
+  * Jalur detoksifikasi enzimatik utama (±80%) dimediasi oleh enzim mitokondria **rhodanese** (*thiosulfate sulfurtransferase*) yang banyak ditemukan di hepar, ginjal, dan otot rangka.
+  * Enzim rhodanese mengkatalisis transfer satu atom sulfur dari donor *sulfane sulfur* endogen (seperti tiosulfat atau glutation) ke ion sianida (CN⁻) untuk membentuk **tiosianat (SCN⁻)**:
+    \\[\text{CN}^- + \text{S}_2\text{O}_3^{2-} \xrightarrow{\text{Rhodanese}} \text{SCN}^- + \text{SO}_3^{2-}\\]
+  * Laju detoksifikasi endogen oleh rhodanese dibatasi oleh ketersediaan cadangan sulfur (*sulfane sulfur pool*) tubuh.
+  * Jalur metabolisme minor mencakup pengikatan langsung dengan hidroksokobalamin membentuk siano-kobalamin, pembentukan kompleks dengan sistein (menjadi *2-aminothiazoline-4-carboxylic acid*), serta oksidasi enzimatik minor.
+* **Ekskresi**:
+  * Metabolit tiosianat (SCN⁻) yang larut air dieliminasi terutama melalui **filtrasi glomerulus ginjal ke dalam urin**.
+  * Sebagian kecil fraksi sianida bebas yang tidak termetabolisme diekskresikan tanpa perubahan melalui udara ekshalasi paru (sebagai gas HCN) dan keringat.
+
+---
+
+### 4. Toksikodinamik (Mekanisme Aksi Seluler)
+* **Inhibisi Sitokrom c Oksidase**:
+  * Ion sianida (CN⁻) memiliki afinitas ikatan yang sangat kuat terhadap ion besi trivalen ferri (**Fe³⁺**) pada gugus heme **sitokrom aa3 / sitokrom c oksidase (Kompleks IV)** pada membran dalam mitokondria.
+  * Pengikatan ini mengunci kompleks IV dalam keadaan inaktif dan memblokade transfer elektron terminal dari sitokrom c ke molekul oksigen (\\(O_2\\)).
+* **Asfiksian Kimia dan Hipoksia Histotoksik**:
+  * Diklasifikasikan sebagai **asfiksian kimia seluler** (*cellular chemical asphyxiant*).
+  * Menyebabkan **hipoksia histotoksik / sitotoksik anoksia** (*histotoxic hypoxia*): suatu kondisi di mana tekanan parsial oksigen darah (\\(PaO_2\\)) dan saturasi hemoglobin arteri (\\(SaO_2\\)) normal atau tinggi, namun sel dan jaringan perifer tidak mampu menggunakan oksigen tersebut untuk respirasi aerobik.
+* **Asidosis Laktat & Krisis Bioenergetik**:
+  * Terhentinya fosforilasi oksidatif mengakibatkan penurunan sintesis adenosin trifosfat (ATP) secara drastis (hingga sepertiga dari kondisi normal).
+  * Sel dipaksa beralih ke jalur glikolisis anaerobik, menyebabkan akumulasi asam piruvat dan konversi masif menjadi asam laktat.
+  * Akumulasi laktat memicu **asidosis metabolik berat dengan *high anion gap***. Asidosis ini menurunkan pH darah, yang secara kimiawi semakin meningkatkan fraksi HCN non-terionisasi (pKa 9,2), sehingga mempermudah penetrasi sianida menembus sawar darah otak dan membran seluler (*lingkaran setan toksisitas*).
+* **Hambatan Enzim Lain**: Selain kompleks IV, sianida menginhibisi lebih dari 40 sistem enzim yang memiliki kofaktor ion logam, termasuk superoksida dismutase (SOD), katalase, dan *nitric oxide synthase* (NOS), memicu lonjakan stres oksidatif dan disfungsi endotel.
+
+---
+
+### 5. Biomonitoring Okupasi dan Laboratorium
+* **Kadar Sianida Darah Utuh (Whole Blood Cyanide)**:
+  * Merupakan uji konfirmasi diagnostik definitif.
+  * *Nilai rujukan*:
+    * Normal/populasi umum non-terpajan: < 0,1–0,2 mg/L (< 4–8 µmol/L).
+    * Ambang toksisitas klinis: > 0,5–1,0 mg/L (> 20–39 µmol/L).
+    * Kadar koma / letal: > 2,5–3,0 mg/L (> 100–123 µmol/L).
+  * *Prosedur penanganan spesimen*: Sampel darah utuh (antikoagulan heparin/EDTA) harus dimasukkan ke dalam tabung kaca dengan ruang hampa minimal (*minimal headspace*) untuk mencegah penguapan HCN, ditutup rapat, dan segera disimpan pada suhu 4°C sebelum dianalisis dengan metode mikrodifusi Feldstein-Klendshoj atau spektrofotometri/kromatografi gas.
+  * *Keterbatasan operasional*: Uji darah sianida jarang tersedia secara *stat* (hasil instan) di sebagian besar laboratorium rumah sakit; penanganan klinis tidak boleh ditunda demi menunggu konfirmasi kadar BCN.
+* **Laktat Plasma sebagai Biomarker Pengganti (*Surrogate Marker*)**:
+  * Peningkatan konsentrasi laktat plasma berkorelasi linier dengan konsentrasi sianida dalam darah akibat hambatan respirasi mitokondria.
+  * Pada keracunan murni: Kadar laktat plasma **\\(\ge\\) 8,0 mmol/L** memiliki sensitivitas 94% dan spesifisitas 70% untuk mendeteksi konsentrasi sianida darah toksik (> 1,0 mg/L).
+  * Pada korban inhalasi asap kebakaran: Laktat plasma **> 10,0 mmol/L** merupakan indikator kuat keracunan sianida yang memerlukan terapi antidot empiris segera.
+* **Tiosianat Urin dan Plasma**:
+  * Digunakan sebagai indikator pajanan biologis untuk pemantauan paparan kronis atau berkala pada pekerja industri.
+  * Waktu pengambilan sampel (*sampling time*): Sampel urin dikumpulkan pada **akhir shift kerja** (*end of shift*) di akhir minggu kerja untuk memantau beban pajanan kumulatif.
+* **Penyulit Perokok (Confounder Merokok)**:
+  * Asap rokok mengandung HCN dalam kadar signifikan.
+  * Perokok aktif menunjukkan kadar dasar sianida darah dan ekskresi tiosianat urin 2 hingga 3 kali lebih tinggi dibanding non-perokok.
+  * Dalam surveilans kedokteran okupasi, interpretasi biomarker tiosianat wajib menyertakan stratifikasi status merokok atau penetapan *baseline* individual pra-kerja untuk menghindari misklasifikasi pajanan okupasi.
+
+---
+
+### 6. Waktu Paruh (Half-Life)
+* **Sianida Bebas dalam Darah**:
+  * Pada korban hidup, waktu paruh eliminasi (\\(t_{1/2}\\)) sianida tergolong sangat singkat, yaitu berkisar antara **0,5 hingga 2 jam (rata-rata ~1 jam)**. 
+  * Waktu paruh yang singkat ini menegaskan bahwa pengambilan sampel darah untuk konfirmasi hukum/medis harus dilakukan seawal mungkin setelah insiden.
+* **Metabolit Tiosianat (Urin/Plasma)**:
+  * Eliminasi tiosianat melalui ginjal berlangsung jauh lebih lambat, dengan waktu paruh eliminasi biologis berkisar antara **2 hingga 4 hari (48–96 jam)** pada individu dengan fungsi ginjal normal (bisa memanjang hingga lebih dari 7 hari pada gangguan ginjal).
+
+---
+
+### 7. Efek Toksisitas Akut
+* **Onset Manifestasi Klinis**:
+  * Inhalasi gas konsentrasi tinggi: timbul dalam **hitungan detik** (*apnea, kolaps mendadak, kehilangan kesadaran seketika*).
+  * Ingesti garam sianida: timbul dalam **beberapa menit**.
+  * Pajanan dermal / nitril organik: tertunda dalam **beberapa jam**.
+* **Trias Klinis Toksisitas Berat**:
+  * **Hipotensi / kolaps kardiovaskular**,
+  * **Depresi status mental berat / koma / kejang**,
+  * **Asidosis laktat berat (\\(> 8\text{ mmol/L}\\))**.
+* **Perjalanan Gejala Berdasarkan Sistem Organ**:
+  * *Sistem Respirasi*: Awalnya terjadi hiperventilasi dan takipnea akibat stimulasi kemoreseptor karotis oleh anoksia seluler, yang dengan cepat berkembang menjadi bradipnea, depresi napas, pernapasan gasping, hingga **apnea dan henti napas sentral**. Edema paru akut (ALI/ARDS) dapat berkembang pada fase lanjut.
+  * *Sistem Kardiovaskular*: Fase awal berupa takikardia kompensatoris dan hipertensi transien, diikuti bradikardia progresif, aritmia ventrikel, kolaps vaskular, hipotensi berat refrakter, dan **henti jantung**.
+  * *Sistem Saraf Pusat*: Sakit kepala hebat, pusing (*dizziness*), kecemasan, konfusi, ataksia, dilatasi pupil bilateral (midriasis), kejang tonik-klonik umum, hilangnya kesadaran berkepanjangan (*sustained coma*), dan kematian batang otak.
+
+---
+
+### 8. Efek Toksisitas Kronis
+* **Efek Tiroid (Goitrogenik)**:
+  * Paparan uap/debu sianida jangka panjang di tempat kerja menyebabkan pembentukan metabolit tiosianat secara terus-menerus.
+  * Tiosianat (\\(SCN^-\\)) bekerja sebagai antagonis kompetitif pada *sodium-iodide symporter* (NIS) di kelenjar tiroid, menghambat ambilan iodida, menurunkan sintesis hormon tiroksin (\\(T_4\\)/\\(T_3\\)), dan memicu kompensasi TSH yang berujung pada **hipotiroidisme dan pembesaran kelenjar tiroid (struma/gondok)**.
+* **Efek Neurologis Sentral & Perifer**:
+  * Ensefalopati toksik kronis dengan kerusakan selektif pada struktur ganglia basalis (putamen dan globus palidus).
+  * Gejala sekuele ekstrapiramidal pasca-paparan akut berat atau paparan kronis, berupa parkinsonisme sekunder, disartria, dan distonia.
+  * *Neuropati perifer*: Defisit sensorimotor bilateral simetris, penurunan kecepatan konduksi saraf tepi, kelemahan tungkai, dan parestesia.
+  * Sindrom *Tropical Ataxic Neuropathy* (TAN): Dilaporkan pada konsumsi diet kronis makanan berpati tinggi glikosida sianogenik (seperti singkong yang tidak diolah sempurna), ditandai dengan neuropati optik, tuli sensorineural, ataksia sensorik, dan mielopati.
+* **Sindrom Neuroastenia Okupasi**: Keluhan non-spesifik berulang pada pekerja terpajan kronis di bawah ambang akut: sefalgia kronis, rasa lelah ekstrem (*fatigue/lassitude*), mual, gangguan tidur, memori menurun, dan penurunan daya konsentrasi.
+
+---
+
+### 9. Nilai Ambang Batas Pajanan (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * **Asam sianida (HCN)** [CAS# 74-90-8]:
+    * **KTD (Kadar Tertinggi Diperkenankan / Ceiling)**: **4,7 BDS (ppm) atau 5 mg/m³**.
+    * **Notasi Kulit**: Ada.
+    * *Keterangan efek kritis*: Iritasi saluran pernafasan atas, sakit kepala, mual, efek tiroid.
+  * **Garam-garam sianida (sebagai CN)** [CAS# 143-33-9 (NaCN), 151-50-8 (KCN), 592-01-8 (Ca(CN)2)]:
+    * **KTD (Ceiling)**: **5 mg/m³**.
+    * **Notasi Kulit**: Ada.
+  * **Aseton sianohidrin (sebagai CN)** [CAS# 75-86-5]: KTD = **4,7 BDS / 5 mg/m³**, Notasi Kulit.
+* **NIOSH REL (Recommended Exposure Limit)**:
+  * HCN: **STEL (Ceiling 15-menit) = 4,7 ppm (5 mg/m³)** [Skin].
+  * NaCN / KCN (sebagai CN): **Ceiling (10-menit) = 5 mg/m³ (4,7 ppm)** [Skin].
+* **OSHA PEL (Permissible Exposure Limit)**:
+  * HCN: **TWA (8-jam) = 10 ppm (11 mg/m³)** [Skin].
+  * NaCN / KCN (sebagai CN): **TWA (8-jam) = 5 mg/m³** [Skin].
+* **ACGIH TLV (Threshold Limit Value)**:
+  * HCN dan garam sianida: **Ceiling = 4,7 ppm (sebagai uap HCN) atau 5 mg/m³ (sebagai garam CN)**, disertai notasi *Skin*.
+* **IDLH (Immediately Dangerous to Life or Health)**:
+  * Hidrogen sianida (HCN): **50 ppm**.
+  * Natrium sianida (NaCN) & Kalium sianida (KCN): **25 mg/m³ (sebagai CN)**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Permenaker No. 5 Tahun 2018**:
+  * Dalam Lampiran 4 (Daftar Indeks Pajanan Biologi / IPB), sianida dan metabolitnya **belum ditetapkan secara numerik sebagai parameter IPB wajib** di Indonesia (tabel IPB Permenaker 5/2018 memuat 44 bahan kimia lain tanpa mencantumkan nilai batas kuantitatif sianida/tiosianat).
+* **Panduan Internasional (ACGIH / DFG)**:
+  * Parameter acuan: **Tiosianat urin** (*urine thiocyanate*) pada akhir shift kerja di akhir minggu kerja (*end of shift at end of workweek*), atau **sianida darah utuh** (*blood cyanide*).
+  * Notasi kritis: Membawa notasi **B (Background)** dan **Ns (Non-specific)**, mengingat keberadaan tiosianat endogen dari makanan (sayuran famili *Brassicaceae*, umbi singkong) dan tingginya absorbsi HCN dari asap rokok pada perokok tembakau.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Antidot
+* **Dekontaminasi dan Keamanan Penolong (Prioritas Mutlak)**:
+  * Penolong wajib menggunakan APD pernapasan mandiri bertekanan positif (**SCBA**) dan pakaian pelindung kimia sebelum memasuki zona paparan (*hot zone*).
+  * Evakuasi korban segera ke udara bersih.
+  * Lepaskan seluruh pakaian korban (mengeliminasi hingga 80-90% kontaminan luar) dan masukkan ke dalam kantong plastik ganda (*double-bag*).
+  * Bilas kulit dan mata dengan air mengalir dalam jumlah banyak (*copious irrigation*) minimal 15–20 menit.
+  * **KONTRAINDIKASI MUTLAK: Resusitasi mulut ke mulut (*mouth-to-mouth*)**, karena residu gas HCN atau muntahan di bibir korban dapat mematikan penolong. Gunakan alat ventilasi mekanis (*bag-valve-mask* / Flynn resuscitator).
+* **Oksigenasi dan Ventilasi Suportif**:
+  * Berikan oksigen konsentrasi tinggi (**FiO2 1,0 / 100%**) melalui masker non-rebreather atau pipa endotrakeal.
+  * Meskipun transpor elektron terblokir, terapi oksigen 100% terbukti secara klinis dan eksperimental meningkatkan efikasi penawar racun dan memfasilitasi disosiasi sianida dari enzim.
+  * Targetkan ventilasi mekanis dengan alkalosis respiratorik ringan (**pH 7,45–7,55**), yang terbukti membatasi perpindahan fraksi HCN bebas ke dalam jaringan otak.
+* **Koreksi Asidosis Metabolik & Dukungan Hemodinamik**:
+  * Berikan **Natrium Bikarbonat IV** untuk mengoreksi asidosis laktat berat dan menjaga pH sistemik.
+  * Gunakan vasopresor simpatomimetik kerja langsung (*norepinephrine*) untuk mengatasi hipotensi berat refrakter.
+* **Antidot Lini Pertama: Hidroksokobalamin (Cyanokit®)**:
+  * **Dosis Dewasa**: **5 gram IV** (dua vial @ 2,5 g yang dilarutkan masing-masing dalam 100 mL NaCl 0,9%) diinfuskan secara intravena selama **15 menit**.
+  * **Dosis Ulangan**: Dosis kedua sebesar **5 gram** dapat diberikan jika toksisitas berat bertahan atau respon klinis belum adekuat (kecepatan infus 15 menit hingga 2 jam; total maksimal 10 gram).
+  * **Dosis Pediatrik**: 70 mg/kgBB IV (maksimal 5 g).
+  * **Mekanisme**: Ion kobalt (Co³⁺) pada cincin porfirin hidroksokobalamin mengikat sianida dengan afinitas sangat tinggi membentuk **sianokobalamin (Vitamin B12)** yang stabil dan non-toksik, yang diekskresikan lewat urin.
+  * **Efek Samping**: Hipertensi transien (karena *scavenging* NO), diskolorisasi kulit menjadi merah dan urin merah tua/pekat (*chromaturia*) yang dapat bertahan hingga beberapa hari, ruam akneiformis, serta potensi risiko nefrotoksisitas (AKI) pada beberapa kohort kritis. Diskolorisasi plasma darah juga dapat mengganggu tes kolorimetri laboratorium dan sensor mesin hemodialisis.
+* **Antidot Alternatif: Regimen Pembentuk Methemoglobin & Donor Sulfur (Nithiodote® / Lilly Kit)**:
+  * **Natrium Nitrit (*Sodium Nitrite*)**:
+    * Dosis Dewasa: **300 mg IV** (10 mL larutan 3%) diberikan perlahan dengan kecepatan 75–150 mg/menit (selama 5–10 menit).
+    * Dosis Anak: 6 mg/kgBB (0,2 mL/kg larutan 3%) IV, maksimal 300 mg.
+    * Dosis dapat diulang separuh dosis awal setelah 30 menit–2 jam jika perbaikan tidak memadai.
+    * *Mekanisme*: Mengoksidasi ion ferro (Fe²⁺) pada hemoglobin menjadi ion ferri (Fe³⁺), menghasilkan **methemoglobin (MetHb)**. MetHb menarik sianida dari sitokrom c oksidase melalui *mass action* membentuk **sianmethemoglobin**.
+    * *Efek samping*: Hipotensi berat (efek pelepasan NO / vasodilatasi) dan risiko methemoglobinemia berlebihan.
+  * **Amil Nitrit (*Amyl Nitrite*)**:
+    * Dosis: Menghancurkan 1 ampul (*perle*), diletakkan di depan hidung/mulut pasien atau di saluran sungkup resusitasi selama 15 detik, diselingi istirahat 15 detik, hingga infus natrium nitrit siap.
+  * **Natrium Tiosulfat (*Sodium Thiosulfate*)**:
+    * Dosis Dewasa: **12,5 gram IV** (50 mL larutan 25%) diinfuskan segera setelah pemberian nitrit.
+    * Dosis Anak: 7 g/m² luas permukaan tubuh (sekitar 250–500 mg/kgBB), tidak melebihi 12,5 g.
+    * *Mekanisme*: Berperan sebagai substrat donor sulfur eksogen untuk enzim rhodanese intraseluler, mempercepat konversi sianmethemoglobin dan sianida bebas menjadi tiosianat.
+* **Pertimbangan Krusial pada Inhalasi Asap Kebakaran (Smoke Inhalation)**:
+  * **HINDARI REGIMEN NITRIT (Natrium Nitrit, Amil Nitrit, atau 4-DMAP)** pada korban kebakaran struktural yang diduga mengalami ko-paparan Karbon Monoksida (CO). 
+  * *Rasional patofisiologi*: Karboksihemoglobin (COHb) akibat inhalasi CO telah menurunkan kapasitas darah membawa oksigen secara drastis. Induksi methemoglobinemia tambahan oleh nitrit akan memicu hipoksia anoksik ganda yang fatal dan kolaps hemodinamik berat.
+  * **Hidroksokobalamin adalah terapi antidot lini pertama terpilih** pada kasus inhalasi asap kebakaran karena tidak menurunkan kapasitas angkut oksigen darah.
+* **Antidot Lain (Regional)**:
+  * *Dikobalt Edetat (Kelocyanor)* (pilihan di Inggris): Dosis dewasa 300 mg IV selama 1 menit diikuti infus glukosa 50% 50 mL; memiliki toksisitas kobalt intrinsik berat sehingga hanya diberikan jika diagnosis sianida sudah dipastikan.
+  * *4-Dimetilaminofenol (4-DMAP)* (pilihan di Jerman): Dosis 3,25 mg/kgBB IV/IM, penginduksi MetHb yang sangat cepat.
+
+---
+
+### 12. Manajemen Okupasi (Individu & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fit-to-Work*)**:
+  * Kontraindikasi medis penempatan kerja (*unfit*) di area risiko sianida:
+    * Penyakit kardiovaskular struktural/iskemik berat, aritmia refrakter.
+    * Penyakit paru kronis dengan penurunan faal paru bermakna (asma tidak terkontrol, PPOK berat).
+    * Gangguan neurologis sentral fokal, riwayat kejang tak terkontrol.
+    * Gangguan fungsi ginjal kronis (klirens tiosianat terganggu).
+    * Penyakit tiroid aktif (hipotiroidisme, struma nodusa, defisiensi iodium).
+  * Anemia berat atau kelainan hemoglobin (defisiensi G6PD, hemoglobinopati) menjadi kontraindikasi relatif, khususnya bila antidot pembentuk MetHb disiagakan.
+* **Surveilans Kesehatan Pekerja (*Occupational Health Surveillance*)**:
+  * *Pemeriksaan Pra-Kerja*: Skrining komprehensif sistem respirasi, kardiovaskular, neurologis, status tiroid (TSH, fT4), fungsi ginjal, dan pencatatan baseline riwayat merokok.
+  * *Pemeriksaan Berkala*: Evaluasi fungsi tiroid tahunan, uji neurologis sistem sensorimotor perifer, skrining keluhan neuroastenia, dan monitoring tiosianat urin akhir shift bila ada indikasi lonjakan pajanan.
+  * *Pemeriksaan Khusus*: Dilakukan segera setelah terjadi insiden kebocoran, *near-miss*, atau pekerja mengalami gejala intoksikasi akut.
+* **Hirarki Pengendalian Bahaya (*Hierarchy of Controls*)**:
+  * *Eliminasi / Substitusi*: Mengganti proses sianidasi emas dengan metode pelindian alternatif yang lebih aman bila memungkinkan secara teknologi.
+  * *Rekayasa Teknik (*Engineering Controls*)*: 
+    * Sistem proses tertutup (*enclosed automated systems*) untuk pengisian dan pencampuran.
+    * Ventilasi pembuangan lokal (*Local Exhaust Ventilation* / LEV) dengan penangkap gas (*scrubber*) basa.
+    * Kontrol ketat pH larutan garam sianida: **wajib dipertahankan basa kuat (pH > 10,5–11,0)** menggunakan buffer alkali/kapur untuk mencegah hidrolisis menjadi gas HCN.
+    * Pemasangan detektor gas HCN atmosferik kontinu (*ambient gas monitor*) yang dilengkapi alarm audio-visual otomatis pada *set-point* 4,7 ppm.
+  * *Pengendalian Administratif*:
+    * Penerapan aturan kerja wajib berpasangan (**Buddy System**) minimal dua personel dalam area berisiko.
+    * Prosedur izin kerja ruang terbatas (*Confined Space Entry Permit*) dengan uji atmosfer sebelum masuk.
+    * Pelatihan tanggap darurat (*emergency drill*) terakreditasi bagi seluruh operator dan petugas pertolongan pertama.
+  * *Alat Pelindung Diri (APD)*:
+    * Perlindungan pernapasan: Respirator bertekanan positif SCBA (*Self-Contained Breathing Apparatus*) atau *Supplied-Air Respirator* (SAR) tipe C bertekanan positif dengan masker wajah penuh (*full facepiece*).
+    * Perlindungan tubuh/kulit: Pakaian pelindung kimia kedap gas (Level A/B), sarung tangan karet butil tebal atau neoprena, sepatu bot tahan kimia, serta pelindung percikan wajah (*face shield*).
+* **Kesiapsiagaan Kit Antidot di Tempat Kerja (*Workplace Antidote Kit*)**:
+  * Perusahaan yang menggunakan sianida wajib menyiagakan **Cyanide Emergency Response Kit** di pos P3K dan area proses berisiko tinggi.
+  * Kit berisi: Tabung dan masker oksigen 100%, resusitator mekanis positif (tanpa ventilasi mulut-ke-mulut), ampul amil nitrit, persediaan hidroksokobalamin (Cyanokit®) atau natrium nitrit + natrium tiosulfat, jarum infus, dan prosedur standar operasional (SOP) darurat tertulis.
+
+---
+
+### 13. Keterangan Lain (Regulasi & Penyakit Akibat Kerja di Indonesia)
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja (PAK)**:
+  * Keracunan sianida secara eksplisit tercantum dalam **Lampiran Bagian I.a.16**: *"Penyakit yang disebabkan oleh gas penyebab asfiksia seperti karbon monoksida, hidrogen sulfida, hidrogen sianida atau derivatnya"*.
+  * Memberikan dasar hukum klaim Jaminan Kecelakaan Kerja (JKK) bagi pekerja yang mengalami morbiditas atau mortalitas akibat pajanan sianida di tempat kerja, dengan hak klaim berlaku hingga 3 tahun setelah hubungan kerja berakhir.
+* **Peraturan Pemerintah No. 28 Tahun 2024 tentang Peraturan Pelaksanaan UU Kesehatan (UU No. 17/2023)**:
+  * Pasal 232–236 mengatur standar penyelenggaraan upaya kesehatan kerja, penilaian faktor risiko lingkungan kerja (kimia, fisika, biologi), penatalaksanaan kedaruratan bahan beracun dan berbahaya (B3), serta program kembali bekerja (*return-to-work*) pasca cedera okupasi.
+* **Permenkes No. 11 Tahun 2022 tentang Pelayanan Kesehatan PAK**:
+  * Menetapkan kewajiban dokter pemeriksa kesehatan kerja / dokter Sp.Ok untuk menegakkan diagnosis PAK melalui **pendekatan 7 langkah diagnosis okupasi** (penentuan diagnosis klinis, identifikasi bahaya potensial, bukti hubungan paparan-penyakit, besaran pajanan, faktor individu, faktor non-okupasi, dan penentuan hubungan kausal kerja).
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan Bau Almond Pahit (*Bitter Almond Odor*)**:
+   * *Mitos*: Menganggap pekerja akan selalu menyadari kebocoran gas sianida dari baunya.
+   * *Fakta Ujian*: Sekitar **20% hingga 40% populasi dunia secara genetik mengalami anosmia spesifik** (ketidakmampuan mengenali aroma hidrogen sianida). Jangan pernah mengandalkan persepsi olfaktori sebagai sistem deteksi bahaya; detektor gas elektronik terkalibrasi adalah kewajiban mutlak.
+2. **Jebakan Pulse Oximetry (\\(SpO_2\\)) Tampak Normal**:
+   * *Mitos*: Pasien sianida dengan hipoksia berat pasti menunjukkan desaturasi pada *pulse oximeter*.
+   * *Fakta Ujian*: *Pulse oximetry* mengukur persentase hemoglobin yang mengikat oksigen (\\(SaO_2\\)). Karena sianida **tidak mengganggu pengikatan oksigen pada hemoglobin di paru**, \\(SpO_2\\) pasien sering terbaca **normal tinggi (98–100%)** meskipun jaringan perifer mengalami anoksia sitotoksik fatal.
+3. **Warna Vena Merah Terang (*Bright Cherry-Red Venous Blood / Arterialisasi Vena*)**:
+   * *Fenomena*: Darah vena yang diambil saat flebotomi tampak merah cerah menyerupai darah arteri.
+   * *Mekanisme*: Disebabkan oleh ketidakmampuan mitokondria di kapiler jaringan untuk mengekstraksi dan menggunakan oksigen, sehingga darah kembali ke sirkulasi vena dengan kandungan oksihemoglobin yang tetap sangat tinggi. Pada funduskopi, vena retina dapat terlihat merah cerah menyamai arteriol.
+4. **Asidosis Laktat dengan \\(SvO_2\\) (Saturasi Oksigen Vena) Sangat Tinggi**:
+   * *Kunci Diferensial Ujian*: Pada syok kardiogenik, hipovolemik, atau hemoragik, asidosis laktat disertai dengan penurunan \\(SvO_2\\) (karena ekstraksi oksigen oleh jaringan meningkat). 
+   * Pada keracunan sianida, terjadi kombinasi patognomonik: **asidosis metabolik laktat masif (\\(> 8\text{ mmol/L}\\)) yang disertai dengan \\(SvO_2\\) sentral/campuran yang sangat tinggi (\\(> 85–90\%\\))** dan penyempitan drastis gradien perbedaan oksigen arteri-vena (\\(narrow\ P(a-v)O_2\ difference\\)).
+
+---
+
+### Tabel Ringkas 14 Poin Tinjauan Board Sp.Ok: Hidrogen Sianida & Garam Sianida
+
+| No | Poin Parameter | Rangkuman Klinis & Regulasi Kunci | Rujukan / Sumber Notebook |
+| :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Karsinogenitas** | HCN: Gas/cairan tak berwarna, BM 27,03; TD 78°F; pKa 9,2; aroma *bitter almond*; sangat mudah terbakar (LEL 5,6%, UEL 40%). NaCN/KCN: Kristal putih padat, BM 49/65,1, larut air, bereaksi dengan asam membentuk gas HCN. Karsinogenitas: **Non-karsinogen** (IARC Group 3 / ACGIH Not Listed / Permenaker 5/2018 tanpa notasi karsinogen A1-A3). | |
+| **2** | **Sumber & Penggunaan** | Industri elektroplating, pertambangan/sianidasi emas & perak, sintesis nilon/akrilik, pestisida/fumigan, dan produk pirolisis polimer nitrogen (asap kebakaran). | |
+| **3** | **Toksikokinetik (ADME)** | Absorpsi: Inhalasi (instan), oral (cepat), dermal (cepat via kulit lembap, notasi Kulit). Distribusi: Konsentrasi tinggi di eritrosit (60-70%), target vital otak dan miokardium. Metabolisme: Enzim **rhodanese** mentransfer sulfur ke CN membentuk **tiosianat (SCN⁻)** (±80%). Ekskresi: Ginjal/urin (tiosianat) dan paru/ekshalasi (HCN bebas). | |
+| **4** | **Toksikodinamik** | Asfiksian kimia seluler; inhibisi **sitokrom c oksidase (Fe³⁺ sitokrom aa3 / Kompleks IV)** \\(\rightarrow\\) blokade respirasi aerobik & sintesis ATP \\(\rightarrow\\) **hipoksia histotoksik** \\(\rightarrow\\) glikolisis anaerob masif \\(\rightarrow\\) **asidosis laktat berat**. | |
+| **5** | **Biomonitoring** | Sianida darah utuh (BCN): toksik > 1,0 mg/L, letal > 3,0 mg/L (sampel tabung tertutup rapat, 4°C). Laktat plasma: \\(\ge\\) 8 mmol/L (sensitivitas 94%), > 10 mmol/L pada asap kebakaran. Tiosianat urin: sampel akhir shift akhir minggu kerja. Penyulit: Perokok memiliki *baseline* BCN dan tiosianat 2-3x lebih tinggi. | |
+| **6** | **Waktu Paruh (\\(t_{1/2}\\))** | Sianida darah: **0,5 – 2 jam (rata-rata ~1 jam)** pada korban hidup. Tiosianat eliminasi urin: **2 – 4 hari (48–96 jam)**. | |
+| **7** | **Efek Akut** | Onset detik (inhalasi) hingga menit/jam (ingesti/kulit). Trias: **hipotensi berat, koma/kejang, asidosis laktat masif (> 8 mmol/L)**. Awalnya hiperpnea/takikardia \\(\rightarrow\\) bradipnea, apnea mendadak, aritmia, syok kardiogenik, henti jantung. | |
+| **8** | **Efek Kronis** | **Efek tiroid**: Tiosianat menghambat ambilan iodida tiroid \\(\rightarrow\\) hipotiroidisme dan struma/gondok. **Neurologis**: Ensefalopati, parkinsonisme sekunder (kerusakan ganglia basalis), neuropati perifer sensorimotor, sindrom TAN. Neuroastenia okupasi. | |
+| **9** | **Batas Pajanan** | **Permenaker 5/2018**: HCN KTD = **4,7 ppm (5 mg/m³)** [Kulit]; Garam NaCN/KCN KTD = **5 mg/m³** [Kulit]. **NIOSH REL**: HCN STEL = 4,7 ppm; Garam C 5 mg/m³. **OSHA PEL**: HCN TWA 10 ppm; Garam TWA 5 mg/m³. **IDLH**: HCN = **50 ppm**; NaCN/KCN = **25 mg/m³**. | |
+| **10** | **BEI / IPB** | Permenaker No. 5/2018 **belum menetapkan nilai numerik IPB untuk sianida**. Panduan ACGIH/DFG: Tiosianat urin akhir shift, membawa notasi **B** (background) dan **Ns** (non-spesifik) karena pengaruh rokok dan diet. | |
+| **11** | **Tatalaksana Akut** | Dekontaminasi: Lepas pakaian, cuci air/sabun, **kontraindikasi mulut-ke-mulut** (gunakan BVM). Oksigen 100% + ventilasi (target pH 7,45-7,55). **Hidroksokobalamin (Cyanokit®)**: 5 g IV over 15 m (dosis ke-2: 5 g hingga total 10 g). Alternatif: Natrium nitrit 300 mg IV + Natrium tiosulfat 12,5 g IV. **Peringatan inhalasi asap**: Hindari nitrit (risiko fatal perburukan hipoksia akibat COHb), gunakan hidroksokobalamin. | |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja: *Unfit* bagi penderita kardiovaskular, paru kronis, gangguan ginjal, tiroid, atau neurologis. Pengendalian: Substitusi, LEV, **pH larutan dijaga basa kuat (> 10,5–11)**, detektor gas HCN alarm 4,7 ppm, *buddy system*, izin ruang terbatas, APD SCBA Level A/B. Kesiapsiagaan kit antidot darurat di tempat kerja. | |
+| **13** | **Regulasi PAK** | **Perpres No. 7 Tahun 2019 Lampiran I.a.16**: Penyakit akibat gas asfiksia (CO, H2S, HCN/derivatnya); hak klaim JKK hingga 3 tahun pasca kerja. Didukung PP No. 28/2024 (kesehatan kerja & kesiapsiagaan B3) dan Permenkes No. 11/2022 (7 langkah diagnosis okupasi). | |
+| **14** | **Clinical Pearls & Trap** | 1) Anosmia genetik bau almond pada 20-40% populasi. 2) \\(SpO_2\\) terbaca normal pada *pulse oximetry*. 3) Vena berwarna merah cerah (*arterialisasi vena*). 4) Asidosis laktat berat (\\(> 8\text{ mmol/L}\\)) dengan \\(SvO_2\\) sangat tinggi (\\(> 85–90\%\\)) akibat kegagalan ekstraksi \\(O_2\\) jaringan. | |
+
+---
+
+💡 *Apakah Anda ingin kita melanjutkan pendalaman komparatif mengenai zat asfiksian kimia berikutnya (misalnya **Hidrogen Sulfida / H₂S** atau **Karbon Monoksida / CO**) lengkap dengan regulasi dan jebakan klinis ujian board Sp.Ok?*

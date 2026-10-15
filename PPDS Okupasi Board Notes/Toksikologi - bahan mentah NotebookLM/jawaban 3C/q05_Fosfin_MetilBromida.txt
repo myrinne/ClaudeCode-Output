@@ -1,0 +1,523 @@
+Sebagai Tim Penguji Ujian Dewan Spesialis Kedokteran Okupasi (Sp.Ok), saya mengingatkan Anda bahwa **Fumigan Gas** merupakan salah satu kelompok bahaya kimia industri dan pertanian paling mematikan di dunia. Karakteristik penetrasinya yang tinggi, toksisitas sistemik pernafasan seluler, serta adanya periode laten atau destruksi kardiopulmoner yang sangat cepat menuntut calon spesialis memiliki ketajaman diagnosis klinis, pemahaman biokinetika molekuler, dan penguasaan regulasi keselamatan kerja secara terintegrasi.
+
+Berikut adalah catatan terstruktur 14 poin untuk masing-masing zat:
+
+---
+
+# BAGIAN A: FOSFIN (PH3) DAN ALUMINIUM/SENG FOSFIDA
+*(Fumigan Silo/Gudang dan Rodentisida)*
+
+```
+                       ┌─────────────────────────────────────────────────────────┐
+                       │          FOSFIN (PH3) & LOGAM FOSFIDA (AlP, Zn3P2)      │
+                       └────────────────────────────┬────────────────────────────┘
+                                                    │
+                 ┌──────────────────────────────────┴──────────────────────────────────┐
+                 ▼                                                                     ▼
+        TOKSIKODINAMIK INTI                                                   KENDALA & DIAGNOSIS
+ • Hidrolisis oleh H2O/HCl -> Gas PH3                                • Tidak ada biomarker spesifik rutin
+ • Blokade Sitokrom c Oksidase (Kompleks IV)                         • Uji Perak Nitrat (AgNO3): Noda Hitam
+ • Kolaps Potensial Membran Mitokondria                              • EKG: Aritmia & Elevasi ST (Meniru STEMI)
+ • Ledakan ROS masif & Peroksidasi Lipid                             • Gas darah: Asidosis metabolik refrakter
+                 │                                                                     │
+                 └──────────────────────────────────┬──────────────────────────────────┘
+                                                    │
+                                                    ▼
+                                          TATALAKSANA & KONTROVERSI
+                               • TIDAK ADA ANTIDOT SPESIFIK
+                               • DILARANG BILAS LAMBUNG AIR BIASA! (Memicu hidrolisis masif)
+                               • Dekontaminasi: Minyak nabati/kelapa + NaHCO3 atau KMnO4
+                               • Resusitasi: MgSO4 IV, NAC, Bikarbonat, IABP / ECMO
+                               • Bahaya sekunder: Gas PH3 dari muntahan meracuni petugas!
+```
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Karakteristik Fisik-Kimia:**
+  * **Gas Fosfin (\\(\text{PH}_3\\), Hidrogen Fosfida, Fosfor Trihidrida, CAS 7803-51-2):** Berat molekul **\\(34\text{ Da}\\)** (\\(34{,}00\text{ g/mol}\\)), titik didih **\\(-87{,}7^\circ\text{C}\\)** (\\(-126^\circ\text{F}\\)), densitas gas **\\(1{,}52\text{ g/L}\\)** (lebih berat dibanding udara yang berbobot \\(\sim 1{,}2\text{ g/L}\\)). 
+  * **Aroma dan Deteksi:** Gas fosfin murni tidak berwarna dan tidak berbau. Namun, formulasi teknis komersial memiliki aroma sangat khas dan menyengat menyerupai **ikan busuk (*spoiled fish*) atau bawang putih (*garlic-like odor*)** yang berasal dari impuritas berupa **difosfin (\\(\text{P}_2\text{H}_4\\))**, metana, dan arsin. Ambang deteksi bau berada pada konsentrasi **\\(\ge 2\text{ ppm}\\)** (\\(2\text{ mg/L}\\) atau \\(0{,}14\text{--}0{,}28\text{ mg/m}^3\\)). *Kelemahan:* Kelelahan olfaktori (*olfactory fatigue*) terjadi cepat sehingga bau tidak dapat dijadikan indikator keselamatan lingkungan kerja.
+  * **Sifat Mudah Meledak dan Terbakar (*Flammability / Explosion*):** Gas fosfin bersifat sangat mudah terbakar (*flammable*) dan dapat menyala secara spontan di udara (*pyrophoric*) bila mengandung jejak difosfin. Batas bawah ledakan (*Lower Explosive Limit / LEL*) di udara berada pada kisaran **1,6% hingga 1,8%** (\\(\sim 16.000\text{--}18.000\text{ ppm}\\)).
+  * **Aluminium Fosfida (AlP, CAS 20859-73-8):** Padatan kristal abu-abu gelap atau kuning kehijauan. Diformulasikan paling sering dalam bentuk tablet seberat **3 gram**, yang terdiri atas **AlP 56%** dan **amonium karbamat 44%** (atau urea) dengan rasio 56:44. Satu tablet 3 g melepaskan sekitar **1 gram gas fosfin** aktif saat terhidrolisis oleh kelembaban udara atau asam lambung:
+    $$\text{AlP} + 3\text{H}_2\text{O} \rightarrow \text{Al(OH)}_3 + \text{PH}_3\uparrow$$
+    $$\text{AlP} + 3\text{HCl} \rightarrow \text{AlCl}_3 + \text{PH}_3\uparrow$$
+    Amonium karbamat ditambahkan sebagai peredam untuk melepaskan amonia (\\(\text{NH}_3\\)) dan karbon dioksida (\\(\text{CO}_2\\)) guna mencegah pembakaran spontan (*spontaneous self-ignition*).
+  * **Seng Fosfida (\\(\text{Zn}_3\text{P}_2\\), CAS 1314-84-7):** Bubuk kristal padat abu-abu gelap atau hitam keabu-abuan. Menghasilkan gas fosfin lebih lambat saat bereaksi dengan asam lambung:
+    $$\text{Zn}_3\text{P}_2 + 6\text{HCl} \rightarrow 3\text{ZnCl}_2 + 2\text{PH}_3\uparrow$$
+* **Klasifikasi Bahaya WHO & Toksisitas:**
+  * **Klasifikasi WHO:** AlP dan \\(\text{Zn}_3\text{P}_2\\) diklasifikasikan ke dalam **Kelas Ia (Sangat Berbahaya Ekstrem / *Extremely Hazardous*)** hingga **Kelas Ib**. 
+  * Dosis letal oral AlP murni pada manusia dewasa berbobot 70 kg adalah **\\(500\text{ mg}\\)** (setara dengan konsumsi \\(< 1\\) tablet komersial 3 g), dengan mortalitas klinis berkisar antara **30% hingga 100%**. LD50 oral tikus untuk AlP adalah **\\(20\text{ mg/kg}\\)**.
+* **Klasifikasi Karsinogenisitas (IARC & ACGIH):**
+  * **IARC:** Fosfin dan aluminium fosfida tidak terklasifikasi sebagai karsinogen manusia (tidak terdaftar dalam Grup 1, 2A, atau 2B).
+  * **ACGIH & Permenaker No. 5 Tahun 2018:** Dikategorikan dalam **Kategori A4 (Tidak diklasifikasikan sebagai karsinogen terhadap manusia)**. Evaluasi genetik membuktikan fosfin tidak bersifat mutagenik.
+
+---
+
+### 2. Sumber dan Penggunaan
+* **Fumigasi Komoditas Pangan & Pertanian:** Digunakan secara luas sebagai fumigan pasca-panen untuk mengendalikan hama serangga dan kumbang penggerek pada biji-bijian, beras, gandum, jagung, tembakau, dan pakan ternak di dalam silo, gudang penyimpanan beras (*rice tablet*), dan kontainer kargo perkapalan internasional (*freighter ships*).
+* **Rodentisida Lapangan:** Formulasi pelet atau umpan seng fosfida (\\(\text{Zn}_3\text{P}_2\\)) dan aluminium fosfida untuk membasmi tikus sawah, mencit, dan hewan pengerat liang tanah (*burrowing rodents / moles*).
+* **Industri Semikonduktor & Ilegal:** Gas fosfin digunakan sebagai dopan (*doping agent*) dalam industri pembuatan kristal semikonduktor, manufaktur sirkuit elektronik, serta emisi gas sampingan pada sintesis terlarang metamfetamin.
+* **Nama Dagang Terkenal:** *Celphos, Phostoxin, Quickphos, Alphos, Talunex, Synfume, Degesch, Delicia*.
+
+---
+
+### 3. Toksikokinetik
+* **Absorpsi:**
+  * **Inhalasi (Rute Okupasional Utama):** Gas fosfin terhirup langsung dan diserap secara sangat cepat dan sempurna melalui membran kapiler-alveolar paru ke dalam darah.
+  * **Gastrointestinal (Tertelan Tablet):** Begitu tablet AlP/\\(\text{Zn}_3\text{P}_2\\) berkontak dengan getah lambung (HCl cair), gas \\(\text{PH}_3\\) langsung dilepaskan secara masif dalam waktu **10 hingga 15 menit** dan diabsorpsi secara difusi pasif di sepanjang mukosa lambung dan duodenum. Selain itu, partikel garam fosfida mikroskopis non-hidrolisis dapat diabsorpsi langsung ke sirkulasi darah.
+  * **Dermal:** Penetrasi transkutan melalui kulit utuh sangat minimal dan tidak signifikan, namun kontak dengan cairan dapat memicu iritasi lokal.
+* **Distribusi:**
+  * Karena ukuran molekulnya yang sangat kecil (34 Da) dan tidak terionisasi, fosfin terdistribusi luas dan cepat ke seluruh jaringan vaskular tubuh. Konsentrasi tertinggi ditemukan di **hati, otak, ginjal, paru, dan miokardium jantung** (analisis post-mortem menunjukkan konsentrasi di otak **\\(94\text{ mL/g}\\)**, ginjal **\\(41\text{ mL/g}\\)**, dan hati **\\(24\text{ mL/g}\\)**).
+* **Metabolisme:**
+  * Mengalami oksidasi metabolik lambat di jaringan menjadi **hipofosfit (\\(\text{H}_2\text{PO}_2^-\\))**, **fosfit (\\(\text{HPO}_3^{2-}\\))**, dan **fosfat (\\(\text{HPO}_4^{2-}\\))**.
+  * Di dalam kompartemen eritrosit, fosfin berinteraksi langsung dengan hemoglobin bebas dan oksihemoglobin, mengoksidasi besi heme dan memicu pembentukan **hemikrom (*haemichrome*)**, **methemoglobin (MetHb)**, serta aggregat hemoglobin terdenaturasi berupa **badan Heinz (*Heinz bodies*)** bila kadar fosfida in vitro melampaui **\\(1{,}25\text{ µg/mL}\\)**.
+* **Ekskresi:**
+  * **Paru (Ekshalasi):** Rute eliminasi utama fosfin bebas dalam tubuh adalah melalui **udara ekshalasi pernapasan** dalam bentuk gas utuh tanpa perubahan (memberikan bau napas khas ikan busuk).
+  * **Urin:** Metabolit teroksidasi (terutama hipofosfit) diekskresikan melalui ginjal ke dalam urin bersama sejumlah kecil senyawa fosfida utuh.
+
+---
+
+### 4. Toksikodinamik
+Fosfin merupakan racun protoplasmik destruktif (*protoplasmic poison*) yang menyerang mitokondria seluler secara universal:
+1. **Inhibisi Kompleks IV Rantai Respirasi (Sitokrom c Oksidase):**
+   * Molekul \\(\text{PH}_3\\) berikatan secara non-kompetitif dan menghambat kerja enzim **Sitokrom c Oksidase (*Cytochrome c Oxidase*)** pada rantai transpor elektron membran dalam mitokondria.
+   * Terjadi **penurunan respirasi oksidatif seluler hingga > 70%**, menghentikan fosforilasi oksidatif dan memicu kolapsnya gradien potensial membran mitokondria (\\(\Delta\Psi_m\\)). Produksi adenosin trifosfat (ATP) seluler terhenti seketika, menimbulkan kegagalan bioenergetik sistemik.
+2. **Ledakan Stres Oksidatif (*Burst of Reactive Oxygen Species*):**
+   * Hambatan aliran elektron memicu kebocoran elektron ekstra-mitokondria yang bereaksi langsung dengan oksigen, memicu pembentukan **radikal superoksida (\\(\text{O}_2^{\bullet-}\\))** dan **radikal hidroksil (\\(^{\bullet}\text{OH}\\))** yang sangat reaktif.
+   * Fosfin menginaktivasi enzim antioksidan protektif: memicu deplesi **glutation (GSH)** seluler, menghambat aktivitas enzim **katalase**, dan menurunkan **superoksida dismutase (SOD)**.
+3. **Peroksidasi Lipid & Disintegritas Membran Kanal Ion:**
+   * Radikal bebas menyerang asam lemak membran sel (*lipid peroxidation* / LPO).
+   * Terjadi gangguan permeabilitas membran terhadap ion **\\(\text{Na}^+, \text{K}^+, \text{Mg}^{2+}\\)**, dan **\\(\text{Ca}^{2+}\\)**, memicu kolaps potensial aksi miosit jantung.
+4. **Kardiotoksisitas Akut:**
+   * Miosit jantung memiliki densitas mitokondria tertinggi sehingga menjadi organ target paling rentan. Kerusakan integritas seluler memicu nekrosis fokal miokard, miokarditis toksik, penurunan fraksi ejeksi ventrikel kiri, syok kardiogenik masif, dan instabilitas listrik jantung.
+
+---
+
+### 5. Biomonitoring
+* **Ketiadaan Biomarker Spesifik Rutin:**
+  * Hingga saat ini, **tidak ada biomarker paparan spesifik yang terstandarisasi untuk pemantauan biologis rutin okupasional** fosfin di tempat kerja. Pengukuran aktivitas kolinesterase darah (AChE/BuChE) dapat menunjukkan sedikit penekanan pada studi in vitro/hewan, namun tidak konsisten dan tidak memiliki relevansi klinis bermakna pada manusia.
+* **Uji Kertas Perak Nitrat (*Silver Nitrate Paper Test*):**
+  * Merupakan uji *bedside* kualitatif/semikuantitatif cepat, sangat sensitif, dan spesifik untuk konfirmasi paparan fosfin di instalasi gawat darurat dan klinik okupasi:
+    * **Metode:** Kertas saring Whatman dibasahi dengan larutan perak nitrat (**\\(\text{AgNO}_3\\) 0,1 N / 1%**), kemudian diletakkan di atas corong tabung aspirat getah lambung yang dihangatkan (atau dipaparkan langsung di depan hembusan napas/ekshalasi pasien selama 15–20 menit).
+    * **Reaksi Kimia:** Gas fosfin mereduksi ion perak menjadi perak fosfida dan perak metalik bebas:
+      $$\text{PH}_3 + 3\text{AgNO}_3 \rightarrow \text{Ag}_3\text{P}\downarrow + 3\text{HNO}_3$$
+      $$\text{Ag}_3\text{P} + 3\text{AgNO}_3 + 3\text{H}_2\text{O} \rightarrow 6\text{Ag}\downarrow (\text{Hitam}) + \text{H}_3\text{PO}_3 + 3\text{HNO}_3$$
+    * **Interpretasi:** Timbulnya **noda warna hitam pekat (*blackening of test paper*)** mengonfirmasi positif kuat adanya gas fosfin.
+* **Pemeriksaan Toksikologi Analitik Lanjutan:**
+  * *Headspace Gas Chromatography* dipadu detektor massa (*HS-GC-MS*) atau *Nitrogen-Phosphorus Detector (NPD)* untuk kuantifikasi gas fosfin dalam darah dan spesimen visera post-mortem. Batas ambang toksisitas fatal dalam darah dilaporkan berkisar **\\(1{,}067 \pm 0{,}16\text{ mg\%}\\)**.
+  * Pengukuran kadar fosfor atau aluminium darah menggunakan *Inductively Coupled Plasma Mass Spectrometry (ICP-MS)*.
+* **Pulse CO-Oximetry:**
+  * Gas fosfin berinteraksi dengan oksihemoglobin darah membentuk dishemoglobinemia; pada pulse CO-oksimetri dapat terdeteksi **peningkatan kadar karboksihemoglobin (COHb) palsu (*elevated COHb level > 10%*)** yang berkorelasi linier dengan tingkat keparahan toksisitas sistemik.
+
+---
+
+### 6. Waktu Paruh (*Elimination Half-Life*)
+* **Waktu Paruh Eliminasi Gas Fosfin:**
+  * Waktu paruh eliminasi gas fosfin bebas dalam darah mamalia sangat singkat, berkisar antara **beberapa jam (t1/2 plasma 2 hingga 6 jam)** karena ekskresi cepat lewat pernapasan dan oksidasi jaringan.
+* **Kinetika Pelepasan Tablet Lambung:**
+  * Pelepasan gas fosfin dari tablet padat AlP di dalam rongga lambung berlangsung kontinu selama **12 hingga 24 jam**, menjelaskan mengapa perburukan hemodinamik dapat terus terjadi secara bertahap pasca pajanan oral.
+
+---
+
+### 7. Efek Akut
+Manifestasi intoksikasi akut muncul sangat cepat dalam hitungan menit hingga 1–2 jam pasca pajanan:
+* **Gastrointestinal Akut:** Nyeri epigastrium hebat, rasa terbakar retrosternal, mual, muntah profus terus-menerus, hematemesis, haus ekstrem, serta **aroma khas ikan busuk atau bawang putih yang menyengat dari mulut korban**.
+* **Kardiovaskular (Penyebab Kematian Terbanyak):**
+  * **Syok Refrakter (*Refractory Cardiogenic & Distributive Shock*):** Hipotensi berat (TDS < 90 mmHg) yang tidak berespons terhadap resusitasi cairan kristaloid maupun infus vasopresor dosis tinggi.
+  * **Aritmia Ventrikel Letal:** Takikardia sinus, bradikardia, konduksi AV blok, ekstrasistol ventrikel multiform, bigemini, takikardia ventrikel (VT), hingga fibrilasi ventrikel (VF) dan asistol.
+  * Gambaran EKG: Depresi atau **elevasi segmen ST** dan inversi gelombang T difus yang **meniru infark miokard akut transmural (*STEMI mimics*)**.
+* **Respirasi & Paru:** Takipnea, dispnea berat, batuk, sianosis sentral refrakter, serta **edema paru akut non-kardiogenik / ARDS masif** dalam 6 hingga 24 jam pasca pajanan.
+* **Gangguan Asam Basa & Metabolik:**
+  * **Asidosis Metabolik Berat (*High Anion Gap Lactic Acidosis*):** Penanda diagnostik paling konsisten akibat akumulasi asam laktat dari kegagalan respirasi seluler mitokondria (pH < 7,2; bikarbonat serum < 15 mEq/L).
+  * **Hiperglikemia Akut:** Disebabkan oleh nekrosis sel beta pankreas toksik dan stres adrenergik masif; kadar glukosa darah berkorelasi kuat sebagai indikator prognosis fatal.
+  * Gangguan Elektrolit: Dapat terjadi hipomagnesemia atau hipermagnesemia berat.
+* **Efek Inhalasi Okupasional Akut:**
+  * Konsentrasi udara kerja **\\(50\text{ ppm}\\)** sudah membahayakan keselamatan jiwa; konsentrasi **\\(400\text{--}600\text{ ppm}\\)** memicu kematian dalam waktu **30 menit** akibat edema paru toksik akut dan henti jantung.
+* **Komplikasi Lanjut pada Penyintas (*Late Complications*):**
+  * Terbentuknya **striktur esofagus korosif (*esophageal stricture*)** dan fistula esofagobronkial dalam 1–4 minggu pasca ingesti akibat nekrosis mukosa saluran cerna.
+
+---
+
+### 8. Efek Kronis Okupasional
+* **Sistem Saraf & Neurobehavioral:**
+  * Pekerja silo, buruh gudang beras, dan aplikator fumigasi yang terpapar uap fosfin konsentrasi rendah secara berulang menunjukkan keluhan neurotoksik kronis: sakit kepala harian, pusing, fatique, ataksia gaya berjalan (*unsteady gait*), tremor halus pada tangan, gangguan konsentrasi visual, serta depresi mood.
+* **Sistem Pernapasan:**
+  * Iritasi saluran napas atas kronis, faringitis, batuk produktif kronis, bronkitis, serta penurunan fungsi paru obstruktif/restriktif progresif.
+* **Toksisitas Skeletal & Hematologi:**
+  * Paparan uap fosfor/fosfida kronis berat dalam sejarah industri dikaitkan dengan nekrosis avaskular tulang rahang (dikenal sebagai ***"Phossy Jaw"***), serta anemia hipokromik dan leukopenia transien akibat stres bioenergetik pada sel mononuklear darah tepi.
+
+---
+
+### 9. Batas Pajanan Okupasional di Udara Tempat Kerja (OELs)
+Berdasarkan Lampiran 1 Standar Faktor Kimia **Permenaker No. 5 Tahun 2018**, rekomendasi **ACGIH TLV**, **NIOSH REL**, dan **OSHA PEL**:
+
+| Parameter Lingkungan Kerja | Fosfin (\\(\text{PH}_3\\), 7803-51-2) | Keterangan / Notasi Khusus |
+| :--- | :--- | :--- |
+| **Permenaker No. 5 Tahun 2018 (NAB)** | **\\(0{,}3\text{ ppm}\\)** (\\(0{,}4\text{ mg/m}^3\\)) | TWA 8 jam kerja harian |
+| **Permenaker No. 5 Tahun 2018 (KTD)** | **\\(1\text{ ppm}\\)** (\\(1\text{ mg/m}^3\\)) | Kadar Tertinggi Diperkenankan (STEL 15 menit) |
+| **ACGIH TLV-TWA** | **\\(0{,}05\text{ ppm}\\)** (\\(0{,}07\text{ mg/m}^3\\)) | Batas revisi higienis ACGIH; Notasi A4 |
+| **ACGIH TLV-STEL** | **\\(0{,}15\text{ ppm}\\)** hingga **\\(1\text{ ppm}\\)** | Batas paparan jangka pendek |
+| **NIOSH REL** | **\\(0{,}3\text{ ppm}\\)** (\\(0{,}4\text{ mg/m}^3\\)) | TWA 10 jam; STEL **\\(1\text{ ppm}\\)** (\\(1{,}39\text{ mg/m}^3\\)) |
+| **OSHA PEL** | **\\(0{,}3\text{ ppm}\\)** (\\(0{,}4\text{ mg/m}^3\\)) | TWA 8 jam legal |
+| **Batas IDLH (NIOSH)** | **\\(50\text{ ppm}\\)** | *Immediately Dangerous to Life or Health* |
+
+*(Faktor konversi udara: \\(1\text{ ppm} = 1{,}39\text{ mg/m}^3\\) pada suhu \\(25^\circ\text{C}\\) dan tekanan 760 mmHg).*
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Ketiadaan Batas Angka Resmi:**
+  * Baik di dalam **Lampiran 4 Permenaker No. 5 Tahun 2018 (Indeks Pajanan Biologi)** maupun dokumentasi **ACGIH BEI**, **TIDAK ADA nilai angka resmi IPB/BEI yang ditetapkan untuk gas Fosfin maupun Aluminium Fosfida**.
+  * Penilaian paparan biologis dan efek racun di lapangan murni didasarkan pada surveilans klinis, analisis gas darah (VBG/ABG), EKG kontinu, dan uji kualitatif perak nitrat pada cairan lambung/napas.
+
+---
+
+### 11. Tatalaksana Medis Gawat Darurat
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│             PROTOKOL EMERGENSI KERACUNAN ALUMINIUM FOSFIDA             │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+       ┌────────────────────────────┼────────────────────────────┐
+       ▼                            ▼                            ▼
+1. PROTEKSI TENAGA MEDIS     2. DEKONTAMINASI KHUSUS      3. RESUSITASI & STABILISASI
+   • Masker kanister gas/SCBA   • DILARANG AIR BIASA!        • Na Bikarbonat IV agresif
+   • Sarung tangan karet        • Minyak Kelapa / Almond       (koreksi asidosis pH <7.2)
+   • Ruang berventilasi baik      (50-100 mL) + NaHCO3       • MgSO4 IV (antiaritmia & LPO)
+   • BAHAYA SEKUNDER EMISI PH3  • KMnO4 1:10.000             • N-Asetilsistein (NAC) IV
+       │                            │                            │
+       └────────────────────────────┼────────────────────────────┘
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │             TATALAKSANA KARDIOVASKULAR LANJUT           │
+       │  • Syok Kardiogenik: Norepinefrin, HIE Protokol, Digoksin│
+       │  • Sirkulasi Mekanik: Pasang IABP atau ECMO segera!     │
+       │  • HINDARI Trombolisis (EKG meniru STEMI tapi miokarditis)│
+       └─────────────────────────────────────────────────────────┘
+```
+
+1. **Proteksi Universal Tenaga Medis (Mencegah Keracunan Sekunder):**
+   * Pasien yang menelan tablet AlP mengeluarkan gas fosfin toksik dari sendawa dan muntahannya. Petugas IGD wajib menggunakan **masker wajah penuh (*full-face respirator*) berkartrid khusus fosfin atau SCBA**, sarung tangan karet, dan merawat pasien di ruangan dengan ventilasi pembuangan bervolume tinggi (*negative pressure room*).
+2. **Dekontaminasi Saluran Cerna (KONTROVERSI AIR VS MINYAK):**
+   * **KONTRAINDIKASI VITAL BILAS LAMBUNG DENGAN AIR BIASA:** Dilarang keras melakukan bilas lambung menggunakan air biasa atau larutan asam, karena air akan mempercepat hidrolisis sisa tablet AlP dan memicu pelepasan gas fosfin dalam jumlah masif di lambung secara eksplosif.
+   * **Bilas Lambung Khusus & Minyak Nabati:**
+     * **Minyak Kelapa Murni (*Coconut Oil*) atau Minyak Almond Manis:** Berikan **\\(50\text{--}100\text{ mL}\\) per oral atau via NGT** sesegera mungkin. *Mekanisme:* Minyak bertindak sebagai lapisan pelindung hidrofobik non-polar yang melapisi partikel tablet AlP, menghambat penetrasi air dan asam lambung (*prevents contact with HCl*), sehingga menghentikan pelepasan gas fosfin serta mengurangi absorpsi.
+     * **Kombinasi Natrium Bikarbonat (\\(\text{NaHCO}_3\\)):** Bilas lambung menggunakan larutan **\\(\text{NaHCO}_3\\) (dua vial 44 mEq dalam 100 mL air)** untuk menetralkan asam hidroklorida lambung, karena pelepasan fosfin meningkat tajam pada suasana asam.
+     * **Kalium Permanganat (\\(\text{KMnO}_4\\) 1:10.000 / 1 gram dalam 10 L air):** Digunakan sebagai larutan bilas lambung alternatif untuk mengoksidasi gas fosfin di lambung menjadi garam fosfat non-toksik.
+     * **Arang Aktif (*Activated Charcoal*):** Diberikan 1 g/kgBB bersama sorbitol untuk mengadsorpsi residu.
+3. **Koreksi Asidosis Metabolik Agresif:**
+   * Berikan **Natrium Bikarbonat IV** segera bila pH darah < 7,2 atau bikarbonat serum < 15 mEq/L, dihitung dengan rumus:
+     $$\text{Defisit Bikarbonat} = (20 - \text{HCO}_3\text{ pasien}) \times 0{,}4 \times \text{Berat Badan (kg)}$$
+     setengah dosis diberikan bolus lambat, sisanya via infus.
+4. **Pemberian Magnesium Sulfat (\\(\text{MgSO}_4\\) IV):**
+   * Mengatasi instabilitas membran miosit dan meredam stres oksidatif kardiak.
+   * **Dosis:** Berikan **1 g IV bolus awal**, dilanjutkan infus **1 g/jam selama 3 jam**, kemudian **1 g setiap 6 jam** selama 24–72 jam dengan pemantauan refleks patela dan kadar magnesium serum.
+5. **Antioksidan Dosis Tinggi (N-Asetilsistein & Vitamin C):**
+   * **N-Asetilsistein (NAC):** Berikan infus **\\(50\text{--}100\text{ mg/kgBB/hari}\\)** IV terbagi dalam 3 dosis untuk memulihkan cadangan glutation intraseluler dan meredam peroksidasi lipid.
+   * Vitamin C (1 g IV tiap 6 jam) dan Vitamin E (400 IU tiap 12 jam).
+6. **Tatalaksana Syok Kardiogenik & Dukungan Hemodinamik Lanjut:**
+   * Resusitasi cairan kristaloid hati-hati dipandu tekanan vena sentral (CVP rentang 8–12 mmHg) guna mencegah edema paru iatrogenik.
+   * Inotropik/Vasopresor: **Norepinefrin (2–4 µg/menit)** atau **Fenilefrin (4–6 µg/menit)** untuk mempertahankan TDS > 90 mmHg.
+   * Protokol *Hyperinsulinemia-Euglycemia (HIE)*: Bolus insulin reguler **1 IU/kgBB IV** dipadu dekstrosa, dilanjutkan infus insulin **\\(0{,}5\text{--}1\text{ IU/kgBB/jam}\\)** guna menyuplai substrat energi karbohidrat langsung bagi miosit jantung yang mengalami kegagalan oksidasi asam lemak mitokondria.
+   * Digoksin (0,5 mg awal dilanjutkan 0,5 mg tiap 6 jam) untuk stabilisasi gagal ventrikel kiri.
+   * **Dukungan Sirkulasi Mekanik (ECMO & IABP):** Pemasangan *Intra-Aortic Balloon Pump (IABP)* atau **Extracorporeal Membrane Oxygenation (ECMO)** terbukti sukses menyelamatkan korban dengan miokarditis toksik dan syok refrakter reversibel hingga efek toksin mereda.
+7. **Methemoglobinemia:** Berikan **Methylene Blue 1% dosis \\(1\text{--}2\text{ mg/kgBB}\\) IV lambat** selama 5 menit bila fraksi MetHb meningkat disertai sianosis yang tidak berespons terhadap oksigen.
+
+---
+
+### 12. Tatalaksana Okupasi, Kelaikan Kerja, dan Surveilans Komunitas
+* **Penilaian Kelaikan Kerja (*Fitness for Duty Assessment*):**
+  * **Kontraindikasi Penempatan (*Pre-placement Unfit*):** Calon pekerja dengan penyakit kardiovaskular organik (aritmia, gagal jantung, riwayat infark), penyakit paru obstruktif/restriktif kronis, gangguan faal hati/ginjal berat, atau anemia kronis dilarang keras ditempatkan pada pekerjaan penanganan fumigan fosfin/fosfida.
+  * **Kelaikan Pasca Keracunan Akut (*Return to Work*):** Pekerja yang mengalami intoksikasi akut baru dinyatakan *Fit to Work* setelah pemantauan ketat: ekokardiografi membuktikan fraksi ejeksi ventrikel kiri normal, EKG Holter 24 jam bebas aritmia, serta fungsi spirometri dan kapasitas difusi paru (DLCO) pulih sempurna.
+* **Prosedur Higiene Industri & Pengendalian Operasi Fumigasi:**
+  * **Sertifikasi Khusus:** Fumigasi hanya boleh dieksekusi oleh perusahaan pengendali hama (*pest control operator*) yang memiliki izin operasional resmi dan teknisi bersertifikat kompetensi fumigasi pestisida terbatas.
+  * **Segel Kedap Gas (*Gas-Tight Enclosure*):** Seluruh celah silo, palka kapal, atau kontainer wajib ditutup rapat menggunakan lembaran terpal plastik polietilen (*fumigation tarpaulin*) dengan ketebalan standar dan direkatkan pasir/lakban.
+  * **Pemberian Tanda Bahaya (*Placarding*):** Pemasangan papan peringatan bahaya gas beracun bergambar tengkorak, mencantumkan nama fumigan, tanggal aplikasi, dan nomor kontak darurat dalam bahasa yang dipahami pekerja.
+  * **Aerasi dan Kliring Gas (*Clearing / Degassing Period*):**
+    * Sebelum pintu gudang atau kontainer dibuka untuk aktivitas bongkar muat barang, wajib dilakukan ventilasi mekanis paksa (*forced mechanical aeration*) selama minimal **24 hingga 48 jam**.
+    * **Penerbitan Sertifikat Bebas Gas (*Gas Clearance Certificate*):** Pekerja dilarang memasuki area fumigasi sebelum petugas K3/teknisi melakukan pengukuran udara kerja menggunakan detektor gas fosfin kuantitatif portabel dan memastikan konsentrasi telah berada **di bawah NAB (< 0,3 ppm)**.
+* **Alat Pelindung Diri (APD) Wajib:**
+  * Saluran napas: **SCBA (*Self-Contained Breathing Apparatus*)** dengan silinder udara bertekanan positif atau *Air-Supplied Respirator* wajib digunakan saat membuka kontainer atau menangani kondisi darurat tumpahan. Masker respirator pemurni udara dengan kanister fosfin khusus hanya diizinkan untuk konsentrasi rendah terukur di bawah nilai IDLH (50 ppm).
+  * Tubuh & Kulit: Sarung tangan pelindung karet/nitril tebal (kering sempurna tanpa kelembaban), pakaian kerja tertutup, kacamata pelindung kimia (*safety goggles*).
+
+---
+
+### 13. Aspek Regulasi, Legalitas Indonesia, dan Diagnosis PAK
+* **Penegakan Diagnosis PAK (Permenkes No. 11 Tahun 2022):**
+  * Menggunakan pendekatan sistematis **7 Langkah Diagnosis PAK** (konfirmasi diagnosis klinis miokarditis toksik/ARDS/hepatitis akibat fosfin, identifikasi pajanan fumigan AlP/\\(\text{Zn}_3\text{P}_2\\), korelasi kausal ilmiah, evaluasi konsentrasi lingkungan dibanding NAB Permenaker 5/2018, analisis faktor risiko perorangan dan pajanan domestik).
+* **Pengakuan Hukum Berdasarkan Perpres No. 7 Tahun 2019:**
+  * Diakui secara eksplisit dalam daftar penyakit akibat kerja:
+    * **Lampiran I.a.3:** *"Penyakit yang disebabkan oleh fosfor atau persenyawaannya"*.
+    * **Lampiran I.a.35:** *"Penyakit yang disebabkan oleh pestisida"*.
+    * **Lampiran I.c.2:** *"Penyakit sistem pernapasan akibat zat kimia, debu, atau aerosol"*.
+  * **Klausul Masa Kedaluwarsa Klaim JKK (Pasal 2 Ayat 2):** Hak atas jaminan kecelakaan kerja akibat PAK tetap berlaku **paling lama 3 (tiga) tahun terhitung sejak hubungan kerja berakhir**.
+* **Regulasi Karantina Kesehatan Pelabuhan (PP No. 28 Tahun 2024):**
+  * Standar tindakan sanitasi, pengawasan kapal kargo, dan pelaksanaan fumigasi kapal diatur secara legal dalam **Pasal 1070 ayat (3) dan Pasal 1076–1077 PP No. 28 Tahun 2024** guna pencegahan risiko penyakit karantina pelabuhan.
+
+---
+
+### 14. Clinical Pearls dan Jebakan Ujian Board Sp.Ok
+1. **Jebakan Bilas Lambung Menggunakan Air Biasa:**
+   * Di ruang ujian kasus gawat darurat keracunan tablet AlP, residen yang menjawab *"lakukan bilas lambung segera dengan 2 liter air steril atau cairan infus NaCl"* langsung dinyatakan **TIDAK LULUS**. Air biasa mempercepat reaksi hidrolisis garam fosfida, melipatgandakan produksi gas fosfin beracun secara masif di rongga lambung. Bilas lambung wajib menggunakan **minyak kelapa (*coconut oil*)** atau **larutan \\(\text{KMnO}_4\\) 1:10.000 dipadu \\(\text{NaHCO}_3\\)**.
+2. **Jebakan Keracunan Sekunder Tenaga Medis IGD:**
+   * Menangani pasien keracunan AlP di ruang resusitasi tertutup tanpa masker respirator gas dapat meracuni dokter dan perawat akibat emisi gas fosfin dari muntahan dan udara ekshalasi pasien.
+3. **Jebakan EKG Menyerupai STEMI (Trombolitik Iatrogenik):**
+   * Gambaran elevasi segmen ST difus pada EKG akibat miokarditis toksik fosfin sering salah didiagnosis sebagai infark miokard akut arteria koroner murni. Memberikan terapi trombolitik (streptokinase / r-tPA) adalah **kesalahan medis fatal** yang akan memicu perdarahan saluran cerna masif pada mukosa lambung yang telah mengalami korosi oleh fosfida.
+4. **Jebakan Menjawab "Beri Antidotum Spesifik":**
+   * Jangan pernah mencari atau menyebutkan antidot kelator spesifik untuk fosfin. Antidot kimia spesifik untuk fosfin **TIDAK ADA**. Kunci kelangsungan hidup pasien adalah dekontaminasi minyak lambung dini, koreksi asidosis agresif dengan natrium bikarbonat, pemberian magnesium sulfat, infus NAC, dan dukungan mekanik sirkulasi dini (IABP/ECMO).
+
+---
+---
+
+# BAGIAN B: METIL BROMIDA (BROMOMETANA)
+*(Fumigan Karantina Pra-Pengapalan dan Bahan Perusak Ozon)*
+
+```
+                       ┌─────────────────────────────────────────────────────────┐
+                       │          METIL BROMIDA / BROMOMETANA (CH3Br)            │
+                       └────────────────────────────┬────────────────────────────┘
+                                                    │
+                 ┌──────────────────────────────────┴──────────────────────────────────┐
+                 ▼                                                                     ▼
+        TOKSIKODINAMIK INTI                                                   KENDALA & PERIODE LATEN
+ • Alkilasi kovalen langsung (-SH tiol)                              • PERIODE LATEN 2–24 JAM (Bebas gejala!)
+ • Deplesi glutation (GSH) intraseluler                              • Gas tidak berbau (butuh kloropikrin)
+ • Pembentukan aduk DNA (7-metilguanin)                              • Menembus sarung tangan karet -> Lepuh bula
+ • Pelepasan metabolit ion Bromida (Br-)                             • Biomonitoring: Bromida serum (>12–15 mg/L)
+                 │                                                                     │
+                 └──────────────────────────────────┬──────────────────────────────────┘
+                                                    │
+                                                    ▼
+                                          TATALAKSANA & REGULASI
+                               • TIDAK ADA ANTIDOT SPESIFIK
+                               • WAJIB OBSERVASI 24–48 JAM (Antisipasi edema paru mendadak)
+                               • Terapi suportif: Ventilasi PEEP, Antikonvulsan Diazepam, NAC IV
+                               • Akselerasi eliminasi bromida: Infus NaCl 0,9% + Furosemid
+                               • Protokol Montreal 1987: Dilarang global (Kecuali karantina QPS)
+```
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Karakteristik Fisik-Kimia:**
+  * **Nama Kimia & Rumus:** Bromometana, Monobromometana, **\\(\text{CH}_3\text{Br}\\)** (CAS No. 74-83-9; RTECS PA4900000; DOT 1062).
+  * Berat molekul **\\(94{,}95\text{ g/mol}\\)** (\\(95{,}0\\)). Titik didih sangat rendah, yaitu **\\(3{,}6^\circ\text{C}\\)** (\\(38^\circ\text{F}\\)); berada dalam wujud gas pada suhu ruangan normal dan dikemas sebagai cairan terkompresi bertekanan (*liquefied compressed gas*).
+  * Densitas uap gas relatif **\\(3{,}36\\)** (lebih dari 3 kali lebih berat dibanding udara; uap mengendap di lantai, palka bawah, dan saluran pembuangan). Tekanan uap sangat tinggi: **\\(1420\text{ mmHg}\\)** (\\(1{,}9\text{ atm}\\) pada \\(20^\circ\text{C}\\)).
+  * **Sifat Sensorik & Bahaya Ketiadaan Bau:** Gas metil bromida murni **tidak berwarna dan praktis tidak berbau (*odorless*)** pada konsentrasi rendah hingga sedang di udara. Bau manis khas menyerupai kloroform hanya tercium pada konsentrasi sangat tinggi (> 1000 ppm). Oleh karena itu, formulasi komersial wajib ditambahkan agen peringatan lakrimator **Kloropikrin 2% (*Chloropicrin*)** yang beraroma pedas menyengat guna memicu iritasi mata sebagai sinyal kebocoran.
+  * Sifat Mudah Terbakar: Gas dapat menyala pada rentang konsentrasi sempit bila terpapar sumber penyulut berenergi tinggi (LEL 10%, UEL 16%).
+* **Klasifikasi Bahaya WHO & Regulasi Ozon Global:**
+  * **WHO Hazard Classification:** Gas Fumigan **Kelas Ib (Sangat Berbahaya / *Highly Hazardous*)**. Dosis inhalasi fatal pada manusia berkisar pada konsentrasi **\\(7900\text{ ppm}\\)** selama 1,5 jam kerja; LC50 inhalasi tikus adalah **\\(0{,}06\text{ mg/L}\\)** (15 menit).
+  * **Protokol Montreal tentang Zat Perusak Lapisan Ozon (1987):** Diklasifikasikan sebagai Bahan Perusak Lapisan Ozon (BPO) kategori halon/hidrokarbon terhalogenasi dengan nilai *Ozone Depletion Potential (ODP)* sebesar **0,6**. Penggunaannya dilarang total di seluruh dunia untuk aplikasi pertanian umum, namun diberikan **pengecualian khusus terbatas (*Critical Use / Quarantine and Pre-Shipment Exemption / QPS*)** untuk fumigasi karantina kayu dan kontainer pelabuhan internasional.
+* **Klasifikasi Karsinogenisitas (IARC & ACGIH):**
+  * **IARC:** Diklasifikasikan ke dalam **Group 3 (Tidak dapat diklasifikasikan karsinogenisitasnya terhadap manusia)**.
+  * **ACGIH & Permenaker No. 5 Tahun 2018:** Diklasifikasikan ke dalam **Kategori A4 (Tidak diklasifikasikan sebagai karsinogen terhadap manusia)**.
+
+---
+
+### 2. Sumber dan Penggunaan
+* **Fumigasi Karantina Pelabuhan & Pra-Pengapalan (*QPS Fumigation*):** Merupakan perlakuan biosekuriti wajib pada komoditas ekspor-impor kayu gelondongan, palet kayu (*ISPM 15*), biji-bijian, buah segar, dan rempah untuk membasmi nematoda, kumbang penggerek kayu, dan serangga karantina sebelum melintasi batas negara.
+* **Fumigasi Struktural Bangunan & Transportasi:** Fumigasi gedung perkantoran, perpustakaan, museum arsip, gudang, kontainer boks kargo, palka kapal laut, dan badan pesawat terbang komersial untuk eradikasi rayap kayu kering (*drywood termites*) dan kecoa.
+* **Fumigasi Tanah Pertanian (Historis):** Dahulu digunakan secara masif sebagai biosida tanah pra-tanam (*soil sterilant*) di bawah penutup plastik untuk membasmi jamur, nematoda, dan gulma tanaman hortikultura (stroberi, tomat, tembakau) sebelum dihentikan oleh Protokol Montreal.
+
+---
+
+### 3. Toksikokinetik
+* **Absorpsi:**
+  * **Inhalasi (Rute Dominan):** Penyerapan uap melalui saluran pernapasan berlangsung sangat cepat dan efisien melewati alveoli paru ke dalam sirkulasi darah (fraksi retensi sistemik mencapai 50% hingga 70%).
+  * **Dermal:** Penyerapan gas atau cairan melalui kulit utuh dapat terjadi. Cairan metil bromida atau gas konsentrasi tinggi mampu menembus pakaian kerja dan sarung tangan karet biasa, memicu luka bakar kimiawi dan diserap transkutan.
+* **Distribusi:**
+  * Sangat lipofilik; terdistribusi cepat ke seluruh organ tubuh yang kaya vaskularisasi dan lipid. Afinitas konsentrasi tertinggi ditemukan di **otak dan sistem saraf pusat**, disusul hati, ginjal, kelenjar adrenal, dan jaringan paru.
+* **Metabolisme (Biotransformasi):**
+  * Berlangsung cepat terutama di organ hati melalui dua jalur enzimatik:
+    1. **Konjugasi Glutation Langsung (Detoksifikasi Utama):** Reaksi substitusi nukleofilik dikatalisis oleh enzim **Glutathione S-Transferase theta-1 (GSTT1)**, menggabungkan metil bromida dengan molekul glutation (GSH) membentuk **\\(S\\)-metilglutation** dan melepaskan ion **Bromida bebas (\\(\text{Br}^-\\))**. \\(S\\)-metilglutation dimetabolisme lebih lanjut via jalur asam merkapturat menjadi \\(S\\)-metilsistein dan asam \\(N\\)-asetil-\\(S\\)-metilsistein.
+    2. **Oksidasi Mikrosomal:** Jalur minor via sitokrom P450 memecah molekul menjadi formaldehida, asam format, dan melepaskan karbon dioksida (\\(\text{CO}_2\\)).
+* **Ekskresi:**
+  * Sekitar **30% hingga 40%** dari dosis yang diserap diekskresikan tanpa perubahan melalui **udara ekshalasi paru** dalam 24 jam pertama.
+  * Metabolit terkonjugasi (asam merkapturat) dan ion bromida bebas dieliminasi melalui ginjal ke dalam **urin**.
+
+---
+
+### 4. Toksikodinamik
+Kerusakan seluler metil bromida terjadi melalui dua mekanisme molekuler independen:
+1. **Alkilasi Kovalen Gugus Sulfhidril (*Direct Macromolecular Methylation*):**
+   * Metil bromida merupakan agen elektrofilik pemetil langsung (*direct-acting methylating agent*).
+   * Molekul ini bereaksi dan mentransfer gugus metil (\\(-\text{CH}_3\\)) secara kovalen ke gugus nukleofilik fungsional, terutama **gugus tiol / sulfhidril (\\(-\text{SH}\\))** pada enzim metabolisme intraseluler dan protein membran.
+   * Terjadi **deplesi masif glutation (GSH)** intraseluler, mematikan sistem pertahanan reduksi seluler, memicu disfungsi enzim siklus Krebs, kegagalan produksi energi, dan stres oksidatif destruktif.
+   * Terjadi alkilasi basa DNA membentuk aduk **7-metilguanin** dan **\\(O^6\\)-metilguanin**.
+2. **Neurotoksisitas Sentral & Eksitotoksisitas:**
+   * Di jaringan otak, alkilasi protein menyebabkan edema astrosit, vakuolisasi oligodendrosit, degenerasi aksonal, serta nekrosis fokal neuron pada korteks serebral, **sel Purkinje serebelum**, dan ganglia basalis.
+   * Terjadi hambatan pelepasan neurotransmiter inhibisi GABA, memicu hipereksitabilitas neuronal sentral dan bangkitan kejang hebat.
+3. **Pneumotoksisitas Akut:**
+   * Gas metil bromida mengiritasi dan mendenaturasi membran sel epitel alveolar dan endotel kapiler paru, memicu kebocoran mikrovaskular difus dan edema paru kimiawi non-kardiogenik.
+4. **Peran Toksisitas Ion Bromida (\\(\text{Br}^-\\)):**
+   * Ion bromida yang dilepaskan berkompetisi dengan ion klorida pada reseptor membran saraf, menimbulkan depresi susunan saraf pusat transien (sedasi, letargi, konfusi), namun toksisitas nekrotik organ berat murni diakibatkan oleh proses alkilasi molekul metil bromida utuh.
+
+---
+
+### 5. Biomonitoring
+* **Kadar Bromida Serum / Darah (*Serum Bromide Concentration*):**
+  * Merupakan **biomarker pajanan utama (*biomarker of exposure*)** yang digunakan secara klinis dan okupasional untuk mengonfirmasi absorpsi metil bromida.
+  * Diukur menggunakan metode spektrofotometri kolorimetri kompleks emas klorida atau *Gas Chromatography* / HPLC.
+  * **Nilai Acuan & Interpretasi Klinis:**
+    * **Kadar Basal Populasi Normal (Non-Terpapar):** **\\(< 5\text{ mg/L}\\)** (atau \\(< 0{,}5\text{ mg/dL}\\); berasal dari konsumsi garam meja dan makanan laut).
+    * **Pekerja Terpapar Okupasional Bermakna:** **\\(> 12\text{--}15\text{ mg/L}\\)** pada akhir shift kerja.
+    * **Ambang Toksisitas Klinis Ringan-Sedang:** **\\(> 30\text{--}50\text{ mg/L}\\)** (mulai timbul gejala sakit kepala, lesu, mual, tremor halus).
+    * **Intoksikasi Berat / Fatal:** **\\(> 150\text{--}200\text{ mg/L}\\)** (berkorelasi kuat dengan bangkitan kejang tonik-klonik, koma, dan edema paru akut).
+* **Pengukuran Gas Metil Bromida dalam Darah / Udara Ekshalasi:**
+  * Konsentrasi metil bromida bebas dapat diukur via GC-MS segera setelah paparan akut (< 1–4 jam), namun nilainya cepat menurun karena waktu paruh plasma yang sangat singkat.
+* **Waktu Pengambilan Sampel (*Sampling Time*):**
+  * Dilakukan pada **akhir shift kerja (*end of shift*)** untuk pemeriksaan kadar bromida serum.
+
+---
+
+### 6. Waktu Paruh (*Elimination Half-Life*)
+* **Waktu Paruh Metil Bromida Utuh di Plasma (\\(t_{1/2}\\)):**
+  * Sangat singkat, berkisar antara **15 hingga 45 menit (rata-rata < 1 jam)**, karena molekul langsung berikatan kovalen dengan protein jaringan atau dikonjugasi oleh glutation.
+* **Waktu Paruh Ion Bromida Bebas di Serum (\\(t_{1/2}\\)):**
+  * **Sangat panjang**, berkisar antara **9 hingga 12 hari (rata-rata 10–14 hari)** pada individu dengan fungsi ginjal normal. Ginjal mereabsorpsi ion bromida secara aktif di tubulus proksimal mirip ion klorida, sehingga ekskresi eliminasi bromida berlangsung sangat lambat selama berminggu-minggu.
+
+---
+
+### 7. Efek Akut
+Manifestasi intoksikasi akut metil bromida memiliki karakteristik klinis yang sangat unik:
+* **CIRI KHAS VITAL: PERIODE LATEN BEBAS GEJALA (*THE LATENT PERIOD*):**
+  * Terdapat masa jeda laten tanpa gejala yang mencolok selama **2 hingga 24 jam (bahkan dapat mencapai 48 jam)** antara saat paparan inhalasi terjadi hingga meletusnya krisis klinis berat.
+  * Korban sering kali merasa sehat atau hanya mengeluh iritasi mata ringan, pusing sesaat, atau mual, kemudian secara mendadak mengalami kolaps pernapasan dan kejang hebat di rumah beberapa jam kemudian.
+* **Toksisitas Pernapasan Akut:**
+  * Pasca periode laten, timbul batuk kering, nyeri dada retrosternal, rasa tercekik, dispnea berat, takipnea, dan sianosis.
+  * Berkembang menjadi **edema paru akut non-kardiogenik (*chemical pulmonary edema*) masif**, perdarahan alveolar, dan gagal napas akut (ARDS) yang merupakan penyebab utama kematian dini.
+* **Toksisitas Neurologis Sentral Akut:**
+  * Gejala awal: Sakit kepala hebat, mual, vertigo, ataksia serebelar mendadak, gaya berjalan sempoyongan (*staggering/drunken gait*), disartria (*slurred speech*), diplopia, dan penglihatan kabur.
+  * Gejala lanjut: Tremor intensional luas, mioklonus, kedutan otot fasial, hiperrefleksia, disorientasi, delirium paranoid, diikuti **kejang epileptoid tonik-klonik umum berulang (*status epilepticus*)**, penurunan kesadaran, koma, dan henti napas sentral.
+* **Efek Kontak Dermal & Okular (Bula Raksasa):**
+  * Kontak uap pekat atau cairan metil bromida memicu eritema luas, sensasi rasa terbakar hebat, disusul pembentukan **bula vesikular cairan jernih berukuran besar (*giant chemical blister / phlyctenae*)** pada kulit dalam 4–12 jam.
+  * **Jebakan Sarung Tangan:** Gas metil bromida menembus sarung tangan karet tipis dan sepatu kerja, terperangkap di dalamnya, dan memicu maserasi serta nekrosis kulit luas.
+
+---
+
+### 8. Efek Kronis Okupasional
+* **Sindrom Neuropsikiatri dan Defisit Neurologis Menetap:**
+  * Penyintas keracunan akut atau pekerja yang terpapar inhalasi kronis tingkat rendah di area fumigasi sering mengalami sekuele neurologis permanen:
+    * **Ataksia serebelar persisten:** Gangguan koordinasi motorik, dismetria, gaya berjalan ataksik luas, dan tremor aksi yang menetap bertahun-tahun.
+    * **Polineuropati perifer:** Parestesia sensorik bilateral distal, hilangnya refleks tendon dalam, kelemahan motorik ekstremitas bawah, dan *foot drop*.
+    * **Penurunan Fungsi Kognitif & Neurobehavioral:** Gangguan memori verbal jangka pendek, penurunan atensi visual berkelanjutan, perlambatan waktu reaksi psikomotor, labilitas emosional, depresi berat, apati, halusinasi auditorik/visual, serta insomnia kronis.
+    * **Gangguan Visual:** Neuritis retrobulbar, penyempitan lapang pandang konsentris, skotoma sentral, hingga atrofi optik permanen.
+* **Toksisitas Organ Sistemik:**
+  * Nefrotoksisitas kronis (proteinuria, penurunan laju filtrasi glomerulus), hepatomegali toksik ringan, dan dermatitis kontak iritan kronis rekuren.
+
+---
+
+### 9. Batas Pajanan Okupasional di Udara Tempat Kerja (OELs)
+Berdasarkan Lampiran 1 Standar Faktor Kimia **Permenaker No. 5 Tahun 2018**, rekomendasi **ACGIH TLV**, **NIOSH REL**, dan **OSHA PEL**:
+
+| Parameter Lingkungan Kerja | Metil Bromida (\\(\text{CH}_3\text{Br}\\), 74-83-9) | Keterangan / Notasi Khusus |
+| :--- | :--- | :--- |
+| **Permenaker No. 5 Tahun 2018 (NAB)** | **\\(1\text{ ppm}\\)** (\\(3{,}89\text{ mg/m}^3\\)) | TWA 8 jam kerja harian |
+| **Permenaker 5/2018 Notasi** | **Kulit (*Skin*)**, **A4** | Absorpsi transkutan signifikan |
+| **ACGIH TLV-TWA** | **\\(1\text{ ppm}\\)** (\\(3{,}89\text{ mg/m}^3\\)) | Batas higienis kerja; Notasi **Skin**, **A4** |
+| **NIOSH REL** | **Ca (Potensi Karsinogen Kerja)** | Rekomendasikan paparan serendah mungkin (*lowest feasible*) |
+| **OSHA PEL** | **Ceiling (C): \\(20\text{ ppm}\\)** (\\(80\text{ mg/m}^3\\)) | Batas tertinggi tidak boleh dilampaui; Notasi **[Skin]** |
+| **Batas IDLH (NIOSH)** | **\\(250\text{ ppm}\\)** | *Immediately Dangerous to Life or Health* |
+
+*(Faktor konversi udara: \\(1\text{ ppm} = 3{,}89\text{ mg/m}^3\\) pada suhu \\(25^\circ\text{C}\\) dan tekanan 760 mmHg).*
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Ketiadaan Batas Angka Resmi:**
+  * Baik dalam **Lampiran 4 Permenaker No. 5 Tahun 2018** maupun panduan **ACGIH BEI**, **TIDAK ADA nilai angka resmi IPB/BEI yang ditetapkan untuk Metil Bromida**.
+  * Pemantauan biologi okupasional menggunakan parameter **Kadar Bromida Serum** dengan mengacu pada batas toleransi biologis internasional (seperti DFG BAT/BAR Jerman: batas rujukan populasi umum < 5 mg/L; batas tindakan pekerja terpapar diusulkan tidak melampaui 12–20 mg/L).
+
+---
+
+### 11. Tatalaksana Medis Gawat Darurat
+1. **TIDAK ADA ANTIDOT SPESIFIK:** Tatalaksana bersifat suportif agresif, simtomatik, dan berfokus pada pencegahan kerusakan organ sekunder.
+2. **OBSERVASI MEDIS RAWAT INAP WAJIB 24–48 JAM:**
+   * Setiap pekerja yang terkonfirmasi mengalami paparan inhalasi metil bromida yang signifikan **WAJIB DIRAWAT INAP DAN DIOBSERVASI KETAT MINIMAL 24 HINGGA 48 JAM**, terlepas dari apakah pasien tampak sehat atau tidak bergejala pada saat pertama kali tiba di fasilitas medis. Edema paru akut dan kejang fatal dapat meletus mendadak pasca periode laten.
+3. **Dekontaminasi Kulit Segera:**
+   * Buka seluruh pakaian kerja, sarung tangan, kaus kaki, dan sepatu secara agresif; masukkan ke kantong limbah berbahaya tertutup rapat. Cuci seluruh permukaan tubuh dan rambut dengan air mengalir dan sabun biasa secara lembut. Bula kimiawi dirawat secara steril mirip luka bakar termal derajat dua; hindari debridemen kasar.
+4. **Proteksi Saluran Napas & Penanganan Edema Paru:**
+   * Amankan jalan napas (*airway*); berikan terapi oksigen humidifikasi tinggi.
+   * Pasang jalur intubasi endotrakeal dini bila timbul tanda distress pernapasan berat, hipoksemia, atau kejang berulang.
+   * Gunakan ventilasi mekanik dengan strategi proteksi paru dan tekanan positif akhir ekspirasi (**PEEP 5–10 cmH2O**) untuk mengatasi edema paru permeabilitas. Pemberian kortikosteroid sistemik (Metilprednisolon IV) atau inhalasi dini direkomendasikan untuk menekan reaksi peradangan mukosa bronkoalveolar.
+5. **Pengendalian Kejang Saraf Sentral (Antikonvulsan Agresif):**
+   * **Benzodiazepin (Lini Pertama):** Berikan **Diazepam 5 hingga 10 mg IV bolus lambat** (atau Lorazepam 2–4 mg IV), dapat diulang tiap 5–10 menit sampai bangkitan kejang berhenti.
+   * **Barbiturat (Lini Kedua):** Bila kejang menjadi refrakter (*status epilepticus*), berikan **Fenobarbital \\(15\text{--}20\text{ mg/kgBB}\\) IV lambat**.
+6. **Peran Donor Gugus Tiol (N-Asetilsistein vs Dimerkaprol):**
+   * **N-Asetilsistein (NAC IV):**
+     * Merupakan donor gugus sulfhidril (-SH) bebas yang paling aman dan rasional secara biokimiawi.
+     * NAC menyuplai prekursor L-sistein intraseluler untuk **merestorasi cadangan glutation (GSH)** yang terkuras habis oleh metil bromida, sekaligus menangkap metabolit radikal alkilasi elektrofilik bebas.
+     * *Protokol:* Diberikan regimen infus NAC dosis tinggi serupa protokol antidot parasetamol (dosis muat 150 mg/kgBB dlm 200 mL D5% 1 jam, dilanjutkan infus rumatan).
+   * **Dimerkaprol (BAL / *British Anti-Lewisite*):** Dahulu diujicobakan secara teoretis sebagai senyawa ditiol donor gugus -SH untuk mengikat metil bromida. Namun, studi klinis menunjukkan hasil yang tidak konsisten, efektivitasnya diragukan, dan memiliki profil efek samping kardiovaskular berat sehingga saat ini **tidak lagi direkomendasikan secara rutin**.
+7. **Akselerasi Eliminasi Ion Bromida:**
+   * Untuk mempercepat klirens ion bromida yang terakumulasi di sirkulasi darah, lakukan pemberian **infus salin fisiologis (NaCl 0,9%)** agresif dipadu diuretik loop (**Furosemid 20–40 mg IV**). Ion klorida (\\(\text{Cl}^-\\)) dalam jumlah besar akan berkompetisi dengan ion bromida (\\(\text{Br}^-\\)) di tubulus ginjal, meningkatkan ekskresi fraksional bromida hingga 3–5 kali lipat.
+   * **Hemodialisis:** Sangat efektif membersihkan ion bromida bebas dari darah dan diindikasikan pada intoksikasi berat dengan kadar bromida serum sangat tinggi (> 1000 mg/L) atau pada kondisi gagal ginjal akut.
+
+---
+
+### 12. Tatalaksana Okupasi, Kelaikan Kerja, dan Surveilans Komunitas
+* **Penilaian Kelaikan Kerja (*Fitness for Duty Assessment*):**
+  * **Kontraindikasi Penempatan Kerja (*Pre-placement Unfit*):** Riwayat kelainan neurologis organik, epilepsi, ataksia serebelar, defisit neurokognitif, gangguan psikiatri mayor, atau penyakit paru kronis (asma bronkiale, emfisema) merupakan kontraindikasi mutlak penempatan pada tim fumigasi metil bromida.
+  * **Pekerja Terpapar / Pasca Sakit:** Pekerja yang menunjukkan penurunan koordinasi motorik halus, tremor, atau peningkatan bromida serum > 15 mg/L wajib segera dipindahkan sementara (*medical removal*) dari area fumigasi hingga pulih total.
+* **Prosedur Higiene Industri & Keselamatan Operasi Fumigasi:**
+  * **Sistem Otomatis & Tertutup:** Injeksi fumigan metil bromida dari silinder gas bertekanan wajib menggunakan selang bertekanan tinggi khusus dan nosel tembaga/kuningan yang terkunci rapat; dilarang menggunakan instalasi plastik yang rentan didegradasi oleh metil bromida.
+  * **Zonasi Bahaya & Evakuasi:** Penetapan zona perimeter bahaya eksklusi radius minimal 50–100 meter di sekitar struktur/tenda yang difumigasi; pemasangan lampu peringatan merah dan penjagaan 24 jam.
+  * **Prosedur Aerasi dan Pembebasan Gas (*Degassing & Clearance*):**
+    * Pasca periode fumigasi (biasanya 24–48 jam), terpal dibuka secara bertahap menggunakan bantuan kipas aerasi mekanik bervolume besar (*exhaust blowers*).
+    * Personel tanpa APD dilarang keras memasuki bangunan/kontainer sebelum dilakukan pengujian udara berlapis menggunakan **detektor gas fotoionisasi (PID)** atau tabung detektor kolorimetri terkalibrasi yang membuktikan kadar gas telah berada **di bawah batas aman (< 1 ppm, bahkan dianjurkan < 0,5 ppm)**.
+* **Alat Pelindung Diri (APD) Wajib:**
+  * Saluran napas: **Wajib menggunakan SCBA (*Self-Contained Breathing Apparatus*)** dengan aliran udara bertekanan positif. **PERINGATAN KRITIS:** Dilarang keras menggunakan masker respirator pemurni udara berkartrid kimia (*air-purifying canister respirator*) karena metil bromida tidak berbau pada konsentrasi letal dan memiliki waktu jenuh (*breakthrough time*) yang sangat singkat pada karbon aktif!
+  * Kulit: Pakaian kerja berbahan katun longgar. **PERINGATAN VITAL:** Dilarang menggunakan sarung tangan lateks/karet ketat atau sepatu bot karet tertutup tanpa sirkulasi saat membuka gas, karena uap metil bromida dapat menembus karet dan memicu luka bakar kimiawi berat di ruang sempit antara karet dan kulit.
+
+---
+
+### 13. Keterangan Lain, Regulasi Indonesia, dan Diagnosis PAK
+* **Penegakan Diagnosis PAK (Permenkes No. 11 Tahun 2022):**
+  * Dilakukan secara legal melalui **7 Langkah Diagnosis PAK**: konfirmasi ensefalopati toksik/ataksia/edema paru kimia akibat metil bromida, bukti riwayat pekerjaan fumigasi karantina kapal/tanah, hubungan kausal berbasis literatur toksikologi kerja, analisis konsentrasi udara kerja dibanding NAB Permenaker 5/2018 (1 ppm), eliminasi faktor risiko non-okupasional, dan penentuan akhir status PAK.
+* **Pengakuan Hukum Berdasarkan Perpres No. 7 Tahun 2019:**
+  * Diakui secara eksplisit dalam daftar penyakit akibat kerja:
+    * **Lampiran I.a.11:** *"Penyakit yang disebabkan oleh derivat halogen dari persenyawaan hidrokarbon alifatik atau aromatik"*.
+    * **Lampiran I.a.35:** *"Penyakit yang disebabkan oleh pestisida"*.
+    * **Lampiran I.c.2:** *"Penyakit sistem pernapasan akibat zat kimia, debu, atau aerosol"*.
+  * **Masa Kedaluwarsa Klaim JKK (Pasal 2 Ayat 2):** Hak atas klaim jaminan kecelakaan kerja tetap berlaku **hingga paling lama 3 (tiga) tahun terhitung sejak hubungan kerja berakhir**. Hal ini sangat penting karena sekuele neurokognitif atau ataksia serebelar sering menetap permanen pasca pensiun kerja.
+* **Kepatuhan Protokol Montreal di Indonesia:**
+  * Kementerian Lingkungan Hidup dan Kehutanan (KLHK) bersama Badan Karantina Indonesia secara ketat membatasi impor dan kuota metil bromida murni khusus untuk perlakuan karantina ekspor-impor pra-pengapalan (*Quarantine and Pre-shipment / QPS*), dengan target substitusi bertahap menggunakan fumigan alternatif seperti fosfin atau perlakuan panas (*heat treatment*).
+
+---
+
+### 14. Clinical Pearls dan Jebakan Ujian Board Sp.Ok
+1. **Jebakan Fatal Periode Laten Tertunda (*The Asymptomatic Trap*):**
+   * Penguji menyajikan skenario: *"Seorang teknisi fumigasi kapal karantina terpapar uap metil bromida 4 jam lalu akibat selang bocor. Saat diperiksa di klinik pelabuhan, tanda vital normal, paru bersih, dan pasien meminta pulang untuk tidur. Apa tindakan Anda?"* Residen yang mengizinkan pulang dinyatakan **GAGAL TOTAL**. Pasien metil bromida memiliki masa laten 2–24 jam; memulangkannya akan berujung pada kematian di rumah akibat edema paru akut masif dan status epileptikus. **Tindakan wajib: Rawat inap dan observasi minimal 24–48 jam**.
+2. **Jebakan Sifat Peringatan Bau (*Warning Properties*):**
+   * Metil bromida murni **tidak memiliki bau sama sekali (*odorless*)** pada konsentrasi letal. Ketiadaan bau tidak menandakan lingkungan kerja aman. Bau tajam menyengat hanya ada bila pabrikan sengaja menambahkan **Kloropikrin 2%**.
+3. **Jebakan Sarung Tangan Karet / Lateks:**
+   * Di ruang ujian, jangan pernah merekomendasikan sarung tangan bedah atau sarung tangan karet lateks biasa untuk penanganan metil bromida cair/gas. Gas metil bromida menembus matriks karet, terperangkap di ruang mikro antara kulit dan sarung tangan, menghasilkan konsentrasi super pekat yang memicu terbentuknya **bula raksasa (*giant vesicles*)** dan luka bakar nekrotik derajat tiga.
+4. **Jebakan Respirator Kanister Biasa:**
+   * Dilarang keras menggunakan respirator pemurni udara kartrid (*canister respirator*) untuk perlindungan terhadap metil bromida. Gas metil bromida cepat mengalami *breakthrough* pada karbon aktif dan tidak memberikan sinyal sensorik bau saat jenuh. Perlindungan pernapasan satu-satunya yang sah secara higiene industri adalah **SCBA bertekanan positif**.
+5. **Jebakan Kadar Bromida Serum vs Molekul Metil Bromida:**
+   * Kadar bromida serum yang tinggi mengonfirmasi pajanan, namun kerusakan jaringan berat akut (nekrosis serebelum dan ARDS) dipicu oleh proses **alkilasi langsung molekul metil bromida utuh** sebelum sempat dimetabolisme menjadi ion bromida.
+
+---
+
+### TABEL RINGKAS 14 POIN: FOSFIN/LOGAM FOSFIDA VS METIL BROMIDA
+
+| No | Parameter Okupasi | GOLONGAN FOSFIN (\\(\text{PH}_3\\)) & LOGAM FOSFIDA (AlP, \\(\text{Zn}_3\text{P}_2\\)) | GOLONGAN METIL BROMIDA / BROMOMETANA (\\(\text{CH}_3\text{Br}\\)) |
+| :---: | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Gas \\(\text{PH}_3\\) (BM 34 Da), densitas 1,52 g/L; AlP padat (3 g tablet lepas 1 g \\(\text{PH}_3\\) + amonium karbamat); \\(\text{Zn}_3\text{P}_2\\) abu-abu. Bau ikan busuk/bawang putih (impuritas difosfin \\(\text{P}_2\text{H}_4\\); ambang \\(\ge 2\text{ ppm}\\)). Sangat mudah terbakar/meledak (LEL 1,6%). WHO: Kelas Ia/Ib (dosis letal AlP 500 mg, fatalitas 30–100%). IARC: Tidak terklasifikasi. ACGIH: Kategori A4. | Gas terkompresi cair (BM 94,95 g/mol), TD 3,6°C, densitas 3,36 (berat, mengendap). **Tidak berbau pada konsentrasi letal** (ditambah kloropikrin 2%). LEL 10–16%. WHO: Kelas Ib (LC50 inhalasi 0,06 mg/L). IARC: Group 3. ACGIH/Permenaker: Kategori A4. **BPO Protokol Montreal 1987 (ODP 0,6; dilarang kecuali karantina QPS)**. |
+| **2** | **Sumber & Penggunaan** | Fumigan silo/gudang beras/gandum, palka kapal kargo (*freighter ships*), rodentisida liang tanah. Sering disalahgunakan untuk bunuh diri (*rice tablet*). Industri semikonduktor. | Fumigasi karantina dan pra-pengapalan (*QPS fumigation*) komoditas kayu ekspor (ISPM 15), buah, biji-bijian, fumigasi struktural rayap gedung, palka kapal, dan pesawat terbang. |
+| **3** | **Toksikokinetik** | Inhalasi gas sangat cepat via alveoli. Ingesti AlP: hidrolisis cepat oleh HCl lambung lepas gas \\(\text{PH}_3\\) dlm 10–15 mnt. Distribusi luas (otak 94, ginjal 41, hati 24 mL/g). Teroksidasi lambat \\(\rightarrow\\) hipofosfit & fosfat; oksidasi Hb \\(\rightarrow\\) hemikrom, MetHb, Heinz bodies. Ekskresi dominan via udara ekshalasi paru; urin minimal. | Inhalasi diserap sangat cepat (50–70%). Dermal diserap, menembus sarung tangan karet. Distribusi luas ke lipid SSP, otak, hepar, ginjal. Metabolisme hepar via GSTT1 + GSH \\(\rightarrow S\\)-metilglutation \\(\rightarrow\\) asam merkapturat + pelepasan ion Bromida (\\(\text{Br}^-\\)). Ekskresi paru (30–40% utuh) & urin (asam merkapturat + \\(\text{Br}^-\\)). |
+| **4** | **Toksikodinamik** | **Inhibisi Sitokrom c Oksidase (Kompleks IV)** \\(\rightarrow\\) respirasi sel turun >70% \\(\rightarrow\\) kolaps \\(\Delta\Psi_m\\) & defisit ATP. **Ledakan ROS masif (superoksida, hidroksil)**, deplesi GSH, penurunan katalase/SOD \\(\rightarrow\\) peroksidasi lipid membran, kolaps kanal ionik. Nekrosis miokard, miokarditis toksik, syok kardiogenik, aritmia letal. | **Alkilasi kovalen langsung gugus sulfhidril (-SH/tiol)** pada enzim seluler & deplesi GSH masif \\(\rightarrow\\) disfungsi metabolik & aduk DNA (7-metilguanin). Neurotoksisitas: vakuolisasi oligodendrosit, degenerasi aksonal, nekrosis sel Purkinje serebelum, blokade GABA \\(\rightarrow\\) kejang. Pneumotoksisitas: kerusakan kapiler alveolar \\(\rightarrow\\) edema paru. Efek sedatif sekunder ion Bromida. |
+| **5** | **Biomonitoring** | **Tidak ada biomarker paparan spesifik rutin**. **Uji Perak Nitrat (\\(\text{AgNO}_3\\) 0,1 N): Noda HITAM pekat** pada cairan lambung/napas. Gas darah: asidosis metabolik laktat berat. EKG: elevasi ST (meniru STEMI). Pulse CO-oximetry: elevasi COHb palsu (>10%). HS-GC-MS / ICP-MS. | **Kadar Bromida Serum:** Normal basal < 5 mg/L; paparan okupasional bermakna > 12–15 mg/L; toksisitas klinis > 30–50 mg/L; berat/fatal > 150–200 mg/L. Metil bromida darah/ekshalasi via GC-MS (hanya < 1–4 jam awal). Waktu sampling: akhir shift. |
+| **6** | **Waktu Paruh (\\(t_{1/2}\\))** | Gas \\(\text{PH}_3\\) plasma: **2–6 jam**. Pelepasan gas AlP lambung berlangsung kontinu selama **12–24 jam**. | Metil bromida utuh plasma: **15–45 menit**. Ion Bromida serum: **SANGAT PANJANG, 9–12 hari (10–14 hari)** akibat reabsorpsi aktif tubulus ginjal. |
+| **7** | **Efek Akut** | Mual, muntah, bau ikan busuk/bawang putih mulut, **syok kardiogenik & distributif refrakter**, aritmia ventrikel (VT/VF), edema paru non-kardiogenik/ARDS masif (6–24 jam), **asidosis metabolik laktat berat**, hiperglikemia, gagal ginjal akut, striktur esofagus lanjut. Inhalasi: 50 ppm bahaya, 400–600 ppm mematikan dlm 30 mnt. | **CIRI KHAS: PERIODE LATEN BEBAS GEJALA 2–24 JAM (hingga 48 jam)**. Lanjut: edema paru kimiawi non-kardiogenik akut berat (ARDS), sakit kepala, ataksia serebelar mendadak, tremor, disartria, **kejang tonik-klonik umum berulang (status epileptikus)**, koma. Dermal: **bula lepuh raksasa (*giant blisters*)**, luka bakar kimia. |
+| **8** | **Efek Kronis Okupasional** | Sakit kepala kronis, fatique, tremor halus, ataksia gaya berjalan, bronkitis kronis, gangguan konsentrasi visual, leukopenia transien, riwayat nekrosis mandibula (*phossy jaw*). | **Sekuele neurologis permanen:** Ataksia serebelar persisten, dismetria, polineuropati perifer sensorimotor (*foot drop*), defisit memori kognitif, perlambatan psikomotor, depresi berat, neuritis optik/penyempitan lapang pandang. |
+| **9** | **Batas Pajanan (Permenaker 5/2018)** | **NAB (TWA): \\(0{,}3\text{ ppm}\\)** (\\(0{,}4\text{ mg/m}^3\\)). **KTD (STEL): \\(1\text{ ppm}\\)** (\\(1\text{ mg/m}^3\\)). ACGIH: TLV-TWA 0,05 ppm; A4. NIOSH: TWA 0,3 ppm; STEL 1 ppm. OSHA: TWA 0,3 ppm. **IDLH: 50 ppm**. | **NAB (TWA): \\(1\text{ ppm}\\)** (\\(3{,}89\text{ mg/m}^3\\)); Notasi: **Kulit (*Skin*)**, **A4**. ACGIH: TLV-TWA 1 ppm; Skin; A4. NIOSH: Ca (serendah mungkin). OSHA: Ceiling 20 ppm [Skin]. **IDLH: 250 ppm [Ca]**. |
+| **10** | **BEI / IPB** | **TIDAK ADA nilai angka BEI/IPB resmi** di Permenaker 5/2018 maupun ACGIH. Evaluasi berbasis uji perak nitrat, analisis gas darah, dan EKG. | **TIDAK ADA nilai angka BEI/IPB resmi** di Permenaker 5/2018 maupun ACGIH. Evaluasi mengacu pada batas biologis bromida serum (DFG BAT/BAR). |
+| **11** | **Tatalaksana Akut** | 1. **TIDAK ADA ANTIDOT SPESIFIK**. 2. Proteksi APD gas medis (bahaya emisi PH3 muntahan). 3. **DILARANG BILAS LAMBUNG AIR!** Beri **Minyak Kelapa/Almond (50–100 mL) + NaHCO3**, atau KMnO4 1:10.000 + Arang Aktif. 4. **Koreksi asidosis agresif Na Bikarbonat IV**. 5. **MgSO4 IV** (1 g bolus, lanjut 1 g/jam x 3 jam, lalu 1 g/6 jam). 6. **NAC IV** (50–100 mg/kg/hari). 7. Syok: Norepinefrin, HIE protokol insulin, Digoksin, **pasang IABP atau ECMO**. 8. Methylene blue bila MetHb. | 1. **TIDAK ADA ANTIDOT SPESIFIK**. 2. **WAJIB RAWAT & OBSERVASI MINIMAL 24–48 JAM** (antisipasi periode laten). 3. Dekontaminasi kulit agresif (lepas pakaian/sepatu, rawat bula). 4. Intubasi & Ventilasi PEEP untuk edema paru + steroid. 5. **Kejang: Diazepam 5–10 mg IV**, Fenobarbital. 6. **N-Asetilsistein (NAC) IV** sebagai donor tiol/prekursor GSH (Dimerkaprol tidak rutin). 7. **Akselerasi eliminasi bromida: Infus NaCl 0,9% + Furosemid**; Hemodialisis bila berat. |
+| **12** | **Tatalaksana Individu & Komunitas** | Kontraindikasi: kelainan jantung, paru, hepar/ginjal kronis. Fit jika EKG, echo, spirometri normal. Prosedur fumigasi tertutup bersertifikat, terpal kedap gas, tanda bahaya. **Aerasi mekanis 24–48 jam; wajib ukur gas clearance < 0,3 ppm**. APD: **SCBA bertekanan positif** atau respirator kanister fosfin (khusus < 50 ppm); sarung tangan kering. | Kontraindikasi: kelainan neurologis, epilepsi, ataksia, PPOK. Medical removal jika bromida > 15 mg/L atau gejala SSP. Fumigasi tertutup terpal, zona aman 50–100 m. **Aerasi paksa 24–48 jam; sertifikat bebas gas < 1 ppm (atau < 0,5 ppm)**. APD: **Wajib SCBA bertekanan positif (DILARANG respirator kanister biasa)**; pakaian katun longgar (DILARANG sarung tangan karet ketat). |
+| **13** | **Regulasi & Aspek Legal** | 7 Langkah Diagnosis PAK (Permenkes 11/2022). Perpres 7/2019 Lampiran I.a.3 ("Fosfor"), I.a.35 ("Pestisida"), I.c.2 ("Pernapasan"). JKK kedaluwarsa 3 tahun (Pasal 2 Ayat 2). Karantina pelabuhan fumigasi diatur dalam PP No. 28 Tahun 2024 (Pasal 1070 ayat 3). | 7 Langkah Diagnosis PAK (Permenkes 11/2022). Perpres 7/2019 Lampiran I.a.11 ("Derivat halogen hidrokarbon alifatik"), I.a.35 ("Pestisida"), I.c.2 ("Pernapasan"). JKK kedaluwarsa 3 tahun. **Protokol Montreal 1987 (Bahan Perusak Ozon / BPO)**; regulasi karantina ekspor-impor QPS Kementan & KLHK. |
+| **14** | **Clinical Pearl & Jebakan Ujian** | 1. **Dilarang bilas lambung air biasa** (memicu hidrolisis eksplosif); gunakan minyak kelapa + NaHCO3. 2. Tenaga medis wajib APD masker gas (risiko teracuni muntahan). 3. EKG elevasi ST meniru STEMI (dilarang beri trombolitik). 4. Uji perak nitrat = **noda HITAM**. 5. Tidak ada antidot spesifik; andalkan NaHCO3, MgSO4, NAC, dan ECMO/IABP. | 1. **Jebakan periode laten bebas gejala 2–24 jam**; dilarang memulangkan pasien, wajib observasi 24–48 jam. 2. Metil bromida murni **tidak berbau**; bau hanya ada jika ditambah kloropikrin 2%. 3. **Sarung tangan karet lateks memperparah bula kimia** karena gas menembus karet. 4. Dilarang respirator kanister biasa (wajib SCBA). 5. Bromida serum t1/2 panjang (10–14 hari); eliminasi dipacu infus NaCl 0,9% + furosemid. |
+
+---
+
+Apakah Anda ingin kita melengkapi telaah toksikologi pestisida ini dengan topik fumigan sianida (**Asam Sianida / HCN dan Logam Sianida**) atau beralih ke simulasi kasus klinis-okupasional komprehensif untuk persiapan ujian lisan (*OSCE/viva board*) Anda?

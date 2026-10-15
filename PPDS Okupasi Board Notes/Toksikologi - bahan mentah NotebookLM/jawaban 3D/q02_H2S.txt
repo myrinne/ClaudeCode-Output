@@ -1,0 +1,270 @@
+Berikut adalah catatan tinjauan toksikologi okupasi komprehensif untuk persiapan ujian *board* **Spesialis Kedokteran Okupasi (Sp.Ok)** mengenai **Hidrogen Sulfida (H₂S)**, yang disusun secara sistematis berdasarkan literatur ilmiah dan regulasi keselamatan kerja di Indonesia:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Karsinogenitas
+* **Identitas & Sifat Fisik**:
+  * **Nama & Rumus**: Hidrogen Sulfida (*Hydrogen Sulfide*, \\(H_2S\\)) [CAS# 7783-06-4].
+  * **Sinonim**: *Hydrosulfuric acid*, *sewer gas*, *sulfuretted hydrogen*, gas rawa/selokan.
+  * **Wujud & Berat Molekul**: Gas tidak berwarna (*colorless gas*) dengan berat molekul (BM) **34,08**.
+  * **Densitas Uap (Relative Gas Density)**: **1,19** (lebih berat dari udara; udara = 1,0). Karakteristik ini membuat \\(H_2S\\) cenderung mengendap, mengalir ke bawah, dan terkonsentrasi di lantai dasar, parit, cekungan tanah, serta ruang terbatas (*confined space*).
+  * **Karakteristik Termal & Pembakaran**: Titik didih **-76°F (-60°C)**; gas sangat mudah terbakar (*flammable gas*) dengan batas ledak LEL **4,0%** dan UEL **44,0%**; suhu swasulut (*autoignition*) sekitar 260°C (500°F).
+  * **Kelarutan & Ionisasi**: Kelarutan 1 gram larut dalam 242 mL air pada 20°C. Di dalam larutan air/darah, \\(H_2S\\) berdisosiasi secara bertingkat:
+    \\[H_2S \rightleftharpoons H^+ + HS^- \rightleftharpoons 2H^+ + S^{2-}\\]
+    Memiliki \\(pK_{a1} = 7,04\\) dan \\(pK_{a2} = 11,96\\). Pada pH fisiologis darah (7,4), sekitar **satu pertiga (±33%) berada dalam bentuk molekul \\(H_2S\\) bebas (undissociated)** yang sangat lipofilik dan mudah menembus membran biologis, sedangkan **dua pertiga (±67%) berada dalam bentuk anion hidrosulfida (\\(HS^-\\))**.
+  * **Faktor Konversi**: \\(1\text{ ppm} = 1,40\text{ mg/m}^3\\) (pada kondisi standar).
+* **Klasifikasi Karsinogenitas**:
+  * **ACGIH**: Diklasifikasikan dalam **Kategori A4** (*Not Classifiable as a Human Carcinogen*) karena tidak terdapat bukti karsinogenitas pada manusia maupun hewan.
+  * **IARC**: Tidak diklasifikasikan sebagai karsinogen manusia (*Not Listed / Group 3*).
+  * **Permenaker No. 5 Tahun 2018**: **Tidak memiliki notasi karsinogen A1, A2, maupun A3**.
+
+---
+
+### 2. Sumber dan Skenario Pajanan di Industri
+\\(H_2S\\) merupakan penyebab kematian akibat gas toksik kedua terbanyak di tempat kerja setelah karbon monoksida. Skenario pajanan okupasi utama mencakup:
+* **Industri Minyak dan Gas Bumi (Oil & Gas)**: Terkandung secara alami dalam gas bumi dan minyak mentah masam (*sour gas / sour crude*), dengan konsentrasi berkisar dari < 1% hingga lebih dari 90%. Risiko timbul saat pengeboran (*drilling*), penyulingan (*refining*), pemeliharaan tangki penyimpanan, dan *pipeline maintenance*.
+* **Pengolahan Limbah & Saluran Pembuangan Air (Sewage & Wastewater)**: Terbentuk melalui dekomposisi anaerobik bahan organik berprotein sulfur oleh bakteri pereduksi sulfat di selokan kota, instalasi pengolahan air limbah (IPAL), *manhole*, dan tangki septik.
+* **Peternakan & Pertanian Intensif (CAFOs)**: Dekomposisi feses/urine hewan di lubang penampungan kotoran cair (*manure pits/slurry tanks*), sering memicu sindrom kolaps mendadak pada pekerja ternak (kondisi yang dikenal sebagai *"dung lung"*).
+* **Pabrik Kertas dan Pulp (*Kraft Pulp Mills*)**: Penggunaan proses sulfat (*kraft process*) untuk mencerna serpihan kayu melepaskan \\(H_2S\\) dan senyawa sulfur tereduksi.
+* **Energi Panas Bumi (*Geothermal*) & Vulkanik**: Emisi uap panas bumi dan kawah vulkanik secara kontinu mengandung uap \\(H_2S\\) berkonsentrasi tinggi (misalnya di area geotermal Rotorua, Selandia Baru).
+* **Pertambangan & Metalurgi**: Penambangan belerang, ekstraksi logam berat, peleburan timbal/tembaga, serta penyamakan kulit (*tanneries/pelt processing*).
+* **Dekomposisi Bahan Organik Laut**: Pembusukan ikan di palka kapal penangkap ikan (*fish garbage room*).
+
+---
+
+### 3. Toksikokinetik (ADME)
+* **Absorpsi**:
+  * **Inhalasi**: Merupakan rute pajanan okupasi utama dan tercepat. Gas \\(H_2S\\) diabsorpsi secara instan melalui membran alveolar paru langsung ke dalam sirkulasi darah kapiler.
+  * **Dermal**: Absorpsi perkutan gas \\(H_2S\\) di udara sangat minimal dan tidak signifikan secara sistemik; namun, kontak langsung cairan \\(H_2S\\) bertekanan dapat menimbulkan radang dingin (*frostbite*).
+* **Distribusi**:
+  * Setelah diabsorpsi, \\(H_2S\\) terdistribusi cepat ke seluruh jaringan yang tervaskularisasi baik.
+  * Di dalam plasma, terjadi kesetimbangan cepat antara \\(H_2S\\) molekuler dan anion hidrosulfida (\\(HS^-\\)).
+  * Karena sifatnya yang sangat lipofilik, fraksi \\(H_2S\\) bebas secara masif menembus sawar darah otak (*blood-brain barrier*). Organ target kritis adalah jaringan dengan ketergantungan respirasi aerobik tertinggi, yaitu **sistem saraf pusat (terutama batang otak / *brainstem*)** dan **miokardium**.
+* **Metabolisme (Biotransformasi Ultrafast)**:
+  * Detoksifikasi enzimatik berlangsung sangat cepat (*ultrafast*) di dalam mitokondria (terutama di hepar, ginjal, dan mukosa usus) melalui **jalur oksidasi sulfida**:
+    1. Enzim membran **sulfide:quinone oxidoreductase (SQOR)** mengoksidasi sulfida menjadi *sulfane sulfur* pada residu sistein, membentuk persulfida (SQR-SSH).
+    2. Enzim matriks mitokondria **sulfide dioxygenase (SDO / ETHE1)** mengoksidasi persulfida tersebut menjadi **sulfit (\\(H_2SO_3 / SO_3^{2-}\\))**.
+    3. Enzim sulfurtransferase **rhodanese** bersama SQOR mentransfer atom sulfur kedua ke sulfit untuk mensintesis **tiosulfat (\\(H_2S_2O_3 / S_2O_3^{2-}\\))**.
+    4. Enzim tiosulfat reduktase dan **sulfit oksidase (*molybdenum-dependent*)** mengoksidasi tiosulfat/sulfit lebih lanjut menjadi **sulfat bebas (\\(SO_4^{2-}\\))**.
+  * *Catatan stoikiometri*: Reaksi oksidasi 1 mol \\(H_2S\\) menjadi tiosulfat membutuhkan **1,5 mol oksigen (\\(O_2\\))**, yang dapat memperberat beban hipoksia jaringan.
+  * *Jalur Fase II Minor*: Metilasi oleh enzim sitosolik *thiol-S-methyltransferase* membentuk metanatiol (\\(CH_3SH\\)) dan dimetil sulfida (\\(CH_3SCH_3\\)). Jalur ini **10.000 kali lebih lambat** dibanding jalur oksidasi, sehingga kontribusinya dapat diabaikan.
+* **Ekskresi**:
+  * Metabolit utama yang larut air—**tiosulfat dan sulfat**—dieliminasi secara efisien melalui **filtrasi ginjal ke dalam urin**.
+  * Sebagian fraksi kecil \\(H_2S\\) bebas yang belum termetabolisme diekskresikan melalui udara ekshalasi paru dan keringat.
+  * \\(H_2S\\) **tidak mengalami bioakumulasi** di dalam tubuh.
+
+---
+
+### 4. Toksikodinamik (Mekanisme Aksi Seluler)
+* **Inhibisi Sitokrom c Oksidase (Kompleks IV Mitokondria)**:
+  * Anion sulfida (\\(HS^- / S^{2-}\\)) berikatan kuat secara reversibel dengan ion besi trivalen ferri (**\\(Fe^{3+}\\)**) pada gugus heme **sitokrom aa3 / sitokrom c oksidase**.
+  * Hal ini memblokade rantai transpor elektron respirasi aerobik, menghentikan pembentukan ATP seluler, dan memicu glikolisis anaerobik masif yang berujung pada **asidosis laktat berat**.
+* **Asfiksian Kimia Seluler & Hipoksia Histotoksik**:
+  * Mirip dengan sianida, \\(H_2S\\) adalah asfiksian kimia seluler murni yang menimbulkan **hipoksia histotoksik / sitotoksik anoksia**: darah kaya akan oksigen, namun mitokondria tidak dapat memanfaatkannya.
+* **Iritasi Mukosa & Kerusakan Alveolar Lokal**:
+  * Saat berkontak dengan kelembapan basah mukosa konjungtiva dan saluran napas, terbentuk natrium sulfida dan radikal bebas yang bersifat kaustik iritatif.
+  * Memicu degradasi protein taut erat vaskular alveolar paru (**claudin-5**) serta menurunkan regulasi kanal natrium epitelial (**ENaC**), mengganggu klirens cairan paru dan memicu **edema paru akut non-kardiogenik (ARDS)**.
+* **Paralisis Olfaktori (*Olfactory Fatigue*)**:
+  * Pada konsentrasi tinggi (> 100–150 ppm), \\(H_2S\\) melumpuhkan transmisi sinaptik dan memicu kelelahan/nekrosis akut pada sel-sel reseptor olfaktorius di cavum nasi. Persepsi bau telur busuk hilang mendadak, meniadakan kemampuan deteksi sensorik korban.
+* **Fenomena "Knockdown"**:
+  * Kolaps dan kehilangan kesadaran mendadak dalam hitungan detik (seperti sakelar listrik yang mendadak dimatikan / *"turning off a switch"*).
+  * Mekanisme knockdown melibatkan:
+    1. Hiperpolarisasi membran neuronal sentral melalui pembukaan kanal kalium teraktivasi ATP (\\(K_{ATP}\\)).
+    2. Depresi langsung dan paralisis pusat kendali pernapasan di medula oblongata (batang otak), menyebabkan **apnea sentral**.
+    3. Syok kardiogenik akut dan aritmia ventrikel.
+
+---
+
+### 5. Biomonitoring Okupasi dan Laboratorium
+* **Tiosulfat Urin (*Urinary Thiosulfate*)**:
+  * Biomarker pajanan okupasi utama untuk pemantauan paparan subakut/kronis.
+  * Sampel urin dikumpulkan pada **akhir shift kerja** (*end of shift*).
+  * *Keterbatasan*: Dipengaruhi oleh variabilitas ekskresi sulfur endogen dan diet protein tinggi asam amino sulfur; kadarnya cepat menurun pasca-pajanan karena waktu paruh yang relatif pendek.
+* **Kadar Sulfida Darah (*Blood Sulfide*)**:
+  * Konsentrasi sulfida endogen darah normal sangat rendah. Kadar sulfida darah pasca-pajanan akut meningkat transien, namun tereliminasi sangat cepat (umumnya hanya bertahan dalam 1–2 jam pertama).
+  * Metode pemeriksaan (kromatografi ion mikrodifusi) memerlukan fasilitas laboratorium khusus dan tidak dapat dijadikan panduan keputusan triase resusitasi darurat.
+* **Sulfida Jaringan Otak (Toksikologi Forensik)**:
+  * Pada kasus kematian fatal di tempat kejadian, analisis kadar sulfida pada jaringan **batang otak (*brainstem*)** merupakan uji forensik baku emas untuk membuktikan intoksikasi letal \\(H_2S\\).
+* **Klarifikasi Sulfhemoglobin**:
+  * Dahulu diperdebatkan apakah \\(H_2S\\) membentuk sulfhemoglobin.
+  * Konsensus toksikologi modern (Guidotti, 2010; Milby & Baselt) menegaskan bahwa **pada intoksikasi inhalasi \\(H_2S\\) akut pada manusia, sulfhemoglobin TIDAK terbentuk dalam jumlah yang signifikan secara klinis**, sehingga sulfhemoglobin **bukan** biomarker yang valid untuk keracunan \\(H_2S\\).
+
+---
+
+### 6. Waktu Paruh (Half-Life)
+* **Sulfida Bebas dalam Darah / Jaringan**:
+  * Sangat singkat, berkisar dalam hitungan **detik hingga beberapa menit saja (rata-rata < 15–30 menit)** karena biotransformasi oksidatif mitokondria yang sangat cepat (*ultrafast clearance*).
+* **Metabolit Tiosulfat dalam Urin**:
+  * Memiliki waktu paruh eliminasi ginjal sekitar **2,5 hingga 4 jam**; sebagian besar tiosulfat yang terbentuk diekskresikan habis ke dalam urin dalam kurun waktu 24 jam.
+
+---
+
+### 7. Efek Toksisitas Akut Berdasarkan Konsentrasi (Rentang ppm)
+Respons klinis manusia sangat bergantung pada konsentrasi atmosferik, dirangkum berdasarkan data OSHA dan literatur toksikologi:
+
+| Konsentrasi (ppm) | Manifestasi Klinis dan Fisiologis |
+| :--- | :--- |
+| **0,00011 – 0,00033** | Konsentrasi latar belakang alami (*background*) di atmosfer. |
+| **0,01 – 0,3 (hingga 1,5)** | **Ambang deteksi bau (*odor threshold*)**; aroma khas telur busuk (*rotten eggs*) terdeteksi jelas. |
+| **1 – 5** | Bau telur busuk sangat menyengat dan ofensif. Dapat memicu mual, lakrimasi ringan, sefalgia pada pajanan lama. Tidak mengganggu kapasitas kerja fisik maksimal sukarelawan sehat. |
+| **10 – 20** | Iritasi ringan konjungtiva dan mukosa hidung/tenggorokan. Terjadi pergeseran awal dari metabolisme aerob ke anaerob saat aktivitas fisik. Kelelahan (*fatigue*), penurunan nafsu makan, sefalgia. |
+| **20 – 50** | Iritasi okular nyata: **"Gas Eye"** (*keratoconjunctivitis*), fotofobia, blefarospasme, lakrimasi berat, distorsi penglihatan berupa lingkaran halo berwarna di sekitar sumber cahaya akibat edema epitel kornea. Iritasi saluran napas atas. |
+| **50 – 100** | Kerusakan epitel kornea, erosi pungtata. Batuk hebat, dyspnea, iritasi bronkial. Mulai terjadi adaptasi olfaktori parsial. |
+| **100 – 150 (hingga 200)** | **Paralisis olfaktori total (*olfactory fatigue/paralysis*)** dalam beberapa tarikan napas. Persepsi bau hilang seketika, hilangnya sistem peringatan bahaya. Iritasi saluran napas berat, drowsiness; pajanan terus-menerus memicu kematian tertunda dalam 48 jam. |
+| **200 – 300** | Konjungtivitis berat dan trakeobronkitis hebat. Risiko tinggi timbulnya **edema paru akut non-kardiogenik (*pulmonary edema*)** dalam waktu 1 jam pajanan. |
+| **500 – 700** | Gaya berjalan sempoyongan (*staggering*), kolaps dalam 5 menit. Kerusakan kornea serius dalam 30 menit. Fenomena **"Knockdown"** (hilang kesadaran mendadak), stimulasi pernapasan transien diikuti depresi napas meduler, kematian dalam 30–60 menit. |
+| **700 – 1000** | **Knockdown instan (kolaps mendadak dalam 1–2 tarikan napas)**. Henti napas mendadak (*immediate apnea*), koma dalam hitungan detik, henti jantung, kematian dalam hitungan menit. |
+| **1000 – 2000** | **Kematian hampir seketika (*nearly instant death*)** akibat paralisis pernapasan sentral total dan henti sirkulasi. |
+
+---
+
+### 8. Efek Toksisitas Kronis dan Sekuel Neurologis
+* **Sekuel Neurologis Pasca-Knockdown (Ensefalopati Anoksik-Toksik)**:
+  * Sekuel persisten akibat kombinasi anoksia serebral (apnea/hipotensi) dan kerusakan metabolik sitotoksik langsung.
+  * Lesi spesifik terlokalisasi pada **ganglia basalis (globus palidus dan putamen)** serta korteks serebri.
+  * Manifestasi meliputi: amnesia retrograd dan anterograd permanen, sindrom parkinsonisme sekunder (tremor, bradikinesia, rigiditas), ataksia serebelar, disartria, dan kelainan visual/pendengaran.
+* **Disfungsi Olfaktori Jangka Panjang**:
+  * Kerusakan nekrotik pada neuroepitel olfaktori dapat mengakibatkan anosmia (hilang penciuman) atau disosmia permanen pasca-keracunan akut.
+* **Efek Respirasi Kronis**:
+  * Batuk kronis, penurunan kapasitas ventilasi paru (*decline in FEV1*), dan bronkitis kronis.
+  * *Catatan Penting Ujian*: Berbeda dengan klorin atau gas asam lain, **\\(H_2S\\) jarang memicu Reactive Airways Dysfunction Syndrome (RADS) klasik**, yang diduga berkaitan dengan sifat \\(H_2S\\) fisiologis sebagai modulator anti-inflamasi endogen di saluran napas.
+* **Sindrom Neuropsikiatri / Neuroastenia**:
+  * Pajanan kronis berulang di bawah ambang akut dapat memicu sefalgia berulang, kelelahan kronis (*fatigue*), labilitas emosi, gangguan tidur (*insomnia*), serta penurunan konsentrasi dan daya ingat.
+
+---
+
+### 9. Batas Pajanan Okupasi (Exposure Limits)
+* **Permenaker No. 5 Tahun 2018 (Lampiran 3 Faktor Kimia)**:
+  * Hidrogen sulfida [CAS# 7783-06-4]:
+    * **NAB (Nilai Ambang Batas / TWA 8-jam)**: **1 BDS (ppm)**.
+    * **PSD (Paparan Singkat yang Diperkenankan / STEL 15-menit)**: **5 BDS (ppm)**.
+    * *Keterangan kritis*: Iritasi saluran pernafasan atas, Gangguan syaraf pusat.
+* **ACGIH TLV (2006/2018)**:
+  * **TLV-TWA**: **1 ppm**.
+  * **TLV-STEL**: **5 ppm**.
+* **NIOSH REL (Recommended Exposure Limit)**:
+  * **Ceiling (10-menit)**: **10 ppm (15 mg/m³)**.
+* **OSHA PEL (Permissible Exposure Limit)**:
+  * General Industry: **Ceiling = 20 ppm**.
+  * **Acceptable Maximum Peak**: **50 ppm** (durasi maksimal 10 menit sekali per shift 8 jam jika tidak ada paparan di atas ceiling lain).
+* **IDLH (Immediately Dangerous to Life or Health)**:
+  * **100 ppm**.
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Status Permenaker No. 5 Tahun 2018**:
+  * Dalam Lampiran 4 (Daftar Indeks Pajanan Biologi), hidrogen sulfida **belum ditetapkan secara numerik sebagai parameter IPB wajib** di Indonesia.
+* **Panduan Internasional (ACGIH BEI)**:
+  * ACGIH **belum menetapkan nilai numerik BEI definitif** untuk \\(H_2S\\). Hal ini disebabkan oleh waktu paruh eliminasi sulfida yang sangat singkat dalam darah (hitungan menit), serta tingginya variabilitas kadar sulfur/tiosulfat endogen dari diet harian.
+  * Pengukuran tiosulfat urin akhir shift kerja sering digunakan dalam protokol penelitian kesehatan kerja internal, namun interpretasinya harus mempertimbangkan nilai dasar (*baseline*) pra-shift.
+
+---
+
+### 11. Tatalaksana Medis Darurat & Terapi Antidot
+* **Evakuasi & Keamanan Tim Penolong (Aturan Terpenting)**:
+  * Penolong **DILARANG KERAS** memasuki zona panas (*hot zone*) tanpa alat pelindung pernapasan bertekanan positif (**SCBA**).
+  * Pindahkan korban segera ke udara bersih di zona aman (*support zone*).
+  * Lepaskan pakaian korban yang terkontaminasi (dapat memerangkap sisa gas \\(H_2S\\)).
+  * Dekontaminasi mata dengan irigasi air mengalir atau salin normal minimal 15 menit jika terdapat iritasi konjungtiva/kornea.
+  * **Kontraindikasi Resusitasi Mulut-ke-Mulut**: Penolong wajib menggunakan alat ventilasi mekanis (*bag-valve-mask* / BVM) berkatup satu arah demi mencegah paparan sekunder dari gas sisa atau muntahan korban.
+* **Oksigenasi Konsentrasi Tinggi**:
+  * Berikan **Oksigen 100% (*FiO2 1,0*)** segera melalui sungkup non-rebreather atau pipa endotrakeal.
+  * Oksigenasi bertekanan tinggi membantu menggeser ikatan sulfida dari Kompleks IV dan menyediakan substrat \\(O_2\\) yang dibutuhkan jalur oksidasi mitokondria (yang memerlukan 1,5 mol \\(O_2\\) per mol \\(H_2S\\)).
+  * Terapkan ventilasi protektif mekanis dengan PEEP jika terjadi edema paru akut (ARDS).
+* **Natrium Nitrit (*Sodium Nitrite*) dan Kontroversinya**:
+  * **Dosis**: Larutan natrium nitrit 3% sebanyak **300 mg (10 mL) IV diberikan perlahan selama 5–10 menit**. (Dosis anak: 0,2 mL/kg, maks 10 mL).
+  * **Rasional Teoretis**: Nitrit menginduksi pembentukan methemoglobin (MetHb, \\(Fe^{3+}\\)) sekitar 10–20%. Methemoglobin memiliki afinitas ikatan yang lebih tinggi terhadap sulfida dibanding sitokrom c oksidase, menarik ion sulfida bebas keluar membentuk **sulfmethemoglobin** yang relatif tidak toksik.
+  * **Kontroversi & Kelemahan Nitrit pada Keracunan \\(H_2S\\)**:
+    1. *Metabolisme ultrafast*: Sulfida bebas dieliminasi dari sirkulasi dalam hitungan menit. Ketika korban tiba di rumah sakit, sulfida bebas dalam darah umumnya sudah habis termetabolisme atau terikat erat di jaringan, sehingga pemberian nitrit yang terlambat tidak lagi memiliki target reseptor bebas (*ineffective after early minutes*).
+    2. *Perburukan anoksia & hipotensi*: Induksi methemoglobinemia mengurangi kapasitas darah mengangkut oksigen, sementara efek vasodilatasi nitrit memicu hipotensi berat, yang dapat memperburuk hipoksia dan iskemia serebral/miokardial.
+    3. *Bukti klinis*: Studi eksperimental dan ulasan sistematis (Guidotti, Baud) menunjukkan nitrit tidak secara signifikan memperpendek koma atau menurunkan mortalitas bila diberikan setelah onset koma.
+  * **Natrium Tiosulfat**: **TIDAK bermanfaat dan tidak direkomendasikan pada keracunan \\(H_2S\\)** (berbeda dengan sianida). Tiosulfat adalah metabolit hasil akhir detoksifikasi \\(H_2S\\), bukan donor sulfur yang dibutuhkan enzim rhodanese untuk mengikat sulfida.
+* **Terapi Oksigen Hiperbarik (*Hyperbaric Oxygen Therapy* / HBOT)**:
+  * Diindikasikan untuk kasus berat dengan koma berkepanjangan, iskemia miokardial refrakter, asidosis laktat berat, atau edema paru yang gagal membaik dengan oksigen normobarik 100%.
+  * HBOT bekerja dengan meningkatkan kelarutan oksigen plasma secara masif, memaksa penghantaran \\(O_2\\) ke mitokondria, dan memulihkan gradien fosforilasi oksidatif.
+* **Sulfhemoglobin vs. Methemoglobin (Poin Ujian)**:
+  * *Sulfhemoglobin*: Hemoglobin tereduksi yang mengikat sulfur secara kovalen permanen pada cincin porfirin (biasanya akibat obat sulfonamida/dapsone), berwarna kehijauan, tidak dapat dibalikkan dengan metilen biru, dan **TIDAK terbentuk signifikan pada inhalasi \\(H_2S\\)**.
+  * *Methemoglobin*: Hemoglobin teroksidasi (\\(Fe^{3+}\\)) yang sengaja dibentuk oleh natrium nitrit untuk memulung sulfida bebas membentuk sulfmethemoglobin.
+
+---
+
+### 12. Manajemen Okupasi (Individu, Tempat Kerja, & Komunitas)
+* **Penilaian Kelaikan Kerja (*Fitness-to-Work*)**:
+  * Pekerja dinyatakan **TIDAK LAIK (*Unfit*)** untuk bertugas di area risiko \\(H_2S\\) jika menderita:
+    * Penyakit kardiovaskular struktural, penyakit jantung iskemik, atau aritmia.
+    * Penyakit paru kronis dengan penurunan kapasitas ventilasi (asma berat, PPOK).
+    * Gangguan neurologis sentral fokal atau riwayat epilepsi tak terkontrol.
+    * Gangguan fungsi penghidu berat (anosmia/hiposmia kongenital atau didapat), karena kehilangan kemampuan deteksi bau pada konsentrasi rendah.
+* **Prosedur Ruang Terbatas (*Confined Space Entry Permit*)**:
+  * Uji atmosfer kontinu sebelum dan selama pekerjaan:
+    1. Kadar oksigen (harus antara 19,5% – 23,5%).
+    2. Konsentrasi gas \\(H_2S\\) (harus di bawah NAB 1 ppm).
+    3. Batas ledak gas mudah terbakar (harus < 10% LEL).
+    4. Kadar karbon monoksida (CO).
+  * Ventilasi buang/tiup mekanis paksa (*forced mechanical positive/negative ventilation*) secara kontinu.
+  * Penerapan aturan kerja wajib berpasangan (**Buddy System**) dengan petugas siaga (*standby person / attendant*) di luar ruang terbatas yang dilengkapi tali penyelamat (*lifeline*) dan tripod penarik.
+* **Detektor Gas Portabel Pribadi (*Personal Gas Detector*)**:
+  * Setiap pekerja wajib mengenakan detektor multi-gas pribadi terkalibrasi di area pernapasan (*breathing zone*).
+  * *Set-point alarm*: Alarm rendah (*low alarm*) diset pada **1 ppm (NAB Permenaker 5/2018)** dan alarm tinggi (*high alarm*) diset pada **5 ppm (PSD/STEL)**.
+* **Alat Pelindung Pernapasan (Respirator)**:
+  * Pada konsentrasi tidak diketahui, di atas 10 ppm, atau saat kondisi darurat ruang terbatas: **Wajib menggunakan SCBA (*Self-Contained Breathing Apparatus*) bertekanan positif dengan masker penuh (*full facepiece*)** atau *Supplied-Air Respirator* (SAR) tipe C bertekanan positif dengan silinder udara darurat cadangan (*escape cylinder*).
+  * **Dilarang keras menggunakan respirator filter pemurni udara (*air-purifying cartridge respirator*)** di lingkungan IDLH (\\(\ge 100\text{ ppm}\\)) atau saat konsentrasi tidak diketahui, karena katrid kimia cepat jenuh dan tidak menyediakan oksigen.
+* **Hirarki Pengendalian Lingkungan Kerja**:
+  * *Eliminasi/Substitusi*: Menghilangkan pembentukan gas melalui kontrol aerasi cairan limbah (mencegah kondisi anaerobik).
+  * *Rekayasa Teknik*: Sistem pemipaan tertutup (*closed automated loop*), penangkap gas sulfur (*scrubber / flare stacks*), penambahan bahan kimia pengikat sulfida (misal garam besi, biosida mikrobial untuk menghambat bakteri pereduksi sulfat).
+  * *Administratif*: Pelatihan tanggap darurat rutin (*H₂S alive drill*), zonasi bahaya, pembatasan durasi kerja di ruang berisiko.
+
+---
+
+### 13. Aspek Regulasi dan Penyakit Akibat Kerja (PAK) di Indonesia
+* **Peraturan Presiden No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * Tercantum secara eksplisit dalam **Lampiran Bagian I.a.16**: *"Penyakit yang disebabkan oleh gas penyebab asfiksia seperti karbon monoksida, hidrogen sulfida, hidrogen sianida atau derivatnya"*.
+  * Keracunan \\(H_2S\\) akut maupun sekuel kronis neurologis/respiratorik diakui sebagai penyakit/cedera kerja yang sah untuk klaim manfaat Jaminan Kecelakaan Kerja (JKK) BPJS Ketenagakerjaan.
+* **Peraturan Pemerintah No. 28 Tahun 2024 (Peraturan Pelaksanaan UU Kesehatan No. 17/2023)**:
+  * Mengatur kewajiban pemberi kerja dalam penyelenggaraan upaya kesehatan kerja, identifikasi potensi bahaya faktor kimia B3 di tempat kerja, penyediaan fasilitas tanggap darurat, dan penilaian kelaikan kerja kembali (*return-to-work*).
+* **Permenkes No. 11 Tahun 2022 tentang Pelayanan Kesehatan PAK**:
+  * Mewajibkan dokter Sp.Ok/dokter pemeriksa kesehatan kerja menegakkan diagnosis PAK melalui **metode 7 langkah diagnosis okupasi**:
+    1. Menentukan diagnosis klinis (misal: ensefalopati anoksik pasca-knockdown \\(H_2S\\), ARDS kimia).
+    2. Menentukan pajanan lingkungan kerja (identifikasi agen \\(H_2S\\) dari SDS/LDKB dan proses kerja).
+    3. Membuktikan hubungan pajanan dengan diagnosis klinis (berdasarkan bukti ilmiah toksikologi).
+    4. Menilai besarnya pajanan (analisis konsentrasi atmosfer, durasi, riwayat alarm detektor).
+    5. Menilai faktor perancu individu (riwayat penyakit SSP sebelumnya, trauma kepala saat jatuh).
+    6. Menilai faktor pajanan lain di luar pekerjaan (misal: tempat tinggal dekat kawah vulkanik).
+    7. Menetapkan kesimpulan kausal: Penyakit Akibat Kerja (PAK).
+
+---
+
+### 14. Clinical Pearls & Jebakan Ujian Board Sp.Ok
+1. **Jebakan "Aroma Telur Busuk Hilang Pertanda Bahaya Sudah Lewat"**:
+   * *Fatal Examination Trap*: Pada konsentrasi > 100–150 ppm, \\(H_2S\\) memicu **paralisis saraf olfaktorius secara instan**. Hilangnya bau busuk bukan berarti udara sudah bersih, melainkan sinyal bahwa konsentrasi gas telah mencapai tingkat letal. Pekerja yang mengira udara sudah aman akan mengalami knockdown dalam beberapa detik berikutnya.
+2. **Sindrom Penolong Ikut Menjadi Korban (*Rescuer Fatality Syndrome*)**:
+   * Sekitar **25% hingga 40% kematian akibat \\(H_2S\\)** di seluruh dunia menimpa rekan kerja atau supervisor yang berusaha menolong korban pertama di dalam tangki, sumur, atau selokan tanpa memakai SCBA. Di ujian board, jawaban untuk tindakan pertama saat melihat rekan kerja jatuh kolaps di ruang terbatas adalah: **Jangan langsung masuk; bunyikan alarm darurat, kenakan SCBA bertekanan positif, dan siapkan sistem pengerek/ventilasi.**
+3. **Tanda Patognomonik Koin Perak / Tembaga Menghitam (*Black Tarnish of Coins*)**:
+   * Uap \\(H_2S\\) di atmosfer bereaksi cepat dengan logam koin atau perhiasan perak (Ag) dan tembaga (Cu) di saku korban, membentuk endapan **perak sulfida (\\(Ag_2S\\))** atau **tembaga sulfida (\\(CuS\\))** yang berwarna hitam pekat.
+   * Menemukan koin perak, perhiasan, atau gesper sabuk tembaga milik korban yang mendadak berubah warna menjadi hitam pekat di tempat kejadian perkara merupakan petunjuk forensik/klinis patognomonik pajanan uap hidrogen sulfida dosis masif.
+
+---
+
+### Tabel Ringkas 14 Poin Board Sp.Ok: Hidrogen Sulfida (H₂S)
+
+| No | Poin Parameter | Rangkuman Klinis, Toksikologis, & Regulasi Kunci | Rujukan Utama |
+| :--- | :--- | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Karsinogenitas** | Gas tak berwarna, BM 34,08; densitas uap 1,19 (lebih berat dari udara); TD -76°F; LEL 4,0%, UEL 44,0%; pKa1 7,04 (1/3 H2S bebas lipofilik, 2/3 HS⁻ pada pH 7,4). Karsinogenitas: **Non-karsinogen** (ACGIH A4 / IARC Group 3 / Permenaker 5/2018 tanpa notasi karsinogen A1-A3). | NIOSH Pocket Guide, Reiffenstein 1992, Permenaker 5/2018 |
+| **2** | **Sumber & Penggunaan** | Industri migas (*sour gas/crude* <1% - >90%), instalasi pengolahan limbah/selokan (*sewer gas*), penampungan kotoran ternak (*manure pits/CAFOs*), pabrik kertas *kraft pulp*, geotermal vulkanik, palka kapal ikan. | Guidotti 2010, Maldonado 2023 |
+| **3** | **Toksikokinetik (ADME)** | Absorpsi: Inhalasi instan; dermal minimal. Distribusi: Cepat ke SSP (batang otak) dan miokardium. Metabolisme: Oksidasi mitokondria *ultrafast* via SQOR, ETHE1, dan rhodanese menjadi tiosulfat dan sulfat (butuh 1,5 mol O2 per mol H2S). Ekskresi: Urin (tiosulfat & sulfat); paru (sebagian kecil H2S bebas). Tidak bioakumulatif. | Maldonado 2023, Reiffenstein 1992 |
+| **4** | **Toksikodinamik** | Asfiksian kimia seluler; inhibisi **sitokrom c oksidase (Fe³⁺ sitokrom aa3 / Kompleks IV)** \\(\rightarrow\\) henti fosforilasi oksidatif & hipoksia histotoksik \\(\rightarrow\\) asidosis laktat. Iritan mukosa mata & paru (degradasi claudin-5 & ENaC \\(\rightarrow\\) ARDS). Paralisis olfaktori (>100 ppm). **Knockdown**: hiperpolarisasi kanal K+, depresi napas meduler (apnea), syok kardiogenik. | Guidotti 2010, Maldonado 2023 |
+| **5** | **Biomonitoring** | Tiosulfat urin akhir shift. Sulfida darah: meningkat transien dalam 1–2 jam pertama. Sulfida jaringan batang otak untuk forensik kematian fatal. **Sulfhemoglobin TIDAK terbentuk signifikan pada inhalasi H2S dan tidak valid sebagai biomarker**. | Guidotti 2010, Reiffenstein 1992 |
+| **6** | **Waktu Paruh (\\(t_{1/2}\\))** | Sulfida darah/jaringan: **detik hingga beberapa menit (klirens sempurna < 30–60 menit)**. Tiosulfat urin: **2,5 – 4 jam** (ekskresi tuntas dalam 24 jam). | Maldonado 2023, Guidotti 2010 |
+| **7** | **Efek Akut per Rentang ppm** | 0,01–0,3 ppm: ambang bau. 1–5 ppm: bau sangat ofensif. 10–20 ppm: iritasi ringan, pergeseran ke anaerobik saat kerja fisik. 20–50 ppm: **Gas Eye** (keratokonjungtivitis, halo penglihatan). 100–150 ppm: **paralisis saraf olfaktori total**. 200–300 ppm: trakeobronkitis hebat, risiko **edema paru**. 500–700 ppm: kolaps 5 m, knockdown, kematian dalam 30–60 m. 700–1000 ppm: **knockdown instan 1–2 nafas**, apnea, kematian dalam hitungan menit. | OSHA Table 1, Guidotti 2010, Reiffenstein |
+| **8** | **Efek Kronis & Sekuel** | Ensefalopati pasca-knockdown: lesi ganglia basalis (putamen/globus palidus), amnesia persisten, parkinsonisme sekunder, ataksia. Anosmia/hiposmia permanen. Batuk kronis, penurunan FEV1 (sindrom RADS klasik jarang). Neuroastenia okupasi. | Guidotti 2010, Tvedt 1991 |
+| **9** | **Batas Pajanan Okupasi** | **Permenaker 5/2018**: NAB = **1 BDS (ppm)**; PSD = **5 BDS (ppm)**. **ACGIH**: TLV-TWA = **1 ppm**; TLV-STEL = **5 ppm**. **NIOSH REL**: Ceiling = **10 ppm (15 mg/m³)**. **OSHA PEL**: Ceiling = **20 ppm** (Peak 50 ppm/10 m). **IDLH**: **100 ppm**. | Permenaker 5/2018, NIOSH, Guidotti 2010 |
+| **10** | **BEI / IPB** | Permenaker 5/2018 dan ACGIH **belum menetapkan nilai numerik baku IPB/BEI** untuk H2S karena eliminasi yang sangat cepat dan pengaruh latar belakang sulfur endogen. | Permenaker 5/2018 Lampiran 4, Maldonado 2023 |
+| **11** | **Tatalaksana Akut** | Evakuasi aman dengan SCBA. Lepas pakaian & dekontaminasi. Kontraindikasi mulut-ke-mulut (gunakan BVM). **O2 100%** (memfasilitasi disosiasi ikatan & metabolisme oksidatif). **Natrium Nitrit**: 300 mg IV over 5–10 m; *kontroversial & tidak efektif bila terlambat*, risiko perburukan anoksia/hipotensi. Natrium tiosulfat: tidak bermanfaat. HBOT: untuk koma persisten atau edema paru refrakter. | Maldonado 2023, Guidotti 2010 |
+| **12** | **Tatalaksana Okupasi** | Kelaikan kerja (*unfit* bagi penyakit kardiovaskular, paru kronis, kejang, anosmia). Ruang terbatas: uji 4 gas (O2, H2S, LEL, CO), ventilasi mekanis kontinu, izin kerja, *buddy system* & *lifeline*. Detektor gas pribadi: alarm rendah 1 ppm, alarm tinggi 5 ppm. APD: **SCBA positif** (dilarang katrid kimia di atmosfer tak terukur/IDLH). Rekayasa: sistem tertutup, *scrubber*, penambahan pengikat sulfida. | NIOSH, Maldonado 2023 |
+| **13** | **Regulasi PAK di Indonesia** | **Perpres No. 7 Tahun 2019 Lampiran I.a.16**: Penyakit akibat gas penyebab asfiksia (CO, H2S, HCN); jaminan kompensasi JKK. Didukung PP No. 28/2024 (kesehatan kerja & mitigasi B3) dan Permenkes No. 11/2022 (7 langkah diagnosis okupasi Sp.Ok). | Perpres 7/2019, PP 28/2024, Permenkes 11/2022 |
+| **14** | **Clinical Pearls & Trap** | 1) Bau telur busuk hilang pada >100–150 ppm menandakan **paralisis saraf olfaktori**, bukan gas hilang. 2) Sindrom penolong ikut tewas (25–40% korban adalah penolong tanpa SCBA). 3) Koin perak/tembaga di saku korban menghitam (*black tarnish*) akibat pembentukan endapan Ag2S/CuS di TKP. | Guidotti 2010, Maldonado 2023 |
+
+---
+
+💡 *Apakah Anda ingin kita melengkapi seri asfiksian kimia ini dengan bab komparatif ketiga mengenai **Karbon Monoksida (CO)**, mencakup disosiasi kurva Haldane, neuropsikiatri tertunda (DNS), indikasi mutlak HBOT, serta kriteria kembali bekerja?*

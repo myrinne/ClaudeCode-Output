@@ -1,0 +1,315 @@
+Sebagai calon konsulen Kedokteran Okupasi (Sp.Ok), Anda harus memahami bahwa **Pestisida Organoklorin (OC / *Organochlorines*)** mewakili tonggak sejarah toksikologi lingkungan dan industri yang fundamental. Meskipun sebagian besar zat dalam golongan ini telah dilarang secara global, residu dan pajanan kumulatifnya masih relevan dalam kedokteran okupasi dan lingkungan akibat resistensi degradasi biologis (*environmental persistence*) serta bioakumulasi masif pada rantai makanan.
+
+Di ruang ujian *board*, Anda tidak boleh menyamakan mekanisme kerja organoklorin dengan organofosfat. Anda juga harus mampu membedakan toksikodinamik subgolongan organoklorin itu sendiri (misalnya turunan kloroetana vs siklodiena/heksaklorosikloheksana). 
+
+Berikut telaah kritis 14 poin standar board examination:
+
+---
+
+### 1. Sifat Fisik-Kimia dan Klasifikasi Bahaya
+* **Struktur Kimia & Karakteristik Fisik:**
+  * Organoklorin merupakan hidrokarbon terklorinasi sintetik dengan berat molekul sedang hingga tinggi dan kandungan atom klorin tinggi (berkisar antara 3 hingga 8 atom klor per molekul).
+  * Memiliki **volatilitas rendah (tekanan uap sangat rendah)**, **kelarutan dalam air sangat buruk** (misal kelarutan DDT \\(0{,}004\%\\) atau dieldrin \\(0{,}02\%\\)), namun memiliki **kelarutan sangat tinggi dalam lipid (*lipophilicity*)** dengan koefisien partisi oktanol-air (*\\(\log K_{ow}\\)*) yang sangat tinggi (misal \\(\log K_{ow}\\) DDT mencapai **6,36**, DDD **5,80**, DDE **5,69**, dan dieldrin **4,56**).
+  * Terbagi menjadi 3 subkelompok struktural utama:
+    1. **Turunan Diklorodifenil-etana (*Chlorinated ethane derivatives*):** DDT (*1,1,1-trichloro-2,2-bis(4-chlorophenyl)ethane*), metoksiklor, dan dikofol.
+    2. **Siklodiena Terklorinasi (*Chlorinated cyclodienes*):** Aldrin, dieldrin, endrin, klordan, heptaklor, dan endosulfan.
+    3. **Heksaklorosikloheksana (HCH / BHC):** Isomer alfa, beta, delta, dan gamma-HCH (**lindane**).
+    * *Kelompok sangkar (*cage-like*) dan terpena:* Klordekon (*Kepone*), mirex, dan toksafen (*chlorinated camphenes*).
+* **Klasifikasi Bahaya WHO (*WHO Recommended Classification of Pesticides by Hazard*):**
+  * **Kelas Ia (Sangat Berbahaya Ekstrem / *Extremely Hazardous*):** Endrin, Aldrin, Dieldrin (LD50 oral tikus \\(3\text{--}67\text{ mg/kg}\\)).
+  * **Kelas Ib (Sangat Berbahaya / *Highly Hazardous*):** Heptaklor (LD50 oral \\(40\text{ mg/kg}\\)).
+  * **Kelas II (Cukup Berbahaya / *Moderately Hazardous*):** DDT (LD50 oral \\(250\text{ mg/kg}\\)), Klordan (\\(283\text{ mg/kg}\\)), Lindane (\\(88\text{--}125\text{ mg/kg}\\)), Endosulfan.
+  * **Kelas III / U (Toxicity Unlikely):** Metoksiklor (LD50 oral \\(5000\text{--}6000\text{ mg/kg}\\)).
+* **Klasifikasi Karsinogenisitas (IARC & ACGIH):**
+  * **IARC:** 
+    * **Lindane:** **Group 1 (Karsinogenik terhadap manusia)** — bukti kuat memicu *Non-Hodgkin Lymphoma* (NHL).
+    * **DDT:** **Group 2A (Mungkin karsinogenik bagi manusia / *Probable human carcinogen*)**.
+    * **Aldrin, Dieldrin, Klordan, Heptaklor, Toksafen:** **Group 2B (Kemungkinan karsinogenik bagi manusia / *Possible human carcinogen*)**.
+  * **ACGIH & Permenaker No. 5 Tahun 2018:**
+    * **Kategori A3 (Karsinogen Terkonfirmasi pada Hewan dengan Relevansi Tidak Diketahui pada Manusia):** DDT, Lindane, Aldrin, Dieldrin, Klordan, Heptaklor, Toksafen.
+    * **Kategori A4 (Tidak Diklasifikasikan sebagai Karsinogen Manusia):** Endosulfan, Metoksiklor.
+* **Regulasi Global (Konvensi Stockholm tentang POPs):**
+  * Termasuk dalam kelompok polutan organik persisten (*Persistent Organic Pollutants / POPs*). Masuk dalam 12 bahan kimia awal (*The Dirty Dozen*) tahun 2001/2004: DDT, aldrin, dieldrin, endrin, klordan, heptaklor, mirex, toksafen, dan heksaklorobenzen (HCB).
+  * Lindane (\\(\gamma\\)-HCH) dan isomer alfa/beta-HCH dimasukkan ke Lampiran A (Eliminasi) pada tahun 2009. Endosulfan ditambahkan pada tahun 2011.
+  * **Pengecualian (*Exemption*):** DDT masih diizinkan secara terbatas khusus untuk pengendalian vektor malaria dalam ruangan (*Indoor Residual Spraying / IRS*) di bawah panduan ketat WHO.
+
+---
+
+### 2. Sumber dan Penggunaan
+* **Pengendalian Vektor Kesehatan Masyarakat:** Pengendalian masif malaria dan tifus sejak era Perang Dunia II hingga 1970-an (*DDT*).
+* **Pertanian dan Perkebunan:** Insektisida spektrum luas pada tanaman kapas, biji-bijian, sayuran, dan buah-buahan (*endosulfan, toxaphene, aldrin, dieldrin*).
+* **Termitisida Struktural & Konstruksi:** Pengendalian rayap tanah pada bangunan dan instalasi kayu hingga dekade 1980-an (*chlordane, heptachlor, aldrin*).
+* **Kesehatan Hewan & Manusia:** Pengendalian ektoparasit ternak sapi/domba serta sampo/losion farmasi 1% untuk terapi pedikulosis kapitis/pubis dan skabies (*lindane*).
+
+---
+
+### 3. Toksikokinetik
+* **Absorpsi:**
+  * **Dermal:** Penetrasi kulit utuh sangat dipengaruhi sifat lipofilik dan bentuk formulasi. Serbuk kering DDT kristal tidak mudah diserap melalui stratum korneum utuh; namun bila terlarut dalam pelarut organik/minyak, absorpsi dermal meningkat berlipat ganda. Sebaliknya, **lindane dan siklodiena (aldrin, dieldrin, endosulfan) diserap melalui kulit dengan efisiensi tinggi** meskipun tanpa bantuan pelarut.
+  * **Oral / Saluran Cerna:** Penyerapan enteral berlangsung sangat efisien (>70–90%) melalui difusi pasif bersama lipid diet.
+  * **Inhalasi:** Aerosol dan partikel debu respirabel diabsorpsi cepat melewati membran alveolus.
+* **Distribusi, Deposisi Lemak, dan Bioakumulasi:**
+  * Mengalami ikatan kuat dengan lipoprotein darah (misal DDT 99,9% terikat protein/lipoprotein: 35% albumin, 35% LDL, 30% HDL; dieldrin 99,9% terikat: 12% albumin, 50% LDL, 38% HDL).
+  * Mengikuti model kinetika multikompartemen: berpindah cepat dari kompartemen vaskular/viseral menuju kompartemen perifer dalam (*deep compartment*), yaitu **jaringan adiposa (lemak tubuh)**, sumsum tulang, adrenal, serta myelin SSP.
+  * Menembus sawar plasenta menuju janin dan mengalami sekresi aktif ke dalam **air susu ibu (ASI)** dengan konsentrasi lemak ASI 10 kali lebih pekat dibanding susu sapi, menjadikannya rute eliminasi utama pada mamalia betina.
+  * Menunjukkan faktor biokonsentrasi (*bioconcentration factor / BCF*) yang luar biasa pada organisme akuatik/hewan (misal BCF DDT pada ikan mencapai **127.000**, endrin **6.800**).
+* **Metabolisme (Biotransformasi):**
+  * Berlangsung sangat lambat di mikrosom hati oleh enzim sitokrom P450.
+  * **DDT:** Mengalami reaksi dehidroklorinasi enzimatik dan non-enzimatik membentuk **p,p'-DDE (*dichlorodiphenyldichloroethylene*)**, senyawa intermediet yang jauh lebih stabil, lipofilik, dan resisten terhadap degradasi. Sebagian kecil dideklorinasi menjadi DDD, kemudian dioksidasi menjadi asam diklorodifenilasetat (DDA) yang lebih larut air.
+  * **Aldrin:** Dioksidasi secara cepat (epoksidasi) di hepatosit menjadi metabolit aktifnya yang stabil, yaitu **dieldrin**.
+  * **Lindane:** Mengalami dehidroklorinasi dan hidroksilasi membentuk klorofenol dan asam merkapturat.
+  * Senyawa organoklorin merupakan induktor poten enzim mikrosom hati (CYP2B, CYP3A) yang mempercepat metabolisme obat dan hormon steroid endogen.
+* **Ekskresi:**
+  * Ekskresi renal melalui urin sangat minimal dalam bentuk senyawa induk bebas; hanya sejumlah kecil metabolit terkonjugasi (seperti DDA) yang diekskresikan melalui urin.
+  * Rute eliminasi fisiologis dominan adalah melalui saluran bilier ke feses dan sekresi lipid ASI. Banyak senyawa organoklorin mengalami sirkulasi enterohepatik berulang.
+
+---
+
+### 4. Toksikodinamik
+Kelompok organoklorin memiliki dua target neurotoksik molekuler yang berbeda mendasar:
+
+```
+                     ┌──────────────────────────────────────────────┐
+                     │          PESTISIDA ORGANOKLORIN              │
+                     └──────────────────────┬───────────────────────┘
+                                            │
+                    ┌───────────────────────┴───────────────────────┐
+                    ▼                                               ▼
+         Golongan DDT & Analog                       Golongan Siklodiena & Lindane
+   (DDT, Metoksiklor, Dikofol)                 (Aldrin, Dieldrin, Endosulfan, Lindane)
+                    │                                               │
+                    ▼                                               ▼
+      Kanal Natrium Voltage-Gated                    Reseptor GABA-A / Kanal Klorida
+   • Menghambat penutupan kanal Na+               • Antagonis non-kompetitif situs pikrotoksin
+   • Memperpanjang depolarisasi negatif           • Menutup kanal Cl-, cegah hiperpolarisasi
+   • Letupan aksi repetitif (Repetitive train)    • Hipereksitabilitas SSP tak terkendali
+                    │                                               │
+                    ▼                                               ▼
+     Manifestasi: Tremor Kasar, Ataksia,            Manifestasi: Kejang Tonik-Klonik Mendadak,
+      Parestesia Perioral/Wajah                      Hiperpireksia, Tanpa Tremor Prodromal
+```
+
+1. **Turunan DDT (Modulator Kanal Natrium Aksonal):**
+   * Bekerja langsung pada gerbang aktivasi subunit alfa kanal natrium berpintu-voltase (*voltage-gated sodium channels*) sepanjang membran akson saraf.
+   * Menghambat proses inaktivasi (penutupan) kanal natrium setelah potensial aksi lewat, menyebabkan terbukanya kanal natrium lebih lama (*prolonged sodium current*).
+   * Menghasilkan pemanjangan fase depolarisasi negatif (*depolarizing/negative after-potential*), menurunkan ambang eksitasi membran, dan mencetuskan **letupan potensial aksi repetitif spontan (*repetitive firing / trains of action potentials*)** hanya dari satu rangsangan tunggal.
+   * DDT juga menginhibisi enzim **Ca2+-ATPase (ekto-ATPase)** pada membran luar saraf dan **Na+/K+-ATPase**, yang menurunkan konsentrasi kalsium ekstraseluler dan memperberat instabilitas membran saraf.
+2. **Siklodiena dan Lindane (Antagonis Reseptor GABAA Postsinaps):**
+   * Bekerja pada sinaps sistem saraf pusat, bukan pada membran akson.
+   * Bertindak sebagai antagonis non-kompetitif poten dengan berikatan spesifik pada **situs pikrotoksin (*picrotoxinin binding site*)** di kompleks kanal ion klorida reseptor \\(\text{GABA}_A\\).
+   * Menghambat pembukaan kanal klorida yang diinduksi oleh GABA endogen, sehingga ion klorida gagal masuk ke dalam neuron postsinaps.
+   * Kegagalan hiperpolarisasi ini menghilangkan kendali inhibisi fisiologis SSP, menyebabkan depolarisasi dan hipereksitabilitas neuronal difus tak terkendali yang bermanifestasi sebagai bangkitan kejang hebat.
+3. **Sensitisasi Miokardium terhadap Katekolamin:**
+   * Hidrokarbon terklorinasi memiliki kemampuan mengganggu stabilitas elektrofisiologis membran miosit jantung dan **mensensitisasi miokardium terhadap katekolamin endogen atau eksogen**.
+   * Akibatnya, peningkatan kecil epinefrin dalam sirkulasi dapat memicu aritmia ventrikel letal (*premature ventricular contractions, ventricular tachycardia, ventricular fibrillation*).
+
+---
+
+### 5. Biomonitoring
+* **Karakteristik Biomonitoring Okupasional Organoklorin:**
+  * Berbeda dengan organofosfat yang dipantau melalui enzim fungsional kolinesterase, organoklorin **TIDAK menghambat enzim asetilkolinesterase** sehingga pemeriksaan kolinesterase sama sekali tidak berguna.
+  * Biomonitoring organoklorin adalah pengukuran kadar zat induk atau metabolit persisten di dalam kompartemen darah/serum atau jaringan.
+* **Matriks dan Determinan Spesifik:**
+  * **Serum DDT dan DDE Total:**
+    * Menggunakan serum atau plasma darah. Karena sifat lipofiliknya, konsentrasi selalu distandarisasi terhadap **kadar lipid serum total (*µg/g serum lipid*)** guna menghindari bias fluktuasi trigliserida/kolesterol darah.
+    * Pada populasi umum tanpa pajanan langsung, median p,p'-DDE serum berkisar antara 1–5 µg/g lipid. Kadar serum DDE mencerminkan pajanan masa lalu kumulatif jangka panjang, sedangkan perbandingan rasio DDT/DDE tinggi menunjukkan pajanan baru (*recent exposure*).
+  * **Lindane dalam Darah Lengkap / Serum:**
+    * Diukur menggunakan kromatografi gas spektrometri massa (GC-MS).
+    * Konsentrasi lindane darah pada populasi normal tidak terpapar adalah \\(< 1\text{--}2\text{ µg/L}\\). Kadar darah \\(> 20\text{ µg/L}\\) menandakan absorpsi bermakna, dan kadar \\(> 50\text{ µg/L}\\) sering kali berkorelasi dengan gejala toksisitas neurologis akut.
+  * **Biopsi Lemak Adiposa (*Fat Pad Biopsy*):**
+    * Merupakan *gold standard* beban tubuh internal (*body burden*), di mana konsentrasi DDT/DDE dalam lemak tubuh dapat mencapai 5 hingga 20 mg/kg (ppm) pada era penggunaan aktif, namun tindakan ini invasif sehingga jarang dilakukan secara rutin.
+* **Waktu Pengambilan Sampel (*Sampling Time*):**
+  * Mengingat waktu paruhnya yang sangat panjang (hitungan bulan hingga tahun), pengambilan sampel **dapat dilakukan kapan saja (*discretionary*)** karena kadarnya di kompartemen lipid berada pada kondisi tunak (*steady state*) dan tidak berfluktuasi tajam antar shift kerja harian.
+
+---
+
+### 6. Waktu Paruh (*Elimination Half-Life*)
+Waktu paruh organoklorin sangat panjang akibat tingginya afinitas jaringan lemak dan resistensi terhadap biotransformasi:
+* **p,p'-DDE (Metabolit Utama DDT):** \\(t_{1/2}\\) eliminasi pada manusia adalah **7 hingga 11 tahun**. Diperkirakan deposit DDT/DDE dapat bertahan di jaringan adiposa tubuh seumur hidup (hingga **50 tahun**).
+* **Dieldrin:** \\(t_{1/2}\\) eliminasi dalam darah dan lemak manusia rata-rata **9 hingga 12 bulan (sekitar 270–365 hari)**.
+* **Klordekon (*Kepone*):** \\(t_{1/2}\\) eliminasi darah sekitar **4 hingga 6 bulan (120–180 hari)**.
+* **\\(\beta\\)-Heksaklorosikloheksana (\\(\beta\\)-HCH):** Isomer paling persisten dari HCH, dengan \\(t_{1/2}\\) mencapai **7 hingga 10 tahun**.
+* **Lindane (\\(\gamma\\)-HCH):** Paling cepat dimetabolisme di antara kelompok HCH; \\(t_{1/2}\\) eliminasi darah berkisar antara **20 hingga 26 jam** (hingga beberapa hari).
+* **Endosulfan:** Relatif lebih mudah terdegradasi dibanding siklodiena lain, dengan \\(t_{1/2}\\) eliminasi darah sekitar **1 hingga 7 hari**, namun isomer endosulfan sulfat bertahan lebih lama.
+
+---
+
+### 7. Efek Akut
+Manifestasi intoksikasi akut muncul dalam waktu 1 hingga 24 jam pasca pajanan masif:
+* **Toksisitas Akut DDT & Turunan Kloroetana:**
+  * Didominasi oleh manifestasi hipereksitabilitas motorik dan sensorik.
+  * Gejala awal: **Parestesia dan mati rasa perioral, lidah, bibir, serta wajah**, yang dapat meluas ke ekstremitas.
+  * Sakit kepala, pusing, ataksia, ketakutan (*apprehension*), dan kekakuan otot.
+  * Ciri khas utama: **Tremor kasar (*coarse tremors*)** yang dimulai dari kelopak mata dan wajah, menyebar ke leher, lengan, dan seluruh tubuh.
+  * Pada dosis tinggi (\\(> 10\text{--}20\text{ mg/kg}\\)): kejang klonik-tonik, hipertermia berat (akibat spasme otot terus-menerus), dan paralisis pernapasan.
+* **Toksisitas Akut Siklodiena (Aldrin, Dieldrin, Endosulfan) & Lindane:**
+  * Tremor umumnya minimal atau **absen sama sekali**.
+  * Ciri klinis khas: **Bangkitan kejang epileptoid tonik-klonik umum yang timbul mendadak (*abrupt, sudden-onset seizures*)** tanpa gejala prodromal atau hanya diawali mual/pusing singkat.
+  * Kejang bersifat rekuren (*status epileptikus*) yang dapat memicu asidosis metabolik berat, hiperkalemia, rhabdomiolisis, dan henti napas sentral.
+  * Kematian biasanya terjadi dalam 24–72 jam akibat paralisis otot pernapasan berkepanjangan atau anoksia serebral.
+
+---
+
+### 8. Efek Kronis
+Pajanan kronis okupasional dan lingkungan tingkat rendah memicu dampak patologis multisistem:
+* **Disrupsi Endokrin & Toksisitas Reproduksi:**
+  * Berikatan secara langsung dengan reseptor hormon nuklear (*Nuclear Receptors*) karena konformasi molekulnya menyerupai cincin steroid alami.
+  * **Efek Anti-Androgenik:** Metabolit persisten **p,p'-DDE** merupakan antagonis poten reseptor androgen (AR). Pada laki-laki memicu atrofi testis, penurunan jumlah dan motilitas sperma (*oligospermia / azoospermia*), peningkatan abnormalitas morfologi sperma, penurunan jarak anogenital (*anogenital distance*) pada bayi baru lahir, dan kriptorkismus. Episode pajanan klordekon (*Kepone*) di Hopewell, Virginia menyebabkan infertilitas dan kehilangan motilitas sperma masif pada pekerja pabrik.
+  * **Efek Estrogenik:** Senyawa isomer **o,p'-DDT**, methoxychlor, dan \\(\beta\\)-HCH bekerja sebagai agonis lemah reseptor estrogen (\\(\text{ER}\alpha\\) dan \\(\text{ER}\beta\\)). Menimbulkan siklus menstruasi ireguler, pemendekan masa laktasi, peningkatan risiko abortus spontan, persalinan prematur, endometriosis, dan karsinoma payudara sensitif-estrogen.
+  * **Disfungsi Tiroid:** Mengganggu sintesis hormon tiroid, menurunkan kadar T3/T4 bebas dalam sirkulasi.
+* **Karsinogenisitas Kronis:**
+  * Peningkatan risiko neoplasma ganas: *Non-Hodgkin Lymphoma* (khususnya lindane), tumor sel germinal testis, kanker hati (*hepatocellular carcinoma*), dan kanker pankreas.
+* **Toksisitas Neurologis & Neurodegeneratif Kronis:**
+  * Sindrom *"Kepone Shakes"*: Tremor intensional luas pada ekstremitas dan kepala, ataxia, kelemahan otot, iritabilitas, dan defisit memori.
+  * **Penyakit Parkinson (PD):** Studi toksikologi eksperimental dan epidemiologis membuktikan dieldrin, endosulfan, dan lindane menumpuk di ganglia basalis (*substantia nigra*), memicu stres oksidatif, akumulasi radikal bebas, apoptosis neuron dopaminergik, dan akselerasi fibrilasi protein \\(\alpha\\)-sinuklein.
+
+---
+
+### 9. Batas Pajanan Okupasional di Udara Tempat Kerja (OELs)
+Berdasarkan Lampiran 1 Standar Faktor Kimia **Permenaker No. 5 Tahun 2018**, rekomendasi **ACGIH TLV**, **NIOSH REL**, dan **OSHA PEL**:
+
+| Bahan Kimia Organoklorin | Permenaker 5/2018 (NAB) | ACGIH TLV-TWA | NIOSH REL (TWA) | OSHA PEL (TWA) | IDLH | Notasi Khusus |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **DDT (50-29-3)** | **\\(1\text{ mg/m}^3\\)** | \\(1\text{ mg/m}^3\\) | \\(0{,}5\text{ mg/m}^3\\) (Ca) | \\(1\text{ mg/m}^3\\) | \\(500\text{ mg/m}^3\\) (Ca) | Kulit, A3 |
+| **Aldrin (309-00-2)** | **\\(0{,}05\text{ mg/m}^3\\)** (IFV) | \\(0{,}05\text{ mg/m}^3\\) (IFV) | \\(0{,}25\text{ mg/m}^3\\) (Ca) | \\(0{,}25\text{ mg/m}^3\\) | \\(25\text{ mg/m}^3\\) (Ca) | Kulit, A3 |
+| **Dieldrin (60-57-1)** | **\\(0{,}1\text{ mg/m}^3\\)** (IFV) | \\(0{,}1\text{ mg/m}^3\\) (IFV) | \\(0{,}25\text{ mg/m}^3\\) (Ca) | \\(0{,}25\text{ mg/m}^3\\) | \\(50\text{ mg/m}^3\\) (Ca) | Kulit, A3 |
+| **Endosulfan (115-29-7)** | **\\(0{,}1\text{ mg/m}^3\\)** (IFV) | \\(0{,}1\text{ mg/m}^3\\) (IFV) | \\(0{,}1\text{ mg/m}^3\\) | — | N.D. | Kulit, A4 |
+| **Lindane (58-89-9)** | **\\(0{,}5\text{ mg/m}^3\\)** | \\(0{,}5\text{ mg/m}^3\\) | \\(0{,}5\text{ mg/m}^3\\) | \\(0{,}5\text{ mg/m}^3\\) | \\(50\text{ mg/m}^3\\) | Kulit, A3 |
+| **Klordan (57-74-9)** | **\\(0{,}5\text{ mg/m}^3\\)** | \\(0{,}5\text{ mg/m}^3\\) | \\(0{,}5\text{ mg/m}^3\\) (Ca) | \\(0{,}5\text{ mg/m}^3\\) | \\(100\text{ mg/m}^3\\) (Ca) | Kulit, A3 |
+| **Endrin (72-20-8)** | **\\(0{,}1\text{ mg/m}^3\\)** | \\(0{,}1\text{ mg/m}^3\\) | \\(0{,}1\text{ mg/m}^3\\) | \\(0{,}1\text{ mg/m}^3\\) | \\(2\text{ mg/m}^3\\) | Kulit |
+| **Toksafen (8001-35-2)** | **\\(0{,}5\text{ mg/m}^3\\)** (PSD 1) | \\(0{,}5\text{ mg/m}^3\\) (ST 1) | \\(0{,}5\text{ mg/m}^3\\) (Ca) | \\(0{,}5\text{ mg/m}^3\\) | \\(200\text{ mg/m}^3\\) (Ca) | Kulit, A3 |
+| **Metoksiklor (72-43-5)** | **\\(10\text{ mg/m}^3\\)** | \\(10\text{ mg/m}^3\\) | Ca (Appendix A) | \\(15\text{ mg/m}^3\\) | \\(5000\text{ mg/m}^3\\) (Ca) | A4 |
+
+*(Notasi: **IFV** = Inhalable Fraction and Vapor; **Kulit / Skin** menandakan kontribusi penyerapan transkutan yang signifikan terhadap dosis internal; **Ca** = potensi karsinogen okupasional NIOSH).*
+
+---
+
+### 10. Indeks Pajanan Biologi (IPB / BEI)
+* **Ketiadaan Regulasi Angka IPB:**
+  * Mengacu pada **Lampiran 4 Permenaker No. 5 Tahun 2018 (Indeks Pajanan Biologi)** dan **ACGIH BEI Documentation**, **TIDAK ADA nilai angka BEI/IPB resmi yang ditetapkan untuk pestisida organoklorin**.
+  * *Rasionalisasi Okupasi:* Nilai BEI/IPB dirancang untuk mencerminkan pajanan inhalasi harian pekerja pada batas TLV-TWA selama 8 jam kerja. Karena organoklorin memiliki waktu paruh sangat panjang (bertahun-tahun), kinetika multikompartemen lambat, rute masuk utama lewat diet lingkungan atau dermal, dan sekuestrasi masif di jaringan adiposa, kadar biologis sesaat tidak berkolerasi linier langsung dengan konsentrasi udara 8-jam kerja shift harian.
+  * Pemantauan biologis di lapangan murni didasarkan pada nilai acuan studi populasi non-terpapar (*biological reference values* / DFG BAR) atau korelasi klinis keracunan akut.
+
+---
+
+### 11. Tatalaksana Medis Gawat Darurat (Intoksikasi Akut)
+Protokol darurat intoksikasi akut organoklorin memerlukan kehati-hatian khusus karena sifat farmakologisnya yang berbeda dari pestisida lain:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│             PROTOKOL EMERGENSI KERACUNAN AKUT ORGANOKLORIN             │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+       ┌────────────────────────────┼────────────────────────────┐
+       ▼                            ▼                            ▼
+1. Proteksi Jalan Napas      2. Kontrol Kejang Agresif   3. Dekontaminasi Khusus
+   • Oksigenasi adekuat         • Benzodiazepin IV          • Kulit: Air & sabun
+   • Intubasi bila koma/status    (Diazepam 5-10 mg bolus)  • GI: Arang aktif
+   • HINDARI SUKSINILKOLIN      • Fenobarbital (refrakter)  • HINDARI MINYAK/LEMAK!
+       │                            │                            │
+       └────────────────────────────┼────────────────────────────┘
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │             PERINGATAN & KONTRAINDIKASI FATAL           │
+       │  • HINDARI EPINEFRIN/KATEKOLAMIN: Memicu VF letal!      │
+       │  • JANGAN BERIKAN ATROPIN/OKSIM: BUKAN inhibitor AChE!   │
+       │  • Eliminasi: Kolestiramin oral (putus siklus bilier)   │
+       └─────────────────────────────────────────────────────────┘
+```
+
+1. **Pengendalian Jalan Napas dan Oksigenasi:**
+   * Amankan patensi jalan napas (*airway*) dan suplementasi oksigen dosis tinggi. Hipoksia dan asidosis akibat kejang harus segera dikoreksi karena memperburuk aritmia miokard.
+2. **Kontrol Bangkitan Kejang (Antikonvulsan Agresif):**
+   * **Benzodiazepin (Lini Pertama):** Berikan **Diazepam \\(5\text{--}10\text{ mg}\\) IV lambat** pada orang dewasa (\\(0{,}2\text{--}0{,}5\text{ mg/kgBB}\\) pada anak), dapat diulang setiap 5–10 menit sampai kejang berhenti. Diazepam menstimulasi reseptor \\(\text{GABA}_A\\) pada situs benzodiazepin, mengkompensasi blokade kanal klorida oleh organoklorin. Alternatif: Lorazepam \\(2\text{--}4\text{ mg}\\) IV.
+   * **Barbiturat (Lini Kedua / Kejang Refrakter):** Bila kejang berlanjut (*status epilepticus*), berikan **Fenobarbital** (\\(15\text{--}20\text{ mg/kgBB}\\) IV lambat). Fenobarbital memperpanjang durasi terbukanya kanal klorida secara independen dari GABA.
+   * Fenitoin kurang efektif untuk mengatasi kejang akibat blokade reseptor GABA (meskipun secara eksperimental dilaporkan dapat mengurangi tremor DDT).
+3. **KONTRAINDIKASI MUTLAK: Epinefrin dan Amin Simpatomimetik:**
+   * **DILARANG KERAS memberikan Epinefrin, Norepinefrin, Dopamin, Isoproterenol, atau efedrin.**
+   * Organoklorin mensensitisasi reseptor beta-adrenergik miokardium secara ekstrem terhadap katekolamin. Pemberian katekolamin eksogen akan langsung mencetuskan fibrilasi ventrikel (VF) atau henti jantung refrakter.
+   * Bila terjadi hipotensi hebat pasca kejang, lakukan resusitasi cairan kristaloid isotonik agresif. Bila vasopresor mutlak diperlukan, pilih vasopresor alfa-1 murni agonis (seperti fenilefrin) atau norepinefrin dengan titrasi sangat rendah di bawah pemantauan EKG kontinu.
+4. **Dekontaminasi Saluran Cerna & BAHAYA MINYAK/LEMAK:**
+   * Berikan **Arang Aktif (*Activated Charcoal*)** dosis tunggal \\(1\text{ g/kgBB}\\) per oral atau via NGT dalam 1–2 jam pertama pasca tertelan.
+   * **KONTRAINDIKASI FATAL:** **Dilarang memberikan susu, minyak nabati, minyak hewani, telur, mentega, atau obat pencahar berbahan dasar minyak (seperti *castor oil* / minyak jarak).** Lemak dan minyak bertindak sebagai pelarut lipofilik yang akan mempercepat dan melipatgandakan penyerapan organoklorin di usus halus. Gunakan katartik salin (magnesium sulfat) jika diindikasikan.
+5. **Interupsi Sirkulasi Enterohepatik (Kolestiramin):**
+   * Berikan resin penukar ion **Kolestiramin (*Cholestyramine*)** per oral dengan dosis **4 gram setiap 6 jam (16 g/hari)**.
+   * Kolestiramin mengikat senyawa organoklorin lipofilik yang diekskresikan melalui empedu ke lumen usus, mencegah reabsorpsi enterohepatik, dan meningkatkan klirens ekskresi fekal hingga 3–7 kali lipat (terbukti secara klinis menurunkan waktu paruh klordekon darah dari 4–6 bulan menjadi hitungan minggu).
+6. **Dekontaminasi Dermal:**
+   * Buka seluruh pakaian kerja yang terkontaminasi dan masukkan ke kantong tertutup. Cuci seluruh permukaan tubuh, kuku, dan rambut menggunakan air mengalir dan detergen/sabun biasa berulang kali. Tenaga medis wajib memakai sarung tangan nitril/butil.
+
+---
+
+### 12. Tatalaksana Okupasi, Kelaikan Kerja, dan Surveilans Komunitas
+* **Kelaikan Kerja (*Fitness for Duty Assessment*):**
+  * **Kontraindikasi Medis Penempatan (*Pre-placement Unfit*):** Individu dengan riwayat epilepsi, gangguan kejang berulang, penyakit neurologis perifer/sentral organik, penyakit hepar kronis (hepatitis, sirosis), gagal ginjal kronis, atau anemia berat dilarang bekerja di area yang memproduksi atau menangani sisa organoklorin.
+  * **Pemindahan Kerja Sementara (*Medical Removal*):** Pekerja yang mengalami gejala tremor persisten, parestesia, peningkatan enzim transaminase hati (*SGOT/SGPT > 2–3 kali ULN*), atau wanita pekerja yang merencanakan kehamilan, sedang hamil, atau sedang menyusui **WAJIB SEGERA DIPINDAHKAN** dari area risiko paparan organoklorin (karena risiko sekresi masif ke ASI dan teratogenesis janin).
+* **Program Surveilans Kesehatan Kerja:**
+  * Pemeriksaan berkala meliputi uji neurobehavioral terstandar, pemeriksaan refleks neurologis dan sensitivitas getar (*vibrotactile test*), evaluasi tremor tangan, pemantauan faal hati (LFTs) dan ginjal, serta pemantauan residu serum pada kelompok berisiko tinggi.
+* **Hirarki Pengendalian Higiene Industri (*Hierarchy of Controls*):**
+  * **Eliminasi & Substitusi (Prioritas Tertinggi):** Menghentikan total penggunaan organoklorin dan menggantinya dengan senyawa biodegradabel nontoksik atau biopestisida.
+  * **Rekayasa Teknik (*Engineering Controls*):** Penutupan proses total (*enclosed system*), sistem ventilasi pembuangan lokal (*Local Exhaust Ventilation / LEV*), dan isolasi material.
+  * **Pengendalian Administratif:** Pembersihan tumpahan segera, rotasi kerja, larangan keras makan/minum/merokok di area kerja, fasilitas *shower* dekontaminasi dan loker ganda untuk memisahkan pakaian bersih dan pakaian kerja.
+  * **Alat Pelindung Diri (APD):**
+    * Saluran napas: Respirator udara bertekanan atau *half/full-face respirator* dengan filter kombinasi uap organik dan partikulat efisiensi tinggi (OV/P100 / HEPA).
+    * Kulit: Sarung tangan pelindung kimia berbahan **karet nitril, butil, atau viton tebal**; pakaian pelindung *coverall* kimia tahan penetrasi pelarut; kacamata *goggles* atau pelindung wajah (*face shield*). Sarung tangan lateks tipis tidak memberikan proteksi adekuat terhadap hidrokarbon terklorinasi.
+
+---
+
+### 13. Regulasi Indonesia dan Diagnosis Penyakit Akibat Kerja (PAK)
+* **Penetapan Diagnosis PAK (Permenkes No. 11 Tahun 2022):**
+  * Menggunakan **7 Langkah Diagnosis PAK** baku:
+    1. Diagnosis klinis (misal: ensefalopati toksik akut, sindrom tremor toksik organoklorin, polineuropati perifer, atau hepatitis toksik).
+    2. Identifikasi pajanan di lingkungan kerja (bukti pajanan organoklorin dari inventaris bahan, MSDS/LDKB, inspeksi higiene industri).
+    3. Hubungan pajanan dengan diagnosis klinis berbasis literatur ilmiah toksikologi kerja.
+    4. Besaran pajanan (analisis konsentrasi udara kerja dibanding NAB Permenaker 5/2018, durasi kerja harian/tahunan, ketiadaan APD memadai).
+    5. Faktor risiko perorangan (riwayat medis, kebiasaan higiene).
+    6. Faktor di luar pekerjaan (pajanan insektisida domestik, konsumsi pangan terkontaminasi).
+    7. Penentuan akhir apakah penyakit merupakan murni PAK (*Occupational Disease*).
+* **Legalitas Klaim Berdasarkan Perpres No. 7 Tahun 2019:**
+  * Tercakup secara eksplisit dalam daftar penyakit akibat kerja:
+    * **Lampiran I.a.35:** *"Penyakit yang disebabkan oleh pestisida"*.
+    * **Lampiran I.a.24:** *"Penyakit yang disebabkan oleh derivat halogen dari hidrokarbon alifatik atau hidrokarbon aromatik"*.
+  * **Klausul Masa Kedaluwarsa JKK (Pasal 2 Ayat 2):** Klaim Jaminan Kecelakaan Kerja (JKK) atas penyakit akibat organoklorin tetap berlaku **hingga paling lama 3 (tiga) tahun setelah hubungan kerja berakhir**. Hal ini sangat relevan bagi organoklorin mengingat onset tumor ganas atau disfungsi organ kronis dapat bermanifestasi lama setelah pekerja pensiun.
+* **Regulasi Larangan Nasional (PP No. 74 Tahun 2001 & PP No. 28 Tahun 2024):**
+  * Sesuai PP 74/2001 tentang Pengelolaan Bahan Berbahaya dan Beracun (B3), senyawa Aldrin, Dieldrin, Endrin, DDT, Klordan, Heptaklor, Toksafen, dan HCB dikategorikan sebagai **B3 yang Dilarang Digunakan (*Banned B3*)** di seluruh wilayah Republik Indonesia. Pengawasan terhadap media lingkungan, vektor, dan residu kimia ditegaskan kembali dalam **PP No. 28 Tahun 2024** (Pasal 180, 246, 247, 1114).
+
+---
+
+### 14. Clinical Pearls dan Jebakan Ujian Board Sp.Ok
+1. **Jebakan Pemberian Atropin atau Pralidoksim (2-PAM):**
+   * Menjawab pemberian atropin atau oksim pada keracunan organoklorin adalah **kegagalan fatal dalam ujian**. Organoklorin **bukan inhibitor asetilkolinesterase** dan tidak menimbulkan penumpukan asetilkolin. Memberikan atropin dosis tinggi pada pasien yang mengalami agitasi atau takikardia akibat organoklorin akan memicu toksisitas antikolinergik sentral yang memperburuk kejang dan fatalitas.
+2. **Jebakan Penggunaan Epinefrin saat Henti Jantung / Syok:**
+   * Jangan pernah memberikan bolus epinefrin pada syok/aritmia akibat keracunan organoklorin. Organoklorin mensensitisasi miosit jantung terhadap katekolamin, sehingga epinefrin akan langsung memicu takiaritmia ventrikel refrakter (*ventricular fibrillation*).
+3. **Jebakan Pemberian Minyak / Susu di Instalasi Gawat Darurat:**
+   * Tindakan memberikan susu atau obat pencahar minyak jarak (*castor oil*) untuk "menetralkan racun" adalah kontraindikasi mutlak; pelarut lipid di saluran cerna akan mempercepat absorpsi organoklorin ke sirkulasi.
+4. **Jebakan Membedakan Gejala Akut: DDT vs Siklodiena/Lindane:**
+   * **DDT:** Onset didominasi **parestesia wajah/perioral dan tremor kasar yang nyata (*DDT shakes*)** sebelum terjadi kejang.
+   * **Siklodiena (Aldrin, Dieldrin, Endosulfan) & Lindane:** Tremor umumnya tidak ada; pasien langsung mengalami **kejang epileptiform tonik-klonik umum mendadak (*sudden violent seizures*)** akibat antagonisme reseptor \\(\text{GABA}_A\\).
+5. **Jebakan Menjawab "IPB Kolinesterase":**
+   * Pemeriksa *board* sering bertanya: *"Berapa ambang batas IPB kolinesterase untuk pekerja terpajan DDT?"* Jawab dengan tegas: **Organoklorin tidak memiliki biomarker kolinesterase dan tidak memiliki IPB resmi di Permenaker 5/2018 maupun ACGIH BEI**. Pemeriksaan kolinesterase hanya berlaku untuk organofosfat dan karbamat.
+6. **Jebakan Mekanisme Endokrin DDE vs DDT:**
+   * Di tingkat biomolekuler, **p,p'-DDE bersifat anti-androgenik kuat** (antagonis reseptor androgen), sedangkan isomer **o,p'-DDT bersifat estrogenik** (agonis reseptor estrogen). Keduanya mengganggu sistem endokrin melalui mekanisme reseptor yang berbeda.
+
+---
+
+### Tabel Ringkas 14 Poin Organoklorin untuk Catatan Board Sp.Ok
+
+| No | Parameter Okupasi | Nilai Spesifik / Rangkuman Inti Berbasis Bukti Ilmiah |
+| :---: | :--- | :--- |
+| **1** | **Sifat Fisik-Kimia & Klasifikasi** | Hidrokarbon terklorinasi; lipofilisitas tinggi (\\(\log K_{ow}\\) DDT \\(= 6{,}36\\); Dieldrin \\(= 4{,}56\\)); kelarutan air sangat rendah; tidak mudah menguap. WHO: Kelas Ia (Endrin, Aldrin, Dieldrin); Ib (Heptaklor); II (DDT, Lindane, Endosulfan). IARC: Lindane (Grup 1); DDT (Grup 2A); Aldrin/Dieldrin/Klordan (Grup 2B). ACGIH: A3 (DDT, Lindane, Aldrin, Dieldrin, Klordan); A4 (Endosulfan). POPs Konvensi Stockholm (*Dirty Dozen*). |
+| **2** | **Sumber / Penggunaan** | Pengendalian malaria/vektor (*DDT IRS*), rayap (*chlordane*), hama pertanian/kapas (*endosulfan*), sampo kutu/skabies (*lindane 1%*). |
+| **3** | **Toksikokinetik** | Absorpsi oral tinggi (>70–90%), inhalasi partikel, dermal tinggi pada lindane & siklodiena (DDT meningkat jika ada pelarut). Terikat lipoprotein darah (99,9%). Deposisi masif di jaringan adiposa (sekuestrasi) dan sekresi ke ASI. Biotransformasi hepar lambat: DDT \\(\rightarrow\\) p,p'-DDE (sangat persisten) & DDD; Aldrin \\(\rightarrow\\) Dieldrin. Induktor kuat CYP450. Ekskresi via feses/bilier & ASI; urin minimal. |
+| **4** | **Toksikodinamik** | **DDT:** Menghambat penutupan kanal Na+ *voltage-gated*, memperpanjang depolarisasi negatif \\(\rightarrow\\) *repetitive firing*. Inhibisi \\(\text{Ca}^{2+}\text{-ATPase}\\). **Siklodiena & Lindane:** Antagonis reseptor \\(\text{GABA}_A\\) pada situs pikrotoksin \\(\rightarrow\\) blokade influks Cl-, hilangnya inhibisi postsinaps \\(\rightarrow\\) kejang mendadak. **Sensitisasi Miokard:** Miokardium tersensitisasi terhadap katekolamin \\(\rightarrow\\) aritmia ventrikel letal. |
+| **5** | **Biomonitoring** | **Bukan kolinesterase** (tidak menghambat AChE). **Serum DDT/DDE:** Distandarisasi terhadap lipid serum (\\(\mu\text{g/g lipid}\\)). **Lindane darah:** Terdeteksi via GC-MS (toksisitas \\(> 20\text{--}50\text{ µg/L}\\)). **Biopsi lemak adiposa:** Beban tubuh (*body burden*). Waktu sampling: kapan saja (*discretionary*) karena kondisi tunak. |
+| **6** | **Waktu Paruh (\\(t_{1/2}\\))** | **p,p'-DDE:** **7–11 tahun** (retensi tubuh hingga 50 tahun). **Dieldrin:** **9–12 bulan** (270–365 hari). **Klordekon:** **4–6 bulan**. **\\(\beta\\)-HCH:** **7–10 tahun**. **Lindane (\\(\gamma\\)-HCH):** **20–26 jam**. **Endosulfan:** **1–7 hari**. |
+| **7** | **Efek Akut** | **DDT:** Parestesia lidah/wajah/bibir, pusing, ataksia, dilanjutkan **tremor kasar menyeluruh**, hipertermia, kejang. **Siklodiena & Lindane:** Tremor absen; **kejang epileptoid tonik-klonik umum timbul mendadak (*sudden seizures*)**, asidosis, henti napas. |
+| **8** | **Efek Kronis** | **Endokrin:** p,p'-DDE anti-androgenik kuat (atrofi testis, oligospermia, disfungsi sperma); o,p'-DDT & \\(\beta\\)-HCH estrogenik (abortus, kanker payudara); disfungsi tiroid. **Kanker:** Limfoma non-Hodgkin (lindane), tumor testis, kanker hepar. **Neurologis:** Sindrom *Kepone shakes*, atrofi nigrostriatal / Penyakit Parkinson (dieldrin, endosulfan). |
+| **9** | **Batas Pajanan (Permenaker 5/2018)** | **DDT:** \\(1\text{ mg/m}^3\\) (A3, Kulit). **Aldrin:** \\(0{,}05\text{ mg/m}^3\\) (IFV, A3, Kulit). **Dieldrin:** \\(0{,}1\text{ mg/m}^3\\) (IFV, A3, Kulit). **Endosulfan:** \\(0{,}1\text{ mg/m}^3\\) (IFV, A4, Kulit). **Lindane:** \\(0{,}5\text{ mg/m}^3\\) (A3, Kulit). **Klordan:** \\(0{,}5\text{ mg/m}^3\\). |
+| **10** | **BEI / IPB** | **TIDAK ADA nilai angka BEI/IPB resmi** di Permenaker No. 5 Tahun 2018 maupun ACGIH. Evaluasi mengandalkan rujukan biologis populasi (BAR) atau korelasi klinis. |
+| **11** | **Tatalaksana Akut** | **Antikonvulsan:** Diazepam \\(5\text{--}10\text{ mg}\\) IV (lini 1); Fenobarbital \\(15\text{--}20\text{ mg/kg}\\) IV (lini 2). **KONTRAINDIKASI KATEKOLAMIN:** Hindari epinefrin (memicu VF letal). **KONTRAINDIKASI LEMAK:** Dilarang memberi susu/minyak di GI (meningkatkan absorpsi); beri arang aktif \\(1\text{ g/kg}\\). **Kolestiramin:** \\(4\text{ g}\\) tiap 6 jam oral (memutus sirkulasi enterohepatik). Cuci kulit dengan sabun. |
+| **12** | **Tatalaksana Individu & Komunitas** | Kontraindikasi penempatan: riwayat epilepsi, penyakit hepar kronis. Pindah kerja sementara: timbul tremor, peningkatan transaminase hepar, pekerja hamil/menyusui. Pengendalian teknis sistem tertutup dan ventilasi pembuangan. APD: Respirator OV/P100, sarung tangan nitril/butil tebal. |
+| **13** | **Regulasi & Aspek Legal** | 7 Langkah Diagnosis PAK (Permenkes 11/2022). Diakui dalam Perpres 7/2019 Lampiran I.a.35 ("Pestisida") & I.a.24 ("Derivat halogen hidrokarbon"). Kedaluwarsa klaim JKK maksimal 3 tahun pasca pemutusan kerja (Pasal 2 Ayat 2). B3 dilarang menurut PP 74/2001; pengawasan PP 28/2024. |
+| **14** | **Clinical Pearl & Jebakan Ujian** | 1. Dilarang beri atropin/oksim (bukan inhibitor kolinesterase). 2. Dilarang beri epinefrin (sensitisasi miokard \\(\rightarrow\\) VF). 3. Dilarang beri susu/minyak di GI. 4. DDT memicu parestesia & tremor; Siklodiena/Lindane kejang mendadak tanpa tremor. 5. Tidak ada IPB/BEI resmi. 6. DDE anti-androgenik, o,p'-DDT estrogenik. |
+
+---
+
+Apakah Anda ingin kita melanjutkan bedah komparatif untuk golongan **Karbamat** atau **Piretroid** berikutnya untuk melengkapi seri toksikologi pestisida ujian board Anda?
