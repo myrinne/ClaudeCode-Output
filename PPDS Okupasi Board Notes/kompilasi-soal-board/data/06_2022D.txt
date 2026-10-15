@@ -1,0 +1,426 @@
+### mcq | TOX | Remed Agt 2022
+Q: Some combinations of chemicals produce different effects from those attributed to each individually. When the effects of two or more different kinds of chemicals are amplified when given together (the total effect is greater than the sum of the individual effects), it is called:
+O: Potentiation
+O: Additivity
+O: Antagonism
+O: Synergism
+O: Null
+A: Synergism
+### mcq | HI | Remed Agt 2022
+Q: Which of the following statements is FALSE regarding biomarkers?
+O: It cannot be used to estimate exposure
+O: Typically, they are the agents or their metabolites in a biological specimen
+O: Biomarkers of effect should reflect early reversible changes in the organism
+O: Provides information about what chemicals get into people
+O: Objective, quantifiable characteristics of biological processes
+A: It cannot be used to estimate exposure
+### mcq | BISING | Remed Agt 2022
+Q: Which of the following is NOT effective in reducing vibration hazards?
+O: Training and education in controlling vibration
+O: Ensuring all equipment is properly maintained
+O: Use a personal vibration monitor at work
+O: Install vibration-damping seats
+O: Limiting time exposed to vibration
+A: Use a personal vibration monitor at work
+### mcq | PARU | Remed Agt 2022
+Q: Which of the following statements is FALSE regarding the purpose of chest radiography in dust-exposed workers?
+O: Chest radiography has been a useful tool in screening dust-exposed workers
+O: Chest radiography can evaluate functional impairment of the lung
+O: Chest radiography has been helpful in exposure–response relationships
+O: Chest radiography cannot provide certainty about the etiology of observed findings
+O: Chest radiography has been a useful tool in surveillance of dust-exposed workers
+A: Chest radiography can evaluate functional impairment of the lung
+### mcq | K3 | Remed Agt 2022
+Q: Which of the following occupational health hazard control measures focuses on processes and procedures that reduce the severity, duration, and frequency of risk exposure?
+O: Engineering controls
+O: Inspection
+O: Personal protective equipment
+O: Audits
+O: Administrative controls
+A: Administrative controls
+### mcq | HI | Remed Agt 2022
+Q: Spot urine specimens have been used in biomonitoring of xenobiotic exposure in several epidemiological studies. However, differences in the nature of exposure may affect their reliability to represent exposure profiles in individuals. Thus ____ is used to compensate for urine dilution and has been suggested to improve the predictability of chemical exposure over time.
+O: Bootstrapping
+O: 24-hour specimen
+O: Predictive physiologically based model
+O: Creatinine correction
+O: Genotyping
+A: Creatinine correction
+D: Kunci diskusi Des 2022 (Belajar bersama): Bootstrapping. Kunci diskusi Jan 2026: Creatinine correction.
+### mcq | TOX | Remed Agt 2022
+Q: Which of the following statements is TRUE regarding the toxic effects of metals?
+O: Elemental mercury (liquid) is highly absorbed from the gastrointestinal tract and appears to be very toxic
+O: Some toxic metals bind selectively to certain macromolecules and never cause toxicity
+O: The toxic mechanism is usually via reactive oxygen species (ROS) generation, enzyme inactivation, and suppression of antioxidant defense
+O: Anemia can develop with Pb poisoning through inhibition of delta-aminolevulinic acid dehydratase (ALAD) and hyperactivation of ferrochelatase in heme biosynthesis
+O: Heavy metal toxicity is not dose dependent
+A: The toxic mechanism is usually via reactive oxygen species (ROS) generation, enzyme inactivation, and suppression of antioxidant defense
+### mcq | ERGO | Remed Agt 2022
+Q: A 39-year-old male complains of right wrist pain and grip weakness for two weeks. He works as a packaging line operator in an instant noodle factory. No visible swelling. When his right thumb is flexed and held inside a fist and he actively deviates the wrist, it causes sharp pain along the radial wrist at the first dorsal compartment. What is the name of the test that causes the sharp pain?
+O: Tinel test
+O: Phalen test
+O: Tenosynovitis test
+O: Finkelstein test
+O: Speed test
+A: Finkelstein test
+### mcq | FIS | Remed Agt 2022
+Q: Which of the following statements is FALSE regarding heat-related illness?
+O: Salt tablets are not useful in the treatment of heat-induced illness
+O: Heat exhaustion symptoms are nausea, weakness, fatigue, myalgia, dizziness
+O: Cerebellum is one of the latest structures affected by heat stroke
+O: Heat stroke victims are classically dry
+O: Heat exhaustion laboratory findings are haemoconcentration
+A: Cerebellum is one of the latest structures affected by heat stroke
+N: Versi recall Des 2022 (dan 2021) memakai opsi "Salt tablets are useful..." sebagai pernyataan salah.
+### mcq | PARU | Remed Agt 2022
+Q: Which of the following statements is FALSE regarding occupational asthma?
+O: The mechanism of the vast majority of occupational asthma cases is irritant-induced occupational asthma
+O: Symptoms can occur at work in response to an exposure or might be delayed, occurring several hours after work
+O: Exam findings are typically non-specific; patients often have normal physical examinations between asthma attacks
+O: The diagnosis is based on a combination of medical and exposure history, physical exam, and medical tests
+O: Following the development of sensitizer-induced occupational asthma, exposure to the triggering sensitizer will cause an asthmatic response even at low levels of exposure
+A: The mechanism of the vast majority of occupational asthma cases is irritant-induced occupational asthma
+### mcq | TOX | Remed Agt 2022
+Q: The amount of a substance that entered the body and was taken up by organs or particular tissues is called:
+O: Total dose
+O: Lethal dose
+O: Internal dose
+O: Effective dose
+O: Administered dose
+A: Internal dose
+### mcq | PARU | Remed Agt 2022
+Q: In order to make a diagnosis of silicosis:
+O: Clinical evidence of the disease through computerized tomography (CT scan) is a must
+O: The severity of the disease always depends on the latency period
+O: A lung biopsy is the only tool used to establish the diagnosis of silicosis
+O: The ILO International Classification of Radiographs of Pneumoconioses is needed to exclude alternative diagnoses
+O: A history of exposure to respirable crystalline silica is needed
+A: A history of exposure to respirable crystalline silica is needed
+### mcq | K3 | Remed Agt 2022
+Q: Which of the following is NOT part of the hazard identification step of the risk assessment process?
+O: Hazardous substances identification
+O: Identifying the sources of exposure
+O: Workplace air monitoring
+O: Describing the physical/chemical properties of the toxic substance
+O: Identifying the exposed worker
+A: Workplace air monitoring
+D: Kunci diskusi Des 2022: Identifying the exposed worker. Kunci diskusi Jan 2026: Workplace air monitoring.
+### mcq | FIS | Remed Agt 2022
+Q: Symptoms of this condition are fatigue, weakness, irritability, dizziness, and headache:
+O: Dehydration
+O: Heat cramps
+O: Heat stroke
+O: Heat exhaustion
+O: Heat stress
+A: Heat exhaustion
+### mcq | KULIT | Remed Agt 2022
+Q: Which of the following agents is NOT likely to act as a skin sensitizer?
+O: Cobalt
+O: Acrylates
+O: Alcohols
+O: Chromium
+O: Nickel
+A: Alcohols
+### mcq | HI | Remed Agt 2022
+Q: The use of dilution ventilation may be appropriate in which circumstances?
+O: The contaminant is nontoxic at low concentrations
+O: It is not possible to dilute the level of the contaminant to well below the exposure limit
+O: The contaminant may be controlled by active dilution ventilation which allows air to circulate freely through open windows, doors, or ventilation grilles
+O: The contaminant is generated at one particular point and may be generated in a larger area or from several different sources
+O: The contaminant is generated quickly and builds up gradually over a period of time
+A: The contaminant is nontoxic at low concentrations
+### mcq | KULIT | Remed Agt 2022
+Q: Due to the chemical additives in the gloves, latex gloves are more likely to trigger:
+O: Type 4 hypersensitivity reaction
+O: Atopic diseases
+O: Urticaria
+O: Anaphylactic reaction
+O: Neurodermatitis
+A: Type 4 hypersensitivity reaction
+### mcq | PARU | Remed Agt 2022
+Q: Workers exposed to silica are at an increased risk of ____ infection.
+O: Oral cavity
+O: Asbestosis
+O: Tuberculosis
+O: Pleuritis
+O: Hepatitis
+A: Tuberculosis
+### mcq | ERGO | Remed Agt 2022
+Q: The management of work-related musculoskeletal disorders (WMSDs) involves several approaches, including:
+O: Stretching, which is the simplest approach because it doesn't need to be specially designed but offers the benefits of increasing circulation and reducing muscle tension
+O: The use of splints to restrict the movement of the injured joint
+O: Heat application, which is recommended for muscle pain relief especially for injuries with significant inflammation and swelling
+O: Anti-inflammatory drugs, which are the first approach to treatment of WMSDs
+O: The use of ice (cold application) immediately after an injury is recommended in case of muscle spasm
+A: Stretching, which is the simplest approach because it doesn't need to be specially designed but offers the benefits of increasing circulation and reducing muscle tension
+### mcq | FIS | Remed Agt 2022
+Q: Which of the following parts of the body is most sensitive to the effects of ionizing radiation?
+O: Liver
+O: Brain
+O: Bone marrow
+O: Lung
+O: Kidney
+A: Bone marrow
+### mcq | PARU | Remed Agt 2022
+Q: The radiographic appearance of asbestosis tends to be characterized by irregular opacities in ____ of both lung fields.
+O: Middle zone
+O: Lower one-third
+O: Lower two-thirds
+O: Upper two-thirds
+O: Upper one-third
+A: Lower one-third
+D: Kunci diskusi Jan 2026: Lower one-third. Ujian Des 2022 (isian) memakai jawaban lower two-thirds.
+### mcq | HI | Remed Agt 2022
+Q: Aerosol-removing respirators:
+O: P-series filters may be used for any solid or liquid airborne particulate hazard
+O: Use activated carbon to interact with the particulates, gas, or vapor molecules to clean the air
+O: N-series filters are intended for the removal of any particle including oil-based liquid aerosols
+O: Offer respiratory protection against airborne particulate matter, gases, vapors, or oxygen deficiency
+O: R-series filters are restricted to use in atmospheres free of oil aerosols
+A: P-series filters may be used for any solid or liquid airborne particulate hazard
+### mcq | TOX | Remed Agt 2022
+Q: Which of the following is NOT an important site of toxicant storage in the body?
+O: Liver
+O: Muscle
+O: Plasma protein
+O: Bone
+O: Adipose tissue
+A: Muscle
+### mcq | HI | Remed Agt 2022
+Q: A high-efficiency particulate air (HEPA) filter can theoretically remove at least ____ percent of any airborne particles with a size of 0.3 micrometers in diameter.
+O: 98.6
+O: 89
+O: 95.5
+O: 99.97
+O: 100
+A: 99.97
+### mcq | K3 | Remed Agt 2022
+Q: Health care workers are exposed to occupational hazards including:
+O: Anesthetic gases, ionizing radiation, inorganic dust
+O: Silica, asbestos, shift work
+O: Biological agents, solvents, heavy metals
+O: Safety hazards, cytotoxic agents, solvents
+O: Shift work, long working hours, biological agents
+A: Shift work, long working hours, biological agents
+### mcq | EPI | Remed Agt 2022
+Q: Given a 2 × 2 contingency table with data in which any expected value is less than 5, the appropriate test is:
+O: Kruskal–Wallis
+O: Fisher's exact
+O: Chi-square
+O: Logistic regression
+O: Mann–Whitney U
+A: Fisher's exact
+### mcq | HI | Remed Agt 2022
+Q: According to ACGIH, ____ represents the levels of determinants that are most likely to be observed in specimens collected from healthy workers who have been exposed to chemicals to the same extent as workers with inhalation exposure at the TLV.
+O: Biological Exposure Index
+O: Biomarker of effect
+O: Biomarker of exposure
+O: Biomarker of susceptibility
+O: Exposure action level
+A: Biological Exposure Index
+### mcq | TOX | Remed Agt 2022
+Q: According to the WHO classification, substances with an oral LD50 for the rat of 100 mg/kg body weight are classified as:
+O: Moderately hazardous
+O: Highly hazardous
+O: Slightly hazardous
+O: Unlikely to present acute hazard
+O: Extremely hazardous
+A: Moderately hazardous
+### mcq | ERGO | Remed Agt 2022
+Q: Which of the following statements is FALSE regarding awkward or static posture?
+O: When using a neutral body position, workers work with maximum efficiency and use the least amount of energy
+O: The longer or more often a static or awkward body position is used, the more likely the worker will be injured
+O: When body postures are near the extreme of their range of movement, stretching and compression of tendons and nerves occur
+O: Compared to the lower back, the upper back is the body part most affected by poor working postures such as working with the upper body bent forward, backward, or twisted
+O: When muscles stay contracted for too long, blood flow can be affected
+A: Compared to the lower back, the upper back is the body part most affected by poor working postures such as working with the upper body bent forward, backward, or twisted
+### mcq | TOX | Remed Agt 2022
+Q: What type of anemia is commonly seen in lead poisoning?
+O: Megaloblastic anemia
+O: Microcytic hypochromic anemia
+O: Aplastic anemia
+O: Deficiency anemia
+O: Hemolytic anemia
+A: Microcytic hypochromic anemia
+### mcq | PSI | Remed Agt 2022
+Q: Which of the following statements is TRUE regarding the risks associated with shift work or long working hours?
+O: Regularly getting one hour less sleep per night will have no effect on your performance
+O: The sun's light and dark cycles have minimal effect on sleep/wake cycles
+O: Reduced learning and poor ability to assess risk are associated with sleep deprivation
+O: Performance impairments after being awake 10 hours or more are similar to impairments due to alcohol intoxication
+O: Most people can adjust to sleeping less than 7 hours without negative consequences
+A: Reduced learning and poor ability to assess risk are associated with sleep deprivation
+### mcq | ERGO | Remed Agt 2022
+Q: With regard to the ergonomic approach, when typing the wrists should remain:
+O: Straight
+O: Fixed
+O: Motionless
+O: Bent
+O: Twisted
+A: Straight
+### mcq | ERGO | Remed Agt 2022
+Q: A worker has a lifting-related injury. Which of the following is LEAST likely to have occurred?
+O: Compression damage to the intervertebral disc
+O: Herniated disc
+O: Damage to the shoulder rotator cuff
+O: Low back strain
+O: Damage to the erector spinae muscles
+A: Damage to the shoulder rotator cuff
+D: Kunci diskusi Des 2022: Damage to the erector spinae muscles. Kunci diskusi Jan 2026: Damage to the shoulder rotator cuff.
+### mcq | ERGO | Remed Agt 2022
+Q: An ergonomics professional uses the Rapid Upper Limb Assessment (RULA) to evaluate a worker pulling products from an assembly line. The calculated RULA score is 5. What can be concluded?
+O: Working in a posture that could present some risk; investigate and correct the task
+O: Working in the worst posture with an immediate risk; investigate and change immediately to prevent injury
+O: Working in a poor posture with a risk of injury; investigate and change the task in the near future
+O: Working in the best posture with no risk
+O: Another assessment is needed before conclusions can be made
+A: Working in a poor posture with a risk of injury; investigate and change the task in the near future
+### mcq | BISING | Remed Agt 2022
+Q: Which of the following statements is FALSE about occupational noise-induced hearing loss (NIHL)?
+O: High-frequency losses rarely exceed 75 dB, and low-frequency losses rarely exceed 40 dB
+O: Occupational NIHL is generally bilateral
+O: As occupational NIHL progresses, workers usually notice difficulty understanding speech when high levels of background noise are present; however, it can be medically or surgically corrected
+O: Occupational NIHL is always in the form of sensorineural hearing loss
+O: Early noise-induced hearing loss tends to affect higher-pitched consonant sounds
+A: As occupational NIHL progresses, workers usually notice difficulty understanding speech when high levels of background noise are present; however, it can be medically or surgically corrected
+### mcq | ERGO | Remed Agt 2022
+Q: The NIOSH lifting equation is intended to analyze jobs involving:
+O: Pushing loads
+O: Static manual material handling
+O: Carrying loads
+O: Repeated activity
+O: Lifting materials with chain hoists
+A: Static manual material handling
+D: Kunci diskusi Des 2022: Carrying loads. Kunci diskusi Jan 2026: Static manual material handling.
+### mcq | ERGO | Remed Agt 2022
+Q: In determining seat height adjustability, which of the following anthropometric measurements would be MOST useful?
+O: Sitting height
+O: Thigh clearance
+O: Popliteal height
+O: Lower leg clearance
+O: Elbow height
+A: Popliteal height
+### mcq | EPI | Remed Agt 2022
+Q: According to the Bradford Hill criteria of causation, "the demonstration of the appropriate temporal sequence, so that the causative agent occurs prior to the outcome" is the definition of:
+O: Strength of association
+O: Biological plausibility
+O: Biological gradient
+O: Temporality
+O: Coherence
+A: Temporality
+### mcq | FIS | Remed Agt 2022
+Q: Which of the following is a measure of heat stress in direct sunlight, which takes into account temperature, humidity, wind speed, sun angle, and cloud cover (solar radiation), and is widely used in industrial settings?
+O: Globe temperature
+O: Heat index
+O: Wet bulb globe temperature
+O: Globe temperature and humidity
+O: Dry bulb temperature
+A: Wet bulb globe temperature
+### mcq | K3 | Remed Agt 2022
+Q: Providing personal protective equipment, i.e., N-95 masks for health care workers who are taking care of COVID-19 patients, can be categorized as:
+O: Disability limitation
+O: Health promotion
+O: Early diagnosis & prompt treatment
+O: Rehabilitation
+O: Specific protection
+A: Specific protection
+### short | BISING | Remed Agt 2022, Des 2022
+Q: Name 3 chemical agents that have ototoxic properties.
+A: Benzene, toluene, xylene.
+N: Diskusi menambahkan: solven lain (styrene, n-hexane, CS2, TCE), logam (Pb, Hg, As), asfiksian (CO, HCN).
+### short | BISING | Remed Agt 2022
+Q: What is used for noise frequency analysis?
+A: Octave band analyzer.
+### short | TOX | Remed Agt 2022
+Q: What combination of solvents is added to gasoline to elevate the octane rating?
+A: BTX (benzene, toluene, xylene).
+### short | HI | Remed Agt 2022, Des 2022
+Q: Mention 3 environmental conditions that can affect the accuracy and usefulness of direct-reading instruments in industrial hygiene.
+A: Air pressure, humidity, temperature.
+### short | TOX | Remed Agt 2022
+Q: What enzyme should be checked on the erythrocytes of workers exposed to organophosphate pesticides?
+A: Acetylcholinesterase.
+### short | BISING | Remed Agt 2022
+Q: The ____ is the name of the clinical rating scheme, introduced in 1987, that established separate grading criteria for vascular and neurologic signs and symptoms in hand-arm vibration syndrome.
+A: Stockholm Workshop Scale.
+### short | BISING | Remed Agt 2022
+Q: A standard threshold shift is a change in hearing threshold relative to the baseline audiogram of an average of 10 dB or more at ____ Hz in either ear.
+A: 2000, 3000, and 4000 Hz.
+### short | PARU | Remed Agt 2022, Des 2022
+Q: ____ is the most reliable diagnostic tool for monitoring respiratory function in workers exposed to respiratory hazards.
+A: Spirometry.
+### short | TOX | Remed Agt 2022
+Q: When a worker is exposed to zinc oxide from the welding process and develops fever, we suspect the worker has a condition called ____.
+A: Metal fume fever.
+### short | PSI | Remed Agt 2022, Des 2022
+Q: The WHO definition of ____ is: "A state of well-being in which an individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively, and is able to make a contribution to his or her community."
+A: Mental health.
+### short | EPI | Remed Agt 2022
+Q: The "PICO" framework is used in evidence-based medicine. PICO stands for ____.
+A: Population, Intervention, Comparison, Outcome.
+### short | PARU | Remed Agt 2022
+Q: ____ is a disease caused by dusts such as coal, asbestos, and silica.
+A: Pneumoconiosis.
+### short | HI | Remed Agt 2022
+Q: According to ACGIH, ____ refers to the concentration that should not be exceeded during any part of the working exposure.
+A: TLV-Ceiling (TLV-C).
+D: Docx asli menulis "TLV"; diskusi Jan 2026 menegaskan TLV-Ceiling.
+### short | ERGO | Remed Agt 2022
+Q: TRUE/FALSE: Just like repetition, using a lot of force is a problem because it does not allow time for the body to fully recover between movements.
+A: TRUE.
+### short | EPI | Remed Agt 2022, Des 2022
+Q: The process of assigning patients by chance to groups that receive different treatments in a clinical trial is called ____.
+A: Randomization.
+### short | TOX | Remed Agt 2022
+Q: In typical agricultural work situations, ____ and ____ are considered the common routes of pesticide exposure.
+A: Dermal and inhalation (diskusi 2026: dermal, inhalation, ingestion).
+D: Docx asli menulis "Inhalation; Ingestion".
+### short | TOX | Remed Agt 2022
+Q: ____ is considered a biomarker of exposure to elemental mercury vapor.
+A: Urine mercury.
+### short | TOX | Remed Agt 2022, Des 2022
+Q: According to the ACGIH classification of carcinogenicity, an agent classified in group A1 means ____.
+A: Confirmed human carcinogen.
+### short | TOX | Remed Agt 2022
+Q: Give 1 example of a chemical asphyxiant gas that prevents the tissues from getting enough oxygen.
+A: Carbon monoxide or cyanide.
+### short | TOX | Remed Agt 2022
+Q: Workers can be monitored for toluene exposure by measuring ____ concentrations.
+A: Hippuric acid (diskusi 2026 menambahkan o-cresol, p-cresol).
+### short | TOX | Des 2022
+Q: [Recall] Order the routes by which a chemical enters the body from the most effective to the least effective.
+A: Catatan diskusi: inhalation, oral, dermal. (Recall awal menulis IV, subcutaneous, oral, inhalation, dermal — analogi obat; peserta lupa redaksi.)
+### short | TOX | Des 2022
+Q: Name 3 sites of toxicant storage in the body.
+A: Bone, adipose tissue, liver, kidney (juga plasma protein).
+D: Recall awal menulis "bone, adipose tissue, bone marrow".
+### short | PSI | Des 2022
+Q: Mention 3 hazards that can cause psychological risk.
+A: Long working hours, shift work, role ambiguity (diskusi: monotony, bahan kimia tertentu, bising, pestisida).
+### short | HI | Des 2022
+Q: A concentration below which nearly all workers should not experience adverse health effects is indicated by the ____.
+A: BEI.
+### short | PARU | Des 2022
+Q: ____ is the most common pneumoconiosis.
+A: Silicosis (ada yang mengingat soal: sebutkan 3 pneumokoniosis terbanyak — silicosis, asbestosis, byssinosis).
+### short | EPI | Des 2022
+Q: ____ is a form of selection bias in occupational epidemiology studies, typically characterized by lower relative mortality and morbidity rates from all causes combined and from selected causes in an occupational cohort, possibly masking an increased risk of the disease under study.
+A: Healthy worker effect.
+### short | HI | Des 2022
+Q: ____, usually set at ½ the TLV, requires you to take some kind of administrative or engineering control measure, and possibly monitor for exposure.
+A: Action level.
+### short | EPI | Des 2022
+Q: Any systematic error in the design, conduct, or analysis of a study that results in a mistaken estimate of an exposure's effect on the risk of disease is called ____.
+A: Bias.
+### short | TOX | Des 2022
+Q: Factors that influence the response to chemicals in each individual?
+A: Age, gender, health status, hormonal status, genetics.
+### short | PARU | Des 2022
+Q: Workers exposed to silica are at an increased risk of ____ infection.
+A: Tuberculosis.
+### short | FIS | Des 2022
+Q: True/False: Bone marrow is the part of the body most sensitive to the effects of ionizing radiation.
+A: True.
+### short | PARU | Des 2022
+Q: The radiographic appearance of asbestosis tends to be characterized by irregular opacities in ____ of both lung fields.
+A: Lower two-thirds.

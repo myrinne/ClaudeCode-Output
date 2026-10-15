@@ -1,0 +1,383 @@
+### short | PARU | 2021 (Des)
+Q: Occupational lung disease among farmers of sugarcane is known as ____.
+A: Bagassosis.
+### short | TOX | 2021 (Des)
+Q: The organic mercury form that can be found in the flesh of seawater animals is ____.
+A: Methyl mercury.
+### short | FIS | 2021 (Des)
+Q: Among workers exposed to radiant heat, muscle pain or spasm is a feature of ____.
+A: Heat cramps.
+### short | KULIT | 2021 (Des)
+Q: Latex gloves are more likely to trigger a type ____ hypersensitivity reaction due to chemical additives in the gloves.
+A: IV.
+### short | ERGO | 2021 (Des)
+Q: A 45-year-old typist complains of numbness of her hands after being at work for a few hours. She describes a burning sensation on the palmar surface of the first three digits; the symptoms have been worsening with time and are exacerbated at night. On physical exam, Phalen and Tinel tests are positive. What is the most likely diagnosis?
+A: Carpal tunnel syndrome.
+### short | ERGO | 2021 (Des)
+Q: A 39-year-old male complains of right wrist pain and grip weakness for two weeks. He works as a packaging line operator in an instant noodle factory. No visible swelling. When his right thumb is flexed and held inside a fist and he actively deviates the wrist, it causes sharp pain along the radial wrist at the first dorsal compartment. Wrist X-ray is normal. What is the name of the test that causes the sharp pain?
+A: Finkelstein test.
+### short | ERGO | 2021 (Des)
+Q: ____ is considered an important occupational low back pain risk factor.
+A: Manual handling / heavy lifting.
+### short | EPI | 2021 (Des)
+Q: ____ is a form of selection bias in occupational epidemiology studies that is typically characterized by lower relative mortality and morbidity rates from all causes combined and from selected causes in an occupational cohort, possibly masking an increased risk of the disease under study.
+A: Healthy worker effect.
+### short | TOX | 2021 (Des)
+Q: A 36-year-old male farm worker presents to the emergency department with diarrhea, vomiting, diaphoresis, and tremors, which began 12 hours after he walked through a field that had just been sprayed with insecticide. BP 100/70 mmHg, pulse 56/min, RR 18/min, temperature 36.7 °C. He is diaphoretic with diffuse muscle twitching and tremor. What is the most likely cause of the patient's symptoms?
+A: Organophosphates.
+### short | EPI | 2021 (Des)
+Q: The ability of a screening test to correctly identify those people who have the disease of interest is known as the test's ____.
+A: Sensitivity.
+### short | EPI | 2021 (Des)
+Q: The epidemiologic triad of disease causation refers to ____.
+A: Agent–host–environment.
+### short | ERGO | 2021 (Des)
+Q: Regarding office ergonomics, the top of the computer monitor should generally be at ____ level.
+A: Eye.
+### short | HI | 2021 (Des)
+Q: ____, usually set at ½ the TLV, requires you to take some kind of administrative or engineering control measure, and possibly monitor for exposure.
+A: Action level.
+### short | BISING | 2021 (Des)
+Q: The abbreviation STS according to OSHA is ____.
+A: Standard Threshold Shift.
+### short | PARU | 2021 (Des)
+Q: The characteristic pulmonary function changes of asbestosis are predominantly ____.
+A: Restrictive impairment.
+### short | FTW | 2021 (Des)
+Q: A ____ is something the patient cannot physically do.
+A: Work limitation.
+### short | TOX | 2021 (Des)
+Q: What combination of solvents is added to gasoline to elevate the octane rating?
+A: BTX (benzene, toluene, xylene).
+### short | HI | 2021 (Des)
+Q: A concentration below which nearly all workers should not experience adverse health effects indicates the ____.
+A: Biological Exposure Index (kunci Google Form 2021).
+D: Soal serupa Feb 2024: kunci diskusi = TLV.
+### short | BISING | 2021 (Des)
+Q: With repeated exposure to noise of sufficient intensity, a permanent threshold shift (PTS) will gradually appear first in the range of ____ Hz.
+A: 3000–6000 Hz.
+### short | HI | 2021 (Des)
+Q: An exposure to acetone at the following concentrations and durations: 1000 ppm for 3 hours, 500 ppm for 2 hours, 200 ppm for 3 hours. The worker would have an 8-hour TWA exposure of ____ ppm.
+A: 575 ppm.
+### mcq | TOX | 2021 (Des)
+Q: The similarity between benzene and toluene toxicity is in terms of:
+O: Does not undergo metabolic reactions
+O: Cannot cause bone marrow depression
+O: Causes central nervous system depression
+O: Produces toxic benzoquinone metabolites
+O: Have identical specific antidote
+A: Causes central nervous system depression
+### mcq | TOX | 2021 (Des)
+Q: Chronic alcoholism leads to decreased absorption of the following substance:
+O: Na-EDTA
+O: Oxygen
+O: Riboflavin
+O: Thiamine
+O: Co-enzyme Q-10
+A: Thiamine
+### mcq | TOX | 2021 (Des)
+Q: The following mechanism occurs in carbon monoxide intoxication:
+O: Decreased haemoglobin concentration
+O: Lipid peroxidase
+O: Chelating agent is the antidote
+O: Muscarinic activation
+O: Cellular hypoxia
+A: Cellular hypoxia
+### mcq | TOX | 2021 (Des)
+Q: Which of the following blood results has the highest sensitivity in diagnosing cyanide poisoning?
+O: Metabolic acidosis
+O: Plasma lactate levels > 8 mmol/L
+O: Raised total leucocyte counts
+O: Raised serum transaminase levels
+O: Serum creatinine levels > 1.5 mg/dL
+A: Plasma lactate levels > 8 mmol/L
+### mcq | TOX | 2021 (Des)
+Q: A fabric worker is referred to your occupational medicine clinic after an incidental finding of elevated aminotransferase levels on a routine physical. The plant where she works uses various solvents in the manufacture of acrylic fibers. She denies alcohol or IV drug abuse. Viral serological tests are negative. You should next recommend:
+O: Removal from the worksite for 2–6 weeks with repeat liver enzymes
+O: Post-exposure prophylaxis in accordance with the OSHA Bloodborne Pathogen Standard
+O: Random drug testing to her employer
+O: Tumour marker tests
+O: A liver biopsy
+A: Removal from the worksite for 2–6 weeks with repeat liver enzymes
+### mcq | TOX | 2021 (Des)
+Q: A 30-year-old male presents to the emergency department with rhinorrhea and excessive lacrimation for the last 30 minutes, after excessive inhalation of an ammonia-containing cleaner one hour ago. Which finding would best predict future development of chronic lung disease?
+O: Presence of chemical burns on the lips and nose
+O: Reduced lung capacity on presentation to the emergency department
+O: Injury to the bronchial lining on bronchoscopy
+O: Low oxygen saturation on presentation to the emergency department
+O: Unconsciousness
+A: Injury to the bronchial lining on bronchoscopy
+### mcq | TOX | 2021 (Des)
+Q: What is a more specific biomarker of nephrotoxicity due to chronic cadmium exposure?
+O: Serum creatinine
+O: Beta-2-microglobulinuria
+O: Permanent proteinuria
+O: Microalbuminuria
+O: Cystatin-C
+A: Beta-2-microglobulinuria
+### mcq | PARU | 2021 (Des)
+Q: A 45-year-old male industrial worker presents with progressive dyspnoea. SpO2 90% on room air, RR 24/min, wheezes on lung exam. Chest X-ray: well-demarcated nodules, rounded fibrotic lesions concentrated in the upper lobes. Lung biopsy under polarized light microscopy shows birefringent polyhedral particles. The patient may have been exposed to:
+O: Coal dust
+O: Mycobacterium tuberculosis
+O: Silicates
+O: Asbestos
+O: Cotton dust
+A: Silicates
+### mcq | TOX | 2021 (Des)
+Q: The pathognomonic feature of lead-induced renal disease found on biopsy is:
+O: Interstitial fibrosis with tubular atrophy
+O: Intranuclear inclusion bodies in the glomeruli
+O: No pathognomonic feature
+O: Glomerulosclerosis
+O: Tubular hypertrophy
+A: No pathognomonic feature
+### mcq | TOX | 2021 (Des)
+Q: Which of the following statements regarding hydrofluoric acid (HF) is true?
+O: HF does not cause immediate pain
+O: HF has poor skin penetration
+O: Calcium gluconate gel (2.5%) can be used as the first aid kit
+O: HF is relatively harmless in concentrations below 50%
+O: Pain is delayed up to 3 hours after contact with 10% HF
+A: Calcium gluconate gel (2.5%) can be used as the first aid kit
+### mcq | PARU | 2021 (Des)
+Q: Occupational asthma is typically characterized by the following:
+O: Irreversible bronchoconstriction
+O: Chest tightness on the first day of exposure
+O: Negative methacholine challenge test
+O: An increased peak expiratory flow rate associated with exposure
+O: A decrease in FEV1 of >10–20% on pre- and post-shift spirometry testing
+A: A decrease in FEV1 of >10–20% on pre- and post-shift spirometry testing
+### mcq | TOX | 2021 (Des)
+Q: Which of the following statements is FALSE regarding carbon tetrachloride (CCl4)?
+O: The primary effects of CCl4 in humans are on the central nervous system, liver, and kidneys
+O: Acute hepatic injury usually manifests before CNS effects have subsided
+O: Liver damage occurs more often from swallowing liquid CCl4 than from inhaling CCl4 vapor
+O: Nephritis and nephrosis are common following CCl4
+O: Respiratory effects can occur through various means of exposure such as inhalation, oral, parenteral
+A: Acute hepatic injury usually manifests before CNS effects have subsided
+### mcq | TOX | 2021 (Des)
+Q: Which of the following statements is TRUE regarding metal fume fever (MFF)?
+O: A chronic self-limiting flu-like illness
+O: Treatment consists of oxygen, IV fluids, and steroids
+O: Radiography reveals changes consistent with fulminant pneumonitis
+O: The condition is secondary to exposure to high concentrations of oxides of heavy metals
+O: Workers are more susceptible to symptoms of MFF after repeated exposure
+A: The condition is secondary to exposure to high concentrations of oxides of heavy metals
+### mcq | ERGO | 2021 (Des)
+Q: Mr. Jones is a musician with pain in the anterior forearm, numbness and tingling in the median nerve distribution (thumb, index, middle fingers, radial half of ring finger). He denies nocturnal exacerbation. Forearm pain and paresthesias increase with progressive activity and are relieved by rest. The most likely diagnosis is:
+O: Degenerative arthritis
+O: Carpal tunnel syndrome (CTS)
+O: Cubital tunnel syndrome
+O: De Quervain tenosynovitis
+O: Pronator teres syndrome
+A: Pronator teres syndrome
+### mcq | ERGO | 2021 (Des)
+Q: Risk factors for plantar fasciitis include:
+O: Prolonged standing
+O: Steroid injections
+O: Working on soft surfaces
+O: Low body mass index
+O: Cycling
+A: Prolonged standing
+### mcq | ERGO | 2021 (Des)
+Q: A 45-year-old domestic staff worker in a hotel has developed pain and tenderness over her right radial styloid process over the past three months, which she feels is exacerbated by her work. The pain worsens on ulnar deviation of her hand with her thumb inside a closed fist. Which is the next best step in management?
+O: Refer her for X-ray of the wrist
+O: Wrist open surgery
+O: Refer her for nerve conduction studies
+O: Corticosteroid injection
+O: Thumb spica brace
+A: Thumb spica brace
+### mcq | FIS | 2021 (Des)
+Q: A 39-year-old man has painful contractions in his thighs and calves after 3.5 hours of walking and hiking for a work-site examination during the hot dry season. SpO2 98%, RR 24/min, HR 76 bpm, BP 115/76 mmHg, temperature 37 °C. Intermittent fasciculations in the calf. What is the most likely cause?
+O: Hyponatremia
+O: Hypercalcemia
+O: Hyperkalemia
+O: Hypoglycemia
+O: Dehydration
+A: Hyponatremia
+D: Docx rekap 2021 menulis "Hypernatremia", tetapi opsi di Google Form tidak memuat hypernatremia; jawaban yang sesuai opsi = Hyponatremia.
+### mcq | FIS | 2021 (Des)
+Q: The most likely acute effect from a whole-body radiation dose of 100–200 rem is:
+O: Death within two hours
+O: Nausea
+O: Sudden deafness
+O: Haemorrhage
+O: Epilation
+A: Nausea
+### mcq | FIS | 2021 (Des)
+Q: What type of radiation do film badges measure?
+O: Laser
+O: Only gamma rays
+O: X-rays and gamma rays
+O: Only X-rays
+O: Only neutrons
+A: X-rays and gamma rays
+### mcq | FIS | 2021 (Des)
+Q: Which of the following statements is FALSE regarding heat-related illness?
+O: Cerebellum is one of the first structures affected by heat stroke
+O: Heat stroke victims are classically dry
+O: Salt tablets are useful in the treatment of heat-induced illness
+O: Heat exhaustion laboratory findings are haemoconcentration
+O: Heat exhaustion symptoms are nausea, weakness, fatigue, myalgia, dizziness
+A: Salt tablets are useful in the treatment of heat-induced illness
+### mcq | BISING | 2021 (Des)
+Q: Statement about noise hazard at work:
+O: Early noise-induced hearing loss tends to affect higher-pitched consonant sounds
+O: Noise-induced hearing loss is always a result of noise exposure over an extended period
+O: Tinnitus is a pathognomonic sign of noise-induced hearing loss
+O: As noise-induced hearing loss progresses, the worker's ability to appreciate soft sound levels is not affected
+O: May lead to noise-induced hearing loss, usually caused by exposure to excessively loud sounds, that can be medically or surgically corrected
+A: Early noise-induced hearing loss tends to affect higher-pitched consonant sounds
+### mcq | BISING | 2021 (Des)
+Q: Which of the following statements is INCORRECT about hand-arm vibration syndrome (HAVS)?
+O: Can cause musculoskeletal disturbance
+O: Cold challenge plethysmography is the best quantitative test for evaluating the vascular component
+O: Grading criteria with Helsinki scale
+O: Has a component of circulatory disturbances (vasospasm, white finger)
+O: Resulting from exposure to whole-body vibration
+A: Grading criteria with Helsinki scale
+N: [Perlu dicek] Opsi "Resulting from exposure to whole-body vibration" juga salah secara konsep; kunci sumber (skor 1/1) = Helsinki scale.
+### mcq | BIO | 2021 (Des)
+Q: Which of the following is true for the replicating phase of chronic hepatitis B?
+O: HBsAg positive, HBsAb positive, anti-HBc positive, HBV DNA positive, HBeAg positive
+O: HBsAg positive, HBsAb positive, anti-HBc positive, HBV DNA positive, HBeAg negative
+O: HBsAg positive, HBsAb positive, anti-HBc positive, HBV DNA undetectable, HBeAg negative
+O: HBsAg negative, HBsAb positive, anti-HBc positive
+O: HBsAg positive, HBsAb positive, anti-HBc negative, HBV DNA positive, HBeAg positive
+A: HBsAg positive, HBsAb positive, anti-HBc positive, HBV DNA positive, HBeAg positive
+### mcq | BIO | 2021 (Des)
+Q: A 26-year-old male has a 4-week history of low-grade fever, cough, night sweats, and fatigue. Temperature 37.8 °C. Decreased breath sounds in the right upper lobe; chest X-ray shows a right upper lobe infiltrate. Which test is best for confirming this patient's condition?
+O: Nucleic acid amplification test (NAAT)
+O: Bronchoalveolar lavage (BAL) culture
+O: Tuberculin skin test
+O: Sputum microscopy
+O: Blood culture
+A: Nucleic acid amplification test (NAAT)
+### mcq | BIO | 2021 (Des)
+Q: Which statement is NOT true about anthrax?
+O: Inhalational anthrax is contagious from person to person
+O: Bacillus anthracis can exist for decades in the soil as spores
+O: The three main clinical forms are cutaneous, gastrointestinal, and inhalational anthrax
+O: The principal target tissue for inhalational anthrax is the lymph nodes
+O: Contact of abraded skin with anthrax spores leads to a small pruritic papule, which becomes a black ulcer with surrounding edema
+A: Inhalational anthrax is contagious from person to person
+### mcq | EPI | 2021 (Des)
+Q: Given a 2 × 2 contingency table, the confidence interval (CI) that should be calculated is:
+O: CI for difference in proportion
+O: CI for the mean
+O: CI for mean difference
+O: CI of the proportion
+O: No CI can be calculated
+A: CI for difference in proportion
+### mcq | HI | 2021 (Des)
+Q: Samples were collected for a specific operation over three consecutive days, giving a TWA for lead oxide of 0.09 mg/m³ (TLV-TWA = 0.05 mg/m³; PEL = 0.2 mg/m³). You should:
+O: Recommend respirators until engineering controls can be implemented
+O: Take no further action because you are in compliance with the law (OSHA PEL)
+O: Recommend rotation of workers
+O: Close down the operation
+O: Collect air samples for another three consecutive days
+A: Recommend respirators until engineering controls can be implemented
+### mcq | EPI | 2021 (Des)
+Q: A large study of erythrocyte acetylcholinesterase levels in farmers exposed to pesticides shows the parameter is normally distributed with a mean of 7.20 U/g haematocrit and SD of 1.10 U/g haematocrit. 95% of observations lie between which limits?
+O: 6.65 and 7.75 U/g haematocrit
+O: 5.00 and 9.40 U/g haematocrit
+O: 3.90 and 10.50 U/g haematocrit
+O: 5.00 and 10.50 U/g haematocrit
+O: 6.10 and 8.30 U/g haematocrit
+A: 5.00 and 9.40 U/g haematocrit
+### mcq | EPI | 2021 (Des)
+Q: Which of the following study designs is NOT observational?
+O: Case-control
+O: Retrospective cohort
+O: Cross-sectional
+O: Randomized controlled
+O: Prospective cohort
+A: Randomized controlled
+### mcq | EPI | 2021 (Des)
+Q: Any systematic error in the design, conduct, or analysis of a study that results in a mistaken estimate of an exposure's effect on the risk of disease is called:
+O: Bias
+O: Confounding
+O: Interaction
+O: Stratification
+O: Failure
+A: Bias
+### mcq | EPI | 2021 (Des)
+Q: Officials at a large community hospital report an increased incidence of acute lymphocytic leukemia (ALL) among residents aged 30–50. Some households are exposed to chemical waste from a nearby factory, and the officials believe the waste causes leukemia. If a study is designed to evaluate this claim, which subjects are most likely to comprise the control group?
+O: Residents from the hospital's outpatient clinic who do not suffer from ALL
+O: Residents exposed to the chemical waste who do not suffer from ALL
+O: Residents not exposed to the chemical waste who do not suffer from ALL
+O: Residents not exposed to the chemical waste who suffer from ALL
+O: Residents who suffered from ALL but got cured
+A: Residents from the hospital's outpatient clinic who do not suffer from ALL
+### mcq | ERGO | 2021 (Des)
+Q: When applying anthropometric design principles and designing for the extreme, clearance requirements (doorways, manholes, etc.) are determined by the ____ worker.
+O: Highest BMI
+O: Smallest
+O: Healthiest
+O: Lowest BMI
+O: Largest
+A: Largest
+### mcq | TOX | 2021 (Des)
+Q: The amount of a substance that entered the body and was taken up by organs or particular tissues is called:
+O: Internal dose
+O: Administered dose
+O: Effective dose
+O: Total dose
+O: Lethal dose
+A: Internal dose
+### mcq | FTW | 2021 (Des)
+Q: Current evidence suggests that workplace interventions to reduce disability for those out of work due to chronic illness are most effective in those out of work due to:
+O: Musculoskeletal disorders
+O: Depression
+O: Asthma
+O: Cancer
+O: Epilepsy
+A: Musculoskeletal disorders
+### mcq | PARU | 2021 (Des)
+Q: The most important demographic characteristics that must be taken into account when comparing a worker's pulmonary function test results with the expected normal range are:
+O: Age, gender, height, race
+O: Age, gender, weight, race
+O: Age, weight, height, race
+O: Gender, weight, height, work experience
+O: Age, gender, race, work experience
+A: Age, gender, height, race
+### mcq | HI | 2021 (Des)
+Q: Which statement is true about occupational hazard exposure?
+O: Most reliably measured by placing personal sampling devices on the worker while at work
+O: The harmful effects of hazardous agents are not affected by individual susceptibility
+O: Will result in irreversible health effects if the legal occupational exposure limit is exceeded
+O: At levels below the legal occupational exposure limit, cannot result in adverse health effects
+O: It always causes injury or occupational disease
+A: Most reliably measured by placing personal sampling devices on the worker while at work
+### mcq | ERGO | 2021 (Des)
+Q: The NIOSH lifting equation considers several task variables when determining the recommended weight limit for a task or job. Which are among the variables?
+O: Vertical distance and travel distance
+O: Horizontal distance and diagonal distance
+O: Coupling and diagonal distance
+O: Frequency of lift and body weight
+O: Duration of lift and repetitive movement
+A: Vertical distance and travel distance
+### mcq | BIO | 2021 (Des)
+Q: Which of the following are the most important PPE for collecting a specimen for a COVID test?
+O: Gloves and mask
+O: Coverall and haircap
+O: Boot and haircap
+O: Gloves and face shield
+O: Mask and haircap
+A: Gloves and mask
+### mcq | BIO | 2021 (Des)
+Q: An effective hand sanitizer contains at least this percentage of alcohol to kill the coronavirus and other germs:
+O: 95%
+O: 50%
+O: 90%
+O: 80%
+O: 60%
+A: 60%
+### mcq | BIO | 2021 (Des)
+Q: Which of the following is NOT an accurate description of PCR?
+O: Nasopharyngeal and oropharyngeal swabs from the upper airways, and sputum from the lower airways, are the most useful samples
+O: Molecular diagnosis using RT-PCR is the most efficient diagnostic method to date, with over 95% sensitivity and specificity
+O: When using real-time PCR, the test result can be trusted regardless of the internal control
+O: There are various compounds in the human body that can inhibit the polymerase chain reaction
+O: RdRp is the most critical gene in SARS-CoV-2 diagnosis; S, E, and N genes are also used with RdRp
+A: When using real-time PCR, the test result can be trusted regardless of the internal control

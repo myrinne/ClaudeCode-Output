@@ -1,0 +1,110 @@
+### short | REG | 2020
+Q: Ministry of Health regulation about occupational diseases?
+A: Permenkes No. 56 Tahun 2016 tentang Penyelenggaraan Pelayanan Penyakit Akibat Kerja.
+### short | REG | 2020
+Q: Government regulation about occupational diseases?
+A: PP No. 7 Tahun 2019 (tentang Penyakit Akibat Kerja).
+### short | HI | 2020
+Q: ____ level, usually set at ½ of the TLV.
+A: Action level.
+### short | HI | 2020
+Q: An exposure to acetone at the following concentrations and durations: 1000 ppm for 3 hours, 500 ppm for 2 hours, 200 ppm for 3 hours. The worker would have an 8-hour TWA exposure of ____ ppm.
+A: 575 ppm.
+### short | HI | 2020
+Q: Regarding urine specimen acceptability for BEI testing, what guidelines are indicated for acceptable specimens?
+A: Creatinine > 0.3 g/L and < 3.0 g/L; specific gravity 1.010–1.030.
+### short | TOX | 2020
+Q: Some members will be more sensitive to the chemical. List some factors that can explain intraspecies variation.
+A: Age and maturity; gender; genetics; state of health.
+### short | TOX | 2020
+Q: Give examples of chemical asphyxiant gases that prevent the tissues from getting enough oxygen.
+A: CO, cyanide.
+### short | REPRO | 2020
+Q: A number of chemicals are reactive in the body during the gestation period. The fetal effects depend upon ____ (minimum 3).
+A: Developmental state of fetus; dose, route, exposure interval; transplacental absorption and fetal tissue levels; ability of maternal liver and placenta to metabolize; biological half-life of chemical or metabolites.
+### short | PARU | 2020
+Q: ____ dust can cause pneumoconiosis.
+A: Respirable dust / fibrogenic dust.
+### short | KULIT | 2020
+Q: Chemicals that increase sensitivity to light are called ____.
+A: Photosensitizers.
+### short | TOX | 2020
+Q: What factors increase gastrointestinal absorption of lead?
+A: Fasting, starvation, deficiency of iron, zinc.
+### short | TOX | 2020
+Q: How is smoking at the workplace connected to lead toxicity?
+A: Smoking encourages hand-to-mouth behavior.
+### short | TOX | 2020
+Q: Headache, fever, and chest pain in a patient who has been exposed to heated metal suggests ____.
+A: Metal fume fever.
+### short | TOX | 2020
+Q: What are the 3 steps of carcinogenesis?
+A: Initiation, promotion, progression.
+N: Sumber 2020 menulis "Inhalation, promotion, progression" (salah ketik; kunci 2016-Remed: initiation).
+### short | TOX | 2020
+Q: How can workers be monitored for chronic toluene exposure? / What test is needed to monitor workers exposed to toluene?
+A: Urine hippuric acid concentration.
+### short | BISING | 2020
+Q: Powered hand tools are faster, stronger, and more efficient than hand tools, but at the cost of increased exposure to ____.
+A: Vibration.
+### short | ERGO | 2020
+Q: The NIOSH lifting equation considers 6 task variables. Name them.
+A: Horizontal distance, vertical distance, travel distance, asymmetry, frequency, coupling.
+### short | BISING | 2020
+Q: What sounds may be difficult to appreciate by a worker with noise-induced hearing loss?
+A: High-pitched sounds.
+### short | BISING | 2020
+Q: Name the 3 components of HAVS.
+A: Circulatory, sensory(/motor), musculoskeletal disturbances.
+### short | BIO | 2020
+Q: Is the common cold usually considered an occupationally related infectious disease? Why?
+A: No; the infection rate does not differ substantially between the work environment and the general environment.
+### short | BIO | 2020
+Q: Estimated risks of acquiring infection from HBV, HCV, and HIV (single needlestick).
+A: 30% HBV, 3% HCV, 0.3% HIV.
+### short | FIS | 2020
+Q: [Recall tidak lengkap] Work environment (deep sea) ... use of SCBA.
+A: (Tidak tercatat di sumber.)
+### short | ERGO | 2020
+Q: List 3 causes of low back pain / 2 types of effects of manual handling. [recall tidak lengkap]
+A: Muscle or ligament injury; vertebral fractures; degenerative disc / degenerative arthritis; spinal stenosis.
+### short | PARU | 2020
+Q: ILO classification: parenchymal abnormalities are recorded by ____ and ____ in the six zones of the lung.
+A: Shape & size, and profusion.
+### short | EPI | 2020
+Q: [Recall tidak lengkap] Statistical test for a 2×2 table?
+A: Chi-square or Fisher (sumber ragu: "??").
+### short | EPI | 2020
+Q: What is the measure of association used when analyzing the results of a cohort study?
+A: Relative risk (RR).
+### short | ERGO | 2020
+Q: What provocative tests may assist in the diagnosis of carpal tunnel syndrome?
+A: Phalen and Tinel tests.
+### short | TOX | 2020
+Q: What characteristic finding may be seen on microscopic examination of RBCs in patients with chronic lead toxicity?
+A: Basophilic stippling.
+### short | FIS | 2020
+Q: Arc welding produces radiation of ____.
+A: UV-B.
+### short | FIS | 2020
+Q: Unit to measure radiation (activity) exposure?
+A: Curie.
+N: [Perlu dicek] Curie adalah satuan aktivitas sumber; dosis paparan/serap memakai roentgen/rad/rem (Gy/Sv). Sumber recall tidak memuat redaksi soal lengkap.
+### short | BISING | 2020
+Q: Scale used to grade/measure HAVS?
+A: Stockholm scale.
+### short | BIO | 2020
+Q: ____ and ____ workers have a high risk of occupational infectious disease.
+A: Health care workers and ... (peserta menjawab cleaning service; sumber tidak lengkap).
+### short | FIS | 2020
+Q: What is the classic triad of heat stroke?
+A: Core temperature elevation, mental status changes, anhidrosis.
+### short | FIS | 2020
+Q: What is the essential feature for heat stroke to be diagnosed?
+A: Mental status changes.
+### short | BISING | 2020
+Q: Noise level is 95 dB. Is an earmuff with NRR 33 effective?
+A: Effective noise = 95 − (33 − 7)/2 = 95 − 13 = 82 dB → effective (below 85 dB).
+### short | KULIT | 2020
+Q: [Recall tidak lengkap] The number of ... chemical exposure ... irritation in skin ...
+A: (Sumber: "mg/L ??")

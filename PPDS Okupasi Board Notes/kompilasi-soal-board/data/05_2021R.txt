@@ -1,0 +1,157 @@
+### short | TOX | 2021 (recall)
+Q: Inorganic mercury toxicity: to which organ is the effect (acute)?
+A: Acute tubular injury (ginjal).
+### mcq | BISING | 2021 (recall)
+Q: True statement about hearing loss? (opsi tidak tercatat)
+### short | TOX | 2021 (recall)
+Q: Route of exposure of pesticides/organophosphates: ____ and ____.
+### short | TOX | 2021 (recall)
+Q: Metabolite of toluene?
+### short | TOX | 2021 (recall)
+Q: Angiosarcoma of the liver in humans is caused by exposure to what?
+### short | BISING | 2021 (recall)
+Q: Instrument to measure noise frequency.
+A: Octave band analyzer.
+### short | BIO | 2021 (recall)
+Q: PPE for an operator collecting specimens from COVID-19 patients in a hospital.
+### short | FTW | 2021 (recall)
+Q: A worker is confirmed COVID-19. When can he return to work?
+A: After completing isolation (14 days, or 10 days if asymptomatic), then perform the 7-step fitness-to-work assessment; if fit, the worker may return to work.
+### short | ERGO | 2021 (recall)
+Q: Name 4 injuries that can occur from incorrect manual handling.
+### short | HI | 2021 (recall)
+Q: What does the BEI indicate?
+### short | EPI | 2021 (recall)
+Q: Study design in which exposure and outcome are measured at the same time?
+A: Cross-sectional.
+N: Catatan sumber: cohort = exposure sekarang, outcome nanti; case-control = outcome sekarang, exposure ditelusuri ke belakang.
+### short | FIS | 2021 (recall)
+Q: Can heat cramps be treated with (water) rehydration? Explain.
+### mcq | BISING | 2021 (recall)
+Q: Which statement is NOT correct about NIHL? (opsi tidak tercatat)
+### mcq | PARU | 2021 (recall)
+Q: Occupational disease (mesothelioma/lung cancer) in asbestos workers. (redaksi tidak lengkap)
+### mcq | BISING | 2021 (recall)
+Q: A 35-year-old shipbuilder has difficulty picking up small objects. Suspected HAVS. Which statement is relevant?
+O: Using cloth (gloves) can prevent HAVS
+O: Smoking increases the risk of HAVS
+O: Tingling is a symptom of HAVS
+N: Opsi lain tidak tercatat.
+### mcq | BISING | 2021 (recall)
+Q: HAVS — which statement is FALSE?
+O: HAVS increases the risk of CTS
+O: Stockholm criteria for diagnosis
+O: HAVS can cause joint pain
+N: Opsi lain tidak tercatat.
+### mcq | ERGO | 2021 (recall)
+Q: Cauda equina syndrome — which finding? (redaksi tidak lengkap)
+O: Direct fall
+O: Motoric weakness
+O: Ankle pain
+O: Bladder incontinence
+O: Saddle analgesia
+### mcq | TOX | 2021 (recall)
+Q: Disease of the cardiovascular system caused by solvents such as acetone and toluene?
+### mcq | TOX | 2021 (recall)
+Q: Mercury — chronic effect on the kidney. (redaksi tidak lengkap)
+### mcq | TOX | 2021 (recall)
+Q: Biomarker test for toluene?
+### mcq | K3 | 2021 (recall)
+Q: Work accidents most frequently involve which body part?
+O: Hand
+O: Finger
+O: Ankle
+N: Opsi lain tidak tercatat.
+### mcq | EPI | 2021 (recall)
+Q: The ability of a screening test to correctly identify those people who have the disease of interest is ____.
+A: Sensitivity.
+### mcq | FTW | 2021 (recall)
+Q: Occupational disease is ____.
+O: Working population disease
+O: Man-made disease
+O: Environmental disease
+N: Opsi lain tidak tercatat.
+### mcq | TOX | 2021 (recall)
+Q: The chronic effect of inorganic mercury is ____.
+O: Acute tubular necrosis
+O: Deafness
+O: Gingivostomatitis
+N: Opsi lain tidak tercatat.
+### mcq | TOX | 2021 (recall)
+Q: Sample for (biomonitoring of) arsenic exposure? (redaksi tidak lengkap)
+### mcq | PARU | 2021 (recall)
+Q: Which of the following occupations is NOT at higher risk of occupational asthma?
+O: Bakery
+O: Shoe maker
+O: Hairdresser
+O: Stainless steel maker
+O: None of the above
+### mcq | PARU | 2021 (recall)
+Q: You are undertaking health surveillance of miners exposed to silica. Which of the following is correct?
+O: CT chest is never indicated
+O: Reduction in percent predicted
+O: Smoking and silica exposure are synergistic
+N: Opsi lain tidak tercatat.
+### mcq | FTW | 2021 (recall)
+Q: The "iceberg phenomenon" of occupational disease (in Indonesia) is due to: (opsi tercatat sebagian)
+O: Occupational diseases are not reported
+O: Lack of occupational health services in Indonesia
+### mcq | ERGO | 2021 (recall)
+Q: Disease arising from compression of the nerve supply on the radial side of the thumb ____. (redaksi tidak lengkap)
+### mcq | K3 | 2021 (recall)
+Q: A medical check-up (MCU) belongs to which of the 5 levels of prevention?
+### mcq | PSI | 2021 (recall)
+Q: Shift work can cause which cancer?
+O: Testis cancer
+O: Renal cancer
+O: Breast cancer
+### mcq | ERGO | 2021 (recall)
+Q: Finkelstein test positive indicates ____.
+A: De Quervain tenosynovitis.
+### mcq | TOX | 2021 (recall)
+Q: The limit found in observation/monitoring below which no morphological adverse effect is observed is called ____.
+### mcq | PARU | 2021 (recall)
+Q: Match exposure and disease: crocidolite – asbestosis, ... (redaksi tidak lengkap)
+### mcq | FTW | 2021 (recall)
+Q: Characteristic of occupational disease:
+O: Only in workers, not in the population
+O: There is a specific association between exposure and disease
+N: Opsi lain tidak tercatat.
+### mcq | FTW | 2021 (recall)
+Q: Someone in a factory is found to have TB; 3 others also have TB. What is the possibility?
+O: Occupational disease
+O: Work-related disease or occupational disease
+O: Disease in working population
+### mcq | FTW | 2021 (recall)
+Q: Which one has the potential to be an occupational disease?
+A: Someone working in asbestos production for more than 20 years.
+### mcq | K3 | 2021 (recall)
+Q: Role of occupational health at the workplace?
+A: For workers and the work environment.
+### mcq | PARU | 2021 (recall)
+Q: Suspected occupational asthma — what should be investigated next?
+### mcq | BISING | 2021 (recall)
+Q: About vibration (HAVS) — which is true?
+A: Aggravated by smoking.
+### mcq | K3 | 2021 (recall)
+Q: The use of PPE during a pandemic is considered as:
+O: Primary prevention
+O: Specific protection
+### mcq | K3 | 2021 (recall)
+Q: Regulation of the noise TLV is considered as:
+O: Primary prevention
+O: Secondary prevention
+### mcq | BISING | 2021 (recall)
+Q: The use of a machine drill gives better output, but the disadvantage is ____.
+A: Vibration.
+### mcq | BISING | 2021 (recall)
+Q: HAVS generally ..., EXCEPT: symmetric / asymmetric. (redaksi tidak lengkap)
+### mcq | BIO | 2021 (recall)
+Q: A health worker is pricked by a needle from a patient with hepatitis B. What is the probability of infection?
+A: 1 in 3 (≈30%). (Hepatitis C 3%, HIV 0.3%.)
+### mcq | K3 | 2021 (recall)
+Q: WHO/ILO concept of occupational health services?
+A: Comprehensive service.
+### mcq | EPI | 2021 (recall)
+Q: Statistics question (redaksi tidak tercatat).
+A: Sensitivity.

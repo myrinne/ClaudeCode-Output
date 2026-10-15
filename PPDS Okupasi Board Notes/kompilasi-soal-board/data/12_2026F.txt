@@ -1,0 +1,82 @@
+### mcq | PSI | Feb 2026
+Q: [Recall] Individual factors that play a role in burnout? (opsi tercatat sebagian)
+O: Perfectionism and workload
+O: A stressor due to planned dismissal
+O: Job insecurity
+N: Peserta tidak mencatat kunci.
+### mcq | PSI | Feb 2026
+Q: [Recall] What is assessed by the Maslach Burnout Inventory? (opsi tidak tercatat)
+### mcq | ERGO | Feb 2026
+Q: [Recall] Gambar seorang ibu menggendong kayu dengan satu bahu. Possible health risk? (opsi tercatat sebagian)
+O: Frozen shoulder
+O: Shoulder impingement
+### mcq | EPI | Feb 2026
+Q: [Recall] Statistical test to compare the means of 3 or more groups:
+O: Analysis of variance (ANOVA)
+O: t-test
+O: Mann–Whitney U
+### mcq | FTW | Feb 2026
+Q: A 32-year-old radiographer has worked in a hospital radiology facility for 7 years, using a film badge (TLD), protective apron, drape, and gloves. Dose records show an average of 10 mSv per year, highest 18 mSv in the last year. No infertility history, normal spermatogenesis, no abnormalities in routine labs. What is his fitness-to-work status? (opsi tidak tercatat)
+### mcq | REPRO | Feb 2026
+Q: (Kasus radiografer yang sama) What is the pathophysiology of the reproductive disorder (from radiation)? (opsi tidak tercatat)
+### mcq | FTW | Feb 2026
+Q: [Recall] A crane operator has blood pressure 135/85 mmHg. What is his fitness to work? (opsi tidak tercatat)
+### mcq | BISING | Feb 2026
+Q: [Recall] Audiometry shows a notch at 4000 Hz. Conclusion? (opsi tidak tercatat)
+A: NIHL.
+### mcq | K3 | Feb 2026
+Q: [Recall] Who is responsible if a disaster occurs at the workplace? (opsi tercatat sebagian)
+O: SHE manager
+O: Safety officer
+### mcq | EPI | Feb 2026
+Q: [Recall] Calculation of the odds ratio. (data tidak tercatat)
+### mcq | BIO | Feb 2026
+Q: [Recall] A pesticide-spraying worker — what is the potential biological hazard? (opsi tercatat sebagian)
+O: Snake bite
+O: Dermatitis
+### mcq | BISING | Feb 2026
+Q: [Recall] Workplace noise exposure is 100 dB. What is the advice on hearing protection? (opsi tidak lengkap)
+A: Dual protection: earmuff with NRR ... plus earplug with NRR ... (angka tidak tercatat).
+### mcq | PARU | Feb 2026
+Q: [Recall] Workers with which exposure ... characteristic "fruity" smell(?); what is the biomonitoring? (redaksi tidak jelas; catatan peserta: cotton dust → byssinosis, sugarcane → bagassosis)
+### mcq | FIS | Feb 2026
+Q: [Recall] A diver ascends suddenly to the surface ... (kasus neurologis). What happened? (opsi tercatat sebagian)
+O: Air embolism in blood vessels due to barotrauma
+O: Stroke
+### mcq | FIS | Feb 2026
+Q: (Kasus penyelam yang sama) How do you determine the cause of the neurological disorder?
+O: CT angiography
+O: Brain MRI
+O: Blood gas analysis
+### mcq | FTW | Feb 2026
+Q: [Recall] A florist arranging flowers complains of sneezing, with no prior history of asthma. What is her fitness to work?
+O: Transfer to another section
+O: Dismiss
+O: Can continue working
+### mcq | FTW | Feb 2026
+Q: [Recall] A bakery worker with asthma — fitness-to-work status? (opsi tidak tercatat)
+### mcq | PARU | Feb 2026
+Q: [Recall] Soal tentang pekerja batubara (redaksi tidak tercatat).
+### mcq | PARU | Feb 2026
+Q: [Recall] Soal tentang pekerja sandblasting (redaksi tidak tercatat).
+### mcq | ERGO | Feb 2026
+Q: [Recall] Gambar dokter gigi memeriksa pasien dengan posisi agak membungkuk. What is the ergonomic risk, and how is it controlled? (ada 3 soal terkait gambar ini; opsi tidak tercatat)
+### mcq | PARU | Feb 2026
+Q: [Recall] A worker with dust exposure; ILO reading suspicious of pneumoconiosis with profusion 0/1 (or 1/0), but spirometry is normal. Recommendation?
+O: Transfer to work without dust exposure
+O: No management needed
+O: Repeat spirometry every 2 months
+O: Radiological check every 5 years
+### mcq | ERGO | Feb 2026
+Q: NIOSH lifting equation RWL = LC × HM × VM × DM × AM × FM × CM. What does CM mean?
+A: Coupling multiplier.
+### mcq | TOX | Feb 2026
+Q: [Recall] Topik: carboxyhemoglobin (redaksi tidak tercatat).
+### mcq | TOX | Feb 2026
+Q: [Recall] Topik: organophosphate, glyphosate, pyrethroid, 3-PBA (redaksi tidak tercatat).
+### mcq | PSI | Feb 2026
+Q: [Recall] Topik: problem-solving mechanism (redaksi tidak tercatat).
+### mcq | TOX | Feb 2026
+Q: [Recall] A worker becomes short of breath (likely working in a confined space). Which gas is suspected to have been inhaled? (opsi tidak tercatat; topik asfiksian)
+### mcq | PSI | Feb 2026
+Q: [Recall] Beberapa vignette psikososial; ditanyakan diagnosisnya. (pilihan: burnout, stress, depression, anxiety)

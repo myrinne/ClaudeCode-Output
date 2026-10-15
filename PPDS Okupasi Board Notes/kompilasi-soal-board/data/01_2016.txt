@@ -1,0 +1,98 @@
+### short | FIS | 2016
+Q: What body tissues are the most exquisitely radiosensitive? (name at least 3)
+A: Lymphocytes, immature hematopoietic cells, intestinal crypt cells, spermatogonia, ovarian follicles.
+### short | HI | 2016
+Q: Name seven common plating metals used in the electroplating process.
+A: Cadmium, chromium, copper, gold, nickel, silver, zinc.
+### short | FIS | 2016
+Q: Name several tumors that can arise from exposure to radiation.
+A: Lymphomas and leukemia; seminomas and dysgerminomas; granulosa cell tumor; retinoblastoma; transitional cell carcinoma; adenocarcinoma of the stomach; carcinoma of the skin, oral cavity, pharynx, esophagus, cervix; osteogenic sarcoma; astrocytoma; chondrosarcoma.
+### short | TOX | 2016
+Q: How is smoking at the workplace connected to lead toxicity?
+A: Smoking encourages hand-to-mouth behavior. Eating and drinking in the workplace have a similar effect.
+### short | TOX | 2016
+Q: Can lead (stored in bone) be mobilized back into circulation?
+A: Yes, during stress, pregnancy, lactation, chronic disease, or possibly osteoporosis.
+### short | FIS | 2016
+Q: Name several occupations at high risk for radon exposure.
+A: Miners (especially uranium, hard rock, and vanadium mining).
+### short | TOX | 2016
+Q: What is the treatment of metal fume fever?
+A: Analgesics and antipyretics (supportive).
+### short | HI | 2016
+Q: What documents are required to be kept on site where dangerous industrial chemicals are found?
+A: Material Safety Data Sheet (MSDS/SDS).
+### short | TOX | 2016
+Q: What factors increase gastrointestinal absorption of lead?
+A: Fasting/starvation and deficiencies in iron, zinc, and cadmium.
+N: [Perlu dicek] "cadmium" kemungkinan salah ketik untuk calcium (defisiensi kalsium meningkatkan absorpsi timbal).
+### short | ERGO | 2016
+Q: Regarding biomechanics, the components that comprise a moment are ____ and ____.
+A: Force (weight of the object) and distance (perpendicular distance from the axis of rotation).
+### short | ERGO | 2016
+Q: List 7 ergonomic risk factors.
+A: Vibration, force, posture/position, repetition, duration, compression (contact stress), temperature.
+### short | ERGO | 2016
+Q: If an ergonomist knows the work intensity of a task, (s)he can recommend modifying the task. What objective measures can be used to estimate work intensity?
+A: Respiratory rate; cardiac output (heart rate); metabolic rate (calorimetry, oxygen uptake); core body temperature.
+### short | ERGO | 2016
+Q: The neutral posture of a joint is determined by the ____ (minimum, maximum, resting) length of the muscle crossing that joint.
+A: Resting.
+### short | ERGO | 2016
+Q: List the 5 categories of manual handling.
+A: Lifting, lowering, carrying, pulling, pushing.
+### short | ERGO | 2016
+Q: The NIOSH lifting equation considers 6 task variables when determining the recommended weight limit for a task or job. What are these 6 variables?
+A: Horizontal distance, vertical distance, travel (vertical travel) distance, coupling, frequency, duration.
+N: Sumber 2020 menyebut "asymmetry" sebagai salah satu variabel (menggantikan duration). Persamaan NIOSH revisi memakai HM, VM, DM, AM (asymmetry), FM (frequency × duration), CM.
+### short | BISING | 2016
+Q: What is the name of the clinical rating scheme, introduced in 1987, that established separate grading criteria for vascular and neurologic signs and symptoms in hand-arm vibration syndrome (HAVS)?
+A: The Stockholm (Workshop) Scale.
+### short | BISING | 2016
+Q: List the 3 components of Hand-Arm Vibration Syndrome (HAVS).
+A: Circulatory disturbances (vasospasm, white finger); sensory/motor disturbances (numbness, loss of dexterity); musculoskeletal disturbances.
+### short | EPI | 2016
+Q: The ability of a screening test to correctly identify those people who do NOT have the disease of interest is known as the test's ____.
+A: Specificity.
+### short | EPI | 2016
+Q: The ability of a screening test to correctly identify those people who HAVE the disease of interest is known as the test's ____.
+A: Sensitivity.
+### short | EPI | 2016
+Q: Which measure of morbidity (incidence or prevalence) represents the burden of disease in a population and is therefore a tool for planning health services?
+A: Prevalence.
+### short | BIO | 2016
+Q: What are the estimated risks of acquiring infection from hepatitis B virus (HBV), hepatitis C virus (HCV), and HIV from a single needlestick?
+A: Approximately 30% for HBV, 3% for HCV, and 0.3% for HIV.
+### short | FIS | 2016
+Q: Can "heat cramps" be treated with water rehydration?
+A: No. Electrolyte solutions are required to replace losses.
+### short | HI | 2016
+Q: What are BEIs?
+A: Biological Exposure Indices. They provide warning levels of biological response to a substance or agent.
+### short | HI | 2016
+Q: What does the BEI generally indicate?
+A: A concentration below which nearly all workers should not experience adverse health effects.
+### short | HI | 2016
+Q: What does air monitoring against the TLV indicate?
+A: Potential inhalation exposure of an individual or a group.
+### short | HI | 2016
+Q: Regarding urine specimen acceptability for BEI testing, what guidelines are indicated for acceptable specimens?
+A: Creatinine concentration > 0.3 g/L and < 3.0 g/L, or specific gravity > 1.010 and < 1.030.
+### short | BISING | 2016
+Q: What is the possible negative impact of wearing hearing protective devices?
+A: Placing them on already hearing-impaired workers might make them less able to hear background warning sounds.
+### short | FTW | 2016
+Q: Something a patient CAN do but SHOULD NOT do is called ____.
+A: (Work) restriction.
+### short | FTW | 2016
+Q: Something a patient CANNOT (physically) do is called ____.
+A: (Work) limitation.
+### short | REG | 2016
+Q: In the national insurance system, every worker has to be insured by two types of insurance. Name them.
+A: BPJS Kesehatan and BPJS Ketenagakerjaan.
+### short | REG | 2016
+Q: What is the difference between BPJS Ketenagakerjaan and JKN (BPJS Kesehatan)?
+A: JKN: tidak ada jaminan pensiun. BPJS Ketenagakerjaan: kecelakaan kerja, PAK, jaminan hari tua, jaminan pensiun.
+### essay | PARU | 2016
+Q: Define "occupational asthma" and "work-aggravated asthma".
+A: Occupational asthma: variable airflow limitation and/or airway hyperresponsiveness due to causes and conditions attributable to a particular occupational environment, not to stimuli encountered outside the workplace. Work-aggravated asthma: pre-existing asthma aggravated by a workplace exposure.

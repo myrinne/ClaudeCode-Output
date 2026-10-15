@@ -1,0 +1,390 @@
+### mcq | PARU | Juli 2023
+Q: Serial peak flow recording as a diagnostic aid for occupational asthma should take place over a period of at least which one of the following?
+O: Eight weeks including two weeks away from suspected exposure
+O: Six weeks including two weeks away from suspected exposure
+O: Twelve weeks with at least 4 weeks of consecutive measurements and a minimum of four weeks away from suspected exposure
+O: Ten weeks including two weeks away from suspected exposure
+O: Four weeks including two weeks away from suspected exposure
+A: Four weeks including two weeks away from suspected exposure
+### mcq | PARU | Juli 2023
+Q: Which of the following conditions is associated with asbestos exposure?
+O: Round atelectasis, progressive massive fibrosis, cancer of the larynx
+O: Mesothelioma, pulmonary alveolar proteinosis, diffuse pleural thickening
+O: Diffuse pleural thickening, round atelectasis, cancer of the larynx
+O: Progressive massive fibrosis, pulmonary alveolar proteinosis, pericarditis
+O: Cancer of the larynx, mesothelioma, pulmonary alveolar proteinosis
+A: Mesothelioma, pulmonary alveolar proteinosis, diffuse pleural thickening
+N: [Perlu dicek] Kunci sumber seperti di atas; opsi "Diffuse pleural thickening, round atelectasis, cancer of the larynx" juga seluruhnya terkait asbes (IARC: laring = Grup 1 untuk asbes).
+### mcq | KULIT | Juli 2023
+Q: Allergic contact dermatitis (ACD) is a common occupational disease. Which one of the following statements is CORRECT?
+O: In general, allergic contact dermatitis is the most common type of occupational dermatitis
+O: ACD is a lymphocyte-mediated, delayed-type (type 4) hypersensitivity reaction that causes chronic pruritic dermatitis
+O: Definitive treatment of ACD is topical steroids
+O: The clinical manifestation of acute-phase ACD is eczematous dermatitis characterized by lichenified erythematous plaques with variable hyperkeratosis and fissuring beyond the areas of direct exposure
+O: ACD, particularly occupational ACD, is not a severe condition, so it may not have negative effects on quality of life and may lead to sickness absence, early retirement, loss of job, or job change
+A: ACD is a lymphocyte-mediated, delayed-type (type 4) hypersensitivity reaction that causes chronic pruritic dermatitis
+### mcq | BISING | Juli 2023
+Q: The principal characteristic of noise-induced hearing loss (NIHL) is:
+O: High-intensity noise exposure always produces a loss greater than 75 dB in high frequencies and greater than 40 dB in lower frequencies
+O: At the same intensity, continuous noise exposure throughout the workday and over the years is as damaging as intermittent noise exposure
+O: Available evidence indicates that previously noise-exposed ears are more sensitive to future noise exposure
+O: Its pathognomonic sign is a "notching" of the audiogram at the high frequency of 4000 Hz
+O: It is always sensorineural, primarily affecting the cochlear hair cells in the inner ear
+A: It is always sensorineural, primarily affecting the cochlear hair cells in the inner ear
+### mcq | PARU | Juli 2023
+Q: Which of the following is a CORRECT statement regarding occupational asthma?
+O: Since anyone can develop occupational asthma, it is possible to predict who will and who will not develop that condition
+O: The level of exposure to causative agents is the major risk factor for occupational asthma development
+O: Allergic (atopic) tendencies and cigarette smokers have been established as consistent individual risk factors of occupational asthma
+O: Occupational asthma needs a specific additional pharmacological treatment compared to non-work-related asthma
+O: Approximately 80% of workers with occupational asthma who permanently cease exposure will have a full recovery
+A: Approximately 80% of workers with occupational asthma who permanently cease exposure will have a full recovery
+N: [Perlu dicek] Kunci sumber = pilihan peserta (tanda X). Catatan anotator menyanggah opsi lain, tetapi opsi "level of exposure is the major risk factor" juga didukung literatur.
+### mcq | K3 | Juli 2023
+Q: Which of the following statements regarding health surveillance is INCORRECT?
+O: Health surveillance provides an opportunity for employees to raise concerns about how work affects their health
+O: Health surveillance is important for highlighting lapses in workplace control measures, therefore providing invaluable feedback to the risk assessment
+O: Health surveillance is important for detecting ill-health effects at an early stage, so employers can introduce better controls to prevent them from getting worse
+O: Health surveillance can be used as a substitute for undertaking a risk assessment or using effective controls
+O: Health surveillance can provide data to help employers evaluate health risks
+A: Health surveillance can be used as a substitute for undertaking a risk assessment or using effective controls
+### mcq | TOX | Juli 2023
+Q: Which of the following gases is a chemical asphyxiant?
+O: Nitrogen
+O: Hydrogen sulfide
+O: Methane
+O: Carbon dioxide
+O: Ammonia
+A: Hydrogen sulfide
+### mcq | PSI | Juli 2023
+Q: According to WHO, "A state of well-being in which an individual realizes his or her abilities, can cope with the normal stresses of life, can work productively and can make a contribution to his or her community" is the definition of:
+O: Mental health
+O: Individual susceptibility
+O: Work-life balance
+O: Community health
+O: Occupational health
+A: Mental health
+### mcq | TOX | Juli 2023
+Q: Which of the following best represents a group of important sites of toxicant storage in the body?
+O: Adipose tissue, neurons, nail
+O: Hair, gut, brain
+O: Whole blood, bone, skin
+O: Eye, kidney, plasma proteins
+O: Liver, bone, adipose tissue
+A: Liver, bone, adipose tissue
+### mcq | TOX | Juli 2023
+Q: Which of the following compounds have been designated Group 1 human carcinogens by IARC (International Agency for Research on Cancer)?
+O: Ethylene oxide, carbon tetrachloride, benzene
+O: Coal dust, formaldehyde, asbestos
+O: Acrylamide, glyphosate, chromium (VI) compound
+O: Ethylene oxide, benzene, asbestos
+O: Ethyl alcohol, carbon tetrachloride, polychlorinated biphenyls
+A: Ethylene oxide, benzene, asbestos
+### mcq | EPI | Juli 2023
+Q: Workers diagnosed with carpal tunnel syndrome (CTS) were asked how often they were exposed to extremely repetitive hand movement, hand-arm vibration, etc. Twice as many workers without CTS were asked the same questions, and the responses in the two groups were compared. This type of research can be classified as:
+O: Randomized controlled trial
+O: Observational cohort study
+O: Observational cross-sectional study
+O: Observational survey
+O: Observational case-control study
+A: Observational case-control study
+### mcq | EPI | Juli 2023
+Q: Which of the following statements is TRUE according to the information in the contingency table? (High exposure: disease (+) 40, disease (−) 40. Low exposure: disease (+) 20, disease (−) 60.)
+O: The odds of disease were 3 times higher among those with high exposure than among those in the low-exposure group
+O: The risk of disease with high exposure is 67% that of the low-exposed group
+O: Those in the high-exposure group are 50% more likely to develop the disease
+O: There was no difference in the risk of developing the disease between the groups
+O: High exposure is associated with a 1-fold increase in the risk of disease
+A: The odds of disease were 3 times higher among those with high exposure than among those in the low-exposure group
+### mcq | ERGO | Juli 2023
+Q: Frozen shoulder typically resolves in which of the following timescales?
+O: Eighteen months
+O: Immediately after steroid injection
+O: Three weeks
+O: Six weeks
+O: Three months
+A: Eighteen months
+### mcq | EPI | Juli 2023
+Q: When critically appraising a published paper, which type of study design is best used to determine the incidence of disease?
+O: Cross-sectional study
+O: Case-control study
+O: Cohort study
+O: Randomized controlled trial
+O: Periodic sample survey
+A: Cohort study
+### mcq | BIO | Juli 2023
+Q: Which one of the following statements is CORRECT?
+O: Bacillus anthracis cannot be transmitted by cutaneous contact
+O: Bacillus anthracis spores have long viability
+O: Bacillus anthracis cannot be transmitted by inhalation
+O: Bacillus anthracis cannot be transmitted via the gastrointestinal system
+O: Anthrax is caused by the gram-negative bacteria Bacillus anthracis
+A: Bacillus anthracis spores have long viability
+### mcq | ERGO | Juli 2023
+Q: A group of red flags in low back pain is which one of the following?
+O: Fear of re-injury, gait disturbance
+O: Pain that lasts more than six weeks, pain that radiates below the knee
+O: Low job satisfaction, fear of movement
+O: Urinary incontinence, pain in workers older than 35 years
+O: Use of regular analgesics, history of major trauma
+A: Pain that lasts more than six weeks, pain that radiates below the knee
+### mcq | ERGO | Juli 2023
+Q: Which one of the following clinical tests of the upper limb is useful in clinical practice?
+O: Finkelstein's test helps confirm the diagnosis of de Quervain's tenosynovitis
+O: Phalen's maneuver is moderately accurate in mimicking symptoms of radial tunnel syndrome
+O: Gerber's lift-off test is accurate in assessing the function of the supraspinatus muscle
+O: The "empty can" test is useful for assessing the function of the infraspinatus muscle
+O: The "scarf test" is used to test the integrity of the sternoclavicular joint
+A: Finkelstein's test helps confirm the diagnosis of de Quervain's tenosynovitis
+### mcq | PARU | Juli 2023
+Q: Which of the following statements is FALSE regarding the purpose of chest radiography in dust-exposed workers?
+O: Chest radiography has been helpful in exposure–response relationships
+O: Chest radiography has been a useful tool in the surveillance of dust-exposed workers
+O: Chest radiography has been a useful tool in evaluating functional impairment of the lung
+O: Chest radiography has been a useful tool in screening dust-exposed workers
+O: Chest radiography cannot provide certainty about the etiology of observed findings
+A: Chest radiography has been a useful tool in evaluating functional impairment of the lung
+### mcq | BISING | Juli 2023
+Q: A worker is exposed to 76 dB Leq for four hours, then 82 dB Leq for three hours and 92 dB Leq for one hour. His overall 8-hour noise exposure Leq is approximately:
+O: 76 dB
+O: 84 dB
+O: 72 dB
+O: 88 dB
+O: 80 dB
+A: 80 dB
+D: Kunci anotator: 80 dB (rata-rata aritmetika). Slide "Review OSCE Board Juli 2023" (bagian written test) menjawab 84 dB.
+N: [Perlu dicek] Rata-rata energi (logaritmik) Leq = 10·log[(4·10^7.6 + 3·10^8.2 + 1·10^9.2)/8] ≈ 84 dB.
+### mcq | PARU | Juli 2023
+Q: A worker in a kitchen manufacturing company is incidentally found to have upper-zone and mid-zone nodules on a chest X-ray. Which of the following is the most likely diagnosis to consider?
+O: Asbestosis
+O: Chronic obstructive pulmonary disease (COPD)
+O: Silicosis
+O: Asthma
+O: Previous tuberculosis
+A: Silicosis
+### mcq | EPI | Juli 2023
+Q: A total of 175 workers attended a corporate picnic when an outbreak of gastroenteritis occurred. 99 persons ate potato salad, 30 of whom developed gastroenteritis. The food-specific attack rate of gastroenteritis is:
+O: 17.1%
+O: 56.6%
+O: 30.3%
+O: 43.4%
+O: 69.7%
+A: 30.3%
+### mcq | HI | Juli 2023
+Q: Personal sampling pumps used for workplace measurements have variable flow rates. A standard-flow pump has a typical flow rate of:
+O: 3–30 liters per minute
+O: 1–10 ml per minute
+O: 0.5–3 liters per minute
+O: 5–50 ml per minute
+O: 30–300 liters per minute
+A: 0.5–3 liters per minute
+### mcq | PARU | Juli 2023
+Q: To make a diagnosis of coal workers' pneumoconiosis (CWP):
+O: A history of exposure to respirable coal dust is needed
+O: A lung biopsy is a very common tool used to establish the diagnosis of CWP
+O: CWP is best diagnosed as a post-mortem diagnosis
+O: Clinical evidence of the disease through computerized tomography (CT scans) is a must
+O: The ILO International Classification of Radiographs of Pneumoconioses is needed to exclude alternative diagnoses
+A: A history of exposure to respirable coal dust is needed
+### mcq | BIO | Juli 2023
+Q: Which of the following statements regarding the prevention of biological hazards in healthcare settings is INCORRECT?
+O: Blood is the body fluid that presents the greatest risk of infection to healthcare personnel
+O: Installing an infusion is a critical moment with a high risk of injury
+O: Safe equipment should be used as a matter of routine in all activities where there is a possibility of transmitting relevant amounts of infectious matter via body fluids
+O: Sharps containers of a minimum of five (5) different sizes must be available at the workplace
+O: Body fluids, excretions, and secretions must always be handled as if they were infectious
+A: Sharps containers of a minimum of five (5) different sizes must be available at the workplace
+### mcq | HI | Juli 2023
+Q: The unit of measurement for the airborne concentration of dust is:
+O: fiber/mL
+O: ppm
+O: mg/m3
+O: mMol
+O: ppb
+A: ppm
+N: [Perlu dicek] Kunci sumber = ppm (pilihan peserta). Konsentrasi debu di udara lazim dinyatakan dalam mg/m³ (ppm untuk gas/uap).
+### mcq | PARU | Juli 2023
+Q: The most important demographic characteristics that must be taken into account when comparing a worker's pulmonary function test results with the expected normal range are:
+O: Age, weight, height, race
+O: Gender, weight, height, work experience
+O: Age, gender, height, race
+O: Age, gender, race, work experience
+O: Age, gender, weight, race
+A: Age, gender, height, race
+### mcq | PARU | Juli 2023
+Q: Which one of the following is the MOST LIKELY to cause bronchiolitis obliterans?
+O: Working with popcorn sweeteners (flavorings)
+O: Working with mushrooms
+O: Working with oysters
+O: Working with moldy hay
+O: Working with pigeons
+A: Working with popcorn sweeteners (flavorings)
+### mcq | PSI | Juli 2023
+Q: Burnout is reported as being common in certain service occupations. Which statement best describes burnout?
+O: Burnout is characterized by emotional exhaustion, reduced professional efficacy, and increased mental distance from one's job
+O: Burnout is characterized by low mood and emotional exhaustion
+O: Burnout is a clinical condition that overlaps in its presentation with depression
+O: Burnout is synonymous with emotional exhaustion
+O: Burnout is largely a euphemistic concept with no clear clinical basis
+A: Burnout is characterized by emotional exhaustion, reduced professional efficacy, and increased mental distance from one's job
+### mcq | HI | Juli 2023
+Q: A group of workers works simultaneously with both toluene and xylene. A thorough occupational hygiene assessment showed both toluene and xylene levels are 60% of the occupational exposure limit (OEL) 8-hour TWA. Which statement is the best fit?
+O: Biological monitoring for toluene or xylene is indicated
+O: The results of the assessment indicate satisfactory control measures but ongoing monitoring is still required
+O: The results of the assessment indicate unsatisfactory control measures and immediate action is required
+O: The results of the assessment indicate satisfactory control measures and no further action is required
+O: Biological monitoring for both toluene and xylene is indicated
+A: The results of the assessment indicate satisfactory control measures but ongoing monitoring is still required
+N: [Perlu dicek] Toluena dan xilena berefek aditif (SSP); indeks campuran 0,6 + 0,6 = 1,2 (> 1).
+### mcq | PSI | Juli 2023
+Q: The following factors have the LEAST influence on work performance:
+O: The general state of an individual's health
+O: Sleep deprivation and fatigue
+O: Training or adaptation
+O: Nutritional state
+O: Family background
+A: Family background
+### mcq | HI | Juli 2023
+Q: Which one of the following is an example of biological effect monitoring?
+O: Measurement of lead in urine for lead exposure
+O: Measurement of volatile organic compounds in exhaled air
+O: Measurement of hippuric acid in urine for toluene exposure
+O: Measurement of lead in blood for lead exposure
+O: Measurement of cholinesterase activity for organophosphate exposure
+A: Measurement of cholinesterase activity for organophosphate exposure
+### mcq | PARU | Juli 2023
+Q: Which one of the following is NOT a respiratory sensitizer?
+O: Ammonia
+O: Isocyanates
+O: Zinc oxide
+O: Formaldehyde
+O: Latex
+A: Latex
+N: [Perlu dicek] Kunci sumber = latex (pilihan peserta). Lateks dikenal sebagai sensitizer pernapasan; amonia dan zinc oxide adalah iritan/penyebab metal fume fever, bukan sensitizer.
+### mcq | BISING | Juli 2023
+Q: A 35-year-old shipbuilder is having difficulty picking up small objects; you suspect hand-arm vibration syndrome (HAVS). Which of the following statements is CORRECT?
+O: Symptoms do not occur in hot weather
+O: Smoking worsens HAVS
+O: Milk consumption is useful in the management of HAVS
+O: Tingling is a late sign
+O: Appropriate employee clothing can prevent HAVS
+A: Smoking worsens HAVS
+### mcq | BIO | Juli 2023
+Q: During a periodic medical examination, a healthcare worker who recently worked at a respiratory clinic has a positive interferon-gamma release assay (IGRA). Which statement is CORRECT?
+O: Arranging a chest X-ray and performing a clinical examination to include a detailed history of any relevant symptoms of TB is beneficial to rule out active TB
+O: The differential diagnoses are active TB, latent TB, and community-acquired pneumonia
+O: If the diagnosis is latent TB infection, the HCW is unfit for duty for approximately two weeks to confirm the condition is no longer infectious
+O: If the diagnosis is active TB, the HCW is unfit for duty for approximately 6 months as the condition is infectious to others
+O: A high-resolution CT scan is beneficial in confirming the final diagnosis
+A: Arranging a chest X-ray and performing a clinical examination to include a detailed history of any relevant symptoms of TB is beneficial to rule out active TB
+### mcq | KULIT | Juli 2023
+Q: Occupational dermatitis in hairdressers is MOST LIKELY developed due to exposure to:
+O: Persulphate salt dyes
+O: Para-phenylenediamine (PPD)-based dyes
+O: Henna
+O: Perfumes
+O: Hairspray
+A: Para-phenylenediamine (PPD)-based dyes
+### mcq | FTW | Juli 2023
+Q: Regarding color vision testing using Ishihara plates, which one of the following is correct?
+O: Testing is performed on both eyes at the same time
+O: Should be viewed at 25 cm from the face
+O: Delay of over four seconds in identifying a number can be ignored
+O: One error on plates 2 to 13 of the 24-plate test indicates a color deficit
+O: Recommended lighting is a Macbeth easel lamp; however, daylight is a reasonable substitute
+A: Recommended lighting is a Macbeth easel lamp; however, daylight is a reasonable substitute
+### mcq | TOX | Juli 2023
+Q: The amount of a substance that entered the body and was taken up by organs or particular tissues is called:
+O: Effective dose
+O: Internal dose
+O: Total dose
+O: Administered dose
+O: Lethal dose
+A: Internal dose
+### mcq | PSI | Juli 2023
+Q: Shift work is thought to be associated with what kind of cancer?
+O: Renal carcinoma
+O: Gastric cancer
+O: Leukaemia
+O: Testicular cancer
+O: Breast cancer
+A: Breast cancer
+### mcq | FIS | Juli 2023
+Q: Which one of the following is NOT a "stochastic event"?
+O: Mutagenesis
+O: Sensitization
+O: Chromosomal aberrations
+O: Teratogenicity
+O: Carcinogenesis
+A: Sensitization
+### mcq | FIS | Juli 2023
+Q: Which of the following statements is INCORRECT regarding heat-related illness?
+O: Heat stroke victims are classically dry
+O: Heat exhaustion laboratory findings are haemoconcentration
+O: Salt tablets are not useful in the treatment of heat-induced illness
+O: Heat exhaustion symptoms are nausea, weakness, fatigue, myalgia, dizziness
+O: Cerebellum is one of the latest structures affected by heat stroke
+A: Cerebellum is one of the latest structures affected by heat stroke
+### short | EPI | Juli 2023
+Q: ____ refers to the occurrence of new cases of disease or injury in a population over a specified period.
+A: Incidence.
+### short | EPI | Juli 2023
+Q: True or False: Validity represents a true assessment of what it measures and compares with established methods.
+A: True.
+### short | BISING | Juli 2023
+Q: Based on the Stockholm Workshop Scale for vibration white finger, occasional attacks (i.e., three or fewer per week) affecting the distal and middle (and occasionally proximal) phalanges of one or more fingers correspond to which vascular grade?
+A: Stage 2 (moderate).
+### short | TOX | Juli 2023
+Q: True/False: Polyvinyl chloride (PVC) has been known as the cause of angiosarcoma of the liver.
+A: True (peserta). Agen penyebabnya vinyl chloride monomer.
+### short | FIS | Juli 2023
+Q: ____ is a liquid-filled thermometer with a large silvered bulb and a smaller bulb. It measures the cooling power of the air, and using a formula the air velocity can be calculated.
+A: Tidak ada kunci di sumber (jawaban peserta: "elemental mercury").
+N: [Perlu dicek] Deskripsi sesuai Kata thermometer.
+### short | FIS | Juli 2023
+Q: Place the following types of radiation in order from the least to the highest penetrating power: alpha particles, beta particles, X-rays, gamma rays.
+A: Alpha – beta – X-ray – gamma.
+### short | KULIT | Juli 2023
+Q: What is the most likely diagnosis of a nurse presenting with bilateral hand dermatitis, predominantly affecting the web spaces between the fingers (interdigital spaces)?
+A: Irritant contact dermatitis (DKI).
+### short | ERGO | Juli 2023
+Q: Name the three categories of low back pain.
+A: Acute (< 6 weeks), subacute (6–12 weeks), chronic (> 12 weeks).
+### short | K3 | Juli 2023
+Q: Controlling exposure to hazards in the workplace is vital to protecting workers. ____ establish work practices that reduce the duration, frequency, or intensity of exposure to hazards, and may include work process training, job rotation, or ensuring adequate rest breaks.
+A: Administrative controls.
+### short | KULIT | Juli 2023
+Q: A 40-year-old farmer presents with an eruption of blackheads, cysts, and pustules in the malar cheeks, retro-auricular, and axillary regions. No past medical history or allergies. He has been spraying weeds in his plant crop for the past 2 weeks. What is the most likely diagnosis?
+A: Acne mechanica (catatan anotator).
+N: [Perlu dicek] Distribusi malar–retroaurikular–aksila setelah pajanan herbisida adalah gambaran klasik chloracne.
+### short | ERGO | Juli 2023
+Q: A 40-year-old male construction worker has a 9-month history of numbness on the medial aspect of the hand and the fourth and fifth digits of the right hand, with occasional tingling on the medial forearm. Examination shows atrophy of the intrinsic muscles of the right hand. To determine the site of the lesion, ____ and ____ studies are indicated.
+A: EMG and nerve conduction studies.
+### short | TOX | Juli 2023
+Q: In regards to toxicity mechanism, cyanide and ____ are potent inhibitors of cytochrome oxidase, which inhibits oxidative phosphorylation.
+A: CO, azide, H2S (catatan anotator).
+### short | TOX | Juli 2023
+Q: Place the following mechanisms of chemical delivery in order from the most effective to the least effective: intravenous, subcutaneous, oral, inhalation, dermal.
+A: IV – inhalation – oral – SC – dermal (jawaban peserta; anotator hanya menulis "IV –").
+N: [Perlu dicek] Urutan buku teks toksikologi: IV > inhalasi > subkutan > oral > dermal.
+### short | TOX | Juli 2023
+Q: According to the Endocrine Society, an exogenous chemical or mixture of chemicals that interferes with any aspect of hormone action is classified as ____.
+A: Endocrine-disrupting chemical (EDC).
+### short | TOX | Juli 2023
+Q: Name the three forms of mercury.
+A: Elemental, inorganic, organic.
+### short | HI | Juli 2023
+Q: Mention 3 environmental conditions that can affect the accuracy and usefulness of direct-reading instruments in industrial hygiene.
+A: Temperature, humidity, pressure (anotator: juga interferensi zat lain, vibrasi, EMI).
+### short | BIO | Juli 2023
+Q: ____ is the transfer of microorganisms to food from other foods (especially raw meat, poultry, seafood), cutting boards, and utensils if they are not handled properly.
+A: Cross-contamination.
+### short | TOX | Juli 2023
+Q: Abdominal pain, anemia, raised erythrocyte protoporphyrin, and siderocytes in peripheral blood are the most likely signs/symptoms of ____.
+A: Lead intoxication.
+### short | PARU | Juli 2023
+Q: Mention the three types of silicosis based on the main clinical presentations.
+A: Acute, accelerated, chronic (catatan anotator). Jawaban peserta: simple silicosis, progressive massive fibrosis, silicotuberculosis.
+### short | PARU | Juli 2023
+Q: ____ is the most reliable diagnostic tool for monitoring respiratory function in workers exposed to respiratory hazards.
+A: Spirometry.

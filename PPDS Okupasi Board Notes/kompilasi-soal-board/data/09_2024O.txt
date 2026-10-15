@@ -1,0 +1,423 @@
+### stem | PARU | Okt 2024
+Q: Kasus untuk soal berikut (Okt 2024 no. 1–5): A 38-year-old male car painter in a car repair workshop presents with cough, shortness of breath, and chest tightness that began about 3 months ago and has progressively worsened over the past month. Symptoms started shortly after he was assigned to a new section working with spray paints and adhesives containing toluene diisocyanate (TDI), calcium carbonate, titanium dioxide, and polyvinyl acetate. Symptoms are worse during his shift and improve on weekends or holidays. He also complains of frequent nasal irritation and occasional headaches. Bilateral wheezing on auscultation. No past history of asthma or allergies. Pulmonary function tests show FEV1 below the lower limit of normal, which improves significantly after bronchodilator.
+### mcq | PARU | Okt 2024
+Q: (Kasus pengecat mobil) What is the most likely diagnosis given his symptoms and occupational exposure history?
+O: Chronic obstructive pulmonary disease (COPD)
+O: Hypersensitivity pneumonitis
+O: Pneumonia
+O: Chronic bronchitis
+O: Occupational asthma
+### mcq | PARU | Okt 2024
+Q: (Kasus pengecat mobil) Which agent is most likely to cause this patient's condition?
+O: Titanium dioxide
+O: Calcium carbonate
+O: Mixed dust
+O: Toluene diisocyanate (TDI)
+O: Polyvinyl acetate
+### mcq | PARU | Okt 2024
+Q: (Kasus pengecat mobil) Which test would be most useful in confirming the diagnosis?
+O: Serial peak expiratory flow (PEF) measurements at work and away from work
+O: Spirometry after bronchodilator use
+O: High-resolution computed tomography (HRCT) of the chest
+O: Serum IgE levels
+O: Skin prick test for common allergens
+### mcq | PARU | Okt 2024
+Q: (Kasus pengecat mobil) What is the most appropriate immediate intervention?
+O: Recommending over-the-counter antihistamines
+O: Administration of antibiotics for potential respiratory infection
+O: Prescribing oral corticosteroids and advising the patient to continue working
+O: Initiation of bronchodilator therapy and relocation of the patient to a different area with no exposure to the suspected agent
+O: Recommending the use of a high-efficiency particulate air (HEPA) mask
+### mcq | PARU | Okt 2024
+Q: (Kasus pengecat mobil) What is the most likely long-term consequence if the patient continues to be exposed to the causative agent?
+O: Coronary artery disease
+O: Development of lung cancer
+O: Spontaneous pneumothorax
+O: Progression to fixed airway obstruction and chronic persistent asthma
+O: Chronic obstructive pulmonary disease (COPD)
+### mcq | K3 | Okt 2024
+Q: Prevention that can be applied to workers using jackhammers on roads is:
+O: Respirator use
+O: Environmentally friendly machinery
+O: Lighting settings in the workplace
+O: Glasses for close focus
+O: Installation of air conditioners in the workplace
+### mcq | K3 | Okt 2024
+Q: Administrative control for physical hazards is as follows:
+O: Substitute the machine with an environmentally friendly machine
+O: Setting the ventilation system at room temperature with a central air-conditioning system in the office
+O: Change the machine production flow
+O: The use of rubber dampers to reduce vibration and noise from the machine
+O: Working-hour restriction to limit exposure for radiographers
+### stem | BIO | Okt 2024
+Q: Kasus untuk soal berikut (Okt 2024 no. 8–9): A 24-year-old female worker in the administrative division of a multinational company was diagnosed with allergic rhinitis. Her complaints start every morning after she has worked a couple of hours. Her office is in a high-rise building with a central air-conditioning ventilation system. After investigation, it is suspected that she is exposed to microorganisms from the ventilation system.
+### mcq | BIO | Okt 2024
+Q: (Kasus rinitis alergi pekerja kantor) What type of biologic hazard is she exposed to?
+O: Environmental biologic hazard
+O: Natural biologic hazard
+O: Work-process biologic hazard
+O: Non-occupational biologic hazard
+O: Occupational biologic hazard
+### mcq | BIO | Okt 2024
+Q: (Kasus rinitis alergi pekerja kantor) What is your main recommendation for the company?
+O: To develop a return-to-work program for that worker
+O: To maintain and clean the ventilation system more regularly
+O: To screen the workers periodically for allergic rhinitis
+O: To provide surgical masks for workers who have a history of allergy
+O: To do a fitness-to-work assessment for that worker
+### mcq | ERGO | Okt 2024
+Q: Regarding office ergonomics, the top of the computer monitor should generally be:
+O: Eye level
+O: 2 inches below eye level
+O: 2 inches right of eye level
+O: 2 inches left of eye level
+O: 2 inches above eye level
+### mcq | TOX | Okt 2024
+Q: Which of the following findings is most likely to be present in a peripheral blood smear of a patient with lead poisoning?
+O: Howell-Jolly bodies
+O: Target cells
+O: Basophilic stippling
+O: Anisocytosis
+O: Heinz bodies
+### stem | BIO | Okt 2024
+Q: Kasus untuk soal berikut (Okt 2024 no. 12–14): Mr. S, 42 years old, works in a very overcrowded prison. His duties include bringing food to prisoners, giving medicines prescribed by the prison doctor, and taking care of prisoners in the sick ward or those too sick to care for themselves. In the last month he complained of a cough that does not heal and weight loss; a week ago pulmonary TB was confirmed.
+### mcq | BIO | Okt 2024
+Q: (Kasus sipir penjara dengan TB) What type of biologic hazard is he exposed to?
+O: Environmental biologic hazard
+O: Natural biologic hazard
+O: Work-process biologic hazard
+O: Occupational biologic hazard
+O: Non-occupational biologic hazard
+### mcq | BIO | Okt 2024
+Q: (Kasus sipir penjara dengan TB) What is the main question you should ask him to identify whether this is an occupational disease?
+O: How long has he worked as a prison warden?
+O: Did he have TB before he worked as a prison warden?
+O: Did he have a history of TB vaccination?
+O: Did he attend prisoners who had TB in the past month?
+### mcq | BIO | Okt 2024
+Q: (Kasus sipir penjara dengan TB) What should be your main recommendation to the prison management to prevent TB among prison wardens?
+O: TB screening of incoming prisoners
+O: Admit prisoners with TB to hospital
+O: Provide better nutrition for officers
+O: Hire nurses
+O: Implement standard infection prevention for officers
+### mcq | BISING | Okt 2024
+Q: Workers at risk of vibration white finger:
+O: Surgeon
+O: Electrician
+O: Engineer
+O: Dentist
+O: Fishermen
+### mcq | ERGO | Okt 2024
+Q: NIOSH recommended lifting limit (load constant)?
+O: 20 kg
+O: 23 kg
+O: 24 kg
+O: 21 kg
+O: 22 kg
+### mcq | FTW | Okt 2024
+Q: A worker in a big wood industry was diagnosed with active pulmonary TB. After the company doctor examined other workers, 3 more workers also had TB. Pulmonary TB found among the workers can be categorized as:
+O: Occupational disease
+O: Work-related disease
+O: Disease among worker population
+O: Occupational or work-related disease
+O: Non-communicable infectious disease
+### mcq | ERGO | Okt 2024
+Q: An ergonomist can modify the task or the performance of the task to optimize work intensity. An objective measure that can be used to estimate work intensity is:
+O: Respiratory rate
+O: Muscle size
+O: Tinnitus
+O: Eye strain
+O: Static postures
+### stem | ERGO | Okt 2024
+Q: Kasus untuk soal berikut (Okt 2024 no. 19–21): A female electronics assembly worker, G3P2A0, with controlled type 2 diabetes. She has worked for 1 year, 8–9 hours a day, 6 days a week. She came to the company clinic with pain and tingling in her right hand.
+### mcq | ERGO | Okt 2024
+Q: (Kasus pekerja perakitan elektronik) If you think the worker has carpal tunnel syndrome, you will do:
+O: AP X-ray examination
+O: Phalen examination by tapping the finger over the area of the median nerve
+O: Ask the patient to do the flick sign, to identify whether the tingling decreases
+O: Reverse Phalen's test is done by pressing the carpal tunnel with the examiner's thumb
+O: History of complaints felt in three fingers: middle, ring, and little finger
+### mcq | FTW | Okt 2024
+Q: (Kasus pekerja perakitan elektronik) In this case, in your opinion as an occupational medicine specialist:
+O: Not an occupational disease, because the patient has only been working for 1 year
+O: Disease aggravated by work, due to exposure received by a worker with pregnancy and DM
+O: Occupational disease because it is related to the exposure received by the patient
+O: Determination of occupational disease should wait until the patient gives birth
+O: Not an occupational disease, because the patient is pregnant and has diabetes mellitus
+### mcq | ERGO | Okt 2024
+Q: (Kasus pekerja perakitan elektronik) Workers at high risk of having a similar problem to this patient:
+O: Stewardess
+O: Musicians
+O: Laboratory
+O: QC checker
+O: Parking security
+O: Restaurant chef
+### mcq | K3 | Okt 2024
+Q: Community management of occupational diseases for prevention and control in workers with the same hazard exposure should be done. The main difference between community and individual occupational management is:
+O: Job position
+O: Target population
+O: Jurisdiction
+O: Work environment
+O: Company
+### mcq | FIS | Okt 2024
+Q: Occupational diseases can be caused by physical factors of the work environment. An example of an occupational disease caused by physical factor exposure is:
+O: Tuberculosis due to work
+O: Silicosis
+O: Pneumoconiosis
+O: Conductive deafness
+O: Photokeratitis
+### mcq | PSI | Okt 2024
+Q: Which of the following is a psychosocial factor that can decrease worker productivity?
+O: Strong social support from colleagues
+O: A good work–life balance
+O: Excessive work demands and lack of control over the job
+O: Increased worker salary
+O: Reward programs that motivate workers
+### mcq | PARU | Okt 2024
+Q: Which of the following occupational diseases is most likely to cause progressive massive fibrosis?
+O: Berylliosis
+O: Byssinosis
+O: Coal workers' pneumoconiosis
+O: Silicosis
+O: Asbestosis
+### mcq | FTW | Okt 2024
+Q: For a fitness-to-work analysis, the type of medical examination that needs to be done depends mainly on:
+O: The job demand
+O: The need for job promotion
+O: Exposure at the workplace
+O: WHO's definition of health
+O: New recruitment of staff
+### mcq | FTW | Okt 2024
+Q: A cook in a 5-star hotel was hospitalized for typhoid fever. After discharge he rested at home for one more week. He then wanted to return to work, but the company doctor declared him temporarily unfit. This decision was made mainly because:
+O: There are sufficient numbers of cooks at the hotel
+O: The worker still feels weak
+O: Recommendation from the internist
+O: The company still allows the worker to take time off
+O: There are special precautions for workers who handle food
+### mcq | ERGO | Okt 2024
+Q: A palm-oil plantation worker carries loads over a distance of 100 meters, 50 times during 8 hours. What is the ergonomic exposure?
+O: Force
+O: Repetitive
+O: Compression
+O: Vibration
+O: Duration
+### mcq | PARU | Okt 2024
+Q: Food substances that cause occupational asthma:
+O: Bread (flour), mushrooms, shrimp processing
+O: Coffee, mushrooms, shrimp processing
+O: Coffee, mushrooms, processed meat
+O: Bread (flour), coffee, mushrooms
+O: Bread (flour), coffee, shrimp processing
+### mcq | TOX | Okt 2024
+Q: When the insecticides chlorpyrifos and diazinon are absorbed into an organism, what would be the most likely combined effect?
+O: Additive
+O: Antagonistic
+O: Unknown effect
+O: Chronic toxicity
+O: Potentiation
+### mcq | PSI | Okt 2024
+Q: How can psychosocial stress in the workplace affect worker productivity?
+O: Significantly increase work enthusiasm
+O: Make workers more competitive and productive
+O: Cause fatigue and reduce focus, thereby lowering productivity
+O: Have no significant effect on productivity
+O: Increased worker satisfaction
+### mcq | PSI | Okt 2024
+Q: One way a company can improve productivity by considering psychosocial aspects is:
+O: Creating a supportive work environment and addressing workers' mental well-being
+O: Providing technical training without addressing psychological needs
+O: Reducing break times to increase effective working hours
+O: Reducing relaxation during working hours
+O: Increasing working hours to complete more tasks
+### mcq | BIO | Okt 2024
+Q: Based on occupational risk, dengue vaccination is especially also recommended for which workers?
+O: Administrative workers
+O: Manufacturing workers
+O: Teachers
+O: Construction site workers
+O: Health care workers
+### mcq | TOX | Okt 2024
+Q: In dose–response relationships, the term "threshold" refers to which of the following?
+O: The degree to which a substance exhibits a dose–response relationship
+O: The interval of time between exposure and development of the health effect
+O: The dose at which no observable adverse effect occurs
+O: The dose of a substance that can be expected to cause death in 50% of those exposed
+O: The dose below which the probability of an individual responding is zero
+### mcq | PSI | Okt 2024
+Q: A psychosocial factor that can improve worker productivity is:
+O: Strong social support from colleagues and supervisors
+O: Excessive workload and unrealistic targets
+O: Limited opportunities for rest
+O: Lack of opportunity for career promotion
+O: Lack of clarity in job roles
+### mcq | PSI | Okt 2024
+Q: What is the impact of an imbalance between job demands and worker capability on productivity? (opsi tidak tercatat)
+A: Productivity decreases because the worker feels stressed and overwhelmed.
+### mcq | PARU | Okt 2024
+Q: Lung cancer — related exposures? (redaksi dan opsi tidak tercatat)
+A: Asbestos, cadmium, radon (opsi yang dipilih peserta).
+### mcq | BISING | Okt 2024
+Q: A 27-year-old fitter uses a grinder to cut ferrous metal, 8 hours a day, 5 days a week, with ear plugs every day, for 5 years. The annual medical check-up audiogram shows a notch at high frequencies. The suspected diagnosis is:
+O: Noise-induced hearing loss
+O: Conductive hearing loss
+O: Temporary threshold shift
+O: Sudden deafness
+O: Presbycusis
+### mcq | ERGO | Okt 2024
+Q: Tennis elbow — which tendon is affected?
+O: Pronator teres
+O: Extensor carpi radialis brevis
+O: Palmaris longus
+O: Extensor carpi ulnaris
+O: Flexor carpi radialis
+### mcq | PSI | Okt 2024
+Q: Impact of a good work–life balance on productivity? (opsi tidak tercatat)
+A: Increases job satisfaction and enthusiasm, which can enhance productivity.
+### mcq | ERGO | Okt 2024
+Q: Which condition is characterized by chronic pain and stiffness in the shoulder, often related to repetitive overhead activities in the workplace?
+O: Adhesive capsulitis
+O: Dupuytren's contracture
+O: Lateral epicondylitis
+O: Rotator cuff tendinitis
+O: De Quervain's tenosynovitis
+### mcq | PARU | Okt 2024
+Q: What is the most effective preventive measure against respiratory disorders in laboratory workers exposed to formaldehyde?
+O: Frequent hand washing after handling specimens
+O: Dupuytren's contracture
+O: Installing proper ventilation and fume hoods in the laboratory
+O: Taking antihistamines daily
+O: Wearing a surgical mask while working
+### mcq | FIS | Okt 2024
+Q: A 36-year-old crane operator in a manufacturing factory consults the company clinic for dizziness, weakness, fatigue, body aches, and difficulty moving his left leg. During the consultation he becomes weaker and somnolent. Temperature is subfebrile; other vital signs are within normal limits. His coveralls are removed because they are wet. What is happening to this patient?
+O: Dengue haemorrhagic fever
+O: Typhoid fever
+O: Chikungunya
+O: Heat stroke
+O: Heat cramp
+### mcq | ERGO | Okt 2024
+Q: Low back pain without radiation? (redaksi tidak lengkap)
+A: Simple LBP.
+### mcq | ERGO | Okt 2024
+Q: Mr. A, 34 years old, has worked for 10 years as an office boy in a private office. His duties are carrying water gallons with a trolley and putting them on the dispenser. This can lead to potential hazards in the form of:
+O: Physical and chemical
+O: Physical and ergonomic
+O: Psychosocial and ergonomic
+O: Physical and biological
+O: Psychosocial and biological
+### mcq | ERGO | Okt 2024
+Q: Mrs. J, 30 years old, an office employee, complains of low back pain without radiation to the leg, experienced since her 4th year of work. She works 8 hours with meal breaks, mostly sitting facing a computer screen. Which disease with these symptoms can arise from her work?
+O: HNP
+O: Simple LBP
+O: Carpal tunnel syndrome
+O: Dry eyes
+O: Piriformis syndrome
+### stem | PSI | Okt 2024
+Q: Kasus untuk soal berikut (Okt 2024 no. 46–49): Rudi works at a rapidly growing tech company and is known as a diligent, high-achieving employee. In recent months his workload has increased significantly. He feels isolated from colleagues as there is rarely time to socialize, and pressured by his boss's demands for perfect results in a short time. He has started to feel physically and emotionally exhausted and often has difficulty sleeping even though he feels very tired.
+### mcq | PSI | Okt 2024
+Q: (Kasus Rudi) What psychological impact might Rudi experience due to these conditions?
+O: Increased support from his manager
+O: Higher self-confidence
+O: Burnout or emotional exhaustion
+O: Increased work motivation
+O: Increased performance and productivity
+### mcq | PSI | Okt 2024
+Q: (Kasus Rudi) What is the main psychosocial factor affecting Rudi's work conditions?
+O: Lack of technical skills
+O: No promotion opportunities
+O: Rudi's inability to manage his time well
+O: High work demands and lack of social support
+O: His family problems
+### mcq | PSI | Okt 2024
+Q: (Kasus Rudi) What should the company do to help address Rudi's problems?
+O: Increase social support and offer better rest opportunities
+O: Provide negative feedback to motivate Rudi
+O: Ask Rudi to work longer hours to complete his tasks
+O: Give him more tasks to improve his skills
+O: Give more responsibility to Rudi
+### mcq | PSI | Okt 2024
+Q: (Kasus Rudi) How might poor interpersonal relationships with colleagues affect Rudi's psychosocial well-being?
+O: Rudi will focus more on his work
+O: Rudi will feel more isolated and pressured
+O: Rudi will become more confident because of working independently
+O: Rudi will feel more motivated to compete
+O: Rudi will feel happier
+### mcq | BIO | Okt 2024
+Q: Which of the following is true for the replicating phase of chronic hepatitis B?
+O: HBsAg negative, HBsAb positive, anti-HBc positive
+O: HBsAg positive, HBsAb positive, anti-HBc positive, HBV DNA positive, HBeAg negative
+O: HBsAg positive, HBsAb positive, anti-HBc positive, HBV DNA undetectable, HBeAg negative
+O: HBsAg positive, HBsAb positive, anti-HBc negative, HBV DNA positive, HBeAg positive
+O: HBsAg positive, HBsAb positive, anti-HBc positive, HBV DNA positive, HBeAg positive
+### short | BIO | Okt 2024
+Q: A worker diagnosed with malaria can be reported as an occupational disease if ____.
+A: The worker was exposed to malaria vectors (mosquitoes) at work.
+### short | TOX | Okt 2024
+Q: The routes of pesticide entry most important for applicator exposure are ____.
+A: Dermal and inhalation.
+### short | EPI | Okt 2024
+Q: Study design characterized by the simultaneous collection of both exposure and outcome data.
+A: Cross-sectional study.
+### short | BIO | Okt 2024
+Q: Pneumonia vaccination is also recommended for ____ workers.
+A: Manufacturing workers (jawaban recall).
+### short | TOX | Okt 2024
+Q: The degree to which a substance exhibits a dose–response relationship is called ____.
+A: Potency.
+### short | TOX | Okt 2024
+Q: The greatest concentration of a substance causing no detectable adverse alteration in life span is the ____.
+A: No observed adverse effect level (NOAEL).
+### short | TOX | Okt 2024
+Q: True/False: Beta-2-microglobulin may appear in the late stages of lead nephropathy.
+A: True.
+### short | REG | Okt 2024
+Q: The first occupational disease included in the ILO list of occupational diseases.
+A: Silicosis (pneumoconiosis).
+### short | PARU | Okt 2024
+Q: Tests useful in diagnosing occupational asthma include ____.
+A: Serial peak expiratory flow measurements, spirometry, and challenge tests.
+### short | TOX | Okt 2024
+Q: Specimen used for biomonitoring of inorganic arsenic levels.
+A: Urine.
+### osce | ERGO | Okt 2024
+Q: Stase Muskuloskeletal. Pekerja hotel (housekeeping) yang tugasnya membersihkan kamar dan kasur, keluhan nyeri punggung disertai kesemutan.
+S: Apa saja informasi yang perlu digali dari anamnesis?
+S: Lakukan pemeriksaan fisik (TTV dan pemeriksaan khusus).
+S: Diagnosis dan diagnosis banding.
+A: Recall: susp. HNP; DD LBP, spondylosis.
+### osce | PARU | Okt 2024
+Q: Stase Spirometri. Pasien 36 tahun, sesak napas hebat sejak 3 bulan, memberat saat bekerja dan berkurang setelah bekerja, batuk (+). Bahan kimia yang digunakan antara lain fosfor, sulfur, toluene diisocyanate, methylene diphenyl diisocyanate. Disediakan tabel spirometri 2024 dan 2023 (baseline), contoh: 2024 KVP 3010 (pred 3680, NNT 3007), VEP1 1900 (pred 2870), VEP1/KVP 80 (pred 84,7; NNT 74); 2023 KVP 3200, VEP1 2300, VEP1/KVP 89%.
+S: Manfaat spirometri.
+S: Pajanan yang mungkin menyebabkan?
+S: Jenis gangguan respirasi dan alasannya.
+S: Perbandingan antar waktu.
+S: Diagnosis dan diagnosis banding.
+A: Recall: (1) surveilans medis fungsi paru, skrining, diagnosis klinis, diagnosis PAK, kelaikan kerja (pra-kerja, pra-penempatan, RTW), penilaian penggunaan respirator, penilaian kecacatan paru, dasar regulasi. (2) TDI, MDI. (3) Dinilai dari VEP1/KVP dan KVP terhadap NNT. (4) LNL tidak dapat dipakai (hanya 2 tahun) → pakai penurunan KVP/VEP1 > 8% (contoh: KVP turun 6%, VEP1 turun 17%). (5) Asma bronkial; DD PPOK, bronkitis kronis, emfisema, bronkiolitis obliterans.
+### osce | TOX | Okt 2024
+Q: Stase Toksikologi. Laki-laki pekerja pabrik aki, keluhan lemas. PF: konjungtiva anemis (+/+), pembesaran hepar. Lab darah rutin: hanya Hb yang turun.
+S: Pemeriksaan fisik dan penunjang apa yang akan Anda lakukan untuk menegakkan diagnosis?
+S: Diagnosis klinis.
+S: Diagnosis banding.
+A: Recall: PF — TTV, pucat, Burton line, hepatosplenomegali, refleks/tremor/neuropati (wrist/foot drop). PP — darah lengkap + indeks (MCV, MCH turun), retikulosit, apusan darah (basophilic stippling), fungsi ginjal, feritin/SI, FEP/ZPP, kadar timbal darah, USG abdomen, rontgen tulang panjang/abdomen. Diagnosis: anemia mikrositik hipokrom sekunder akibat pajanan timbal. DD: anemia defisiensi besi, anemia penyakit kronik, anemia sideroblastik, talasemia, keganasan.
+### osce | ERGO | Okt 2024
+Q: Stase JSA. Kasus dengan gambar penjahit yang sedang menjahit baju.
+S: Sebutkan 10 hazard ergonomi.
+S: Sebutkan 6 penyakit akibat hazard di atas.
+S: Rekomendasi dan penanganan yang dapat dilakukan segera.
+A: Recall: vibrasi, postur janggal, postur statis, gerakan repetitif, kompresi/kontak stres, suhu, durasi lama. Penyakit: neck pain, shoulder pain, CTS, trigger finger, HAVS, LBP, knee pain. Rekomendasi: kolaborasi HRD/HSE, modifikasi workstation, edukasi dan pelatihan ergonomi, variasi/rotasi kerja, splint/brace.
+### osce | PSI | Okt 2024
+Q: Stase Promkes. Hasil MCU: SRQ-20 positif pada ±40% pekerja; banyak keluhan sulit tidur, lemah, letih, lesu, tidak bersemangat. Lakukan promosi kesehatan tentang:
+S: Stres kerja dan penyebabnya.
+S: Dampak stres kerja terhadap pekerjaan.
+S: Mekanisme koping.
+### osce | PARU | Okt 2024
+Q: Stase ILO. Pekerja pabrik keramik, batuk 3 bulan dan sulit bernapas.
+S: Jelaskan dan baca foto toraks sesuai klasifikasi ILO serta isi formulir.
+S: Kesimpulan diagnosis.
+S: Diagnosis banding.
+A: Recall: susp. pneumokoniosis; DD TB, asbestosis, silikosis, dll.
+### oral | BISING | Okt 2024
+Q: Ujian Lisan (kasus). Laki-laki, pekerja engineering/masinis di kapal. Dua minggu ini merasa tidak nyaman dengan pendengarannya; sejak 3 bulan lalu tidak dapat mendengar percakapan atau nada tinggi.
+S: Informasi apa yang ingin Anda dapatkan?
+S: Diagnosis klinis dan diagnosis okupasi.
+S: Tatalaksana individu dan komunitas.
