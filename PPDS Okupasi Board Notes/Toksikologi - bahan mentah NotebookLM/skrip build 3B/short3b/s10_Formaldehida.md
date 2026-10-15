@@ -1,0 +1,23 @@
+| Poin | Formaldehida (formalin) |
+|---|---|
+| **1. Sifat dan klasifikasi** | HCHO (CAS 50-00-0, BM 30,03); **gas** tidak berwarna, bau menusuk, sangat larut air. Dijual sebagai **formalin: 37% berat, distabilkan metanol 6 sampai 12%**. **IARC Grup 1** (nasofaring, leukemia mieloid; sinonasal), **ACGIH A1**, Permenaker A-1 |
+| **2. Sumber** | **Lab patologi anatomi/histologi (fiksasi, grossing), ruang anatomi (kadaver), balsem jenazah**; kayu lapis, particleboard, MDF (off-gassing); resin UF/PF/MF, POM; penyempurnaan tekstil anti-kusut; asap rokok, furnitur baru |
+| **3. Toksikokinetik** | Inhalasi: **terserap hampir 100% di saluran napas atas** (reaktif, hidrofilik). Kulit: lambat, bereaksi dengan keratin. **Formaldehida eksogen praktis tidak masuk sirkulasi** (kadar darah normal ± 0,1 mM adalah endogen). Metabolisme: + GSH → **HMGSH → ADH5 (formaldehyde dehydrogenase) → S-formilglutation → SFGH → format** → CO2 (jalur THF) atau one-carbon pool. Ekskresi: CO2 napas, format urin |
+| **4. Toksikodinamik** | **DNA-protein crosslink (DPC)** (aduk N²-hidroksimetil-dG), blokade replikasi dan transkripsi, DSB; mutasi TP53, SCE, mikronukleus, monosomi 7/trisomi 8. **Karsinogen site-of-contact:** sitotoksisitas lokal + hiperplasia regeneratif → nasofaring; leukemia mieloid: hipotesis HSC/progenitor beredar di kapiler mukosa, stres oksidatif, DNMT3A. **Iritasi (TRPA1)**; **hapten: sensitisasi tipe IV (dermatitis) dan tipe I (asma)** |
+| **5. Biomonitoring** | **Tidak direkomendasikan**: asam format urin tidak spesifik (endogen tinggi, diet); formaldehida darah t1/2 menit dan tertutup kadar endogen. Riset: DPC leukosit, aduk DNA, mikronukleus. **Penilaian pajanan = air monitoring (personal breathing zone dan area)** |
+| **6. Waktu paruh** | Plasma 1 sampai 1,5 menit; DPC seluler ± 12 sampai 26 jam (NER/proteasom) |
+| **7. Efek akut** | **0,1 sampai 0,5 ppm:** bau, iritasi mata ringan; **0,5 sampai 1 ppm:** iritasi mata, hidung, faring nyata; **1 sampai 3 ppm:** batuk berat, nyeri dada, blefarospasme; **> 5 sampai 20 ppm:** laringospasme, edema glotis, bronkitis kimia, **edema paru non-kardiogenik**. **Tertelan:** korosif (ulserasi/perforasi GI), asidosis metabolik (format), AKI, koma |
+| **8. Efek kronis** | **Dermatitis kontak alergi** (hipersensitivitas tipe IV); **asma okupasi** (IgE dan iritan/RADS); **karsinoma nasofaring** (laten 15 sampai 25 tahun); **AML**; karsinoma sinonasal |
+| **9. Batas pajanan** | **ACGIH TLV-TWA 0,1 ppm (0,12 mg/m3), STEL 0,3 ppm**; A1, **DSEN, RSEN**. **Permenaker 5/2018: KTD (ceiling) 0,3 ppm (0,37 mg/m3)**, A-1, Sensitisasi. OSHA PEL 0,75 ppm, STEL 2, action level 0,5. NIOSH REL 0,016 ppm, ceiling 0,1, IDLH 20 (Ca) |
+| **10. BEI / IPB** | **Tidak ada** (ACGIH maupun Permenaker) |
+| **11. Tatalaksana akut** | **Tidak ada antidot.** Udara segar, **O2 lembap**, lepas pakaian, bilas kulit ≥ 15 menit, irigasi mata 15 sampai 20 menit; **waspada edema laring: intubasi/trakeostomi dini bila stridor**; bronkodilator; **observasi 24 sampai 48 jam (edema paru tertunda)**. Tertelan: jangan muntahkan, endoskopi dini |
+| **12. Kelaikan kerja dan manajemen** | **Sensitisasi terbukti (asma okupasi atau DKA berat): permanently unfit** (kadar < 0,05 ppm dapat memicu asma berat). Pra-penempatan unfit: asma berat tak terkontrol, penyakit kulit luas. **Surveilans:** spirometri (FEV1), THT (nasofaringoskopi bila hidung tersumbat, epistaksis, nyeri tenggorok kronis), kulit + patch test. **Pengendalian (lab patologi):** substitusi fiksatif (berbasis alkohol/glikol, glioksal), **downdraft grossing station atau fume hood ≥ 0,5 m/detik**, **wadah formalin pre-filled tertutup**, ruang tekanan negatif ≥ 12 ACH, rotasi (maks 2 jam di grossing), spill kit (urea/natrium bisulfit), **sarung tangan nitril tebal/butil (lateks tembus)**, **respirator dengan kartrid formaldehida**, goggles + face shield |
+| **13. Lain-lain** | **IARC Grup 1** (Vol. 100F). Perpres 7/2019: Lampiran I.a butir 11 (saluran napas atas oleh sensitisasi/iritasi), I.b butir 1 (dermatosis kontak alergi), Lampiran III butir 21 (kanker akibat kerja); cek ulang nomor butir. EBV, atopi, polimorfisme ADH5/GSTT1 sebagai faktor individu |
+
+**Pearl dan jebakan ujian**
+- **Karsinogen site-of-contact**: terperangkap di nasofaring (NPC); AML dijelaskan lewat sel punca di kapiler submukosa hidung.
+- **Bau bukan indikator aman**: kelelahan olfaktorius cepat (deteksi 0,5 sampai 1 ppm, jauh di atas TLV).
+- **Tidak ada BEI/IPB; asam format urin bukan biomarker.**
+- **Permenaker = ceiling (KTD) 0,3 ppm**, bukan TWA; ACGIH = TWA 0,1 + STEL 0,3.
+- **Notasi ganda DSEN + RSEN** (bukan hanya iritan).
+- **Formalin 10% berisi ± 3,7% formaldehida** (pengenceran 1:10 dari 37%).

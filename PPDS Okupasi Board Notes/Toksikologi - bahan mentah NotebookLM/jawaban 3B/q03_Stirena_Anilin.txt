@@ -1,0 +1,355 @@
+---
+
+### **A. STIRENA (Styrene / Vinylbenzene)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_8\text{H}_8\\)** atau **\\(\text{C}_6\text{H}_5\text{CH}=\text{CH}_2\\)**; nomor CAS **100-42-5**; berat molekul **104,15 g/mol**. Sinonim: *vinylbenzene, phenylethylene, cinnamene, styrol*.
+* **Sifat Fisik**: Cairan berminyak tidak berwarna hingga kekuningan, berbau aromatik manis atau floral yang khas, sangat mudah menguap dengan tekanan uap 0,67 kPa pada 25°C, mudah terbakar (titik nyala ~31°C).
+* **Kelarutan**: Sangat larut dalam lemak (*lipofilik*) dan praktis tidak larut dalam air.
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 2A** (*Probably carcinogenic to humans*) (diperbarui dari evaluasi sebelumnya Grup 2B).
+  * **ACGIH**: **A3** (*Confirmed animal carcinogen with unknown relevance to humans*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-4**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Manufaktur Polimer & Komposit**: Monomer utama dalam sintesis plastik polistirena (PS), karet sintetis *styrene-butadiene rubber* (SBR), resin poliester tak jenuh (*unsaturated polyester resins*), serta kopolimer ABS (*acrylonitrile-butadiene-styrene*) dan SAN.
+* **Sektor Berisiko Tinggi**: Industri komposit plastik bertulang serat kaca (*fiberglass-reinforced plastics* / FRP) untuk pembuatan lambung kapal/perahu, tangki kimia, komponen otomotif, dan material konstruksi.
+* **Proses Operasional Kritis**: Proses cetakan terbuka (*open-mold processes*), khususnya aplikasi manual (*hand lay-up*) dan penyemprotan (*spray-up operations*), serta rekonstruksi pipa saluran air (*cured-in-place pipe lining* / CIPP).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap stirena diabsorpsi cepat melalui paru-paru dengan retensi alveolar sekitar 60–70%.
+  * **Dermal**: Diabsorpsi melalui kulit utuh saat kontak langsung dengan cairan resin stirena; pajanan kulit berkontribusi secara independen terhadap peningkatan metabolit internal.
+* **Distribusi**: Senyawa sangat lipofilik dengan koefisien partisi lemak:darah yang tinggi (~94); cepat terdistribusi dan terakumulasi di jaringan adiposa, sistem saraf pusat (otak), dan hepar.
+* **Metabolisme**:
+  * Berlangsung terutama di hepar (dan sebagian kecil di paru-paru):
+  * **Bioaktivasi Fase I**: Oksidasi ikatan rangkap vinil oleh enzim sitokrom P450 (terutama **CYP2E1**, serta CYP2B6) menghasilkan metabolit elektrofilik reaktif **stirena-7,8-oksida (*styrene-7,8-oxide* / SO)**.
+  * **Hidrolisis Epoksida**: SO dihidrolisis secara cepat oleh enzim **mikrosomal epoksida hidrolase (*microsomal epoxide hydrolase* / mEH)** menjadi stirena glikol (*phenylethylene glycol*).
+  * **Oksidasi Lanjutan**: Stirena glikol dioksidasi oleh *alcohol/aldehyde dehydrogenase* menjadi **asam mandelat (*mandelic acid* / MA)** (~85%), yang sebagian dioksidasi lebih lanjut menjadi **asam fenilglioksilat (*phenylglyoxylic acid* / PGA)** (~10%). MA dan PGA mencakup >95% dari seluruh metabolit stirena.
+  * **Jalur Minor**: Konjugasi SO dengan glutation menghasilkan asam fenilhidroksietil merkapturat (PHEMA, <1%); oksidasi cincin aromatik menghasilkan 4-vinilfenol (4-VP, <0,5%).
+* **Ekskresi**: Lebih dari 90–95% dieliminasi melalui urin dalam bentuk asam mandelat (MA) dan asam fenilglioksilat (PGA); kurang dari 1–2% diekshalasi tanpa perubahan melalui paru-paru atau urin.
+
+---
+
+#### **4. Toksikodinamik**
+* **Genotoksisitas & Pembentukan Aduk Makromolekul**: Stirena-7,8-oksida (SO) bertindak sebagai *ultimate toxicant* elektrofilik yang berikatan kovalen dengan DNA (membentuk aduk DNA guanin) dan protein (aduk hemoglobin N-terminal valin), memicu pemutusan untai DNA (*DNA single-strand breaks*), pertukaran kromatid saudara (*sister chromatid exchanges* / SCE), dan aberasi kromosom.
+* **Stres Oksidatif & Penipisan Glutation**: Reaksi bioaktivasi stirena menipiskan cadangan GSH intraseluler dan menghasilkan spesies oksigen reaktif (ROS), yang ditandai dengan peningkatan biomarker oksidasi asam nukleat (8-oxoGuo dan 8-oxodGuo) di urin.
+* **Neurotoksisitas & Ototoksisitas Koklear**: Merusak fluiditas membran neuronal dan menekan transmisi dopaminergik sistem saraf pusat. Pada organ pendengaran, stirena merusak sel rambut luar (*outer hair cells* / OHC) koklea organ Corti secara selektif.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Asam Mandelat (MA) + Asam Fenilglioksilat (PGA) Urin**:
+  * **Peran**: Parameter baku emas (*gold standard*) biomonitoring pajanan stirena.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+  * **Matriks**: Urin (koreksi kreatinin 0,3–3,0 g/L).
+* **Stirena Tanpa Perubahan dalam Urin (*Styrene in urine*)**:
+  * **Peran**: Pengukuran langsung senyawa induk; waktu sampling: **akhir shift kerja**.
+* **Stirena dalam Darah Vena (*Styrene in blood*)**:
+  * **Peran**: Waktu sampling: **akhir shift kerja** (mulai jarang digunakan karena sifat pengambilan sampel yang invasif).
+* **Biomarker Efek & Paparan Kumulatif**: Pengukuran aduk hemoglobin stirena-oksida (*SO-Hb adducts*) untuk menilai pajanan jangka panjang selama masa hidup eritrosit.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Stirena Darah & Lemak**: Eliminasi multifasik; fase cepat darah t\\(_{1/2}\\) ~41 menit, diikuti pelepasan lambat dari jaringan adiposa dengan t\\(_{1/2}\\) terminal berkisar **32–46 jam**.
+* **Asam Mandelat (MA) Urin**: Eliminasi bifasik; fase cepat t\\(_{1/2}\\) **4–5 jam** (atau 5–10 jam), dan fase lambat hingga **~25 jam**.
+* **Asam Fenilglioksilat (PGA) Urin**: Eliminasi monofasik dengan t\\(_{1/2}\\) berkisar **10–11 jam**.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Depresi Sistem Saraf Pusat**: Efek narkotik pelarut (*"styrene drunkenness"*), pusing (*dizziness*), sakit kepala, ataksia, mengantuk, penurunan konsentrasi, gangguan keseimbangan postural, dan pemanjangan waktu reaksi.
+* **Iritasi Mukosa & Saluran Napas**: Iritasi mata berat (lakrimasi, rasa pedih), iritasi nasofaring, batuk, dan sensasi terbakar pada saluran napas atas (terutama pada kadar >20–50 ppm).
+* **Efek Dermal**: Dermatitis kontak iritan, eritema, dan rasa perih terbakar akibat pelarutan lipid stratum korneum.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Ensefalopati Pelarut Kronik (*Chronic Solvent Encephalopathy*) & Neuropati**: Sindrom neuroastenik, perlambatan psikomotorik, defisit memori kerja verbal, serta penurunan kecepatan konduksi saraf tepi.
+* **Gangguan Penglihatan Warna (*Acquired Dyschromatopsia*)**: Kehilangan diskriminasi warna didapat, terutama pada sumbu biru-kuning (*tritan defect*) dan merah-hijau, yang dapat timbul bahkan pada konsentrasi di bawah 20 ppm.
+* **Ototoksisitas & Kehilangan Pendengaran Sinergis**: Penurunan ambang dengar nada murni permanen frekuensi tinggi; ko-pajanan bersama kebisingan tempat kerja menghasilkan interaksi **sinergis supraaditif**.
+* **Potensi Karsinogenisitas**: Peningkatan risiko keganasan sistem limfohematopoietik (seperti limfoma non-Hodgkin dan leukemia) serta tumor paru.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2020–2026)**:
+  * **TLV-TWA**: **10 ppm** (42,6 mg/m³) *(diturunkan dari 20 ppm pada tahun 2020)*.
+  * **TLV-STEL**: **20 ppm** (85,2 mg/m³).
+  * **Notasi**: **OTO** (*Ototoxicant*), **A3** (*Confirmed Animal Carcinogen*), **BEI**.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **20 BDS (ppm)** atau **85 mg/m³**.
+  * **PSD (STEL 15 menit)**: **40 BDS (ppm)**.
+  * **Notasi**: **A-4**, **BEI**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2022–2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Sum of Mandelic acid (MA) & Phenylglyoxylic acid (PGA)** | Urin | **Akhir shift kerja** (*End of shift*) | **400 mg/g kreatinin** | **150 mg/g kreatinin** | Notasi **Ns** (*Non-specific*, etilbenzena juga menghasilkan metabolit ini) |
+| **Stirena dalam urin** | Urin | **Akhir shift kerja** (*End of shift*) | — | **20 µg/L** | Parameter spesifik senyawa induk |
+| **Stirena dalam darah vena** | Darah | **Akhir shift kerja** (*End of shift*) | **0,2 mg/L** | — | Bersifat invasif |
+
+*(Catatan ACGIH: Nilai BEI MA+PGA diturunkan menjadi 150 mg/g kreatinin pada adopsi 2022 agar setara dengan batas TLV-TWA 10 ppm)*.
+
+---
+
+#### **11. Tatalaksana Akut & Keracunan**
+* **Prinsip**: **TIDAK ADA ANTIDOT SPESIFIK**. Manajemen berfokus pada dekontaminasi cepat dan perawatan suportif simtomatik.
+* **Tindakan Penyelamatan**:
+  * Pindahkan korban ke tempat berudara segar; berikan suplementasi oksigen jika timbul depresi napas atau bronkospasme.
+  * Segera lepaskan pakaian yang basah terkena cairan resin/pelarut; cuci kulit dan rambut menggunakan air dan sabun selama minimal 15 menit.
+  * Irigasi konjungtiva mata dengan larutan salin steril atau air mengalir selama minimal 15 menit.
+  * **KONTRAINDIKASI INDUKSI MUNTAH** bila tertelan karena bahaya aspirasi uap/cairan hidrokarbon ke paru yang memicu pneumonitis kimiawi.
+  * Awasi iritabilitas jantung; hindari amina simpatomimetik (epinefrin) karena risiko fibrilasi ventrikel akibat sensitisasi miokardium.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Ensefalopati Pelarut Kronik, Gangguan Pendengaran Sensorineural, *Acquired Dyschromatopsia*, atau Dermatitis Kontak Iritan.
+  2. *Identifikasi Pajanan Kerja*: Melacak kandungan monomer stirena dalam resin poliester (biasanya 30–50%) dari lembar SDS/LDKB.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme kerusakan neuro-ototoksik dan genotoksik oleh stirena-7,8-oksida.
+  4. *Besaran Pajanan*: Hasil *air monitoring* (dibandingkan TLV 10 ppm atau NAB 20 ppm) dan biomonitoring urin MA+PGA (dibandingkan BEI 150 mg/g kreatinin), durasi kerja, dan keterlibatan proses cetak terbuka.
+  5. *Faktor Kerentanan Individu*: Polimorfisme enzim *mEH* dan *CYP2E1*, riwayat konsumsi alkohol (interferensi kompetitif metabolisme pelarut).
+  6. *Faktor di Luar Kerja*: Paparan pelarut di rumah (hobi membuat perahu/kerajinan resin), merokok aktif (asap rokok mengandung sejumlah kecil stirena).
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan gangguan penglihatan warna herediter/didapat berat, penurunan pendengaran bermakna, defisit neurokognitif menetap, penyakit hepar aktif, atau wanita hamil dinilai **tidak laik (*unfit*)** terpajan stirena.
+* **Surveilans Medis Berkala**:
+  * Audiometri nada murni berkala (program konservasi pendengaran terpadu zat ototoksik).
+  * Uji penglihatan warna dengan panel Farnsworth D-15 atau Lanthony D-15 secara berkala.
+  * Kuesioner skrining neurotoksisitas (misal: Q16).
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * *Substitusi*: Beralih ke resin rendah stirena (*low-styrene emission* / LSE).
+  * *Rekayasa Teknis*: Mengubah proses cetak terbuka (*spray-up/hand lay-up*) menjadi proses tertutup (*vacuum infusion / closed-molding*); pemasangan *Local Exhaust Ventilation* (LEV) langsung di area laminasi dan pengeringan (*curing*).
+  * *APD*: Respirator uap organik dengan kartrid karbon aktif terstandarisasi, sarung tangan berbahan dasar polivinil alkohol (PVA) atau Viton (**bukan lateks biasa**).
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 2A** (*Probably carcinogenic to humans*).
+* **Notasi**:
+  * ACGIH: **OTO** (*Ototoxicant*), **A3**, **BEI**.
+  * Permenaker No. 5 Tahun 2018: **A-4**, **BEI**.
+* **Regulasi Nasional**: Perpres No. 7 Tahun 2019 Lampiran I.a No. 12; Permenkes No. 11 Tahun 2022 (Pasal 5 & 9).
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Stirena**
+* 🩺 **Clinical Pearl**:
+  * **"Early Color Vision Deficit as a Bio-Indicator"**: Hendaya diskriminasi warna sumbu biru-kuning (*dyschromatopsia tritan*) merupakan manifestasi klinis subklinis paling awal dari neurotoksisitas stirena pada retina dan korteks visual. Gejala ini sering muncul bertahun-tahun sebelum terjadinya atrofi serebral atau penurunan tes neurobehavioral formal, sehingga uji D-15 dapat difungsikan sebagai alat surveilans kesehatan dini.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Nilai BEI Modern vs Lama*:
+     * *Jebakan*: Menjawab BEI urin MA+PGA adalah 400 mg/g kreatinin.
+     * *Koreksi*: Nilai 400 mg/g kreatinin adalah standar Permenaker 5/2018 dan ACGIH lama; **ACGIH (2022–2026) telah memotong nilai BEI MA+PGA menjadi 150 mg/g kreatinin** seiring diturunkannya TLV-TWA dari 20 ppm menjadi 10 ppm.
+  2. *Jebakan Non-Spesifisitas Metabolit*:
+     * *Jebakan*: Menyimpulkan peningkatan MA dan PGA urin pasti disebabkan oleh pajanan stirena murni.
+     * *Koreksi*: **Etilbenzena juga dimetabolisme menjadi asam mandelat (MA) dan asam fenilglioksilat (PGA)** di urin. Diperlukan konfirmasi kromatografi stirena urin atau anamnesis pelarut spesifik bila terdapat ko-pajanan pelarut aromatik campuran.
+
+---
+---
+
+### **B. ANILIN & NITROBENZENA (Methemoglobinemia)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Anilin [CAS 62-53-3]**: Rumus molekul **\\(\text{C}_6\text{H}_5\text{NH}_2\\)**; berat molekul **93,13 g/mol**. Sinonim: *aminobenzene, phenylamine, aniline oil*. Cairan berminyak tidak berwarna hingga kuning kecokelatan bila teroksidasi udara, berbau khas seperti ikan busuk (*fishy odor*), titik didih 184°C, larut dalam pelarut organik dan sedikit larut dalam air (3,6%).
+* **Nitrobenzena [CAS 98-95-3]**: Rumus molekul **\\(\text{C}_6\text{H}_5\text{NO}_2\\)**; berat molekul **123,11 g/mol**. Sinonim: *oil of mirbane, mononitrobenzene (MNB)*. Cairan berminyak kuning pucat, berbau khas minyak almon pahit (*almond-like odor*), titik didih 210,8°C, sangat lipofilik, praktis tidak larut dalam air.
+* **Klasifikasi Karsinogenisitas**:
+  * **Anilin**: **IARC Grup 3** (*Not classifiable*); **ACGIH A3** (*Confirmed Animal Carcinogen*); **Permenaker 5/2018 Kategori A-3**.
+  * **Nitrobenzena**: **IARC Grup 2B** (*Possibly carcinogenic to humans*); **ACGIH A3**; **Permenaker 5/2018 Kategori A-3**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Rantai Petrokimia MDI**: Alur sintesis industri berskala besar: Benzena \\(\rightarrow\\) Nitrobenzena \\(\rightarrow\\) Anilin \\(\rightarrow\\) Metilendianilin (MDA) \\(\rightarrow\\) **Metilen difenil diisosianat (MDI)** untuk produksi busa poliuretan (*polyurethane plastics*).
+* **Aplikasi Manufaktur Lainnya**: Bahan baku industri pewarna azo dan tekstil, bahan kimia vulkanisasi dan antioksidan karet, obat-obatan (parasetamol, analgesik, sulfa), herbisida, fungisida, dan bahan peledak.
+* **Pajanan Lingkungan**: Emisi limbah industri kimia dan asap rokok (mengandung anilin primer).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Dermal**: Menembus kulit utuh secara sangat cepat, masif, dan efisien karena sifat kelarutan lipidnya yang tinggi (mendapat notasi **Skin**); **kontak kulit merupakan rute utama keracunan fatal di tempat kerja** (misal: percikan tumpahan pipa atau pakaian kerja tercemar).
+  * **Inhalasi**: Uap dan aerosol diserap cepat oleh membran alveolar paru-paru.
+  * **Gastrointestinal**: Diabsorpsi hampir sempurna jika tertelan secara tidak sengaja.
+* **Distribusi**: Terdistribusi cepat ke seluruh organ vascular, melewati sawar darah-otak, terakumulasi sementara di jaringan adiposa, serta menembus plasenta.
+* **Metabolisme**:
+  * **Anilin**:
+    1. **Jalur Bioaktivasi / Toksifikasi (Pembentukan Met-Hb)**: Di hepar, enzim sitokrom P450 (terutama **CYP1A2**) mengoksidasi gugus amino menghasilkan **N-fenilhidroksilamin (*N-phenylhydroxylamine*)**. Masuk ke dalam eritrosit, metabolit ini bereaksi dengan oksihemoglobin (\\(\text{Hb-Fe}^{2+}\\)) menghasilkan **methemoglobin (\\(\text{Hb-Fe}^{3+}\\))** dan **nitrosobenzena (*N-nitrosobenzene*)**. Di dalam eritrosit, nitrosobenzena direduksi kembali menjadi N-fenilhidroksilamin menggunakan NADPH via siklus redoks berulang (*catalytic redox-cycling*) yang terus memicu pembentukan ribuan molekul Met-Hb per molekul toksikan!
+    2. **Jalur Detoksifikasi**: N-asetilasi oleh enzim **N-asetiltransferase (NAT2)** menjadi *N-acetylaniline* (asetanilida). Pekerja dengan fenotipe *slow acetylator* mengalami hambatan detoksifikasi sehingga memiliki kadar Met-Hb lebih tinggi dan lebih rentan keracunan. Oksidasi cincin menghasilkan konjugat sulfat/glukuronida dari *ortho-*, *meta-*, dan ***para*-aminofenol (PAP)**.
+  * **Nitrobenzena**:
+    * Mengalami reduksi bertahap oleh enzim nitroreduktase di mikrosom hepar dan bakteri usus menjadi nitrosobenzena \\(\rightarrow\\) N-fenilhidroksilamin \\(\rightarrow\\) anilin. Oksidasi cincin minor menghasilkan **p-nitrofenol (PNP)**.
+* **Ekskresi**:
+  * Anilin: Diekskresikan ke dalam urin sebagai konjugat *p*-aminofenol (PAP) dan anilin bebas (t\\(_{1/2}\\) eliminasi urin ~3,5 jam).
+  * Nitrobenzena: Diekskresikan sangat lambat ke dalam urin sebagai metabolit *p*-nitrofenol (PNP) dan aminofenol.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Methemoglobinemia & Hemolisis)**
+1. **Perubahan Status Valensi Besi Hem (Ferro \\(\rightarrow\\) Ferri)**: Oksidasi atom besi porfirin dari bentuk ferro (\\(\text{Fe}^{2+}\\)) menjadi ferri (\\(\text{Fe}^{3+}\\)) menghasilkan **methemoglobin (Met-Hb)** yang **tidak mampu mengikat oksigen**.
+2. **Pergeseran Kurva Disosiasi Oksihemoglobin ke Kiri (*Left-Shift*)**: Keberadaan subunit besi ferri (\\(\text{Fe}^{3+}\\)) pada tetramer hemoglobin mengubah konformasi spasial molekul, meningkatkan afinitas sisa subunit ferro terhadap oksigen secara berlebihan, sehingga menghambat pelepasan oksigen ke jaringan (*impaired tissue oxygen delivery*), memicu **hipoksia seluler dan asidosis laktat berat**.
+3. **Stres Oksidatif Eritrosit, Badan Heinz, & Hemolisis Akut-Lambat**: Siklus redoks hidroksilamin/nitrosobenzena menghasilkan radikal bebas peroksida yang merusak membran eritrosit dan mendenaturasi rantai globin membentuk presipitasi intraseluler (**Badan Heinz / *Heinz bodies***). Hal ini memicu hemolisis intravaskular dan pembersihan eritrosit kaku oleh limpa, memunculkan komplikasi **anemia hemolitik akut** beberapa hari pasca-pajanan.
+4. **Karsinogenesis Saluran Kemih**: Metabolit hidroksilamin aromatik dapat membentuk aduk kovalen pada DNA sel urotelium kandung kemih (*urothelial carcinoma*).
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Methemoglobin Darah (*Methemoglobin in blood*)**:
+  * **Peran**: Parameter biologis penentu efek langsung (*biomarker of effect*) paling utama untuk semua zat induktor methemoglobinemia.
+  * **Waktu Sampling**: **Selama atau pada akhir shift kerja (*during or end of shift*)**.
+* **Biomonitoring Anilin**:
+  * ***p*-Aminofenol (PAP) Urin**: Mengukur metabolit hasil hidrolisis asam; waktu sampling: **akhir shift kerja**.
+  * **Anilin Bebas/Total dalam Urin**: Analisis GC-MS setelah hidrolisis asam; waktu sampling: **akhir shift kerja**.
+  * **Aduk Hemoglobin Anilin (*Aniline-Hb adducts*)**: Menilai pajanan internal kumulatif; waktu sampling: **tidak kritis (*not critical*)**.
+* **Biomonitoring Nitrobenzena**:
+  * **Total *p*-Nitrofenol (PNP) dalam Urin**: Parameter eliminasi ginjal spesifik; waktu sampling: **akhir shift pada akhir pekan kerja (*end of shift at end of workweek*)**.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Methemoglobin Darah**: Dalam kondisi normal tanpa sumber oksidan aktif, reduksi spontan endogen oleh enzim **NADH-sitokrom b5 reduktase (*methemoglobin reductase*)** memiliki t\\(_{1/2}\\) berkisar **1–2 jam**. Namun pada keracunan anilin/nitrobenzena, t\\(_{1/2}\\) klinis dapat memanjang secara masif (hingga belasan jam) akibat pelepasan kontinu dari depot jaringan lemak.
+* **Anilin dalam Urin**: t\\(_{1/2}\\) eliminasi cepat, berkisar **3,5 jam**.
+* ***p*-Nitrofenol Urin**: t\\(_{1/2}\\) eliminasi sangat panjang, berkisar antara **20–60 jam**, merefleksikan laju metabolisme nitrobenzena yang lambat dan lipofilik.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Sianosis Khas (*"Chocolate Cyanosis" / "Slate-grey Cyanosis"*)**: Diskolorasi kulit, bibir, membran mukosa, dan lidah menjadi kebiruan atau abu-abu gelap yang **refrakter terhadap terapi oksigen standar**; darah vena tampak berwarna cokelat gelap seperti cokelat leleh (*chocolate-brown blood*).
+* **Korelasi Klinis Kadar Methemoglobin (Met-Hb)**:
+  * **<10–15%**: Asimtomatik atau sianosis subklinis ringan.
+  * **15–30%**: Sianosis nyata, sakit kepala ringan, pusing, rasa melayang, kelelahan, dan dispnea saat beraktivitas.
+  * **30–50%**: Takipnea berat, takikardia, rasa lemas ekstrem, konfusi, disorientasi, sinkop, dan nyeri dada.
+  * **50–70%**: Penurunan kesadaran stupor hingga koma, kejang umum, aritmia ventrikel fatal, dan asidosis metabolik laktat berat.
+  * **>70%**: Kematian akibat kolaps sirkulasi dan anoksia jaringan total.
+* **Iritasi Kimiawi Kulit**: Kontak langsung anilin pekat menyebabkan rasa terbakar hebat, eritema, pembentukan vesikel/bula, serta dermatitis kontak iritan.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Anemia Hemolitik Sekunder**: Kerusakan oksidatif eritrosit memicu lisis sel darah merah 2–5 hari pasca-kejadian akut, ditandai penurunan hemoglobin/eritrosit drastis, retikulositosis, hiperbilirubinemia indirek, dan hemosiderosis.
+* **Hepatotoksisitas & Nefrotoksisitas**: Kerusakan hepar toksik (hepatomegali, ikterus, peningkatan transaminase), serta nekrosis tubular ginjal akut akibat presipitasi hemoglobinuria masif (*pigment nephropathy*).
+* **Keganasan Saluran Kemih**: Pajanan uap amina aromatik kronis berkaitan dengan displasia sel transisional dan karsinoma kandung kemih (*bladder cancer*).
+* **Efek Sistem Saraf**: Gejala astenik kronis, lekas lelah, sefalgia kronis, dan iritabilitas.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **Anilin [CAS 62-53-3]**:
+  * **ACGIH (2026)**: **TLV-TWA 2 ppm** (7,6 mg/m³). Notasi: **Skin**, **A3**, **BEI\\(_M\\)** (zat penginduksi methemoglobinemia).
+  * **Permenaker No. 5 Tahun 2018**: **NAB 2 BDS (ppm)** (7,6 mg/m³). Notasi: **Kulit**, **Kategori A-3**, **BEI**.
+* **Nitrobenzena [CAS 98-95-3]**:
+  * **ACGIH (2026)**: **TLV-TWA 1 ppm** (5,04 mg/m³). Notasi: **Skin**, **A3**, **BEI\\(_M\\)**.
+  * **Permenaker No. 5 Tahun 2018**: **NAB 1 BDS (ppm)** (5 mg/m³). Notasi: **Kulit**, **Kategori A-3**, **BEI**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Senyawa Induk | Matriks | Waktu Pengambilan Sampel | Nilai Batas BEI / IPB | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Methemoglobin dalam darah** | Penginduksi Met-Hb (Anilin & Nitrobenzena) | Darah | **Selama atau akhir shift kerja** (*During or end of shift*) | **1,5% dari total hemoglobin** | Notasi **B** (ada kadar dasar endogen <1%), **Ns** |
+| ***p*-Aminofenol (PAP) total** | Anilin | Urin | **Akhir shift kerja** (*End of shift*) | **50 mg/g kreatinin** | Diukur setelah hidrolisis asam |
+| **Total *p*-Nitrofenol (PNP)** | Nitrobenzena | Urin | **Akhir shift pada akhir pekan kerja** (*End of shift at end of workweek*) | **5 mg/g kreatinin** | Notasi **Ns** |
+
+---
+
+#### **11. Tatalaksana Akut & Keracunan**
+* **Dekontaminasi Agresif Mutlak**:
+  * Segera lepaskan seluruh pakaian, sepatu, dan perlengkapan kerja yang terkontaminasi (pakaian tercemar yang tetap melekat akan terus melepaskan anilin/nitrobenzena melalui kulit hingga fatal).
+  * Mandikan pasien dan cuci seluruh permukaan tubuh dengan air mengalir dan sabun secara menyeluruh.
+* **Oksigenasi Aliran Tinggi**: Berikan \\(\text{O}_2\\) 100% via *non-rebreathing mask* (NRM) untuk memaksimalkan fraksi oksigen terlarut dalam plasma.
+* **Antidot Spesifik: Biru Metilen (*Methylene Blue* 1%)**:
+  * **Indikasi Klinis**: Kadar **Met-Hb >20–30% simtomatik**, atau **>30% asimtomatik**, atau pada kondisi iskemia organ/penurunan kesadaran berapapun kadarnya.
+  * **Dosis & Pemberian**: **1–2 mg/kgBB (larutan 1% IV lambat selama 5 menit)**.
+  * **Mekanisme Farmakologi**: Biru metilen bertindak sebagai kofaktor eksogen yang diaktifkan oleh enzim intraeritrosit **NADPH-methemoglobin reduktase** menjadi *leukomethylene blue*, yang secara cepat mendonorkan elektron untuk mereduksi ion besi ferri (\\(\text{Fe}^{3+}\\)) Met-Hb kembali menjadi ferro (\\(\text{Fe}^{2+}\\)) hemoglobin aktif.
+  * **Pemantauan Dosis**: Penurunan kadar Met-Hb biasanya terlihat dalam 30–60 menit. Dosis dapat diulang setelah 1 jam bila sianosis menetap (dosis kumulatif maksimal tidak boleh melebihi 7 mg/kgBB guna mencegah efek toksik paradoksal biru metilen sebagai pro-oksidan penginduksi Met-Hb).
+* **KONTRAINDIKASI & PERINGATAN KRITIS: DEFISIENSI G6PD**:
+  * Pasien dengan defisiensi enzim **Glukosa-6-Fosfat Dehidrogenase (G6PD)** tidak memiliki cadangan NADPH eritrosit yang memadai untuk mereduksi biru metilen. Akibatnya, **biru metilen menjadi TIDAK EFEKTIF dan KONTRAINDIKASI karena dapat memicu ANEMIA HEMOLITIK MASIF yang fatal**.
+  * **Terapi Alternatif Defisiensi G6PD / Gagal Biru Metilen**:
+    * **Transfusi Tukar (*Exchange Transfusion*)**: Merupakan lini utama penyelamatan hidup pada keracunan berat dengan defisiensi G6PD.
+    * **Asam Askorbat (Vitamin C dosis tinggi)**: Agen pereduksi alternatif non-enzimatik (bekerja lambat, kurang efektif untuk kasus emergensi berat).
+    * **Terapi Oksigen Hiperbarik (*Hyperbaric Oxygen* / HBO)**.
+* **Hemodialisis**: Bermanfaat untuk mengatasi gagal ginjal akut akibat komplikasi nefropati pigmen hemoglobinuria masif.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Toksisitas Akut Methemoglobinemia, Anemia Hemolitik Toksik, atau Karsinoma Urotelial Kandung Kemih.
+  2. *Identifikasi Pajanan Kerja*: Melacak senyawa turunan nitro/amino aromatik pada lembar SDS (misal: area produksi MDI, bongkar muat tangki anilin/MNB).
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme N-hidroksilasi sitokrom P450 hepar menjadi fenilhidroksilamin dan siklus redoks eritrosit.
+  4. *Besaran Pajanan*: Melacak riwayat insiden tumpahan/percikan cairan kimia, konsentrasi udara ruang kerja, dan kadar Met-Hb darah serial.
+  5. *Faktor Kerentanan Individu*: **Skrining status defisiensi G6PD**, status fenotip asetilator (*slow vs. fast acetylator* NAT2), dan riwayat anemia dasar.
+  6. *Faktor di Luar Hubungan Kerja*: Riwayat penggunaan obat pemicu methemoglobinemia (dapson, sulfonamida, anestesi lokal benzokain, primaquin), air sumur tinggi nitrat.
+  7. *Penetapan Diagnosis PAK*: Menetapkan keterkaitan kausal okupasional untuk pelaporan ke dinas ketenagakerjaan dan jaminan kompensasi kecelakaan kerja/PAK.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan **defisiensi G6PD bawaan**, anemia hemolitik kronis, penyakit jantung iskemik, atau gangguan ginjal berat dinyatakan **tidak laik (*unfit*)** berada di area kerja yang mengolah anilin atau nitrobenzena.
+* **Surveilans Medis Berkala**:
+  * Skrining status enzim G6PD pra-penempatan (*pre-placement*).
+  * Pemantauan kadar methemoglobin darah dan hitung darah lengkap serial paska-insiden.
+  * Urinalisis berkala (sitologi urin untuk deteksi dini lesi kandung kemih).
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * *Rekayasa Teknis*: Pemasangan instalasi perpipaan tertutup (*totally enclosed systems*), katup hisap otomatis tanpa tetesan saat bongkar muat tangki (*dry-disconnect couplings*), dan sensor alarm kebocoran uap.
+  * *Pengendalian Administratif*: Prosedur kerja aman saat *maintenance* pompa/strainer, pelatihan tanggap darurat tumpahan kimia.
+  * *Fasilitas Tanggap Darurat*: **Instalasi shower bilas darurat (*safety emergency shower*) dan pencuci mata (*eyewash*)** wajib berada dalam jangkauan <10 detik dari zona risiko tinggi. Antidot biru metilen wajib tersedia di klinik perusahaan pengolah anilin.
+  * *APD*: Pakaian pelindung bahan kimia *chemical splash suit* bertekanan, sarung tangan khusus pelarut berat (butil, Viton, atau Teflon; **hindari lateks biasa** karena ditembus pelarut aromatik dalam sekejap), serta *face shield* dan respirator *SCBA/supplied-air* untuk pekerjaan pemeliharaan jalur bertekanan.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC Monograph**: Anilin diklasifikasikan ke dalam **Grup 3**; Nitrobenzena diklasifikasikan ke dalam **Grup 2B** (*Possibly carcinogenic to humans*).
+* **Notasi Kulit (*Skin Notation*)**: Baik Anilin maupun Nitrobenzena mendapat notasi **Skin** dari ACGIH dan notasi **Kulit** dari Permenaker No. 5 Tahun 2018 karena daya serap perkutan cairannya yang sangat tinggi.
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 13**: Mengakui secara legal kompensasi untuk "*Penyakit yang disebabkan oleh derivat nitro dan amina dari benzene atau homolognya*".
+* **Permenkes No. 11 Tahun 2022**: Pedoman 7 langkah diagnosis PAK dan tatalaksana komprehensif tingkat individu serta komunitas.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Anilin & Nitrobenzena**
+
+* 🩺 **Clinical Pearl**:
+  * **"The Pulse Oximetry Saturation Gap"**: Pada pasien methemoglobinemia berat, pembacaan saturasi oksigen pada alat *pulse oximeter* standar (\\(\text{SpO}_2\\)) biasanya "terkunci" atau mendatar pada angka **~85%**, tidak peduli seberapa banyak oksigen 100% yang diberikan. Hal ini terjadi karena methemoglobin menyerap cahaya sama kuat pada panjang gelombang 660 nm dan 940 nm. Sebaliknya, pemeriksaan Analisis Gas Darah (AGD) rutin menunjukkan tekanan parsial oksigen terlarut (\\(\text{PaO}_2\\)) yang normal atau tinggi, serta saturasi kalkulasi oksigen yang tampak normal (menciptakan *saturation gap*). **Diagnosis definitif mutlak memerlukan alat Co-Oximetry** yang mengukur fraksi Met-Hb secara langsung.
+  * **"The Latent Collapse"**: Senyawa induk anilin dan nitrobenzena tidak dapat mengoksidasi hemoglobin secara langsung di dalam tabung reaksi. Toksisitas membutuhkan bioaktivasi hepatik menjadi metabolit antara fenilhidroksilamin. Oleh sebab itu, pekerja yang terkena percikan tumpahan kimia sering tampak asimtomatik pada 1–2 jam pertama pasca-kejadian, lalu mendadak ambruk dengan sianosis berat dan dispnea 3–6 jam kemudian.
+
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Antidot pada Pasien Defisiensi G6PD*:
+     * *Jebakan*: Memberikan biru metilen pada pasien keracunan anilin tanpa menanyakan atau mempertimbangkan status defisiensi G6PD.
+     * *Koreksi*: Biru metilen membutuhkan NADPH untuk bekerja. Pada pasien defisiensi G6PD, **biru metilen tidak efektif dan merupakan KONTRAINDIKASI karena dapat mencetuskan krisis anemia hemolitik intravaskular masif yang fatal**. Terapi penyelamat terpilih adalah **transfusi tukar (*exchange transfusion*)** atau asam askorbat dosis tinggi.
+  2. *Jebakan Dosis Paradoksal Biru Metilen*:
+     * *Jebakan*: Memberikan bolus biru metilen berulang tanpa membatasi dosis maksimal.
+     * *Koreksi*: Dosis kumulatif biru metilen **tidak boleh melampaui 7 mg/kgBB**. Pada dosis tinggi, biru metilen sendiri bersifat oksidan kuat yang dapat memicu methemoglobinemia iatrogenik dan hemolisis.
+  3. *Jebakan Rute Pajanan (Inhalasi vs Dermal)*:
+     * *Jebakan*: Berfokus hanya pada pemasangan masker pernapasan pekerja saat menangani pemeliharaan tangki anilin/nitrobenzena.
+     * *Koreksi*: Anilin dan nitrobenzena memiliki **angka penetrasi dermal yang sangat cepat**. Perlindungan respiratorik saja tidak akan mencegah keracunan fatal jika terjadi kontak percikan cairan pada kulit atau pakaian kerja.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: NAB Faktor Kimia; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran Bagian I.a No. 12 & 13: Penyakit akibat benzena, homolognya, serta derivat nitro dan amina dari benzena).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Pedoman 7 Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Styrene, Aniline, Nitrobenzene entries, Methemoglobin Inducers BEI).
+5. **Käfferlein, H. U., et al.** (2014). *Human exposure to airborne aniline and formation of methemoglobin: a contribution to occupational exposure limits*. Archives of Toxicology, 88(6), 1319–1326.
+6. **Lee, C. H., et al.** (2013). *Two Cases of Methemoglobinemia Induced by the Exposure to Nitrobenzene and Aniline*. Annals of Occupational and Environmental Medicine, 25(1), 31.
+7. **Ravi Kumar, Y. S., et al.** (2014). *Occupational inhalation of aniline fumes induced methemoglobinemia and hemolytic anemia precipitated days later*. Indian Journal of Occupational and Environmental Medicine, 18(2), 95–96.
+8. **Persoons, R., et al.** (2018). *Biomonitoring of styrene occupational exposures: Biomarkers and determinants*. Toxicology Letters, 298, 99–105.
+9. **Rueff, J., et al.** (2009). *Genetic effects and biotoxicity monitoring of occupational styrene exposure*. Clinica Chimica Acta, 399(1-2), 8–22.
+10. **Kim, K. Y., et al.** (2025/2026). *Exposure-response relationships of styrene and urinary mandelic acid in fiberglass-reinforced plastic manufacturing*. PLOS ONE, pone.0334962.
+11. **Creta, M., et al.** (2018). *Integrated evaluation of solvent exposure in an occupational setting: air, dermal and bio-monitoring*. Toxicology Letters, 298, 150–157.
+12. **Bonanni, R. C., et al.** (2024). *Oxidative stress and biomonitoring of workers exposed to styrene in shipbuilding industry*. Frontiers in Toxicology, 5, 1319896.
+13. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: Styrene, Aniline, Nitrobenzene entries).
+
+---
+
+💡 *Apakah Anda ingin melanjutkan pembahasan dengan simulasi kasus tumpahan anilin di pabrik poliuretan/MDI untuk latihan penanganan emergensi dan Co-Oximetry interpretasi?*

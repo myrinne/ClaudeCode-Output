@@ -1,0 +1,22 @@
+| Poin | Diklorometana (metilen klorida, DCM) |
+|---|---|
+| **1. Sifat dan klasifikasi** | CH2Cl2 (CAS 75-09-2, BM 84,93); cairan bening bau manis seperti kloroform, **titik didih 39,8°C, sangat volatil**, tidak mudah terbakar pada suhu ruang; lipofilik. **IARC Grup 2A** (saluran empedu), **ACGIH A3**, Permenaker A-3 |
+| **2. Sumber** | **Paint stripper (mebel, refinishing bak mandi)**, degreasing logam, **blowing agent busa poliuretan**, ekstraksi farmasi/dekafeinasi, propelan aerosol |
+| **3. Toksikokinetik** | Inhalasi retensi 70 sampai 75%; kulit (menguap cepat kecuali terperangkap sarung tangan/pakaian). Distribusi ke otak, hepar, lemak (**depot lemak melepas DCM lambat**). **Dua jalur hepar: (1) CYP2E1 (afinitas tinggi, kapasitas rendah, dominan < 100 sampai 200 ppm) → formyl chloride → CO + CO2 + Cl⁻ → CO-Hb; (2) GSTT1 (afinitas rendah, kapasitas tinggi, dominan bila CYP jenuh) → S-(klorometil)glutation → formaldehida, format, aduk DNA (jalur karsinogenik)**. Ekskresi: napas (DCM utuh 50 sampai 70% pada kadar tinggi, CO, CO2); urin < 1 sampai 2% |
+| **4. Toksikodinamik** | **CO-Hb** (afinitas 210 sampai 250× O2): kapasitas angkut O2 turun, **kurva ke kiri**, hipoksia otak dan miokardium; CO juga menghambat **sitokrom c oksidase**. **DCM induk = anestetik/depresan SSP langsung** (mendahului puncak CO-Hb). Neuropati kranial (palsi N. VII) |
+| **5. Biomonitoring** | **CO-Hb darah (akhir shift)**: non-perokok < 1,5 sampai 2%, perokok 3 sampai 8% (koreksi status merokok). **DCM urin (akhir shift)**: spesifik. DCM darah (segera pasca-shift) |
+| **6. Waktu paruh** | **CO eksogen:** udara 4 sampai 5 jam; O2 100% 60 sampai 90 menit; HBO 20 sampai 30 menit. **CO-Hb dari DCM: udara ± 13 jam (11 sampai 15); O2 100% ± 6 jam** (DCM terus dilepas dari lemak dan diubah menjadi CO selama 8 sampai 24 jam) |
+| **7. Efek akut** | **"Bathtub refinisher syndrome":** kematian mendadak di ruang tertutup (uap lebih berat dari udara, menumpuk di dasar) oleh depresi SSP anestetik. Sakit kepala, pusing, mual, konfusi, ataksia, **palsi N. VII**, koma, kejang; **iskemia miokard, infark, aritmia** (terutama PJK). Iritasi mata/kornea, kulit, edema paru |
+| **8. Efek kronis** | Ensefalopati pelarut kronik; steatosis dan nekrosis sentrilobular hati; **kolangiokarsinoma**, HCC, NHL |
+| **9. Batas pajanan** | **ACGIH TLV-TWA 50 ppm (174 mg/m3)**, A3, BEI, tanpa STEL. **Permenaker 5/2018: NAB 50 ppm**, A-3, BEI. OSHA PEL 25 ppm, STEL 125, action level 12,5. NIOSH REL: Ca, IDLH 2.300 ppm |
+| **10. BEI / IPB** | **DCM urin akhir shift 0,3 mg/L** (Permenaker dan ACGIH). **CO-Hb akhir shift 3,5% Hb** (ACGIH; notasi B, Ns; Permenaker mengacu BEI CO) |
+| **11. Tatalaksana akut** | Evakuasi, lepas pakaian basah, cuci kulit. **O2 100% via NRM segera.** **HBO:** CO-Hb > 25% (> 15% pada hamil), iskemia miokard/angina/aritmia EKG, penurunan kesadaran/kejang/defisit neurologis menetap, asidosis refrakter. **Oksigen harus lebih lama daripada keracunan CO biasa**; **pantau CO-Hb serial ≥ 24 jam** (rebound CO-Hb sekunder) |
+| **12. Kelaikan kerja dan manajemen** | **Unfit:** PJK, riwayat infark/stent, aritmia ventrikel berat, anemia berat (Hb < 10), PPOK. **Faktor individu:** **merokok (CO aditif)**, anemia, polimorfisme GSTT1/CYP2E1. **Surveilans:** EKG 12 sadapan (usia > 40 atau faktor risiko), CO-Hb atau CO napas sebelum dan sesudah shift, fungsi hati, neurobehavioral. **Pengendalian:** substitusi (mekanis: amplas/blasting; benzil alkohol, ester dibasik), **dilarang di ruang tertutup tanpa LEV kuat**, **respirator kartrid karbon aktif DILARANG (breakthrough 5 sampai 15 menit tanpa peringatan bau) → supplied-air atau SCBA**, sarung tangan PVA/Viton (lateks, neoprena, nitril tipis tembus dalam menit) |
+| **13. Lain-lain** | **IARC Grup 2A.** Perpres 7/2019 Lampiran I.a butir 10 (derivat halogen alifatik) dan butir 27 (karbon monoksida); cek ulang nomor butir. Perokok memulai dengan CO-Hb 3 sampai 8% sehingga mencapai ambang kritis (> 10 sampai 15%) lebih cepat |
+
+**Pearl dan jebakan ujian**
+- **CO-Hb DCM naik terus 4 sampai 8 jam setelah evakuasi dan t1/2 ± 13 jam**: jangan pulangkan dari IGD karena CO-Hb awal rendah.
+- **Respirator kartrid organik tidak melindungi dari DCM**: supplied-air atau SCBA.
+- **Kematian cepat di ruang tertutup = anestesi oleh DCM utuh**, CO-Hb dapat masih < 10%.
+- **PJK/stent = unfit mutlak** (CO endogen memicu iskemia).
+- **Uap DCM lebih berat dari udara**: bak mandi dan lantai.

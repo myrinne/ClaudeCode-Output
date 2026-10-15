@@ -1,0 +1,244 @@
+---
+
+### **A. KARBON DISULFIDA (Carbon Disulfide / \\(\text{CS}_2\\))**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{CS}_2\\)**; nomor CAS **75-15-0**; berat molekul **76,14 g/mol**. Sinonim: *carbon bisulfide, dithiocarbonic anhydride*.
+* **Sifat Fisik**: Cairan jernih tidak berwarna hingga kekuningan; cairan murni berbau eterik manis, namun sediaan teknis berbau busuk tajam seperti lobak/telur busuk akibat senyawa sulfur pengotor. Sangat mudah menguap dengan tekanan uap tinggi (**297–300 mmHg pada 20°C**), titik didih 46,3°C.
+* **Bahaya Fisik Ekstrem**: **Sangat mudah terbakar (*Class IB Flammable Liquid*)** dengan rentang ledak lebar di udara (1,3% – 50,0%). Memiliki **suhu swasulut (*auto-ignition temperature*) yang luar biasa rendah (~90–100°C)**; uapnya dapat menyala secara spontan hanya dengan menyentuh permukaan pipa uap panas, bola lampu pijar, atau radiator pemanas tanpa adanya percikan api terbuka!
+* **Kelarutan**: Sangat lipofilik, sedikit larut dalam air (~0,2–0,3%), larut sempurna dalam alkohol, eter, kloroform, dan minyak.
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+  * **ACGIH**: **A4** (*Not classifiable as a human carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: Tidak tercantum dalam daftar karsinogen A-1/A-2.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Industri Rayon Viskosa (*Viscose Rayon Industry*)**: Sumber pajanan okupasional terbesar sedunia; \\(\text{CS}_2\\) direaksikan dengan selulosa alkalin membentuk natrium selulosa xantat yang dilarutkan menjadi cairan viskosa untuk serat tekstil.
+* **Manufaktur Film Selofan (*Cellophane*)**: Proses regenerasi selulosa xantat menjadi lembaran plastik pembungkus transparan.
+* **Sintesis Kimia & Agrokimia**: Bahan baku pembuatan fungisida/pestisida golongan ditiokarbamat (mankozeb, zineb, thiram), flotasi bijih tambang (xantat), dan sintesis karbon tetraklorida (\\(\text{CCl}_4\\)).
+* **Industri Vulkanisasi Karet**: Akselerator proses vulkanisasi dingin barang-barang karet.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap \\(\text{CS}_2\\) diabsorpsi secara cepat melalui alveoli paru dengan retensi pulmonal awal sebesar **70% hingga 80%** (menetap ~40–50% pada kondisi ekuilibrium).
+  * **Dermal**: Bersifat sangat lipofilik sehingga **menembus kulit utuh secara cepat dan masif**, baik dalam bentuk cairan maupun konsentrasi uap tinggi di udara (mendapat notasi **Skin / Kulit**).
+* **Distribusi**: Terdistribusi cepat ke seluruh organ vaskular dan jaringan kaya lipid; terakumulasi selektif pada **sistem saraf pusat (otak/mielin), saraf perifer, eritrosit, hepar, ginjal, dan jaringan adiposa**.
+* **Metabolisme (Dua Jalur Reaksi Reaktif)**:
+  1. **Reaksi Non-Enzimatik Spontan dengan Gugus Amino (Ditiokarbamat)**:
+     * \\(\text{CS}_2\\) bereaksi langsung dengan gugus amino primer/sekunder pada asam amino, rantai peptida, dan protein jaringan tubuh menghasilkan turunan **asam ditiokarbamat (*dithiocarbamate derivatives*)**.
+  2. **Reaksi dengan Glutation (GSH) & Pembentukan TTCA**:
+     * Sekitar 1–5% \\(\text{CS}_2\\) yang diserap bereaksi dengan glutation intraseluler membentuk metabolit heterosiklik stabil: **asam 2-tioksotiazolidin-4-karboksilat (*2-thioxothiazolidine-4-carboxylic acid* / TTCA)**.
+  3. **Oksidasi Mikrosomal Sitokrom P450 (CYP2E1)**:
+     * Menghasilkan metabolit antara yang tidak stabil (*carbon disulfide mono-oxygenated intermediate*), melepaskan **sulfur reaktif (*atomic sulfur*)** yang merusak membran hepar secara lokal, serta menghasilkan **karbonil sulfida (*carbonyl sulfide* / COS)** yang dihidrolisis lebih lanjut menjadi **karbon monoksida (CO)** dan **sulfat inorganik**.
+* **Ekskresi**: Sekitar 70–90% diekskresikan melalui ginjal ke dalam **urin dalam bentuk metabolit (terutama TTCA dan sulfat inorganik)**; sekitar **10–30% dieliminasi tanpa perubahan melalui udara ekshalasi paru-paru**; kurang dari 1% diekskresikan utuh di urin.
+
+---
+
+#### **4. Toksikodinamik**
+1. **Kelasi Ion Logam Esensial oleh Ditiokarbamat**:
+   * Gugus ditiokarbamat yang terbentuk di dalam darah dan jaringan merupakan agen pengkelat (*chelating agent*) kuat terhadap kation divalen trace metal tubuh, khususnya **Tembaga (Cu) dan Seng (Zn)**.
+2. **Inhibisi Enzim Dopamin \\(\beta\\)-Hidroksilase (DBH)**:
+   * Enzim dopamin \\(\beta\\)-hidroksilase (DBH) mutlak membutuhkan kofaktor ion tembaga (\\(\text{Cu}^{2+}\\)) untuk mengubah dopamin menjadi norepinefrin.
+   * Kelasi tembaga oleh metabolit ditiokarbamat **menghambat aktivitas DBH secara drastis**, menyebabkan **penurunan kadar norepinefrin dan penumpukan masif neurotransmiter dopamin di sistem saraf pusat**. Kondisi ini menjadi dasar patofisiologi timbulnya **psikosis toksik akut, mania, labilitas emosional, dan sindrom Parkinsonisme ekstrapiramidal**.
+3. **Aksonopati Distal Sentral-Perifer (*Distal Axonopathy*)**:
+   * \\(\text{CS}_2\\) bereaksi kovalen dengan residu lisin neurofilamen membentuk ikatan silang protein aksonal (*cross-linking of axonal proteins*), memicu pembengkakan neurofilamen dan degenerasi aksonal retrograd simetris tipe *dying-back*.
+4. **Vaskulopati & Aterosklerosis Prematur Terakselerasi**:
+   * Kerusakan langsung pada sel endotel vaskular, gangguan metabolisme lipid (peningkatan kolesterol LDL, apolipoprotein B, dan trigliserida), serta pembentukan ikatan silang elastin/kolagen dinding pembuluh darah.
+   * Mempercepat proses **aterosklerosis koroner dan serebral prematur**, memicu lonjakan mortalitas akibat **Penyakit Jantung Koroner (PJK) dan infark miokard** pada pekerja industri viskosa.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Asam 2-Tioksotiazolidin-4-Karboksilat (TTCA) dalam Urin**:
+  * **Peran**: Parameter baku emas (*gold standard*) pemantauan pajanan internal \\(\text{CS}_2\\). Dianalisis menggunakan kromatografi cair kinerja tinggi (HPLC).
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+  * **Matriks**: Urin (dikoreksi terhadap kadar kreatinin urin).
+* **Metode Historis (Uji Azida-Iodin / *Iodine-Azide Test*)**:
+  * Dahulu digunakan untuk mengukur metabolit sulfur divalent urine yang mengkatalisis reduksi iodin oleh natrium azida; kini ditinggalkan karena batas deteksi kasar dan rentan positif palsu.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **\\(\text{CS}_2\\) dalam Udara Ekshalasi & Darah**: Eliminasi trifasik; fase cepat darah t\\(_{1/2}\\) ~1 jam, fase lambat terminal mencapai belasan jam.
+* **TTCA dalam Urin**: Memiliki waktu paruh eliminasi biologis berkisar antara **6 hingga 10 jam** (rata-rata ~8 jam). Pada pekerja dengan pajanan harian di atas nilai ambang, metabolit TTCA dapat mengalami akumulasi parsial menuju akhir pekan kerja.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Psikosis Toksik Akut (*"Carbon Disulfide Madness"*)**:
+  * Iritabilitas ekstrem, euforia paradoksal, insomnia berat, halusinasi auditorik/visual liar, delusi paranoid, agresi tak terkendali, krisis mania, hingga depresi berat dengan tendensi bunuh diri (*suicidal behavior*).
+* **Depresi Susunan Saraf Pusat**:
+  * Pusing berputar, sakit kepala berdenyut, ataksia, diplopia, somnolen, inkoordinasi motorik, kejang, hingga koma dan kegagalan napas pada konsentrasi uap tinggi (>500–1.000 ppm).
+* **Iritasi Kimiawi**:
+  * Iritasi mata berat, keratitis, fotofobia; kontak langsung cairan pekat memicu luka bakar kimiawi dan pembentukan bula/vesikel akibat pelarutan lipid kutan secara instan.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Polineuropati Perifer Sensorimotor**:
+  * Parestesia simetris pola kaus kaki dan sarung tangan (*glove-and-stocking*), hilangnya refleks tendon dalam (refleks Achilles), kelemahan otot motorik distal tungkai, serta perlambatan kecepatan konduksi saraf motorik/sensorik (NCV).
+* **Sindrom Parkinsonisme & Ensefalopati Kronis**:
+  * Sindrom ekstrapiramidal (tremor istirahat, rigiditas roda gerigi, bradikinesia, gaya berjalan membungkuk) akibat disfungsi dopaminergik basal ganglia, disertai defisit memori kronis dan atrofi kortikal/serebelar.
+* **Penyakit Kardiovaskular & Aterosklerosis Terakselerasi**:
+  * Peningkatan morbiditas dan mortalitas dini akibat **angina pektoris, infark miokard akut, hipertensi arterial sistemik**, dan arteriosklerosis serebral.
+* **Retinopati & Vaskulopati Okular Spesifik**:
+  * Pembentukan **mikroaneurisma retina bilateral** pada kutub posterior fundus mata (gambaran angiografi fluoresens sangat menyerupai retinopati diabetik non-proliferatif!), pendarahan bercak retina, serta penyempitan lapang pandang sentral.
+* **Toksisitas Reproduksi & Endokrin**:
+  * *Pria*: Oligospermia, astenospermia, teratospermia, penurunan libido, disfungsi ereksi, dan atrofi testis.
+  * *Wanita*: Gangguan siklus menstruasi (amenorea, metroragia), penurunan fertilitas, peningkatan insiden abortus spontan dini, dan toksisitas embriofetal.
+  * *Disfungsi Endokrin*: Penurunan aktivitas hormon tiroid (tiroksin) dan disregulasi sumbu hipotalamus-hipofisis-adrenal.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **1 ppm** (3,11 mg/m³).
+  * **TLV-STEL**: Tidak ditetapkan nilai numerik.
+  * **Notasi**: **Skin** (bahaya serapan kutan), **A4** (*Not classifiable as a human carcinogen*), **BEI**.
+  *(Dasar kritis penetapan TLV: Kerusakan saraf tepi / peripheral nervous system impairment)*.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **1 BDS (ppm)** atau **3,13 mg/m³**.
+  * **PSD (STEL 15 menit)**: Tidak ditetapkan.
+  * **Notasi**: **Kulit**, **BEI**.
+* **OSHA PEL**: TWA 20 ppm, Ceiling 30 ppm, Peak 100 ppm (30 menit).
+* **NIOSH REL**: TWA 1 ppm (3 mg/m³), STEL 10 ppm (30 mg/m³), Notasi: **[skin]**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Asam 2-Tioksotiazolidin-4-karboksilat (TTCA)** | Urin | **Akhir shift kerja** (*End of shift*) | **0,5 mg/g kreatinin** | **0,5 mg/g kreatinin** | Notasi **B** (baseline endogen), **Ns** (*Non-specific*) |
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip**: **TIDAK ADA ANTIDOT SPESIFIK**. Penanganan berfokus pada dekontaminasi cepat dan perawatan suportif neuro-kardiovaskular intensif.
+* **Tindakan Penyelamatan Segera**:
+  * Evakuasi segera korban ke udara segar; berikan oksigenasi aliran tinggi.
+  * Lepaskan seluruh pakaian dan sepatu yang terkontaminasi (pakaian basah \\(\text{CS}_2\\) melepaskan uap beracun dan mudah terbakar); cuci kulit dan rambut menggunakan air dan sabun selama minimal 15 menit. Irigasi mata dengan larutan salin steril selama 15–20 menit bila terpapar uap/cairan.
+* **Manajemen Gejala Neuropsikiatris Akut**:
+  * Pasien gaduh gelisah atau psikotik akut ditata laksana dengan **benzodiazepin (diazepam/lorazepam)** atau antipsikotik atipikal generasi kedua.
+  * **PERINGATAN: HINDARI OBAT ANTIPSIKOTIK TIPIKAL POTEN TINGGI (seperti Haloperidol atau Klorpromazin)** karena obat ini memblokade reseptor dopamin D2 secara poten dan dapat mencetuskan krisis ekstrapiramidal berat serta memperparah sindrom parkinsonisme pada pasien dengan neurotoksisitas \\(\text{CS}_2\\)!
+* **Kardioproteksi**: Monitoring elektrokardiografi (EKG) kontinu; tatalaksana iskemia miokardial sesuai protokol sindrom koroner akut standar.
+* **Kontraindikasi**: Induksi muntah dikontraindikasikan pada pajanan tertelan untuk mencegah aspirasi pulmonal hidrokarbon volatil.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Polineuropati Toksik Sensorimotor, Parkinsonisme Sekunder, Psikosis Reaktif Organik, Penyakit Jantung Koroner (PJK) Dini, atau Retinopati Toksik Mikroaneurisma.
+  2. *Identifikasi Pajanan Kerja*: Melacak operasional industri pemintalan benang rayon viskosa (*staple/filament spinning*), pembilasan asam, atau regenerasi selofan dari SDS/LDKB.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme ikatan ditiokarbamat, inhibisi enzim DBH, dan percepatan aterogenesis vaskular.
+  4. *Evaluasi Besaran Pajanan*: Hasil *air monitoring* stasiun kerja pemintalan (dibandingkan NAB 1 ppm), hasil biomonitoring urin TTCA akhir shift (dibandingkan IPB 0,5 mg/g kreatinin), masa kerja, serta kepatuhan pemakaian respirator bertaraf.
+  5. *Faktor Kerentanan Individu*: Riwayat PJK keluarga, diabetes melitus, dislipidemia dasar, hipertensi, atau riwayat gangguan psikiatris/neurologis sebelumnya.
+  6. *Faktor di Luar Hubungan Kerja*: Kebiasaan merokok aktif (faktor risiko multiplikatif terhadap percepatan aterosklerosis PJK).
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan sosial ketenagakerjaan dan kompensasi PAK.
+* **Kelaikan Kerja (*Fitness for Work*)**:
+  * Pekerja dengan **penyakit kardiovaskular iskemik (riwayat PJK/infark miokard), hipertensi tidak terkontrol, polineuropati perifer, gangguan depresi/psikotik berat, retinopati, disfungsi ereksi organik, atau wanita hamil** dinyatakan **TIDAK LAIK (*UNFIT*)** untuk ditugaskan di lingkungan kerja berpajanan karbon disulfida.
+* **Surveilans Medis Berkala Terpadu**:
+  * **Pemeriksaan Kardiovaskular**: Skrining profil lipid darah lengkap (kolesterol total, LDL, HDL, trigliserida), tekanan darah serial, dan **Elektrokardiografi (EKG) istirahat/treadmill tahunan** untuk mendeteksi dini iskemia miokard tersembunyi.
+  * **Pemeriksaan Neurologis & Elektrofisiologi**: Uji kecepatan konduksi saraf (NCV) berkala untuk mendeteksi polineuropati subklinis, serta evaluasi neuropsikiatri/kuesioner neurobehavioral.
+  * **Oftalmologi Khusus**: Pemeriksaan **funduskopi dan Angiografi Fluoresens Retina (*Fluorescein Angiography*)** berkala untuk mendeteksi munculnya mikroaneurisma retina dini.
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * **Substitusi Modern**: Beralih ke **Proses Lyocell / Tencel** (menggunakan pelarut ramah lingkungan *N-methylmorpholine N-oxide* / NMMO) yang sepenuhnya mengeliminasi penggunaan \\(\text{CS}_2\\) dalam pembuatan serat selulosa regenerasi.
+  * *Rekayasa Teknis*: Mesin pemintalan berputar tertutup penuh (*enclosed spinning machines*), pemasangan ventilasi hisap lokal (*Local Exhaust Ventilation* / LEV) berkecepatan tinggi pada bak pemintalan asam dan area *cutting*, serta sistem pemulihan gas \\(\text{CS}_2\\) (*carbon adsorption recovery systems*).
+  * **Pencegahan Kebakaran Khusus**: Seluruh instalasi kelistrikan wajib bersertifikasi *intrinsically safe / explosion-proof*; isolasi seluruh pipa uap panas guna mencegah kontak suhu >90°C dengan uap \\(\text{CS}_2\\).
+  * *APD Khusus*: Sarung tangan bahan **Viton atau Neoprena tebal** (**hindari sarung tangan lateks dan nitril tipis**); respirator pemurni udara dengan kartrid uap organik bertaraf NIOSH atau respirator suplai udara bertekanan positif (*supplied-air respirator*) saat pemeliharaan mesin.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 3** (*Not classifiable as to its carcinogenicity to humans*).
+* **Notasi**: ACGIH menetapkan notasi **Skin**, **A4**, dan **BEI**; Permenaker No. 5 Tahun 2018 menetapkan notasi **Kulit** dan **BEI**.
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 9**: Mengakui secara legal hak kompensasi untuk **"Penyakit yang disebabkan oleh karbon disulfida"**.
+* **Permenkes No. 11 Tahun 2022**: Pedoman yuridis 7 langkah diagnosis PAK dan surveilans kesehatan kerja komprehensif.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Karbon Disulfida**
+* 🩺 **Clinical Pearl**:
+  * **"The Viscose Worker's False Diabetes"**: Jika seorang pekerja pabrik serat rayon viskosa berusia muda tanpa riwayat diabetes melitus datang untuk pemeriksaan mata berkala dan dokter mata menemukan gambaran **mikroaneurisma retina fokal** pada funduskopi, jangan langsung mengira itu retinopati diabetik! Itu adalah tanda patognomonik **vaskulopati mikroangiopati retina akibat karbon disulfida**. Segera lakukan evaluasi kardiovaskular komprehensif karena mikroaneurisma retina berkorelasi erat dengan aterosklerosis arteri koroner dini.
+  * **"The Cold Pipe Ignition Hazard"**: Ingatlah bahwa \\(\text{CS}_2\\) memiliki suhu swasulut (*auto-ignition temperature*) sekitar 90–100°C. Uap \\(\text{CS}_2\\) dapat meledak terbakar hanya karena menyentuh pipa air panas industri atau bola lampu biasa tanpa memerlukan percikan api!
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Mekanisme Neuropsikiatri (Dopamin Beta-Hidroksilase)*:
+     * *Soal Ujian*: "Bagaimana mekanisme karbon disulfida mencetuskan psikosis akut dan mania?"
+     * *Jebakan*: Menjawab penurunan kadar dopamin di celah sinaps.
+     * *Koreksi*: Kebalikannya! Metabolit ditiokarbamat mengkelat ion tembaga (Cu) dari enzim **dopamin \\(\beta\\)-hidroksilase (DBH)**, sehingga konversi dopamin menjadi norepinefrin terhambat. Hal ini memicu **PENUMPUKAN KADAR DOPAMIN INTRAKORTIKAL SECARA MASIF** yang mendasari psikosis manik.
+  2. *Jebakan Pengaruh Makanan pada Nilai Biomonitoring TTCA*:
+     * *Jebakan*: Mengabaikan riwayat konsumsi makanan pekerja saat menafsirkan hasil uji TTCA urin.
+     * *Koreksi*: Konsumsi sayuran dari famili **Cruciferae / Brassicaceae (seperti kubis, brokoli, kol, sawi)** yang kaya glukosinolat dapat menghasilkan sedikit metabolit TTCA endogen di urin. Hal ini diberi notasi **B** (*Background*) dan **Ns** (*Non-specific*) oleh ACGIH, sehingga riwayat diet sayuran sulfur wajib dikonfirmasi pada pembacaan kadar TTCA borderline.
+
+---
+---
+
+### **B. KETON, ETER, DAN ESTER RINGAN: ASETON, ISOPROPIL ETER, & ETIL ASETAT**
+
+---
+
+#### **Tabel Perbandingan Karakteristik Toksikologi Terpadu**
+
+| Parameter Evaluasi | **ASETON (Acetone)** | **ISOPROPIL ETER (Diisopropyl Ether / DIPE)** | **ETIL ASETAT (Ethyl Acetate)** |
+| :--- | :--- | :--- | :--- |
+| **Identitas Kimia & Rumus** | **\\(\text{C}_3\text{H}_6\text{O}\\)** atau **\\(\text{CH}_3\text{COCH}_3\\)**; CAS: **67-64-1**; BM: **58,08 g/mol**. Sinonim: *2-propanone, dimethyl ketone*. | **\\(\text{C}_6\text{H}_{14}\text{O}\\)** atau **\\((\text{CH}_3)_2\text{CHOCH}(\text{CH}_3)_2\\)**; CAS: **108-20-3**; BM: **102,17 g/mol**. Sinonim: *diisopropyl oxide, DIPE*. | **\\(\text{C}_4\text{H}_8\text{O}_2\\)** atau **\\(\text{CH}_3\text{COOC}_2\text{H}_5\\)**; CAS: **141-78-6**; BM: **88,11 g/mol**. Sinonim: *acetic ester, ethyl ethanoate*. |
+| **Sifat Fisik-Kimia & Volatilitas** | Cairan jernih tidak berwarna, berbau manis tajam khas, sangat mudah menguap (tekanan uap **180–231 mmHg pada 20°C**), titik didih 56°C, **sangat mudah terbakar** (titik nyala -20°C). Larut sempurna dalam air (*miscible*) dan lipid. | Cairan jernih berbau eter tajam manis, sangat mudah menguap (tekanan uap **119–150 mmHg**), titik didih 68°C, **sangat mudah terbakar** (titik nyala -28°C). **Rentan membentuk peroksida organik yang eksplosif spontan** bila terpapar udara/cahaya. | Cairan jernih beraroma buah (*fruity pleasant odor*), mudah menguap (tekanan uap **73 mmHg pada 20°C**), titik didih 77°C, **mudah terbakar** (titik nyala -4°C). Cukup larut dalam air (~10% pada 25°C). |
+| **Sumber Industri Utama** | Pelarut serat selulosa asetat (*acetate fiber plants*), cat, pernis, lem perekat, cairan penghapus cat kuku, degreaser presisi elektronik, dan pembersih laboratorium. | Aditif peningkat angka oktan bensin (*fuel oxygenate*), pelarut ekstraksi farmasi/kimia organik, serta pelarut penghilang lilin/minyak mineral. | Pelarut industri cat, lak, pernis poliuretan, tinta cetak *flexographic*, perekat laminasi kemasan, industri wewangian/perisa buatan, dan proses dekafeinasi kopi/teh. |
+| **Toksikokinetik & Metabolisme** | Inhalasi diserap cepat (~70–80%), dermal lambat. Sebagian diekshalasi utuh via paru; di hepar dimetabolisme oleh **CYP2E1** menjadi asetol dan metilglioksal yang masuk ke siklus glukoneogenesis. **Merupakan zat endogen normal tubuh**. | Inhalasi & oral diserap cepat; menembus sawar darah-otak secara efisien. Dimetabolisme di hepar oleh sitokrom P450 melalui *O-dealkilasi* menghasilkan **isopropanol dan aseton**. | Inhalasi & dermal diserap cepat. Di darah dan jaringan, **dihidrolisis sangat cepat oleh enzim karboksilesterase non-spesifik menjadi ETANOL dan ASAM ASETAT**, yang kemudian dioksidasi tuntas menjadi \\(\text{CO}_2\\) dan air. |
+| **Efek Toksisitas Akut** | Iritasi ringan konjungtiva mata dan saluran napas atas (>500 ppm). Depresi SSP ringan pada konsentrasi sangat tinggi (>2.000–5.000 ppm) berupa sakit kepala, pusing, mual, dan rasa kantuk. | Iritasi mata dan membran mukosa pernapasan. **Depresan SSP dan anestetik umum yang poten**; menyebabkan sedasi dalam, ataksia, konfusi, hipotermia, bradipnea, hingga koma pada kadar tinggi. | Iritasi mata berat, lakrimasi, batuk, rasa kering/terbakar pada nasofaring. Efek depresi SSP dan narkotik hanya terjadi pada konsentrasi udara sangat tinggi (>2.000 ppm). |
+| **Efek Toksisitas Kronis** | Dermatitis kontak iritan (pengeringan dan pecah-pecah kutan akibat pelarutan lipid alami / *defatting agent*). **TIDAK NEUROTOKSIK terhadap saraf tepi dan tidak karsinogenik**. | Dermatitis kontak iritan kronis; sindrom astenik neurovegetatif reversibel; defisit kognitif fungsional pada pajanan berat berkepanjangan. | Dermatitis kontak iritan; hiperemia konjungtiva berulang; iritasi bronkus kronis. **Tidak bersifat neurotoksik perifer dan tidak karsinogenik**. |
+| **Standar ACGIH (2026)** | **TLV-TWA: 250 ppm**; **TLV-STEL: 500 ppm**. Notasi: **A4**, **BEI**. | **TLV-TWA: 20 ppm**; **TLV-STEL: 50 ppm**. Notasi: **A4**. *(Nilai revisi ketat diadopsi ACGIH)*. | **TLV-TWA: 100 ppm** (360 mg/m³); **TLV-STEL: 200 ppm**. *(Revisi adopsi ACGIH; TLV historis 400 ppm)*. |
+| **Standar Permenaker No. 5 Tahun 2018** | **NAB (TWA 8 jam): 500 BDS (ppm)** (1.187 mg/m³); **PSD (STEL): 750 BDS (ppm)** (1.781 mg/m³). Notasi: **BEI**. | **NAB (TWA 8 jam): 250 BDS (ppm)** (1.040 mg/m³); **PSD (STEL): 310 BDS (ppm)**. Notasi: Tidak ada. | **NAB (TWA 8 jam): 400 BDS (ppm)** (1.440 mg/m³); **PSD (STEL): Tidak ditetapkan**. Notasi: Tidak ada. |
+| **Biomonitoring (BEI / IPB)** | **Aseton dalam Urin**: Nilai **25 mg/L** (waktu sampling: **akhir shift kerja**; Notasi **B** [baseline endogen] dan **Ns** [isopropanol juga menghasilkan aseton]). | **TIDAK ADA BEI / IPB**. Pengawasan berbasis higiene industri *air monitoring*. | **TIDAK ADA BEI / IPB**. Pengawasan biologis tidak praktis karena degradasi instan menjadi metabolit fisiologis. |
+| **Prinsip Tatalaksana Medis** | Pindahkan korban ke udara segar; bilas mata dan kulit dengan air. Terapi murni suportif simtomatik; hidrasi adekuat. | Evakuasi ke tempat terbuka; amankan patensi jalan napas; berikan terapi oksigen normobarik jika timbul somnolen atau depresi napas; monitoring EKG. | Evakuasi ke udara segar; berikan terapi oksigen lembap jika timbul batuk/iritasi bronkus; bilas mata dengan larutan salin steril selama 15 menit. |
+| **Keterangan Regulasi (Perpres 7/2019 & IARC)** | IARC: Tidak terdaftar / Not classifiable; **Perpres 7/2019 Lampiran I.a No. 14** (*Penyakit akibat alkohol, glikol, atau keton*). | IARC: Tidak diklasifikasikan / Grup 3; **Perpres 7/2019 Lampiran I.a No. 16** (*Penyakit akibat derivat eter*). | IARC: Tidak terdaftar / Grup 3; **Perpres 7/2019 Lampiran I.a No. 17** (*Penyakit akibat derivat ester*). |
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Keton, Eter, & Ester Ringan**
+
+* 🩺 **Clinical Pearls**:
+  * **"The Isopropanol Metabolite Trap in Acetone BEI"**: Pengukuran aseton urin sebagai biomarker pajanan kerja memiliki notasi **Ns (*Non-specific*)**. Pasien yang terpapar uap pelarut **Isopropil Alkohol (IPA / Rubbing alcohol)** di tempat kerja akan mengoksidasi isopropanol menjadi **aseton** di dalam hepar via enzim alkohol dehidrogenase (ADH). Jangan menyimpulkan bahwa peningkatan aseton urin pasti berasal dari pajanan langsung zat cair aseton murni!
+  * **"The Diabetic Ketoacidosis False Alarm"**: Aseton adalah badan keton normal tubuh. Pekerja dengan **Diabetes Melitus tipe 1/2 tidak terkontrol, individu yang menjalani diet ketogenik ketat, atau orang yang sedang berpuasa panjang** dapat memiliki kadar aseton urin endogen >25 mg/L tanpa adanya paparan pelarut industri (notasi **B** / *Background*).
+  * **"Peroxide Bomb in the Chemical Cabinet"**: Isopropil eter (DIPE) yang disimpan dalam botol kaca bening atau wadah yang telah dibuka lebih dari 6–12 bulan dapat bereaksi spontan dengan oksigen udara membentuk kristal **peroksida organik berkonsentrasi tinggi**. Kristal peroksida ini sangat tidak stabil dan **dapat meledak seketika hanya karena gesekan ulir tutup botol saat dibuka**!
+  * **"The Innocence of Ethyl Acetate"**: Etil asetat adalah salah satu pelarut industri dengan indeks keamanan fisiologis paling tinggi di antara VOC karena darah manusia memiliki cadangan enzim karboksilesterase yang luar biasa melimpah. Etil asetat langsung dipecah dalam fraksi detik menjadi senyawa makanan alami: etanol dan cuka (asam asetat).
+
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Sifat Neurotoksik Aseton vs Keton C6*:
+     * *Soal Ujian*: "Apakah aseton menyebabkan polineuropati perifer tipe aksonopati distal?"
+     * *Jebakan*: Menjawab "Ya" karena menganggap semua pelarut keton merusak saraf tepi.
+     * *Koreksi*: **Aseton BUKAN hidrokarbon C6 dan BUKAN \\(\gamma\\)-diketon**. Aseton tidak membentuk 2,5-heksanadion dan **TIDAK PERNAH menyebabkan neuropati perifer motorik/sensorik** (berbeda dengan n-heksana atau MBK).
+  2. *Jebakan Nilai NAB Permenaker vs TLV ACGIH Modern (Isopropil Eter)*:
+     * *Jebakan*: Menjawab ambang batas isopropil eter selalu 250 ppm.
+     * *Koreksi*: Standar nasional Permenaker No. 5 Tahun 2018 menetapkan NAB 250 ppm. Namun, **ACGIH telah merevisi dan memperketat batas pajanan Isopropil Eter menjadi TLV-TWA 20 ppm dan STEL 50 ppm** guna mencegah dermatitis dan iritasi saluran pernapasan atas.
+  3. *Jebakan Penggunaan Etil Asetat*:
+     * *Jebakan*: Menganggap etil asetat memiliki metabolit urin spesifik untuk biomonitoring biologis rutin.
+     * *Koreksi*: **Etil asetat TIDAK memiliki indeks pajanan biologi (BEI/IPB)** karena waktu paruhnya dalam darah hanya beberapa menit sebelum diubah menjadi etanol dan asam asetat endogen tubuh.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: Nilai Ambang Batas Faktor Kimia; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran Bagian I.a No. 9: Karbon disulfida; No. 14: Keton; No. 16: Eter; No. 17: Ester).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Pedoman 7 Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Carbon disulfide [p. 20, 126], Acetone [p. 12, 162], Isopropyl ether [p. 42, 144], Ethyl acetate [p. 33, 139] entries; BEI Section [p. 169–171]).
+5. **Cox, C., Que Hee, S. S., & Tolos, W. P.** (1998): *Biological Monitoring of Workers Exposed to Carbon Disulfide*. American Journal of Industrial Medicine, 33(1), 48–54.
+6. **Drexler, H., Göen, T., Angerer, J., Abou-el-ela, S., & Lehnert, G.** (1994): *Carbon disulphide. I. External and internal exposure to carbon disulphide of workers in the viscose industry*. International Archives of Occupational and Environmental Health, 65(6), 359–365.
+7. **Yang, X. F., et al.** (2001): *The cross-sectional study of the health effects of occupational exposure to carbon disulfide in a Chinese viscose plant*. Environmental Toxicology, 16(5), 377–382.
+8. **Sugimoto, K., et al.** (1984): *An epidemiological study on carbon disulphide angiopathy in a Chinese viscose rayon factory*. International Archives of Occupational and Environmental Health, 58(2), 127–134.
+9. **Ghittori, S., et al.** (1996): *Acetone in urine and exposure to isopropyl alcohol*. International Archives of Occupational and Environmental Health, 68(6), 409–412.
+10. **Lee, K., et al.** (2023/2025): *Biomonitoring of Exposures to Solvents and Metals in Electronics Manufacturing Facilities in Batam, Indonesia*. New Solutions: A Journal of Environmental and Occupational Health Policy, 34(4), 26–28.
+11. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: Carbon disulfide [p. 50], Acetone [p. 4], Isopropyl ether [p. 178], Ethyl acetate [p. 132] entries).
+12. **Hodgson, E. (Ed.)** (2010): *A Textbook of Modern Toxicology*. 4th Edition. John Wiley & Sons (Chapter 16: Cardiovascular Toxicology; Chapter 22: Occupational Standards).
+
+---
+
+💡 *Apakah Anda ingin melengkapi seluruh rangkaian toksikologi pelarut organik ini dengan tinjauan perbandingan batas pajanan (OELs & BEIs) dalam satu tabel ringkas master untuk persiapan ujian dokter spesialis kedokteran okupasi?*

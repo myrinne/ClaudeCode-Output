@@ -1,0 +1,390 @@
+---
+
+### **A. VINIL KLORIDA MONOMER (VCM / Vinyl Chloride Monomer)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{C}_2\text{H}_3\text{Cl}\\)** atau **\\(\text{CH}_2=\text{CHCl}\\)**; nomor CAS **75-01-4**; berat molekul **62,50 g/mol**. Sinonim: *chloroethene, chloroethylene, ethylene monochloride*.
+* **Sifat Fisik**: Gas tidak berwarna pada suhu kamar (titik didih -13,4°C / 7°F), berbau eter/manis pada konsentrasi tinggi (>3.000 ppm), sangat mudah menguap, dan sangat mudah terbakar (*Class IA Flammable Gas*). Biasanya disimpan dan ditranspor sebagai cairan bertekanan dengan inhibitor polimerisasi.
+* **Kelarutan**: Sangat lipofilik, mudah larut dalam pelarut organik, dan sedikit larut dalam air (~0,11%).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 1** (*Carcinogenic to humans*) dengan bukti kausal langsung pada manusia untuk **Angiosarkoma Hati (*Hepatic Angiosarcoma* / ASL)** dan **Karsinoma Hepatoseluler (*Hepatocellular Carcinoma* / HCC)**.
+  * **ACGIH**: **A1** (*Confirmed Human Carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-1** (Terbukti karsinogen untuk manusia).
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Manufaktur Plastik**: Bahan baku tunggal (*monomer*) dalam sintesis polimerisasi **Polivinil Klorida (*Polyvinyl Chloride* / PVC)**.
+* **Sektor Berisiko Tinggi**: Pabrik sintesis VCM dan pabrik polimerisasi PVC.
+* **Tugas Pekerjaan Kritis**: Pekerja pembersih bejana reaktor autoklaf polimerisasi (*reactor vessel autoclaves cleaning*), teknisi transfer pipa cairan bertekanan, dan pekerja pemeliharaan tangki.
+* **Pajanan Konsumen**: Pelepasan residu monomer vinil klorida yang terperangkap pada produk plastik PVC yang belum matang sempurna (*residual unreacted monomer outgassing*).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap gas VCM diabsorpsi cepat dan ekstensif oleh membran alveolar paru (retensi pulmonal ~40–50%).
+  * **Dermal**: Absorpsi gas melalui kulit utuh sangat kecil, namun cairan bertekanan dapat menembus kulit dan menyebabkan luka beku (*frostbite*).
+* **Distribusi**: Cepat terdistribusi ke seluruh jaringan dengan afinitas tertinggi pada organ dengan vaskularisasi dan kandungan lipid tinggi (hepar, ginjal, jaringan adiposa, dan limpa).
+* **Metabolisme (Bioaktivasi Hepatik Mikro-enzimatik)**:
+  * Dimetabolisme terutama di hepar oleh enzim mikrosomal sitokrom P450, khususnya **CYP2E1**.
+  * **Oksidasi Fase I**: VCM dioksidasi menjadi metabolit antara yang sangat reaktif dan tidak stabil, yaitu **kloroetilen oksida (*chloroethylene oxide* / CEO)**.
+  * **Penataan Ulang Spontan**: Sebagian CEO mengalami penataan ulang spontan menjadi **kloroasetaldehida (*chloroacetaldehyde* / CAA)**.
+  * **Konjugasi Fase II (Detoksifikasi)**: CEO dan CAA dikonjugasikan dengan glutation (GSH) tereduksi oleh enzim *Glutathione S-Transferase* (GST), lalu dimetabolisme lebih lanjut melalui siklus asam merkapturat menghasilkan **asam tiodiglikolat (*thiodiglycolic acid* / TDGA)**, asam *N-acetyl-S-(2-hydroxyethyl)cysteine*, dan *chloroacetic acid*.
+* **Ekskresi**: Pada konsentrasi rendah, metabolit hasil konjugasi glutation diekskresikan melalui ginjal ke dalam **urin (terutama sebagai asam tiodiglikolat / TDGA)**; bila metabolisme jenuh (>100–250 ppm), sisa VCM dieliminasi tanpa perubahan melalui udara ekshalasi paru.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Karsinogenesis & Angiosarkoma)**
+1. **Pembentukan Aduk DNA Eteno (*Etheno-DNA Adducts*)**:
+   * Kloroetilen oksida (CEO) dan kloroasetaldehida (CAA) merupakan elektrofil kuat yang bereaksi kovalen dengan basa nitrogen DNA.
+   * Membentuk aduk mayor: **7-(2-oxoethyl)deoxyguanosine (7-OEDG)** (~98% aduk total, bersifat non-promutagenik).
+   * Membentuk aduk minor promutagenik tinggi: **\\(N^{2,3}\text{-ethenodeoxyguanosine}\\)**, **\\(1,N^6\text{-ethenodeoxyadenosine}\\)**, dan **\\(3,N^4\text{-ethenodeoxycytosine}\\)**.
+2. **Mutasi Gen Pengendali Siklus Sel & Onkogen**:
+   * Aduk eteno memicu transisi pasangan basa \\(\text{G:C} \rightarrow \text{A:T}\\) dan \\(\text{A:T} \rightarrow \text{T:A}\\).
+   * Memicu mutasi spesifik pada gen supresor tumor **TP53** dan aktivasi mutasi kodon 12/13 pada onkogen **K-ras**.
+3. **Patogenesis Angiosarkoma Hati (*Hepatic Angiosarcoma* / ASL)**:
+   * VCM memiliki tropisme unik terhadap sel endotel sinusoid hepar.
+   * Kerusakan genetik selektif pada sel endotel sinusoid dan sel stelata hepar (sel Ito) memicu hiperplasia mikronodular, dilatasi sinusoid, fibrosis subkapsular, hingga transformasi ganas menjadi **tumor vaskular endotelial hepar yang sangat ganas (ASL)**.
+4. **Sindrom Vinil Klorida (*Vinyl Chloride Disease*)**:
+   * Reaksi vaskulopati mikrovaskular oklusif imunologik (deposisi kompleks imun pada dinding kapiler) dan hiperaktivitas fibroblas, menyebabkan hiperkolagenosis kulit, iskemia digitalis, dan resorpsi osteoklastik tulang.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Asam Tiodiglikolat dalam Urin (*Urinary Thiodiglycolic Acid* / TDGA)**:
+  * **Peran**: Parameter metabolit urin utama untuk menilai beban pajanan internal VCM harian.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)** pada akhir pekan kerja.
+  * **Keterbatasan**: Tidak spesifik (*non-specific*); paparan pelarut lain (seperti 1,2-dikloroetana, vinilidena klorida) atau obat-obatan juga dapat menghasilkan metabolit TDGA.
+* **Biomarker Paparan DNA Kumulatif (Riset)**: Pengukuran aduk DNA eteno (\\(1,N^6\text{-ethenodeoxyadenosine}\\)) pada limfosit darah tepi.
+* **Status BEI ACGIH**: Determinan biomonitoring vinil klorida saat ini berada dalam status peninjauan (*Under Study*) di komite ACGIH.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **VCM dalam Darah & Lemak**: Eliminasi awal sangat cepat dengan t\\(_{1/2}\\) berkisar **beberapa menit hingga ~1 jam**, diikuti fase lambat dari jaringan adiposa.
+* **Asam Tiodiglikolat (TDGA) Urin**: Memiliki waktu paruh eliminasi cepat berkisar **4 hingga 5 jam**, sehingga mencerminkan pajanan pada shift kerja yang sama.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Depresi Sistem Saraf Pusat**: Efek narkotik dan anestesi umum; pusing, euforia, sakit kepala, inkoordinasi motorik, ataksia, mengantuk, hingga hilangnya kesadaran dan koma pada konsentrasi uap masif (>1.000–8.000 ppm).
+* **Disritmia Jantung Fatal**: Sensitisasi miokardium terhadap katekolamin endogen yang memicu aritmia ventrikel akut.
+* **Iritasi & Bahaya Fisik**: Iritasi ringan membran mukosa saluran napas; kontak langsung cairan VCM bertekanan menyebabkan cedera beku jaringan lokal (*frostbite*).
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Trias Sindrom Vinil Klorida (*Vinyl Chloride Disease*)**:
+  1. **Fenomena Raynaud Sekunder**: Spasme mikrovaskular digital paroksismal pada jari tangan yang dicetuskan oleh suhu dingin (pucat, sianosis, dan nyeri).
+  2. **Akroosteolisis (*Acroosteolysis*)**: Resorpsi osteolitik aseptik khas pada falang distal tangan (pemendekan falang distal, tampak seperti *clubbing fingers* palsu).
+  3. **Perubahan Kulit Sklerodermiform**: Penebalan, indurasi, dan hilangnya elastisitas kulit tangan dan lengan mirip skleroderma (*scleroderma-like lesions*).
+* **Hepatotoksisitas & Hipertensi Portal Non-Sirotik**:
+  * Fibrosis hepar subkapsular dan periportal progresif (*toxic periportal fibrosis*).
+  * Peningkatan tekanan vena porta yang memicu **hipertensi portal non-sirotik, splenomegali kongestif**, dan varises esofagus.
+  * Hipersplenisme sekunder yang menyebabkan **trombositopenia** perifer terisolasi.
+* **Keganasan Hepar Primer**:
+  * **Angiosarkoma Hati (*Hepatic Angiosarcoma* / ASL)**: Keganasan endotel sinusoid hepar yang mematikan dengan masa laten panjang (15–30 tahun).
+  * **Karsinoma Hepatoseluler (*Hepatocellular Carcinoma* / HCC)**: Risiko meningkat nyata terutama bila terdapat interaksi sinergis dengan konsumsi alkohol atau hepatitis virus kronis.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **1 ppm** (2,56 mg/m³).
+  * **TLV-STEL**: Tidak ditetapkan nilai numerik.
+  * **Notasi**: **A1** (*Confirmed Human Carcinogen*).
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **1 BDS (ppm)** atau **2,56 mg/m³**.
+  * **PSD (STEL 15 menit)**: Tidak ditetapkan.
+  * **Notasi**: **Kategori A-1** (Terbukti karsinogen untuk manusia).
+* **OSHA (AS, 29 CFR 1910.1017)**:
+  * **PEL-TWA**: **1 ppm**.
+  * **Ceiling (STEL)**: **5 ppm** (15 menit).
+  * **Action Level**: **0,5 ppm** (mewajibkan surveilans medis berkala).
+* **NIOSH (AS)**:
+  * **REL**: **Ca** (Potensi karsinogen okupasional; pajanan harus ditekan serendah mungkin / *lowest feasible concentration*).
+  * **IDLH**: **Ca [N.D.]**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+* **ACGIH (2026)**: Masuk dalam daftar peninjauan (*Chemical Substances Under Study*) untuk penetapan determinan biologis.
+* **Permenaker No. 5 Tahun 2018**: **Belum ditetapkan nilai numerik IPB**. Pengawasan pajanan dilakukan melalui pemantauan udara kerja ketat dan evaluasi berkala TDGA urin (sebagai penanda internal kualitatif).
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan**
+* **Prinsip**: **TIDAK ADA ANTIDOT SPESIFIK**. Penanganan bersifat suportif dan simtomatik.
+* **Tindakan Emergensi**:
+  * Evakuasi korban ke udara segar; berikan suplementasi oksigen jika terjadi hipoksia atau depresi SSP.
+  * Dekontaminasi: Lepaskan pakaian kerja; bilas area kontak beku dengan air hangat suam-suam kuku (40–42°C); jangan menggosok jaringan yang mengalami *frostbite*.
+  * **Hindari obat golongan amina simpatomimetik (epinefrin/isoproterenol)** karena bahaya mencetuskan fibrilasi ventrikel letal akibat miokardium yang tersensitisasi gas vinil halida.
+  * Monitoring fungsi hepar, enzim transaminase, dan koagulasi darah serial pasca-pajanan masif.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Angiosarkoma Hati (ASL), Karsinoma Hepatoseluler (HCC), Sindrom Vinil Klorida (Raynaud/Akroosteolisis), atau Fibrosis Hepar Toksik.
+  2. *Identifikasi Pajanan Kerja*: Melacak riwayat pekerjaan polimerisasi PVC, pembersihan tangki autoklaf reaktor VCM dari SDS/LDKB.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme pembentukan aduk DNA eteno dan mutasi TP53/K-ras.
+  4. *Evaluasi Besaran Pajanan*: Melacak data historis konsentrasi udara (dibandingkan NAB 1 ppm), masa kerja, dan jam kerja kumulatif.
+  5. *Faktor Individu*: **Konsumsi alkohol aktif** (alkohol menginduksi CYP2E1 dan bersinergi kuat meningkatkan risiko sirosis dan HCC), status infeksi hepatitis B/C kronis.
+  6. *Faktor di Luar Hubungan Kerja*: Paparan pelarut hepatotoksik di luar jam kerja.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan kecelakaan kerja dan kompensasi PAK.
+* **Kelaikan Kerja (*Fitness for Work*)**: Pekerja dengan penyakit hati kronis aktif (sirosis, hepatitis kronis, LFT abnormal menetap), riwayat penyakit vaskulopati perifer (Raynaud), atau kelainan osteolitik dinyatakan **tidak laik (*unfit*)** berada di area proses VCM.
+* **Protokol Surveilans Medis Berkala**:
+  * **Ultrasonografi (USG) Abdomen / Hepar Berkala**: Skrining USG hepar berkala setiap 12 bulan (mengevaluasi ekogenisitas parenkim, splenomegali, pelebaran vena porta, nodul fibrosis, atau lesi fokal vaskular).
+  * **Uji Fungsi Hati Rutin (LFT)**: Evaluasi enzim ALT, AST, GGT, dan Alkali Fosfatase (ALP).
+  * **Hitung Darah Lengkap (Trombosit)**: Trombositopenia persisten (<150.000/µL) merupakan indikator sensitif terjadinya splenomegali kongestif akibat hipertensi portal non-sirotik.
+  * **Foto Polos Rontgen Tangan**: Pemeriksaan radiologis falang distal tangan bila pekerja mengeluh nyeri atau perubahan bentuk jari (mendeteksi dini akroosteolisis).
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * **Rekayasa Teknis Utama**: **Sistem pembersihan bejana autoklaf otomatis bertekanan tertutup (*automated high-pressure water-jet cleaning*)** untuk mengeliminasi kebutuhan pekerja masuk secara manual ke dalam tangki reaktor.
+  * Sistem perpipaan bertekanan tertutup rapat dengan sensor alarm kebocoran otomatis.
+  * *APD Khusus*: Alat bantu pernapasan mandiri (*Self-Contained Breathing Apparatus* / SCBA) atau respirator masker bertekanan positif dengan suplai udara (*supplied-air respirator*) wajib digunakan saat pekerjaan pemeliharaan darurat atau tangki tertutup.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 1** (*Carcinogenic to humans*).
+* **Notasi**: ACGIH menetapkan notasi **A1**; Permenaker No. 5 Tahun 2018 menetapkan **Kategori A-1**.
+* **Perpres No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian III No. 4**: Mengakui secara spesifik dan eksplisit hak kompensasi untuk **"Angiosarkoma hati yang disebabkan oleh vinil klorida"**.
+  * **Lampiran Bagian I.a No. 10**: "*Penyakit yang disebabkan oleh derivat halogen dari hidrokarbon alifatik*".
+* **Permenkes No. 11 Tahun 2022**: Pedoman 7 langkah diagnosis PAK dan surveilans kesehatan kerja terpadu.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Vinil Klorida**
+* 🩺 **Clinical Pearl**:
+  * **"The Autoclave Cleaner's Marker"**: Trombositopenia terisolasi pada pekerja pabrik PVC bukanlah penyakit hematologi primer, melainkan petunjuk kardinal terjadinya **hipertensi portal non-sirotik dengan hipersplenisme** akibat fibrosis periportal VCM. Selalu jadikan hitung trombosit dan USG hepar sebagai skrining lini pertama bersamaan dengan LFT.
+  * **"Pseudo-Clubbing Finger Clue"**: Akroosteolisis pada VCM dapat disalahartikan sebagai *clubbing fingers*. Pemeriksaan teliti menunjukkan ujung jari memendek dan membulat akibat fraktur dan resorpsi osteolitik trabekula tulang falang terminal, bukan hipertrofi jaringan lunak bantalan kuku.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Tipe Kanker Hati (Angiosarkoma vs Karsinoma Hepatoseluler)*:
+     * *Jebakan*: Memilih adenokarsinoma atau hanya karsinoma hepatoseluler.
+     * *Koreksi*: Kanker yang paling spesifik dan patognomonik akibat vinil klorida adalah **Angiosarkoma Hati (*Hepatic Angiosarcoma* / ASL)** (tumor ganas endotel vaskular hepar), meskipun IARC sejak 2007 juga telah menetapkan hubungan kausal dengan **Karsinoma Hepatoseluler (HCC)**.
+  2. *Jebakan Toksisitas Polimer PVC vs Monomer VCM*:
+     * *Jebakan*: Menyatakan pipa plastik PVC yang sudah jadi bersifat karsinogenik dan memicu angiosarkoma.
+     * *Koreksi*: **Polimer PVC padat bersifat inert dan tidak karsinogenik**. Bahaya karsinogenik mutlak berasal dari uap gas **Vinil Klorida Monomer (VCM)** pada tahap proses sintesis dan sisa monomer yang belum bereaksi.
+
+---
+---
+
+### **B. DIKLOROMETANA (Dichloromethane / Metilen Klorida / DCM)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{CH}_2\text{Cl}_2\\)**; nomor CAS **75-09-2**; berat molekul **84,93 g/mol**. Sinonim: *methylene chloride, methylene dichloride, DCM, methane dichloride*.
+* **Sifat Fisik**: Cairan jernih tidak berwarna, berbau manis aromatik mirip kloroform (ambang deteksi bau 100–300 ppm), sangat mudah menguap (tekanan uap sangat tinggi **350–435 mmHg pada 20–25°C**), titik didih rendah 39,8°C (104°F).
+* **Sifat Pembakaran**: Relatif tidak mudah terbakar pada suhu ruang (tidak memiliki titik nyala konvensional), namun uap panasnya dapat membentuk campuran gas eksplosif pada konsentrasi 13–23% di udara.
+* **Kelarutan**: Sangat lipofilik, larut dalam alkohol, eter, dan pelarut organik; sedikit larut dalam air (~1,3–2%).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 2A** (*Probably carcinogenic to humans*) (bukti memadai pada karsinoma saluran empedu/kolangiokarsinoma, tumor hepar dan paru).
+  * **ACGIH**: **A3** (*Confirmed Animal Carcinogen with Unknown Relevance to Humans*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-3**.
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Perontok Cat & Pelapis (*Paint Removers / Paint Strippers*)**: Penggunaan utama dalam formulasi pengupasan cat komersial dan rumah tangga untuk mebel, kayu, serta restorasi bak mandi (*bathtub refinishing*).
+* **Pembersih & Penghilang Lemak Logam (*Metal Degreasing*)**: Pelarut degreasing dingin pada industri otomotif, penerbangan, dan manufaktur mesin.
+* **Industri Polimer & Busa**: Agen pengembang (*blowing agent*) dalam produksi busa poliuretan fleksibel.
+* **Ekstraksi Farmasi & Pangan**: Pelarut ekstraksi bahan aktif obat, ekstraksi kafein dari kopi (*decaffeination*), dan propelan aerosol.
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute okupasional utama; uap DCM diserap sangat cepat melalui alveoli paru dengan retensi awal sekitar **70–75%**.
+  * **Dermal**: Diabsorpsi melalui kulit utuh saat kontak langsung dengan cairan, namun karena volatilitasnya yang ekstrem, penguapannya sangat cepat kecuali jika terperangkap di bawah pakaian atau sarung tangan.
+* **Distribusi**: Senyawa sangat lipofilik; terdistribusi cepat dengan afinitas terbesar ke **otak/sistem saraf pusat, hepar, dan jaringan adiposa tubuh**. Jaringan adiposa bertindak sebagai depot penyimpanan pelepasan lambat.
+* **Metabolisme (Dua Jalur Enzimatik Hepatik Kunci)**:
+  1. **Jalur Sitokrom P450 (CYP2E1) — Jalur Pembentukan CO**:
+     * Merupakan jalur afinitas tinggi namun kapasitas rendah (*high-affinity, low-capacity pathway*), bekerja dominan pada paparan kadar rendah (<100–200 ppm).
+     * CYP2E1 mengoksidasi DCM menjadi senyawa antara tidak stabil *formyl chloride*, yang kemudian terurai menghasilkan **KARBON MONOKSIDA (CO)**, karbon dioksida (\\(\text{CO}_2\\)), dan ion klorida (\\(\text{Cl}^-\\)).
+     * **CO hasil biotransformasi hepar berikatan langsung dengan hemoglobin eritrosit membentuk KARBOKSIHEMOGLOBIN (CO-Hb)**.
+  2. **Jalur Glutation S-Transferase (GSTT1) — Jalur Karsinogenik**:
+     * Merupakan jalur afinitas rendah namun kapasitas tinggi (*low-affinity, high-capacity pathway*), bekerja dominan pada konsentrasi uap tinggi saat jalur CYP2E1 jenuh.
+     * Konjugasi DCM dengan GSH menghasilkan *S-(chloromethyl)glutathione*, yang terurai menjadi formaldehida, asam format, dan membentuk ikatan kovalen mutagenik pada DNA.
+* **Ekskresi**: Diekskresikan terutama melalui paru-paru sebagai uap DCM utuh (~50–70% pada kadar tinggi), gas CO hasil metabolisme, dan \\(\text{CO}_2\\) ekshalasi; kurang dari 1–2% diekskresikan melalui urin sebagai metabolit klorida dan format.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Hipoksia Jaringan & Depresi SSP)**
+1. **Hipoksia Sitotoksik Akibat Karboksihemoglobin (CO-Hb)**:
+   * Karbon monoksida endogen berikatan dengan atom besi ferro (\\(\text{Fe}^{2+}\\)) cincin porfirin hemoglobin dengan afinitas **210–250 kali lebih kuat daripada oksigen**.
+   * Terbentuk **Karboksihemoglobin (CO-Hb)** yang menurunkan kapasitas total darah membawa oksigen (*hypoxemia*).
+   * Memicu **pergeseran kurva disosiasi oksihemoglobin ke kiri (*left-shift / Haldane effect*)**, menghambat pelepasan oksigen ke jaringan perifer dan memicu anoksia jaringan berat pada organ target dengan kebutuhan oksigen konstan (otak dan miokardium).
+2. **Inhibisi Sitokrom c Oksidase Mitokondria**:
+   * CO endogen berdifusi ke jaringan intraseluler dan berikatan kovalen dengan kompleks IV rantai transpor elektron mitokondria, menghentikan fosforilasi oksidatif dan memicu krisis energi aerobik.
+3. **Depresi Sistem Saraf Pusat Langsung oleh Senyawa Induk**:
+   * DCM bebas yang sangat lipofilik melarutkan membran fosfolipid neuron otak, bertindak sebagai obat anestesi dan depresan SSP akut independen sebelum kadar CO-Hb mencapai puncak.
+4. **Neuropati Kranial Selektif (Palsi Nervus Fasialis / N. VII)**:
+   * Paparan akut uap terkonsentrasi dapat memicu pembengkakan selubung mielin dan neuropati kranial akut (*facial nerve palsy*) akibat kerentanan serabut saraf motorik terhadap pelarut terhalogenasi.
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Karboksihemoglobin Darah (*Carboxyhemoglobin in blood* / CO-Hb)**:
+  * **Peran**: Parameter biologis penentu efek langsung (*biomarker of effect*) paling lazim digunakan.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+  * Nilai Normal Baseline: Non-perokok <1,5–2%; Perokok aktif 3–8% (harus dikoreksi terhadap status merokok).
+* **Diklorometana dalam Urin (*Dichloromethane in urine*)**:
+  * **Peran**: Parameter baku emas spesifik untuk mengukur beban paparan senyawa induk secara langsung.
+  * **Waktu Sampling**: **Akhir shift kerja (*end of shift*)**.
+* **Diklorometana dalam Darah (*Dichloromethane in blood*)**:
+  * Pengukuran kadar DCM bebas darah; waktu sampling: **segera pasca-shift kerja**.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*) & Fenomena Pelepasan Lambat**
+* **Perbedaan Kinetika CO-Hb Eksogen vs CO-Hb dari Diklorometana**:
+  * *Inhalasi Gas CO Eksogen Murni*:
+    * Udara ruangan (normobarik 21% \\(\text{O}_2\\)): t\\(_{1/2}\\) berkisar **4 hingga 5 jam (~240–320 menit)**.
+    * Oksigen 100% Normobarik: t\\(_{1/2}\\) turun menjadi **~60 hingga 90 menit**.
+    * Oksigen Hiperbarik (HBO 2,5–3,0 ATA): t\\(_{1/2}\\) terpangkas menjadi **~20 hingga 30 menit**.
+  * ***Inhalasi Uap Diklorometana (Metabolisme Endogen)***:
+    * **Udara Ruangan**: t\\(_{1/2}\\) CO-Hb memanjang secara ekstrem menjadi **~13 jam (11–15 jam)**!
+    * **Oksigen 100% Normobarik**: t\\(_{1/2}\\) hanya mampu turun menjadi **~6 jam**.
+    * **Penjelasan Fisiologis**: DCM memiliki kelarutan lemak sangat tinggi. Setelah pekerja dipindahkan dari tempat kerja, **cadangan DCM yang menumpuk di jaringan adiposa terus dilepaskan secara perlahan ke dalam darah dan terus dimetabolisme oleh CYP2E1 hepar menjadi CO selama 8–24 jam pasca-pajanan** (*sustained internal generation*)!
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Sindrom Ruang Tertutup Fatal (*The Bathtub Refinisher Syndrome*)**:
+  * Kematian mendadak pada pekerja perontok cat mebel atau bak mandi di kamar mandi tertutup tanpa ventilasi akibat depresi SSP anestetik akut berat (koma, henti napas, dan mati lemas dalam hitungan menit).
+* **Gejala Intoksikasi SSP & Hipoksia Karboksihemoglobinemia**:
+  * Sakit kepala retroorbital berdenyut, pusing berputar (*dizziness*), mual proyektil, konfusi mental, letargi, ataksia, neuropati kranial akut (palsi nervus VII), penurunan kesadaran, kejang, hingga edema serebral.
+* **Iskemia Miokard & Kematian Kardiovaskular Akut**:
+  * Penurunan pasokan oksigen akibat CO-Hb memicu serangan **angina pektoris tidak stabil, infark miokard akut, dan aritmia ventrikel fatal**, terutama pada pekerja yang memiliki penyakit jantung koroner (PJK) yang mendasari.
+* **Efek Lokal**: Iritasi mata berat, luka bakar kornea kimiawi, dermatitis kontak iritan, dan edema paru non-kardiogenik.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Ensefalopati Pelarut Kronik & Neurotoksisitas Fokal**: Hendaya memori kerja, perlambatan waktu reaksi psikomotor, gangguan tidur, depresi, dan penurunan ambang diskriminasi auditorik/visual.
+* **Hepatotoksisitas & Steatohepatitis**: Degenerasi lemak hepar (*hepatic steatosis*), nekrosis sentrilobular fokal, dan peningkatan enzim transaminase serum.
+* **Potensi Karsinogenesis**: Kanker saluran empedu intrahepatik/ekstrahepatik (**kolangiokarsinoma**), karsinoma hepatoseluler, dan limfoma non-Hodgkin.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **50 ppm** (174 mg/m³).
+  * **TLV-STEL**: Tidak ditetapkan nilai numerik.
+  * **Notasi**: **A3** (*Confirmed Animal Carcinogen*), **BEI**.
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **NAB (TWA 8 jam)**: **50 BDS (ppm)** atau **174 mg/m³**.
+  * **PSD (STEL 15 menit)**: Tidak ditetapkan.
+  * **Notasi**: **Kategori A-3**, **BEI**.
+* **OSHA (AS, 29 CFR 1910.1052)**:
+  * **PEL-TWA**: **25 ppm** (8-jam TWA).
+  * **STEL**: **125 ppm** (15 menit).
+  * **Action Level**: **12,5 ppm** (mewajibkan pengawasan medis terstruktur).
+* **NIOSH (AS)**:
+  * **REL**: **Ca** (Potensi karsinogen okupasional; kurangi hingga konsentrasi serendah mungkin).
+  * **IDLH**: **Ca [2.300 ppm]**.
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+*(Berdasarkan ACGIH 2026 dan Lampiran 4 Permenaker No. 5 Tahun 2018)*:
+
+| Parameter Determinan Biologis | Matriks | Waktu Pengambilan Sampel | Standar Permenaker 5/2018 | Standar ACGIH (2026) | Keterangan / Notasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Diklorometana dalam urin** | Urin | **Akhir shift kerja** (*End of shift*) | **0,3 mg/L** | **0,3 mg/L** | Parameter spesifik senyawa induk |
+| **Karboksihemoglobin (CO-Hb)** | Darah | **Akhir shift kerja** (*End of shift*) | *(Mengacu BEI Karbon Monoksida)* | **3,5% dari total hemoglobin** | Notasi **B** (ada baseline endogen), **Ns** |
+
+---
+
+#### **11. Tatalaksana Medis & Keracunan Akut**
+* **Dekontaminasi & Stabilisasi Segera**:
+  * Pindahkan segera korban dari ruang paparan ke area terbuka; lepaskan seluruh pakaian kerja yang basah oleh cairan perontok cat; cuci kulit dengan air dan sabun.
+* **Terapi Oksigen Aliran Tinggi (Normobarik)**:
+  * Berikan **Oksigen 100% via *Non-Rebreathing Mask* (NRM) sesegera mungkin**. Oksigen konsentrasi tinggi mendesak ikatan CO dari hemoglobin dan sitokrom mitokondria.
+* **Terapi Oksigen Hiperbarik (*Hyperbaric Oxygen Therapy* / HBOT)**:
+  * **Indikasi Klinis Absolut**:
+    1. Kadar CO-Hb **>25%** (atau **>15% pada wanita hamil** karena afinitas hemoglobin janin terhadap CO jauh lebih tinggi).
+    2. Adanya bukti **iskemia miokard, nyeri dada angina, atau aritmia pada EKG**.
+    3. Terdapat **penurunan kesadaran, koma, kejang, atau defisit neurologis persisten** pasca-oksigen normobarik.
+    4. Asidosis metabolik berat refrakter.
+* **PERINGATAN KRITIS DURASI TERAPI OKSIGEN**:
+  * Karena depot DCM terus melepaskan uap ke darah dan hepar terus memproduksi CO secara endogen, **terapi oksigen (100% normobarik maupun HBO) HARUS DIBERIKAN LEBIH LAMA dibandingkan keracunan gas CO biasa**! Pemantauan kadar CO-Hb serial wajib dilakukan selama minimal 24 jam untuk mencegah terjadinya lonjakan CO-Hb sekunder (*rebound carboxyhemoglobinemia*).
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Keracunan Akut Karboksihemoglobinemia Eksogen-Endogen, Angina Pektoris yang Diperburuk Kerja, Palsi Nervus Fasialis Akut, atau Kolangiokarsinoma.
+  2. *Identifikasi Pajanan Kerja*: Melacak penggunaan formulasi perontok cat (*paint stripper*), pelarut lem busa, pembersih gemuk logam dari SDS/LDKB.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme bioaktivasi CYP2E1 menjadi gas CO dan ikatan hemoglobin.
+  4. *Evaluasi Besaran Pajanan*: Hasil *air monitoring* ruang kerja (dibandingkan NAB 50 ppm), kadar CO-Hb darah serial (>3,5% pada non-perokok), dan DCM urin.
+  5. *Faktor Individu*: **Kebiasaan merokok aktif (sumber CO eksogen aditif ganda)**, riwayat penyakit jantung iskemik (PJK), anemia, dan polimorfisme GSTT1/CYP2E1.
+  6. *Faktor di Luar Hubungan Kerja*: Paparan CO rumah tangga (kompor gas rusak, asap knalpot garasi tertutup).
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim jaminan sosial ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**:
+  * Pekerja dengan riwayat **Penyakit Jantung Koroner (PJK), riwayat infark miokard, aritmia ventrikel berat, anemia kronis berat (Hb <10 g/dL), atau penyakit paru obstruktif kronis (PPOK)** dinyatakan **TIDAK LAIK (*UNFIT*)** untuk pekerjaan dengan pajanan diklorometana karena lonjakan kecil CO-Hb dapat memicu iskemia miokard fatal.
+* **Surveilans Medis Berkala**:
+  * Pemeriksaan **Elektrokardiografi (EKG) 12 sadapan** berkala pada pekerja usia >40 tahun atau yang memiliki faktor risiko kardiovaskular.
+  * Pemeriksaan **kadar CO-Hb darah atau CO udara ekshalasi** sebelum dan sesudah shift kerja.
+  * Uji fungsi hepar dan evaluasi neurobehavioral berkala.
+* **Hierarki Pengendalian Lingkungan Kerja**:
+  * **Substitusi Aman**: Mengganti perontok cat berbasis diklorometana dengan metode mekanis (pengamplasan/peledakan pasir) atau bahan pelarut alternatif yang lebih aman (seperti benzil alkohol atau ester dibasik).
+  * **Rekayasa Teknis Kritis**: **Dilarang keras melakukan pekerjaan perontokan cat dengan DCM di ruang sempit tertutup (*confined space/enclosed area*) tanpa sistem ventilasi hisap lokal (*Local Exhaust Ventilation* / LEV) berkecepatan hisap tinggi**.
+  * *APD Khusus*:
+    - **Proteksi Pernapasan**: **DILARANG MENGGUNAKAN RESPIRATOR KARTID KARBON AKTIF BIASA**. Kartrid karbon aktif biasa mengalami saturasi dan penembusan (*breakthrough*) oleh uap DCM pekat dalam waktu <5–15 menit tanpa peringatan bau! Wajib menggunakan **Respirator Suplai Udara Bertekanan Positif (*Supplied-Air Respirator*) atau SCBA**.
+    - **Sarung Tangan**: Bahan **PVA (Polivinil Alkohol) atau Viton**; sarung tangan karet lateks, neoprena, dan nitril tipis mudah ditembus DCM dalam hitungan menit.
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC**: **Grup 2A** (*Probably carcinogenic to humans*).
+* **Notasi**: ACGIH menetapkan notasi **A3** dan **BEI**; Permenaker No. 5 Tahun 2018 menetapkan **Kategori A-3** dan **BEI**.
+* **Faktor Perokok & Kadar CO-Hb Baseline**:
+  * Rokok mengandung gas CO; perokok memiliki kadar baseline CO-Hb darah antara **3% hingga 8%**. Paparan diklorometana pada perokok menghasilkan **efek akumulasi beban hipoksia aditif ganda**, sehingga perokok jauh lebih cepat mencapai ambang toksisitas kardiovaskular kritis (>10–15% CO-Hb) dibanding non-perokok.
+* **Peraturan Presiden (Perpres) No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 10**: "*Penyakit yang disebabkan oleh derivat halogen dari hidrokarbon alifatik (termasuk diklorometana)*".
+  * **Lampiran Bagian I.a No. 27**: "*Penyakit yang disebabkan oleh karbon monoksida*".
+* **Permenkes No. 11 Tahun 2022**: Pedoman 7 langkah diagnosis PAK dan surveilans kesehatan kerja terpadu.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Diklorometana**
+* 🩺 **Clinical Pearl**:
+  * **"The Methylene Chloride Paradox (Delayed Peak & Prolonged Half-Life)"**: Pada keracunan gas CO biasa, kadar CO-Hb langsung turun setelah korban dijauhkan dari sumber api/gas. Namun pada keracunan diklorometana, **kadar CO-Hb darah justru dapat TERUS NAIK selama 4–8 jam setelah korban dievakuasi ke IGD**, dan waktu paruh CO-Hb di udara ruangan mencapai **~13 jam** (3 kali lipat lebih lama dibanding CO murni)! Hal ini disebabkan oleh pelepasan perlahan simpanan DCM dari jaringan lemak yang terus diubah menjadi CO oleh hepar. Jangan pernah memulangkan pasien keracunan DCM dari IGD hanya karena kadar CO-Hb awal tampak normal/rendah!
+  * **"The Bathtub Trap"**: Uap diklorometana 3 kali lebih berat daripada udara, sehingga tenggelam dan terkonsentrasi di dasar bak mandi atau lantai ruang kerja. Pekerja yang membungkuk di dalam bak mandi menghirup konsentrasi anestetik masif ribuan ppm yang memicu pingsan seketika dan asfiksia fatal.
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Pilihan Alat Pelindung Pernapasan (Respirator)*:
+     * *Jebakan*: Memilih masker respirator kartrid kimia uap organik (*air-purifying respirator*) untuk menangani tumpahan diklorometana pekat.
+     * *Koreksi*: Diklorometana memiliki titik didih rendah dan tidak teradsorpsi kuat oleh karbon aktif, sehingga mengalami *breakthrough* instan. **Respirator kartrid pemurni udara DILARANG KERAS** untuk DCM; wajib menggunakan **Respirator Suplai Udara (*Supplied-Air Respirator*) atau SCBA**.
+  2. *Jebakan Biomarker Karboksihemoglobin*:
+     * *Jebakan*: Menyimpulkan bahwa semua kasus keracunan fatal diklorometana harus disertai CO-Hb darah >50%.
+     * *Koreksi*: Pada paparan uap masif (>5.000–10.000 ppm di ruang tertutup), **kematian cepat terjadi akibat depresi anestetik susunan saraf pusat murni oleh molekul utuh DCM**, sebelum enzim CYP2E1 hepar sempat mengubahnya menjadi CO. Kadar CO-Hb pada korban meninggal mendadak bisa saja masih rendah (<10%).
+  3. *Jebakan Larangan Kerja pada Pasien Penyakit Jantung Koroner (PJK)*:
+     * *Jebakan*: Mengizinkan pekerja dengan riwayat pasang cincin/stent jantung bekerja di bagian perontokan cat asalkan tidak mengeluh lemas.
+     * *Koreksi*: Diklorometana secara mutlak **kontraindikasi bagi pekerja dengan riwayat iskemia miokard / PJK** karena metabolisme endogen DCM menjadi CO-Hb memicu penurunan suplai oksigen miokardium yang dapat mencetuskan serangan infark akut fatal.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: NAB Faktor Kimia; Lampiran 4: Indeks Pajanan Biologi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran I.a No. 10 & 27; Lampiran III No. 4: Angiosarkoma hati akibat vinil klorida).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Pedoman 7 Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Vinyl chloride & Dichloromethane entries, BEI Under Study).
+5. **Mahmud, M., & Kales, S. N.** (1999). *Methylene Chloride Poisoning in a Cabinet Worker*. Environmental Health Perspectives, 107(9), 769–772.
+6. **Fedeli, U., Girardi, P., & Mastrangelo, G.** (2019). *Occupational exposure to vinyl chloride and liver diseases*. World Journal of Gastroenterology, 25(33), 4885–4891.
+7. **Mastrangelo, G., et al.** (2004). *Increased risk of hepatocellular carcinoma and liver cirrhosis in vinyl chloride workers: Synergistic effect of occupational exposure with alcohol intake*. Environmental Health Perspectives, 112(11), 1188–1192.
+8. **Bar Dayan, Y., et al.** (2005). *Facial nerve palsy after acute exposure to dichloromethane*. American Journal of Industrial Medicine, 48(4), 297–300.
+9. **McQueen, C. A. (Ed.)** (2025). *Comprehensive Toxicology*. 4th Edition. Elsevier (Halogenated Hydrocarbons: Vinyl chloride toxicokinetics, DNA adducts, and ASL pathogenesis).
+10. **Phillips, W.** (2017). *Methylene Chloride: An Occupational Hazard in Consumer and Industrial Products*. Workplace Health & Safety, 65(9), 444.
+11. **Hodgson, E. (Ed.)** (2010). *A Textbook of Modern Toxicology*. 4th Edition. John Wiley & Sons (Chapter 15: Hepatotoxicity and Carcinogenesis of Halogenated Hydrocarbons; Chapter 16: Chemical Asphyxiants and COHb).
+12. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: Vinyl chloride [KU9625000] and Methylene chloride [PA8050000] entries).
+13. **IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 100F** (2012): *Vinyl Chloride and Halogenated Solvents*. International Agency for Research on Cancer, Lyon, France.
+
+---
+
+💡 *Apakah Anda ingin melengkapi seri tinjauan pelarut organik ini dengan golongan senyawa terhalogenasi lainnya (seperti Trikloroetilen / TCE, Tetrakloroetilen / PCE, atau Karbon Tetraklorida)?*

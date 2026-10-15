@@ -1,0 +1,218 @@
+---
+
+### **FORMALDEHIDA (Formaldehyde / Formalin)**
+
+---
+
+#### **1. Sifat Fisik-Kimia & Klasifikasi**
+* **Identitas Kimia**: Rumus molekul **\\(\text{CH}_2\text{O}\\)** atau **\\(\text{HCHO}\\)**; nomor CAS **50-00-0**; berat molekul **30,03 g/mol**. Sinonim: *methanal, methyl aldehyde, methylene oxide, formalin*.
+* **Sifat Fisik**: Gas tidak berwarna pada suhu ruangan, berbau menusuk dan sangat menyengat (*pungent, suffocating odor*), sangat mudah menguap, dan mudah terbakar (*flammable gas*, titik didih -19°C / -2,2°F).
+* **Bentuk Larutan Komersial (Formalin)**: Formaldehida murni mudah berpolimerisasi spontan menjadi paraformaldehida padat. Oleh karena itu, di industri dan medis, zat ini diperjualbelikan sebagai **formalin**, yaitu larutan air yang mengandung **37% formaldehida menurut berat** (atau ~40% volume) yang distabilkan dengan penambahan **6–12% metanol** untuk mencegah polimerisasi.
+* **Kelarutan**: Sangat mudah larut dalam air (*extremely water-soluble*, >55% pada 20°C) dan larut dalam alkohol/eter; koefisien partisi lipid:air rendah (sangat hidrofilik).
+* **Klasifikasi Karsinogenisitas**:
+  * **IARC**: **Grup 1** (*Carcinogenic to humans*) dengan bukti kausal memadai untuk **Kanker Nasofaring (*Nasopharyngeal Carcinoma*)** dan **Leukemia Mieloid (*Myeloid Leukemia / AML*)**, serta asosiasi positif dengan kanker rongga hidung/sinus paranasal.
+  * **ACGIH**: **A1** (*Confirmed Human Carcinogen*).
+  * **Permenaker No. 5 Tahun 2018**: **Kategori A-1** (Terbukti karsinogen untuk manusia).
+
+---
+
+#### **2. Sumber Industri & Pajanan Lingkungan**
+* **Laboratorium Medis & Fasilitas Pendidikan**: Fiksasi jaringan dan spesimen bedah di laboratorium patologi anatomi/histopatologi, pengawetan kadaver di ruang anatomi kedokteran, serta fiksasi preparat biologi.
+* **Jasa Pemulasaraan Jenazah (*Embalming*)**: Bahan aktif utama cairan balsem jenazah pada pekerja rumah duka (*morticians / funeral directors*).
+* **Industri Kayu Olahan & Furnitur**: Bahan perekat resin untuk pembuatan kayu lapis (*plywood*), papan partikel (*particleboard*), papan serat berdensitas menengah (*medium-density fibreboard* / MDF), dan laminasi kayu yang terus melepaskan uap formaldehida (*off-gassing*).
+* **Industri Kimia Sintesis & Polimer**: Pembuatan resin urea-formaldehida (UF), fenol-formaldehida (PF), melamin-formaldehida (MF), dan polioksimetilen (POM/asetal).
+* **Industri Tekstil & Garmen**: Bahan kimia penyempurnaan kain anti-kusut (*durable press / wrinkle-free finishes*) dan fiksasi zat warna.
+* **Pajanan Lingkungan & Domestik**: Asap rokok, emisi gas buang kendaraan, serta pelepasan uap dari perabot rumah tangga baru (*indoor air pollutant*).
+
+---
+
+#### **3. Toksikokinetik**
+* **Absorpsi**:
+  * **Inhalasi**: Rute paparan okupasional terpenting; uap gas formaldehida diabsorpsi hampir **100% pada saluran napas atas (rongga hidung dan nasofaring)** karena sifatnya yang sangat mudah larut dalam air dan reaktivitas kimia lokal yang sangat tinggi terhadap mukosa lembap.
+  * **Dermal**: Diabsorpsi secara lambat saat terjadi kontak langsung dengan cairan formalin; sebagian besar bereaksi langsung dengan keratin stratum korneum.
+* **Distribusi**: Karena sangat reaktif dan langsung bereaksi di tempat kontak pertama (*site of contact*), **formaldehida eksogen bebas praktis TIDAK memasuki sirkulasi darah sistemik dalam konsentrasi yang dapat diukur**. Kadar formaldehida dalam darah manusia normal (~2–3 mg/L atau ~0,1 mM) merupakan hasil produksi metabolik endogen alami (dari demetilasi histon, DNA, dan asam amino).
+* **Metabolisme (Jalur Dependen-Glutation & ADH5)**:
+  1. **Konjugasi Spontan**: Di dalam sel epitel mukosa, formaldehida bereaksi secara non-enzimatik dengan glutation (GSH) tereduksi membentuk **S-hidroksimetilglutation (*S-hydroxymethylglutathione* / HMGSH)**.
+  2. **Oksidasi oleh ADH5**: HMGSH dioksidasi oleh enzim sitosolik **Formaldehida Dehidrogenase / ADH5 (*Glutathione-dependent formaldehyde dehydrogenase / Alcohol Dehidrogenase 5*)** dengan kofaktor \\(\text{NAD}^+\\) menjadi **S-formilglutation (*S-formylglutathione*)**.
+  3. **Hidrolisis Menjadi Format**: Enzim *S-formylglutathione hydrolase* (SFGH) menghidrolisis S-formilglutation menjadi **asam format (*formic acid / formate*)** dan melepaskan kembali GSH bebas.
+  4. **Jalur Eliminasi Lanjutan**: Asam format dioksidasi menjadi **\\(\text{CO}_2\\) dan \\(\text{H}_2\text{O}\\)** melalui jalur yang bergantung pada **tetrahidrofolat (THF)**, atau masuk ke dalam *one-carbon pool* biosintesis purin dan pirimidin.
+* **Ekskresi**: Dieliminasi melalui paru-paru sebagai \\(\text{CO}_2\\) ekshalasi dan sebagian kecil diekskresikan melalui ginjal sebagai format urin.
+
+---
+
+#### **4. Toksikodinamik (Mekanisme Sitotoksisitas, DPC, & Leukemogenik)**
+1. **Pembentukan Ikatan Silang DNA-Protein (*DNA-Protein Crosslinks* / DPC)**:
+   * Formaldehida adalah elektrofil reaktif yang bereaksi kovalen dengan gugus amino bebas pada basa DNA (membentuk aduk *\\(N^2\\)-hydroxymethyl-deoxyguanosine*) dan rantai samping lisin protein seluler.
+   * Terbentuk **DNA-Protein Crosslinks (DPC)** dan ikatan silang DNA-DNA yang stabil. DPC menghambat proses transkripsi RNA, memblokade garpu replikasi DNA, dan memicu kerusakan untai ganda DNA (*DNA double-strand breaks* / DSB).
+2. **Genotoksisitas & Instabilitas Kromosom**:
+   * Kegagalan perbaikan DPC memicu mutasi titik pada gen supresor tumor **TP53**, aberasi kromosom struktural, pertukaran kromatid saudara (SCE), mikronukleus, serta aneuploidi spesifik (seperti monosomi kromosom 7 dan trisomi kromosom 8 pada sel hematopoietik).
+3. **Mekanisme Karsinogenesis Nasofaring & Leukemogenesis**:
+   * *Karsinoma Nasofaring*: Terjadi akibat kombinasi sitotoksisitas lokal berat, hiperplasia regeneratif mukosa berulang, dan mutasi DNA akibat DPC di epitel nasofaring.
+   * *Leukemia Mieloid (AML)*: Berlangsung melalui tiga hipotesis yang diajukan:
+     - Kerusakan langsung pada **sel punca hematopoietik (HSC) atau sel progenitor mieloid yang bersirkulasi** di pembuluh darah kapiler mukosa hidung/paru.
+     - Pelepasan mediator inflamasi sistemik dan **stres oksidatif sekunder (penipisan GSH)** yang menginduksi disfungsi stroma sumsum tulang.
+     - Penekanan gen metilasi DNA (**DNMT3A**) dan disregulasi jalur apoptosis (**rasio BCL2/BAX**).
+4. **Iritasi & Sensitisasi Imunologi**:
+   * Bereaksi dengan reseptor iritan kimia pada serabut saraf sensorik trigeminal (**TRPA1**).
+   * Bertindak sebagai **hapten reaktif** yang berikatan kovalen dengan protein jaringan tubuh membentuk neo-antigen lengkap, memicu sensitisasi alergi tipe lambat / tipe IV (dermatitis kontak) dan sensitisasi respiratorik tipe I (asma okupasional).
+
+---
+
+#### **5. Biomonitoring & Waktu Pengambilan Sampel**
+* **Biomonitoring Rutin Urin / Darah: TIDAK DIREKOMENDASIKAN SECARA KLINIS**:
+  * **Asam Format dalam Urin (*Formic acid in urine*)**: Meskipun merupakan metabolit akhir, pengukuran asam format **tidak spesifik dan tidak dapat diandalkan** untuk pemantauan pajanan kerja kadar rendah karena tingginya kadar endogen normal tubuh dan pengaruh asupan makanan.
+  * **Formaldehida Darah**: Tidak mencerminkan paparan eksternal karena waktu paruh eliminasinya yang teramat singkat (hitungan menit) dan tertutup oleh kadar formaldehida endogen darah (0,1 mM).
+* **Biomarker Efek & Penelitian Molekuler (*Research Biomarkers*)**:
+  * Pengukuran kadar **DNA-Protein Crosslinks (DPC)** pada leukosit darah tepi atau sel epitel mukosa hidung.
+  * Pemeriksaan aduk DNA *\\(N^2\\)-hydroxymethyl-dG* atau frekuensi mikronukleus sel epitel bukal/nasal.
+* **Penilaian Pajanan Terpilih**: Mengandalkan **pemantauan higiene industri di udara lingkungan kerja (*air monitoring*)**, baik *personal breathing-zone sampling* maupun *area monitoring*.
+
+---
+
+#### **6. Waktu Paruh Eliminasi (*Half-Life*)**
+* **Formaldehida dalam Darah/Plasma**: Waktu paruh eliminasi sangat singkat, berkisar antara **1 hingga 1,5 menit (~60–90 detik)**, akibat hidrolisis enzimatik cepat oleh ADH5 dan pengikatan langsung dengan protein plasma.
+* **DNA-Protein Crosslinks (DPC)**: Memiliki waktu paruh biologis seluler sekitar **12 hingga 26 jam** di dalam jaringan mukosa pernapasan sebelum dieliminasi oleh mekanisme perbaikan eksisi nukleotida (*NER*) dan sistem proteasom.
+
+---
+
+#### **7. Efek Toksisitas Akut**
+* **Iritasi Sensorik Mata & Saluran Napas Atas**:
+  * **0,1 – 0,5 ppm**: Ambang sensasi bau dan iritasi konjungtiva ringan pada individu yang rentan.
+  * **0,5 – 1,0 ppm**: Iritasi mata nyata, lakrimasi berlebih, rasa pedih menyengat pada hidung dan faring, tenggorokan kering, dan bersin.
+  * **1,0 – 3,0 ppm**: Batuk berat, rasa terbakar pada dada, hiperemia mukosa, dan blefarospasme.
+* **Toksisitas Saluran Napas Bawah Masif (>5–20+ ppm)**:
+  * Batuk paroksismal, dispnea, laringospasme, edema glotis, bronkitis kimiawi nekrotikans, dan **edema paru non-kardiogenik akut** yang dapat berakibat fatal.
+* **Pajanan Cairan Tertelan (Formalin)**:
+  * Korosif hebat pada mukosa orofaring, esofagus, dan lambung; ulserasi dan perforasi gastrointestinal, hematemesis, asidosis metabolik berat (oleh asam format), gagal ginjal akut, koma, hingga kematian.
+
+---
+
+#### **8. Efek Toksisitas Kronis**
+* **Dermatitis Kontak Alergi (DKA)**: Reaksi hipersensitivitas tipe IV dengan manifestasi klinis pruritus hebat, eritema, papulovesikel, fisura, dan likenifikasi kronis pada tangan/lengan teknisi lab patologi atau pekerja kayu.
+* **Asma Akibat Kerja (*Occupational Asthma*)**: Terjadi melalui mekanisme imunologik (sensitisasi diperantarai IgE terhadap konjugat formaldehida-albumin) maupun mekanisme iritan non-imunologik (*Reactive Airways Dysfunction Syndrome* / RADS).
+* **Keganasan Karsinogenik**:
+  * **Karsinoma Nasofaring (*Nasopharyngeal Carcinoma* / NPC)**: Risiko neoplasma ganas primer di area nasofaring dengan masa laten 15–25 tahun.
+  * **Leukemia Mieloid Akut (AML)**: Peningkatan rasio mortalitas standar (SMR) pada pekerja industri garmen, kimia, dan pekerja rumah duka/balsem dengan pajanan kumulatif jangka panjang.
+  * **Karsinoma Sinonasal**: Karsinoma sel skuamosa pada kavum nasi dan sinus etmoidalis/maksilaris.
+
+---
+
+#### **9. Standar Batas Pajanan di Udara Kerja (*Occupational Exposure Limits*)**
+* **ACGIH (2026)**:
+  * **TLV-TWA**: **0,1 ppm** (0,12 mg/m³).
+  * **TLV-STEL**: **0,3 ppm** (0,37 mg/m³).
+  * **Notasi**: **A1** (*Confirmed Human Carcinogen*), **DSEN** (*Dermal Sensitization*), **RSEN** (*Respiratory Sensitization*).
+* **Permenaker No. 5 Tahun 2018 (Indonesia)**:
+  * **Kadar Tertinggi Diperkenankan / Ceiling (KTD / C)**: **0,3 BDS (ppm)** atau **0,37 mg/m³**.
+  * **Notasi**: **Kategori A-1** (Terbukti karsinogen untuk manusia), **Sensitisasi**.
+* **OSHA (AS, 29 CFR 1910.1048)**:
+  * **PEL-TWA**: **0,75 ppm** (8-jam TWA).
+  * **STEL**: **2 ppm** (15-menit).
+  * **Action Level**: **0,5 ppm** (mewajibkan pengawasan medis terstruktur dan pemantauan udara berkala).
+* **NIOSH (AS)**:
+  * **REL-TWA**: **0,016 ppm** (10-jam TWA).
+  * **Ceiling (REL-C)**: **0,1 ppm** (15-menit).
+  * **IDLH**: **20 ppm**; Penanda: **Ca** (*Potential Occupational Carcinogen*).
+
+---
+
+#### **10. Indeks Pajanan Biologi (BEI / IPB)**
+* **ACGIH (2026) & Permenaker No. 5 Tahun 2018**: **TIDAK ADA BEI / IPB**.
+* **Penjelasan Ilmiah**: Formaldehida tidak memiliki nilai BEI/IPB karena eliminasi sistemiknya berlangsung dalam hitungan detik hingga menit di tempat kontak, serta tingginya konsentrasi formaldehida dan format endogen di dalam darah dan urin populasi umum, sehingga biomarker biologis tidak mampu membedakan paparan okupasional eksogen rendah dari variasi metabolik basal.
+
+---
+
+#### **11. Tatalaksana Akut & Keracunan**
+* **Prinsip**: **TIDAK ADA ANTIDOT SPESIFIK**. Penanganan murni suportif, proteksi jalan napas, dan dekontaminasi.
+* **Tindakan Penyelamatan**:
+  * Pindahkan korban ke tempat berudara bebas; berikan suplementasi oksigen lembap (*humidified oxygen*).
+  * Dekontaminasi kulit dan mata: Segera lepaskan pakaian kerja tercemar; bilas kulit dengan air mengalir dan sabun selama minimal 15 menit; irigasi mata menggunakan salin steril selama 15–20 menit.
+  * **Proteksi Jalan Napas Dini**: Waspadai spasme atau edema laring; siapkan intubasi endotrakeal dini atau trakeostomi emergensi jika timbul stridor atau distres pernapasan progresif.
+  * Berikan bronkodilator inhalasi (salbutamol/ipratropium) pada spasme bronkus.
+  * **Observasi Klinis Lanjut**: Korban wajib diobservasi minimal **24 hingga 48 jam** di rumah sakit untuk mengantisipasi timbulnya komplikasi **edema paru non-kardiogenik tertunda (*delayed chemical pulmonary edema*)**.
+  * **Pajanan Tertelan**: **Kontraindikasi induksi muntah dan kumbah lambung tanpa proteksi** karena risiko perforasi esofagus/lambung dan aspirasi paru; lakukan endoskopi gastrointestinal dini untuk menilai derajat luka bakar mukosa.
+
+---
+
+#### **12. Tatalaksana Individu & Komunitas (Kedokteran Kerja di Lab Patologi)**
+* **7 Langkah Diagnosis PAK (Permenkes No. 11 Tahun 2022 Pasal 5)**:
+  1. *Diagnosis Klinis*: Karsinoma Nasofaring, Leukemia Mieloid Akut (AML), Asma Okupasional, atau Dermatitis Kontak Alergi.
+  2. *Identifikasi Pajanan Kerja*: Melacak penggunaan formalin 10% netral buffer (NBF) pada lembar SDS di ruang pemotongan jaringan kotor (*grossing room*) atau pengawetan kadaver.
+  3. *Hubungan Hubungan Kausal*: Menilai mekanisme pembentukan DPC, aberasi kromosom, atau sensitisasi hapten formaldehida.
+  4. *Evaluasi Besaran Pajanan*: Hasil *air monitoring* stasiun kerja pemotongan patologi (dibandingkan KTD 0,3 ppm atau TLV 0,1 ppm), frekuensi pemotongan spesimen per hari, dan evaluasi kepatuhan APD.
+  5. *Faktor Individu*: Riwayat atopi, variasi genetik perbaikan DNA (*polimorfisme ADH5, GSTT1/GSTM1*), status infeksi virus Epstein-Barr (EBV) pada kasus NPC.
+  6. *Faktor di Luar Hubungan Kerja*: Kebiasaan merokok aktif, renovasi rumah baru dengan furnitur berbasis *particleboard*.
+  7. *Penetapan Diagnosis PAK*: Menetapkan status penyakit akibat kerja untuk klaim kompensasi jaminan ketenagakerjaan.
+* **Kelaikan Kerja (*Fitness for Work*)**:
+  * Pekerja yang telah mengalami **sensitisasi formaldehida terbukti (asma okupasional atau DKA berat)** dinyatakan **tidak laik permanen (*permanently unfit*)** untuk kembali bekerja di area yang terpajan formaldehida, karena pajanan renik (<0,05 ppm) dapat memicu serangan asma fatal.
+  * Pekerja dengan asma bronkial berat tidak terkontrol atau penyakit kulit kronis luas dinyatakan tidak laik pra-penempatan di laboratorium patologi.
+* **Surveilans Medis Berkala**:
+  * Pemeriksaan berkala fungsi paru melalui **spirometri** (mendeteksi dini penurunan \\(\text{FEV}_1\\)).
+  * Skrining telinga-hidung-tenggorok (THT) berkala (rhinoskopi/nasofaringoskopi bila timbul gejala hidung tersumbat, epistaksis, atau nyeri tenggorokan kronis).
+  * Pemeriksaan kulit berkala (*skin surveillance*) dan uji tempel (*patch test*) jika dicurigai dermatitis alergi.
+* **Hierarki Pengendalian Bahaya di Laboratorium Patologi Anatomi**:
+  * **Substitusi**: Menggunakan fiksatif alternatif rendah toksisitas (seperti fiksatif berbasis alkohol/glikol atau fiksatif glioksal) untuk aplikasi non-diagnostik kritis.
+  * **Rekayasa Teknis (*Engineering Controls*) — Prioritas Utama**:
+    - Seluruh proses pemotongan jaringan (*grossing*) wajib dilakukan di dalam **meja potong berventilasi hisap ke bawah (*downdraft grossing station*)** atau lemari asam (*fume hood*) dengan kecepatan hisap permukaan minimal **0,5 m/detik**.
+    - Menggunakan wadah spesimen formalin terisi awal tertutup rapat (*pre-filled, closed formalin containers*) untuk mencegah transfer cairan terbuka.
+    - Sistem ventilasi ruang patologi bertekanan negatif terhadap koridor dengan minimal 12 pergantian udara per jam (*air changes per hour* / ACH).
+  * **Pengendalian Administratif**: Pembatasan rotasi waktu teknisi di meja *grossing* maksimal 2 jam berturut-turut; ketersediaan *spill kit* formalin khusus (berisi absorben penetral kimia seperti urea/natrium bisulfit).
+  * **Alat Pelindung Diri (APD)**:
+    - **Sarung Tangan**: Bahan **Nitril tebal atau Butil** (**sarung tangan lateks medis biasa tidak direkomendasikan** karena formaldehida dapat menembusnya dalam waktu singkat).
+    - **Proteksi Pernapasan**: Masker respirator dengan kartrid uap organik bertaraf NIOSH yang **disetujui spesifik untuk formaldehida (*formaldehyde cartridge*)**, bukan masker bedah biasa.
+    - **Pelindung Wajah & Mata**: Kacamata pelindung percikan kimia (*chemical splash goggles*) dan pelindung wajah (*face shield*).
+
+---
+
+#### **13. Keterangan Regulasi Terkait**
+* **IARC Monograph**: Formaldehida diklasifikasikan sebagai **Grup 1** (*Carcinogenic to humans*).
+* **Notasi ACGIH & Nasional**:
+  * ACGIH menetapkan notasi **A1**, **DSEN** (*Dermal Sensitization*), dan **RSEN** (*Respiratory Sensitization*).
+  * Permenaker No. 5 Tahun 2018 menetapkan notasi **A-1** dan **Sensitisasi**.
+* **Peraturan Presiden (Perpres) No. 7 Tahun 2019 tentang Penyakit Akibat Kerja**:
+  * **Lampiran Bagian I.a No. 11**: Menjamin hak untuk "*kelainan saluran pernafasan atas yang disebabkan oleh sensitisasi atau iritasi zat yang ada dalam proses pekerjaan*".
+  * **Lampiran Bagian I.b No. 1**: "*Dermatosis kontak alergika dan urtikaria*".
+  * **Lampiran Bagian III No. 21**: Mengakui hak kompensasi untuk kanker akibat kerja yang dibuktikan secara ilmiah terkait pajanan karsinogen industri (kanker nasofaring dan leukemia myeloid).
+* **Permenkes No. 11 Tahun 2022**: Landasan yuridis operasional pelaksanaan 7 langkah diagnosis PAK dan surveilans kesehatan kerja terpadu.
+
+---
+
+#### 💡 **Clinical Pearl & Jebakan Ujian: Formaldehida**
+
+* 🩺 **Clinical Pearl**:
+  * **"The Site-of-Contact Carcinogen Paradigm"**: Formaldehida sangat hidrofilik dan reaktif, sehingga hampir seluruh dosis inhalasi terperangkap dan bereaksi di epitel mukosa hidung dan nasofaring. Oleh sebab itu, kanker primer terbukti paling kuat pada manusia adalah **Karsinoma Nasofaring**. Sementara kaitannya dengan **Leukemia Mieloid (AML)** dijelaskan melalui teori induksi mutasi pada sel punca/progenitor hematopoietik saat bersirkulasi melewati anyaman pembuluh kapiler submukosa hidung yang kaya vaskularisasi.
+  * **"The Olfactory Fatigue Trap"**: Ambang deteksi bau formaldehida adalah sekitar 0,5–1,0 ppm. Namun, reseptor olfaktorius manusia mengalami **adaptasi dan kelelahan sensorik (*olfactory fatigue*) yang sangat cepat**. Teknisi lab patologi yang bekerja beberapa jam di ruang potong sering merasa baunya sudah hilang, padahal konsentrasi uap karsinogen di udara masih tinggi. **Bau tidak boleh dijadikan indikator keamanan lingkungan kerja**.
+
+* ⚠️ **Jebakan Ujian**:
+  1. *Jebakan Biomonitoring Asam Format Urin*:
+     * *Jebakan*: Memilih asam format urin sebagai biomarker pajanan kerja rutin untuk formaldehida.
+     * *Koreksi*: **Formaldehida TIDAK memiliki BEI di ACGIH maupun IPB di Permenaker 5/2018**. Asam format urin tidak dapat digunakan untuk memantau pajanan okupasional karena kadar endogen fisiologis manusia terlalu tinggi dan bervariasi luas.
+  2. *Jebakan Format Standar Batas Pajanan (Permenaker vs ACGIH vs OSHA)*:
+     * *Jebakan*: Menyebut NAB formaldehida di Indonesia sebagai nilai rata-rata 8 jam (TWA).
+     * *Koreksi*: Berdasarkan **Permenaker No. 5 Tahun 2018, formaldehida diatur sebagai Kadar Tertinggi Diperkenankan / Ceiling (KTD) sebesar 0,3 ppm**, yang berarti konsentrasi udara tidak boleh terlampaui bahkan sesaat pun selama jam kerja. Sebaliknya, **ACGIH menetapkan TLV-TWA 0,1 ppm dan STEL 0,3 ppm**.
+  3. *Jebakan Notasi Sensitisasi Ganda*:
+     * *Jebakan*: Menganggap formaldehida hanya mengiritasi saluran napas.
+     * *Koreksi*: Formaldehida memiliki notasi sensitisasi ganda: **RSEN (sensitisasi saluran napas / asma)** dan **DSEN (sensitisasi kulit / dermatitis kontak alergi)**.
+  4. *Jebakan Konsentrasi Formalin*:
+     * *Jebakan*: Menganggap larutan formalin 10% mengandung 10% gas formaldehida murni.
+     * *Koreksi*: Larutan formalin 10% yang lazim digunakan di laboratorium patologi dibuat dengan mengencerkan formalin pekat (37%) sebanyak 1:10, sehingga konsentrasi formaldehida murni yang sebenarnya di dalam formalin 10% hanyalah sekitar **3,7%**.
+
+---
+
+### **Daftar Sumber Rujukan**
+1. **Peraturan Menteri Ketenagakerjaan RI No. 5 Tahun 2018** tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Lampiran 3: NAB Faktor Kimia - KTD Formaldehida 0,3 ppm, Notasi A-1 dan Sensitisasi).
+2. **Peraturan Presiden RI No. 7 Tahun 2019** tentang Penyakit Akibat Kerja (Lampiran I.a No. 11; Lampiran I.b No. 1; Lampiran III No. 21).
+3. **Peraturan Menteri Kesehatan RI No. 11 Tahun 2022** tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 5: Pedoman 7 Langkah Diagnosis PAK).
+4. **ACGIH (American Conference of Governmental Industrial Hygienists)** (2026): *TLVs and BEIs Based on the Documentation of the Threshold Limit Values for Chemical Substances and Physical Agents & Biological Exposure Indices* (Formaldehyde entry: TLV-TWA 0,1 ppm, STEL 0,3 ppm, Notasi A1, DSEN, RSEN; BEI: None).
+5. **Kang, D. S., Kim, H. S., Jung, J. H., Lee, C. M., Ahn, Y. S., & Seo, Y. R.** (2021). *Formaldehyde exposure and leukemia risk: a comprehensive review and network-based toxicogenomic approach*. Genes and Environment, 43, 13.
+6. **Kwak, K., Paek, D., & Park, J. T.** (2020). *Occupational exposure to formaldehyde and risk of lung cancer: A systematic review and meta-analysis*. American Journal of Industrial Medicine, 63(4), 312–327.
+7. **Bachand, A. M., Mundt, K. A., Mundt, D. J., & Montgomery, R. R.** (2010). *Epidemiological studies of formaldehyde exposure and risk of leukemia and nasopharyngeal cancer: A meta-analysis*. Critical Reviews in Toxicology, 40(2), 85–100.
+8. **Protano, C., Buomprisco, G., Cammalleri, V., et al.** (2022). *The Carcinogenic Effects of Formaldehyde Occupational Exposure: A Systematic Review*. Cancers, 14(1), 165.
+9. **McQueen, C. A. (Ed.)** (2025). *Comprehensive Toxicology*. 4th Edition. Elsevier (Section on Aldehydes, DNA-Protein Crosslinks, and Toxicogenomics of Chemical Carcinogenesis).
+10. **Hodgson, E. (Ed.)** (2010). *A Textbook of Modern Toxicology*. 4th Edition. John Wiley & Sons (Chapter 22: Occupational Exposure Limits & Workplace Standards).
+11. **NIOSH Pocket Guide to Chemical Hazards** (DHHS/NIOSH Pub. No. 2005-149: Formaldehyde entry [CAS 50-00-0]).
+12. **IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 100F** (2012): *Chemical Agents and Related Occupations: Formaldehyde*. International Agency for Research on Cancer, Lyon, France.
+
+---
+
+💡 *Apakah Anda ingin melengkapi seri toksikologi pelarut dan bahan kimia industri ini dengan senyawa lain (misalnya Karbon Disulfida / \\(\text{CS}_2\\), Trikloroetilen / TCE, atau Tetrakloroetilen / PCE)?*
