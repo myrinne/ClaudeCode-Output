@@ -274,11 +274,12 @@ doc.add_heading('Bab 3. OSCE & Ujian Lisan', level=1)
 para('Stase OSCE dan kasus ujian lisan/KOMPRE yang pernah keluar. Jawaban recall (bila ada) di Lampiran A.3.', italic=True, color=GREY, size=9.5, after=6)
 doc.add_heading('Peta Stase OSCE per Periode', level=2)
 para('Sumber: “Simulasi OSCE.xlsx” (rekap angkatan). [M] = stase yang selalu muncul.', size=9, italic=True, color=GREY)
-grid = [('[M] Promkes','X','X','X','X','X'),('[M] Muskuloskeletal, Ergonomi, JSA','X','X','X','X','X'),('[M] ILO','X','X','X','X','X'),
-        ('Psikososial','X','X','','',''),('Spirometri','X','X','X','',''),('Audiometri','X','X','X','',''),
-        ('Biomonitoring','X','X','','',''),('Kecacatan','X','','','',''),('Oral test','X','X','X','X','X')]
-tb = doc.add_table(rows=1, cols=6); tb.style='Light Grid Accent 1'; tb.alignment = WD_TABLE_ALIGNMENT.CENTER
-for c,h in zip(tb.rows[0].cells, ['Stase','2024-1','2024-2','2025-1','2025-2','2026-1']): c.text=h
+# 2024-1..2026-1 = Simulasi OSCE.xlsx cell-for-cell; 2026-2 = UKOM 22 operan (recall, not in the xlsx)
+grid = [('[M] Promkes','X','X','X','X','X','X'),('[M] Muskuloskeletal, Ergonomi, JSA','X','X','X','X','X','X²'),('[M] ILO','X','X','X','X','X','X'),
+        ('Psikososial','','','','X','X',''),('Spirometri','X','','X','X','','X'),('Audiometri','X','X','','','X','X³'),
+        ('Biomonitoring','','','','X','X',''),('Kecacatan','','','X','','','X'),('Oral test','X','X','X','X','X','X')]
+tb = doc.add_table(rows=1, cols=7); tb.style='Light Grid Accent 1'; tb.alignment = WD_TABLE_ALIGNMENT.CENTER
+for c,h in zip(tb.rows[0].cells, ['Stase','2024-1','2024-2¹','2025-1','2025-2','2026-1','2026-2']): c.text=h
 for g in grid:
     row = tb.add_row().cells
     for c,v in zip(row,g): c.text = v
@@ -287,7 +288,7 @@ for r in tb.rows:
         for p in c.paragraphs:
             p.paragraph_format.space_after = Pt(0)
             for run in p.runs: run.font.size = Pt(9.5)
-para('Catatan: tanda X disalin apa adanya dari file sumber (urutan sel kosong di file mungkin tidak sejajar kolom). Stase yang tercatat di recall: ±2020 (audiometri, spirometri, muskuloskeletal, promkes APD, JSA, ILO); Okt 2024 (muskuloskeletal, spirometri, toksikologi, JSA, promkes, ILO); Okt 2025 (promkes, biomonitoring, psikososial, spirometri, ILO, JSA-muskuloskeletal); UKOM 22 (kecacatan, promkes, muskuloskeletal, spirometri, ergonomi, ILO).', size=8.5, italic=True, color=GREY, before=3, after=6)
+para('Catatan: kolom 2024-1 sampai 2026-1 sesuai sel di “Simulasi OSCE.xlsx”. Kolom 2026-2 tidak ada di xlsx; diisi dari operan UKOM 22 (Juni 2026). ¹ Recall Okt 2024 (Board Okt 2024.pdf) menyebut spirometri dan toksikologi, bukan audiometri seperti di xlsx; recall lebih dapat dipercaya untuk periode ini. ² UKOM 22: muskuloskeletal dan ergonomi jadi 2 stase terpisah. ³ Audiogram masuk di stase Kecacatan. Stase yang tercatat di recall: ±2020 (audiometri, spirometri, muskuloskeletal, promkes APD, JSA, ILO); Okt 2024 (muskuloskeletal, spirometri, toksikologi, JSA, promkes, ILO); Okt 2025 (promkes, biomonitoring, psikososial, spirometri, ILO, JSA-muskuloskeletal); UKOM 22 (kecacatan, promkes, muskuloskeletal, spirometri, ergonomi, ILO).', size=8.5, italic=True, color=GREY, before=3, after=6)
 n = 1
 for kind, title in (('osce','Stase OSCE'),('oral','Ujian Lisan & KOMPRE')):
     doc.add_heading(title, level=2)
