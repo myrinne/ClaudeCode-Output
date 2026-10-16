@@ -1,9 +1,11 @@
 ### short | REG | 2020
 Q: Ministry of Health regulation about occupational diseases?
 A: Permenkes No. 56 Tahun 2016 tentang Penyelenggaraan Pelayanan Penyakit Akibat Kerja.
+N: Kunci benar saat ujian 2020, tetapi Permenkes 56/2016 sudah dicabut oleh Permenkes No. 11 Tahun 2022 tentang Pelayanan Kesehatan Penyakit Akibat Kerja (Pasal 15). Untuk ujian sekarang jawab Permenkes 11/2022.
 ### short | REG | 2020
 Q: Government regulation about occupational diseases?
 A: PP No. 7 Tahun 2019 (tentang Penyakit Akibat Kerja).
+N: Nomenklatur yang tepat: Peraturan Presiden (Perpres) No. 7 Tahun 2019 tentang Penyakit Akibat Kerja, bukan PP.
 ### short | HI | 2020
 Q: ____ level, usually set at ½ of the TLV.
 A: Action level.
