@@ -1,7 +1,7 @@
 # Outline catatan tambahan: gap dari Kompilasi Soal Board 2016–2026
 
 Dibuat 2026-10-16 dari bagian **1f** `ClaudeCode Vault/Projects/Ujian Board Sp.Ok/gap-analysis-materi-board.md`.
-Sumber PDF ada di folder `Gap Kompilasi - sumber/` (29 file; 2 lagi perlu diklik manual). Kode `[S#]` merujuk ke tabel sumber di bawah.
+Sumber PDF ada di folder `Gap Kompilasi - sumber/` (28 file; 2 lagi perlu diklik manual). Kode `[S#]` merujuk ke tabel sumber di bawah.
 
 **Cara pakai (sesuai `workflow-catatan-baru.md`):** satu catatan per sesi. Unggah PDF bertanda `[S#]` untuk catatan itu ke notebook NotebookLM topik terkait (URL `[W#]` bisa ditambahkan sebagai sumber situs web), lalu isi tiap poin outline satu pertanyaan per waktu. Baris **Soal** = soal yang pernah keluar, sebagai target jawaban.
 
