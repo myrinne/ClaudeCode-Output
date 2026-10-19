@@ -1,0 +1,186 @@
+Jawab dua topik. (A) STRATEGI GLOBAL WHO "Occupational Health for All" (1995; Global Strategy on Occupational Health for All): latar belakang dan tujuan, sepuluh sasaran prioritas (10 priority areas / objectives) beserta isinya, prinsip dasar (akses pelayanan kesehatan kerja untuk semua pekerja termasuk sektor informal, pendekatan primary prevention), peran negara, pengusaha, pekerja, profesional, dan pendekatan komunitas versus individu (population/group approach untuk pekerja dengan pajanan sama). (B) INSPEKSI / WALK-THROUGH SURVEY tempat kerja oleh dokter okupasi: tujuan, tahapan (persiapan dokumen dan sumber data, wawancara, pengamatan proses kerja, identifikasi bahaya, pencatatan, pengukuran awal, rekomendasi, pelaporan), siapa yang terlibat (dokter okupasi, higienis industri, K3, manajemen, wakil pekerja), singkatan atau mnemonik yang dikenal (mis. EXCEPT jika ada di sumber) dan apa yang diperiksa. Sebutkan sumbernya (WHO Global Strategy, ILO C161, LaDou) dan katakan jelas bila tidak ada di sumber, terutama mnemonik EXCEPT.
+
+
+Thoughts
+Berikut adalah penjelasan mendalam dan terstruktur mengenai Strategi Global WHO "Occupational Health for All" (1995) dan Inspeksi / Walk-Through Survey Tempat Kerja oleh Dokter Okupasi berdasarkan sumber literatur resmi yang tersedia:
+TOPIK A: STRATEGI GLOBAL WHO "OCCUPATIONAL HEALTH FOR ALL" (1995)
+             WHO GLOBAL STRATEGY ON OCCUPATIONAL HEALTH FOR ALL (1995)
+                                         │
+      ┌──────────────────────────────────┼──────────────────────────────────┐
+      ▼                                  ▼                                  ▼
+Latar Belakang & Tujuan            10 Sasaran Prioritas             Prinsip & Cakupan
+• 45% populasi dunia = pekerja    • Kebijakan, Lingkungan Sehat,   • Akses Universal (Informal/UMKM)
+• 120M kecelakaan, 200k kematian    OHS, Standar, SDM, Riset, dll. • Primary Prevention at Source
+• Hanya 5-10% di dev. countries                                   • Tanggung jawab utama: Pengusaha
+  memiliki akses ke OHS                                           • Population / Group Approach
+1. Latar Belakang dan Tujuan Utama
+Latar Belakang:
+Dirumuskan dalam Pertemuan Ke-2 Jaringan Pusat Kolaborasi Kesehatan Kerja WHO (Network of WHO Collaborating Centres in Occupational Health) di Beijing (Oktober 1994) dan diterbitkan resmi oleh WHO pada tahun 1995
+.
+Dilatarbelakangi oleh fakta bahwa sekitar 45% populasi dunia dan 58% populasi berusia di atas 10 tahun tergolong sebagai angkatan kerja global
+.
+Diperkirakan 30–50% pekerja terpajan bahaya fisik, kimia, biologi, beban kerja berat, atau faktor ergonomi/psikososial yang memicu stres
+. Setiap tahun terjadi sekitar 120 juta kecelakaan kerja dengan 200.000 kematian, serta 68–157 juta kasus baru penyakit akibat kerja
+. Kerugian ekonomi akibat bahaya K3 mencapai beberapa persen dari Gross National Product (GNP) negara
+.
+Di negara-negara berkembang, hanya 5–10% pekerja yang memiliki akses ke Pelayanan Kesehatan Kerja (Occupational Health Services / OHS), meskipun kebutuhannya sangat nyata
+.
+Tujuan Utama:
+Pada tahun 2000, seluruh negara menunjukkan perkembangan positif pada indikator K3, ditandai dengan penurunan jurang pemisah (gap) tingkat kesehatan dan keselamatan antara pekerjaan/perusahaan berisiko tinggi dan berisiko rendah
+.
+Tujuan akhir (ultimate objective) adalah mencapai pengembangan bertahap pelayanan kesehatan kerja yang mencakup seluruh pekerja (coverage for all workers) tanpa memandang sektor ekonomi, ukuran perusahaan, jenis pekerjaan, bentuk hubungan kerja, atau pekerja mandiri (self-employed)
+.
+2. Sepuluh Sasaran Prioritas (10 Priority Objectives / Areas)
+Dokumen WHO (1995) menetapkan 10 sasaran prioritas tindakan internasional dan nasional [152–160]:
+Objective 1: Strengthening of International and National Policies for Health at Work and Development of Policy Tools
+Penguatan kebijakan nasional dan internasional mengenai kesehatan kerja serta penyusunan instrumen perundang-undangan dan standar minimum K3 bagi semua sektor
+.
+Objective 2: Developing the Healthy Work Environment
+Pengembangan lingkungan kerja yang sehat melalui eliminasi dan pengendalian bahaya di tempat kerja dengan pendekatan primary prevention
+.
+Objective 3: Development of Healthy Work Practices and Promotion of Health at Work
+Pengembangan praktik kerja yang sehat, perbaikan ergonomi, penurunan beban kerja fisik/psikososial, serta promosi gaya hidup sehat di tempat kerja
+.
+Objective 4: Strengthening of Occupational Health Services (OHS)
+Penguatan pelayanan kesehatan kerja yang multidisiplin, komprehensif, dan menjangkau sektor yang selama ini tidak terlayani (underserved populations)
+.
+Objective 5: Establishment of Support Services for Occupational Health
+Pembentukan layanan pendukung teknis dan rujukan laboratorium ahli (seperti higiene industri, ergonomi, dan toksikologi)
+.
+Objective 6: Development of Occupational Health Standards Based on Scientific Risk Assessment
+Penyusunan standar dan Nilai Batas Pemaparan (NBP/NAB) kesehatan kerja yang didasarkan pada penilaian risiko secara ilmiah (scientific risk assessment)
+.
+Objective 7: Development of Human Resources for Occupational Health
+Pengembangan sumber daya manusia dan pelatihan personel profesional kesehatan kerja (dokter, perawat K3, higienis industri, ergonomis) secara multidisiplin
+.
+Objective 8: Establishment of Registration and Data Systems, Development of Information Services for Experts, Effective Transmission of Data, and Raising of Public Awareness through Public Information
+Pembentukan sistem pendaftaran kecelakaan/penyakit kerja, pengembangan sistem data, serta peningkatan kesadaran publik mengenai K3
+.
+Objective 9: Strengthening of Research
+Penguatan penelitian dan riset terapan kesehatan kerja untuk mendukung pembuatan kebijakan dan tindakan klinis/lapangan
+.
+Objective 10: Development of Collaboration in Occupational Health and with Other Activities and Services
+Penguatan kolaborasi intersektoral antara kesehatan kerja dengan pelayanan kesehatan primer (primary health care), perlindungan lingkungan, jaminan sosial, serta lembaga internasional (WHO, ILO, ICOH)
+.
+3. Prinsip Dasar, Pemangku Kepentingan, & Pendekatan Populasi
+Akses Universal untuk Semua Pekerja:
+Setiap pekerja berhak atas jaminan kesehatan dan keselamatan kerja
+.
+Strategi menekankan perlindungan khusus bagi pekerja di sektor informal, Usaha Mikro Kecil dan Menengah (UMKM), sektor pertanian, pekerja mandiri (self-employed), pekerja migran, wanita, dan anak-anak
+.
+Pendekatan Primary Prevention:
+Tindakan berfokus pada pencegahan primer (primary prevention), yaitu menghindari bahaya pada sumbernya (hazard avoidance), penerapan teknologi bersih/aman, dan desain ergonomis tempat kerja sejak awal
+.
+Peran Para Aktor / Pemangku Kepentingan:
+Negara / Pemerintah: Merumuskan kebijakan nasional, memperbarui undang-undang, menetapkan standar minimum, dan melakukan pengawasan/penegakan hukum K3
+.
+Pengusaha (Employers): Memegang tanggung jawab utama (primary responsibility) untuk menyediakan dan memelihara lingkungan kerja yang sehat dan aman di tingkat perusahaan
+.
+Pekerja (Workers): Berpartisipasi aktif dalam program K3, berhak atas informasi transparan mengenai bahaya kerja (right to know), dan bekerja sesuai prosedur aman
+.
+Profesional K3: Menyediakan keahlian teknis medis/multidisiplin berbasis bukti ilmiah
+.
+Pendekatan Komunitas vs. Individu (Population / Group Approach):
+Bagi kelompok pekerja yang menghadapi jenis dan tingkat pajanan bahaya yang sepadan (Homogeneous Exposure Groups / HEG), kesehatan kerja menerapkan pendekatan kesehatan masyarakat berbasis populasi/kelompok (group/population approach)
+. Pendekatan ini mengintervensi lingkungan kerja dan kelompok pekerja secara kolektif untuk hasil pencegahan yang lebih efektif dibanding hanya menangani kasus secara individu
+.
+TOPIK B: INSPEKSI / WALK-THROUGH SURVEY TEMPAT KERJA OLEH DOKTER OKUPASI
+                   TAHAPAN WALK-THROUGH SURVEY DOKTER OKUPASI
+                                       │
+ ┌─────────────────┬───────────────────┼───────────────────┬─────────────────┐
+ ▼                 ▼                   ▼                   ▼                 ▼
+1. Persiapan Dok. 2. Wawancara        3. Pengamatan Kerja 4. Identifikasi   5. Pencatatan,
+• Review SDS      • Manajemen & K3    • Alur proses       Bahaya            Rekomendasi &
+• Data IH & Log   • Wakil Pekerja     • Praktik kerja     • Fisik, Kimia,   Laporan
+                                                            Biologi, Ergo
+1. Tujuan Walk-Through Survey (Worksite Visit)
+Melakukan pengamatan langsung (direct observation) terhadap alur proses produksi, kondisi lingkungan kerja, mesin/peralatan, stasiun kerja, dan praktik kerja nyata
+.
+Mengidentifikasi bahaya potensial (potensial hazards) yang ada di tempat kerja yang mungkin tidak disadari atau tidak terlaporkan oleh pekerja
+.
+Memahami konteks pekerjaan untuk menilai hubungan kausalitas antara pajanan kerja dengan keluhan kesehatan/penyakit pekerja (penegakan PAK)
+, menentukan kelaikan kerja (fitness for duty), serta merumuskan rekomendasi pengendalian K3 yang realistis bagi manajemen
+.
+2. Tahapan Pelaksanaan Walk-Through Survey
+Persiapan Dokumen dan Sumber Data (Preparation & Document Review):
+Meminta izin kepada manajemen/pengusaha dan pekerja/serikat pekerja sebelum kunjungan
+.
+Meninjau dokumen awal: Lembar Data Keselamatan bahan kimia (Safety Data Sheets / SDS)
+, Laporan Hasil Pengukuran Higiene Industri sebelumnya (kadar debu, gas, bising)
+, Catatan Rekam Kesehatan / Surveilans Medis Pekerja
+, Log Kecelakaan dan Penyakit Kerja (OSHA 300 log)
+, serta alur proses produksi (flowchart)
+.
+Wawancara Pemangku Kepentingan (Interviews):
+Mewawancarai manajer K3/Higiene Industri, supervisor area, serta wakil pekerja / anggota Komite K3 mengenai proses kerja harian, keluhan kesehatan yang sering timbul, atau perubahan prosedur kerja terbaru
+.
+Pengamatan Proses Kerja secara Langsung (Observation of Work Processes):
+Melakukan penelusuran terpandu (guided tour) mengikuti alur produksi: mulai dari penerimaan bahan mentah, area pemrosesan utama, hingga penanganan limbah dan pengemasan
+.
+Mengamati secara cermat gerakan kerja, durasi siklus kerja, beban angkat, penggunaan alat pengendalian teknik (seperti Local Exhaust Ventilation / LEV)
+, kebersihan tempat kerja (housekeeping), serta kepatuhan/kesesuaian penggunaan Alat Pelindung Diri (APD)
+.
+Identifikasi Bahaya (Hazard Identification):
+Memetakan 5 kategori bahaya di setiap stasiun kerja:
+Bahaya Fisik: Bising, getaran, suhu ekstrem, radiasi, pencahayaan
+.
+Bahaya Kimia: Pelarut, gas beracun, debu mineral/kapas, logam berat, uap/aerosol
+.
+Bahaya Biologi: Jamur, bakteri, bioaerosol, darah/cairan tubuh
+.
+Bahaya Ergonomi: Postur janggal, gerakan berulang, pengangkatan beban manual, desain stasiun kerja
+.
+Bahaya Psikososial: Beban kerja berlebih, kerja shift, stres organisasi
+.
+Pencatatan dan Pengukuran Awal (Documentation & Screening):
+Menggunakan lembar periksa (checklist) berbasis stasiun kerja, mengambil foto/peta area (dengan izin), serta bila memungkinkan melakukan pengukuran screening langsung menggunakan instrumen pembacaan cepat (direct-reading instruments seperti sound level meter atau lux meter)
+.
+Formulasi Rekomendasi Pengendalian (Recommendations):
+Menyusun usulan perbaikan berdasar Hierarki Pengendalian K3 (Elimination, Substitution, Engineering Controls, Administrative Controls, APD)
+.
+Penyusunan Laporan (Reporting):
+Menyusun laporan tertulis kunjungan fasilitas (site visit report) yang berisi temuan bahaya, evaluasi risiko, dan langkah perbaikan konkret untuk diserahkan kepada manajemen perusahaan dan komite K3
+.
+3. Tim Multidisiplin yang Terlibat
+Pelaksanaan walk-through survey dan evaluasi K3 melibatkan tim multidisiplin
+:
+Dokter Spesialis Kedokteran Okupasi / Dokter Perusahaan (Occupational Physician);
+Ahli Higiene Industri (Industrial Hygienist)
+;
+Ahli / Petugas K3 (Safety Engineer / CSP / Safety Professional)
+;
+Ergonomis / Fisioterapis Okupasi (Ergonomist / Occupational Therapist)
+;
+Manajemen Perusahaan & Supervisor Lapangan
+;
+Wakil Pekerja / Anggota Komite K3 Tripartit (Worker / Union Safety Representative)
+.
+4. Transparansi Mengenai Mnemonik "EXCEPT" vs. Mnemonik Resmi "CH2OPD2"
+⚠️ Klarifikasi Mnemonik "EXCEPT":
+Mnemonik "EXCEPT" TIDAK DITEMUK / TIDAK ADA dalam seluruh literatur resmi yang diberikan (WHO Global Strategy 1995, ILO C161, LaDou Current OEM, CDC, maupun dokumen pendukung lainnya).
+Mnemonik Riwayat Lingkungan & Okupasi yang ADA dalam Sumber Resmi:
+Sumber LaDou (Current Occupational & Environmental Medicine Bab 4) secara eksplisit mencantumkan mnemonik CH2OPD2 untuk pengambilan anamnesis riwayat lingkungan dan pekerjaan
+:
+C = Community (kondisi lingkungan masyarakat sekitar tempat tinggal/pabrik)
+;
+H = Home (kondisi bahaya di dalam lingkungan rumah)
+;
+H = Hobbies (hobi dan aktivitas di luar jam kerja)
+;
+O = Occupation (riwayat pekerjaan dan pajanan kerja)
+;
+P = Personal habits (kebiasaan pribadi seperti merokok atau alkohol)
+;
+D = Diet (pola konsumsi makanan dan air)
+;
+D = Drugs (penggunaan obat-obatan)
+.
+Sumber Referensi Resmi yang Dipakai
+World Health Organization (WHO). (1995). Global Strategy on Occupational Health for All: The Way to Health at Work. Recommendation of the 2nd Meeting of the WHO Collaborating Centres in Occupational Health, Beijing, China. Geneva: WHO. (WHO/OCH/95.1) [134–162].
+LaDou, J. & Harrison, R. J. (2014/2021). Current Occupational & Environmental Medicine (5th/6th ed.). McGraw-Hill Education.
+Bab 2: International Occupational and Environmental Health [14–38].
+Bab 4: The Occupational & Environmental Medical History (CH2OPD2 Mnemonic & Worksite Visits) [46–60].
+Bab 15: Ergonomics & the Prevention of Occupational Injuries [82–86].
+International Labour Organization (ILO). (1985). ILO Convention No. 161: Occupational Health Services Convention. Geneva: ILO [98–103].
+CDC / HHS. Principles of Epidemiology in Public Health Practice (3rd ed.). Lesson 6 (Investigating an Outbreak & Field Surveillance) [233–245].
+💡 Apakah Dokter Resident ingin kita melengkapi diskusi ini dengan latihan soal kasus kuis integratif Kedokteran Okupasi atau membahas topik persiapan ujian board lainnya?

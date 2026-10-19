@@ -1,0 +1,117 @@
+Jelaskan rinci PELAYANAN KESEHATAN KERJA menurut ILO Convention No. 161 (Occupational Health Services Convention 1985): definisi pelayanan kesehatan kerja, sifat preventif dan tujuan, fungsi pelayanan kesehatan kerja (identifikasi dan penilaian bahaya, surveilans lingkungan kerja, surveilans kesehatan pekerja, saran tentang perencanaan dan organisasi kerja dan ergonomi, perlindungan perorangan APD, promosi kesehatan, saran rehabilitasi, kerja sama dalam penyediaan informasi dan pelatihan, pertolongan pertama dan kedaruratan, analisis kecelakaan dan penyakit akibat kerja, pencatatan), prinsip penyelenggaraan (kebijakan nasional, partisipasi pengusaha dan pekerja, independensi profesional, kerahasiaan, pemeriksaan kesehatan tidak mengurangi penghasilan), pasal-pasal kunci dengan nomor pasalnya, dan kaitannya dengan UU 1/1970, UU 17/2023 dan Permenkes bila disebut. Sertakan nomor pasal persis dari ILO C161 dan sebutkan sumbernya.
+
+
+Thoughts
+Selamat belajar, Dokter Resident. Sebagai penguji Spesialis Kedokteran Okupasi (Board Examiner in Occupational Medicine), saya akan mengulas secara mendalam, terstruktur, dan presisi mengenai Pelayanan Kesehatan Kerja (Occupational Health Services) berdasarkan standar internasional ILO Convention No. 161 (Occupational Health Services Convention, 1985) serta keterkaitannya dengan konstelasi hukum K3 dan Kesehatan Kerja di Indonesia.
+1. Definisi Pelayanan Kesehatan Kerja (ILO C161 Pasal 1)
+Berdasarkan ILO Convention No. 161 Tahun 1985 Pasal 1 huruf (a), Pelayanan Kesehatan Kerja (Occupational Health Services) didefinisikan sebagai:
+"Layanan yang ditugaskan dengan fungsi utama yang bersifat esensial preventif dan bertanggung jawab untuk memberikan nasihat/saran kepada pengusaha (pemberi kerja), pekerja, dan wakil mereka di perusahaan mengenai:
+Persyaratan untuk menetapkan dan memelihara lingkungan kerja yang aman dan sehat yang akan memfasilitasi kesehatan fisik dan mental yang optimal sehubungan dengan pekerjaan;
+Penyesuaian pekerjaan dengan kapasitas/kemampuan pekerja berdasarkan status kesehatan fisik dan mental mereka (adaptation of work to the capabilities of workers)."
+2. Sifat Preventif dan Tujuan Utama
+Sifat Utama: Pelayanan kesehatan kerja dirancang berlandaskan pendekatan preventif multidisiplin (essentially preventive functions), bukan sekadar unit pelayanan kuratif/klinis umum di tempat kerja.
+Tujuan Utama:
+Promosi dan Pemeliharaan Kesehatan: Mencapai tingkat kesejahteraan fisik, mental, dan sosial yang setinggi-tingginya bagi pekerja di semua jenis pekerjaan.
+Pencegahan Gangguan Kesehatan: Mencegah timbulnya gangguan kesehatan pada pekerja yang disebabkan oleh kondisi lingkungan kerja dan bahaya (hazards) proses kerja.
+Perlindungan Pekerja: Memproteksi pekerja dari risiko bahaya di tempat kerja yang dapat mengganggu kesehatan.
+Penyesuaian Pekerjaan (Ergonomics): Menempatkan dan memelihara pekerja dalam lingkungan kerja yang disesuaikan dengan kebutuhan fisiologis dan psikologisnya (adapting work to man).
+3. Sebelas (11) Fungsi Utama Pelayanan Kesehatan Kerja (ILO C161 Pasal 5)
+Tanpa mengurangi tanggung jawab masing-masing pengusaha terhadap keselamatan dan kesehatan pekerja di perusahaannya, Pasal 5 ILO Convention No. 161 menetapkan 11 fungsi utama pelayanan kesehatan kerja:
+Identifikasi dan Penilaian Risiko (Identification and Assessment of Hazards):
+Mengidentifikasi dan menilai risiko bahaya kesehatan (health hazards) yang ada di lingkungan kerja (Pasal 5a).
+Surveilans Lingkungan Kerja dan Praktik Kerja (Surveillance of Working Environment):
+Melakukan pemantauan/pengawasan terhadap faktor-faktor lingkungan kerja dan praktik kerja yang dapat memengaruhi kesehatan pekerja, termasuk fasilitas sanitasi, kantin, dan perumahan pekerja jika disediakan oleh pengusaha (Pasal 5b).
+Saran Perencanaan dan Organisasi Kerja (Advice on Planning and Organization of Work):
+Memberikan saran mengenai perencanaan dan pengorganisasian kerja, termasuk desain tempat kerja, pemilihan, pemeliharaan, serta kondisi mesin, peralatan, dan bahan kimia yang digunakan dalam pekerjaan (Pasal 5c).
+Partisipasi Pengembangan Program & Evaluasi Alat Baru:
+Berpartisipasi dalam pengembangan program perbaikan praktik kerja serta pengujian dan evaluasi aspek kesehatan dari peralatan baru (Pasal 5d).
+Saran Kesehatan, Keselamatan, Higiene, Ergonomi, dan APD:
+Memberikan masukan teknis mengenai kesehatan kerja, keselamatan, higiene industri, ergonomi, serta alat pelindung diri (APD) perorangan maupun kolektif (Pasal 5e).
+Surveilans Kesehatan Pekerja (Surveillance of Workers' Health):
+Menyelenggarakan pemantauan dan pengawasan kesehatan berkala bagi pekerja dalam hubungannya dengan pekerjaan/pajanan kerja (Pasal 5f).
+Promosi Penyesuaian Pekerjaan terhadap Pekerja (Adaptation of Work to Worker):
+Mendorong dan memfasilitasi adaptasi/penyesuaian tugas dan lingkungan kerja agar sesuai dengan kapasitas fisiologis dan psikologis pekerja (Pasal 5g).
+Kontribusi Rehabilitasi Vokasional (Vocational Rehabilitation):
+Berkontribusi dalam tindakan pemulihan dan rehabilitasi vokasional bagi pekerja yang mengalami kecacatan atau purna-sakit/cedera (Pasal 5h).
+Informasi, Pelatihan, dan Edukasi K3:
+Berkolaborasi dalam menyediakan informasi, pelatihan, dan pendidikan di bidang kesehatan kerja, higiene, dan ergonomi bagi pekerja dan manajemen (Pasal 5i).
+Penyelenggaraan P3K dan Pengobatan Kedaruratan (First Aid & Emergency Treatment):
+Mengorganisasi dan mengelola sistem pertolongan pertama pada kecelakaan (P3K) serta penanganan medis kedaruratan di tempat kerja (Pasal 5j).
+Analisis Kecelakaan Kerja dan Penyakit Akibat Kerja (Analysis of Accidents & Occupational Diseases):
+Berpartisipasi aktif dalam analisis kejadian kecelakaan kerja (occupational accidents) dan investigasi Penyakit Akibat Kerja (PAK) (Pasal 5k).
+4. Prinsip Penyelenggaraan & Kondisi Operasional Kunci
+                    PRINSIP OPERASIONAL PELAYANAN KESEHATAN KERJA (ILO C161)
+                                               │
+ ┌──────────────────────┬──────────────────────┼──────────────────────┬──────────────────────┐
+ ▼                      ▼                      ▼                      ▼                      ▼
+Kebijakan Nasional    Tim Multidisiplin     Independensi Profesional Bebas Biaya & Jam Kerja  Larangan Verifikasi Absensi
+(Pasal 2 & 3)         (Pasal 9)             (Pasal 10)             (Pasal 12)             (Pasal 15)
+Kebijakan Nasional & Pengembangan Progresif (Pasal 2 & 3):
+Setiap negara anggota wajib merumuskan dan meninjau berkala Kebijakan Nasional Pelayanan Kesehatan Kerja yang koheren (Pasal 2), serta mengembangkannya secara progresif untuk seluruh pekerja di semua cabang kegiatan ekonomi (termasuk sektor publik dan koperasi produksi) (Pasal 3).
+Tim Multidisiplin (Multidisciplinary Team) (Pasal 9):
+Pelayanan kesehatan kerja harus bersifat multidisiplin. Komposisi personel ditentukan oleh jenis risiko pekerjaan (melibatkan dokter spesialis kedokteran okupasi, perawat K3, higienis industri, ergonomis, dll.).
+Independensi Profesional (Full Professional Independence) (Pasal 10):
+Personel yang menyelenggarakan pelayanan kesehatan kerja WAJIB menikmati kemerdekaan/independensi profesional penuh (full professional independence) dari pengusaha, pekerja, maupun serikat pekerja dalam menjalankan seluruh fungsi teknis medis/K3 pada Pasal 5.
+Prinsip Bebas Biaya & Tanpa Pemotongan Penghasilan (Pasal 12):
+Pelaksanaan surveilans kesehatan pekerja dalam hubungannya dengan pekerjaan TIDAK BOLEH mengurangi penghasilan/gaji pekerja, WAJIB bebas biaya (gratis bagi pekerja), dan dilakukan sejauh mungkin selama jam kerja resmi.
+Kerahasiaan Medis & Larangan Verifikasi Absensi (Prohibition of Absence Verification) (Pasal 15):
+Petugas kesehatan kerja wajib diinfokan mengenai angka kesakitan dan ketidakhadiran pekerja (absence for health reasons) semata-mata untuk mengidentifikasi apakah terdapat hubungan antara penyakit/absensi dengan bahaya kerja di tempat kerja.
+Klausul Kunci: "Personnel providing occupational health services shall not be required by the employer to verify the reasons for absence from work" (Personel pelayanan kesehatan kerja DILARANG ditugaskan oleh pengusaha untuk memverifikasi atau mengaudit alasan ketidakhadiran/sakit pekerja untuk kepentingan sanksi administratif/kontrol disiplin).
+5. Ringkasan Pasal-Pasal Kunci ILO Convention No. 161 (1985)
+Nomor Pasal
+Pokok Bahasan & Ketentuan Hukum Utama
+Pasal 1
+Definisi Resmi: Pelayanan Kesehatan Kerja (essentially preventive functions) & Wakil Pekerja.
+Pasal 2
+Kewajiban merumuskan Kebijakan Nasional Pelayanan Kesehatan Kerja yang koheren.
+Pasal 3
+Kewajiban pengembangan progresif layanan untuk seluruh pekerja di semua sektor ekonomi.
+Pasal 4
+Kewajiban konsultasi tripartit (pemerintah, organisasi pengusaha, dan serikat pekerja).
+Pasal 5
+Sebelas (11) Fungsi Utama Pelayanan Kesehatan Kerja (a s.d. k).
+Pasal 6
+Landasan pembentukan layanan (melalui perundang-undangan atau Perjanjian Kerja Bersama / PKB).
+Pasal 7
+Bentuk organisasi layanan: dapat didirikan sebagai layanan tunggal mandiri (single undertaking) atau layanan bersama beberapa perusahaan (common service).
+Pasal 8
+Kerja sama dan partisipasi seimbang antara pengusaha dan pekerja.
+Pasal 9
+Pendekatan tim multidisiplin dan koordinasi dengan fasilitas pelayanan kesehatan umum.
+Pasal 10
+Independensi Profesional Penuh (Full Professional Independence) bagi personel kesehatan kerja.
+Pasal 11
+Penetapan kualifikasi kompetensi personel oleh otoritas berwenang.
+Pasal 12
+Surveilans kesehatan bebas biaya, tanpa potong gaji, dan dilakukan pada jam kerja.
+Pasal 13
+Hak pekerja untuk mendapatkan informasi lengkap mengenai bahaya kesehatan kerja.
+Pasal 14
+Kewajiban pengusaha dan pekerja menginformasikan faktor bahaya lingkungan kerja kepada layanan K3.
+Pasal 15
+Hak akses data absensi sakit & Larangan bagi pengusaha memfungsikan personel K3 sebagai verifikator absensi.
+6. Keterkaitan dengan Peraturan Perundang-undangan di Indonesia
+Meskipun ILO C161 merupakan standar acuan internasional, prinsip-prinsip utamanya telah diadopsi ke dalam hukum K3 dan Kesehatan Kerja di Indonesia:
+Undang-Undang Nomor 1 Tahun 1970 tentang Keselamatan Kerja:
+Pasal 8 ayat (1) & (2): Pengurus/pengusaha diwajibkan memeriksakan kesehatan badan, kondisi mental, dan kemampuan fisik pekerja (pemeriksaan kesehatan pra-kerja, berkala, dan khusus) pada dokter yang ditunjuk dan disahkan oleh Direktur (Kemenaker).
+Peraturan Menteri Tenaga Kerja No. PER.03/MEN/1982 tentang Pelayanan Kesehatan Kerja:
+Merupakan regulasi nasional turunan yang secara langsung mengadopsi struktur ILO C161.
+Menetapkan tugas pokok Pelayanan Kesehatan Kerja di perusahaan yang dipimpin oleh Dokter Pemeriksa Kesehatan Kerja (pemeriksaan kesehatan, P3K, pencegahan PAK, ergonomi, gizi kerja, dan rehabilitasi).
+Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan (Bab Kesehatan Kerja):
+Menegaskan bahwa Upaya Kesehatan Kerja ditujukan untuk melindungi pekerja agar sehat, selamat, produktif, serta bebas dari gangguan kesehatan dan pengaruh buruk pekerjaan.
+Mewajibkan pengelola tempat kerja menyelenggarakan kesehatan kerja secara komprehensif (promotif, preventif, kuratif, rehabilitatif) dan memfasilitasi pemeriksaan kesehatan berkala.
+Peraturan Menteri Kesehatan Nomor 11 Tahun 2022 tentang Pelayanan Kesehatan Penyakit Akibat Kerja:
+Mengatur pelaksanaan fungsi Pasal 5k ILO C161 dalam hal penegakan diagnosis PAK (Pendekatan 7 Langkah), tata laksana medis dan okupasi, rujukan, serta surveilans PAK di fasyankes/tempat kerja.
+Peraturan Pemerintah Nomor 88 Tahun 2019 tentang Kesehatan Kerja:
+Mewajibkan pengurus/pemberi kerja menerapkan standar kesehatan kerja yang mencakup pencegahan penyakit, peningkatan kesehatan, penanganan penyakit, dan pemulihan kesehatan pekerja.
+Sumber Referensi Resmi yang Dipakai
+International Labour Organization (ILO). (1985). C161 - Occupational Health Services Convention, 1985 (No. 161). Convention concerning Occupational Health Services, Adopted at the 71st ILC Session, Geneva (Entered into force: 17 Feb 1988). (ILO_C161_Occupational_Health_Services_Convention_1985.pdf).
+LaDou, J. & Harrison, R. J. (2014/2021). Current Occupational & Environmental Medicine (5th/6th ed.). McGraw-Hill Education. Bab 2 (International Occupational and Environmental Health - ILO Conventions, Halaman 2-1 s.d. 2-8). (CURREN~1.PDF).
+World Health Organization (WHO) & ILO. (2022). WHO Guidelines on Mental Health at Work. Geneva: World Health Organization (Section 5: Occupational Health Services & Convention 161). (WHO_Guidelines_Mental_Health_at_Work_2022.pdf).
+Undang-Undang Republik Indonesia Nomor 1 Tahun 1970 tentang Keselamatan Kerja.
+Undang-Undang Republik Indonesia Nomor 17 Tahun 2023 tentang Kesehatan.
+Peraturan Menteri Kesehatan Republik Indonesia Nomor 11 Tahun 2022 tentang Pelayanan Kesehatan Penyakit Akibat Kerja. (Permenkes Nomor 11 Tahun 2022.pdf).
+💡 Dokter Resident, apakah Anda ingin kita mendiskusikan simulasi latihan soal kasus tata kelola Pelayanan Kesehatan Kerja di perusahaan atau membahas modul spesialisasi kedokteran okupasi lainnya untuk persiapan ujian board?
+Bagaimana penerapan prinsip independensi profesional?
+Apa saja contoh sanksi pelanggaran UU K3?
+Bagaimana prosedur audit surveilans kesehatan?
