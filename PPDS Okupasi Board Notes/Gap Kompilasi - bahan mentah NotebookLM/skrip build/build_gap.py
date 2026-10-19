@@ -1,11 +1,13 @@
-"""Build 'Catatan Tambahan - Gap Kompilasi' docx from short/*.md.
+"""Build 'Catatan Tambahan - Gap Kompilasi' docx (all parts in parts.py) from short/*.md.
 Usage: python build_gap.py OUT.docx
 Reuses mdconv/extras from the toxicology build folder. md extras: lines starting
-'!PEARL ' (yellow callout) and '!SUMBER ' (red callout)."""
+'!PEARL ' (yellow callout), '!SUMBER ' (red callout), '!IMG file | caption' (figure),
+and [[wikilinks]] (shown as plain text in docx)."""
 import sys, os, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.dirname(HERE)                                  # .../Gap Kompilasi - bahan mentah NotebookLM
 BOARD = os.path.dirname(RAW)                                 # .../PPDS Okupasi Board Notes
+sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(BOARD, "Toksikologi - bahan mentah NotebookLM", "skrip build"))
 from docx import Document
 from docx.shared import Pt, Cm
@@ -14,6 +16,7 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 import mdconv as M
 from extras import callout
+from parts import PARTS
 
 SHORT = os.path.join(RAW, "short")
 IMGDIR = os.path.join(BOARD, "Gap Kompilasi - gambar")
@@ -45,7 +48,7 @@ def render(doc, lines):
             p = doc.add_paragraph()
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             p.paragraph_format.keep_with_next = True
-            p.add_run().add_picture(path, width=Cm(9.0 if "lux" in name else 13.0))
+            p.add_run().add_picture(path, width=Cm(9.0 if ("lux" in name or "tall" in name) else 13.0))
             cp = doc.add_paragraph()
             cp.alignment = WD_ALIGN_PARAGRAPH.CENTER
             cr = cp.add_run(cap)
@@ -84,34 +87,34 @@ for t, instr in (("begin", None), (None, "PAGE"), ("end", None)):
     r.font.size = Pt(8)
 
 doc.add_paragraph("CATATAN TAMBAHAN BOARD: GAP DARI KOMPILASI SOAL 2016 SAMPAI 2026", style="Title")
-p = doc.add_paragraph(); r = p.add_run("Bagian A (pilot): Ergonomi kantor dan antropometri"); r.font.size = Pt(13)
+letters = ", ".join(p["letter"] for p in PARTS)
+p = doc.add_paragraph(); r = p.add_run("Bagian " + letters + ": " + "; ".join(p_["letter"] + " " + p_["name"].lower() for p_ in PARTS)); r.font.size = Pt(12)
 p = doc.add_paragraph()
-r = p.add_run("Catatan persiapan ujian board Kedokteran Okupasi (Sp.Ok). Disusun mengikuti 'Outline Catatan Tambahan - Gap Kompilasi' dari jawaban NotebookLM (notebook Board Notes - Gap), "
-              "ditambah teks resmi Permenaker No. 5 Tahun 2018 beserta Lampiran 2 (pencahayaan) dan Lampiran 6 (standar ergonomi) yang dibaca langsung dari salinan teks karena "
-              "salinan di notebook adalah hasil pindai. Standar Indonesia diutamakan; sumber internasional (Bodyspace, LaDou & Harrison, OSHA) dipakai sebagai pelengkap dan ditandai. "
-              "Yang sudah ada di catatan lama (misalnya ROSA, RULA, REBA di catatan JSA) tidak diulang dan hanya ditunjuk. Kotak kuning = clinical pearl; kotak merah muda = catatan sumber yang perlu diverifikasi. "
-              "STATUS: bagian A selesai; bagian B sampai G dan tambahan H menyusul setelah format ini disetujui.")
+r = p.add_run("Catatan persiapan ujian board Kedokteran Okupasi (Sp.Ok). Disusun mengikuti 'Outline Catatan Tambahan - Gap Kompilasi' dari jawaban NotebookLM (notebook Board Notes - Gap) "
+              "dan, bila notebook tidak dapat membaca (salinan hasil pindai), dari teks resmi regulasi yang dibaca langsung (Permenaker No. 5 Tahun 2018 beserta lampirannya). "
+              "Standar Indonesia diutamakan; sumber internasional dipakai sebagai pelengkap dan ditandai. "
+              "Yang sudah ada di catatan lama (misalnya ROSA, RULA, REBA di catatan JSA; nilai ambang, BEI, IARC di Catatan Toksikologi) tidak diulang dan hanya ditunjuk. "
+              "Kotak kuning = clinical pearl; kotak merah muda = catatan sumber yang perlu diverifikasi. "
+              "STATUS: bagian lain menyusul sesuai outline.")
 r.font.size = Pt(9.5); r.italic = True
 
 doc.add_paragraph().add_run("Daftar isi").bold = True
-for t in ("A.1 Pengertian dan keluhan khas pekerja komputer", "A.2 Monitor", "A.3 Keyboard dan mouse",
-          "A.4 Kursi dan meja", "A.5 Pencahayaan ruang kerja", "A.6 Istirahat mikro dan rotasi",
-          "A.7 Antropometri", "A.8 Alat penilaian",
-          "A.9 Rangkuman: soal yang pernah keluar, latihan hitung, soal vignette",
-          "A.10 Catatan kualitas dan sumber"):
-    doc.add_paragraph(t, style="List Bullet").paragraph_format.space_after = Pt(0)
+for part in PARTS:
+    pp = doc.add_paragraph()
+    rr = pp.add_run(part["letter"] + ". " + part["name"].upper())
+    rr.bold = True
+    pp.paragraph_format.space_after = Pt(0)
+    for title, f in part["sections"]:
+        doc.add_paragraph(title, style="List Bullet").paragraph_format.space_after = Pt(0)
 doc.add_page_break()
 
-doc.add_heading("A. ERGONOMI KANTOR DAN ANTROPOMETRI", level=1)
-SECTIONS = [("A.1 Pengertian dan keluhan khas pekerja komputer", "A1"), ("A.2 Monitor", "A2"),
-            ("A.3 Keyboard dan mouse", "A3"), ("A.4 Kursi dan meja", "A4"),
-            ("A.5 Pencahayaan ruang kerja", "A5"), ("A.6 Istirahat mikro dan rotasi", "A6"),
-            ("A.7 Antropometri", "A7"), ("A.8 Alat penilaian", "A8"),
-            ("A.9 Rangkuman: soal yang pernah keluar, latihan hitung, soal vignette", "A9"),
-            ("A.10 Catatan kualitas dan sumber", "A10")]
-for title, f in SECTIONS:
-    doc.add_heading(title, level=2)
-    render(doc, read(f))
+for pi, part in enumerate(PARTS):
+    if pi:
+        doc.add_page_break()
+    doc.add_heading(part["letter"] + ". " + part["name"].upper(), level=1)
+    for title, f in part["sections"]:
+        doc.add_heading(title, level=2)
+        render(doc, read(f))
 
 doc.save(OUT)
 print("saved", OUT)
