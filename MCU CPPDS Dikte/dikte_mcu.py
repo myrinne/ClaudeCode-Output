@@ -1,5 +1,5 @@
-"""Dikte MCU CPPDS: rekam anamnesis -> transkrip lokal (faster-whisper) -> susun template (claude -p)
--> tambahkan ke hasil/<tanggal>.md dan salin anamnesis ke clipboard.
+"""Dikte MCU CPPDS: rekam anamnesis -> transkrip lokal (faster-whisper, per potongan selama rekam)
+-> susun template (claude -p) -> tambahkan ke hasil/<tanggal>.md dan salin anamnesis ke clipboard.
 
 Jalankan lewat "Jalankan Dikte MCU.bat". F9 (global) = mulai/stop rekam.
 """
@@ -12,7 +12,6 @@ import queue
 import re
 import shutil
 import subprocess
-import sys
 import threading
 import time
 import tkinter as tk
@@ -22,13 +21,16 @@ from tkinter import scrolledtext
 # ---- pengaturan ----
 HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE / "hasil"
-AUDIO_DIR = HERE / "hasil" / "_audio"
 PROMPT_FILE = HERE / "instruksi_ringkas.md"
 WORK_DIR = Path.home() / ".cache" / "mcu-dikte-work"  # cwd netral untuk claude -p (tanpa CLAUDE.md repo)
-WHISPER_MODELS = ["large-v3-turbo", "small"]  # dicoba berurutan; small sudah ada di cache
+AUDIO_DIR = WORK_DIR / "audio"  # di luar OneDrive: audio pasien tidak ikut tersinkron ke cloud
+# dicoba berurutan; folder lokal dipakai karena unduhan HF via symlink gagal di Windows ini
+WHISPER_MODELS = [str(Path.home() / ".cache" / "mcu-dikte-models" / "large-v3-turbo"), "large-v3-turbo", "small"]
+WHISPER_THREADS = 8  # 8 vs 12 thread hampir sama (diuji 2026-10-19)
+CHUNK_SECONDS = 30  # audio dipotong & ditranskripsi selagi rekaman berjalan
 CLAUDE_MODEL = os.environ.get("DIKTE_CLAUDE_MODEL", "sonnet")
 CLAUDE_TIMEOUT = 120
-KEEP_AUDIO = False  # audio dihapus setelah transkrip berhasil
+KEEP_AUDIO = False  # potongan audio dihapus setelah ditranskripsi
 HOTKEY_VK = 0x78  # F9
 INITIAL_PROMPT = (
     "Pemeriksaan kesehatan calon PPDS FKUI. Anamnesis: keluhan, riwayat penyakit, alergi, obat, "
@@ -58,27 +60,45 @@ def find_mic():
     return mics[0] if mics else None
 
 
-class Recorder:
-    def __init__(self, mic):
-        self.mic = mic
+class Session:
+    """Satu rekaman = satu peserta."""
+
+    def __init__(self, ident):
+        self.t = dt.datetime.now()
+        self.ident = ident
+        self.dir = AUDIO_DIR / f"{self.t:%Y%m%d-%H%M%S}"
+        self.dir.mkdir(parents=True, exist_ok=True)
+        self.texts = []
+        self.done = set()  # nama potongan yang sudah ditranskripsi
+        self.carry = None  # audio ekor potongan sebelumnya (kata yang terpotong di batas)
+        self.stopped = False
         self.proc = None
-        self.path = None
 
-    def start(self, path):
-        self.path = path
-        self.proc = subprocess.Popen(
-            [FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-f", "dshow", "-i", f"audio={self.mic}",
-             "-ac", "1", "-ar", "16000", str(path)],
-            stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE,
-            creationflags=subprocess.CREATE_NO_WINDOW)
 
-    def stop(self):
-        try:
-            self.proc.communicate(b"q", timeout=10)
-        except subprocess.TimeoutExpired:
-            self.proc.kill()
-        p, self.proc = self.path, None
-        return p
+def start_recording(mic, session):
+    session.proc = subprocess.Popen(
+        [FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-f", "dshow", "-i", f"audio={mic}",
+         "-ac", "1", "-ar", "16000", "-f", "segment", "-segment_time", str(CHUNK_SECONDS),
+         str(session.dir / "%03d.wav")],
+        stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE,
+        creationflags=subprocess.CREATE_NO_WINDOW)
+
+
+def stop_recording(session):
+    try:
+        session.proc.communicate(b"q", timeout=10)
+    except subprocess.TimeoutExpired:
+        session.proc.kill()
+    session.stopped = True
+
+
+def load_wav(path):
+    """WAV 16 kHz mono (hasil ffmpeg) -> float32; menghindari decoder PyAV yang versinya tidak cocok."""
+    import numpy as np
+    import wave
+    with wave.open(str(path), "rb") as w:
+        pcm = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16)
+    return pcm.astype(np.float32) / 32768.0
 
 
 def today_md():
@@ -215,11 +235,12 @@ class App:
     def __init__(self, root):
         self.root = root
         self.ui = queue.Queue()
-        self.jobs = queue.Queue()
+        self.sessions = []  # menunggu/sedang ditranskripsi, urut waktu
+        self.lock = threading.Lock()
+        self.jobs = queue.Queue()  # sudah selesai transkripsi -> Claude
         self.model = None
         self.model_name = None
-        self.recording = False
-        self.rec_started = None
+        self.current = None
         self.last_anamnesis = ""
         self.last_pf = ""
 
@@ -250,11 +271,11 @@ class App:
         if not self.mic:
             self.status.config(text="❌ Mikrofon tidak ditemukan oleh ffmpeg.", fg="red")
             return
-        self.rec = Recorder(self.mic)
         self.warm = WarmClaude()
         root.protocol("WM_DELETE_WINDOW", self.quit)
         threading.Thread(target=self.load_model, daemon=True).start()
-        threading.Thread(target=self.worker, daemon=True).start()
+        threading.Thread(target=self.asr_loop, daemon=True).start()
+        threading.Thread(target=self.claude_loop, daemon=True).start()
         self.hk = Hotkey(lambda: self.ui.put(("toggle", None)))
         self.hk.start()
         root.after(100, self.poll)
@@ -272,41 +293,39 @@ class App:
                 elif kind == "ready":
                     self.btn.config(state="normal")
                     hk = "" if self.hk.ok else "  (F9 global tidak tersedia, pakai tombol)"
-                    self.status.config(text=f"Siap. Whisper: {self.model_name} · Claude: {CLAUDE_MODEL}{hk}")
+                    self.status.config(text=f"Siap. Whisper: {Path(self.model_name).name} · Claude: {CLAUDE_MODEL}{hk}")
                 elif kind == "result":
                     self.show(val)
-                elif kind == "queue":
-                    self.queue_lbl.config(text=val)
         except queue.Empty:
             pass
-        if self.recording:
-            s = int(time.time() - self.rec_started)
+        if self.current:
+            s = int(time.time() - self.current.t.timestamp())
             self.btn.config(text=f"⏹  Stop  (F9)   {s // 60:02d}:{s % 60:02d}")
+        with self.lock:
+            waiting = len([s for s in self.sessions if s.stopped])
+        pending = waiting + self.jobs.qsize()
+        self.queue_lbl.config(text=f"Peserta sedang diproses: {pending}" if pending else "")
         self.root.after(200, self.poll)
 
     def toggle(self):
-        if not self.recording:
-            AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-            self.rec.start(AUDIO_DIR / f"{dt.datetime.now():%Y%m%d-%H%M%S}.wav")
-            self.recording, self.rec_started = True, time.time()
+        if not self.current:
+            s = Session(self.ident.get().strip())
+            start_recording(self.mic, s)
+            with self.lock:
+                self.sessions.append(s)
+            self.current = s
             self.btn.config(bg="#f6d0d0")
         else:
-            wav = self.rec.stop()
-            self.recording = False
+            stop_recording(self.current)
+            self.current = None
             self.btn.config(text="⏺  Rekam  (F9)", bg="#d9f2d9")
-            self.jobs.put((wav, self.ident.get().strip(), dt.datetime.now()))
             self.ident.delete(0, "end")
-            self.update_queue()
 
     def quit(self):
-        if self.recording:
-            self.rec.stop()
+        if self.current:
+            stop_recording(self.current)
         self.warm.close()
         self.root.destroy()
-
-    def update_queue(self):
-        n = self.jobs.qsize()
-        self.ui.put(("queue", f"Antrian proses: {n}" if n else ""))
 
     def copy(self, text):
         if text:
@@ -326,62 +345,116 @@ class App:
         from faster_whisper import WhisperModel
         for name in WHISPER_MODELS:
             try:
-                self.ui.put(("status", f"Memuat model Whisper {name}…"))
-                self.model = WhisperModel(name, device="cpu", compute_type="int8")
-                self.model_name = name
+                self.ui.put(("status", f"Memuat model Whisper {Path(name).name}…"))
+                model = WhisperModel(name, device="cpu", compute_type="int8", cpu_threads=WHISPER_THREADS)
+                import numpy as np
+                list(model.transcribe(np.zeros(16000 * 3, dtype=np.float32), language="id")[0])  # pemanasan
+                self.model, self.model_name = model, name
                 break
             except Exception:
                 continue
         self.ui.put(("ready", None) if self.model else ("status", "❌ Model Whisper gagal dimuat."))
 
-    def worker(self):
+    def asr_loop(self):
         while True:
-            wav, ident, t = self.jobs.get()
-            self.update_queue()
-            no = next_number()
-            tag = f"#{no} {ident}".strip()
             try:
-                self.ui.put(("status", f"{tag}: transkripsi…"))
-                t0 = time.time()
-                segs, _ = self.model.transcribe(str(wav), language="id", vad_filter=True, beam_size=1,
-                                                initial_prompt=INITIAL_PROMPT)
-                transcript = " ".join(s.text.strip() for s in segs)
-                t_asr = time.time() - t0
-            except Exception as e:
-                self.ui.put(("result", {"anamnesis": "", "pf": "", "ok": False,
-                                        "view": f"Transkripsi gagal: {e}\nAudio disimpan: {wav}",
-                                        "msg": f"{tag}: transkripsi gagal, audio disimpan"}))
-                continue
+                self.asr_step()
+            except Exception as e:  # thread ini tidak boleh mati, atau semua peserta berikutnya macet
+                self.ui.put(("status", f"⚠ galat transkripsi: {e}"))
+                time.sleep(1)
+
+    def asr_step(self):
+        """Transkripsi potongan yang sudah lengkap (semua kecuali yang sedang ditulis ffmpeg)."""
+        import numpy as np
+        with self.lock:
+            s = self.sessions[0] if self.sessions else None
+        if not s or not self.model:
+            time.sleep(0.5)
+            return
+        stopped = s.stopped  # dibaca SEBELUM daftar potongan, supaya potongan terakhir tidak terlewat
+        chunks = sorted(s.dir.glob("*.wav"))
+        ready = [c for c in (chunks if stopped else chunks[:-1]) if c.name not in s.done]
+        if not ready:
+            if stopped:
+                with self.lock:
+                    self.sessions.pop(0)
+                if not KEEP_AUDIO and not any("gagal" in t for t in s.texts):
+                    shutil.rmtree(s.dir, ignore_errors=True)
+                self.jobs.put(s)
+            else:
+                time.sleep(0.5)
+            return
+        c = ready[0]
+        last = stopped and c == chunks[-1]
+        try:
+            audio = load_wav(c)
+            if s.carry is not None:
+                audio = np.concatenate([s.carry, audio])
+            segs = list(self.model.transcribe(
+                audio, language="id", vad_filter=True, beam_size=1,
+                initial_prompt=INITIAL_PROMPT + " " + " ".join(s.texts)[-300:])[0])
+            # segmen yang menempel di ujung potongan mungkin terpotong: audionya dibawa ke potongan berikutnya
+            if not last and segs and segs[-1].end > len(audio) / 16000 - 1.5:
+                s.carry = audio[int(segs.pop().start * 16000):]
+            else:
+                s.carry = None
+            s.texts.append(" ".join(x.text.strip() for x in segs))
             if not KEEP_AUDIO:
-                Path(wav).unlink(missing_ok=True)
-            data, err = None, ""
+                c.unlink(missing_ok=True)
+        except Exception as e:
+            s.texts.append(f"[potongan {c.name} gagal ditranskripsi: {e}; audio disimpan di {c}]")
+        s.done.add(c.name)
+
+    def claude_loop(self):
+        while True:
+            s = self.jobs.get()
+            try:
+                self.claude_step(s)
+            except Exception as e:  # thread ini juga tidak boleh mati
+                self.ui.put(("status", f"⚠ galat peserta {s.ident or f'{s.t:%H:%M}'}: {e}"))
+
+    def claude_step(self, s):
+        transcript = " ".join(t for t in s.texts if t).strip()
+        no = next_number()
+        tag = f"#{no} {s.ident}".strip()
+        data, err = None, ""
+        t1 = time.time()
+        if transcript:
             try:
                 self.ui.put(("status", f"{tag}: menyusun template (Claude)…"))
-                t1 = time.time()
                 warm, self.warm = self.warm, WarmClaude()
                 try:
-                    data = warm.ask(transcript, ident)
+                    data = warm.ask(transcript, s.ident)
                 except Exception:
-                    data = run_claude(transcript, ident)
-                t_llm = time.time() - t1
+                    data = run_claude(transcript, s.ident)
             except Exception as e:
                 err = str(e) or type(e).__name__
-                t_llm = 0
-            with today_md().open("a", encoding="utf-8") as f:
-                f.write(render_entry(no, t, ident, data, transcript, err))
-            if data:
-                pf = "\n".join(data.get("pf_abnormal") or [])
-                icd = "\n".join(f"{i['kode']}  {i['nama']}" for i in data.get("icd") or [])
-                cek = "\n".join("• " + c for c in data.get("perlu_dicek") or [])
-                view = (data["anamnesis"].strip() + "\n\n— PF abnormal —\n" + (pf or "tidak ada") +
-                        "\n\n— Saran ICD-10 —\n" + (icd or "-") + ("\n\n— ⚠ Perlu dicek —\n" + cek if cek else ""))
-                msg = f"✅ {tag}: anamnesis sudah di clipboard (ASR {t_asr:.0f}s + Claude {t_llm:.0f}s)"
-                self.ui.put(("result", {"anamnesis": data["anamnesis"].strip(), "pf": pf, "view": view,
-                                        "ok": True, "msg": msg}))
-            else:
-                self.ui.put(("result", {"anamnesis": transcript, "pf": "", "ok": False,
-                                        "view": f"Penyusunan gagal ({err}).\n\nTranskrip mentah (di clipboard):\n\n{transcript}",
-                                        "msg": f"⚠ {tag}: Claude gagal, transkrip mentah di clipboard"}))
+        else:
+            err = "transkrip kosong (mikrofon mati / tidak ada suara?)"
+        t_llm = time.time() - t1
+        if data:
+            pf = "\n".join(data.get("pf_abnormal") or [])
+            icd = "\n".join(f"{i['kode']}  {i['nama']}" for i in data.get("icd") or [])
+            cek = "\n".join("• " + c for c in data.get("perlu_dicek") or [])
+            view = (data["anamnesis"].strip() + "\n\n— PF abnormal —\n" + (pf or "tidak ada") +
+                    "\n\n— Saran ICD-10 —\n" + (icd or "-") + ("\n\n— ⚠ Perlu dicek —\n" + cek if cek else ""))
+            msg = f"✅ {tag}: anamnesis sudah di clipboard (Claude {t_llm:.0f} dtk)"
+            self.ui.put(("result", {"anamnesis": data["anamnesis"].strip(), "pf": pf, "view": view,
+                                    "ok": True, "msg": msg}))
+        else:
+            self.ui.put(("result", {"anamnesis": transcript, "pf": "", "ok": False,
+                                    "view": f"Penyusunan gagal ({err}).\n\nTranskrip mentah (di clipboard):\n\n{transcript}",
+                                    "msg": f"⚠ {tag}: transkrip kosong, cek mikrofon" if not transcript
+                                    else f"⚠ {tag}: Claude gagal, transkrip mentah di clipboard"}))
+        entry = render_entry(no, s.t, s.ident, data, transcript, err)
+        for _ in range(5):  # file bisa sesaat dikunci OneDrive
+            try:
+                with today_md().open("a", encoding="utf-8") as f:
+                    f.write(entry)
+                return
+            except PermissionError:
+                time.sleep(1)
+        raise RuntimeError(f"gagal menulis {today_md().name}; hasil tetap ada di jendela/clipboard")
 
 
 if __name__ == "__main__":
