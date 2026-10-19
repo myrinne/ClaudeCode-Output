@@ -16,6 +16,7 @@ import mdconv as M
 from extras import callout
 
 SHORT = os.path.join(RAW, "short")
+IMGDIR = os.path.join(BOARD, "Gap Kompilasi - gambar")
 OUT = sys.argv[1]
 
 
@@ -33,9 +34,23 @@ def render(doc, lines):
             buf.clear()
 
     for l in lines:
+        l = re.sub(r"\[\[([^\]]+)\]\]", r"catatan '\1'", l)   # wikilink -> plain text in docx
         if l.startswith("!PEARL "):
             flush()
             callout(doc, "Clinical pearl: " + re.sub(r"\*+", "", l[7:]), fill="FFF2CC")
+        elif l.startswith("!IMG "):
+            flush()
+            name, cap = [x.strip() for x in l[5:].split("|", 1)]
+            path = os.path.join(IMGDIR, name)
+            p = doc.add_paragraph()
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            p.paragraph_format.keep_with_next = True
+            p.add_run().add_picture(path, width=Cm(9.0 if "lux" in name else 13.0))
+            cp = doc.add_paragraph()
+            cp.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            cr = cp.add_run(cap)
+            cr.italic = True
+            cr.font.size = Pt(8.5)
         elif l.startswith("!SUMBER "):
             flush()
             callout(doc, "CATATAN SUMBER: " + re.sub(r"\*+", "", l[8:]), fill="FDE0DC")
@@ -74,14 +89,14 @@ p = doc.add_paragraph()
 r = p.add_run("Catatan persiapan ujian board Kedokteran Okupasi (Sp.Ok). Disusun mengikuti 'Outline Catatan Tambahan - Gap Kompilasi' dari jawaban NotebookLM (notebook Board Notes - Gap), "
               "ditambah teks resmi Permenaker No. 5 Tahun 2018 beserta Lampiran 2 (pencahayaan) dan Lampiran 6 (standar ergonomi) yang dibaca langsung dari salinan teks karena "
               "salinan di notebook adalah hasil pindai. Standar Indonesia diutamakan; sumber internasional (Bodyspace, LaDou & Harrison, OSHA) dipakai sebagai pelengkap dan ditandai. "
-              "Tiap bab berdiri sendiri. Kotak kuning = clinical pearl; kotak merah muda = catatan sumber yang perlu diverifikasi. "
+              "Yang sudah ada di catatan lama (misalnya ROSA, RULA, REBA di catatan JSA) tidak diulang dan hanya ditunjuk. Kotak kuning = clinical pearl; kotak merah muda = catatan sumber yang perlu diverifikasi. "
               "STATUS: bagian A selesai; bagian B sampai G dan tambahan H menyusul setelah format ini disetujui.")
 r.font.size = Pt(9.5); r.italic = True
 
 doc.add_paragraph().add_run("Daftar isi").bold = True
 for t in ("A.1 Pengertian dan keluhan khas pekerja komputer", "A.2 Monitor", "A.3 Keyboard dan mouse",
           "A.4 Kursi dan meja", "A.5 Pencahayaan ruang kerja", "A.6 Istirahat mikro dan rotasi",
-          "A.7 Antropometri", "A.8 Alat penilaian (ROSA dan lainnya)",
+          "A.7 Antropometri", "A.8 Alat penilaian",
           "A.9 Rangkuman: soal yang pernah keluar, latihan hitung, soal vignette",
           "A.10 Catatan kualitas dan sumber"):
     doc.add_paragraph(t, style="List Bullet").paragraph_format.space_after = Pt(0)
@@ -91,7 +106,7 @@ doc.add_heading("A. ERGONOMI KANTOR DAN ANTROPOMETRI", level=1)
 SECTIONS = [("A.1 Pengertian dan keluhan khas pekerja komputer", "A1"), ("A.2 Monitor", "A2"),
             ("A.3 Keyboard dan mouse", "A3"), ("A.4 Kursi dan meja", "A4"),
             ("A.5 Pencahayaan ruang kerja", "A5"), ("A.6 Istirahat mikro dan rotasi", "A6"),
-            ("A.7 Antropometri", "A7"), ("A.8 Alat penilaian (ROSA dan lainnya)", "A8"),
+            ("A.7 Antropometri", "A7"), ("A.8 Alat penilaian", "A8"),
             ("A.9 Rangkuman: soal yang pernah keluar, latihan hitung, soal vignette", "A9"),
             ("A.10 Catatan kualitas dan sumber", "A10")]
 for title, f in SECTIONS:
