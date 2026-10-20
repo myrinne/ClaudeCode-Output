@@ -7,24 +7,26 @@ Tugas: susun hasilnya mengikuti bagian dokter di template rekam medis. Keluarkan
 
 {
   "identitas": "nama/No RM peserta jika disebut di transkrip, selain itu string kosong",
-  "anamnesis": "teks SUBYEKTIF siap tempel, PERSIS mengikuti 12 baris format di bawah, dipisah \n",
+  "anamnesis": "teks SUBYEKTIF siap tempel, PERSIS mengikuti format di bawah (termasuk 2 baris kosong pemisah), dipisah \n",
   "pf_abnormal": ["temuan pemeriksaan fisik yang TIDAK normal, satu per item, bahasa rekam medis singkat"],
   "icd": [{"kode": "X00.0", "nama": "nama diagnosis (Inggris, seperti di daftar)", "dasar": "kutipan singkat dari transkrip"}],
   "perlu_dicek": ["hal yang ambigu, kemungkinan salah dengar, atau item anamnesis yang tidak ditanyakan"]
 }
 
-FORMAT "anamnesis" (12 baris, urutan tetap):
+FORMAT "anamnesis" (urutan tetap; baris kosong di posisi yang sama):
 Keluhan saat ini : Tidak ada keluhan | Ada keluhan, <keluhan singkat>
 Riwayat Penyakit Sekarang : <ringkas, atau "-">
-Riwayat Penyakit Dahulu dan Pengobatan : <ringkas, atau "-">
+
 Riwayat Alergi : Tidak | Ada; <alergen + reaksi>
 Riwayat Pengobatan : Tidak | Ada; <nama obat, dosis bila disebut>
-Riwayat rawat inap di RS : Tidak | Ada; <apa, kapan>
+Riwayat Rawat inap di RS : Tidak | Ada; <apa, kapan>
 Riwayat Operasi : Tidak | Ada; <apa, kapan>
-Riwayat penggunaan kacamata : Tidak | Ada; <miopia/hipermetropia/astigmat/presbiopia, ukuran bila disebut>
-Riwayat asma : Tidak | Ada; <keterangan>
-Riwayat sakit : <DM, HT, jantung, dll yang disebut; atau "Tidak ada">
-Riwayat Personal Sosial dan Lingkungan : <merokok, alkohol, olahraga, tidur, stres, dll bila disebut; atau "-">
+Riwayat Penggunaan kacamata : Tidak | Ada; <miopia/hipermetropia/astigmat/presbiopia, ukuran bila disebut>
+Riwayat Penyakit: <lihat aturan 7>
+
+Riwayat Personal Sosial dan Lingkungan
+Riwayat Olahraga : <jenis, frekuensi; atau "Tidak rutin">
+Riwayat Merokok/Alkohol: <mis. "Merokok disangkal, alkohol disangkal" atau "Merokok 5 batang/hari; alkohol disangkal">
 Program studi : <Sp1/Sp2 + nama prodi>
 
 ATURAN KERAS:
@@ -41,7 +43,14 @@ ATURAN KERAS:
 6. "perlu_dicek": MAKSIMAL 4 butir, masing-masing <= 12 kata, hanya yang bisa mengubah isian atau diagnosis
    (item "[?]", dugaan salah dengar, angka yang meragukan). Jangan menyoroti identitas/No RM yang tidak disebut,
    detail yang memang tidak relevan untuk Pemkes, atau asumsi kecil yang wajar. Bila tidak ada, [].
-7. Riwayat penyakit keluarga yang disebut ditulis di "Riwayat sakit" dengan awalan "Keluarga:".
+7. "Riwayat Penyakit" menggabungkan penyakit dahulu, penyakit kronik, dan asma. Bentuk bakunya bila semua disangkal:
+   "(DM, hipertensi, kolesterol tinggi, jantung, asma disangkal)". Bila ada yang positif, tulis yang positif dulu lalu
+   sisanya dalam kurung, mis. "Hipertensi sejak 2022, terkontrol amlodipin 5 mg; tifoid 2019 (DM, kolesterol tinggi, jantung, asma disangkal)".
+   Penyakit dahulu lain yang disebut (mis. tifoid, DBD) juga ditulis di sini. Hanya penyakit yang benar-benar ditanyakan
+   yang boleh ditulis "disangkal"; yang tidak ditanyakan tulis "[?]" di dalam kurung, mis. "(DM, hipertensi disangkal; kolesterol, jantung, asma [?])".
+   Riwayat penyakit keluarga yang disebut ditambahkan di akhir baris ini dengan awalan "Keluarga:".
+8. Baris "Riwayat Personal Sosial dan Lingkungan" adalah judul tanpa isi. Hal sosial lain yang relevan (tidur, stres, jaga malam)
+   bila disebut ditulis setelah judul itu dengan " : ", selain itu biarkan judulnya saja.
 
 DAFTAR ICD (dari template dokter pengarah + tambahan umum):
 I10 Essential (primary) hypertension

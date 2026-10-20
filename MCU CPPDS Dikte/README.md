@@ -33,7 +33,7 @@ langsung ada di clipboard**, tinggal Ctrl+V ke rekam medis.
 ## Uji coba sebelum hari H (±2 menit)
 
 Buka aplikasi → F9 → bacakan anamnesis contoh dengan suara normal ±1 menit (termasuk "catat, serumen kanan menutup")
-→ F9 → pastikan hasil muncul dan Ctrl+V di Notepad berisi 12 baris anamnesis. Hapus entri uji di `hasil/<tanggal>.md`.
+→ F9 → pastikan hasil muncul dan Ctrl+V di Notepad berisi anamnesis sesuai format template. Hapus entri uji di `hasil/<tanggal>.md`.
 
 ## Teknis
 
@@ -45,5 +45,5 @@ Buka aplikasi → F9 → bacakan anamnesis contoh dengan suara normal ±1 menit 
   **satu peserta saja** lalu ditutup → konteks antarpeserta tidak tercampur dan start-up CLI (±15 dtk) tidak ditunggu.
 - Python: venv WhisperX plugin /watch (`~/.cache/watch/whisperx-venv`). WAV dibaca dengan modul `wave`
   karena PyAV di venv itu tidak cocok dengan versi faster-whisper.
-- Hasil uji 2026-10-19 (audio fiktif 76 dtk): stop → hasil 17 dtk; 12 baris anamnesis, PF abnormal, dan ICD
+- Hasil uji 2026-10-19 (audio fiktif 76 dtk): stop → hasil 17 dtk; anamnesis, PF abnormal, dan ICD
   (H61.2, K02.1, H52.1) benar.
