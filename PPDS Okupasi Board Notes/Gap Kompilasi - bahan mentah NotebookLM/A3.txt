@@ -1,0 +1,105 @@
+Jelaskan rinci posisi KEYBOARD dan MOUSE serta sikap tubuh saat mengetik: posisi pergelangan tangan netral (lurus, hindari ekstensi dan deviasi ulnar/radial, wrist rest), sudut siku (sekitar 90 derajat atau lebih), posisi bahu rileks dan lengan atas, tinggi dan jarak keyboard, penempatan mouse, kemiringan keyboard, serta kaitannya dengan carpal tunnel syndrome dan gangguan muskuloskeletal ekstremitas atas. Sertakan angka persis dari sumber dan sebutkan sumbernya.
+
+
+Thoughts
+Selamat belajar, Dokter. Sebagai calon Spesialis Kedokteran Okupasi, Anda harus menguasai prinsip biomekanika dan parameter kuantitatif stasiun kerja komputer secara presisi. Berikut adalah penjelasan komprehensif mengenai pengaturan posisi keyboard, mouse, dan sikap tubuh mengetik yang ergonomis berdasarkan literatur spesialis yang diunggah:
+1. Posisi Pergelangan Tangan (Wrist Posture) & Wrist Rest
+Postur Netral (In-Line Wrist): Saat mengetik dan mengoperasikan mouse, pergelangan tangan harus dipertahankan dalam posisi lurus/netral, yaitu berada dalam satu garis lurus dengan lengan bawah (in-line with forearms).
+Posisi Janggal yang Wajib Dihindari:
+Ekstensi Pergelangan Tangan (Wrist Extension / Backward Bending): Menekuk pergelangan ke atas.
+Fleksi Pergelangan Tangan (Wrist Flexion / Forward Bending): Menekuk pergelangan ke bawah.
+Deviasi Ulnar (Ulnar Deviation): Menekuk pergelangan ke arah samping (ke arah jari kelingking). Ini terjadi paling sering saat menggunakan keyboard datar standar karena susunan tombol memicu jari-jari dipaksa sejajar.
+Deviasi Radial (Radial Deviation): Menekuk pergelangan ke arah ibu jari.
+Ketentuan & Spesifikasi Wrist Rest:
+Berdasarkan ISO 9241-5, area penyangga pergelangan tangan (wrist support surface) di depan keyboard harus memiliki kedalaman minimal 100 mm dengan tepi yang melengkung halus (radiused edge).
+Wrist rest berfungsi untuk menyangga pergelangan/lengan bawah saat istirahat sejenak di sela-sela mengetik, bukan ditekankan secara terus-menerus saat tombol aktif diketik.
+Bahaya Contact Stress: Menekan pergelangan tangan secara konstan pada tepi meja yang tajam (sharp desktop edge) memicu blunt trauma dan tekanan lokal langsung pada saraf medianus (carpal tunnel) atau saraf ulnaris.
+2. Sudut Siku (Elbow Angle)
+Siku Fleksi 90° hingga Sudut Terbuka Rileks:
+Lengan bawah diposisikan sejajar atau hampir horizontal terhadap lantai (forearm horizontal).
+Sudut fleksi siku ideal adalah sekitar 90° (right angle), atau berada dalam rentang nyaman 80° hingga 120° (Rebiffé; Pheasant & Haslegrave Table 4.10).
+Siku dipertahankan tetap dekat dengan sisi tubuh (elbows close to body).
+Konsekuensi Biomekanik: Fleksi siku yang terlalu ekstrem (<80°) atau posisi siku terangkat/tergantung tanpa penopang memicu kontraksi statis berlebih pada otot biceps dan trapezius.
+3. Posisi Bahu dan Lengan Atas (Shoulder & Upper Arm)
+Bahu Rileks & Lengan Atas Menggantung Bebas:
+Bahu harus berada pada posisi rileks (shoulders relaxed). Pekerja harus menghindari posisi bahu terangkat/terhuncur (shoulder elevation / hunched shoulders).
+Lengan atas menggantung bebas di samping tubuh (upper arms hanging freely by the sides).
+Dampak Posisi Salah:
+Jika meja atau keyboard terlalu tinggi, pekerja memosisikan bahunya terangkat (elevated) atau terabduksi ke samping (shoulder abduction).
+Abduksi bahu memaksa wrist melakukan deviasi ulnar kompensatorik agar posisi jari tetap dapat menjangkau baris tombol keyboard. Kombinasi ini meningkatkan beban otot statis pada otot trapezius dan deltoideus.
+4. Tinggi, Jarak, dan Kemiringan Keyboard (Keyboard Height, Distance & Slope)
+Tinggi Baris Utama (Home Row Height):
+Baris tombol utama (home row: ASDFG) harus diposisikan sejajar/setinggi siku duduk pekerja (sitting elbow height).
+Karena keyboard memiliki ketebalan standar 30–50 mm, permukaan meja kerja harus cukup rendah (atau tinggi kursi disesuaikan dengan penambahan footrest) agar home row tetap tepat berada di tinggi siku.
+Jarak Keyboard:
+Diletakkan dalam area kerja normal (normal working area), yaitu rentang jangkauan nyaman lengan bawah tanpa perlu mengulurkan lengan atas ke depan (sekitar 25–45 cm di depan panggul).
+Kemiringan Keyboard (Slope / Tilt):
+Keyboard sebaiknya sangat landai (slight rake) atau datar (0°).
+Kemiringan Negatif (Negative Tilt): Penelitian oleh Hedge et al. (1999) dan Simoneau & Marklin (2001) menunjukkan bahwa baki keyboard dengan negative tilt (bagian belakang keyboard lebih rendah dari bagian depan) secara signifikan mengurangi sudut ekstensi pergelangan tangan dan deviasi ulnar.
+Kekuatan Penekanan Tombol (Key Actuation Force):
+Standar ISO 9241-4 dan ANSI/HFS 100-1988 menetapkan batas maksimum key actuation force sebesar 1,5 N, dengan rentang preferensi ideal 0,5 N hingga 0,8 N dan kedalaman penekanan (key displacement) antara 2 mm hingga 4 mm.
+5. Penempatan Mouse (Mouse Placement) & Isu Keyboard Standar
+Lokasi & Jangkauan:
+Mouse diletakkan tepat di samping keyboard pada ketinggian yang sama, di dalam zona jangkauan lengan bawah.
+Masalah Keyboard Standar (Numeric Keypad Barrier):
+Keyboard komputer standar yang dilengkapi numeric keypad di sebelah kanan memaksa posisi mouse bergeser jauh ke samping kanan.
+Penelitian Cook & Kothiyal (1998) serta Karlqvist et al. (1994) membuktikan bahwa penempatan mouse yang terlalu jauh ke samping menyebabkan abduksi bahu (>30°), rotasi luar bahu (external rotation), serta deviasi ulnar pergelangan tangan >15° sepanjang waktu kerja.
+Solusi Ergonomis:
+Menggunakan short keyboard / mini-keyboard (tanpa numeric keypad) agar mouse berada lebih dekat ke garis tengah tubuh (midline).
+Menggunakan meja bentuk-L (curved/L-shaped desk) atau padded forearm support yang menopang seluruh lengan bawah saat mengoperasikan mouse untuk menurunkan beban statis otot deltoideus anterior dan trapezius.
+6. Patomekanisme & Hubungan dengan Carpal Tunnel Syndrome (CTS) serta WRULD
+Postur Janggal (Ekstensi/Fleksi/Deviasi Ulnar) + Beban Statis Lengan Bawah
+                                  │
+                                  ▼
+Penyempitan Ruang Dalam Carpal Tunnel (Volar) / Gesekan Tendon Fleksor
+                                  │
+                                  ▼
+ Tenosynovitis Tendon Fleksor & Penekanan Saraf Medianus (Median Nerve Entrapment)
+                                  │
+                                  ▼
+ Carpal Tunnel Syndrome (CTS) & Disseminated Overuse Syndrome (WRULD Type II)
+Patofisiologi Carpal Tunnel Syndrome (CTS):
+Carpal tunnel adalah lorong kaku yang dibatasi oleh tulang-tulang karpal di bagian dorsal dan transverse carpal ligament di bagian volar, dilalui oleh 9 tendon fleksor dan saraf medianus.
+Mengetik dengan pergelangan tangan dalam posisi ekstensi, fleksi, atau deviasi ulnar meningkatkan tekanan hidrostatis intrakarpal secara bermakna. Tekanan mekanis ini menekan saraf medianus, memicu iskemia saraf, gangguan transpor aksonal, hingga timbul gejala CTS (parestesia/kesemutan pada jari I, II, III, dan separuh jari IV).
+Beban Otot Statis (Static Muscle Loading):
+Onishi et al. (1982) menunjukkan bahwa postur kerja keyboard yang buruk menimbulkan static muscle loading hingga 30% dari kapasitas maksimum otot.
+Karakteristik penderita komputer umumnya mengalami Type II WRULD / Disseminated Overuse Syndrome (diffuse RSI) akibat fatigue otot statis yang menyebar dari ekstensor lengan bawah, trapezius, hingga leher.
+Efek Ambang Waktu Pajanan (Exposure Threshold Effect):
+Penelitian Oxenburgh (1984) pada operator komputer menunjukkan threshold effect di mana prevalensi RSI/WRULD meningkat tajam menjadi 70% pada penggunaan keyboard >6 jam per hari (dengan Relative Risk / RR = 2,6 dibandingkan prevalensi rata-rata).
+7. Ringkasan Parameter Spesifik & Rujukan Sumber
+Parameter Ergonomis
+Nilai / Angka Standar Spesifik
+Sumber Literatur
+Posisi Pergelangan Tangan
+Netral / Lurus (in-line with forearm); hindari ekstensi, fleksi, deviasi ulnar/radial.
+LaDou & Harrison, OSHA
+Kedalaman Wrist Rest
+Kedalaman ≥ 100 mm di depan tombol keyboard, tepi melengkung (radiused).
+ISO 9241-5, Pheasant
+Sudut Fleksi Siku
+90° (atau rentang nyaman 80°–120°), lengan bawah horizontal.
+Pheasant (Table 4.10)
+Tinggi Keyboard
+Baris Home Row (ASDFG) setinggi siku duduk (sitting elbow height).
+Pheasant
+Kemiringan Keyboard
+Datar / landai (slight rake) atau kemiringan negatif (negative tilt).
+Hedge et al., Pheasant
+Gaya Penekanan Tombol
+Maksimum 1,5 N (Preferensi ISO 9241-4: 0,5 – 0,8 N); travel 2 – 4 mm.
+ISO 9241-4, ANSI/HFS 100
+Solusi Posisi Mouse
+Gunakan short keyboard (tanpa angka) agar mouse dekat garis tengah tubuh (midline).
+Cook & Kothiyal, Pheasant
+Batas Ambang Pajanan RSI
+Peningkatan risiko tajam (prevalensi 70%, RR 2,6) pada penggunaan >6 jam/hari.
+Oxenburgh (1984), Pheasant
+Sumber Referensi Resmi yang Dipakai:
+Pheasant, S. & Haslegrave, C. M. (2006). Bodyspace: Anthropometry, Ergonomics and the Design of Work (3rd ed.). Taylor & Francis. Bab 6 (Hand and Wrist), Bab 7 (Office Ergonomics), & Bab 9 (WRULD/RSI). (BODYSP~1.PDF)
+LaDou, J. & Harrison, R. J. (2014/2021). Current Occupational & Environmental Medicine (5th/6th ed.). McGraw-Hill. Bab 15 (Ergonomics & Prevention) & Bab 6 (Upper Extremity Disorders). (CURREN~1.PDF)
+Occupational Safety and Health Administration (OSHA). eTools: Computer Workstations. U.S. Department of Labor. (eTools : Computer Workstations | OSHA)
+American Conference of Governmental Industrial Hygienists (ACGIH). (2026). TLVs and BEIs: Hand Activity Level (HAL). (Referensi TLV BEI 2026 - ACGIH.pdf)
+💡 Apakah Anda ingin kita melatih pembahasan soal kasus klinis membedakan Carpal Tunnel Syndrome dengan De Quervain Tenosynovitis dan Cubital Tunnel Syndrome dalam konteks pemeriksaan kesehatan kerja?
+Bagaimana cara melakukan penilaian ergonomi di tempat kerja?
+Apa saja standar internasional untuk desain workstation?
+Jelaskan lebih lanjut tentang pencegahan penyakit akibat kerja.

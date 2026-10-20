@@ -1,0 +1,149 @@
+Jelaskan rinci KURSI dan MEJA kerja yang ergonomis: tinggi dudukan (kaitannya dengan lutut/popliteal dan telapak kaki di lantai), kedalaman dudukan, sandaran punggung dan dukungan lumbal, sandaran lengan, ruang kaki di bawah meja, tinggi permukaan meja kerja terhadap siku, sandaran kaki, dan posisi duduk dinamis. Sertakan angka persis (cm, derajat) dari sumber dan sebutkan sumbernya.
+
+
+Thoughts
+Selamat belajar, Dokter. Sebagai calon Spesialis Kedokteran Okupasi, penguasaan parameter antropometri dan biomekanika pada stasiun kerja duduk (seated workstation) merupakan kompetensi inti, baik untuk evaluasi klinis Penyakit Akibat Kerja (PAK) maupun intervensi ergonomi di tempat kerja.
+Berikut adalah penjelasan rincimengenai spesifikasi ergonomis kursi dan meja kerja berdasarkan literatur spesialis yang diunggah:
+1. Tinggi Dudukan Kursi (Seat Height - H)
+Prinsip Antropometri & Biomekanika: Tinggi dudukan kursi disesuaikan secara langsung dengan tinggi popliteal (popliteal height) pekerja, yaitu jarak vertikal dari alas kaki/sol sepatu ke lekuk bagian belakang lutut (popliteal angle) saat paha posisi horizontal dan lower leg vertikal
+.
+Kaitan dengan Lutut & Telapak Kaki:
+Dudukan Terlalu Tinggi (> Tinggi Popliteal): Paha bagian bawah tertekan oleh tepi depan kursi (under-thigh pressure). Hal ini menekan pembuluh darah vena dan saraf srofi, memicu gangguan sirkulasi darah balik, sensasi kesemutan (pins and needles), edema/pembengkakan pada tungkai bawah dan pergelangan kaki, hingga meningkatkan risiko eThrombosis
+.
+Dudukan Terlalu Rendah (< Tinggi Popliteal): Terjadi fleksi panggul yang ekstrem (<90°), yang memaksa rotasi pelvis ke belakang (posterior pelvic tilt). Hal ini menyebabkan tulang belakang kehilangan lordosis lumbalis alami (menjadi kifosis/membungkuk) dan meningkatkan tekanan intradiskal lumbal secara drastis
+.
+Kondisi Ideal: Kedua telapak kaki harus menapak rata di lantai (feet flat on the floor) dengan paha posisi horizontal (sudut fleksi panggul dan lutut sekitar 90°–100°)
+.
+Angka & Rentang Spesifik:
+Rentang penyesuaian tinggi kursi ideal (adjustability range): 380 mm hingga 535 mm (38–53,5 cm)
+. (LaDou & Harrison menyebutkan rentang standar umum 38–48,3 cm / 15–19 inci)
+.
+Nilai kompromi persentil ke-5 wanita (5th percentile female popliteal height): 380 mm – 400 mm (dengan sepatu)
+.
+Rata-rata populasi uniseks dewasa (dengan sepatu): 455 mm (SD = 30 mm)
+.
+2. Kedalaman Dudukan Kursi (Seat Depth - D)
+Prinsip Antropometri & Biomekanika: Kedalaman dudukan ditentukan oleh panjang bokong ke popliteal (buttock-popliteal length)
+.
+Konsekuensi Dudukan Terlalu Dalam: Jika kedalaman dudukan melebihi buttock-popliteal length pekerja berpostur pendek (persentil ke-5 wanita = 435 mm / ~43,5 cm; LaDou menyebutkan >41 cm / 16 inci), tepi depan dudukan akan menekan fosa poplitea (belakang lutut)
+. Pekerja terpaksa duduk merosot ke depan (perching/slouching) sehingga punggung kehilangan kontak dengan sandaran (backrest), yang menghilangkan dukungan lumbal dan memicu nyeri punggung bawah
+.
+Angka & Fitur Desain Spesifik:
+Kedalaman dudukan ideal: 380 mm hingga 430 mm (tidak boleh melebihi 435 mm / 41 cm)
+.
+Desain Tepi Waterfall Contour: Tepi depan dudukan harus melengkung halus ke bawah (rounded/waterfall front edge) untuk mengurangi contact stress pada jaringan lunak paha bawah
+.
+Fitur sliding seat pan (dudukan yang dapat digeser maju-mundur) sangat direkomendasikan untuk menyesuaikan variasi panjang paha pekerja
+.
+3. Sandaran Punggung (Backrest) & Support Lumbal (Lumbar Support)
+Prinsip Biomekanika & Tekanan Intradiskal: Tujuan utama sandaran adalah mempertahankan lordosis lumbalis alami tanpa memerlukan kerja otot statis berlebih
+.
+Penelitian klasik Andersson et al. (1974) membuktikan bahwa duduk tegak lurus (90°) tanpa sandaran menghasilkan tekanan intradiskal yang tinggi (~700 N)
+.
+Reclining sandaran hingga sudut 100° – 110° (backrest angle / rake) yang dilengkapi bantalan lumbal (lumbar pad menonjol 40–50 mm) menurunkan tekanan intradiskal lumbal secara dramatis hingga <200 N (penurunan beban mekanis >35-50%)
+.
+Ukuran & Parameter Spesifik:
+Tinggi Sandaran Punggung (Backrest Height):
+Medium-level backrest (standar kursi kantor modern): ~500 mm di atas permukaan dudukan tertekan (menopang hingga area mid-thoracic/bahu)
+.
+High-level backrest (menopang hingga kepala/leher): ~650 mm – 900 mm
+.
+Posisi & Penyesuaian Lumbar Support:
+Tinggi bantalan lumbal (lumbar pad height): Berada pada rentang 150 mm hingga 250 mm (15–25 cm) di atas permukaan dudukan tertekan (EN 1335-1 / Coleman et al. 1998; rata-rata preferensi ~190 mm)
+.
+Protrusi/Tebal ganjal lumbal: Menonjol 40 mm – 50 mm ke depan dari bidang utama sandaran
+.
+Scapular clearance: Bagian atas sandaran di area skapula sebaiknya berada minimal 6 cm di belakang bidang lumbal agar pergerakan bahu tidak terhalang
+.
+4. Sandaran Lengan (Armrests)
+Prinsip Biomekanika: Sandaran lengan menopang sebagian berat ekstremitas atas, sehingga menurunkan beban otot statis pada otot trapezius, deltoideus, dan levator scapulae di leher dan bahu
+.
+Angka & Spesifikasi Ergonomis:
+Tinggi sandaran lengan di atas permukaan dudukan tertekan: 200 mm hingga 250 mm (20–25 cm) (EN 1335-1)
+.
+Panjang efektif sandaran lengan (useful length): Minimal 200 mm
+.
+Batas Tonjolan Depan: Tidak boleh menonjol lebih dari 350 mm di depan sandaran punggung agar kursi dapat masuk rapat ke bawah meja tanpa membentur tepi meja (mencegah extended reach distance)
+.
+Celah Siku (Elbow Gap): Disarankan terdapat celah sekitar 100 mm antara bagian belakang armrest dengan backrest agar tidak menekan nervus ulnaris yang berada superfisial di area kubiti
+.
+5. Ruang Kaki di Bawah Meja (Legroom / Knee Clearance under Desk)
+Prinsip Antropometri: Harus menyediakan ruang bebas yang cukup secara vertikal, lateral, dan kedalaman untuk mengakomodasi pekerja pria persentil ke-95 (95th percentile male)
+.
+Angka Spesifik:
+Tinggi Bebas Vertikal (Vertical Clearance): Minimal 700 mm (70 cm) dari lantai ke bagian bawah meja (dihitung dari shod popliteal height persentil ke-95 male = 620 mm + thigh thickness persentil ke-95 = 185 mm)
+.
+Lebar Bebas Lateral (Lateral Clearance): Minimal 790 mm (79 cm) di area kneehole (ISO 14738)
+.
+Kedalaman Bebas (Forward Legroom): Minimal 600 mm – 700 mm dari tepi meja pada tingkat lutut dan lantai (ISO 14738 merekomendasikan 547 mm pada tingkat lutut dan 882 mm pada tingkat lantai)
+.
+Ketebalan Permukaan Meja (Desktop Thickness): Harus seminimal mungkin (30 mm – 40 mm). Dilarang keras menggunakan meja yang memiliki laci di bawah permukaan meja (knee-hole drawers) untuk pekerjaan komputer karena akan menjepit paha
+.
+6. Tinggi Permukaan Meja Kerja Terhadap Siku (Desk Height)
+Prinsip Biomekanika:
+Pekerjaan Komputer/Mengetik: Permukaan meja diatur agar baris tombol utama keyboard (home row: ASDFG, tebal 30–50 mm) berada sejajar dengan tinggi siku duduk (sitting elbow height) saat bahu rileks dan lengan atas menggantung bebas
+.
+Pekerjaan Kertas/Menulis Manual: Permukaan meja diletakkan 50 mm – 100 mm di atas tinggi siku duduk agar lengan dapat berabduksi rileks
+.
+Angka Spesifik:
+Meja Kerja Berpengatur Tinggi (Adjustable Height Desk): Rentang penyesuaian ideal untuk mengetik adalah 600 mm hingga 750 mm (60–75 cm) untuk mengakomodasi wanita persentil ke-5 hingga pria persentil ke-95
+.
+Meja Kerja Tinggi Tetap (Fixed Height Desk): Standar kompromi industri/ISO untuk meja tetap adalah 720 mm (72 cm) [pria ideal = 735 mm, wanita = 705 mm; Grandjean merekomendasikan 740–780 mm untuk pria dan 700–740 mm untuk wanita]
+.
+7. Sandaran Kaki (Footrest)
+Indikasi Okupasi: Wajib disediakan bagi pekerja berpostur pendek (statur ≤ 1600 mm / ≤ 160 cm) yang bekerja pada meja bertinggi tetap (fixed height desk 720 mm)
+. Saat kursi dinaikkan agar siku mencapai tinggi keyboard/meja, kaki pekerja akan menggantung.
+Spesifikasi Ergonomis:
+Harus bersifat kokoh, stabil, dan luas (large and sturdy) agar telapak kaki dapat berpindah posisi
+.
+Memiliki sudut kemiringan (sloped) dan dapat diatur tingginya (height-adjustable) untuk menopang seluruh telapak kaki secara rata, sehingga menghilangkan popliteal pressure dan penekanan pembuluh darah
+.
+8. Posisi Duduk Dinamis (Dynamic Sitting Posture)
+Prinsip Biomekanika: Duduk diam dalam postur kaku (postural fixity) dalam waktu lama memicu kelelahan otot statis, menghambat nutrisi diskus intervertebralis (proses impuls difusi), dan meningkatkan pembentukan edema tungkai bawah
+.
+Mekanisme & Intervensi Duduk Dinamis:
+Mekanisme Free-Floating Tilt / Rocking: Kursi yang dilengkapi fitur kemiringan dudukan/sandaran yang berayun bebas (fleksibilitas kemiringan ±5° ke depan dan ke belakang) terbukti secara fisiologis merangsang pompa otot vena tungkai (venous muscle pump) dan secara signifikan mengurangi pembentukan edema kaki (Stranden, 2000; Bendix & Biering-Sørensen, 1983)
+.
+Stasiun Kerja Sit-Stand (Sit-Stand Workstations): Memungkinkan pekerja berganti postur antara duduk dan berdiri secara berkala
+.
+Rekomendasi Waktu Intervensi:
+Penelitian membuktikan bahwa berganti antara posisi duduk dan berdiri—dengan total waktu berdiri minimal 2 jam per hari—secara signifikan menurunkan pembentukan edema tungkai bawah dan mengurangi beban kumulatif pada tulang belakang
+.
+Skema istirahat: Screen break 5 menit setiap 1 jam kerja kontinu + micropauses (istirahat singkat beberapa detik setiap beberapa menit untuk menyandarkan punggung)
+.
+Matriks Ringkasan Parameter Kursi & Meja Ergonomis
+Komponen Ergonomis
+Parameter & Nilai Spesifik
+Rujukan Utama
+Tinggi Dudukan Kursi
+Rentang 380 – 535 mm (38–53,5 cm); Kompromi wanita 5th %ile: 380–400 mm.
+Pheasant (Bodyspace), ISO 1335-1
+Kedalaman Dudukan Kursi
+380 – 430 mm (<435 mm / <41 cm); Tepi depan waterfall contour.
+Pheasant, LaDou (Current OEM)
+Lumbar Support Height
+150 – 250 mm di atas dudukan tertekan; Protrusi ganjal 40–50 mm.
+Andersson et al., EN 1335-1, Pheasant
+Sudut Sandaran (Rake)
+100° – 110° (reclined sitting).
+Andersson et al., Pheasant
+Tinggi Sandaran Lengan
+200 – 250 mm di atas dudukan; Tonjolan depan max 350 mm.
+EN 1335-1, Pheasant
+Ruang Kaki di Bawah Meja
+Tinggi vertikal ≥ 700 mm; Lebar lateral ≥ 790 mm; Kedalaman ≥ 600 mm.
+ISO 14738, Pheasant
+Tinggi Meja Kerja
+Adjustable: 600–750 mm; Fixed desk: 720 mm (Pria 735 mm, Wanita 705 mm).
+Pheasant, Grandjean
+Indikasi Footrest
+Pekerja tinggi ≤ 1600 mm pada meja fixed 720 mm; Harus adjustable & sturdy.
+Pheasant, LaDou
+Duduk Dinamis (Sit-Stand)
+Berganti duduk-berdiri min 2 jam/hari; Break 5 menit tiap 1 jam + micropauses.
+LaDou, Stranden, Pheasant
+Sumber Referensi yang Dipakai
+Pheasant, S. & Haslegrave, C. M. (2006). Bodyspace: Anthropometry, Ergonomics and the Design of Work (3rd ed.). Taylor & Francis. Bab 2 (Anthropometric Data), Bab 4 (Workspace Design), Bab 5 (Sitting and Seating), dan Bab 7 (Office Workstations). (BODYSP~1.PDF)
+LaDou, J. & Harrison, R. J. (2014/2021). Current Occupational & Environmental Medicine (5th/6th ed.). McGraw-Hill Education. Bab 15 (Ergonomics & the Prevention of Occupational Injuries). (CURREN~1.PDF)
+Occupational Safety and Health Administration (OSHA). eTools: Computer Workstations. U.S. Department of Labor. (eTools : Computer Workstations | OSHA)
+💡 Apakah Dokter ingin kita melanjutkan dengan simulasi analisis kasus ergonomi kantor berbasis soal ujian board, atau membahas penegakan diagnosis okupasi untuk Low Back Pain pada pekerja kantor?

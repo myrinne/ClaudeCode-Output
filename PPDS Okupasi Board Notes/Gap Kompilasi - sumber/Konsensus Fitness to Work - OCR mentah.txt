@@ -1,0 +1,694 @@
+
+
+===== HALAMAN 1 (deskew +0.0 derajat) =====
+BAB I
+PENGEMBANGAN, KONSENSUS
+1.1. Latar Belakang | bani Ta 6 Pe PENA
+Pelayanan Kesehatan Kerja atau Kedokteran Okupasi sering diangggap fokus utamanya
+adalah mengenai pengaruh pekerjaan terhadap kesehatan, antara lain dengan melakukan
+“upaya pencegahan terhadap penyakit akibat kerja, deteksi dini penyakit akibat kerja dan
+penanganan penyakit akibat kerja, padahal sama pentingnya untuk mengetahui pengaruh
+keschatan terhadap pekerjaan, yaitu dengan melakukan penilaian kemampuan melakukan
+tugasnya dari segi keschatan fisik dan mental, pada saat pra-kerja ataupun menilai apakah
+pekerja masih dapat melakukan tugasnya dalam pekerjaannya secara efektif (laik kerja) atau
+apakah perlu dilakukan upaya rehabilitasi khusus atau program kembali kerja (return to work
+programme) agar pekerja dapat kembali bekerja. ai
+Saat ini keputusan untuk kembali bekerja setelah dirawat karena suatu penyakit atau cedera.
+_ seringkali dilakukan olch dokter spesialis yang, merawat pekerja tersebut berdasarkan
+kondisi fisik dan atau kondisi mentalnya, tanpa mengetahui tuntutan pekerjaannya. Bahkan
+seringkali penentuan masih dapat bekerja atau tidak, ditentukan oleh pihak perusahaan atau
+instansi atay pekerja itu sendiri. Salah satu kompetensi Spesialis Kedokteran Okupasi, adalah
+melakukan penilaian terhadap kondisi kesehatan, tuntutan pekerjaan dan risiko, sehingga
+keputusan yang dibuat tidak merugikan pekerja,maupun pemberi kerja.
+Penilaian laik kerja, juga menjadi sangat penting dengan makin meningkatnya insiden
+penyakit degeneratif atau penyakit kronik pada kelompok usia yang masih produktif dan di
+lain pihak, adanya kecenderungan orang masih bekerja pada usia semakin lanjut. Kejadian
+kecelakaan pun di Indonesia masih sangat tinggi. Sebagian besar yang mengalami
+_ kecelakaan akan sembuh dan kembali bekerja, sebagian mengalami cacat atau disabilitas,
+yang bisa berupa kehilangan sebagian anggota tubuh, kehilangan sebagian tungsi tubuh.
+trauma psikis maypun gejala sisa. Adanya disabilitas bukan selalu berarti pekerja tidak dapat
+bekerja kembali, seringkali pekerja dengan disabilitas, mempunyai motivasi tinggi untuk
+melakukan pekerjaannya dan mempunyai catatan kehadiran yang baik, sehingga perdu
+penilaian yan objektif mengenai kapasitas kerja fisik maupun mentalnya, agar dapat
+diidentifikasi jenis maupun beban pekerjaan yang dapat dilakukan.
+Perhimpunan Spesialis Kedokteran Okupasi (PERDOKI), menganggap penting untuk |
+membuat suatu konsensus mengenai proses Penilaian Laik Kerja dan Program Kembali |
+Bekerja, karena pada saat ini belum ada standar penilaian dan seringkali penilaian dilakukan |
+tanpa memperhatikan tuntutan pekerjaan dan risiko pekerjaan, serta tidak berbasis bukti. |
+Standar penilaian ini diharapkan dapat melindungi pekerja (yang dinilai), pemberi kerja
+maupun dokter yang melakukan penilaian, karena dilakukan secara objektif.
+| |
+
+
+===== HALAMAN 2 (deskew +4.0 derajat) =====
+|
+DAFTAR ISI |
+Kata Pengantar Vv
+Kata Sambutan Ketua Kolegium Kedokteran Okupasi Indonesia | sd
+Kata Sambutan Ketua Perhimpunan Spesialis Kedokteran Okupasi Indonesia |
+vil
+Daftar isi |
+Bab | Pengembangan Konscnsus 4
+Bab It Dasar Hukum dan Aspck Etika 7
+Bab It Pengertian dan Definisi 8
+Bab IV Ruang Lingkup 1
+Bab V Langkah-langkah penilaian laik kerja
+15
+Bab VI Penutup |
+16 $
+Lampiran
+18
+Daftar Pustaka )
+|
+|
+
+
+===== HALAMAN 3 (deskew +0.0 derajat) =====
+)
+1.2. Langkah Konsensus
+konsensus PERDOKI, maka setiap konsensus dalam pelayanan kesehatyn
+Sesuai dengan KONSCH ee nerikut:
+kerja mengikuti tahapan sebagai berik |
+juan di anfaat Panduan : |
+1.2.) Tujuan dan Mesut agar dalam penentuan kelaikan kerja dan kembali bekerja oleh
+Panduan a aalis Kedokteran Okupasi , dilakukan langkah-langkah yang sama, agar
+idk ade peredfan secara prinsip dalam membuat keputusan. Sehingga selain
+peal PS ae ari keria. 1 1: oh) i “7 lar,
+| bermanfaat bagi pekerja, pemberi kerja, juga dapat melindungi dokter dari tuntutan
+hukum.
+| 24 Pala
+| 1.2.2 Pertanyaan Klinis: ibd
+| Kogsensus ini akan menjawab pertanyaan apakah: |
+: a. Kondisi medis pekerja memungkinkan pekerja masih dapat melakukan
+| pekerjaan semula tuk |
+| b. Kondisi medis pekerja menyebabkan pekerja tidak dapat lagi melakukan |
+| pekerjaan semula |
+c. Kondisi medis pekerja menyebabkan pekerja hanya dapat melakukan pekerjaan
+| semula dengan modifikasi (restriksi, penyesuaian tempat kerja dll) atau harus
+| melakukan pekerjaan lain
+| d. Kondisi medis pekerja menyebabkan pekerja tidak dapat melakukan semua
+| pekerjaan
+| 123 Sasaran Panduan:
+| Panduan ini ditujukan bagi semua stakeholders dalam bidang kesehatan kerja:
+) a. Dokter Spesialis Kedoktcran Okupasi
+: b. Dokter perusahaan maupun dokter penguji kesehatan lainnya |
+| c. Dokter spesialis terkait dengan masalah kesehatan kasusnya |
+| d. Institusi terkait: Kementerian Tenaga Kerja, Kementerian Kesehatan, BPJS |
+Ketenagakerjaan, BPJS Kesehatan dan lain-lain. |
+Dengan tujuan, bahwa pihak terkait memahami, bahwa penilaian laik kerja
+membutuhkan kompetensi khusus, yaitu dalam bidang kedokteran Okupasi.
+1.24 Partisipasi Stakeholders: |
+Sebelum ditetapkan sebagai konsensus, panduan ini telah disosialisasikan dan i
+didiskusikan pada: |
+* > “ . # “ F3 . . |
+a. Pertemuan organisasi profesi PERDOKI 2011 — 2018 |
+b. PIT Perdoki 2011 - 2018
+¢. Dipresentasikan pada pihak BPJS Ketenagakerjaan |
+| |
+i
+
+
+===== HALAMAN 4 (deskew +1.5 derajat) =====
+: |
+Ne
+|
+12.5 Langkah Pengembangan Dokumen:
+a. Pembentukan tim penulis
+Tim penulis terdiri dari Dokter Spesialis Kedokteran Okupasi |
+b. Kajian Pustaka
+Telah dilakukan kajian pustaka, baik dari Indonesia maupun negara lain |
+c. Kajian kasus :
+ukan kajian terhad: s-kas Ais
+ay ~ ji hadap kasus kasus nyata, yang menderita penyakit dari
+ber agai sistem organ atau yang ditangani olch berbagai Spesialis kedokteran
+lainnya, seperti Spesialis Jantung dan Pembuluh Darah, Psikiater, Konsultan |
+Nephrologi, Spesialis Syaraf dil.
+d. Menentukan langkah yang sesuai untuk Indonesia:
+, Langkah Langkah penilaian laik kerja, disepakati sctelah mengkaji referensi |
+dari American Medical Association (AMA), American College af
+Occupational and Environmental Medicine (ACOEM)
+c. Uji Coba |
+Sudah dilakukan uji coba menggunalan 7 langkah penilaian Laik Kerja pada :
+berbagai kasus dan alur penilaian dapat diterima olch pekerja, maupun pihak
+_ perusahaan, karena berdasarkan bukti dan justifikasi yang jelas
+f. Diseminasi |
+Standar penilaian kelaikan kerja sudah didiseminasi kepada profesi spesialis
+Kedokteran Okupasi maupun beberapa mitra, seperti Kementerian Kesehatan. |
+BPJS Ketenagakerjaan dan berbagai perusahaan
+g. Revisi: |
+Dokumen ini sudah mengalami beberapa kali revisi, sesudah di uji coba dan |
+dibahas oleh tim ahli dalam berbagai kesempatan
+h. Finalisasi: |
+Dokuman ini yang di finalisasi pada tahun 2020, diharapkan menjadi standar
+yang harus diikuti oleh semua spesialis Kedokteran Okupasi, agar pekerja dan |
+perusahaan mendapatkan manfaat yang diharapkan. |
+1.2.6 Kejelasan Dan Sistematika Penulisan:
+Mengikuti standar penulisan Konsensus Pelayanan Kedokteran Okupasi |
+PERDOKI |
+1.2.7. Kemungkinan Aplikasi
+Konsensus mengenai standar pelayanan telah diuji-coba, sehingga dapat
+diaplikasikan dalam praktek sehari-hari
+3
+
+
+===== HALAMAN 5 (deskew -0.5 derajat) =====
+|
+BAB I er
+DASAR HUKUM DAN ASPEK ETIKA |
+‘ora menurut Joint ILO/WWHO Comings tahun 1995 adalah PTOMOSI dan
+moertian Kesehatan Kerja . “ogi-tingginya dari kesehatan fisik, mental dan sosial dari pekeri :
+a derajat yang ScUNSE angguan kesehatan pada pekcrja yang disebabkan 5
+mg «mua pekerjaan, pencegahan Bil dari risiko akibat faktor-faktor yang Kanaan
+tangisi kerjanya, ena araan pekerja dalam suatu lingkungan kerja is ae
+kesehatan. penempatan alan sikologisnya, dan sebagai kesimpulan, penyesuaian Pekerjaan
+dengan aa ka aoe A kepada pekerjaannya
+kepada manusia dan s
+»1 Dasar Hukum Undang Nomor 1 Tahun 1970 tentang keselamatan kerja yang mengatur
+2.1.1 Hana rat keselamatan kerja (Pasal 3) antara lam, untuk :
+4. Memberi pertolongan pada kecelakaan
+b. Memberi APD (Alat Pelindung Diri) |
+c. Mencegah dan mengendalikan timbulnya Penyakit Akibat Kerja baik fisik
+maupun psikis, keracunan, infeksi dan penularan.
+d. Memelihara kebersihan, keschatan dan ketertiban. Pay
+c. Memperoleh keserasian antara tugas kerja, alat kerja, lingkungan, cara dan
+proses kerjanya.
+2.1.2 Undang-Undang Nomor 14 Tahun 1969
+a. Pasal 9: |
+Tiap tenaga kerja berhak mendapat perlindungan atas keselamatan, kesehatan,
+kesusilaan, pemeliharaan moril kerja serta perlakuan yang sesuai dengan
+martabat manusia dan moral agama
+b. Pasal : 9:
+Pemenntah membina norma perlindungan tenaga kerja yang meliputi :
+(1) norma keselamatan kerja |
+(2) norma kesehatan kerja |
+(3) norma kerja |
+(4) jail ganti kerugian, perawatan dan rehabilitasi dalam hal kecelakaan |
+Cia
+2.1.3 Undang-Undang Nomor 13 Tahun 2003 |
+a. Pasal 86 |
+(1) Setiap pekerjafburuh mempunyai hak untuk memperoleh perlindungan ae |
+a) keselamatan dan kesehatan kerja, |
+b) moral dan kesusilaan: dan iy |
+a perlakuan yang sesuai dengan harkat dan martabat manusia serta nila |
+ar nilai agama. ia |
+kesehatan ker Ja yang optimal diselenggarakan upaya KC |
+ja |
+ou
+|
+'
+
+
+===== HALAMAN 6 (deskew +1.0 derajat) =====
+b. Pasal 87 |
+| (1) ‘eed aro Soa I BT pan sistem manajemen keselamatan dan |
+| seni ya yang terintegrasi dengan sistem manajemen perusahaan
+(2) Ketentuan mengenai pencrapan sistem manajemen keselamatan dan |
+keschatan kerja sebagaimana dimaksud pada ayat (1) diatur dengan i
+Peraturan Pemerintah -
+2.1.4 Peraturan Pemerintah No. 88 tahun 2019 tentang Keschatan Kerja | |
+Pasal 4 : Standar Keschatan Kerja daiam upaya pencegahan penyakit meliputi: | |
+a. identifikasi, penilaian, dan pengendalian potensi bahaya kesehatan: ;
+b. pemenuhan persyaratan keschatan lingkungan kerja; 5
+c. perlindungan kesehatan reproduksi: |
+d. pemeriksaan kesehatan: |
+e. penilaian kelaikan bekerja, |
+f. pemberian imunisasi dan/atau profilaksis bagi pekerja berisiko tinggi; :
+g. pelaksanaan kewaspadaan standar,
+h. surveilans Keschatan Kerja.
+2.15 Permenaker No.Per-02/Men/1980 (Pasal 5):
+'Pcmeriksaan kesehatan khusus dilakukan terhadap:
+a. Tenaga Kerja yang telah mengalami kecelakaan/penyakit yang memerlukan :
+perawatan > 2 minggu j
+b. Tenaga kerja yang > 40 tahun atau tenaga kerja wanita atau tenaga kerja 1
+cacat scrta tenaga kerja muda dengan pekerjaan tertentu ©
+C. Tenaga kerja yang terdapat dugaan-dugaan tertentu :
+2.1.6 Permenaker No. Per-03/Men/1982 tentang tujuan pelayanan kesehatan kerja 3
+a. Memberikan bantuan kepada tenaga kerja dalam penyesuaian diri baik fisik 1
+maupun mental 1
+b. Melindungi tenaga kerja terhadap setiap gangguan kesehatan yang umbul i
+dari pekerjaan atau lingkungan ;
+c. Menyehatkan kesehatan badan, kondisi mental dan kemampuan fisik tenaga : !
+kerja |
+2.1.7 Keputusan Menakertrans No. Kep.79/Men/2003 tentang pedoman diagnosis i |
+dan penilaian cacat karena kecelakaan dan penyakit akibat kerja
+2.1.8 Permenkes Nomor 48 tahun 2016 tentang standar K3 perkantoran: i |
+Pasal 19: Pemulihan kesehatan bagi karyawan perkantoran, paling sedikit terdiri |
+atas: i
+a. Melakukan program kembali kerja bagi karyawan yang telah mengalami sakit '
+parah atau kecelakaan kerja dengan kondisi tidak dapat melakukan tugas 5
+semula |
+b. Pengkondisikan karyawannya agar dapat bekerja kembali sesuai dengan | |
+kemampuannya |
+| |
+|
+| Po
+1
+|
+| | |
+
+
+===== HALAMAN 7 (deskew +0.0 derajat) =====
+cntang Penyelenggaraan Pelayan.
+kes Nomor 56 Tahun 2016 g Fenyelengg clayanan Penyu: |
+2.1.9  Permenk | | aki
+Akibat KA Tatalaksana okupasi ee Yg Shen ayat (1) huruf feet
+pasal 5 (3) : i pada komunitas dan tatalaksana okupasi pada oti
+atas tata laksana okupasi pad Pasi pada Indivig,
+ang meliputi : | snvakit akibat kerja
+si Pelayanan pencegahan peny akik akibat Kerja
+a Peay dini penyakit akibat kerja
+bh. Pelayanan penemuan
+c. Pelayanan kelaikan kerja |
+d. Pelayanan kembali bekerja
+‘ Pelayanan penentuan kecacatan
+2.1.10 Permenkes Nomor 66 Tahun 2016 tentang standar Keselamatan dan Kesehatan
+Kerja Rumah Sakit
+2.2 Aspck Etika
+Pelayanan Kedokteran Okupasi, bukan hanya merupakan pelayanan oleh dokter yang
+diberikan kepada pasien, tetapi juga memberi pelayanan bagi komunitas pekerja, para
+supervisor, pengelola perusahaan, bahkan pimpinan perusahaan atau instansi, oleh karena ity
+ada hal hal khusus terkait ctika, di luar ctika kedokteran yang berlaku bagi dokter pada
+umumnya.
+Penilaian Kelaikan Kerja dilakukan secara profesional, dengan tidak memihak pada salah satu
+pihak, yaitu pekerja maupun pengelola tempat kerja.
+Hasil penilaian kelaikan kerja pada umumnya tidak perlu mencantumkan diagnosis penyakit,
+kecuali pada keadaan tertentu dan atas scizin pekerja. Data klinis, rekam medik dan informasi
+lainnya terkait pckerja harus tetap dijaga kerahasiaannya, kecuali pada keadaan tertentu.
+Seperti:
+- Pemberian informasi pada pihak perusahaan atau instansi adalah untuk kepentingan |
+pekerja (pasien) |
+- Dituntut oleh Undang-Undang yang berlaku misalnya penyakit yang sedang mewabah |
+“Untuk kepentingan masyarakat luas
+— Kadang-kadang diperlukan untuk penelitian medis |
+mesen ee - atas, bila diminta oleh perusahaan/instansi, sebaiknya meminta for |
+Nae 5 min ‘era (pasien), Hal ini berlaku, baik bagi dokter yang menjadi ‘ale
+steered instansi, maupun dokter yang tidak bekerja di perusahaan atau Inti |
+praktck secara independen, |
+1
+|
+i |
+:
+b |
+
+
+===== HALAMAN 8 (deskew +1.5 derajat) =====
+1
+|
+BABI
+PENGERTIAN DAN DEFINISI
+3.1. ASESMEN KEMBALI KERJA/KELAIKAN KERJA
+Memastikan pekerja dapat melakukan pekerjaannya secara efektif tanpa risiko terhadap
+dirinya sendiri maupun rckan kerjanya.
+Hasil penilaian ascsmen kembali bekerja: |
+a. Kondisi pekerja tidak mempengaruhi pcekerjaannya |
+. . . . . \
+b. Kondisi pekerja membatasi, mengurangi kemampuan |
+c. Pekerjaan memperburuk kondisi pekerja |
+d. Kondisi pekerja membahayakan keselamatan dirinya, rekan kerja atau masyarakat |
+Hasil ascsmcn dilaporkan menurut kapasitas fungsional pasicn scsuai kebutuhan
+pekerjaannya dan tidak perlu mencantumkan diagnosis penyakit atau keadaan lainnya
+3.2. PROGRAM KEMBALI BEKERJA:
+Suatu program di tempat kerja yang bertujuan untuk membantu pekerja : |
+a. Melakukan pekerjaan semula sesegera mungkin atau secara bertahap |
+b. Melakukan penyesuaian pada pekerjaan semula
+c. Menemukan pekerjaan lain yang sesuai dengan kondisi
+d. Membantu pekerja mengatasi keterbatasan yang dimiliki untuk melakukan pekerjaan
+sesuai dengan hasil penilaian kelaikan kerja :
+3.3. DERAJAT KECACATAN:
+a. Impairment:
+Perubahan pada struktur normal atau fungsi akibat penyakit atau kecelakaan
+b. Disability:
+Penurunan atau kehilangan kemampuan melakukan suatu aktifitas yang basa |
+dilakukan sehari-hari
+c. Handicap: | !
+Akibat sosial dari suatu impairment atau disabilitas yang membatasi atau menghambat
+sesorang melakukan kegiatan secara normal |
+Pengertian impairment, disability dan handicap havus dilihat dari pekerjaan yang dilakukan
+dan tidak semata-mata menggambarkan kondisi medis. Contoh:
+a. Kehilangan satu jari kelingking (impairment) merupakan disabilitas dan handicap bagi
+seorang pianis, tetapi tidak bagi pekerja bangunan | |
+b. Buta warna partial merupakan impairment, tetapi tidak merupakan disabilitas bagi
+sebagian besar pekerjaan
+,
+
+
+===== HALAMAN 9 (deskew -2.0 derajat) =====
+BAB IV |
+RUANG LINGKUP |
+| Asesmen kelaikan kerja pada prinsipnya "Aa ar ee pemberi kerja MAUPUN poker;
+| dalam penentuan pekerjaan yang dapat dilakukan oleh pekerja, tanpa merugikan dirj iar
+| pemberi kerja maupun lingkungan tri, :
+' 4
+| Asesmen kelaikan kerja dapat dilakukan pada:
+1. Sescorang yang sedang mencari kerja
+2, Seseorang yang sudah bekerja :
+3. Sescorang yang akan dipindahkan lokasi kerja
+| 4. Sesorang yang akan menduduki jabatan tertentu
+| Pada pekerja, penilaian kelaikan kerja perlu dilakukan:
+| |. Pekerja akan dipindahkan untuk melakukan pekerjaan baru :
+2. Secara periodik sesudah dilakukan Medical Check Up dan ditemukan adany:
+keschatan | ya masalah
+3. Pekerja kembali ketempat kerja setelah dirawat baik karena mengalami kecelaka:
+karena sakit atau alasan lainnya akdan atau
+!
+| 8
+be AR
+i
+
+
+===== HALAMAN 10 (deskew +2.5 derajat) =====
+TA
+BAB V
+LANGKAH-LANGKAH PENILAIAN
+| i LAIK KERJA
+Langkah-langkah penilaian laik kerja adalah langkah-langkat
+mengambil keputusan yang berdasarkan bukti ataupun sa " yang perlu dilakukan agar hic;
+Langkah-langkah ini ditulis dalam rekam medik pasien Pa mba professional Fa |
+dijadikan bukti dasar pengambilan keputusan, apabila di bana Pa agar dipan
+an. :
+Langkah 1: Deskripsi Pekerjaan atau Tugas (Job Descripii |
+Mengumpulkan informasi mengenai deskri 5 ees
+Dilakukan dengan anamnesis pada Maa pra eryieatt pekerja Secara langkan
+bila memungkinkan lakukan juga dana we ole dan pekerja sendiri :
+pekerjaannya di lokasi. Berdasarkan Naa waktu pekerja melakukan |
+memungkinkan) buat deskripsi mengenai tugas ake 4, adn pengamatan (bila
+Mulai dari pekerja mencapai lokasi kerja al, aa sehari-hari secara ring.
+tugasnya. Dekripsikan semua tugas yang harus dilakuk Cngan selesai melakukan |
+dan lingkungan kerjanya. Tidak cukup hanya menwetainte aie kerja, beban kerja |
+pekerja, tetapi juga “bagaimana” melakukan tugas ss sak harus dilakukan |
+diperlukan/diberikan untuk melakukan masing masin ae tj di waktu yang |
+Informasi mengenai tanggung jawab terhadap orang teint foreach tea sade
+tidak dilakukan secara rutin dan/atau kebutuhan kesiapsiagaan oe elit ag |
+kerja di mana pekerja melakukan pekerjaannya ee eee |
+Langkah 2: Tuntutan Pekerjaan (Job Demand) |
+Sara tres eel pata atas, tentukan apa saja tuntutan pekerjaan yang
+. uli ‘kerk > seg ~ P ray hs i : > 1
+Silabtikan dari Ar ae Ula aan ge Ma ig ain |
+tugasnya. Berbagai aspck yang umumnya Na Jt ag dec on ang
+hae pakan tuntutan pekerjaan dyelaskan
+di bawah ini, namun bisa ditambahkan aspek lain yang khusus dibutuhkan untuk |
+pekerjaan tertentu, misalnya aspck penampilan, aspek kekuatan angkat beban dil. Di |
+lain pihak, juga tidak semua aspek yang tertulis di bawah ini harus menjadi tuntutan |
+pekerjaan. |
+2.1 Aspek Fisik: :
+a. Kapasitas Fisik: |
+Berapa METS kapasitas fisik minimal yang dibutuhkan pekerja agar dapat
+melakukan pekerjaan tersebut. Untuk menghitung METS yang harus dimiliki |
+oleh pekerja terscbut untuk melakukan tugas tugas dalam pekerjaan tersebut, |
+perlu diperhitungkan jumlah jam yang dibutuhkan untuk melakukan masing
+masing tugas tersebut. Sehingga bisa didapatkan METS rata rata yang
+dibutuhkan dalam melakukan tugasnya.
+b. Mobilitas: | |
+Apakah pekerjaan menuntut pekerja harus bisa jalan, lart, menanjak, naik e
+tangga dsb. Atau apakah pekerjaan ini tidak menuntut pekerja harus bisa
+jalan, sehingga dapat dilakukan oleh orang dengan disabilitas yang :
+y
+
+
+===== HALAMAN 11 (deskew +0.5 derajat) =====
+i roda. Jadi mobilitas lebih menjelaskan dari
+menggunakan kursi $ Jelaskan dari SEGI Lunt
+dari extremitas bawah. ‘k karma Utan |
+stor dan keterampilan motorik kasar:
+¢, Lokoti ndian secara UMUM atau sendi tcrtentu, R
+Fungs! persen ian - a » Range of
+jangkauan termasuk tulang belakang. ation
+€ - , 5 ,
+d keterampilan motorik halus:
+k Kemampuan menjepit, mengenggam, menggerakkan jari jari.
+| c. Kesiapan menghadapi emergensi:
+| ! Apabila selain tugas rutin, pekerja juga mempunyai tugas Ot
+kcadaan darurat, misalnya menjadi tim K3, pemadam denen” ada
+! penanggung jawab evakuasi, maka tuntutan fisik pada keadaan nate atan
+. . . = - . ba 5 j :
+| diperhitungkan. Dilain pihak jangan kesiapan mengh adapi rl harys
+| diperlakukan bagi sctiap pakerja eT geng,
+|
+| 9.2 Aspek Mental
+| Kapasitas Mental: |
+| 3. Tidak ada depressi atau anxictas scdang-berat
+| b. Tidak ada gangguan kognitif
+| c. Tidak ada stress berat
+| 2.3 Aspek Organisasi
+a. Bekerja dalam tim
+b. Melayani publik
+2.4 Aspek Lingkungan Kerja:
+a. Kemampuan bekerja di tempat ketinggian
+b. Kemampuan bekerja dengan menggunakan APD sesuai lingkungan ker}:
+tertentu 5 ja
+2.5 Aspek Temporal:
+a. Kerja shift
+b. Kerja malam
+| c. Waktu istirahat
+2.6 Aspek Ergonomi
+a. ‘ , IA $ 1 wile a
+1 Ha harus bekerja pada posisi berdiri?
+. Apakah melakukan gerakan repetitive?
+257 ye Pengindcraan:
+a. Penglihatan: taj |
+penglihatan ann penglihatan, penglihatan indepth, luas pandang,
+b. Penci :
+luman: Apak: ma oe | |
+© Pembinaan ‘ai memerlukan daya cium yang baik
+d. Pengecapan: A ft 3) memerlukan pendengaran yang normal .
+: Apakah memerlukan pengecapan yang baik 7
+16
+
+
+===== HALAMAN 12 (deskew +1.0 derajat) =====
+| 2.8 Aspck- aspek lain:
+| a. Penampilan: Apakah diperlukan penampilan y:
+| ‘ an yang baik, karena melayani
+publik melayani
+b. Keseimbangan: Apakah diperlukan kescimbangan yang baik
+dan lain-lain
+!
+Perlu juga dilakukan penilaian, mengenai kemungkinan penyesuaian pada
+pekerjaan atau tempat kerja
+Langkah 3: Kondisi Kesehatan (Status Medis)
+yA “1 1 ir « 4 . * {
+Untuk beberapa jenis pekerjaan sudah ada standar medis yang harus dipenuhi
+pekerja agar dapat masih dapat melakukan pekerjaan.
+Contoh: Pilot, Tentara, Pelaut, dsb.
+|
+Beberapa pedoman atau standar medis sebagai berikut: |
+1, Medical Guidelines for Non Marine Crew Working in the Offshore Environment
+dari The International Marine Contractors Association (IMCA)
+2. Medical standards of fitness to drive by Drivers Medical Group DVLA (driver |
+and vehicle licensing agency) |
+3. UKOOA guidelines for work offshore and in commercial diving |
+4. Standards of Medical Fitness for US Army (Army Regulation 40 — 501)
+5. Guidelines for the medical examination of seafarers and coastal pilot from
+“Australian Maritime Safety Authority
+Schingga bila pekerja tidak memenuhi persyaratan medis tersebut, bisa dibuat |
+keputusan, bahwa pckerja tersebut tidak laik kerja. Dilain pihak banyak sekali
+pekerjaan yang tidak ada standar medis, dan tidak setiap jenis pekerjaan yang sama,
+mempunyai beban kerja, proses kerja dan lingkungan kerja yang sama, sehingga
+harus diperiksa sesuai tuntutan pekerjaan.
+Jenis pemeriksaan yang dilakukan, harus disesuaikan dengan tuntutan pekerjaan dan
+terutama terhadap fungsi organ yang mengalami perubahan anatomis atau
+fungsional, tidak selalu scmua pemeriksaan harus dilakukan. Jenis pemeriksan
+tersebut antara lain sebagai berikut : i
+|. Keadaan umum:
+a. Kapasitas Kerja
+b. Kemampuan kerja penuh
+c. Kemampuan kerja shift |
+d. Status mental: anxictas, phobia, motivasi |
+e. Status intelektual :
+2. Mobilitas: :
+a. Perjalanan ke tempat kerja |
+b. Kemampuan penggunaan exit darurat |
+c. Kemampuan jalan, naik tangga, membungkuk |
+M |
+d. Fungsi locomotor |
+|
+Lt |
+5
+
+
+===== HALAMAN 13 (deskew +1.0 derajat) =====
+c. Fungsi/mobilitas persendian
+TN Kemampuan berdiri/duduk
+9. Keterbatasan
+3, Kekuatan Otol:
+a. Kelemahan
+bh. Tremor
+c. Kemampuan mengangkat beban
+d. Keterampilan
+«. Keterbatasan
+( Kemampuan mengenggam, menjepit
+4. Koordinasi dan Kescimbangan:
+a. Koordinasi tangan — mata
+| b. Kemampuan bekerja di tempat tinggi
+&. Kecenderungan vertigo
+$ Status Kardiovaskuler dan Respirasi
+| a. Kapasitas fisik, VO2 max — batasan METS
+b. Fungsi Paru
+6. Status Sensori Ncural
+| a. Kemungkinan kehilangan kesadaran: cpisode, faktor pencet
+| b. Komunikasi, kemampuan komunikasi 2 arah, gangguan bi 1
+. fa ac saran ade KN . s k ” a < c
+| €, Fungsi Serebral: disorientasi, memori, kemampuan intelek le
+d. Penginderaan cktual
+: Langkah 4: Status Kecacatan
+| = . . .
+| Apakah ada Impairment, disability dan atau handicap
+Deskripsi masing-masing
+Langkah 5: Kem i
+| : ungkinan Membahaya iri sad
+: Apekah ml sala are Sendiri, Rekan Kerja atau Lingkungan
+del sendiri wa kondisi kesehatan pekerja dapat membahayak
+| sendiri, rekan kerja atau lingkungan bi pat membahayakan
+| tersebut. Apabi . gkungan bila pekerja tetap melakukan pekerjaan
+| sebut. Apabila pekerja mengalami Penyakit Aki pekeryaat
+| leila ith cee, teal es ahi ia ami Penyakit Akibat Kerja, maka sudah pasti ada
+| tempat kerja, pekerjaan semula, kecuali bila dilakukan pengendalian di |
+Langkah 6: T
+: Toleran |
+maan Pn aa maupun rekan kerja: |
+ustakaan me ' saan pl. 8 5
+terhadap kondisi Sae Le ba toleransi dari atasan dan rekan kerja |
+perlakuan kl be ja. Misalnya apabila memerlukan sarana khusus atau |
+yusus. Informasi mengenai + heal alam
+penentuan kelaikan kerja. A engenai toleransi ini sangat penting. Membantu datar |
+. a. ‘ ' ‘ a seca » . . “lak |
+toleransi maka entin i pabila toleransi ini menjadi pertimbangan dan tidak ad |
+1 laik kerja secara medis tidak akan dipengaruhi. 1
+1
+2 |
+
+
+===== HALAMAN 14 (deskew +1.0 derajat) =====
+|
+| |
+,
+kah 7: Status Kelaikan Kerja
+LANs |. Mampu melakukan pekerjaan semula
+2. Mampu melakukan pekerjaan semula, tetapi cfcktivitas menurun
+3. Mampu melakukan pekerjaan, tetapi dapat mempengaruhi kondisi medis
+4. Mampu melakukan pekerjaan, tetapi berisiko bagi pekerja, pekerja lain atau
+komunitas
+5. Tidak mampu secara fisik/mental melakukan pekerjaan untuk sementara waktu
+Hasil penilaian biasa dinyatakan dengan:
+|. Laik Kerja atau Fit to work:
+a. Bila pekerja mampu melakukan pekerjaan semula dengan cfisicn
+b. Dan tidak ada risiko yang berarti bagi pekerja, rekan kerja atau lingkungan
+bila pekerja melakukan pekerjaannya
+2. Laik Kerja dengan Catatan atau Fit with note
+Bila pekerja dapat melakukan pekerjaan semula, namun ada hal yang perlu
+diketahui dan/atau dilakukan oleh perusahaan/instansi terlebih dahulu. Catatan
+dalam hal ini adalah hal yang perlu diketahui oleh perusahaan/instansi, seperi
+misalnya jika ada limitasi dari pekerja dalam melakukan pekerjaan atau restriksi
+bagi pekerja atau dapat merupakan prasyarat yang harus dilakukan
+perusahaan/instansi agar pekerja dapat kembali bekerja.
+a. Laik kerja dengan restriksi: bila ada hal-hal dalam tugasnya yang tidak boleh
+dilakukan karena keadaan kesehatannya, misalnya tidak boleh kerja shift. |
+b. Laik kerja dengan limitasi: bila ada hal-hal dalam tugasnya yang tidak bisa |
+dilakukan lagi karena keadaan kesehatannya, misalnya tidak bisa mengangkat |
+"beban > 10 kg, kecuali menggunakan alat bantu.
+3. Tidak Laik Kerja untuk sementara atau Temporary Unfit;
+a. Bila pada saat tersebut pekerja belum bisa melakukan pekerjaannya, mungkin
+karcna masih dalam masa penyembuhan.
+b. Bila menyatakan untuk “sementara”, harus dituliskan untuk periode berapa
+.lama diperkirakan pekerja belum bisa bekerja. Schingga perusahaan/instansi
+dapat melakukan penyesuaian-penyesuaian di tempat kerja sambil menunggu
+pekerja dapat kembali aktif.
+4. Tidak laik kerja untuk pekerjaan ini:
+a. Bila pekerja tidak bisa lagi melakukan tugas utamanya karena keadaan
+kesehatannya yang tidak bisa pulih lagi.
+b. Dalam hal ini perlu ditulis pekerjaan seperti apa yang masih bisa dilakukan dan
+bukan selalu berarti pekerja harus dipindahkan ke pekerjaan administrasi. Jadi
+harus sesuai dengan kompetensi yang dimiliki pekerja.
+c. Bila harus beralih ke pekerjaan lain yang belum dimiliki kompetensinya maka |
+dapat diusulkan suatu program kembali kerja yang dimulai dengan pelatihan
+3
+
+
+===== HALAMAN 15 (deskew -3.0 derajat) =====
+5. Tidak laik kerja untuk semua pekerjaan:
+Bila pekerja tidak bisa melakukan pekerjaan apapun karena henti,
+Kesehatan. “Tanya kondigi ;
+Selain hasil asesmen, dapat diberikan rekomendasi agar pasien hi 1
+kemampuan yang diharapkan. Rekomendasi harus jelas, spesifik dan . Ka Mencapgi 1
+| aspek waktu berlakunya en juga Mencakup
+| -  Pelatihan/program rehabilitasi
+| - Penyesuaian tempat kerja 1
+! - Penyesuaian pekerjaan 1
+| ~ Pekerjaan lain yang masih dapat dilakukan |
+| - Periode re-asesmen |
+| !
+
+
+===== HALAMAN 16 (deskew +2.0 derajat) =====
+|
+BAB VI
+PENUTUP
+| Asesmen kclaikan kerja membantu pemberi kerja maupun pekerja dalam penentuan pekerjaan
+: ang dapat dilakukan oleh pekerja, tanpa merugikan diri sendiri, pemberi kerja maupun
+Vingkungan. Ascsemen kelaikan kerja dilakukan dengan 7 langkah penilaian kelaikan kerja yang
+| merupakan langkah-langkah yang perlu dilakukan agar bisa mengambil keputusan yang
+berdasarkan bukti ataupun menggunakan professional judgement.
+| |
+| |
+|
+|
+|
+|
+15
+
+
+===== HALAMAN 17 (deskew -1.5 derajat) =====
+|
+LAMPIRAN
+« T ELAIKAN KERJA
+ott ElKAT MEDIS UNTUK K
+| FORMAT SERTH IKAT
+. ; JOKTER SPESIALIS KEDOK TE
+KOP FASYANKES/KOP DO : ‘RAN OK
+KOP PERUSAHAAN KA AT MEDIS UNTUK KELAIKAN KERJA YAS!
+(NOMOR SURAT SESUAI FASYANKES )
+anoan di bawah int: |
+sya yang bertandatangan di bawa
+Saya) iia CLT. ae bewwea 4 Kandis F Magny dah RACs oo oy SpOk
+sas permintaan dati ........ (nama institusi/pribadi/rujukan dokter) untuk melakukan Penilai:
+Letakan kerja (pra- kerja/berkala/khusus") terhadap: an
+a, Nama Lengkap dan dan Jenis Kelamin MOTO = (Lip)
+b. Nomor Rekam Medis : a, Kebesaag die poring. Konon
+c. Tanggal Lahir : AA MA
+Berdasarkan pemeriksaan pada hari ..... tanggal .... berupa anamnesis, pemeriksaan fisik dan hasil
+pemeriksaan penunjang ...... .....menyatakan bahwa ybs:
+U Laik kerja
+O Laik kerja dengan catatan ............. |
+O Tidak laik kerja sementara sampai dilakukan penilaian kembali pada .............
+( Tidak laik kerja
+Untuk pekerjaan ....
+Sertifikat ini tidak dapat digunakan untuk kepentingan hukum lainnya. :
+Nama tempat, tanggal surat :
+ma aa cap dokter dan/atau cap institusi dokter praktek/bekeria
+16 |
+
+
+===== HALAMAN 18 (deskew +1.0 derajat) =====
+>» FORMAT SERTIFIKAT MEDIS UNTUK KEMBALI BEKERJA
+KOP PERUSAHAAN/KOP FASYANKES/KOP DOKTER SPESIALIS KEDOKTERAN gk:
+SERTIFIKAT MEDIS UNTUK KEMBALI BEKERJA “ |
+(NOMOR SURAT SESUAI FASYANKES )
+|
+Saya yang bertandatangan di bawah ini: |
+NPAPERDOKE an nana |
+Atas permintaan dari ............(nama institusi, PRIBADI/RUJUKAN DOKTER) untuk
+melakukan penilaian kelaikan kerja pada pekerja yang akan kembali bekerja : |
+b. Nomor Rekam Medis ? Look.
+Berdasarkan pemeriksaan pada hari ..... tanggal .... berupa anamnesis, pemeriksaan fisik dan hasil
+pemeriksaan penunjang ..........menyatakan bahwa ybs:
+U Laik kerja
+| DO) Laik kerja dengan Catatan...
+| D Tidak laik kerja sementara “
+| O Tidak laik kerja untuk pekerjaan scmula *
+| O Tidak laik kerja untuk semua jenis pekerjaan
+| Dengan demikian pekerja tersebut (*) direkomendasikan untuk mengikuti program kembali |
+| bekerja.
+Sertifikat ini tidak dapat digunakan untuk kepentingan hukum lainnya. |
+Nama tempat, tanggal surat
+Nama dokter (cap dokter dan/atau cap institusi dokter raktek/bckerja
+17

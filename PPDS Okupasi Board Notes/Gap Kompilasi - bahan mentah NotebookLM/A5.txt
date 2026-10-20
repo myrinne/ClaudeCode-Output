@@ -1,0 +1,121 @@
+Menurut Permenaker No. 5 Tahun 2018 tentang K3 Lingkungan Kerja dan pedoman teknisnya, jelaskan rinci PENCAHAYAAN tempat kerja: standar intensitas pencahayaan (lux) untuk pekerjaan kantor dan pekerjaan dengan komputer (berbagai jenis pekerjaan/ruangan beserta angka lux-nya), faktor yang harus diperhatikan (intensitas, distribusi, silau, kontras, warna), cara pengukuran (luxmeter, titik ukur), dan pengendalian silau. Kutip angka persis dari sumber. Jika tabel lampiran tidak terbaca atau tidak ada di sumber, katakan dengan jelas.
+
+
+Thoughts
+Berikut adalah penjelasan rinci mengenai pencahayaan tempat kerja berdasarkan Permenaker No. 5 Tahun 2018 tentang K3 Lingkungan Kerja serta pedoman teknis ergonomi dan kesehatan kerja dari literatur spesialis yang ada di sumber:
+1. Pengertian dan Dasar Hukum (Permenaker No. 5 Tahun 2018)
+Berdasarkan Permenaker No. 5 Tahun 2018 tentang K3 Lingkungan Kerja, pencahayaan merupakan salah satu parameter Faktor Fisika yang wajib diukur dan dikendalikan di tempat kerja [Pasal 8 ayat (1) huruf g, Pasal 16 ayat (1)]
+.
+Pencahayaan: Sesuatu yang memberikan terang (sinar) atau yang menerangi, meliputi pencahayaan alami dan pencahayaan buatan [Pasal 1 ayat (29)]
+.
+Intensitas Cahaya: Jumlah rata-rata cahaya yang diterima pekerja setiap waktu pengamatan pada setiap titik dan dinyatakan dalam satuan Lux [Pasal 1 ayat (33)]
+.
+Lux: Satuan metrik ukuran cahaya pada suatu permukaan [Pasal 1 ayat (34)]
+.
+Ketentuan Operasional Peraturan Menteri:
+Pencahayaan Alami: Berasal dari sinar matahari. Desain gedung bertempat kerja harus menjamin intensitas cahaya alami sesuai standar [Pasal 17]
+.
+Pencahayaan Buatan: Digunakan jika pencahayaan alami tidak memenuhi standar. Pencahayaan buatan tidak boleh menyebabkan panas berlebihan atau mengganggu Kualitas Udara Dalam Ruangan (KUDR) [Pasal 18]
+.
+Pencahayaan Darurat: Harus disediakan untuk evakuasi/penyelamatan, bekerja secara otomatis, memiliki intensitas cukup, serta dipasang pada jalur evakuasi/akses keluar dengan garis penunjuk buatan bahan reflektif atau memancarkan cahaya [Pasal 19]
+.
+2. Standar Intensitas Pencahayaan (Lux) untuk Pekerjaan Kantor & Komputer
+⚠️ CATATAN KRITIS SUMBER: Di dalam file dokumen PDF Permenaker_5_2018_K3_Lingkungan_Kerja.pdf yang diunggah, teks pasal-pasal utama (Pasal 1 s.d. 74) tercantum lengkap
+. Namun, tabel rincian Lampiran yang memuat daftar angka lux untuk tiap ruangan/jenis pekerjaan tidak tercantum/terpotong pada dokumen PDF tersebut.
+Oleh karena itu, angka-angka standar teknis intensitas pencahayaan (lux) di bawah ini dirujuk secara presisi dari literatur kedokteran okupasi dan standar ergonomi internasional yang tersedia di sumber (Current Occupational & Environmental Medicine oleh LaDou & Harrison, Bodyspace oleh Pheasant & Haslegrave, dan ACGIH TLV 2026)
+:
+A. Standar Khusus Pekerjaan Komputer (VDU / Monitor) & Kantor
+Pekerjaan Komputer (VDU / Display Screen Equipment):
+Pengaturan pencahayaan umum (general illumination) di ruang kerja komputer direkomendasikan diturunkan hingga sekitar 500 lux
+.
+Tingkat intensitas ini menjaga rasio pencahayaan seimbang antara layar monitor yang memancarkan cahaya dengan lingkungan sekitar, sehingga mencegah kelelahan mata (eyestrain/asthenopia)
+.
+Pekerjaan Administrasi Kantor Biasa:
+Tugas visual dengan kontras tinggi atau ukuran karakter besar (membaca cetakan kertas jelas, tulisan tangan tinta, inspeksi biasa): >200 hingga 500 lux
+.
+Tugas visual dengan kontras sedang atau ukuran karakter kecil (membaca tulisan pensil, dokumen cetakan kurang jelas, pemrosesan berkas detail): >500 hingga 1000 lux
+.
+Pekerjaan Uji Visual / Diskriminasi Warna:
+Pekerjaan/pemeriksaan visual yang memerlukan persepsi warna akurat (seperti Color Vision Testing): direkomendasikan tingkat iluminasi sekitar 300 lux (28 foot-candles)
+.
+B. Rentang Standar Iluminasi Berdasarkan Jenis Aktivitas (LaDou & Harrison, Table 15-7)
+Jenis Aktivitas atau Area Kerja
+Rentang Iluminasi (Lux)
+Rentang (Footcandles)
+Area publik dengan lingkungan sekitar gelap
+20 – 50 lux
+2 – 5 fc
+Orientasi sederhana untuk kunjungan singkat sementara
+>50 – 100 lux
+>5 – 9 fc
+Ruang kerja di mana tugas visual hanya dilakukan sesekali
+>100 – 200 lux
+>9 – 19 fc
+Tugas visual kontras tinggi / ukuran besar (baca cetakan, tulis tinta, kerja bangku biasa)
+>200 – 500 lux
+>19 – 46 fc
+Tugas visual kontras sedang / ukuran kecil (baca tulisan pensil, cetakan buruk, perakitan sedang)
+>500 – 1000 lux
+>46 – 93 fc
+Tugas visual kontras rendah / sangat kecil (pensil keras di kertas buram, inspeksi sangat sulit)
+>1000 – 2000 lux
+>93 – 186 fc
+Tugas visual sangat halus & lama (perakitan ekstra halus, kerja instrumen presisi)
+>2000 – 5000 lux
+>186 – 464 fc
+Tugas visual sangat khusus / kontras ekstrem rendah (beberapa prosedur bedah/operasi)
+>10.000 – 20.000 lux
+>929 – 1858 fc
+3. Faktor-Faktor Utama yang Harus Diperhatikan dalam Pencahayaan
+Kemampuan penglihatan tanpa memicu kelelahan visual ditentukan oleh 5 faktor utama
+:
+Intensitas (Kecukupan Iluminasi / Illuminance): Tingkat pencahayaan harus disesuaikan dengan tingkat kesulitan tugas visual, ukuran objek, kontras target, dan usia/akuitas visual pekerja
+.
+Distribusi / Keseragaman (Uniformity): Penyebaran cahaya harus merata di seluruh area kerja untuk mencegah timbulnya bayangan tajam (shadows) atau perbedaan penerangan yang mendadak.
+Kontras (Contrast): Perbedaan luminansi antara target visual (misalnya teks) dan latar belakangnya (misalnya kertas atau layar)
+. Rasio kecerahan maksimum yang dianjurkan antara layar komputer dan lingkungan kerja sekitarnya adalah 1 : 3
+.
+Silau (Glare): Keberadaan cahaya terang berlebih yang mengganggu kenyamanan dan kemampuan visual. Terdiri dari direct glare (silau langsung dari lampu/jendela) dan reflected glare (silau pantulan dari layar/meja kilap)
+.
+Warna & Spektrum Cahaya (Color & Spectrum):
+Kemampuan sumber cahaya memancarkan spektrum warna secara alami (CRI - Color Rendering Index).
+Efek Non-Visual Cahaya (ACGIH TLV 2026 Appendix A): Spektrum cahaya kaya warna biru (blue-enriched / high melanopic light) menekan produksi melatonin dan meningkatkan kewaspadaan (alertness) pada shift kerja siang/malam, sedangkan area istirahat/pemulihan memerlukan pencahayaan redup (low melanopic light)
+.
+4. Cara Pengukuran Pencahayaan Tempat Kerja
+Alat Ukur: Menggunakan Luxmeter (fotometer terkalibrasi yang merespons spektrum penglihatan manusia / Vλ).
+Titik Ukur & Ketinggian Pengukuran (Pedoman Teknis / SNI K3 Lingkungan Kerja):
+Pekerjaan Kantor / Komputer (Posisi Duduk): Pengukuran dilakukan pada ketinggian bidang kerja (workplane height), yaitu 0,75 meter (75 cm) di atas lantai
+.
+Pencahayaan Lokal (Task Lighting): Sensor luxmeter diletakkan tepat pada titik meja/objek kerja tempat tangan/mata pekerja beraktivitas.
+Pencahayaan Umum (General Lighting): Ruangan dibagi menjadi kisi-kisi/grid bujur sangkar (luas titik disesuaikan dengan ukuran ruangan), dan pengukuran dilakukan di setiap titik potong kisi pada tinggi 0,75 m dari lantai.
+Prosedur Pengukuran:
+Pengukur tidak boleh menghalangi jatuhnya cahaya ke sensor luxmeter (meminimalkan bayangan tubuh pengukur).
+Pembacaan dilakukan setelah angka pada layar luxmeter menunjukkan posisi stabil (steady state).
+5. Pengendalian Silau (Glare Control)
+Pengendalian silau pada pekerjaan kantor dan komputer dilakukan melalui langkah-langkah hierarkis (LaDou & Harrison; Pheasant & Haslegrave)
+:
+Tata Letak & Orientasi Layar (90°):
+Layar monitor diletakkan tegak lurus (berbentuk sudut 90°) terhadap jendela dan sejajar dengan deretan lampu fluorescent overhead/plafon
+.
+Posisikan monitor berjarak lebih dari 2 meter (>80 inci) dari jendela
+.
+Pengendalian Cahaya Alami: Menggunakan tirai, louvered blinds, atau lapisan film kaca terpolarisasi (tinted window film) pada jendela
+.
+Pengaturan Pencahayaan Plafon: Mengurangi pencahayaan umum menjadi ~500 lux, mengarahkan armatur lampu ke atas (indirect uplighting), atau memasang kisi-kisi parabola (parabolic louvers) agar cahaya memancar lurus ke bawah
+.
+Pencahayaan Lokal (Task Lighting): Menyediakan lampu meja khusus yang cahayanya terarah hanya ke dokumen/target visual tanpa menyilaukan mata atau memantul ke layar
+.
+Permukaan Non-Reflektif: Gunakan meja kerja dan peralatan bertekstur matte (dull/non-reflective) untuk mencegah silau pantulan
+.
+Filter Layar Monitor: Jika langkah 1–5 belum menghilangkan silau, gunakan filter layar anti-silau terpolarisasi (polarized anti-glare filter)
+.
+Sumber Referensi yang Dipakai
+Peraturan Menteri Ketenagakerjaan Republik Indonesia Nomor 5 Tahun 2018 tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja (Pasal 1, 8, 16, 17, 18, 19). (Permenaker_5_2018_K3_Lingkungan_Kerja.pdf)
+LaDou, J. & Harrison, R. J. (2014/2021). Current Occupational & Environmental Medicine (5th/6th ed.). McGraw-Hill Education. Bab 15 (Ergonomics & Prevention: Lighting & Glare, Table 15-7). (CURREN~1.PDF)
+Pheasant, S. & Haslegrave, C. M. (2006). Bodyspace: Anthropometry, Ergonomics and the Design of Work (3rd ed.). Taylor & Francis. Bab 7 (Visual Demands & Lighting). (BODYSP~1.PDF)
+American Conference of Governmental Industrial Hygienists (ACGIH). (2026). TLVs and BEIs: Statement on New Lighting Technologies (Appendix A). (Referensi TLV BEI 2026 - ACGIH.pdf)
+Lakowski, R. (1969). Theory and Practice of Colour Vision Testing: Part 1 & 2. British Journal of Industrial Medicine. (Lakowski_1969_BJIM_Colour_Vision_Testing_Part1.pdf & Part2.pdf)
+💡 Apakah Dokter ingin kita melanjutkan dengan pembahasan topik K3 Lingkungan Kerja lainnya (seperti kebisingan, getaran, atau iklim kerja panas WBGT), atau mendiskusikan simulasi soal ujian board terkait materi ini?
+Bagaimana cara melakukan pengukuran luxmeter yang benar di ruangan?
+Apa saja metode pencegahan Carpal Tunnel Syndrome di tempat kerja?
+Jelaskan mengenai konsep exposome dalam epidemiologi lingkungan.
