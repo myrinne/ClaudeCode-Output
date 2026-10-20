@@ -17,7 +17,8 @@ NAVY = RGBColor(0x1F, 0x3A, 0x5F)
 
 
 def find_anchor(doc, section, anchor):
-    paras = doc.paragraphs
+    # Hanya paragraf ber-style Heading, supaya entri daftar isi (teksnya sama) tidak ikut cocok
+    paras = [p for p in doc.paragraphs if p.style.name.lower().startswith("heading")]
     start = next(i for i, p in enumerate(paras) if p.text.strip().startswith(section))
     for p in paras[start + 1:]:
         if p.text.strip().startswith(anchor):

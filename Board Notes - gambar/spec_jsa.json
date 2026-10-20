@@ -1,0 +1,8 @@
+[
+ {"section": "7. REBA", "anchor": "8. OWAS",
+  "image": "infografik/JSA_rula-reba.png",
+  "caption": "Infografik: RULA vs REBA, grup segmen tubuh, skor akhir, level aksi, dan kapan memakai yang mana. Dibuat dengan NotebookLM Studio dari notebook JSA+Ergonomic (47 sumber), 2026-10-20. Cocokkan sudut dan skor dengan lembar kerja asli RULA/REBA sebelum dihafal."},
+ {"section": "10. NIOSH Lifting Equation", "anchor": "11. OCRA",
+  "image": "infografik/JSA_niosh-lifting.png",
+  "caption": "Infografik: variabel H, V, D, A, F, C, rumus RWL, Lifting Index, contoh hitung, dan batasan metode (NIOSH 1994 / ISO 11228-1). Dibuat dengan NotebookLM Studio dari notebook JSA+Ergonomic (47 sumber), 2026-10-20. Label V pada ilustrasi tertulis 'Tinggi vertikal tangan dari lantai'."}
+]

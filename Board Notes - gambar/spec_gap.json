@@ -1,0 +1,20 @@
+[
+ {"section": "B.3 Peralatan sampling", "anchor": "B.4 Exposome",
+  "image": "infografik/B_sampling-higiene.png",
+  "caption": "Infografik: personal vs area sampling, peralatan sampling per agen, strategi sampling, konversi satuan, dan exposome. Dibuat dengan NotebookLM Studio dari notebook Board Notes - Gap (46 sumber), 2026-10-20. Label zona napas pada ilustrasi kurang terbaca; acuan radius sekitar 30 cm dari hidung/mulut (lihat teks B.2)."},
+ {"section": "C.4 Sindrom radiasi akut", "anchor": "C.5 Nilai batas dosis",
+  "image": "infografik/C_radiasi-pengion.png",
+  "caption": "Infografik: daya tembus dan perisai radiasi, prinsip waktu-jarak-perisai (ALARA), fase dan sub-sindrom ARS. Dibuat dengan NotebookLM Studio dari notebook Board Notes - Gap (46 sumber), 2026-10-20. Panel ARS memuat dua set ambang: baris atas (>0,7 / >10 / >50 Gy) mengikuti versi CDC, baris bawah (1-2 / 6-10 / >20-50 Gy) rentang klasik; cocokkan dengan tabel C.4."},
+ {"section": "C.8 Frostbite", "anchor": "C.9 Iklim kerja panas",
+  "image": "infografik/C_cold-stress.png",
+  "caption": "Infografik: derajat hipotermia menurut suhu inti, 4 derajat frostbite, cedera dingin non-beku, dan pengendalian cold stress. Dibuat dengan NotebookLM Studio dari notebook Board Notes - Gap (46 sumber), 2026-10-20."},
+ {"section": "D.3 Leptospirosis", "anchor": "D.4 Higiene makanan",
+  "image": "infografik/D_leptospirosis.png",
+  "caption": "Infografik: siklus penularan, pekerjaan berisiko, perjalanan penyakit, diagnosis-tatalaksana, dan pengendalian leptospirosis. Dibuat dengan NotebookLM Studio dari notebook Board Notes - Gap (46 sumber), 2026-10-20."},
+ {"section": "G.2 Epidemiologi lapangan", "anchor": "G.3 PICO",
+  "image": "infografik/G_investigasi-klb.png",
+  "caption": "Infografik: trias epidemiologi, tipe kurva epidemi, attack rate dan tabel 2x2 food-specific, serta langkah investigasi KLB. Dibuat dengan NotebookLM Studio dari notebook Board Notes - Gap (46 sumber), 2026-10-20."},
+ {"section": "H.2 Penglihatan warna", "anchor": "H.3 Tautan",
+  "image": "infografik/H_ishihara.png",
+  "caption": "Infografik: jenis defisiensi penglihatan warna, jenis plat Ishihara (ilustrasi skematis, bukan plat asli), prosedur, keterbatasan, dan implikasi kelaikan kerja. Dibuat dengan NotebookLM Studio dari notebook Board Notes - Gap (46 sumber), 2026-10-20. Koreksi: 'anopia' lebih tepat berarti satu jenis kerucut tidak berfungsi (dikromasi), bukan 'kebutaan warna parsial/total'."}
+]
