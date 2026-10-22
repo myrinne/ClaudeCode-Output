@@ -61,7 +61,6 @@ I10 Essential (primary) hypertension
 R03.0 Elevated blood-pressure reading, without diagnosis of hypertension
 E11.9 Type 2 diabetes mellitus without complications
 E66.9 Obesity, unspecified
-E66.3 Overweight
 E78.5 Hyperlipidaemia, unspecified
 H52.0 Hypermetropia
 H52.1 Myopia
