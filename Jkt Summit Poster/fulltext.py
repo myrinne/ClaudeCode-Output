@@ -26,7 +26,7 @@ FT = {
     # Excluded at full text (7)
     181: ("Retrieved", "Exclude", "E10", "Dong 2025: HRCT, not a periodic-examination test"),
     122: ("Retrieved", "Exclude", "E10", "Groot Lipman 2023: CT for asbestosis, not a periodic-examination test"),
-    358: ("Retrieved", "Exclude", "E1", "Smesseim 2025: compensation applicants, not workers at a periodic examination (also CT)"),
+    358: ("Retrieved", "Exclude", "E10", "Smesseim 2025: CT for asbestosis, not a periodic-examination test (also compensation applicants); E1 until 2026-10-22"),
     405: ("Retrieved", "Exclude", "E4", "Prediction model of preclinical CWP"),
     813: ("Retrieved", "Exclude", "E4", "Metabolic syndrome prediction model"),
     507: ("Retrieved", "Exclude", "E7", "Ceramic workers: no reference-standard performance"),
