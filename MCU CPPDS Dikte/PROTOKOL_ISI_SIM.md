@@ -1,6 +1,6 @@
 # Protokol: Dikte → isi otomatis SIM DoctorTool (Pemkes Maba)
 
-Status: **DRAF v0.1 (2026-10-22)**. Belum dibangun. Menunggu jawaban pertanyaan di bagian 9.
+Status: **v0.2 (2026-10-22)**. Pertanyaan v0.1 sudah dijawab dokter (bagian 9). Belum dibangun; berikutnya tahap 1.
 
 Tujuan: dokter cukup mengetik nama peserta di aplikasi Dikte MCU. Setelah itu aplikasi membuka pasien di
 `sim.doctortool.id`, merekam anamnesis, lalu mengisi Subjektif, Objektif, Asesmen, dan Perencanaan.
@@ -30,7 +30,8 @@ dan mengingatkan dokter bila Simpan belum ditekan.
   ├─(A) REKAM mulai otomatis (sama seperti F9)
   │
   └─(B) BUKA PASIEN (paralel, ±3–5 dtk)
-        1. Halaman Praktik → tab "Hari ini" → cari baris dengan Nama yang cocok
+        1. Halaman Praktik → tab "Hari ini" → cari baris yang Namanya MENGANDUNG teks ketikan
+           (boleh sebagian, tidak peka huruf besar/kecil; mis. "juniarto")
            - 0 hasil  → status merah "Nama tidak ditemukan"; rekaman tetap jalan
            - >1 hasil → aplikasi menampilkan pilihan (nama, umur/JK, No. antrean); dokter memilih
         2. Klik Aksi "Periksa" (ikon ke-2)
@@ -46,6 +47,7 @@ dan mengingatkan dokter bila Simpan belum ditekan.
   │
   └─(C) ISI FORM — hanya bila header masih pasien yang sama
         Subjektif → Objektif → Asesmen → Perencanaan (bagian 3)
+        Satu tombol Simpan menyimpan keempat sub-tab, jadi pindah sub-tab sebelum Simpan aman.
         Lalu kembali ke sub-tab Subjektif agar dokter bisa membaca dari atas
   │
 [Aplikasi] status kuning "Terisi: <NAMA>. Periksa lalu klik SIMPAN"
@@ -61,8 +63,8 @@ Kotak pertama ("Pasien 31 th, TB ... datang dg keluhan ...") **tidak disentuh** 
 | Kotak | Isi (contoh) |
 |---|---|
 | Subjektif (ke-2) | `Keluhan saat ini : Tidak ada keluhan`<br>`Riwayat Penyakit Sekarang : -` |
-| Riwayat Penyakit Dahulu dan Pengobatan | 7 baris: RPD (DM, HT, jantung, asma disangkal) / Pengobatan / Rawat inap / Operasi / Kacamata / Penyakit Keluarga / Alergi |
-| Riwayat Personal Sosial dan Lingkungan | Riwayat Olahraga / Riwayat Merokok/Alkohol / Program studi |
+| Riwayat Penyakit Dahulu dan Pengobatan | 7 baris, urutan tetap: `Riwayat Penyakit Dahulu` (DM, hipertensi, jantung, asma disangkal) / Pengobatan / Rawat inap di RS / Operasi / Penggunaan kacamata / Penyakit Keluarga / **Alergi (paling bawah)** |
+| Riwayat Personal Sosial dan Lingkungan | Riwayat Olahraga / Riwayat Merokok/Alkohol / Program studi. Isi bawaan sistem (mis. "Prodi ... dan Riwayat Personal Sosial dan Lingkungan") **ikut diganti** |
 
 - Isi kotak **diganti seluruhnya** dengan teks hasil dikte.
 - Baris yang tidak ditanyakan dibiarkan kosong setelah titik dua, sama dengan aturan sekarang.
@@ -70,7 +72,7 @@ Kotak pertama ("Pasien 31 th, TB ... datang dg keluhan ...") **tidak disentuh** 
 
 ### 3b. Objektif
 - Centang **Kepala, Leher, Thorax, Abdomen, Ekstremitas**.
-- Tiap kotak diisi `dbn`. Bila ada temuan abnormal di regio itu, `dbn` diganti temuannya
+- `dbn` muncul otomatis saat dicentang. Skrip hanya mengganti kotak regio yang punya temuan abnormal
   (mis. Ekstremitas: `varices ekstremitas kanan grade 1`).
 - Pemetaan temuan ke regio dikerjakan Claude: mata/telinga/gigi/tonsil masuk Kepala; tiroid/KGB masuk Leher; dst.
 - Genitalia, Lain-lain, dan Catatan Pemeriksaan Awal tidak disentuh.
@@ -82,8 +84,20 @@ Kotak pertama ("Pasien 31 th, TB ... datang dg keluhan ...") **tidak disentuh** 
 | Masalah | Umum |
 | Prognosis | Bonam (Baik) |
 | Diagnosis Kerja (ICD10) | ketik `Z02.0` lalu pilih "Z02.0 - Examination for admission to educational institution" |
-| Diagnosis Sekunder (ICD10) | tiap kode saran Claude: ketik kode lalu pilih baris yang **kodenya persis sama**; bila tidak ada yang sama → dilewati dan dilaporkan |
+| Diagnosis Sekunder (ICD10) | (1) temuan dari dikte (kode saran Claude) + (2) **status gizi dari IMT** (lihat di bawah). Tiap kode: ketik kode lalu pilih baris yang **kodenya persis sama**; bila tidak ada yang sama → dilewati dan dilaporkan |
 | ICPC-2, Banding, Status Fungsional, Aspek Personal | tidak diisi |
+
+**Status gizi (IMT)** dihitung skrip, bukan Claude. Angka diambil dari teks bawaan kotak Subjektif pertama ("... IMT 22.76 ...");
+bila tidak ada, dihitung dari TB/BB di Pemeriksaan Awal. Batas WHO Asia-Pacific, sama dengan pipeline MCU RSCM:
+
+| IMT | Diagnosis sekunder |
+|---|---|
+| 23,0–24,9 | E66.3 Overweight |
+| ≥ 25,0 | E66.9 Obesity, unspecified |
+| < 23,0 | (tidak ditambah) |
+
+Catatan: E66.3 ada di ICD-10-CM, tetapi belum tentu ada di daftar ICD-10 WHO yang dipakai SIM. Dicek saat tahap 1;
+bila tidak ada, aplikasi melapor "overweight: kode tidak tersedia, isi manual".
 
 ### 3d. Perencanaan
 - Centang **Darah EDTA, Darah tanpa anti koagulan, Urine**. Tanggal terisi otomatis hari ini, seperti di screenshot.
@@ -124,7 +138,7 @@ Isian `pf` yang kosong ditulis `dbn` oleh skrip.
 |---|---|---|
 | 0 | Protokol ini disetujui dan pertanyaan bagian 9 dijawab | Ya |
 | 1 | **Inspeksi DOM baca-saja**: dokter login di Chrome debug, membuka 1 pasien; skrip hanya membaca struktur form (selector), tanpa mengetik atau mengklik isian | Ya, ±10 menit |
-| 2 | Buat `isi_sim.py` + mode **uji kering**: isi form pada pasien uji/dummy, tanpa Simpan, lalu dokter melihat hasilnya | Ya (perlu pasien uji) |
+| 2 | Buat `isi_sim.py`. **Tidak ada pasien dummy**, jadi uji pertama pada peserta sungguhan sambil diawasi: skrip mengisi, dokter memeriksa setiap sub-tab sebelum Simpan. Bila isian salah: perbaiki manual, atau muat ulang halaman (isian yang belum disimpan hilang) lalu isi manual | Ya |
 | 3 | Integrasi ke aplikasi Dikte: kotak nama → buka pasien → rekam → isi | Tidak |
 | 4 | Uji nyata 2–3 peserta pertama sambil diawasi; mode cadangan = clipboard seperti sekarang | Ya |
 
@@ -148,4 +162,14 @@ Isian `pf` yang kosong ditulis `dbn` oleh skrip.
 
 ## 9. Pertanyaan untuk dokter (perlu dijawab sebelum tahap 1)
 
-Lihat daftar di pesan chat. Jawabannya akan dimasukkan ke sini sebagai v0.2.
+Dijawab dokter 2026-10-22:
+
+| # | Pertanyaan | Jawaban |
+|---|---|---|
+| 1 | Urutan kotak RPD | RPD di atas, Alergi paling bawah; label "Riwayat Penyakit Dahulu" |
+| 2 | Isi bawaan kotak PSL | Diganti sesuai input |
+| 3 | `dbn` di Objektif | Muncul otomatis saat dicentang |
+| 4 | Tombol Simpan | Satu Simpan untuk Subjektif s/d Perencanaan |
+| 5 | Pasien dummy | Tidak ada |
+| 6 | Nama sebagian | Boleh |
+| 7 | (tambahan dokter) | Diagnosis sekunder juga memperhatikan obesitas/overweight |
