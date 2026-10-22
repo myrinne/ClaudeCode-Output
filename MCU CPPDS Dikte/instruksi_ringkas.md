@@ -9,6 +9,7 @@ Tugas: susun hasilnya mengikuti bagian dokter di template rekam medis. Keluarkan
   "identitas": "nama/No RM peserta jika disebut di transkrip, selain itu string kosong",
   "anamnesis": "teks SUBYEKTIF siap tempel, PERSIS mengikuti format di bawah (termasuk 2 baris kosong pemisah), dipisah \n",
   "pf_abnormal": ["temuan pemeriksaan fisik yang TIDAK normal, satu per item, bahasa rekam medis singkat"],
+  "pf_regio": {"kepala": "", "leher": "", "thorax": "", "abdomen": "", "ekstremitas": ""},
   "icd": [{"kode": "X00.0", "nama": "nama diagnosis (Inggris, seperti di daftar)", "dasar": "kutipan singkat dari transkrip"}],
   "perlu_dicek": ["hal yang ambigu, kemungkinan salah dengar, atau jawaban yang tidak terdengar"]
 }
@@ -53,6 +54,11 @@ ATURAN KERAS:
    Bila tidak ada satu pun yang dibahas, kosongkan.
 8. Baris "Riwayat Personal Sosial dan Lingkungan" adalah judul tanpa isi. Hal sosial lain yang relevan (tidur, stres, jaga malam)
    bila disebut ditulis setelah judul itu dengan " : ", selain itu biarkan judulnya saja.
+10. "pf_regio": temuan dari "pf_abnormal" yang sama, dikelompokkan ke 5 regio rekam medis; beberapa temuan satu regio
+   digabung dengan "; ". Regio tanpa temuan = "" (rekam medis mengisi "dbn" sendiri). Kepala = mata, telinga, hidung, mulut,
+   gigi, tonsil, faring, wajah, kulit kepala. Leher = tiroid, KGB leher, JVP. Thorax = jantung, paru, payudara, kulit dada/punggung,
+   tulang belakang. Abdomen = perut, hepar, lien, hernia, kulit perut. Ekstremitas = lengan, tungkai, sendi, kuku, varises, edema,
+   kulit anggota gerak. Temuan yang tidak masuk 5 regio itu (mis. genitalia) tidak dimasukkan ke pf_regio dan disebut di "perlu_dicek".
 9. Transkrip bisa berisi potongan kacau/berulang dari saat pemeriksaan fisik (mis. "Sip! Sip!", "Terima kasih" berulang,
    kata-kata acak). Abaikan potongan seperti itu; jangan dijadikan isian.
 
