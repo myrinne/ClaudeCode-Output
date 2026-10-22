@@ -99,8 +99,8 @@ bila tidak ada, dihitung dari TB/BB di Pemeriksaan Awal. Batas WHO Asia-Pacific,
 
 
 ### 3d. Perencanaan
-- Centang **Darah EDTA, Darah tanpa anti koagulan, Urine**. Tanggal terisi otomatis hari ini, seperti di screenshot.
-- Checkbox lain (Rontgen Paru, EKG, dll.) **tidak diubah**.
+- Centang **Rontgen Paru, Pemeriksaan EKG, Darah EDTA, Darah tanpa anti koagulan, Urine** (EKG & Rontgen ditambahkan 2026-10-22). Tanggal terisi otomatis hari ini, seperti di screenshot.
+- Checkbox lain **tidak diubah**.
 
 ## 4. Pengaman
 
