@@ -352,12 +352,15 @@ class Sim:
         if imt and imt >= OBES_IMT and "E66.9" not in icd:
             icd.append("E66.9")
             lap.append(f"IMT {imt} → E66.9 ditambahkan")
+        def dx_sekunder(k):
+            # pengisian ulang (rekaman lanjutan peserta yang sama) tidak boleh menggandakan kode
+            if self.js("k => document.body.innerText.toUpperCase().includes(k + ' - ')", k):
+                return "sudah ada"
+            return self.pilih_combobox(self.loc("placeholder", "Pencarian Diagnosis Sekunder (ICD10)"), k,
+                                       lambda t: t.strip().upper().startswith(k + " "))
         for kode in icd:
-            if kode.startswith("Z02"):
-                continue
-            langkah(f"Dx sekunder {kode}", lambda k=kode: self.pilih_combobox(
-                self.loc("placeholder", "Pencarian Diagnosis Sekunder (ICD10)"), k,
-                lambda t: t.strip().upper().startswith(k + " ")))
+            if not kode.startswith("Z02"):
+                langkah(f"Dx sekunder {kode}", lambda k=kode: dx_sekunder(k))
 
         self.subtab("Perencanaan")
         for nm in LAB:
@@ -372,11 +375,15 @@ class Sim:
 
         # kembali ke awal + cek isian Subjektif masih ada setelah pindah sub-tab
         self.subtab("Subjektif")
-        try:
-            if self.loc("textarea", "Subjektif", last=True).input_value() != kotak["subjektif"]:
-                gagal.append("isian Subjektif HILANG setelah pindah sub-tab")
-        except Exception as e:
-            gagal.append(f"cek ulang Subjektif: {e}")
+        for coba in range(3):
+            try:
+                if self.loc("textarea", "Subjektif", last=True).input_value() != kotak["subjektif"]:
+                    gagal.append("isian Subjektif HILANG setelah pindah sub-tab")
+                break
+            except Exception as e:
+                if coba == 2:
+                    gagal.append(f"cek ulang Subjektif: {e}")
+                self.pg().wait_for_timeout(1500)
         self.terisi_pada = time.time()
         self.boleh_lepas = False
         self.pasang_pemantau_simpan()
