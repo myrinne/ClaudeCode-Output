@@ -1,6 +1,6 @@
 # Protokol: Dikte → isi otomatis SIM DoctorTool (Pemkes Maba)
 
-Status: **v0.2 (2026-10-22)**. Pertanyaan v0.1 sudah dijawab dokter (bagian 9). Belum dibangun; berikutnya tahap 1.
+Status: **v0.3 (2026-10-22)**. Pertanyaan v0.1 sudah dijawab dokter (bagian 9). Belum dibangun; berikutnya tahap 1.
 
 Tujuan: dokter cukup mengetik nama peserta di aplikasi Dikte MCU. Setelah itu aplikasi membuka pasien di
 `sim.doctortool.id`, merekam anamnesis, lalu mengisi Subjektif, Objektif, Asesmen, dan Perencanaan.
@@ -72,7 +72,8 @@ Kotak pertama ("Pasien 31 th, TB ... datang dg keluhan ...") **tidak disentuh** 
 
 ### 3b. Objektif
 - Centang **Kepala, Leher, Thorax, Abdomen, Ekstremitas**.
-- `dbn` muncul otomatis saat dicentang. Skrip hanya mengganti kotak regio yang punya temuan abnormal
+- Kelima checkbox **dicentang oleh skrip** (tidak tercentang sendiri). Setelah dicentang, `dbn` muncul otomatis;
+  skrip hanya mengganti kotak regio yang punya temuan abnormal
   (mis. Ekstremitas: `varices ekstremitas kanan grade 1`).
 - Pemetaan temuan ke regio dikerjakan Claude: mata/telinga/gigi/tonsil masuk Kepala; tiroid/KGB masuk Leher; dst.
 - Genitalia, Lain-lain, dan Catatan Pemeriksaan Awal tidak disentuh.
@@ -92,12 +93,9 @@ bila tidak ada, dihitung dari TB/BB di Pemeriksaan Awal. Batas WHO Asia-Pacific,
 
 | IMT | Diagnosis sekunder |
 |---|---|
-| 23,0–24,9 | E66.3 Overweight |
 | ≥ 25,0 | E66.9 Obesity, unspecified |
-| < 23,0 | (tidak ditambah) |
+| < 25,0 | (tidak ditambah; overweight diabaikan karena kodenya tidak ada di SIM) |
 
-Catatan: E66.3 ada di ICD-10-CM, tetapi belum tentu ada di daftar ICD-10 WHO yang dipakai SIM. Dicek saat tahap 1;
-bila tidak ada, aplikasi melapor "overweight: kode tidak tersedia, isi manual".
 
 ### 3d. Perencanaan
 - Centang **Darah EDTA, Darah tanpa anti koagulan, Urine**. Tanggal terisi otomatis hari ini, seperti di screenshot.
@@ -130,7 +128,7 @@ bila tidak ada, aplikasi melapor "overweight: kode tidak tersedia, isi manual".
   "perlu_dicek": ["..."]
 }
 ```
-Isian `pf` yang kosong ditulis `dbn` oleh skrip.
+Isian `pf` yang kosong dibiarkan `dbn` (muncul otomatis setelah dicentang).
 
 ## 6. Tahap pembangunan
 
@@ -168,8 +166,8 @@ Dijawab dokter 2026-10-22:
 |---|---|---|
 | 1 | Urutan kotak RPD | RPD di atas, Alergi paling bawah; label "Riwayat Penyakit Dahulu" |
 | 2 | Isi bawaan kotak PSL | Diganti sesuai input |
-| 3 | `dbn` di Objektif | Muncul otomatis saat dicentang |
+| 3 | `dbn` di Objektif | Muncul otomatis, tetapi 5 regio harus dicentang sendiri (oleh skrip) |
 | 4 | Tombol Simpan | Satu Simpan untuk Subjektif s/d Perencanaan |
 | 5 | Pasien dummy | Tidak ada |
 | 6 | Nama sebagian | Boleh |
-| 7 | (tambahan dokter) | Diagnosis sekunder juga memperhatikan obesitas/overweight |
+| 7 | (tambahan dokter) | Diagnosis sekunder memperhatikan obesitas (E66.9); overweight diabaikan, kodenya tidak ada di SIM |
