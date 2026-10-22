@@ -187,8 +187,13 @@ class Sim:
           }, true); }""")
 
     def simpan_diklik(self):
+        if not self.terisi_pada:
+            return False
+        # Simpan yang berhasil membawa SIM kembali ke halaman utama Praktik; penanda klik ikut hilang saat itu
+        if "DoctorPracticeEntry" not in self.pg().url:
+            return True
         t = self.js("() => window.__dikteSimpan || 0")
-        return bool(self.terisi_pada and t and t / 1000 >= self.terisi_pada)
+        return bool(t and t / 1000 >= self.terisi_pada)
 
     # ---- perintah ----
     def buka(self, nama):
@@ -452,6 +457,9 @@ def serve():
 
 
 if __name__ == "__main__":
+    # pipa stdin/stdout di Windows default cp1252: tanda ✓/⚠ dan nama beraksen membuat laporan gagal terkirim
+    sys.stdin.reconfigure(encoding="utf-8")
+    sys.stdout.reconfigure(encoding="utf-8")
     if "--cek" in sys.argv:
         Sim().cek()
     else:
