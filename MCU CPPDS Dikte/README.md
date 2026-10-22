@@ -14,7 +14,7 @@ langsung ada di clipboard**, tinggal Ctrl+V ke rekam medis.
 5. Tekan **F9** lagi → stop. Peserta berikutnya boleh langsung direkam; proses jalan di latar belakang.
 6. ±20–60 dtk kemudian status hijau "✅ … sudah di clipboard" → baca sekilas di jendela → **Ctrl+V** di RM.
    - "Salin PF abnormal" untuk temuan PF; saran ICD-10 tampil di jendela (ketik kodenya di kolom diagnosis RM).
-   - Baris berisi **`[?]`** = tidak ditanyakan / tidak terdengar → lengkapi sendiri.
+   - Baris yang **kosong** setelah titik dua = tidak ditanyakan / tidak terdengar → isi sendiri bila perlu.
    - Clipboard selalu berisi peserta yang **terakhir selesai diproses**; lihat nama/nomor di status.
 7. Semua peserta hari itu terkumpul di `hasil/<tanggal>.md` (tombol "Buka file hari ini"), lengkap dengan transkrip.
 
@@ -29,6 +29,24 @@ langsung ada di clipboard**, tinggal Ctrl+V ke rekam medis.
 - Ruangan bising / tanpa suara bisa memunculkan teks halusinasi pendek (mis. "pi, pi, pi"); Claude menandainya di "Perlu dicek".
 - Mengubah format/aturan/daftar ICD: edit `instruksi_ringkas.md`, lalu buka ulang aplikasi.
 - Model Claude: default `sonnet` (Haiku diuji tidak lebih cepat dan melewatkan nama). Ganti via env `DIKTE_CLAUDE_MODEL`.
+
+## Suara peserta kurang terdengar
+
+Evaluasi 43 peserta 2026-10-21: pertanyaan dokter hampir selalu tertangkap, **jawaban peserta** sering hilang/kacau,
+dan saat pemeriksaan fisik muncul teks berulang ("Sip! Sip!", "Terima kasih"). Pada simulasi dengan file audio,
+jawaban yang 22 dB lebih pelan tetap tertangkap, jadi penyebab utamanya ada **sebelum** audio sampai ke aplikasi:
+
+1. **Matikan efek mikrofon Windows** (paling penting). Laptop ini memakai *Windows Studio Effects – Voice Clarity*
+   yang sengaja menonjolkan satu pembicara di depan layar dan meredam suara lain (= peserta).
+   - Settings → System → Sound → *Microphone Array on SoundWire Device* → **Audio enhancements: Off**.
+   - Win+A (Quick Settings) → **Studio effects** → matikan **Voice focus** (bila ada).
+   - Di halaman mikrofon yang sama: **Input volume 100**.
+2. **Posisi:** laptop di antara dokter dan peserta, bukan menghadap dokter saja. Lebih baik lagi: mikrofon USB
+   *omnidirectional* (mikrofon rapat) di meja, di tengah.
+3. **Ulangi jawaban singkat** dengan suara Anda: *"oke, alergi amoksisilin ya"*. Suara dokter paling jelas terekam.
+
+Di aplikasi (sejak 2026-10-22): suara pelan dinaikkan otomatis (`dynaudnorm`), deteksi suara lebih peka,
+teks sebelumnya tidak lagi dipakai sebagai petunjuk (pemicu pengulangan), dan frasa berulang ≥3x dibuang.
 
 ## Uji coba sebelum hari H (±2 menit)
 

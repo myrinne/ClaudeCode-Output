@@ -32,6 +32,13 @@ CLAUDE_MODEL = os.environ.get("DIKTE_CLAUDE_MODEL", "sonnet")
 CLAUDE_TIMEOUT = 120
 KEEP_AUDIO = False  # potongan audio dihapus setelah ditranskripsi
 HOTKEY_VK = 0x78  # F9
+# buang dengung <90 Hz lalu naikkan suara pelan (peserta duduk lebih jauh dari mikrofon daripada dokter)
+AUDIO_FILTER = "highpass=f=90,dynaudnorm=f=250:g=15:m=20"
+WHISPER_OPTS = dict(
+    language="id", beam_size=1,
+    vad_filter=True, vad_parameters=dict(threshold=0.3, min_speech_duration_ms=150),  # default 0.5 memotong suara pelan
+    condition_on_previous_text=False,  # cegah lingkaran "Sip! Sip! Sip!" saat pemeriksaan fisik
+)  # repetition_penalty/no_repeat_ngram_size/hallucination_silence_threshold diuji 2026-10-22: malah menghilangkan kata
 INITIAL_PROMPT = (
     "Pemeriksaan kesehatan calon PPDS FKUI. Anamnesis: keluhan, riwayat penyakit, alergi, obat, "
     "rawat inap, operasi, kacamata, minus, silinder, asma, diabetes, hipertensi, kolesterol, maag, GERD, "
@@ -78,7 +85,7 @@ class Session:
 def start_recording(mic, session):
     session.proc = subprocess.Popen(
         [FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-f", "dshow", "-i", f"audio={mic}",
-         "-ac", "1", "-ar", "16000", "-f", "segment", "-segment_time", str(CHUNK_SECONDS),
+         "-af", AUDIO_FILTER, "-ac", "1", "-ar", "16000", "-f", "segment", "-segment_time", str(CHUNK_SECONDS),
          str(session.dir / "%03d.wav")],
         stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE,
         creationflags=subprocess.CREATE_NO_WINDOW)
@@ -99,6 +106,11 @@ def load_wav(path):
     with wave.open(str(path), "rb") as w:
         pcm = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16)
     return pcm.astype(np.float32) / 32768.0
+
+
+def collapse_repeats(text):
+    """Frasa 1-4 kata yang berulang >=3x berturut-turut (halusinasi Whisper) disisakan satu."""
+    return re.sub(r"(\b(?:[\w'-]+[\s,.!?]*){1,4}?)(?:\1){2,}", r"\1", text + " ", flags=re.I).strip()
 
 
 def today_md():
@@ -390,15 +402,13 @@ class App:
             audio = load_wav(c)
             if s.carry is not None:
                 audio = np.concatenate([s.carry, audio])
-            segs = list(self.model.transcribe(
-                audio, language="id", vad_filter=True, beam_size=1,
-                initial_prompt=INITIAL_PROMPT + " " + " ".join(s.texts)[-300:])[0])
+            segs = list(self.model.transcribe(audio, initial_prompt=INITIAL_PROMPT, **WHISPER_OPTS)[0])
             # segmen yang menempel di ujung potongan mungkin terpotong: audionya dibawa ke potongan berikutnya
             if not last and segs and segs[-1].end > len(audio) / 16000 - 1.5:
                 s.carry = audio[int(segs.pop().start * 16000):]
             else:
                 s.carry = None
-            s.texts.append(" ".join(x.text.strip() for x in segs))
+            s.texts.append(collapse_repeats(" ".join(x.text.strip() for x in segs)))
             if not KEEP_AUDIO:
                 c.unlink(missing_ok=True)
         except Exception as e:
