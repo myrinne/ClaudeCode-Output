@@ -26,7 +26,7 @@ CDP = "http://127.0.0.1:9223"
 URL_PRAKTIK = "https://sim.doctortool.id/Praktik/DoctorPractice"
 OBES_IMT = 25.0  # WHO Asia-Pacific; overweight tidak dikode (E66.3 tidak ada di SIM)
 REGIO = ["Kepala", "Leher", "Thorax", "Abdomen", "Ekstremitas"]
-LAB = ["Darah EDTA", "Darah tanpa anti koagulan", "Urine"]
+LAB = ["Rontgen Paru", "Pemeriksaan EKG", "Darah EDTA", "Darah tanpa anti koagulan", "Urine"]
 
 # Elemen ditandai dengan atribut data-dikte lalu dipakai lewat locator. Id elemen situs (GUID) berubah tiap muat.
 JS_HELPERS = r"""

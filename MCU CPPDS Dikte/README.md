@@ -27,7 +27,7 @@ langsung ada di clipboard**, tinggal Ctrl+V ke rekam medis.
    Bila ada >1 nama cocok, pilih di jendela kecil.
 4. Anamnesis + PF → **F9** (stop). Setelah hasil dikte keluar, aplikasi mengisi Subjektif (3 kotak), Objektif
    (centang 5 regio, temuan menggantikan `dbn`), Asesmen (Baru, Umum, Bonam, Z02.0, ICD sekunder + E66.9 bila IMT ≥ 25),
-   Perencanaan (Darah EDTA, Darah tanpa anti koagulan, Urine), lalu kembali ke Subjektif.
+   Perencanaan (Rontgen Paru, Pemeriksaan EKG, Darah EDTA, Darah tanpa anti koagulan, Urine), lalu kembali ke Subjektif.
 5. Baris SIM di aplikasi menjadi kuning "TERISI" → **cek semua sub-tab → klik Simpan sendiri**. Aplikasi tidak pernah menekan Simpan.
 6. Peserta berikutnya baru dibuka di SIM setelah Simpan terdeteksi. Rekamannya tetap langsung jalan.
    Tombol **"Lanjut tanpa Simpan"** muncul bila Anda ingin meninggalkan pasien tanpa menyimpan.
