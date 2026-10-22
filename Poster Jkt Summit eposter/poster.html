@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI MCU E-Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  /* Canvas 2160 x 3840 px (9:16). 22 pt = 29.3 px; nothing below 29 px. */
+  :root{
+    --g900:#185038; --g700:#2F6B3C; --g600:#408038; --g500:#509040; --mint:#EAF4E6; --mint2:#D5EBCF;
+    --or:#E85820; --or-l:#FDE9DF; --ye:#F8BC12; --ye-l:#FFF5D6; --ink:#17302A; --muted:#4A5F55; --grey:#DCE4DE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:2160px;height:3840px}
+  body{font-family:Inter,Arial,sans-serif;color:var(--ink);font-size:32px;line-height:1.3}
+  .poster{width:2160px;height:3840px;position:relative;overflow:hidden;background:#fff url("assets/template.png") 0 0/2160px 3840px no-repeat}
+  sup{font-size:.62em;line-height:0}
+  b{font-weight:700}
+
+  .content{position:absolute;left:64px;right:64px;top:316px;height:3292px;display:flex;flex-direction:column;gap:13px}
+  .content>*{flex-shrink:0}
+
+  /* title */
+  .title{background:linear-gradient(115deg,#123F2C 0%,#185038 50%,#2F6B3C 100%);border-radius:26px;padding:24px 34px 30px;display:grid;grid-template-columns:1fr 210px;gap:30px;align-items:center;color:#fff;position:relative;overflow:hidden}
+  .title::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:linear-gradient(90deg,var(--ye),var(--or))}
+  h1{font-size:56px;line-height:1.1;font-weight:800;letter-spacing:-.5px}
+  .authors{margin-top:10px;font-size:40px;font-weight:700;color:var(--ye)}
+  .affil{margin-top:4px;font-size:30px;color:#E6F3E2}
+  .logo-box{background:#fff;border-radius:20px;height:210px;display:flex;align-items:center;justify-content:center;padding:18px}
+  .logo-box img{max-width:100%;max-height:100%}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .stat{background:#fff;border-radius:22px;padding:12px 22px;border-left:14px solid var(--g600);box-shadow:0 6px 22px rgba(24,80,56,.16);display:flex;align-items:center;gap:18px}
+  .stat .n{flex:none;font-size:80px;font-weight:900;color:var(--g900);line-height:1}
+  .stat .n small{font-size:.5em;font-weight:800;color:var(--g600)}
+  .stat .l{font-size:30px;color:var(--muted);line-height:1.15}
+  .stat.zero{border-left-color:var(--or)} .stat.zero .n{color:var(--or)}
+  .stat.ye{border-left-color:var(--ye)}
+
+  /* cards */
+  .card{background:#fff;border-radius:24px;padding:18px 28px;box-shadow:0 6px 22px rgba(24,80,56,.14)}
+  .h{display:flex;align-items:center;gap:16px;font-size:44px;font-weight:800;color:var(--g900);margin-bottom:10px;line-height:1.05}
+  .h .no{display:inline-flex;align-items:center;justify-content:center;min-width:64px;height:64px;border-radius:32px;background:var(--g900);color:var(--ye);font-size:32px;font-weight:900;padding:0 14px}
+  .h2{font-size:36px;font-weight:800;color:var(--g900);margin-bottom:10px;display:flex;align-items:center;gap:12px}
+  .h2 svg{width:40px;height:40px;flex:none}
+  ul{padding-left:36px} li{margin-bottom:4px} li::marker{color:var(--g500)}
+  .row{display:grid;gap:22px}
+
+  /* background */
+  .bg{grid-template-columns:1fr 700px}
+  .aim{margin-top:10px;background:var(--ye-l);border-left:12px solid var(--ye);border-radius:12px;padding:12px 18px}
+  .aim b{color:var(--g900)}
+  .hero{border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 6px 22px rgba(24,80,56,.14);position:relative;min-height:340px}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+
+  /* methods */
+  .meth{display:grid;grid-template-columns:1fr 700px;gap:30px}
+  .kv{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;font-size:31px;line-height:1.2}
+  .kv dt{font-weight:800;color:var(--g600)}
+  .prisma{display:flex;flex-direction:column;gap:0;font-size:30px}
+  .pr{display:grid;grid-template-columns:1fr 250px;gap:16px;align-items:center}
+  .pb{background:var(--mint);border:3px solid var(--g500);border-radius:14px;padding:4px 12px;text-align:center;line-height:1.2}
+  .pb b{font-size:34px;color:var(--g900)}
+  .pb.inc{background:var(--g900);border-color:var(--g900);color:#fff}.pb.inc b{color:var(--ye)}
+  .px{background:#fff;border:3px dashed #B9C7BE;border-radius:14px;padding:2px 8px;font-size:29px;color:var(--muted);line-height:1.15;text-align:center}
+  .arr{height:20px;margin-left:calc((100% - 266px)/2);border-left:5px solid var(--g500);position:relative}
+  .arr::after{content:"";position:absolute;left:-13px;bottom:-4px;border:10px solid transparent;border-top:14px solid var(--g500)}
+
+  /* gap map */
+  .gm{width:100%;border-collapse:separate;border-spacing:0 6px;font-size:30px;line-height:1.2}
+  .gm th{font-size:29px;font-weight:800;color:#fff;background:var(--g900);padding:8px 12px;text-align:left}
+  .gm th:first-child{border-radius:12px 0 0 12px}.gm th:last-child{border-radius:0 12px 12px 0}
+  .gm td{background:var(--mint);padding:6px 12px;vertical-align:middle}
+  .gm td:first-child{border-radius:12px 0 0 12px;font-weight:700;color:var(--g900)}
+  .gm td:last-child{border-radius:0 12px 12px 0}
+  .gm .t{display:flex;align-items:center;gap:12px}
+  .gm .t svg{width:40px;height:40px;flex:none}
+  .gm .c{text-align:center;font-weight:800;font-size:36px;color:var(--g900)}
+  .gm .z{color:var(--or)}
+  .gm tr.gap td{background:var(--or-l)}
+  .gm tr.gap td.msg{color:#9A3A12;font-weight:600;font-style:italic}
+  .tag{display:inline-block;background:var(--or);color:#fff;font-size:29px;font-weight:800;border-radius:10px;padding:2px 12px;margin-left:6px}
+
+  /* results row 2 */
+  .r2{grid-template-columns:1090px 1fr}
+  .callouts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  .co{border-radius:14px;padding:12px 16px;font-size:30px;line-height:1.22}
+  .co.or{background:var(--or-l);border-left:12px solid var(--or)}
+  .co.ye{background:var(--ye-l);border-left:12px solid var(--ye)}
+  .co b{color:var(--g900)}
+  .legend{display:flex;gap:28px;font-size:29px;color:var(--muted);margin:4px 0 0 4px}
+  .legend i{display:inline-block;width:26px;height:26px;border-radius:13px;vertical-align:-4px;margin-right:8px}
+
+  .dm .grp{font-size:29px;font-weight:800;color:var(--g600);text-transform:uppercase;letter-spacing:1px;margin:10px 0 6px}
+  .dm .grp:first-of-type{margin-top:0}
+  .dr{display:grid;grid-template-columns:330px 1fr 90px;align-items:center;gap:12px;margin-bottom:10px;font-size:30px;line-height:1.15}
+  .dots{display:grid;grid-template-columns:repeat(13,30px);gap:6px}
+  .dots span{width:30px;height:30px;border-radius:15px;background:var(--grey)}
+  .dots span.f{background:var(--g600)} .dots span.o{background:var(--or)}
+  .dr .v{font-weight:900;color:var(--g900);font-size:34px;text-align:right}
+  .dr .v.z{color:var(--or)}
+  .dm .note{font-size:29px;color:var(--muted);margin-top:4px}
+
+  /* limitations */
+  .lim{display:grid;grid-template-columns:1fr 1fr;gap:6px 40px;font-size:31px;line-height:1.25}
+  .lim div{display:grid;grid-template-columns:34px 1fr;gap:8px}
+  .lim div::before{content:"!";width:34px;height:34px;border-radius:17px;background:var(--ye);color:var(--g900);font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+
+  /* conclusion */
+  .concl{background:linear-gradient(115deg,#123F2C 0%,#185038 55%,#2F6B3C 100%);color:#fff;border-radius:24px;padding:20px 30px;display:grid;grid-template-columns:auto 1fr;gap:20px 30px;align-items:center}
+  .concl .lab{font-size:46px;font-weight:900;color:var(--ye);line-height:1.05;display:flex;align-items:center;gap:14px}
+  .concl .lab .no{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:32px;background:var(--ye);color:var(--g900);font-size:32px}
+  .concl p{font-size:33px;line-height:1.3;font-weight:500}
+  .concl p b{color:var(--ye)}
+  .req{grid-column:1/-1;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:30px}
+  .req .k{font-weight:800;color:var(--ye);margin-right:4px}
+  .req span.c{background:#fff;color:var(--g900);font-weight:800;border-radius:30px;padding:5px 16px}
+
+  /* references */
+  .refs{position:absolute;left:64px;top:3574px;width:1720px;height:220px;display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center}
+  .qr{width:170px;height:170px;border:4px dashed var(--g500);border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:29px;color:var(--g600);font-weight:700;line-height:1.1;background:#fff}
+  .qr img{width:100%;height:100%}
+  .refs ol{columns:2;column-gap:28px;font-size:29px;line-height:1.16;color:var(--muted);padding-left:40px}
+  .refs li{margin-bottom:0;break-inside:avoid}
+  .refs .rh{font-size:29px;font-weight:800;color:var(--g900);margin-bottom:2px}
+</style>
+</head>
+<body>
+<div class="poster">
+<div class="content">
+
+  <!-- TITLE -->
+  <section class="title">
+    <div>
+      <h1>Artificial Intelligence for Interpreting Occupational Health Examination Tests: A Systematized Review of Evidence and Gaps</h1>
+      <div class="authors">Vidya Cecilia</div>
+      <div class="affil">Occupational Medicine Residency Program, Faculty of Medicine, Universitas Indonesia, Jakarta, 10310, Indonesia</div>
+    </div>
+    <div class="logo-box"><img src="assets/Logo UI.png" alt="Universitas Indonesia"></div>
+  </section>
+
+  <!-- KEY NUMBERS -->
+  <section class="stats">
+    <div class="stat"><div class="n">13</div><div class="l">studies included from 861 screened records</div></div>
+    <div class="stat ye"><div class="n">9<small>/13</small></div><div class="l">on chest radiography</div></div>
+    <div class="stat zero"><div class="n">0</div><div class="l">spirometry, laboratory or Southeast Asian studies</div></div>
+    <div class="stat zero"><div class="n">0<small>/13</small></div><div class="l">evaluated AI prospectively</div></div>
+  </section>
+
+  <!-- 01 BACKGROUND -->
+  <section class="row bg">
+    <div class="card">
+      <div class="h"><span class="no">01</span>Background</div>
+      <ul>
+        <li>Periodic occupational examinations generate <b>large volumes of test results</b>.</li>
+        <li>Whether <b>artificial intelligence (AI)</b> validly interprets them remains unclear.</li>
+      </ul>
+      <div class="aim"><b>Aim:</b> to review the evidence on AI interpreting workers' examination tests against a clinical reference standard.</div>
+    </div>
+    <div class="hero"><img src="assets/hero.png" alt=""></div>
+  </section>
+
+  <!-- 02 METHODS -->
+  <section class="card">
+    <div class="h"><span class="no">02</span>Methods</div>
+    <div class="meth">
+      <dl class="kv">
+        <dt>Design</dt><dd>Systematized review, reported with PRISMA 2020<sup>1</sup></dd>
+        <dt>Databases</dt><dd>PubMed, Scopus, ProQuest, IEEE Xplore</dd>
+        <dt>Search</dt><dd>5 October 2026; studies from 2006 onwards</dd>
+        <dt>Included</dt><dd>AI interpreting workers' examination tests against a clinical reference standard</dd>
+        <dt>Excluded</dt><dd>Prediction models</dd>
+        <dt>Appraisal</dt><dd>JBI diagnostic test accuracy checklist<sup>2</sup>; no pooling</dd>
+      </dl>
+      <div class="prisma">
+        <div class="pr"><div class="pb"><b>1,278</b> identified</div><div class="px">417 duplicates removed</div></div>
+        <div class="arr"></div>
+        <div class="pr"><div class="pb"><b>861</b> screened</div><div class="px">838 excluded</div></div>
+        <div class="arr"></div>
+        <div class="pr"><div class="pb"><b>20</b> full texts</div><div class="px">3 not retrieved, 7 excluded</div></div>
+        <div class="arr"></div>
+        <div class="pr"><div class="pb inc"><b>13</b> included</div><div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 RESULTS -->
+  <section class="card">
+    <div class="h"><span class="no">03</span>Results: evidence-gap map</div>
+    <table class="gm">
+      <tr><th style="width:400px">Examination test</th><th style="width:130px">Studies</th><th style="width:480px">Reference standard</th><th>Performance</th><th style="width:160px">External valid.</th><th style="width:150px">Prospec&shy;tive</th></tr>
+      <tr><td><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="#408038" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.1 5C3.4 7.4 2 11 2 15.5 2 18 3.3 19 5 19c2 0 3.5-1.5 3.5-4V7.5c0-2-1.2-3.5-2.4-2.5zM17.9 5C20.6 7.4 22 11 22 15.5 22 18 20.7 19 19 19c-2 0-3.5-1.5-3.5-4V7.5c0-2 1.2-3.5 2.4-2.5zM12 3v8M8.5 11 12 9l3.5 2"/></svg>Chest radiography</div></td><td class="c">9</td><td>Expert reading or clinical diagnosis</td><td>AUC 0.84–1.00; Se 62–100%; Sp 46–98%</td><td class="c">3</td><td class="c z">0</td></tr>
+      <tr><td><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="#408038" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10a6 6 0 1 1 12 0c0 3-2 4-3 5.5S14 19.5 12 20c-1.5.3-3-1-3-1M9 10a3 3 0 0 1 6 0c0 1.5-1 2-1.5 2.5"/></svg>Audiometry</div></td><td class="c">1</td><td>Claimant vs unexposed control group</td><td>Se 98.6%, Sp 90.2%</td><td class="c z">0</td><td class="c z">0</td></tr>
+      <tr><td><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="#408038" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>Electrocardiography</div></td><td class="c">1</td><td>Examination ECG diagnosis</td><td>AUC 0.92–0.98</td><td class="c z">0</td><td class="c z">0</td></tr>
+      <tr><td><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="#408038" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h6"/></svg>Multimodal records</div></td><td class="c">2</td><td>Physicians' fit/unfit status</td><td>AUC 0.60; kappa 1.00 vs one physician rating documents <span class="tag">agreement ≠ accuracy</span></td><td class="c z">0</td><td class="c z">0</td></tr>
+      <tr class="gap"><td><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="#E85820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h8.5a2.5 2.5 0 1 0-2.3-3.2M3 12h15.5a2.5 2.5 0 1 1-2.3 3.2M4 16h5.5a2.5 2.5 0 1 1-2.3 3.2"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="#E85820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v13a2 2 0 0 0 4 0V3M10 11h4"/></svg>Spirometry, laboratory</div></td><td class="c z">0</td><td class="msg" colspan="4">No eligible study</td></tr>
+      <tr class="gap"><td><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="#E85820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11H4zM9 8V5h6v3M4 13h16"/></svg>Fitness to work</div></td><td class="c z">0</td><td class="msg" colspan="4">No study provided AI with the job-demand information required for fitness-to-work decisions</td></tr>
+    </table>
+  </section>
+
+  <section class="row r2">
+    <div class="card">
+      <div class="h2"><svg viewBox="0 0 24 24" fill="none" stroke="#185038" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l3-4 3 2 4-6"/></svg>Imaging AUC by study design (not pooled)</div>
+      <svg viewBox="0 0 1060 400" width="100%" font-family="Inter,Arial,sans-serif">
+<g stroke="#DCE4DE" stroke-width="2">
+<line x1="320" y1="4" x2="320" y2="356"/>
+<line x1="475" y1="4" x2="475" y2="356"/>
+<line x1="630" y1="4" x2="630" y2="356"/>
+<line x1="785" y1="4" x2="785" y2="356"/>
+<line x1="940" y1="4" x2="940" y2="356"/>
+</g><g font-size="29" fill="#4A5F55" text-anchor="middle">
+<text x="320" y="392">0.80</text>
+<text x="475" y="392">0.85</text>
+<text x="630" y="392">0.90</text>
+<text x="785" y="392">0.95</text>
+<text x="940" y="392">1.00</text>
+</g>
+<text x="300" y="36" font-size="30" fill="#17302A" text-anchor="end">Ehrlich 2022</text>
+<line x1="444" y1="26" x2="599" y2="26" stroke="#408038" stroke-width="10" stroke-linecap="round"/><circle cx="444" cy="26" r="13" fill="#408038"/><circle cx="599" cy="26" r="13" fill="#408038"/>
+<text x="621" y="36" font-size="29" font-weight="700" fill="#185038" text-anchor="start">0.84–0.89</text>
+<text x="300" y="80" font-size="30" fill="#17302A" text-anchor="end">Wang 2020</text>
+<circle cx="568" cy="70" r="15" fill="#E85820"/>
+<text x="590" y="80" font-size="29" font-weight="700" fill="#185038" text-anchor="start">0.88</text>
+<text x="300" y="124" font-size="30" fill="#17302A" text-anchor="end">Heo 2019</text>
+<line x1="661" y1="114" x2="692" y2="114" stroke="#408038" stroke-width="10" stroke-linecap="round"/><circle cx="661" cy="114" r="13" fill="#408038"/><circle cx="692" cy="114" r="13" fill="#408038"/>
+<text x="714" y="124" font-size="29" font-weight="700" fill="#185038" text-anchor="start">0.91–0.92</text>
+<text x="300" y="168" font-size="30" fill="#17302A" text-anchor="end">Li 2024</text>
+<circle cx="785" cy="158" r="15" fill="#E85820"/>
+<text x="807" y="168" font-size="29" font-weight="700" fill="#185038" text-anchor="start">0.95</text>
+<text x="300" y="212" font-size="30" fill="#17302A" text-anchor="end">He 2026</text>
+<circle cx="816" cy="202" r="15" fill="#E85820"/>
+<text x="838" y="212" font-size="29" font-weight="700" fill="#185038" text-anchor="start">0.96</text>
+<text x="300" y="256" font-size="30" fill="#17302A" text-anchor="end">Young 2020</text>
+<line x1="754" y1="246" x2="909" y2="246" stroke="#E85820" stroke-width="10" stroke-linecap="round"/><circle cx="754" cy="246" r="13" fill="#E85820"/><circle cx="909" cy="246" r="13" fill="#E85820"/>
+<text x="732" y="256" font-size="29" font-weight="700" fill="#185038" text-anchor="end">0.94–0.99</text>
+<text x="300" y="300" font-size="30" fill="#17302A" text-anchor="end">Dong 2022</text>
+<circle cx="878" cy="290" r="15" fill="#E85820"/>
+<text x="900" y="300" font-size="29" font-weight="700" fill="#185038" text-anchor="start">0.98‡</text>
+<text x="300" y="344" font-size="30" fill="#17302A" text-anchor="end">Priego-Torres 2025</text>
+<circle cx="940" cy="334" r="15" fill="#E85820"/>
+<text x="962" y="344" font-size="29" font-weight="700" fill="#185038" text-anchor="start">1.00†</text>
+</svg>
+      <div class="legend"><span><i style="background:#408038"></i>Consecutive or natural spectrum</span><span><i style="background:#E85820"></i>Case-control or enriched</span></div>
+      <div class="callouts">
+        <div class="co or"><b>High AUC ≠ high sensitivity:</b> AUC 0.88 with sensitivity 62%<sup>3</sup></div>
+        <div class="co ye"><b>Case-control and enriched datasets</b> likely overstate screening performance</div>
+      </div>
+      <div class="note" style="font-size:29px;color:#4A5F55;margin-top:6px">† Cross-validation, public controls. ‡ Region-level features.</div>
+    </div>
+
+    <div class="card dm">
+      <div class="h2"><svg viewBox="0 0 24 24" fill="none" stroke="#185038" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>Quality and validation (13 studies)</div>
+      <div class="grp">JBI appraisal<sup>2</sup></div>
+      <div class="dr"><span>Case-control design</span><div class="dots"><span class="o"></span><span class="o"></span><span class="o"></span><span class="o"></span><span class="o"></span><span class="o"></span><span class="o"></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v z">7</span></div>
+      <div class="dr"><span>Consecutive sample</span><div class="dots"><span class="f"></span><span class="f"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v">2</span></div>
+      <div class="dr"><span>Pre-specified threshold</span><div class="dots"><span class="f"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v">1</span></div>
+      <div class="grp">Validation and reporting</div>
+      <div class="dr"><span>External validation</span><div class="dots"><span class="f"></span><span class="f"></span><span class="f"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v">3</span></div>
+      <div class="dr"><span>NPV reported</span><div class="dots"><span class="f"></span><span class="f"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v">2</span></div>
+      <div class="dr"><span>Prospective evaluation</span><div class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v z">0</span></div>
+      <div class="note">One dot = one study. NPV: negative predictive value.</div>
+    </div>
+  </section>
+
+  <!-- LIMITATIONS OF THE EVIDENCE -->
+  <section class="card">
+    <div class="h2"><svg viewBox="0 0 24 24" fill="none" stroke="#185038" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Limitations of the current evidence</div>
+    <div class="lim">
+      <div><span>Evidence centres on chest radiography (9 of 13 studies).</span></div>
+      <div><span>Clinical-setting spirometry and ECG AI performs well but is unvalidated in workers.<sup>4,5</sup></span></div>
+      <div><span>Reference standards are imperfect: human readers agreed only moderately (kappa 0.42–0.66).<sup>3,6</sup></span></div>
+      <div><span>One system was deployed in more than 10 hospitals without reported implementation outcomes.<sup>7</sup></span></div>
+    </div>
+  </section>
+
+  <!-- 04 CONCLUSION -->
+  <section class="concl">
+    <div class="lab"><span class="no">04</span>Conclusion</div>
+    <p><b>Evidence is insufficient to support AI interpretation in periodic examinations.</b> AI is best positioned as decision support under physician responsibility.</p>
+    <div class="req"><span class="k">Adoption requires:</span><span class="c">External validation</span><span class="c">Prevalence-specific NPV</span><span class="c">Comparison with occupational physicians</span><span class="c">Prospective evaluation</span></div>
+  </section>
+
+</div>
+
+<!-- REFERENCES -->
+<div class="refs">
+  <div class="qr"><img src="assets/qr.png" alt="" onerror="this.replaceWith(document.createTextNode('QR: 13 included studies'))"></div>
+  <div>
+    <div class="rh">References (full list of the 13 included studies: scan QR)</div>
+    <ol>
+      <li>Page MJ, et al. BMJ. 2021;372:n71.</li>
+      <li>Campbell JM, et al. Int J Evid Based Healthc. 2015;13:154-62.</li>
+      <li>Wang X, et al. Occup Environ Med. 2020;77:597-602.</li>
+      <li>Topalovic M, et al. Eur Respir J. 2019;53:1801660.</li>
+      <li>Attia ZI, et al. Nat Med. 2019;25:70-4.</li>
+      <li>Ehrlich R, et al. Int J Environ Res Public Health. 2022;19:12402.</li>
+      <li>Li X, et al. Front Med (Lausanne). 2024;11:1290729.</li>
+    </ol>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
