@@ -132,6 +132,11 @@ class Session:
         self.sim_imt = None
         self.sim_data = None  # hasil Claude, menunggu pasien terbuka di SIM
         self.sim_saved = False
+        self.t_stop = None
+        # rekaman lanjutan untuk peserta yang sama (tanpa nama / nama sama) menempel ke rekaman pertama (jangkar);
+        # transkrip seluruh kelompok digabung sebelum ke Claude dan SIM diisi dari gabungan itu
+        self.anchor = self
+        self.group = [self]
 
 
 def start_recording(mic, session):
@@ -148,6 +153,7 @@ def stop_recording(session):
         session.proc.communicate(b"q", timeout=10)
     except subprocess.TimeoutExpired:
         session.proc.kill()
+    session.t_stop = time.time()
     session.stopped = True
 
 
@@ -171,6 +177,11 @@ def today_md():
     if not f.exists():
         f.write_text(f"# Pemkes CPPDS FKUI — {dt.date.today():%d %B %Y}\n\n", encoding="utf-8")
     return f
+
+
+def same_name(a, b):
+    a, b = " ".join(a.lower().split()), " ".join(b.lower().split())
+    return bool(a and b) and (a in b or b in a)
 
 
 def append_md(text):
@@ -386,8 +397,8 @@ class App:
                     self.on_sim(val)
                 elif kind == "sim_data":
                     s, data = val
-                    s.sim_data = data
-                    self.sim_fill(s)
+                    s.anchor.sim_data = data
+                    self.sim_fill(s.anchor)
         except queue.Empty:
             pass
         a = self.sim_active
@@ -411,7 +422,13 @@ class App:
                 self.sessions.append(s)
             self.current = s
             self.btn.config(bg="#f6d0d0")
-            if s.ident:
+            target = self.sim_target()
+            if target and (not s.ident or same_name(s.ident, target.ident)):
+                s.anchor = target
+                target.group.append(s)
+                if not s.ident:
+                    s.ident = target.ident
+            elif s.ident:
                 self.sim_open(s)
         else:
             stop_recording(self.current)
@@ -424,6 +441,8 @@ class App:
         if str(self.btn["state"]) != "normal" or not self.ident.get().strip():
             return
         name = self.ident.get().strip()
+        if self.current and same_name(name, self.current.ident):
+            return  # Enter lagi untuk peserta yang sama: rekaman dibiarkan jalan
         if self.current:
             self.toggle()
             self.ident.insert(0, name)
@@ -439,6 +458,13 @@ class App:
     # ---- SIM DoctorTool ----
     def sim_say(self, text, color="#555"):
         self.sim_lbl.config(text="SIM: " + text, fg=color)
+
+    def sim_target(self):
+        """Peserta yang sedang dibuka/terbuka/menunggu di SIM dan belum disimpan."""
+        if self.sim_wait:
+            return self.sim_wait
+        a = self.sim_req
+        return a if a is not None and not a.sim_saved else None
 
     def sim_blocked(self):
         a = self.sim_active
@@ -524,6 +550,8 @@ class App:
                 self.sim_wait = self.sim_req
                 self.sim_say(f"⚠ {m.get('pesan')}. Setelah itu tekan 'Lanjut tanpa Simpan' untuk membuka peserta ini.", "#c00")
             else:
+                if self.sim_req is not None and self.sim_req is not self.sim_active:
+                    self.sim_req = None  # gagal dibuka: rekaman berikutnya jangan menempel ke peserta ini
                 self.sim_say(f"⚠ {m.get('pesan')} — pakai clipboard seperti biasa.", "#c00")
             if m.get("perlu_lepas") or self.sim_blocked():
                 self.lepas_btn.pack(side="right")
@@ -618,7 +646,12 @@ class App:
                 self.ui.put(("status", f"⚠ galat peserta {s.ident or f'{s.t:%H:%M}'}: {e}"))
 
     def claude_step(self, s):
-        transcript = " ".join(t for t in s.texts if t).strip()
+        own = " ".join(t for t in s.texts if t).strip()
+        if not own and s.t_stop and s.t_stop - s.t.timestamp() < 5:
+            self.ui.put(("status", "rekaman kosong (<5 dtk) diabaikan"))  # F9/Enter tertekan dua kali
+            return
+        grp = s.anchor.group
+        transcript = " ".join(t for x in grp[:grp.index(s) + 1] for t in x.texts if t).strip()
         no = next_number()
         tag = f"#{no} {s.ident}".strip()
         data, err = None, ""
@@ -650,7 +683,7 @@ class App:
                                     "view": f"Penyusunan gagal ({err}).\n\nTranskrip mentah (di clipboard):\n\n{transcript}",
                                     "msg": f"⚠ {tag}: transkrip kosong, cek mikrofon" if not transcript
                                     else f"⚠ {tag}: Claude gagal, transkrip mentah di clipboard"}))
-        if data:
+        if data and own:
             self.ui.put(("sim_data", (s, data)))
         if not append_md(render_entry(no, s.t, s.ident, data, transcript, err)):
             raise RuntimeError(f"gagal menulis {today_md().name}; hasil tetap ada di jendela/clipboard")
