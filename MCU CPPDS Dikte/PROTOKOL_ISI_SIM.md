@@ -1,6 +1,6 @@
 # Protokol: Dikte → isi otomatis SIM DoctorTool (Pemkes Maba)
 
-Status: **v0.3 (2026-10-22)**. Pertanyaan v0.1 sudah dijawab dokter (bagian 9). Belum dibangun; berikutnya tahap 1.
+Status: **v0.3 + peta field (2026-10-22)**. Tahap 1 (inspeksi) selesai. Pertanyaan v0.1 sudah dijawab dokter (bagian 9). Belum dibangun; berikutnya tahap 1.
 
 Tujuan: dokter cukup mengetik nama peserta di aplikasi Dikte MCU. Setelah itu aplikasi membuka pasien di
 `sim.doctortool.id`, merekam anamnesis, lalu mengisi Subjektif, Objektif, Asesmen, dan Perencanaan.
@@ -157,6 +157,24 @@ Isian `pf` yang kosong dibiarkan `dbn` (muncul otomatis setelah dicentang).
 - Dropdown ICD memakai pencarian ke server. Bila lambat, skrip menunggu sampai 10 dtk, lalu melewati dan melaporkan.
 - Chrome harus dibuka lewat pintasan khusus (port debug). Bila dokter membuka SIM di Chrome biasa, otomatisasi tidak bisa jalan.
 - Penanda "Peringatan: Pasien belum dilakukan penilaian kesehatan" berasal dari tab Penilaian Kesehatan dan **di luar** protokol ini.
+
+## 8b. Peta field (hasil inspeksi baca-saja 2026-10-22, 1 pasien)
+
+Situs: **Telerik UI for Blazor** (kelas `k-*`). Tidak ada iframe. Id elemen berupa GUID acak, jadi **tidak dipakai**;
+target dicari lewat teks label, judul kotak, dan kelas tombol.
+
+| Langkah | Target | Catatan |
+|---|---|---|
+| Daftar pasien | `.k-grid` tab "Hari ini", kolom ke-6 "Nama (U/JK)" | Tombol Periksa = `.btn-dt-periksa`. **Jangan**: `.btn-dt-panggil`, `.btn-dt-batal-antrean` |
+| Halaman pasien | URL `/Praktik/DoctorPracticeEntry`, teks "Pasien Aktif:" | Tombol berbahaya: **Batal Berkunjung** (`btn-danger`), **Tutup Sementara**, Simpan |
+| Tab utama | `li.k-menu-item` berteks "Pemeriksaan Awal" / "Pemkes Maba" | Bukan role=tab |
+| Sub-tab | `span.k-link-text` berteks Subjektif / Objektif / Asesmen / Perencanaan | |
+| Pemeriksaan Awal | Tujuan = `.k-dropdownlist` pertama; Keluhan Utama (ICPC) = `.k-combobox` pertama | Pada pasien uji: Tujuan terisi, **Keluhan Utama KOSONG** → harus muncul peringatan |
+| Subjektif | 5 `textarea` tanpa label, dikenali dari judul di atasnya: "Subjektif", "Riwayat Penyakit Dahulu dan Pengobatan", "Riwayat Personal Sosial dan Lingkungan", "Riwayat Risiko Internal", "Riwayat Risiko Eksternal" | Yang diisi hanya 3 pertama. Pada pasien uji semuanya kosong (tidak ada teks bawaan) |
+| Objektif | checkbox berlabel Kepala, Leher, Thorax, Abdomen, Ekstremitas | Semua awalnya tidak tercentang; kotak regio baru muncul setelah dicentang (diinspeksi saat uji isi) |
+| Asesmen | radio "Baru"; radio "Umum"; Prognosis = `.k-dropdownlist` (bawaan **Sanam (Sembuh)** → ganti Bonam (Baik)); combobox "Pencarian Diagnosis Kerja (ICD10)", "Pencarian Diagnosis Sekunder (ICD10)" | Kasus & Masalah awalnya tidak terpilih |
+| Perencanaan | checkbox "Darah EDTA", "Darah tanpa anti koagulan", "Urine" (masing-masing diikuti input tanggal + Keterangan) | Tanggal otomatis terisi diverifikasi saat uji isi |
+| Simpan | `button[type=submit]` "Simpan" | **Tidak pernah diklik skrip** |
 
 ## 9. Pertanyaan untuk dokter (perlu dijawab sebelum tahap 1)
 
