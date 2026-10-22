@@ -47,6 +47,54 @@ INITIAL_PROMPT = (
 )
 
 
+SIM_SCRIPT = HERE / "isi_sim.py"
+SIM_STATUS_SECONDS = 3  # seberapa sering dicek apakah dokter sudah klik Simpan
+
+
+def sim_python():
+    """isi_sim.py butuh Playwright, yang ada di Python sistem, bukan di venv WhisperX."""
+    for p in [os.environ.get("DIKTE_SIM_PYTHON"), r"C:\Python314\python.exe", shutil.which("python")]:
+        if p and Path(p).exists() and "whisperx-venv" not in p:
+            return p
+    return None
+
+
+class SimLink:
+    """Proses isi_sim.py (Chrome debug port 9223). Jawabannya diteruskan ke antrean UI sebagai ("sim", dict)."""
+
+    def __init__(self, ui):
+        self.ui = ui
+        self.p = None
+
+    def alive(self):
+        return self.p is not None and self.p.poll() is None
+
+    def send(self, **msg):
+        if not self.alive():
+            py = sim_python()
+            if not py:
+                self.ui.put(("sim", {"ev": "mati", "pesan": "Python dengan Playwright tidak ditemukan"}))
+                return
+            self.p = subprocess.Popen([py, str(SIM_SCRIPT)], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                      stderr=subprocess.DEVNULL, text=True, encoding="utf-8", errors="replace",
+                                      cwd=HERE, creationflags=subprocess.CREATE_NO_WINDOW)
+            threading.Thread(target=self._read, args=(self.p,), daemon=True).start()
+        self.p.stdin.write(json.dumps(msg, ensure_ascii=False) + "\n")
+        self.p.stdin.flush()
+
+    def _read(self, p):
+        for line in p.stdout:
+            try:
+                self.ui.put(("sim", json.loads(line)))
+            except ValueError:
+                pass
+        self.ui.put(("sim", {"ev": "mati", "pesan": "proses pengisi SIM berhenti"}))
+
+    def close(self):
+        if self.alive():
+            self.p.kill()
+
+
 def ffmpeg_path():
     p = shutil.which("ffmpeg")
     if p:
@@ -80,6 +128,10 @@ class Session:
         self.carry = None  # audio ekor potongan sebelumnya (kata yang terpotong di batas)
         self.stopped = False
         self.proc = None
+        self.sim_nama = None  # nama di header SIM setelah pasien dibuka
+        self.sim_imt = None
+        self.sim_data = None  # hasil Claude, menunggu pasien terbuka di SIM
+        self.sim_saved = False
 
 
 def start_recording(mic, session):
@@ -119,6 +171,17 @@ def today_md():
     if not f.exists():
         f.write_text(f"# Pemkes CPPDS FKUI — {dt.date.today():%d %B %Y}\n\n", encoding="utf-8")
     return f
+
+
+def append_md(text):
+    for _ in range(5):  # file bisa sesaat dikunci OneDrive
+        try:
+            with today_md().open("a", encoding="utf-8") as f:
+                f.write(text)
+            return True
+        except PermissionError:
+            time.sleep(1)
+    return False
 
 
 def next_number():
@@ -255,15 +318,26 @@ class App:
         self.current = None
         self.last_anamnesis = ""
         self.last_pf = ""
+        self.sim = SimLink(self.ui)
+        self.sim_req = None  # sesi yang sedang dibuka di SIM
+        self.sim_active = None  # sesi yang halamannya sedang tampil di SIM
+        self.sim_wait = None  # sesi berikutnya, menunggu pasien aktif disimpan
+        self.sim_next_poll = 0
 
         root.title("Dikte MCU CPPDS")
         root.attributes("-topmost", True)
-        root.geometry("520x560")
+        root.geometry("520x600")
         top = tk.Frame(root)
         top.pack(fill="x", padx=8, pady=6)
-        tk.Label(top, text="Identitas (nama / No RM):").pack(side="left")
+        tk.Label(top, text="Nama peserta (Enter = rekam + buka SIM):").pack(side="left")
         self.ident = tk.Entry(top)
         self.ident.pack(side="left", fill="x", expand=True, padx=4)
+        self.ident.bind("<Return>", lambda e: self.enter_name())
+        simrow = tk.Frame(root)
+        simrow.pack(fill="x", padx=8, pady=(0, 4))
+        self.sim_lbl = tk.Label(simrow, text="SIM: belum dipakai", anchor="w", fg="#555", justify="left", wraplength=380)
+        self.sim_lbl.pack(side="left", fill="x", expand=True)
+        self.lepas_btn = tk.Button(simrow, text="Lanjut tanpa Simpan", command=self.sim_lepas)
         self.btn = tk.Button(root, text="⏺  Rekam  (F9)", font=("Segoe UI", 14, "bold"), bg="#d9f2d9",
                              command=self.toggle, state="disabled")
         self.btn.pack(fill="x", padx=8)
@@ -308,8 +382,18 @@ class App:
                     self.status.config(text=f"Siap. Whisper: {Path(self.model_name).name} · Claude: {CLAUDE_MODEL}{hk}")
                 elif kind == "result":
                     self.show(val)
+                elif kind == "sim":
+                    self.on_sim(val)
+                elif kind == "sim_data":
+                    s, data = val
+                    s.sim_data = data
+                    self.sim_fill(s)
         except queue.Empty:
             pass
+        a = self.sim_active
+        if a and a.sim_data is not None and not a.sim_saved and time.time() > self.sim_next_poll:
+            self.sim_next_poll = time.time() + SIM_STATUS_SECONDS
+            self.sim.send(cmd="status")
         if self.current:
             s = int(time.time() - self.current.t.timestamp())
             self.btn.config(text=f"⏹  Stop  (F9)   {s // 60:02d}:{s % 60:02d}")
@@ -327,17 +411,127 @@ class App:
                 self.sessions.append(s)
             self.current = s
             self.btn.config(bg="#f6d0d0")
+            if s.ident:
+                self.sim_open(s)
         else:
             stop_recording(self.current)
             self.current = None
             self.btn.config(text="⏺  Rekam  (F9)", bg="#d9f2d9")
             self.ident.delete(0, "end")
 
+    def enter_name(self):
+        """Enter di kotak nama: hentikan rekaman yang berjalan (bila ada), lalu rekam peserta baru + buka di SIM."""
+        if str(self.btn["state"]) != "normal" or not self.ident.get().strip():
+            return
+        name = self.ident.get().strip()
+        if self.current:
+            self.toggle()
+            self.ident.insert(0, name)
+        self.toggle()
+
     def quit(self):
         if self.current:
             stop_recording(self.current)
         self.warm.close()
+        self.sim.close()
         self.root.destroy()
+
+    # ---- SIM DoctorTool ----
+    def sim_say(self, text, color="#555"):
+        self.sim_lbl.config(text="SIM: " + text, fg=color)
+
+    def sim_blocked(self):
+        a = self.sim_active
+        return a is not None and not a.sim_saved  # termasuk yang hasil dikte-nya belum keluar
+
+    def sim_open(self, s):
+        if self.sim_blocked():
+            self.sim_wait = s
+            self.sim_say(f"⚠ {self.sim_active.sim_nama} BELUM DISIMPAN. Klik Simpan di SIM dulu; "
+                         f"{s.ident} dibuka setelah itu (rekaman tetap jalan).", "#c00")
+            self.lepas_btn.pack(side="right")
+            return
+        self.sim_req = s
+        self.sim_say(f"membuka '{s.ident}'…")
+        self.sim.send(cmd="buka", nama=s.ident)
+
+    def sim_fill(self, s):
+        if s is self.sim_active and s.sim_nama and s.sim_data is not None:
+            d = s.sim_data
+            self.sim_say(f"mengisi {s.sim_nama}…")
+            self.sim.send(cmd="isi", nama=s.sim_nama, data={
+                "anamnesis": d.get("anamnesis", ""), "pf_regio": d.get("pf_regio") or {},
+                "icd": d.get("icd") or [], "imt": s.sim_imt})
+
+    def sim_lepas(self):
+        self.lepas_btn.pack_forget()
+        if self.sim_active:
+            self.sim_active.sim_saved = True  # dokter memilih lanjut tanpa Simpan
+        self.sim.send(cmd="lepas")
+
+    def sim_next(self):
+        self.lepas_btn.pack_forget()
+        if self.sim_wait:
+            s, self.sim_wait = self.sim_wait, None
+            self.sim_open(s)
+
+    def sim_choose(self, kandidat):
+        w = tk.Toplevel(self.root)
+        w.title("Pilih peserta")
+        w.attributes("-topmost", True)
+        tk.Label(w, text="Lebih dari satu nama cocok:").pack(padx=8, pady=4)
+        for k in kandidat:
+            tk.Button(w, text=f"{k['no']} · {k['nama']} · {k['status']}", anchor="w",
+                      command=lambda no=k["no"]: (w.destroy(), self.sim.send(cmd="pilih", no=no))
+                      ).pack(fill="x", padx=8, pady=2)
+        tk.Button(w, text="Batal (tidak isi SIM)", command=lambda: (w.destroy(), self.sim_say("dibatalkan"))
+                  ).pack(pady=6)
+
+    def on_sim(self, m):
+        ev = m.get("ev")
+        if ev == "pilih":
+            self.sim_say("pilih peserta di jendela kecil…", "#b35900")
+            self.sim_choose(m["kandidat"])
+        elif ev == "terbuka":
+            s = self.sim_req
+            if s is None:
+                return
+            s.sim_nama, s.sim_imt = m["nama"], m.get("imt")
+            self.sim_active = s
+            warn = "; ".join(m.get("peringatan") or [])
+            self.sim_say(f"✓ {s.sim_nama} terbuka (IMT {s.sim_imt}). Menunggu dikte selesai…" + (f"\n⚠ {warn}" if warn else ""),
+                         "#b35900" if warn else "#555")
+            self.sim_fill(s)
+        elif ev == "terisi":
+            gagal = m.get("gagal") or []
+            self.sim_say(f"✍ {m['nama']} TERISI — cek semua sub-tab lalu klik SIMPAN."
+                         + (f"\n⚠ isi manual: {'; '.join(gagal)}" if gagal else ""), "#b35900")
+            self.out.insert("end", "\n\n— SIM —\n" + "\n".join(m.get("laporan") or [])
+                            + ("\n⚠ " + "\n⚠ ".join(gagal) if gagal else ""))
+            append_md(f"**SIM {m['nama']}:** " + ", ".join(m.get("laporan") or [])
+                      + (" · ⚠ " + "; ".join(gagal) if gagal else "") + "\n\n")
+        elif ev == "status":
+            a = self.sim_active
+            if a and m.get("disimpan") and not a.sim_saved:
+                a.sim_saved = True
+                self.sim_say(f"✅ {a.sim_nama}: Simpan sudah diklik.", "#1a7f37")
+                self.sim_next()
+        elif ev == "dilepas":
+            self.sim_say("dilanjutkan tanpa Simpan.", "#b35900")
+            self.sim_next()
+        elif ev == "gagal":
+            if m.get("perlu_lepas"):  # halaman pasien lain masih terbuka: tunggu Simpan atau "Lanjut tanpa Simpan"
+                self.sim_wait = self.sim_req
+                self.sim_say(f"⚠ {m.get('pesan')}. Setelah itu tekan 'Lanjut tanpa Simpan' untuk membuka peserta ini.", "#c00")
+            else:
+                self.sim_say(f"⚠ {m.get('pesan')} — pakai clipboard seperti biasa.", "#c00")
+            if m.get("perlu_lepas") or self.sim_blocked():
+                self.lepas_btn.pack(side="right")
+        elif ev == "mati":
+            self.sim_say(f"tidak tersambung ({m.get('pesan')}). Buka Chrome SIM lewat 'Buka Chrome SIM.bat' "
+                         "lalu login. Dikte tetap jalan.", "#c00")
+        elif ev == "siap":
+            self.sim_say("tersambung ke Chrome.")
 
     def copy(self, text):
         if text:
@@ -456,15 +650,10 @@ class App:
                                     "view": f"Penyusunan gagal ({err}).\n\nTranskrip mentah (di clipboard):\n\n{transcript}",
                                     "msg": f"⚠ {tag}: transkrip kosong, cek mikrofon" if not transcript
                                     else f"⚠ {tag}: Claude gagal, transkrip mentah di clipboard"}))
-        entry = render_entry(no, s.t, s.ident, data, transcript, err)
-        for _ in range(5):  # file bisa sesaat dikunci OneDrive
-            try:
-                with today_md().open("a", encoding="utf-8") as f:
-                    f.write(entry)
-                return
-            except PermissionError:
-                time.sleep(1)
-        raise RuntimeError(f"gagal menulis {today_md().name}; hasil tetap ada di jendela/clipboard")
+        if data:
+            self.ui.put(("sim_data", (s, data)))
+        if not append_md(render_entry(no, s.t, s.ident, data, transcript, err)):
+            raise RuntimeError(f"gagal menulis {today_md().name}; hasil tetap ada di jendela/clipboard")
 
 
 if __name__ == "__main__":

@@ -18,6 +18,23 @@ langsung ada di clipboard**, tinggal Ctrl+V ke rekam medis.
    - Clipboard selalu berisi peserta yang **terakhir selesai diproses**; lihat nama/nomor di status.
 7. Semua peserta hari itu terkumpul di `hasil/<tanggal>.md` (tombol "Buka file hari ini"), lengkap dengan transkrip.
 
+## Isi otomatis SIM DoctorTool (sejak 2026-10-22, uji coba)
+
+1. Klik dua kali **`Buka Chrome SIM.bat`** → login SIM di jendela itu (Chrome khusus, port 9223). Pakai jendela ini untuk SIM.
+2. Buka aplikasi Dikte seperti biasa.
+3. Ketik **sebagian nama** peserta di kotak nama → **Enter**. Rekaman langsung mulai, dan aplikasi membuka pasien di SIM
+   (daftar Hari ini → Periksa → cek Pemeriksaan Awal; Keluhan Utama ICPC kosong diisi -30 → tab Pemkes Maba).
+   Bila ada >1 nama cocok, pilih di jendela kecil.
+4. Anamnesis + PF → **F9** (stop). Setelah hasil dikte keluar, aplikasi mengisi Subjektif (3 kotak), Objektif
+   (centang 5 regio, temuan menggantikan `dbn`), Asesmen (Baru, Umum, Bonam, Z02.0, ICD sekunder + E66.9 bila IMT ≥ 25),
+   Perencanaan (Darah EDTA, Darah tanpa anti koagulan, Urine), lalu kembali ke Subjektif.
+5. Baris SIM di aplikasi menjadi kuning "TERISI" → **cek semua sub-tab → klik Simpan sendiri**. Aplikasi tidak pernah menekan Simpan.
+6. Peserta berikutnya baru dibuka di SIM setelah Simpan terdeteksi. Rekamannya tetap langsung jalan.
+   Tombol **"Lanjut tanpa Simpan"** muncul bila Anda ingin meninggalkan pasien tanpa menyimpan.
+
+Langkah yang gagal (mis. kode ICD tidak ada di SIM) dilaporkan di baris SIM dan di `hasil/<tanggal>.md`: isi manual.
+Bila Chrome SIM tidak terbuka, aplikasi tetap bekerja seperti biasa (clipboard).
+
 ## Catatan penting
 
 - **Butuh internet** untuk langkah Claude. Jika gagal, transkrip mentah tetap ditulis ke .md dan masuk clipboard.

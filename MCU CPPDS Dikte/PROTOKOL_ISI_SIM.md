@@ -1,6 +1,7 @@
 # Protokol: Dikte → isi otomatis SIM DoctorTool (Pemkes Maba)
 
-Status: **v0.3 + peta field (2026-10-22)**. Tahap 1 (inspeksi) selesai. Pertanyaan v0.1 sudah dijawab dokter (bagian 9). Belum dibangun; berikutnya tahap 1.
+Status: **v0.4 (2026-10-22)**. Tahap 1 selesai; tahap 2–3 dibangun (`isi_sim.py` + integrasi aplikasi). Belum diuji mengisi pasien sungguhan.
+Keputusan tambahan: Keluhan Utama ICPC kosong → **diisi** "-30 - Pemeriksaan Kesehatan". Skrip tidak meninggalkan halaman pasien yang belum disimpan. Pertanyaan v0.1 sudah dijawab dokter (bagian 9). Belum dibangun; berikutnya tahap 1.
 
 Tujuan: dokter cukup mengetik nama peserta di aplikasi Dikte MCU. Setelah itu aplikasi membuka pasien di
 `sim.doctortool.id`, merekam anamnesis, lalu mengisi Subjektif, Objektif, Asesmen, dan Perencanaan.
