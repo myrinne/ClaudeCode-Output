@@ -24,7 +24,10 @@ with sync_playwright() as p:
             const fs = parseFloat(getComputedStyle(el).fontSize);
             if (fs < {MIN_PX} - 0.5) small.push(el.tagName + ':' + fs + ':' + el.textContent.trim().slice(0, 30));
         }}
-        const over = [...document.querySelectorAll('.card, .concl, .title, .stat')]
+        const wrapped = [...document.querySelectorAll('.dr > span:first-child')]
+            .filter(e => e.getBoundingClientRect().height > 40).map(e => e.textContent);
+        if (wrapped.length) small.push('wrapped: ' + wrapped.join(' | '));
+        const over = [...document.querySelectorAll('.card, .concl, .title, .stat, .chips')]
             .filter(e => e.scrollHeight > e.clientHeight + 2 || e.scrollWidth > e.clientWidth + 2)
             .map(e => e.className + ' ' + e.scrollHeight + '>' + e.clientHeight);
         const refs = document.querySelector('.refs').getBoundingClientRect();
