@@ -52,12 +52,12 @@ ALT_CSS = """
   .hero2 .kick.solo{margin:0 0 8px 0}
   .stage.grid{display:grid;align-items:center;gap:20px}
   .stage.grid img{position:static;width:100%;height:auto}
-  .stage.grid .col{position:static;display:flex;flex-direction:column;justify-content:center;gap:12px}
+  .stage.grid .col{position:static;display:flex;flex-direction:column;justify-content:center;gap:8px}
   .stage{position:relative}
   .stage img{position:absolute;display:block}
   .stage svg.lead{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
   .stage .col{position:absolute;top:0;bottom:0;display:flex;flex-direction:column;justify-content:space-between}
-  .cl{position:relative;background:rgba(255,255,255,.95);border:2px solid var(--line);border-left:12px solid var(--g600);border-radius:14px;padding:6px 14px 8px;font-size:29px;line-height:1.18;color:var(--ink)}
+  .cl{position:relative;background:rgba(255,255,255,.95);border:2px solid var(--line);border-left:12px solid var(--g600);border-radius:14px;padding:5px 14px 6px;font-size:29px;line-height:1.18;color:var(--ink)}
   .stage>.cl{position:absolute}
   .cl.z{border-left-color:var(--or)}
   .cl .t{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-weight:800;color:var(--g900);font-size:31px}
@@ -78,9 +78,10 @@ function drawLeaders(){
     const sr = st.getBoundingClientRect(), img = st.querySelector('img').getBoundingClientRect();
     const svg = st.querySelector('svg.lead'); svg.setAttribute('width', sr.width); svg.setAttribute('height', sr.height);
     let out = '';
-    for (const c of st.querySelectorAll('.cl')) {
+    for (const c of st.querySelectorAll('.cl')) for (const pt of c.dataset.anchors.split(';')) {
+      const [px, py] = pt.split(',').map(Number);
       const r = c.getBoundingClientRect();
-      const ax = img.left - sr.left + img.width * c.dataset.ax / 100, ay = img.top - sr.top + img.height * c.dataset.ay / 100;
+      const ax = img.left - sr.left + img.width * px / 100, ay = img.top - sr.top + img.height * py / 100;
       const L = r.left - sr.left, R = r.right - sr.left, T = r.top - sr.top, B = r.bottom - sr.top;
       let sx, sy;
       if (ax > R) { sx = R; sy = T + 30; } else if (ax < L) { sx = L; sy = T + 30; }
@@ -101,7 +102,8 @@ def callout(c, absolute=False):
     cls = "cl z" if c.get("zero") else "cl"
     pos = f' style="left:{c["x"]}px;top:{c["y"]}px;width:{c["w"]}px"' if absolute else ""
     lines = "".join(f'<div class="m">{x}</div>' for x in c["lines"])
-    return (f'<div class="{cls}" data-ax="{c["ax"]}" data-ay="{c["ay"]}"{pos}>'
+    anchors = ";".join(f"{x},{y}" for x, y in (c["anchors"] if "anchors" in c else [(c["ax"], c["ay"])]))
+    return (f'<div class="{cls}" data-anchors="{anchors}"{pos}>'
             f'<div class="t"><span>{c["name"]}</span><span class="n">{c["n"]}</span></div>{lines}</div>')
 
 
@@ -130,9 +132,11 @@ def hero(v, width=STAGE_W, num=True):
             f'\n    {stage(v, width)}\n  </section>\n')
 
 
-EXT = "External validation {e} · Prospective 0"
+NB = '<span style="white-space:nowrap">{}</span>'
+EXT = NB.format("External validation {e}") + " · " + NB.format("Prospective 0")
 CHEST = dict(name="Chest radiography", n="9", lines=["Reference: expert reading or clinical diagnosis",
-             "AUC 0.84–1.00 · Se 62–100% · Sp 46–98%", EXT.format(e=3)])
+             NB.format("AUC 0.84–1.00") + " · " + NB.format("Se 62–100%") + " · " + NB.format("Sp 46–98%"),
+             EXT.format(e=3)])
 AUDIO = dict(name="Audiometry", n="1", lines=["Reference: claimants vs unexposed controls",
              "Se 98.6%, Sp 90.2%", EXT.format(e=0)])
 ECG = dict(name="Electrocardiography", n="1", lines=["Reference: examination ECG diagnosis",
@@ -153,12 +157,12 @@ VARIANTS = {
               {**SPIRO, "ax": 48.5, "ay": 33}, {**LAB, "ax": 40.5, "ay": 51}],
         right=[{**MULTI, "ax": 63, "ay": 27}, {**ECG, "ax": 55, "ay": 32}, {**FTW, "ax": 82, "ay": 63}]),
     "alt3": dict(
-        img="alt3_museum.png", kick="Admired behind glass: 0 of 13 evaluated prospectively.",
-        mode="grid", col_w=450,
-        left=[{**CHEST, "ax": 43, "ay": 24}, {**FTW, "ax": 22, "ay": 55}, {**MULTI, "ax": 37, "ay": 62}],
-        right=[{**AUDIO, "ax": 89, "ay": 26}, {**ECG, "ax": 89, "ay": 39},
-               dict(name="Spirometry, laboratory", n="0", zero=True, ax=87, ay=50,
-                    lines=["No eligible study: an empty pedestal"])]),
+        img="alt3b_museum_stations.png", kick="Admired behind glass: 0 of 13 evaluated prospectively.",
+        mode="grid", col_w=470,
+        left=[{**CHEST, "ax": 42, "ay": 23}, {**AUDIO, "ax": 17, "ay": 32}, {**ECG, "ax": 17, "ay": 62}],
+        right=[{**FTW, "ax": 73, "ay": 18}, {**MULTI, "ax": 87, "ay": 41},
+               dict(name="Spirometry, laboratory", n="0", zero=True, anchors=[(75, 68), (46, 73)],
+                    lines=["No eligible study: two empty pedestals"])]),
     "alt6": dict(
         img="alt6_factory.png", kick="One busy station, two closed ones, and no view of the workplace.",
         img_w=1140, img_x=480, col_w=450, stage_h=760,
