@@ -128,7 +128,8 @@ def stage(v, width=STAGE_W):
 
 
 def hero(v, width=STAGE_W, num=True):
-    return (f'  <section class="hero2"><div class="h"><span class="no">03</span>Results<span class="kick">{v["kick"]}</span></div>'
+    bg = f' style="background:{v["bg"]}"' if v.get("bg") else ""  # match the illustration's own background
+    return (f'  <section class="hero2"{bg}><div class="h"><span class="no">03</span>Results<span class="kick">{v["kick"]}</span></div>'
             f'\n    {stage(v, width)}\n  </section>\n')
 
 
@@ -157,11 +158,11 @@ VARIANTS = {
               {**SPIRO, "ax": 48.5, "ay": 33}, {**LAB, "ax": 40.5, "ay": 51}],
         right=[{**MULTI, "ax": 63, "ay": 27}, {**ECG, "ax": 55, "ay": 32}, {**FTW, "ax": 82, "ay": 63}]),
     "alt3": dict(
-        img="alt3b_museum_stations.png", kick="Admired behind glass: 0 of 13 evaluated prospectively.",
-        mode="grid", col_w=470,
-        left=[{**CHEST, "ax": 42, "ay": 23}, {**AUDIO, "ax": 17, "ay": 32}, {**ECG, "ax": 17, "ay": 62}],
-        right=[{**FTW, "ax": 73, "ay": 18}, {**MULTI, "ax": 87, "ay": 41},
-               dict(name="Spirometry, laboratory", n="0", zero=True, anchors=[(75, 68), (46, 73)],
+        img="alt3c_museum_semiflat.png", kick="Admired behind glass: 0 of 13 evaluated prospectively.",
+        mode="grid", col_w=470, bg="#F8ECD6",
+        left=[{**CHEST, "ax": 43, "ay": 25}, {**AUDIO, "ax": 16, "ay": 35}, {**ECG, "ax": 17, "ay": 62}],
+        right=[{**FTW, "ax": 75, "ay": 22}, {**MULTI, "ax": 86, "ay": 45},
+               dict(name="Spirometry, laboratory", n="0", zero=True, anchors=[(75, 69), (44, 73)],
                     lines=["No eligible study: two empty pedestals"])]),
     "alt6": dict(
         img="alt6_factory.png", kick="One busy station, two closed ones, and no view of the workplace.",
@@ -229,4 +230,8 @@ if __name__ == "__main__":
             print(k, pg.evaluate(CHECK))
             pg.screenshot(path=str(HERE / f"Poster_AI_OHE_PERDOKI2026_{k}.png"),
                           clip={"x": 0, "y": 0, "width": 2160, "height": 3840})
+            # single-page PDF at poster size with live text, for editing in Canva
+            pg.pdf(path=str(HERE / f"Poster_AI_OHE_PERDOKI2026_{k}.pdf"), width="2160px", height="3840px",
+                   print_background=True, margin={"top": "0", "right": "0", "bottom": "0", "left": "0"},
+                   page_ranges="1")
         b.close()
