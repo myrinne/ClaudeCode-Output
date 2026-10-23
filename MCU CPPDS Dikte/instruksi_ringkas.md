@@ -29,7 +29,7 @@ Riwayat Alergi : Tidak | Ada; <alergen + reaksi>
 Riwayat Personal Sosial dan Lingkungan
 Riwayat Olahraga : <jenis, frekuensi; atau "Tidak rutin">
 Riwayat Merokok/Alkohol: <mis. "Merokok disangkal, alkohol disangkal" atau "Merokok 5 batang/hari; alkohol disangkal">
-Program studi : <Sp1/Sp2 + nama prodi>
+Program studi : <Sp1/Sp2> <nama prodi baku, lihat aturan 11>
 
 ATURAN KERAS:
 1. Jangan mengarang. Isi hanya yang ada di transkrip. Jika suatu item TIDAK dibahas atau jawabannya tidak terdengar,
@@ -59,6 +59,21 @@ ATURAN KERAS:
    gigi, tonsil, faring, wajah, kulit kepala. Leher = tiroid, KGB leher, JVP. Thorax = jantung, paru, payudara, kulit dada/punggung,
    tulang belakang. Abdomen = perut, hepar, lien, hernia, kulit perut. Ekstremitas = lengan, tungkai, sendi, kuku, varises, edema,
    kulit anggota gerak. Temuan yang tidak masuk 5 regio itu (mis. genitalia) tidak dimasukkan ke pf_regio dan disebut di "perlu_dicek".
+11. "Program studi" HAMPIR SELALU ditanyakan; cari dengan teliti di seluruh transkrip (biasanya dekat pertanyaan merokok/olahraga,
+   bisa diucapkan "prodi", "spesialis", "SP satu/dua", "PPDS ...", atau hanya nama bagiannya, mis. "di anak", "ambil neuro").
+   Tulis jenjang (Sp1/Sp2; "spesialis satu/dua", "SP1/SP2") lalu nama prodi BAKU dari daftar ini:
+   Bedah Orthopedi, Obgyn, IKA, IPD, IKFR, Kedokteran Olahraga, Dermatologi dan Venereologi, Onkologi Radiasi, BTKV, Urologi,
+   Patologi Klinik, Patologi Anatomi, Mikrobiologi, Farmakologi, Neurologi, Psikiatri, Ilmu Kesehatan Mata, THT-KL,
+   Anestesiologi, Radiologi, Kardiologi, Pulmonologi, Bedah, Bedah Anak, Bedah Plastik, Bedah Saraf, Gizi Klinik,
+   Kedokteran Okupasi, Kedokteran Forensik, Kedokteran Emergensi, Parasitologi, Andrologi, Akupunktur Medik
+   (prodi spesialis dokter lain boleh, ditulis dengan nama lazimnya).
+   Salah dengar yang sering: "kesehatan tanah/keselan anak/anak" -> IKA; "PD/penyakit dalam/interna" -> IPD;
+   "otopedi/pertopeng/ortho" -> Bedah Orthopedi; "objine/obgin/kandungan" -> Obgyn; "kulit/kulit kelamin/DV" -> Dermatologi dan Venereologi;
+   "rehab/rehabilitasi medik/KFR" -> IKFR; "jiwa" -> Psikiatri; "neuro/saraf" (bukan bedah) -> Neurologi; "anestesi" -> Anestesiologi;
+   "PK" -> Patologi Klinik; "PA" -> Patologi Anatomi; "mikro" -> Mikrobiologi; "jantung" -> Kardiologi; "paru" -> Pulmonologi;
+   "bedah toraks/BTKV" -> BTKV; "onko rad/radioterapi" -> Onkologi Radiasi; "olahraga" (sebagai prodi) -> Kedokteran Olahraga.
+   Bila prodi terdengar tetapi jenjang tidak, tulis prodinya saja (mis. "Program studi : IKA") dan sebut di "perlu_dicek".
+   Bila jenjang terdengar tetapi prodi tidak, tulis jenjangnya saja. Kosongkan hanya bila memang tidak ada sama sekali.
 9. Transkrip bisa berisi potongan kacau/berulang dari saat pemeriksaan fisik (mis. "Sip! Sip!", "Terima kasih" berulang,
    kata-kata acak). Abaikan potongan seperti itu; jangan dijadikan isian.
 

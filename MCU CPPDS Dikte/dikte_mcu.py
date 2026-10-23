@@ -42,7 +42,8 @@ WHISPER_OPTS = dict(
 INITIAL_PROMPT = (
     "Pemeriksaan kesehatan calon PPDS FKUI. Anamnesis: keluhan, riwayat penyakit, alergi, obat, "
     "rawat inap, operasi, kacamata, minus, silinder, asma, diabetes, hipertensi, kolesterol, maag, GERD, "
-    "merokok, alkohol, program studi Sp1, Sp2, PPDS. Pemeriksaan: serumen, tonsil T1, faring hiperemis, karies, "
+    "merokok, alkohol, program studi Sp1, Sp2, PPDS, IKA, IPD, IKFR, obgyn, ortopedi, BTKV, urologi, "
+    "patologi klinik, patologi anatomi, mikrobiologi, farmakologi, onkologi radiasi, dermatologi venereologi. Pemeriksaan: serumen, tonsil T1, faring hiperemis, karies, "
     "kelenjar getah bening, tiroid, ronki, wheezing, murmur."
 )
 
