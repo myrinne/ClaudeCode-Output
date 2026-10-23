@@ -13,7 +13,8 @@ html = (HERE / src).read_text(encoding="utf-8")
 
 def data_uri(rel):
     p = HERE / rel
-    return "data:image/png;base64," + base64.b64encode(p.read_bytes()).decode()
+    mime = "image/svg+xml" if p.suffix == ".svg" else "image/png"
+    return f"data:{mime};base64," + base64.b64encode(p.read_bytes()).decode()
 
 
 html = re.sub(r'(src=")(assets/[^"]+)(")', lambda m: m.group(1) + data_uri(m.group(2)) + m.group(3), html)
