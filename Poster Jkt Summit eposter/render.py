@@ -20,7 +20,7 @@ with sync_playwright() as p:
         for (const el of document.querySelectorAll('.poster *')) {{
             if (!el.childNodes.length) continue;
             const hasText = [...el.childNodes].some(n => n.nodeType === 3 && n.textContent.trim());
-            if (!hasText || el.closest('sup')) continue;
+            if (!hasText || el.closest('sup') || el.closest('.refs')) continue;  // references may be smaller (author's choice)
             const fs = parseFloat(getComputedStyle(el).fontSize);
             if (fs < {MIN_PX} - 0.5) small.push(el.tagName + ':' + fs + ':' + el.textContent.trim().slice(0, 30));
         }}
@@ -31,7 +31,7 @@ with sync_playwright() as p:
             .filter(e => e.scrollHeight > e.clientHeight + 2 || e.scrollWidth > e.clientWidth + 2)
             .map(e => e.className + ' ' + e.scrollHeight + '>' + e.clientHeight);
         const refs = document.querySelector('.refs').getBoundingClientRect();
-        return {{contentBottom: Math.round(last.bottom), limit: 3562, refsBottom: Math.round(Math.max(...[...document.querySelectorAll('.refs li')].map(l=>l.getBoundingClientRect().bottom))),
+        return {{contentBottom: Math.round(last.bottom), limit: 3562, refsTop: Math.round(refs.top), refsBottom: Math.round(Math.max(...[...document.querySelectorAll('.refs li')].map(l=>l.getBoundingClientRect().bottom))),
                  smallText: small.slice(0, 15), overflow: over}};
     }}""")
     print("checks:", checks)

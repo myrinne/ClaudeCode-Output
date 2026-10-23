@@ -17,7 +17,7 @@
   sup{font-size:.62em;line-height:0}
   b{font-weight:700}
 
-  .content{position:absolute;left:64px;right:64px;top:316px;height:3292px;display:flex;flex-direction:column;gap:22px}
+  .content{position:absolute;left:64px;right:64px;top:316px;height:3292px;display:flex;flex-direction:column;gap:8px}
   .content>*{flex-shrink:0}
 
   /* title */
@@ -97,6 +97,7 @@
   .r2>.card{display:flex;flex-direction:column}
   .r2 .callouts{margin-top:auto}
   .dm{justify-content:space-between}
+  .dm .ext{margin-top:14px;padding-top:12px;border-top:2px dashed var(--line)}
   .dm .grp{font-size:29px;font-weight:800;color:var(--g600);text-transform:uppercase;letter-spacing:1px;margin:6px 0 4px;display:flex;justify-content:space-between}
   .dr{display:grid;grid-template-columns:1fr 346px 44px;align-items:center;gap:12px;margin-bottom:3px;font-size:29px;line-height:1.12}
   .dots{display:grid;grid-template-columns:repeat(13,22px);gap:5px}
@@ -126,12 +127,14 @@
   .req span.c{flex:1;text-align:center;background:#fff;color:var(--g900);font-weight:800;border-radius:30px;padding:6px 14px}
 
   /* references */
-  .refs{position:absolute;left:64px;top:3552px;width:1640px;height:230px;display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center}
-  .qr{width:170px;height:170px;border:0;border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:29px;color:var(--g600);font-weight:700;line-height:1.1;background:#fff}
+  .refs{position:absolute;left:64px;top:3453px;width:1556px;height:350px;display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center}
+  .qrcol{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .qrcap{font-size:22px;line-height:1.15;color:var(--g900);font-weight:700;text-align:center}
+  .qr{width:200px;height:200px;border:0;border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:29px;color:var(--g600);font-weight:700;line-height:1.1;background:#fff}
   .qr img{width:100%;height:100%}
-  .refs ol{font-size:29px;line-height:1.16;color:var(--muted);padding-left:40px}
-  .refs li{margin-bottom:0;break-inside:avoid}
-  .refs .rh{font-size:29px;font-weight:800;color:var(--g900);margin-bottom:2px}
+  .refs ol{font-size:22px;line-height:1.2;color:var(--muted);padding-left:34px}
+  .refs li{margin-bottom:3px;break-inside:avoid}
+  .refs .rh{font-size:24px;font-weight:800;color:var(--g900);margin-bottom:2px}
 </style>
 </head>
 <body>
@@ -258,7 +261,7 @@
     </div>
 
     <div class="card dm">
-      <div class="h2"><svg viewBox="0 0 24 24" fill="none" stroke="#185038" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>Quality and validation (13 studies)</div>
+      <div class="h2"><svg viewBox="0 0 24 24" fill="none" stroke="#185038" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>Quality and validation</div>
       <div>
       <div class="grp"><span>JBI diagnostic test accuracy checklist</span><span>Yes</span></div>
       <div class="dr"><span>Q1 Consecutive/random</span><div class="dots"><span class="y"></span><span class="y"></span><span class="u"></span><span class="u"></span><span class="u"></span><span class="u"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span></div><span class="v z">2</span></div>
@@ -273,12 +276,11 @@
       <div class="dr"><span>Q10 All analysed</span><div class="dots"><span class="y"></span><span class="y"></span><span class="y"></span><span class="y"></span><span class="y"></span><span class="y"></span><span class="y"></span><span class="u"></span><span class="u"></span><span class="u"></span><span class="u"></span><span class="u"></span><span class="n"></span></div><span class="v">7</span></div>
       <div class="key"><span><i style="background:#408038"></i>Yes</span><span><i style="background:#F8BC12"></i>Unclear</span><span><i style="background:#E85820"></i>No</span><span><i style="background:#fff;border:3px solid #B9C7BE"></i>Not applicable</span></div>
       </div>
-      <div>
-      <div class="grp"><span>From data extraction</span><span>Yes</span></div>
+      <div class="ext">
+      <div class="grp"><span>Data extraction</span><span>Yes</span></div>
       <div class="dr"><span>External validation</span><div class="dots"><span class="f"></span><span class="f"></span><span class="f"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v">3</span></div>
       <div class="dr"><span>NPV reported</span><div class="dots"><span class="f"></span><span class="f"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v">2</span></div>
       <div class="dr"><span>Prospective evaluation</span><div class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="v z">0</span></div>
-      <div class="note">One dot = one study. NPV: negative predictive value.</div>
       </div>
     </div>
   </section>
@@ -305,15 +307,15 @@
 
 <!-- REFERENCES -->
 <div class="refs">
-  <div class="qr"><img src="assets/qr.png" alt="" onerror="this.replaceWith(document.createTextNode('QR: 13 included studies'))"></div>
+  <div class="qrcol"><div class="qr"><img src="assets/qr.png" alt="" onerror="this.replaceWith(document.createTextNode('QR: 13 included studies'))"></div><div class="qrcap">Scan: PRISMA flow, 13 included studies, JBI appraisal</div></div>
   <div>
-    <div class="rh">References (full list of the 13 included studies: scan QR)</div>
+    <div class="rh">References</div>
     <ol>
-      <li>Wang X, et al. Occup Environ Med. 2020;77:597-602.</li>
-      <li>Topalovic M, et al. Eur Respir J. 2019;53:1801660.</li>
-      <li>Attia ZI, et al. Nat Med. 2019;25:70-4.</li>
-      <li>Ehrlich R, et al. Int J Environ Res Public Health. 2022;19:12402.</li>
-      <li>Li X, et al. Front Med. 2024;11:1290729.</li>
+      <li>Wang X, Yu J, Zhu Q, Li S, Zhao Z, Yang B, et al. Potential of deep learning in assessing pneumoconiosis depicted on digital chest radiography. Occup Environ Med. 2020;77(9):597-602.</li>
+      <li>Topalovic M, Das N, Burgel PR, Daenen M, Derom E, Haenebalcke C, et al. Artificial intelligence outperforms pulmonologists in the interpretation of pulmonary function tests. Eur Respir J. 2019;53(4):1801660.</li>
+      <li>Attia ZI, Kapa S, Lopez-Jimenez F, McKie PM, Ladewig DJ, Satam G, et al. Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram. Nat Med. 2019;25(1):70-4.</li>
+      <li>Ehrlich R, Barker S, Te Water Naude J, Rees D, Kistnasamy B, Naidoo J, et al. Accuracy of computer-aided detection of occupational lung disease: silicosis and pulmonary tuberculosis in ex-miners from the South African gold mines. Int J Environ Res Public Health. 2022;19(19):12402.</li>
+      <li>Li X, Xu M, Yan Z, Xia F, Li S, Zhang Y, et al. Deep convolutional network-based chest radiographs screening model for pneumoconiosis. Front Med (Lausanne). 2024;11:1290729.</li>
     </ol>
   </div>
 </div>
