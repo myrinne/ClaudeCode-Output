@@ -146,12 +146,12 @@
   .hero2 .kick.solo{margin:0 0 8px 0}
   .stage.grid{display:grid;align-items:center;gap:20px}
   .stage.grid img{position:static;width:100%;height:auto}
-  .stage.grid .col{position:static;display:flex;flex-direction:column;justify-content:center;gap:12px}
+  .stage.grid .col{position:static;display:flex;flex-direction:column;justify-content:center;gap:8px}
   .stage{position:relative}
   .stage img{position:absolute;display:block}
   .stage svg.lead{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
   .stage .col{position:absolute;top:0;bottom:0;display:flex;flex-direction:column;justify-content:space-between}
-  .cl{position:relative;background:rgba(255,255,255,.95);border:2px solid var(--line);border-left:12px solid var(--g600);border-radius:14px;padding:6px 14px 8px;font-size:29px;line-height:1.18;color:var(--ink)}
+  .cl{position:relative;background:rgba(255,255,255,.95);border:2px solid var(--line);border-left:12px solid var(--g600);border-radius:14px;padding:5px 14px 6px;font-size:29px;line-height:1.18;color:var(--ink)}
   .stage>.cl{position:absolute}
   .cl.z{border-left-color:var(--or)}
   .cl .t{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-weight:800;color:var(--g900);font-size:31px}
@@ -226,7 +226,7 @@
   </section>
   <section class="row2">
   <section class="hero2"><div class="kick solo">Strong on curated datasets. Not yet evaluated prospectively in workers.</div>
-    <div class="stage" style="width:1100px;height:850px"><img src="assets/alt2_dummies.png" alt="" style="left:10px;top:130px;width:1080px;height:720px"><svg class="lead"></svg><div class="cl z" data-ax="58" data-ay="42" style="left:0px;top:0px;width:520px"><div class="t"><span>Case-control or enriched</span><span class="n">7/13</span></div><div class="m">Curated datasets likely overstate screening performance</div></div><div class="cl" data-ax="33" data-ay="60" style="left:10px;top:700px;width:520px"><div class="t"><span>High AUC ≠ sensitivity</span><span class="n">0.88</span></div><div class="m">AUC 0.88 with sensitivity 62%<sup>1</sup>; AUC up to 1.00 in cross-validation</div></div><div class="cl z" data-ax="91" data-ay="28" style="left:580px;top:0px;width:500px"><div class="t"><span>Prospective in workers</span><span class="n">0/13</span></div><div class="m">External validation 3/13 · NPV 2/13</div></div></div>
+    <div class="stage" style="width:1100px;height:850px"><img src="assets/alt2_dummies.png" alt="" style="left:10px;top:130px;width:1080px;height:720px"><svg class="lead"></svg><div class="cl z" data-anchors="58,42" style="left:0px;top:0px;width:520px"><div class="t"><span>Case-control or enriched</span><span class="n">7/13</span></div><div class="m">Curated datasets likely overstate screening performance</div></div><div class="cl" data-anchors="33,60" style="left:10px;top:700px;width:520px"><div class="t"><span>High AUC ≠ sensitivity</span><span class="n">0.88</span></div><div class="m">AUC 0.88 with sensitivity 62%<sup>1</sup>; AUC up to 1.00 in cross-validation</div></div><div class="cl z" data-anchors="91,28" style="left:580px;top:0px;width:500px"><div class="t"><span>Prospective in workers</span><span class="n">0/13</span></div><div class="m">External validation 3/13 · NPV 2/13</div></div></div>
   </section>
     <div class="card dm">
       <div class="h2"><svg viewBox="0 0 24 24" fill="none" stroke="#185038" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>Quality and validation</div>
@@ -295,9 +295,10 @@ function drawLeaders(){
     const sr = st.getBoundingClientRect(), img = st.querySelector('img').getBoundingClientRect();
     const svg = st.querySelector('svg.lead'); svg.setAttribute('width', sr.width); svg.setAttribute('height', sr.height);
     let out = '';
-    for (const c of st.querySelectorAll('.cl')) {
+    for (const c of st.querySelectorAll('.cl')) for (const pt of c.dataset.anchors.split(';')) {
+      const [px, py] = pt.split(',').map(Number);
       const r = c.getBoundingClientRect();
-      const ax = img.left - sr.left + img.width * c.dataset.ax / 100, ay = img.top - sr.top + img.height * c.dataset.ay / 100;
+      const ax = img.left - sr.left + img.width * px / 100, ay = img.top - sr.top + img.height * py / 100;
       const L = r.left - sr.left, R = r.right - sr.left, T = r.top - sr.top, B = r.bottom - sr.top;
       let sx, sy;
       if (ax > R) { sx = R; sy = T + 30; } else if (ax < L) { sx = L; sy = T + 30; }
