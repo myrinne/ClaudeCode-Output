@@ -147,11 +147,18 @@ FTW = dict(name="Fitness to work", n="0", zero=True,
 
 VARIANTS = {
     "alt1": dict(
-        img="alt1_worker.png", kick="AI reads the tests. No study showed it the job.",
+        img="alt1b_worker_iso.png", kick="AI reads the tests. No study showed it the job.",
         mode="grid", col_w=450,
-        left=[{**SPIRO, "ax": 45, "ay": 33}, {**CHEST, "ax": 42, "ay": 44},
-              {**LAB, "ax": 60, "ay": 46}, {**FTW, "ax": 36, "ay": 58}],
-        right=[{**AUDIO, "ax": 53, "ay": 12}, {**ECG, "ax": 52, "ay": 32}, {**MULTI, "ax": 56, "ay": 62}]),
+        left=[{**AUDIO, "ax": 45, "ay": 9}, {**CHEST, "ax": 47, "ay": 26},
+              {**SPIRO, "ax": 48.5, "ay": 33}, {**LAB, "ax": 40.5, "ay": 51}],
+        right=[{**MULTI, "ax": 63, "ay": 27}, {**ECG, "ax": 55, "ay": 32}, {**FTW, "ax": 82, "ay": 63}]),
+    "alt3": dict(
+        img="alt3_museum.png", kick="Admired behind glass: 0 of 13 evaluated prospectively.",
+        mode="grid", col_w=450,
+        left=[{**CHEST, "ax": 43, "ay": 24}, {**FTW, "ax": 22, "ay": 55}, {**MULTI, "ax": 37, "ay": 62}],
+        right=[{**AUDIO, "ax": 89, "ay": 26}, {**ECG, "ax": 89, "ay": 39},
+               dict(name="Spirometry, laboratory", n="0", zero=True, ax=87, ay=50,
+                    lines=["No eligible study: an empty pedestal"])]),
     "alt6": dict(
         img="alt6_factory.png", kick="One busy station, two closed ones, and no view of the workplace.",
         img_w=1140, img_x=480, col_w=450, stage_h=760,
