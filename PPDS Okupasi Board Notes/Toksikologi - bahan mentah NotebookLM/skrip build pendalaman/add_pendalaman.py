@@ -16,7 +16,7 @@ SRC, DST = sys.argv[1], sys.argv[2]
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # (awalan judul H2 zat, [file md yang disisipkan berurutan])
-PLAN = [
+PLAN_LOGAM_BTX = [
     ("3A.1 Kromium", ["cr.md"]),
     ("3A.2 Merkuri", ["hg.md"]),
     ("3A.3 Arsen", ["as.md"]),
@@ -27,13 +27,33 @@ PLAN = [
     ("3B.3 Xilena", ["xilena.md", "btx_banding.md"]),
 ]
 
-CATATAN = [
+PLAN_DEBU = [
+    ("3E.1 Silika", ["silika.md"]),
+    ("3E.2 Asbes", ["asbes.md"]),
+    ("3E.3 Debu batubara", ["batubara.md"]),
+    ("3E.4 Debu kayu", ["kayu.md"]),
+    ("3E.5 Debu kapas", ["kapas.md", "banding_debu.md"]),
+]
+
+# argumen ke-3: "logam" (Pb, BTX, Hg, As, Cd, Cr), "debu" (3E), atau "semua"
+MODE = sys.argv[3] if len(sys.argv) > 3 else "semua"
+PLAN = (PLAN_LOGAM_BTX if MODE in ("logam", "semua") else []) + (PLAN_DEBU if MODE in ("debu", "semua") else [])
+
+CATATAN_LOGAM = [
     "Pendalaman (1 Nov 2026) untuk Pb, benzena, toluena, xilena, Hg, As, Cd, dan Cr VI disusun dari jawaban panjang NotebookLM (q17 sampai q26 dan 3B q01 sampai q02) yang tersimpan di folder bahan mentah; tabel 13 poin tidak diubah.",
     "Pendalaman Pb: nomor butir Perpres 7/2019 berbeda antar keluaran (butir 8 pada tabel Bagian 2.2, butir 5 pada NotebookLM). Rincian OSHA (medical removal, return to work) dan acuan CDC anak 3,5 µg/dL perlu dicek ke sumber primer.",
     "Pendalaman xilena: BEI MHA 0,3 g/g kreatinin dan TLV 20 ppm (ACGIH) versus NAB 100 ppm dan IPB 1,5 g/g (Permenaker 5/2018) berasal dari NotebookLM; cek ulang ke buku TLV dan BEI 2026.",
     "Pendalaman Cr VI: dosis asam askorbat oral 2 sampai 10 g dan askorbat topikal 10% berasal dari satu sumber NotebookLM dengan bukti klinis terbatas. Nomor butir Perpres untuk kanker paru dan perforasi septum kromium perlu dicek ulang.",
     "Pendalaman Cd: nilai panduan Eropa U-Cd 2 µg/g kreatinin (HBM4EU) bukan standar hukum Indonesia; BEI ACGIH tetap 5 µg/g kreatinin.",
 ]
+
+CATATAN_DEBU = [
+    "Pendalaman debu dan serat (3E.1 sampai 3E.5) disusun dari jawaban panjang NotebookLM (folder jawaban 3E); tabel 14 poin tidak diubah.",
+    "Pendalaman asbes: ambang baru Barbieri dkk. 2025 (600 AB atau 300.000 AAF per gram paru kering) adalah usulan satu studi, bukan standar; Kriteria Helsinki tetap rujukan konsensus. Status larangan parsial asbes di Indonesia dari NotebookLM, cek ulang.",
+    "Pendalaman debu kayu dan batubara: NAB Permenaker 5/2018 (kayu keras 1 mg/m3, kayu lunak 5 mg/m3 dengan STEL 10; batubara antrasit 0,4 dan bituminus 0,9 mg/m3) serta nomor butir Perpres 7/2019 berasal dari NotebookLM dan perlu dicek ke lampiran.",
+    "Pendalaman kapas: rekomendasi endotoksin 90 EU/m3 bukan batas hukum; derajat Schilling dan klasifikasi WHO 1983 dari NotebookLM.",
+]
+CATATAN = (CATATAN_LOGAM if MODE in ("logam", "semua") else []) + (CATATAN_DEBU if MODE in ("debu", "semua") else [])
 
 
 def text_of(el):
