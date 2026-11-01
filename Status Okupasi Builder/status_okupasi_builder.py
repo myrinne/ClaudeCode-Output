@@ -174,6 +174,22 @@ class Builder:
         self.doc = docx.Document(base)
         self.body = self.doc.element.body
         self.log = []
+        self.images = {}      # nama -> path PNG (mis. "brief:1")
+        self.image_width_cm = 16
+
+    def image_para(self, ref):
+        """Paragraf rata tengah berisi gambar; ref = nama terdaftar (brief:N) atau path file."""
+        from docx.enum.text import WD_ALIGN_PARAGRAPH
+        from docx.shared import Cm
+        path = self.images.get(ref, ref)
+        if not os.path.exists(path):
+            raise FileNotFoundError("Gambar tidak ditemukan: %s" % ref)
+        p = self.doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.add_run().add_picture(path, width=Cm(self.image_width_cm))
+        el = p._p
+        el.getparent().remove(el)
+        return el
 
     def blocks(self):
         return list(self.body.iterchildren())
@@ -201,7 +217,23 @@ class Builder:
         paras = [e for e in between if e.tag == qn("w:p")]
         removable = [p for p in paras if not is_sect(p) and not has_cb(p) and
                      (ptext(p).strip() or (drop_images and has_img(p)))]
-        new = build_paras(removable, lines, bl[i])
+        imgs = {k: l[4:] for k, l in enumerate(lines) if l.startswith("IMG:")}
+        new = build_paras(removable, ["" if k in imgs else l for k, l in enumerate(lines)], bl[i])
+        for k, ref in imgs.items():
+            new[k] = self.image_para(ref)
+            if k > 0 and k - 1 not in imgs:
+                # judul sebelum gambar ikut pindah halaman bersama gambarnya
+                ppr = new[k - 1].find(qn("w:pPr"))
+                if ppr is None:
+                    ppr = new[k - 1].makeelement(qn("w:pPr"), {})
+                    new[k - 1].insert(0, ppr)
+                if ppr.find(qn("w:keepNext")) is None:
+                    kn = ppr.makeelement(qn("w:keepNext"), {})
+                    style = ppr.find(qn("w:pStyle"))   # urutan skema: pStyle lalu keepNext
+                    if style is not None:
+                        style.addnext(kn)
+                    else:
+                        ppr.insert(0, kn)
         for p in removable:
             p.getparent().remove(p)
         anchor = bl[i]
@@ -441,6 +473,18 @@ class Builder:
                 n += 1
         self.log.append("hapus %d gambar antara %r..%r" % (n, start, end))
 
+    def clear_ink(self):
+        """Hapus coretan ink (mis. arsiran body map pasien contoh)."""
+        n = 0
+        for cp in list(self.body.iter(q14("contentPart"))):
+            el = cp
+            while el is not None and el.tag != qn("w:r"):
+                el = el.getparent()
+            if el is not None and el.getparent() is not None:
+                el.getparent().remove(el)
+                n += 1
+        self.log.append("hapus %d coretan ink" % n)
+
     def save(self, out):
         self.doc.save(out)
 
@@ -453,6 +497,20 @@ def run(cfg_path):
     base = os.path.join(here, cfg["base_docx"]) if not os.path.isabs(cfg["base_docx"]) else cfg["base_docx"]
     out = os.path.join(here, cfg["output_docx"]) if not os.path.isabs(cfg["output_docx"]) else cfg["output_docx"]
     b = Builder(base)
+    if "brief" in cfg:
+        import brief_form
+        bc = cfg["brief"]
+        tpl = bc["template"]
+        b.image_width_cm = bc.get("width_cm", 16)
+        stem = os.path.splitext(out)[0]
+        for n, act in enumerate(bc["activities"], 1):
+            png = "%s_BRIEF_%d.png" % (stem, n)
+            res = brief_form.fill(tpl, act, png, dpi=bc.get("dpi", 150))
+            b.images["brief:%d" % n] = png
+            hm = ", ".join("%s=%d%s" % (k, s, r) for k, (s, r) in res.items() if s)
+            b.log.append("BRIEF %d (%s): %s" % (n, act.get("title", ""), hm or "semua L"))
+    if cfg.get("clear_ink", True):
+        b.clear_ink()
     for old, new, *rest in cfg.get("subs", []):
         b.sub(old, new, all_=bool(rest and rest[0]))
     if "identity_checks" in cfg:
