@@ -20,6 +20,9 @@ venv/
 # career-ops is its own independent git repo, not tracked here
 career-ops/
 
+# OpenMAIC is its own independent git repo (lives at C:\dev\OpenMAIC), not tracked here
+OpenMAIC/
+
 # MCU: patient PHI (nama, NIP, hasil lab/vital) - never goes into git history
 MCU/queue.json
 MCU/draft_fase3.json
