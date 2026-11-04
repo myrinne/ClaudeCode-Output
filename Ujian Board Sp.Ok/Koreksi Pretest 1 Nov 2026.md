@@ -80,7 +80,8 @@ The scores count the verified key. Items 55 and 80 you answered in line with the
 ### 19. According to the WHO classification, substances with an oral LD50 for the rat of 100 mg/kg body weight are classified as:
 - **Your answer:** C - Slightly hazardous
 - **Key:** A - Moderately hazardous
-- **Why:** WHO 2009 class II (moderately hazardous): oral LD50 rat 50-500 mg/kg for solids. LD50 100 mg/kg falls here. 'Slightly hazardous' = class III (>500 mg/kg solids).
+- **Why:** A (moderately) is correct per the source key (Remed Agt 2022) and the WHO 2009 *solid* range (class II = 50-500 mg/kg). 'Slightly hazardous' = class III (>500 mg/kg solids).
+- **Note (physical state):** the question does not say solid or liquid. WHO 2009 oral rat ranges (from memory, not re-checked against the WHO document): Ib 5-50 solid / 20-200 liquid; II 50-500 / 200-2000; III >500 / >2000. A liquid at 100 mg/kg would be Ib (highly hazardous). Use the key (A) for the exam.
 
 ### 21. In metal fume fever, which one of the following statements is the best fit?
 - **Your answer:** C - Onset is typically immediate
@@ -90,7 +91,10 @@ The scores count the verified key. Items 55 and 80 you answered in line with the
 ### 22. According to the WHO classification, substances with an oral LD50 for the rat of 1000 mg/kg body weight are classified as:
 - **Your answer:** E - Unlikely to present acute hazard
 - **Key:** B - Moderately hazardous  *(new verified key)*
-- **Why:** Verified new key = B. WHO 2009 class II. Caveat: the class cut-off depends on physical state (solid vs liquid); the compilation uses 50-2000 mg/kg. Either way 1000 mg/kg is not 'unlikely to present acute hazard'.
+- **Why:** Key B is a 'kunci baru' from the compilation's own verification (confidence: sedang), not an original exam key. It uses a simplified range (class II = 50-2000 mg/kg).
+- **Inconsistency with #19:** using the same *solid* ranges as #19, 1000 mg/kg is class III = **D (slightly hazardous)**. Using the *liquid* ranges (II = 200-2000), it is class II = B (moderately). The question gives no physical state, so it is ambiguous; B holds only for liquids or the simplified range.
+- **Your answer E:** wrong in every scenario. 'Unlikely to present acute hazard' needs LD50 >2000 (solid) or >3000 (liquid).
+- **For the exam:** do not memorise B as a rule. If this item reappears, look for a solid/liquid cue; otherwise follow the answer key given for that exam.
 
 ### 24. Which of the following gases is a chemical asphyxiant?
 - **Your answer:** A - Nitrogen
