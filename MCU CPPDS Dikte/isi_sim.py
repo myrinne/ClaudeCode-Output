@@ -25,8 +25,9 @@ from playwright.sync_api import sync_playwright
 CDP = "http://127.0.0.1:9223"
 URL_PRAKTIK = "https://sim.doctortool.id/Praktik/DoctorPractice"
 OBES_IMT = 25.0  # WHO Asia-Pacific; overweight tidak dikode (E66.3 tidak ada di SIM)
+TD_TINGGI = (140, 90)  # sistol atau diastol >= ini dari Pemeriksaan Awal → R03.0 sebagai diagnosis sekunder
 REGIO = ["Kepala", "Leher", "Thorax", "Abdomen", "Ekstremitas"]
-LAB = ["Rontgen Paru", "Pemeriksaan EKG", "Darah EDTA", "Darah tanpa anti koagulan", "Urine"]
+LAB = ["Darah EDTA", "Darah tanpa anti koagulan", "Urine"]  # Rontgen Paru & EKG tidak lagi dicentang (2026-10-30)
 
 # Elemen ditandai dengan atribut data-dikte lalu dipakai lewat locator. Id elemen situs (GUID) berubah tiap muat.
 JS_HELPERS = r"""
@@ -178,6 +179,42 @@ class Sim:
         t = self.js("() => { const m = document.body.innerText.match(/Pasien Aktif\\s*:\\s*([^;\\n]+)/); return m ? m[1].trim() : null; }")
         return t
 
+    def header_aman(self):
+        try:
+            return self.header()
+        except Exception:
+            return None  # halaman sedang berpindah
+
+    def tunggu_header(self, batas=12):
+        """Header pasien kadang baru terisi beberapa detik setelah tulisan 'Pasien Aktif' tampil."""
+        akhir = time.time() + batas
+        while True:
+            hdr = self.header_aman()
+            if hdr or time.time() >= akhir:
+                return hdr or ""
+            self.pg().wait_for_timeout(500)
+
+    def baca_daftar(self, batas=25):
+        """Grid tampil lebih dulu sebagai "No records", baris baru menyusul 1-4 detik kemudian (diukur 2026-11-06).
+        Kembalikan (baris, keterangan pager); baris kosong setelah batas = daftar belum termuat/memang kosong."""
+        p, akhir, rows, pager = self.pg(), time.time() + batas, [], ""
+        while True:
+            try:
+                rows, pager = self.js(r"""() => { const g = document.querySelector('.k-grid');
+                  const h = [...g.querySelectorAll('thead th')].map(t => t.innerText.trim());
+                  const iN = h.findIndex(x => x.startsWith('Nama')), iNo = h.findIndex(x => x.startsWith('No'));
+                  const rows = [...g.querySelectorAll('tbody tr')].filter(r => r.querySelector('.btn-dt-periksa')).map(r => {
+                    const td = r.querySelectorAll('td');
+                    return {no: td[iNo].innerText.trim(), nama: td[iN].innerText.trim(),
+                            status: (td[h.findIndex(x => x.startsWith('Status'))] || {innerText: ''}).innerText.trim()};
+                  });
+                  return [rows, (g.querySelector('.k-pager-info') || {innerText: ''}).innerText.trim()]; }""")
+            except Exception:
+                rows = []  # grid sedang dirender ulang
+            if rows or time.time() >= akhir:
+                return rows, pager
+            p.wait_for_timeout(500)
+
     def pasang_pemantau_simpan(self):
         self.js(r"""() => { if (window.__dikteSimpanPasang) return;
           window.__dikteSimpanPasang = true;
@@ -200,25 +237,30 @@ class Sim:
         p = self.pg()
         if "DoctorPracticeEntry" in p.url and not self.izin_tinggal:
             # jangan tinggalkan halaman pasien yang mungkin berisi isian (manual atau dari kita) yang belum disimpan
-            hdr = self.header()
-            if not (hdr and self.nama_aktif and norm(hdr) == norm(self.nama_aktif) and self.disimpan):
+            # Setelah klik Simpan, SIM butuh beberapa detik menyimpan lalu kembali ke Praktik: jangan dipotong.
+            # Header yang kosong berarti halaman sedang berpindah, bukan pasien lain yang terbuka.
+            akhir, hdr = time.time() + 12, None
+            while "DoctorPracticeEntry" in p.url and time.time() < akhir:
+                hdr = self.header_aman()
+                if hdr and not self.disimpan:
+                    break
+                p.wait_for_timeout(500)
+            if "DoctorPracticeEntry" in p.url:
                 return out(ev="gagal", perlu_lepas=True,
                            pesan=f"halaman pasien {hdr or '?'} masih terbuka; klik Simpan/tutup di SIM, atau 'Lanjut tanpa Simpan'")
         self.izin_tinggal = False
-        p.goto(URL_PRAKTIK)
+        try:
+            p.goto(URL_PRAKTIK)
+        except Exception:  # bentrok dengan perpindahan halaman oleh situs sendiri
+            p.wait_for_timeout(1500)
+            p.goto(URL_PRAKTIK)
         p.wait_for_selector(".k-grid", timeout=20000)
-        p.wait_for_timeout(2500)  # grid diisi Blazor setelah halaman tampil
-        rows = self.js(r"""() => { const g = document.querySelector('.k-grid');
-          const h = [...g.querySelectorAll('thead th')].map(t => t.innerText.trim());
-          const iN = h.findIndex(x => x.startsWith('Nama')), iNo = h.findIndex(x => x.startsWith('No'));
-          return [...g.querySelectorAll('tbody tr')].filter(r => r.querySelector('.btn-dt-periksa')).map(r => {
-            const td = r.querySelectorAll('td');
-            return {no: td[iNo].innerText.trim(), nama: td[iN].innerText.trim(),
-                    status: (td[h.findIndex(x => x.startsWith('Status'))] || {innerText: ''}).innerText.trim()};
-          }); }""")
+        rows, pager = self.baca_daftar()
+        if not rows:
+            return out(ev="gagal", pesan=f"daftar pasien SIM masih kosong setelah ditunggu 25 detik; '{nama}' belum bisa dicari. Enter lagi untuk mencoba ulang")
         cocok = [r for r in rows if norm(nama) in norm(r["nama"])]
         if not cocok:
-            return out(ev="gagal", pesan=f"'{nama}' tidak ada di daftar Hari ini ({len(rows)} pasien)")
+            return out(ev="gagal", pesan=f"'{nama}' tidak ada di daftar Hari ini ({len(rows)} pasien terbaca; pager: {pager or '-'})")
         if len(cocok) > 1:
             self.kandidat = cocok
             return out(ev="pilih", kandidat=cocok)
@@ -235,8 +277,11 @@ class Sim:
         p.wait_for_url("**/DoctorPracticeEntry**", timeout=20000)
         p.wait_for_selector("text=Pasien Aktif", timeout=20000)
         p.wait_for_timeout(2500)
-        hdr = self.header() or ""
+        hdr = self.tunggu_header()
         nama_grid = re.sub(r"\s*\(.*$", "", r["nama"]).strip()
+        if not hdr:  # string kosong selalu "cocok" di bawah: identitas tidak boleh lolos tanpa terbaca
+            self.izin_tinggal = True  # tidak ada yang kita tulis: jangan blokir peserta berikutnya
+            return out(ev="gagal", pesan=f"nama di header SIM tidak terbaca untuk '{nama_grid}'; tidak diisi")
         if norm(nama_grid) not in norm(hdr) and norm(hdr) not in norm(nama_grid):
             return out(ev="gagal", pesan=f"header '{hdr}' tidak cocok dengan '{nama_grid}'; tidak diisi")
         self.nama_aktif, self.terisi_pada, self.boleh_lepas, self.disimpan = hdr, None, True, False
@@ -266,6 +311,13 @@ class Sim:
                 info["imt"] = round(bb / (tb / 100) ** 2, 1)
         except Exception as e:
             info["peringatan"].append(f"cek Pemeriksaan Awal: {e}")
+        try:
+            sis = float(self.loc("input", "Sistol").input_value().replace(",", "."))
+            dia = float(self.loc("input", "Diastol").input_value().replace(",", "."))
+            if sis > 0 and dia > 0:
+                info["td"] = [sis, dia]
+        except Exception as e:
+            info["peringatan"].append(f"TD tidak terbaca dari Pemeriksaan Awal: {str(e).splitlines()[0][:80]}")
         return info
 
     def pilih_combobox(self, inp, ketik, cocok):
@@ -307,7 +359,8 @@ class Sim:
 
         hdr = self.header()
         if not hdr or norm(hdr) != norm(nama):
-            return out(ev="gagal", pesan=f"pasien di layar '{hdr}' ≠ '{nama}'; TIDAK diisi")
+            self.izin_tinggal = True  # tidak ada yang kita tulis: jangan blokir peserta berikutnya
+            return out(ev="gagal", isi=True, pesan=f"pasien di layar '{hdr}' ≠ '{nama}'; TIDAK diisi")
         self.tab("Pemkes Maba")
         kotak = split_anamnesis(data.get("anamnesis", ""))
 
@@ -352,6 +405,10 @@ class Sim:
         if imt and imt >= OBES_IMT and "E66.9" not in icd:
             icd.append("E66.9")
             lap.append(f"IMT {imt} → E66.9 ditambahkan")
+        td = data.get("td")
+        if td and (td[0] >= TD_TINGGI[0] or td[1] >= TD_TINGGI[1]) and "R03.0" not in icd and "I10" not in icd:
+            icd.append("R03.0")
+            lap.append(f"TD {td[0]:.0f}/{td[1]:.0f} → R03.0 ditambahkan")
         def dx_sekunder(k):
             # pengisian ulang (rekaman lanjutan peserta yang sama) tidak boleh menggandakan kode
             if self.js("k => document.body.innerText.toUpperCase().includes(k + ' - ')", k):
@@ -460,7 +517,9 @@ def serve():
                 sim.boleh_lepas = sim.izin_tinggal = True
                 out(ev="dilepas")
         except Exception as e:
-            out(ev="gagal", pesan=f"{c}: {str(e).splitlines()[0][:200]}")
+            if c == "isi":
+                sim.izin_tinggal = True
+            out(ev="gagal", isi=(c == "isi"), pesan=f"{c}: {str(e).splitlines()[0][:200]}")
 
 
 if __name__ == "__main__":
