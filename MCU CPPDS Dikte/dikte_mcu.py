@@ -468,7 +468,10 @@ class App:
             return
         name = self.ident.get().strip()
         if self.current and same_name(name, self.current.ident):
-            return  # Enter lagi untuk peserta yang sama: rekaman dibiarkan jalan
+            s = self.current  # Enter lagi untuk peserta yang sama: rekaman dibiarkan jalan
+            if s.anchor is s and not s.sim_nama and s is not self.sim_req and s not in self.sim_wait:
+                self.sim_open(s)  # pembukaan sebelumnya gagal: coba lagi tanpa memutus rekaman
+            return
         if self.current:
             self.toggle()
             self.ident.insert(0, name)
