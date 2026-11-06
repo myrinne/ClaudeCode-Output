@@ -25,8 +25,9 @@ from playwright.sync_api import sync_playwright
 CDP = "http://127.0.0.1:9223"
 URL_PRAKTIK = "https://sim.doctortool.id/Praktik/DoctorPractice"
 OBES_IMT = 25.0  # WHO Asia-Pacific; overweight tidak dikode (E66.3 tidak ada di SIM)
+TD_TINGGI = (140, 90)  # sistol atau diastol >= ini dari Pemeriksaan Awal → R03.0 sebagai diagnosis sekunder
 REGIO = ["Kepala", "Leher", "Thorax", "Abdomen", "Ekstremitas"]
-LAB = ["Rontgen Paru", "Pemeriksaan EKG", "Darah EDTA", "Darah tanpa anti koagulan", "Urine"]
+LAB = ["Darah EDTA", "Darah tanpa anti koagulan", "Urine"]  # Rontgen Paru & EKG tidak lagi dicentang (2026-10-30)
 
 # Elemen ditandai dengan atribut data-dikte lalu dipakai lewat locator. Id elemen situs (GUID) berubah tiap muat.
 JS_HELPERS = r"""
@@ -266,6 +267,13 @@ class Sim:
                 info["imt"] = round(bb / (tb / 100) ** 2, 1)
         except Exception as e:
             info["peringatan"].append(f"cek Pemeriksaan Awal: {e}")
+        try:
+            sis = float(self.loc("input", "Sistol").input_value().replace(",", "."))
+            dia = float(self.loc("input", "Diastol").input_value().replace(",", "."))
+            if sis > 0 and dia > 0:
+                info["td"] = [sis, dia]
+        except Exception as e:
+            info["peringatan"].append(f"TD tidak terbaca dari Pemeriksaan Awal: {str(e).splitlines()[0][:80]}")
         return info
 
     def pilih_combobox(self, inp, ketik, cocok):
@@ -307,7 +315,8 @@ class Sim:
 
         hdr = self.header()
         if not hdr or norm(hdr) != norm(nama):
-            return out(ev="gagal", pesan=f"pasien di layar '{hdr}' ≠ '{nama}'; TIDAK diisi")
+            self.izin_tinggal = True  # tidak ada yang kita tulis: jangan blokir peserta berikutnya
+            return out(ev="gagal", isi=True, pesan=f"pasien di layar '{hdr}' ≠ '{nama}'; TIDAK diisi")
         self.tab("Pemkes Maba")
         kotak = split_anamnesis(data.get("anamnesis", ""))
 
@@ -352,6 +361,10 @@ class Sim:
         if imt and imt >= OBES_IMT and "E66.9" not in icd:
             icd.append("E66.9")
             lap.append(f"IMT {imt} → E66.9 ditambahkan")
+        td = data.get("td")
+        if td and (td[0] >= TD_TINGGI[0] or td[1] >= TD_TINGGI[1]) and "R03.0" not in icd and "I10" not in icd:
+            icd.append("R03.0")
+            lap.append(f"TD {td[0]:.0f}/{td[1]:.0f} → R03.0 ditambahkan")
         def dx_sekunder(k):
             # pengisian ulang (rekaman lanjutan peserta yang sama) tidak boleh menggandakan kode
             if self.js("k => document.body.innerText.toUpperCase().includes(k + ' - ')", k):
@@ -460,7 +473,9 @@ def serve():
                 sim.boleh_lepas = sim.izin_tinggal = True
                 out(ev="dilepas")
         except Exception as e:
-            out(ev="gagal", pesan=f"{c}: {str(e).splitlines()[0][:200]}")
+            if c == "isi":
+                sim.izin_tinggal = True
+            out(ev="gagal", isi=(c == "isi"), pesan=f"{c}: {str(e).splitlines()[0][:200]}")
 
 
 if __name__ == "__main__":

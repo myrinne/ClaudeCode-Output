@@ -131,6 +131,8 @@ class Session:
         self.proc = None
         self.sim_nama = None  # nama di header SIM setelah pasien dibuka
         self.sim_imt = None
+        self.sim_td = None
+        self.sim_sent = False  # perintah isi sudah dikirim ke SIM untuk sim_data yang sekarang
         self.sim_data = None  # hasil Claude, menunggu pasien terbuka di SIM
         self.sim_saved = False
         self.t_stop = None
@@ -183,6 +185,16 @@ def today_md():
 def same_name(a, b):
     a, b = " ".join(a.lower().split()), " ".join(b.lower().split())
     return bool(a and b) and (a in b or b in a)
+
+
+def dbg(msg):
+    """Jejak singkat alur SIM di ~/.cache/mcu-dikte-work/debug.log (tanpa data pasien selain nama ketikan)."""
+    try:
+        WORK_DIR.mkdir(parents=True, exist_ok=True)
+        with (WORK_DIR / "debug.log").open("a", encoding="utf-8") as f:
+            f.write(f"{dt.datetime.now():%H:%M:%S} {msg}\n")
+    except Exception:
+        pass
 
 
 def append_md(text):
@@ -333,7 +345,7 @@ class App:
         self.sim = SimLink(self.ui)
         self.sim_req = None  # sesi yang sedang dibuka di SIM
         self.sim_active = None  # sesi yang halamannya sedang tampil di SIM
-        self.sim_wait = None  # sesi berikutnya, menunggu pasien aktif disimpan
+        self.sim_wait = []  # antrean sesi berikutnya, menunggu pasien aktif disimpan (urut masuk)
         self.sim_next_poll = 0
 
         root.title("Dikte MCU CPPDS")
@@ -396,13 +408,23 @@ class App:
                     self.show(val)
                 elif kind == "sim":
                     self.on_sim(val)
+                elif kind == "sim_nodata":
+                    s, why = val
+                    if s is self.sim_req or s is self.sim_active:
+                        self.sim_say(f"⚠ {s.sim_nama or s.ident}: hasil dikte gagal ({why}) → SIM TIDAK diisi. "
+                                     "Isi manual dari clipboard/transkrip, lalu Simpan atau tekan 'Lanjut tanpa Simpan'.", "#c00")
+                        self.lepas_btn.pack(side="right")
                 elif kind == "sim_data":
                     s, data = val
+                    dbg(f"sim_data diterima {s.ident!r} (anchor {s.anchor.ident!r})")
                     s.anchor.sim_data = data
+                    s.anchor.sim_sent = False
                     self.sim_fill(s.anchor)
         except queue.Empty:
             pass
         a = self.sim_active
+        if a and a.sim_nama and a.sim_data is not None and not a.sim_sent and not a.sim_saved:
+            self.sim_fill(a)  # jaring pengaman: SIM terbuka + hasil dikte siap, tapi belum ada perintah isi
         if a and a.sim_data is not None and not a.sim_saved and time.time() > self.sim_next_poll:
             self.sim_next_poll = time.time() + SIM_STATUS_SECONDS
             self.sim.send(cmd="status")
@@ -431,6 +453,9 @@ class App:
                     s.ident = target.ident
             elif s.ident:
                 self.sim_open(s)
+            else:
+                self.sim_say("⚠ nama peserta tidak diketik → SIM TIDAK akan diisi (hanya clipboard). "
+                             "Ketik sebagian nama lalu Enter.", "#c00")
         else:
             stop_recording(self.current)
             self.current = None
@@ -463,7 +488,7 @@ class App:
     def sim_target(self):
         """Peserta yang sedang dibuka/terbuka/menunggu di SIM dan belum disimpan."""
         if self.sim_wait:
-            return self.sim_wait
+            return self.sim_wait[-1]
         a = self.sim_req
         return a if a is not None and not a.sim_saved else None
 
@@ -473,7 +498,7 @@ class App:
 
     def sim_open(self, s):
         if self.sim_blocked():
-            self.sim_wait = s
+            self.sim_wait.append(s)
             self.sim_say(f"⚠ {self.sim_active.sim_nama} BELUM DISIMPAN. Klik Simpan di SIM dulu; "
                          f"{s.ident} dibuka setelah itu (rekaman tetap jalan).", "#c00")
             self.lepas_btn.pack(side="right")
@@ -483,12 +508,14 @@ class App:
         self.sim.send(cmd="buka", nama=s.ident)
 
     def sim_fill(self, s):
+        dbg(f"sim_fill {s.ident!r}: aktif={s is self.sim_active} nama={s.sim_nama!r} data={s.sim_data is not None} terkirim={s.sim_sent}")
         if s is self.sim_active and s.sim_nama and s.sim_data is not None:
             d = s.sim_data
+            s.sim_sent = True
             self.sim_say(f"mengisi {s.sim_nama}…")
             self.sim.send(cmd="isi", nama=s.sim_nama, data={
                 "anamnesis": d.get("anamnesis", ""), "pf_regio": d.get("pf_regio") or {},
-                "icd": d.get("icd") or [], "imt": s.sim_imt})
+                "icd": d.get("icd") or [], "imt": s.sim_imt, "td": s.sim_td})
 
     def sim_lepas(self):
         self.lepas_btn.pack_forget()
@@ -499,8 +526,7 @@ class App:
     def sim_next(self):
         self.lepas_btn.pack_forget()
         if self.sim_wait:
-            s, self.sim_wait = self.sim_wait, None
-            self.sim_open(s)
+            self.sim_open(self.sim_wait.pop(0))
 
     def sim_choose(self, kandidat):
         w = tk.Toplevel(self.root)
@@ -523,7 +549,8 @@ class App:
             s = self.sim_req
             if s is None:
                 return
-            s.sim_nama, s.sim_imt = m["nama"], m.get("imt")
+            s.sim_nama, s.sim_imt, s.sim_td = m["nama"], m.get("imt"), m.get("td")
+            dbg(f"terbuka {s.ident!r} → {s.sim_nama!r}, data sudah ada={s.sim_data is not None}")
             self.sim_active = s
             warn = "; ".join(m.get("peringatan") or [])
             self.sim_say(f"✓ {s.sim_nama} terbuka (IMT {s.sim_imt}). Menunggu dikte selesai…" + (f"\n⚠ {warn}" if warn else ""),
@@ -546,19 +573,29 @@ class App:
         elif ev == "dilepas":
             self.sim_say("dilanjutkan tanpa Simpan.", "#b35900")
             self.sim_next()
+        elif ev == "gagal" and m.get("isi"):
+            # pengisian gagal = tidak ada yang tertulis di SIM; jangan biarkan peserta ini memblokir yang berikutnya
+            if self.sim_active:
+                self.sim_active.sim_saved = True
+            self.sim_say(f"⚠ {m.get('pesan')} — isi manual dari clipboard.", "#c00")
+            append_md(f"**SIM TIDAK DIISI:** {m.get('pesan')} — isi manual dari clipboard.\n\n")
+            self.sim_next()
         elif ev == "gagal":
             if m.get("perlu_lepas"):  # halaman pasien lain masih terbuka: tunggu Simpan atau "Lanjut tanpa Simpan"
-                self.sim_wait = self.sim_req
+                if self.sim_req is not None and self.sim_req not in self.sim_wait:
+                    self.sim_wait.insert(0, self.sim_req)
                 self.sim_say(f"⚠ {m.get('pesan')}. Setelah itu tekan 'Lanjut tanpa Simpan' untuk membuka peserta ini.", "#c00")
             else:
                 if self.sim_req is not None and self.sim_req is not self.sim_active:
                     self.sim_req = None  # gagal dibuka: rekaman berikutnya jangan menempel ke peserta ini
                 self.sim_say(f"⚠ {m.get('pesan')} — pakai clipboard seperti biasa.", "#c00")
+            append_md(f"**SIM TIDAK DIISI:** {m.get('pesan')} — isi manual dari clipboard.\n\n")
             if m.get("perlu_lepas") or self.sim_blocked():
                 self.lepas_btn.pack(side="right")
         elif ev == "mati":
             self.sim_say(f"tidak tersambung ({m.get('pesan')}). Buka Chrome SIM lewat 'Buka Chrome SIM.bat' "
                          "lalu login. Dikte tetap jalan.", "#c00")
+            append_md(f"**SIM TIDAK DIISI:** tidak tersambung ke Chrome SIM ({m.get('pesan')}) — isi manual dari clipboard.\n\n")
         elif ev == "siap":
             self.sim_say("tersambung ke Chrome.")
 
@@ -686,6 +723,8 @@ class App:
                                     else f"⚠ {tag}: Claude gagal, transkrip mentah di clipboard"}))
         if data and own:
             self.ui.put(("sim_data", (s, data)))
+        elif s.anchor is s and not data:
+            self.ui.put(("sim_nodata", (s, err or "tidak ada hasil")))  # tanpa ini SIM menunggu selamanya
         if not append_md(render_entry(no, s.t, s.ident, data, transcript, err)):
             raise RuntimeError(f"gagal menulis {today_md().name}; hasil tetap ada di jendela/clipboard")
 
