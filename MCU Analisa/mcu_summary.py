@@ -110,7 +110,7 @@ def suggest(var: str, v: str) -> str:
         return "Ya"
     if var == "olahraga":
         if "TIDAK RUTIN" in s or "TIDAL RUTIN" in s or "JARANG" in s or "KADANG" in s:
-            return "Tidak"  # dua kategori saja; tidak rutin = tidak berolahraga teratur
+            return "Ya"  # dua kategori saja; tidak rutin tetap berolahraga (Vidya 2026-11-08)
         if s.startswith("TIDAK") or s in ("GA", "GAK", "NO", "TDK", "-", "N"):
             return "Tidak"
         return "Ya"
@@ -217,10 +217,16 @@ def read_existing_dicts(wb, spec, reset=False):
     if "DICT_CUTOFF" in wb.sheetnames:
         for r in wb["DICT_CUTOFF"].iter_rows(min_row=4, values_only=True):
             if r and r[0] in cutoff and is_num(r[3]):
-                if r[3] != cutoff[r[0]]["nilai"] or (r[4] and r[4] != cutoff[r[0]]["sumber"]):
+                c0 = cutoff[r[0]]
+                if r[3] != c0["nilai"] or (r[4] and r[4] != c0["sumber"]):
                     edited["DICT_CUTOFF"] = True
-                cutoff[r[0]]["nilai"] = r[3]
-                cutoff[r[0]]["sumber"] = r[4] or cutoff[r[0]]["sumber"]
+                c0["nilai"] = r[3]
+                c0["sumber"] = r[4] or c0["sumber"]
+                if len(r) > 6 and r[5] in ("vendor", "cutoff"):  # older sheets have no basis column
+                    if r[5] != c0.get("dasar", "cutoff") or (r[6] or "") != ", ".join(c0.get("temuan_vendor", [])):
+                        edited["DICT_CUTOFF"] = True
+                    c0["dasar"] = r[5]
+                    c0["temuan_vendor"] = [x.strip() for x in str(r[6] or "").split(",") if x.strip()]
     if "DICT_NILAI" in wb.sheetnames:
         cur = None
         for r in wb["DICT_NILAI"].iter_rows(min_row=1, values_only=True):
@@ -356,9 +362,11 @@ class Builder:
 
         # DICT_CUTOFF
         wc = self.wb.create_sheet("DICT_CUTOFF")
-        wc["A1"] = "Cutoff untuk analisa kombinasi 3 kelainan dan batas kelompok umur. Kuning = nilai default; ganti dengan acuan perusahaan bila ada."
+        wc["A1"] = ("Analisa kombinasi 3 kelainan dan batas kelompok umur. Kolom 'Dasar penilaian': vendor = pakai interpretasi "
+                    "vendor di Kesimpulan (temuan di kolom G); cutoff = pakai nilai di kolom D. Kuning = nilai default.")
         wc["A1"].font = BOLD
-        self.head(wc, 3, ["Kode", "Parameter", "Operator", "Nilai", "Sumber / catatan"])
+        self.head(wc, 3, ["Kode", "Parameter", "Operator", "Nilai", "Sumber / catatan", "Dasar penilaian (vendor/cutoff)",
+                          "Temuan vendor yang dipakai (kode DICT_TEMUAN)"])
         self.crow = {}
         for i, (k, c) in enumerate(self.cutoff.items()):
             r = 4 + i
@@ -370,7 +378,9 @@ class Builder:
             if str(c["sumber"]).startswith("DEFAULT"):
                 cell.fill = YELLOW
             wc.cell(row=r, column=5, value=c["sumber"])
-        self.widths(wc, [12, 30, 9, 9, 100])
+            wc.cell(row=r, column=6, value=c.get("dasar", "cutoff")).fill = YELLOW
+            wc.cell(row=r, column=7, value=", ".join(c.get("temuan_vendor", [])))
+        self.widths(wc, [12, 30, 9, 9, 90, 16, 34])
 
         # DICT_NILAI
         wn = self.wb.create_sheet("DICT_NILAI")
@@ -522,18 +532,35 @@ class Builder:
             rL = self.pcol["rasio"]
             add("ab1", "Abnormal 1: rasio TG/HDL", lambda r: f'=IF({rL}{r}="","",IF({rL}{r}>={c_r},1,0))',
                 lambda r: "" if self.pval["rasio"][r] == "" else int(self.pval["rasio"][r] >= v_r))
-            add("ab2", "Abnormal 2: HbA1c", lambda r: f'=IF(ISNUMBER({ref("hba1c", r)}),IF({ref("hba1c", r)}>={c_a},1,0),"")',
-                lambda r: int(self.rv(r, "hba1c") >= v_a) if is_num(self.rv(r, "hba1c")) else "")
+            m_a = f"DICT_CUTOFF!$F${self.crow['hba1c']}"
+            f_a = self.vendor_sum("hba1c")
+
+            def ab2_v(r):
+                h = self.rv(r, "hba1c")
+                if not is_num(h):
+                    return ""
+                if self.cutoff["hba1c"].get("dasar") == "vendor":
+                    return self.vendor_flag("hba1c", r)
+                return int(h >= v_a)
+            add("ab2", "Abnormal 2: HbA1c",
+                lambda r: (f'=IF(ISNUMBER({ref("hba1c", r)}),IF({m_a}="vendor",IF({f_a(r)}>0,1,0),'
+                           f'IF({ref("hba1c", r)}>={c_a},1,0)),"")'), ab2_v)
             jL = self.pcol["jk"]
+
+            m_l = f"DICT_CUTOFF!$F${self.crow['lp_l']}"
+            f_l = self.vendor_sum("lp_l")
 
             def ab3_v(r):
                 lp, jk = self.rv(r, "lp"), self.pval["jk"][r]
                 if not is_num(lp) or jk not in ("Laki-laki", "Perempuan"):
                     return ""
+                if self.cutoff["lp_l"].get("dasar") == "vendor":
+                    return self.vendor_flag("lp_l", r)
                 return int(lp >= (v_l if jk == "Laki-laki" else v_p))
             add("ab3", "Abnormal 3: lingkar perut",
                 lambda r: (f'=IF(AND(ISNUMBER({ref("lp", r)}),OR({jL}{r}="Laki-laki",{jL}{r}="Perempuan")),'
-                           f'IF({ref("lp", r)}>=IF({jL}{r}="Laki-laki",{c_l},{c_p}),1,0),"")'), ab3_v)
+                           f'IF({m_l}="vendor",IF({f_l(r)}>0,1,0),'
+                           f'IF({ref("lp", r)}>=IF({jL}{r}="Laki-laki",{c_l},{c_p}),1,0)),"")'), ab3_v)
             a1, a2, a3 = self.pcol["ab1"], self.pcol["ab2"], self.pcol["ab3"]
             choose = ",".join(q(x) for x in KOMB_BY_CODE)
 
@@ -552,6 +579,16 @@ class Builder:
             ws.column_dimensions[CL(j)].width = 14
         ws.column_dimensions["B"].width = 28
         self.ws_p = ws
+
+    def vendor_keys(self, ckey):
+        return [k for k in self.cutoff[ckey].get("temuan_vendor", []) if "t_" + k in self.pcol]
+
+    def vendor_sum(self, ckey):
+        keys = self.vendor_keys(ckey)
+        return lambda r: ("+".join(f"{self.pcol['t_' + k]}{r}" for k in keys) or "0")
+
+    def vendor_flag(self, ckey, r):
+        return int(any(self.pval["t_" + k][r] for k in self.vendor_keys(ckey)))
 
     def f_nilai(self, var, ref):
         return (f'=IF(TRIM({ref})="","{NO_DATA}",IFERROR(VLOOKUP(UPPER(TRIM({ref})),{self.nrange[var]},2,FALSE),"{NOT_CAT}"))')
@@ -827,10 +864,16 @@ class Builder:
     def block_kombinasi(self):
         ws = self.ws_s
         c = self.cutoff
+        def basis(k, cut_txt):
+            if c[k].get("dasar") == "vendor":
+                labs = [t["label"] for t in self.temuan if t["key"] in c[k].get("temuan_vendor", [])]
+                return "interpretasi vendor (" + " / ".join(labs) + ")"
+            return cut_txt
         self.title("S6. Analisa 3 kategori kelainan (rasio TG/HDL, HbA1c, lingkar perut)",
-                   f"Abnormal bila rasio TG/HDL >= {fmt_num(c['tg_hdl']['nilai'])}; HbA1c >= {fmt_num(c['hba1c']['nilai'])}%; "
-                   f"LP >= {fmt_num(c['lp_l']['nilai'])} cm (L) / >= {fmt_num(c['lp_p']['nilai'])} cm (P). Cutoff di DICT_CUTOFF. "
-                   "% dihitung dari pekerja dengan data ketiganya lengkap.")
+                   f"Abnormal 1 rasio TG/HDL: {basis('tg_hdl', '>= ' + fmt_num(c['tg_hdl']['nilai']))}; "
+                   f"abnormal 2 HbA1c: {basis('hba1c', '>= ' + fmt_num(c['hba1c']['nilai']) + '%')}; "
+                   f"abnormal 3 lingkar perut: {basis('lp_l', '>= ' + fmt_num(c['lp_l']['nilai']) + ' cm (L) / >= ' + fmt_num(c['lp_p']['nilai']) + ' cm (P)')}. "
+                   "Dasar penilaian diatur di DICT_CUTOFF. % dihitung dari pekerja yang ketiga nilainya terukur.")
         kv = Counter(self.pval["komb"][r] for r in self.rows)
         lengkap = self.N - kv.get("Data tidak lengkap", 0)
         ws.cell(row=self.r, column=2, value="Pekerja dengan data lengkap (ketiga parameter)")

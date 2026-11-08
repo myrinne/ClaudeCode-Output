@@ -933,35 +933,51 @@
    "label": "Rasio trigliserida/HDL",
    "operator": ">=",
    "nilai": 3.0,
-   "sumber": "DEFAULT: rasio TG/HDL >=3,0 (mg/dL) sebagai penanda resistensi insulin (McLaughlin dkk., 2003). Ganti bila perusahaan punya acuan."
+   "sumber": "DEFAULT: rasio TG/HDL >=3,0 (mg/dL) sebagai penanda resistensi insulin (McLaughlin dkk., 2003). Ganti bila perusahaan punya acuan.",
+   "dasar": "cutoff"
   },
   {
    "key": "hba1c",
    "label": "HbA1c (%)",
    "operator": ">=",
    "nilai": 5.7,
-   "sumber": "DEFAULT: ADA Standards of Care, HbA1c >=5,7% = prediabetes atau lebih. Ganti bila perusahaan punya acuan."
+   "sumber": "DEFAULT: ADA Standards of Care, HbA1c >=5,7% = prediabetes atau lebih. Ganti bila perusahaan punya acuan.",
+   "dasar": "vendor",
+   "temuan_vendor": [
+    "prediabetes",
+    "dm",
+    "hba1c_naik"
+   ]
   },
   {
    "key": "lp_l",
    "label": "Lingkar perut laki-laki (cm)",
    "operator": ">=",
    "nilai": 90,
-   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, laki-laki >=90 cm. Ganti bila perusahaan punya acuan."
+   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, laki-laki >=90 cm. Ganti bila perusahaan punya acuan.",
+   "dasar": "vendor",
+   "temuan_vendor": [
+    "obes_sentral"
+   ]
   },
   {
    "key": "lp_p",
    "label": "Lingkar perut perempuan (cm)",
    "operator": ">=",
    "nilai": 80,
-   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, perempuan >=80 cm. Ganti bila perusahaan punya acuan."
+   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, perempuan >=80 cm. Ganti bila perusahaan punya acuan.",
+   "dasar": "vendor",
+   "temuan_vendor": [
+    "obes_sentral"
+   ]
   },
   {
    "key": "umur_batas",
    "label": "Batas kelompok umur (tahun)",
    "operator": ">=",
    "nilai": 35,
-   "sumber": "Mengikuti template laporan (<35 vs >=35 tahun)."
+   "sumber": "Mengikuti template laporan (<35 vs >=35 tahun).",
+   "dasar": "cutoff"
   }
  ],
  "abaikan_di_daftar_tinjauan": {
@@ -978,5 +994,6 @@
    "^gigi palsu$",
    "^susp\\.?$"
   ]
- }
+ },
+ "_aturan_cutoff": "Interpretasi vendor dipakai bila ada; cutoff hanya untuk parameter yang tidak ditafsirkan vendor (Vidya 2026-11-08)."
 }
