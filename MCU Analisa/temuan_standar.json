@@ -1,0 +1,780 @@
+{
+ "_cara_pakai": "Daftar temuan yang dicari di kolom Kesimpulan vendor. Satu pekerja dihitung punya temuan bila Kesimpulan-nya mengandung SALAH SATU kata kunci dan TIDAK mengandung kata pengecualian (huruf besar/kecil diabaikan). top_ten = ikut dirangking di Top Ten / per grup. Daftar ini disalin ke sheet DICT_TEMUAN; edit di sheet itu berlaku untuk perusahaan tersebut, edit di sini berlaku untuk perusahaan baru.",
+ "temuan": [
+  {
+   "key": "pre_ht",
+   "label": "Pre-hipertensi",
+   "topik": "Tekanan darah",
+   "top_ten": true,
+   "kata": [
+    "pre-hipertensi",
+    "prehipertensi",
+    "pre hipertensi"
+   ]
+  },
+  {
+   "key": "ht1",
+   "label": "Hipertensi grade 1",
+   "topik": "Tekanan darah",
+   "top_ten": true,
+   "kata": [
+    "hipertensi grade 1",
+    "hipertensi grade i",
+    "hipertensi stage 1",
+    "hipertensi stage i",
+    "hipertensi gr i",
+    "hipertensi gr 1",
+    "hipertensi derajat 1"
+   ],
+   "kecuali": [
+    "hipertensi grade ii",
+    "hipertensi stage ii",
+    "hipertensi gr ii"
+   ]
+  },
+  {
+   "key": "ht2",
+   "label": "Hipertensi grade 2",
+   "topik": "Tekanan darah",
+   "top_ten": true,
+   "kata": [
+    "hipertensi grade 2",
+    "hipertensi grade ii",
+    "hipertensi stage 2",
+    "hipertensi stage ii",
+    "hipertensi gr ii",
+    "hipertensi gr 2",
+    "hipertensi derajat 2"
+   ]
+  },
+  {
+   "key": "underweight",
+   "label": "Underweight",
+   "topik": "Status gizi",
+   "top_ten": true,
+   "kata": [
+    "underweight",
+    "berat badan kurang"
+   ]
+  },
+  {
+   "key": "overweight",
+   "label": "Overweight",
+   "topik": "Status gizi",
+   "top_ten": true,
+   "kata": [
+    "overweight"
+   ]
+  },
+  {
+   "key": "obes1",
+   "label": "Obesitas grade 1",
+   "topik": "Status gizi",
+   "top_ten": true,
+   "kata": [
+    "obesitas grade 1",
+    "obesitas grade i",
+    "obesitas gr i",
+    "obesitas gr 1",
+    "obesitas derajat 1",
+    "obesitas tingkat 1"
+   ],
+   "kecuali": [
+    "obesitas grade ii",
+    "obesitas gr ii",
+    "obesitas grade 2",
+    "obesitas gr 2"
+   ]
+  },
+  {
+   "key": "obes2",
+   "label": "Obesitas grade 2",
+   "topik": "Status gizi",
+   "top_ten": true,
+   "kata": [
+    "obesitas grade 2",
+    "obesitas grade ii",
+    "obesitas gr ii",
+    "obesitas gr 2",
+    "obesitas derajat 2",
+    "obesitas tingkat 2"
+   ]
+  },
+  {
+   "key": "obes_sentral",
+   "label": "Obesitas sentral",
+   "topik": "Status gizi",
+   "top_ten": true,
+   "kata": [
+    "obesitas sentral",
+    "obesitas abdominal",
+    "central obesity"
+   ]
+  },
+  {
+   "key": "dislipidemia",
+   "label": "Dislipidemia",
+   "topik": "Profil lemak",
+   "top_ten": true,
+   "kata": [
+    "dislipidemia",
+    "peningkatan profil lemak"
+   ]
+  },
+  {
+   "key": "hipertg",
+   "label": "Hipertrigliseridemia",
+   "topik": "Profil lemak",
+   "top_ten": true,
+   "kata": [
+    "hipertrigliserid",
+    "peningkatan trigliserid"
+   ]
+  },
+  {
+   "key": "hiperkol",
+   "label": "Hiperkolesterolemia",
+   "topik": "Profil lemak",
+   "top_ten": true,
+   "kata": [
+    "hiperkolesterol",
+    "peningkatan kolesterol total",
+    "kolesterol batas tinggi",
+    "peningkatan kadar kolesterol"
+   ]
+  },
+  {
+   "key": "ldl",
+   "label": "Peningkatan kolesterol LDL",
+   "topik": "Profil lemak",
+   "top_ten": true,
+   "kata": [
+    "kolesterol ldl",
+    "ldl"
+   ]
+  },
+  {
+   "key": "hdl_rendah",
+   "label": "Penurunan kolesterol HDL",
+   "topik": "Profil lemak",
+   "top_ten": true,
+   "kata": [
+    "hdl rendah",
+    "penurunan hdl",
+    "penurunan kolesterol hdl",
+    "penurunan kadar hdl"
+   ]
+  },
+  {
+   "key": "gdp",
+   "label": "Peningkatan gula darah puasa",
+   "topik": "Gula darah",
+   "top_ten": true,
+   "kata": [
+    "peningkatan gula darah puasa",
+    "peningkatan gdp",
+    "gdp terganggu",
+    "peningkatan glukosa darah puasa"
+   ]
+  },
+  {
+   "key": "prediabetes",
+   "label": "Pre-diabetes melitus",
+   "topik": "Gula darah",
+   "top_ten": true,
+   "kata": [
+    "pre-diabetes",
+    "prediabetes",
+    "pre diabetes"
+   ]
+  },
+  {
+   "key": "dm",
+   "label": "Dugaan diabetes melitus",
+   "topik": "Gula darah",
+   "top_ten": true,
+   "kata": [
+    "diabetes mel",
+    "diabetes mellitus",
+    "dugaan dm",
+    "suspek dm"
+   ],
+   "kecuali": [
+    "pre-diabetes",
+    "prediabetes",
+    "pre diabetes"
+   ]
+  },
+  {
+   "key": "hiperurisemia",
+   "label": "Hiperurisemia",
+   "topik": "Asam urat",
+   "top_ten": true,
+   "kata": [
+    "hiperurisemia",
+    "asam urat"
+   ]
+  },
+  {
+   "key": "hati",
+   "label": "Peningkatan enzim fungsi hati",
+   "topik": "Fungsi hati",
+   "top_ten": true,
+   "kata": [
+    "enzim fungsi hati",
+    "enzim transaminase",
+    "sgot",
+    "sgpt",
+    "gangguan fungsi hati",
+    "peningkatan enzim hati"
+   ]
+  },
+  {
+   "key": "hepb",
+   "label": "Dugaan terpapar hepatitis B (HBsAg reaktif)",
+   "topik": "Fungsi hati",
+   "top_ten": true,
+   "kata": [
+    "terpapar virus hepatitis b",
+    "hbsag reaktif",
+    "hbsag positif",
+    "hbsag (+)"
+   ]
+  },
+  {
+   "key": "ginjal",
+   "label": "Penurunan fungsi ginjal / peningkatan kreatinin",
+   "topik": "Fungsi ginjal",
+   "top_ten": true,
+   "kata": [
+    "penurunan fungsi ginjal",
+    "gangguan fungsi ginjal",
+    "peningkatan kadar kreatinin",
+    "peningkatan kreatinin",
+    "impaired kidney",
+    "penurunan laju filtrasi",
+    "peningkatan kadar ureum",
+    "peningkatan ureum"
+   ]
+  },
+  {
+   "key": "anemia",
+   "label": "Anemia",
+   "topik": "Hematologi",
+   "top_ten": true,
+   "kata": [
+    "anemia"
+   ]
+  },
+  {
+   "key": "leukositosis",
+   "label": "Leukositosis",
+   "topik": "Hematologi",
+   "top_ten": true,
+   "kata": [
+    "leukositosis",
+    "peningkatan kadar leukosit"
+   ]
+  },
+  {
+   "key": "led",
+   "label": "Peningkatan LED",
+   "topik": "Hematologi",
+   "top_ten": true,
+   "kata": [
+    "peningkatan led",
+    "peningkatan laju endap"
+   ]
+  },
+  {
+   "key": "eosinofilia",
+   "label": "Eosinofilia",
+   "topik": "Hematologi",
+   "top_ten": true,
+   "kata": [
+    "eosinofilia"
+   ]
+  },
+  {
+   "key": "trombositosis",
+   "label": "Trombositosis",
+   "topik": "Hematologi",
+   "top_ten": true,
+   "kata": [
+    "trombositosis"
+   ]
+  },
+  {
+   "key": "proteinuria",
+   "label": "Proteinuria",
+   "topik": "Urinalisa",
+   "top_ten": true,
+   "kata": [
+    "proteinuria",
+    "albuminuria"
+   ]
+  },
+  {
+   "key": "glukosuria",
+   "label": "Glukosuria",
+   "topik": "Urinalisa",
+   "top_ten": true,
+   "kata": [
+    "glukosuria",
+    "glukosa di urin",
+    "glukosa dalam urin"
+   ]
+  },
+  {
+   "key": "hematuria",
+   "label": "Hematuria",
+   "topik": "Urinalisa",
+   "top_ten": true,
+   "kata": [
+    "hematuria",
+    "eritrosituria"
+   ]
+  },
+  {
+   "key": "isk",
+   "label": "Dugaan infeksi saluran kemih",
+   "topik": "Urinalisa",
+   "top_ten": true,
+   "kata": [
+    "leukosituria",
+    "bakteriuria",
+    "infeksi saluran kemih",
+    "dugaan isk"
+   ]
+  },
+  {
+   "key": "refraksi",
+   "label": "Kelainan refraksi (tidak dirinci)",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "kelainan refraksi"
+   ]
+  },
+  {
+   "key": "miopia",
+   "label": "Miopia",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "miopi",
+    "myopi"
+   ]
+  },
+  {
+   "key": "hipermetropia",
+   "label": "Hipermetropia",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "hipermetrop",
+    "hipemetrop",
+    "hypermetrop",
+    "hiperopia"
+   ]
+  },
+  {
+   "key": "presbyopia",
+   "label": "Presbiopia",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "presbyop",
+    "presbiop"
+   ]
+  },
+  {
+   "key": "astigmat",
+   "label": "Astigmatisme",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "astigmat"
+   ]
+  },
+  {
+   "key": "buta_warna",
+   "label": "Buta warna",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "buta warna",
+    "color blind"
+   ]
+  },
+  {
+   "key": "pterigium",
+   "label": "Pterigium",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "pterigium",
+    "pterygium"
+   ]
+  },
+  {
+   "key": "karies",
+   "label": "Karies gigi",
+   "topik": "Gigi",
+   "top_ten": true,
+   "kata": [
+    "karies",
+    "caries"
+   ]
+  },
+  {
+   "key": "sisa_akar",
+   "label": "Sisa akar gigi",
+   "topik": "Gigi",
+   "top_ten": true,
+   "kata": [
+    "sisa akar",
+    "radix"
+   ]
+  },
+  {
+   "key": "karang_gigi",
+   "label": "Karang gigi / kalkulus",
+   "topik": "Gigi",
+   "top_ten": true,
+   "kata": [
+    "karang gigi",
+    "kalkulus",
+    "calculus"
+   ]
+  },
+  {
+   "key": "gigi_hilang",
+   "label": "Gigi hilang (missing)",
+   "topik": "Gigi",
+   "top_ten": true,
+   "kata": [
+    "gigi hilang",
+    "missing"
+   ]
+  },
+  {
+   "key": "tonsil",
+   "label": "Hipertrofi tonsil",
+   "topik": "THT",
+   "top_ten": true,
+   "kata": [
+    "hipertrofi tonsil",
+    "tonsil hipertrofi",
+    "pembesaran tonsil",
+    "tonsilitis"
+   ]
+  },
+  {
+   "key": "serumen",
+   "label": "Serumen (prop)",
+   "topik": "THT",
+   "top_ten": true,
+   "kata": [
+    "serumen"
+   ]
+  },
+  {
+   "key": "pendengaran",
+   "label": "Gangguan pendengaran (audiometri)",
+   "topik": "THT",
+   "top_ten": true,
+   "kata": [
+    "tuli",
+    "peningkatan ambang dengar",
+    "gangguan pendengaran",
+    "penurunan pendengaran",
+    "nihl"
+   ]
+  },
+  {
+   "key": "restriksi",
+   "label": "Restriksi (spirometri)",
+   "topik": "Fungsi paru",
+   "top_ten": true,
+   "kata": [
+    "restriksi",
+    "restriktif"
+   ]
+  },
+  {
+   "key": "obstruksi",
+   "label": "Obstruksi (spirometri)",
+   "topik": "Fungsi paru",
+   "top_ten": true,
+   "kata": [
+    "obstruksi",
+    "obstruktif"
+   ]
+  },
+  {
+   "key": "tb",
+   "label": "TB paru (rontgen)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "tb paru",
+    "tuberkulosis",
+    "proses spesifik",
+    "specific process",
+    "koch pulmonum"
+   ]
+  },
+  {
+   "key": "kardiomegali",
+   "label": "Kardiomegali (rontgen)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "cardiomegal",
+    "kardiomegal"
+   ]
+  },
+  {
+   "key": "efusi",
+   "label": "Efusi pleura (rontgen)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "efusi pleura"
+   ]
+  },
+  {
+   "key": "sinus_aritmia",
+   "label": "Sinus aritmia (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "sinus aritmia",
+    "sinus arrhythmia",
+    "sinus arrythmia"
+   ]
+  },
+  {
+   "key": "bradikardia",
+   "label": "Bradikardia (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "bradikardi",
+    "bradycardi"
+   ]
+  },
+  {
+   "key": "takikardia",
+   "label": "Takikardia (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "takikardi",
+    "tachycardi"
+   ]
+  },
+  {
+   "key": "icrbbb",
+   "label": "ICRBBB (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "icrbbb",
+    "incomplete rbbb",
+    "incomplete right bundle"
+   ]
+  },
+  {
+   "key": "iskemia",
+   "label": "Iskemia / OMI (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "iskemi",
+    "ischemi",
+    "omi ",
+    "old myocardial",
+    "old mi"
+   ]
+  },
+  {
+   "key": "repolarisasi",
+   "label": "Early repolarization (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "early repolari"
+   ]
+  },
+  {
+   "key": "poor_r",
+   "label": "Poor R wave progression (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "poor r wave"
+   ]
+  },
+  {
+   "key": "av_block",
+   "label": "AV block (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "av block",
+    "blok av"
+   ]
+  },
+  {
+   "key": "rbbb",
+   "label": "RBBB komplit (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "rbbb",
+    "right bundle branch"
+   ],
+   "kecuali": [
+    "icrbbb",
+    "incomplete rbbb",
+    "incomplete right bundle"
+   ]
+  },
+  {
+   "key": "lvh",
+   "label": "LVH (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "lvh",
+    "left ventricular hypertrophy"
+   ]
+  },
+  {
+   "key": "aritmia_lain",
+   "label": "Aritmia lain: PVC/PAC/AF/ektopik (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "atrial fibrillation",
+    "pvc",
+    "pac ",
+    "pac,",
+    "ectopic",
+    "extrasystole",
+    "bigeminy",
+    "trigeminy"
+   ]
+  },
+  {
+   "key": "hemoroid",
+   "label": "Hemoroid",
+   "topik": "Lain-lain",
+   "top_ten": true,
+   "kata": [
+    "hemoroid",
+    "haemoroid",
+    "hemorrhoid"
+   ]
+  },
+  {
+   "key": "hnp",
+   "label": "Dugaan HNP lumbal",
+   "topik": "Muskuloskeletal",
+   "top_ten": true,
+   "kata": [
+    "hnp"
+   ]
+  },
+  {
+   "key": "skoliosis",
+   "label": "Skoliosis",
+   "topik": "Muskuloskeletal",
+   "top_ten": true,
+   "kata": [
+    "skoliosis",
+    "scoliosis"
+   ]
+  },
+  {
+   "key": "rf_merokok",
+   "label": "Kebiasaan merokok (faktor risiko)",
+   "topik": "Faktor risiko",
+   "top_ten": false,
+   "kata": [
+    "kebiasaan merokok",
+    "perokok aktif"
+   ]
+  },
+  {
+   "key": "rf_angkat",
+   "label": "Bekerja angkat-angkut (faktor risiko)",
+   "topik": "Faktor risiko",
+   "top_ten": false,
+   "kata": [
+    "angkat-angkut",
+    "angkat angkut",
+    "manual handling"
+   ]
+  },
+  {
+   "key": "rf_monitor",
+   "label": "Bekerja di depan monitor >4 jam (faktor risiko)",
+   "topik": "Faktor risiko",
+   "top_ten": false,
+   "kata": [
+    "layar monitor",
+    "depan monitor"
+   ]
+  },
+  {
+   "key": "rf_alergi",
+   "label": "Riwayat alergi / asma (faktor risiko)",
+   "topik": "Faktor risiko",
+   "top_ten": false,
+   "kata": [
+    "riwayat alergi",
+    "riwayat asma"
+   ]
+  }
+ ],
+ "cutoff": [
+  {
+   "key": "tg_hdl",
+   "label": "Rasio trigliserida/HDL",
+   "operator": ">=",
+   "nilai": 3.0,
+   "sumber": "DEFAULT: rasio TG/HDL >=3,0 (mg/dL) sebagai penanda resistensi insulin (McLaughlin dkk., 2003). Ganti bila perusahaan punya acuan."
+  },
+  {
+   "key": "hba1c",
+   "label": "HbA1c (%)",
+   "operator": ">=",
+   "nilai": 5.7,
+   "sumber": "DEFAULT: ADA Standards of Care, HbA1c >=5,7% = prediabetes atau lebih. Ganti bila perusahaan punya acuan."
+  },
+  {
+   "key": "lp_l",
+   "label": "Lingkar perut laki-laki (cm)",
+   "operator": ">=",
+   "nilai": 90,
+   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, laki-laki >=90 cm. Ganti bila perusahaan punya acuan."
+  },
+  {
+   "key": "lp_p",
+   "label": "Lingkar perut perempuan (cm)",
+   "operator": ">=",
+   "nilai": 80,
+   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, perempuan >=80 cm. Ganti bila perusahaan punya acuan."
+  },
+  {
+   "key": "umur_batas",
+   "label": "Batas kelompok umur (tahun)",
+   "operator": ">=",
+   "nilai": 35,
+   "sumber": "Mengikuti template laporan (<35 vs >=35 tahun)."
+  }
+ ]
+}

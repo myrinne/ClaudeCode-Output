@@ -33,6 +33,33 @@ Hasilnya `Analisa\<nama file> - Analisa.xlsx` di sebelah file vendor:
 
 File vendor yang sedang terbuka di Excel tetap bisa dibaca (lewat salinan sementara). File **hasil** harus ditutup dulu sebelum dijalankan ulang.
 
+## Langkah 2: SUMMARY per slide (`mcu_summary.py`)
+
+Jalankan setelah MAP sudah dicek (tidak ada CEK lagi):
+
+```powershell
+uv run --with openpyxl python mcu_summary.py "C:\...\Analisa\PT. PPS_New - Analisa.xlsx" --grup bagian --cek
+uv run --with openpyxl python mcu_summary.py "C:\...\Analisa\PT. WKP - Analisa.xlsx" --grup departemen:10 --grup bagian:10 --cek
+```
+
+`--grup KODE:N` = kolom untuk tabel per divisi (kode dari MAP) dan berapa grup terbesar yang ditampilkan.
+
+Sheet yang ditambahkan ke workbook Analisa (semuanya rumus):
+
+| Sheet | Isi | Bisa diedit? |
+|---|---|---|
+| `SUMMARY` | Satu blok per slide: S3 demografi, kelaikan & risiko (apa adanya dari vendor), semua temuan, S4 top ten, S5 top 3 per grup, S6 kombinasi 3 kelainan, S8-S15 per topik, interpretasi spirometri/rontgen/EKG/audiometri | Tidak (hasil) |
+| `CHECK` | Setiap sel SUMMARY di sebelah hitungan ulang Python. Sel B2 "Jumlah BEDA" harus 0. Juga daftar potongan Kesimpulan yang tidak cocok dengan temuan mana pun | Tidak |
+| `DICT_TEMUAN` | Temuan yang dicari di Kesimpulan vendor: kata kunci, pengecualian, ikut Top ten atau tidak | Ya |
+| `DICT_NILAI` | Kategori untuk isi teks (jenis kelamin, merokok, alkohol, olahraga, spirometri, rontgen, EKG, audiometri). Kuning = saran otomatis | Ya |
+| `DICT_CUTOFF` | Cutoff kombinasi 3 kelainan dan batas umur. Kuning = default | Ya |
+| `PEKERJA` | Satu baris per pekerja (nomor baris = RAW): umur, grup, tanda 1/0 per temuan | Tidak |
+
+Edit di sheet DICT, simpan, tutup Excel, lalu jalankan ulang `mcu_summary.py`; editan Anda tetap dipakai.
+**Perhatian:** menjalankan ulang `mcu_reader.py` membuat workbook baru (hanya koreksi MAP yang dipertahankan), jadi edit DICT ikut hilang.
+
+Keputusan vendor (status kelaikan, risiko, Kesimpulan, interpretasi) dipakai apa adanya. Grup dihitung dengan huruf besar/kecil dan spasi disamakan.
+
 ## Langkah berikutnya (belum dibuat)
-- Pembersihan data dan cutoff: hanya bila Anda bilang datanya perlu dibersihkan
-- `SUMMARY` per slide dan `CHECK`, lalu pengisian template PPT
+- Pengisian template PPT dari SUMMARY (`... - summary_cells.json` menunjuk sel tiap blok)
+- Pembersihan data dan cutoff tambahan: hanya bila Anda bilang datanya perlu dibersihkan
