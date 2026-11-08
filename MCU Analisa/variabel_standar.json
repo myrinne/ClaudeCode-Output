@@ -1,5 +1,7 @@
 {
   "_cara_pakai": "Satu entri = satu variabel standar. 'alias' = nama header vendor (huruf kecil, tanpa tanda baca; satuan dalam kurung boleh diabaikan). 'seksi' = kata dalam judul seksi vendor (baris di atas header) yang wajib cocok, kosongkan bila bebas. 'ke' = ambil kecocokan ke-n bila header yang sama muncul berulang dalam seksi itu. Tambah alias baru bila vendor baru memakai nama lain.",
+  "grup_disamakan": ["bagian", "jabatan"],
+  "_grup_disamakan": "Kolom grup yang dihitung dengan huruf besar/kecil dan spasi disamakan (UPPER+TRIM). Kolom grup lain dihitung persis apa adanya.",
   "identitas_kunci": ["nama pasien", "nama", "no mcu", "jenis kelamin", "tgl lahir", "tanggal lahir", "nik nip", "departemen"],
   "variabel": [
     {"key": "no", "label": "No urut", "grup": "Identitas", "alias": ["no"]},
@@ -111,8 +113,10 @@
     {"key": "ro_bone", "label": "Rontgen: tulang", "grup": "Rontgen thorax", "seksi": "rontgen", "alias": ["bone", "tulang"]},
     {"key": "ro_kesimpulan", "label": "Rontgen: kesimpulan", "grup": "Rontgen thorax", "alias": ["kesimpulan rontgen thorax", "kesan rontgen", "kesimpulan rontgen", "hasil rontgen thorax"]},
 
-    {"key": "audio_ac_1", "label": "Audiometri: AC HTL blok ke-1 (dB)", "grup": "Audiometri", "seksi": "audio", "alias": ["ac htl db", "ac htl"], "ke": 1},
-    {"key": "audio_ac_2", "label": "Audiometri: AC HTL blok ke-2 (dB)", "grup": "Audiometri", "seksi": "audio", "alias": ["ac htl db", "ac htl"], "ke": 2},
+    {"key": "audio_ac_kanan", "label": "Audiometri: AC HTL telinga kanan (dB)", "grup": "Audiometri", "seksi": "audio", "alias": ["ac htl db", "ac htl"], "ke": 1, "urutan_dikonfirmasi": "blok ke-1 = kanan, ke-2 = kiri (Vidya, 2026-11-08)"},
+    {"key": "audio_ac_kiri", "label": "Audiometri: AC HTL telinga kiri (dB)", "grup": "Audiometri", "seksi": "audio", "alias": ["ac htl db", "ac htl"], "ke": 2, "urutan_dikonfirmasi": "blok ke-1 = kanan, ke-2 = kiri (Vidya, 2026-11-08)"},
+    {"key": "audio_bc_kanan", "label": "Audiometri: BC HTL telinga kanan (dB)", "grup": "Audiometri", "seksi": "audio", "alias": ["bc htl db", "bc htl"], "ke": 1, "urutan_dikonfirmasi": "blok ke-1 = kanan, ke-2 = kiri (Vidya, 2026-11-08)"},
+    {"key": "audio_bc_kiri", "label": "Audiometri: BC HTL telinga kiri (dB)", "grup": "Audiometri", "seksi": "audio", "alias": ["bc htl db", "bc htl"], "ke": 2, "urutan_dikonfirmasi": "blok ke-1 = kanan, ke-2 = kiri (Vidya, 2026-11-08)"},
     {"key": "audio_kesimpulan", "label": "Audiometri: kesimpulan", "grup": "Audiometri", "alias": ["kesimpulan audiomteri", "kesimpulan audiometri", "kesan audiometri"]},
 
     {"key": "spiro_1_measured", "label": "Spirometri blok ke-1: measured", "grup": "Spirometri", "seksi": "spiro", "alias": ["measured"], "ke": 1},
