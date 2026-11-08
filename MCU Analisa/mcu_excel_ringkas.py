@@ -40,9 +40,9 @@ from mcu_ppt import SOFFICE, Summary  # noqa: E402  (same SUMMARY reader as the 
 
 TEAL, DARK, SAND = "307F7F", "112929", "D1B984"
 PALETTE = [TEAL, SAND, DARK, "7FB8B8", "EADBB4", "A3A3A3", "4F9A9A", "BFA36A"]
-HEAD_FILL = PatternFill("solid", fgColor=TEAL)
-HEAD_FONT = Font(bold=True, color="FFFFFF")
-TITLE_FONT = Font(bold=True, size=13, color=TEAL)
+# plain, raw-Excel look for the tables (Vidya 2026-11-08): default font, bold headers only, gridlines on
+HEAD_FONT = Font(bold=True)
+TITLE_FONT = Font(bold=True)
 PCT = "0.0%"
 CALC_SHEETS = ["SUMMARY", "PEKERJA", "DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "CHECK"]
 
@@ -119,7 +119,6 @@ class Ringkasan:
         if note:
             self.r += 1
             c = self.ws.cell(row=self.r, column=1, value=note)
-            c.font = Font(italic=True, color="595959")
             c.alignment = Alignment(wrap_text=True, vertical="top")
             self.ws.merge_cells(start_row=self.r, start_column=1, end_row=self.r, end_column=5)
             self.ws.row_dimensions[self.r].height = 15 * max(1, len(note) // 70 + 1)
@@ -128,9 +127,7 @@ class Ringkasan:
     def head(self, row, values, start=1):
         for j, v in enumerate(values):
             c = self.ws.cell(row=row, column=start + j, value=v)
-            c.fill = HEAD_FILL
             c.font = HEAD_FONT
-            c.alignment = Alignment(wrap_text=True, vertical="center", horizontal="center")
 
     def table(self, block, cols, headers, fmts=None, skip=None):
         """Copy a SUMMARY block: cols = SUMMARY letters to show. Returns (first_row, last_row)."""
@@ -219,12 +216,11 @@ class Ringkasan:
     def build(self):
         ws, S = self.ws, self.S
         ws["A1"] = "RINGKASAN HASIL MCU"
-        ws["A1"].font = Font(bold=True, size=16, color=TEAL)
+        ws["A1"].font = Font(bold=True)
         ws["A2"] = str(S.raw_a1 or "").strip()
-        ws["A2"].font = Font(bold=True, size=13)
+        ws["A2"].font = Font(bold=True)
         ws["A3"] = (f"Setiap angka di sheet ini adalah rumus ke sheet SUMMARY, yang dihitung dari sheet PEKERJA dan sheet '{self.main}' "
                     "(data asli). Sheet hitungan disembunyikan; tampilkan lewat klik kanan tab > Unhide. Data asli tidak diubah.")
-        ws["A3"].font = Font(italic=True, color="595959")
         ws["A5"] = "Jumlah peserta MCU (N)"
         self.put(5, 3, 3, "C")
         a, b = S.meta["blok"]["S3_periode"].split("!")[-1].split(":")
@@ -317,12 +313,11 @@ class Ringkasan:
         ws.column_dimensions["C"].width = 26
         for c in range(4, 20):
             ws.column_dimensions[CL(c)].width = 12
-        ws.sheet_view.showGridLines = False
+        ws.sheet_view.showGridLines = True
         # calculation sheets at the end, hidden; Ringkasan right after the vendor's main sheet
         for name in CALC_SHEETS:
             self.wb[name].sheet_state = "hidden"
             self.wb[name].sheet_properties.tabColor = "A6A6A6"
-        ws.sheet_properties.tabColor = TEAL
         self.wb.active = self.wb.sheetnames.index("Ringkasan")
         for sh in self.wb.worksheets:
             sh.sheet_view.tabSelected = sh.title == "Ringkasan"
