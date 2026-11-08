@@ -1,7 +1,6 @@
 Interact with Google NotebookLM via the `notebooklm` CLI. You can create notebooks, add URL sources, and generate artifacts (infographic, flashcards, summary, data table, slide deck).
 
-Before any command, ensure the PATH includes the Scripts dir:
-`$env:PATH += ";C:\Users\LENOVO\AppData\Local\Python\pythoncore-3.14-64\Scripts"`
+The CLI is `notebooklm-py`, installed with `uv tool install "notebooklm-py[browser]"` (already on PATH). If a command says "Not logged in", ask the user to run `! notebooklm login` (it opens a browser for Google sign-in).
 
 ---
 
