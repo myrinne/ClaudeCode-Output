@@ -1,0 +1,45 @@
+{
+ "_cara_pakai": "Teks tetap untuk laporan PPT. Teks edukasi dan rekomendasi diambil verbatim dari laporan MCU lama Vidya (UD Truck Palembang, 2026). Angka TIDAK ditulis di sini: semua angka diisi skrip dari sheet SUMMARY. Edit teks di file ini bila perlu.",
+ "penyaji": "",
+ "daftar_isi": ["Profil Perusahaan", "Ringkasan Eksekutif", "Karakteristik Demografi", "Status Kelaikan Kerja", "Top Ten Temuan", "Temuan per Grup", "Kombinasi 3 Kelainan", "Temuan per Topik", "Rekomendasi", "Penutup"],
+ "topik": [
+  {"topik": "Profil lemak", "judul": "GANGGUAN METABOLISME LEMAK", "edukasi": [
+    "Dislipidemia adalah kondisi yang ditandai dengan kadar kolesterol, LDL, HDL dan trigliserida yang tidak normal, dapat disebabkan oleh gaya hidup yang tidak sehat atau kelainan genetik.",
+    "Sindroma metabolik (SM) adalah kumpulan beberapa temuan yang menjadi faktor risiko utama penyakit jantung."]},
+  {"topik": "Status gizi", "judul": "STATUS GIZI", "edukasi": [
+    "Status gizi lebih (overweight dan obesitas) adalah kondisi ketidakseimbangan proporsi antara berat badan terhadap tinggi badan. Hal ini terjadi akibat kalori yang dikonsumsi lebih tinggi daripada kalori yang diperlukan."]},
+  {"topik": "Tekanan darah", "judul": "TEKANAN DARAH", "edukasi": [
+    "Prehipertensi tidak serius, namun merupakan peringatan dini risiko terjadinya hipertensi, yang dapat berlanjut menjadi stroke dan penyakit jantung."]},
+  {"topik": "Fungsi paru", "judul": "FUNGSI PERNAPASAN", "kategori_interpretasi": "S11b_spiro_kesimpulan", "edukasi": [
+    "Restriksi: penurunan kemampuan paru-paru untuk mengembang sehingga udara tidak bisa mengisi paru-paru dengan maksimal.",
+    "Obstruksi: penyempitan saluran napas yang diakibatkan oleh radang, biasanya diakibatkan oleh tuberkulosis atau penyakit paru obstruksi kronis (PPOK) akibat merokok.",
+    "Ulangi tes spirometri untuk memastikan konsistensi dan pastikan teknik pernapasan saat pemeriksaan sudah tepat. Rujuk ke Sp.P bila temuan konsisten untuk tatalaksana lebih lanjut."]},
+  {"topik": "Asam urat", "judul": "METABOLISME ASAM URAT", "edukasi": [
+    "Hiperurisemia merupakan suatu keadaan yang menggambarkan kadar asam urat dalam tubuh meningkat hingga melewati batas normal sehingga dapat menimbulkan rasa sakit atau nyeri pada sendi tangan atau kaki."]},
+  {"topik": "Fungsi hati", "judul": "PENINGKATAN ENZIM TRANSAMINASE", "edukasi": [
+    "Pengukuran enzim transaminase yang terdiri dari SGPT dan SGOT merupakan indikator penilaian kesehatan hati (hepar).",
+    "SGPT: enzim yang berada di dalam sel hati, tetapi akan bocor ke darah bila hati mengalami stres, infeksi, atau kerusakan. Peningkatan > 5x lipat merupakan indikasi kondisi serius seperti hepatitis, kanker hati, atau kerusakan akibat alkohol/NAPZA.",
+    "SGOT: enzim yang berada di dalam jaringan (hati, otot, ginjal, pankreas, otak) dan meningkat bila terjadi peradangan atau cedera."]},
+  {"topik": "Gigi", "judul": "KELAINAN GIGI", "edukasi": [
+    "Sisa akar gigi adalah kondisi ketika sebagian dari akar gigi tertinggal di dalam gusi atau tulang rahang, sehingga menjadi sumber infeksi.",
+    "Karies gigi adalah kerusakan pada jaringan keras gigi yang disebabkan oleh aktivitas bakteri dalam plak gigi. Proses ini melibatkan demineralisasi enamel dan dentin, yang akhirnya membentuk lubang pada gigi."]},
+  {"topik": "Tajam penglihatan", "judul": "GANGGUAN TAJAM PENGLIHATAN", "edukasi": [
+    "Tajam penglihatan merupakan kemampuan seseorang untuk dapat melihat objek sekecil mungkin pada jarak terukur (biasanya 6 meter, atau 40 cm untuk tajam penglihatan dekat)."]}
+ ],
+ "topik_lain": ["Gula darah", "Fungsi ginjal", "Hematologi", "Urinalisa", "THT", "Rontgen thorax", "EKG", "Muskuloskeletal", "Lain-lain"],
+ "rekomendasi_individu": [
+  {"syarat_topik": ["Fungsi paru"], "teks": "Konsultasikan pekerja ke Sp.P dan lakukan HRA dengan Respiratory Protection Program untuk memastikan pajanan debu di lingkungan kerja untuk melindungi pekerja."},
+  {"syarat_topik": ["Tajam penglihatan"], "teks": "Konsultasi ke Sp.M untuk konfirmasi visus dan konfigurasi kacamata."},
+  {"syarat_topik": ["Gigi"], "teks": "Temuan yang berkaitan dengan personal hygiene misalnya masalah kesehatan gigi dan mulut perlu dilakukan edukasi dan promosi kesehatan. Jika perlu lakukan pemeriksaan dan pengobatan lebih lanjut pada dokter gigi."},
+  {"syarat_topik": ["Status gizi", "Tekanan darah", "Profil lemak", "Gula darah", "Asam urat"], "teks": "Temuan gangguan kesehatan yang berkaitan dengan gaya hidup atau metabolik disarankan melaksanakan Wellness Programs secara jangka panjang, antara lain dengan promosi kesehatan (penyuluhan, seminar, poster, dll) dengan topik gizi seimbang, pengendalian berat badan, personal hygiene, gerakan masyarakat hidup sehat (GERMAS), peningkatan motivasi dan koreksi faktor individu, konsultasi dan monitoring pengobatan."}
+ ],
+ "wellness": {
+  "judul": "REKOMENDASI PROGRAM: WELLNESS",
+  "pengantar": "Monitoring dan evaluasi berkelanjutan terhadap pekerja dengan temuan kelainan agar kondisi kesehatan dan produktivitas tetap terjaga, diantaranya:",
+  "butir": ["Pengelolaan data hasil MCU (follow up hasil)", "Monitoring dan evaluasi data kunjungan klinik perusahaan", "Monitoring dan evaluasi kepatuhan pengobatan rawat jalan", "Monitoring dan evaluasi data biaya", "Monitoring dan evaluasi data ketidakhadiran karena sakit"]
+ },
+ "hra": {
+  "judul": "HEALTH RISK ASSESSMENT",
+  "teks": "Analisa risiko kesehatan atau Health Risk Assessment (HRA) merupakan metode sistematis yang terdiri dari mengidentifikasi, mengevaluasi, dan mengelola potensi risiko kesehatan yang mungkin dihadapi oleh pekerja terhadap pajanan bahaya pada proses kerja dan di tempat kerja."
+ }
+}
