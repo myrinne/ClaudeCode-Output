@@ -56,6 +56,9 @@ Sheet yang ditambahkan ke workbook Analisa (semuanya rumus):
 | `PEKERJA` | Satu baris per pekerja (nomor baris = RAW): umur, grup, tanda 1/0 per temuan | Tidak |
 
 Edit di sheet DICT, simpan, tutup Excel, lalu jalankan ulang `mcu_summary.py`; editan Anda tetap dipakai.
+Temuan baru yang ditambahkan ke `temuan_standar.json` otomatis ikut masuk. `--reset-dict` membuang isi sheet DICT dan memakai ulang default JSON (editan DICT hilang).
+
+Kolom abu-abu "Bantu urutan (abaikan)" hanya dipakai rumus untuk mengurutkan Top Ten dan top 3 per grup tanpa bentrok bila jumlahnya sama; tidak masuk PPT. Daftar "Potongan Kesimpulan yang tidak cocok" di CHECK juga hanya untuk tinjauan, tidak masuk PPT.
 **Perhatian:** menjalankan ulang `mcu_reader.py` membuat workbook baru (hanya koreksi MAP yang dipertahankan), jadi edit DICT ikut hilang.
 
 Keputusan vendor (status kelaikan, risiko, Kesimpulan, interpretasi) dipakai apa adanya. Grup dihitung dengan huruf besar/kecil dan spasi disamakan.

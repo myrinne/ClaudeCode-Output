@@ -108,7 +108,12 @@
    "kata": [
     "obesitas sentral",
     "obesitas abdominal",
-    "central obesity"
+    "central obesity",
+    "lingkar perut"
+   ],
+   "kecuali": [
+    "lingkar perut normal",
+    "lingkar perut dalam batas"
    ]
   },
   {
@@ -206,6 +211,17 @@
    ]
   },
   {
+   "key": "hba1c_naik",
+   "label": "Peningkatan HbA1c",
+   "topik": "Gula darah",
+   "top_ten": true,
+   "kata": [
+    "peningkatan kadar hba1c",
+    "peningkatan hba1c",
+    "hba1c meningkat"
+   ]
+  },
+  {
    "key": "hiperurisemia",
    "label": "Hiperurisemia",
    "topik": "Asam urat",
@@ -226,7 +242,9 @@
     "sgot",
     "sgpt",
     "gangguan fungsi hati",
-    "peningkatan enzim hati"
+    "peningkatan enzim hati",
+    "alt ",
+    "ast "
    ]
   },
   {
@@ -305,6 +323,17 @@
    ]
   },
   {
+   "key": "hb_naik",
+   "label": "Peningkatan hemoglobin",
+   "topik": "Hematologi",
+   "top_ten": true,
+   "kata": [
+    "peningkatan kadar hemoglobin",
+    "peningkatan hemoglobin",
+    "polisitemia"
+   ]
+  },
+  {
    "key": "proteinuria",
    "label": "Proteinuria",
    "topik": "Urinalisa",
@@ -332,7 +361,12 @@
    "top_ten": true,
    "kata": [
     "hematuria",
-    "eritrosituria"
+    "eritrosituria",
+    "ditemukan darah"
+   ],
+   "kecuali": [
+    "menstruasi",
+    "haid"
    ]
   },
   {
@@ -344,7 +378,33 @@
     "leukosituria",
     "bakteriuria",
     "infeksi saluran kemih",
-    "dugaan isk"
+    "dugaan isk",
+    "ditemukan leukosit",
+    "leukosit di urin"
+   ]
+  },
+  {
+   "key": "kristaluria",
+   "label": "Kristal dalam urin",
+   "topik": "Urinalisa",
+   "top_ten": true,
+   "kata": [
+    "ditemukan kristal",
+    "kristaluria",
+    "kristal dalam urin",
+    "kristal di urin"
+   ]
+  },
+  {
+   "key": "batu_sk",
+   "label": "Dugaan batu saluran kemih",
+   "topik": "Urinalisa",
+   "top_ten": true,
+   "kata": [
+    "batu saluran kemih",
+    "nefrolitiasis",
+    "urolitiasis",
+    "batu ginjal"
    ]
   },
   {
@@ -414,7 +474,8 @@
    "top_ten": true,
    "kata": [
     "pterigium",
-    "pterygium"
+    "pterygium",
+    "petrygium"
    ]
   },
   {
@@ -499,7 +560,8 @@
    "top_ten": true,
    "kata": [
     "restriksi",
-    "restriktif"
+    "restriktif",
+    "restriction"
    ]
   },
   {
@@ -542,6 +604,31 @@
    "top_ten": true,
    "kata": [
     "efusi pleura"
+   ]
+  },
+  {
+   "key": "fraktur",
+   "label": "Fraktur lama (rontgen)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "fracture",
+    "fraktur"
+   ]
+  },
+  {
+   "key": "massa",
+   "label": "Massa / benjolan",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "massa",
+    "benjolan",
+    "tumor",
+    "nodul"
+   ],
+   "kecuali": [
+    "massa tubuh"
    ]
   },
   {
@@ -596,7 +683,9 @@
     "ischemi",
     "omi ",
     "old myocardial",
-    "old mi"
+    "old mi",
+    "infarct",
+    "infark"
    ]
   },
   {
@@ -680,6 +769,51 @@
    ]
   },
   {
+   "key": "deviasi_aksis",
+   "label": "Deviasi aksis LAD/RAD (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    " rad ",
+    " rad,",
+    " lad ",
+    " lad,",
+    "axis deviation",
+    "deviasi aksis"
+   ]
+  },
+  {
+   "key": "infark_baru",
+   "label": "Dugaan infark baru: ST elevasi (EKG)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "st segmen elevation",
+    "st segment elevation",
+    "st elevation",
+    "st elevasi",
+    "recent inf",
+    "stemi"
+   ]
+  },
+  {
+   "key": "ekg_lain",
+   "label": "Kelainan EKG lain (tall T, fascicular block, junctional, hipertrofi biventrikel, T non-spesifik)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "tall t",
+    "fascicular block",
+    "lpfb",
+    "lafb",
+    "junctional",
+    "biventricular",
+    "t abnormalit",
+    "t changes",
+    "t inversion"
+   ]
+  },
+  {
    "key": "hnp",
    "label": "Dugaan HNP lumbal",
    "topik": "Muskuloskeletal",
@@ -696,6 +830,59 @@
    "kata": [
     "skoliosis",
     "scoliosis"
+   ]
+  },
+  {
+   "key": "lbp",
+   "label": "Low back pain / radikulopati",
+   "topik": "Muskuloskeletal",
+   "top_ten": true,
+   "kata": [
+    "low back pain",
+    "radikulopati",
+    "lbp"
+   ]
+  },
+  {
+   "key": "amputasi",
+   "label": "Amputasi anggota gerak",
+   "topik": "Muskuloskeletal",
+   "top_ten": true,
+   "kata": [
+    "amputa"
+   ]
+  },
+  {
+   "key": "kulit",
+   "label": "Kelainan kulit",
+   "topik": "Lain-lain",
+   "top_ten": true,
+   "kata": [
+    "bercak kemerahan",
+    "dermatitis",
+    "tinea",
+    "eksim",
+    "kelainan kulit",
+    "skabies"
+   ]
+  },
+  {
+   "key": "alergi",
+   "label": "Reaksi alergi",
+   "topik": "Lain-lain",
+   "top_ten": true,
+   "kata": [
+    "reaksi alergi",
+    "urtikaria"
+   ]
+  },
+  {
+   "key": "nyeri_dada",
+   "label": "Keluhan nyeri dada",
+   "topik": "Lain-lain",
+   "top_ten": true,
+   "kata": [
+    "nyeri dada"
    ]
   },
   {
@@ -776,5 +963,20 @@
    "nilai": 35,
    "sumber": "Mengikuti template laporan (<35 vs >=35 tahun)."
   }
- ]
+ ],
+ "abaikan_di_daftar_tinjauan": {
+  "_cara_pakai": "Potongan Kesimpulan yang memang bukan temuan (normal, nilai protektif, atau keterangan). Hanya dipakai untuk merapikan daftar tinjauan di sheet CHECK; tidak memengaruhi angka.",
+  "pola": [
+   "^(ekg\\s*:?\\s*)?(normal\\s+)?sinus\\s*(rhythm|rhyth|rhyhm|ritme|ritmik)$",
+   "^(ro thorax\\s*:?\\s*)?cor dan pulmo( normal)?$",
+   "kolesterol hdl high",
+   "hdl tinggi",
+   "kreatinin .* low",
+   "^kesan menstruasi$",
+   "^menstruasi$",
+   "\\bhz\\b|\\d+\\s*g?hz",
+   "^gigi palsu$",
+   "^susp\\.?$"
+  ]
+ }
 }
