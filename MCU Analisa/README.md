@@ -92,6 +92,8 @@ Hasil: `PT. PPS_New - dengan Ringkasan.xlsx` di sebelah file vendor.
 - Hanya satu sheet yang ditambahkan (Ringkasan); tidak ada sheet tersembunyi. Setiap angka adalah rumus yang menghitung langsung dari sheet data vendor (`SUMPRODUCT`, `MATCH`, `SEARCH`, `AGGREGATE`), dengan kata kunci, kategori, dan cutoff yang sama dengan file Analisa.
 - Top ten dan top 3 per grup dipilih dengan rumus dari tabel "Semua temuan" dan tabel bantu di kolom AD ke kanan (di luar area cetak).
 - Setelah disimpan, file dihitung ulang dengan LibreOffice dan setiap angka dicocokkan dengan SUMMARY file Analisa.
+- Rumus disimpan sebagai rumus array (`{=...}`) dan setiap tes logika diubah ke 0/1 (`--`), karena Excel (berbeda dari LibreOffice) menganggap FALSE lebih besar dari angka dan membaca fungsi di dalam SUMPRODUCT hanya satu baris bila bukan rumus array.
+- `--cek-excel` menghitung ulang salinan di Excel tersembunyi (instance terpisah) dan membandingkan semua sel rumus dengan LibreOffice. Pakai ini sebelum file dikirim.
 
 ## Langkah berikutnya (belum dibuat)
 - Pembersihan data dan cutoff tambahan: hanya bila Anda bilang datanya perlu dibersihkan

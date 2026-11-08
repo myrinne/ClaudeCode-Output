@@ -37,6 +37,7 @@ from openpyxl.chart.series import DataPoint
 from openpyxl.chart.shapes import GraphicalProperties
 from openpyxl.styles import Alignment, Font
 from openpyxl.utils import column_index_from_string as col_index
+from openpyxl.worksheet.formula import ArrayFormula
 from openpyxl.utils import get_column_letter as CL
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -109,7 +110,9 @@ class F:
     # findings ------------------------------------------------------
     def hit(self, words):
         K = self.R("kesimpulan")
-        return "((" + "+".join(f'ISNUMBER(SEARCH({q(w)},TRIM({K})&" "))' for w in words) + ")>0)"
+        # "--" turns TRUE/FALSE into 1/0: in Excel FALSE>0 is TRUE (logicals sort above numbers), so a
+        # single-keyword test without it would count every worker
+        return "--((" + "+".join(f'--ISNUMBER(SEARCH({q(w)},TRIM({K})&" "))' for w in words) + ")>0)"
 
     def flag(self, key):
         t = self.t[key]
@@ -117,7 +120,7 @@ class F:
         return f"({h}*(1-{self.hit(t['kecuali'])}))" if t["kecuali"] else h
 
     def any_flag(self, keys):
-        return "((" + "+".join(self.flag(k) for k in keys) + ")>0)"
+        return "--((" + "+".join(f"({self.flag(k)})" for k in keys) + ")>0)"
 
     # categories ----------------------------------------------------
     def cat(self, var, category):
@@ -220,6 +223,11 @@ class Ringkasan:
     def put(self, row, col, formula, summary_addr=None, fmt=None):
         if isinstance(formula, str):
             formula = re.sub(r"(?<![\w.])AGGREGATE\(", "_xlfn.AGGREGATE(", formula)  # Excel 2010+ function prefix
+            if formula.startswith("=") and ":" in formula:
+                # store as an array formula ({=...}): otherwise Excel evaluates IFERROR/MID/DATE inside
+                # SUMPRODUCT/AGGREGATE on one row only (implicit intersection) and shows 0 or 100%
+                ref = f"{CL(col)}{row}"
+                formula = ArrayFormula(ref, formula)
         c = self.ws.cell(row=row, column=col, value=formula)
         if fmt:
             c.number_format = fmt
@@ -661,9 +669,51 @@ def verify(out: Path, S: Summary, expected) -> list:
     return bad
 
 
+PS_RECALC = r"""param([string]$Src, [string]$Out)
+$xl = New-Object -ComObject Excel.Application
+try {
+    $xl.Visible = $false; $xl.DisplayAlerts = $false; $xl.AskToUpdateLinks = $false
+    $wb = $xl.Workbooks.Open($Src, 0, $false)
+    $xl.CalculateFullRebuild()
+    $wb.SaveAs($Out, 51); $wb.Close($false)
+} finally {
+    $xl.Quit(); [System.Runtime.InteropServices.Marshal]::ReleaseComObject($xl) | Out-Null; [GC]::Collect()
+}
+"""
+
+
+def excel_check(out: Path) -> list:
+    """Recalculate a copy in a separate hidden Excel instance and compare every Ringkasan formula cell
+    with LibreOffice. Catches Excel-only behaviour (e.g. FALSE>0 is TRUE in Excel)."""
+    td = Path(tempfile.mkdtemp())
+    src, xl_out = td / "in.xlsx", td / "excel.xlsx"
+    shutil.copy(out, src)
+    ps = td / "recalc.ps1"
+    ps.write_text(PS_RECALC, encoding="utf-8")
+    subprocess.run(["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(ps), "-Src", str(src), "-Out", str(xl_out)],
+                   check=True, capture_output=True, timeout=1800)
+    subprocess.run([str(SOFFICE), "--headless", "--calc", "--convert-to", "xlsx", "--outdir", str(td / "lo"), str(src)],
+                   check=True, capture_output=True, timeout=1800)
+    ex = [list(r) for r in openpyxl.load_workbook(xl_out, data_only=True, read_only=True)["Ringkasan"].iter_rows(values_only=True)]
+    lo = [list(r) for r in openpyxl.load_workbook(td / "lo" / "in.xlsx", data_only=True, read_only=True)["Ringkasan"].iter_rows(values_only=True)]
+    fw = openpyxl.load_workbook(src, read_only=True)["Ringkasan"]
+    cells = [(c.row, c.column) for row in fw.iter_rows() for c in row
+             if c.value is not None and str(getattr(c.value, "text", c.value)).startswith("=")]
+    bad = []
+    for r, c in cells:
+        a = lo[r - 1][c - 1] if r - 1 < len(lo) and c - 1 < len(lo[r - 1]) else None
+        b = ex[r - 1][c - 1] if r - 1 < len(ex) and c - 1 < len(ex[r - 1]) else None
+        if not same(b, a):
+            bad.append(f"Excel {CL(c)}{r} = {b!r}, LibreOffice = {a!r}")
+    print(f"Excel  : {len(cells)} sel rumus dihitung di Excel (tersembunyi) | beda dengan LibreOffice: {len(bad)}")
+    return bad
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("analisa", type=Path)
+    ap.add_argument("--cek-excel", action="store_true",
+                    help="hitung ulang salinan di Excel tersembunyi dan bandingkan semua sel rumus (perlu izin membuka Excel)")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     R = Ringkasan(args.analisa.resolve())
@@ -674,6 +724,8 @@ def main():
     print(f"Hasil  : {out}")
     print(f"Sheet  : hanya 'Ringkasan' ditambahkan di sebelah '{R.main}' | grafik: {R.charts}")
     print(f"Angka dicocokkan dengan SUMMARY file Analisa setelah dihitung ulang: {n_ok}/{len(R.expected)}")
+    if args.cek_excel:
+        bad += excel_check(out)
     for b in bad[:25]:
         print("   BEDA", b)
     if bad:
