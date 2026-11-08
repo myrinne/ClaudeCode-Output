@@ -89,8 +89,9 @@ uv run --with openpyxl --with python-pptx python mcu_excel_ringkas.py "C:\...\An
 
 Hasil: `PT. PPS_New - dengan Ringkasan.xlsx` di sebelah file vendor.
 
-- Sheet hitungan (SUMMARY, PEKERJA, DICT_*, CHECK) ikut disalin, dan semua rujukan ke RAW diganti ke sheet vendor (mis. `'Rekap MCU'!`), sehingga Ringkasan -> SUMMARY -> PEKERJA -> data asli vendor. Sheet hitungan disembunyikan (klik kanan tab > Unhide).
-- Setelah disimpan, file dihitung ulang dengan LibreOffice dan setiap sel Ringkasan dicocokkan dengan SUMMARY file Analisa.
+- Hanya satu sheet yang ditambahkan (Ringkasan); tidak ada sheet tersembunyi. Setiap angka adalah rumus yang menghitung langsung dari sheet data vendor (`SUMPRODUCT`, `MATCH`, `SEARCH`, `AGGREGATE`), dengan kata kunci, kategori, dan cutoff yang sama dengan file Analisa.
+- Top ten dan top 3 per grup dipilih dengan rumus dari tabel "Semua temuan" dan tabel bantu di kolom AD ke kanan (di luar area cetak).
+- Setelah disimpan, file dihitung ulang dengan LibreOffice dan setiap angka dicocokkan dengan SUMMARY file Analisa.
 
 ## Langkah berikutnya (belum dibuat)
 - Pembersihan data dan cutoff tambahan: hanya bila Anda bilang datanya perlu dibersihkan
