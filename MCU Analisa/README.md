@@ -63,6 +63,19 @@ Kolom abu-abu "Bantu urutan (abaikan)" hanya dipakai rumus untuk mengurutkan Top
 
 Keputusan vendor (status kelaikan, risiko, Kesimpulan, interpretasi) dipakai apa adanya. Grup dihitung dengan huruf besar/kecil dan spasi disamakan.
 
+## Langkah 3: laporan PPT (`mcu_ppt.py`)
+
+```powershell
+uv run --with openpyxl --with python-pptx python mcu_ppt.py "C:\...\Analisa\PT. PPS_New - Analisa.xlsx" --template "C:\...\Professional MCU Template\Untitled design.pptx"
+```
+
+Hasilnya `<nama> - Laporan MCU.pptx` di folder Analisa. Desain mengikuti template Canva pilihan Anda; font diganti ke Arial Black (judul) dan Arial (isi) karena font Canva (Neue Montreal, Helios) tidak terpasang di komputer.
+
+- Semua angka diambil dari SUMMARY yang dihitung ulang dengan LibreOffice; skrip menolak jalan bila sheet CHECK masih ada BEDA.
+- Catatan pembicara (speaker notes) tiap slide berisi sel SUMMARY sumber angkanya.
+- Setelah disimpan, PPT dibuka lagi dan setiap angka/teks serta data chart dicocokkan dengan SUMMARY; juga dicek tidak ada sisa teks template.
+- Chart dan tabel adalah chart/tabel PowerPoint asli, bisa diedit.
+- Teks edukasi dan rekomendasi ada di `ppt_konten.json` (diambil dari laporan lama Anda); rekomendasi hanya muncul untuk topik yang memang ada temuannya. Isi `"penyaji"` di file itu untuk nama di sampul.
+
 ## Langkah berikutnya (belum dibuat)
-- Pengisian template PPT dari SUMMARY (`... - summary_cells.json` menunjuk sel tiap blok)
 - Pembersihan data dan cutoff tambahan: hanya bila Anda bilang datanya perlu dibersihkan
