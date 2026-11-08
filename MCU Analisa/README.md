@@ -18,12 +18,14 @@ Hasilnya `Analisa\<nama file> - Analisa.xlsx` di sebelah file vendor:
 | Sheet | Isi |
 |---|---|
 | `MAP` | Variabel standar → kolom vendor. **OK** = nama header cocok persis, **CEK** = mohon dicek, **TIDAK ADA** = vendor tidak punya kolom itu |
-| `GRUP` | Kandidat kolom divisi/bagian dan jumlah pekerja per nilai (apa adanya, huruf besar/kecil dibedakan). Tulis pilihan di sel B3 |
+| `GRUP` | Kandidat kolom divisi/bagian dan jumlah pekerja per nilai. Kolom di `grup_disamakan` (Bagian, Jabatan) dihitung dengan huruf besar/kecil dan spasi disamakan, dan ejaan aslinya ditampilkan; kolom lain dihitung persis. Tulis pilihan di sel B3 |
 | `KOLOM_VENDOR` | Semua kolom vendor dan dipetakan ke mana; yang abu-abu belum dipakai |
 | `SHEET_LAIN` | Sheet lain di file vendor (UNFIT, EKG, dll.) |
 | `RAW` | Salinan persis sheet utama vendor (huruf kolom sama dengan file asli) |
 
 **Kalau ada yang salah:** isi kolom `Koreksi` di MAP dengan huruf kolom RAW (mis. `KD`), atau `X` bila memang tidak ada. Simpan, tutup Excel, lalu jalankan ulang. Koreksi tetap dipakai di setiap putaran berikutnya.
+
+**Header berulang yang urutannya sudah dikonfirmasi** (mis. audiometri blok 1 = kanan, blok 2 = kiri) diberi `urutan_dikonfirmasi` di `variabel_standar.json`, sehingga statusnya OK.
 
 **Vendor baru dengan nama header lain:** tambahkan nama itu ke `alias` di `variabel_standar.json`, tanpa mengubah kode.
 

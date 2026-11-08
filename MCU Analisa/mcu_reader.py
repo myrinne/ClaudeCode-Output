@@ -218,8 +218,11 @@ def match_variables(variables, cols, use_sections, overrides):
                 continue
             pick = found[nth - 1]
             if len(found) > 1:
-                status = "CEK"
-                notes.append(f"header '{pick['header']}' muncul {len(found)}x; diambil urutan ke-{nth}")
+                if var.get("urutan_dikonfirmasi"):
+                    how = f"{how}; header '{pick['header']}' muncul {len(found)}x, urutan ke-{nth} (dikonfirmasi: {var['urutan_dikonfirmasi']})"
+                else:
+                    status = "CEK"
+                    notes.append(f"header '{pick['header']}' muncul {len(found)}x; diambil urutan ke-{nth}")
         else:
             pick = found[0]
             if len(found) > 1:
@@ -284,7 +287,7 @@ def xl_text(v) -> str:
 
 
 def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results, used,
-                   first, last, overrides, expected):
+                   first, last, overrides, expected, same_keys=()):
     wb = openpyxl.Workbook()
     raw = wb.active
     raw.title = "RAW"
@@ -354,8 +357,9 @@ def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results
 
     # ---------------- GRUP
     g = wb.create_sheet("GRUP", 1)
-    g.cell(row=1, column=1, value="Kandidat kolom pengelompokan (divisi / bagian / cabang). Hitungan memakai EXACT: "
-                                  "huruf besar/kecil dan spasi dibedakan, karena data tidak dibersihkan.").font = BOLD
+    g.cell(row=1, column=1, value="Kandidat kolom pengelompokan (divisi / bagian / cabang). Kolom bertanda 'disamakan' dihitung "
+                                  "dengan huruf besar/kecil dan spasi disamakan (UPPER+TRIM); kolom lain dihitung persis apa adanya (EXACT). "
+                                  "RAW tidak diubah.").font = BOLD
     g.cell(row=2, column=1, value="Pilih satu kolom untuk tabel per divisi, lalu tulis kodenya di sel B3.")
     g.cell(row=3, column=1, value="Kolom grup terpilih:").font = BOLD
     gcol = 1
@@ -369,22 +373,45 @@ def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results
         L = c["letter"]
         R = rng(L, first, last)
         vals = [main["rows"][i - 1][c["idx"]] for i in range(first, last + 1)]
-        cnt = Counter("" if is_blank(v) else str(v) for v in vals)
-        uniq = sorted((v for v in cnt if v != ""), key=lambda v: (-cnt[v], v))
-        g.cell(row=top, column=gcol, value=f"{key}: '{c['header']}' (kolom {L})").font = BOLD
-        head_row(g, top + 1, [])
-        for j, h in enumerate(["Nilai (apa adanya)", "Jumlah pekerja (rumus)"]):
+        same = key in same_keys
+        VL = col_letter(gcol)
+        if same:
+            # same rule as Excel: TRIM (spaces only) + UPPER
+            def gkey(v):
+                return "" if v is None else re.sub(" +", " ", str(v).strip(" ")).upper()
+            cnt = Counter(gkey(v) for v in vals)
+            variants: dict[str, Counter] = {}
+            for v in vals:
+                if gkey(v):
+                    variants.setdefault(gkey(v), Counter())[re.sub(" +", " ", str(v).strip(" "))] += 1
+            uniq = sorted((k for k in cnt if k != ""), key=lambda k: (-cnt[k], k))
+            shown = {k: variants[k].most_common(1)[0][0] for k in uniq}
+            title = f"{key}: '{c['header']}' (kolom {L}) - disamakan"
+            heads = ["Nilai (ejaan terbanyak)", "Jumlah pekerja (rumus)", "Varian di data vendor"]
+        else:
+            cnt = Counter("" if v is None or v == "" else str(v) for v in vals)
+            uniq = sorted((v for v in cnt if v != ""), key=lambda v: (-cnt[v], v))
+            shown = {v: v for v in uniq}
+            title = f"{key}: '{c['header']}' (kolom {L}) - persis"
+            heads = ["Nilai (apa adanya)", "Jumlah pekerja (rumus)"]
+        g.cell(row=top, column=gcol, value=title).font = BOLD
+        for j, h in enumerate(heads):
             cc = g.cell(row=top + 1, column=gcol + j, value=h)
             cc.font = HEAD_FONT
             cc.fill = FILL["HEAD"]
         rr = top + 2
         for v in uniq:
-            g.cell(row=rr, column=gcol, value=v)
-            g.cell(row=rr, column=gcol + 1, value=f"=SUMPRODUCT(--EXACT({R},{col_letter(gcol)}{rr}))")
+            g.cell(row=rr, column=gcol, value=shown[v])
+            if same:
+                g.cell(row=rr, column=gcol + 1, value=f"=SUMPRODUCT(--(UPPER(TRIM({R}))=UPPER(TRIM({VL}{rr}))))")
+                g.cell(row=rr, column=gcol + 2, value=" | ".join(f"{s} ({n})" for s, n in variants[v].most_common()))
+            else:
+                g.cell(row=rr, column=gcol + 1, value=f"=SUMPRODUCT(--EXACT({R},{VL}{rr}))")
             expected[("GRUP", rr, gcol + 1)] = cnt[v]
             rr += 1
         g.cell(row=rr, column=gcol, value="(kosong)")
-        g.cell(row=rr, column=gcol + 1, value=f"=COUNTBLANK({R})")
+        g.cell(row=rr, column=gcol + 1,
+               value=f'=SUMPRODUCT(--(TRIM({R})=""))' if same else f"=COUNTBLANK({R})")
         expected[("GRUP", rr, gcol + 1)] = cnt.get("", 0)
         rr += 1
         g.cell(row=rr, column=gcol, value="Total").font = BOLD
@@ -400,8 +427,10 @@ def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results
         expected[("GRUP", rr + 2, gcol + 1)] = "OK"
         g.column_dimensions[col_letter(gcol)].width = 34
         g.column_dimensions[col_letter(gcol + 1)].width = 14
-        g.column_dimensions[col_letter(gcol + 2)].width = 3
-        gcol += 3
+        if same:
+            g.column_dimensions[col_letter(gcol + 2)].width = 40
+        g.column_dimensions[col_letter(gcol + len(heads))].width = 3
+        gcol += len(heads) + 1
     g.freeze_panes = "A5"
 
     # ---------------- KOLOM_VENDOR
@@ -511,7 +540,7 @@ def main():
     first, last = data_range(main_sheet, name_idx)
     expected = {}
     write_workbook(out_path, src, main_sheet, sheets, cols, use_sections, results, used,
-                   first, last, overrides, expected)
+                   first, last, overrides, expected, set(spec.get("grup_disamakan", [])))
 
     st = Counter(r["status"] for r in results.values())
     print(f"File   : {src.name}")
