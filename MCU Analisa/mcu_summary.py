@@ -44,6 +44,7 @@ HEAD_FONT = Font(bold=True, color="FFFFFF")
 TITLE_FONT = Font(bold=True, size=12, color="1F4E78")
 BOLD = Font(bold=True)
 YELLOW = PatternFill("solid", fgColor="FFEB9C")
+GREY = Font(color="A6A6A6", italic=True)
 GREEN = PatternFill("solid", fgColor="C6EFCE")
 RED = PatternFill("solid", fgColor="FFC7CE")
 PCT = "0.0%"
@@ -97,7 +98,7 @@ def suggest(var: str, v: str) -> str:
         return NOT_CAT
     if var == "merokok":
         if "MANTAN" in s or "BERHENTI" in s:
-            return "Mantan perokok"
+            return "Tidak merokok"  # dua kategori saja (keputusan Vidya 2026-11-08)
         if s.startswith("TIDAK") or s in ("GA", "GAK", "ENGGAK", "NO", "TDK", "-", "N"):
             return "Tidak merokok"
         if s in ("YA", "IYA", "Y", "YES", "AKTIF") or "BATANG" in s or re.search(r"\d", s):
@@ -109,7 +110,7 @@ def suggest(var: str, v: str) -> str:
         return "Ya"
     if var == "olahraga":
         if "TIDAK RUTIN" in s or "TIDAL RUTIN" in s or "JARANG" in s or "KADANG" in s:
-            return "Tidak rutin"
+            return "Tidak"  # dua kategori saja; tidak rutin = tidak berolahraga teratur
         if s.startswith("TIDAK") or s in ("GA", "GAK", "NO", "TDK", "-", "N"):
             return "Tidak"
         return "Ya"
@@ -187,12 +188,14 @@ def read_map(wb):
     return first, last, cols, labels
 
 
-def read_existing_dicts(wb, spec):
-    """Her edits in DICT_* sheets override the JSON defaults."""
+def read_existing_dicts(wb, spec, reset=False):
+    """Her edits in DICT_* sheets override the JSON defaults (unless reset)."""
     temuan = [dict(t) for t in spec["temuan"]]
     cutoff = {c["key"]: dict(c) for c in spec["cutoff"]}
     nilai: dict[str, dict[str, str]] = {}
     edited = {"DICT_TEMUAN": False, "DICT_CUTOFF": False, "DICT_NILAI": False}
+    if reset:
+        return temuan, cutoff, nilai, edited
     if "DICT_TEMUAN" in wb.sheetnames:
         rows = list(wb["DICT_TEMUAN"].iter_rows(min_row=4, values_only=True))
         got = []
@@ -208,6 +211,8 @@ def read_existing_dicts(wb, spec):
                 return [(t["key"], t["label"], t["topik"], bool(t["top_ten"]), list(t["kata"])[:N_KATA],
                          list(t.get("kecuali", []))[:N_KECUALI]) for t in ts]
             edited["DICT_TEMUAN"] = sig(got) != sig(temuan)
+            have = {t["key"] for t in got}
+            got += [t for t in temuan if t["key"] not in have]  # new findings from temuan_standar.json
             temuan = got
     if "DICT_CUTOFF" in wb.sheetnames:
         for r in wb["DICT_CUTOFF"].iter_rows(min_row=4, values_only=True):
@@ -226,8 +231,12 @@ def read_existing_dicts(wb, spec):
             if cur and r and r[0] not in (None, "", "Nilai (huruf besar, spasi dirapikan)") and r[1]:
                 v, cat = str(r[0]), str(r[1])
                 asal = r[3] if len(r) > 3 else None
-                if asal == "saran otomatis" and cat == suggest(cur, v):
-                    continue  # untouched suggestion: recompute next time
+                orig = r[4] if len(r) > 4 else None
+                if orig not in (None, ""):
+                    if cat == orig:
+                        continue  # she kept the script's suggestion: recompute next time
+                elif asal == "saran otomatis":
+                    continue
                 nilai[cur][v] = cat
                 edited["DICT_NILAI"] = True
     return temuan, cutoff, nilai, edited
@@ -277,13 +286,14 @@ def date_formula(ref, pat):
 
 # ================================================================ builder
 class Builder:
-    def __init__(self, path: Path, grup_args, spec):
+    def __init__(self, path: Path, grup_args, spec, reset=False):
         self.path = path
         self.wb = openpyxl.load_workbook(path)
         self.first, self.last, self.cols, self.labels = read_map(self.wb)
         self.raw_rows = {r: [c.value for c in row] for r, row in
                          enumerate(self.wb["RAW"].iter_rows(min_row=1, max_row=self.last), 1)}
-        self.temuan, self.cutoff, self.nilai_edit, self.edited = read_existing_dicts(self.wb, spec)
+        self.temuan, self.cutoff, self.nilai_edit, self.edited = read_existing_dicts(self.wb, spec, reset)
+        self.abaikan = [re.compile(x, re.I) for x in spec.get("abaikan_di_daftar_tinjauan", {}).get("pola", [])]
         self.expected: dict[tuple[str, int, int], object] = {}
         self.cells: dict[str, object] = OrderedDict()
         self.grups = []
@@ -379,7 +389,8 @@ class Builder:
             values = sorted((v for v in cnt if v != ""), key=lambda v: (-cnt[v], v))
             prev = self.nilai_edit.get(var, {})
             wn.cell(row=r, column=1, value=f"Variabel: {var} ({label}, RAW kolom {L})").font = TITLE_FONT
-            self.head(wn, r + 1, ["Nilai (huruf besar, spasi dirapikan)", "Kategori", "Jumlah pekerja (rumus)", "Asal kategori"])
+            self.head(wn, r + 1, ["Nilai (huruf besar, spasi dirapikan)", "Kategori", "Jumlah pekerja (rumus)", "Asal kategori",
+                                  "Saran skrip (jangan diubah)"])
             start = r + 2
             mp = {}
             for i, v in enumerate(values):
@@ -394,11 +405,12 @@ class Builder:
                 wn.cell(row=rr_, column=3, value=f"=SUMPRODUCT(--(UPPER(TRIM({rng}))=A{rr_}))")
                 self.exp("DICT_NILAI", rr_, 3, cnt[v])
                 wn.cell(row=rr_, column=4, value="edit Anda" if v in prev else "saran otomatis")
+                wn.cell(row=rr_, column=5, value=suggest(var, v)).font = Font(color="808080")
             end = start + max(len(values), 1) - 1
             self.nrange[var] = f"DICT_NILAI!$A${start}:$B${end}"
             self.nmap[var] = mp
             r = end + 3
-        self.widths(wn, [60, 24, 14, 16])
+        self.widths(wn, [60, 24, 14, 16, 22])
 
     # ------------------------------------------------------------ PEKERJA
     def write_pekerja(self):
@@ -483,8 +495,8 @@ class Builder:
             kw = f"DICT_TEMUAN!${CL(6)}${dr}:${CL(5 + N_KATA)}${dr}"
             ex = f"DICT_TEMUAN!${CL(6 + N_KATA)}${dr}:${CL(5 + N_KATA + N_KECUALI)}${dr}"
             add("t_" + t["key"], t["label"],
-                lambda r, kw=kw, ex=ex: (f'=IF(AND(SUMPRODUCT(ISNUMBER(SEARCH({kw},RAW!${K}{r}))*({kw}<>""))>0,'
-                                         f'SUMPRODUCT(ISNUMBER(SEARCH({ex},RAW!${K}{r}))*({ex}<>""))=0),1,0)'),
+                lambda r, kw=kw, ex=ex: (f'=IF(AND(SUMPRODUCT(ISNUMBER(SEARCH({kw},TRIM(RAW!${K}{r})&" "))*({kw}<>""))>0,'
+                                         f'SUMPRODUCT(ISNUMBER(SEARCH({ex},TRIM(RAW!${K}{r})&" "))*({ex}<>""))=0),1,0)'),
                 lambda r, t=t: flag(t, self.rv(r, "kesimpulan")))
         # any finding per topic
         topics = list(OrderedDict.fromkeys(t["topik"] for t in self.temuan))
@@ -674,8 +686,9 @@ class Builder:
     def block_semua_temuan(self):
         ws = self.ws_s
         self.title("Semua temuan dari Kesimpulan vendor (dasar Top Ten dan tabel per topik)",
-                   "Skor = jumlah dikurangi urutan/1000 (pemecah seri); -1 bila bukan Top ten.")
-        self.head(ws, self.r, ["No", "Temuan", "Jumlah", "%", "Topik", "Top ten", "Skor rangking"])
+                   "Kolom abu-abu 'Bantu urutan' hanya dipakai rumus untuk mengurutkan Top Ten (jumlah dikurangi sedikit "
+                   "supaya dua temuan dengan jumlah sama tidak bentrok); tidak masuk PPT.")
+        self.head(ws, self.r, ["No", "Temuan", "Jumlah", "%", "Topik", "Top ten", "Bantu urutan (abaikan)"])
         self.trow_s = {}
         start = self.r + 1
         self.tot = {}
@@ -691,7 +704,7 @@ class Builder:
             self.set(rr, 4, f"=IFERROR(C{rr}/{self.Nref},0)", total / self.N if self.N else 0, PCT)
             self.set(rr, 5, f"=DICT_TEMUAN!C{dr}", t["topik"])
             self.set(rr, 6, f"=DICT_TEMUAN!D{dr}", "Ya" if t["top_ten"] else "Tidak")
-            self.set(rr, 7, f'=IF(F{rr}="Ya",C{rr}-A{rr}/1000,-1)', (total - i / 1000) if t["top_ten"] else -1)
+            self.set(rr, 7, f'=IF(F{rr}="Ya",C{rr}-A{rr}/1000,-1)', (total - i / 1000) if t["top_ten"] else -1).font = GREY
             self.wb["DICT_TEMUAN"].cell(row=dr, column=5, value=f"=SUMMARY!C{rr}")
             self.exp("DICT_TEMUAN", dr, 5, total)
         end = start + len(self.temuan) - 1
@@ -729,7 +742,7 @@ class Builder:
         cnt = Counter(self.pval[gkey][r] for r in self.rows)
         groups = sorted(cnt, key=lambda g: (-cnt[g], g))
         # list of all groups with size and score
-        self.head(ws, self.r, ["No", f"{label} (semua)", "Jumlah pekerja", "%", "Skor rangking"])
+        self.head(ws, self.r, ["No", f"{label} (semua)", "Jumlah pekerja", "%", "Bantu urutan (abaikan)"])
         gs = self.r + 1
         pr = self.prng(gkey)
         for i, g in enumerate(groups, 1):
@@ -739,7 +752,7 @@ class Builder:
             self.set(rr, 3, f'=SUMPRODUCT(--({pr}={q(g)}))', cnt[g])
             self.set(rr, 4, f"=IFERROR(C{rr}/{self.Nref},0)", cnt[g] / self.N, PCT)
             valid = g not in ("", "-")
-            self.set(rr, 5, f'=IF(OR(B{rr}="-",B{rr}="(kosong)"),-1,C{rr}-A{rr}/10000)', (cnt[g] - i / 10000) if valid else -1)
+            self.set(rr, 5, f'=IF(OR(B{rr}="-",B{rr}="(kosong)"),-1,C{rr}-A{rr}/10000)', (cnt[g] - i / 10000) if valid else -1).font = GREY
         ge = gs + len(groups) - 1
         self.cells[f"S5_{key}_semua_grup"] = f"SUMMARY!A{gs}:D{ge}"
         self.r = ge + 2
@@ -778,7 +791,7 @@ class Builder:
                 srow = self.trow_s[t["key"]]
                 cntcell = f"{CL(4 + j)}{rr}"
                 v = (self.mat[(k, j)] - (j + 1) / 1000) if (top_flags[j] and self.mat[(k, j)] > 0) else -1
-                self.set(rr, c, f'=IF(AND($F${srow}="Ya",{cntcell}>0),{cntcell}-{j + 1}/1000,-1)', v)
+                self.set(rr, c, f'=IF(AND($F${srow}="Ya",{cntcell}>0),{cntcell}-{j + 1}/1000,-1)', v).font = GREY
         # top 3 per group
         ws.cell(row=self.r, column=1, value=f"Top 3 temuan per {label} (% dari jumlah pekerja di grup)").font = BOLD
         self.r += 1
@@ -940,7 +953,7 @@ class Builder:
         ws.cell(row=r, column=7, value="Potongan Kesimpulan yang tidak cocok dengan temuan mana pun (dibaca skrip; untuk ditinjau)").font = BOLD
         r += 1
         self.head(ws, r, ["", "", "", "", "", "", "Potongan kalimat", "Jumlah"])
-        for frag, n in unmatched(self.temuan, [self.rv(x, "kesimpulan") for x in self.rows]).most_common(80):
+        for frag, n in unmatched(self.temuan, [self.rv(x, "kesimpulan") for x in self.rows], self.abaikan).most_common(80):
             r += 1
             ws.cell(row=r, column=7, value=frag)
             ws.cell(row=r, column=8, value=n)
@@ -987,22 +1000,23 @@ def xl_trim_keep(v):
 
 
 def flag(t, text) -> int:
-    s = "" if text is None else str(text).lower()
-    if not s:
+    if text is None or str(text) == "":
         return 0
+    s = xl_trim(text).lower() + " "
     hit = any(k.lower() in s for k in t["kata"] if k)
     bad = any(k.lower() in s for k in t.get("kecuali", []) if k)
     return int(hit and not bad)
 
 
-def unmatched(temuan, texts) -> Counter:
+def unmatched(temuan, texts, abaikan=()) -> Counter:
     normal = re.compile(r"dalam batas normal|^normal|tidak ditemukan|tidak tampak|^baik|^-$", re.I)
     out = Counter()
     for t in texts:
-        for ln in re.split(r"\n|\.\s+|;\s*|,\s*", str(t or "")):
+        clean = re.sub(r"\([^)]*\)", " ", str(t or ""))  # drop '(26,34 kg/m2)' etc. before splitting on commas
+        for ln in re.split(r"\n|\.\s+|;\s*|,\s*", clean):
             s = re.sub(r"^\s*(\d+\.|-|•)\s*", "", ln).strip()
-            s2 = re.sub(r"\(.*?\)", "", s).strip().lower()
-            if len(s2) < 4 or normal.search(s2):
+            s2 = xl_trim(re.sub(r"\(.*?\)", "", s)).strip(" _").lower()
+            if len(s2) < 4 or normal.search(s2) or any(a.search(s2) for a in abaikan):
                 continue
             if not any(flag(x, s2) for x in temuan):
                 out[s2[:70]] += 1
@@ -1067,12 +1081,14 @@ def main():
     ap.add_argument("analisa", type=Path, help="file '<nama> - Analisa.xlsx' hasil mcu_reader.py")
     ap.add_argument("--grup", action="append", default=[], help="KODE[:N], mis. bagian atau departemen:10")
     ap.add_argument("--cek", action="store_true")
+    ap.add_argument("--reset-dict", action="store_true",
+                    help="buang isi DICT_* di workbook dan pakai ulang default JSON (editan DICT hilang)")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     if not args.grup:
         sys.exit("Tentukan minimal satu --grup (mis. --grup bagian).")
     spec = json.loads((HERE / "temuan_standar.json").read_text(encoding="utf-8"))
-    b = Builder(args.analisa.resolve(), args.grup, spec)
+    b = Builder(args.analisa.resolve(), args.grup, spec, args.reset_dict)
     b.write_dicts()
     b.write_pekerja()
     b.write_summary()
