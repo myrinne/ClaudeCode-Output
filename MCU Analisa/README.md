@@ -79,5 +79,18 @@ Hasilnya `<nama> - Laporan MCU.pptx` di folder Analisa. Desain mengikuti templat
 - Foto orang di template diganti gambar gedung dari template yang sama (dipotong tengah agar tidak gepeng).
 - `--aset "<folder>"` (opsional) menambah slide gambar edukasi (infografis, tabel kriteria, QR) setelah slide topik. Folder berisi gambar dan `aset_edukasi.json` yang mengatur judul, urutan, dan keterangan. Gambar tidak disimpan di repo publik; untuk MCU Nov 2026 foldernya `Documents\Project\Nov 2026\Aset edukasi`.
 
+## Langkah 4: file vendor + sheet Ringkasan (`mcu_excel_ringkas.py`)
+
+Untuk dokter/vendor yang memberikan file. Membuat duplikat file vendor (file asli tidak diubah) dan menambah sheet **Ringkasan** tepat di sebelah sheet data vendor, berisi tabel seperti di PPT beserta grafik Excel asli.
+
+```powershell
+uv run --with openpyxl --with python-pptx python mcu_excel_ringkas.py "C:\...\Analisa\PT. PPS_New - Analisa.xlsx"
+```
+
+Hasil: `PT. PPS_New - dengan Ringkasan.xlsx` di sebelah file vendor.
+
+- Sheet hitungan (SUMMARY, PEKERJA, DICT_*, CHECK) ikut disalin, dan semua rujukan ke RAW diganti ke sheet vendor (mis. `'Rekap MCU'!`), sehingga Ringkasan -> SUMMARY -> PEKERJA -> data asli vendor. Sheet hitungan disembunyikan (klik kanan tab > Unhide).
+- Setelah disimpan, file dihitung ulang dengan LibreOffice dan setiap sel Ringkasan dicocokkan dengan SUMMARY file Analisa.
+
 ## Langkah berikutnya (belum dibuat)
 - Pembersihan data dan cutoff tambahan: hanya bila Anda bilang datanya perlu dibersihkan
