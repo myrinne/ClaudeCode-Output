@@ -162,6 +162,33 @@ def dup_slide(prs, src):
     return new
 
 
+def to_building(slide, shape_id, building_part, img_aspect):
+    """Point the photo inside a template shape to the building picture, centre-cropped to the frame."""
+    try:
+        top = shape_by_id(slide, shape_id)._element
+    except KeyError:
+        return
+    for blip in top.iter(qn("a:blip")):
+        rid = slide.part.relate_to(building_part, "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image")
+        blip.set(qn("r:embed"), rid)
+        fill = blip.getparent()
+        sp = fill.getparent()
+        while sp is not None and sp.find(qn("p:spPr")) is None and sp.find(qn("p:spPr")) is None:
+            sp = sp.getparent()
+        ext = sp.find(qn("p:spPr")).find(qn("a:xfrm")).find(qn("a:ext")) if sp is not None else None
+        frame = int(ext.get("cx")) / int(ext.get("cy")) if ext is not None else 1.0
+        for e in fill.findall(qn("a:srcRect")):
+            fill.remove(e)
+        src = etree.Element(qn("a:srcRect"))
+        if frame > img_aspect:  # frame wider than picture: crop top and bottom
+            cut = int((1 - img_aspect / frame) / 2 * 100000)
+            src.set("t", str(cut)); src.set("b", str(cut))
+        else:  # crop left and right
+            cut = int((1 - frame / img_aspect) / 2 * 100000)
+            src.set("l", str(cut)); src.set("r", str(cut))
+        blip.addnext(src)
+
+
 def shape_by_id(slide, sid):
     for sh in slide.shapes:
         if sh.shape_id == sid:
@@ -451,7 +478,9 @@ def add_notes(slide, lines):
 
 # ============================================================ deck builder
 class Deck:
-    def __init__(self, summary: Summary, template: Path, konten):
+    def __init__(self, summary: Summary, template: Path, konten, aset_dir: Path | None = None):
+        self.aset_dir = aset_dir
+        self.aset = json.loads((aset_dir / "aset_edukasi.json").read_text(encoding="utf-8")) if aset_dir else None
         self.S = summary
         self.k = konten
         self.prs = Presentation(str(template))
@@ -460,6 +489,14 @@ class Deck:
         self.checks: list[tuple[int, str]] = []      # (slide no, text that must appear)
         self.chart_checks: list[tuple[int, list]] = []
         self.N = summary.cell("C3")
+        # the template's only non-people photo (building, slide 7) replaces the people photos (Vidya 2026-11-08)
+        b7 = self.tpl[T_ABOUT2 - 1]
+        bl = shape_by_id(b7, 22)._element.find(".//" + qn("a:blip"))
+        self.building = b7.part.related_part(bl.get(qn("r:embed")))
+        from PIL import Image
+        import io
+        w, h = Image.open(io.BytesIO(self.building.blob)).size
+        self.building_aspect = w / h
         self.company = str(summary.raw_a1 or "").strip() or "Perusahaan"
 
     def new(self, tno):
@@ -485,6 +522,7 @@ class Deck:
         set_text(shape_by_id(s, 40), [[("Disusun oleh: ", True), (pres, False)]], size=20)
         set_text(shape_by_id(s, 41), [[("Periode MCU: ", True), (f"{fmt_date(d1)} s/d {fmt_date(d2)}", False)]], size=20)
         set_text(shape_by_id(s, 42), self.company, size=20)
+        to_building(s, 27, self.building, self.building_aspect)
         self.expect(s, fmt_date(d1))
         self.done(s, "Sampul")
 
@@ -536,6 +574,7 @@ class Deck:
         for key, rows in groups:
             lines.append([(f"Jumlah {self.S.labels.get(key, key).lower()}: ", True), (f"{len(rows)}", False)])
         lines.append([("[Lengkapi profil perusahaan: bidang usaha, sebaran plant/cabang nasional]", False)])
+        to_building(s, 10, self.building, self.building_aspect)
         set_text(shape_by_id(s, 19), lines, size=26, space_after=12)
         self.done(s, "Profil perusahaan")
 
@@ -619,6 +658,34 @@ class Deck:
         self.chart_checks.append((len(self.prs.slides) - self.n_orig, vals))
         self.done(s, cfg["judul"])
 
+    def aset_slide(self, entry, folder: Path):
+        from PIL import Image
+        s = self.new(T_TABLE)
+        set_title(shape_by_id(s, 13), entry["judul"], 50, 26)
+        t = shape_by_id(s, 13)
+        t.left, t.width = Inches(1.0), Inches(18.0)
+        tbl = next(sh for sh in s.shapes if sh.has_table)
+        tbl._element.getparent().remove(tbl._element)
+        imgs = entry["gambar"]
+        area_x, area_y, area_w, area_h, gap, cap_h = 1.4, 2.5, 17.2, 6.9, 0.8, 1.2
+        n = len(imgs)
+        aspects = [(lambda wh: wh[0] / wh[1])(Image.open(folder / g["file"]).size) for g in imgs]
+        weights = [min(max(a, 0.7), 2.5) for a in aspects]  # wide pictures get wider columns
+        free = area_w - gap * (n - 1)
+        sx = area_x
+        for i, g in enumerate(imgs):
+            a = aspects[i]
+            slot_w = free * weights[i] / sum(weights)
+            w = min(slot_w, area_h * a)
+            h = w / a
+            x = sx + (slot_w - w) / 2
+            y = area_y + (area_h - h) / 2
+            pic = s.shapes.add_picture(str(folder / g["file"]), Inches(x), Inches(y), Inches(w), Inches(h))
+            pic._element.find(".//" + qn("p:cNvPr")).set("descr", g.get("keterangan", ""))
+            add_box(s, sx, y + h + 0.15, slot_w, cap_h, g.get("keterangan", ""), 18, color=DARK, align="ctr")
+            sx += slot_w + gap
+        self.done(s, entry["judul"])
+
     def rekomendasi(self, recs):
         for i in range(0, len(recs), 2):
             s = self.new(T_TWOBOX)
@@ -645,6 +712,7 @@ class Deck:
         set_title(shape_by_id(s, 18), w["judul"], 46, 26)
         paras = [[(w["pengantar"], False)]] + [[(f"{i}. {b}", False)] for i, b in enumerate(w["butir"], 1)]
         set_text(shape_by_id(s, 19), paras, size=24, space_after=10, align="l")
+        to_building(s, 10, self.building, self.building_aspect)
         self.done(s, "Rekomendasi program wellness")
 
     def hra(self):
@@ -664,6 +732,7 @@ class Deck:
         set_text(shape_by_id(s, 56), [[("Periode MCU: ", True), (f"{fmt_date(d1)} s/d {fmt_date(d2)}", False)]], size=20)
         set_text(shape_by_id(s, 57), self.company, size=20)
         remove(s, 58, 59, 60, 61, 38, 41, 44, 45, 46, 49, 50)
+        to_building(s, 27, self.building, self.building_aspect)
         for sh in list(s.shapes):  # any remaining contact icon at the left column
             if 1.7 < sh.left / 914400 < 2.2 and 4.8 < sh.top / 914400 < 9.3:
                 sh._element.getparent().remove(sh._element)
@@ -778,6 +847,9 @@ class Deck:
         # topics
         for cfg in self.k["topik"]:
             self.topik(cfg)
+            for entry in (self.aset or {}).get("slide", []):
+                if entry["setelah_topik"] == cfg["topik"]:
+                    self.aset_slide(entry, self.aset_dir)
         # other topics in one table
         rows = []
         for tp in self.k["topik_lain"]:
@@ -796,15 +868,18 @@ class Deck:
         # recommendations (her old texts, only where the topic has findings)
         recs = []
         for rec in self.k["rekomendasi_individu"]:
-            parts = []
+            parts, best = [], 0
             for tp in rec["syarat_topik"]:
                 key = next((k for k in S.meta["blok"] if k == f"Topik_{tp}" or re.fullmatch(r"S\d+_" + re.escape(tp), k)), None)
                 blk = S.block(key) if key else []
                 anyr = next((r for r in blk if str(r["B"]).startswith("Salah satu")), None)
                 if anyr and anyr["C"]:
-                    parts.append(f"{tp.lower()} {fmt_n(anyr['C'])} pekerja ({fmt_pct(anyr['D'])})")
+                    parts.append((anyr["D"] or 0, f"{tp.lower()} {fmt_n(anyr['C'])} pekerja ({fmt_pct(anyr['D'])})"))
             if parts:
-                recs.append((rec["teks"], "Dasar: temuan " + "; ".join(parts) + "."))
+                parts.sort(key=lambda x: -x[0])
+                recs.append((parts[0][0], rec["teks"], "Dasar: temuan " + "; ".join(t for _, t in parts) + "."))
+        recs.sort(key=lambda x: -x[0])  # highest finding first (Vidya 2026-11-08)
+        recs = [(t, b) for _, t, b in recs]
         if recs:
             self.rekomendasi(recs)
         self.wellness()
@@ -854,13 +929,14 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("analisa", type=Path)
     ap.add_argument("--template", type=Path, required=True)
+    ap.add_argument("--aset", type=Path, help="folder gambar edukasi berisi aset_edukasi.json (opsional)")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     konten = json.loads((HERE / "ppt_konten.json").read_text(encoding="utf-8"))
     S = Summary(args.analisa.resolve())
     if S.check_beda not in (0, None):
         sys.exit(f"Sheet CHECK menunjukkan {S.check_beda} BEDA: perbaiki SUMMARY dulu sebelum membuat PPT.")
-    deck = Deck(S, args.template.resolve(), konten)
+    deck = Deck(S, args.template.resolve(), konten, args.aset.resolve() if args.aset else None)
     deck.build()
     out = args.analisa.with_name(args.analisa.stem.replace(" - Analisa", "") + " - Laporan MCU.pptx")
     deck.prs.save(str(out))

@@ -75,7 +75,9 @@ Hasilnya `<nama> - Laporan MCU.pptx` di folder Analisa. Desain mengikuti templat
 - Catatan pembicara (speaker notes) tiap slide berisi sel SUMMARY sumber angkanya.
 - Setelah disimpan, PPT dibuka lagi dan setiap angka/teks serta data chart dicocokkan dengan SUMMARY; juga dicek tidak ada sisa teks template.
 - Chart dan tabel adalah chart/tabel PowerPoint asli, bisa diedit.
-- Teks edukasi dan rekomendasi ada di `ppt_konten.json` (diambil dari laporan lama Anda); rekomendasi hanya muncul untuk topik yang memang ada temuannya. Isi `"penyaji"` di file itu untuk nama di sampul.
+- Teks edukasi dan rekomendasi ada di `ppt_konten.json` (diambil dari laporan lama Anda); rekomendasi hanya muncul untuk topik yang memang ada temuannya, diurutkan dari persentase temuan tertinggi. Isi `"penyaji"` di file itu untuk nama di sampul.
+- Foto orang di template diganti gambar gedung dari template yang sama (dipotong tengah agar tidak gepeng).
+- `--aset "<folder>"` (opsional) menambah slide gambar edukasi (infografis, tabel kriteria, QR) setelah slide topik. Folder berisi gambar dan `aset_edukasi.json` yang mengatur judul, urutan, dan keterangan. Gambar tidak disimpan di repo publik; untuk MCU Nov 2026 foldernya `Documents\Project\Nov 2026\Aset edukasi`.
 
 ## Langkah berikutnya (belum dibuat)
 - Pembersihan data dan cutoff tambahan: hanya bila Anda bilang datanya perlu dibersihkan
