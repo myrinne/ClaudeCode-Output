@@ -541,7 +541,7 @@ class Deck:
 
     def ringkasan(self):
         s = self.new(T_CARDS)
-        set_title(shape_by_id(s, 44), "RINGKASAN EKSEKUTIF", 58)
+        set_title(shape_by_id(s, 44), "RINGKASAN", 58)
         remove(s, 10, 13, 19, 25)  # stock photos in the card circles
         for sh in list(s.shapes):  # their frames and shadows
             if 2.0 < sh.top / 914400 < 3.6 and 2.2 < sh.width / 914400 < 4.7 and sh.shape_type != 17:
@@ -573,7 +573,6 @@ class Deck:
                  [("Periode MCU: ", True), (f"{fmt_date(d1)} s/d {fmt_date(d2)}", False)]]
         for key, rows in groups:
             lines.append([(f"Jumlah {self.S.labels.get(key, key).lower()}: ", True), (f"{len(rows)}", False)])
-        lines.append([("[Lengkapi profil perusahaan: bidang usaha, sebaran plant/cabang nasional]", False)])
         to_building(s, 10, self.building, self.building_aspect)
         set_text(shape_by_id(s, 19), lines, size=26, space_after=12)
         self.done(s, "Profil perusahaan")
@@ -694,14 +693,23 @@ class Deck:
             for sh in list(s.shapes):  # their loose glyphs
                 if 8.0 < sh.left / 914400 < 10.3 and sh.width / 914400 < 1.8 and sh.shape_type != 17:
                     sh._element.getparent().remove(sh._element)
+            long_first = len(recs[i][0]) > 300  # Vidya's layout: a tall top box for the long lifestyle text
+            if long_first:
+                frames = [(1.48, 4.70, 10.8), (6.94, 2.19, 10.8)]  # the tall top box covers the dark bar
+            else:
+                frames = [(1.48, 3.45, 11.3), (5.87, 3.38, 11.3)]
+                remove(s, 11)  # dark bar between the boxes (she removed it here)
             for j, sid in enumerate((33, 34)):
                 sh = shape_by_id(s, sid)
+                box = shape_by_id(s, (12, 15)[j])
                 if i + j < len(recs):
                     text, basis = recs[i + j]
-                    sh.left, sh.top, sh.height = Inches(8.2), Inches(1.65 + 4.4 * j), Inches(3.55)
-                    sh.width = Inches(10.0)
+                    by, bh, bw = frames[j]
+                    box.top, box.height, box.width = Inches(by), Inches(bh), Inches(bw)
+                    tw = bw - 0.8
+                    sh.left, sh.top, sh.height, sh.width = Inches(8.2), Inches(by + 0.17), Inches(bh - 0.3), Inches(tw)
                     full = text + "\n" + basis
-                    set_text(sh, [[(text, False)], [(basis, True)]], size=fit_size(full, 9.8, 3.4, 26, 14, 0.5, 1.4), space_after=8)
+                    set_text(sh, [[(text, False)], [(basis, True)]], size=fit_size(full, tw - 0.2, bh - 0.4, 28, 14, 0.5, 1.4), space_after=8)
                 else:
                     remove(s, sid, (12, 15)[j])
             self.done(s, "Rekomendasi individu")
@@ -721,7 +729,38 @@ class Deck:
         set_title(shape_by_id(s, 36), h["judul"], 50, 28)
         body = shape_by_id(s, 37)
         set_text(body, h["teks"], size=26, align="l")
+        pics = (self.aset or {}).get("hra_gambar", [])
+        if pics:
+            remove(s, 21, 22)  # building photo circle
+            body.top = Inches(3.67)
+            for g in pics:
+                s.shapes.add_picture(str(self.aset_dir / g["file"]), Inches(g["x"]), Inches(g["y"]), Inches(g["w"]), Inches(g["h"]))
         self.done(s, "Health risk assessment")
+
+    def wellness_overview(self):
+        w = self.k.get("wellness_overview")
+        if not w:
+            return
+        s = self.new(T_TABLE)
+        set_title(shape_by_id(s, 13), w["judul"], 50, 26)
+        t = shape_by_id(s, 13)
+        t.left, t.width = Inches(1.0), Inches(18.0)
+        tbl = next(sh for sh in s.shapes if sh.has_table)
+        tbl._element.getparent().remove(tbl._element)
+        from pptx.enum.shapes import MSO_SHAPE
+        fills = [LSAND, "D8E9E9"]
+        # two columns like her example: left 3 cards, right 2 cards
+        pos = [(1.3, 2.6), (1.3, 5.05), (1.3, 7.5), (10.3, 2.6), (10.3, 5.05)]
+        for k, card in enumerate(w["kartu"][:5]):
+            x, y = pos[k]
+            h = 2.3 if k != 2 else 2.6
+            box = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(x), Inches(y), Inches(8.4), Inches(h))
+            box.fill.solid()
+            box.fill.fore_color.rgb = RGBColor.from_string(fills[k % 2])
+            box.line.fill.background()
+            box.shadow.inherit = False
+            add_box(s, x + 0.3, y + 0.2, 7.8, h - 0.3, [[(card["judul"], True)], [(card["teks"], False)]], 22)
+        self.done(s, w["judul"])
 
     def penutup(self):
         s = self.new(T_THANKS)
@@ -765,10 +804,7 @@ class Deck:
                 nd = next((x for x in blk if x["B"] == "Tidak ada data"), None)
                 hab.append((lab, r, nd))
         if hab:
-            boxes = [f"{lab}: {fmt_n(r['C'])} dari {fmt_n(self.N)} pekerja ({fmt_pct(r['D'])})" for lab, r, _ in hab]
-            nd = max((x["C"] or 0) for _, _, x in hab if x) if any(x for _, _, x in hab) else 0
-            if nd:
-                boxes.append(f"Tanpa data kebiasaan: hingga {fmt_n(nd)} pekerja")
+            boxes = [f"{fmt_n(r['C'])} dari {fmt_n(self.N)} pekerja ({fmt_pct(r['D'])})" for lab, r, _ in hab]
             s = self.new(T_TABLE)
             set_title(shape_by_id(s, 13), "KEBIASAAN PEKERJA", 50)
             tbl = next(sh for sh in s.shapes if sh.has_table)
@@ -776,7 +812,10 @@ class Deck:
             add_bar(s, [f"{lab} ({fmt_pct(r['D'])})" for lab, r, _ in hab], [r["C"] for _, r, _ in hab], 1.2, 2.5, 10.0, 7.6,
                     title="Jumlah pekerja", size=17)
             self.chart_checks.append((len(self.prs.slides) - self.n_orig, [r["C"] for _, r, _ in hab]))
-            add_box(s, 11.8, 3.0, 7.2, 6.5, [[(b, False)] for b in boxes], 24)
+            paras = []
+            for (lab, _, _), b in zip(hab, boxes):  # label bold on its own line, number below, blank line between
+                paras += [[(f"{lab}: ", True)], [(b, False)], [("", False)]]
+            add_box(s, 11.8, 3.0, 7.2, 6.5, paras[:-1], 24)
             for b in boxes:
                 self.expect(s, b)
             self.done(s, "Kebiasaan pekerja")
@@ -792,7 +831,7 @@ class Deck:
         # top ten
         top = S.block("S4_top_ten")
         rows = [[r["A"], r["B"], fmt_n(r["C"]), fmt_pct(r["D"])] for r in top if r["B"] != "-"]
-        self.table_slide("TOP TEN PENYAKIT DAN TEMUAN", ["No", "Jenis penyakit / temuan", "Jumlah", "%"], rows,
+        self.table_slide("TOP 10 PENYAKIT DAN TEMUAN", ["No", "Jenis penyakit / temuan", "Jumlah", "%"], rows,
                          [0.6, 4.6, 1.3, 1.3], x=1.5, y=3.0, w=9.6, row_h=0.66, hdr_pt=19, body_pt=19,
                          chart=([r["B"] for r in top if r["B"] != "-"], [r["C"] for r in top if r["B"] != "-"], 11.3, 3.0, 8.0, 7.6),
                          subtitle=f"% dari total peserta MCU (N = {fmt_n(self.N)})")
@@ -829,7 +868,7 @@ class Deck:
             self.table_slide("ANALISA 3 KATEGORI KELAINAN", ["Kategori", "Jumlah", "%"], rows, [4.2, 1.3, 1.3],
                              x=1.5, y=3.2, w=9.2, row_h=0.68, hdr_pt=19, body_pt=19, left_cols=(0,),
                              chart=([r["B"] for r in tot], [r["C"] for r in tot], 11.0, 3.2, 8.2, 6.9),
-                             subtitle=(note or "") + f" Data lengkap: {fmt_n(n_lengkap)} pekerja.")
+                             subtitle=self.k.get("subjudul_kombinasi") or ((note or "") + f" Data lengkap: {fmt_n(n_lengkap)} pekerja."))
             for key, n in S.meta["grup"]:
                 lab = S.labels.get(key, key)
                 blk = S.block(f"S6_kombinasi_{key}")
@@ -883,6 +922,7 @@ class Deck:
         if recs:
             self.rekomendasi(recs)
         self.wellness()
+        self.wellness_overview()
         self.hra()
         self.penutup()
         # drop the original template slides
