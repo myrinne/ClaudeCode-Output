@@ -21,7 +21,7 @@
     {"key": "paket", "label": "Paket MCU", "grup": "Identitas", "alias": ["nama paket", "paket"]},
 
     {"key": "kesimpulan", "label": "Kesimpulan (vendor)", "grup": "Keputusan vendor", "alias": ["kesimpulan"], "ke": 1},
-    {"key": "saran", "label": "Saran (vendor)", "grup": "Keputusan vendor", "alias": ["saran"], "ke": 1},
+    {"key": "saran", "label": "Saran (vendor)", "grup": "Keputusan vendor", "alias": ["saran"], "ke": 1, "urutan_dikonfirmasi": "Saran utama = kemunculan pertama (bukan Saran EKG), Vidya 2026-11-08"},
     {"key": "risiko", "label": "Risiko kesehatan (vendor)", "grup": "Keputusan vendor", "alias": ["risiko kesehatan", "risiko"]},
     {"key": "fitness", "label": "Status kelaikan / fitness (vendor)", "grup": "Keputusan vendor", "alias": ["medical fitness status", "fitness status", "status kelaikan", "kelaikan kerja", "kesimpulan kelaikan"]},
 
@@ -119,11 +119,14 @@
     {"key": "audio_bc_kiri", "label": "Audiometri: BC HTL telinga kiri (dB)", "grup": "Audiometri", "seksi": "audio", "alias": ["bc htl db", "bc htl"], "ke": 2, "urutan_dikonfirmasi": "blok ke-1 = kanan, ke-2 = kiri (Vidya, 2026-11-08)"},
     {"key": "audio_kesimpulan", "label": "Audiometri: kesimpulan", "grup": "Audiometri", "alias": ["kesimpulan audiomteri", "kesimpulan audiometri", "kesan audiometri"]},
 
-    {"key": "spiro_1_measured", "label": "Spirometri blok ke-1: measured", "grup": "Spirometri", "seksi": "spiro", "alias": ["measured"], "ke": 1},
-    {"key": "spiro_1_pct", "label": "Spirometri blok ke-1: % prediksi", "grup": "Spirometri", "seksi": "spiro", "alias": ["prediction", "prediksi"], "ke": 1},
-    {"key": "spiro_2_measured", "label": "Spirometri blok ke-2: measured", "grup": "Spirometri", "seksi": "spiro", "alias": ["measured"], "ke": 2},
-    {"key": "spiro_2_pct", "label": "Spirometri blok ke-2: % prediksi", "grup": "Spirometri", "seksi": "spiro", "alias": ["prediction", "prediksi"], "ke": 2},
-    {"key": "spiro_3_measured", "label": "Spirometri blok ke-3: measured", "grup": "Spirometri", "seksi": "spiro", "alias": ["measured"], "ke": 3},
+    {"key": "fvc", "label": "Spirometri: FVC measured (L)", "grup": "Spirometri", "seksi": "spiro", "alias": ["measured"], "ke": 1, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
+    {"key": "fvc_pred", "label": "Spirometri: FVC predicted (L)", "grup": "Spirometri", "seksi": "spiro", "alias": ["predicted"], "ke": 1, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
+    {"key": "fvc_pct", "label": "Spirometri: FVC % prediksi", "grup": "Spirometri", "seksi": "spiro", "alias": ["prediction", "prediksi"], "ke": 1, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
+    {"key": "fev1", "label": "Spirometri: FEV1 measured (L)", "grup": "Spirometri", "seksi": "spiro", "alias": ["measured"], "ke": 2, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
+    {"key": "fev1_pred", "label": "Spirometri: FEV1 predicted (L)", "grup": "Spirometri", "seksi": "spiro", "alias": ["predicted"], "ke": 2, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
+    {"key": "fev1_pct", "label": "Spirometri: FEV1 % prediksi", "grup": "Spirometri", "seksi": "spiro", "alias": ["prediction", "prediksi"], "ke": 2, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
+    {"key": "fev1_fvc", "label": "Spirometri: FEV1/FVC measured (%)", "grup": "Spirometri", "seksi": "spiro", "alias": ["measured"], "ke": 3, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
+    {"key": "fev1_fvc_pred", "label": "Spirometri: FEV1/FVC predicted (%)", "grup": "Spirometri", "seksi": "spiro", "alias": ["predicted"], "ke": 3, "urutan_dikonfirmasi": "blok 1 = FVC, blok 2 = FEV1, blok 3 = FEV1/FVC: diturunkan dari data (blok 3 = blok 2 / blok 1 x 100 pada 500/509 PPS dan 712/717 WKP), disetujui Vidya 2026-11-08"},
     {"key": "spiro_kesimpulan", "label": "Spirometri: kesimpulan", "grup": "Spirometri", "alias": ["kesimpulan spirometri", "kesan spirometri"]},
 
     {"key": "ekg_irama", "label": "EKG: irama", "grup": "EKG", "seksi": "ekg", "alias": ["irama rhythm", "irama"]},
