@@ -42,6 +42,9 @@ class DataPegawai:
     bilirubin_indirek_status: Optional[str] = None  # "normal" | "naik"
     bilirubin_total_status: Optional[str] = None  # "normal" | "naik"
     hbsag_positif: Optional[bool] = None
+    # True kalau ADA hasil HBsAg di EHR/PDF tapi isinya tidak bisa dibaca
+    # reaktif/non-reaktif -- pasien ditahan (flag merah), JANGAN dianggap negatif.
+    hbsag_tidak_terbaca: bool = False
     anti_hbs_diperiksa: bool = False
     anti_hbs_positif: Optional[bool] = None
     kreatinin_status: Optional[str] = None  # "normal" | "naik_egfr_turun_ureum_normal" | "naik_egfr_turun_ureum_naik" | "egfr_sangat_rendah"
@@ -277,9 +280,22 @@ def interpretasi_hepar(sgot_sgpt: str, ggt: str, bilirubin_direk: str = None,
     return hasil
 
 
+KESIMPULAN_HBSAG_POSITIF = "Sudah terpapar virus Hepatitis B (HBsAg reaktif)"
+SARAN_HBSAG_POSITIF = ("Berobat ke Dokter Spesialis Penyakit Dalam Divisi Gastro-Hepatologi "
+                       "(Sp.PD-KGEH) untuk tatalaksana Hepatitis B")
+
+
 def interpretasi_hepatitis_b(hbsag_positif: Optional[bool], anti_hbs_diperiksa: bool,
                                anti_hbs_positif: Optional[bool]) -> tuple:
     """Return (kesimpulan, saran, wajib_intervensi)"""
+    # HBsAg reaktif DIBACA PALING DULU, tidak bergantung Anti-HBs.
+    # Dikonfirmasi dr. Vidya, 2026-11-09: dulu kalau Anti-HBs tidak diperiksa
+    # fungsi ini langsung keluar di bawah dan HBsAg positif hilang tanpa jejak
+    # (kesimpulan kosong, tanpa saran). HBsAg positif = sudah terpapar virus
+    # Hepatitis B -> berobat ke Sp.PD-KGEH, apa pun status Anti-HBs-nya.
+    if hbsag_positif:
+        return (KESIMPULAN_HBSAG_POSITIF, SARAN_HBSAG_POSITIF, True)
+
     if not anti_hbs_diperiksa:
         # Dikonfirmasi (revisi): TIDAK dianggap kekurangan data (mis. paket
         # MCU pegawai ybs memang tidak mencakup Anti-HBs). Kesimpulan = "-"
@@ -289,11 +305,7 @@ def interpretasi_hepatitis_b(hbsag_positif: Optional[bool], anti_hbs_diperiksa: 
         # Zada Maulana: Anti-HBs tidak diperiksa saja tidak cukup alasan).
         return (None, None, False)
 
-    if hbsag_positif and anti_hbs_positif:
-        return ("Riwayat terpapar virus Hepatitis B dan telah memiliki kekebalan", None, False)
-    if hbsag_positif and not anti_hbs_positif:
-        return ("Riwayat terpapar virus Hepatitis B dan belum memiliki kekebalan", "Konsultasi lebih lanjut terkait status Hepatitis B", True)
-    if not hbsag_positif and anti_hbs_positif:
+    if anti_hbs_positif:
         return ("Belum pernah terpapar dan telah memiliki kekebalan terhadap virus Hepatitis B", None, False)
     # not hbsag_positif and not anti_hbs_positif
     return ("Belum pernah terpapar dan belum memiliki kekebalan terhadap virus Hepatitis B",
@@ -840,6 +852,15 @@ def proses_pegawai(d: DataPegawai) -> HasilInterpretasi:
         # ringkasan lab), tapi tetap perlu label internal utk pelacakan
         # jumlah temuan & flag_alasan.
         tambah_temuan(kesimpulan_hbv or "Anti-HBs belum diperiksa", saran_hbv, wajib_hbv)
+    if d.hbsag_positif:
+        if hasil.flag == "hijau":
+            hasil.flag = "kuning"
+        hasil.flag_alasan.append("HBsAg REAKTIF -> sudah terpapar Hepatitis B, saran berobat Sp.PD-KGEH")
+    if d.hbsag_tidak_terbaca:
+        hasil.flag = "merah"
+        hasil.flag_alasan.append(
+            "HBsAg ada hasilnya tapi TIDAK TERBACA reaktif/non-reaktif -- cek manual sebelum approve "
+            "(TIDAK dianggap negatif)")
 
     # --- Ginjal ---
     if d.kreatinin_status or d.riwayat_ggk:

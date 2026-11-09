@@ -139,19 +139,50 @@ def cari_lab_flag(lab_dict, *kata_kunci):
 
 
 def teks_reaktif(nilai):
-    """'0.34 Non-Reaktif' -> False, '> 1000 Reaktif' -> True, None kalau tak jelas."""
+    """'0.34 Non-Reaktif' -> False, '> 1000 Reaktif' -> True, None kalau tak jelas.
+    Juga mengenali bahasa Inggris ('0.19 Non Reactive', 'Reactive', 'Positive')
+    -- dulu cuma bahasa Indonesia, sehingga 'Reactive' terbaca None dan
+    diam-diam diperlakukan sama dengan negatif (ditemukan 2026-11-09)."""
     if nilai is None:
         return None
-    t = str(nilai).lower()
-    if "non-reaktif" in t or "non reaktif" in t or "nonreaktif" in t:
+    t = " ".join(str(nilai).lower().replace("-", " ").split())
+    negatif = ("non reaktif", "nonreaktif", "non reactive", "nonreactive",
+               "negatif", "negative", "tidak reaktif")
+    positif = ("reaktif", "reactive", "positif", "positive")
+    if any(k in t for k in negatif):
         return False
-    if "reaktif" in t:
-        return True
-    if "negatif" in t:
-        return False
-    if "positif" in t:
+    if any(k in t for k in positif):
         return True
     return None
+
+
+def hbsag_dari_lab(lab_dict):
+    """Return (positif: bool|None, catatan: str|None).
+    positif None = tidak diperiksa ATAU tidak terbaca; catatan berisi
+    alasan kalau hasilnya ada tapi tidak terbaca (pasien wajib ditahan).
+    Urutan: teks reaktif/non-reaktif -> flag EHR (H/*) -> angka COI vs
+    rujukan '< 0.90' / '<= 0.9'."""
+    entri = [(n, isi) for n, isi in lab_dict.items() if "hbsag" in n.lower().replace(" ", "")]
+    if not entri:
+        return None, None
+    nama, isi = entri[0]
+    hasil = isi.get("hasil", "") if isinstance(isi, dict) else str(isi)
+    flag = (isi.get("flag") or "").strip() if isinstance(isi, dict) else ""
+    rujukan = (isi.get("rujukan") or "") if isinstance(isi, dict) else ""
+    if not str(hasil).strip():
+        return None, f"HBsAg ({nama}) ada di daftar lab tapi hasilnya KOSONG (belum keluar?)"
+    if not hasil_valid(hasil):
+        return None, f"HBsAg ({nama}) tersimpan rusak/menggumpal: {str(hasil)[:60]!r}"
+    r = teks_reaktif(hasil)
+    if r is not None:
+        return r, None
+    if flag in ("H", "*", "HH"):
+        return True, None
+    angka = ke_angka(hasil)
+    batas = ke_angka(rujukan) if rujukan else None
+    if angka is not None and batas is not None and "<" in rujukan:
+        return angka >= batas, None
+    return None, f"HBsAg ({nama}) hasil {hasil!r} rujukan {rujukan!r} flag {flag!r} tidak bisa dibaca reaktif/non-reaktif"
 
 
 # ---------------------------------------------------------------------------
@@ -341,12 +372,16 @@ def cek_flag_tidak_dikenal(lab_dict, kata_kunci_dikenal):
         if not isinstance(isi, dict):
             continue
         flag = (isi.get("flag") or "").strip()
-        if not flag:
+        # Tes kualitatif (anti-HCV, VDRL/TPHA, HIV, dst) sering TANPA flag
+        # H/L walau reaktif -- dulu lolos dari catch-all. Sekarang hasil
+        # bertuliskan reaktif/positif juga dilaporkan (2026-11-09).
+        reaktif = teks_reaktif(isi.get("hasil", "")) is True
+        if not flag and not reaktif:
             continue
         nama_low = nama.strip().lower()
         if any(k in nama_low for k in kata_kunci_dikenal):
             continue
-        tidak_dikenal.append(f"{nama} (flag '{flag}', hasil: {isi.get('hasil', '')})")
+        tidak_dikenal.append(f"{nama} (flag '{flag or '-'}', hasil: {isi.get('hasil', '')})")
     return tidak_dikenal
 
 
@@ -486,11 +521,17 @@ def queue_ke_datapegawai(entry):
     asam_urat = bersih(cari_lab_angka(lab, "asam urat", "urat"))
     rujukan_asam_urat, _ = cari_lab_rujukan(lab, "asam urat", "urat")
 
-    hbsag_raw = cari_lab(lab, "hbsag")
-    if hbsag_raw == "__RUSAK__":
-        hbsag_raw = None
-    hbsag_positif = teks_reaktif(hbsag_raw)
+    # HBsAg -- jangan pernah diam-diam dianggap negatif (dr. Vidya, 2026-11-09).
+    hbsag_positif, catatan_hbsag = hbsag_dari_lab(lab)
+    hbsag_tidak_terbaca = catatan_hbsag is not None
+    if catatan_hbsag:
+        catatan_manual.append("PERLU_CEK_MANUAL: " + catatan_hbsag)
     anti_hbs_cek, anti_hbs_pos = anti_hbs_positif_dari_nilai(lab)
+    hbsag_ada = any("hbsag" in n.lower().replace(" ", "") for n in lab)
+    if anti_hbs_cek and not hbsag_ada:
+        catatan_manual.append(
+            "HBsAg TIDAK diperiksa (hanya Anti-HBs) -- kesimpulan Hepatitis B "
+            "'belum pernah terpapar' adalah asumsi, bukan hasil HBsAg")
 
     # Urinalisa — baca dari flag/rujukan tiap parameter di lab_urin, dict
     # TERPISAH dari lab umum (lihat baca_tabel_lab di fase1_baca.py). HARUS
@@ -551,6 +592,7 @@ def queue_ke_datapegawai(entry):
         bilirubin_indirek_status=klasifikasi_bilirubin_direk(bilirubin_indirek, rujukan_bilirubin_indirek),
         bilirubin_total_status=klasifikasi_bilirubin_direk(bilirubin_total, rujukan_bilirubin_total),
         hbsag_positif=hbsag_positif,
+        hbsag_tidak_terbaca=hbsag_tidak_terbaca,
         anti_hbs_diperiksa=anti_hbs_cek,
         anti_hbs_positif=anti_hbs_pos,
         kreatinin_status=klasifikasi_kreatinin(
