@@ -81,9 +81,12 @@
 |---|---|---|---|
 | HBsAg (–), Anti-HBs (+) | Belum pernah terpapar dan telah memiliki kekebalan terhadap virus Hepatitis B | — | Laik kerja |
 | HBsAg (–), Anti-HBs (–) | Belum pernah terpapar dan belum memiliki kekebalan terhadap virus Hepatitis B | Direkomendasikan diberikan vaksin Hepatitis B | Laik kerja dengan catatan diberikan vaksin Hepatitis B |
-| HBsAg (+), Anti-HBs (–) | Riwayat terpapar virus Hepatitis B dan belum memiliki kekebalan | Segera lakukan pemeriksaan anti-HBs (jika belum lengkap) / konsultasi | Belum dapat diberikan status kelaikan sampai lengkap |
-| HBsAg (+), Anti-HBs (+) | Riwayat terpapar virus Hepatitis B dan telah memiliki kekebalan | — | Laik kerja |
-| Anti-HBs belum diperiksa (HBsAg negatif/tidak diperiksa) | — | *(tidak perlu saran khusus — ini bukan kekurangan, karena tidak semua pegawai wajib cek Anti-HBs)* | ✅ **Laik kerja dengan catatan** (BUKAN "belum dapat diberikan kelaikan" — ini pengecualian khusus) |
+| **HBsAg (+)**, Anti-HBs apa pun (+ / – / tidak diperiksa) | Sudah terpapar virus Hepatitis B (HBsAg reaktif) | Berobat ke Dokter Spesialis Penyakit Dalam Divisi Gastro-Hepatologi (Sp.PD-KGEH) untuk tatalaksana Hepatitis B | Laik kerja dengan catatan (Langkah 3 override) |
+| Anti-HBs belum diperiksa (HBsAg negatif/tidak diperiksa) | — | *(tidak perlu saran khusus — ini bukan kekurangan, karena tidak semua pegawai wajib cek Anti-HBs)* | Ditentukan temuan lain |
+| HBsAg ada hasilnya tapi tidak terbaca (kosong / format tak dikenal) | — | — | 🔴 Ditahan, approve manual — **tidak pernah dianggap negatif** |
+| Anti-HBs diperiksa tapi HBsAg tidak diperiksa | Pakai baris HBsAg (–) di atas | — | Dicatat di notes: "belum pernah terpapar" = asumsi |
+
+> Revisi 2026-11-09 (dr. Vidya): sebelumnya HBsAg hanya dibaca kalau Anti-HBs ikut diperiksa, sehingga HBsAg positif tanpa Anti-HBs hilang tanpa jejak. Kini HBsAg dibaca lebih dulu dan berdiri sendiri. Hasil "Reactive/Non Reactive" (bahasa Inggris) dan angka COI vs rujukan juga dibaca. Tes kualitatif lain di luar protokol yang tertulis reaktif/positif (mis. anti-HCV) masuk PERLU_CEK_MANUAL walau tanpa flag H/L.
 
 ### 3d. Ginjal (Kreatinin/Ureum/eGFR)
 | Temuan | Kesimpulan | Saran |
@@ -269,7 +272,7 @@ Kategori berikut otomatis mengubah hasil Langkah 2 (walau cuma 1 temuan abnormal
 - Anti-HBs negatif (belum ada kekebalan Hepatitis B) → catatan: "diberikan vaksin Hepatitis B"
 - Obesitas grade 2 (IMT ≥30)
 - Anemia berat
-- HBsAg positif tanpa Anti-HBs
+- HBsAg positif (apa pun status Anti-HBs) → saran berobat Sp.PD-KGEH
 
 ### Contoh penerapan
 | Kasus | Hasil |
