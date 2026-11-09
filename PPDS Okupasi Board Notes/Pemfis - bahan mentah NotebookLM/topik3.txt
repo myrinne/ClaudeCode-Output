@@ -1,0 +1,7 @@
+s01-patrick|Patrick test / FABER dan kontra-Patrick: teknik, temuan normal, interpretasi (nyeri sendi panggul vs sakroiliaka vs lumbal), sensitivitas dan spesifisitas, dan kombinasi dengan tes lain
+s02-kernig|Tanda Kernig dan Brudzinski: teknik, interpretasi, sensitivitas dan spesifisitas untuk meningitis, dan arti hasil negatif
+s03-trendelenburg|Trendelenburg sign (tes statis) dan Trendelenburg gait: teknik (berdiri satu kaki, durasi 30 detik), kriteria positif (pelvic drop), kelemahan abduktor/gluteus medius, sensitivitas dan spesifisitas
+s04-rapd|RAPD (Marcus Gunn pupil) dengan swinging flashlight test: teknik, kriteria positif, kuantifikasi dengan neutral density filter (log unit), sensitivitas dan spesifisitas, dan penyebab
+s05-bing-schwabach|Tes garpu tala Bing (efek oklusi) dan Schwabach: teknik, durasi/waktu, interpretasi tuli konduktif vs sensorineural, dan angka akurasi bila ada
+s06-anemia-ikterik|Konjungtiva pucat (anemia) dan sklera ikterik pada pemeriksaan fisik: teknik, sensitivitas dan spesifisitas pallor untuk anemia, ambang bilirubin terlihatnya ikterus (sklera), dan keterbatasan pencahayaan
+s07-antalgic|Antalgic gait: cara pengamatan/pemeriksaan (fase stance vs swing), temuan, penyebab, dan pemeriksaan tambahan pada pekerja (punggung bawah, ekstremitas bawah)
