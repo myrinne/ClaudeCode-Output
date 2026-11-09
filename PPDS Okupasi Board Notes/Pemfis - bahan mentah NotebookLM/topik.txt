@@ -1,0 +1,40 @@
+01-ttv-nadi|Pemeriksaan nadi (3 jari, 15 detik x4, isi, frekuensi, irama) dan tekanan darah (posisi, manset, istirahat 5 menit, kaki tidak menyilang) serta interpretasinya
+02-ishihara|Tes buta warna Ishihara (38 plate / 14 plate): cara pemeriksaan (3 detik per plate, pencahayaan, tanpa menyentuh dengan jari), interpretasi, dan jenis defisiensi warna
+03-stereopsis|Tes penglihatan binokular / stereopsis (Titmus / Randot, 3D plate) cara pemeriksaan dan interpretasinya
+04-n1|Pemeriksaan saraf kranial I (olfaktorius): teknik, interpretasi anosmia/hiposmia, dan penyebab
+05-n2-3|Pemeriksaan saraf kranial II dan III: refleks cahaya langsung dan tidak langsung, jalur aferen/eferen, RAPD (swinging flashlight)
+06-n3-4-6|Pemeriksaan gerak bola mata (H test) saraf III, IV, VI, dan refleks akomodasi, serta interpretasi kelainannya
+07-allen|Allen test: teknik, interpretasi (cut-off waktu reperfusi), dan kegunaan sebelum pungsi arteri/pada pekerja
+08-carpal|Pemeriksaan sindrom terowongan karpal: Tinel, Phalen (durasi), reverse Phalen, Durkan, dengan sensitivitas/spesifisitas dan interpretasi
+09-finkelstein|Tes Finkelstein untuk De Quervain tenosynovitis: teknik, interpretasi, beda dengan Eichhoff
+10-konfrontasi|Tes konfrontasi lapang pandang: teknik, interpretasi, dan keterbatasannya
+11-leher|Pemeriksaan leher: kelenjar getah bening (semua regio), deviasi trakea, palpasi tiroid dari belakang dan saat menelan, auskultasi a. karotis (bruit)
+12-rinne-weber|Tes garpu tala 512 Hz: Rinne dan Weber, teknik, interpretasi tuli konduktif vs sensorineural, dan koreksi bahwa Weber lateralisasi ke telinga sakit pada tuli konduktif
+13-bing-schwabach|Tes garpu tala Bing dan Schwabach: teknik dan interpretasi
+14-bb-tb-imt|Pengukuran berat badan, tinggi badan, IMT (kriteria Asia Pasifik), dan lingkar perut (kriteria WHO/Asia Pasifik)
+15-snellen|Pemeriksaan visus dengan Snellen chart: teknik, jarak, interpretasi, dan cara mencatat
+16-whisper|Tes bisik (whispered voice test): teknik, ruang senyap, masking efek dengan menutup tragus, interpretasi, sensitivitas
+17-romberg|Pemeriksaan Romberg, Romberg dipertajam (sharpened), tandem walking: teknik, durasi 30-60 detik, interpretasi, dan finger to nose
+18-bahu|Pemeriksaan bahu: painful arc, drop arm test, Neer, Hawkins-Kennedy, Speed, Yergason, empty can (Jobe): teknik dan interpretasi untuk rotator cuff, bursitis, tendinopati biseps
+19-fukuda|Fukuda stepping test (50 langkah, deviasi >30-45 derajat): teknik dan interpretasi
+20-varises-hernia|Pemeriksaan varises tungkai (Trendelenburg, Perthes), pemeriksaan genital, hernia inguinalis (ibu jari, valsalva, posisi berdiri/berbaring)
+21-kepala-n7|Pemeriksaan kepala (palpasi, nyeri tekan) dan saraf VII (kerut dahi, menutup mata melawan tahanan, menggembungkan pipi, mencucu), beda UMN vs LMN
+22-sinus-hidung|Pemeriksaan nyeri tekan sinus paranasal (frontal, ethmoid, maksila) dan rinoskopi anterior hidung
+23-mulut-n9-10-12|Pemeriksaan mulut, gigi, tonsil, uvula 'aa' (saraf IX dan X), lidah julurkan (saraf XII)
+24-otoskopi|Pemeriksaan telinga dengan otoskop: teknik (tarik daun telinga, tangan), temuan normal membran timpani, temuan abnormal
+25-n11|Pemeriksaan saraf XI: m. sternokleidomastoideus dan trapezius, teknik dengan tahanan
+26-motorik-atas|Pemeriksaan motorik ekstremitas atas: kekuatan otot MRC grading, genggaman, tremor
+27-refleks-atas|Refleks fisiologis ekstremitas atas: biseps dan triseps, teknik dan skala interpretasi
+28-refleks-bawah|Refleks fisiologis ekstremitas bawah: patela dan Achilles, teknik dan interpretasi
+29-motorik-bawah|Pemeriksaan motorik ekstremitas bawah dan sensorik (raba, nyeri, propriosepsi), dermatom
+30-lhermitte-spurling|Lhermitte sign dan Spurling test: teknik dan interpretasi radikulopati servikal
+31-tulang-belakang|Inspeksi bahu dan tulang belakang (skoliosis, Adam forward bend), palpasi paravertebra, nyeri ketok sudut kostovertebra, ROM
+32-paru|Pemeriksaan toraks IPPA: inspeksi, palpasi tactile fremitus, perkusi batas paru-hepar, auskultasi paru 6 tempat, suara napas normal dan abnormal
+33-jantung|Pemeriksaan jantung: iktus kordis, batas jantung dengan perkusi, auskultasi 4 area, bunyi jantung S1 S2 dan murmur
+34-jvp|Pengukuran JVP dengan 2 penggaris pada sudut 30 derajat, angulus Ludovici, interpretasi
+35-abdomen|Pemeriksaan abdomen IAPP: inspeksi, auskultasi bising usus 1 menit, palpasi 4 kuadran, hepar, lien (Schuffner), ballottement ginjal, McBurney, Murphy
+36-lasegue-kernig|Pemeriksaan Lasegue (SLR), Kernig, Patrick, kontra-Patrick: teknik dan interpretasi (radikulopati lumbal, iritasi meningeal, sendi sakroiliaka/panggul)
+37-vaskular-bawah|Pemeriksaan vaskularisasi tungkai: pulsasi a. dorsalis pedis dan tibialis posterior, CRT
+38-babinski-chaddock|Refleks patologis Babinski dan Chaddock, serta Oppenheim, Gordon: teknik dan interpretasi UMN
+39-tidur-umum|Pemeriksaan konjungtiva anemis dan sklera ikterik, kaku kuduk, pembesaran kelenjar getah bening aksila dan inguinal
+40-umum-keadaan|Pemeriksaan keadaan umum dan kesadaran (GCS), penampilan, status gizi, dan kelainan postur/gait (Trendelenburg, antalgic)

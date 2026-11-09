@@ -1,0 +1,9 @@
+r01-ishihara|Tes Ishihara: kriteria lulus/gagal (jumlah plate benar atau salah) untuk versi 14, 24, dan 38 plate, sensitivitas dan spesifisitas, dampak batas nol kesalahan, serta penerapan pada seleksi pekerjaan/okupasi dan penerbangan
+r02-carpal|Sensitivitas, spesifisitas, dan nilai prediktif tes Tinel dan Phalen (serta tes provokasi lain) untuk carpal tunnel syndrome, termasuk keterbatasan dan rekomendasi kombinasi tes
+r03-romberg|Tes Romberg: durasi baku (30 vs 60 detik), kriteria positif, sensitivitas dan spesifisitas, dan perbedaan ataksia sensorik vs serebelar vs vestibular
+r04-fukuda|Fukuda stepping test: jumlah langkah (50 vs 100), kriteria rotasi dan pergeseran yang dianggap abnormal, interpretasi sisi lesi vestibular, dan keterbatasan sebagai skrining
+r05-lien|Pemeriksaan lien: perkusi Traube space, Castell sign, palpasi (posisi, teknik Schuffner bila ada), sensitivitas, spesifisitas, likelihood ratio, dan apa arti hasil negatif
+r06-imt-lp|Kategori IMT menurut kriteria Asia Pasifik (WHO 2000) dan cut-off lingkar perut/waist circumference dan waist-hip ratio menurut WHO dan Asia Pasifik, untuk pria dan wanita
+r07-regulasi-mcu|Regulasi Indonesia tentang pemeriksaan kesehatan tenaga kerja (Permenaker 02/1980): jenis pemeriksaan (sebelum kerja, berkala, khusus), isi pemeriksaan fisik, interval, dan kewajiban pelaporan
+r08-regulasi-pak|Permenkes 11/2022 tentang pelayanan kesehatan penyakit akibat kerja: diagnosis PAK, siapa yang berwenang, rujukan, pencatatan dan pelaporan, dan hubungannya dengan Permenkes 56/2016
+r09-who-early|Peran pemeriksaan fisik dalam deteksi dini penyakit akibat kerja menurut WHO Early Detection of Occupational Diseases dan NIOSH 97-141 (muskuloskeletal): temuan pemeriksaan fisik yang relevan untuk pekerja
