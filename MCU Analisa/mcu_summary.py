@@ -183,10 +183,12 @@ def suggest(var: str, v: str) -> str:
             return "Normal"
         if "MENOLAK" in s or "TIDAK DILAKUKAN" in s or "TIDAK DIPERIKSA" in s:
             return "Tidak diperiksa"
-        if "CAMPUR" in s or "MIXED" in s:
+        if "TIDAK DAPAT" in s or s in ("MANDIRI",):  # unreadable effort (PT. KED)
+            return "Tidak dapat dinilai"
+        if "CAMPUR" in s or "MIXED" in s or (("OBSTRU" in s or "OSBTRU" in s) and ("RESTRI" in s or "RETRI" in s or "RETSRI" in s)):
             return "Campuran"
-        for word, lab in (("RESTRI", "Restriksi"), ("OBSTRU", "Obstruksi")):
-            if word in s:
+        for words, lab in ((("RESTRI", "RETRI", "RETSRI"), "Restriksi"), (("OBSTRU", "OSBTRU"), "Obstruksi")):  # incl. vendor typos
+            if any(w in s for w in words):
                 for grade, g in (("RINGAN", "ringan"), ("MILD", "ringan"), ("SEDANG", "sedang"),
                                  ("MODERATE", "sedang"), ("BERAT", "berat"), ("SEVERE", "berat")):
                     if grade in s:
@@ -198,14 +200,19 @@ def suggest(var: str, v: str) -> str:
         lines = [x.strip(" .,;") for x in re.split(r"[\r\n]+", s) if x.strip(" .,;")]
         normal = ("NORMAL", "COR DAN PULMO NORMAL", "TIDAK TAMPAK KELAINAN", "FOTO THORAX NORMAL", "THORAX NORMAL")
         organ = r"(?:(?:FOTO|THORAX|THORAKS|PARU|PULMO|COR|JANTUNG|TULANG|TULANG-TULANG|SINUS|DIAFRAGMA|DAN|&|,|/)\s*)+"
-        if lines and all(x in normal or re.fullmatch(organ + r"DALAM BATAS NORMAL", x) for x in lines):
+        if lines and all(x in normal or re.fullmatch(organ + r"DALAM BATAS NORMAL", x)
+                         or re.fullmatch(r"(?:SAAT INI )?(?:SECARA RADIOLOGIS )?" + organ + r"(?:TAK|TIDAK) TAMPAK KELAINAN", x)
+                         for x in lines):
             return "Normal"
         if "MENOLAK" in s or "TIDAK DILAKUKAN" in s or "HAMIL" in s:
             return "Tidak diperiksa"
         return "Ada temuan"
     if var == "ekg_kesimpulan":
         if s in ("NORMAL EKG", "NORMAL", "SINUS RHYTHM", "NORMAL SINUS RHYTHM", "SINUS RITME", "SINUS RITMIK",
-                 "NORMAL ECG", "DALAM BATAS NORMAL", "SINUS RHYTHM, NORMAL EKG"):
+                 "NORMAL ECG", "DALAM BATAS NORMAL", "SINUS RHYTHM, NORMAL EKG", "NORMLA ECG", "SNIUD RHYTHM"):
+            return "Normal"
+        # "Normal sinus rythm 74x/m": a normal rhythm with its rate (PT. KED); bradi/takikardia stay findings
+        if re.fullmatch(r"(?:NORMAL )?SINUS (?:RHYTHM|RYTHM|RHYHTM|RHYTM|RITME|RITMIK)(?:,? ?\d+ ?(?:X ?/ ?M(?:ENIT)?|BPM))?", s):
             return "Normal"
         if "TIDAK LAYAK" in s:  # unreadable tracing keeps its own name (Vidya 2026-11-10)
             return "Tidak layak baca"
@@ -879,8 +886,9 @@ class Builder:
 
     def cat_items(self, key, labels):
         rng = self.prng(key)
-        return [(lab, f"=SUMPRODUCT(--({rng}={q(lab)}))", sum(1 for r in self.rows if self.pval[key][r] == lab))
-                for lab in labels]
+        named = f'({self.prng("nama")}<>"")'  # blank labels must not count rows without a worker (empty row 3, PT. KED)
+        return [(lab, f"=SUMPRODUCT(--({rng}={q(lab)})*{named})" if lab == "" else f"=SUMPRODUCT(--({rng}={q(lab)}))",
+                 sum(1 for r in self.rows if self.pval[key][r] == lab)) for lab in labels]
 
     # blocks -------------------------------------------------------
     def block_demografi(self):
@@ -1095,7 +1103,7 @@ class Builder:
         ws.cell(row=self.r, column=2, value="Pekerja dengan data lengkap (ketiga parameter)")
         lr = self.r
         rng = self.prng("komb")
-        self.set(lr, 3, f'=SUMPRODUCT(--({rng}<>"Data tidak lengkap"))', lengkap)
+        self.set(lr, 3, f'=SUMPRODUCT(--({rng}<>"Data tidak lengkap")*({self.prng("nama")}<>""))', lengkap)
         self.r += 2
         items = [(lab, f"=SUMPRODUCT(--({rng}={q(lab)}))", kv.get(lab, 0)) for lab in KOMB[:-1]]
         self.count_table("S6_kombinasi_total", "Kategori", items, f"$C${lr}", lengkap)

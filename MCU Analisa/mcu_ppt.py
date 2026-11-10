@@ -485,6 +485,7 @@ def add_notes(slide, lines):
 
 # ============================================================ deck builder
 class Deck:
+    MAX_FIT_BOXES = 3  # status categories written next to the doughnut (the teal slide has 4 boxes, one for risk)
     def __init__(self, summary: Summary, template: Path, konten, aset_dir: Path | None = None):
         self.aset_dir = aset_dir
         self.aset = json.loads((aset_dir / "aset_edukasi.json").read_text(encoding="utf-8")) if aset_dir else None
@@ -704,7 +705,7 @@ class Deck:
         else:
             cats = [f"{r['B']} ({fmt_pct(r['D'])})" for r in items]
             vals = [r["C"] or 0 for r in items]
-            ctitle = f"Jumlah pekerja per temuan {tp.lower()}"
+            ctitle = f"Jumlah pekerja dengan temuan {tp.lower()}"  # "dengan", not "per" (Vidya 2026-11-10)
         add_bar(s, cats, vals, 11.4, 2.2, 8.1, 7.6, title=ctitle, size=16)
         self.chart_checks.append((len(self.prs.slides) - self.n_orig, vals))
         self.done(s, cfg["judul"])
@@ -860,7 +861,7 @@ class Deck:
         # fitness
         fit = S.block("kelaikan_fitness")
         ris = S.block("kelaikan_risiko")
-        boxes = [f"{nice(r['B'])}: {fmt_n(r['C'])} pekerja ({fmt_pct(r['D'])})" for r in fit[:3]]
+        boxes = [f"{nice(r['B'])}: {fmt_n(r['C'])} pekerja ({fmt_pct(r['D'])})" for r in fit[:self.MAX_FIT_BOXES]]
         if ris:
             boxes.append("Risiko kesehatan: " + "; ".join(f"{nice(r['B']).replace('Risiko ', '')} {fmt_n(r['C'])}" for r in ris))
         self.segments(self.judul_fit.upper(), [nice(r["B"]) for r in fit], [r["C"] for r in fit], boxes)

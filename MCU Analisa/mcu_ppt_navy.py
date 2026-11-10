@@ -74,6 +74,7 @@ def add_table(slide, header, rows, x, y, w, row_h, col_fracs, hdr_pt, body_pt, l
 
 
 class DeckNavy(Deck):
+    MAX_FIT_BOXES = 8  # the text box beside the doughnut has room for every status category
     def setup_template(self):
         self.use_building(self.tpl[N_COVER - 1], 14)  # skyline photo on the cover
 
@@ -217,12 +218,17 @@ class DeckNavy(Deck):
         s = self.new(N_DONUT)
         set_title(shape_by_id(s, 18), title, 72, 36)
         remove(s, 16, 17, 19, 20, 21)
-        add_doughnut(s, cats, vals, 0.78, 5.0, 8.54, 5.7, size=16, fill=WHITE, palette=PALETTE_NAVY, text_color=NAVY)
+        gf = add_doughnut(s, cats, vals, 0.78, 5.0, 8.54, 5.7, size=16, fill=WHITE, palette=PALETTE_NAVY, text_color=NAVY)
+        if len(cats) > 3:  # many categories (PT. KED status): legend at the side, smaller, so the ring keeps its size
+            from pptx.enum.chart import XL_LEGEND_POSITION
+            gf.chart.legend.position = XL_LEGEND_POSITION.RIGHT
+            gf.chart.legend.font.size = Pt(12)
+            gf.chart.plots[0].data_labels.font.size = Pt(12)
         self.chart_checks.append((len(self.prs.slides) - self.n_orig, vals))
         body = shape_by_id(s, 22)
         body.left, body.top, body.width, body.height = Inches(10.0), Inches(4.9), Inches(8.9), Inches(5.8)
         txt = "\n".join(boxes)
-        set_text(body, [[(b, False)] for b in boxes], size=fit_size(txt, 8.7, 5.6, 24, 14, 0.52, 1.6), space_after=14)
+        set_text(body, [[(b, False)] for b in boxes], size=fit_size(txt, 8.7, 5.6, 24, 14, 0.52, 1.6), space_after=14, align="l")
         self.done(s, title)
         return s
 
@@ -292,7 +298,7 @@ class DeckNavy(Deck):
         else:
             cats = [f"{r['B']} ({fmt_pct(r['D'])})" for r in items]
             vals = [r["C"] or 0 for r in items]
-            ctitle = f"Jumlah pekerja per temuan {tp.lower()}"
+            ctitle = f"Jumlah pekerja dengan temuan {tp.lower()}"  # "dengan", not "per" (Vidya 2026-11-10)
         add_bar(s, cats, vals, 0.9, 5.15, 8.6, 5.75, title=ctitle, size=13, color=ORANGE, fill=WHITE)
         self.chart_checks.append((len(self.prs.slides) - self.n_orig, vals))
         self.done(s, cfg["judul"])
