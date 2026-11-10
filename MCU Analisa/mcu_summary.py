@@ -54,7 +54,7 @@ NO_DATA = "Tidak ada data"
 OUR_SHEETS = ["DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "DICT_BERSIH", "PEKERJA", "SUMMARY", "CHECK"]
 DATE_VARS = ("tgl_mcu", "tgl_lahir")
 BERSIH_ROW0 = 4  # first data row of DICT_BERSIH
-PAK_KOSONG = "Tidak diisi vendor"
+PAK_KOSONG = "Tidak ada"  # empty Dugaan PAK cell (her PT. SKP edit 2026-11-10)
 N_KATA, N_KECUALI = 10, 4
 KOMB = ["Ketiganya", "Rasio TG/HDL + HbA1c", "Rasio TG/HDL + LP", "HbA1c + LP",
         "Hanya rasio TG/HDL", "Hanya HbA1c", "Hanya LP", "Tidak ada", "Data tidak lengkap"]
