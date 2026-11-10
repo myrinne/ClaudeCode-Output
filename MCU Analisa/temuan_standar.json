@@ -222,6 +222,18 @@
    ]
   },
   {
+   "key": "hipoglikemia",
+   "label": "Hipoglikemia / penurunan gula darah",
+   "topik": "Gula darah",
+   "top_ten": true,
+   "kata": [
+    "hipoglikemia",
+    "hypoglycemia",
+    "penurunan kadar gula darah",
+    "penurunan gula darah"
+   ]
+  },
+  {
    "key": "hiperurisemia",
    "label": "Hiperurisemia",
    "topik": "Asam urat",
@@ -392,7 +404,9 @@
     "ditemukan kristal",
     "kristaluria",
     "kristal dalam urin",
-    "kristal di urin"
+    "kristal di urin",
+    "kristal urat",
+    "kristal amorf"
    ]
   },
   {
@@ -541,6 +555,16 @@
    ]
   },
   {
+   "key": "faringitis",
+   "label": "Faringitis",
+   "topik": "THT",
+   "top_ten": true,
+   "kata": [
+    "faringitis",
+    "pharyngitis"
+   ]
+  },
+  {
    "key": "pendengaran",
    "label": "Gangguan pendengaran (audiometri)",
    "topik": "THT",
@@ -561,7 +585,8 @@
    "kata": [
     "restriksi",
     "restriktif",
-    "restriction"
+    "restriction",
+    "restrictive"
    ]
   },
   {
@@ -571,7 +596,8 @@
    "top_ten": true,
    "kata": [
     "obstruksi",
-    "obstruktif"
+    "obstruktif",
+    "obstructive"
    ]
   },
   {
@@ -585,6 +611,20 @@
     "proses spesifik",
     "specific process",
     "koch pulmonum"
+   ]
+  },
+  {
+   "key": "fibrosis_paru",
+   "label": "Fibrosis paru (rontgen)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "fibrosis"
+   ],
+   "kecuali": [
+    "fibrosis hati",
+    "fibrosis hepar",
+    "liver fibrosis"
    ]
   },
   {
@@ -632,6 +672,18 @@
    ]
   },
   {
+   "key": "ro_lain",
+   "label": "Kelainan rontgen lain (eventrasi diafragma, dekstrokardia)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "eventration",
+    "eventrasi",
+    "dextrocardia",
+    "dekstrokardia"
+   ]
+  },
+  {
    "key": "sinus_aritmia",
    "label": "Sinus aritmia (EKG)",
    "topik": "EKG",
@@ -639,7 +691,9 @@
    "kata": [
     "sinus aritmia",
     "sinus arrhythmia",
-    "sinus arrythmia"
+    "sinus arrythmia",
+    "bradi arrhythmia",
+    "bradi arrhytmia"
    ]
   },
   {
@@ -649,7 +703,10 @@
    "top_ten": true,
    "kata": [
     "bradikardi",
-    "bradycardi"
+    "bradycardi",
+    "bradiakardi",
+    "bradi arrhythmia",
+    "bradi arrhytmia"
    ]
   },
   {
@@ -738,7 +795,9 @@
    "top_ten": true,
    "kata": [
     "lvh",
-    "left ventricular hypertrophy"
+    "left ventricular hypertrophy",
+    "ventricular hyperthropy",
+    "ventricular hypertrophy"
    ]
   },
   {
@@ -754,7 +813,9 @@
     "ectopic",
     "extrasystole",
     "bigeminy",
-    "trigeminy"
+    "trigeminy",
+    "extra sistol",
+    "extra systole"
    ]
   },
   {
@@ -810,7 +871,8 @@
     "biventricular",
     "t abnormalit",
     "t changes",
-    "t inversion"
+    "t inversion",
+    "early r wave"
    ]
   },
   {
@@ -992,7 +1054,12 @@
    "^menstruasi$",
    "\\bhz\\b|\\d+\\s*g?hz",
    "^gigi palsu$",
-   "^susp\\.?$"
+   "^susp\\.?$",
+   "^(ekg\\s*:?\\s*)?tidak layak (di)?baca$",
+   "^ekg\\s*:?$",
+   "^(segera )?konsultasi\\b",
+   "^(dan )?(lemas|keringat dingin|sesak napas|pucat)$",
+   "^healed post primer infeksi$"
   ]
  },
  "_aturan_cutoff": "Interpretasi vendor dipakai bila ada; cutoff hanya untuk parameter yang tidak ditafsirkan vendor (Vidya 2026-11-08)."

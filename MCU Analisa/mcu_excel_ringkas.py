@@ -42,7 +42,7 @@ from openpyxl.utils import get_column_letter as CL
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from mcu_ppt import SOFFICE, Summary  # noqa: E402
-from mcu_summary import KOMB, date_pattern, read_map  # noqa: E402
+from mcu_summary import KOMB, PAK_KOSONG, as_date, date_pattern, read_map, xl_serial, xl_uf  # noqa: E402
 
 TEAL, DARK, SAND = "307F7F", "112929", "D1B984"
 PALETTE = [TEAL, SAND, DARK, "7FB8B8", "EADBB4", "A3A3A3", "4F9A9A", "BFA36A"]
@@ -87,19 +87,24 @@ def read_dicts(wb):
 class F:
     """Builds array expressions over the vendor sheet (used inside SUMPRODUCT/AGGREGATE)."""
 
-    def __init__(self, sheet, first, last, cols, nilai, temuan, cutoff, pat_mcu, pat_lahir):
+    def __init__(self, sheet, first, last, cols, nilai, temuan, cutoff, pat_mcu, pat_lahir, bersih=()):
         self.V = "'" + sheet.replace("'", "''") + "'!"
         self.a, self.b = first, last
         self.cols, self.nilai, self.cutoff = cols, nilai, cutoff
         self.t = {t["key"]: t for t in temuan}
         self.pat_mcu, self.pat_lahir = pat_mcu, pat_lahir
+        self.bersih = list(bersih)  # same clean-ups as DICT_BERSIH of the Analisa file (summary_cells.json)
 
     def R(self, key):
         L = self.cols[key]
         return f"{self.V}${L}${self.a}:${L}${self.b}"
 
     def U(self, key):
-        return f"UPPER(TRIM({self.R(key)}))"
+        u = f"UPPER(TRIM({self.R(key)}))"
+        for b in self.bersih:  # e.g. Bagian TAMANAN -> TANAMAN, written out so the vendor can read it
+            if b["var"] == key:
+                u = f'IF({u}={q(str(b["asli"]).strip().upper())},{q(str(b["bersih"]).strip().upper())},{u})'
+        return u
 
     def named(self):
         return f'(TRIM({self.R("nama")})<>"")'
@@ -129,23 +134,31 @@ class F:
             return f'(TRIM({self.R(var)})="")'
         if not vals:
             return "0"
-        return f"ISNUMBER(MATCH({self.U(var)},{arr(vals)},0))"
+        # one-line text, like DICT_NILAI keys (multi-line X-ray texts)
+        return f"ISNUMBER(MATCH({xl_uf(self.R(var))},{arr(vals)},0))"
 
     def eq(self, key, label):
-        return f"({self.U(key)}={q('' if label == '(kosong)' else label)})"
+        return f"({self.U(key)}={q('' if label in ('(kosong)', PAK_KOSONG) else label)})"
 
     # dates ---------------------------------------------------------
-    def ymd(self, key, pat):
+    def date(self, key, pat):
+        """Date per row: Excel dates as they are, text dates parsed (vendors mix both), then DICT_BERSIH date fixes."""
         R = self.R(key)
         if pat == "dmy":
-            return f"VALUE(MID({R},7,4))", f"VALUE(MID({R},4,2))", f"VALUE(LEFT({R},2))"
-        if pat == "ymd":
-            return f"VALUE(LEFT({R},4))", f"VALUE(MID({R},6,2))", f"VALUE(MID({R},9,2))"
-        return f"YEAR({R})", f"MONTH({R})", f"DAY({R})"
+            txt = f"DATE(VALUE(MID({R},7,4)),VALUE(MID({R},4,2)),VALUE(LEFT({R},2)))"
+        elif pat == "ymd":
+            txt = f"DATE(VALUE(LEFT({R},4)),VALUE(MID({R},6,2)),VALUE(MID({R},9,2)))"
+        else:
+            txt = R
+        d = f"IF(ISNUMBER({R}),{R},{txt})" if pat in ("dmy", "ymd") else R
+        fixes = [(xl_serial(as_date(b["asli"])), xl_serial(as_date(b["bersih"]))) for b in self.bersih if b["var"] == key]
+        if fixes:
+            d = f"({d})" + "".join(f"+(({d})={o})*({n - o})" for o, n in fixes)
+        return d
 
-    def date(self, key, pat):
-        y, m, d = self.ymd(key, pat)
-        return f"DATE({y},{m},{d})"
+    def ymd(self, key, pat):
+        d = self.date(key, pat)
+        return f"YEAR({d})", f"MONTH({d})", f"DAY({d})"
 
     def age(self):
         y1, m1, d1 = self.ymd("tgl_mcu", self.pat_mcu)
@@ -209,7 +222,7 @@ class Ringkasan:
         main_ws = self.wb[self.main]
         vals = lambda key: [main_ws[f"{cols[key]}{r}"].value for r in range(first, last + 1)] if key in cols else []  # noqa: E731
         self.f = F(self.main, first, last, cols, nilai, temuan, cutoff,
-                   date_pattern(vals("tgl_mcu")), date_pattern(vals("tgl_lahir")))
+                   date_pattern(vals("tgl_mcu")), date_pattern(vals("tgl_lahir")), self.S.meta.get("bersih", []))
         for name in ("Ringkasan", "SUMMARY", "PEKERJA", "DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "CHECK"):
             if name in self.wb.sheetnames:
                 del self.wb[name]
@@ -331,7 +344,7 @@ class Ringkasan:
         ws, f, S = self.ws, self.f, self.S
         ws["A1"] = "RINGKASAN HASIL MCU"
         ws["A1"].font = BOLD
-        ws["A2"] = str(S.raw_a1 or "").strip()
+        ws["A2"] = S.company
         ws["A2"].font = BOLD
         ws["A3"] = f"Setiap angka di sheet ini adalah rumus yang menghitung langsung dari sheet '{self.main}'."
         ws["A5"] = "Jumlah peserta MCU (N)"
@@ -374,8 +387,10 @@ class Ringkasan:
         if hab:
             rows = [(lab, f"=C{rr}", self.pct_n, None) for lab, rr in hab]
             self.simple("Kebiasaan pekerja (ringkasan, seperti grafik di PPT)", rows, "bar", header=("No", "Kebiasaan", "Jumlah", "%"))
-        for key, var, ttl, ch in (("kelaikan_fitness", "fitness", "Status kelaikan kerja (keputusan vendor)", "doughnut"),
-                                  ("kelaikan_risiko", "risiko", "Risiko kesehatan (keputusan vendor)", None)):
+        jf = S.meta.get("judul_fitness", "Status kelaikan kerja")
+        for key, var, ttl, ch in (("kelaikan_fitness", "fitness", f"{jf} (keputusan vendor)", "doughnut"),
+                                  ("kelaikan_risiko", "risiko", "Risiko kesehatan (keputusan vendor)", None),
+                                  ("pak_dugaan", "dugaan_pak", "Dugaan penyakit akibat kerja / PAK (kolom vendor, apa adanya)", None)):
             rows = [(r["B"], f.count(f.eq(var, r["B"])), self.pct_n, r["row"]) for r in self.blk(key)]
             if rows:
                 self.simple(ttl, rows, ch)

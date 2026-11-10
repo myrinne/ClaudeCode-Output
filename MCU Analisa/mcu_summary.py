@@ -6,6 +6,7 @@ same workbook, only Excel formulas:
     DICT_TEMUAN  findings searched in the vendor's Kesimpulan (keywords + exclusions), editable
     DICT_NILAI   categories for free-text values (sex, smoking, spirometry, X-ray, ECG...), editable
     DICT_CUTOFF  cutoffs for the 3-abnormality combination and the age split, editable
+    DICT_BERSIH  small approved clean-ups (group typos, Excel-mangled dates), editable; --bersih adds rows
     PEKERJA      one row per worker, same row numbers as RAW: age, group, flags per finding
     SUMMARY      one block per report slide (S3 demographics ... S15 visus)
     CHECK        every SUMMARY cell next to an independent Python recount (must all be SAMA)
@@ -50,7 +51,10 @@ RED = PatternFill("solid", fgColor="FFC7CE")
 PCT = "0.0%"
 NOT_CAT = "BELUM DIKATEGORIKAN"
 NO_DATA = "Tidak ada data"
-OUR_SHEETS = ["DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "PEKERJA", "SUMMARY", "CHECK"]
+OUR_SHEETS = ["DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "DICT_BERSIH", "PEKERJA", "SUMMARY", "CHECK"]
+DATE_VARS = ("tgl_mcu", "tgl_lahir")
+BERSIH_ROW0 = 4  # first data row of DICT_BERSIH
+PAK_KOSONG = "Tidak diisi vendor"
 N_KATA, N_KECUALI = 10, 4
 KOMB = ["Ketiganya", "Rasio TG/HDL + HbA1c", "Rasio TG/HDL + LP", "HbA1c + LP",
         "Hanya rasio TG/HDL", "Hanya HbA1c", "Hanya LP", "Tidak ada", "Data tidak lengkap"]
@@ -75,6 +79,19 @@ def U(v) -> str:
     return xl_trim(v).upper()
 
 
+def UF(v) -> str:
+    """U() with line breaks removed. LibreOffice drops the line break when it reads a single text cell written by
+    openpyxl but keeps it inside ranges, so 'LAMA<br>COR' only matches everywhere as 'LAMACOR'."""
+    if isinstance(v, str):
+        v = v.replace("\r", "").replace("\n", "")
+    return U(v)
+
+
+def xl_uf(ref) -> str:
+    """Excel twin of UF()."""
+    return f'UPPER(TRIM(SUBSTITUTE(SUBSTITUTE({ref},CHAR(13),""),CHAR(10),"")))'
+
+
 def is_num(v) -> bool:
     return isinstance(v, (int, float)) and not isinstance(v, bool)
 
@@ -85,6 +102,53 @@ def q(s) -> str:
 
 def datedif_y(a: dt.date, b: dt.date) -> int:
     return b.year - a.year - ((b.month, b.day) < (a.month, a.day))
+
+
+def xl_serial(d: dt.date) -> int:
+    return (d - dt.date(1899, 12, 30)).days
+
+
+def as_date(v):
+    if isinstance(v, dt.datetime):
+        return v.date()
+    if isinstance(v, dt.date):
+        return v
+    s = str(v).strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", s[:10]):
+        return dt.date(int(s[:4]), int(s[5:7]), int(s[8:10]))
+    raise ValueError(f"tanggal '{s}' harus ditulis YYYY-MM-DD")
+
+
+def bersih_key(var, orig) -> str:
+    """Same text as DICT_BERSIH column E: var|serial for dates, var|UPPER(TRIM(text)) otherwise."""
+    if var in DATE_VARS:
+        return f"{var}|{xl_serial(as_date(orig))}"
+    return f"{var}|{U(orig)}"
+
+
+def read_bersih(wb, cli, reset=False):
+    """Cleaning rows [(var, orig, new, reason)]: kept from DICT_BERSIH, then --bersih VAR:ASLI=BERSIH[#alasan] added/overriding."""
+    rows = OrderedDict()
+    if not reset and "DICT_BERSIH" in wb.sheetnames:
+        for r in wb["DICT_BERSIH"].iter_rows(min_row=BERSIH_ROW0, values_only=True):
+            if r and r[0] not in (None, "") and r[1] not in (None, "") and r[2] not in (None, ""):
+                var = str(r[0]).strip()
+                orig = as_date(r[1]) if var in DATE_VARS else str(r[1])
+                new = as_date(r[2]) if var in DATE_VARS else str(r[2])
+                rows[bersih_key(var, orig)] = (var, orig, new, r[3] or "")
+    for item in cli:
+        body, _, why = item.partition("#")
+        var, _, pair = body.partition(":")
+        orig, _, new = pair.partition("=")
+        var = var.strip()
+        if not var or not orig or not new:
+            sys.exit(f"--bersih '{item}': tulis VAR:ASLI=BERSIH, mis. bagian:TAMANAN=TANAMAN atau tgl_mcu:2026-07-10=2026-10-07")
+        if var in DATE_VARS:
+            orig, new = as_date(orig), as_date(new)
+        else:
+            orig, new = orig.strip(), new.strip()
+        rows[bersih_key(var, orig)] = (var, orig, new, why.strip() or "perbaikan data kotor (disetujui Vidya)")
+    return list(rows.values())
 
 
 # ================================================================ default categorisation rules
@@ -130,7 +194,11 @@ def suggest(var: str, v: str) -> str:
                 return lab
         return NOT_CAT
     if var == "ro_kesimpulan":
-        if "DALAM BATAS NORMAL" in s or s in ("NORMAL", "COR DAN PULMO NORMAL", "TIDAK TAMPAK KELAINAN"):
+        # Normal only when EVERY line is a normal statement: "TB paru lama / Cor dalam batas normal" is a finding
+        lines = [x.strip(" .,;") for x in re.split(r"[\r\n]+", s) if x.strip(" .,;")]
+        normal = ("NORMAL", "COR DAN PULMO NORMAL", "TIDAK TAMPAK KELAINAN", "FOTO THORAX NORMAL", "THORAX NORMAL")
+        organ = r"(?:(?:FOTO|THORAX|THORAKS|PARU|PULMO|COR|JANTUNG|TULANG|TULANG-TULANG|SINUS|DIAFRAGMA|DAN|&|,|/)\s*)+"
+        if lines and all(x in normal or re.fullmatch(organ + r"DALAM BATAS NORMAL", x) for x in lines):
             return "Normal"
         if "MENOLAK" in s or "TIDAK DILAKUKAN" in s or "HAMIL" in s:
             return "Tidak diperiksa"
@@ -139,7 +207,7 @@ def suggest(var: str, v: str) -> str:
         if s in ("NORMAL EKG", "NORMAL", "SINUS RHYTHM", "NORMAL SINUS RHYTHM", "SINUS RITME", "SINUS RITMIK",
                  "NORMAL ECG", "DALAM BATAS NORMAL", "SINUS RHYTHM, NORMAL EKG"):
             return "Normal"
-        if "MENOLAK" in s or "TIDAK DILAKUKAN" in s:
+        if "MENOLAK" in s or "TIDAK DILAKUKAN" in s or "TIDAK LAYAK" in s:  # unreadable tracing = not assessed
             return "Tidak diperiksa"
         return "Ada temuan"
     if var == "audio_kesimpulan":
@@ -186,6 +254,18 @@ def read_map(wb):
             cols[str(r[ki])] = str(letter)
         labels[str(r[ki])] = r[li]
     return first, last, cols, labels
+
+
+def vendor_headers(wb):
+    """MAP code -> the vendor's own header text (column F)."""
+    rows = list(wb["MAP"].iter_rows(values_only=True))
+    hi = next(i for i, r in enumerate(rows) if r and r[0] == "Grup" and r[1] == "Kode variabel")
+    return {str(r[1]): str(r[5]).strip() for r in rows[hi + 1:] if r and r[1] and r[5]}
+
+
+def judul_fitness(header) -> str | None:
+    """Vendor 'Status Akhir' is reported under that name, not as fitness/kelaikan (Vidya 2026-11-10)."""
+    return "Status Akhir" if header and " ".join(str(header).lower().split()) == "status akhir" else None
 
 
 def read_existing_dicts(wb, spec, reset=False):
@@ -243,7 +323,7 @@ def read_existing_dicts(wb, spec, reset=False):
                         continue  # she kept the script's suggestion: recompute next time
                 elif asal == "saran otomatis":
                     continue
-                nilai[cur][v] = cat
+                nilai[cur][UF(v)] = cat
                 edited["DICT_NILAI"] = True
     return temuan, cutoff, nilai, edited
 
@@ -292,10 +372,12 @@ def date_formula(ref, pat):
 
 # ================================================================ builder
 class Builder:
-    def __init__(self, path: Path, grup_args, spec, reset=False):
+    def __init__(self, path: Path, grup_args, spec, reset=False, bersih_args=()):
         self.path = path
         self.wb = openpyxl.load_workbook(path)
         self.first, self.last, self.cols, self.labels = read_map(self.wb)
+        self.vheader = vendor_headers(self.wb)
+        self.bersih = read_bersih(self.wb, bersih_args, reset)
         self.raw_rows = {r: [c.value for c in row] for r, row in
                          enumerate(self.wb["RAW"].iter_rows(min_row=1, max_row=self.last), 1)}
         self.temuan, self.cutoff, self.nilai_edit, self.edited = read_existing_dicts(self.wb, spec, reset)
@@ -395,8 +477,11 @@ class Builder:
                 continue
             L = self.cols[var]
             idx = col_index(L) - 1
-            cnt = Counter(U(self.raw(rr, idx)) for rr in self.rows)
+            cnt = Counter(UF(self.raw(rr, idx)) for rr in self.rows)
             values = sorted((v for v in cnt if v != ""), key=lambda v: (-cnt[v], v))
+            example = {}  # one-line key -> first original text (line breaks kept, so suggest() can judge each line)
+            for rr in self.rows:
+                example.setdefault(UF(self.raw(rr, idx)), U(self.raw(rr, idx)))
             prev = self.nilai_edit.get(var, {})
             wn.cell(row=r, column=1, value=f"Variabel: {var} ({label}, RAW kolom {L})").font = TITLE_FONT
             self.head(wn, r + 1, ["Nilai (huruf besar, spasi dirapikan)", "Kategori", "Jumlah pekerja (rumus)", "Asal kategori",
@@ -405,22 +490,80 @@ class Builder:
             mp = {}
             for i, v in enumerate(values):
                 rr_ = start + i
-                cat = prev.get(v) or suggest(var, v)
+                cat = prev.get(v) or suggest(var, example[v])
                 mp[v] = cat
                 wn.cell(row=rr_, column=1, value=v)
                 c2 = wn.cell(row=rr_, column=2, value=cat)
                 if v not in prev:
                     c2.fill = YELLOW
                 rng = self.raw_rng(L)
-                wn.cell(row=rr_, column=3, value=f"=SUMPRODUCT(--(UPPER(TRIM({rng}))=A{rr_}))")
+                wn.cell(row=rr_, column=3, value=f"=SUMPRODUCT(--({xl_uf(rng)}=A{rr_}))")
                 self.exp("DICT_NILAI", rr_, 3, cnt[v])
                 wn.cell(row=rr_, column=4, value="edit Anda" if v in prev else "saran otomatis")
-                wn.cell(row=rr_, column=5, value=suggest(var, v)).font = Font(color="808080")
+                wn.cell(row=rr_, column=5, value=suggest(var, example[v])).font = Font(color="808080")
             end = start + max(len(values), 1) - 1
             self.nrange[var] = f"DICT_NILAI!$A${start}:$B${end}"
             self.nmap[var] = mp
             r = end + 3
         self.widths(wn, [60, 24, 14, 16, 22])
+        self.write_bersih()
+
+    def write_bersih(self):
+        """DICT_BERSIH: small, visible clean-ups (typos, Excel-mangled dates). RAW stays untouched."""
+        allowed = set(DATE_VARS) | {k for k, _ in self.grups}
+        bad = [v for v, *_ in self.bersih if v not in allowed or v not in self.cols]
+        if bad:
+            sys.exit(f"--bersih/DICT_BERSIH: variabel {', '.join(sorted(set(bad)))} tidak bisa dibersihkan. "
+                     f"Yang bisa: kolom --grup ({', '.join(k for k, _ in self.grups)}) dan {', '.join(DATE_VARS)}.")
+        wd = self.wb.create_sheet("DICT_BERSIH")
+        wd["A1"] = ("Pembersihan data kecil yang disetujui Vidya. File vendor dan RAW tidak diubah; PEKERJA memakai 'Nilai bersih' "
+                    "bila isi sel sama dengan 'Nilai asli'.")
+        wd["A1"].font = BOLD
+        wd["A2"] = ("Tambah baris (Variabel = kode MAP: kolom grup, tgl_mcu, tgl_lahir), simpan, tutup Excel, jalankan ulang mcu_summary.py. "
+                    "Tanggal ditulis sebagai tanggal Excel.")
+        wd["A2"].font = Font(italic=True, color="595959")
+        self.head(wd, BERSIH_ROW0 - 1, ["Variabel", "Nilai asli", "Nilai bersih", "Alasan", "Kunci (rumus, abaikan)",
+                                        "Jumlah sel di RAW (rumus)"])
+        for i, (var, orig, new, why) in enumerate(self.bersih):
+            r = BERSIH_ROW0 + i
+            wd.cell(row=r, column=1, value=var)
+            c2, c3 = wd.cell(row=r, column=2, value=orig), wd.cell(row=r, column=3, value=new)
+            if var in DATE_VARS:
+                c2.number_format = c3.number_format = "dd-mm-yyyy"
+            wd.cell(row=r, column=4, value=why)
+            wd.cell(row=r, column=5, value=f'=A{r}&"|"&IF(ISNUMBER(B{r}),B{r},UPPER(TRIM(B{r})))').font = GREY
+            self.exp("DICT_BERSIH", r, 5, bersih_key(var, orig))
+            L = self.cols[var]
+            idx = col_index(L) - 1
+            vals = [self.raw(rr, idx) for rr in range(self.first, self.last + 1)]
+            if var in DATE_VARS:
+                wd.cell(row=r, column=6, value=f"=COUNTIF({self.raw_rng(L)},B{r})")
+                n = sum(1 for v in vals if isinstance(v, (dt.date, dt.datetime)) and as_date(v) == orig)
+            else:
+                wd.cell(row=r, column=6, value=f"=SUMPRODUCT(--(UPPER(TRIM({self.raw_rng(L)}))=UPPER(TRIM(B{r}))))")
+                n = sum(1 for v in vals if U(v) == U(orig))
+            self.exp("DICT_BERSIH", r, 6, n)
+        end = BERSIH_ROW0 + max(len(self.bersih), 1) - 1
+        self.brange = (f"DICT_BERSIH!$C${BERSIH_ROW0}:$C${end}", f"DICT_BERSIH!$E${BERSIH_ROW0}:$E${end}")
+        self.bmap = {bersih_key(v, o): n for v, o, n, _ in self.bersih}
+        self.widths(wd, [14, 22, 22, 60, 22, 16])
+
+    def f_bersih(self, var, expr):
+        """Wrap a PEKERJA expression (no '=') so a DICT_BERSIH match is replaced; unchanged when var has no rows."""
+        if not any(v == var for v, *_ in self.bersih):
+            return expr
+        c, k = self.brange
+        out = f'IFERROR(INDEX({c},MATCH("{var}|"&({expr}),{k},0)),{expr})'
+        return out if var in DATE_VARS else f"UPPER(TRIM({out}))"
+
+    def v_bersih(self, var, value):
+        if value in ("", None):
+            return value
+        key = bersih_key(var, value)
+        if key not in self.bmap:
+            return value
+        new = self.bmap[key]
+        return new if var in DATE_VARS else U(new)
 
     # ------------------------------------------------------------ PEKERJA
     def write_pekerja(self):
@@ -462,11 +605,11 @@ class Builder:
         self.pat_mcu = date_pattern([self.rv(r, "tgl_mcu") for r in self.rows]) if "tgl_mcu" in C else "none"
         self.pat_lahir = date_pattern([self.rv(r, "tgl_lahir") for r in self.rows]) if "tgl_lahir" in C else "none"
         if "tgl_mcu" in C:
-            add("tgl_mcu", "Tanggal MCU", lambda r: date_formula(ref("tgl_mcu", r), self.pat_mcu),
-                lambda r: parse_date(self.rv(r, "tgl_mcu"), self.pat_mcu) or "", "dd-mm-yyyy")
+            add("tgl_mcu", "Tanggal MCU", lambda r: "=" + self.f_bersih("tgl_mcu", date_formula(ref("tgl_mcu", r), self.pat_mcu)[1:]),
+                lambda r: self.v_bersih("tgl_mcu", parse_date(self.rv(r, "tgl_mcu"), self.pat_mcu) or ""), "dd-mm-yyyy")
         if "tgl_lahir" in C:
-            add("tgl_lahir", "Tanggal lahir", lambda r: date_formula(ref("tgl_lahir", r), self.pat_lahir),
-                lambda r: parse_date(self.rv(r, "tgl_lahir"), self.pat_lahir) or "", "dd-mm-yyyy")
+            add("tgl_lahir", "Tanggal lahir", lambda r: "=" + self.f_bersih("tgl_lahir", date_formula(ref("tgl_lahir", r), self.pat_lahir)[1:]),
+                lambda r: self.v_bersih("tgl_lahir", parse_date(self.rv(r, "tgl_lahir"), self.pat_lahir) or ""), "dd-mm-yyyy")
         if "tgl_mcu" in C and "tgl_lahir" in C:
             a, b = self.pcol["tgl_lahir"], self.pcol["tgl_mcu"]
 
@@ -487,9 +630,11 @@ class Builder:
                 lambda r: NO_DATA if self.pval["umur"][r] == "" else (self.lab_tua if self.pval["umur"][r] >= cv else self.lab_muda))
         # groups
         for key, _ in self.grups:
-            add("grp_" + key, f"Grup: {key}", lambda r, k=key: f"=UPPER(TRIM({ref(k, r)}))", lambda r, k=key: U(self.rv(r, k)))
+            add("grp_" + key, f"Grup: {key}", lambda r, k=key: "=" + self.f_bersih(k, f"UPPER(TRIM({ref(k, r)}))"),
+                lambda r, k=key: self.v_bersih(k, U(self.rv(r, k))))
         # vendor decisions as written
-        for key, head in (("fitness", "Status kelaikan (vendor)"), ("risiko", "Risiko kesehatan (vendor)")):
+        for key, head in (("fitness", f"{judul_fitness(self.vheader.get('fitness')) or 'Status kelaikan'} (vendor)"),
+                          ("risiko", "Risiko kesehatan (vendor)"), ("dugaan_pak", "Dugaan PAK (vendor)")):
             if key in C:
                 add(key, head, lambda r, k=key: f"=UPPER(TRIM({ref(k, r)}))", lambda r, k=key: U(self.rv(r, k)))
         # categorised text values
@@ -591,10 +736,10 @@ class Builder:
         return int(any(self.pval["t_" + k][r] for k in self.vendor_keys(ckey)))
 
     def f_nilai(self, var, ref):
-        return (f'=IF(TRIM({ref})="","{NO_DATA}",IFERROR(VLOOKUP(UPPER(TRIM({ref})),{self.nrange[var]},2,FALSE),"{NOT_CAT}"))')
+        return (f'=IF(TRIM({ref})="","{NO_DATA}",IFERROR(VLOOKUP({xl_uf(ref)},{self.nrange[var]},2,FALSE),"{NOT_CAT}"))')
 
     def v_nilai(self, var, v):
-        s = U(v)
+        s = UF(v)
         if s == "":
             return NO_DATA
         return self.nmap[var].get(s, NOT_CAT)
@@ -709,16 +854,20 @@ class Builder:
                 self.r += 2
 
     def block_kelaikan(self):
-        for key, title in (("fitness", "Status kelaikan kerja (keputusan vendor, apa adanya)"),
-                           ("risiko", "Risiko kesehatan (keputusan vendor, apa adanya)")):
+        jf = judul_fitness(self.vheader.get("fitness"))
+        for key, block, title, kosong in (
+                ("fitness", "kelaikan_fitness", f"{jf or 'Status kelaikan kerja'} (keputusan vendor, apa adanya)", "(kosong)"),
+                ("risiko", "kelaikan_risiko", "Risiko kesehatan (keputusan vendor, apa adanya)", "(kosong)"),
+                ("dugaan_pak", "pak_dugaan", "Dugaan penyakit akibat kerja / PAK (kolom vendor, apa adanya)", PAK_KOSONG)):
             if key not in self.pcol:
                 continue
             self.title(title)
             cnt = Counter(self.pval[key][r] for r in self.rows)
             labs = sorted((v for v in cnt if v != ""), key=lambda v: (-cnt[v], v)) + ([""] if cnt.get("") else [])
             items = self.cat_items(key, labs)
-            items = [(lab if lab else "(kosong)", f, v) for lab, f, v in items]
-            self.count_table(f"kelaikan_{key}", "Kategori", items, self.Nref, self.N)
+            items = [(lab if lab else kosong, f, v) for lab, f, v in items]
+            self.count_table(block, "Kategori", items, self.Nref, self.N)
+        self.judul_fitness = jf or "Status kelaikan kerja"
 
     def block_semua_temuan(self):
         ws = self.ws_s
@@ -1021,7 +1170,7 @@ class Builder:
             ws.column_dimensions[CL(i)].width = w
 
     def save(self):
-        order = ["SUMMARY", "CHECK", "MAP", "GRUP", "DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "PEKERJA",
+        order = ["SUMMARY", "CHECK", "MAP", "GRUP", "DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "DICT_BERSIH", "PEKERJA",
                  "KOLOM_VENDOR", "SHEET_LAIN", "RAW"]
         self.wb._sheets.sort(key=lambda s: order.index(s.title) if s.title in order else 99)
         self.wb.active = 0
@@ -1033,8 +1182,11 @@ class Builder:
             tmp.unlink(missing_ok=True)
             sys.exit(f"Tidak bisa menyimpan: '{self.path.name}' sedang terbuka di Excel. Tutup dulu lalu jalankan ulang.")
         side = self.path.with_name(self.path.stem + " - summary_cells.json")
-        side.write_text(json.dumps({"grup": self.grups, "N": self.N, "blok": self.cells}, ensure_ascii=False, indent=1),
-                        encoding="utf-8")
+        bersih = [{"var": v, "asli": o.isoformat() if isinstance(o, dt.date) else o,
+                   "bersih": n.isoformat() if isinstance(n, dt.date) else n, "alasan": w} for v, o, n, w in self.bersih]
+        side.write_text(json.dumps({"grup": self.grups, "N": self.N, "blok": self.cells,
+                                    "judul_fitness": getattr(self, "judul_fitness", "Status kelaikan kerja"), "bersih": bersih},
+                                   ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 # ================================================================ python mirrors
@@ -1126,12 +1278,15 @@ def main():
     ap.add_argument("--cek", action="store_true")
     ap.add_argument("--reset-dict", action="store_true",
                     help="buang isi DICT_* di workbook dan pakai ulang default JSON (editan DICT hilang)")
+    ap.add_argument("--bersih", action="append", default=[],
+                    help="VAR:ASLI=BERSIH[#alasan], mis. bagian:TAMANAN=TANAMAN atau tgl_mcu:2026-07-10=2026-10-07 "
+                         "(disimpan di DICT_BERSIH, tetap dipakai di putaran berikutnya)")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     if not args.grup:
         sys.exit("Tentukan minimal satu --grup (mis. --grup bagian).")
     spec = json.loads((HERE / "temuan_standar.json").read_text(encoding="utf-8"))
-    b = Builder(args.analisa.resolve(), args.grup, spec, args.reset_dict)
+    b = Builder(args.analisa.resolve(), args.grup, spec, args.reset_dict, args.bersih)
     b.write_dicts()
     b.write_pekerja()
     b.write_summary()
@@ -1141,6 +1296,9 @@ def main():
     print(f"Pekerja: {b.N} | temuan dicari: {len(b.temuan)} | grup: {', '.join(f'{k} (top {n})' for k, n in b.grups)}")
     print(f"Tanggal: MCU format {b.pat_mcu}, lahir format {b.pat_lahir} | kombinasi 3 kelainan: {'ya' if b.has_komb else 'tidak (kolom kurang)'}")
     print("DICT   : " + ", ".join(f"{k} {'(edit Anda)' if v else '(default)'}" for k, v in b.edited.items()))
+    if b.bersih:
+        print("Bersih : " + "; ".join(f"{v}: {o} -> {n}" for v, o, n, _ in b.bersih))
+    print(f"Judul  : {b.judul_fitness}")
     nc = {v: sum(1 for r in b.rows if b.pval[v][r] == NOT_CAT) for v in b.nmap if v in b.pval}
     if any(nc.values()):
         print("Belum dikategorikan: " + ", ".join(f"{k} {n}" for k, n in nc.items() if n))
