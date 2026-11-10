@@ -1062,5 +1062,25 @@
    "^healed post primer infeksi$"
   ]
  },
- "_aturan_cutoff": "Interpretasi vendor dipakai bila ada; cutoff hanya untuk parameter yang tidak ditafsirkan vendor (Vidya 2026-11-08)."
+ "_aturan_cutoff": "Interpretasi vendor dipakai bila ada; cutoff hanya untuk parameter yang tidak ditafsirkan vendor (Vidya 2026-11-08).",
+ "obesitas_tanpa_grade": {
+  "_cara_pakai": "Kesimpulan vendor menulis obesitas tanpa angka grade (mis. 'Obesitas grade,'): grade ditentukan dari IMT menurut WHO Asia-Pasifik 2000 (Vidya 2026-11-10, PT. SKP). Berlaku hanya bila tidak ada kata kunci obes1/obes2.",
+  "kata": [
+   "obesitas grade",
+   "obesitas derajat",
+   "obesitas tingkat",
+   "obesitas gr"
+  ],
+  "imt": {
+   "obes1": [
+    25,
+    30
+   ],
+   "obes2": [
+    30,
+    null
+   ]
+  }
+ },
+ "_aturan_lingkar_perut": "Lingkar perut: interpretasi vendor (temuan obes_sentral) bila vendor menafsirkannya; bila tidak ada satu pun pekerja dengan temuan itu tetapi angka LP ada, otomatis cutoff Asia-Pasifik L>=90 / P>=80 cm, dan temuan Obesitas sentral ikut cutoff itu (Vidya 2026-11-10, PT. SKP)."
 }
