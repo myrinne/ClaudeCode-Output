@@ -43,7 +43,7 @@ PALETTE = [TEAL, SAND, DARK, LTEAL, LSAND, "A3A3A3", "4F9A9A", "BFA36A"]
 FONT_MAP = {"Helios": "Arial", "Helios Bold": "Arial", "Neue Montreal Bold": "Arial Black", "Neue Montreal": "Arial"}
 TITLE_FONT, BODY_FONT = "Arial Black", "Arial"
 # template slide numbers (1-based) in Untitled design.pptx
-PAK_KOSONG = "Tidak diisi vendor"  # same label as mcu_summary.PAK_KOSONG
+PAK_KOSONG = "Tidak ada"  # same label as mcu_summary.PAK_KOSONG (her PT. SKP edit)
 T_COVER, T_TOC, T_ABOUT, T_CARDS, T_TABLE, T_SEGMENTS, T_ABOUT2, T_STRATEGY, T_TWOBOX, T_RISK, T_PLANS, T_THANKS = range(1, 13)
 
 
@@ -554,8 +554,8 @@ class Deck:
         d1, d2 = self.S.periode()
         set_title(shape_by_id(s, 38), "ANALISA HASIL MCU " + str(d2.year if isinstance(d2, (dt.date, dt.datetime)) else ""), 80, 40)
         set_text(shape_by_id(s, 39), self.company, size=26, bold=True, color=TEAL)
-        pres = self.k.get("penyaji") or "[isi nama penyaji]"
-        set_text(shape_by_id(s, 40), [[("Disusun oleh: ", True), (pres, False)]], size=20)
+        pres = self.k.get("penyaji") or ""  # she deletes the placeholder, so none
+        set_text(shape_by_id(s, 40), [[("Disusun oleh: " if pres else "Disusun oleh:", True), (pres, False)]], size=20)
         set_text(shape_by_id(s, 41), [[("Periode MCU: ", True), (f"{fmt_date(d1)} s/d {fmt_date(d2)}", False)]], size=20)
         set_text(shape_by_id(s, 42), self.company, size=20)
         to_building(s, 27, self.building, self.building_aspect)
@@ -817,8 +817,8 @@ class Deck:
     def penutup(self):
         s = self.new(T_THANKS)
         set_title(shape_by_id(s, 54), "TERIMA KASIH", 80, 40)
-        pres = self.k.get("penyaji") or "[isi nama penyaji]"
-        set_text(shape_by_id(s, 55), [[("Disusun oleh: ", True), (pres, False)]], size=20)
+        pres = self.k.get("penyaji") or ""
+        set_text(shape_by_id(s, 55), [[("Disusun oleh: " if pres else "Disusun oleh:", True), (pres, False)]], size=20)
         d1, d2 = self.S.periode()
         set_text(shape_by_id(s, 56), [[("Periode MCU: ", True), (f"{fmt_date(d1)} s/d {fmt_date(d2)}", False)]], size=20)
         set_text(shape_by_id(s, 57), self.company, size=20)
@@ -1009,9 +1009,12 @@ def main():
     ap.add_argument("analisa", type=Path)
     ap.add_argument("--template", type=Path, required=True)
     ap.add_argument("--aset", type=Path, help="folder gambar edukasi berisi aset_edukasi.json (opsional)")
+    ap.add_argument("--penyedia", default="", help="nama penyedia MCU untuk kartu Personal Tracker, mis. \"Hermina Samarinda\"")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     konten = json.loads((HERE / "ppt_konten.json").read_text(encoding="utf-8"))
+    for card in (konten.get("wellness_overview") or {}).get("kartu", []):  # "{penyedia}" -> MCU provider, or nothing
+        card["teks"] = " ".join(card["teks"].replace("{penyedia}", args.penyedia).split())
     S = Summary(args.analisa.resolve())
     if S.check_beda not in (0, None):
         sys.exit(f"Sheet CHECK menunjukkan {S.check_beda} BEDA: perbaiki SUMMARY dulu sebelum membuat PPT.")
@@ -1029,7 +1032,7 @@ def main():
     for b in bad[:30]:
         print("   ", b)
     if not konten.get("penyaji"):
-        print("Catatan: nama penyaji belum diisi (ppt_konten.json -> 'penyaji'); di slide tertulis '[isi nama penyaji]'.")
+        print("Catatan: nama penyaji kosong (ppt_konten.json -> 'penyaji'); slide hanya menulis 'Disusun oleh:'.")
     if bad:
         sys.exit(1)
 

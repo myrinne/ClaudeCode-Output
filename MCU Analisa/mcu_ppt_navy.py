@@ -27,7 +27,7 @@ M.FONT_MAP.update({"Gordita Bold": "Arial Black", "Gordita": "Arial"})
 # template slide numbers
 N_COVER, N_TOC, N_TOPIC, N_PROFILE, N_SPLIT2, N_DONUT, N_QUOTE, N_TWOCARD, N_TIMELINE, N_CARDS, N_LESSON, N_TWOPANEL, N_THANKS = range(1, 14)
 # old layout (teal template) content band -> navy plain slide content band
-Y0_OLD, Y1_OLD, Y0_NEW, Y1_NEW = 3.0, 10.6, 3.85, 10.95
+Y0_OLD, Y1_OLD, Y0_NEW, Y1_NEW = 3.0, 10.6, 4.25, 10.95  # band starts below title + subtitle (PowerPoint check 2026-11-10)
 K = (Y1_NEW - Y0_NEW) / (Y1_OLD - Y0_OLD)
 
 
@@ -90,10 +90,12 @@ class DeckNavy(Deck):
         s = self.new(N_CARDS)
         remove(s, 9, 10, 11, 12, *range(16, 26))
         t = shape_by_id(s, 14)
-        t.left, t.top, t.width, t.height = Inches(1.56), Inches(2.25), Inches(17.2), Inches(1.0)
-        set_title(t, title, 44, 26)
+        # title well below the logo row (1.74-2.36"): PowerPoint draws it higher than LibreOffice
+        t.left, t.top, t.width, t.height = Inches(1.56), Inches(2.65), Inches(17.2), Inches(0.95)
+        t.text_frame.vertical_anchor = MSO_ANCHOR.TOP
+        set_title(t, title, 42, 26)
         if subtitle:
-            add_box(s, 1.56, 3.22, 17.2, 0.55, subtitle, 16, color=ORANGE)
+            add_box(s, 1.56, 3.62, 17.2, 0.5, subtitle, 16, color=ORANGE)
         return s
 
     def toc_items(self):
@@ -112,12 +114,14 @@ class DeckNavy(Deck):
         s = self.new(N_COVER)
         d1, d2 = self.S.periode()
         year = str(d2.year) if hasattr(d2, "year") else ""
-        size = min(fit_size("ANALISA", 6.9, 1.9, 96, 40, 0.95, 1.1), fit_size("HASIL MCU", 6.9, 1.9, 96, 40, 0.95, 1.1))
-        for sid, txt in ((23, "ANALISA"), (22, "HASIL MCU")):
-            sh = shape_by_id(s, sid)
-            sh.width = Inches(8.4)
-            set_text(sh, txt, size=size, font=TITLE_FONT)
-        set_text(shape_by_id(s, 30), year, font=TITLE_FONT)
+        # her PT. SKP edit: one two-line title box, the year right under it
+        t = shape_by_id(s, 23)
+        t.width = Inches(8.4)
+        set_text(t, ["ANALISA", "HASIL MCU"], size=fit_size("HASIL MCU", 8.2, 1.0, 62, 40, 0.95, 1.0), font=TITLE_FONT)
+        remove(s, 22)
+        yr = shape_by_id(s, 30)
+        yr.top = Inches(4.08)
+        set_text(yr, year, font=TITLE_FONT)
         set_text(shape_by_id(s, 36), self.company, size=24, bold=True)
         set_text(shape_by_id(s, 33), "Periode MCU:")
         per = shape_by_id(s, 31)
@@ -125,8 +129,11 @@ class DeckNavy(Deck):
         set_text(per, f"{fmt_date(d1)} s/d\n{fmt_date(d2)}", size=17)
         set_text(shape_by_id(s, 34), "Disusun oleh:")
         pres = shape_by_id(s, 32)
-        pres.width = Inches(3.4)
-        set_text(pres, self.k.get("penyaji") or "[isi nama penyaji]", size=18)
+        if self.k.get("penyaji"):
+            pres.width = Inches(3.4)
+            set_text(pres, self.k["penyaji"], size=18)
+        else:
+            remove(s, 32)  # she deletes the placeholder
         self.expect(s, fmt_date(d1))
         self.done(s, "Sampul")
 
@@ -162,11 +169,11 @@ class DeckNavy(Deck):
         # the template's company-overview slide has tiny list boxes; two plain cards read better
         s = self.plain("PROFIL PERUSAHAAN")
         d1, d2 = self.S.periode()
-        self.card(s, 1.3, 4.1, 8.6, 5.6, "Data MCU",
+        self.card(s, 1.3, 4.35, 8.6, 5.6, "Data MCU",
                   [[("Perusahaan: ", True), (self.company, False)],
                    [("Peserta MCU: ", True), (f"{fmt_n(self.N)} pekerja", False)],
                    [("Periode MCU: ", True), (f"{fmt_date(d1)} s/d {fmt_date(d2)}", False)]], 26)
-        self.card(s, 10.4, 4.1, 8.6, 5.6, "Pengelompokan",
+        self.card(s, 10.4, 4.35, 8.6, 5.6, "Pengelompokan",
                   [[(f"Jumlah {self.S.labels.get(k, k).lower()}: ", True), (str(len(rows)), False)] for k, rows in groups], 26)
         self.done(s, "Profil perusahaan")
 
@@ -193,12 +200,13 @@ class DeckNavy(Deck):
         for i, (head, big, small) in enumerate(cards[:4]):
             set_text(shape_by_id(s, 16 + i), head, size=fit_size(head, 1.9, 0.3, 18, 12, 0.6, 1.0))
             body = shape_by_id(s, 21 + i)
-            body.top, body.height = Inches(6.3), Inches(3.3)
+            body.top, body.height = Inches(6.75), Inches(2.85)  # below the label circle's ring (ends ~6.6" in PowerPoint)
             body.left, body.width = body.left + Inches(0.15), body.width - Inches(0.25)  # off the card's edge
             set_text(body, [[(big, True)], [(small, False)]], size=None, align="l")
+            body.text_frame.vertical_anchor = MSO_ANCHOR.TOP  # template boxes are centred: numbers rose into the circle
             ps = body.text_frame.paragraphs
             for r in ps[0].runs:
-                r.font.size = Pt(fit_size(big, 2.6, 0.8, 44, 28, 0.62, 1.0))
+                r.font.size = Pt(fit_size(big, 2.6, 0.8, 40, 28, 0.62, 1.0))
             for p in ps[1:]:
                 for r in p.runs:
                     r.font.size = Pt(fit_size(small, 2.55, 2.4, 19, 13, 0.55, 1.3))
@@ -236,13 +244,13 @@ class DeckNavy(Deck):
     def kebiasaan(self, hab):
         boxes = [f"{fmt_n(r['C'])} dari {fmt_n(self.N)} pekerja ({fmt_pct(r['D'])})" for lab, r, _ in hab]
         s = self.plain("KEBIASAAN PEKERJA")
-        add_bar(s, [f"{lab} ({fmt_pct(r['D'])})" for lab, r, _ in hab], [r["C"] for _, r, _ in hab], 1.2, 3.9, 10.0, 6.8,
+        add_bar(s, [f"{lab} ({fmt_pct(r['D'])})" for lab, r, _ in hab], [r["C"] for _, r, _ in hab], 1.2, 4.3, 10.0, 6.5,
                 title="Jumlah pekerja", size=17, color=ORANGE, fill=WHITE)
         self.chart_checks.append((len(self.prs.slides) - self.n_orig, [r["C"] for _, r, _ in hab]))
         paras = []
         for (lab, _, _), b in zip(hab, boxes):
             paras += [[(f"{lab}: ", True)], [(b, False)], [("", False)]]
-        add_box(s, 11.8, 4.2, 7.2, 6.3, paras[:-1], 24, color=WHITE)
+        add_box(s, 11.8, 4.5, 7.2, 6.2, paras[:-1], 24, color=WHITE)
         for b in boxes:
             self.expect(s, b)
         self.done(s, "Kebiasaan pekerja")
@@ -315,7 +323,7 @@ class DeckNavy(Deck):
     def aset_slide(self, entry, folder: Path):
         s = self.plain(entry["judul"])
         imgs = entry["gambar"]
-        self.place_images(s, [folder / g["file"] for g in imgs], (1.4, 3.6, 17.2, 7.3),
+        self.place_images(s, [folder / g["file"] for g in imgs], (1.4, 4.25, 17.2, 6.65),
                           [g.get("keterangan", "") for g in imgs])
         self.done(s, entry["judul"])
 
@@ -328,8 +336,8 @@ class DeckNavy(Deck):
                 if i + j < len(recs):
                     text, basis = recs[i + j]
                     full = text + "\n" + basis
-                    self.card(s, (1.3, 10.4)[j], 3.9, 8.6, 6.9, f"Rekomendasi {i + j + 1}", [[(text, False)], [(basis, True)]],
-                              fit_size(full, 7.8, 5.5, 22, 13, 0.52, 1.5))
+                    self.card(s, (1.3, 10.4)[j], 4.3, 8.6, 6.5, f"Rekomendasi {i + j + 1}", [[(text, False)], [(basis, True)]],
+                              fit_size(full, 7.8, 5.1, 22, 13, 0.52, 1.5))
             self.done(s, "Rekomendasi individu")
 
     def wellness(self):
@@ -351,13 +359,13 @@ class DeckNavy(Deck):
         teks = h["teks"] if isinstance(h["teks"], str) else "\n".join(h["teks"])
         pics = (self.aset or {}).get("hra_gambar", [])
         if pics:
-            add_box(s, 1.56, 3.75, 8.3, 3.1, teks, fit_size(teks, 8.2, 3.0, 22, 13, 0.5, 1.4), color=WHITE)
+            add_box(s, 1.56, 4.3, 8.3, 3.0, teks, fit_size(teks, 8.2, 2.9, 22, 13, 0.5, 1.4), color=WHITE)
             files = [self.aset_dir / g["file"] for g in pics]
-            self.place_images(s, files[:1], (10.3, 3.6, 9.2, 7.3))
+            self.place_images(s, files[:1], (10.3, 4.25, 9.2, 6.65))
             if len(files) > 1:
-                self.place_images(s, files[1:], (1.56, 7.0, 8.3, 3.9))
+                self.place_images(s, files[1:], (1.56, 7.45, 8.3, 3.45))
         else:
-            add_box(s, 1.56, 3.9, 17.0, 6.5, teks, 26, color=WHITE)
+            add_box(s, 1.56, 4.3, 17.0, 6.4, teks, 26, color=WHITE)
         self.done(s, "Health risk assessment")
 
     def wellness_overview(self):
@@ -365,10 +373,10 @@ class DeckNavy(Deck):
         if not w:
             return
         s = self.plain(w["judul"])
-        pos = [(1.3, 3.75), (1.3, 6.15), (1.3, 8.55), (10.3, 3.75), (10.3, 6.15)]
+        pos = [(1.3, 4.3), (1.3, 6.5), (1.3, 8.7), (10.3, 4.3), (10.3, 6.5)]
         for k, card in enumerate(w["kartu"][:5]):
             x, y = pos[k]
-            hgt = 2.2 if k != 2 else 2.35
+            hgt = 2.0 if k != 2 else 2.2
             box = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(x), Inches(y), Inches(8.4), Inches(hgt))
             box.fill.solid()
             box.fill.fore_color.rgb = RGBColor.from_string((WHITE, PEACH)[k % 2])
@@ -380,13 +388,16 @@ class DeckNavy(Deck):
 
     def penutup(self):
         s = self.new(N_THANKS)
-        set_title(shape_by_id(s, 15), "TERIMA KASIH", 110, 50)
+        set_title(shape_by_id(s, 15), "TERIMA KASIH", 96, 50)  # 110pt ran into the orange ring
         pill = shape_by_id(s, 25)
         set_text(pill, self.company, size=fit_size(self.company, 4.4, 0.45, 26, 14, 0.6, 1.0))
         d1, d2 = self.S.periode()
         remove(s, 18, 30, 31)  # web / address icons
-        for sid, txt, bold in ((29, "Disusun oleh:", True), (28, self.k.get("penyaji") or "[isi nama penyaji]", False),
+        for sid, txt, bold in ((29, "Disusun oleh:", True), (28, self.k.get("penyaji") or "", False),
                                (27, "Periode MCU:", True), (26, f"{fmt_date(d1)} s/d {fmt_date(d2)}", False)):
+            if sid == 28 and not self.k.get("penyaji"):
+                remove(s, 28)  # no placeholder text (her edit)
+                continue
             sh = shape_by_id(s, sid)
             sh.left, sh.width = Inches(1.70), Inches(7.0)
             set_text(sh, txt, bold=bold)
