@@ -207,7 +207,9 @@ def suggest(var: str, v: str) -> str:
         if s in ("NORMAL EKG", "NORMAL", "SINUS RHYTHM", "NORMAL SINUS RHYTHM", "SINUS RITME", "SINUS RITMIK",
                  "NORMAL ECG", "DALAM BATAS NORMAL", "SINUS RHYTHM, NORMAL EKG"):
             return "Normal"
-        if "MENOLAK" in s or "TIDAK DILAKUKAN" in s or "TIDAK LAYAK" in s:  # unreadable tracing = not assessed
+        if "TIDAK LAYAK" in s:  # unreadable tracing keeps its own name (Vidya 2026-11-10)
+            return "Tidak layak baca"
+        if "MENOLAK" in s or "TIDAK DILAKUKAN" in s:
             return "Tidak diperiksa"
         return "Ada temuan"
     if var == "audio_kesimpulan":
@@ -397,6 +399,26 @@ class Builder:
             ni = col_index(name_l) - 1
             self.rows = [r for r in self.rows if xl_trim(self.raw(r, ni)) != ""]
         self.N = len(self.rows)
+        self.otg = spec.get("obesitas_tanpa_grade") or {}
+        self.lp_auto = self.waist_fallback()
+
+    def waist_fallback(self) -> bool:
+        """Vendor first; but when the vendor interpreted nobody's waist (0 workers with its finding) while LP values exist,
+        use the WHO Asia-Pacific cutoffs (Vidya 2026-11-10, PT. SKP)."""
+        c = self.cutoff
+        if "lp" not in self.cols or c["lp_l"].get("dasar") != "vendor":
+            return False
+        tmap = {t["key"]: t for t in self.temuan}
+        keys = [k for k in c["lp_l"].get("temuan_vendor", []) if k in tmap]
+        if any(flag(tmap[k], self.rv(r, "kesimpulan")) for r in self.rows for k in keys):
+            return False
+        if not any(is_num(self.rv(r, "lp")) for r in self.rows):
+            return False
+        for k in ("lp_l", "lp_p"):
+            c[k]["dasar"] = "cutoff"
+            c[k]["sumber"] = ("OTOMATIS: vendor tidak menafsirkan lingkar perut (0 pekerja dengan temuan obesitas sentral), "
+                              "jadi dipakai cutoff WHO Asia-Pasifik / IDF 2005: laki-laki >=90 cm, perempuan >=80 cm (Vidya 2026-11-10).")
+        return True
 
     def raw(self, r, idx):
         row = self.raw_rows.get(r, [])
@@ -645,14 +667,57 @@ class Builder:
         K = C.get("kesimpulan")
         if not K:
             sys.exit("Kolom kesimpulan tidak ada di MAP: temuan tidak bisa dihitung.")
+        def kwr(key, col0, n):
+            dr = self.trow[key]
+            return f"DICT_TEMUAN!${CL(col0)}${dr}:${CL(col0 + n - 1)}${dr}"
+
+        def hits(rng, r):
+            return f'SUMPRODUCT(ISNUMBER(SEARCH({rng},TRIM(RAW!${K}{r})&" "))*({rng}<>""))'
+
+        tmap = {t["key"]: t for t in self.temuan}
+        lp_cut = self.cutoff["lp_l"].get("dasar") == "cutoff" and "lp" in C and "jk" in self.pcol
+        imt_rule = self.otg.get("imt", {}) if ("imt" in C and all(k in tmap for k in ("obes1", "obes2"))) else {}
+        jL = self.pcol.get("jk")
+
+        def extra(t):
+            """Extra (formula, value) conditions beyond the keywords, or None."""
+            key = t["key"]
+            if key == "obes_sentral" and lp_cut:
+                c_l, c_p = (f"DICT_CUTOFF!$D${self.crow[k]}" for k in ("lp_l", "lp_p"))
+                v_l, v_p = self.cutoff["lp_l"]["nilai"], self.cutoff["lp_p"]["nilai"]
+
+                def fv(r):
+                    lp, jk = self.rv(r, "lp"), self.pval["jk"][r]
+                    return is_num(lp) and ((jk == "Laki-laki" and lp >= v_l) or (jk == "Perempuan" and lp >= v_p))
+                return (lambda r: f'AND(ISNUMBER({ref("lp", r)}),OR(AND({jL}{r}="Laki-laki",{ref("lp", r)}>={c_l}),'
+                                  f'AND({jL}{r}="Perempuan",{ref("lp", r)}>={c_p})))'), fv
+            if key in imt_rule:
+                lo, hi = imt_rule[key]
+                gen = "{" + ",".join(q(w) for w in self.otg["kata"]) + "}"
+                n1, n2 = kwr("obes1", 6, N_KATA), kwr("obes2", 6, N_KATA)
+                words = [w.lower() for w in self.otg["kata"]]
+                numbered = [w.lower() for k in ("obes1", "obes2") for w in tmap[k]["kata"] if w]
+
+                def fv(r):
+                    s = xl_trim(self.rv(r, "kesimpulan")).lower() + " "
+                    imt = self.rv(r, "imt")
+                    return (any(w in s for w in words) and not any(w in s for w in numbered) and is_num(imt)
+                            and imt >= lo and (hi is None or imt < hi))
+                return (lambda r: f'AND(SUMPRODUCT(--ISNUMBER(SEARCH({gen},TRIM(RAW!${K}{r})&" ")))>0,{hits(n1, r)}+{hits(n2, r)}=0,'
+                                  f'ISNUMBER({ref("imt", r)}),{ref("imt", r)}>={lo}' + (f',{ref("imt", r)}<{hi}' if hi else "") + ")"), fv
+            return None
+
         for t in self.temuan:
-            dr = self.trow[t["key"]]
-            kw = f"DICT_TEMUAN!${CL(6)}${dr}:${CL(5 + N_KATA)}${dr}"
-            ex = f"DICT_TEMUAN!${CL(6 + N_KATA)}${dr}:${CL(5 + N_KATA + N_KECUALI)}${dr}"
-            add("t_" + t["key"], t["label"],
-                lambda r, kw=kw, ex=ex: (f'=IF(AND(SUMPRODUCT(ISNUMBER(SEARCH({kw},TRIM(RAW!${K}{r})&" "))*({kw}<>""))>0,'
-                                         f'SUMPRODUCT(ISNUMBER(SEARCH({ex},TRIM(RAW!${K}{r})&" "))*({ex}<>""))=0),1,0)'),
-                lambda r, t=t: flag(t, self.rv(r, "kesimpulan")))
+            kw, ex = kwr(t["key"], 6, N_KATA), kwr(t["key"], 6 + N_KATA, N_KECUALI)
+            base = lambda r, kw=kw, ex=ex: f"AND({hits(kw, r)}>0,{hits(ex, r)}=0)"  # noqa: E731
+            ext = extra(t)
+            if ext:
+                fx, vx = ext
+                add("t_" + t["key"], t["label"], lambda r, base=base, fx=fx: f"=IF(OR({base(r)},{fx(r)}),1,0)",
+                    lambda r, t=t, vx=vx: int(bool(flag(t, self.rv(r, "kesimpulan")) or vx(r))))
+            else:
+                add("t_" + t["key"], t["label"], lambda r, base=base: f"=IF({base(r)},1,0)",
+                    lambda r, t=t: flag(t, self.rv(r, "kesimpulan")))
         # any finding per topic
         topics = list(OrderedDict.fromkeys(t["topik"] for t in self.temuan))
         self.topics = topics
@@ -702,7 +767,9 @@ class Builder:
                 if self.cutoff["lp_l"].get("dasar") == "vendor":
                     return self.vendor_flag("lp_l", r)
                 return int(lp >= (v_l if jk == "Laki-laki" else v_p))
-            add("ab3", "Abnormal 3: lingkar perut",
+            lp_head = ("Abnormal 3: lingkar perut (interpretasi vendor)" if self.cutoff["lp_l"].get("dasar") == "vendor" else
+                       f"Abnormal 3: lingkar perut abnormal (cutoff L >= {v_l} / P >= {v_p} cm, DICT_CUTOFF)")
+            add("ab3", lp_head,
                 lambda r: (f'=IF(AND(ISNUMBER({ref("lp", r)}),OR({jL}{r}="Laki-laki",{jL}{r}="Perempuan")),'
                            f'IF({m_l}="vendor",IF({f_l(r)}>0,1,0),'
                            f'IF({ref("lp", r)}>=IF({jL}{r}="Laki-laki",{c_l},{c_p}),1,0)),"")'), ab3_v)
@@ -1299,6 +1366,9 @@ def main():
     if b.bersih:
         print("Bersih : " + "; ".join(f"{v}: {o} -> {n}" for v, o, n, _ in b.bersih))
     print(f"Judul  : {b.judul_fitness}")
+    lp = b.cutoff["lp_l"]
+    print(f"LP     : {lp.get('dasar')} {'(otomatis: vendor tidak menafsirkan lingkar perut)' if b.lp_auto else ''}"
+          + (f" L>={lp['nilai']} / P>={b.cutoff['lp_p']['nilai']} cm" if lp.get("dasar") == "cutoff" else ""))
     nc = {v: sum(1 for r in b.rows if b.pval[v][r] == NOT_CAT) for v in b.nmap if v in b.pval}
     if any(nc.values()):
         print("Belum dikategorikan: " + ", ".join(f"{k} {n}" for k, n in nc.items() if n))

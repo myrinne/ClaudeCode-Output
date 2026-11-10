@@ -50,6 +50,7 @@ BOLD = Font(bold=True)
 PCT = "0.0%"
 NO_DATA = "Tidak ada data"
 HELPER_COL = 30  # helper tables start in column AD, away from the readable area
+OTG = json.loads((Path(__file__).resolve().parent / "temuan_standar.json").read_text(encoding="utf-8")).get("obesitas_tanpa_grade") or {}
 
 
 def q(s) -> str:
@@ -122,7 +123,25 @@ class F:
     def flag(self, key):
         t = self.t[key]
         h = self.hit(t["kata"]) if t["kata"] else "0"
-        return f"({h}*(1-{self.hit(t['kecuali'])}))" if t["kecuali"] else h
+        h = f"({h}*(1-{self.hit(t['kecuali'])}))" if t["kecuali"] else h
+        ext = self.extra(key)
+        return f"--(({h})+({ext})>0)" if ext else h
+
+    def extra(self, key):
+        """Same extra conditions as mcu_summary: waist cutoff for central obesity, IMT grade when the vendor wrote none."""
+        c = self.cutoff
+        if key == "obes_sentral" and c.get("lp_l", {}).get("dasar") == "cutoff" and "lp" in self.cols and "jk" in self.cols:
+            R = self.R("lp")
+            male, fem = f"--{self.cat('jk', 'Laki-laki')}", f"--{self.cat('jk', 'Perempuan')}"
+            return (f"IFERROR(--ISNUMBER({R})*(({male})*--({R}>={c['lp_l']['nilai']})+({fem})*--({R}>={c['lp_p']['nilai']})),0)")
+        rule = (OTG.get("imt") or {}).get(key)
+        if rule and "imt" in self.cols and all(k in self.t for k in ("obes1", "obes2")):
+            lo, hi = rule
+            I = self.R("imt")
+            imt = f"IFERROR(--ISNUMBER({I})*--({I}>={lo})" + (f"*--({I}<{hi})" if hi else "") + ",0)"
+            num = self.hit(self.t["obes1"]["kata"] + self.t["obes2"]["kata"])
+            return f"{self.hit(OTG['kata'])}*(1-{num})*{imt}"
+        return None
 
     def any_flag(self, keys):
         return "--((" + "+".join(f"({self.flag(k)})" for k in keys) + ")>0)"
