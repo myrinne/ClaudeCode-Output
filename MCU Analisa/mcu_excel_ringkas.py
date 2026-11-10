@@ -41,7 +41,7 @@ from openpyxl.worksheet.formula import ArrayFormula
 from openpyxl.utils import get_column_letter as CL
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from mcu_ppt import SOFFICE, Summary  # noqa: E402
+from mcu_ppt import SOFFICE, Summary, untuk_pembaca  # noqa: E402
 from mcu_summary import KOMB, PAK_KOSONG, as_date, date_pattern, read_map, xl_serial, xl_uf  # noqa: E402
 
 TEAL, DARK, SAND = "307F7F", "112929", "D1B984"
@@ -50,6 +50,7 @@ BOLD = Font(bold=True)
 PCT = "0.0%"
 NO_DATA = "Tidak ada data"
 HELPER_COL = 30  # helper tables start in column AD, away from the readable area
+ZERO_COL = 200   # GR:GS, beyond the AD+ helper matrix (one column per finding): per chart, the rows whose value is not 0
 OTG = json.loads((Path(__file__).resolve().parent / "temuan_standar.json").read_text(encoding="utf-8")).get("obesitas_tanpa_grade") or {}
 
 
@@ -268,6 +269,7 @@ class Ringkasan:
         return c
 
     def title(self, text, note=None):
+        text, note = untuk_pembaca(text), (untuk_pembaca(note) if note else note)  # read by the vendor
         self.r += 1
         self.ws.cell(row=self.r, column=1, value=text).font = BOLD
         if note:
@@ -282,11 +284,30 @@ class Ringkasan:
         for j, v in enumerate(values):
             self.ws.cell(row=row, column=start + j, value=v).font = BOLD
 
+    def chart_rows(self, first, last, cat_col, val_col):
+        """Rows a chart shows: zero values left out (Vidya 2026-11-10). When some are zero, the chart reads a formula
+        list of the other rows in columns BH:BI (outside the print area); returns (first, last, cat_col, val_col)."""
+        keep = []
+        for rr in range(first, last + 1):
+            addr = self.expected.get((rr, val_col))
+            v = self.S.cell(addr) if addr else None
+            if v not in (0, 0.0):
+                keep.append(rr)
+        if len(keep) == last - first + 1 or not keep:
+            return first, last, cat_col, val_col
+        for i, rr in enumerate(keep):
+            if any(self.ws.cell(row=first + i, column=ZERO_COL + j).value is not None for j in (0, 1)):
+                sys.exit(f"Ringkasan: kolom {CL(ZERO_COL)} baris {first + i} sudah terisi; geser ZERO_COL.")
+            self.ws.cell(row=first + i, column=ZERO_COL, value=f"={CL(cat_col)}{rr}")
+            self.ws.cell(row=first + i, column=ZERO_COL + 1, value=f"={CL(val_col)}{rr}").number_format = "0"
+        return first, first + len(keep) - 1, ZERO_COL, ZERO_COL + 1
+
     def bar(self, first, last, title, anchor_row, cat_col=2, val_col=3):
+        first, last, cat_col, val_col = self.chart_rows(first, last, cat_col, val_col)
         ch = BarChart()
         ch.type = "bar"
         ch.style = 10
-        ch.title = title
+        ch.title = untuk_pembaca(title)
         ch.legend = None
         ch.add_data(Reference(self.ws, min_col=val_col, min_row=first, max_row=last), titles_from_data=False)
         ch.set_categories(Reference(self.ws, min_col=cat_col, min_row=first, max_row=last))
@@ -307,11 +328,12 @@ class Ringkasan:
         return int(ch.height / 0.5) + 1
 
     def doughnut(self, first, last, title, anchor_row):
+        first, last, cat_col, val_col = self.chart_rows(first, last, 2, 3)
         ch = DoughnutChart()
-        ch.title = title
+        ch.title = untuk_pembaca(title)
         ch.holeSize = 55
-        ch.add_data(Reference(self.ws, min_col=3, min_row=first, max_row=last), titles_from_data=False)
-        ch.set_categories(Reference(self.ws, min_col=2, min_row=first, max_row=last))
+        ch.add_data(Reference(self.ws, min_col=val_col, min_row=first, max_row=last), titles_from_data=False)
+        ch.set_categories(Reference(self.ws, min_col=cat_col, min_row=first, max_row=last))
         s = ch.series[0]
         for i in range(last - first + 1):
             pt = DataPoint(idx=i)
@@ -407,15 +429,15 @@ class Ringkasan:
             rows = [(lab, f"=C{rr}", self.pct_n, None) for lab, rr in hab]
             self.simple("Kebiasaan pekerja (ringkasan, seperti grafik di PPT)", rows, "bar", header=("No", "Kebiasaan", "Jumlah", "%"))
         jf = S.meta.get("judul_fitness", "Status kelaikan kerja")
-        for key, var, ttl, ch in (("kelaikan_fitness", "fitness", f"{jf} (keputusan vendor)", "doughnut"),
-                                  ("kelaikan_risiko", "risiko", "Risiko kesehatan (keputusan vendor)", None),
-                                  ("pak_dugaan", "dugaan_pak", "Dugaan penyakit akibat kerja / PAK (kolom vendor, apa adanya)", None)):
+        for key, var, ttl, ch in (("kelaikan_fitness", "fitness", jf, "doughnut"),
+                                  ("kelaikan_risiko", "risiko", "Risiko kesehatan", None),
+                                  ("pak_dugaan", "dugaan_pak", "Dugaan penyakit akibat kerja (PAK)", None)):
             rows = [(r["B"], f.count(f.eq(var, r["B"])), self.pct_n, r["row"]) for r in self.blk(key)]
             if rows:
                 self.simple(ttl, rows, ch)
 
         # all findings (basis for top ten and topics) -------------------
-        self.title("Semua temuan dari Kesimpulan vendor (dasar Top Ten dan tabel per topik)")
+        self.title("Semua temuan (dasar Top Ten dan tabel per topik)")
         self.head(self.r, ["No", "Temuan", "Jumlah", "%", "Topik", "Ikut Top ten"])
         first = self.r + 1
         srows = {r["B"]: r["row"] for r in self.blk("semua_temuan")}
@@ -487,7 +509,7 @@ class Ringkasan:
 
         # topics --------------------------------------------------------
         order = [("Profil lemak", "Gangguan metabolisme lemak"), ("Status gizi", "Status gizi"), ("Tekanan darah", "Tekanan darah"),
-                 ("Fungsi paru", "Fungsi pernapasan (kesimpulan spirometri vendor)"), ("Asam urat", "Metabolisme asam urat"),
+                 ("Fungsi paru", "Fungsi pernapasan (kesimpulan spirometri)"), ("Asam urat", "Metabolisme asam urat"),
                  ("Fungsi hati", "Peningkatan enzim transaminase"), ("Gigi", "Kelainan gigi"), ("Tajam penglihatan", "Gangguan tajam penglihatan")]
         for tp, ttl in order:
             if tp == "Fungsi paru" and S.meta["blok"].get("S11b_spiro_kesimpulan") and "spiro_kesimpulan" in self.cols:
