@@ -9,7 +9,8 @@
    "kata": [
     "pre-hipertensi",
     "prehipertensi",
-    "pre hipertensi"
+    "pre hipertensi",
+    "pre-hipertens"
    ]
   },
   {
@@ -202,7 +203,8 @@
     "diabetes mel",
     "diabetes mellitus",
     "dugaan dm",
-    "suspek dm"
+    "suspek dm",
+    "kesan diabetes"
    ],
    "kecuali": [
     "pre-diabetes",
@@ -218,7 +220,8 @@
    "kata": [
     "peningkatan kadar hba1c",
     "peningkatan hba1c",
-    "hba1c meningkat"
+    "hba1c meningkat",
+    "peningkatan nilai hba1c"
    ]
   },
   {
@@ -256,7 +259,9 @@
     "gangguan fungsi hati",
     "peningkatan enzim hati",
     "alt ",
-    "ast "
+    "ast ",
+    "bilirubin",
+    "fugnsi hati"
    ]
   },
   {
@@ -313,7 +318,8 @@
    "top_ten": true,
    "kata": [
     "peningkatan led",
-    "peningkatan laju endap"
+    "peningkatan laju endap",
+    "nilai led"
    ]
   },
   {
@@ -322,7 +328,8 @@
    "topik": "Hematologi",
    "top_ten": true,
    "kata": [
-    "eosinofilia"
+    "eosinofilia",
+    "peningkatan eosinofil"
    ]
   },
   {
@@ -331,7 +338,19 @@
    "topik": "Hematologi",
    "top_ten": true,
    "kata": [
-    "trombositosis"
+    "trombositosis",
+    "peningkatan trombosit"
+   ]
+  },
+  {
+   "key": "trombositopenia",
+   "label": "Trombositopenia",
+   "topik": "Hematologi",
+   "top_ten": true,
+   "kata": [
+    "trombositopenia",
+    "penurunan kadar trombosit",
+    "penurunan trombosit"
    ]
   },
   {
@@ -352,7 +371,8 @@
    "top_ten": true,
    "kata": [
     "proteinuria",
-    "albuminuria"
+    "albuminuria",
+    "ditemukan protein"
    ]
   },
   {
@@ -374,7 +394,8 @@
    "kata": [
     "hematuria",
     "eritrosituria",
-    "ditemukan darah"
+    "ditemukan darah",
+    "ditemukan eritrosit"
    ],
    "kecuali": [
     "menstruasi",
@@ -392,7 +413,11 @@
     "infeksi saluran kemih",
     "dugaan isk",
     "ditemukan leukosit",
-    "leukosit di urin"
+    "leukosit di urin",
+    "ditemukan bakteri",
+    "kesan isk",
+    "lekositesterase",
+    "leukosit esterase"
    ]
   },
   {
@@ -406,7 +431,8 @@
     "kristal dalam urin",
     "kristal di urin",
     "kristal urat",
-    "kristal amorf"
+    "kristal amorf",
+    "kristal hyalin"
    ]
   },
   {
@@ -427,7 +453,8 @@
    "topik": "Tajam penglihatan",
    "top_ten": true,
    "kata": [
-    "kelainan refraksi"
+    "kelainan refraksi",
+    "kelaian refraksi"
    ]
   },
   {
@@ -449,7 +476,9 @@
     "hipermetrop",
     "hipemetrop",
     "hypermetrop",
-    "hiperopia"
+    "hiperopia",
+    "hipertmetrop",
+    "hiperemetrop"
    ]
   },
   {
@@ -493,6 +522,20 @@
    ]
   },
   {
+   "key": "buta_satu_mata",
+   "label": "Kebutaan satu mata",
+   "topik": "Tajam penglihatan",
+   "top_ten": true,
+   "kata": [
+    "buta mata kanan",
+    "buta mata kiri",
+    "kebutaan"
+   ],
+   "kecuali": [
+    "buta warna"
+   ]
+  },
+  {
    "key": "karies",
    "label": "Karies gigi",
    "topik": "Gigi",
@@ -530,7 +573,8 @@
    "top_ten": true,
    "kata": [
     "gigi hilang",
-    "missing"
+    "missing",
+    "avulsi"
    ]
   },
   {
@@ -552,6 +596,17 @@
    "top_ten": true,
    "kata": [
     "serumen"
+   ]
+  },
+  {
+   "key": "liang_telinga",
+   "label": "Kelainan liang telinga (lapisan putih / edema MAE)",
+   "topik": "THT",
+   "top_ten": true,
+   "kata": [
+    "menutupi mae",
+    "otitis eksterna",
+    "otomikosis"
    ]
   },
   {
@@ -586,7 +641,9 @@
     "restriksi",
     "restriktif",
     "restriction",
-    "restrictive"
+    "restrictive",
+    "rerstriction",
+    "retriksi"
    ]
   },
   {
@@ -597,7 +654,9 @@
    "kata": [
     "obstruksi",
     "obstruktif",
-    "obstructive"
+    "obstructive",
+    "obstruction",
+    "osbtruksi"
    ]
   },
   {
@@ -643,7 +702,9 @@
    "topik": "Rontgen thorax",
    "top_ten": true,
    "kata": [
-    "efusi pleura"
+    "efusi pleura",
+    "efusi dd",
+    "penebalan pleura"
    ]
   },
   {
@@ -653,7 +714,8 @@
    "top_ten": true,
    "kata": [
     "fracture",
-    "fraktur"
+    "fraktur",
+    "fiksasi internal"
    ]
   },
   {
@@ -684,6 +746,35 @@
    ]
   },
   {
+   "key": "ro_lain2",
+   "label": "Kelainan rontgen lain (bronkitis, deviasi trakea)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "bronchitis",
+    "bronkitis",
+    "deviasi trachea",
+    "deviasi trakea"
+   ]
+  },
+  {
+   "key": "ro_lain3",
+   "label": "Kelainan rontgen lain (bronkiektasis, kalsifikasi, spondilosis, deformitas kosta)",
+   "topik": "Rontgen thorax",
+   "top_ten": true,
+   "kata": [
+    "bronchiectasis",
+    "bronkiektasis",
+    "destroyed lung",
+    "kalsifikasi",
+    "spondylosis",
+    "spondilosis",
+    "deformity costa",
+    "deviasi ringan airway",
+    "deviasi airway"
+   ]
+  },
+  {
    "key": "sinus_aritmia",
    "label": "Sinus aritmia (EKG)",
    "topik": "EKG",
@@ -693,7 +784,8 @@
     "sinus arrhythmia",
     "sinus arrythmia",
     "bradi arrhythmia",
-    "bradi arrhytmia"
+    "bradi arrhytmia",
+    "arhhythmia"
    ]
   },
   {
@@ -742,7 +834,8 @@
     "old myocardial",
     "old mi",
     "infarct",
-    "infark"
+    "infark",
+    "wellen"
    ]
   },
   {
@@ -760,7 +853,9 @@
    "topik": "EKG",
    "top_ten": true,
    "kata": [
-    "poor r wave"
+    "poor r wave",
+    "prwp",
+    "poor r wave progretion"
    ]
   },
   {
@@ -770,7 +865,9 @@
    "top_ten": true,
    "kata": [
     "av block",
-    "blok av"
+    "blok av",
+    "av blok",
+    "avb "
    ]
   },
   {
@@ -797,7 +894,8 @@
     "lvh",
     "left ventricular hypertrophy",
     "ventricular hyperthropy",
-    "ventricular hypertrophy"
+    "ventricular hypertrophy",
+    "left ventricle hypertrophy"
    ]
   },
   {
@@ -876,6 +974,23 @@
    ]
   },
   {
+   "key": "ekg_lain2",
+   "label": "Kelainan EKG lain (WPW, low voltage, RVH, QT panjang, PR pendek, VES)",
+   "topik": "EKG",
+   "top_ten": true,
+   "kata": [
+    "wpw",
+    "low voltage",
+    "rvh",
+    "right ventricular hypertrophy",
+    "prolonged qt",
+    "t inversi",
+    "short pr",
+    "low atrial",
+    "ves occ"
+   ]
+  },
+  {
    "key": "hnp",
    "label": "Dugaan HNP lumbal",
    "topik": "Muskuloskeletal",
@@ -925,7 +1040,8 @@
     "tinea",
     "eksim",
     "kelainan kulit",
-    "skabies"
+    "skabies",
+    "folikulitis"
    ]
   },
   {
@@ -945,6 +1061,37 @@
    "top_ten": true,
    "kata": [
     "nyeri dada"
+   ]
+  },
+  {
+   "key": "dehidrasi",
+   "label": "Kesan dehidrasi / curiga AKI",
+   "topik": "Lain-lain",
+   "top_ten": true,
+   "kata": [
+    "dehidrasi",
+    "curiga aki"
+   ]
+  },
+  {
+   "key": "cts",
+   "label": "Kesan carpal tunnel syndrome",
+   "topik": "Lain-lain",
+   "top_ten": true,
+   "kata": [
+    "kesan cts",
+    "carpal tunnel"
+   ]
+  },
+  {
+   "key": "ulkus_mulut",
+   "label": "Ulkus rongga mulut / lidah",
+   "topik": "Lain-lain",
+   "top_ten": true,
+   "kata": [
+    "ulcer",
+    "ulkus",
+    "stomatitis"
    ]
   },
   {
@@ -1016,8 +1163,8 @@
    "label": "Lingkar perut laki-laki (cm)",
    "operator": ">=",
    "nilai": 90,
-   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, laki-laki >=90 cm. Ganti bila perusahaan punya acuan.",
-   "dasar": "vendor",
+   "sumber": "DEFAULT: WHO Asia-Pasifik / IDF 2005, laki-laki >=90 cm, perempuan >=80 cm; dipakai walaupun vendor menulis obesitas sentral untuk sebagian pekerja (Vidya 2026-11-10, PT. KED/SAP). Ganti bila perusahaan punya acuan.",
+   "dasar": "cutoff",
    "temuan_vendor": [
     "obes_sentral"
    ]
@@ -1027,8 +1174,8 @@
    "label": "Lingkar perut perempuan (cm)",
    "operator": ">=",
    "nilai": 80,
-   "sumber": "DEFAULT: IDF 2005 / WHO Asia-Pasifik, perempuan >=80 cm. Ganti bila perusahaan punya acuan.",
-   "dasar": "vendor",
+   "sumber": "DEFAULT: WHO Asia-Pasifik / IDF 2005, laki-laki >=90 cm, perempuan >=80 cm; dipakai walaupun vendor menulis obesitas sentral untuk sebagian pekerja (Vidya 2026-11-10, PT. KED/SAP). Ganti bila perusahaan punya acuan.",
+   "dasar": "cutoff",
    "temuan_vendor": [
     "obes_sentral"
    ]
@@ -1059,7 +1206,34 @@
    "^ekg\\s*:?$",
    "^(segera )?konsultasi\\b",
    "^(dan )?(lemas|keringat dingin|sesak napas|pucat)$",
-   "^healed post primer infeksi$"
+   "^healed post primer infeksi$",
+   "penurunan (kadar |nilai )?(kreatinin|ureum)",
+   "(reaksi|respon|respo) imun",
+   "neutrofil",
+   "limfosit",
+   "^(laboratorium|darah|leukosit|rontgen)\\s*:?$",
+   "tidak (dilakukan|dapat membaca|dapat diidentifikasi)",
+   "^ekg\\s*:?\\s*(sinus rhy[a-z]*|possible lead reversal)$",
+   "^sinus rhy[a-z]*$",
+   "hamil",
+   "riw(ayat)? hipertensi",
+   "ketoas",
+   "post op",
+   "daam batas normal|dalam batas normal",
+   "pulmo normal",
+   "tak tampak lesi aktif",
+   "healed post primer",
+   "penurunan hematokrit",
+   "urin (agak )?keruh$|warna agak keruh",
+   "kenaikan nilai bilirubin tanpa gejala",
+   "hematokrit",
+   "^(pertimbangkan|konsumsi|cek ulang|diet gizi|hindari|target penurunan|modifikasi gaya)",
+   "^5(-1)? (g|kg) per",
+   "apposition",
+   "agak keruh$",
+   "^hr \\d+ ?bpm$",
+   "^ekg\\s*:?\\s*susp\\.?$",
+   "^hba1c$"
   ]
  },
  "_aturan_cutoff": "Interpretasi vendor dipakai bila ada; cutoff hanya untuk parameter yang tidak ditafsirkan vendor (Vidya 2026-11-08).",
@@ -1082,5 +1256,5 @@
    ]
   }
  },
- "_aturan_lingkar_perut": "Lingkar perut: interpretasi vendor (temuan obes_sentral) bila vendor menafsirkannya; bila tidak ada satu pun pekerja dengan temuan itu tetapi angka LP ada, otomatis cutoff Asia-Pasifik L>=90 / P>=80 cm, dan temuan Obesitas sentral ikut cutoff itu (Vidya 2026-11-10, PT. SKP)."
+ "_aturan_lingkar_perut": "Lingkar perut: default cutoff Asia-Pasifik L>=90 / P>=80 cm (Vidya 2026-11-10, KED/SAP); temuan Obesitas sentral = kata kunci vendor ATAU LP di atas cutoff. Workbook lama (PPS/WKP) menyimpan 'vendor' di DICT_CUTOFF."
 }

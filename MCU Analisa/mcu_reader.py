@@ -426,7 +426,8 @@ def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results
         g.cell(row=rr + 2, column=gcol, value="Cek total = jumlah pekerja")
         g.cell(row=rr + 2, column=gcol + 1,
                value=f'=IF({col_letter(gcol + 1)}{rr}=MAP!$B$5,"OK","TIDAK SAMA")')
-        expected[("GRUP", rr + 2, gcol + 1)] = "OK"
+        # rows without a name (e.g. an empty first data row, PT. KED) make this honestly say TIDAK SAMA
+        expected[("GRUP", rr + 2, gcol + 1)] = "OK" if n_rows == n_rows_named(main, results, first, last) else "TIDAK SAMA"
         g.column_dimensions[col_letter(gcol)].width = 34
         g.column_dimensions[col_letter(gcol + 1)].width = 14
         if same:
