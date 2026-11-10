@@ -25,6 +25,7 @@ formula result with an independent Python count. It must report 0 differences.
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import difflib
 import json
 import re
@@ -347,7 +348,8 @@ def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results
                 m.cell(row=r, column=11, value=f"=RAW!{L}{ex_row}")
             vals = [main["rows"][i - 1][c["idx"]] for i in range(first, last + 1)]
             expected[("MAP", r, 9)] = sum(1 for v in vals if not is_blank(v) and str(v).strip() != "-")
-            expected[("MAP", r, 10)] = sum(1 for v in vals if isinstance(v, (int, float)) and not isinstance(v, bool))
+            # COUNT also counts Excel dates (e.g. visus "6/6" that Excel turned into 6 June)
+            expected[("MAP", r, 10)] = sum(1 for v in vals if isinstance(v, (int, float, dt.date)) and not isinstance(v, bool))
         if key in overrides:
             m.cell(row=r, column=12, value=overrides[key]).fill = FILL["KOREKSI"]
         r += 1

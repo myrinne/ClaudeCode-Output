@@ -23,7 +23,8 @@
     {"key": "kesimpulan", "label": "Kesimpulan (vendor)", "grup": "Keputusan vendor", "alias": ["kesimpulan"], "ke": 1},
     {"key": "saran", "label": "Saran (vendor)", "grup": "Keputusan vendor", "alias": ["saran"], "ke": 1, "urutan_dikonfirmasi": "Saran utama = kemunculan pertama (bukan Saran EKG), Vidya 2026-11-08"},
     {"key": "risiko", "label": "Risiko kesehatan (vendor)", "grup": "Keputusan vendor", "alias": ["risiko kesehatan", "risiko"]},
-    {"key": "fitness", "label": "Status kelaikan / fitness (vendor)", "grup": "Keputusan vendor", "alias": ["medical fitness status", "fitness status", "status kelaikan", "kelaikan kerja", "kesimpulan kelaikan"]},
+    {"key": "fitness", "label": "Status kelaikan / fitness (vendor)", "grup": "Keputusan vendor", "alias": ["medical fitness status", "fitness status", "status kelaikan", "kelaikan kerja", "kesimpulan kelaikan", "status akhir"], "_status_akhir": "Header vendor 'Status Akhir' (Baik/Sedang/Kurang, PT. SKP) dilaporkan dengan judul Status Akhir, bukan kelaikan/Fit-Unfit (Vidya 2026-11-10)"},
+    {"key": "dugaan_pak", "label": "Dugaan penyakit akibat kerja / PAK (vendor)", "grup": "Keputusan vendor", "alias": ["dugaan penyakit akibat kerja pak", "dugaan penyakit akibat kerja", "dugaan pak"]},
 
     {"key": "sbp", "label": "TD sistolik (mmHg)", "grup": "Tanda vital & antropometri", "alias": ["sistole", "sistolik", "td sistolik", "sistol"]},
     {"key": "dbp", "label": "TD diastolik (mmHg)", "grup": "Tanda vital & antropometri", "alias": ["diastolik", "diastole", "td diastolik", "diastol"]},

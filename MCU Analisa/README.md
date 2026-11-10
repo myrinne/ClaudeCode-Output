@@ -13,7 +13,7 @@ Patokan: PT. PPS dan PT. WKP (MCU Nov 2026). Setiap analisa MCU perusahaan dijal
 1. **Langkah 1** `mcu_reader.py --cek` → kirim MAP yang masih CEK/TIDAK ADA untuk dikonfirmasi (terutama Departemen vs Bagian, mana kolom grup).
 2. **Tanya: perlu pembersihan data?** Kalau tidak, nilai dan cutoff vendor dipakai apa adanya.
 3. **Langkah 2** `mcu_summary.py --grup ... --cek` → `Jumlah BEDA` harus 0. Potongan Kesimpulan yang tidak cocok: saya tafsirkan dulu dan usulkan pemetaan, bukan hanya didaftar.
-4. **Langkah 3** `mcu_ppt.py --template "...\Untitled design.pptx" --aset "...\Aset edukasi"` → 0 masalah.
+4. **Langkah 3** `mcu_ppt.py --template "...\Untitled design.pptx"` (atau `Untitled design (1).pptx`) `--aset "...\Aset edukasi"` → 0 masalah, lalu render dan periksa visual setiap slide.
 5. **Langkah 4** `mcu_excel_ringkas.py` lalu `--cek-excel` (Excel tersembunyi) sebelum dikirim.
 
 Hasil wajib (3 file): `Analisa\<nama> - Analisa.xlsx`, `<file vendor> - dengan Ringkasan.xlsx`, `Analisa\<nama> - Laporan MCU.pptx`.
@@ -22,6 +22,10 @@ Aturan tetap:
 - Cutoff: milik perusahaan dulu; protokol interpretasi hanya bila perusahaan tidak punya; tanpa keduanya default NCEP/ADA/WHO/JNC 7. Interpretasi vendor (Kesimpulan, kelaikan, risiko, Saran) dipakai apa adanya; cutoff hanya untuk parameter yang tidak diinterpretasi vendor (mis. TG/HDL).
 - Vendor dengan nama header lain: tambah ke `alias` di `variabel_standar.json`, bukan ubah kode.
 - Tampilan deck sudah mengikuti editan tangan pada deck PPS (PR #88): judul "Ringkasan", "TOP 10 PENYAKIT DAN TEMUAN", tanpa baris profil perusahaan, slide kebiasaan label/angka, subjudul kombinasi, ukuran kotak rekomendasi, gambar HRA dari folder aset (`hra_gambar`), slide Overview Program Wellness.
+- Label grup memakai nama kolom vendor apa adanya ("Departemen" walaupun isinya jabatan). Bila vendor menulis "Status Akhir" (Baik/Sedang/Kurang), slide dan Ringkasan memakai judul **Status Akhir**, bukan kelaikan/Fit-Unfit. Kolom "Dugaan PAK" selalu dapat slide sendiri (PT. SKP, 2026-11-10).
+- Pembersihan kecil (salah ketik grup, tanggal yang diubah Excel) lewat `--bersih VAR:ASLI=BERSIH#alasan` di Langkah 2; tercatat di sheet `DICT_BERSIH` dan ikut dipakai Ringkasan. "-" dibiarkan apa adanya.
+- Template: `Untitled design.pptx` (teal) atau `Untitled design (1).pptx` (biru tua-oranye); `mcu_ppt.py` memilih layout otomatis dari template yang diberikan (`mcu_ppt_navy.py` untuk yang biru tua). Isi dan pengecekan sama.
+- Selalu cek tanggal campuran: vendor kadang menyimpan sebagian baris sebagai tanggal Excel yang tertukar hari-bulan (SKP: 29 baris 10-07/10-08 = 7/8 Okt).
 - Bila deck yang sudah dikirim diedit tangan: buat ulang deck di folder sementara, bandingkan dengan versi editan, masukkan perbedaannya ke `mcu_ppt.py`/`ppt_konten.json` sebagai default. File editan tidak pernah ditimpa; hanya disisipi slide bila diminta.
 - Aturan lengkap hat: vault `Identity/hats/mcu-data-analyst.md`; alasan dua Excel: vault `Projects/mcu-analisa-perusahaan.md`.
 

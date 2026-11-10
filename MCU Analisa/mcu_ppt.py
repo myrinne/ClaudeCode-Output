@@ -43,6 +43,7 @@ PALETTE = [TEAL, SAND, DARK, LTEAL, LSAND, "A3A3A3", "4F9A9A", "BFA36A"]
 FONT_MAP = {"Helios": "Arial", "Helios Bold": "Arial", "Neue Montreal Bold": "Arial Black", "Neue Montreal": "Arial"}
 TITLE_FONT, BODY_FONT = "Arial Black", "Arial"
 # template slide numbers (1-based) in Untitled design.pptx
+PAK_KOSONG = "Tidak diisi vendor"  # same label as mcu_summary.PAK_KOSONG
 T_COVER, T_TOC, T_ABOUT, T_CARDS, T_TABLE, T_SEGMENTS, T_ABOUT2, T_STRATEGY, T_TWOBOX, T_RISK, T_PLANS, T_THANKS = range(1, 13)
 
 
@@ -89,6 +90,12 @@ class Summary:
             wb.close()
         hi = next(i for i, r in enumerate(maprows) if r and r[0] == "Grup" and r[1] == "Kode variabel")
         self.labels = {r[1]: r[2] for r in maprows[hi + 1:] if r and r[1]}
+        # company name: RAW A1 unless that cell is a vendor section title (e.g. "IDENTITAS", PT. SKP); then the vendor file name
+        sections = {str(r[4]).strip().upper() for r in maprows[hi + 1:] if r and len(r) > 4 and r[4]}
+        a1 = str(self.raw_a1 or "").strip()
+        if not a1 or a1.upper() in sections:
+            a1 = Path(str(maprows[0][1] or "")).stem.strip() or a1
+        self.company = a1
         self.used: list[str] = []
 
     def cell(self, ref: str):
@@ -385,7 +392,7 @@ def add_bar(slide, cats, vals, x, y, w, h, title=None, color=TEAL, size=18, fill
     return gf
 
 
-def add_doughnut(slide, cats, vals, x, y, w, h, size=18, fill="FFFFFF"):
+def add_doughnut(slide, cats, vals, x, y, w, h, size=18, fill="FFFFFF", palette=None, text_color=DARK):
     data = CategoryChartData()
     data.categories = cats
     data.add_series("Jumlah pekerja", vals)
@@ -393,7 +400,7 @@ def add_doughnut(slide, cats, vals, x, y, w, h, size=18, fill="FFFFFF"):
     ch = gf.chart
     ch.font.name = BODY_FONT
     ch.font.size = Pt(size)
-    ch.font.color.rgb = RGBColor.from_string(DARK)
+    ch.font.color.rgb = RGBColor.from_string(text_color)
     ch.has_legend = True
     ch.legend.position = XL_LEGEND_POSITION.BOTTOM
     ch.legend.include_in_layout = False
@@ -411,7 +418,7 @@ def add_doughnut(slide, cats, vals, x, y, w, h, size=18, fill="FFFFFF"):
     dl.font.color.rgb = RGBColor.from_string("FFFFFF")
     for i, pt in enumerate(plot.series[0].points):
         pt.format.fill.solid()
-        pt.format.fill.fore_color.rgb = RGBColor.from_string(PALETTE[i % len(PALETTE)])
+        pt.format.fill.fore_color.rgb = RGBColor.from_string((palette or PALETTE)[i % len(palette or PALETTE)])
     dn = ch._chartSpace.find(".//" + qn("c:doughnutChart"))
     hs = dn.find(qn("c:holeSize"))
     if hs is None:
@@ -489,15 +496,21 @@ class Deck:
         self.checks: list[tuple[int, str]] = []      # (slide no, text that must appear)
         self.chart_checks: list[tuple[int, list]] = []
         self.N = summary.cell("C3")
+        self.company = summary.company or "Perusahaan"
+        self.judul_fit = summary.meta.get("judul_fitness", "Status kelaikan kerja")
+        self.setup_template()
+
+    def setup_template(self):
         # the template's only non-people photo (building, slide 7) replaces the people photos (Vidya 2026-11-08)
-        b7 = self.tpl[T_ABOUT2 - 1]
-        bl = shape_by_id(b7, 22)._element.find(".//" + qn("a:blip"))
-        self.building = b7.part.related_part(bl.get(qn("r:embed")))
+        self.use_building(self.tpl[T_ABOUT2 - 1], 22)
+
+    def use_building(self, slide, shape_id):
         from PIL import Image
         import io
+        bl = shape_by_id(slide, shape_id)._element.find(".//" + qn("a:blip"))
+        self.building = slide.part.related_part(bl.get(qn("r:embed")))
         w, h = Image.open(io.BytesIO(self.building.blob)).size
         self.building_aspect = w / h
-        self.company = str(summary.raw_a1 or "").strip() or "Perusahaan"
 
     def new(self, tno):
         self.S.used = []
@@ -511,6 +524,29 @@ class Deck:
 
     def expect(self, slide, text):
         self.checks.append((len(self.prs.slides) - self.n_orig, text))
+
+    def toc_items(self):
+        stat = self.judul_fit if self.judul_fit != "Status kelaikan kerja" else "Status Kelaikan Kerja"
+        if self.S.meta["blok"].get("pak_dugaan"):
+            stat += " & Dugaan PAK"  # the template has 10 TOC slots, all used
+        return [stat if x == "Status Kelaikan Kerja" else x for x in self.k["daftar_isi"]]
+
+    def kebiasaan(self, hab):
+        boxes = [f"{fmt_n(r['C'])} dari {fmt_n(self.N)} pekerja ({fmt_pct(r['D'])})" for lab, r, _ in hab]
+        s = self.new(T_TABLE)
+        set_title(shape_by_id(s, 13), "KEBIASAAN PEKERJA", 50)
+        tbl = next(sh for sh in s.shapes if sh.has_table)
+        tbl._element.getparent().remove(tbl._element)
+        add_bar(s, [f"{lab} ({fmt_pct(r['D'])})" for lab, r, _ in hab], [r["C"] for _, r, _ in hab], 1.2, 2.5, 10.0, 7.6,
+                title="Jumlah pekerja", size=17)
+        self.chart_checks.append((len(self.prs.slides) - self.n_orig, [r["C"] for _, r, _ in hab]))
+        paras = []
+        for (lab, _, _), b in zip(hab, boxes):  # label bold on its own line, number below, blank line between
+            paras += [[(f"{lab}: ", True)], [(b, False)], [("", False)]]
+        add_box(s, 11.8, 3.0, 7.2, 6.5, paras[:-1], 24)
+        for b in boxes:
+            self.expect(s, b)
+        self.done(s, "Kebiasaan pekerja")
 
     # ---------------------------------------------------------------- slides
     def cover(self):
@@ -551,7 +587,8 @@ class Deck:
         d1, d2 = self.S.periode()
         cards = [(fmt_n(self.N), f"peserta MCU\n{fmt_date(d1)} s/d {fmt_date(d2)}")]
         for r in fit[:2]:
-            cards.append((fmt_pct(r["D"]), f"{nice(r['B'])}\n({fmt_n(r['C'])} pekerja)"))
+            lab = nice(r["B"]) if self.judul_fit == "Status kelaikan kerja" else f"{self.judul_fit} {nice(r['B'])}"
+            cards.append((fmt_pct(r["D"]), f"{lab}\n({fmt_n(r['C'])} pekerja)"))
         if top:
             cards.append((fmt_pct(top[0]["D"]), f"temuan terbanyak:\n{top[0]['B']} ({fmt_n(top[0]['C'])} pekerja)"))
         boxes = [27, 45, 46, 28]
@@ -618,6 +655,21 @@ class Deck:
                     self.expect(s, str(v))
         self.done(s, title)
         return s
+
+    def pak(self):
+        """Vendor's 'Dugaan PAK' column, as written (Vidya 2026-11-10: always its own slide when the column exists)."""
+        rows = self.S.block("pak_dugaan")
+        if not rows:
+            return
+        filled = [r for r in rows if r["B"] != PAK_KOSONG]
+        body = [[r["A"], r["B"], fmt_n(r["C"]), fmt_pct(r["D"])] for r in rows]
+        if filled:
+            sub = f"Isi kolom Dugaan PAK dari vendor, apa adanya; % dari total peserta MCU (N = {fmt_n(self.N)})"
+        else:
+            sub = f"Kolom Dugaan PAK pada data vendor tidak diisi untuk seluruh {fmt_n(self.N)} peserta MCU"
+        self.table_slide("DUGAAN PENYAKIT AKIBAT KERJA (PAK)", ["No", "Dugaan PAK (vendor)", "Jumlah", "%"], body,
+                         [0.6, 6.0, 1.3, 1.3], x=1.5, y=3.2, w=16.8, row_h=0.66, hdr_pt=19, body_pt=19, subtitle=sub)
+        self.expect(self.prs.slides[-1], sub)
 
     def topik(self, cfg):
         tp = cfg["topik"]
@@ -782,7 +834,7 @@ class Deck:
         S = self.S
         groups = [(k, S.block(f"S5_{k}_top3")) for k, _ in S.meta["grup"]]
         self.cover()
-        self.toc(self.k["daftar_isi"])
+        self.toc(self.toc_items())
         self.profil([(k, [r for r in S.block(f"S5_{k}_semua_grup")]) for k, _ in S.meta["grup"]])
         self.ringkasan()
         # demographics
@@ -804,30 +856,17 @@ class Deck:
                 nd = next((x for x in blk if x["B"] == "Tidak ada data"), None)
                 hab.append((lab, r, nd))
         if hab:
-            boxes = [f"{fmt_n(r['C'])} dari {fmt_n(self.N)} pekerja ({fmt_pct(r['D'])})" for lab, r, _ in hab]
-            s = self.new(T_TABLE)
-            set_title(shape_by_id(s, 13), "KEBIASAAN PEKERJA", 50)
-            tbl = next(sh for sh in s.shapes if sh.has_table)
-            tbl._element.getparent().remove(tbl._element)
-            add_bar(s, [f"{lab} ({fmt_pct(r['D'])})" for lab, r, _ in hab], [r["C"] for _, r, _ in hab], 1.2, 2.5, 10.0, 7.6,
-                    title="Jumlah pekerja", size=17)
-            self.chart_checks.append((len(self.prs.slides) - self.n_orig, [r["C"] for _, r, _ in hab]))
-            paras = []
-            for (lab, _, _), b in zip(hab, boxes):  # label bold on its own line, number below, blank line between
-                paras += [[(f"{lab}: ", True)], [(b, False)], [("", False)]]
-            add_box(s, 11.8, 3.0, 7.2, 6.5, paras[:-1], 24)
-            for b in boxes:
-                self.expect(s, b)
-            self.done(s, "Kebiasaan pekerja")
+            self.kebiasaan(hab)
         # fitness
         fit = S.block("kelaikan_fitness")
         ris = S.block("kelaikan_risiko")
         boxes = [f"{nice(r['B'])}: {fmt_n(r['C'])} pekerja ({fmt_pct(r['D'])})" for r in fit[:3]]
         if ris:
             boxes.append("Risiko kesehatan: " + "; ".join(f"{nice(r['B']).replace('Risiko ', '')} {fmt_n(r['C'])}" for r in ris))
-        self.segments("STATUS KELAIKAN KERJA", [nice(r["B"]) for r in fit], [r["C"] for r in fit], boxes)
+        self.segments(self.judul_fit.upper(), [nice(r["B"]) for r in fit], [r["C"] for r in fit], boxes)
         for b in boxes:
             self.checks.append((len(self.prs.slides) - self.n_orig, b))
+        self.pak()
         # top ten
         top = S.block("S4_top_ten")
         rows = [[r["A"], r["B"], fmt_n(r["C"]), fmt_pct(r["D"])] for r in top if r["B"] != "-"]
@@ -958,7 +997,7 @@ def verify(pptx: Path, checks, chart_checks):
     for no, vals in chart_checks:
         if not any([float(x) for x in v] == [float(x) for x in vals] for v in charts[no - 1]):
             bad.append(f"slide {no}: data chart {vals} tidak cocok")
-    left = re.compile(r"ingoude|lorem|reallygreatsite|anywhere st|olivia|\+123", re.I)
+    left = re.compile(r"ingoude|ginyard|lorem|reallygreatsite|anywhere st|olivia|petros|petrakis|\+123", re.I)
     for i, t in enumerate(texts, 1):
         if left.search(t):
             bad.append(f"slide {i}: sisa teks template: {left.search(t).group(0)}")
@@ -976,7 +1015,11 @@ def main():
     S = Summary(args.analisa.resolve())
     if S.check_beda not in (0, None):
         sys.exit(f"Sheet CHECK menunjukkan {S.check_beda} BEDA: perbaiki SUMMARY dulu sebelum membuat PPT.")
-    deck = Deck(S, args.template.resolve(), konten, args.aset.resolve() if args.aset else None)
+    sys.path.insert(0, str(HERE))
+    import mcu_ppt_navy  # navy/orange template ('Untitled design (1).pptx'), Vidya 2026-11-10
+    cls = mcu_ppt_navy.DeckNavy if mcu_ppt_navy.is_navy_template(Presentation(str(args.template))) else Deck
+    print(f"Layout : {'navy-oranye (Untitled design (1))' if cls is not Deck else 'teal (Untitled design)'}")
+    deck = cls(S, args.template.resolve(), konten, args.aset.resolve() if args.aset else None)
     deck.build()
     out = args.analisa.with_name(args.analisa.stem.replace(" - Analisa", "") + " - Laporan MCU.pptx")
     deck.prs.save(str(out))
