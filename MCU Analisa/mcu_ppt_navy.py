@@ -19,7 +19,7 @@ from pptx.util import Emu, Inches, Pt
 
 import mcu_ppt as M
 from mcu_ppt import (BODY_FONT, TITLE_FONT, Deck, add_bar, add_box, add_doughnut, fit_size, fmt_date, fmt_n, fmt_pct,
-                     nice, remove, set_text, set_title, shape_by_id, to_building)
+                     nice, remove, set_text, set_title, shape_by_id, to_building, topik_baca, untuk_pembaca)
 
 NAVY, ORANGE, WHITE, LIGHT, PEACH = "004561", "F9823E", "FFFFFF", "EEF3F6", "FFE3D1"
 PALETTE_NAVY = [NAVY, ORANGE, "6F9FB5", "FDB98E", "A3A3A3", "2E6E8A", "C96A2E", "D0DDE4"]
@@ -96,7 +96,7 @@ class DeckNavy(Deck):
         t.text_frame.vertical_anchor = MSO_ANCHOR.TOP
         set_title(t, title, 42, 26)
         if subtitle:
-            add_box(s, 1.56, 3.62, 17.2, 0.5, subtitle, 16, color=ORANGE)
+            add_box(s, 1.56, 3.62, 17.2, 0.5, untuk_pembaca(subtitle), 16, color=ORANGE)
         return s
 
     def toc_items(self):
@@ -275,7 +275,7 @@ class DeckNavy(Deck):
         set_title(t, cfg["judul"], 60, 28)
         remove(s, 5, 6, 9, 10, 20)  # photo circle: the chart goes there
         top = sorted([r for r in items if (r["C"] or 0) > 0], key=lambda r: -r["C"])
-        sent = f"Dari {fmt_n(self.N)} peserta MCU, {fmt_n(anyr['C'])} pekerja ({fmt_pct(anyr['D'])}) memiliki temuan {tp.lower()}"
+        sent = f"Dari {fmt_n(self.N)} peserta MCU, {fmt_n(anyr['C'])} pekerja ({fmt_pct(anyr['D'])}) memiliki temuan {topik_baca(tp)}"
         if top:
             sent += ", terbanyak " + "; ".join(f"{r['B'].lower() if r['B'][1:].islower() else r['B']} {fmt_n(r['C'])} pekerja ({fmt_pct(r['D'])})" for r in top[:2])
         sent += "."
@@ -294,11 +294,11 @@ class DeckNavy(Deck):
             crow = self.S.block(ck)
             cats = [f"{r['B']} ({fmt_pct(r['D'])})" for r in crow]
             vals = [r["C"] or 0 for r in crow]
-            ctitle = "Kesimpulan spirometri (interpretasi vendor)"
+            ctitle = "Kesimpulan spirometri"
         else:
             cats = [f"{r['B']} ({fmt_pct(r['D'])})" for r in items]
             vals = [r["C"] or 0 for r in items]
-            ctitle = f"Jumlah pekerja dengan temuan {tp.lower()}"  # "dengan", not "per" (Vidya 2026-11-10)
+            ctitle = f"Jumlah pekerja dengan temuan {topik_baca(tp)}"  # "dengan", not "per" (Vidya 2026-11-10)
         add_bar(s, cats, vals, 0.9, 5.15, 8.6, 5.75, title=ctitle, size=13, color=ORANGE, fill=WHITE)
         self.chart_checks.append((len(self.prs.slides) - self.n_orig, vals))
         self.done(s, cfg["judul"])

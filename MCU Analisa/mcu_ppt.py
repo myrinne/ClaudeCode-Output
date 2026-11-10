@@ -62,6 +62,31 @@ def fmt_date(v) -> str:
     return v.strftime("%d-%m-%Y") if isinstance(v, dt.date) else str(v)
 
 
+def untuk_pembaca(text) -> str:
+    """Text read by HR / the vendor: no '(interpretasi vendor)', '(keputusan vendor)', 'DICT_CUTOFF' remarks
+    (Vidya 2026-11-10: 'logikanya aneh kalau dibaca oleh si vendor/hrd'). The internal Analisa workbook keeps them."""
+    t = str(text or "")
+    t = re.sub(r"\s*Dasar penilaian diatur di DICT_CUTOFF\.?", "", t)
+    t = re.sub(r"\s*% dihitung dari pekerja yang ketiga nilainya terukur\.?", "", t)
+    t = re.sub(r"interpretasi vendor \(([^()]*)\)", r"temuan \1", t)
+    t = re.sub(r"\s*\([^()]*\bvendor\b[^()]*\)", "", t, flags=re.I)
+    return re.sub(r" {2,}", " ", t).strip()
+
+
+# topic names as they read in a sentence or chart title ("temuan kelainan gigi", Vidya 2026-11-10)
+TOPIK_BACA = {"Gigi": "kelainan gigi", "Tajam penglihatan": "kelainan tajam penglihatan"}
+
+
+def topik_baca(tp: str) -> str:
+    return TOPIK_BACA.get(tp, tp.lower())
+
+
+def nonzero(cats, vals):
+    """Chart data without the categories whose value is 0 (Vidya 2026-11-10)."""
+    keep = [(c, v) for c, v in zip(cats, vals) if v not in (0, 0.0, None)]
+    return [c for c, _ in keep], [v for _, v in keep]
+
+
 def nice(label: str) -> str:
     """'FIT WITH NOTES' -> 'Fit with notes'; leaves mixed-case labels alone; '>=' -> '≥'."""
     s = str(label).replace(">=", "≥")
@@ -350,6 +375,8 @@ def chart_fill(chart, hexcolor="FFFFFF"):
 
 
 def add_bar(slide, cats, vals, x, y, w, h, title=None, color=TEAL, size=18, fill="FFFFFF"):
+    cats, vals = nonzero(cats, vals)
+    title = untuk_pembaca(title) if title else title
     data = CategoryChartData()
     data.categories = cats
     data.add_series("Jumlah pekerja", vals)
@@ -393,6 +420,7 @@ def add_bar(slide, cats, vals, x, y, w, h, title=None, color=TEAL, size=18, fill
 
 
 def add_doughnut(slide, cats, vals, x, y, w, h, size=18, fill="FFFFFF", palette=None, text_color=DARK):
+    cats, vals = nonzero(cats, vals)
     data = CategoryChartData()
     data.categories = cats
     data.add_series("Jumlah pekerja", vals)
@@ -645,7 +673,7 @@ class Deck:
         tbl = next(sh for sh in s.shapes if sh.has_table)
         fill_table(s, tbl, header, rows, x, y, w, row_h, col_fracs, hdr_pt, body_pt, left_cols)
         if subtitle:
-            add_box(s, 2.0, 2.15, 16.0, 0.8, subtitle, 17, color=TEAL, align="ctr")
+            add_box(s, 2.0, 2.15, 16.0, 0.8, untuk_pembaca(subtitle), 17, color=TEAL, align="ctr")
         if chart:
             cats, vals, cx, cy, cw, chh = chart
             add_bar(s, cats, vals, cx, cy, cw, chh, size=16)
@@ -665,10 +693,10 @@ class Deck:
         filled = [r for r in rows if r["B"] != PAK_KOSONG]
         body = [[r["A"], r["B"], fmt_n(r["C"]), fmt_pct(r["D"])] for r in rows]
         if filled:
-            sub = f"Isi kolom Dugaan PAK dari vendor, apa adanya; % dari total peserta MCU (N = {fmt_n(self.N)})"
+            sub = f"% dari total peserta MCU (N = {fmt_n(self.N)})"
         else:
-            sub = f"Kolom Dugaan PAK pada data vendor tidak diisi untuk seluruh {fmt_n(self.N)} peserta MCU"
-        self.table_slide("DUGAAN PENYAKIT AKIBAT KERJA (PAK)", ["No", "Dugaan PAK (vendor)", "Jumlah", "%"], body,
+            sub = f"Tidak ada dugaan PAK pada seluruh {fmt_n(self.N)} peserta MCU"
+        self.table_slide("DUGAAN PENYAKIT AKIBAT KERJA (PAK)", ["No", "Dugaan PAK", "Jumlah", "%"], body,
                          [0.6, 6.0, 1.3, 1.3], x=1.5, y=3.2, w=16.8, row_h=0.66, hdr_pt=19, body_pt=19, subtitle=sub)
         self.expect(self.prs.slides[-1], sub)
 
@@ -686,7 +714,7 @@ class Deck:
         set_title(t, cfg["judul"], 50, 28)
         remove(s, 22, 24)  # photo circle and the icon circle
         top = sorted([r for r in items if (r["C"] or 0) > 0], key=lambda r: -r["C"])
-        sent = f"Dari {fmt_n(self.N)} peserta MCU, {fmt_n(anyr['C'])} pekerja ({fmt_pct(anyr['D'])}) memiliki temuan {tp.lower()}"
+        sent = f"Dari {fmt_n(self.N)} peserta MCU, {fmt_n(anyr['C'])} pekerja ({fmt_pct(anyr['D'])}) memiliki temuan {topik_baca(tp)}"
         if top:
             sent += ", terbanyak " + "; ".join(f"{r['B'].lower() if r['B'][1:].islower() else r['B']} {fmt_n(r['C'])} pekerja ({fmt_pct(r['D'])})" for r in top[:2])
         sent += "."
@@ -701,11 +729,11 @@ class Deck:
             crow = self.S.block(ck)
             cats = [f"{r['B']} ({fmt_pct(r['D'])})" for r in crow]
             vals = [r["C"] or 0 for r in crow]
-            ctitle = "Kesimpulan spirometri (interpretasi vendor)"
+            ctitle = "Kesimpulan spirometri"
         else:
             cats = [f"{r['B']} ({fmt_pct(r['D'])})" for r in items]
             vals = [r["C"] or 0 for r in items]
-            ctitle = f"Jumlah pekerja dengan temuan {tp.lower()}"  # "dengan", not "per" (Vidya 2026-11-10)
+            ctitle = f"Jumlah pekerja dengan temuan {topik_baca(tp)}"  # "dengan", not "per" (Vidya 2026-11-10)
         add_bar(s, cats, vals, 11.4, 2.2, 8.1, 7.6, title=ctitle, size=16)
         self.chart_checks.append((len(self.prs.slides) - self.n_orig, vals))
         self.done(s, cfg["judul"])
@@ -996,7 +1024,8 @@ def verify(pptx: Path, checks, chart_checks):
         if t not in texts[no - 1]:
             bad.append(f"slide {no}: '{t}' tidak ditemukan")
     for no, vals in chart_checks:
-        if not any([float(x) for x in v] == [float(x) for x in vals] for v in charts[no - 1]):
+        want = [float(x) for x in vals if float(x or 0) != 0]  # zero categories are left out of charts
+        if not any([float(x) for x in v] == want for v in charts[no - 1]):
             bad.append(f"slide {no}: data chart {vals} tidak cocok")
     left = re.compile(r"ingoude|ginyard|lorem|reallygreatsite|anywhere st|olivia|petros|petrakis|\+123", re.I)
     for i, t in enumerate(texts, 1):
