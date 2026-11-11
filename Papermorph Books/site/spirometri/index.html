@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spirometri untuk Board Sp.Ok</title>
+<meta name="description" content="Buku animasi spirometri untuk persiapan board Sp.Ok.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d2b27'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='48' fill='%23f0b45a'%3E∞%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="lib/units.css">
+<link rel="stylesheet" href="lib/contents.css">
+<script src="lib/units.js"></script>
+<script src="lib/contents.js"></script>
+<script src="unit-art.js"></script>
+<!-- <script src="refs.js"></script>  a book that cites works: its reference list, built by the skill's scripts/refs.py -->
+<link rel="expect" href="#ch01" blocking="render">
+<style>
+/* A light-paper theme over contents.css, which is written for a dark chalkboard. Every token the dark default
+   sets has to be answered here: setting only --board and --chalk left the cards on the dark --panel with
+   light-theme text on them, which is unreadable. */
+:root {
+  --page: #f1efe5; --board: #fbfaf5; --panel: #ffffff; --edge: #ddd8c8;
+  --chalk: #1d1d1f; --dim: #5c6560; --faint: #8e9691;
+  --task: #9a6b0d; --quiz: #26688f; --good: #27724f;
+  --top-bg: rgba(251, 250, 245, .9); --top-line: #ddd8c8;
+  --lift: rgba(60, 54, 40, .16);
+  color-scheme: light;
+}
+/* The dark vignette would grey the paper's edges; keep only the grain. */
+body::before { background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .32 0 0 0 0 .24 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23g)'/%3E%3C/svg%3E"); }
+</style>
+</head>
+<body>
+<section id="cover">
+  <div class="chalk" aria-hidden="true"><!-- a few faint formulas or phrases from the book, drawn in chalk -->
+    <span style="left:7%;top:13%;--d:1.6">VEP1/KVP ≥75%</span>
+    <span style="right:8%;top:17%;--d:1.9">KVP ≥80%</span>
+    <span style="left:5%;bottom:20%;--d:2.2">NNT = prediksi − 1,64 SD</span>
+    <span style="right:6%;bottom:15%;--d:2.5">z = −1,645</span>
+  </div>
+  <svg class="mascot draw" id="guide" width="210" height="147" aria-hidden="true"></svg>
+  <h1>Spirometri untuk Board Sp.Ok</h1>
+  <p class="kicker">Buku animasi</p>
+  <p class="lede">Baca pola spirometri, bandingkan Versi Paru dan Versi Okupasi, lalu latih jawabannya.</p>
+  <div class="acts">
+    <a class="btn go" href="#contents" data-t="open">Open the book<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2.5 11.5 8 6 13.5 4.6 12.1 8.7 8 4.6 3.9z"/></svg></a>
+    <a class="btn quiet" id="resume" hidden></a>
+  </div>
+  <p class="meta" id="meta"></p>
+</section>
+
+<main id="contents">
+  <header class="top">
+    <a class="home" href="#book" aria-label="Back to the cover" data-t-label="toCover"><svg class="mascot" id="guideSmall" width="52" height="36" aria-hidden="true"></svg><strong>Spirometri untuk Board Sp.Ok</strong></a>
+    <span class="prog" id="prog"></span>
+  </header>
+  <div id="units"></div>
+  <p class="refs-more" id="refsMore" hidden><a href="#references"><b data-t="references">References</b><span id="refsCount"></span><i data-t="viewAll">View all →</i></a></p>
+</main>
+
+<main id="refpage" aria-labelledby="refsTitle">
+  <header class="top">
+    <a class="back" href="#contents" data-t="backToContents">← Contents</a>
+    <span class="rp-book" id="rpBook"></span>
+  </header>
+  <section class="refs" id="references">
+    <h1 id="refsTitle" tabindex="-1" data-t="references">References</h1>
+    <p class="lead" data-t="refsLead">Every work cited in the lessons.</p>
+    <ol id="refList"></ol>
+  </section>
+</main>
+
+<script>
+// Units and chapters are numbered in order from start (a book whose scope starts mid-way, e.g. at unit 3, chapter 9,
+// keeps the original numbers). Add a chapter here when its lesson is ready.
+Contents.book({
+  start: { unit: 1, chapter: 1 },
+  units: [   // [unit title, [[chapter title, minutes], ...]]
+    ['Spirometri Okupasi', [['Membaca Pola', 8, { covers: '6.2 Pola obstruktif, restriktif, campuran · 7.1 Alur interpretasi · 7.8 Versi okupasi (NNT) · 7.9 Versi paru vs okupasi' }], ['Kenapa Kurva Berbentuk Begitu', 8, { covers: '1.1 Konsep dasar · 1.2 Fisiologi dasar, volume paru · 2 Definisi dan cakupan pengukuran' }], ['Kurva Valid atau Cacat', 8, { covers: '4 Syarat validitas pemeriksaan · 13.8 Tabel jebakan umum' }], ['Grading dan Uji Bronkodilator', 8, { covers: '5.2–5.4 Rumus %prediksi, LLN, NNT, reversibilitas · 7.2–7.7 LLN vs cutoff, GLI, grading, uji bronkodilator' }], ['Surveilans: LNL, Longitudinal, Cross-Shift', 8, { covers: '3 Indikasi dan tujuan okupasi · 5.5–5.7 Rumus longitudinal, LNL, cross-shift · 8 Perbandingan longitudinal' }], ['Tatalaksana, RPP, dan Medikolegal', 10, { covers: '11 Rekomendasi tatalaksana dan RPP · 12 Aspek medikolegal' }]]],
+  ],
+  hues: ['#2b7aa6', '#c25a38', '#8f6c0e', '#26805a', '#6350ad', '#a64080', '#9a6b0d'],
+});
+</script>
+</body>
+</html>

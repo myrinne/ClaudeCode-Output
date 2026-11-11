@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Membaca Pola</title>
+<link rel="stylesheet" href="../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render"><!-- hold the first frame until the player exists, so the page transition can run -->
+</head>
+<body>
+<script src="../lib/engine.js"></script>
+<script src="../lib/spirometri.js"></script>
+<script src="audio/id/timings.js"></script>
+<script>
+'use strict';
+// Bab 1, Membaca Pola. Storyboard pass: intro and "dua" have their motion; the other beats are placed in their final
+// layout and reveal on their narration marks (no travelling motion yet). Beat ids match narration.id.json.
+const CHAPTER = { number: 1, title: 'Membaca Pola', minutes: 8, language: 'id', next: '../ch02/' };
+
+/* ---------- captions: the voice spells the abbreviations (ka ve pe), the caption shows them written (KVP) ---------- */
+const SAY = [[/\bve e pe satu\b/gi, 'VEP1'], [/\bka ve pe\b/gi, 'KVP'], [/\ben en te\b/gi, 'NNT'], [/\bte el ce\b/gi, 'TLC'],
+  [/\ba te es\b/gi, 'ATS'], [/\be er es\b/gi, 'ERS'], [/\bes de\b/gi, 'SD'], [/\bes pe o ka\b/gi, 'Sp.Ok'], [/\boski\b/gi, 'OSCE']];
+for (const t of Object.values(TIMINGS)) t.cues = t.cues.map(([s, str]) => [s, SAY.reduce((a, [re, to]) => a.replace(re, to), str)]);
+
+/* ---------- chapter drawing helpers ---------- */
+const NB = ' ';
+const nb = s => s.replace(/ /g, NB);
+const text = (p, str, x, y, t0, { size = 30, fill = K.ink, anchor = 'start', weight = 500, dur = .5 } = {}) => { const e = T(p, str, { x, y, size, fill, anchor, weight, o: 0 }); show(e, t0, dur); return e; };
+const width = (e, str, size) => e.getComputedTextLength() || str.length * size * .56;
+// One line made of coloured runs: runs(p, [[str, fill, weight]...], x, y, t0, {size, anchor})
+function runs(p, parts, x, y, t0, { size = 30, weight = 500, anchor = 'start', dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  let cx = 0;
+  for (const [str, fill = K.ink, wt = weight] of parts) { const e = T(g, str, { x: cx, y: 0, size, fill, weight: wt }); cx += width(e, str, size); }
+  put(g, { x: anchor === 'middle' ? x - cx / 2 : anchor === 'end' ? x - cx : x, y });
+  show(g, t0, dur);
+  return g;
+}
+// A filled pill with white text
+function pill(p, str, x, y, fill, t0, { size = 30, anchor = 'start', pad = 16, dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  const t = T(g, str, { x: 0, y: 0, size, fill: '#fff', weight: 700 });
+  const w = width(t, str, size) + pad * 2;
+  g.insertBefore(mk('rect', { x: -pad, y: -size * .86, width: w, height: size * 1.25, rx: size * .4, fill }), t);
+  put(g, { x: (anchor === 'middle' ? x - w / 2 : anchor === 'end' ? x - w : x) + pad, y });
+  show(g, t0, dur);
+  return g;
+}
+// An arrow as one path: from (x1,y1) to (x2,y2) with a head
+function arrowD(x1, y1, x2, y2, head = 16) {
+  const a = Math.atan2(y2 - y1, x2 - x1), c = Math.cos(a), s = Math.sin(a), hw = head * .6;
+  const bx = x2 - head * c, by = y2 - head * s;
+  return `M${x1} ${y1}L${x2} ${y2}M${bx - hw * s} ${by + hw * c}L${x2} ${y2}L${bx + hw * s} ${by - hw * c}`;
+}
+// A card: rounded white rectangle with a coloured edge, drawn from its top-left corner (x, y)
+function box(p, x, y, w, h, edge, { fill = '#fff', sw = 3, o = 0 } = {}) {
+  const g = G(p, { x, y, o });
+  mk('rect', { x: 0, y: 0, width: w, height: h, rx: 22, fill, stroke: edge, 'stroke-width': sw }, g);
+  return g;
+}
+
+/* ---------- schematic flow-volume curves ---------- */
+// s = { w: width (share of the normal curve), pk: peak height (share), p: how scooped the fall is (1 = straight) }
+const PAT = { normal: { w: 1, pk: 1, p: 1 }, obstruksi: { w: .93, pk: .55, p: 2.6 }, restriksi: { w: .55, pk: .95, p: 1.1 }, campuran: { w: .55, pk: .5, p: 2.6 } };
+// restriksi: narrow, peak flow about preserved; obstruksi: wide, low peak, scooped; campuran: narrow, low peak and scooped
+function curveD(x0, y0, sw, sh, s) {
+  const n = 56, X = v => x0 + v * sw * s.w, Y = f => y0 - f * sh * s.pk;
+  let d = '';
+  for (let i = 0; i <= n; i++) {
+    const v = i / n, f = v < .09 ? Math.sin(v / .09 * Math.PI / 2) : Math.pow(1 - (v - .09) / .91, s.p);
+    d += (i ? 'L' : 'M') + X(v).toFixed(1) + ' ' + Y(f).toFixed(1);
+  }
+  return d + `L${X(1).toFixed(1)} ${y0}`;
+}
+// A curve that can change pattern: .set(s) redraws it; line draws on with draw(c.line, ...)
+function curve(p, x0, y0, sw, sh, s, color, { width = 6, wash = .12, dashed = false } = {}) {
+  const g = G(p), area = mk('path', { fill: color, 'fill-opacity': wash, stroke: 'none' }, g);
+  const line = path(g, '', { stroke: color, 'stroke-width': width, ...(dashed ? { 'stroke-dasharray': '10 9' } : {}) }, dashed ? {} : { d: 0 });
+  const c = { g, line, area, s: { ...s }, set(q) { c.s = { ...q }; const d = curveD(x0, y0, sw, sh, q); line.setAttribute('d', d); area.setAttribute('d', d + 'Z'); } };
+  c.set(s);
+  return c;
+}
+// Axes of a flow-volume plot, with the book's two words
+function flowAxes(p, x0, y0, sw, sh, { labels = true, size = 24 } = {}) {
+  const g = G(p);
+  path(g, `M${x0} ${y0 - sh - 14}V${y0}H${x0 + sw + 14}`, { stroke: K.faint, 'stroke-width': 3 });
+  if (labels) {
+    T(g, 'aliran', { x: x0 - 8, y: y0 - sh - 22, size, fill: K.dim, weight: 500 });
+    T(g, 'volume', { x: x0 + sw + 14, y: y0 + size + 6, size, fill: K.dim, weight: 500, anchor: 'end' });
+  }
+  return g;
+}
+// A KVP bracket under the curve: an orange span with end bars; .set(s) follows the curve's width
+function kvpBracket(p, x0, y, sw, s0, { size = 28 } = {}) {
+  const g = G(p), line = mk('path', { stroke: K.kvp, 'stroke-width': 5, fill: 'none', 'stroke-linecap': 'round' }, g);
+  const lab = T(g, 'KVP', { y: y + size + 10, size, fill: K.kvp, weight: 700, anchor: 'middle' });
+  const b = { g, set(s) { const e = x0 + sw * s.w; line.setAttribute('d', `M${x0} ${y}H${e}M${x0} ${y - 12}V${y + 12}M${e} ${y - 12}V${y + 12}`); put(lab, { x: (x0 + e) / 2 }); } };
+  b.set(s0);
+  return b;
+}
+
+/* ---------- the 2x2 matrix: KVP across, rasio VEP1/KVP up; a cut (kx, ky) splits it into the four results ---------- */
+function matrix(p, o) {
+  const { x, y, w, h } = o, dx = o.dx || [70, 98], dy = o.dy || [66, 90], fs = o.fs || 26;
+  const px = v => x + (v - dx[0]) / (dx[1] - dx[0]) * w, py = v => y + h - (v - dy[0]) / (dy[1] - dy[0]) * h;
+  const g = G(p), Q = {};
+  const full = { r: ['GANGGUAN', 'RESTRIKSI'], n: ['FUNGSI PARU', 'NORMAL'], c: ['GANGGUAN OBSTRUKSI', 'DAN RESTRIKSI'], o: ['GANGGUAN', 'OBSTRUKSI'] };
+  const brief = { r: ['Restriksi'], n: ['Normal'], c: ['Obstruksi', '+ restriksi'], o: ['Obstruksi'] };
+  for (const k of 'rnco') {
+    const qg = G(g, { o: 0 }), colr = k === 'n' ? K.ok : K.bad;
+    const rect = mk('rect', { fill: colr, 'fill-opacity': .12 }, qg);
+    const lab = G(qg), ls = o.brief ? brief[k] : full[k];
+    ls.forEach((s, i) => T(lab, s, { y: (i - (ls.length - 1) / 2) * fs * 1.22 + fs * .35, size: fs, weight: 700, fill: colr, anchor: 'middle' }));
+    Q[k] = { g: qg, rect, lab };
+  }
+  mk('rect', { x, y, width: w, height: h, fill: 'none', stroke: K.faint, 'stroke-width': 2 }, g);
+  const M = { g, Q, px, py, x, y, w, h,
+    cut(kx, ky) {   // quadrants follow the cut
+      const X = px(kx), Y = py(ky);
+      const geo = { r: [x, y, X - x, Y - y], n: [X, y, x + w - X, Y - y], c: [x, Y, X - x, y + h - Y], o: [X, Y, x + w - X, y + h - Y] };
+      for (const k in geo) {
+        const [a, b, c, d] = geo[k], q = Q[k];
+        q.rect.setAttribute('x', a); q.rect.setAttribute('y', b); q.rect.setAttribute('width', c); q.rect.setAttribute('height', d);
+        put(q.lab, { x: a + c / 2, y: k === 'r' || k === 'n' ? b + d * .3 : b + d * .7 });
+      }
+      M.at = [kx, ky];
+      return M;
+    },
+    // a pair of cut lines in one colour: rule(color, dash) -> { g, set(kx, ky) }
+    rule(color, { dash = false, width = 4 } = {}) {
+      const rg = G(g, { o: 0 }), at = { stroke: color, 'stroke-width': width, fill: 'none', ...(dash ? { 'stroke-dasharray': '14 9' } : {}) };
+      const v = mk('path', at, rg), hz = mk('path', at, rg);
+      // set(kx, ky) places the lines; grow(a, b) draws them on (a: share of the vertical line, b: of the horizontal one)
+      const r = { g: rg, v, h: hz, at: [dx[0], dy[0]], a: 1, b: 1,
+        set(kx, ky) { r.at = [kx, ky]; return r.paint(); }, grow(a, b) { r.a = a; r.b = b; return r.paint(); },
+        paint() { const [kx, ky] = r.at; v.setAttribute('d', `M${px(kx)} ${y}V${y + h * r.a}`); hz.setAttribute('d', `M${x} ${py(ky)}H${x + w * r.b}`); return r; } };
+      return r;
+    },
+    dot(vx, vy, { r = 13 } = {}) {
+      const d = G(g, { x: px(vx), y: py(vy), o: 0 });
+      mk('circle', { r, fill: K.ink, stroke: K.board, 'stroke-width': 4 }, d);
+      return d;
+    },
+  };
+  return M;
+}
+
+/* ---------- motion helpers ---------- */
+const lerp = (a, b, q) => a + (b - a) * q;
+// a curve (and its KVP bracket) changes pattern between t0 and t0 + dur
+function morph(cv, br, from, to, t0, dur) {
+  prog(q => { const s = { w: lerp(from.w, to.w, q), pk: lerp(from.pk, to.pk, q), p: lerp(from.p, to.p, q) }; cv.set(s); br && br.set(s); }, t0, dur, io);
+}
+// text made of timed pieces: each piece appears at its own time
+function segs(p, parts, x, y, { size = 30, weight = 500, dur = .35 } = {}) {
+  const g = G(p); let cx = 0;
+  for (const [str, fill = K.ink, wt = weight, t0 = 0] of parts) { const e = T(g, str, { x: cx, y: 0, size, fill, weight: wt, o: 0 }); cx += width(e, str, size); show(e, t0, dur); }
+  return put(g, { x, y });
+}
+// a ring that spreads from a point and fades
+function ring(p, x, y, t0, color = K.ink) {
+  const g = G(p, { x, y, o: 0 }); mk('circle', { r: 16, fill: 'none', stroke: color, 'stroke-width': 5 }, g);
+  prog(q => put(g, { s: 1 + 2.4 * q, o: .9 * (1 - q) }), t0, .9, out);
+  return g;
+}
+// a dot hops from one place to another
+function hop(d, [x0, y0], [x1, y1], t0, dur = .7, lift = 46) {
+  prog(q => put(d, { x: lerp(x0, x1, q), y: lerp(y0, y1, q) - Math.sin(q * Math.PI) * lift }), t0, dur, io);
+}
+// a patient's two numbers, as a vertical guide to the dot
+// The ruler change: the NNT lines start on the Versi Paru lines and slide to the patient's NNT cut; the quadrants follow
+// (x between tx and tx + dx, the rasio line between ty and ty + dy). extra(S) moves what is attached to the lines.
+const CUT_PARU = [80, 75], CUT_NNT = [85.04, 74];
+function rulerMove(M, rN, { tx, dx, ty, dy }, extra) {
+  const S = { kx: CUT_PARU[0], ky: CUT_PARU[1] };
+  const apply = () => { M.cut(S.kx, S.ky); rN.set(S.kx, S.ky); extra && extra(S); };
+  apply();
+  prog(q => { S.kx = lerp(CUT_PARU[0], CUT_NNT[0], q); apply(); }, tx, dx, io);
+  prog(q => { S.ky = lerp(CUT_PARU[1], CUT_NNT[1], q); apply(); }, ty, dy, io);
+}
+
+/* ---------- beats: [id, title, run(m, D), { ask }?] ---------- */
+let q1els, q2els;   // the pictures the two quick checks ask about (built by their beats, read by their ask)
+
+const BEATS = [
+  ['intro', 'Membaca Pola', (m, D) => {
+    const g = G(scene, { o: 0, y: 24 });
+    T(g, 'Spirometri · Bab 1', { x: 800, y: 290, size: 28, fill: K.dim, anchor: 'middle' });
+    T(g, 'Membaca Pola', { x: 800, y: 395, size: 96, weight: 600, anchor: 'middle' });
+    tw(g, { o: 1, y: 0 }, .2, 1.1, out);
+    // the book's motif: one expiratory flow-volume curve, drawn on under the title
+    const cg = G(scene, { o: 1 });
+    const x0 = 560, y0 = 700, sw = 480, sh = 190;
+    flowAxes(cg, x0, y0, sw, sh, { labels: false });
+    const c = curve(cg, x0, y0, sw, sh, PAT.normal, K.rasio, { width: 7 });
+    put(c.area, { o: 0 }); show(c.area, 1.9, .8);
+    draw(c.line, .7, 1.6, io);
+    const sk = text(cg, 'skematis', x0 + sw + 14, y0 + 40, 2.2, { size: 22, fill: K.dim, anchor: 'end' });
+    const r = text(scene, 'Dua pertanyaan menentukan pola: aliran dulu, lalu kapasitas.', 800, 480, m('sub'), { size: 34, fill: K.dim, anchor: 'middle' });
+    tw(g, { o: 0, y: -24 }, D - .9, .8); hide(r, D - .9, .8); hide(cg, D - .9, .8);
+  }],
+
+  ['dua', 'Validitas, lalu dua pertanyaan', (m, D) => {
+    const p = panel(0);
+    header(p, 'VALIDITAS', .2, 110, 96);
+    // three repeated curves: the validity check, drawn around (0, 0) so the group can shrink into a badge
+    const w3 = G(p, { x: 800, y: 440 });
+    flowAxes(w3, -310, 160, 620, 300);
+    const reps = [{ w: 1, pk: 1, p: 1 }, { w: .985, pk: .96, p: 1.06 }, { w: 1.01, pk: 1.03, p: .96 }];
+    const cs = reps.map((s, i) => curve(w3, -310, 160, 620, 300, s, K.ink, { width: 5, wash: 0 }));
+    [.4, m('v', 1.5), m('v', 2.1)].forEach((t, i) => draw(cs[i].line, t, 1.1, io));
+    const sk = text(p, 'skematis', 490, 646, .6, { size: 22, fill: K.dim });
+    // the verdict under the curves
+    const ok = path(p, 'M690 700L720 730L784 666', { stroke: K.ok, 'stroke-width': 9 }, { d: 0 });
+    draw(ok, m('v', 3.0), .5);
+    const v1 = runs(p, [['3 kurva ', K.ink, 700], ['acceptable', K.ok, 700], [' dan ', K.ink, 500], ['repeatable', K.ok, 700]], 820, 718, m('v', 3.0), { size: 36 });
+    // then the curves shrink into a badge at the top left, and the two questions come up
+    const tag = [text(p, 'valid', 400, 198, m('dua', 1.0), { size: 34, fill: K.ok, weight: 700 }), text(p, '3 kurva acceptable dan repeatable', 400, 238, m('dua', 1.0), { size: 26, fill: K.dim })];
+    tw(w3, { x: 235, y: 175, s: .32 }, m('dua'), 1.0, io);
+    hide(sk, m('dua'), .3); hide(ok, m('dua'), .3); hide(v1, m('dua'), .3);
+
+    const card1 = box(p, 100, 300, 680, 420, K.rasio);
+    const card2 = box(p, 820, 300, 680, 420, K.kvp);
+    // card 1: rasio VEP1/KVP, the speed of the flow
+    const n1 = G(card1, { x: 52, y: 62 }); mk('circle', { r: 28, fill: K.rasio }, n1); T(n1, '1', { y: 11, size: 34, fill: '#fff', weight: 700, anchor: 'middle' });
+    const t1 = T(card1, 'Rasio VEP1/KVP', { x: 100, y: 76, size: 50, fill: K.rasio, weight: 700 });
+    const s1 = T(card1, 'kecepatan aliran', { x: 40, y: 150, size: 38, fill: K.dim });
+    [[215, 560], [258, 470], [301, 380]].forEach(([yy, ex], i) => draw(path(card1, arrowD(40, yy, ex, yy, 20), { stroke: K.rasio, 'stroke-width': 7 }, { d: 0 }), m('a', 4.3 + i * .18), .7, out));
+    const c1a = T(card1, 'turun', { x: 40, y: 388, size: 42, fill: K.dim }), c1b = T(card1, '→', { x: 170, y: 388, size: 42, fill: K.dim }), c1c = T(card1, 'obstruksi', { x: 232, y: 388, size: 46, fill: K.bad, weight: 700 });
+    // card 2: KVP, the capacity
+    const n2 = G(card2, { x: 52, y: 62 }); mk('circle', { r: 28, fill: K.kvp }, n2); T(n2, '2', { y: 11, size: 34, fill: '#fff', weight: 700, anchor: 'middle' });
+    const t2 = T(card2, 'KVP', { x: 100, y: 76, size: 50, fill: K.kvp, weight: 700 });
+    const s2 = T(card2, 'kapasitas paru', { x: 40, y: 150, size: 38, fill: K.dim });
+    const cv = curve(card2, 60, 292, 520, 96, PAT.normal, K.kvp, { width: 5 });
+    const br = path(card2, 'M60 322H580M60 308V336M580 308V336', { stroke: K.kvp, 'stroke-width': 6 }, { d: 0 });
+    const c2a = T(card2, 'turun', { x: 40, y: 388, size: 42, fill: K.dim }), c2b = T(card2, '→', { x: 170, y: 388, size: 42, fill: K.dim }), c2c = T(card2, 'restriksi', { x: 232, y: 388, size: 46, fill: K.bad, weight: 700 });
+    [n1, t1, s1, c1a, c1b, c1c, n2, t2, s2, c2a, c2b, c2c].forEach(e => put(e, { o: 0 }));
+    put(card1, { y: 330 }); put(card2, { y: 330 });
+    put(cv.area, { o: 0 });
+    // 1 on the word "pertama", the speed streaks on "kecepatan aliran", the consequence on "turun berarti"
+    tw(card1, { o: 1, y: 300 }, m('a'), .7, out); [n1, t1].forEach(e => show(e, m('a', .2), .5));
+    show(s1, m('a', 4.2), .5);
+    [c1a, c1b, c1c].forEach((e, i) => show(e, m('a', 6.8 + i * .35), .4));
+    tw(card2, { o: 1, y: 300 }, m('b'), .7, out); [n2, t2].forEach(e => show(e, m('b', .2), .5));
+    show(s2, m('b', 2.4), .5); draw(cv.line, m('b', 2.5), 1.2, io); show(cv.area, m('b', 3.4), .6); draw(br, m('b', 3.5), .7, out);
+    [c2a, c2b, c2c].forEach((e, i) => show(e, m('b', 4.85 + i * .35), .4));
+  }],
+
+  ['matriks', 'Empat hasil', (m) => {
+    const p = panel(0);
+    const M = matrix(p, { x: 360, y: 105, w: 1000, h: 540, fs: 30 });
+    M.cut(85, 74);
+    const rN = M.rule(K.nnt, { dash: true }).set(85, 74).grow(0, 0);
+    tw(rN.g, { o: 1 }, m('cut'), .2);
+    // the axes: KVP across (3.8 s), rasio VEP1/KVP up (6.1 s); an arrow runs along each as it is named
+    const ax = path(p, arrowD(M.x, M.y + M.h + 26, M.x + M.w, M.y + M.h + 26, 20), { stroke: K.kvp, 'stroke-width': 5 }, { d: 0 });
+    const ay = path(p, arrowD(M.x - 26, M.y + M.h, M.x - 26, M.y, 20), { stroke: K.rasio, 'stroke-width': 5 }, { d: 0 });
+    draw(ax, m('ax'), 1.2, io); draw(ay, m('ax', 2.3), 1.2, io);
+    const kx = pill(p, 'KVP', M.x + M.w / 2, M.y + M.h + 86, K.kvp, m('ax'), { size: 32, anchor: 'middle' });
+    const ky = pill(p, 'VEP1/KVP', M.x - 20, M.y - 24, K.rasio, m('ax', 2.3), { size: 32, anchor: 'start' });
+    [kx, ky].forEach(e => { put(e, { s: .8 }); });
+    tw(kx, { s: 1 }, m('ax'), .5, back); tw(ky, { s: 1 }, m('ax', 2.3), .5, back);
+    // one limit on each axis: NNT (the lines draw across, then the words)
+    const X1 = M.px(85), Y1 = M.py(74);
+    prog(q => rN.grow(q, rN.b), m('cut', .7), 1.0, io);
+    prog(q => rN.grow(rN.a, q), m('cut', 1.5), 1.0, io);
+    const tk = [
+      text(p, '<NNT', (M.x + X1) / 2, M.y + M.h + 56, m('cut', 2.6), { size: 26, fill: K.nnt, anchor: 'middle', weight: 600 }),
+      text(p, '≥NNT', (X1 + M.x + M.w) / 2, M.y + M.h + 56, m('cut', 2.6), { size: 26, fill: K.nnt, anchor: 'middle', weight: 600 }),
+      text(p, '≥NNT', M.x - 48, (M.y + Y1) / 2 + 9, m('cut', 2.6), { size: 26, fill: K.nnt, anchor: 'end', weight: 600 }),
+      text(p, '<NNT', M.x - 48, (Y1 + M.y + M.h) / 2 + 9, m('cut', 2.6), { size: 26, fill: K.nnt, anchor: 'end', weight: 600 }),
+    ];
+    // the four results: each quadrant tints in and its name pops, clockwise from the top right
+    for (const k of 'nroc') {
+      const t = m(k);
+      show(M.Q[k].g, t, .5);
+      put(M.Q[k].lab, { s: .8 }); tw(M.Q[k].lab, { s: 1 }, t, .5, back);
+    }
+    // the patient: one dot, which lands in the first quadrant and hops through the others
+    const spots = { n: [96, 86], r: [80, 78], c: [73, 71.5], o: [96, 71] };
+    const d = M.dot(...spots.n);
+    put(d, { s: .3 }); tw(d, { o: 1, s: 1 }, m('dot', .3), .5, back);
+    const lab1 = text(p, 'satu pasien = satu titik', M.px(96) + 26, M.py(86) + 9, m('dot', .9), { size: 24, fill: K.dim });
+    hide(lab1, m('dot', 3.2), .3);
+    const pos = k => [M.px(spots[k][0]), M.py(spots[k][1])];
+    hop(d, pos('n'), pos('r'), m('dot', 3.5), .6); hop(d, pos('r'), pos('c'), m('dot', 4.3), .6); hop(d, pos('c'), pos('o'), m('dot', 5.0), .6);
+  }],
+
+  ['kurva', 'Bentuk kurva tiap pola', (m) => {
+    const p = panel(0);
+    // left: one curve that changes shape from pattern to pattern
+    const x0 = 120, y0 = 610, sw = 720, sh = 380;
+    flowAxes(p, x0, y0, sw, sh);
+    const ghost = curve(p, x0, y0, sw, sh, PAT.normal, K.faint, { width: 4, wash: 0, dashed: true });
+    put(ghost.g, { o: 0 }); show(ghost.g, m('o'), .4);
+    const cv = curve(p, x0, y0, sw, sh, PAT.normal, K.ink, { width: 7, wash: .1 });
+    draw(cv.line, .3, 1.4, io);
+    const br = kvpBracket(p, x0, y0 + 56, sw, PAT.normal); put(br.g, { o: 0 }); show(br.g, m('n', 1.6), .5);
+    text(p, 'skematis', x0 + sw + 14, y0 + 100, .6, { size: 22, fill: K.dim, anchor: 'end' });
+    // the pattern changes while it is described
+    morph(cv, br, PAT.normal, PAT.obstruksi, m('o', .3), 1.6);
+    morph(cv, br, PAT.obstruksi, PAT.restriksi, m('r', .3), 1.8);
+    morph(cv, br, PAT.restriksi, PAT.campuran, m('c', .3), 1.4);
+    // right: where each pattern lands in the matrix (one dot, hopping), and what to say about it
+    const M = matrix(p, { x: 1000, y: 150, w: 500, h: 330, fs: 22, brief: true });
+    M.cut(85, 74);
+    const spot = { normal: [95, 82], obstruksi: [96.5, 71], restriksi: [76, 82], campuran: [83.5, 71] };
+    const quad = { normal: 'n', obstruksi: 'o', restriksi: 'r', campuran: 'c' };
+    for (const k of 'rco') tw(M.Q[k].g, { o: .45 }, .2, .5);
+    const d = M.dot(...spot.normal); const P = k => [M.px(spot[k][0]), M.py(spot[k][1])];
+    show(d, .6, .4);
+    const when = { normal: m('n'), obstruksi: m('o'), restriksi: m('r'), campuran: m('c') };
+    const info = {   // title, colour, facts with the time (after the pattern's mark) at which each is said
+      normal: ['Normal', K.ok, [['kurva turun hampir lurus', 3.0]]],
+      obstruksi: ['Obstruksi', K.bad, [['VEP1 turun lebih besar dari KVP', 1.7], ['rasio turun', 6.5], ['kurva cekung', 7.9]]],
+      restriksi: ['Restriksi', K.bad, [['VEP1 dan KVP turun proporsional', 1.6], ['rasio normal atau naik', 6.0], ['kurva sempit', 8.8]]],
+      campuran: ['Obstruksi dan restriksi', K.bad, [['rasio turun dan KVP turun', .3], ['kurva cekung dan sempit', 1.6]]],
+    };
+    const names = Object.keys(info);
+    names.forEach((k, i) => {
+      const [title, colr, facts] = info[k], t = when[k], next = names[i + 1], prev = names[i - 1];
+      const g = G(p, { o: 0, y: 14 });
+      T(g, title, { x: 1000, y: 565, size: 40, weight: 700, fill: colr });
+      tw(g, { o: 1, y: 0 }, t, .5, out);
+      facts.forEach(([f, dt], j) => { const e = T(g, f, { x: 1000, y: 618 + j * 44, size: 30, fill: K.ink, o: 0 }); show(e, t + dt, .4); });
+      if (next) tw(g, { o: 0, y: -14 }, when[next] - .4, .3);
+      if (prev) { hop(d, P(prev), P(k), t, .8); tw(M.Q[quad[prev]].g, { o: .45 }, t, .4); }
+      tw(M.Q[quad[k]].g, { o: 1 }, t, .4);
+    });
+    text(p, 'rasio VEP1/KVP', x0 + sw - 20, y0 - sh + 10, m('o'), { size: 26, fill: K.rasio, anchor: 'end', weight: 700 });
+  }],
+
+  ['q1', 'Cek cepat: kurva', () => {
+    const p = panel(0);
+    const sh = 300, sw = 400, y0 = 520;
+    const defs = [['restriksi', 110], ['normal', 610], ['obstruksi', 1110]];
+    q1els = defs.map(([name, x0], i) => {
+      const g = G(p);
+      flowAxes(g, x0, y0, sw + 20, sh, { size: 24 });
+      const c = curve(g, x0, y0, sw, sh, PAT[name], K.ink, { width: 7, wash: .1 });
+      draw(c.line, .2 + i * .25, 1.0);
+      const n = G(g, { x: x0 + sw - 10, y: y0 - sh + 26, s: .3, o: 0 }); mk('circle', { r: 26, fill: K.dim }, n); T(n, String(i + 1), { y: 11, size: 30, fill: '#fff', weight: 700, anchor: 'middle' });
+      tw(n, { s: 1, o: 1 }, .6 + i * .25, .4, back);
+      return g;
+    });
+    text(p, 'skematis', 1500, y0 + 96, .4, { size: 24, fill: K.dim, anchor: 'end' });
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-kurva', prompt: ['Klik kurva yang menunjukkan obstruksi.'],
+    build: pickEls(q1els.map((el, i) => ({ el, box: [[90, 590, 1090][i], 150, 460, 440], label: 'Kurva ' + (i + 1) })), 2,
+      'Kurva cekung: aliran turun lebih cepat, VEP1 turun lebih besar dari KVP, jadi rasio turun.',
+      i => [
+        'Kurva ini sempit, tetapi puncaknya tinggi dan turunnya hampir lurus: rasio normal. Itu gangguan restriksi.',
+        'Kurva ini turun hampir lurus: normal.',
+      ][i]),
+  }], done, 'Cek cepat') }],
+
+  ['batas', 'Dua penggaris', (m) => {
+    const p = panel(0);
+    // left: Versi Paru, one fixed line for everyone
+    const L = box(p, 60, 110, 520, 640, K.paru, { o: 0 }); put(L, { y: 140 }); tw(L, { o: 1, y: 110 }, m('vp'), .6, out);
+    const pl = pill(L, 'Versi Paru', 30, 70, K.paru, m('vp', .3), { size: 34 });
+    text(L, 'batas tetap, sama untuk semua', 30, 124, m('vp', 1.5), { size: 26, fill: K.dim });
+    [0, 1, 2].forEach(i => {   // three patients, one shared cut-off
+      const y = 196 + i * 56;
+      path(L, `M30 ${y}H490`, { stroke: K.faint, 'stroke-width': 3 });
+      const d = G(L, { x: 30, y, o: 0 }); mk('circle', { r: 10, fill: K.ink }, d);
+      show(d, m('vp', 2.0 + i * .25), .2); tw(d, { x: [150, 320, 250][i] }, m('vp', 2.0 + i * .25), .8, out);
+    });
+    draw(path(L, 'M390 176V318', { stroke: K.paru, 'stroke-width': 6 }, { d: 0 }), m('vp', 3.4), .8, io);   // one line through all three rows
+    segs(L, [['Rasio VEP1/KVP ', K.rasio, 700, m('vp', 3.4)], ['≥75%', K.ink, 700, m('vp', 4.2)]], 30, 410, { size: 30 });
+    segs(L, [['KVP ', K.kvp, 700, m('vp', 5.8)], ['≥80% prediksi', K.ink, 700, m('vp', 6.6)]], 30, 456, { size: 30 });
+    text(L, 'PERDOKI 2019', 30, 506, m('vp', 8.8), { size: 26, fill: K.dim });
+    ['ATS/ERS menganjurkan batas', 'bawah normal, tetapi untuk', 'OSCE ikuti PERDOKI.'].forEach((l, i) => text(L, l, 30, 556 + i * 32, m('ats', i * .9), { size: 24, fill: K.dim }));
+    // right: Versi Okupasi, NNT per patient
+    const R = box(p, 620, 110, 920, 640, K.nnt, { o: 0 }); put(R, { y: 140 }); tw(R, { o: 1, y: 110 }, m('ok'), .6, out);
+    pill(R, 'Versi Okupasi', 30, 70, K.nnt, m('ok', .3), { size: 34 });
+    text(R, 'NNT, berbeda untuk tiap pasien', 330, 70, m('ok', 2.2), { size: 28, fill: K.dim });
+    segs(R, [['NNT', K.nnt, 700, m('f')], [' = Nilai Prediksi', K.ink, 600, m('f', 1.3)], [' − (1,64', K.ink, 600, m('f', 2.4)], [' × SD populasi referensi)', K.ink, 600, m('f', 4.1)]], 30, 140, { size: 28 });
+    // the table: a row at a time
+    const col = [30, 250, 590], rows = [['Parameter', 'NNT Pria', 'NNT Wanita'], ['KVP', 'Prediksi − 673 mL', 'Prediksi − 499 mL'], ['VEP1', 'Prediksi − 642 mL', 'Prediksi − 447 mL'], ['VEP1/KVP', 'Prediksi − 10%', 'Prediksi − 9%']];
+    rows.forEach((r, i) => {
+      const y = 214 + i * 60, t = m('t', i * .55), g = G(R, { o: 0 });
+      path(g, `M20 ${y + 18}H890`, { stroke: i === 0 ? K.ink : K.faint, 'stroke-width': i === 0 ? 3 : 2 });
+      r.forEach((c, j) => T(g, c, { x: col[j], y, size: 28, weight: i === 0 ? 700 : 500, fill: i === 0 ? K.ink : j === 0 ? [K.ink, K.kvp, K.rasio, K.rasio][i] : K.ink }));
+      show(g, t, .4);
+    });
+    const hl = put(mk('rect', { x: col[1] - 12, y: 214 + 60 - 34, width: 330, height: 50, rx: 10, fill: 'none', stroke: K.nnt, 'stroke-width': 4 }, R), { o: 0 }); show(hl, m('ex'), .4);
+    text(R, 'contoh ilustratif', 30, 490, m('ex'), { size: 24, fill: K.dim });
+    segs(R, [[nb('pria, KVP prediksi '), K.ink, 500, m('ex', 1.9)], [nb('4 500 mL'), K.kvp, 700, m('ex', 4.4)]], 30, 540, { size: 31 });
+    segs(R, [['NNT = ', K.ink, 600, m('ex', 4.4)], [nb('4 500'), K.ink, 600, m('ex', 4.5)], [nb(' − 673'), K.ink, 600, m('ex', 9.4)], [' = ', K.ink, 600, m('ex', 11.6)], [nb('3 827 mL'), K.nnt, 700, m('ex', 12.7)]], 30, 596, { size: 36 });
+  }],
+
+  ['kasus', 'Pasien yang sama, penggaris berbeda', (m) => {
+    const p = panel(0);
+    const M = matrix(p, { x: 100, y: 110, w: 820, h: 540, fs: 24 });
+    const pt = [81, 82], X0 = 1170;
+    M.cut(...CUT_PARU);
+    // axis titles
+    pill(p, 'KVP', M.x + M.w / 2, M.y + M.h + 92, K.kvp, .3, { size: 28, anchor: 'middle' });
+    pill(p, 'VEP1/KVP', M.x, M.y - 52, K.rasio, .3, { size: 28 });
+    // the patient: 81% of predicted KVP and a ratio of 82% place the dot, a guide at a time
+    const gv = put(path(p, `M${M.px(81)} ${M.y + M.h}V${M.py(82)}`, { stroke: K.kvp, 'stroke-width': 3, 'stroke-dasharray': '7 7' }), { o: 0 });
+    const gh = put(path(p, `M${M.x} ${M.py(82)}H${M.px(81)}`, { stroke: K.rasio, 'stroke-width': 3, 'stroke-dasharray': '7 7' }), { o: 0 });
+    show(gv, 6.9, .4); show(gh, 9.5, .4); hide(gv, 13, .6); hide(gh, 13, .6);
+    const d = M.dot(...pt); put(d, { s: .3 }); tw(d, { o: 1, s: 1 }, 10.0, .5, back);
+    ring(p, M.px(81), M.py(82), 10.1);
+    text(p, 'pasien', M.px(81) + 22, M.py(82) - 20, 10.6, { size: 24, fill: K.ink, weight: 600 });
+    // Versi Paru lines: rasio 75% (said first), then KVP 80%; the quadrants tint after both
+    const rP = M.rule(K.paru, { width: 5 }).set(...CUT_PARU).grow(0, 0); put(rP.g, { o: 1 });
+    prog(q => rP.grow(rP.a, q), m('vp', 2.0), .9, io); prog(q => rP.grow(q, rP.b), m('vp', 4.8), .9, io);
+    text(p, '75%', M.x + M.w + 10, M.py(75) + 9, m('vp', 2.6), { size: 24, fill: K.paru, weight: 700 });
+    text(p, 'Versi Paru · KVP 80%', M.px(80), M.y - 14, m('vp', 5.6), { size: 24, fill: K.paru, anchor: 'middle', weight: 700 });
+    for (const k of 'rnco') { show(M.Q[k].g, m('vp', 7.2), .6); }
+    pulse(M.Q.n.lab, m('vp', 9.4), 1.25);   // "kanan atas: normal"
+    // "the dot does not move": a ring on it, and the words beside it
+    ring(p, M.px(81), M.py(82), m('sw', 2.6));
+    const tt = text(p, 'titik tetap', M.px(81) + 22, M.py(82) + 54, m('sw', 2.6), { size: 24, fill: K.ink, weight: 700 });
+    hide(tt, m('nnt', 8), .5);
+    // the ruler changes: the NNT lines start on the grey ones and slide; the dot never moves
+    const rN = M.rule(K.nnt, { dash: true, width: 5 }).set(...CUT_PARU); put(rN.g, { o: 0 }); tw(rN.g, { o: 1 }, m('nnt', 1.6), .3);
+    const lv = text(p, 'NNT · KVP ' + nb('3 827 mL'), M.px(CUT_PARU[0]), M.y + M.h + 36, m('nnt', 1.6), { size: 24, fill: K.nnt, anchor: 'middle', weight: 700 });
+    const lh = text(p, 'NNT · rasio 74%', M.x + M.w + 10, M.py(CUT_PARU[1]) + 36, m('nnt', 10), { size: 24, fill: K.nnt, weight: 700 });
+    const T0 = m('nnt', 2.1), DX = 3.4;
+    tw(rP.g, { o: .3 }, T0, .6);
+    rulerMove(M, rN, { tx: T0, dx: DX, ty: m('nnt', 10.4), dy: 1.6 }, S => { put(lv, { x: M.px(S.kx) }); put(lh, { y: M.py(S.ky) + 36 }); });
+    // the moment the line passes the dot, it falls on the other side
+    ring(p, M.px(81), M.py(82), T0 + .37 * DX, K.bad);
+    // right: the patient and the verdicts
+    text(p, 'contoh ilustratif', X0, 130, .3, { size: 24, fill: K.dim });
+    text(p, 'Pasien pria', X0, 176, 1.7, { size: 32, weight: 700 });
+    segs(p, [['KVP ', K.kvp, 700, 3.1], [nb('3 645 mL'), K.kvp, 700, 3.5]], X0, 228, { size: 32 });
+    text(p, nb('81% prediksi (4 500 mL)'), X0, 266, 6.9, { size: 25, fill: K.dim });
+    segs(p, [['VEP1/KVP ', K.rasio, 700, 9.4], ['82%', K.rasio, 700, 9.9]], X0, 322, { size: 32 });
+    const v1 = G(p, { o: 0 }); T(v1, 'Versi Paru', { x: X0, y: 440, size: 28, fill: K.paru, weight: 700 }); T(v1, 'NORMAL', { x: X0, y: 490, size: 52, fill: K.ok, weight: 700 }); show(v1, m('vp', 8.4), .5);
+    const v2 = G(p, { o: 0, x: 60 }); T(v2, 'Versi Okupasi', { x: X0, y: 570, size: 28, fill: K.nnt, weight: 700 }); T(v2, 'RESTRIKSI', { x: X0, y: 620, size: 52, fill: K.bad, weight: 700 });
+    tw(v2, { o: 1, x: 0 }, m('res'), .7, out);
+    tw(v1, { o: .4 }, m('res'), .5);
+    pulse(M.Q.r.lab, m('res'), 1.25);
+    const kl = G(p, { o: 0, y: 20 }); mk('rect', { x: X0, y: 676, width: 300, height: 52, rx: 26, fill: K.bad }, kl); T(kl, 'kasus klasik board', { x: X0 + 150, y: 712, size: 28, fill: '#fff', weight: 700, anchor: 'middle' });
+    tw(kl, { o: 1, y: 0 }, m('kls'), .5, out);
+  }],
+
+  ['q2', 'Cek cepat: garis', () => {
+    const p = panel(0);
+    const M = matrix(p, { x: 330, y: 80, w: 940, h: 500, fs: 22 });
+    M.cut(...CUT_NNT);
+    const rP = M.rule(K.paru, { width: 5 }).set(...CUT_PARU), rN = M.rule(K.nnt, { width: 5 }).set(...CUT_NNT);
+    rP.h.style.display = rN.h.style.display = 'none';   // this check is about the KVP line only
+    rP.grow(0, 1); rN.grow(0, 1); put(rP.g, { o: 1 }); put(rN.g, { o: 1 });
+    prog(q => rP.grow(q, 1), .3, .8, io); prog(q => rN.grow(q, 1), .7, .8, io);
+    const d = M.dot(81, 82); put(d, { s: .3 }); tw(d, { o: 1, s: 1 }, 1.3, .5, back);
+    text(p, 'Versi Paru · KVP 80%', M.px(80) - 6, M.y - 12, 1.0, { size: 26, fill: K.paru, anchor: 'end', weight: 700 });
+    text(p, 'NNT · KVP ' + nb('3 827 mL'), M.px(85.04) + 6, M.y - 12, 1.4, { size: 26, fill: K.nnt, weight: 700 });
+    text(p, 'pasien', M.px(81) - 8, M.py(82) + 46, 1.6, { size: 26, weight: 600 });
+    draw(path(p, arrowD(M.x, M.y + M.h + 26, M.x + 360, M.y + M.h + 26, 18), { stroke: K.kvp, 'stroke-width': 5 }, { d: 0 }), 1.0, .8);
+    pill(p, 'KVP', M.x + 390, M.y + M.h + 38, K.kvp, 1.2, { size: 26 });
+    text(p, 'contoh ilustratif', M.x + M.w, M.y + M.h + 38, 1.6, { size: 22, fill: K.dim, anchor: 'end' });
+    q2els = [rP.g, rN.g];
+    q2els.box = [M.px(80), M.px(85.04), M.y, M.h];
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-garis', prompt: ['Pasien ini restriksi menurut Versi Okupasi. Klik garis KVP yang menunjukkan itu.'],
+    build: pickEls(q2els.map((el, i) => ({ el, box: [q2els.box[i] - 22, q2els.box[2], 44, q2els.box[3]], label: ['Garis Versi Paru, KVP 80%', 'Garis NNT, KVP 3 827 mL'][i] })), 1,
+      'Titik ada di kiri garis NNT: KVP 3 645 mL kurang dari NNT 3 827 mL, jadi restriksi.',
+      i => 'Titik ada di kanan garis 80%: menurut Versi Paru KVP tidak di bawah batas. Garis yang membuat titik jatuh di kirinya adalah garis NNT.'),
+  }], done, 'Cek cepat') }],
+
+  ['lafaz', 'Lafaz di ujian', (m) => {
+    const p = panel(0);
+    // left: the same patient, small; the ruler changes as the lafaz moves from Versi Paru to Versi Okupasi
+    const M = matrix(p, { x: 60, y: 190, w: 360, h: 290, fs: 20, brief: true });
+    M.cut(...CUT_PARU); for (const k of 'rnco') show(M.Q[k].g, .2, .5);
+    const rP = M.rule(K.paru, { width: 4 }).set(...CUT_PARU); put(rP.g, { o: 1 });
+    const rN = M.rule(K.nnt, { dash: true, width: 4 }).set(...CUT_PARU); put(rN.g, { o: 0 }); tw(rN.g, { o: 1 }, m('b', 3.0), .2);
+    tw(rP.g, { o: .3 }, m('b', 3.2), .5);
+    rulerMove(M, rN, { tx: m('b', 3.4), dx: 1.8, ty: m('b', 5.2), dy: 1.0 });
+    const d = M.dot(81, 82); put(d, { s: .3 }); tw(d, { o: 1, s: 1 }, m('a'), .5, back);
+    text(p, 'pasien kasus klasik', 60, 160, .3, { size: 24, fill: K.dim });
+    const l1 = text(p, 'Versi Paru', 60, 530, m('a'), { size: 28, fill: K.paru, weight: 700 }); text(p, 'Versi Okupasi', 60, 530, m('b', 3.4), { size: 28, fill: K.nnt, weight: 700 });
+    hide(l1, m('b', 3.2), .3);
+    // right: the lafaz, word for word; each line appears as it is read
+    const X0 = 480;
+    const blockEnd = { 'VERSI PARU': m('a', 15.5), 'VERSI OKUPASI': m('b', 15.4), 'KESIMPULAN': m('c', 18.4) };
+    const blocks = [
+      [m('a'), 130, K.paru, 'VERSI PARU', [
+        [m('a'), [['Pada Versi Paru: VEP1/KVP ≥75% dan KVP ≥80%']]],
+        [m('a', 12.9), [['→ Fungsi Paru '], ['NORMAL.', K.ok, 700]]]]],
+      [m('b'), 290, K.nnt, 'VERSI OKUPASI', [
+        [m('b'), [['Namun pada Versi Okupasi: VEP1/KVP ≥NNT tetapi KVP <NNT']],],
+        [m('b', 11.9), [['→ Gangguan Fungsi Paru '], ['RESTRIKSI.', K.bad, 700]]]]],
+      [m('c'), 450, K.ink, 'KESIMPULAN', [
+        [m('c'), [['Sebagai Sp.Ok, saya mengutamakan Versi Okupasi karena lebih sensitif']]],
+        [m('c', 5.6), [['untuk deteksi dini pada pekerja terpajan, sehingga kesimpulan saya:']]],
+        [m('c', 10.8), [['Gangguan Fungsi Paru Restriksi', K.bad, 700], [' yang memerlukan evaluasi lanjutan']]],
+        [m('c', 14.5), [['dan korelasi dengan riwayat pajanan kerja.']]]]],
+    ];
+    for (const [t, y, colr, kick, lines] of blocks) {
+      const bar = put(mk('rect', { x: X0 - 26, y: y - 6, width: 6, height: lines.length * 42 + 38, rx: 3, fill: colr }, p), { o: 0 });
+      show(bar, t, .4);
+      text(p, kick, X0, y + 16, t, { size: 22, fill: colr, weight: 700 });
+      lines.forEach(([lt, ln], i) => {
+        const g = runs(p, ln.map(([s, f, w]) => [s, f || K.ink, w || 500]), X0 + 14, y + 56 + i * 42, lt, { size: 29 }); tw(g, { x: X0 }, lt, .5, out);
+        // a thin line under it follows the voice along the sentence
+        const end = (lines[i + 1] ? lines[i + 1][0] : blockEnd[kick]) - .2, wd = g.getBBox().width;
+        draw(path(p, `M${X0} ${y + 64 + i * 42}H${X0 + wd}`, { stroke: colr, 'stroke-width': 3, 'stroke-opacity': .55 }, { d: 0 }), lt + .2, Math.max(.5, end - lt - .2), lin);
+      });
+    }
+  }],
+
+  ['curiga', 'Spirometri mencurigai, TLC memastikan', (m) => {
+    const p = panel(0);
+    // left: a chain of three boxes joined by arrows, built as it is said
+    const b1 = box(p, 80, 130, 640, 140, K.faint), b2 = box(p, 80, 330, 640, 140, K.bad, { sw: 3 }), b3 = box(p, 80, 530, 640, 140, K.dim);
+    segs(b1, [['KVP rendah', K.kvp, 700, m('b')], [', rasio normal', K.rasio, 700, m('b', 1.5)]], 30, 62, { size: 36 }); text(b1, 'hasil spirometri', 30, 108, m('b', 1.5), { size: 26, fill: K.dim });
+    text(b2, 'GANGGUAN RESTRIKSI', 30, 62, m('b', 3.7), { size: 44, fill: K.bad, weight: 700 }); text(b2, 'dugaan dari spirometri, belum pasti', 30, 108, m('b', 4.4), { size: 26, fill: K.dim });
+    text(b3, 'TLC', 30, 62, m('t', 1.3), { size: 44, fill: K.ink, weight: 700 }); text(b3, 'kapasitas paru total: memastikan restriksi', 30, 108, m('t', 2.5), { size: 26, fill: K.dim });
+    text(p, 'Spirometri saja tidak memastikan restriksi', 80, 96, m('a'), { size: 34, weight: 700 });
+    [[b1, 'b'], [b2, 'b', 3.5], [b3, 't', 1.2]].forEach(([b, k, dt = 0], i) => { put(b, { y: st(b).y + 24 }); tw(b, { o: 1, y: st(b).y - 24 }, m(k, dt), .6, out); });
+    [[300, 'b', 2.4], [500, 't', 0]].forEach(([y, k, dt]) => draw(path(p, arrowD(400, y - 28, 400, y + 24, 18), { stroke: K.dim, 'stroke-width': 6 }, { d: 0 }), m(k, dt), .6));
+    // right: KVP can be low for two reasons; the first curve comes with the restriction, the second with air trapping
+    const X0 = 860;
+    text(p, 'KVP rendah bisa berasal dari', X0, 150, m('b', 3.7), { size: 30, fill: K.dim, weight: 600 });
+    const defs = [['restriksi sejati', PAT.restriksi, 330, m('b', 4.4), K.bad], ['air trapping', PAT.campuran, 560, m('at'), K.dim]];
+    defs.forEach(([name, s, base, t, colr], i) => {
+      const g = G(p, { o: 0 });
+      flowAxes(g, X0, base, 560, 170, { size: 20, labels: false });
+      const cc = curve(g, X0, base, 520, 170, s, K.ink, { width: 6, wash: .1 });
+      const kb = kvpBracket(g, X0, base + 26, 520, s, { size: 24 });
+      T(g, name, { x: X0 + 300, y: base - 120, size: 34, weight: 700, fill: colr });
+      tw(g, { o: 1 }, t, .5); draw(cc.line, t, 1.2, io);
+    });
+    text(p, 'skematis', 1540, 660, m('b', 4.4), { size: 22, fill: K.dim, anchor: 'end' });
+    const ban = G(p, { o: 0, y: 20 }); mk('rect', { x: 80, y: 710, width: 1460, height: 66, rx: 18, fill: K.nnt, 'fill-opacity': .1, stroke: K.nnt, 'stroke-width': 3 }, ban);
+    segs(ban, [['Spirometri ', K.ink, 700, m('o')], ['mencurigai', K.bad, 700, m('o', .9)], [', ', K.ink, 700, m('o', 1.7)], ['TLC memastikan', K.nnt, 700, m('o', 2.2)]], 330, 756, { size: 38 });
+    tw(ban, { o: 1, y: 0 }, m('o'), .5, out);
+  }],
+
+  ['strategi', 'Bila dua versi berbeda', (m) => {
+    const p = panel(0);
+    const W = 440, Y = 150, H = 350, xs = [80, 580, 1080];
+    const steps = [
+      [K.paru, '1', 'Sebut kedua hasil', [['Versi Paru:', 3.0], ['NORMAL', 3.4], ['Versi Okupasi:', 3.8], ['RESTRIKSI', 4.2]], m('a')],
+      [K.nnt, '2', 'Justifikasi', [['Versi Okupasi:', 6.3], ['surveilans, sensitif', 9.1], ['untuk deteksi dini', 11.4], ['pada pekerja terpajan', 12.6]], m('b')],
+      [K.bad, '3', 'Kesimpulan', [['Versi Okupasi:', 8.0], ['Gangguan Fungsi Paru', 8.5], ['Restriksi', 9.0]], m('b', 3.0)],
+    ];
+    steps.forEach(([colr, n, title, lines, t], i) => {
+      const b = box(p, xs[i], Y, W, H, colr); put(b, { y: Y + 26 });
+      const c = G(b, { x: 50, y: 60 }); mk('circle', { r: 28, fill: colr }, c); T(c, n, { y: 11, size: 34, fill: '#fff', weight: 700, anchor: 'middle' });
+      T(b, title, { x: 100, y: 72, size: 38, weight: 700, fill: colr });
+      lines.forEach(([l, tt], j) => text(b, l, 30, 160 + j * 50, tt, { size: 31, fill: i === 0 && j % 2 ? [K.ok, K.bad][(j - 1) / 2] : K.ink, weight: i === 0 && j % 2 ? 700 : 500 }));
+      tw(b, { o: 1, y: Y }, t, .6, out);
+      if (i < 2) draw(path(p, arrowD(xs[i] + W + 6, Y + H / 2, xs[i + 1] - 8, Y + H / 2, 20), { stroke: K.dim, 'stroke-width': 6 }, { d: 0 }), steps[i + 1][4] - .2, .5);
+    });
+    const mix = box(p, 80, 560, 1440, 150, K.bad, { fill: '#fff' }); put(mix, { y: 586 }); tw(mix, { o: 1, y: 560 }, m('c'), .6, out);
+    text(mix, 'Obstruksi dan restriksi bersamaan', 40, 58, m('c'), { size: 30, fill: K.dim, weight: 600 });
+    segs(mix, [['sebut kedua derajat ', K.ink, 700, m('c', 3.1)], ['secara terpisah', K.bad, 700, m('c', 4.4)], ['. Jangan dirata-ratakan.', K.ink, 700, m('c', 5.4)]], 40, 114, { size: 42 });
+  }],
+
+  ['wrap', 'Ringkasan', (m) => {
+    const p = panel(0);
+    // each takeaway: lines of [text, fill] runs
+    const items = [
+      [[[['Validitas dulu, lalu '], ['rasio VEP1/KVP', K.rasio], [', lalu '], ['KVP', K.kvp], ['.']]], 'w1'],
+      [[[['Dua pertanyaan memberi '], ['empat hasil', K.ink], [': normal, restriksi,']], [['obstruksi, atau keduanya.']]], 'w2'],
+      [[[['Garis batas menentukan hasil: tetap pada Versi Paru,']], [['NNT', K.nnt], [' pada Versi Okupasi.']]], 'w3'],
+      [[[['Bila berbeda, sebut keduanya dan simpulkan dengan Versi Okupasi.']], [['Spirometri '], ['mencurigai', K.bad], [' restriksi, '], ['TLC', K.nnt], [' memastikan.']]], 'w4'],
+    ];
+    let y = 190;
+    items.forEach(([lines, mark], i) => {
+      const g = G(p, { x: -16, y, o: 0 });
+      const c = G(g, { x: 150, y: -12, s: .3 }); mk('circle', { r: 28, fill: K.nnt }, c); T(c, String(i + 1), { y: 11, size: 32, fill: '#fff', weight: 700, anchor: 'middle' });
+      tw(c, { s: 1 }, m(mark), .5, back);
+      lines.forEach((ln, j) => {
+        let cx = 210;
+        ln.forEach(([s, f]) => { const e = T(g, s, { x: cx, y: j * 46, size: 35, weight: f ? 700 : 600, fill: f || K.ink }); cx += width(e, s, 35); });
+      });
+      tw(g, { o: 1, x: 0 }, m(mark), .6, out);
+      y += 60 + lines.length * 46 + 36;
+    });
+  }],
+
+  ['final1', 'Latihan bab', () => { panel(0); }, { ask: done => quiz(SCREEN, PRACTICE.map(caseQuestion), done, 'Latihan bab') }],
+  ['finish', 'Selesai', () => { panel(0); }, { ask: finishCard }],
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+
+/* ---------- practice: cases A to E (contoh ilustratif) ---------- */
+// sex, KVP, predicted KVP, KVP % predicted, NNT KVP, ratio, predicted ratio, NNT ratio, then the answers
+const PRACTICE = [
+  { id: 'a', sex: 'Pria', kvp: 3700, pk: 4000, pct: '92,5', nk: 3327, r: 70, pr: 82, nr: 72, vp: 'o', vo: 'o',
+    wp: 'Rasio 70% kurang dari 75%: obstruksi. KVP 92,5% prediksi, di atas 80%: tidak restriksi.',
+    wo: 'Rasio 70% kurang dari NNT 72%: obstruksi. KVP 3 700 mL, di atas NNT 3 327 mL: tidak restriksi.' },
+  { id: 'b', sex: 'Wanita', kvp: 2500, pk: 3200, pct: '78', nk: 2701, r: 84, pr: 85, nr: 76, vp: 'r', vo: 'r',
+    wp: 'Rasio 84% di atas 75%: tidak obstruksi. KVP 78% prediksi, di bawah 80%: restriksi.',
+    wo: 'Rasio 84% di atas NNT 76%: tidak obstruksi. KVP 2 500 mL, di bawah NNT 2 701 mL: restriksi.' },
+  { id: 'c', sex: 'Pria', kvp: 3400, pk: 3800, pct: '89', nk: 3127, r: 70, pr: 76, nr: 66, vp: 'o', vo: 'n',
+    wp: 'Rasio 70% kurang dari 75%: obstruksi. KVP 89% prediksi, di atas 80%: tidak restriksi.',
+    wo: 'Rasio 70% di atas NNT 66%: tidak obstruksi. KVP 3 400 mL, di atas NNT 3 127 mL: tidak restriksi. Normal.' },
+  { id: 'd', sex: 'Pria', kvp: 2900, pk: 4200, pct: '69', nk: 3527, r: 62, pr: 80, nr: 70, vp: 'c', vo: 'c',
+    wp: 'Rasio 62% kurang dari 75%: obstruksi. KVP 69% prediksi, di bawah 80%: restriksi.',
+    wo: 'Rasio 62% kurang dari NNT 70%: obstruksi. KVP 2 900 mL, di bawah NNT 3 527 mL: restriksi.' },
+  { id: 'e', sex: 'Pria', kvp: 4600, pk: 5000, pct: '92', nk: 4327, r: 76, pr: 88, nr: 78, vp: 'n', vo: 'o',
+    wp: 'Rasio 76% di atas 75%: tidak obstruksi. KVP 92% prediksi, di atas 80%: tidak restriksi. Normal.',
+    wo: 'Rasio 76% kurang dari NNT 78%: obstruksi. KVP 4 600 mL, di atas NNT 4 327 mL: tidak restriksi.' },
+];
+function caseQuestion(c) {
+  const cell = (s, cls) => h('td', cls, s);
+  const tbl = h('table', 'case', [
+    h('tr', '', [cell('', 'h'), cell('Terukur', 'h'), cell('Prediksi', 'h'), cell('NNT', 'h')]),
+    h('tr', '', [cell('KVP', 'k'), cell(nb(`${String(c.kvp).replace(/(\d)(\d{3})$/, '$1 $2')} mL (${c.pct}% prediksi)`)), cell(nb(`${String(c.pk).replace(/(\d)(\d{3})$/, '$1 $2')} mL`)), cell(nb(`${String(c.nk).replace(/(\d)(\d{3})$/, '$1 $2')} mL`), 'n')]),
+    h('tr', '', [cell('VEP1/KVP', 'r'), cell(`${c.r}%`), cell(`${c.pr}%`), cell(`${c.nr}%`, 'n')]),
+  ]);
+  const cols = [['n', 'Normal'], ['r', 'Restriksi'], ['o', 'Obstruksi'], ['c', 'Obstruksi dan restriksi']];
+  return {
+    id: 'p-' + c.id, prompt: [`Kasus ${c.id.toUpperCase()}, ${c.sex.toLowerCase()}. Tentukan hasilnya menurut kedua versi. `, h('span', 'ilus', '(contoh ilustratif)'), tbl],
+    build: grid([{ parts: ['Versi Paru'], ans: [c.vp], why: c.wp }, { parts: ['Versi Okupasi'], ans: [c.vo], why: c.wo }], cols, { multi: false, text: true }),
+  };
+}
+
+boot();
+</script>
+</body>
+</html>

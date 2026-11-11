@@ -1,0 +1,35 @@
+/* This book's own settings, imported by engine.css. The engine files next to this one are the same in every book
+   and are replaced when the engine is updated; this file is not.
+   A light board, mapped to books/spirometri/style.json: board #fbfaf5, ink #1d1d1f, dim #6a6a6e.
+   --task is the NNT magenta (the highlight colour), --quiz the ratio blue (cards, kickers), --good normal, --bad gangguan.
+   The meanings KVP orange and Versi Paru grey are chapter constants (lib/spirometri.js). */
+:root {
+  --page: #e9e5d8; --board: #fbfaf5; --panel: #fff; --edge: #d8d2c0;
+  --chalk: #1d1d1f; --dim: #6a6a6e; --faint: #c4bfae;
+  --task: #b83280; --quiz: #1f6fc5; --good: #3f8a1d; --bad: #d9473a;
+  --on-fill: #fff; --vignette: rgba(90, 70, 30, .08); color-scheme: light;
+  --rule: #ece8e0; --track: #e6e2d5; --track-ask: #cfdeeb;
+  --bar-edge: #eae6da; --hover: #efede6; --veil: #e9e5d8;
+}
+/* Style overrides go here too. They come before the engine's rules, so make each selector more specific than the
+   engine's, e.g. ':root .card.band' for '.card.band'. */
+
+/* practice screen (final1): larger type, so the set fills the screen. Selectors are one class longer than the engine's. */
+.card.screen .kicker { font-size: 28px; }
+.card.screen .prompt { font-size: 50px; line-height: 1.25; }
+.card.screen .prompt .ilus { font-size: 26px; font-weight: 400; color: var(--dim); }
+table.case { border-collapse: collapse; margin-top: 22px; font-size: 38px; font-weight: 400; }
+table.case td { padding: 10px 44px 10px 0; border-bottom: 2px solid var(--rule); }
+table.case td.h { color: var(--dim); font-size: 26px; border-bottom-color: var(--faint); }
+table.case td.k { color: #c8641e; font-weight: 700; }
+table.case td.r { color: #1f6fc5; font-weight: 700; }
+table.case td.n { color: #b83280; font-weight: 700; }
+.card.screen .keys { font-size: 24px; margin-top: 18px; }
+.card.screen .grid .row { padding: 20px 0 20px 16px; }
+.card.screen .grid.text .row { grid-template-columns: minmax(0, 1fr) auto 50px; }
+.card.screen .grid.text .row .num { font-size: 40px; font-weight: 600; }
+.card.screen .grid .opt { font-size: 30px; min-height: 72px; padding: 6px 28px; }
+.card.screen .grid .opt kbd { font-size: 20px; }
+.card.screen .grid .mark { font-size: 40px; }
+.card.screen .grid .why { font-size: 28px; }
+.card.screen .fb { font-size: 32px; max-width: min(1400px, calc(var(--sw, 1600px) - 140px)); }

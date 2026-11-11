@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurva Valid atau Cacat</title>
+<link rel="stylesheet" href="../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render"><!-- hold the first frame until the player exists, so the page transition can run -->
+</head>
+<body>
+<script src="../lib/engine.js"></script>
+<script src="../lib/spirometri.js"></script>
+<script src="audio/id/timings.js"></script>
+<script>
+'use strict';
+// Bab 3, Kurva Valid atau Cacat. Beat ids match narration.id.json. Every curve that deforms is a function of one number
+// (a shape state, set by prog() from the beat's time), so a seek and a replay give the same frame.
+const CHAPTER = { number: 3, title: 'Kurva Valid atau Cacat', minutes: 8, language: 'id', next: '../ch04/' };
+
+/* ---------- captions: the voice spells the abbreviations (ka ve pe), the caption shows them written (KVP) ---------- */
+const NB = ' ';
+const nb = s => s.replace(/ /g, NB);
+const NUM = (words, to) => [new RegExp('\\b' + words + '\\b', 'gi'), to];
+const SAY = [[/\bef i ve ce\b/gi, 'FIVC'], [/\bve e pe satu\b/gi, 'VEP1'], [/\bka ve pe\b/gi, 'KVP'], [/\bte el ce\b/gi, 'TLC'], [/\bbe e ve\b/gi, 'BEV'],
+  [/\be o ef e\b/gi, 'EOFE'], [/\bef e te\b/gi, 'FET'], [/\ba te es\b/gi, 'ATS'], [/\be er es\b/gi, 'ERS'],
+  NUM('seratus delapan puluh', '180'), NUM('dua ratus empat puluh', '240'), NUM('seratus lima puluh mililiter', '150' + NB + 'mL'), NUM('dua ratus mililiter', '200' + NB + 'mL'),
+  NUM('dua ratus', '200'), NUM('seratus mililiter', '100' + NB + 'mL'), NUM('dua puluh lima mililiter', '25' + NB + 'mL'), NUM('sepuluh', '10'),
+  NUM('lima belas detik', '15' + NB + 'detik'), NUM('enam detik', '6' + NB + 'detik'), NUM('satu detik', '1' + NB + 'detik'), NUM('satu menit', '1' + NB + 'menit'),
+  NUM('dua koma sembilan satu', '2,91'), NUM('tiga koma nol sembilan liter', '3,09' + NB + 'L'), NUM('tiga koma nol lima', '3,05'), NUM('tiga koma satu dua', '3,12'),
+  NUM('tiga liter', '3' + NB + 'L'), NUM('empat liter', '4' + NB + 'L'), NUM('lima persen', '5%'), NUM('tiga persen', '3%'), NUM('lima puluh', '50'),
+  NUM('lima kriteria', '5 kriteria'), NUM('tiga manuver', '3 manuver'), NUM('delapan', '8'), NUM('tiga kali', '3 kali')];
+for (const t of Object.values(TIMINGS)) t.cues = t.cues.map(([s, str]) => [s, SAY.reduce((a, [re, to]) => a.replace(re, to), str)]);
+
+/* ---------- chapter drawing helpers (the same as chapters 1 and 2) ---------- */
+const text = (p, str, x, y, t0, { size = 30, fill = K.ink, anchor = 'start', weight = 500, dur = .5 } = {}) => { const e = T(p, str, { x, y, size, fill, anchor, weight, o: 0 }); show(e, t0, dur); return e; };
+const width = (e, str, size) => e.getComputedTextLength() || str.length * size * .56;
+function runs(p, parts, x, y, t0, { size = 30, weight = 500, anchor = 'start', dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  let cx = 0;
+  for (const [str, fill = K.ink, wt = weight] of parts) { const e = T(g, str, { x: cx, y: 0, size, fill, weight: wt }); cx += width(e, str, size); }
+  put(g, { x: anchor === 'middle' ? x - cx / 2 : anchor === 'end' ? x - cx : x, y });
+  show(g, t0, dur);
+  return g;
+}
+function pill(p, str, x, y, fill, t0, { size = 30, anchor = 'start', pad = 16, dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  const t = T(g, str, { x: 0, y: 0, size, fill: '#fff', weight: 700 });
+  const w = width(t, str, size) + pad * 2;
+  g.insertBefore(mk('rect', { x: -pad, y: -size * .86, width: w, height: size * 1.25, rx: size * .4, fill }), t);
+  put(g, { x: (anchor === 'middle' ? x - w / 2 : anchor === 'end' ? x - w : x) + pad, y });
+  show(g, t0, dur);
+  return g;
+}
+function tag(p, str, x, y, t0, { size = 24, edge = K.ink } = {}) {
+  const g = G(p, { o: 0 });
+  const t = T(g, str, { x: 0, y: 0, size, weight: 600 });
+  const w = width(t, str, size) + 36;
+  g.insertBefore(mk('rect', { x: -18, y: -size * .92, width: w, height: size * 1.55, rx: size * .78, fill: '#fff', stroke: edge, 'stroke-width': 3 }), t);
+  put(g, { x: x + 18, y }); tw(g, { o: 1 }, t0, .45);
+  return g;
+}
+function arrowD(x1, y1, x2, y2, head = 16) {
+  const a = Math.atan2(y2 - y1, x2 - x1), c = Math.cos(a), s = Math.sin(a), hw = head * .6;
+  const bx = x2 - head * c, by = y2 - head * s;
+  return `M${x1} ${y1}L${x2} ${y2}M${bx - hw * s} ${by + hw * c}L${x2} ${y2}L${bx + hw * s} ${by - hw * c}`;
+}
+function box(p, x, y, w, h, edge, { fill = '#fff', sw = 3, o = 0 } = {}) {
+  const g = G(p, { x, y, o });
+  mk('rect', { x: 0, y: 0, width: w, height: h, rx: 22, fill, stroke: edge, 'stroke-width': sw }, g);
+  return g;
+}
+const lerp = (a, b, q) => a + (b - a) * q;
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const smooth = (a, b, v) => { const t = clamp((v - a) / (b - a)); return t * t * (3 - 2 * t); };
+function ring(p, x, y, t0, color = K.ink) {
+  const g = G(p, { x, y, o: 0 }); mk('circle', { r: 16, fill: 'none', stroke: color, 'stroke-width': 5 }, g);
+  prog(q => put(g, { s: 1 + 2.4 * q, o: .9 * (1 - q) }), t0, .9, out);
+  return g;
+}
+// a solid ring that stays (marks a place on a curve)
+function mark(p, x, y, t0, color = K.ink, r = 20) {
+  const g = G(p, { x, y, o: 0 }); mk('circle', { r, fill: 'none', stroke: color, 'stroke-width': 5 }, g);
+  tw(g, { o: 1 }, t0, .4); return g;
+}
+// the "ciri / dampak" card: rows { k: 'ciri', lines: [...], col, t0 } under one rounded box
+function cdCard(p, x, y, w, rows, { size = 25 } = {}) {
+  let hh = 16; const g = G(p, { x, y });
+  const inner = rows.map(r => { const ry = hh; hh += r.lines.length * (size * 1.32) + 14; return { r, ry }; });
+  const b = mk('rect', { x: 0, y: 0, width: w, height: hh + 4, rx: 18, fill: '#fff', stroke: K.faint, 'stroke-width': 3 }, g); put(b, { o: 0 }); show(b, Math.min(...rows.map(r => r.t0)) - .1, .4);
+  inner.forEach(({ r, ry }) => {
+    const gr = G(g, { o: 0 });
+    T(gr, r.k.toUpperCase(), { x: 20, y: ry + size * .98, size: 19, fill: r.col || K.dim, weight: 700 });
+    r.lines.forEach((ln, j) => {
+      const yy = ry + size * .98 + j * size * 1.32;
+      if (typeof ln === 'string') T(gr, ln, { x: 120, y: yy, size, fill: K.ink, weight: 500 });
+      else { let cx = 120; for (const [s, f = K.ink, wt = 500] of ln) { const e = T(gr, s, { x: cx, y: yy, size, fill: f, weight: wt }); cx += width(e, s, size); } }
+    });
+    show(gr, r.t0, .5);
+  });
+  g.h = hh + 4; return g;
+}
+const ban = (p, str, x, y, w, t0, col = K.nnt, size = 28) => {
+  const g = G(p, { o: 0, y: 20 }); mk('rect', { x, y, width: w, height: 62, rx: 18, fill: col, 'fill-opacity': .1, stroke: col, 'stroke-width': 3 }, g);
+  T(g, str, { x: x + w / 2, y: y + 41, size, weight: 700, anchor: 'middle' });
+  tw(g, { o: 1, y: 0 }, t0, .5, out); return g;
+};
+
+/* ---------- this chapter's meanings (on top of style.json look.meaning) ---------- */
+// the curve under test: ink; a fault: gangguan red; a good curve: normal green; KVP orange; the ratio blue; cut-off Versi Paru grey.
+const C_CUT = K.paru;
+
+/* ---------- schematic flow-volume curves ---------- */
+// State s: amp (peak scale), sub (0..1, a low blunt submaximal peak), scoop (0..1, the obstruction curve of chapter 2),
+// cough / cx (a sharp notch at volume cx), glot (a sudden drop to zero in mid-curve), tail (a small second hump after the end),
+// ext (a low flow tail running on to the right). Volume 1 is the end of the normal curve.
+const FV0 = { amp: 1, sub: 0, scoop: 0, cough: 0, cx: .14, glot: 0, tail: 0, ext: 0 };
+function fvF(v, s) {
+  const w = Math.max(0, 1 - (v - .09) / .91);
+  const base = v < .09 ? Math.sin(Math.max(v, 0) / .09 * Math.PI / 2) : w;
+  let f = base;
+  if (s.scoop) f = lerp(f, (v < .09 ? base : Math.pow(w, 2.4)) * .55, s.scoop);
+  if (s.sub) f = lerp(f, .42 * (v < .22 ? Math.sin(Math.max(v, 0) / .22 * Math.PI / 2) : Math.max(0, 1 - (v - .22) / .78)), s.sub);
+  f *= s.amp;
+  if (s.cough) f *= 1 - s.cough * .72 * Math.exp(-Math.pow((v - s.cx) / .018, 2));
+  if (s.glot) f *= 1 - s.glot * (smooth(.36, .375, v) - smooth(.435, .45, v));
+  if (s.tail && v > .9) f += s.tail * .17 * Math.sin(Math.PI * clamp((v - 1.0) / .13)) * (v > 1 ? 1 : 0);
+  if (s.ext && v > .8) f += s.ext * .08 * smooth(.8, 1, v) * (v <= 1 ? 1 : Math.max(0, 1 - (v - 1) / .4));
+  return f;
+}
+const fvEnd = s => 1 + .4 * (s.ext || 0) + .13 * clamp((s.tail || 0) * 4);
+function fvD(x0, y0, sw, sh, s) {
+  const n = 150, ve = fvEnd(s); let d = '';
+  for (let i = 0; i <= n; i++) { const v = ve * i / n; d += (i ? 'L' : 'M') + (x0 + v * sw).toFixed(1) + ' ' + (y0 - fvF(v, s) * sh).toFixed(1); }
+  return d + `L${(x0 + ve * sw).toFixed(1)} ${y0}`;
+}
+function fvCurve(p, x0, y0, sw, sh, s, color, { width = 6, wash = .1, dashed = false, drawn = false } = {}) {
+  const g = G(p), area = mk('path', { fill: color, 'fill-opacity': wash, stroke: 'none' }, g);
+  const line = path(g, '', { stroke: color, 'stroke-width': width, 'stroke-linejoin': 'round', ...(dashed ? { 'stroke-dasharray': '10 9' } : {}) }, dashed || !drawn ? {} : { d: 0 });
+  const c = { g, line, area, s: { ...FV0, ...s }, set(q) { c.s = { ...FV0, ...q }; const d = fvD(x0, y0, sw, sh, c.s); line.setAttribute('d', d); area.setAttribute('d', d + 'Z'); } };
+  c.set(s); return c;
+}
+function fvAxes(p, x0, y0, sw, sh, { labels = true, size = 24, ext = 14, below = 0 } = {}) {
+  const g = G(p);
+  path(g, `M${x0} ${y0 - sh - 14}V${y0 + below}M${x0} ${y0}H${x0 + sw + ext}`, { stroke: K.faint, 'stroke-width': 3 });
+  if (labels) {
+    T(g, 'aliran', { x: x0 - 8, y: y0 - sh - 22, size, fill: K.dim, weight: 500 });
+    T(g, 'volume', { x: x0 + sw + ext, y: y0 + size + 8 + (below ? 0 : 0), size, fill: K.dim, weight: 500, anchor: 'end' });
+  }
+  return g;
+}
+// interpolate two shape states
+const mixS = (a, b, q) => { const A = { ...FV0, ...a }, B = { ...FV0, ...b }, o = {}; for (const k in FV0) o[k] = lerp(A[k], B[k], q); return o; };
+function fvMorph(cv, from, to, t0, dur, ease = io) { prog(q => cv.set(mixS(from, to, q)), t0, dur, ease); }
+// the inspiratory limb below the axis (for the full loop): from volume 1 back to volume -ex
+function loopD(x0, y0, sw, sh, ex) {
+  const n = 80; let d = '';
+  for (let i = 0; i <= n; i++) { const u = i / n, v = 1 - u * (1 + ex), f = -.78 * Math.pow(Math.sin(Math.PI * u), .85) * (1 - .2 * u); d += (i ? 'L' : 'M') + (x0 + v * sw).toFixed(1) + ' ' + (y0 - f * sh).toFixed(1); }
+  return d;
+}
+
+/* ---------- schematic volume-time curves ---------- */
+// One flow law gives the volume over time (as chapter 2): flow = F * f(v), integrated. VN is a healthy curve, VO an obstructed one.
+function lawArr(F, pw, T = 16, dt = .002) {
+  const n = Math.ceil(T / dt), V = new Float32Array(n + 2); let v = .004;
+  for (let i = 0; i <= n + 1; i++) { V[i] = v - .004; v = Math.min(.9999, v + F * (v < .09 ? Math.sin(v / .09 * Math.PI / 2) : Math.pow(Math.max(0, 1 - (v - .09) / .91), pw)) * dt); }
+  return t => { if (t <= 0) return 0; const x = clamp(t / dt, 0, n), i = Math.floor(x); return lerp(V[i], V[i + 1], x - i); };
+}
+const VN = lawArr(1.8, 1), VO = lawArr(1.0, 2.3);
+const VT0 = { obs: 0, d: 0, fh: 0, leak: 0, zf: 0, nose: 0, cut: 99 };
+function vtV(t, s) {
+  if (t <= 0) return 0;
+  let v = lerp(VN(t - s.d), VO(t - s.d), s.obs);
+  if (s.fh) v += s.fh * smooth(0, Math.max(s.d, .01), t);
+  if (s.leak) v = lerp(v, .55 * (1 - Math.exp(-t / .45)), s.leak);
+  if (s.zf < 0) v *= 1 + s.zf * .3 * smooth(.5, 7, t); else if (s.zf > 0) v += s.zf * .035 * Math.max(0, t - .4);
+  if (s.nose) v += s.nose * .2 * smooth(4.4, 5.1, t);
+  return v;
+}
+const mixV = (a, b, q) => { const A = { ...VT0, ...a }, B = { ...VT0, ...b }, o = {}; for (const k in VT0) o[k] = k === 'cut' ? B[k] : lerp(A[k], B[k], q); return o; };
+// a volume-time chart: x runs over TM seconds, y over vmax (1 = the healthy KVP)
+function vtChart(p, x0, y0, sw, sh, { TM = 8, vmax = 1.2, labels = true, size = 24 } = {}) {
+  const X = t => x0 + t / TM * sw, Y = v => y0 - v / vmax * sh, g = G(p);
+  path(g, `M${x0} ${y0 - sh - 14}V${y0}H${x0 + sw + 14}`, { stroke: K.faint, 'stroke-width': 3 });
+  if (labels) {
+    T(g, 'volume', { x: x0 - 8, y: y0 - sh - 22, size, fill: K.dim, weight: 500 });
+    T(g, 'waktu', { x: x0 + sw + 14, y: y0 + size + 8, size, fill: K.dim, weight: 500, anchor: 'end' });
+  }
+  const D = (s, tEnd = TM, step = .04) => { let d = ''; const te = Math.min(tEnd, s.cut === undefined ? 99 : s.cut); const n = Math.max(2, Math.ceil(te / step)); for (let i = 0; i <= n; i++) { const t = te * i / n; d += (i ? 'L' : 'M') + X(t).toFixed(1) + ' ' + Y(vtV(t, s)).toFixed(1); } return d; };
+  const curve = (s, color, { width = 6, dashed = false, wash = 0, drawn = false } = {}) => {
+    const cg = G(g), area = wash ? mk('path', { fill: color, 'fill-opacity': wash, stroke: 'none' }, cg) : null;
+    const attrs = { fill: 'none', stroke: color, 'stroke-width': width, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', ...(dashed ? { 'stroke-dasharray': '10 9' } : {}) };
+    const line = drawn && !dashed ? path(cg, '', attrs, { d: 0 }) : mk('path', attrs, cg);
+    const c = { g: cg, line, s: { ...VT0, ...s }, set(q, tEnd = TM) { c.s = { ...VT0, ...q }; const d = D(c.s, tEnd); line.setAttribute('d', d); if (area) area.setAttribute('d', d + `L${X(Math.min(tEnd, c.s.cut))} ${y0}Z`); } };
+    c.set(s); return c;
+  };
+  return { g, X, Y, D, curve, x0, y0, sw, sh, TM, vmax };
+}
+// the ratio gauge: a track with the cut-off, a marker for VEP1/KVP (no numbers: the position only)
+function gauge(p, x, y, w, t0, { label = true } = {}) {
+  const g = G(p, { o: 0 }), RX = r => x + clamp((r - .4) / .65) * w;
+  mk('rect', { x, y: y - 12, width: RX(.75) - x, height: 24, rx: 12, fill: K.bad, 'fill-opacity': .16 }, g);
+  mk('rect', { x: RX(.75), y: y - 12, width: x + w - RX(.75), height: 24, rx: 12, fill: K.ok, 'fill-opacity': .16 }, g);
+  path(g, `M${RX(.75)} ${y - 26}V${y + 26}`, { stroke: C_CUT, 'stroke-width': 4, 'stroke-dasharray': '6 5' });
+  T(g, 'cut-off', { x: RX(.75), y: y + 52, size: 22, fill: C_CUT, weight: 600, anchor: 'middle' });
+  if (label) T(g, 'rasio VEP1/KVP', { x, y: y - 36, size: 24, fill: K.rasio, weight: 700 });
+  const mk1 = G(g, { x: x, y }); mk('path', { d: 'M0 -2L-15 -26H15Z', fill: K.rasio }, mk1); mk('circle', { r: 9, fill: K.rasio, cy: 0 }, mk1);
+  const set = r => put(mk1, { x: RX(r), y });
+  tw(g, { o: 1 }, t0, .5);
+  return { g, set, RX };
+}
+
+/* ---------- the hesitant start: BEV by back-extrapolation, computed on the drawn curve ---------- */
+// The steepest point of the curve gives a tangent; where it meets zero volume is the extrapolated time zero; the volume the
+// curve has already reached at that moment is the BEV. The hesitation parameters (foot volume fh, foot length d) are solved
+// once so that the two worked examples read 180 and 240 mL on a 4,00 L KVP.
+function bevOf(s) {
+  const dt = .002; let best = 0, bi = 1, prev = vtV(0, s);
+  for (let i = 1; i < 1200; i++) { const v = vtV(i * dt, s), sl = (v - prev) / dt; if (sl > best) { best = sl; bi = i; } prev = v; }
+  const tm = bi * dt, vm = vtV(tm, s), te = Math.max(0, tm - vm / best);
+  return { slope: best, tm, vm, te, bev: vtV(te, s) };
+}
+function solveFh(d, target) { let lo = 0, hi = .3; for (let i = 0; i < 26; i++) { const mid = (lo + hi) / 2; if (bevOf({ ...VT0, d, fh: mid }).bev < target) lo = mid; else hi = mid; } return (lo + hi) / 2; }
+const HES = [{ ...VT0 }, { ...VT0, d: .3, fh: solveFh(.3, .045) }, { ...VT0, d: .42, fh: solveFh(.42, .06) }];   // none, 180 mL, 240 mL of 4000 mL
+
+/* ---------- beats ---------- */
+let q1els, q2els;
+
+const BEATS = [
+  ['intro', 'Kurva Valid atau Cacat', (m, D) => {
+    const g = G(scene, { o: 0, y: 24 });
+    T(g, 'Spirometri · Bab 3', { x: 800, y: 190, size: 28, fill: K.dim, anchor: 'middle' });
+    T(g, 'Kurva Valid atau Cacat', { x: 800, y: 290, size: 84, weight: 600, anchor: 'middle' });
+    tw(g, { o: 1, y: 0 }, .2, 1.1, out);
+    const cg = G(scene, { o: 1 });
+    const x0 = 560, y0 = 800, sw = 480, sh = 230;
+    fvAxes(cg, x0, y0, sw, sh, { labels: false });
+    const c = fvCurve(cg, x0, y0, sw, sh, {}, K.ok, { width: 7, drawn: true });
+    put(c.area, { o: 0 }); show(c.area, 1.9, .8);
+    draw(c.line, .7, 1.6, io);
+    const dot = mk('circle', { r: 11, fill: K.ink }, cg); put(dot, { o: 0 }); show(dot, .7, .2);
+    prog(q => { const v = q; put(dot, { x: x0 + v * sw, y: y0 - fvF(v, FV0) * sh }); }, .7, 1.6, io);
+    hide(dot, 2.4, .3);
+    text(cg, 'skematis', x0 + sw + 14, y0 + 40, 2.2, { size: 22, fill: K.dim, anchor: 'end' });
+    const ok = pill(cg, 'valid', 1130, 560, K.ok, 2.4, { size: 34 });
+    const bad = pill(cg, 'cacat', 1130, 560, K.bad, m('sub', 1.4), { size: 34 });
+    hide(ok, m('sub', 1.2), .3);
+    const r = text(scene, 'Angka spirometri hanya sebaik kurvanya.', 800, 380, m('sub'), { size: 34, fill: K.dim, anchor: 'middle' });
+    prog(q => c.set({ cough: q }), m('sub', 1.0), 1.4, io);
+    tw(c.line, { c_stroke: K.bad }, m('sub', 1.0), 1.4);
+    tw(g, { o: 0, y: -24 }, D - .9, .8); hide(r, D - .9, .8); hide(cg, D - .9, .8);
+  }],
+
+  ['sebelum', 'Sebelum pasien: alat diperiksa', (m, D) => {
+    const p = G(panel(0), { y: 90 });
+    // three steps, left to right
+    [['1', 'Uji kebocoran', 70, m('a')], ['2', 'Verifikasi volume', 560, m('b')], ['3', 'Nose clip', 1120, m('e')]].forEach(([n, s, x, t0]) => {
+      const g = G(p, { x, y: 110, o: 0 }); const c = G(g, { x: 22, y: -10 }); mk('circle', { r: 22, fill: K.nnt }, c); T(c, n, { y: 9, size: 26, fill: '#fff', weight: 700, anchor: 'middle' });
+      T(g, s, { x: 58, y: 0, size: 32, weight: 700 }); tw(g, { o: 1 }, t0, .5);
+    });
+    // 1: leak test, three limits by source
+    const lk = box(p, 70, 160, 450, 330, K.faint); tw(lk, { o: 1 }, m('a', .2), .5);
+    [['ATS 1994', '≤ 10', 60], ['NIOSH 2004', '≤ 20', 150], ['ACOEM 2020', '≤ 30', 240]].forEach(([src, v, y], i) => {
+      const g = G(lk, { o: 0 });
+      T(g, src, { x: 28, y: y + 4, size: 26, fill: K.dim, weight: 600 });
+      T(g, nb(v + ' mL/menit'), { x: 422, y: y + 4, size: 32, weight: 700, anchor: 'end' });
+      path(g, `M28 ${y + 36}H422`, { stroke: K.faint, 'stroke-width': 2 });
+      tw(g, { o: 1 }, m('a', .8 + i * .55), .5);
+    });
+    text(lk, 'batas berbeda menurut sumber', 225, 312, m('a', 3.2), { size: 25, fill: K.dim, anchor: 'middle' });
+    // 2: the 3 L syringe and the +-3% band
+    const sg = G(p, { o: 0 }); tw(sg, { o: 1 }, m('b', .2), .5);
+    mk('rect', { x: 700, y: 200, width: 330, height: 74, rx: 10, fill: '#fff', stroke: K.ink, 'stroke-width': 5 }, sg);
+    path(sg, 'M700 226H650V248H700', { stroke: K.ink, 'stroke-width': 5, fill: '#fff' });
+    for (let i = 1; i < 6; i++) path(sg, `M${700 + i * 55} 200v14`, { stroke: K.faint, 'stroke-width': 3 });
+    T(sg, '3 L', { x: 865, y: 180, size: 36, weight: 700, fill: K.dim, anchor: 'middle' });
+    const plg = G(sg, { x: 0, y: 0 }); mk('rect', { x: 1000, y: 192, width: 20, height: 90, rx: 6, fill: K.ink }, plg); path(plg, 'M1020 237H1090', { stroke: K.ink, 'stroke-width': 9 }); path(plg, 'M1090 205V269', { stroke: K.ink, 'stroke-width': 12 });
+    prog(q => put(plg, { x: -250 * q }), m('b', 1.0), 3.2, io);
+    path(sg, arrowD(640, 237, 590, 237, 16), { stroke: K.dim, 'stroke-width': 6 });
+    const SX = v => 600 + (v - 2.85) / .30 * 460;
+    ring(p, SX(2.91), 440, m('b', 5.2), K.ok); ring(p, SX(3.09), 440, m('b', 7.4), K.ok);
+    const nl = G(p, { o: 0 }); tw(nl, { o: 1 }, m('b', 4.0), .5);
+    path(nl, `M${SX(2.85)} 440H${SX(3.15)}`, { stroke: K.ink, 'stroke-width': 4 });
+    mk('rect', { x: SX(2.91), y: 420, width: SX(3.09) - SX(2.91), height: 40, rx: 8, fill: K.ok, 'fill-opacity': .22, stroke: K.ok, 'stroke-width': 3 }, nl);
+    [[2.91, '2,91'], [3.0, '3,00'], [3.09, '3,09']].forEach(([v, s]) => { path(nl, `M${SX(v)} 432v16`, { stroke: K.ink, 'stroke-width': 3 }); T(nl, s, { x: SX(v), y: 486, size: 24, fill: K.dim, weight: 600, anchor: 'middle' }); });
+    T(nl, '± 3% dari 3,00 L', { x: SX(3.0), y: 530, size: 26, weight: 700, fill: K.ok, anchor: 'middle' });
+    T(nl, 'liter', { x: SX(3.15), y: 486, size: 22, fill: K.dim, anchor: 'end' });
+    const ex = (v, ok, t0, label) => {
+      const g = G(p, { x: SX(v), y: 440 - 90, o: 0 }), col = ok ? K.ok : K.bad;
+      mk('circle', { r: 13, fill: col }, g);
+      T(g, nb(label), { x: 0, y: -26, size: 27, weight: 700, fill: col, anchor: 'middle' });
+      tw(g, { o: 1, y: 440 }, t0, .8, out);
+      const v1 = G(p, { x: SX(v), y: 590, o: 0 }); T(v1, ok ? '✓ lolos' : '✗ gagal', { x: 0, y: 0, size: 28, weight: 700, fill: col, anchor: 'middle' }); tw(v1, { o: 1 }, t0 + .7, .4);
+      return g;
+    };
+    ex(3.05, true, m('c'), '3,05 L'); ex(3.12, false, m('d'), '3,12 L');
+    text(p, 'contoh ilustratif', SX(2.85), 640, m('c', .6), { size: 24, fill: K.dim });
+    // 3: nose clip
+    const hd = G(p, { x: 1290, y: 340, s: 1.3, o: 0 }); tw(hd, { o: 1 }, m('e', .2), .6);
+    mk('circle', { r: 76, fill: '#f3e4de', stroke: K.ink, 'stroke-width': 5 }, hd);
+    path(hd, 'M72 -14L112 24L76 28', { stroke: K.ink, 'stroke-width': 5, fill: '#f3e4de' });
+    path(hd, 'M44 50H88', { stroke: K.ink, 'stroke-width': 5 });
+    path(hd, 'M88 50H170', { stroke: K.ink, 'stroke-width': 10 });
+    path(hd, arrowD(100, 62, 168, 62, 14), { stroke: K.dim, 'stroke-width': 5 });
+    const leak = G(hd, { o: 0 }); path(leak, arrowD(110, 10, 170, -44, 14), { stroke: K.bad, 'stroke-width': 6, 'stroke-dasharray': '9 7' }); tw(leak, { o: 1 }, m('e', .6), .5);
+    const clip = G(hd, { x: 30, y: -70, o: 0 }); mk('rect', { x: 76, y: -4, width: 36, height: 26, rx: 8, fill: K.ok, stroke: K.ink, 'stroke-width': 4 }, clip); tw(clip, { o: 1, x: 0, y: 0 }, m('e', 1.8), .6, out);
+    hide(leak, m('e', 2.6), .4);
+    text(p, 'udara tidak bocor lewat hidung', 1330, 480, m('e', 2.2), { size: 26, fill: K.ok, weight: 700, anchor: 'middle' });
+    text(p, 'yang memalsukan KVP', 1330, 514, m('e', 2.8), { size: 26, fill: K.dim, anchor: 'middle' });
+  }],
+
+  ['lima', 'Lima kriteria acceptable (PERDOKI 2019)', (m, D) => {
+    const p = panel(0);
+    const x0 = 110, y0 = 400, sw = 400, sh = 280;
+    fvAxes(p, x0, y0, sw, sh, { below: 230, labels: false });
+    const c = fvCurve(p, x0, y0, sw, sh, {}, K.ok, { width: 7, drawn: true });
+    draw(c.line, .3, 1.5, io); put(c.area, { o: 0 }); show(c.area, 1.6, .6);
+    draw(path(p, loopD(x0, y0, sw, sh, 0), { stroke: K.ok, 'stroke-width': 7, 'stroke-linecap': 'round' }, { d: 0 }), 1.6, 1.6, io);
+    text(p, 'skematis', x0 + sw + 14, y0 + 260, .5, { size: 22, fill: K.dim, anchor: 'end' });
+    // the five criteria, word for word
+    const CR = [
+      ['Awal pemeriksaan baik:', ' grafik berhimpit dengan sumbu Y', '(tegak), tidak ada hesitation.'],
+      ['Inspirasi dan ekspirasi maksimal:', ' tampak pasien menarik', 'napas penuh & menghembuskan paksa.'],
+      ['Satu puncak:', ' kurva flow-volume punya 1 peak yang jelas', '(bukan multiple).'],
+      ['Bebas artefak:', ' tidak ada batuk di awal, penutupan glotis,', 'kebocoran, atau sumbatan.'],
+      ['Selesai dengan baik:', ' ekspirasi minimal 6 detik ATAU', 'plateau ≥1 detik. Grafik mendatar memotong sumbu X.'],
+    ];
+    const marks = [m('a'), m('b'), m('c'), m('d'), m('e'), m('f')], cards = [];
+    CR.forEach(([lead, rest, l2], i) => {
+      const g = G(p, { x: 640 + 30, y: 100 + i * 140, o: 0 });
+      const r = mk('rect', { x: 0, y: 0, width: 910, height: 118, rx: 20, fill: '#faf9f3', stroke: K.faint, 'stroke-width': 3 }, g);
+      const n = G(g, { x: 52, y: 59 }); mk('circle', { r: 26, fill: K.nnt }, n); T(n, String(i + 1), { y: 11, size: 30, fill: '#fff', weight: 700, anchor: 'middle' });
+      const e1 = T(g, lead, { x: 102, y: 52, size: 26, weight: 700 }); T(g, rest, { x: 102 + width(e1, lead, 26), y: 52, size: 26, weight: 500 });
+      T(g, l2, { x: 102, y: 90, size: 26, weight: 500 });
+      const tick = path(g, 'M0 0L12 14L36 -16', { stroke: K.ok, 'stroke-width': 8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, { d: 0, x: 842, y: 58 });
+      tw(g, { o: 1, x: 640 }, .4 + i * .25, .6, out);
+      draw(tick, marks[i + 1] + .1, .4);
+      cards.push(r);
+    });
+    prog(q => { const t = q * D; cards.forEach((r, i) => { const on = t >= marks[i] && t < marks[i + 1], done = t >= marks[i + 1]; r.setAttribute('stroke', on ? K.ink : done ? K.ok : K.faint); r.setAttribute('stroke-width', on ? 5 : 3); r.setAttribute('fill', on ? '#fff' : '#faf9f3'); }); }, 0, D, lin);
+    // where each criterion lives on the curve
+    const flash = (g, b) => { tw(g, { o: 0 }, b, .3); return g; };
+    flash(mark(p, x0 + .05 * sw, y0 - fvF(.05, FV0) * sh, marks[0], K.nnt, 22), marks[1]);
+    flash(pill(p, 'ekspirasi paksa', x0 + 120, y0 - fvF(.35, FV0) * sh - 30, K.dim, marks[1], { size: 24 }), marks[2]);
+    flash(pill(p, 'inspirasi penuh', x0 + 90, y0 + 262, K.dim, marks[1], { size: 24 }), marks[2]);
+    flash(mark(p, x0 + .09 * sw, y0 - sh, marks[2], K.nnt, 24), marks[3]);
+    const pen = mk('circle', { r: 12, fill: K.nnt }, p); put(pen, { o: 0 });
+    prog(q => put(pen, { x: x0 + q * sw, y: y0 - fvF(q, FV0) * sh, o: q > 0 && q < 1 ? 1 : 0 }), marks[3] + .2, marks[4] - marks[3] - .4, io);
+    flash(mark(p, x0 + sw, y0, marks[4], K.nnt, 22), marks[5]);
+    flash(text(p, 'memotong', x0 + sw + 34, y0 - 14, marks[4], { size: 24, fill: K.nnt, weight: 700 }), marks[5]);
+    flash(text(p, 'sumbu X', x0 + sw + 34, y0 + 16, marks[4], { size: 24, fill: K.nnt, weight: 700 }), marks[5]);
+    pill(p, 'acceptable', x0 + 40, y0 - sh - 54, K.ok, marks[5], { size: 32 });
+  }],
+
+  ['awal', 'Awal yang baik: BEV', (m, D) => {
+    const p = panel(0);
+    const CH = vtChart(p, 110, 640, 760, 400, { TM: 3, vmax: 1.15 });
+    const ZX0 = 1010, ZY0 = 620, ZW = 500, ZH = 270, ZT = .6, ZV = .125;
+    const zx = t => ZX0 + t / ZT * ZW, zy = v => ZY0 - v / ZV * ZH;
+    pill(p, 'BEV', 110, 112, K.nnt, .2, { size: 30 });
+    text(p, 'back-extrapolated volume', 224, 113, .4, { size: 28, fill: K.dim });
+    text(p, 'skematis', 110 + 760 + 14, 640 + 66, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    // right: the rule, the worked example
+    const rb = box(p, 960, 56, 590, 104, K.ink, { sw: 3 }); tw(rb, { o: 1 }, m('c'), .5);
+    runs(rb, [['BEV < 5% KVP', K.kvp, 700], ['  atau  ', K.dim, 500], ['< 100 mL', K.ink, 700]], 295, 46, 0, { size: 32, anchor: 'middle' });
+    T(rb, 'diambil yang lebih besar', { x: 295, y: 86, size: 26, fill: K.dim, anchor: 'middle' });
+    ring(p, 1135, 100, m('c', .8), K.kvp); ring(p, 1465, 100, m('c', 3.6), K.ink);
+    text(p, 'contoh ilustratif', 970, 202, m('d'), { size: 24, fill: K.dim });
+    text(p, nb('KVP 4,00 L: 5% = 200 mL'), 970, 240, m('d', 1.0), { size: 30, weight: 700 });
+    text(p, nb('200 mL > 100 mL, jadi batas = 200 mL'), 970, 280, m('d', 3.4), { size: 28 });
+    // axes of the magnified start
+    const zg = G(p, { o: 0 }); tw(zg, { o: 1 }, m('a', .8), .6);
+    path(zg, `M${ZX0} ${ZY0 - ZH - 10}V${ZY0}H${ZX0 + ZW + 10}`, { stroke: K.faint, 'stroke-width': 3 });
+    T(zg, 'awal kurva, diperbesar', { x: ZX0, y: ZY0 - ZH - 24, size: 24, fill: K.dim });
+    T(zg, 'waktu', { x: ZX0 + ZW + 10, y: ZY0 + 32, size: 22, fill: K.dim, anchor: 'end' });
+    const rect = mk('rect', { x: CH.X(0), y: CH.Y(ZV), width: CH.X(ZT) - CH.X(0), height: CH.Y(0) - CH.Y(ZV), fill: 'none', stroke: K.dim, 'stroke-width': 2.5, 'stroke-dasharray': '5 5' }, p); put(rect, { o: 0 }); show(rect, m('a', .8), .5);
+    // the curve and its pieces
+    const hs0 = { ...HES[0] };
+    const ghostM = mk('path', { fill: 'none', stroke: K.faint, 'stroke-width': 5, 'stroke-dasharray': '10 9' }, p); ghostM.setAttribute('d', CH.D(hs0, 3)); put(ghostM, { o: 0 }); show(ghostM, m('e', .2), .5);
+    const mainL = mk('path', { fill: 'none', stroke: K.ink, 'stroke-width': 6, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, p);
+    const zoomL = mk('path', { fill: 'none', stroke: K.ink, 'stroke-width': 6, 'stroke-linejoin': 'round' }, zg);
+    const tanM = mk('path', { fill: 'none', stroke: K.nnt, 'stroke-width': 4, 'stroke-dasharray': '9 7' }, p), tanZ = mk('path', { fill: 'none', stroke: K.nnt, 'stroke-width': 4, 'stroke-dasharray': '9 7' }, zg);
+    const tdot = mk('circle', { r: 9, fill: K.nnt }, p), bdot = mk('circle', { r: 9, fill: K.ink }, zg);
+    const brk = mk('path', { fill: 'none', 'stroke-width': 6, 'stroke-linecap': 'round' }, zg), dot1 = mk('path', { fill: 'none', stroke: K.dim, 'stroke-width': 3, 'stroke-dasharray': '3 6' }, zg);
+    [tanM, tdot, tanZ].forEach(e => put(e, { o: 0 })); [tanM, tdot].forEach(e => show(e, m('b'), .6)); show(tanZ, m('b'), .6);
+    put(brk, { o: 0 }); put(dot1, { o: 0 }); put(bdot, { o: 0 }); [brk, dot1, bdot].forEach(e => show(e, m('b', 2.4), .6));
+    // limit line at 5% of KVP = 200 mL
+    const lim = G(zg, { o: 0 }); path(lim, `M${ZX0} ${zy(.05)}H${ZX0 + ZW}`, { stroke: K.ink, 'stroke-width': 3.5, 'stroke-dasharray': '10 8' }); T(lim, nb('batas 200 mL'), { x: ZX0 + 14, y: zy(.05) - 12, size: 26, weight: 700 }); tw(lim, { o: 1 }, m('d', 3.4), .6);
+    text(p, nb('KVP 4,00 L'), CH.X(3) - 4, CH.Y(1) - 14, m('d', 1.0), { size: 26, fill: K.kvp, weight: 700, anchor: 'end' });
+    text(p, 'garis singgung di bagian tercuram', CH.X(1.0), CH.Y(.2), m('b', .6), { size: 24, fill: K.nnt, weight: 600 });
+    const rd1 = T(p, nb('180 mL · lolos'), { x: ZX0 + ZW, y: ZY0 + 90, size: 44, fill: K.ok, weight: 700, anchor: 'end', o: 0 });
+    const rd2 = T(p, nb('240 mL · gagal'), { x: ZX0 + ZW, y: ZY0 + 90, size: 44, fill: K.bad, weight: 700, anchor: 'end', o: 0 }); tw(rd1, { o: 1 }, m('e', 2.9), .4); hide(rd1, m('f', .1), .3); tw(rd2, { o: 1 }, m('f', 2.4), .4);
+    cdCard(p, 110, 730, 770, [
+      { k: 'ciri', lines: ['kurva volume-waktu landai di awal', 'sebelum naik tajam'], t0: m('e', .4) },
+      { k: 'dampak', lines: ['KVP dan VEP1 underestimate'], t0: m('g'), col: K.bad },
+    ], { size: 25 });
+    const stateAt = t => mixV(mixV(HES[0], HES[1], smooth(m('e', .3), m('e', 2.8), t)), HES[2], smooth(m('f', .2), m('f', 2.2), t));
+    prog(q => {
+      const t = q * D, s = stateAt(t), b = bevOf(s);
+      mainL.setAttribute('d', CH.D(s, 3));
+      let d = '';
+      for (let i = 0; i <= 120; i++) { const tt = ZT * i / 120, v = vtV(tt, s); if (v > ZV) { d += `L${zx(tt).toFixed(1)} ${zy(ZV).toFixed(1)}`; break; } d += (i ? 'L' : 'M') + zx(tt).toFixed(1) + ' ' + zy(v).toFixed(1); }
+      zoomL.setAttribute('d', d);
+      const tm2 = Math.min(b.tm + .7, b.te + 1.15 / b.slope);
+      tanM.setAttribute('d', `M${CH.X(b.te).toFixed(1)} ${CH.Y(0)}L${CH.X(tm2).toFixed(1)} ${CH.Y(b.slope * (tm2 - b.te)).toFixed(1)}`);
+      tanZ.setAttribute('d', `M${zx(b.te).toFixed(1)} ${zy(0)}L${zx(b.te + ZV / b.slope).toFixed(1)} ${zy(ZV)}`);
+      put(tdot, { x: CH.X(b.tm), y: CH.Y(b.vm) });
+      const bx = ZX0 - 30, col = b.bev > .05 + .0008 ? K.bad : K.ok;
+      brk.setAttribute('stroke', col); brk.setAttribute('d', `M${bx - 9} ${zy(0)}H${bx + 9}M${bx} ${zy(0)}V${zy(b.bev).toFixed(1)}M${bx - 9} ${zy(b.bev).toFixed(1)}H${bx + 9}`);
+      dot1.setAttribute('d', `M${bx} ${zy(b.bev).toFixed(1)}H${zx(b.te).toFixed(1)}`); put(bdot, { x: zx(b.te), y: zy(b.bev) });
+    }, 0, D, lin);
+    text(p, 'BEV', ZX0 - 40, ZY0 - 16, m('b', 2.4), { size: 24, fill: K.ink, weight: 700, anchor: 'end' });
+  }],
+
+  ['akhir', 'Akhir ekspirasi: dua rumusan', (m, D) => {
+    const p = panel(0);
+    const CH = vtChart(p, 110, 520, 840, 330, { TM: 8, vmax: 1.2 });
+    const base = { ...VT0, obs: .55 };
+    const ghost = CH.curve(base, K.faint, { width: 5, dashed: true }); put(ghost.g, { o: 0 });
+    const cv = CH.curve(base, K.ink, { width: 7, wash: .06, drawn: true });
+    draw(cv.line, .2, 1.8, io);
+    text(p, 'skematis', 110 + 840 + 14, 520 + 66, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    // right: the two statements, labelled by source
+    const card = (y, h, title, lines, t0, col) => {
+      const b = box(p, 1000, y, 540, h, K.ink, { sw: 3 }); tw(b, { o: 1 }, t0, .5);
+      T(b, title, { x: 24, y: 42, size: 27, weight: 700, fill: col });
+      lines.forEach((ln, i) => { if (typeof ln === 'string') T(b, ln, { x: 24, y: 86 + i * 38, size: 28 }); else { let cx = 24; for (const [s, f = K.ink, wt = 500] of ln) { const e = T(b, s, { x: cx, y: 86 + i * 38, size: 28, fill: f, weight: wt }); cx += width(e, s, 28); } } });
+      return b;
+    };
+    card(90, 138, 'PERDOKI 2019', [nb('minimal 6 detik'), nb('ATAU plateau ≥1 detik')], m('b'), K.nnt);
+    card(262, 282, 'ATS/ERS 2019', [nb('plateau <25 mL selama ≥1 detik'), nb('ATAU FET ≥15 detik'), 'ATAU pasien tidak mampu', 'lanjut secara wajar', [['aturan 6 detik dihapus', K.bad, 700]]], m('c'), K.nnt);
+    text(p, 'dua sumber, dua rumusan', 1270, 596, m('d'), { size: 27, fill: K.dim, weight: 700, anchor: 'middle' });
+    // PERDOKI: 6 s, or a one-second plateau
+    const tk = G(p, { o: 0 }); path(tk, `M${CH.X(6)} ${CH.Y(0) - 10}v20`, { stroke: K.ink, 'stroke-width': 4 }); T(tk, nb('6 detik'), { x: CH.X(6), y: CH.Y(0) + 38, size: 26, weight: 700, anchor: 'middle' }); tw(tk, { o: 1 }, m('b', .4), .5);
+    const px = G(p, { o: 0 }); const yp = CH.Y(vtV(6, base)) - 30; path(px, `M${CH.X(5)} ${yp}v-10M${CH.X(5)} ${yp - 5}H${CH.X(6)}M${CH.X(6)} ${yp}v-10`, { stroke: K.nnt, 'stroke-width': 4 }); T(px, nb('plateau ≥1 detik'), { x: CH.X(5.5), y: yp - 18, size: 24, fill: K.nnt, weight: 700, anchor: 'middle' }); tw(px, { o: 1 }, m('b', 1.4), .5);
+    // ATS/ERS: a thin band, FET 15 s, the 6 s rule struck out
+    const band = G(p, { o: 0 }); mk('rect', { x: CH.X(5), y: CH.Y(vtV(6, base)) - 8, width: CH.X(6) - CH.X(5), height: 16, fill: K.ok, 'fill-opacity': .3, stroke: K.ok, 'stroke-width': 2.5 }, band);
+    T(band, nb('<25 mL'), { x: CH.X(6) + 10, y: CH.Y(vtV(6, base)) + 8, size: 22, fill: K.ok, weight: 700 }); tw(band, { o: 1 }, m('c', 1.0), .5);
+    const fet = G(p, { o: 0 }); path(fet, arrowD(CH.X(7.1), CH.Y(0.1), CH.X(8) + 6, CH.Y(0.1), 14), { stroke: K.ink, 'stroke-width': 4 }); T(fet, nb('FET ≥15 detik'), { x: CH.X(8), y: CH.Y(0.1) - 14, size: 24, weight: 700, anchor: 'end' }); tw(fet, { o: 1 }, m('c', 3.0), .5);
+    const x6 = G(p, { o: 0 }); path(x6, `M${CH.X(6) - 14} ${CH.Y(0) - 14}l28 -28M${CH.X(6) + 14} ${CH.Y(0) - 14}l-28 -28`, { stroke: K.bad, 'stroke-width': 7, 'stroke-linecap': 'round' }); tw(x6, { o: 1 }, m('c', 6.2), .4);
+    // premature stop: the cut sweeps in, the true curve stays as a ghost
+    show(ghost.g, m('e'), .4);
+    const cutAt = t => lerp(8, 2.4, io(clamp((t - m('e', .3)) / 2.2)));
+    const cutL = mk('path', { fill: 'none', stroke: K.bad, 'stroke-width': 4, 'stroke-dasharray': '8 6' }, p); put(cutL, { o: 0 }); show(cutL, m('e'), .4);
+    const gapG = G(p, { o: 0 });
+    prog(q => {
+      const t = q * D, ct = cutAt(t); cv.set({ ...base, cut: ct });
+      cutL.setAttribute('d', `M${CH.X(ct)} ${CH.Y(1.1)}V${CH.Y(0)}`);
+    }, 0, D, lin);
+    const yT = CH.Y(vtV(2.4, base)), yF = CH.Y(vtV(8, base));
+    path(gapG, `M${CH.X(2.4)} ${yT}H${CH.X(8)}`, { stroke: K.kvp, 'stroke-width': 3, 'stroke-dasharray': '8 6' });
+    path(gapG, `M${CH.X(8) + 24} ${yF}V${yT}M${CH.X(8) + 14} ${yT + 12}L${CH.X(8) + 24} ${yT}L${CH.X(8) + 34} ${yT + 12}M${CH.X(8) + 14} ${yF - 12}L${CH.X(8) + 24} ${yF}L${CH.X(8) + 34} ${yF - 12}`, { stroke: K.bad, 'stroke-width': 5 });
+    tw(gapG, { o: 1 }, m('f'), .6);
+    T(gapG, 'KVP terukur', { x: CH.X(2.4) + 12, y: yT + 28, size: 24, fill: K.kvp, weight: 700 });
+    text(p, 'KVP sebenarnya lebih tinggi', CH.X(8) - 6, yT + 70, m('f', .4), { size: 24, fill: K.bad, weight: 700, anchor: 'end' });
+    cdCard(p, 110, 640, 840, [
+      { k: 'ciri', lines: ['kurva volume-waktu masih menanjak saat terpotong,', 'tanpa garis datar'], t0: m('e', .6) },
+      { k: 'dampak', lines: ['KVP underestimate (KVP sebenarnya lebih tinggi)'], t0: m('f'), col: K.bad },
+      { k: 'cek', lines: [nb('FET <15 detik DAN tidak ada plateau 1 detik')], t0: m('f', 3.0), col: K.nnt },
+    ], { size: 24 });
+  }],
+
+  ['fivc', 'FIVC: apakah pasien mulai dari TLC penuh', (m, D) => {
+    const p = panel(0);
+    const x0 = 460, y0 = 400, sw = 500, sh = 260;
+    fvAxes(p, x0, y0, sw, sh, { below: 230, labels: false, ext: 20 });
+    text(p, 'skematis', x0 + sw + 20, y0 - sh - 20, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    const ex = { v: 0 };
+    const cv = fvCurve(p, x0, y0, sw, sh, {}, K.ink, { width: 7, wash: .06, drawn: true }); draw(cv.line, .2, 1.4, io);
+    const insp = path(p, '', { stroke: K.ink, 'stroke-width': 7, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, { d: 0 }); insp.setAttribute('d', loopD(x0, y0, sw, sh, 0));
+    draw(insp, 1.2, 1.4, io);
+    // KVP (expired) and FIVC (inspired) as brackets under the loop
+    const by1 = 690, by2 = 760;
+    const kb = G(p, { o: 0 }); path(kb, `M${x0} ${by1 - 10}v20M${x0} ${by1}H${x0 + sw}M${x0 + sw} ${by1 - 10}v20`, { stroke: K.kvp, 'stroke-width': 5 }); T(kb, 'KVP', { x: x0 + sw / 2, y: by1 - 18, size: 30, fill: K.kvp, weight: 700, anchor: 'middle' }); tw(kb, { o: 1 }, m('a', .8), .5);
+    const fb = G(p, { o: 0 }); const fbP = mk('path', { fill: 'none', stroke: K.rasio, 'stroke-width': 5 }, fb); const fbT = T(fb, 'FIVC', { x: x0 + sw / 2, y: by2 + 44, size: 30, fill: K.rasio, weight: 700, anchor: 'middle' }); tw(fb, { o: 1 }, m('a', 2.0), .5);
+    const over = G(p, { o: 0 }); const ovP = mk('path', { fill: 'none', stroke: K.bad, 'stroke-width': 8, 'stroke-linecap': 'round' }, over);
+    const start = path(p, `M${x0} ${y0 - sh - 20}V${y0 + 230}`, { stroke: K.dim, 'stroke-width': 3, 'stroke-dasharray': '6 7' }); put(start, { o: 0 }); show(start, m('c'), .4);
+    ring(p, x0 + sw, by1, m('b', .8), K.kvp); ring(p, x0 + sw, by2, m('b', 1.6), K.rasio); ring(p, x0, by1, m('b', 4.2), K.kvp); ring(p, x0, by2, m('b', 5.0), K.rasio);
+    text(p, 'titik awal', x0 + 10, y0 - sh - 28, m('c'), { size: 24, fill: K.dim });
+    const ovT = text(p, 'FIVC − KVP', 0, by2 + 44, m('c', 2.6), { size: 26, fill: K.bad, weight: 700, anchor: 'end' });
+    const exAt = t => .14 * smooth(m('c', .8), m('c', 3.6), t);
+    prog(q => {
+      const e = exAt(q * D); insp.setAttribute('d', loopD(x0, y0, sw, sh, e));
+      fbP.setAttribute('d', `M${x0 - e * sw} ${by2 - 10}v20M${x0 - e * sw} ${by2}H${x0 + sw}M${x0 + sw} ${by2 - 10}v20`);
+      ovP.setAttribute('d', `M${x0 - e * sw} ${by2}H${x0}`); put(over, { o: e > .004 ? 1 : 0 }); put(ovT, { x: x0 - e * sw - 12 });
+    }, 0, D, lin);
+    // the rule, as the notes word it
+    const rb = box(p, 1050, 140, 490, 250, K.ink, { sw: 3 }); tw(rb, { o: 1 }, m('b'), .5);
+    runs(rb, [['FIVC − KVP', K.rasio, 700], [' > 100 mL', K.ink, 700]], 245, 62, 0, { size: 32, anchor: 'middle' });
+    T(rb, 'ATAU', { x: 245, y: 108, size: 24, fill: K.dim, weight: 700, anchor: 'middle' });
+    runs(rb, [['FIVC − KVP', K.rasio, 700], [' > 5% KVP', K.ink, 700]], 245, 156, 0, { size: 32, anchor: 'middle' });
+    T(rb, 'tidak acceptable', { x: 245, y: 210, size: 30, fill: K.bad, weight: 700, anchor: 'middle' });
+    text(p, 'sesuai wording catatan', 1295, 430, m('b', 1.2), { size: 24, fill: K.dim, anchor: 'middle' });
+    text(p, 'pasien tidak mulai dari TLC penuh', 1295, 500, m('c', 3.2), { size: 28, fill: K.bad, weight: 700, anchor: 'middle' });
+    text(p, 'lingkaran tidak menutup', 1295, 540, m('c', 4.2), { size: 26, fill: K.dim, anchor: 'middle' });
+  }],
+
+  ['batuk', 'Batuk dan penutupan glotis', (m, D) => {
+    const p = panel(0);
+    const x0 = 110, y0 = 640, sw = 660, sh = 390;
+    fvAxes(p, x0, y0, sw, sh, { size: 24 });
+    text(p, 'skematis', x0 + sw + 14, y0 + 70, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    text(p, 'kelompok 1: menurunkan nilai', 800, 66, .3, { size: 30, fill: K.dim, weight: 700, anchor: 'middle' });
+    fvCurve(p, x0, y0, sw, sh, {}, K.faint, { width: 4, wash: 0, dashed: true });
+    const cv = fvCurve(p, x0, y0, sw, sh, {}, K.ink, { width: 7, wash: .08, drawn: true });
+    draw(cv.line, .2, 1.4, io);
+    const V1 = VN(1);   // the volume reached at 1 s on the healthy curve: the line "detik 1"
+    const kr = mark(p, x0 + .14 * sw, y0 - fvF(.14, { ...FV0, cough: 1 }) * sh, m('a', 1.3), K.bad, 24), kt = text(p, 'takik', x0 + .14 * sw + 34, y0 - sh * .25, m('a', 1.5), { size: 28, fill: K.bad, weight: 700 });
+    hide(kr, m('c'), .3); hide(kt, m('c'), .3);
+    // 1 s on the volume axis: left of it is the first second
+    const ln = G(p, { o: 0 }); path(ln, `M${x0 + V1 * sw} ${y0 - sh - 10}V${y0}`, { stroke: K.dim, 'stroke-width': 3, 'stroke-dasharray': '6 7' }); T(ln, 'detik 1', { x: x0 + V1 * sw, y: y0 - sh - 20, size: 24, fill: K.dim, weight: 600, anchor: 'middle' }); tw(ln, { o: 1 }, m('b'), .5);
+    const late = G(p, { o: 0 }); mk('rect', { x: x0 + V1 * sw, y: y0 - sh * .62, width: sw * (1 - V1), height: sh * .62, fill: K.ok, 'fill-opacity': .1 }, late); T(late, 'batuk di sini:', { x: x0 + V1 * sw + 12, y: y0 - sh * .62 + 32, size: 24, fill: K.ok, weight: 700 }); T(late, 'KVP masih bisa', { x: x0 + V1 * sw + 12, y: y0 - sh * .62 + 62, size: 24, fill: K.ok, weight: 700 }); T(late, 'acceptable', { x: x0 + V1 * sw + 12, y: y0 - sh * .62 + 92, size: 24, fill: K.ok, weight: 700 }); tw(late, { o: 1 }, m('b', 2.6), .5);
+    pill(p, 'VEP1 ✗', x0 + 340, y0 - sh * .86, K.bad, m('b', .3), { size: 30 });
+    text(p, 'aliran turun', x0 + .45 * sw + 10, y0 - sh * .16, m('c', 1.6), { size: 26, fill: K.bad, weight: 700 }); text(p, 'mendadak', x0 + .45 * sw + 10, y0 - sh * .16 + 32, m('c', 1.6), { size: 26, fill: K.bad, weight: 700 });
+    const cs = t => mixS({ cough: 1 }, { cough: 0, glot: 1 }, smooth(m('c'), m('c', 1.6), t));
+    prog(q => { const t = q * D; cv.set(t < m('c') ? { cough: smooth(m('a'), m('a', 1.2), t) } : cs(t)); }, 0, D, lin);
+    mark(p, x0 + .405 * sw, y0 - sh * .03, m('c', 1.4), K.bad, 24);
+    pill(p, 'KVP ✗', x0 + 340, y0 - sh * .70, K.bad, m('d'));
+    // the two cards
+    text(p, 'Batuk di detik pertama', 860, 120, m('a'), { size: 30, weight: 700 });
+    cdCard(p, 860, 140, 680, [
+      { k: 'ciri', lines: ['takik tajam di awal ekspirasi'], t0: m('a', .8) },
+      { k: 'dampak', lines: ['VEP1 unacceptable; KVP masih bisa', 'acceptable bila batuk terjadi setelah 1 detik'], t0: m('b', .6), col: K.bad },
+    ], { size: 25 });
+    text(p, 'Penutupan glotis', 860, 460, m('c'), { size: 30, weight: 700 });
+    cdCard(p, 860, 480, 680, [
+      { k: 'ciri', lines: ['penurunan tajam mendadak flow rate', 'di awal atau pertengahan kurva'], t0: m('c', .8) },
+      { k: 'dampak', lines: ['VEP1 dan KVP unacceptable'], t0: m('d', .5), col: K.bad },
+    ], { size: 25 });
+  }],
+
+  ['bocor', 'Kebocoran dan usaha submaksimal', (m, D) => {
+    const p = panel(0);
+    text(p, 'kelompok 1: menurunkan nilai', 800, 62, .3, { size: 30, fill: K.dim, weight: 700, anchor: 'middle' });
+    // left: leak on a volume-time chart
+    text(p, 'Kebocoran', 90, 120, m('a'), { size: 30, weight: 700 });
+    const CH = vtChart(p, 90, 500, 600, 290, { TM: 6, vmax: 1.2 });
+    text(p, 'skematis', 90 + 600 + 14, 500 + 62, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    const gh = CH.curve({}, K.faint, { width: 5, dashed: true });
+    const lk = CH.curve({}, K.ink, { width: 7, wash: .06, drawn: true }); draw(lk.line, .2, 1.4, io);
+    prog(q => lk.set({ leak: smooth(m('a', .6), m('a', 3.2), q * D) }), 0, D, lin);
+    text(p, 'manuver lain', CH.X(4.4), CH.Y(vtV(4.4, VT0)) - 16, m('b'), { size: 24, fill: K.dim, weight: 600 });
+    text(p, 'mendatar terlalu dini', CH.X(2.1), CH.Y(.55) - 20, m('a', 3.0), { size: 25, fill: K.bad, weight: 700 });
+    text(p, 'volume rendah', CH.X(4.0), CH.Y(.55) + 36, m('b', 1.0), { size: 25, fill: K.bad, weight: 700 });
+    cdCard(p, 90, 610, 680, [
+      { k: 'ciri', lines: ['kurva volume-waktu mendatar prematur,', 'pada volume rendah'], t0: m('a', 1.2) },
+      { k: 'dampak', lines: ['KVP dan VEP1 underestimate secara konsisten'], t0: m('b', .3), col: K.bad },
+      { k: 'deteksi', lines: ['bandingkan dengan manuver lain: jauh lebih', 'rendah tanpa pola klinis yang jelas'], t0: m('b', 2.2), col: K.nnt },
+    ], { size: 24 });
+    // right: submaximal effort next to obstruction
+    text(p, 'Usaha submaksimal', 790, 120, m('c'), { size: 30, weight: 700 });
+    const ax = 790, ay = 430, aw = 300, ah = 220;
+    const sg = G(p, { o: 0 }); tw(sg, { o: 1 }, m('c'), .5);
+    fvAxes(sg, ax, ay, aw, ah, { size: 22 });
+    fvCurve(sg, ax, ay, aw, ah, {}, K.faint, { width: 4, wash: 0, dashed: true });
+    const sb = fvCurve(sg, ax, ay, aw, ah, {}, K.ink, { width: 7, wash: .08 });
+    fvMorph(sb, {}, { sub: 1 }, m('c', .5), 2.0);
+    text(p, 'puncak rendah dan tumpul', ax, ay + 72, m('c', 1.6), { size: 25, fill: K.bad, weight: 700 });
+    // three manoeuvres of the same patient differ from each other
+    const vcs = [[.7, .8], [1.35, 1.1]].map(([a, k], i) => { const c2 = fvCurve(sg, ax, ay, aw, ah, { sub: 1, amp: a }, K.dim, { width: 3.5, wash: 0, dashed: true }); put(c2.g, { o: 0 }); show(c2.g, m('e', 2.6 + i * .8), .5); return [c2, a]; });
+    prog(q => { const t = q * D; vcs.forEach(([c2, a], i) => c2.set({ sub: 1, amp: a * (1 + .14 * Math.sin(t * 1.3 + i * 2.1)) })); }, m('e', 2.6), D - m('e', 2.6), lin);
+    text(p, 'berubah antar manuver', ax + aw + 10, ay + 106, m('e', 3.2), { size: 24, fill: K.dim, weight: 600, anchor: 'end' });
+    text(p, 'Obstruksi', 1210, 120, m('d', .6), { size: 30, weight: 700 });
+    const bx = 1210;
+    const og = G(p, { o: 0 }); tw(og, { o: 1 }, m('d', .6), .5);
+    fvAxes(og, bx, ay, aw, ah, { size: 22 });
+    fvCurve(og, bx, ay, aw, ah, {}, K.faint, { width: 4, wash: 0, dashed: true });
+    const ob = fvCurve(og, bx, ay, aw, ah, {}, K.ink, { width: 7, wash: .08 });
+    fvMorph(ob, {}, { scoop: 1 }, m('d', 1.4), 2.0);
+    text(p, 'cekung mulai setelah puncak', bx, ay + 72, m('e', .2), { size: 25, fill: K.bad, weight: 700 });
+    const nt = G(p, { o: 0 }); mk('rect', { x: 790, y: 566, width: 750, height: 62, rx: 18, fill: K.kvp, 'fill-opacity': .1, stroke: K.kvp, 'stroke-width': 3 }, nt);
+    T(nt, 'catatan: "cekung" dipakai untuk keduanya, bedakan dari puncaknya', { x: 1165, y: 606, size: 23, weight: 700, anchor: 'middle' }); tw(nt, { o: 1 }, m('d', 2.4), .5);
+    cdCard(p, 790, 660, 750, [
+      { k: 'ciri', lines: ['puncak aliran (PEF) rendah dan tumpul'], t0: m('c', 2.4) },
+      { k: 'dampak', lines: ['semua parameter underestimate'], t0: m('d'), col: K.bad },
+      { k: 'deteksi', lines: ['biasanya tidak reproducible antar manuver'], t0: m('e', 1.4), col: K.nnt },
+    ], { size: 24 });
+  }],
+
+  ['q1', 'Cek cepat: klik kesalahan', (m, D) => {
+    const p = panel(0);
+    const x0 = 420, y0 = 560, sw = 760, sh = 380;
+    fvAxes(p, x0, y0, sw, sh);
+    text(p, 'skematis', x0 + sw + 14, y0 + 66, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    const cv = fvCurve(p, x0, y0, sw, sh, { glot: 1 }, K.ink, { width: 7, wash: .08, drawn: true }); draw(cv.line, .2, 1.2, io);
+    const XS = [.09, .405, .88];
+    q1els = XS.map((v, i) => {
+      const g = G(p, { o: 0 });
+      path(g, `M${x0 + v * sw} 230V${y0}`, { stroke: K.dim, 'stroke-width': 3, 'stroke-dasharray': '4 9' });
+      const c = G(g, { x: x0 + v * sw, y: 190 }); mk('circle', { r: 26, fill: K.dim }, c); T(c, String(i + 1), { y: 11, size: 30, fill: '#fff', weight: 700, anchor: 'middle' });
+      tw(g, { o: 1 }, 1.4 + i * .25, .4);
+      return g;
+    });
+    q1els.px = v => x0 + v * sw; q1els.XS = XS;
+    q1els.ring = G(p, { x: x0 + .405 * sw, y: y0 - 10, o: 0 }); mk('circle', { r: 34, fill: 'none', stroke: K.bad, 'stroke-width': 6 }, q1els.ring);
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-cacat', prompt: ['Kurva ini cacat di satu bagian. Klik bagian itu.'],
+    build: pickEls(q1els.XS.map((v, i) => ({ el: q1els[i], box: [q1els.px(v) - 80, 150, 160, 440], label: 'Bagian ' + (i + 1) })), 1,
+      'Di bagian 2 aliran turun tajam mendadak di pertengahan kurva: penutupan glotis. VEP1 dan KVP tidak acceptable.',
+      i => i === 0 ? 'Di bagian 1 puncaknya tunggal dan tajam, sesuai kriteria. Cacatnya ada di tempat lain.' : 'Di bagian 3 kurva turun mulus ke sumbu X: itu akhir yang baik. Cacatnya ada di tempat lain.',
+      () => { fx(q1els.ring, { o: 1 }, 0, .4); }),
+  }], done, 'Cek cepat') }],
+
+  ['rasio', 'Zero-flow error: rasio dipalsukan', (m, D) => {
+    const p = panel(0);
+    pill(p, 'zero-flow error', 800, 54, K.nnt, m('a'), { size: 30, anchor: 'middle' });
+    const TEND = 7.5, cols = [
+      { x: 110, title: 'Under-recording', sub: 'contoh skematis: obstruksi sejati', base: { ...VT0, obs: 1 }, z: t => -io(clamp((t - m('b', .2)) / 3.4)), up: true },
+      { x: 910, title: 'Over-recording', sub: 'contoh skematis: paru normal', base: { ...VT0, obs: 0 }, z: t => io(clamp((t - m('d', .2)) / 3.4)), up: false },
+    ];
+    const ups = cols.map(c => {
+      const CH = vtChart(p, c.x, 500, 580, 290, { TM: 8, vmax: 1.45, size: 22 });
+      text(p, c.title, c.x, 118, .2, { size: 34, weight: 700 }); text(p, c.sub, c.x, 152, .4, { size: 24, fill: K.dim });
+      const gh = CH.curve(c.base, K.faint, { width: 5, dashed: true }), cv = CH.curve(c.base, K.ink, { width: 7, wash: .06, drawn: true }); draw(cv.line, .3, 1.6, io);
+      const vl = path(p, `M${CH.X(1)} ${CH.Y(0)}V${CH.Y(1.45)}`, { stroke: K.dim, 'stroke-width': 2.5, 'stroke-dasharray': '4 7' });
+      const vd = mk('circle', { r: 9, fill: K.ink }, p), vt = T(p, 'VEP1', { x: CH.X(1) + 12, y: CH.Y(1.4) + 8, size: 24, weight: 700 });
+      const kl = mk('path', { fill: 'none', stroke: K.kvp, 'stroke-width': 3.5, 'stroke-dasharray': '9 7' }, p), kt = T(p, 'KVP', { x: CH.X(8) + 14, y: 0, size: 26, fill: K.kvp, weight: 700 });
+      const G1 = gauge(p, c.x + 6, 660, 560, m('a', 1.5));
+      return { CH, cv, vd, kl, kt, G1, c };
+    });
+    prog(q => { const t = q * D; ups.forEach(({ CH, cv, vd, kl, kt, G1, c }) => {
+      const s = { ...c.base, zf: c.z(t) }, vep = vtV(1, s), kvp = vtV(TEND, s);
+      cv.set(s); put(vd, { x: CH.X(1), y: CH.Y(vep) });
+      kl.setAttribute('d', `M${CH.X(3)} ${CH.Y(kvp).toFixed(1)}H${CH.X(8)}`); put(kt, { y: CH.Y(kvp) + 8 }); G1.set(vep / kvp);
+    }); }, 0, D, lin);
+    // verdicts
+    const vv = (x, l1, l2, t0) => { const g = G(p, { o: 0 }); T(g, l1, { x, y: 758, size: 32, fill: K.bad, weight: 700 }); T(g, l2, { x, y: 794, size: 26, fill: K.ink, weight: 600 }); tw(g, { o: 1 }, t0, .5); };
+    ring(p, 110 + 6 + 560 * ((.75 - .4) / .65), 660, m('c', .6), K.bad); ring(p, 910 + 6 + 560 * ((.75 - .4) / .65), 660, m('e', .6), K.bad);
+    vv(116, '↑ rasio naik PALSU', 'obstruksi sejati tersembunyi', m('c')); vv(916, '↓ rasio turun PALSU', 'obstruksi palsu', m('e'));
+    // over-recording on the flow-volume curve: the tail runs on to the right
+    const ix = 1215, iy = 472, iw = 190, ih = 96;
+    const ig = G(p, { o: 0 }); tw(ig, { o: 1 }, m('f'), .5);
+    fvAxes(ig, ix, iy, iw, ih, { labels: false, ext: 80 });
+    T(ig, 'aliran-volume: ekor memanjang ke kanan', { x: ix + 300, y: iy - ih - 24, size: 21, fill: K.bad, weight: 700, anchor: 'end' });
+    fvCurve(ig, ix, iy, iw, ih, {}, K.faint, { width: 3, wash: 0, dashed: true });
+    const ic = fvCurve(ig, ix, iy, iw, ih, {}, K.bad, { width: 5, wash: .1 });
+    fvMorph(ic, {}, { ext: 1 }, m('f', .6), 2.0);
+    // opposite directions
+    const og = G(p, { o: 0 }); tw(og, { o: 1 }, m('g'), .5);
+    path(og, arrowD(762, 620, 762, 540, 16), { stroke: K.bad, 'stroke-width': 7 }); path(og, arrowD(852, 540, 852, 620, 16), { stroke: K.bad, 'stroke-width': 7 });
+    T(og, 'arah berlawanan', { x: 807, y: 660, size: 25, fill: K.bad, weight: 700, anchor: 'middle' });
+    // how to catch each
+    const dt = (x, a, b, t0) => { const g = G(p, { o: 0 }); T(g, 'CURIGAI', { x, y: 848, size: 19, fill: K.nnt, weight: 700 }); T(g, a, { x: x + 100, y: 848, size: 23 }); T(g, b, { x: x + 100, y: 878, size: 23 }); tw(g, { o: 1 }, t0, .5); };
+    dt(110, 'rasio tiba-tiba membaik tanpa', 'penjelasan klinis; cek riwayat kalibrasi', m('g', 1.2)); dt(910, 'kurva volume-waktu tidak pernah benar-', 'benar datar, meski FET panjang', m('g', 1.8));
+  }],
+
+  ['hidung', 'Extra breath via nose', (m, D) => {
+    const p = panel(0);
+    // the patient: an extra breath in through the nose near the end of the forced expiration
+    const hd = G(p, { x: 250, y: 205, o: 0 }); tw(hd, { o: 1 }, .3, .6);
+    mk('circle', { r: 76, fill: '#f3e4de', stroke: K.ink, 'stroke-width': 5 }, hd);
+    path(hd, 'M72 -14L112 24L76 28', { stroke: K.ink, 'stroke-width': 5, fill: '#f3e4de' });
+    path(hd, 'M44 50H88', { stroke: K.ink, 'stroke-width': 5 });
+    path(hd, 'M88 50H220', { stroke: K.ink, 'stroke-width': 10 });
+    T(hd, 'mouthpiece', { x: 190, y: 30, size: 22, fill: K.dim, anchor: 'middle' });
+    const nin = G(hd, { o: 0 }); path(nin, arrowD(190, -52, 118, 6, 14), { stroke: K.bad, 'stroke-width': 6 }); T(nin, 'hirup lewat hidung', { x: 120, y: -70, size: 25, fill: K.bad, weight: 700, anchor: 'middle' }); tw(nin, { o: 1 }, m('b', .3), .5); hide(nin, m('b', 3.5), .4);
+    const nout = G(hd, { o: 0 }); path(nout, arrowD(110, 70, 230, 70, 14), { stroke: K.ink, 'stroke-width': 6 }); T(nout, 'diembuskan ke mouthpiece', { x: 190, y: 120, size: 22, fill: K.ink, weight: 600, anchor: 'middle' }); tw(nout, { o: 1 }, m('b', 3.0), .5);
+    const clip = G(hd, { x: 40, y: -70, o: 0 }); mk('rect', { x: 76, y: -4, width: 36, height: 26, rx: 8, fill: K.ok, stroke: K.ink, 'stroke-width': 4 }, clip); tw(clip, { o: 1, x: 0, y: 0 }, m('e', .3), .6, out);
+    pill(p, 'nose clip', 500, 232, K.ok, m('e', 1.0), { size: 28 });
+    // volume-time chart and flow-volume chart, with the ratio below
+    const CH = vtChart(p, 90, 690, 620, 330, { TM: 8, vmax: 1.35, size: 22 }), fx0 = 860, fy0 = 690, fsw = 440, fsh = 330;
+    fvAxes(p, fx0, fy0, fsw, fsh, { size: 22, ext: 30 });
+    text(p, 'skematis', 90 + 620 + 14, 690 + 62, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    CH.curve({}, K.faint, { width: 5, dashed: true }); fvCurve(p, fx0, fy0, fsw, fsh, {}, K.faint, { width: 4, wash: 0, dashed: true });
+    const cv = CH.curve({}, K.ink, { width: 7, wash: .06, drawn: true }); draw(cv.line, .3, 1.4, io);
+    const fc = fvCurve(p, fx0, fy0, fsw, fsh, {}, K.ink, { width: 7, wash: .06, drawn: true }); draw(fc.line, .3, 1.4, io);
+    const G1 = gauge(p, 90, 800, 560, m('c'));
+    const vd = mk('circle', { r: 9, fill: K.ink }, p), kl = mk('path', { fill: 'none', stroke: K.kvp, 'stroke-width': 3.5, 'stroke-dasharray': '9 7' }, p), kt = T(p, 'KVP', { x: CH.X(8) + 14, y: 0, size: 26, fill: K.kvp, weight: 700 });
+    text(p, 'ekor ganda', fx0 + 1.06 * fsw, fy0 - 120, m('c', .8), { size: 26, fill: K.bad, weight: 700, anchor: 'middle' });
+    text(p, 'tambahan volume', CH.X(4.8), CH.Y(1.22) - 30, m('c'), { size: 26, fill: K.bad, weight: 700, anchor: 'middle' });
+    prog(q => { const t = q * D, n = smooth(m('c'), m('c', 2.2), t), s = { ...VT0, nose: n }, vep = vtV(1, s), kvp = vtV(7.5, s);
+      cv.set(s); fc.set({ tail: n }); put(vd, { x: CH.X(1), y: CH.Y(vep) }); kl.setAttribute('d', `M${CH.X(3)} ${CH.Y(kvp).toFixed(1)}H${CH.X(8)}`); put(kt, { y: CH.Y(kvp) + 8 }); G1.set(vep / kvp); }, 0, D, lin);
+    cdCard(p, 780, 70, 760, [
+      { k: 'ciri', lines: ['tambahan volume kecil di ekor kurva ekspirasi;', 'ekor ganda pada kurva aliran-volume'], t0: m('c', .4) },
+      { k: 'dampak', lines: ['KVP naik palsu, rasio turun palsu:', 'obstruksi palsu'], t0: m('d'), col: K.bad },
+      { k: 'sebab', lines: ['nose clip tidak terpasang. Solusi utama: wajib'], t0: m('e'), col: K.nnt },
+    ], { size: 24 });
+  }],
+
+  ['q2', 'Cek cepat: obstruksi palsu', (m, D) => {
+    const p = panel(0);
+    const specs = [{ ...VT0, leak: 1 }, { ...VT0 }, { ...VT0, zf: 1 }];
+    q2els = specs.map((s, i) => {
+      const bx = 80 + i * 510, g = G(p, { o: 0 });
+      mk('rect', { x: bx, y: 100, width: 440, height: 470, rx: 22, fill: '#fff', stroke: K.faint, 'stroke-width': 3 }, g);
+      const CH = vtChart(g, bx + 66, 470, 340, 250, { TM: 8, vmax: 1.45, size: 21 });
+      CH.curve(s, K.ink, { width: 6 });
+      const c = G(g, { x: bx + 36, y: 150 }); mk('circle', { r: 26, fill: K.dim }, c); T(c, String(i + 1), { y: 11, size: 30, fill: '#fff', weight: 700, anchor: 'middle' });
+      text(g, 'skematis', bx + 406, 536, 0, { size: 20, fill: K.dim, anchor: 'end' });
+      tw(g, { o: 1 }, .3 + i * .25, .5);
+      return g;
+    });
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-palsu', prompt: ['Rasio VEP1/KVP tampak turun. Klik kurva yang paling mencurigakan sebagai obstruksi palsu.'],
+    build: pickEls(q2els.map((el, i) => ({ el, box: [80 + i * 510, 100, 440, 470], label: 'Kurva ' + (i + 1) })), 2,
+      'Kurva 3 terus mendaki tanpa plateau: over-recording menaikkan KVP secara semu, jadi rasio turun palsu.',
+      i => i === 0 ? 'Kurva 1 mendatar terlalu dini pada volume rendah: pola kebocoran. Ia menurunkan nilai, bukan menaikkan KVP.' : 'Kurva 2 mencapai plateau yang jelas: tidak ada tanda over-recording.'),
+  }], done, 'Cek cepat') }],
+
+  ['ulang', 'Repeatability', (m, D) => {
+    const p = panel(0);
+    // the three rules, as chips
+    tag(p, nb('≥ 3 manuver acceptable'), 90, 84, m('a'), { size: 26 });
+    tag(p, nb('maks. 8 upaya (dewasa)'), 500, 84, m('a', 2.2), { size: 26 });
+    const jeda = tag(p, nb('jeda ≥ 1 menit'), 960, 84, m('b'), { size: 26 });
+    const clk = G(p, { x: 1210, y: 76, o: 0 }); mk('circle', { r: 26, fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, clk); const hand = path(clk, 'M0 0V-17', { stroke: K.ink, 'stroke-width': 5 }); tw(clk, { o: 1 }, m('b', .4), .4);
+    prog(q => put(hand, { r: 360 * q }), m('b', .4), 2.6, io);
+    // two number lines at the same scale: 1600 px per litre, so the 150 mL ruler is the same length on both
+    const PX = 1600;
+    const panelOf = (x0, v0, vals, name, col, tName, tDiff, diffMl, ok, tOk, t1) => {
+      const X = v => x0 + (v - v0) * PX, y = 340;
+      text(p, name, x0, 215, t1, { size: 40, fill: col, weight: 700 }); text(p, 'contoh ilustratif', x0 + 130, 213, t1, { size: 24, fill: K.dim });
+      const g = G(p, { o: 0 }); tw(g, { o: 1 }, t1, .5);
+      path(g, `M${x0 - 10} ${y}H${x0 + .38 * PX}`, { stroke: K.faint, 'stroke-width': 4 });
+      vals.forEach(([v, n], i) => {
+        const d = G(g, { x: X(v), y, o: 0 }); mk('circle', { r: 21, fill: col }, d); T(d, String(n), { y: 9, size: 26, fill: '#fff', weight: 700, anchor: 'middle' });
+        T(d, nb(String(v).replace('.', ',') .padEnd(4, '0') + ' L'), { x: 0, y: n === 2 ? -78 : -36, size: 27, weight: 700, anchor: 'middle' });
+        tw(d, { o: 1 }, t1 + .3 + i * .35, .45);
+      });
+      // the two largest: the difference, against the 150 mL ruler
+      const a = X(vals[0][0]), b = X(vals[1][0]), lo = Math.min(a, b);
+      const dg = G(p, { o: 0 });
+      const br = mk('path', { fill: 'none', stroke: ok ? K.ok : K.bad, 'stroke-width': 6, 'stroke-linecap': 'round' }, dg);
+      T(dg, nb(diffMl + ' mL'), { x: (a + b) / 2, y: 452, size: 34, fill: ok ? K.ok : K.bad, weight: 700, anchor: 'middle' });
+      prog(q => { br.setAttribute('d', `M${lo} ${y + 52}v-14M${lo} ${y + 52}H${lo + Math.abs(a - b) * q}M${lo + Math.abs(a - b) * q} ${y + 52}v-14`); put(dg, { o: q > 0 ? 1 : 0 }); }, tDiff, 1.2, io);
+      const rl = G(p, { o: 0 }); path(rl, `M${lo} 520v-14M${lo} 520H${lo + .15 * PX}M${lo + .15 * PX} 520v-14`, { stroke: K.dim, 'stroke-width': 6, 'stroke-linecap': 'round' }); T(rl, nb('batas 150 mL'), { x: lo + .075 * PX, y: 560, size: 27, fill: K.dim, weight: 700, anchor: 'middle' }); tw(rl, { o: 1 }, t1 + .8, .5);
+      const vd = G(p, { o: 0 }); T(vd, ok ? '✓ lolos' : '✗ tidak lolos', { x: (a + b) / 2, y: 640, size: 44, fill: ok ? K.ok : K.bad, weight: 700, anchor: 'middle' }); tw(vd, { o: 1 }, tOk, .5);
+    };
+    panelOf(110, 3.95, [[4.20, 1], [4.10, 2], [4.02, 3]], 'KVP', K.kvp, 0, m('d', 1.0), 100, true, m('d', 3.0), m('c', 2.2));
+    panelOf(930, 3.10, [[3.40, 1], [3.20, 2], [3.15, 3]], 'VEP1', K.ink, 0, m('e', 1.0), 200, false, m('e', 3.0), m('c', 2.2));
+    text(p, 'dua nilai terbesar', 800, 150, m('c'), { size: 28, fill: K.dim, weight: 700, anchor: 'middle' });
+    // highest KVP and highest VEP1 may come from different curves
+    const bt = G(p, { o: 0 }); tw(bt, { o: 1 }, m('f'), .5);
+    const cx0 = [470, 740, 1010];
+    cx0.forEach((x, i) => { fvCurve(bt, x, 852, 200, 70, { amp: [1, .9, .97][i] }, K.ink, { width: 4.5, wash: .06 }); T(bt, String(i + 1), { x: x + 100, y: 886, size: 22, fill: K.dim, weight: 700, anchor: 'middle' }); });
+    const c1 = pill(bt, 'KVP tertinggi', 120, 762, K.kvp, 0, { size: 26 }), c2 = pill(bt, 'VEP1 tertinggi', 700, 762, K.ink, 0, { size: 26 });
+    path(bt, arrowD(330, 778, 462, 826, 14), { stroke: K.kvp, 'stroke-width': 5 }); path(bt, arrowD(880, 778, 1030, 826, 14), { stroke: K.ink, 'stroke-width': 5 });
+    text(bt, 'boleh dari kurva', 1290, 812, 0, { size: 28, fill: K.ink, weight: 700 }); text(bt, 'yang berbeda', 1290, 848, 0, { size: 28, fill: K.ink, weight: 700 });
+  }],
+
+  ['variabel', 'Usaha tidak konsisten', (m, D) => {
+    const p = panel(0);
+    const x0 = 130, y0 = 690, sw = 690, sh = 420;
+    fvAxes(p, x0, y0, sw, sh);
+    text(p, 'skematis', x0 + sw + 14, y0 + 66, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    const COLS = [K.ink, K.dim, '#7a6a3a'], same = [{ amp: 1 }, { amp: .93 }, { amp: .86 }], diff = [{ amp: 1 }, { sub: .85, amp: 1 }, { scoop: .9, amp: 1 }];
+    const cvs = COLS.map((c, i) => fvCurve(p, x0, y0, sw, sh, same[i], c, { width: i === 0 ? 7 : 5.5, wash: 0, dashed: i === 1, drawn: true }));
+    cvs.forEach((c, i) => { if (i !== 1) draw(c.line, .3 + i * .2, 1.2, io); else { put(c.g, { o: 0 }); show(c.g, .5, .6); } });
+    prog(q => { const t = q * D, k = smooth(m('c'), m('c', 2.6), t); cvs.forEach((c, i) => c.set(mixS({ ...same[i], amp: same[i].amp * (1 + (1 - k) * .03 * Math.sin(t * 1.4 + i * 2)) }, diff[i], k))); }, 0, D, lin);
+    // right: the verdicts
+    text(p, 'tiga percobaan, satu pasien', 900, 120, .3, { size: 28, fill: K.dim, weight: 700 });
+    [['1', COLS[0]], ['2', COLS[1]], ['3', COLS[2]]].forEach(([n, c], i) => { const g = G(p, { x: 920 + i * 70, y: 170, o: 0 }); mk('circle', { r: 22, fill: c }, g); T(g, n, { y: 9, size: 26, fill: '#fff', weight: 700, anchor: 'middle' }); tw(g, { o: 1 }, .5 + i * .2, .4); });
+    const v1 = G(p, { o: 0 }); T(v1, '✓ bentuk sama, puncak sedikit beda', { x: 900, y: 262, size: 32, fill: K.ok, weight: 700 }); T(v1, 'usaha konsisten', { x: 900, y: 304, size: 28, fill: K.ok, weight: 600 }); tw(v1, { o: 1 }, m('b'), .5); hide(v1, m('c', .2), .4);
+    const v2 = G(p, { o: 0 }); T(v2, '✗ bentuk berbeda-beda', { x: 900, y: 262, size: 32, fill: K.bad, weight: 700 }); T(v2, 'bukan cuma nilainya: data tidak reproducible', { x: 900, y: 304, size: 28, fill: K.bad, weight: 600 }); tw(v2, { o: 1 }, m('c', 2.0), .5);
+    cdCard(p, 900, 380, 640, [
+      { k: 'ciri', lines: ['bentuk kurva berbeda signifikan antar 3', 'percobaan (bukan cuma beda nilai)'], t0: m('c', 2.4) },
+      { k: 'dampak', lines: ['tidak reproducible; tidak boleh diambil', 'kesimpulan'], t0: m('d'), col: K.bad },
+      { k: 'deteksi', lines: ['overlay visual 3 kurva: bentuk harus', 'konsisten, bukan cuma nilai puncak'], t0: m('d', 1.8), col: K.nnt },
+    ], { size: 25 });
+  }],
+
+  ['wrap', 'Ringkasan', (m) => {
+    const p = panel(0);
+    const items = [
+      [[[['Verifikasi alat dulu: uji kebocoran dan '], ['syringe 3 L', K.ink], [',']], [['batas ±3% (2,91 sampai 3,09 L).']]], 'w1'],
+      [[[['Kurva '], ['acceptable', K.ok], [' memenuhi 5 kriteria PERDOKI.']]], 'w2'],
+      [[[['Sebagian artefak '], ['menurunkan nilai', K.dim], [', sebagian ']], [['memalsukan rasio', K.bad], [', ke arah berlawanan.']]], 'w3'],
+      [[[['Ulangi minimal 3 kali: 2 nilai terbesar berselisih']], [['≤150 mL, dan '], ['bentuk kurva konsisten', K.rasio], ['.']]], 'w4'],
+    ];
+    let y = 190;
+    items.forEach(([lines, mk1], idx) => {
+      const g = G(p, { x: -16, y, o: 0 });
+      const c = G(g, { x: 150, y: -12, s: .3 }); mk('circle', { r: 28, fill: K.nnt }, c); T(c, String(idx + 1), { y: 11, size: 32, fill: '#fff', weight: 700, anchor: 'middle' });
+      tw(c, { s: 1 }, m(mk1), .5, back);
+      let maxx = 0;
+      lines.forEach((ln, j) => {
+        let cx = 210;
+        ln.forEach(([s, f]) => { const e = T(g, s, { x: cx, y: j * 46, size: 35, weight: f ? 700 : 600, fill: f || K.ink }); cx += width(e, s, 35); });
+        maxx = Math.max(maxx, cx);
+      });
+      const nxt = items[idx + 1] ? m(items[idx + 1][1]) : m('end');
+      draw(path(g, `M210 ${(lines.length - 1) * 46 + 16}H${maxx}`, { stroke: K.nnt, 'stroke-width': 3, 'stroke-opacity': .5 }, { d: 0 }), m(mk1) + .4, Math.max(.8, nxt - m(mk1) - .8), lin);
+      tw(g, { o: 1, x: 0 }, m(mk1), .6, out);
+      y += 60 + lines.length * 46 + 36;
+    });
+  }],
+
+  ['final1', 'Latihan bab', () => { panel(0); }, { ask: done => quiz(SCREEN, PRACTICE, done, 'Latihan bab') }],
+  ['finish', 'Selesai', () => { panel(0); }, { ask: finishCard }],
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+
+/* ---------- practice: a drawn curve in each prompt ---------- */
+function figFV(s) {
+  const NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 560 270'); svg.setAttribute('width', '440'); svg.setAttribute('role', 'img'); svg.setAttribute('aria-label', 'Kurva aliran-volume skematis');
+  const mkp = (d, a) => { const e = document.createElementNS(NS, 'path'); e.setAttribute('d', d); for (const k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; };
+  const x0 = 60, y0 = 230, sw = 400, sh = 190, st = { ...FV0, ...s };
+  mkp(`M${x0} ${y0 - sh - 16}V${y0}H${x0 + sw + 60}`, { fill: 'none', stroke: K.faint, 'stroke-width': 3 });
+  const d = fvD(x0, y0, sw, sh, st);
+  mkp(d + 'Z', { fill: K.ink, 'fill-opacity': .07, stroke: 'none' }); mkp(d, { fill: 'none', stroke: K.ink, 'stroke-width': 6, 'stroke-linejoin': 'round' });
+  const t = (str, x, y, a) => { const e = document.createElementNS(NS, 'text'); e.textContent = str; e.setAttribute('x', x); e.setAttribute('y', y); e.setAttribute('font-size', 20); e.setAttribute('fill', K.dim); if (a) e.setAttribute('text-anchor', a); svg.appendChild(e); };
+  t('aliran', x0 - 6, y0 - sh - 24); t('volume', x0 + sw + 60, y0 + 26, 'end'); t('skematis', x0 + sw + 60, y0 + 50, 'end');
+  return h('figure', '', [svg]);
+}
+const PRACTICE = [
+  { id: 'p-batuk', prompt: ['Nilai kurva aliran-volume ini.', figFV({ cough: 1 })],
+    build: choice(['Usaha submaksimal', 'Batuk di detik pertama', 'Extra breath via nose', 'Acceptable'], 1,
+      'Takik tajam di awal ekspirasi: batuk di detik pertama. VEP1 tidak acceptable.',
+      ['Pada usaha submaksimal puncaknya rendah dan tumpul. Di sini puncaknya tajam, dan ada takik di awal.', '', 'Extra breath via nose tampak sebagai ekor ganda di akhir kurva. Di sini kelainannya di awal.', 'Kurva acceptable bebas artefak. Di sini ada takik tajam di awal ekspirasi.']) },
+  { id: 'p-baik', prompt: ['Nilai kurva aliran-volume ini.', figFV({})],
+    build: choice(['Penutupan glotis', 'Usaha submaksimal', 'Acceptable', 'Extra breath via nose'], 2,
+      'Awal tegak, satu puncak yang jelas, tanpa takik, turun mulus dan memotong sumbu X: tidak ada artefak pada bentuk ini.',
+      ['Tidak ada penurunan aliran yang mendadak pada kurva ini.', 'Puncaknya tinggi dan tajam, bukan rendah dan tumpul.', '', 'Tidak ada ekor ganda di akhir kurva.']) },
+  { id: 'p-ekor', prompt: ['Nilai kurva aliran-volume ini.', figFV({ tail: 1 })],
+    build: choice(['Acceptable', 'Kebocoran', 'Extra breath via nose', 'Usaha submaksimal'], 2,
+      'Ekor ganda di akhir kurva: extra breath via nose. KVP naik palsu, rasio turun palsu. Solusi utama: nose clip wajib.',
+      ['Ekor ganda di akhir kurva melanggar kriteria bebas artefak dan grafik yang mendatar memotong sumbu X.', 'Kebocoran terlihat pada kurva volume-waktu: mendatar terlalu dini pada volume rendah. Di sini ada tambahan volume di ekor.', '', 'Puncaknya tinggi dan tajam. Yang tidak biasa adalah ekornya.']) },
+  { id: 'p-tumpul', prompt: ['Nilai kurva aliran-volume ini.', figFV({ sub: 1 })],
+    build: choice(['Usaha submaksimal', 'Obstruksi', 'Acceptable', 'Batuk di detik pertama'], 0,
+      'Puncak aliran rendah dan tumpul: usaha submaksimal. Bandingkan antar manuver: biasanya tidak reproducible.',
+      ['', 'Pada obstruksi, cekung mulai setelah puncak. Di sini puncaknya sendiri rendah dan tumpul.', 'Puncak yang rendah dan tumpul tidak menunjukkan ekspirasi paksa yang maksimal.', 'Tidak ada takik di awal ekspirasi.']) },
+];
+
+boot();
+</script>
+</body>
+</html>

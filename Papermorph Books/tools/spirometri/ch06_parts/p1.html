@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tatalaksana, RPP, dan Medikolegal</title>
+<link rel="stylesheet" href="../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render"><!-- hold the first frame until the player exists, so the page transition can run -->
+</head>
+<body>
+<script src="../lib/engine.js"></script>
+<script src="../lib/spirometri.js"></script>
+<script src="audio/id/timings.js"></script>
+<script>
+'use strict';
+// Bab 6, Tatalaksana, RPP, dan Medikolegal (the last chapter). Beat ids match narration.id.json. What moves is always a
+// function of the beat clock (a prog() over the beat, or a tween), so a seek and a replay give the same frame. Respirators,
+// masks and bodies are simple pictograms drawn in code, labelled "skematis". No numbers beyond the notes' own.
+const CHAPTER = { number: 6, title: 'Tatalaksana, RPP, dan Medikolegal', minutes: 10, language: 'id' };
+
+/* ---------- captions: the voice spells the abbreviations and reads numbers as words; the caption shows them written ---------- */
+const NB = ' ';
+const DIG = { nol: 0, satu: 1, dua: 2, tiga: 3, empat: 4, lima: 5, enam: 6, tujuh: 7, delapan: 8, sembilan: 9 };
+const NW = 'nol|satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|sepuluh|sebelas|seratus|seribu|belas|puluh|ratus|ribu';
+const NUMRE = new RegExp('\\b(minus )?((?:' + NW + ')(?: (?:' + NW + '))*)(?: koma((?: (?:nol|satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan))+))?(?![\\p{L}])', 'giu');
+const numOf = ws => { let tot = 0, cur = 0; for (const w of ws) { if (w in DIG) cur = DIG[w]; else if (w === 'sepuluh') tot += 10; else if (w === 'sebelas') tot += 11; else if (w === 'belas') { tot += 10 + cur; cur = 0; } else if (w === 'puluh') { tot += cur * 10; cur = 0; } else if (w === 'seratus') tot += 100; else if (w === 'ratus') { tot += cur * 100; cur = 0; } else if (w === 'seribu') tot += 1000; else if (w === 'ribu') { tot += cur * 1000; cur = 0; } } return tot + cur; };
+const SAY = [[/\bve e pe satu\b/gi, 'VEP1'], [/\bka ve pe\b/gi, 'KVP'], [/\bel en el\b/gi, 'LNL'], [/\bel el en\b/gi, 'LLN'], [/\ben en te\b/gi, 'NNT'],
+  [/\ben ai o es ha\b/gi, 'NIOSH'], [/\bo es ha a\b/gi, 'OSHA'], [/\bi el o\b/gi, 'ILO'], [/\bes pe pe\b/gi, 'Sp.P'], [/\bes pe o ka\b/gi, 'SpOk'],
+  [/\bha er ce te\b/gi, 'HRCT'], [/\bde el ce o\b/gi, 'DLCO'], [/\bte be\b/gi, 'TB'], [/\ber pe pe\b/gi, 'RPP'], [/\bpe a pe er\b/gi, 'PAPR'], [/\ba pe er\b/gi, 'APR'],
+  [/\bes a er\b/gi, 'SAR'], [/\bes ce be a\b/gi, 'SCBA'], [/\bi de el ha\b/gi, 'IDLH'], [/\bki el ef te\b/gi, 'QLFT'], [/\bki en ef te\b/gi, 'QNFT'], [/\bje ka ka\b/gi, 'JKK'],
+  [/\ben a be\b/gi, 'NAB'], [/\ba pe de\b/gi, 'APD'], [/\bpe ha ka\b/gi, 'PHK'], [/\bse be er en\b/gi, 'CBRN'], [/\bpe seratus\b/gi, 'P100'],
+  [/\bhuruf en\b/gi, 'Huruf N'], [/\bhuruf er\b/gi, 'Huruf R'],
+  [/\bpermenaker lima tahun dua ribu delapan belas\b/gi, 'Permenaker 5/2018'], [/\btownsend dua ribu dua puluh\b/gi, 'Townsend 2020'],
+  [/\bfiltering feispis\b/gi, 'Filtering facepiece'], [/\bful feispis presyur dimand\b/gi, 'full facepiece pressure-demand'], [/\btait fiting\b/gi, 'tight-fitting'],
+  [/\bsakarin\b/gi, 'Saccharin'], [/\bbitreks\b/gi, 'Bitrex'], [/\biso amil asetat\b/gi, 'Isoamyl acetate'], [/\bportakaunt\b/gi, 'Portacount'], [/\bkartrid\b/gi, 'cartridge'],
+  [/\bzet skor\b/gi, 'z-score'], [/\bmedikal rimuval\b/gi, 'medical removal']];
+const say = s => {
+  s = SAY.reduce((a, [re, to]) => a.replace(re, to), s);
+  s = s.replace(NUMRE, (all, neg, ip, fr) => (neg ? '−' : '') + String(numOf(ip.toLowerCase().split(' '))).replace(/\B(?=(\d{3})+(?!\d))/g, NB) + (fr ? ',' + fr.trim().toLowerCase().split(' ').map(w => DIG[w]).join('') : ''));
+  return s.replace(/(\d) persen\b/g, '$1%').replace(/(\d) menit\b/g, '$1' + NB + 'menit');
+};
+for (const t of Object.values(TIMINGS)) t.cues = t.cues.map(([s, str]) => [s, say(str)]);
+
+/* ---------- chapter drawing helpers (as chapters 1 to 5) ---------- */
+const nb = s => s.replace(/ /g, NB);
+const text = (p, str, x, y, t0, { size = 30, fill = K.ink, anchor = 'start', weight = 500, dur = .5 } = {}) => { const e = T(p, str, { x, y, size, fill, anchor, weight, o: 0 }); show(e, t0, dur); return e; };
+const width = (e, str, size) => e.getComputedTextLength() || str.length * size * .56;
+function pill(p, str, x, y, fill, t0, { size = 30, anchor = 'start', pad = 16, dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  const t = T(g, str, { x: 0, y: 0, size, fill: '#fff', weight: 700 });
+  const w = width(t, str, size) + pad * 2;
+  g.insertBefore(mk('rect', { x: -pad, y: -size * .86, width: w, height: size * 1.25, rx: size * .4, fill }), t);
+  put(g, { x: (anchor === 'middle' ? x - w / 2 : anchor === 'end' ? x - w : x) + pad, y });
+  show(g, t0, dur);
+  return g;
+}
+// a soft tag: coloured outline and text on a light fill
+function tag(p, str, x, y, col, t0, { size = 26, anchor = 'start', pad = 16, dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  const t = T(g, str, { x: 0, y: 0, size, fill: col, weight: 700 });
+  const w = width(t, str, size) + pad * 2;
+  g.insertBefore(mk('rect', { x: -pad, y: -size * .86, width: w, height: size * 1.3, rx: size * .4, fill: col, 'fill-opacity': .12, stroke: col, 'stroke-width': 3 }), t);
+  put(g, { x: (anchor === 'middle' ? x - w / 2 : anchor === 'end' ? x - w : x) + pad, y });
+  show(g, t0, dur);
+  g._w = w;
+  return g;
+}
+function lines(p, arr, x, y, t0, { size = 26, lh = 1.3, fill = K.dim, anchor = 'start', weight = 500, dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  arr.forEach((s, i) => T(g, s, { x, y: y + i * size * lh, size, fill, anchor, weight }));
+  show(g, t0, dur);
+  return g;
+}
+function arrowD(x1, y1, x2, y2, head = 16) {
+  const a = Math.atan2(y2 - y1, x2 - x1), c = Math.cos(a), s = Math.sin(a), hw = head * .6;
+  const bx = x2 - head * c, by = y2 - head * s;
+  return `M${x1} ${y1}L${x2} ${y2}M${bx - hw * s} ${by + hw * c}L${x2} ${y2}L${bx + hw * s} ${by - hw * c}`;
+}
+function box(p, x, y, w, h, edge, { fill = '#fff', sw = 3, o = 0, rx = 22 } = {}) {
+  const g = G(p, { x, y, o });
+  mk('rect', { x: 0, y: 0, width: w, height: h, rx, fill, stroke: edge, 'stroke-width': sw }, g);
+  return g;
+}
+const lerp = (a, b, q) => a + (b - a) * q;
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const smooth = (a, b, v) => { const t = clamp((v - a) / (b - a)); return t * t * (3 - 2 * t); };
+function ring(p, x, y, t0, color = K.ink) {
+  const g = G(p, { x, y, o: 0 }); mk('circle', { r: 16, fill: 'none', stroke: color, 'stroke-width': 5 }, g);
+  prog(q => put(g, { s: 1 + 2.4 * q, o: .9 * (1 - q) }), t0, .9, out);
+  return g;
+}
+function dotAt(p, x, y, t0, color, r = 13) { const d = mk('circle', { r, fill: color }, p); put(d, { x, y, o: 0 }); show(d, t0, .35); return d; }
+const ban = (p, str, x, y, w, t0, col = K.nnt, size = 28) => {
+  const g = G(p, { o: 0, y: 20 }); mk('rect', { x, y, width: w, height: 62, rx: 18, fill: col, 'fill-opacity': .1, stroke: col, 'stroke-width': 3 }, g);
+  T(g, str, { x: x + w / 2, y: y + 41, size, weight: 700, anchor: 'middle' });
+  tw(g, { o: 1, y: 0 }, t0, .5, out); return g;
+};
+const dashed = (p, d, t0, dur, col = K.ink, sw = 4, da = '10 8') => { const e = path(p, d, { stroke: col, 'stroke-width': sw, 'stroke-dasharray': da, 'stroke-linecap': 'round' }, { d: 0 }); draw(e, t0, dur, io); return e; };
+const line = (p, d, t0, dur, col = K.ink, sw = 4) => { const e = path(p, d, { stroke: col, 'stroke-width': sw }, { d: 0 }); draw(e, t0, dur, io); return e; };
+function grow(p, x, y, w, h, fill, t0, dur, { op = 1 } = {}) {
+  const r = mk('rect', { x, y, width: 0, height: h, rx: 6, fill, 'fill-opacity': op }, p);
+  put(r, { o: 0 });
+  prog(q => { r.setAttribute('width', w * q); put(r, { o: q > 0 ? 1 : 0 }); }, t0, dur, io);
+  return r;
+}
+const XQ_ = [200, 500, 800, 1100, 1400];
+const popIn = (g, t0, dur = .45) => { put(g, { s: .4, o: 0 }); tw(g, { s: 1, o: 1 }, t0, dur, back); return g; };
+const setText = (e, s) => { if (e.textContent !== s) e.textContent = s; };
+const cross = (p, x, y, t0, r = 22, col = K.bad) => { const g = G(p, { x, y, o: 0 }); path(g, `M${-r} ${-r}L${r} ${r}M${r} ${-r}L${-r} ${r}`, { stroke: col, 'stroke-width': 8 }); popIn(g, t0); return g; };
+const tickOk = (p, x, y, t0, col = K.ok) => { const g = G(p, { x, y, o: 0 }); path(g, 'M-18 2L-5 16L20 -16', { stroke: col, 'stroke-width': 8 }); popIn(g, t0); return g; };
+
+/* ---------- this chapter's meanings (on top of style.json look.meaning) ---------- */
+// Green: more effective, laik, allowed. Amber: with a note, in between. Red: last resort / not laik / forbidden.
+// Magenta (NNT) is the banner colour as in earlier chapters. Respirators and bodies are drawn in ink on white.
+const AMBER = '#b9891b', SKIN = '#f0c9a8', SKIN2 = '#c99a73';
+
+/* ---------- pictograms (all schematic) ---------- */
+function person(p, x, y, s, col, t0 = 0) {
+  const g = G(p, { x, y, s, o: 0 });
+  mk('circle', { cx: 0, cy: -34, r: 12, fill: col }, g);
+  mk('path', { d: 'M-17 14V-8Q-17 -20 0 -20Q17 -20 17 -8V14Z', fill: col }, g);
+  show(g, t0, .4); return g;
+}
+const cupPath = (cx, cy, w, h) => `M${cx - w} ${cy - h * .35}Q${cx} ${cy - h} ${cx + w} ${cy - h * .35}Q${cx + w} ${cy + h * .6} ${cx} ${cy + h}Q${cx - w} ${cy + h * .6} ${cx - w} ${cy - h * .35}Z`;
+// kind: fp (filtering facepiece), gas (half mask with two cartridges), papr, sar, scba. About 150 wide, centred on (0,0).
+function respIcon(p, kind, x, y, s = 1, t0 = 0) {
+  const g = G(p, { x, y, s, o: 0 }), sw = { stroke: K.ink, 'stroke-width': 4, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' };
+  const straps = () => path(g, 'M-50 -14Q-80 -26 -80 -52M50 -14Q80 -26 80 -52', { stroke: K.ink, 'stroke-width': 3 });
+  if (kind === 'fp') {
+    straps(); mk('path', { d: cupPath(0, 0, 50, 48), fill: '#fff', ...sw }, g);
+    path(g, 'M-32 -8H32M-36 10H36M-28 28H28', { stroke: K.dim, 'stroke-width': 3, 'stroke-dasharray': '2 7' });
+  } else if (kind === 'gas') {
+    straps(); mk('path', { d: cupPath(0, 0, 50, 46), fill: '#fff', ...sw }, g);
+    for (const sx of [-1, 1]) { mk('circle', { cx: sx * 40, cy: 14, r: 19, fill: '#e8e4d6', ...sw }, g); path(g, `M${sx * 40 - 11} 14H${sx * 40 + 11}M${sx * 40} 3V25`, { stroke: K.dim, 'stroke-width': 3 }); }
+    mk('circle', { cx: 0, cy: 20, r: 9, fill: '#fff', ...sw }, g);
+  } else if (kind === 'papr') {
+    path(g, 'M-70 78Q-60 30 -20 28Q20 30 30 78', { stroke: K.ink, 'stroke-width': 4 });
+    mk('circle', { cx: -22, cy: -16, r: 38, fill: '#fff', ...sw }, g); mk('path', { d: 'M-48 -18Q-22 -2 4 -18', fill: 'none', ...sw }, g);
+    path(g, 'M-6 8C20 36 36 12 52 44', { stroke: K.ink, 'stroke-width': 5 });
+    mk('rect', { x: 36, y: 40, width: 62, height: 44, rx: 8, fill: '#e8e4d6', ...sw }, g);
+    mk('circle', { cx: 67, cy: 62, r: 13, fill: '#fff', stroke: K.ink, 'stroke-width': 3 }, g); path(g, 'M67 50V74M55 62H79', { stroke: K.ink, 'stroke-width': 3 });
+  } else if (kind === 'sar') {
+    mk('path', { d: cupPath(-48, -4, 32, 32), fill: '#fff', ...sw }, g);
+    path(g, 'M-24 6C0 36 20 -16 44 10S78 40 88 26', { stroke: K.ink, 'stroke-width': 5 });
+    mk('rect', { x: 84, y: 4, width: 70, height: 52, rx: 8, fill: '#e8e4d6', ...sw }, g);
+    mk('circle', { cx: 108, cy: 62, r: 9, fill: '#fff', stroke: K.ink, 'stroke-width': 3 }, g); mk('circle', { cx: 134, cy: 62, r: 9, fill: '#fff', stroke: K.ink, 'stroke-width': 3 }, g);
+    path(g, 'M96 22H142M96 38H142', { stroke: K.dim, 'stroke-width': 3 });
+    g.setAttribute('data-w', 'wide');
+  } else {   // scba
+    path(g, 'M-58 78V40Q-58 12 -22 12Q14 12 14 40V78', { stroke: K.ink, 'stroke-width': 4 });
+    mk('rect', { x: 26, y: -40, width: 36, height: 112, rx: 16, fill: '#e8e4d6', ...sw }, g); path(g, 'M44 -40V-54M34 -54H54', { stroke: K.ink, 'stroke-width': 4 });
+    mk('circle', { cx: -22, cy: -22, r: 36, fill: '#fff', ...sw }, g);
+    mk('rect', { x: -46, y: -40, width: 48, height: 34, rx: 14, fill: '#dbe9f6', ...sw }, g);
+    path(g, 'M-4 -6C12 6 22 12 34 16', { stroke: K.ink, 'stroke-width': 5 });
+  }
+  show(g, t0, .45);
+  return g;
+}
+// a cross-section of a face (flat) with a mask dome over it; returns the update function
+const domeD = (cx, yS, hw, h) => `M${cx - hw} ${yS}C${cx - hw} ${yS - h * 1.33} ${cx + hw} ${yS - h * 1.33} ${cx + hw} ${yS}`;
+
+/* ---------- beats ---------- */
+let q1els, q2els;
+// the inverted pyramid: widest at the top. Band polygon between two heights.
+const pyrHW = (y, yTop, yBot, wTop) => wTop / 2 * (yBot - y) / (yBot - yTop);
+const bandPts = (cx, y0, y1, yTop, yBot, wTop) => `${cx - pyrHW(y0, yTop, yBot, wTop)},${y0} ${cx + pyrHW(y0, yTop, yBot, wTop)},${y0} ${cx + pyrHW(y1, yTop, yBot, wTop)},${y1} ${cx - pyrHW(y1, yTop, yBot, wTop)},${y1}`;
+const BANDC = [K.ok, AMBER, K.bad];
+
+// the five respirator leaves of the tree: kind, title, sub
+const LEAVES = [['fp', 'Filtering facepiece', 'masker debu'], ['gas', 'Gas mask', 'dengan cartridge'], ['papr', 'PAPR', 'motor baterai'], ['sar', 'SAR', 'selang dari luar'], ['scba', 'SCBA', 'tabung di punggung']];
+
+const BEATS = [
+  ['intro', 'Tatalaksana', (m, D) => {
+    const g = G(scene, { o: 0, y: 24 });
+    T(g, 'Spirometri · Bab 6', { x: 800, y: 170, size: 28, fill: K.dim, anchor: 'middle' });
+    T(g, 'Tatalaksana', { x: 800, y: 272, size: 80, weight: 600, anchor: 'middle' });
+    T(g, 'RPP · medikolegal', { x: 800, y: 340, size: 38, weight: 500, fill: K.dim, anchor: 'middle' });
+    tw(g, { o: 1, y: 0 }, .2, 1.1, out);
+    const cg = G(scene, { o: 1 });
+    const lim = dashed(cg, 'M120 650H440', 1.0, .9, K.paru, 4, '10 8');
+    const cv = path(cg, 'M130 540Q220 560 290 600T440 700', { stroke: K.rasio, 'stroke-width': 7 }, { d: 0 }); draw(cv, 1.6, 4.4, io);
+    const dt = mk('circle', { r: 11, fill: K.rasio }, cg); put(dt, { x: 130, y: 540, o: 0 });
+    prog(q => { const u = q, x = lerp(130, 440, u), y = lerp(540, 700, u * u * .7 + u * .3); put(dt, { x, y, o: q > 0 ? 1 : 0 }); dt.setAttribute('fill', y > 650 ? K.bad : K.rasio); }, 1.6, 4.4, io);
+    text(cg, 'skematis', 120, 520, 1.0, { size: 22, fill: K.dim });
+    const st = pill(cg, 'hasil abnormal', 280, 780, K.bad, m('sub', .3), { size: 30, anchor: 'middle' });
+    const nodes = [['perorangan', K.rasio, 480], ['komunitas', K.ok, 570], ['respirator', AMBER, 660], ['medikolegal', K.nnt, 750]];
+    nodes.forEach(([lab, col, y], i) => {
+      draw(path(cg, arrowD(480, 650, 760, y - 8, 18), { stroke: K.faint, 'stroke-width': 5 }, { d: 0 }), m('sub', .6 + i * .3), .6, io);
+      tag(cg, lab, 800, y + 8, col, m('sub', 1.0 + i * .3), { size: 32 });
+    });
+    text(cg, 'dari hasil ke tindakan', 1060, 610, m('sub', 2.4), { size: 28, fill: K.dim });
+    tw(g, { o: 0, y: -24 }, D - .9, .8); hide(cg, D - .9, .8);
+  }],
+
+  // 1. Townsend algorithm: five stations on a road; the fifth opens to the whole group
+  ['algo', 'Algoritma Townsend', (m, D) => {
+    const p = panel(0), YR = 500, X = i => 220 + i * 290;
+    ban(p, 'mulai bila: di bawah NNT / LLN  ·  atau VEP1 turun ≥ 15%', 220, 110, 1160, m('a', .2), K.nnt, 31);
+    text(p, 'Townsend 2020 · 5 langkah', 130, 78, .2, { size: 26, fill: K.dim });
+    line(p, `M130 ${YR}H1480`, m('a', 5.6), 1.0, K.faint, 8);
+    const icon = [
+      g => { path(g, 'M-44 30Q-20 -30 0 -10T44 20', { stroke: K.rasio, 'stroke-width': 6 }); mk('circle', { cx: 14, cy: 4, r: 40, fill: 'none', stroke: K.ink, 'stroke-width': 5 }, g); path(g, 'M44 34L66 58', { stroke: K.ink, 'stroke-width': 8 }); },
+      g => { mk('rect', { x: -38, y: -48, width: 76, height: 98, rx: 10, fill: '#fff', stroke: K.ink, 'stroke-width': 5 }, g); path(g, 'M-20 -22H20M-20 0H20M-20 22H8', { stroke: K.dim, 'stroke-width': 5 }); mk('rect', { x: -16, y: -58, width: 32, height: 16, rx: 6, fill: K.ink }, g); },
+      g => { path(g, 'M-50 -10Q-25 -40 0 -10T50 -10', { stroke: K.dim, 'stroke-width': 6, 'stroke-dasharray': '3 9' }); path(g, 'M-50 20Q-25 -10 0 20T50 40', { stroke: K.rasio, 'stroke-width': 7 }); path(g, 'M-52 -10V20M52 -10V40', { stroke: K.faint, 'stroke-width': 3 }); },
+      g => { mk('circle', { r: 40, fill: '#fff', stroke: K.ink, 'stroke-width': 5 }, g); mk('circle', { r: 20, fill: 'none', stroke: K.ink, 'stroke-width': 5 }, g); mk('circle', { r: 6, fill: K.bad }, g); path(g, 'M0 -56V-34M0 34V56M-56 0H-34M34 0H56', { stroke: K.ink, 'stroke-width': 5 }); },
+      g => { [[-40, 18], [0, 18], [40, 18], [-20, -22], [20, -22]].forEach(([x, y]) => { mk('circle', { cx: x, cy: y - 14, r: 11, fill: K.ok }, g); mk('path', { d: `M${x - 15} ${y + 22}V${y - 2}Q${x - 15} ${y - 2} ${x} ${y - 2}Q${x + 15} ${y - 2} ${x + 15} ${y + 22}Z`, fill: K.ok }, g); }); },
+    ];
+    const lab = [['Verifikasi teknis', ['batuk, kebocoran,', 'usaha kurang']], ['Anamnesis dan PF', ['komprehensif']], ['Review baseline', ['bandingkan dengan', 'hasil terdahulu']], ['Penunjang terarah', ['sesuai pola']], ['Intervensi komunitas', ['periksa pekerja lain', 'dengan pajanan sama']]];
+    const T0 = [m('b'), m('c'), m('d'), m('e'), m('f')];
+    for (let i = 0; i < 5; i++) {
+      const t0 = T0[i], g = G(p, { x: X(i), y: 330, o: 0 }); icon[i](g); popIn(g, t0, .5);
+      const c = G(p, { x: X(i), y: YR, o: 0 }), ci = mk('circle', { r: 30, fill: K.faint }, c); T(c, String(i + 1), { y: 11, size: 32, fill: '#fff', weight: 700, anchor: 'middle' }); popIn(c, m('a', 2.2 + i * .5), .5); put(ci, { c_fill: K.faint }); tw(ci, { c_fill: K.nnt }, t0, .4);
+      text(p, lab[i][0], X(i), YR + 80, t0 + .25, { size: 28, weight: 700, anchor: 'middle' });
+      lines(p, lab[i][1], X(i), YR + 118, t0 + .35, { size: 23, anchor: 'middle', lh: 1.25 });
+    }
+    // step 5 opens to the whole group: workers light up one after another
+    [-160, -80, 0, 80, 160].forEach((dx, i) => { const c = person(p, X(4) + dx * .95, 770, 1.1, K.faint, m('f', .5)); prog(q => { c.querySelectorAll('circle,path').forEach(e => e.setAttribute('fill', q * 5 > i + .5 ? K.ok : K.faint)); }, m('f', 2.2), 2.4, lin); });
+    for (let i = 0; i < 4; i++) draw(path(p, arrowD(X(i) + 40, YR, X(i + 1) - 40, YR, 16), { stroke: K.nnt, 'stroke-width': 5 }, { d: 0 }), T0[i + 1] - .5, .5, io);
+  }],
+
+  // 2. individual recommendations: three columns of shapes
+  ['perorang', 'Rekomendasi perorangan', (m, D) => {
+    const p = panel(0), cx = [300, 800, 1300];
+    ['Konfirmasi', 'Keputusan kerja', 'Pencegahan'].forEach((s, i) => { const t = [m('a'), m('d'), m('e')][i]; tag(p, s, cx[i], 100, [K.rasio, AMBER, K.ok][i], t, { size: 32, anchor: 'middle' }); });
+    text(p, 'perorangan · sebut minimal 2', 130, 56, .2, { size: 24, fill: K.dim });
+    // column 1: confirm
+    {
+      const x = 130;
+      const loop = G(p, { x: x + 52, y: 215, o: 0 });
+      path(loop, 'M-34 -4A34 34 0 0 1 28 -20M34 4A34 34 0 0 1 -28 20', { stroke: K.rasio, 'stroke-width': 6 }); path(loop, 'M20 -36L30 -18L10 -14M-20 36L-30 18L-10 14', { stroke: K.rasio, 'stroke-width': 6 });
+      path(loop, 'M-14 8Q-6 -10 2 0T16 -6', { stroke: K.ink, 'stroke-width': 4 }); popIn(loop, m('a', .2)); prog(q => put(loop, { r: q * 540 }), m('a', .6), m('b') - m('a', .6) - .3, io);
+      text(p, 'Spirometri ulang', x + 120, 224, m('a', .4), { size: 30, weight: 700 });
+      const film = G(p, { x: x + 52, y: 365, o: 0 }); mk('rect', { x: -44, y: -52, width: 88, height: 104, rx: 8, fill: '#26323d' }, film);
+      path(film, 'M0 -36V30M-20 -22Q-34 -6 -22 14M20 -22Q34 -6 22 14M-14 -14Q0 -4 14 -14', { stroke: '#cfd8df', 'stroke-width': 4 }); popIn(film, m('b', .2));
+      pill(p, 'ILO', x + 52, 440, K.rasio, m('b', 1.4), { size: 24, anchor: 'middle', pad: 14 }); ring(p, x + 52, 440, m('b', 3.6), K.rasio); ring(p, x + 52, 365, m('b', 5.6), K.rasio);
+      text(p, 'Foto toraks', x + 120, 350, m('b', .4), { size: 30, weight: 700 });
+      lines(p, ['klasifikasi ILO, bila', 'debu pneumokoniogen'], x + 120, 388, m('b', 1.0), { size: 24 });
+      pill(p, 'Sp.P', x + 52, 580, K.nnt, m('c', .1), { size: 30, anchor: 'middle' });
+      text(p, 'rujukan', x + 52, 640, m('c', .2), { size: 28, weight: 700, anchor: 'middle' });
+      for (const [dy, s] of [[-1, 'HRCT'], [1, 'DLCO']]) { draw(path(p, arrowD(x + 90, 580, x + 250, 580 + dy * 62, 16), { stroke: K.dim, 'stroke-width': 4 }, { d: 0 }), m('c', 1.6 + (dy > 0 ? .8 : 0)), .5); tag(p, s, x + 270, 580 + dy * 62 + 10, K.dim, m('c', 2.0 + (dy > 0 ? .8 : 0)), { size: 28 }); }
+      lines(p, ['lewat rujukan,', 'tidak diorder langsung', 'oleh SpOk'], x + 120, 720, m('c', 3.6), { size: 24 });
+    }
+    // column 2: decision and move
+    {
+      [['Laik', K.ok, 190], ['Laik dengan catatan', AMBER, 262], ['Tidak laik di area pajanan', K.bad, 334]].forEach(([s, col, y], i) => {
+        const t = tag(p, s, 800, y, col, m('d', .3 + i * 1.2), { size: 28, anchor: 'middle' });
+      });
+      lines(p, ['modifikasi tugas'], 800, 392, m('d', 2.8), { size: 23, anchor: 'middle' });
+      // move from the exposed area to a safe one
+      const zA = box(p, 520, 470, 220, 190, K.bad, { fill: '#fbe9e4', o: 0 }), zB = box(p, 840, 470, 220, 190, K.ok, { fill: '#e8f3df', o: 0 });
+      tw(zA, { o: 1 }, m('d', 5.2), .5); tw(zB, { o: 1 }, m('d', 5.2), .5);
+      T(zA, 'area pajanan', { x: 110, y: 40, size: 24, fill: K.bad, anchor: 'middle', weight: 700 }); T(zB, 'area lain', { x: 110, y: 40, size: 24, fill: K.ok, anchor: 'middle', weight: 700 });
+      const w = person(p, 630, 610, 1.6, K.ink, m('d', 5.2));
+      prog(q => put(w, { x: lerp(630, 950, q) }), m('d', 6.6), 1.4, io);
+      draw(path(p, arrowD(745, 570, 835, 570, 18), { stroke: K.ink, 'stroke-width': 5 }, { d: 0 }), m('d', 6.4), .5);
+      pill(p, 'pindah area', 790, 730, K.ink, m('d', 6.0), { size: 28, anchor: 'middle' });
+      lines(p, ['intervensi primer', 'paling penting'], 790, 780, m('d', 7.0), { size: 24, anchor: 'middle', fill: K.bad, weight: 700 });
+    }
+    // column 3: prevention
+    {
+      const x = 1150;
+      const lung = G(p, { x: x + 40, y: 215, o: 0 }); path(lung, 'M-4 -40V-6M-8 -6Q-34 -4 -36 22Q-36 42 -16 40Q-4 38 -4 20M4 -6Q30 -4 32 22Q32 42 12 40Q0 38 0 20', { stroke: K.ink, 'stroke-width': 5 });
+      [[-24, 18], [20, 14], [18, 28]].forEach(([dx, dy]) => mk('circle', { cx: dx, cy: dy, r: 5, fill: K.bad }, lung)); popIn(lung, m('e', .3));
+      text(p, 'Skrining TB', x + 100, 214, m('e', .5), { size: 30, weight: 700 }); text(p, 'pada silikosis', x + 100, 250, m('e', .6), { size: 24, fill: K.dim });
+      const cig = G(p, { x: x + 40, y: 400, o: 0 }); mk('rect', { x: -40, y: -9, width: 64, height: 18, rx: 4, fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, cig); mk('rect', { x: 8, y: -9, width: 16, height: 18, fill: AMBER }, cig); path(cig, 'M34 -10Q42 -24 34 -34M46 -8Q54 -22 46 -32', { stroke: K.dim, 'stroke-width': 4 });
+      mk('circle', { r: 44, fill: 'none', stroke: K.bad, 'stroke-width': 6 }, cig); path(cig, 'M-31 -31L31 31', { stroke: K.bad, 'stroke-width': 6 }); popIn(cig, m('e', 1.8));
+      text(p, 'Berhenti merokok', x + 100, 410, m('e', 2.0), { size: 30, weight: 700 });
+      const sy = G(p, { x: x + 40, y: 580, o: 0 }); mk('rect', { x: -34, y: -12, width: 56, height: 24, rx: 5, fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, sy); mk('rect', { x: -22, y: -6, width: 26, height: 12, fill: K.ok }, sy); path(sy, 'M22 0H40M-34 0H-48M-48 -10V10M40 0H58', { stroke: K.ink, 'stroke-width': 4 }); popIn(sy, m('e', 3.6));
+      text(p, 'Vaksinasi', x + 100, 590, m('e', 3.8), { size: 30, weight: 700 });
+    }
+  }],
+
+  // 3. the hierarchy of control, built from the top
+  ['piramida', 'Hierarki pengendalian', (m, D) => {
+    const p = panel(0), cx = 500, yT = 150, yB = 800, wT = 800, Y = [150, 370, 570, 800];
+    text(p, 'hierarki pengendalian · komunitas', 130, 70, .2, { size: 26, fill: K.dim });
+    const ar = G(p, { o: 0 }); path(ar, arrowD(70, 780, 70, 160, 20), { stroke: K.faint, 'stroke-width': 6 }); tw(ar, { o: 1 }, m('a', .8), .6);
+    text(p, 'lebih efektif', 70, 132, m('a', 1.4), { size: 24, fill: K.dim, anchor: 'start' });
+    const bands = [0, 1, 2].map(i => {
+      const g = G(p, { o: 0, y: -26 });
+      mk('polygon', { points: bandPts(cx, Y[i], Y[i + 1], yT, yB, wT), fill: BANDC[i], 'fill-opacity': .2, stroke: BANDC[i], 'stroke-width': 4, 'stroke-linejoin': 'round' }, g);
+      return g;
+    });
+    T(bands[0], 'Eliminasi · substitusi · engineering', { x: cx, y: 260, size: 30, weight: 700, anchor: 'middle' });
+    T(bands[1], 'Administratif', { x: cx, y: 480, size: 32, weight: 700, anchor: 'middle' });
+    tw(bands[0], { o: 1, y: 0 }, m('b', .1), .7, out); tw(bands[1], { o: 1, y: 0 }, m('c', .1), .7, out); tw(bands[2], { o: 1, y: 0 }, m('d', .1), .7, out);
+    // the detail chips, right of the band they belong to
+    [['ventilasi buang', 188, 'b', 3.0], ['isolasi proses', 244, 'b', 4.4], ['enclosure', 300, 'b', 5.6]].forEach(([s, y, k, o]) => {
+      tag(p, s, 930, y, K.ok, m(k, o - 2.2), { size: 25 });
+    });
+    [['rotasi kerja', 426, 0], ['batas durasi pajanan', 482, .9], ['prosedur aman', 538, 2.0]].forEach(([s, y, o]) => tag(p, s, 930, y, AMBER, m('c', .5 + o), { size: 25 }));
+    // the respirator at the tip
+    respIcon(p, 'gas', cx, 690, .66, m('d', .3));
+    pill(p, 'lini terakhir', cx + 150, 700, K.bad, m('d', .9), { size: 28 });
+    text(p, 'Respirator', cx + 150, 748, m('d', .8), { size: 26, fill: K.bad, weight: 700 });
+    ring(p, cx, 260, m('b', 3.6), K.ok); ring(p, cx, 480, m('c', 3.8), AMBER); ring(p, cx, 690, m('d', 2.0), K.bad); ring(p, cx, 690, m('d', 4.2), K.bad);
+    text(p, 'skematis', 130, 800, .3, { size: 22, fill: K.dim });
+    // two more community recommendations, as shapes
+    const c1 = box(p, 930, 590, 300, 270, K.faint, { o: 0 }), c2 = box(p, 1250, 590, 300, 270, K.faint, { o: 0 });
+    tw(c1, { o: 1 }, m('e', .1), .5); tw(c2, { o: 1 }, m('f', .1), .5);
+    // c1: a gauge against the NAB
+    path(c1, 'M60 130A80 80 0 0 1 220 130', { stroke: K.faint, 'stroke-width': 18 }); path(c1, 'M60 130A80 80 0 0 1 100 62', { stroke: K.ok, 'stroke-width': 18 }); path(c1, 'M180 62A80 80 0 0 1 220 130', { stroke: K.bad, 'stroke-width': 18 });
+    const nd2 = G(c1, { x: 140, y: 130, r: -50 }); path(nd2, 'M0 0L0 -64', { stroke: K.ink, 'stroke-width': 6 }); mk('circle', { r: 9, fill: K.ink }, nd2);
+    prog(q => put(nd2, { r: lerp(-50, 40, smooth(0, 1, q)) }), m('e', .4), 1.8, io);
+    T(c1, 'Audit lingkungan', { x: 150, y: 190, size: 25, weight: 700, anchor: 'middle' }); T(c1, 'dibanding NAB', { x: 150, y: 218, size: 22, fill: K.dim, anchor: 'middle' });
+    T(c1, 'Permenaker 5/2018', { x: 150, y: 250, size: 22, fill: K.dim, anchor: 'middle' });
+    // c2: the whole area, not only the index worker
+    mk('ellipse', { cx: 150, cy: 100, rx: 118, ry: 62, fill: K.rasio, 'fill-opacity': .08, stroke: K.rasio, 'stroke-width': 3, 'stroke-dasharray': '8 6' }, c2);
+    [[70, 112], [110, 90], [150, 118], [190, 92], [230, 114]].forEach(([x, y], i) => { const w = G(c2, { x, y, s: .8, o: 0 }); mk('circle', { cy: -34, r: 12, fill: i === 2 ? K.bad : K.rasio }, w); mk('path', { d: 'M-17 14V-8Q-17 -20 0 -20Q17 -20 17 -8V14Z', fill: i === 2 ? K.bad : K.rasio }, w); tw(w, { o: 1 }, m('f', .5 + i * .35), .35); });
+    T(c2, 'Spirometri se-area', { x: 150, y: 190, size: 25, weight: 700, anchor: 'middle' }); T(c2, 'bukan hanya pekerja indeks', { x: 150, y: 218, size: 22, fill: K.dim, anchor: 'middle' });
+    tag(c2, 'pekerja indeks', 150, 254, K.bad, m('f', 2.4), { size: 20, pad: 10, anchor: 'middle' });
+  }],
+
+  ['q1', 'Cek cepat: klik tingkat', (m, D) => {
+    const p = panel(0), cx = 800, yT = 130, yB = 630, wT = 760, Y = [130, 300, 465, 630];
+    text(p, 'hierarki pengendalian · skematis', 800, 100, .1, { size: 26, fill: K.dim, anchor: 'middle' });
+    const bands = [0, 1, 2].map(i => {
+      const g = G(p, { o: 0 }); mk('polygon', { points: bandPts(cx, Y[i], Y[i + 1], yT, yB, wT), fill: BANDC[i], 'fill-opacity': .2, stroke: BANDC[i], 'stroke-width': 4, 'stroke-linejoin': 'round' }, g);
+      tw(g, { o: 1 }, .2 + i * .25, .5); return g;
+    });
+    T(bands[0], 'Eliminasi · substitusi · engineering', { x: cx, y: 225, size: 28, weight: 700, anchor: 'middle' });
+    T(bands[1], 'Administratif', { x: cx, y: 392, size: 30, weight: 700, anchor: 'middle' });
+    T(bands[2], 'Respirator', { x: cx, y: 530, size: 24, weight: 700, anchor: 'middle' });
+    q1els = bands; q1els.ring = G(p, { o: 0 }); mk('polygon', { points: bandPts(cx, Y[1], Y[2], yT, yB, wT), fill: 'none', stroke: K.ok, 'stroke-width': 8, 'stroke-linejoin': 'round' }, q1els.ring);
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-tingkat', prompt: ['Klik tingkat yang memuat pembatasan durasi pajanan.'],
+    build: pickEls([{ el: q1els[0], box: [420, 130, 760, 170], label: 'Eliminasi, substitusi, engineering' }, { el: q1els[1], box: [550, 300, 500, 165], label: 'Administratif' }, { el: q1els[2], box: [674, 465, 252, 165], label: 'Respirator' }], 1,
+      'Administratif: rotasi kerja, batas durasi pajanan, prosedur kerja aman. Respirator tetap lini terakhir.',
+      i => i === 0 ? 'Itu mengurangi sumber: lokalisasi, ventilasi buang, isolasi proses, enclosure. Durasi pajanan diatur secara administratif.' : 'Respirator adalah lini terakhir; ia tidak mengatur durasi pajanan.',
+      () => { fx(q1els.ring, { o: 1 }, 0, .4); }),
+  }], done, 'Cek cepat') }],

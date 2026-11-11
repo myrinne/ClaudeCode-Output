@@ -1,0 +1,20 @@
+{
+  "voice": "id-ID-GadisNeural",
+  "rate": "-4%",
+  "beats": {
+    "intro": "Bab satu. Membaca pola. [[sub]]Aliran dulu, lalu kapasitas.",
+    "dua": "Validitas dulu. [[v]]Kurva dibaca bila ada minimal tiga kurva acceptable dan repeatable. [[dua]]Lalu dua pertanyaan. [[a]]Pertama, rasio ve e pe satu per ka ve pe: kecepatan aliran. Turun berarti obstruksi. [[b]]Kedua, ka ve pe: kapasitas paru. Turun berarti restriksi.",
+    "matriks": "Dua pertanyaan, empat hasil. [[ax]]ka ve pe di sumbu mendatar, rasio ve e pe satu per ka ve pe di sumbu tegak. [[cut]]Tiap sumbu punya satu batas: en en te. [[n]]Kanan atas: fungsi paru normal. [[r]]Kiri atas: gangguan restriksi. [[o]]Kanan bawah: gangguan obstruksi. [[c]]Kiri bawah: gangguan obstruksi dan restriksi. [[dot]]Satu pasien adalah satu titik. Letaknya menentukan hasil.",
+    "kurva": "[[n]]Kurva normal: aliran naik cepat, lalu turun hampir lurus. [[o]]Pada obstruksi, ve e pe satu turun lebih besar dari ka ve pe. Rasio turun, kurva cekung. [[r]]Pada restriksi, ve e pe satu dan ka ve pe turun sebanding. Rasio normal atau naik. Kurvanya sempit. [[c]]Pada campuran, kurvanya cekung dan juga sempit.",
+    "q1": "Cek cepat. Klik kurva obstruksi.",
+    "batas": "Dari mana batasnya? Dua penggaris. [[vp]]Versi Paru: batas tetap. Rasio 75%, ka ve pe 80% prediksi, acuan PERDOKI 2019. [[ats]]a te es dan e er es menganjurkan batas bawah normal, tetapi di oski ikuti PERDOKI. [[ok]]Versi Okupasi: en en te, berbeda untuk tiap pasien. [[f]]en en te adalah prediksi dikurangi satu koma enam empat kali es de. [[t]]Pengurangnya berbeda untuk pria dan wanita. [[ex]]Contoh ilustratif: pria, ka ve pe prediksi 4500 mL. 4500 dikurangi 673 sama dengan 3827 mL.",
+    "kasus": "Satu pasien: pria, ka ve pe 3645 mL, 81% prediksi, rasio 82%. Contoh ilustratif. [[vp]]Penggaris Versi Paru: rasio di atas 75%, ka ve pe di atas 80%. Titik di kanan atas: normal. [[sw]]Ganti penggaris. Titik tidak bergerak, hanya garisnya. [[nnt]]Batas ka ve pe pasien ini 3827 mL, jadi garis bergeser ke kanan, melewati titik. Batas rasio 74%, hampir sama. [[res]]Titik kini di kiri atas: restriksi. Pasien sama, penggaris beda, hasil beda. [[kls]]Inilah kasus klasik board.",
+    "q2": "Cek cepat. Klik garis yang membuat pasien ini restriksi.",
+    "lafaz": "Lafaz di ujian. [[a]]Pada Versi Paru: rasio ve e pe satu per ka ve pe sama dengan atau lebih dari 75%, dan ka ve pe sama dengan atau lebih dari 80%. Jadi fungsi paru normal. [[b]]Namun pada Versi Okupasi: rasio ve e pe satu per ka ve pe sama dengan atau lebih dari en en te, tetapi ka ve pe kurang dari en en te. Jadi gangguan fungsi paru restriksi. [[c]]Sebagai es pe o ka, saya mengutamakan Versi Okupasi karena lebih sensitif untuk deteksi dini pada pekerja terpajan, sehingga kesimpulan saya: gangguan fungsi paru restriksi yang memerlukan evaluasi lanjutan dan korelasi dengan riwayat pajanan kerja.",
+    "curiga": "Satu catatan. [[a]]Spirometri saja tidak memastikan restriksi. [[b]]ka ve pe rendah dengan rasio normal hanya mencurigai gangguan restriksi. [[t]]Memastikannya perlu te el ce, kapasitas paru total. [[at]]Air trapping juga menurunkan ka ve pe. [[o]]Spirometri mencurigai, te el ce memastikan.",
+    "strategi": "Bila dua versi berbeda: [[a]]sebut kedua hasil. [[b]]Lalu jelaskan mengapa Versi Okupasi menjadi kesimpulan: tujuannya surveilans, sensitif untuk deteksi dini. [[c]]Bila obstruksi dan restriksi bersamaan, sebut kedua derajat secara terpisah.",
+    "wrap": "Ringkasnya. [[w1]]Validitas dulu, lalu rasio, lalu ka ve pe. [[w2]]Hasilnya empat: normal, restriksi, obstruksi, atau keduanya. [[w3]]Garis batas menentukan hasil: tetap pada Versi Paru, en en te pada Versi Okupasi. [[w4]]Bila berbeda, sebut keduanya, simpulkan Versi Okupasi. Spirometri mencurigai restriksi, te el ce memastikan. [[end]]Sekarang latihan.",
+    "final1": "Latihan bab. Tentukan hasil tiap kasus menurut kedua versi.",
+    "finish": "Bab satu selesai."
+  }
+}

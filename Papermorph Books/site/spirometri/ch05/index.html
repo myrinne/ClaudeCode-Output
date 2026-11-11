@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surveilans: LNL, Longitudinal, Cross-Shift</title>
+<link rel="stylesheet" href="../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render"><!-- hold the first frame until the player exists, so the page transition can run -->
+</head>
+<body>
+<script src="../lib/engine.js"></script>
+<script src="../lib/spirometri.js"></script>
+<script src="audio/id/timings.js"></script>
+<script>
+'use strict';
+// Bab 5, Surveilans: LNL, Longitudinal, Cross-Shift. Beat ids match narration.id.json. What moves is always a function of the
+// beat clock (a prog() over the beat, or a tween), so a seek and a replay give the same frame. The numbers are the brief's
+// ("kasus dari catatan"); every year-by-year line or other drawing between given points is labelled "skematis".
+const CHAPTER = { number: 5, title: 'Surveilans: LNL, Longitudinal, Cross-Shift', minutes: 8, language: 'id', next: '../ch06/' };
+
+/* ---------- captions: the voice spells the abbreviations and reads numbers as words; the caption shows them written ---------- */
+const NB = ' ';
+const DIG = { nol: 0, satu: 1, dua: 2, tiga: 3, empat: 4, lima: 5, enam: 6, tujuh: 7, delapan: 8, sembilan: 9 };
+const NW = 'nol|satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|sepuluh|sebelas|seratus|seribu|belas|puluh|ratus|ribu';
+const NUMRE = new RegExp('\\b(minus )?((?:' + NW + ')(?: (?:' + NW + '))*)(?: koma((?: (?:nol|satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan))+))?(?![\\p{L}])', 'giu');
+const numOf = ws => { let tot = 0, cur = 0; for (const w of ws) { if (w in DIG) cur = DIG[w]; else if (w === 'sepuluh') tot += 10; else if (w === 'sebelas') tot += 11; else if (w === 'belas') { tot += 10 + cur; cur = 0; } else if (w === 'puluh') { tot += cur * 10; cur = 0; } else if (w === 'seratus') tot += 100; else if (w === 'ratus') { tot += cur * 100; cur = 0; } else if (w === 'seribu') tot += 1000; else if (w === 'ribu') { tot += cur * 1000; cur = 0; } } return tot + cur; };
+const SAY = [[/\bve e pe satu\b/gi, 'VEP1'], [/\bka ve pe\b/gi, 'KVP'], [/\bel en el\b/gi, 'LNL'], [/\ba pe e\b/gi, 'APE'], [/\ben ai o es ha\b/gi, 'NIOSH'], [/\bo es ha a\b/gi, 'OSHA'],
+  [/\bkros syift\b/gi, 'Cross-shift'], [/\bsyift\b/gi, 'shift']];
+const say = s => {
+  s = SAY.reduce((a, [re, to]) => a.replace(re, to), s);
+  s = s.replace(NUMRE, (all, neg, ip, fr) => (neg ? '−' : '') + String(numOf(ip.toLowerCase().split(' '))).replace(/\B(?=(\d{3})+(?!\d))/g, NB) + (fr ? ',' + fr.trim().toLowerCase().split(' ').map(w => DIG[w]).join('') : ''));
+  return s.replace(/(\d) persen\b/g, '$1%').replace(/(\d) mililiter\b/g, '$1' + NB + 'mL').replace(/(\d) liter\b/g, '$1' + NB + 'L').replace(/(\d) mikrogram\b/g, '$1' + NB + 'mcg');
+};
+for (const t of Object.values(TIMINGS)) t.cues = t.cues.map(([s, str]) => [s, say(str)]);
+
+/* ---------- chapter drawing helpers (as chapters 1 to 3) ---------- */
+const nb = s => s.replace(/ /g, NB);
+const text = (p, str, x, y, t0, { size = 30, fill = K.ink, anchor = 'start', weight = 500, dur = .5 } = {}) => { const e = T(p, str, { x, y, size, fill, anchor, weight, o: 0 }); show(e, t0, dur); return e; };
+const width = (e, str, size) => e.getComputedTextLength() || str.length * size * .56;
+function runs(p, parts, x, y, t0, { size = 30, weight = 500, anchor = 'start', dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  let cx = 0;
+  for (const [str, fill = K.ink, wt = weight] of parts) { const e = T(g, str, { x: cx, y: 0, size, fill, weight: wt }); cx += width(e, str, size); }
+  put(g, { x: anchor === 'middle' ? x - cx / 2 : anchor === 'end' ? x - cx : x, y });
+  show(g, t0, dur);
+  return g;
+}
+function pill(p, str, x, y, fill, t0, { size = 30, anchor = 'start', pad = 16, dur = .5 } = {}) {
+  const g = G(p, { o: 0 });
+  const t = T(g, str, { x: 0, y: 0, size, fill: '#fff', weight: 700 });
+  const w = width(t, str, size) + pad * 2;
+  g.insertBefore(mk('rect', { x: -pad, y: -size * .86, width: w, height: size * 1.25, rx: size * .4, fill }), t);
+  put(g, { x: (anchor === 'middle' ? x - w / 2 : anchor === 'end' ? x - w : x) + pad, y });
+  show(g, t0, dur);
+  return g;
+}
+function arrowD(x1, y1, x2, y2, head = 16) {
+  const a = Math.atan2(y2 - y1, x2 - x1), c = Math.cos(a), s = Math.sin(a), hw = head * .6;
+  const bx = x2 - head * c, by = y2 - head * s;
+  return `M${x1} ${y1}L${x2} ${y2}M${bx - hw * s} ${by + hw * c}L${x2} ${y2}L${bx + hw * s} ${by - hw * c}`;
+}
+function box(p, x, y, w, h, edge, { fill = '#fff', sw = 3, o = 0 } = {}) {
+  const g = G(p, { x, y, o });
+  mk('rect', { x: 0, y: 0, width: w, height: h, rx: 22, fill, stroke: edge, 'stroke-width': sw }, g);
+  return g;
+}
+const lerp = (a, b, q) => a + (b - a) * q;
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const smooth = (a, b, v) => { const t = clamp((v - a) / (b - a)); return t * t * (3 - 2 * t); };
+// decimal comma, true minus sign; a result that rounds to zero carries no sign
+const fmt = (v, d = 2) => { const s = Math.abs(v).toFixed(d); return (v < 0 && +s !== 0 ? '−' : '') + s.replace('.', ','); };
+function ring(p, x, y, t0, color = K.ink) {
+  const g = G(p, { x, y, o: 0 }); mk('circle', { r: 16, fill: 'none', stroke: color, 'stroke-width': 5 }, g);
+  prog(q => put(g, { s: 1 + 2.4 * q, o: .9 * (1 - q) }), t0, .9, out);
+  return g;
+}
+function dotAt(p, x, y, t0, color, r = 13) { const d = mk('circle', { r, fill: color }, p); put(d, { x, y, o: 0 }); show(d, t0, .35); return d; }
+const ban = (p, str, x, y, w, t0, col = K.nnt, size = 28) => {
+  const g = G(p, { o: 0, y: 20 }); mk('rect', { x, y, width: w, height: 62, rx: 18, fill: col, 'fill-opacity': .1, stroke: col, 'stroke-width': 3 }, g);
+  T(g, str, { x: x + w / 2, y: y + 41, size, weight: 700, anchor: 'middle' });
+  tw(g, { o: 1, y: 0 }, t0, .5, out); return g;
+};
+// A calculation in one reading line: rumus, substitusi, hasil, interpretasi, left to right, each under its small label.
+// segs: [{ k: 'rumus', parts: [[str, fill, weight], ...], t: time }]; the element of every part is returned so a live value can change its text.
+function calcLine(p, x, y, segs, { size = 28, maxW = 1440, gap = 34 } = {}) {
+  const g = G(p), out = [];
+  let cx = 0;
+  for (const sg of segs) {
+    const sgG = G(g, { x: cx, y: 0, o: 0 });
+    let px = 0; const els = [];
+    for (const [str, fill = K.ink, wt = 600] of sg.parts) { const e = T(sgG, str, { x: px, y: 0, size, fill, weight: wt }); px += width(e, str, size); els.push(e); }
+    T(sgG, sg.k.toUpperCase(), { x: 0, y: -size * 1.3, size: 17, fill: K.nnt, weight: 700 });
+    out.push({ g: sgG, els, w: px });
+    cx += px + gap;
+  }
+  const total = cx - gap, s = Math.min(1, maxW / total);
+  put(g, { x, y, s });
+  segs.forEach((sg, i) => show(out[i].g, sg.t, .5));
+  return { g, segs: out, total: total * s };
+}
+const setText = (e, s) => { if (e.textContent !== s) e.textContent = s; };
+
+
+/* ---------- this chapter's meanings (on top of style.json look.meaning) ---------- */
+// The worker's own measurement and its baseline: VEP1 blue. LNL: solid ink. The cross-sectional lower limit (LLN): dashed grey.
+// Below a limit or past a threshold: red. Within: green. Waspada (10 to 15%): amber.
+const AMBER = '#b9891b';
+const grp = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NB);
+const mlt = n => grp(n) + NB + 'mL';
+
+// a bar that grows to the right (grow) or upward (growV) while its clock runs
+function grow(p, x, y, w, h, fill, t0, dur, { op = 1, edge = null, dash = null } = {}) {
+  const r = mk('rect', { x, y, width: 0, height: h, rx: 6, fill, 'fill-opacity': op }, p);
+  if (edge) { r.setAttribute('stroke', edge); r.setAttribute('stroke-width', 3); }
+  if (dash) r.setAttribute('stroke-dasharray', dash);
+  put(r, { o: 0 });
+  prog(q => { r.setAttribute('width', w * q); put(r, { o: q > 0 ? 1 : 0 }); }, t0, dur, io);
+  return r;
+}
+function growV(p, x, yBase, w, h, fill, t0, dur, { op = 1 } = {}) {
+  const r = mk('rect', { x, y: yBase, width: w, height: 0, rx: 6, fill, 'fill-opacity': op }, p);
+  put(r, { o: 0 });
+  prog(q => { r.setAttribute('y', yBase - h * q); r.setAttribute('height', h * q); put(r, { o: q > 0 ? 1 : 0 }); }, t0, dur, io);
+  return r;
+}
+const dashed = (p, d, t0, dur, col = K.ink, sw = 4, da = '10 8') => { const e = path(p, d, { stroke: col, 'stroke-width': sw, 'stroke-dasharray': da, 'stroke-linecap': 'round' }, { d: 0 }); draw(e, t0, dur, io); return e; };
+
+// a short outline flash on a bar (the word that names it)
+const flash = (r, t0) => { r.setAttribute('stroke', K.ink); r.setAttribute('stroke-width', 0); tw(r, { 'a_stroke-width': 7 }, t0, .25); tw(r, { 'a_stroke-width': 0 }, t0 + .35, .5); };
+
+// two bars (before, after) with their values, to scale; used by the quick checks
+function prePost(p, { name, col, x0, y, k, pre, post, unit, t }) {
+  const g = G(p, { o: 0 }); tw(g, { o: 1 }, t, .5);
+  T(g, name, { x: x0 - 150, y: y + 52, size: 38, weight: 700, fill: col, anchor: 'end' });
+  T(g, 'periksa 1', { x: x0 - 16, y: y + 25, size: 22, fill: K.dim, anchor: 'end' }); T(g, 'periksa 2', { x: x0 - 16, y: y + 69, size: 22, fill: K.dim, anchor: 'end' });
+  const fmtv = v => grp(v) + NB + unit;
+  const b1 = mk('rect', { x: x0, y, width: pre * k, height: 34, rx: 6, fill: col, 'fill-opacity': .85 }, g), b2 = mk('rect', { x: x0, y: y + 44, width: post * k, height: 34, rx: 6, fill: col, 'fill-opacity': .85 }, g);
+  T(g, fmtv(pre), { x: x0 + pre * k + 16, y: y + 28, size: 28, weight: 700 }); T(g, fmtv(post), { x: x0 + post * k + 16, y: y + 72, size: 28, weight: 700 });
+  return g;
+}
+
+/* ---------- beats ---------- */
+let q1els, q2els;
+
+const BEATS = [
+  ['intro', 'Surveilans', (m, D) => {
+    const g = G(scene, { o: 0, y: 24 });
+    T(g, 'Spirometri · Bab 5', { x: 800, y: 170, size: 28, fill: K.dim, anchor: 'middle' });
+    T(g, 'Surveilans', { x: 800, y: 272, size: 80, weight: 600, anchor: 'middle' });
+    T(g, 'LNL · longitudinal · cross-shift', { x: 800, y: 340, size: 38, weight: 500, fill: K.dim, anchor: 'middle' });
+    tw(g, { o: 1, y: 0 }, .2, 1.1, out);
+    const cg = G(scene, { o: 1 }), X0 = 360, XE = 1240;
+    const pts = [[0, 500], [1, 530], [2, 562], [3, 596], [4, 626], [5, 656]].map(([i, y]) => [X0 + i * 176, y]);
+    const lim = dashed(cg, `M${X0 - 20} 720H${XE + 40}`, 1.0, 1.0, K.paru, 5, '12 9');
+    const lb = T(cg, 'batas bawah normal', { x: XE + 40, y: 756, size: 24, fill: K.paru, weight: 700, anchor: 'end', o: 0 }); show(lb, 1.6, .5);
+    const ln = path(cg, 'M' + pts.map(q => q.join(' ')).join('L'), { stroke: K.rasio, 'stroke-width': 8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, { d: 0 });
+    draw(ln, 1.4, 2.6, io);
+    const dot = mk('circle', { r: 17, fill: K.rasio }, cg); put(dot, { x: pts[0][0], y: pts[0][1], o: 0 });
+    prog(q => { const u = q * (pts.length - 1), i = Math.min(pts.length - 2, Math.floor(u)), f = u - i; put(dot, { x: lerp(pts[i][0], pts[i + 1][0], f), y: lerp(pts[i][1], pts[i + 1][1], f), o: q > 0 ? 1 : 0 }); }, 1.4, 2.6, io);
+    pill(cg, 'di atas batas', pts[5][0] + 30, pts[5][1] + 6, K.ok, 4.1, { size: 26 });
+    const base = dashed(cg, `M${X0} ${pts[0][1]}H${pts[5][0] + 250}`, m('sub', .2), .8, K.ink, 3, '4 9');
+    const br = G(cg, { o: 0 }); path(br, `M${pts[5][0] + 250} ${pts[0][1]}V${pts[5][1]}M${pts[5][0] + 236} ${pts[0][1]}H${pts[5][0] + 264}M${pts[5][0] + 236} ${pts[5][1]}H${pts[5][0] + 264}`, { stroke: K.bad, 'stroke-width': 5 });
+    T(br, 'turun', { x: pts[5][0] + 280, y: (pts[0][1] + pts[5][1]) / 2 + 10, size: 30, weight: 700, fill: K.bad }); tw(br, { o: 1 }, m('sub', .9), .6);
+    T(cg, 'skematis', { x: X0 - 20, y: 470, size: 22, fill: K.dim, o: 0 }); show(cg.lastChild, 1.4, .4);
+    tw(g, { o: 0, y: -24 }, D - .9, .8); hide(cg, D - .9, .8);
+  }],
+
+  ['hwe', 'Efek pekerja sehat', (m, D) => {
+    const p = panel(0);
+    const X = i => 250 + i * 185, Y = [185, 232, 300, 372, 445, 520, 612], yPred = 250, yLim = 568;
+    const T0 = [m('a', .8), m('b', .4), m('b', 2.2), m('b', 5.3), m('b', 6.4), m('b', 7.5)];
+    const ax = G(p, { o: 0 }); tw(ax, { o: 1 }, .2, .5);
+    path(ax, 'M170 130V740H1500', { stroke: K.faint, 'stroke-width': 3 });
+    T(ax, 'VEP1 · skematis', { x: 170, y: 108, size: 26, fill: K.rasio, weight: 700 });
+    T(ax, 'tahun pemeriksaan', { x: 1500, y: 800, size: 24, fill: K.dim, anchor: 'end' });
+    for (let i = 0; i < 7; i++) { path(ax, `M${X(i)} 740v10`, { stroke: K.faint, 'stroke-width': 3 }); T(ax, String(i + 1), { x: X(i), y: 780, size: 24, fill: K.dim, anchor: 'middle' }); }
+    dashed(p, `M170 ${yPred}H1500`, m('a', 4.4), .9, K.dim, 3, '3 9');
+    text(p, '100% prediksi', 1290, yPred - 14, m('a', 4.8), { size: 24, fill: K.dim, weight: 600, anchor: 'middle' });
+    dashed(p, `M170 ${yLim}H1500`, m('b', 1.2), 1.0, K.paru, 5, '12 9');
+    text(p, 'batas bawah normal (LLN)', 190, yLim - 14, m('b', 1.6), { size: 25, fill: K.paru, weight: 700 });
+    text(p, 'mulai supernormal', X(0) + 70, Y[0] - 30, m('a', 2.4), { size: 25, fill: K.rasio, weight: 700 });
+    const pills = [];
+    for (let i = 0; i < 7; i++) {
+      const t = i < 6 ? T0[i] : m('c', 1.0), low = i === 6;
+      if (i > 0) draw(path(p, `M${X(i - 1)} ${Y[i - 1]}L${X(i)} ${Y[i]}`, { stroke: K.rasio, 'stroke-width': 7, 'stroke-linecap': 'round' }, { d: 0 }), t - .5, .5, lin);
+      dotAt(p, X(i), Y[i], t, low ? K.bad : K.rasio, 14);
+      pills.push(pill(p, low ? 'di bawah LLN' : 'normal', X(i), low ? Y[i] + 58 : Y[i] - 34, low ? K.bad : K.ok, i === 0 ? m('b', 0) : t + .15, { size: 22, anchor: 'middle', pad: 12 }));
+    }
+    // what was lost against the worker's own starting level
+    dashed(p, `M${X(0)} ${Y[0]}H1470`, m('c', 1.6), .8, K.dim, 3, '10 8');
+    const br = G(p, { o: 0 }); path(br, `M1440 ${Y[0]}V${Y[6]}M1424 ${Y[0]}H1456M1424 ${Y[6]}H1456`, { stroke: K.bad, 'stroke-width': 5 }); tw(br, { o: 1 }, m('c', 2.2), .6);
+    text(p, 'fungsi yang hilang', 1410, 420, m('c', 2.6), { size: 30, fill: K.bad, weight: 700, anchor: 'end' });
+    // the longitudinal view: each year against the worker's own baseline
+    for (let i = 1; i <= 5; i++) draw(path(p, `M${X(i)} ${Y[0] + 3}V${Y[i] - 18}`, { stroke: K.bad, 'stroke-width': 5, 'stroke-opacity': .55, 'stroke-linecap': 'round' }, { d: 0 }), m('d', .9 + i * .3), .5, out);
+    text(p, 'dibanding baseline sendiri', 900, 164, m('d', 1.9), { size: 28, weight: 700, anchor: 'middle' });
+    pills.slice(0, 6).forEach(e => tw(e, { o: .3 }, m('d', .2), .6));
+  }],
+
+  ['kapan', 'Kapan diperiksa', (m, D) => {
+    const p = panel(0), y = 450;
+    text(p, 'perjalanan kerja', 130, 130, .2, { size: 28, fill: K.dim });
+    const bar = mk('rect', { x: 130, y: y - 9, width: 0, height: 18, rx: 9, fill: K.faint }, p); put(bar, { o: 0 });
+    prog(q => { bar.setAttribute('width', 1340 * q); put(bar, { o: q > 0 ? 1 : 0 }); }, .2, 1.2, io);
+    path(p, `M1470 ${y - 18}L1498 ${y}L1470 ${y + 18}`, { stroke: K.faint, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', fill: 'none' }, { d: 1 });
+    const flag = (x, col, t0) => { const g = G(p, { o: 0 }); path(g, `M${x} ${y}V${y - 76}`, { stroke: col, 'stroke-width': 6 }); mk('path', { d: `M${x} ${y - 76}h48l-14 16l14 16h-48z`, fill: col }, g); tw(g, { o: 1 }, t0, .5); return g; };
+    const label = (x, yy, title, sub, t0, col = K.ink) => { const g = G(p, { o: 0 }); T(g, title, { x, y: yy, size: 34, weight: 700, anchor: 'middle', fill: col }); sub.forEach((s, i) => T(g, s, { x, y: yy + 38 + i * 32, size: 25, fill: K.dim, anchor: 'middle' })); tw(g, { o: 1, y: 0 }, t0, .5, out); return g; };
+    // prakerja: the baseline
+    flag(210, K.rasio, m('a', .3)); label(210, 270, 'Prakerja', ['sebelum pajanan'], m('a', .3), K.rasio);
+    pill(p, 'baseline', 210, 380, K.rasio, m('a', 1.9), { size: 26, anchor: 'middle' });
+    // berkala: one point a year
+    for (let i = 0; i < 7; i++) dotAt(p, 420 + i * 70, y, m('b', .3 + i * .5), K.rasio, 11);
+    label(630, 545, 'Berkala', ['tahunan; 6 bulanan', 'bila pajanan tinggi'], m('b', .2));
+    // pre-post shift: two points close together
+    dotAt(p, 985, y, m('c', .2), K.ink, 11); dotAt(p, 1035, y, m('c', 1.4), K.ink, 11);
+    const sb = G(p, { o: 0 }); path(sb, `M985 ${y - 24}h50`, { stroke: K.dim, 'stroke-width': 4 }); tw(sb, { o: 1 }, m('c', .2), .4);
+    label(1010, 270, 'Pre-post shift', ['sebelum dan sesudah', 'satu shift'], m('c', .2));
+    // khusus: a diamond
+    const dm = G(p, { x: 1190, y, o: 0 }); mk('rect', { x: -14, y: -14, width: 28, height: 28, fill: AMBER, transform: 'rotate(45)' }, dm); tw(dm, { o: 1 }, m('d', .2), .5);
+    ring(p, 1190, y, m('d', 1.6), AMBER); ring(p, 1190, y, m('d', 3.4), AMBER); ring(p, 1190, y, m('d', 4.8), AMBER);
+    label(1190, 545, 'Khusus', ['pindah area, cuti panjang,', 'insiden inhalasi'], m('d', .2), K.ink);
+    // akhir
+    ring(p, 1400, y, m('e', 1.5), K.ink); flag(1400, K.ink, m('e', .2)); label(1400, 270, 'Akhir', ['pensiun'], m('e', .2));
+  }],
+
+  ['turun', 'Penurunan fisiologis', (m, D) => {
+    const p = panel(0), X = v => 420 + v * 24, ya = 570;
+    text(p, 'penurunan fisiologis normal akibat usia · mL per tahun', 130, 110, .2, { size: 28, fill: K.dim });
+    const ax = G(p, { o: 0 }); tw(ax, { o: 1 }, .3, .5);
+    path(ax, `M${X(0)} 170V${ya}H${X(40)}`, { stroke: K.faint, 'stroke-width': 3 });
+    for (const v of [0, 10, 20, 30, 40]) { path(ax, `M${X(v)} ${ya}v10`, { stroke: K.faint, 'stroke-width': 3 }); T(ax, String(v), { x: X(v), y: ya + 40, size: 24, fill: K.dim, anchor: 'middle' }); }
+    for (const v of [25, 30]) path(ax, `M${X(v)} 180V${ya}`, { stroke: K.faint, 'stroke-width': 2, 'stroke-dasharray': '4 8' });
+    const row = (yy, name, col, v, t0) => {
+      text(p, name, X(0) - 20, yy + 33, t0 - .2, { size: 30, weight: 700, fill: col, anchor: 'end' });
+      grow(p, X(0), yy, v * 24, 44, col, t0, 1.1, { op: .82 });
+      text(p, '≈ ' + v + NB + 'mL/tahun', X(v) + 18, yy + 33, t0 + .8, { size: 28, weight: 700 });
+    };
+    text(p, 'Laki-laki', 130, 262, m('b'), { size: 38, weight: 700 }); text(p, 'Perempuan', 130, 452, m('c'), { size: 38, weight: 700 });
+    row(200, 'VEP1', K.rasio, 30, m('b', 1.4)); row(262, 'KVP', K.kvp, 25, m('b', 4.7));
+    row(390, 'VEP1', K.rasio, 25, m('c', 1.3)); row(452, 'KVP', K.kvp, 25, m('c', 1.3));
+    // the red flag: far beyond this rate in a short time
+    const fl = grow(p, X(0), 650, 1480 - X(0), 44, K.bad, m('d', 2.4), 1.2, { op: .16, edge: K.bad, dash: '12 8' });
+    const hd = G(p, { o: 0 }); path(hd, 'M1470 640L1496 672L1470 704', { stroke: K.bad, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', fill: 'none' }); tw(hd, { o: 1 }, m('d', 3.4), .4);
+    text(p, 'pekerja laki-laki bukan perokok, jauh melebihi laju ini dalam waktu singkat: curigai pajanan (skematis)', 130, 750, m('d', 1.6), { size: 27, fill: K.bad, weight: 700 });
+  }],
+
+  ['persen', 'Metode persen prediksi', (m, D) => {
+    const p = panel(0), XA = v => 160 + (v - 60) * 32, ya = 260, XD = v => 160 + v * 51.2, yr = 520;
+    text(p, 'VEP1 · % prediksi · kasus dari catatan', 130, 108, .2, { size: 28, fill: K.dim });
+    const ax = G(p, { o: 0 }); tw(ax, { o: 1 }, .3, .5);
+    path(ax, `M${XA(60)} ${ya}H${XA(100)}`, { stroke: K.faint, 'stroke-width': 4 });
+    for (const v of [60, 70, 80, 90, 100]) { path(ax, `M${XA(v)} ${ya}v10`, { stroke: K.faint, 'stroke-width': 3 }); T(ax, v + '%', { x: XA(v), y: ya + 42, size: 24, fill: K.dim, anchor: 'middle' }); }
+    const pt = (v, name, calc, t0, t1, tn) => {
+      dotAt(p, XA(v), ya, t0, K.rasio, 15); ring(p, XA(v), ya, t0 + .1, K.rasio);
+      text(p, name, XA(v), ya - 94, tn, { size: 25, fill: K.dim, anchor: 'middle', weight: 600 });
+      text(p, calc, XA(v), ya - 50, t1, { size: 30, fill: K.rasio, weight: 700, anchor: 'middle' });
+    };
+    pt(90.4, 'baseline', '3,30 / 3,65 = 90,4%', m('b', 3.4), m('b', 8.0), m('a', 6.0));
+    pt(71.8, 'sekarang', '2,55 / 3,55 = 71,8%', m('c', 1.3), m('c', 5.3), m('a', 8.3));
+    const gap = G(p, { o: 0 }); path(gap, `M${XA(71.8)} ${ya + 84}V${ya + 102}H${XA(90.4)}V${ya + 84}`, { stroke: K.bad, 'stroke-width': 5 }); T(gap, '18,6%', { x: (XA(71.8) + XA(90.4)) / 2, y: ya + 150, size: 40, weight: 700, fill: K.bad, anchor: 'middle' }); tw(gap, { o: 1 }, m('d', .7), .6);
+    // the ruler of the decline: below 10, 10 to 15, 15 or more (NIOSH)
+    const rl = G(p, { o: 0 }); tw(rl, { o: 1 }, m('d', .3), .6);
+    const band = (v0, v1, col, a, name) => { mk('rect', { x: XD(v0), y: yr, width: XD(v1) - XD(v0), height: 56, fill: col, 'fill-opacity': a, stroke: col, 'stroke-width': 3 }, rl); return T(rl, name, { x: name.startsWith('abnormal') ? XD(19.2) : (XD(v0) + XD(v1)) / 2, y: yr + 38, size: 25, weight: 700, fill: col, anchor: name.startsWith('abnormal') ? 'start' : 'middle', o: 0 }); };
+    const n1 = band(0, 10, K.ok, .2, 'variabilitas biologis'), n2 = band(10, 15, AMBER, .28, 'waspada'), n3 = band(15, 25, K.bad, .22, 'abnormal (NIOSH)');
+    show(n1, m('e', 1.5), .4); show(n2, m('e', 4.7), .4); show(n3, m('f', .2), .4);
+    for (const v of [0, 5, 10, 15, 20, 25]) { path(rl, `M${XD(v)} ${yr + 56}v10`, { stroke: K.faint, 'stroke-width': 3 }); T(rl, v + '%', { x: XD(v), y: yr + 98, size: 24, fill: K.dim, anchor: 'middle' }); }
+    T(rl, 'penurunan longitudinal (poin % prediksi)', { x: 160, y: yr + 148, size: 25, fill: K.dim });
+    const pin = G(p, { o: 0 }); mk('circle', { r: 13, fill: K.rasio, stroke: '#fff', 'stroke-width': 4, cy: yr - 14 }, pin); path(pin, `M0 ${yr - 1}V${yr + 56}`, { stroke: K.rasio, 'stroke-width': 5 });
+    const pv = T(pin, '', { x: 0, y: yr - 44, size: 32, weight: 700, fill: K.rasio, anchor: 'middle' });
+    prog(q => { const v = 18.6 * q; put(pin, { x: XD(v), o: q > 0 ? 1 : 0 }); setText(pv, fmt(v, 1) + '%'); }, m('d', .8), 2.6, io);
+    calcLine(p, 130, 790, [
+      { k: 'rumus', parts: [['penurunan = baseline %pred − current %pred']], t: m('a', 3.8) },
+      { k: 'substitusi', parts: [['= 90,4 − 71,8']], t: m('d', .9) },
+      { k: 'hasil', parts: [['= '], ['18,6%', K.bad, 700]], t: m('d', 2.2) },
+      { k: 'interpretasi', parts: [['→ ≥ 15%: '], ['abnormal', K.bad, 700], [' (NIOSH)']], t: m('f', 2.0) },
+    ], { size: 28 });
+  }],
+
+  ['kriteria', 'Kriteria penurunan', (m, D) => {
+    const p = panel(0);
+    text(p, 'kriteria tabel catatan', 130, 108, .2, { size: 30, fill: K.dim });
+    const card = (y, n, title, sub, t0) => {
+      const bx = box(p, 90, y, 1420, 190, K.faint); tw(bx, { o: 1 }, t0, .5);
+      const c = G(p, { x: 160, y: y + 95, o: 0 }); mk('circle', { r: 28, fill: K.nnt }, c); T(c, String(n), { y: 11, size: 32, fill: '#fff', weight: 700, anchor: 'middle' }); tw(c, { o: 1 }, t0, .5);
+      text(p, title, 215, y + 88, t0 + .1, { size: 32, weight: 700 }); text(p, sub, 215, y + 130, t0 + .2, { size: 26, fill: K.dim });
+    };
+    // 1: two examinations, a drop of 8 % or more (schematic bars)
+    card(150, 1, 'Antar dua pemeriksaan', 'penurunan VEP1 atau KVP', m('b'));
+    T(p, 'periksa 1', { x: 940, y: 220, size: 22, fill: K.dim, anchor: 'end', o: 0 }); show(p.lastChild, m('b', 1), .4);
+    T(p, 'periksa 2', { x: 940, y: 264, size: 22, fill: K.dim, anchor: 'end', o: 0 }); show(p.lastChild, m('b', 1.4), .4);
+    grow(p, 960, 196, 440, 32, K.rasio, m('b', 1.1), 1.0, { op: .85 }); grow(p, 960, 240, 405, 32, K.rasio, m('b', 1.5), 1.0, { op: .85 });
+    const g8 = mk('rect', { x: 1365, y: 240, width: 35, height: 32, rx: 4, fill: K.bad, 'fill-opacity': .22, stroke: K.bad, 'stroke-width': 3, 'stroke-dasharray': '6 4' }, p); put(g8, { o: 0 }); show(g8, m('b', 6.0), .5);
+    text(p, '≥ 8%', 1430, 268, m('b', 6.1), { size: 36, fill: K.bad, weight: 700 });
+    // 2: the yearly rate over more than three years
+    card(365, 2, 'Laju per tahun', 'lebih dari 3 tahun pengamatan', m('c'));
+    const pts = [0, 1, 2, 3, 4].map(i => [960 + i * 110, 425 + i * 22]);
+    draw(path(p, 'M' + pts.map(q => q.join(' ')).join('L'), { stroke: K.rasio, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, { d: 0 }), m('c', 1.1), 1.8, io);
+    pts.forEach((q, i) => dotAt(p, q[0], q[1], m('c', 1.1 + i * .4), K.rasio, 10));
+    text(p, '> 90 mL/tahun', 1150, 412, m('c', 2.2), { size: 34, fill: K.bad, weight: 700, anchor: 'middle' });
+    const bk = G(p, { o: 0 }); path(bk, 'M960 520V532H1400V520', { stroke: K.dim, 'stroke-width': 4 }); T(bk, '> 3 tahun', { x: 1180, y: 560, size: 24, fill: K.dim, anchor: 'middle', weight: 600 }); tw(bk, { o: 1 }, m('c', 5.6), .5);
+    // 3: below the LNL in the same year
+    card(580, 3, 'Hasil pada tahun yang sama', 'lebih rendah dari LNL', m('d'));
+    dashed(p, 'M960 650H1440', m('d', .9), .8, K.ink, 5, '14 9'); text(p, 'LNL', 940, 660, m('d', 1.0), { size: 30, weight: 700, anchor: 'end' });
+    const dp = mk('circle', { r: 14, fill: K.bad }, p); put(dp, { x: 1200, y: 600, o: 0 }); tw(dp, { o: 1, y: 700 }, m('d', 2.0), .7, out);
+    text(p, 'hasil < LNL', 1230, 712, m('d', 2.7), { size: 28, fill: K.bad, weight: 700 });
+    ban(p, 'persen prediksi: ≥ 15% (NIOSH)  ·  kriteria tabel catatan: ≥ 8%', 130, 800, 1340, m('e'), K.nnt, 29);
+  }],
+
+  ['q1', 'Cek cepat: klik pengukuran', (m, D) => {
+    const p = panel(0);
+    text(p, 'kasus dari catatan · dua pemeriksaan', 800, 110, .1, { size: 30, fill: K.dim, anchor: 'middle' });
+    const A = prePost(p, { name: 'VEP1', col: K.rasio, x0: 600, y: 210, k: .16, pre: 2400, post: 2200, unit: 'mL', t: .3 });
+    const B = prePost(p, { name: 'KVP', col: K.kvp, x0: 600, y: 410, k: .16, pre: 3100, post: 3000, unit: 'mL', t: .6 });
+    q1els = [A, B];
+    q1els.ring = G(p, { o: 0 }); mk('rect', { x: 130, y: 190, width: 1180, height: 110, rx: 20, fill: 'none', stroke: K.ok, 'stroke-width': 6 }, q1els.ring);
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-8persen', prompt: ['Kasus dari catatan. Pengukuran mana yang penurunannya memenuhi kriteria ≥ 8%? Klik barisnya.'],
+    build: pickEls([{ el: q1els[0], box: [130, 190, 1180, 110], label: 'VEP1' }, { el: q1els[1], box: [130, 390, 1180, 110], label: 'KVP' }], 0,
+      'VEP1: (2 400 − 2 200) / 2 400 = 8,3%, jadi ≥ 8%: signifikan.',
+      () => 'KVP: (3 100 − 3 000) / 3 100 = 3,2%, di bawah 8%.',
+      () => { fx(q1els.ring, { o: 1 }, 0, .4); }),
+  }], done, 'Cek cepat') }],
+
+  ['lnl', 'LNL dibangun dari baseline', (m, D) => {
+    const p = panel(0), V = v => 640 - v * 140;
+    text(p, 'kasus dari catatan · usia 37 tahun', 130, 108, .2, { size: 28, fill: K.dim });
+    const ax = G(p, { o: 0 }); tw(ax, { o: 1 }, .3, .5);
+    path(ax, 'M150 140V640H1020', { stroke: K.faint, 'stroke-width': 3 });
+    for (const v of [1, 2, 3]) { path(ax, `M140 ${V(v)}h10`, { stroke: K.faint, 'stroke-width': 3 }); T(ax, v + '', { x: 128, y: V(v) + 8, size: 22, fill: K.dim, anchor: 'end' }); }
+    T(ax, 'L', { x: 128, y: 146, size: 22, fill: K.dim, anchor: 'end' });
+    const col = (x, lab, sub, t0) => { const g = G(p, { o: 0 }); T(g, lab, { x: x + 65, y: 682, size: 28, weight: 700, anchor: 'middle' }); if (sub) T(g, sub, { x: x + 65, y: 714, size: 22, fill: K.dim, anchor: 'middle' }); tw(g, { o: 1 }, t0, .5); };
+    // 1: the baseline, 3,24 L
+    growV(p, 190, 640, 130, 3.24 * 140, K.rasio, m('b', 2.9), 1.4, { op: .85 });
+    col(190, 'baseline', '', m('b', 2.9)); text(p, '3,24 L', 255, V(3.24) - 16, m('b', 4.0), { size: 30, weight: 700, fill: K.rasio, anchor: 'middle' });
+    // 2: times 0,85 (the measurement variability)
+    growV(p, 390, 640, 130, 2.754 * 140, K.rasio, m('c', .3), 1.2, { op: .85 });
+    const gh = mk('rect', { x: 390, y: V(3.24), width: 130, height: (3.24 - 2.754) * 140, rx: 6, fill: 'none', stroke: K.dim, 'stroke-width': 3, 'stroke-dasharray': '8 6' }, p); put(gh, { o: 0 }); show(gh, m('c', .5), .5);
+    text(p, '× 0,85', 535, V(3.0), m('c', .6), { size: 32, weight: 700 });
+    col(390, '× 0,85', 'variabilitas pengukuran', m('c', .3)); text(p, '2,754 L', 455, V(2.754) + 40, m('c', 2.2), { size: 28, weight: 700, fill: '#fff', anchor: 'middle' });
+    // 3: minus the aging effect, 0,16 L
+    const b3 = mk('rect', { x: 590, y: V(2.754), width: 130, height: 2.754 * 140, rx: 6, fill: K.ink, 'fill-opacity': .85 }, p); put(b3, { o: 0 }); show(b3, m('d', .3), .5);
+    const g3 = mk('rect', { x: 590, y: V(2.754), width: 130, height: 0, fill: 'none', stroke: K.bad, 'stroke-width': 3, 'stroke-dasharray': '6 4' }, p); put(g3, { o: 0 });
+    prog(q => { const v = lerp(2.754, 2.594, q); b3.setAttribute('y', V(v)); b3.setAttribute('height', v * 140); g3.setAttribute('y', V(2.754)); g3.setAttribute('height', (2.754 - v) * 140); put(g3, { o: q > 0 ? 1 : 0 }); }, m('d', 6.3), .9, io);
+    col(590, '− efek usia', '', m('d', .3)); text(p, '− 0,16 L', 735, V(2.68) - 8, m('d', 6.4), { size: 30, weight: 700, fill: K.bad });
+    // the aging effect, from two predictions
+    const cd = G(p, { o: 0 }); tw(cd, { o: 1 }, m('d', 1.7), .5);
+    mk('rect', { x: 1090, y: 190, width: 440, height: 280, rx: 22, fill: '#fff', stroke: K.faint, 'stroke-width': 3 }, cd);
+    T(cd, 'efek usia', { x: 1118, y: 238, size: 28, weight: 700, fill: K.dim });
+    const kv = (y, a, b, t0, fill = K.ink) => { const e = G(cd, { o: 0 }); T(e, a, { x: 1118, y, size: 26, fill: K.dim }); T(e, b, { x: 1500, y, size: 30, weight: 700, fill, anchor: 'end' }); tw(e, { o: 1 }, t0, .5); };
+    kv(298, 'prediksi baseline', '3,31 L', m('d', 2.1)); kv(348, 'prediksi usia 37', '3,15 L', m('d', 3.9));
+    path(cd, 'M1118 372H1500', { stroke: K.faint, 'stroke-width': 3 }); kv(424, 'selisih', '0,16 L', m('d', 6.0), K.bad);
+    // the limit
+    dashed(p, `M590 ${V(2.594)}H1020`, m('e', .1), .9, K.ink, 5, '14 9');
+    text(p, 'LNL = 2,594 L', 1020, V(2.594) + 44, m('e', .3), { size: 32, weight: 700, anchor: 'end' });
+    text(p, 'catatan: ≈ 2,60 L', 1020, V(2.594) + 80, m('e', 1.0), { size: 24, fill: K.dim, anchor: 'end' });
+    calcLine(p, 130, 800, [
+      { k: 'rumus', parts: [['LNL = 0,85 × baseline − efek usia']], t: m('a', 2.0) },
+      { k: 'substitusi', parts: [['= 0,85 × 3,24 − (3,31 − 3,15)']], t: m('d', 4.8) },
+      { k: 'hasil', parts: [['= 2,754 − 0,16 = '], ['2,594 L', K.ink, 700]], t: m('e', .2) },
+      { k: 'interpretasi', parts: [['→ VEP1 aktual < LNL: '], ['signifikan', K.bad, 700]], t: m('e', 2.6) },
+    ], { size: 27 });
+  }],
+
+  ['lnl2', 'Nilai aktual di bawah LNL', (m, D) => {
+    const p = panel(0), X = v => 200 + (v - 2.5) / .16 * 1200, y = 440;
+    const lo = mk('rect', { x: X(2.5), y: 300, width: X(2.594) - X(2.5), height: y - 300, fill: K.bad, 'fill-opacity': .12 }, p), hi = mk('rect', { x: X(2.594), y: 300, width: X(2.66) - X(2.594), height: y - 300, fill: K.ok, 'fill-opacity': .12 }, p);
+    put(lo, { o: 0 }); put(hi, { o: 0 }); show(lo, .4, .6); show(hi, .6, .6);
+    text(p, 'di bawah LNL: signifikan', 420, 350, m('a', 1.2), { size: 28, fill: K.bad, weight: 700, anchor: 'middle' });
+    text(p, '≥ LNL: masih diharapkan', 1150, 350, m('a', 1.6), { size: 28, fill: K.ok, weight: 700, anchor: 'middle' });
+    const ax = G(p, { o: 0 }); tw(ax, { o: 1 }, .2, .5);
+    path(ax, `M${X(2.5)} ${y}H${X(2.66)}`, { stroke: K.ink, 'stroke-width': 4 });
+    for (let i = 0; i <= 8; i++) { const v = 2.5 + i * .02; path(ax, `M${X(v)} ${y}v12`, { stroke: K.ink, 'stroke-width': 3 }); T(ax, fmt(v), { x: X(v), y: y + 44, size: 24, fill: K.dim, anchor: 'middle' }); }
+    T(ax, 'sumbu diperbesar: 2,50 sampai 2,66 L', { x: 200, y: 160, size: 24, fill: K.dim });
+    // the limit
+    const lm = G(p, { o: 0 }); path(lm, `M${X(2.594)} ${y}V250`, { stroke: K.ink, 'stroke-width': 7 }); T(lm, 'LNL 2,594 L', { x: X(2.594), y: 232, size: 32, weight: 700, anchor: 'middle' }); tw(lm, { o: 1 }, .8, .6);
+    // the notes' rounding
+    const rn = G(p, { o: 0 }); path(rn, `M${X(2.6)} ${y + 56}v26`, { stroke: K.dim, 'stroke-width': 3 }); T(rn, 'catatan: ≈ 2,60 L', { x: X(2.6), y: y + 112, size: 25, fill: K.dim, anchor: 'middle', weight: 600 }); tw(rn, { o: 1 }, m('a', 3.0), .5);
+    // the measured value lands
+    const ac = G(p, { o: 0 }); mk('circle', { r: 16, fill: K.bad, stroke: '#fff', 'stroke-width': 4 }, ac); T(ac, 'aktual 2,58 L', { x: 0, y: -34, size: 32, weight: 700, fill: K.bad, anchor: 'middle' });
+    prog(q => put(ac, { x: X(2.58), y: lerp(120, y, q) , o: q > 0 ? 1 : 0 }), m('b', .2), 1.1, out);
+    ring(p, X(2.58), y, m('b', 1.5), K.bad);
+    pill(p, 'signifikan', X(2.58), y + 190, K.bad, m('c', 1.6), { size: 32, anchor: 'middle' });
+    ring(p, X(2.58), y, m('d', .3), K.bad);
+    calcLine(p, 130, 800, [
+      { k: 'rumus', parts: [['bandingkan VEP1 aktual dengan LNL']], t: m('a', 1.0) },
+      { k: 'substitusi', parts: [['2,58 L  vs  2,594 L']], t: m('b', .8) },
+      { k: 'hasil', parts: [['2,58 < 2,594; dibulatkan 2,58 < 2,60']], t: m('c', .2) },
+      { k: 'interpretasi', parts: [['→ di bawah LNL: '], ['signifikan', K.bad, 700]], t: m('c', 2.4) },
+    ], { size: 27 });
+  }],
+
+  ['baseline', 'Jebakan tahun baseline', (m, D) => {
+    const p = panel(0), RY = i => 250 + i * 120;
+    const fr = G(p, { o: 0 }); tw(fr, { o: 1 }, .2, .5);
+    mk('rect', { x: 330, y: 190, width: 880, height: 520, rx: 24, fill: '#fff', stroke: K.dim, 'stroke-width': 4 }, fr);
+    T(fr, 'layar laporan riwayat spirometri', { x: 330, y: 160, size: 24, fill: K.dim });
+    // the list scrolls: the first visible slot is always the same place, what sits in it changes
+    const list = G(p, { y: -120, o: 1 });
+    const rows = ['ke-1 (paling awal)', 'ke-2', 'ke-3', 'ke-4'].map((nm, i) => {
+      const g = G(list, { o: i === 0 ? 0 : 0 });
+      mk('rect', { x: 360, y: RY(i), width: 820, height: 96, rx: 16, fill: K.board, stroke: K.faint, 'stroke-width': 3 }, g);
+      T(g, 'pemeriksaan ' + nm, { x: 392, y: RY(i) + 56, size: 26, weight: 700 });
+      for (let j = 0; j < 3; j++) mk('rect', { x: 880 + j * 100, y: RY(i) + 34, width: 76, height: 24, rx: 8, fill: K.faint }, g);
+      return g;
+    });
+    rows.forEach((g, i) => { if (i > 0) show(g, .5 + i * .3, .4); });
+    const tag = G(p, { o: 0 }); const tpill = pill(tag, 'baseline', 0, 0, K.rasio, 0, { size: 28 }); put(tag, { x: 1260, y: 308, o: 0 }); show(tag, m('b', .3), .4);
+    const bad = G(p, { o: 0 }); path(bad, 'M1254 348l30 30m0 -30l-30 30', { stroke: K.bad, 'stroke-width': 7, 'stroke-linecap': 'round' }); T(bad, 'tahun kedua', { x: 1300, y: 372, size: 28, weight: 700, fill: K.bad }); tw(bad, { o: 1 }, m('b', 2.5), .4); hide(bad, m('c', 1.0), .3);
+    const up = G(p, { o: 0 }); path(up, arrowD(1330, 560, 1330, 440, 22), { stroke: K.dim, 'stroke-width': 6, 'stroke-linecap': 'round' }); T(up, 'gulir ke atas', { x: 1330, y: 600, size: 26, fill: K.dim, weight: 700, anchor: 'middle' }); tw(up, { o: 1 }, m('b', 1.2), .4); hide(up, m('c', 1.0), .3);
+    // the scroll
+    const tS = m('c', .1);
+    tw(list, { y: 0 }, tS, 1.3, io); tw(rows[0], { o: 1 }, tS + .2, .8);
+    const ok = G(p, { o: 0 }); path(ok, 'M1254 358l14 16l30 -32', { stroke: K.ok, 'stroke-width': 8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', fill: 'none' }); T(ok, 'tahun paling awal', { x: 1314, y: 372, size: 28, weight: 700, fill: K.ok }); tw(ok, { o: 1 }, tS + 1.4, .4);
+    ban(p, 'periksa tahun paling awal dulu', 330, 770, 880, m('c', 1.6), K.nnt, 30);
+  }],
+
+  ['shift', 'Cross-shift', (m, D) => {
+    const p = panel(0), X0 = 330;
+    const k1 = .22, k2 = 1.2;
+    text(p, 'cross-shift · VEP1 dan APE', 130, 100, .2, { size: 30, fill: K.dim });
+    const clk = G(p, { x: 1180, y: 92, o: 0 }); mk('circle', { r: 20, fill: 'none', stroke: K.ink, 'stroke-width': 4 }, clk); path(clk, 'M0 -10V0L9 6', { stroke: K.ink, 'stroke-width': 4, 'stroke-linecap': 'round', fill: 'none' }); T(clk, 'paparan ≥ 6 jam', { x: 34, y: 10, size: 28, weight: 700 }); tw(clk, { o: 1 }, m('a', 4.0), .5);
+    text(p, 'kasus dari catatan', 1470, 150, .3, { size: 22, fill: K.dim, anchor: 'end' });
+    // one measure: two bars (before, after), the drop, thresholds measured back from the end of the before bar
+    const meas = (name, col, y, pre, post, k, unit, ticks, tBars, tPre, tPost, tGap, fl) => {
+      T(p, name, { x: 130, y: y + 50, size: 40, weight: 700, fill: col, o: 0 }); show(p.lastChild, tBars, .4);
+      T(p, 'sebelum', { x: X0 - 16, y: y + 25, size: 22, fill: K.dim, anchor: 'end', o: 0 }); show(p.lastChild, tBars, .4);
+      T(p, 'sesudah', { x: X0 - 16, y: y + 69, size: 22, fill: K.dim, anchor: 'end', o: 0 }); show(p.lastChild, tBars, .4);
+      const r1 = grow(p, X0, y, pre * k, 34, col, tBars, 1.0, { op: .85 }), r2 = grow(p, X0, y + 44, post * k, 34, col, tBars + .5, 1.0, { op: .85 });
+      (fl || []).forEach(([w, t0]) => flash(w ? r2 : r1, t0));
+      text(p, grp(pre) + NB + unit, X0 + pre * k + 16, y + 28, tPre, { size: 28, weight: 700 }); text(p, grp(post) + NB + unit, X0 + pre * k + 16, y + 72, tPost, { size: 28, weight: 700 });
+      const gp = mk('rect', { x: X0 + post * k, y: y + 44, width: (pre - post) * k, height: 34, rx: 4, fill: K.bad, 'fill-opacity': .25, stroke: K.bad, 'stroke-width': 3, 'stroke-dasharray': '6 4' }, p); put(gp, { o: 0 }); show(gp, tGap, .5);
+      ticks.forEach(([pc, lab, side, dy, t0]) => {
+        const x = X0 + pre * k - pre * k * pc / 100, g = G(p, { o: 0 });
+        path(g, `M${x} ${y - 12}V${y + 100 + dy}`, { stroke: K.ink, 'stroke-width': 3, 'stroke-dasharray': '6 5' });
+        T(g, lab, { x: x + (side > 0 ? 8 : -8), y: y + 118 + dy, size: 24, weight: 700, anchor: side > 0 ? 'start' : 'end' }); tw(g, { o: 1 }, t0, .5);
+      });
+    };
+    meas('VEP1', K.rasio, 190, 2800, 2380, k1, 'mL', [[5, 'OSHA ≥ 5%', 1, 0, m('d', .4)], [10, 'materi tambahan > 10%', -1, 0, m('d', 5.6)]], m('a', 2.0), m('c', 2.9), m('c', 5.0), m('c', 6.8), [[0, m('b', 1.7)], [1, m('b', 2.7)], [0, m('b', 4.3)]]);
+    calcLine(p, 130, 400, [
+      { k: 'rumus', parts: [['% turun = (pre − post) / pre × 100%']], t: m('b', .1) },
+      { k: 'substitusi', parts: [['= (2 800 − 2 380) / 2 800 × 100%']], t: m('c', 6.8) },
+      { k: 'hasil', parts: [['= '], ['15,0%', K.bad, 700]], t: m('c', 8.2) },
+      { k: 'interpretasi', parts: [['→ melewati kedua ambang']], t: m('d', 8.4) },
+    ], { size: 27 });
+    meas('APE', K.kvp, 500, 420, 320, k2, 'L/menit', [[20, 'materi tambahan > 20%', -1, 0, m('e', 9.5)]], m('e', .1), m('e', .7), m('e', 2.5), m('e', 3.8));
+    calcLine(p, 130, 700, [
+      { k: 'rumus', parts: [['% turun = (pre − post) / pre × 100%']], t: m('e', .5) },
+      { k: 'substitusi', parts: [['= (420 − 320) / 420 × 100%']], t: m('e', 4.0) },
+      { k: 'hasil', parts: [['= '], ['23,8%', K.bad, 700]], t: m('e', 5.0) },
+      { k: 'interpretasi', parts: [['→ > 20% (materi): '], ['signifikan', K.bad, 700]], t: m('e', 8.0) },
+    ], { size: 27 });
+    ban(p, 'sebut sumber ambangnya: OSHA Cotton Dust ≥ 5% · materi tambahan VEP1 > 10%, APE > 20%', 130, 800, 1340, m('f'), K.nnt, 27);
+  }],
+
+  ['suhu', 'Positif palsu karena suhu', (m, D) => {
+    const p = panel(0);
+    const room = (y, name, sub, warm, t0) => {
+      const g = G(p, { o: 0 }); tw(g, { o: 1 }, t0, .6);
+      mk('rect', { x: 130, y, width: 520, height: 230, rx: 24, fill: warm ? '#fbe9e4' : '#e6f0fa', stroke: warm ? '#d9473a' : '#1f6fc5', 'stroke-width': 3 }, g);
+      T(g, name, { x: 170, y: y + 80, size: 44, weight: 700 }); T(g, sub, { x: 170, y: y + 128, size: 30, fill: K.dim });
+      // thermometer: the level differs
+      mk('rect', { x: 548, y: y + 40, width: 22, height: 130, rx: 11, fill: '#fff', stroke: K.ink, 'stroke-width': 3 }, g);
+      mk('circle', { cx: 559, cy: y + 186, r: 22, fill: warm ? K.bad : K.rasio, stroke: K.ink, 'stroke-width': 3 }, g);
+      mk('rect', { x: 553, y: y + (warm ? 56 : 128), width: 12, height: warm ? 130 : 58, rx: 6, fill: warm ? K.bad : K.rasio }, g);
+    };
+    room(170, 'pagi', 'ruangan lebih dingin', false, m('b', .1)); room(450, 'siang', 'ruangan lebih hangat', true, m('b', 1.6));
+    text(p, 'pre-shift dan post-shift', 130, 130, .2, { size: 28, fill: K.dim });
+    // the apparent drop, schematic
+    const yb = 690, h = 300, k = h / 100;
+    const ch = G(p, { o: 0 }); tw(ch, { o: 1 }, m('b', 2.0), .5);
+    path(ch, `M780 ${yb}H1500`, { stroke: K.faint, 'stroke-width': 4 });
+    T(ch, 'sebelum (pagi)', { x: 940, y: yb + 42, size: 25, fill: K.dim, anchor: 'middle' }); T(ch, 'sesudah (siang)', { x: 1260, y: yb + 42, size: 25, fill: K.dim, anchor: 'middle' });
+    T(ch, 'skematis · tanpa pajanan debu', { x: 1500, y: 150, size: 24, fill: K.dim, anchor: 'end' });
+    growV(p, 860, yb, 160, 100 * k, K.rasio, m('b', 2.2), 1.0, { op: .85 }); growV(p, 1180, yb, 160, 96 * k, K.rasio, m('b', 4.0), 1.0, { op: .85 });
+    dashed(p, `M780 ${yb - 95 * k}H1500`, m('c', -.6), .7, K.paru, 3, '10 7');
+    text(p, 'OSHA ≥ 5%', 1500, yb - 95 * k + 30, m('c', -.4), { size: 24, fill: K.paru, weight: 700, anchor: 'end' });
+    const gp = mk('rect', { x: 1180, y: yb - 100 * k, width: 160, height: 4 * k, fill: K.bad, 'fill-opacity': .35, stroke: K.bad, 'stroke-width': 3, 'stroke-dasharray': '6 4' }, p); put(gp, { o: 0 }); show(gp, m('c', .2), .5);
+    text(p, '≈ 4%', 1370, yb - 100 * k + 12, m('c', .3), { size: 38, fill: K.bad, weight: 700 });
+    ban(p, 'ruang pemeriksaan: suhu konstan', 780, 800, 720, m('d'), K.nnt, 30);
+  }],
+
+  ['q2', 'Cek cepat: klik ukuran', (m, D) => {
+    const p = panel(0);
+    text(p, 'kasus dari catatan · sebelum dan sesudah shift', 800, 110, .1, { size: 30, fill: K.dim, anchor: 'middle' });
+    const A = prePost(p, { name: 'VEP1', col: K.rasio, x0: 600, y: 210, k: .14, pre: 3500, post: 3480, unit: 'mL', t: .3 });
+    const B = prePost(p, { name: 'APE', col: K.kvp, x0: 600, y: 410, k: 1.02, pre: 480, post: 470, unit: 'L/menit', t: .6 });
+    q2els = [A, B];
+    q2els.ring = G(p, { o: 0 }); mk('rect', { x: 130, y: 390, width: 1180, height: 110, rx: 20, fill: 'none', stroke: K.ok, 'stroke-width': 6 }, q2els.ring);
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-persen', prompt: ['Kasus dari catatan. Ukuran mana yang persen penurunannya lebih besar? Klik barisnya.'],
+    build: pickEls([{ el: q2els[0], box: [130, 190, 1180, 110], label: 'VEP1' }, { el: q2els[1], box: [130, 390, 1180, 110], label: 'APE' }], 1,
+      'APE: (480 − 470) / 480 = 2,1%. VEP1: (3 500 − 3 480) / 3 500 = 0,6%. Keduanya tidak signifikan, tetapi itu tidak menyingkirkan pajanan kronik.',
+      () => 'VEP1 turun 20 mL, tetapi (3 500 − 3 480) / 3 500 = 0,6%. Bandingkan dalam persen, bukan dalam angka mutlak.',
+      () => { fx(q2els.ring, { o: 1 }, 0, .4); }),
+  }], done, 'Cek cepat') }],
+
+  ['wrap', 'Ringkasan', (m) => {
+    const p = panel(0);
+    const items = [
+      [[[['Sekali potret '], ['melewatkan', K.bad], [' penurunan:']], [['bandingkan dengan baseline sendiri.']]], 'w1'],
+      [[[['Persen prediksi: '], ['≥ 15%', K.bad], [' abnormal;']], [['tabel catatan: ≥ 8%.']]], 'w2'],
+      [[[['LNL', K.ink], [' = 0,85 × baseline − efek usia.']]], 'w3'],
+      [[[['Cross-shift: (pre − post) / pre × 100%;']], [['sebut '], ['sumber', K.nnt], [' ambangnya.']]], 'w4'],
+    ];
+    let y = 190;
+    items.forEach(([lines, mk1], idx) => {
+      const g = G(p, { x: -16, y, o: 0 });
+      const c = G(g, { x: 150, y: -12, s: .3 }); mk('circle', { r: 28, fill: K.nnt }, c); T(c, String(idx + 1), { y: 11, size: 32, fill: '#fff', weight: 700, anchor: 'middle' });
+      tw(c, { s: 1 }, m(mk1), .5, back);
+      let maxx = 0;
+      lines.forEach((ln, j) => {
+        let cx = 210;
+        ln.forEach(([s, f]) => { const e = T(g, s, { x: cx, y: j * 46, size: 35, weight: f ? 700 : 600, fill: f || K.ink }); cx += width(e, s, 35); });
+        maxx = Math.max(maxx, cx);
+      });
+      const nxt = items[idx + 1] ? m(items[idx + 1][1]) : m('end');
+      draw(path(g, `M210 ${(lines.length - 1) * 46 + 16}H${maxx}`, { stroke: K.nnt, 'stroke-width': 3, 'stroke-opacity': .5 }, { d: 0 }), m(mk1) + .4, Math.max(.8, nxt - m(mk1) - .8), lin);
+      tw(g, { o: 1, x: 0 }, m(mk1), .6, out);
+      y += 60 + lines.length * 46 + 36;
+    });
+  }],
+
+  ['final1', 'Latihan bab', () => { panel(0); }, { ask: done => quiz(SCREEN, PRACTICE, done, 'Latihan bab') }],
+  ['finish', 'Selesai', () => { panel(0); }, { ask: finishCard }],
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+
+/* ---------- practice: Kasus 6 of the notes (LNL), then the percent, cross-shift, baseline and temperature ---------- */
+const within = (want, tol) => v => Math.abs(v[0] - want) <= tol;
+const PRACTICE = [
+  { id: 'p-085', prompt: ['Kasus dari catatan (Kasus 6): baseline VEP1 3 200 mL pada usia 40. Hitung 0,85 × baseline.'],
+    build: blanksId([{ parts: ['0,85 × 3 200 = ', { box: '2720' }, ' mL'], test: within(2720, .5),
+      why: '0,85 × 3 200 = 2 720 mL. Ini nilai setelah variabilitas pengukuran, sebelum efek usia.', hint: 'Kalikan 3 200 dengan 0,85.' }]) },
+  { id: 'p-lnl', prompt: ['Prediksi saat baseline 3 400 mL, prediksi sekarang 3 250 mL. Hitung efek usia, lalu LNL.'],
+    build: blanksId([
+      { parts: ['efek usia = 3 400 − 3 250 = ', { box: '150' }, ' mL'], test: within(150, .5), why: '3 400 − 3 250 = 150 mL.', hint: 'Prediksi baseline dikurangi prediksi sekarang.' },
+      { parts: ['LNL = 2 720 − 150 = ', { box: '2570' }, ' mL'], test: within(2570, .5), why: '2 720 − 150 = 2 570 mL.', hint: 'Kurangi 2 720 dengan efek usia dari baris di atas.' },
+    ]) },
+  { id: 'p-banding', prompt: ['VEP1 aktual 2 500 mL, LNL 2 570 mL. Interpretasinya?'],
+    build: choice(['Di atas LNL: masih dalam batas yang diharapkan', 'Di bawah LNL: penurunan signifikan, perlu evaluasi', 'Sama dengan LNL', 'Tidak bisa dinilai tanpa persen prediksi'], 1,
+      '2 500 < 2 570: di bawah LNL, penurunan longitudinal signifikan.',
+      ['Itu terbalik: 2 500 lebih kecil dari 2 570.', '', 'Keduanya berbeda 70 mL.', 'LNL cukup dibandingkan langsung dengan VEP1 aktual.']) },
+  { id: 'p-persen', prompt: ['Kasus yang sama: penurunan VEP1 dari baseline 3 200 mL ke 2 500 mL, dalam persen dari baseline. Satu desimal.'],
+    build: blanksId([{ parts: ['(3 200 − 2 500) / 3 200 × 100% = ', { box: '21.9' }, '%'], test: within(21.9, .051),
+      why: '700 / 3 200 = 21,9%. Ini persen dari nilai baseline, bukan selisih persen prediksi.', hint: 'Selisihnya 700 mL, dibagi 3 200, kali 100%.' }]) },
+  { id: 'p-ape', prompt: ['Cross-shift (Kasus 5): APE sebelum 420 L/menit, sesudah 320 L/menit. Persen penurunan, satu desimal.'],
+    build: blanksId([{ parts: ['(420 − 320) / 420 × 100% = ', { box: '23.8' }, '%'], test: within(23.8, .051),
+      why: '100 / 420 = 23,8%. Itu di atas ambang materi tambahan (> 20%).', hint: 'Selisihnya 100, dibagi nilai sebelum shift (420).' }]) },
+  { id: 'p-baseline', prompt: ['Laporan riwayat spirometri berisi beberapa tahun. Mana yang dipakai sebagai baseline?'],
+    build: choice(['Pemeriksaan kedua', 'Pemeriksaan paling awal', 'Pemeriksaan terbaru', 'Rata-rata semua pemeriksaan'], 1,
+      'Baseline adalah pemeriksaan paling awal: gulir laporan ke atas dan periksa dulu.',
+      ['Itu jebakan: data tahun kedua terbaca sebagai baseline bila lupa menggulir ke atas.', '', 'Itu nilai saat ini, yang dibandingkan dengan baseline.', 'Baseline satu pemeriksaan, bukan rata-rata.']) },
+  { id: 'p-suhu', prompt: ['Pre-shift pagi di ruangan dingin, post-shift siang di ruangan hangat. Penurunan sekitar 4% bisa berupa artefak suhu. Apa yang dilakukan pada pemeriksaan longitudinal?'],
+    build: choice(['Langsung menyimpulkan pajanan debu', 'Memeriksa di ruangan bersuhu konstan', 'Memakai pemeriksaan kedua sebagai baseline', 'Mengabaikan hasil pre-shift'], 1,
+      'Ruang pemeriksaan harus bersuhu konstan, supaya penurunan tidak berasal dari suhu.',
+      ['Penurunan sekitar 4% bisa berasal dari suhu, bukan debu.', '', 'Itu tidak berkaitan dengan suhu.', 'Hasil pre-shift tetap dipakai; yang diperbaiki adalah kondisi ruangannya.']) },
+];
+
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+  // 4. RPP: a roof (the written program) on seven pillars
+  ['rpp', 'RPP: tujuh pilar', (m, D) => {
+    const p = panel(0), PX = i => 130 + i * 190, yB = 690, yR = 300;
+    const names = [['Monitoring', 'pajanan'], ['Pengendalian', 'pajanan'], ['Spirometri', 'berkala'], ['APD yang', 'tepat'], ['Informasi,', 'pelatihan'], ['Pencatatan,', 'pelaporan'], ['Evaluasi', 'program']];
+    text(p, 'OSHA 29 CFR 1910.134', 1470, 70, .3, { size: 24, fill: K.dim, anchor: 'end' });
+    const slab = mk('rect', { x: 100, y: yB, width: 1400, height: 26, rx: 6, fill: K.faint }, p); put(slab, { o: 0 }); show(slab, .3, .5);
+    const roof = G(p, { o: 0, y: -50 });
+    mk('polygon', { points: `100,${yR} 800,175 1500,${yR}`, fill: K.nnt, 'fill-opacity': .14, stroke: K.nnt, 'stroke-width': 5, 'stroke-linejoin': 'round' }, roof);
+    T(roof, 'RPP', { x: 800, y: 246, size: 46, weight: 700, anchor: 'middle', fill: K.nnt }); T(roof, 'program tertulis, spesifik tempat kerja', { x: 800, y: 282, size: 24, anchor: 'middle', fill: K.dim });
+    tw(roof, { o: 1, y: 0 }, m('a', .2), .8, out);
+    ring(p, 800, 246, m('a', 3.0), K.nnt); ring(p, 800, 246, m('a', 5.0), K.nnt);
+    const mk7 = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7'];
+    names.forEach((nm, i) => {
+      const h = yB - yR - 30, t0 = m(mk7[i], -.15);
+      const col = mk('rect', { x: PX(i), y: yB, width: 150, height: 0, rx: 8, fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, p); put(col, { o: 0 });
+      prog(q => { col.setAttribute('y', yB - h * q); col.setAttribute('height', h * q); put(col, { o: q > 0 ? 1 : 0 }); }, t0, .7, out);
+      const g = G(p, { x: PX(i) + 75, y: 0, o: 0 });
+      const c = G(g, { y: yR + 68 }); mk('circle', { r: 24, fill: K.nnt }, c); T(c, String(i + 1), { y: 9, size: 26, fill: '#fff', weight: 700, anchor: 'middle' });
+      nm.forEach((s, j) => T(g, s, { x: 0, y: yR + 150 + j * 32, size: 22, weight: j ? 500 : 700, anchor: 'middle', fill: j ? K.dim : K.ink }));
+      path(g, `M-40 ${yR + 114}H40`, { stroke: K.faint, 'stroke-width': 3 });
+      tw(g, { o: 1 }, t0 + .45, .5);
+    });
+    tag(p, '7 pilar: dokumen ATO dalam catatan', 130, 120, K.dim, m('a', 1.4), { size: 22, pad: 12 });
+    // free for the worker, certified: two badges
+    const b1 = G(p, { o: 0 }); mk('circle', { cx: 190, cy: 790, r: 36, fill: K.ok, 'fill-opacity': .15, stroke: K.ok, 'stroke-width': 4 }, b1); path(b1, 'M174 790l12 14l24 -28', { stroke: K.ok, 'stroke-width': 7 });
+    T(b1, 'gratis untuk pekerja (menurut OSHA)', { x: 250, y: 782, size: 28, weight: 700 }); T(b1, 'respirator · pelatihan · evaluasi medis', { x: 250, y: 818, size: 24, fill: K.dim });
+    tw(b1, { o: 1 }, m('b', .1), .6); ring(p, 190, 790, m('b', 2.4), K.ok); ring(p, 190, 790, m('b', 5.2), K.ok);
+    const b2 = G(p, { o: 0 }); mk('circle', { cx: 1060, cy: 790, r: 36, fill: K.rasio, 'fill-opacity': .12, stroke: K.rasio, 'stroke-width': 4 }, b2); path(b2, 'M1044 790l12 14l24 -28', { stroke: K.rasio, 'stroke-width': 7 });
+    T(b2, 'bersertifikat NIOSH', { x: 1120, y: 782, size: 28, weight: 700 }); T(b2, 'syarat memilih respirator', { x: 1120, y: 818, size: 24, fill: K.dim });
+    tw(b2, { o: 1 }, m('c', .1), .6);
+  }],
+
+  // 5. the respirator tree opens branch by branch
+  ['pohon', 'Pohon jenis respirator', (m, D) => {
+    const p = panel(0), XL = [190, 480, 770, 1090, 1380], YR = 100, YM = 270, YL = 440;
+    const mkrs = ['b', 'c', 'd', 'f', 'g'];
+    const root = pill(p, 'Respirator', 800, YR + 12, K.ink, .2, { size: 36, anchor: 'middle', pad: 22 });
+    // branch 1: APR
+    const bA = [480, YM], bS = [1235, YM];
+    line(p, `M760 ${YR + 30}C700 ${YR + 100} 560 ${YM - 80} ${bA[0]} ${YM - 40}`, m('a', .1), .8, K.ink, 5);
+    const nA = tag(p, 'APR', bA[0], YM + 8, K.rasio, m('a', .5), { size: 36, anchor: 'middle' });
+    lines(p, ['menyaring udara sekitar'], bA[0], YM + 54, m('a', 1.3), { size: 24, anchor: 'middle' });
+    // branch 2: atmosphere supplying
+    line(p, `M840 ${YR + 30}C900 ${YR + 100} 1100 ${YM - 80} ${bS[0]} ${YM - 40}`, m('e', .1), .8, K.ink, 5);
+    tag(p, 'Atmosphere supplying', bS[0], YM + 8, K.nnt, m('e', .5), { size: 34, anchor: 'middle' });
+    lines(p, ['udara dari sumber luar'], bS[0], YM + 54, m('e', 1.3), { size: 24, anchor: 'middle' });
+    // leaves
+    LEAVES.forEach(([kind, title, sub], i) => {
+      const parent = i < 3 ? bA : bS, tl = m(mkrs[i]);
+      line(p, `M${parent[0]} ${YM + 70}C${parent[0]} ${YM + 110} ${XL[i]} ${YM + 110} ${XL[i]} ${YL - 70}`, [m('a', 2.5), m('a', 4.2), m('a', 5.9), m('e', 1.6), m('e', 3.6)][i], .9, i < 3 ? K.rasio : K.nnt, 4);
+      const card = box(p, XL[i] - 135, YL - 60, 270, 330, K.faint, { o: 0 }); tw(card, { o: 1 }, tl + .4, .5);
+      respIcon(p, kind, XL[i] + (kind === 'sar' ? -34 : kind === 'papr' ? -8 : 0), YL + 70, kind === 'sar' ? .74 : .92, tl + .5);
+      text(p, title, XL[i], YL + 192, tl + .7, { size: kind === 'fp' ? 25 : 30, weight: 700, anchor: 'middle' });
+      text(p, sub, XL[i], YL + 228, tl + .85, { size: 23, fill: K.dim, anchor: 'middle' });
+    });
+    ring(p, XL[4], YL + 70, m('h', 1.8), K.bad); ring(p, XL[3], YL + 70, m('h', 6.2), K.bad); ring(p, XL[4], YL + 70, m('h', 8.0), K.bad);
+    text(p, 'pictogram skematis', 130, 880, .3, { size: 22, fill: K.dim });
+    // IDLH
+    ban(p, 'IDLH: SCBA full facepiece pressure-demand ≥ 30 menit, atau SAR dengan tabung cadangan', 130, 765, 1340, m('h'), K.bad, 28);
+  }],
+
+  ['q2', 'Cek cepat: klik respirator', (m, D) => {
+    const p = panel(0), XQ = XQ_;
+    text(p, 'pictogram skematis', 800, 100, .1, { size: 26, fill: K.dim, anchor: 'middle' });
+    path(p, 'M90 200H700M900 200H1510', { stroke: K.faint, 'stroke-width': 3 });
+    const els = LEAVES.map(([kind, title], i) => {
+      const g = G(p, { o: 0 }); tw(g, { o: 1 }, .2 + i * .2, .5);
+      respIcon(g, kind, XQ[i] + (kind === 'sar' ? -34 : kind === 'papr' ? -8 : 0), 380, kind === 'sar' ? .9 : 1.15, 0).setAttribute('opacity', 1);
+      T(g, title, { x: XQ[i], y: 540, size: 30, weight: 700, anchor: 'middle' });
+      return g;
+    });
+    T(els[0], 'APR', { x: 500, y: 184, size: 28, weight: 700, fill: K.rasio, anchor: 'middle' }); T(els[3], 'Atmosphere supplying', { x: 1250, y: 184, size: 28, weight: 700, fill: K.nnt, anchor: 'middle' });
+    q2els = els; q2els.ring = G(p, { o: 0 }); mk('rect', { x: 655, y: 250, width: 290, height: 330, rx: 24, fill: 'none', stroke: K.ok, 'stroke-width': 6 }, q2els.ring);
+  }, { ask: done => quiz(BAND, [{
+    id: 'c-papr', prompt: ['Klik respirator yang mengalirkan udara lewat filter dengan motor bertenaga baterai.'],
+    build: pickEls(LEAVES.map(([k, title], i) => ({ el: q2els[i], box: [XQ_[i] - 140, 250, 280, 330], label: title })), 2,
+      'PAPR: motor baterai mengalirkan udara lewat filter, jadi beban usaha napas turun.',
+      i => i === 3 || i === 4 ? 'Itu respirator penyuplai udara dari sumber luar. Ia tidak memakai filter.' : 'Itu respirator pemurni udara tanpa motor; udara ditarik oleh napas pemakai sendiri.',
+      () => { fx(q2els.ring, { o: 1 }, 0, .4); }),
+  }], done, 'Cek cepat') }],
+
+  // 6. filter classes: dots caught or let through
+  ['filter', 'Klasifikasi filter', (m, D) => {
+    const p = panel(0);
+    text(p, 'filter NIOSH', 130, 70, .2, { size: 26, fill: K.dim });
+    // the letter: resistance to oil
+    const drop = (g, x, y) => { mk('path', { d: `M${x} ${y - 34}C${x + 26} ${y - 2} ${x + 22} ${y + 24} ${x} ${y + 24}C${x - 22} ${y + 24} ${x - 26} ${y - 2} ${x} ${y - 34}Z`, fill: AMBER, 'fill-opacity': .8 }, g); };
+    const cN = box(p, 130, 110, 640, 190, K.faint, { o: 0 }), cR = box(p, 830, 110, 640, 190, K.faint, { o: 0 });
+    tw(cN, { o: 1 }, m('b', -.5), .5); tw(cR, { o: 1 }, m('c', -.5), .5);
+    T(cN, 'N', { x: 60, y: 112, size: 80, weight: 700, fill: K.bad, anchor: 'middle' }); T(cN, 'tidak tahan minyak', { x: 130, y: 100, size: 30, weight: 700 }); T(cN, 'Not resistant', { x: 130, y: 140, size: 24, fill: K.dim });
+    drop(cN, 520, 100); path(cN, 'M492 74L548 130M548 74L492 130', { stroke: K.bad, 'stroke-width': 6 });
+    T(cR, 'R', { x: 60, y: 112, size: 80, weight: 700, fill: AMBER, anchor: 'middle' }); T(cR, 'tahan minyak', { x: 130, y: 90, size: 30, weight: 700 }); T(cR, 'terbatas waktu', { x: 130, y: 128, size: 26, fill: K.dim });
+    drop(cR, 520, 100); mk('circle', { cx: 585, cy: 100, r: 28, fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, cR); path(cR, 'M585 100V84M585 100L597 106', { stroke: K.ink, 'stroke-width': 4 });
+    // the number: efficiency, 100 particles
+    const grid = (x0, y0, t0, tCatch, nPass, title, sub, col) => {
+      const g = G(p, { o: 0 }); tw(g, { o: 1 }, t0, .5);
+      T(g, title, { x: x0 + 150, y: y0 - 30, size: 40, weight: 700, anchor: 'middle', fill: col });
+      const dots = [];
+      for (let i = 0; i < 100; i++) dots.push(mk('circle', { cx: x0 + 15 + (i % 10) * 30, cy: y0 + 15 + Math.floor(i / 10) * 30, r: 9, fill: K.bad }, g));
+      prog(q => dots.forEach((d, i) => d.setAttribute('fill', q * 100 > (i * 37 % 100) && i * 37 % 100 >= nPass ? K.dim : (nPass === 0 && q * 100 > (i * 37 % 100) ? K.dim : K.bad))), tCatch, 2.4, lin);
+      return g;
+    };
+    const g1 = grid(260, 420, m('b', .5), m('d', .6), 5, '95', '', K.rasio), g2 = grid(1000, 420, m('d', 3.0), m('e', .6), 0, '100', '', K.nnt);
+    text(p, 'partikel ditahan', 790, 440, m('d', 1), { size: 22, fill: K.dim, anchor: 'middle' });
+    pill(p, '≥ 95%', 410, 790, K.rasio, m('d', 3.0), { size: 34, anchor: 'middle' });
+    lines(p, ['5 dari 100 lolos'], 410, 840, m('d', 3.2), { size: 24, anchor: 'middle' });
+    pill(p, '≥ 99,97%', 1150, 790, K.nnt, m('e', 3.2), { size: 34, anchor: 'middle' });
+    lines(p, ['mis. P100'], 1150, 840, m('e', 3.4), { size: 24, anchor: 'middle' });
+    ring(p, 190, 222, m('b', 1.4), K.bad); ring(p, 890, 222, m('c', 1.4), AMBER); ring(p, 890, 222, m('c', 3.0), AMBER);
+    text(p, 'skematis · 100 partikel', 1470, 70, .3, { size: 22, fill: K.dim, anchor: 'end' });
+  }],
+
+  // 7. cartridge colours: eight cartridges
+  ['warna', 'Warna cartridge', (m, D) => {
+    const p = panel(0);
+    text(p, 'warna cartridge · proteksi', 130, 70, .2, { size: 28, fill: K.dim });
+    const C = [['Hitam', '#222', ['Uap organik']], ['Putih', '#ffffff', ['Gas asam']], ['Hijau', '#2e9a3a', ['Gas amonia']], ['Kuning', '#e6b800', ['Gas asam', '+ uap organik']],
+      ['Biru', '#1f6fc5', ['Karbon', 'monoksida']], ['Cokelat', '#7a4a25', ['Gas asam + uap', 'organik + amonia']], ['Ungu / magenta', '#8a3fa8', ['Filter P100 /', 'material radioaktif']], ['Olive', '#6b7a1f', ['Multi-kontaminan', '/ CBRN']]];
+    C.forEach(([nm, col, pr], i) => {
+      const cx = 130 + (i % 4) * 355, cy = 130 + Math.floor(i / 4) * 330, t0 = m('h' + (i + 1), -.1);
+      const g = G(p, { x: cx, y: cy, o: 0 });
+      mk('rect', { x: 0, y: 0, width: 330, height: 290, rx: 22, fill: '#fff', stroke: K.faint, 'stroke-width': 3 }, g);
+      // the cartridge
+      mk('rect', { x: 20, y: 38, width: 84, height: 190, rx: 20, fill: col, stroke: K.ink, 'stroke-width': 4 }, g);
+      path(g, 'M34 90H90M34 110H90M34 130H90', { stroke: i === 0 || i === 5 || i === 4 || i === 6 || i === 7 ? 'rgba(255,255,255,.55)' : 'rgba(0,0,0,.25)', 'stroke-width': 4 });
+      mk('rect', { x: 38, y: 20, width: 48, height: 22, rx: 6, fill: '#e8e4d6', stroke: K.ink, 'stroke-width': 4 }, g);
+      T(g, nm, { x: 120, y: 90, size: nm.length > 8 ? 26 : 32, weight: 700 });
+      pr.forEach((s, j) => T(g, s, { x: 120, y: 134 + j * 32, size: 24, fill: K.dim, weight: j === 0 && pr.length === 1 ? 600 : 500 }));
+      popIn(g, t0, .5);
+    });
+  }],
+
+  // 8. when to fit test: a face with a mask; the seal highlighted; a beard crosses it
+  ['fit1', 'Fit test: kapan', (m, D) => {
+    const p = panel(0), fx0 = 430, fy0 = 470;
+    text(p, 'skematis', 130, 70, .2, { size: 22, fill: K.dim });
+    const face = G(p, { o: 0 }); tw(face, { o: 1 }, .2, .6);
+    mk('ellipse', { cx: fx0, cy: fy0 - 20, rx: 190, ry: 240, fill: SKIN, stroke: K.ink, 'stroke-width': 5 }, face);
+    mk('circle', { cx: fx0 - 70, cy: fy0 - 100, r: 12, fill: K.ink }, face); mk('circle', { cx: fx0 + 70, cy: fy0 - 100, r: 12, fill: K.ink }, face);
+    path(face, `M${fx0 - 100} ${fy0 - 140}Q${fx0 - 70} ${fy0 - 160} ${fx0 - 40} ${fy0 - 142}M${fx0 + 40} ${fy0 - 142}Q${fx0 + 70} ${fy0 - 160} ${fx0 + 100} ${fy0 - 140}`, { stroke: K.ink, 'stroke-width': 5 });
+    // half mask
+    const mask = G(p, { o: 0 }); tw(mask, { o: 1 }, .6, .6);
+    mk('path', { d: cupPath(fx0, fy0 + 20, 135, 120), fill: '#fff', 'fill-opacity': .94, stroke: K.ink, 'stroke-width': 5 }, mask);
+    for (const s of [-1, 1]) { mk('circle', { cx: fx0 + s * 92, cy: fy0 + 60, r: 36, fill: '#e8e4d6', stroke: K.ink, 'stroke-width': 5 }, mask); path(mask, `M${fx0 + s * 92 - 20} ${fy0 + 60}H${fx0 + s * 92 + 20}M${fx0 + s * 92} ${fy0 + 40}V${fx0 * 0 + fy0 + 80}`, { stroke: K.dim, 'stroke-width': 3 }); }
+    path(mask, `M${fx0 - 135} ${fy0 - 20}L${fx0 - 190} ${fy0 - 36}M${fx0 + 135} ${fy0 - 20}L${fx0 + 190} ${fy0 - 36}`, { stroke: K.ink, 'stroke-width': 4 });
+    // the seal edge, highlighted at a
+    const seal = mk('path', { d: cupPath(fx0, fy0 + 20, 135, 120), fill: 'none', stroke: K.rasio, 'stroke-width': 11, 'stroke-opacity': .5, 'stroke-dasharray': '16 10' }, p); put(seal, { o: 0 });
+    tw(seal, { o: 1 }, m('a', .5), .6); prog(q => seal.setAttribute('stroke-dashoffset', -q * 520), m('a', .5), D - 1.5, lin);
+    pill(p, 'segel', fx0 - 190, fy0 + 160, K.rasio, m('a', 1.2), { size: 28, anchor: 'end' });
+    // when: three stations on the right
+    const X = 880;
+    const st = (y, t0, title, sub) => { const g = G(p, { o: 0 }); tw(g, { o: 1, x: 0 }, t0, .5, out); return { g, y }; };
+    // 1: first use (a flag)
+    const f1 = G(p, { x: X, y: 160, o: 0 }); path(f1, 'M0 60V-10', { stroke: K.ink, 'stroke-width': 6 }); mk('path', { d: 'M0 -10h54l-14 18l14 18h-54z', fill: K.ok }, f1); popIn(f1, m('b', .1));
+    text(p, 'pemakaian pertama', X + 90, 180, m('b', .3), { size: 32, weight: 700 });
+    // 2: change of type, model, size
+    const f2 = G(p, { x: X, y: 330, o: 0 }); [[-4, 0, .75], [60, -4, 1], [136, 0, 1.25]].forEach(([dx, dy, s], i) => { const mm = G(f2, { x: dx + 30, y: dy, s }); mk('path', { d: cupPath(0, 0, 24, 22), fill: '#fff', stroke: K.ink, 'stroke-width': 3 }, mm); });
+    popIn(f2, m('b', 1.6));
+    text(p, 'ganti jenis, model, ukuran', X + 220, 340, m('b', 1.8), { size: 32, weight: 700 });
+    // 3: yearly repeat
+    const f3 = G(p, { x: X, y: 480, o: 0 }); mk('rect', { x: -26, y: -26, width: 70, height: 66, rx: 8, fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, f3); mk('rect', { x: -26, y: -26, width: 70, height: 20, rx: 8, fill: K.bad }, f3); path(f3, 'M-8 14H28M-8 28H16', { stroke: K.dim, 'stroke-width': 4 }); popIn(f3, m('b', 3.2));
+    text(p, 'ulang ≥ 1× setahun', X + 90, 496, m('b', 3.4), { size: 32, weight: 700 });
+    // urgent repeat: four tags
+    const urg = G(p, { o: 0 }); tw(urg, { o: 1 }, m('c', .1), .5);
+    T(urg, 'ulang segera bila', { x: X, y: 600, size: 26, fill: K.bad, weight: 700 });
+    [['parut wajah', 0, 0], ['perubahan gigi', 1, 0], ['operasi wajah', 0, 1], ['berat badan drastis', 1, 1]].forEach(([s, cx, cy], i) => tag(p, s, X + cx * 270, 650 + cy * 62, AMBER, m('c', .5 + i * 1.5), { size: 24, pad: 12 }));
+    // the beard crosses the seal: forbidden
+    const bd = G(p, { o: 0 });
+    for (let i = 0; i < 17; i++) { const x = fx0 - 130 + i * 16, y = fy0 + 150 - Math.abs(i - 8) * 3; path(bd, `M${x} ${y - 70 + (i % 3) * 6}Q${x + (i % 2 ? 6 : -6)} ${y} ${x + (i % 2 ? 2 : -2)} ${y + 70}`, { stroke: '#5a4030', 'stroke-width': 4 }); }
+    tw(bd, { o: 1 }, m('d', .4), .8);
+    cross(p, fx0, fy0 + 150, m('d', 1.4), 34, K.bad);
+    pill(p, 'jenggot melintasi segel: dilarang', fx0, 810, K.bad, m('d', 1.0), { size: 28, anchor: 'middle' });
+  }],
+
+  // 9. QLFT and QNFT
+  ['fit2', 'QLFT dan QNFT', (m, D) => {
+    const p = panel(0);
+    path(p, 'M800 120V840', { stroke: K.faint, 'stroke-width': 3 });
+    tag(p, 'Kualitatif · QLFT', 400, 120, K.rasio, m('a', .1), { size: 34, anchor: 'middle' });
+    lines(p, ['subjektif · lulus / gagal · respons indra'], 400, 168, m('a', .8), { size: 24, anchor: 'middle' });
+    tag(p, 'Kuantitatif · QNFT', 1200, 120, K.nnt, m('f', .1), { size: 34, anchor: 'middle' });
+    lines(p, ['objektif · rasio partikel luar : dalam'], 1200, 168, m('f', .8), { size: 24, anchor: 'middle' });
+    // four sensory tiles (2 x 2)
+    const tile = (x, y, t0, title, sub, draw) => { const g = G(p, { x, y, o: 0 }); mk('rect', { width: 300, height: 250, rx: 22, fill: '#fff', stroke: K.faint, 'stroke-width': 3 }, g); const ic = G(g, { x: 150, y: 90 }); draw(ic); T(g, title, { x: 150, y: 180, size: 28, weight: 700, anchor: 'middle' }); T(g, sub, { x: 150, y: 216, size: 24, fill: K.dim, anchor: 'middle' }); popIn(g, t0); return g; };
+    tile(90, 230, m('b', 0), 'Saccharin', 'rasa manis', ic => { mk('path', { d: 'M-34 -4L0 -22L34 -4L34 28L0 46L-34 28Z', fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, ic); path(ic, 'M-34 -4L0 14L34 -4M0 14V46', { stroke: K.ink, 'stroke-width': 4 }); });
+    tile(410, 230, m('c', 0), 'Bitrex', 'sangat pahit', ic => { mk('circle', { r: 40, fill: '#fff', stroke: K.ink, 'stroke-width': 4 }, ic); mk('circle', { cx: -14, cy: -10, r: 5, fill: K.ink }, ic); mk('circle', { cx: 14, cy: -10, r: 5, fill: K.ink }, ic); path(ic, 'M-18 24Q0 8 18 24', { stroke: K.ink, 'stroke-width': 5 }); path(ic, 'M-26 -26L-6 -20M26 -26L6 -20', { stroke: K.ink, 'stroke-width': 4 }); });
+    tile(90, 510, m('d', 0), 'Isoamyl acetate', 'aroma pisang', ic => { mk('path', { d: 'M-36 -22Q-6 40 40 18Q4 52 -40 10Q-46 -8 -36 -22Z', fill: '#e6c629', stroke: K.ink, 'stroke-width': 4 }, ic); path(ic, 'M-36 -22L-42 -34', { stroke: K.ink, 'stroke-width': 5 }); });
+    tile(410, 510, m('e', 0), 'Irritant smoke', 'memicu batuk', ic => { [[-22, 8, 24], [8, -6, 28], [30, 14, 20]].forEach(([x, y, r]) => mk('circle', { cx: x, cy: y, r, fill: '#e1ddd0', stroke: K.dim, 'stroke-width': 3 }, ic)); path(ic, 'M-8 -40L-14 -52M8 -42L14 -54', { stroke: K.bad, 'stroke-width': 4 }); });
+    // QNFT: a mask with a probe tube to a counter that shows outside against inside
+    const q = G(p, { o: 0 }); tw(q, { o: 1 }, m('f', 1.2), .6);
+    const mm = G(q, { x: 1010, y: 360 }); mk('path', { d: cupPath(0, 0, 70, 62), fill: '#fff', stroke: K.ink, 'stroke-width': 5 }, mm); mk('circle', { cx: 0, cy: 18, r: 11, fill: '#e8e4d6', stroke: K.ink, 'stroke-width': 4 }, mm);
+    path(q, 'M1010 380C1010 480 1100 480 1180 500', { stroke: K.ink, 'stroke-width': 5 });
+    path(q, 'M1070 310C1130 280 1190 330 1230 410', { stroke: K.dim, 'stroke-width': 5, 'stroke-dasharray': '2 9' });
+    for (let i = 0; i < 7; i++) mk('circle', { cx: 1090 + i * 22, cy: 270 + (i % 3) * 20, r: 6, fill: K.bad }, q);
+    mk('rect', { x: 1180, y: 430, width: 260, height: 200, rx: 18, fill: '#e8e4d6', stroke: K.ink, 'stroke-width': 5 }, q);
+    mk('rect', { x: 1200, y: 450, width: 220, height: 100, rx: 8, fill: '#26323d' }, q);
+    const bo = mk('rect', { x: 1226, y: 470, width: 36, height: 70, fill: K.bad }, q), bi = mk('rect', { x: 1330, y: 520, width: 36, height: 20, fill: K.ok }, q);
+    prog(u => { const h = 66 + 6 * Math.sin(u * 40), k = 18 + 3 * Math.sin(u * 31); bo.setAttribute('y', 540 - h); bo.setAttribute('height', h); bi.setAttribute('y', 540 - k); bi.setAttribute('height', k); }, m('f', 1.2), D - m('f', 1.2), lin);
+    T(q, 'luar', { x: 1244, y: 580, size: 22, anchor: 'middle', fill: K.bad, weight: 700 }); T(q, 'dalam', { x: 1348, y: 580, size: 22, anchor: 'middle', fill: K.ok, weight: 700 });
+    pill(p, 'Portacount', 1310, 700, K.nnt, m('f', 4.2), { size: 32, anchor: 'middle' });
+    text(p, 'skematis', 1470, 800, m('f', 1.4), { size: 22, fill: K.dim, anchor: 'end' });
+  }],

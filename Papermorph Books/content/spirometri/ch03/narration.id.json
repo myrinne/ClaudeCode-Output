@@ -1,0 +1,23 @@
+{
+  "voice": "id-ID-GadisNeural",
+  "rate": "-4%",
+  "beats": {
+    "intro": "Bab tiga. Kurva valid atau cacat. [[sub]]Angka spirometri hanya sebaik kurvanya.",
+    "sebelum": "Sebelum pasien, alat diperiksa. [[a]]Uji kebocoran: batasnya berbeda menurut sumber. [[b]]Lalu syringe tiga liter. Batas tiga persen: dua koma sembilan satu sampai tiga koma nol sembilan liter. [[c]]Contoh ilustratif: tiga koma nol lima, lolos. [[d]]Tiga koma satu dua, gagal. [[e]]Dan nose clip, supaya udara tidak bocor lewat hidung.",
+    "lima": "Lima kriteria acceptable, menurut PERDOKI. [[a]]Awal yang baik, tegak, tanpa hesitation. [[b]]Inspirasi dan ekspirasi maksimal. [[c]]Satu puncak. [[d]]Bebas artefak. [[e]]Selesai dengan baik: enam detik, atau plateau satu detik. [[f]]Kurva acceptable memenuhi kelimanya.",
+    "awal": "[[a]]Awal dinilai dengan be e ve, volume hasil ekstrapolasi mundur. [[b]]Garis singgung di bagian tercuram ditarik ke waktu nol. [[c]]Batasnya: lima persen ka ve pe, atau seratus mililiter, yang lebih besar. [[d]]Contoh ilustratif: ka ve pe empat liter. Lima persen adalah dua ratus mililiter, jadi batasnya dua ratus. [[e]]Pasien ragu, kurva landai dulu. be e ve seratus delapan puluh: lolos. [[f]]Dua ratus empat puluh: gagal. [[g]]ka ve pe dan ve e pe satu terukur terlalu rendah.",
+    "akhir": "[[a]]Akhir ekspirasi. [[b]]PERDOKI: enam detik, atau plateau satu detik. [[c]]a te es dan e er es menghapus aturan enam detik: plateau di bawah dua puluh lima mililiter selama satu detik, atau ef e te lima belas detik. [[d]]Dua sumber, dua rumusan. [[e]]Pasien berhenti terlalu cepat: kurva masih menanjak saat terpotong. [[f]]ka ve pe terukur terlalu rendah.",
+    "fivc": "[[a]]ef i ve ce: volume inspirasi paksa sesudah ekspirasi. [[b]]Menurut catatan, ef i ve ce dikurangi ka ve pe lebih dari seratus mililiter, atau lebih dari lima persen: tidak acceptable. [[c]]Lingkarannya tidak menutup. Pasien tidak mulai dari te el ce penuh.",
+    "batuk": "Artefak kelompok pertama: menurunkan nilai. [[a]]Batuk di detik pertama: takik tajam. [[b]]ve e pe satu tidak acceptable. ka ve pe masih bisa, bila batuk setelah detik pertama. [[c]]Penutupan glotis: aliran turun mendadak. [[d]]Keduanya tidak acceptable.",
+    "bocor": "[[a]]Kebocoran: kurva volume-waktu mendatar terlalu dini, pada volume rendah. [[b]]Bandingkan dengan manuver lain. [[c]]Usaha submaksimal: puncak rendah dan tumpul. [[d]]Catatan menyebutnya cekung, kata yang sama dengan obstruksi. [[e]]Bedanya: cekung obstruksi mulai setelah puncak. Pada submaksimal puncaknya sendiri rendah dan tumpul, dan berubah antar manuver.",
+    "q1": "Cek cepat. Klik bagian kurva yang cacat.",
+    "rasio": "Kelompok kedua: memalsukan rasio. [[a]]Zero-flow error. [[b]]Under-recording: ka ve pe terekam jauh lebih kecil daripada ve e pe satu. [[c]]Rasio naik palsu. Obstruksi sejati tersembunyi. [[d]]Over-recording: ka ve pe naik semu, kurva tak pernah datar. [[e]]Rasio turun palsu. Obstruksi palsu. [[f]]Ekor aliran-volume memanjang ke kanan. [[g]]Arahnya berlawanan.",
+    "hidung": "[[a]]Extra breath via nose, arahnya sama dengan over-recording. [[b]]Pasien menghirup tambahan lewat hidung di akhir embusan, lalu mengembuskannya lagi. [[c]]Ekor ganda. [[d]]ka ve pe naik palsu, rasio turun palsu. [[e]]Nose clip wajib.",
+    "q2": "Cek cepat. Klik kurva yang mencurigakan sebagai obstruksi palsu.",
+    "ulang": "[[a]]Repeatability: minimal tiga manuver acceptable, paling banyak delapan. [[b]]Jeda satu menit atau lebih. [[c]]Dua terbesar berselisih paling banyak seratus lima puluh mililiter. [[d]]Contoh ilustratif, ka ve pe: selisih seratus mililiter, lolos. [[e]]ve e pe satu: dua ratus mililiter, tidak lolos. [[f]]Yang tertinggi boleh berasal dari kurva berbeda.",
+    "variabel": "[[a]]Terakhir, usaha tidak konsisten. [[b]]Tumpuk tiga kurva. Bentuk sama, puncak sedikit beda: konsisten. [[c]]Bentuk berbeda-beda: data tidak reproducible. [[d]]Tidak boleh ditarik kesimpulan.",
+    "wrap": "Ringkasnya. [[w1]]Verifikasi alat dulu: syringe tiga liter, batas tiga persen. [[w2]]Kurva acceptable memenuhi lima kriteria PERDOKI. [[w3]]Artefak: sebagian menurunkan nilai, sebagian memalsukan rasio, ke arah berlawanan. [[w4]]Ulangi minimal tiga kali, dua terbesar berselisih paling banyak seratus lima puluh mililiter, bentuk konsisten. [[end]]Sekarang latihan.",
+    "final1": "Latihan bab. Nilai setiap kurva.",
+    "finish": "Bab tiga selesai."
+  }
+}
