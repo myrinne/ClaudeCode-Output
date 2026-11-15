@@ -1,0 +1,173 @@
+Answer:
+Pemilihan uji statistik bergantung pada tujuan analisis, jenis skala data 
+(kategorik atau numerik), asumsi distribusi (normalitas), jumlah kelompok, 
+serta hubungan antar kelompok (independen atau berpasangan) [1, 2].
+
+---
+
+### 1. Penjelasan Cara Memilih Uji Statistik
+
+#### A. Data Kategorik: Chi-Square vs Fisher’s Exact Test
+* **Chi-Square (\\(\chi^2\\)) Test**: Digunakan untuk menguji asosiasi atau 
+perbedaan proporsi antara variabel-variabel kategorik dalam tabel kontingensi 
+(misalnya tabel \\(2 \times 2\\)) [3, 4]. Uji ini bekerja dengan membandingkan 
+nilai observasi dengan nilai harapan (*expected value*) [4].
+* **Kapan Menggunakan Fisher’s Exact Test**:
+  * Fisher's exact test digunakan jika ukuran sampel kecil atau terdapat 
+**nilai harapan (*expected value*) kurang dari 5 (\\(E < 5\\))** pada salah 
+satu sel tabel kontingensi [4, 5]. 
+  * Nilai harapan untuk setiap sel dihitung dengan rumus:
+    \[\text{Expected Value} = \frac{\text{Total Baris} \times \text{Total 
+Kolom}}{\text{Total Keseluruhan}}\\] [5]
+  * Fisher's exact test memberikan nilai \\(p\\) yang eksak (*exact p-value*), 
+sedangkan Chi-Square memberikan nilai hampiran (*approximation*) [3, 6]. Jika 
+semua sel memiliki nilai harapan \\(\ge 5\\), uji Chi-Square aman dan umum 
+digunakan [5].
+
+#### B. Data Numerik Komparatif (2 Kelompok): Independent t-Test vs Paired 
+t-Test
+* **Independent (Unpaired) t-Test**: Digunakan untuk membandingkan rata-rata 
+(*mean*) dari **2 kelompok yang independen/tidak berpasangan** (subjek berbeda 
+di masing-masing kelompok, misalnya kelompok perlakuan vs kontrol), dengan 
+syarat data berskala kontinu dan berdistribusi normal (parametrik) [1, 7, 8].
+* **Paired t-Test**: Digunakan untuk membandingkan rata-rata dari **2 kelompok 
+yang berpasangan** (*matched/repeated measures*), seperti pengukuran sebelum 
+dan sesudah intervensi pada subjek yang sama (*pre-test vs post-test*) atau 
+subjek yang dipasangkan secara individual [1, 7, 8].
+
+#### C. Data Numerik Komparatif (≥ 3 Kelompok): ANOVA
+* **One-Way ANOVA (Analysis of Variance)**: Perluasan dari *t-test* untuk 
+membandingkan rata-rata dari **3 kelompok independen atau lebih** dengan 
+distribusi normal [1, 8]. Jika ANOVA menunjukkan perbedaan signifikan, uji 
+lanjut (*post-hoc*) dapat dilakukan untuk melihat kelompok mana yang berbeda 
+secara spesifik [8].
+* **Repeated-Measures ANOVA**: Digunakan apabila terdapat **3 atau lebih 
+pengukuran berulang** pada subjek yang sama atau kelompok yang dipasangkan 
+secara berkala (misal: berat badan pada baseline, hari ke-10, hari ke-20, dan 
+hari ke-30) [1, 8].
+
+#### D. Uji Non-Parametrik Komparatif (Alternatif Jika Data Tidak Normal atau 
+Ordinal)
+Jika data kontinu tidak memenuhi asumsi distribusi normal (misalnya *skewed* 
+atau terdapat nilai ekstrem) atau berskala ordinal (skor, peringkat), uji 
+non-parametrik berbasis peringkat (*rank*) digunakan [9-11]:
+* **Mann-Whitney U Test (Wilcoxon Rank-Sum)**: Alternatif non-parametrik untuk 
+*independent t-test*, digunakan untuk membandingkan **2 kelompok independen** 
+[1, 11].
+* **Wilcoxon Signed-Rank Test**: Alternatif non-parametrik untuk *paired 
+t-test*, digunakan untuk membandingkan **2 pengukuran berpasangan** [1, 9].
+* **Kruskal-Wallis Test**: Alternatif non-parametrik untuk *one-way ANOVA*, 
+digunakan untuk membandingkan **\\(\ge 3\\) kelompok independen** [1, 9].
+* *(Catatan Pengetahuan Umum)*: Alternatif non-parametrik untuk 
+*repeated-measures ANOVA* pada \\(\ge 3\\) kelompok berpasangan adalah 
+**Friedman test** [1].
+
+#### E. Analisis Asosiasi/Hubungan: Korelasi Pearson vs Spearman
+* **Pearson Correlation (\\(r\\))**: Uji parametrik untuk mengukur derajat 
+kekuatan dan arah hubungan linear antara **dua variabel kontinu numerik** yang 
+keduanya berdistribusi normal [1, 12, 13].
+* **Spearman Rank Correlation (\\(\rho\\))**: Uji non-parametrik untuk mengukur
+hubungan monotonik antara dua variabel jika salah satu atau kedua variabel 
+**tidak berdistribusi normal**, berbentuk **ordinal/peringkat**, atau 
+hubungannya tidak linear murni [1, 12, 14].
+
+#### F. Analisis Prediksi / Pemodelan: Regresi Linear vs Regresi Logistik
+* **Regresi Linear (Linear Regression)**: Digunakan ketika variabel dependen 
+(keluaran/*outcome*) berskala **kontinu numerik** [1, 15, 16]. Regresi linear 
+memodelkan hubungan garis lurus untuk memperkirakan perubahan nilai keluaran 
+berdasarkan satu variabel prediktor (regresi linear sederhana) atau beberapa 
+variabel prediktor (regresi linear berganda) [1, 16].
+* **Regresi Logistik (Logistic Regression)**: Digunakan ketika variabel 
+dependen berskala **kategorik biner/dikotomis** (misalnya sakit vs tidak sakit,
+hidup vs mati, kasus vs kontrol) [1, 15, 16]. Regresi logistik memodelkan 
+probabilitas kejadian dalam bentuk rasio odds (*odds ratio* / OR) yang 
+disesuaikan (*adjusted*) terhadap variabel-variabel perancu (*confounders*) 
+[15-17].
+
+---
+
+### 2. Tabel Keputusan Pemilihan Uji Statistik
+
+| Jenis Data Keluaran (*Dependent Variable*) | Jumlah Kelompok / Pengukuran | 
+Sifat Hubungan Kelompok | Asumsi Normalitas (Gaussian) | Uji Statistik yang 
+Tepat | Status / Sumber Sitasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Kategorik / Proporsi** | 2 kelompok independen (\\(2 \times 2\\)) | Tidak 
+berpasangan | Tidak relevan (Kategorik) | **Chi-Square Test** (bila semua sel 
+*expected value* \\(\ge 5\\)) [5] | Sumber Notebook [1, 5] |
+| **Kategorik / Proporsi** | 2 kelompok independen (\\(2 \times 2\\)) | Tidak 
+berpasangan | Tidak relevan (Kategorik) | **Fisher's Exact Test** (bila 
+terdapat *expected value* \\(< 5\\)) [5] | Sumber Notebook [3-5] |
+| **Kategorik / Proporsi** | 2 kelompok berpasangan (\\(2 \times 2\\)) | 
+Berpasangan / *Matched* | Tidak relevan (Kategorik) | **McNemar's Test** [1, 
+18] | Sumber Notebook [1, 18] |
+| **Kategorik / Proporsi** | \\(\ge 3\\) kelompok | Tidak berpasangan | Tidak 
+relevan (Kategorik) | **Chi-Square Test** (\\(r \times c\\)) [1] | Sumber 
+Notebook [1] |
+| **Numerik Kontinu** | 2 kelompok | Tidak berpasangan (Independen) | Normal 
+(Parametrik) | **Independent (Unpaired) t-Test** [1, 8] | Sumber Notebook [1, 
+8] |
+| **Numerik Kontinu / Ordinal** | 2 kelompok | Tidak berpasangan (Independen) |
+Tidak Normal / Ordinal | **Mann-Whitney U Test** [1, 11] | Sumber Notebook [1, 
+11] |
+| **Numerik Kontinu** | 2 kelompok / 2 kondisi | Berpasangan 
+(*Paired/Pre-Post*) | Normal (Parametrik) | **Paired t-Test** [1, 8] | Sumber 
+Notebook [1, 8] |
+| **Numerik Kontinu / Ordinal** | 2 kelompok / 2 kondisi | Berpasangan 
+(*Paired/Pre-Post*) | Tidak Normal / Ordinal | **Wilcoxon Signed-Rank Test** 
+[1, 11] | Sumber Notebook [1, 11] |
+| **Numerik Kontinu** | \\(\ge 3\\) kelompok | Tidak berpasangan (Independen) |
+Normal (Parametrik) | **One-Way ANOVA** [1, 8] | Sumber Notebook [1, 8] |
+| **Numerik Kontinu / Ordinal** | \\(\ge 3\\) kelompok | Tidak berpasangan 
+(Independen) | Tidak Normal / Ordinal | **Kruskal-Wallis Test** [1, 14] | 
+Sumber Notebook [1, 14] |
+| **Numerik Kontinu** | \\(\ge 3\\) pengukuran | Berpasangan (*Repeated 
+measures*) | Normal (Parametrik) | **Repeated-Measures ANOVA** [1, 8] | Sumber 
+Notebook [1, 8] |
+| **Numerik Kontinu / Ordinal** | \\(\ge 3\\) pengukuran | Berpasangan 
+(*Repeated measures*) | Tidak Normal / Ordinal | **Friedman Test** [1] | Sumber
+Notebook [1] |
+| **Korelasi (2 Numerik)** | 2 variabel kontinu | Berpasangan pada subjek yang 
+sama | Normal (Parametrik) | **Korelasi Pearson (\\(r\\))** [1, 12] | Sumber 
+Notebook [1, 12, 14] |
+| **Korelasi (2 Numerik/Ordinal)** | 2 variabel (kontinu/ordinal) | Berpasangan
+pada subjek yang sama | Tidak Normal / Skala Ordinal | **Korelasi Spearman 
+(\\(\rho\\))** [1, 12] | Sumber Notebook [1, 12, 14] |
+| **Prediksi (Dependen Kontinu)** | 1 atau lebih prediktor | Independen | 
+Residual berdistribusi normal | **Regresi Linear (Sederhana / Berganda)** [1, 
+15, 16] | Sumber Notebook [1, 15, 16] |
+| **Prediksi (Dependen Biner)** | 1 atau lebih prediktor | Independen | 
+Distribusi binomial/logistik | **Regresi Logistik (Biner / Multivariabel)** [1,
+15, 16] | Sumber Notebook [1, 15, 16] |
+
+---
+
+### 3. Rincian Sumber yang Digunakan
+
+* **Sumber Primer dari Notebook Anda**:
+  1. *Choosing a statistical test - FAQ 1790 - GraphPad* (Harvey Motulsky, 
+*Intuitive Biostatistics*) [1, 3, 12, 19].
+  2. *Principles of Use of Biostatistics in Research - PMC* (Veena Manja dkk., 
+*Neoreviews*) [4, 8, 11, 14, 16, 20].
+  3. *Analyzing and Interpreting Data | Field Epi Manual | CDC* [5, 15, 18, 
+21].
+  4. *Principles of Epidemiology: Lesson 6, Section 2 | CDC* [22-24].
+* **Penandaan Pengetahuan Umum (*General Knowledge*)**:
+  * Seluruh uji utama yang diminta (Chi-Square, Fisher's exact dengan cutoff 
+\\(E < 5\\), \\(t\\)-test, paired \\(t\\)-test, ANOVA, Mann-Whitney, 
+Kruskal-Wallis, Wilcoxon, Pearson, Spearman, regresi linear, dan regresi 
+logistik) **termuat dan terdokumentasi langsung di dalam sumber notebook 
+Anda**. 
+  * Tambahan konseptual seperti uji normalitas formal (misalnya *Shapiro-Wilk* 
+atau *Kolmogorov-Smirnov* untuk verifikasi awal kurva Gaussian sebelum memilih 
+uji parametrik) serta kriteria perluasan Cochran pada tabel kontingensi \\(r 
+\times c\\) (>20% sel memiliki \\(E < 5\\)) merupakan bagian dari **pengetahuan
+umum biostatistika standar**.
+
+---
+
+📊 Jika Anda sedang menyiapkan analisis untuk dataset tertentu atau simulasi 
+soal ujian board, kita bisa membedah contoh kasus epidemiologi konkret untuk 
+melatih penentuan uji statistiknya langkah demi langkah.
+
+New conversation: 21d587cb-fa8f-4332-ba05-736880f96e74
