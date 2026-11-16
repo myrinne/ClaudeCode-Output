@@ -1,0 +1,221 @@
+Answer:
+### Klasifikasi Desain Penelitian Epidemiologi
+
+Dalam metodologi penelitian kesehatan dan epidemiologi, desain penelitian 
+secara garis besar dibagi menjadi dua payung utama berdasarkan ada tidaknya 
+manipulasi atau perlakuan oleh peneliti terhadap subjek penelitian [1]:
+1. **Studi Observasional**: Peneliti mengamati subjek, mengukur paparan dan 
+luaran penyakit secara alamiah tanpa melakukan intervensi atau randomisasi 
+terhadap status pajanan [1, 2].
+   - **Deskriptif**: Bertujuan untuk mendeskripsikan distribusi penyakit 
+berdasarkan orang, tempat, dan waktu (*who, where, when*), serta merumuskan 
+hipotesis etiological awal tanpa kelompok pembanding [3, 4]. Contohnya: *case 
+report*, *case series*, studi ekologis, dan sebagian studi *cross-sectional* 
+[4].
+   - **Analitik**: Bertujuan untuk menguji hipotesis asosiasi atau kausalitas 
+antara pajanan dan penyakit dengan menyertakan kelompok pembanding (*why, how*)
+[4-6]. Contohnya: studi *case-control* dan studi kohort [4-6].
+2. **Studi Eksperimental (Intervensi)**: Peneliti mengendalikan dan 
+memanipulasi pemberian intervensi (misalnya obat, vaksin, atau prosedur 
+kesehatan masyarakat) kepada kelompok subjek untuk menilai efek sebab-akibat 
+[1, 7, 8].
+   - **Randomized Controlled Trial (RCT)**: Alokasi intervensi dan kontrol 
+dilakukan secara acak (randomisasi) [8, 9].
+   - **Quasi-Experimental (Eksperimen Semu)**: Dilakukan intervensi terencana, 
+tetapi alokasi subjek ke dalam kelompok perlakuan tidak menggunakan randomisasi
+[1, 10, 11].
+
+---
+
+### Tabel Perbandingan Desain Penelitian Epidemiologi
+
+| Desain Penelitian | Pertanyaan yang Dijawab | Ukuran Frekuensi & Asosiasi | 
+Kelebihan | Kelemahan | Bias Khas |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Case Report & Case Series** *(Observasional Deskriptif)* | "Apa tanda, 
+gejala, atau temuan klinis baru/tidak biasa yang muncul pada satu atau 
+sekumpulan pasien?" [4] | • **Frekuensi**: Jumlah kasus, proporsi temuan klinis
+[4].<br>• **Asosiasi**: Tidak ada ukuran asosiasi formal karena tidak memiliki 
+kelompok pembanding [4, 12]. | • Cepat mendeteksi penyakit/efek samping baru 
+atau langka [4].<br>• Menjadi dasar perumusan hipotesis awal [4, 12]. | • Tidak
+memiliki kelompok kontrol/pembanding [12].<br>• Tidak dapat menguji hipotesis 
+asosiasi kausal maupun menghitung risiko [4, 12]. | • **Selection bias** 
+(laporan terpilih/hanya kasus menarik) *(pengetahuan umum)*.<br>• **Reporting 
+bias** [13]. |
+| **Studi Ekologis / Korelasional** *(Observasional Deskriptif/Etiologik 
+Populasional)* | "Apakah tingkat paparan rata-rata suatu populasi berkorelasi 
+dengan angka kejadian penyakit pada tingkat populasi/wilayah tersebut?" [4, 14,
+15] | • **Frekuensi**: Angka insidensi/mortalitas agregat [15].<br>• 
+**Asosiasi**: Koefisien korelasi (\\(r\\) Pearson/Spearman), rasio prevalensi 
+kasar [4, 16, 17]. | • Cepat, murah, dan mudah dilakukan [4].<br>• Dapat 
+memanfaatkan data rutin/sekunder yang sudah tersedia di tingkat populasi [4]. |
+• Tidak menggunakan data tingkat individu (unit observasi berupa kelompok) [4, 
+15].<br>• Tidak dapat mengontrol faktor perancu individual [15]. | • 
+**Ecological Fallacy** (bias ekologis: mengasumsikan korelasi tingkat agregat 
+berlaku pada individu) [4, 15].<br>• **Confounding bias** berat [15]. |
+| **Cross-Sectional (Potong Lintang)** *(Observasional Deskriptif / Analitik)* 
+| "Berapa banyak individu yang memiliki paparan dan/atau penyakit pada satu 
+titik waktu tertentu?" [4, 18, 19] | • **Frekuensi**: Prevalensi titik (*point 
+prevalence*), prevalensi periode [17, 20].<br>• **Asosiasi**: *Prevalence 
+Ratio* (PR), *Prevalence Odds Ratio* (POR) [4, 17, 21, 22]. | • Cepat dan 
+relatif murah [4].<br>• Mengukur beban penyakit (*disease burden*) populasi 
+untuk perencanaan layanan kesehatan [4, 18]. | • Tidak dapat membuktikan 
+temporalitas kausal (*chicken-or-egg problem*) karena paparan dan luaran diukur
+bersamaan [4, 19, 23].<br>• Tidak efisien untuk penyakit langka atau berdurasi 
+singkat [4, 18]. | • **Length-time bias / Neyman bias** (cenderung menangkap 
+kasus berdurasi panjang/kronis dibanding kasus fatal akut) [20, 24].<br>• 
+**Recall bias** [23].<br>• **Sampling / Non-response bias** [25, 26]. |
+| **Case-Control (Kasus-Kontrol)** *(Observasional Analitik)* | "Apakah riwayat
+paparan masa lalu berbeda antara kelompok orang yang sakit (kasus) dibandingkan
+yang tidak sakit (kontrol)?" [27-30] | • **Frekuensi**: Proporsi pajanan pada 
+kasus dan kontrol [28, 31].<br>• **Asosiasi**: *Odds Ratio* (OR) [4, 
+32-35].<br>*(Bila penyakit langka, OR mendekati RR [34, 36, 37]).* | • Sangat 
+efisien untuk penyakit langka atau yang memiliki masa laten panjang [4, 27, 
+30].<br>• Cepat dan membutuhkan sampel lebih kecil, cocok untuk penyelidikan 
+wabah [4, 28, 38]. | • Tidak dapat mengukur insidensi atau risiko secara 
+langsung (\\(RR\\) tidak dapat dihitung langsung karena tidak ada denominator 
+populasi berisiko) [4, 32, 34, 39].<br>• Sulit memilih kelompok kontrol yang 
+representatif [29, 40]. | • **Recall bias** (kasus mengingat riwayat paparan 
+lebih intensif dibanding kontrol) [27, 41, 42].<br>• **Selection bias / 
+Berkson's bias** (bila kontrol diambil dari pasien rumah sakit) [25, 43, 44]. |
+| **Kohort (Prospektif / Retrospektif)** *(Observasional Analitik)* | "Apakah 
+pajanan tertentu mendahului dan meningkatkan terjadinya kasus baru (insidensi) 
+penyakit di masa depan?" [2, 45, 46] | • **Frekuensi**: *Cumulative Incidence*,
+*Incidence Rate* (*Person-Time*), *Attack Rate* [17, 47-49].<br>• **Asosiasi**:
+*Risk Ratio* / *Relative Risk* (RR), *Rate Ratio*, *Hazard Ratio* (HR), *Risk 
+Difference* (RD) [4, 49-53]. | • Menjamin kepastian temporalitas (pajanan 
+dipastikan terjadi sebelum penyakit) [2, 4, 45, 46].<br>• Ideal untuk meneliti 
+paparan langka dan dapat mengamati banyak luaran sekaligus [4, 46, 54, 
+55].<br>• Memberikan perhitungan risiko langsung [4, 56]. | • Mahal, rumit, dan
+memerlukan periode tindak lanjut yang panjang [4, 54, 55].<br>• Rentan 
+kehilangan subjek selama pengamatan [54, 55, 57].<br>• Tidak efisien untuk 
+penyakit yang sangat langka [4, 58]. | • **Loss to follow-up / Attrition bias**
+(subjek yang keluar berbeda karakteristiknya) [25, 54, 57].<br>• **Healthy 
+Worker Effect** (pada kohort okupasional di mana pekerja aktif lebih sehat 
+daripada populasi umum) [59, 60].<br>• **Misclassification bias** [54, 61]. |
+| **Randomized Controlled Trial (RCT)** *(Eksperimental Murni)* | "Apakah 
+intervensi/terapi baru lebih superior atau aman dibandingkan perlakuan 
+standar/plasebo dalam kondisi acak terkontrol?" [8, 9, 24, 62] | • 
+**Frekuensi**: *Event rate* (kejadian klinis/sembuh/kematian) [51].<br>• 
+**Asosiasi**: *Risk Ratio* (RR), *Absolute Risk Reduction* (ARR / RD), 
+*Relative Risk Reduction* (RRR), *Number Needed to Treat* (NNT), *Number Needed
+to Harm* (NNH), *Hazard Ratio* (HR) [51-53, 63-65]. | • Standar baku emas 
+pembuktian kausalitas [9, 66-68].<br>• Randomisasi mendistribusikan faktor 
+perancu (*confounders*)—baik yang diketahui maupun yang tidak diketahui—secara 
+seimbang [9, 66, 67, 69].<br>• Penyamaran (*blinding*) dan *allocation 
+concealment* meminimalkan bias subjektif [9, 41, 70]. | • Biaya sangat mahal 
+dan durasi lama [24].<br>• Hambatan etika (tidak dapat menguji paparan 
+bahaya/toksik secara sengaja) [71, 72].<br>• Validitas eksternal 
+(*generalisabilitas*) sering terbatas karena kriteria inklusi/eksklusi yang 
+sangat kaku [9, 73]. | • **Observer / Performance bias** (jika pembutaan tidak 
+sempurna) [41, 74, 75].<br>• **Allocation bias** (bila proses *concealment* 
+gagal) [9, 70, 75].<br>• **Attrition bias** (subjek yang *drop-out* dari salah 
+satu lengan uji) [75]. |
+| **Quasi-Experimental (Non-Randomized Trial)** *(Eksperimental Semu)* | 
+"Apakah terdapat perbedaan luaran setelah intervensi diterapkan pada kelompok 
+yang tidak dirandomisasi atau dibandingkan sebelum dan sesudah intervensi?" 
+[10, 11, 76] | • **Frekuensi**: Tingkat kejadian sebelum vs sesudah intervensi 
+[10, 11].<br>• **Asosiasi**: *Risk Ratio* (RR), *Rate Ratio*, atau selisih laju
+kejadian (*Difference-in-Differences*) [11, 62, 77]. | • Layak dilakukan ketika
+randomisasi tidak memungkinkan secara etis, praktis, atau politis (misalnya 
+kebijakan publik, program sanitasi wilayah) [68, 76, 78].<br>• Memberikan 
+evaluasi kondisi dunia nyata (*real-world setting*) [68]. | • Tanpa 
+randomisasi, kelompok perlakuan dan pembanding sering kali memiliki perbedaan 
+karakteristik dasar yang substansial [77, 78].<br>• Rentan terhadap pengaruh 
+tren waktu yang berjalan bersamaan [77, 79, 80]. | • **Confounding bias** berat
+(ketiadaan randomisasi gagal menyeimbangkan perancu) [77, 78, 80].<br>• 
+**Historical / Temporal trend bias** (perubahan luaran terjadi akibat faktor 
+waktu, bukan intervensi) [77, 79, 80].<br>• **Selection bias** [77, 78]. |
+
+---
+
+### Hierarki Bukti Ilmiah (*Hierarchy of Evidence*)
+
+Dalam tradisi *Evidence-Based Medicine* (EBM), desain studi diurutkan 
+berdasarkan kemampuannya meminimalkan bias dan mengendalikan faktor perancu 
+saat menarik kesimpulan kausal [66, 81-83]:
+
+```
+                     ▲
+                    / \     1. Systematic Review & Meta-Analysis of RCTs [81, 
+84]
+                   /---\
+                  /     \    2. Randomized Controlled Trials (RCT) [66, 80, 84,
+85]
+                 /-------\
+                /         \   3. Quasi-Experimental / Non-Randomized Controlled
+Trials [84, 85]
+               /-----------\
+              /             \  4. Studi Kohort (Prospektif & Retrospektif) [80,
+84, 85]
+             /---------------\
+            /                 \ 5. Studi Kasus-Kontrol (Case-Control) [80, 84, 
+85]
+           /-------------------\
+          /                     \ 6. Studi Cross-Sectional & Studi Ekologis 
+[80, 84]
+         /-----------------------\
+        /                         \ 7. Case Series & Case Reports [80, 84, 85]
+       /---------------------------\
+      /                             \ 8. Pendapat Ahli, Laporan Konsensus, 
+Studi In-Vitro/Hewan [84, 85]
+     ◄───────────────────────────────►
+```
+
+- **Puncak Piramida (Bukti Tertinggi)**: *Systematic Review* dan 
+*Meta-Analysis* dari RCT menduduki hierarki teratas karena menggabungkan dan 
+menilai secara kritis temuan dari berbagai uji klinis independen [11, 81, 84].
+- **Tingkat Menengah ke Atas**: RCT dan uji terkontrol lainnya membatasi bias 
+melalui desain intervensi langsung [9, 66, 85]. Studi kohort menempati 
+peringkat tertinggi di antara studi observasional berkat kepastian urutan waktu
+(*temporality*) [45, 54, 85, 86].
+- **Tingkat Menengah ke Bawah**: *Case-control* dan *cross-sectional* 
+memberikan bukti asosiasi awal yang sangat berharga tetapi lebih rentan 
+terhadap bias penarikan memori (*recall*) dan kesulitan memastikan hubungan 
+kausalitas sementara [18, 23, 27, 85].
+- **Dasar Piramida**: *Case series*, *case reports*, dan pendapat ahli menjadi 
+pemicu hipotesis awal dalam praktik kedokteran tetapi memiliki risiko bias 
+seleksi tertinggi serta ketiadaan kontrol [12, 84, 85].
+
+---
+
+### Sumber yang Digunakan
+
+1. **Sumber Notebook**:
+   - *Study Designs – Epidemiology* (Charlotte Baker / Virginia Tech Libraries)
+[1, 4, 17, 19, 23, 30, 35, 46, 56, 64, 65, 68, 84, 87, 88].
+   - *Appendix D Glossary of study designs | Methods for the development of 
+NICE public health guidance (third edition)* (NICE UK) [2, 9-11, 14, 18, 27, 
+54, 78, 89].
+   - *Analyzing and Interpreting Data | Field Epi Manual* (CDC) [22, 32, 50, 
+90-93].
+   - *Principles of Epidemiology in Public Health Practice* (Lesson 3 & Lesson 
+6, CDC) [6, 20, 29, 33, 34, 37, 39, 48, 49, 94-96].
+   - *Biases and Confounding & Role of chance, bias and confounding in 
+epidemiological studies* (Health Knowledge UK) [41-43, 57, 69, 97-102].
+   - *Principles of Use of Biostatistics in Research* (PMC) [51, 52, 103].
+   - *Evidence-based medicine & Cohort study* (Wikipedia / EBM Classification) 
+[7, 45, 55, 63, 66, 81, 82, 85, 104-106].
+   - *Healthy Worker Effect Phenomenon: Revisited with Emphasis on Statistical 
+Methods* (PMC) [59, 60].
+   - *Methodologic Issues in the Evaluation of Early Detection Programs* & 
+*Potential of Screening to Reduce the Burden of Cancer* (NCBI Bookshelf) [12, 
+24, 67, 80, 107, 108].
+   - *Bradford Hill Criteria & Causation* (Robyn M. Lucas & Anthony J. 
+McMichael, WHO / PMC) [73, 86, 109-113].
+2. **Pengetahuan Umum Epidemiologi**:
+   - Penamaan spesifik varian bias klasik seperti *Berkson's bias* untuk 
+pemilihan kontrol pasien rawat inap pada studi kasus-kontrol *(pengetahuan umum
+epidemiologi)*.
+   - Penamaan *Neyman bias* / *selective survival bias* sebagai mekanisme 
+spesifik dari *length-time bias* pada studi potong lintang *(pengetahuan umum 
+epidemiologi)*.
+
+---
+
+💡 Jika Anda sedang mempersiapkan ujian dewan (Board Exam) atau analisis data 
+penelitian tertentu, kita bisa membedah perhitungan matematis \\(2 \times 2\\) 
+(seperti *odds ratio* pada data berpasangan menggunakan uji McNemar, atau cara 
+mengatasi perancu dengan metode Mantel-Haenszel).
+
+New conversation: 21d587cb-fa8f-4332-ba05-736880f96e74

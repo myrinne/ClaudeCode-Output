@@ -1,0 +1,24 @@
+J.0 Peta prediksi dan cara memakai|J00_peta
+J.1 Tabel 2x2: risk ratio, odds ratio, risk difference|J01
+J.2 Healthy worker effect|J02
+J.3 Studi cross-sectional|J03
+J.4 Sensitivitas, spesifisitas, PPV, NPV|J04
+J.5 Bias, confounding, interaction, stratification|J05
+J.6 Bias pada program skrining|J06
+J.7 Confidence interval untuk tabel 2x2|J07
+J.8 Distribusi normal dan batas 95%|J08
+J.9 Randomisasi dan RCT|J09
+J.10 Studi case-control dan pemilihan kontrol|J10
+J.11 Studi kohort|J11
+J.12 Klasifikasi desain penelitian dan ukuran per desain|J12
+J.13 Memilih uji statistik|J13
+J.14 Attack rate (ringkas, tautan ke G.2)|J14
+J.15 Kriteria Bradford Hill|J15
+J.16 Insidens, prevalens, triad epidemiologi, validitas|J16
+J.17 PICO (ringkas, tautan ke G.3)|J17
+J.18 Attributable risk dan PAF|J18
+J.19 Hazard ratio, SMR, PMR, rate ratio|J19
+J.20 Information bias dan misclassification|J20
+J.21 Kausalitas dan atribusi pada penyakit akibat kerja|J21
+J.22 Soal vignette latihan dengan kunci|J22
+J.23 Latihan hitung dan catatan kualitas|J23_latihan
