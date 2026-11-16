@@ -13,24 +13,24 @@ start = next(i for i, l in enumerate(lines) if l.startswith("Answer:"))
 lines = lines[start + 1:]
 lines = [l for l in lines if not l.startswith(("Resumed conversation", "Continuing conversation", "Started new conversation", "New conversation"))]
 
-# cut off the source block: first heading/bold line containing 'Sumber' near the end
+# cut off the source block (heading/line starting with Sumber, Referensi, Penanda..., Pengetahuan Umum) in the last 45%
+CUTRE = re.compile(r"^\W*(?:#{1,4}\s*)?\W*(?:\d+\.\s*)?\W*(Sumber|Daftar Sumber|Referensi|Catatan Pengetahuan|Penanda|Penandaan|Ditandai|Pengetahuan Umum|Tanda Pengetahuan|Catatan Sumber)", re.I)
 cut = None
 for i, l in enumerate(lines):
-    if re.match(r"^\s*(#{1,4}\s*)?\**\s*(\d+\.\s*)?(Sumber|Daftar Sumber|Referensi)\b.*", l, re.I) and i > len(lines) * 0.5:
+    if i > len(lines) * 0.55 and CUTRE.match(l):
         cut = i
         break
 src_block = []
 if cut is not None:
     src_block = lines[cut:]
     lines = lines[:cut]
-# also drop trailing emoji follow-up offer and trailing hr
 while lines and (not lines[-1].strip() or lines[-1].strip() == "---" or re.match(r"^\W*(📊|💡|📌|🔍|✅|📝)", lines[-1])):
     lines.pop()
 
-general = [l.strip() for l in src_block if re.search(r"pengetahuan umum|general knowledge", l, re.I)]
+general = bool(re.search(r"pengetahuan umum|general knowledge", " ".join(src_block), re.I))
 
 # join wrapped lines
-MARK = re.compile(r"^\s*(#{1,6}\s|[*\-+]\s|\d+[.)]\s|>|\||---|\\\[|\\\\\[|```|\$\$)")
+MARK = re.compile(r"^\s*(#{1,6}\s|[*\-+•]\s|\d+[.)]\s|>|\||---|\\\[|\\\\\[|```|\$\$)")
 out, i, n = [], 0, len(lines)
 in_math = False
 in_code = False
@@ -44,14 +44,23 @@ while i < n:
     # table row: join until it ends with '|'
     if l.lstrip().startswith("|"):
         row = l
-        while not row.rstrip().endswith("|") and i + 1 < n:
+        first = not (out and out[-1].lstrip().startswith("|"))
+        while i + 1 < n:
+            ncell = row.count("|") - 1
+            complete = row.rstrip().endswith("|") and (first or ncell >= ncols)
+            if complete or lines[i + 1].lstrip().startswith("|") and row.rstrip().endswith("|"):
+                break
+            if not lines[i + 1].strip():
+                break
             i += 1
             row = row.rstrip() + " " + lines[i].strip()
+        if first:
+            ncols = row.count("|") - 1
         out.append(row.strip()); i += 1; continue
     # display math starting at line: join until closing
     if re.match(r"^\s*(\\\\\[|\\\[)", l):
         blk = l.strip()
-        while not re.search(r"(\\\\\]|\\\])\s*$", blk) and i + 1 < n:
+        while not re.search(r"\\{1,2}\]", blk) and i + 1 < n:
             i += 1
             blk += " " + lines[i].strip()
         out.append(blk); i += 1; continue
@@ -68,6 +77,7 @@ while i < n:
     out.append(cur); i += 1
 
 text = "\n".join(out)
+text = re.sub(r"(?m)^(\s*)•\s", r"\1* ", text)
 # empty inline math left by the CLI, e.g. \(\)
 text = re.sub(r"\s*\\{1,2}\(\s*\\{1,2}\)", "", text)
 # citations
@@ -81,7 +91,7 @@ text = re.sub(r"[ \t]+\n", "\n", text)
 # demote headings: '### 1.' -> '### ' stays; '## ' -> '### ' so section heading is H2 in vault
 text = re.sub(r"(?m)^#{1,2}\s", "### ", text)
 text = text.strip() + "\n"
-for g in general:
-    text += "\n!SUMBER " + re.sub(r"^[*\-\d.\s]+", "", re.sub(r"\[\s*\d+(?:\s*[,\-–]\s*\d+)*\s*\]", "", g)) + "\n"
+if general:
+    text += "\n!SUMBER Sebagian isi bagian ini ditandai NotebookLM sebagai pengetahuan umum (bukan dari sumber notebook). Verifikasi ke buku teks (Gordis, Rothman, Beaglehole) sebelum dihafal.\n"
 open(sys.argv[2], "w", encoding="utf-8", newline="\n").write(text)
 print("ok", sys.argv[2], len(text))
