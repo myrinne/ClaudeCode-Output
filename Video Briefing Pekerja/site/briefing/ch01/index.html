@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cek Kulit dan Panas di Dapur Gizi</title>
+<link rel="stylesheet" href="../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render">
+</head>
+<body>
+<script src="../lib/engine.js"></script>
+<script src="../img/sets/sets.js"></script>
+<script src="../img/puppets/baked.js" onerror="0"></script>
+<script src="../lib/paper.js"></script>
+<script src="../lib/cast.js"></script>
+<script src="../lib/cast_briefing.js"></script>
+<script src="audio/id/timings.js"></script>
+<script src="audio/id/mouths.js"></script>
+<script src="audio/id/shots.js"></script>
+<script src="../lib/shared.js"></script>
+<script src="scene1.js"></script>
+<script src="scene2.js"></script>
+<script src="scene3.js"></script>
+<script src="scene4.js"></script>
+<script src="scene5.js"></script>
+<script src="scene6.js"></script>
+<script src="scene7.js"></script>
+<script src="scene8.js"></script>
+<script src="scene9.js"></script>
+<script src="scene10.js"></script>
+<script src="scene11.js"></script>
+<script>
+'use strict';
+const CHAPTER = { number: 1, title: 'Cek Kulit dan Panas di Dapur Gizi', minutes: 6, language: 'id', film: true, questionKeys: false };
+try { if (localStorage.getItem('captions') === null) setCaptions(true, false); } catch {}
+const BEATS = [
+  ['scene1', 'Salam', (m, D) => scene1(panel(0), D), { lead: false, pre: PRE1 }],
+  ['scene2', 'Apa yang Bapak dan Ibu dapat', (m, D) => scene2(panel(0), D), { lead: false, pre: PRE2 }],
+  ['scene3', 'Kenapa dapur dan panas', (m, D) => scene3(panel(0), D), { lead: false, pre: PRE3 }],
+  ['scene4', 'Bukan pengobatan', (m, D) => scene4(panel(0), D), { lead: false, pre: PRE4 }],
+  ['scene5', 'Siapa yang bisa ikut', (m, D) => scene5(panel(0), D), { lead: false, pre: PRE5 }],
+  ['scene6', 'Persiapan', (m, D) => scene6(panel(0), D), { lead: false, pre: PRE6 }],
+  ['scene7', 'Hari pemeriksaan', (m, D) => scene7(panel(0), D), { lead: false, pre: PRE7 }],
+  ['scene8', 'Cara mengisi kuesioner', (m, D) => scene8(panel(0), D), { lead: false, pre: PRE8 }],
+  ['scene9', 'Rasa tidak nyaman dan penanganannya', (m, D) => scene9(panel(0), D), { lead: false, pre: PRE9 }],
+  ['scene10', 'Kerahasiaan', (m, D) => scene10(panel(0), D), { lead: false, pre: PRE10 }],
+  ['scene11', 'Hak memilih dan penutup', (m, D) => scene11(panel(0), D), { lead: false, pre: PRE11 }],
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+// music('audio/bgm/theme.mp3', [...], .25);   // belum ada musik
+paperWarm(g => { dokterPuppet(g); bapakPuppet(g); ibuPuppet(g); });
+boot();
+</script>
+</body>
+</html>

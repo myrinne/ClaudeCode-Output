@@ -1,0 +1,33 @@
+{
+ "engine": "edge",
+ "voice": "id-ID-GadisNeural",
+ "rate": "+8%",
+ "beats": {
+  "s01a": "Selamat pagi, Bapak dan Ibu. Saya dokter Vidya Cecilia dari Fakultas Kedokteran Universitas Indonesia.",
+  "s01b": "Saya mengajak Bapak dan Ibu ikut pemeriksaan kulit dan panas di dapur gizi, untuk kesehatan pekerja. Video ini menjelaskan semuanya.",
+  "s02a": "Pertama, apa yang Bapak dan Ibu dapat. Satu: tahu hasil pemeriksaan sendiri, dan bisa bertanya artinya langsung kepada saya. Dua: tahu cara merawat kulit setelah bekerja di tempat panas.",
+  "s02b": "Tiga: tahu tanda tubuh kepanasan dan cara mengurangi. Empat: kalau ada yang perlu perhatian, saya kabari secara pribadi dan sarankan pemeriksaan lanjutan.",
+  "s02c": "Ada juga konsumsi dan satu pelembap kulit sebagai tanda terima kasih. Semua biaya saya yang tanggung.",
+  "s03a": "Dapur itu panas, kompor menyala setiap hari. Kami ingin tahu apakah panas memengaruhi kulit, dan apakah itu berkaitan dengan keadaan tubuh yang bisa dilihat dari darah.",
+  "s03b": "Harapannya, hasilnya jadi dasar kajian kesehatan dan bahaya di tempat kerja, supaya perlindungan pekerja dapur makin baik.",
+  "s04a": "Pemeriksaan ini tidak memberikan obat dan tidak ada tindakan pengobatan. Hanya satu kali, setelah jam kerja.",
+  "s04b": "Ikut atau tidak adalah pilihan Bapak dan Ibu, dan tidak memengaruhi pekerjaan.",
+  "s05a": "Yang diundang adalah pekerja Instalasi Gizi usia 18 sampai 55 tahun, yang sudah bekerja di posisi sekarang minimal 3 bulan. Bapak dan Ibu dikelompokkan menurut tempat bekerja, hanya untuk pencatatan.",
+  "s05b": "Beberapa kondisi, seperti sakit jantung, stroke, kencing manis, atau kelainan kulit dan tato di lengan bawah, belum memungkinkan untuk ikut.",
+  "s05c": "Kami tanyakan satu per satu di hari pemeriksaan. Daftar lengkapnya ada di lembar penjelasan.",
+  "s06a": "Ada empat persiapan. Satu: 24 jam sebelumnya, jangan oleskan losion, pelembap, minyak, atau tabir surya di lengan bawah. Dua: 2 jam sebelumnya, jangan cuci atau basahi lengan bawah.",
+  "s06b": "Tiga: 3 jam sebelum darah diambil, jangan merokok. Empat: 24 jam sebelumnya, jangan minum suplemen vitamin C, vitamin E, glutation, atau obat pengencer dahak.",
+  "s06c": "Kalau ada yang tidak sempat, katakan terus terang. Tidak ada sanksi.",
+  "s07a": "Setelah jam kerja selesai, Bapak dan Ibu istirahat 15 sampai 30 menit di ruangan sejuk. Lalu ada empat langkah, sekitar 30 menit.",
+  "s07b": "Isi kuesioner. Ditimbang dan diukur tinggi badan. Pemeriksaan kulit lengan bawah dengan alat kecil, tidak sakit.",
+  "s07c": "Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali. Panas dan udara di dapur kami ukur di hari lain.",
+  "s08a": "Kuesioner sebagian besar mudah. Ada satu aturan penting: jam kerja di tiap area, dan jam untuk tiap jenis kegiatan, jumlahnya harus sama dengan lama kerja Bapak dan Ibu sehari.",
+  "s08b": "Misalnya kerja 8 jam: 5 jam memasak, 2 jam pemorsian, 1 jam persiapan. Jumlahnya delapan. Perkiraan saja sudah cukup.",
+  "s08c": "Tidak ada jawaban benar atau salah, dan pertanyaan yang tidak ingin dijawab boleh dilewati.",
+  "s09a": "Saat darah diambil ada nyeri ringan, kadang memar kecil yang hilang sendiri. Jarumnya sekali pakai, oleh petugas terlatih. Kalau ada keluhan, hubungi saya. Penanganannya tanpa biaya.",
+  "s10a": "Nama Bapak dan Ibu tidak ditulis di lembar data, hanya kode.",
+  "s10b": "Hasil dilaporkan gabungan, tidak bisa ditelusuri ke perorangan, dan tidak diberikan ke atasan tanpa izin tertulis. Darah hanya dipakai untuk pemeriksaan ini.",
+  "s11a": "Bapak dan Ibu boleh berhenti kapan saja tanpa alasan, dan tidak ikut pun tidak memengaruhi pekerjaan.",
+  "s11b": "Video ini ringkasan. Silakan baca lembar penjelasan dan tanyakan apa saja kepada saya, dokter Vidya Cecilia, di nomor 0812-2441-8906. Terima kasih."
+ }
+}
