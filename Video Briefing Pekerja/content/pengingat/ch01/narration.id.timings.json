@@ -1,0 +1,498 @@
+{
+ "b1": {
+  "key": "6804d67645ed3430daa5c495a78c62fa9ef26ee8",
+  "dur": 7.776,
+  "words": [
+   [
+    0.1,
+    "Besok"
+   ],
+   [
+    0.551375,
+    "Bapak"
+   ],
+   [
+    0.887041,
+    "dan"
+   ],
+   [
+    1.0375,
+    "Ibu"
+   ],
+   [
+    1.407875,
+    "ada"
+   ],
+   [
+    1.755083,
+    "pemeriksaan"
+   ],
+   [
+    2.356958,
+    "kulit"
+   ],
+   [
+    2.738875,
+    "dan"
+   ],
+   [
+    2.924083,
+    "panas"
+   ],
+   [
+    3.433333,
+    "di"
+   ],
+   [
+    3.549083,
+    "Instalasi"
+   ],
+   [
+    4.185666,
+    "Gizi"
+   ],
+   [
+    5.512958,
+    "Ingat"
+   ],
+   [
+    5.87175,
+    "empat"
+   ],
+   [
+    6.3,
+    "hal"
+   ],
+   [
+    6.577791,
+    "ya"
+   ]
+  ],
+  "marks": {
+   "besok": 0.1,
+   "pem": 1.755,
+   "inst": 3.549,
+   "four": 5.513
+  },
+  "cues": [
+   [
+    0.1,
+    "Besok Bapak dan Ibu ada pemeriksaan kulit dan panas di Instalasi Gizi."
+   ],
+   [
+    5.513,
+    "Ingat empat hal ya."
+   ]
+  ]
+ },
+ "b2": {
+  "key": "5800ff34ea09e9f36f544aff302a41a59606d28a",
+  "dur": 9.576,
+  "words": [
+   [
+    0.1,
+    "Satu"
+   ],
+   [
+    1.257416,
+    "24"
+   ],
+   [
+    2.09075,
+    "jam"
+   ],
+   [
+    2.2875,
+    "sebelumnya"
+   ],
+   [
+    3.317583,
+    "jangan"
+   ],
+   [
+    3.687958,
+    "oleskan"
+   ],
+   [
+    4.1625,
+    "losion"
+   ],
+   [
+    5.065291,
+    "pelembap"
+   ],
+   [
+    5.898625,
+    "minyak"
+   ],
+   [
+    6.6625,
+    "atau"
+   ],
+   [
+    6.905541,
+    "tabir"
+   ],
+   [
+    7.241208,
+    "surya"
+   ],
+   [
+    7.727333,
+    "di"
+   ],
+   [
+    7.900916,
+    "lengan"
+   ],
+   [
+    8.236583,
+    "bawah"
+   ]
+  ],
+  "marks": {
+   "num": 1.257,
+   "no": 3.688,
+   "p1": 4.162,
+   "p2": 5.065,
+   "p3": 5.899,
+   "p4": 6.906,
+   "arm": 7.901
+  },
+  "cues": [
+   [
+    0.1,
+    "Satu: 24 jam sebelumnya, jangan oleskan losion, pelembap, minyak, atau tabir surya di lengan bawah."
+   ]
+  ]
+ },
+ "b3": {
+  "key": "fd75a3e34ddb298b52956a8adf9d1a0163fcc6ba",
+  "dur": 10.08,
+  "words": [
+   [
+    0.1,
+    "Dua"
+   ],
+   [
+    1.083791,
+    "24"
+   ],
+   [
+    1.894,
+    "jam"
+   ],
+   [
+    2.09075,
+    "sebelumnya"
+   ],
+   [
+    3.10925,
+    "jangan"
+   ],
+   [
+    3.468041,
+    "minum"
+   ],
+   [
+    3.815291,
+    "suplemen"
+   ],
+   [
+    4.266666,
+    "vitamin"
+   ],
+   [
+    4.775916,
+    "C"
+   ],
+   [
+    5.458791,
+    "vitamin"
+   ],
+   [
+    5.968041,
+    "E"
+   ],
+   [
+    6.639333,
+    "glutation"
+   ],
+   [
+    7.762041,
+    "atau"
+   ],
+   [
+    8.016666,
+    "obat"
+   ],
+   [
+    8.375458,
+    "pengencer"
+   ],
+   [
+    8.873166,
+    "dahak"
+   ]
+  ],
+  "marks": {
+   "num": 1.084,
+   "pill": 3.815,
+   "c": 4.267,
+   "e": 5.459,
+   "g": 6.639,
+   "s": 8.017
+  },
+  "cues": [
+   [
+    0.1,
+    "Dua: 24 jam sebelumnya, jangan minum suplemen vitamin C, vitamin E, glutation, atau obat pengencer dahak."
+   ]
+  ]
+ },
+ "b4": {
+  "key": "cd57d2f0f04d71a4fc4706ac60d916a7c6ed6f3f",
+  "dur": 4.872,
+  "words": [
+   [
+    0.1,
+    "Tiga"
+   ],
+   [
+    1.014333,
+    "3"
+   ],
+   [
+    1.373166,
+    "jam"
+   ],
+   [
+    1.627791,
+    "sebelum"
+   ],
+   [
+    2.009708,
+    "darah"
+   ],
+   [
+    2.2875,
+    "diambil"
+   ],
+   [
+    3.155541,
+    "jangan"
+   ],
+   [
+    3.606958,
+    "merokok"
+   ]
+  ],
+  "marks": {
+   "num": 1.014,
+   "blood": 2.01,
+   "no": 3.607
+  },
+  "cues": [
+   [
+    0.1,
+    "Tiga: 3 jam sebelum darah diambil, jangan merokok."
+   ]
+  ]
+ },
+ "b5": {
+  "key": "039baa95f7f84891a328e55519966f3cc877ff5c",
+  "dur": 5.88,
+  "words": [
+   [
+    0.1,
+    "Empat"
+   ],
+   [
+    1.049083,
+    "2"
+   ],
+   [
+    1.35,
+    "jam"
+   ],
+   [
+    1.5815,
+    "sebelumnya"
+   ],
+   [
+    2.565291,
+    "jangan"
+   ],
+   [
+    2.947208,
+    "cuci"
+   ],
+   [
+    3.352333,
+    "atau"
+   ],
+   [
+    3.676375,
+    "basahi"
+   ],
+   [
+    4.174083,
+    "lengan"
+   ],
+   [
+    4.544458,
+    "bawah"
+   ]
+  ],
+  "marks": {
+   "num": 1.049,
+   "no": 2.947,
+   "wet": 3.676
+  },
+  "cues": [
+   [
+    0.1,
+    "Empat: 2 jam sebelumnya, jangan cuci atau basahi lengan bawah."
+   ]
+  ]
+ },
+ "b6": {
+  "key": "10c6b75e45f8693887eca37f2bfb77b410033faa",
+  "dur": 7.44,
+  "words": [
+   [
+    0.1,
+    "Kalau"
+   ],
+   [
+    0.470375,
+    "ada"
+   ],
+   [
+    0.794458,
+    "yang"
+   ],
+   [
+    0.991208,
+    "tidak"
+   ],
+   [
+    1.280541,
+    "sempat"
+   ],
+   [
+    1.986583,
+    "tidak"
+   ],
+   [
+    2.333791,
+    "apa-apa"
+   ],
+   [
+    3.846291,
+    "Katakan"
+   ],
+   [
+    4.378708,
+    "terus"
+   ],
+   [
+    4.644916,
+    "terang"
+   ],
+   [
+    5.420375,
+    "tidak"
+   ],
+   [
+    5.732875,
+    "ada"
+   ],
+   [
+    6.033791,
+    "sanksi"
+   ]
+  ],
+  "marks": {
+   "a": 0.1,
+   "b": 3.846,
+   "c": 5.42
+  },
+  "cues": [
+   [
+    0.1,
+    "Kalau ada yang tidak sempat, tidak apa-apa."
+   ],
+   [
+    3.846,
+    "Katakan terus terang, tidak ada sanksi."
+   ]
+  ]
+ },
+ "b7": {
+  "key": "6ab00a47755556849d09113db1cfe2fe68201a12",
+  "dur": 11.28,
+  "words": [
+   [
+    0.1,
+    "Ada"
+   ],
+   [
+    0.447208,
+    "pertanyaan"
+   ],
+   [
+    2.098625,
+    "Hubungi"
+   ],
+   [
+    2.573166,
+    "dokter"
+   ],
+   [
+    2.897208,
+    "Vidya"
+   ],
+   [
+    3.267583,
+    "Cecilia"
+   ],
+   [
+    3.823166,
+    "di"
+   ],
+   [
+    3.99675,
+    "0812-2441-8906"
+   ],
+   [
+    9.367125,
+    "Sampai"
+   ],
+   [
+    9.969,
+    "besok"
+   ]
+  ],
+  "marks": {
+   "q": 0.1,
+   "doc": 2.099,
+   "num": 3.997,
+   "bye": 9.367
+  },
+  "cues": [
+   [
+    0.1,
+    "Ada pertanyaan?"
+   ],
+   [
+    2.099,
+    "Hubungi dokter Vidya Cecilia di 0812-2441-8906."
+   ],
+   [
+    9.367,
+    "Sampai besok!"
+   ]
+  ]
+ }
+}
