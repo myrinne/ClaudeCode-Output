@@ -8,7 +8,7 @@ OUT = HERE / "konsep"
 OUT.mkdir(exist_ok=True)
 
 KONTAK_NAMA = "dr. Vidya Cecilia"
-KONTAK_WA = "08xx-xxxx-xxxx"   # <- ISI NOMOR WHATSAPP
+KONTAK_WA = "0812-2441-8906"
 
 CRIT = [
     "Berusia 18–55 tahun",
