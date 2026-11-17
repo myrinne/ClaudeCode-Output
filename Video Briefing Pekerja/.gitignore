@@ -1,3 +1,5 @@
 engine/
 *.pdf
 books/*/pages/
+site/briefing/ch01/audio/
+content/briefing/ch01/narration.id.timings.json
