@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id" data-stage="portrait">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pengingat: Persiapan Pemeriksaan</title>
+<link rel="stylesheet" href="../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render">
+</head>
+<body>
+<script src="../lib/engine.js"></script>
+<script src="audio/id/timings.js"></script>
+<script src="audio/id/mouths.js"></script>
+<script src="../lib/icons.js"></script>
+<script src="../lib/shorts.js"></script>
+<script src="../lib/paper.js"></script>
+<script src="../lib/cast.js"></script>
+<script src="../lib/cast_briefing.js"></script>
+<script src="../lib/pengingat.js"></script>
+<script>
+'use strict';
+const CHAPTER = { number: 1, title: 'Pengingat: Persiapan Pemeriksaan', minutes: 1, language: 'id' };
+try { if (localStorage.getItem('captions') === null) setCaptions(true, false); } catch {}
+try { FLICKER.style.display = 'none'; } catch {}   // paper.js's 1600 x 900 flicker layer has no place on the upright stage
+
+const PRE = .3;
+const base = () => shot(panel(0), 0, undefined, { bg: LIGHT });
+// workers and doctor: puppets on the upright stage, driven by the paper kit's clock
+const alive = (q, k) => ({ bob: 2.5 * Math.sin(q * 2.1 + k), headR: 3 * Math.sin(q * .8 + k) });
+const hours = (s, m, n, big) => { badge(s, n); bigHours(s, m, big); };
+const band2 = (s, lines, y, t0) => band(s, lines, y, t0, { size: 58, fill: RED, colour: '#fff' });
+const row = (s, kinds, t0s, y = 1082) => kinds.forEach((k, i) => icon(s, IC[k], 450 + (i - 1.5) * 165, y, 2.0, t0s[i]));
+
+const BEATS = [
+  ['b1', 'Besok pemeriksaan', (m, D) => {
+    const s = base();
+    word(s, 'Besok', CX, 400, m('besok'), { size: 300, fill: RED, stroke: DARK });
+    band(s, ['Pemeriksaan kulit', 'dan panas'], 560, m('pem'), { size: 64, fill: DARK, colour: LIGHT });
+    label(s, 'di Instalasi Gizi', CX, 800, m('inst'), { size: 60, fill: TEAL, colour: '#fff' });
+    word(s, 'Ingat 4 hal', CX, 965, m('four'), { size: 130, fill: GREEN, stroke: DARK });
+    sfx(BEAT_ID, m('four'), 'chime', .6);
+    const dok = dokterPuppet(s), bpk = bapakPuppet(s), ibu = ibuPuppet(s);
+    stopClock(D, (q, f) => {
+      const wave = (q >= PRE && q < PRE + 1.6) ? 125 + 20 * Math.sin((q - PRE) * 9) : 0;
+      dok.pose({ x: 450, y: 1480, s: 1.35, look: .04 * Math.sin(q * .7), mouth: mouthAt('b1', q - PRE), shut: blinking(q, [1.4, 5.2, 8.4]),
+        ...alive(q, 0), armL: 6, armR: 12 + wave }, f);
+      bpk.pose({ x: 130, y: 1500, s: 1.05, look: .5, eyeX: .6, mouth: 'smile', shut: blinking(q, [2.2, 6.4]), ...alive(q, 1), armL: 6, armR: 6 }, f);
+      ibu.pose({ x: 770, y: 1500, s: 1.05, look: -.5, eyeX: -.6, mouth: 'smile', shut: blinking(q, [3.4, 7.2]), ...alive(q, 2), armL: 6, armR: 6 }, f);
+    });
+  }, { pre: PRE }],
+
+  ['b2', '1 · 24 jam: losion', (m, D) => {
+    const s = base(); hours(s, m, 1, '24');
+    icon(s, IC.arm, 420, 950, 2.0, m('num'));
+    icon(s, IC.no(115), 450, 950, 1, m('no'));
+    icon(s, IC.cream, 440, 938, 1.9, m('p1'));
+    row(s, ['losion', 'pelembap', 'minyak', 'tabir'], [m('p1'), m('p2'), m('p3'), m('p4')]);
+    band2(s, ['Jangan dioles', 'lengan bawah'], 1220, m('arm'));
+  }, { pre: PRE }],
+
+  ['b3', '2 · 24 jam: suplemen', (m, D) => {
+    const s = base(); hours(s, m, 2, '24');
+    icon(s, IC.pill, 450, 950, 2.1, m('pill'));
+    icon(s, IC.no(125), 450, 950, 1, m('pill', .15));
+    row(s, ['vitC', 'vitE', 'gluta', 'syrup'], [m('c'), m('e'), m('g'), m('s')]);
+    band2(s, ['Jangan minum', 'suplemen & obat'], 1220, m('pill'));
+  }, { pre: PRE }],
+
+  ['b4', '3 · 3 jam: rokok', (m, D) => {
+    const s = base(); hours(s, m, 3, '3');
+    icon(s, IC.clock, 230, 1090, 1.9, m('num', .4));
+    icon(s, IC.blood, 690, 950, 2.1, m('blood'));
+    icon(s, IC.cig, 400, 950, 2.2, m('no'));
+    icon(s, IC.no(125), 400, 955, 1, m('no', .2));
+    band2(s, ['Jangan merokok', 'sebelum darah diambil'], 1220, m('no'));
+  }, { pre: PRE }],
+
+  ['b5', '4 · 2 jam: basahi', (m, D) => {
+    const s = base(); hours(s, m, 4, '2');
+    icon(s, IC.arm, 490, 1040, 1.9, m('num'));
+    icon(s, IC.faucet, 470, 905, 1.6, m('no'));
+    icon(s, IC.drops, 510, 905, 1.6, m('wet'));
+    icon(s, IC.no(110), 470, 1000, 1, m('wet', .15));
+    icon(s, IC.clock, 160, 1040, 1.5, m('num', .4));
+    band2(s, ['Jangan dibasahi', 'lengan bawah'], 1220, m('wet'));
+  }, { pre: PRE }],
+
+  ['b6', 'Terus terang', (m, D) => {
+    const s = base();
+    word(s, 'Tidak apa-apa', CX, 400, m('a'), { size: 150, fill: TEAL, stroke: DARK });
+    label(s, 'Katakan terus terang', CX, 640, m('b'), { size: 64, fill: TEAL, colour: '#fff' });
+    label(s, 'Tidak ada sanksi', CX, 790, m('c'), { size: 72, fill: GREEN, colour: '#fff' });
+    icon(s, IC.check, 450, 925, 1.5, m('c', .3));
+    sfx(BEAT_ID, m('c'), 'chime', .6);
+    const ibu = ibuPuppet(s, { holds: { up: IC.thumb() } }), bpk = bapakPuppet(s);
+    stopClock(D, (q, f) => {
+      const up = span(q, m('b') + .1, m('b') + .5);
+      ibu.pose({ x: 330, y: 1500, s: 1.3, look: .3, eyeX: .5, mouth: up > .5 ? 'smile' : 'X', shut: blinking(q, [2.0, 6.0]), ...alive(q, 1),
+        armR: 100 * up, reachR: 1 + .4 * up, hold: up > .05 ? 'up' : null }, f);
+      bpk.pose({ x: 660, y: 1500, s: 1.15, look: -.3, eyeX: -.5, mouth: q > m('c') ? 'smile' : 'X', shut: blinking(q, [3.0, 7.0]), ...alive(q, 2), armL: 6, armR: 6 }, f);
+    });
+  }, { pre: PRE }],
+
+  ['b7', 'Hubungi saya', (m, D) => {
+    const s = base();
+    word(s, 'Ada pertanyaan?', CX, 380, m('q'), { size: 130, fill: DARK, stroke: LIGHT });
+    label(s, 'dr. Vidya Cecilia', CX, 580, m('doc'), { size: 66, fill: TEAL, colour: '#fff' });
+    word(s, '0812-2441-8906', CX, 790, m('num'), { size: 130, fill: GREEN, stroke: DARK, maxW: 820 });
+    word(s, 'Sampai besok!', CX, 965, m('bye'), { size: 120, fill: RED, stroke: DARK });
+    sfx(BEAT_ID, m('bye'), 'chime', .6);
+    const dok = dokterPuppet(s);
+    stopClock(D, (q, f) => {
+      const wave = span(q, m('bye'), m('bye') + .35), sw = Math.sin((q - m('bye')) * 9);
+      dok.pose({ x: 450, y: 1500, s: 1.4, look: .04 * Math.sin(q * .7), mouth: mouthAt('b7', q - PRE), shut: blinking(q, [1.3, 5.2, 9.0]), ...alive(q, 0),
+        armL: 6, armR: 12 + wave * (125 + 20 * sw) }, f);
+    });
+  }, { pre: PRE }],
+].map(shortsBeat);
+
+startShorts();
+</script>
+</body>
+</html>
