@@ -85,6 +85,12 @@ function scene7(p, D) {
   cam.cut({ x: 800, y: 450, z: 1 }, W(7.0)).to({ z: 1.03, x: 800, y: 455 }, W(7.05), 30);
 
   const ph = { b: 1.1, i: 2.6 };
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene7', 0, 'room', 0.22, { loop: true });
+  sfx('scene7', 12.77, 'chime', .5);
+  sfx('scene7', 14.86, 'chime', .5);
+  sfx('scene7', 17.95, 'chime', .5);
+  sfx('scene7', 23.1, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     const s1 = q < W(7.0); vis(g1, s1); vis(g2, !s1);

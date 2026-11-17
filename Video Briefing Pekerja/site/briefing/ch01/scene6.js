@@ -88,6 +88,11 @@ function scene6(p, D) {
   cam.to({ z: 1.04, x: 805, y: 450 }, 0, W(33.3));
   cam.to({ z: 1.1, x: 800, y: 520 }, W(33.4), 6.2);
 
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene6', 3.46, 'chime', .5);
+  sfx('scene6', 12.96, 'chime', .5);
+  sfx('scene6', 19.2, 'chime', .5);
+  sfx('scene6', 23.95, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     // four dashed places from "empat" (0.61); each is taken by its card

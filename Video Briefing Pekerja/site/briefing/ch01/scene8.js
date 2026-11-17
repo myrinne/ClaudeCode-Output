@@ -97,6 +97,8 @@ function scene8(p, D) {
   cam.cut({ x: 800, y: 450, z: 1 }, W(14.17)); cam.to({ z: 1.035 }, W(14.17), 12.5);
   cam.cut({ x: 800, y: 450, z: 1 }, W(27.0)); cam.to({ z: 1.035 }, W(27.0), 7);
 
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene8', 23.22, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     const j = k => .7 * jit(f >> 1, k);

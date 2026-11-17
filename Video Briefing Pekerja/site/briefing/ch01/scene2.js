@@ -48,6 +48,11 @@ function scene2(p, D) {
   const at = (i, dx, dy) => [C[i][0] + dx, C[i][1] + dy];
   const tT = { sheet: W(5.34), bub: W(7.75), tube: W(12.39), hand: W(12.72), wet: W(13.39), clean: W(14.52),
     therm: W(17.71), flame: W(18.39), glass: W(19.57), clock: W(20.0), mail: W(24.5), clinic: W(26.52), food: W(29.81), cream: W(30.96), free: W(34.7) };
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene2', 4.73, 'chime', .5);
+  sfx('scene2', 11.65, 'chime', .5);
+  sfx('scene2', 17.26, 'chime', .5);
+  sfx('scene2', 21.89, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     cards.forEach((c, i) => place(c, q, tCard[i], C[i][0], C[i][1], 1));

@@ -20,6 +20,8 @@ function scene1(p, D) {
   cam.to({ x: 780, y: 560, z: 1.2 }, W('s01b', 1.5), 1.0);
   const tIn = clipAt(S, PRE1, 's01b', 11.91 - 9.542);   // 'pemeriksaan'
   const blink = (q, per, off) => ((q + off) % per) < 2 / FPS;
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene1', 0, 'room', 0.25, { loop: true });
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     steam(q);
@@ -27,10 +29,10 @@ function scene1(p, D) {
     const stir = Math.sin(q * 5.2), port = Math.sin(q * 3.1);
     bapak.pose({ x: 520, y: 800, s: 1.02, look: q > 2.2 ? .8 : .2 + .2 * Math.sin(q), eyeX: q > 2.2 ? .8 : .3, bob: 1.6 * Math.sin(q * 2.2), armR: 52 + 10 * stir, reachR: 1, hold: 'ladle', armL: 8,
       mouth: q > 2.6 ? 'smile' : 'X', shut: blink(q, 3.7, .4), lean: 1.2 * stir }, f);
-    ibu.pose({ x: 1210, y: 800, s: 1.02, look: q > 2.2 ? -.7 : -.2, eyeX: q > 2.2 ? -.7 : -.3, bob: 1.6 * Math.sin(q * 2 + 1), armL: 50 + 12 * port, armR: 24 + 8 * port, hold: null, holdL: 'ladle',
+    ibu.pose({ x: 930, y: 800, s: 1.02, look: q > 2.2 ? .6 : -.2, eyeX: q > 2.2 ? .7 : -.3, bob: 1.6 * Math.sin(q * 2 + 1), armL: 50 + 12 * port, armR: 24 + 8 * port, hold: null, holdL: 'ladle',
       mouth: q > 2.8 ? 'smile' : 'X', shut: blink(q, 4.3, 1.9), lean: -1 * port }, f);
     // dokter berjalan masuk dari kanan, melambai
-    const walkT = span(q, 0.0, 2.3), x = 1700 + (900 - 1700) * walkT, walking = q < 2.3, w = spWalk(q);
+    const walkT = span(q, 0.0, 2.3), x = 1700 + (1180 - 1700) * walkT, walking = q < 2.3, w = spWalk(q);
     const wave = between(q, 2.3, 4.6) ? 130 + 22 * Math.sin((q - 2.3) * 9) : 0;
     const talk = lips(q, S, PRE1, 's01a', 's01b');
     const act = q > 5.0 && q < 8.5 ? 1 : 0;   // sedikit gerak tangan saat menyebut nama

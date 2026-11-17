@@ -49,6 +49,9 @@ function scene9(p, D) {
   cam.cut({ x: 800, y: 450, z: 1 }, W(CUT)); cam.to({ z: 1.04 }, W(CUT), 7);
   const bz = bruise.querySelector('.bz'), bz2 = bruise.querySelector('.bz2');
 
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene9', 0, 'room', 0.22, { loop: true });
+  sfx('scene9', 14.95, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     const j = k => .7 * jit(f >> 1, k);
@@ -68,8 +71,9 @@ function scene9(p, D) {
     if (on) {
       const sp = lips(q, 'scene9', PRE9, 's09a'), talking = sp !== 'X';
       const o = { x: 1010, y: 800, s: 1.2, look: -.35 + .05 * Math.sin(q), mouth: sp, shut: blinking(q, [W(10.0), W(12.6), W(14.9)]),
-        bob: 3 * Math.sin(q * 2.2), headR: talking ? 2 * Math.sin(q * 3) : 0, armL: 8, hold: 'phone', brow: 0 };
-      dok.pose({ ...o, ...dok.aim(o, 'R', [1062, 640 + 4 * Math.sin(q * 2)]) }, f);   // telepon di depan dada
+        bob: 3 * Math.sin(q * 2.2), headR: talking ? 2 * Math.sin(q * 3) : 0, armL: 8, hold: 'phone', brow: 0, armFrontR: true };
+      // telepon diangkat di samping badan, di luar helai rambut, lengan di depan kepala supaya terlihat
+      dok.pose({ ...o, ...dok.aim(o, 'R', [1175, 600 + 4 * Math.sin(q * 2)]) }, f);
     }
   });
 }

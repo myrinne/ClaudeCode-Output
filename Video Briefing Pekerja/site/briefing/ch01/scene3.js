@@ -50,6 +50,8 @@ function scene3(p, D) {
   const tHot = W(.93), tKompor = W(1.79), tPanasI = W(5.85), tKulit = W(6.8), tTubuh = W(9.97), tDarah = W(11.75);
   const tBoard = W(16.3), tShield = W(19.23), tPoint = W(15.9);
   const pop = (g, q, t0, x, y, s = 1, d = .3) => { if (q < t0) { vis(g, false); return; } const u = span(q, t0, t0 + d); vis(g, true); tf(g, `translate(${x} ${y}) scale(${(s * (.7 + .3 * u + .08 * Math.sin(u * Math.PI))).toFixed(3)})`); g.setAttribute('opacity', Math.min(1, u * 1.8).toFixed(2)); };
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene3', 0, 'room', 0.25, { loop: true });
   stopClock(D, (q, f) => {
     const inWide = q < ph.arm[0] || q >= ph.body[1], inArm = between(q, ...ph.arm), inBody = between(q, ...ph.body);
     vis(cam.root, inWide); vis(ins, !inWide);

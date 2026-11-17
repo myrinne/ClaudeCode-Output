@@ -53,6 +53,8 @@ function scene10(p, D) {
   cam.cut({ x: 800, y: 450, z: 1 }, W(C2)); cam.to({ z: 1.04 }, W(C2), 4.5);
   const rects = [0, 1, 2, 3].map(i => barG.querySelector('.b' + i));
 
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene10', 4.72, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     const j = k => .7 * jit(f >> 1, k);

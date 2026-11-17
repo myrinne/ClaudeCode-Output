@@ -28,6 +28,8 @@ function scene4(p, D) {
   const bag = thing(`<g filter="url(#paper)"><rect x="-62" y="-36" width="124" height="90" rx="14" fill="#9a7b58"/><path d="M-26,-36 v-16 q0,-10 10,-10 h32 q10,0 10,10 v16" fill="none" stroke="#7d6044" stroke-width="10"/><rect x="-62" y="2" width="124" height="10" fill="#7d6044"/><rect x="-12" y="-4" width="24" height="24" rx="5" fill="#d9a05b"/></g>`);
   const shield = thing(`<g filter="url(#paper)"><path d="M0,-56 L48,-36 V6 C48,38 24,56 0,66 C-24,56 -48,38 -48,6 V-36 Z" fill="${GRN}" stroke="#fff" stroke-width="7"/></g><g filter="url(#paper)"><path d="M-18,6 l14,15 l26,-32" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/></g>`);
   const tTidak = W(1.19), tObat = W(1.93), tTind = W(3.23), tSatu = W(5.88), tJam = W(7.52), tYa = W(9.64), tNo = W(10.31), tBag = W(14.04);
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene4', 6.68, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     place(banner, q, tTidak, 1190, 118, 1);

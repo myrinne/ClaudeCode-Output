@@ -30,6 +30,8 @@ function scene11(p, D) {
   cam.to({ z: 1.03 }, 0, W(14.3));
   cam.to({ z: 1.07, y: 470 }, W(14.3), 1.6);
 
+  // sfx (tools/briefing/add_sfx.py)
+  sfx('scene11', 0, 'room', 0.25, { loop: true });
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     const j = k => .7 * jit(f >> 1, k);
