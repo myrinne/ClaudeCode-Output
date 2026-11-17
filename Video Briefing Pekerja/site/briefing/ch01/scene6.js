@@ -86,7 +86,7 @@ function scene6(p, D) {
 
   // the camera drifts in and, once the four cards are said (33.4), pushes slowly down toward the two workers and the words
   cam.to({ z: 1.04, x: 805, y: 450 }, 0, W(33.3));
-  cam.to({ z: 1.1, x: 800, y: 520 }, W(33.4), 6.2);
+  cam.to({ z: 1.03, x: 800, y: 500 }, W(33.4), 6.2);
 
   // sfx (tools/briefing/add_sfx.py)
   sfx('scene6', 3.46, 'chime', .5);

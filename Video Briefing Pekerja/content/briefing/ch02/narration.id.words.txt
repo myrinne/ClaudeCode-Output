@@ -1,0 +1,10 @@
+scene1 dur 7.82 (scene-clip times; the beat clock adds the scene's pre)
+   r01a @0  | Besok@0.22 Bapak@0.67 dan@1.01 Ibu@1.16 ada@1.53 pemeriksaan@1.88 kulit@2.48 dan@2.86 panas@3.04 di@3.55 Instalasi@3.67 Gizi@4.31 Ingat@5.63 empat@5.99 hal@6.42 ya@6.7
+scene2 dur 39.684 (scene-clip times; the beat clock adds the scene's pre)
+   r02a @0  | Satu@0.22 mulai@1.32 24@1.69 jam@2.51 sebelumnya@2.71 jangan@3.73 oleskan@4.1 losion@4.57 pelembap@5.47 minyak@6.31 atau@7.07 tabir@7.31 surya@7.65 di@8.14 lengan@8.31 bawah@8.65
+   r02b @10.214  | Dua@10.43 2@11.35 jam@11.66 sebelumnya@11.88 jangan@12.88 cuci@13.26 atau@13.66 basahi@14.0 lengan@14.5 bawah@14.87
+   r02c @16.444  | Tiga@16.66 3@17.58 jam@17.94 sebelum@18.19 darah@18.57 diambil@18.85 jangan@19.72 merokok@20.17
+   r02d @21.666  | Empat@21.89 24@22.85 jam@23.66 sebelumnya@23.85 jangan@24.87 minum@25.23 suplemen@25.57 vitamin@26.02 C@26.52 vitamin@27.2 E@27.71 glutation@28.38 atau@29.48 obat@29.73 pengencer@30.09 dahak@30.59
+   r02e @32.024  | Kalau@32.24 ada@32.61 yang@32.94 tidak@33.14 sempat@33.42 tidak@34.13 apa-apa@34.48 Katakan@35.99 terus@36.52 terang@36.79 tidak@37.56 ada@37.88 sanksi@38.18
+scene3 dur 11.324 (scene-clip times; the beat clock adds the scene's pre)
+   r03a @0  | Ada@0.22 pertanyaan@0.57 Hubungi@2.22 dokter@2.69 Vidya@3.02 Cecilia@3.39 di@3.94 0812-2441-8906@4.12 Sampai@9.49 besok@10.09
