@@ -3,12 +3,13 @@
  "voice": "id-ID-GadisNeural",
  "rate": "+8%",
  "beats": {
-  "b1": "[[besok]]Besok Bapak dan Ibu ada [[pem]]pemeriksaan kulit dan panas di [[inst]]Instalasi Gizi. [[four]]Ingat empat hal ya.",
-  "b2": "Satu: [[num]]24 jam sebelumnya, jangan [[no]]oleskan [[p1]]losion, [[p2]]pelembap, [[p3]]minyak, atau [[p4]]tabir surya di [[arm]]lengan bawah.",
-  "b3": "Dua: [[num]]24 jam sebelumnya, jangan minum [[pill]]suplemen [[c]]vitamin C, [[e]]vitamin E, [[g]]glutation, atau [[s]]obat pengencer dahak.",
-  "b4": "Tiga: [[num]]3 jam sebelum [[blood]]darah diambil, jangan [[no]]merokok.",
-  "b5": "Empat: [[num]]2 jam sebelumnya, jangan [[no]]cuci atau [[wet]]basahi lengan bawah.",
-  "b6": "[[a]]Kalau ada yang tidak sempat, tidak apa-apa. [[b]]Katakan terus terang, [[c]]tidak ada sanksi.",
-  "b7": "[[q]]Ada pertanyaan? [[doc]]Hubungi dokter Vidya Cecilia di [[num]]0812-2441-8906. [[bye]]Sampai besok!"
+  "b1": "[[besok]]Besok Bapak dan Ibu ada [[pem]]pemeriksaan kulit dan panas di [[inst]]Instalasi Gizi.",
+  "b2": "[[shift]]Pemeriksaannya setelah shift selesai. [[blood]]Darah diambil 30 menit setelah shift berakhir. [[four]]Ingat empat hal ya.",
+  "b3": "Satu: [[num]]24 jam sebelumnya, jangan [[no]]oleskan [[p1]]losion, [[p2]]pelembap, [[p3]]minyak, atau [[p4]]tabir surya di [[arm]]lengan bawah.",
+  "b4": "Dua: [[num]]24 jam sebelumnya, jangan minum [[pill]]suplemen [[c]]vitamin C, [[e]]vitamin E, [[g]]glutation, atau [[s]]obat pengencer dahak.",
+  "b5": "Tiga: [[num]]3 jam sebelum [[blood]]darah diambil, jangan [[no]]merokok.",
+  "b6": "Empat: [[num]]2 jam sebelumnya, jangan [[no]]cuci atau [[wet]]basahi lengan bawah.",
+  "b7": "[[a]]Kalau ada yang tidak sempat, tidak apa-apa. [[b]]Katakan terus terang, [[c]]tidak ada sanksi.",
+  "b8": "[[q]]Ada pertanyaan? [[doc]]Hubungi dokter [[num]]Vidya Cecilia. [[bye]]Sampai besok!"
  }
 }

@@ -43,7 +43,7 @@ function badge(g, n, t0 = .05) {
 }
 // the big "24 JAM" with a chime when it lands
 function bigHours(g, m, num) {
-  word(g, num, CX, 620, m('num'), { size: 420, fill: RED, stroke: DARK, maxW: 760 });
+  word(g, num, CX, 620, m('num'), { size: 420, fill: RED, maxW: 760 });
   word(g, 'JAM', CX, 792, m('num', .45), { size: 150, fill: DARK });
   sfx(BEAT_ID, m('num'), 'chime', .6);
 }
