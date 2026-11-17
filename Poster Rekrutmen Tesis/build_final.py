@@ -107,8 +107,78 @@ def poster_b():
     </body></html>"""
 
 
+
+SAFE_V2 = ["Sukarela", "Tanpa biaya", "Data dirahasiakan", "Boleh berhenti kapan saja"]
+
+ICON = {
+    "clock": "<svg viewBox='0 0 40 40'><circle cx='20' cy='20' r='15' fill='none' stroke='#fff' stroke-width='3'/><path d='M20 10v10l7 4' fill='none' stroke='#ffb3b3' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+    "place": "<svg viewBox='0 0 40 40'><path d='M20 36s12-10.5 12-19a12 12 0 00-24 0c0 8.5 12 19 12 19z' fill='none' stroke='#fff' stroke-width='3'/><circle cx='20' cy='17' r='4.5' fill='#ffb3b3'/></svg>",
+    "data": "<svg viewBox='0 0 40 40'><rect x='7' y='5' width='26' height='30' rx='4' fill='none' stroke='#fff' stroke-width='3'/><path d='M13 25v-5M20 25V14M27 25v-8' stroke='#ffb3b3' stroke-width='3.5' stroke-linecap='round'/></svg>",
+    "safe": "<svg viewBox='0 0 40 40'><path d='M20 4l13 5v10c0 8-5.5 13.5-13 17C12.5 32.500 7 27 7 19V9z' fill='none' stroke='#fff' stroke-width='3' stroke-linejoin='round'/><path d='M13.500 20l5 5 8-9' fill='none' stroke='#ffb3b3' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+}
+
+BENEFITS = [
+    ("clock", "30 menit", "perkiraan per orang"),
+    ("place", "Di tempat kerja", "tidak perlu datang ke tempat lain"),
+    ("data", "Data pengukuran", "diberikan kembali kepada Anda"),
+    ("safe", "Dapur lebih aman", "hasil disampaikan ke Instalasi Gizi"),
+]
+
+
+def poster_b_v2():
+    css = BASE_CSS + """
+    body{background:#e9f2fd;color:#14213d}
+    .top{position:absolute;left:130px;right:40px;top:34px}
+    .top .kick{font-size:13px;font-weight:700;letter-spacing:.14em;color:#ef5b5b}
+    .top h1{font-size:40px;line-height:1.08;font-weight:800;margin-top:8px;color:#14213d}
+    .top h1 em{font-style:normal;color:#ef5b5b}
+    .sub{position:absolute;left:130px;right:40px;top:194px;font-size:15px;font-weight:600;color:#3d5afe}
+    .hero{position:absolute;left:60px;top:218px;width:600px}
+    .ben{position:absolute;left:40px;right:40px;top:684px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .tile{background:#14213d;color:#fff;border-radius:16px;padding:12px 12px;display:flex;gap:9px;align-items:center;height:94px}
+    .tile svg{width:34px;height:34px;flex:none}
+    .tile b{display:block;font-size:13.5px;line-height:1.15}
+    .tile span{display:block;font-size:11.5px;line-height:1.25;margin-top:3px;color:#c9d6f2}
+    .cards{position:absolute;left:40px;right:40px;top:800px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{background:#fff;border-radius:18px;padding:15px 20px;box-shadow:0 6px 20px rgba(20,33,61,.08)}
+    .card h3{font-size:12.5px;letter-spacing:.14em;font-weight:800;margin-bottom:8px;color:#3d5afe}
+    .card.no h3{color:#ef5b5b}
+    .card li{font-size:12.8px;line-height:1.3;margin-bottom:4px;padding-left:15px;position:relative}
+    .card li:before{content:'';position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:#3d5afe}
+    .card.no li:before{background:#ef5b5b}
+    .safe{position:absolute;left:40px;right:40px;top:997px;display:flex;gap:9px;justify-content:center}
+    .safe span{font-size:12.5px;font-weight:700;color:#fff;background:#ef5b5b;border-radius:20px;padding:6px 14px}
+    .foot{position:absolute;left:40px;right:40px;bottom:22px;height:60px;border-radius:30px;background:#fff;border:2px solid #14213d;display:flex;align-items:center;justify-content:space-between;padding:0 30px}
+    .foot b{font-size:14.5px}.foot small{display:block;font-size:12px;color:#5b6b8c}
+    .foot .wa{background:#ef5b5b;color:#fff;font-size:20px;font-weight:800;padding:7px 22px;border-radius:24px}
+    """
+    items = [
+        (1, 62, 300, "Panas dapur", "Diukur WBGT meter", "M268 305H283", (287, 308)),
+        (2, 575, 470, "Kulit", "Tewameter di lengan", "M555 470H540L503 437", (503, 437)),
+        (3, 62, 642, "Darah", "Sampel sekali, setelah shift", "M272 645H300V492", (300, 489)),
+    ]
+    tiles = "".join(
+        f"<div class='tile'>{ICON[i]}<div><b>{t}</b><span>{sub}</span></div></div>" for i, t, sub in BENEFITS
+    )
+    return f"""<html><head><meta charset='utf-8'><style>{css}</style></head><body>
+    <img class='logo' src='../assets/logo-fkui.png'>
+    <div class='top'><div class='kick'>BERGABUNGLAH DALAM PENELITIAN KAMI</div>
+    <h1>Seberapa jauh <em>panas dapur</em> memengaruhi kulit dan tubuh Anda?</h1></div>
+    <div class='sub'>Anda yang paling tahu panasnya dapur. Bantu kami membuktikannya.</div>
+    <img class='hero' src='../assets/hero-B-kulit.png'>
+    {callout_svg(items, '#ef5b5b', '#14213d', '#14213d')}
+    <div class='ben'>{tiles}</div>
+    <div class='cards'>
+      <div class='card'><h3>SYARAT IKUT</h3><ul>{li(CRIT)}</ul></div>
+      <div class='card no'><h3>TIDAK BISA IKUT JIKA</h3><ul>{li(EXCL)}</ul></div>
+    </div>
+    <div class='safe'>{''.join(f'<span>{s}</span>' for s in SAFE_V2)}</div>
+    <div class='foot'><div><small>Peneliti · PPDS Kedokteran Okupasi FKUI</small><b>{KONTAK_NAMA}</b></div><div class='wa'>WA {KONTAK_WA}</div></div>
+    </body></html>"""
+
+
 if __name__ == "__main__":
-    for name, fn in [("Poster_A_Termometer", poster_a), ("Poster_B_Irisan_Kulit", poster_b)]:
+    for name, fn in [("Poster_A_Termometer", poster_a), ("Poster_B_Irisan_Kulit", poster_b), ("Poster_B_Irisan_Kulit_v2", poster_b_v2)]:
         h = OUT / f"{name}.html"
         h.write_text(fn(), encoding="utf-8")
         render(h, OUT / f"{name}.png", scale=2)
