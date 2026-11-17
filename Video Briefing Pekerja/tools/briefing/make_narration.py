@@ -11,7 +11,7 @@ for i in range(0, len(parts), 2):
     # Edge TTS cuts the end of long clips: split lines over 35 words at the sentence break nearest the middle
     flat = []
     for l in lines:
-        if len(l.split()) > 35:
+        if len(l.split()) > 32:
             sents = re.split(r'(?<=[.!?;])\s+', l)
             best = min(range(1, len(sents)), key=lambda i: abs(len(' '.join(sents[:i]).split()) - len(' '.join(sents[i:]).split()))) if len(sents) > 1 else None
             if best:

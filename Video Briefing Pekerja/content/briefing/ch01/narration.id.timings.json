@@ -1,7 +1,7 @@
 {
  "s01a": {
-  "key": "0b2e5ac2c0e530f730428bd121c7a22a954d5352",
-  "dur": 13.582,
+  "key": "cb510be65a4b9c8f461f56977c2dba3f8df02029",
+  "dur": 9.192,
   "words": [
    [
     0.1,
@@ -16,104 +16,48 @@
     "Bapak"
    ],
    [
-    1.940291,
+    1.951833,
     "dan"
    ],
    [
-    2.17175,
+    2.183333,
     "Ibu"
    ],
    [
-    3.499083,
+    3.510666,
     "Saya"
    ],
    [
-    3.962041,
+    3.973625,
     "dokter"
    ],
    [
-    4.367125,
+    4.378708,
     "Vidya"
    ],
    [
-    4.7375,
+    4.749083,
     "Cecilia"
    ],
    [
-    5.339333,
+    5.350916,
     "dari"
    ],
    [
-    5.570833,
+    5.582416,
     "Fakultas"
    ],
    [
-    6.137958,
+    6.149541,
     "Kedokteran"
    ],
    [
-    6.6125,
+    6.624083,
     "Universitas"
    ],
    [
-    7.480541,
+    7.492125,
     "Indonesia"
-   ],
-   [
-    9.1935,
-    "Saya"
-   ],
-   [
-    9.62175,
-    "mengajak"
-   ],
-   [
-    10.026833,
-    "Bapak"
-   ],
-   [
-    10.4435,
-    "dan"
-   ],
-   [
-    10.594,
-    "Ibu"
-   ],
-   [
-    10.964333,
-    "ikut"
-   ],
-   [
-    11.346291,
-    "pemeriksaan"
-   ],
-   [
-    11.913416,
-    "kulit"
-   ],
-   [
-    12.249083,
-    "dan"
-   ],
-   [
-    12.422666,
-    "panas"
-   ],
-   [
-    12.8625,
-    "di"
-   ],
-   [
-    12.966666,
-    "dapur"
-   ],
-   [
-    13.256,
-    "gizi"
-   ],
-   [
-    14.077791,
-    "untuk"
    ]
   ],
   "marks": {},
@@ -123,22 +67,111 @@
     "Selamat pagi, Bapak dan Ibu."
    ],
    [
-    3.499,
+    3.511,
     "Saya dokter Vidya Cecilia dari Fakultas Kedokteran Universitas Indonesia."
+   ]
+  ]
+ },
+ "s01b": {
+  "key": "5fef2ea9f4c67ba4637b56b7986c03f0c174b498",
+  "dur": 10.32,
+  "words": [
+   [
+    0.1,
+    "Saya"
    ],
    [
-    9.194,
+    0.52825,
+    "mengajak"
+   ],
+   [
+    0.933333,
+    "Bapak"
+   ],
+   [
+    1.35,
+    "dan"
+   ],
+   [
+    1.500458,
+    "Ibu"
+   ],
+   [
+    1.870833,
+    "ikut"
+   ],
+   [
+    2.252791,
+    "pemeriksaan"
+   ],
+   [
+    2.819916,
+    "kulit"
+   ],
+   [
+    3.155541,
+    "dan"
+   ],
+   [
+    3.329166,
+    "panas"
+   ],
+   [
+    3.769,
+    "di"
+   ],
+   [
+    3.873166,
+    "dapur"
+   ],
+   [
+    4.1625,
+    "gizi"
+   ],
+   [
+    4.98425,
+    "untuk"
+   ],
+   [
+    5.250458,
+    "kesehatan"
+   ],
+   [
+    5.806,
+    "pekerja"
+   ],
+   [
+    7.272208,
+    "Video"
+   ],
+   [
+    7.700458,
+    "ini"
+   ],
+   [
+    8.070833,
+    "menjelaskan"
+   ],
+   [
+    8.730541,
+    "semuanya"
+   ]
+  ],
+  "marks": {},
+  "cues": [
+   [
+    0.1,
     "Saya mengajak Bapak dan Ibu ikut pemeriksaan kulit dan panas di dapur gizi, untuk kesehatan pekerja."
    ],
    [
-    16.739,
+    7.272,
     "Video ini menjelaskan semuanya."
    ]
   ]
  },
  "s02a": {
   "key": "044c4d7997da803cc55ef420654467ea752b0d80",
-  "dur": 15.864,
+  "dur": 15.886,
   "words": [
    [
     0.1,
@@ -275,7 +308,7 @@
  },
  "s02b": {
   "key": "6fd026d81a983709db38ab56c64135ae70a3e2c0",
-  "dur": 12.312,
+  "dur": 12.334,
   "words": [
    [
     0.1,
@@ -380,7 +413,7 @@
  },
  "s02c": {
   "key": "44e6ec7856e8469b7f883138936efb0761d03c27",
-  "dur": 8.16,
+  "dur": 8.182,
   "words": [
    [
     0.1,
@@ -461,7 +494,7 @@
  },
  "s03a": {
   "key": "533fe66497119bf6927243d6611cccc0e3c62997",
-  "dur": 12.912,
+  "dur": 12.934,
   "words": [
    [
     0.1,
@@ -582,7 +615,7 @@
  },
  "s03b": {
   "key": "3e717772fdea4562e1a27c284239cc62f8b2c022",
-  "dur": 8.856,
+  "dur": 8.878,
   "words": [
    [
     0.1,
@@ -663,7 +696,7 @@
  },
  "s04a": {
   "key": "2980a53e4ec580ec69737f123382859098c9fd10",
-  "dur": 9.048,
+  "dur": 9.07,
   "words": [
    [
     0.096291,
@@ -744,7 +777,7 @@
  },
  "s04b": {
   "key": "74078d5fb332dbe1e6df8c7dec84c482422438bf",
-  "dur": 6.168,
+  "dur": 6.19,
   "words": [
    [
     0.1,
@@ -805,7 +838,7 @@
  },
  "s05a": {
   "key": "345fa582c8fffce8b910e04218c36a37258ce034",
-  "dur": 15.384,
+  "dur": 15.406,
   "words": [
    [
     0.1,
@@ -941,8 +974,8 @@
   ]
  },
  "s05b": {
-  "key": "effbbe1a1754a337c1598c8dc4666894e470f1e3",
-  "dur": 18.384,
+  "key": "ae88dd4295e500a67925c6b387fc7af565c86aab",
+  "dur": 10.464,
   "words": [
    [
     0.1,
@@ -965,120 +998,64 @@
     "jantung"
    ],
    [
-    3.317583,
+    3.306,
     "stroke"
    ],
    [
-    4.058333,
+    4.035166,
     "kencing"
    ],
    [
-    4.440291,
+    4.417125,
     "manis"
    ],
    [
-    5.273625,
+    5.250458,
     "atau"
    ],
    [
-    5.539833,
+    5.516666,
     "kelainan"
    ],
    [
-    5.9565,
+    5.933333,
     "kulit"
    ],
    [
-    6.280541,
+    6.257416,
     "dan"
    ],
    [
-    6.454166,
+    6.431,
     "tato"
    ],
    [
-    6.801375,
+    6.77825,
     "di"
    ],
    [
-    6.928708,
+    6.894,
     "lengan"
    ],
    [
-    7.218041,
+    7.183333,
     "bawah"
    ],
    [
-    7.9935,
+    7.958791,
     "belum"
    ],
    [
-    8.236583,
+    8.201833,
     "memungkinkan"
    ],
    [
-    8.873166,
+    8.838416,
     "untuk"
    ],
    [
-    9.27825,
+    9.2435,
     "ikut"
-   ],
-   [
-    10.455083,
-    "Kami"
-   ],
-   [
-    10.883333,
-    "tanyakan"
-   ],
-   [
-    11.438875,
-    "satu"
-   ],
-   [
-    11.80925,
-    "per"
-   ],
-   [
-    11.959708,
-    "satu"
-   ],
-   [
-    12.480541,
-    "di"
-   ],
-   [
-    12.66575,
-    "hari"
-   ],
-   [
-    13.012958,
-    "pemeriksaan"
-   ],
-   [
-    14.749083,
-    "Daftar"
-   ],
-   [
-    15.24675,
-    "lengkapnya"
-   ],
-   [
-    15.79075,
-    "ada"
-   ],
-   [
-    16.18425,
-    "di"
-   ],
-   [
-    16.311583,
-    "lembar"
-   ],
-   [
-    16.6935,
-    "penjelasan"
    ]
   ],
   "marks": {},
@@ -1086,20 +1063,85 @@
    [
     0.1,
     "Beberapa kondisi, seperti sakit jantung, stroke, kencing manis, atau kelainan kulit dan tato di lengan bawah, belum memungkinkan untuk ikut."
+   ]
+  ]
+ },
+ "s05c": {
+  "key": "16b4fd88e5f7050ad0964382f8cdc8836a82f5d0",
+  "dur": 7.992,
+  "words": [
+   [
+    0.1,
+    "Kami"
    ],
    [
-    10.455,
+    0.52825,
+    "tanyakan"
+   ],
+   [
+    1.083791,
+    "satu"
+   ],
+   [
+    1.454166,
+    "per"
+   ],
+   [
+    1.604625,
+    "satu"
+   ],
+   [
+    2.125458,
+    "di"
+   ],
+   [
+    2.310666,
+    "hari"
+   ],
+   [
+    2.657875,
+    "pemeriksaan"
+   ],
+   [
+    4.355541,
+    "Daftar"
+   ],
+   [
+    4.85325,
+    "lengkapnya"
+   ],
+   [
+    5.397208,
+    "ada"
+   ],
+   [
+    5.79075,
+    "di"
+   ],
+   [
+    5.918041,
+    "lembar"
+   ],
+   [
+    6.3,
+    "penjelasan"
+   ]
+  ],
+  "marks": {},
+  "cues": [
+   [
+    0.1,
     "Kami tanyakan satu per satu di hari pemeriksaan."
    ],
    [
-    14.749,
+    4.356,
     "Daftar lengkapnya ada di lembar penjelasan."
    ]
   ]
  },
  "s06a": {
   "key": "f6f9ff340446049559f6545cc5eaa1858fa98773",
-  "dur": 17.808,
+  "dur": 17.83,
   "words": [
    [
     0.1,
@@ -1232,7 +1274,7 @@
  },
  "s06b": {
   "key": "8bd663e42f8bb0ffe0ddeb74630486764bd41435",
-  "dur": 14.832,
+  "dur": 14.854,
   "words": [
    [
     0.1,
@@ -1345,7 +1387,7 @@
  },
  "s06c": {
   "key": "23ed4040ad761499705b25585458349548e02033",
-  "dur": 6.24,
+  "dur": 6.262,
   "words": [
    [
     0.1,
@@ -1406,7 +1448,7 @@
  },
  "s07a": {
   "key": "e674c1bcf20f2644ee6f9ee2c7c1b4d323fcb17d",
-  "dur": 11.376,
+  "dur": 11.398,
   "words": [
    [
     0.1,
@@ -1503,7 +1545,7 @@
  },
  "s07b": {
   "key": "8e2f2aee2111f966dda629848750f13ff88ff5bd",
-  "dur": 9.96,
+  "dur": 9.982,
   "words": [
    [
     0.1,
@@ -1588,7 +1630,7 @@
  },
  "s07c": {
   "key": "5036b507bf33facc2cb0a803c6085a6babd7d5f7",
-  "dur": 11.688,
+  "dur": 11.71,
   "words": [
    [
     0.1,
@@ -1701,7 +1743,7 @@
  },
  "s08a": {
   "key": "0a122869ed974c5393e1aefe1569d283aa7fe2e0",
-  "dur": 13.8,
+  "dur": 13.822,
   "words": [
    [
     0.1,
@@ -1834,7 +1876,7 @@
  },
  "s08b": {
   "key": "85e0981f02fe7d2e3fa851c97f843d9e57b90318",
-  "dur": 12.456,
+  "dur": 12.478,
   "words": [
    [
     0.1,
@@ -1931,7 +1973,7 @@
  },
  "s08c": {
   "key": "45b3f7cd3d1d90289c3a19283cef16cae2433ad9",
-  "dur": 6.72,
+  "dur": 6.742,
   "words": [
    [
     0.1,
@@ -2000,7 +2042,7 @@
  },
  "s09a": {
   "key": "fa9e111cb0c8f8018cebb5945e8eebc18e85f822",
-  "dur": 15.936,
+  "dur": 15.958,
   "words": [
    [
     0.1,
@@ -2128,8 +2170,8 @@
   ]
  },
  "s10a": {
-  "key": "419cd3314a168b8dc64b904fbda630d4088122c5",
-  "dur": 16.896,
+  "key": "004c34cf9d036f251db90f4d1c8a3f6f7ec518c2",
+  "dur": 5.16,
   "words": [
    [
     0.1,
@@ -2174,94 +2216,6 @@
    [
     3.803708,
     "kode"
-   ],
-   [
-    5.142583,
-    "Hasil"
-   ],
-   [
-    5.663416,
-    "dilaporkan"
-   ],
-   [
-    6.219,
-    "gabungan"
-   ],
-   [
-    7.168041,
-    "tidak"
-   ],
-   [
-    7.457416,
-    "bisa"
-   ],
-   [
-    7.74675,
-    "ditelusuri"
-   ],
-   [
-    8.313875,
-    "ke"
-   ],
-   [
-    8.418041,
-    "perorangan"
-   ],
-   [
-    9.494458,
-    "dan"
-   ],
-   [
-    9.702791,
-    "tidak"
-   ],
-   [
-    9.992125,
-    "diberikan"
-   ],
-   [
-    10.501375,
-    "ke"
-   ],
-   [
-    10.582416,
-    "atasan"
-   ],
-   [
-    11.0685,
-    "tanpa"
-   ],
-   [
-    11.404166,
-    "izin"
-   ],
-   [
-    11.855541,
-    "tertulis"
-   ],
-   [
-    13.418041,
-    "Darah"
-   ],
-   [
-    13.811583,
-    "hanya"
-   ],
-   [
-    14.100916,
-    "dipakai"
-   ],
-   [
-    14.610166,
-    "untuk"
-   ],
-   [
-    15.015291,
-    "pemeriksaan"
-   ],
-   [
-    15.651833,
-    "ini"
    ]
   ],
   "marks": {},
@@ -2269,20 +2223,117 @@
    [
     0.1,
     "Nama Bapak dan Ibu tidak ditulis di lembar data, hanya kode."
+   ]
+  ]
+ },
+ "s10b": {
+  "key": "1a5e771073dcc8a7670a3c23c6b0c8ba708e540a",
+  "dur": 11.904,
+  "words": [
+   [
+    0.1,
+    "Hasil"
    ],
    [
-    5.143,
+    0.620833,
+    "dilaporkan"
+   ],
+   [
+    1.187958,
+    "gabungan"
+   ],
+   [
+    2.148625,
+    "tidak"
+   ],
+   [
+    2.437958,
+    "bisa"
+   ],
+   [
+    2.727333,
+    "ditelusuri"
+   ],
+   [
+    3.294458,
+    "ke"
+   ],
+   [
+    3.398625,
+    "perorangan"
+   ],
+   [
+    4.475,
+    "dan"
+   ],
+   [
+    4.683333,
+    "tidak"
+   ],
+   [
+    4.972666,
+    "diberikan"
+   ],
+   [
+    5.4935,
+    "ke"
+   ],
+   [
+    5.574541,
+    "atasan"
+   ],
+   [
+    6.060666,
+    "tanpa"
+   ],
+   [
+    6.396291,
+    "izin"
+   ],
+   [
+    6.847666,
+    "tertulis"
+   ],
+   [
+    8.4065,
+    "Darah"
+   ],
+   [
+    8.8,
+    "hanya"
+   ],
+   [
+    9.089333,
+    "dipakai"
+   ],
+   [
+    9.598625,
+    "untuk"
+   ],
+   [
+    10.003708,
+    "pemeriksaan"
+   ],
+   [
+    10.651833,
+    "ini"
+   ]
+  ],
+  "marks": {},
+  "cues": [
+   [
+    0.1,
     "Hasil dilaporkan gabungan, tidak bisa ditelusuri ke perorangan, dan tidak diberikan ke atasan tanpa izin tertulis."
    ],
    [
-    13.418,
+    8.406,
     "Darah hanya dipakai untuk pemeriksaan ini."
    ]
   ]
  },
  "s11a": {
   "key": "63685fa07d1fe92901cfd884ab61d5635b7d3198",
-  "dur": 7.416,
+  "dur": 7.438,
   "words": [
    [
     0.1,
@@ -2359,7 +2410,7 @@
  },
  "s11b": {
   "key": "73aefb0ff4f8180258621687657c1e67efe66b69",
-  "dur": 16.296,
+  "dur": 16.318,
   "words": [
    [
     0.1,
