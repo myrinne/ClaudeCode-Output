@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pengingat: Persiapan Pemeriksaan</title>
+<link rel="stylesheet" href="../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render">
+</head>
+<body>
+<script src="../lib/engine.js"></script>
+<script src="../img/sets/sets.js"></script>
+<script src="../img/puppets/baked.js" onerror="0"></script>
+<script src="../lib/paper.js"></script>
+<script src="../lib/cast.js"></script>
+<script src="../lib/cast_briefing.js"></script>
+<script src="audio/id/timings.js"></script>
+<script src="audio/id/mouths.js"></script>
+<script src="audio/id/shots.js"></script>
+<script src="../lib/shared.js"></script>
+<script src="../ch01/scene8.js"></script>
+<script src="scene1.js"></script>
+<script src="scene2.js"></script>
+<script src="scene3.js"></script>
+<script>
+'use strict';
+const CHAPTER = { number: 2, title: 'Pengingat: Persiapan Pemeriksaan', minutes: 1, language: 'id', film: true, questionKeys: false };
+try { if (localStorage.getItem('captions') === null) setCaptions(true, false); } catch {}
+const BEATS = [
+  ['scene1', 'Besok pemeriksaan', (m, D) => scene1(panel(0), D), { lead: false, pre: PRE1 }],
+  ['scene2', 'Empat persiapan', (m, D) => scene2(panel(0), D), { lead: false, pre: PRE2 }],
+  ['scene3', 'Pertanyaan? Hubungi saya', (m, D) => scene3(panel(0), D), { lead: false, pre: PRE3 }],
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+paperWarm(g => { dokterPuppet(g); bapakPuppet(g); ibuPuppet(g); });
+boot();
+</script>
+</body>
+</html>

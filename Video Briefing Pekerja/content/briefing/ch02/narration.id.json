@@ -1,0 +1,14 @@
+{
+ "engine": "edge",
+ "voice": "id-ID-GadisNeural",
+ "rate": "+8%",
+ "beats": {
+  "r01a": "Besok Bapak dan Ibu ada pemeriksaan kulit dan panas di Instalasi Gizi. Ingat empat hal ya.",
+  "r02a": "Satu: mulai 24 jam sebelumnya, jangan oleskan losion, pelembap, minyak, atau tabir surya di lengan bawah.",
+  "r02b": "Dua: 2 jam sebelumnya, jangan cuci atau basahi lengan bawah.",
+  "r02c": "Tiga: 3 jam sebelum darah diambil, jangan merokok.",
+  "r02d": "Empat: 24 jam sebelumnya, jangan minum suplemen vitamin C, vitamin E, glutation, atau obat pengencer dahak.",
+  "r02e": "Kalau ada yang tidak sempat, tidak apa-apa. Katakan terus terang, tidak ada sanksi.",
+  "r03a": "Ada pertanyaan? Hubungi dokter Vidya Cecilia di 0812-2441-8906. Sampai besok!"
+ }
+}
