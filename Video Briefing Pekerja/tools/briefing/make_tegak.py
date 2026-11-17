@@ -1,8 +1,8 @@
-"""Build content/pengingat/ch01/narration.id.json from naskah_pengingat_v2.md (one beat per '## Bn.' section).
+"""Build content/pengingat/ch01/narration.id.json from naskah_pengingat_v3.md (one beat per '## Bn.' section).
 Run from 'Video Briefing Pekerja/': python tools/briefing/make_tegak.py"""
 import re, json, os
 
-t = open('naskah_pengingat_v2.md', encoding='utf-8').read()
+t = open('naskah_pengingat_v3.md', encoding='utf-8').read()
 parts = re.split(r'\n## B(\d+)\. ', t)[1:]
 beats = {}
 for i in range(0, len(parts), 2):

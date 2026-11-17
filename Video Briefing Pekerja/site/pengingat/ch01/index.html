@@ -34,11 +34,9 @@ const row = (s, kinds, t0s, y = 1082) => kinds.forEach((k, i) => icon(s, IC[k], 
 const BEATS = [
   ['b1', 'Besok pemeriksaan', (m, D) => {
     const s = base();
-    word(s, 'Besok', CX, 400, m('besok'), { size: 300, fill: RED, stroke: DARK });
+    word(s, 'Besok', CX, 400, m('besok'), { size: 300, fill: RED });
     band(s, ['Pemeriksaan kulit', 'dan panas'], 560, m('pem'), { size: 64, fill: DARK, colour: LIGHT });
     label(s, 'di Instalasi Gizi', CX, 800, m('inst'), { size: 60, fill: TEAL, colour: '#fff' });
-    word(s, 'Ingat 4 hal', CX, 965, m('four'), { size: 130, fill: GREEN, stroke: DARK });
-    sfx(BEAT_ID, m('four'), 'chime', .6);
     const dok = dokterPuppet(s), bpk = bapakPuppet(s), ibu = ibuPuppet(s);
     stopClock(D, (q, f) => {
       const wave = (q >= PRE && q < PRE + 1.6) ? 125 + 20 * Math.sin((q - PRE) * 9) : 0;
@@ -49,7 +47,24 @@ const BEATS = [
     });
   }, { pre: PRE }],
 
-  ['b2', '1 · 24 jam: losion', (m, D) => {
+  ['b2', 'Kapan pemeriksaan', (m, D) => {
+    const s = base();
+    word(s, 'Setelah shift', CX, 290, m('shift'), { size: 150, fill: TEAL });
+    word(s, 'selesai', CX, 430, m('shift', .55), { size: 150, fill: TEAL });
+    icon(s, IC.clock, CX, 600, 2.4, m('shift', .2));
+    icon(s, IC.blood, 120, 885, 2.2, m('blood'));
+    band(s, ['Darah diambil', '30 menit', 'setelah shift'], 810, m('blood'), { size: 62, fill: RED, colour: '#fff' });
+    word(s, 'Ingat 4 hal', CX, 1135, m('four'), { size: 120, fill: GREEN });
+    sfx(BEAT_ID, m('four'), 'chime', .6);
+    sfx(BEAT_ID, m('blood'), 'chime', .5);
+    const bpk = bapakPuppet(s), ibu = ibuPuppet(s);
+    stopClock(D, (q, f) => {
+      bpk.pose({ x: 230, y: 1520, s: .8, look: .4, eyeX: .5, mouth: 'smile', shut: blinking(q, [2.2, 6.4]), ...alive(q, 1), armL: 6, armR: 6 }, f);
+      ibu.pose({ x: 670, y: 1520, s: .8, look: -.4, eyeX: -.5, mouth: 'smile', shut: blinking(q, [3.4, 7.2]), ...alive(q, 2), armL: 6, armR: 6 }, f);
+    });
+  }, { pre: PRE }],
+
+  ['b3', '1 · 24 jam: losion', (m, D) => {
     const s = base(); hours(s, m, 1, '24');
     icon(s, IC.arm, 420, 950, 2.0, m('num'));
     icon(s, IC.no(115), 450, 950, 1, m('no'));
@@ -58,7 +73,7 @@ const BEATS = [
     band2(s, ['Jangan dioles', 'lengan bawah'], 1220, m('arm'));
   }, { pre: PRE }],
 
-  ['b3', '2 · 24 jam: suplemen', (m, D) => {
+  ['b4', '2 · 24 jam: suplemen', (m, D) => {
     const s = base(); hours(s, m, 2, '24');
     icon(s, IC.pill, 450, 950, 2.1, m('pill'));
     icon(s, IC.no(125), 450, 950, 1, m('pill', .15));
@@ -66,7 +81,7 @@ const BEATS = [
     band2(s, ['Jangan minum', 'suplemen & obat'], 1220, m('pill'));
   }, { pre: PRE }],
 
-  ['b4', '3 · 3 jam: rokok', (m, D) => {
+  ['b5', '3 · 3 jam: rokok', (m, D) => {
     const s = base(); hours(s, m, 3, '3');
     icon(s, IC.clock, 230, 1090, 1.9, m('num', .4));
     icon(s, IC.blood, 690, 950, 2.1, m('blood'));
@@ -75,7 +90,7 @@ const BEATS = [
     band2(s, ['Jangan merokok', 'sebelum darah diambil'], 1220, m('no'));
   }, { pre: PRE }],
 
-  ['b5', '4 · 2 jam: basahi', (m, D) => {
+  ['b6', '4 · 2 jam: basahi', (m, D) => {
     const s = base(); hours(s, m, 4, '2');
     icon(s, IC.arm, 490, 1040, 1.9, m('num'));
     icon(s, IC.faucet, 470, 905, 1.6, m('no'));
@@ -85,9 +100,9 @@ const BEATS = [
     band2(s, ['Jangan dibasahi', 'lengan bawah'], 1220, m('wet'));
   }, { pre: PRE }],
 
-  ['b6', 'Terus terang', (m, D) => {
+  ['b7', 'Terus terang', (m, D) => {
     const s = base();
-    word(s, 'Tidak apa-apa', CX, 400, m('a'), { size: 150, fill: TEAL, stroke: DARK });
+    word(s, 'Tidak apa-apa', CX, 400, m('a'), { size: 150, fill: TEAL });
     label(s, 'Katakan terus terang', CX, 640, m('b'), { size: 64, fill: TEAL, colour: '#fff' });
     label(s, 'Tidak ada sanksi', CX, 790, m('c'), { size: 72, fill: GREEN, colour: '#fff' });
     icon(s, IC.check, 450, 925, 1.5, m('c', .3));
@@ -101,17 +116,17 @@ const BEATS = [
     });
   }, { pre: PRE }],
 
-  ['b7', 'Hubungi saya', (m, D) => {
+  ['b8', 'Hubungi saya', (m, D) => {
     const s = base();
-    word(s, 'Ada pertanyaan?', CX, 380, m('q'), { size: 130, fill: DARK, stroke: LIGHT });
+    word(s, 'Ada pertanyaan?', CX, 380, m('q'), { size: 130, fill: DARK });
     label(s, 'dr. Vidya Cecilia', CX, 580, m('doc'), { size: 66, fill: TEAL, colour: '#fff' });
-    word(s, '0812-2441-8906', CX, 790, m('num'), { size: 130, fill: GREEN, stroke: DARK, maxW: 820 });
-    word(s, 'Sampai besok!', CX, 965, m('bye'), { size: 120, fill: RED, stroke: DARK });
+    word(s, '0812-2441-8906', CX, 790, m('num'), { size: 130, fill: GREEN, maxW: 820 });
+    word(s, 'Sampai besok!', CX, 965, m('bye'), { size: 120, fill: RED });
     sfx(BEAT_ID, m('bye'), 'chime', .6);
     const dok = dokterPuppet(s);
     stopClock(D, (q, f) => {
       const wave = span(q, m('bye'), m('bye') + .35), sw = Math.sin((q - m('bye')) * 9);
-      dok.pose({ x: 450, y: 1500, s: 1.4, look: .04 * Math.sin(q * .7), mouth: mouthAt('b7', q - PRE), shut: blinking(q, [1.3, 5.2, 9.0]), ...alive(q, 0),
+      dok.pose({ x: 450, y: 1500, s: 1.4, look: .04 * Math.sin(q * .7), mouth: mouthAt('b8', q - PRE), shut: blinking(q, [1.3, 5.2, 9.0]), ...alive(q, 0),
         armL: 6, armR: 12 + wave * (125 + 20 * sw) }, f);
     });
   }, { pre: PRE }],

@@ -1,7 +1,7 @@
 {
  "b1": {
-  "key": "6804d67645ed3430daa5c495a78c62fa9ef26ee8",
-  "dur": 7.776,
+  "key": "c03c204c4ef2b14f536841561025624759156ee3",
+  "dur": 5.566,
   "words": [
    [
     0.1,
@@ -48,46 +48,106 @@
     "Instalasi"
    ],
    [
-    4.185666,
+    4.197208,
     "Gizi"
-   ],
-   [
-    5.512958,
-    "Ingat"
-   ],
-   [
-    5.87175,
-    "empat"
-   ],
-   [
-    6.3,
-    "hal"
-   ],
-   [
-    6.577791,
-    "ya"
    ]
   ],
   "marks": {
    "besok": 0.1,
    "pem": 1.755,
-   "inst": 3.549,
-   "four": 5.513
+   "inst": 3.549
   },
   "cues": [
    [
     0.1,
     "Besok Bapak dan Ibu ada pemeriksaan kulit dan panas di Instalasi Gizi."
-   ],
-   [
-    5.513,
-    "Ingat empat hal ya."
    ]
   ]
  },
  "b2": {
+  "key": "9668de9d5def94bbd1544bc983e9de92031906db",
+  "dur": 9.6,
+  "words": [
+   [
+    0.1,
+    "Pemeriksaannya"
+   ],
+   [
+    1.095375,
+    "setelah"
+   ],
+   [
+    1.500458,
+    "shift"
+   ],
+   [
+    1.824541,
+    "selesai"
+   ],
+   [
+    3.313875,
+    "Darah"
+   ],
+   [
+    3.742125,
+    "diambil"
+   ],
+   [
+    4.205083,
+    "30 menit"
+   ],
+   [
+    5.096291,
+    "setelah"
+   ],
+   [
+    5.524541,
+    "shift"
+   ],
+   [
+    5.883333,
+    "berakhir"
+   ],
+   [
+    7.3185,
+    "Ingat"
+   ],
+   [
+    7.688875,
+    "empat"
+   ],
+   [
+    8.117125,
+    "hal"
+   ],
+   [
+    8.4065,
+    "ya"
+   ]
+  ],
+  "marks": {
+   "shift": 0.1,
+   "blood": 3.314,
+   "four": 7.319
+  },
+  "cues": [
+   [
+    0.1,
+    "Pemeriksaannya setelah shift selesai."
+   ],
+   [
+    3.314,
+    "Darah diambil 30 menit setelah shift berakhir."
+   ],
+   [
+    7.319,
+    "Ingat empat hal ya."
+   ]
+  ]
+ },
+ "b3": {
   "key": "5800ff34ea09e9f36f544aff302a41a59606d28a",
-  "dur": 9.576,
+  "dur": 9.598,
   "words": [
    [
     0.1,
@@ -166,9 +226,9 @@
    ]
   ]
  },
- "b3": {
+ "b4": {
   "key": "fd75a3e34ddb298b52956a8adf9d1a0163fcc6ba",
-  "dur": 10.08,
+  "dur": 10.102,
   "words": [
    [
     0.1,
@@ -250,9 +310,9 @@
    ]
   ]
  },
- "b4": {
+ "b5": {
   "key": "cd57d2f0f04d71a4fc4706ac60d916a7c6ed6f3f",
-  "dur": 4.872,
+  "dur": 4.894,
   "words": [
    [
     0.1,
@@ -299,9 +359,9 @@
    ]
   ]
  },
- "b5": {
+ "b6": {
   "key": "039baa95f7f84891a328e55519966f3cc877ff5c",
-  "dur": 5.88,
+  "dur": 5.902,
   "words": [
    [
     0.1,
@@ -356,9 +416,9 @@
    ]
   ]
  },
- "b6": {
+ "b7": {
   "key": "10c6b75e45f8693887eca37f2bfb77b410033faa",
-  "dur": 7.44,
+  "dur": 7.462,
   "words": [
    [
     0.1,
@@ -429,9 +489,9 @@
    ]
   ]
  },
- "b7": {
-  "key": "6ab00a47755556849d09113db1cfe2fe68201a12",
-  "dur": 11.28,
+ "b8": {
+  "key": "c5f1a24ad9c74d34c189a28404d0f341562289d7",
+  "dur": 6.96,
   "words": [
    [
     0.1,
@@ -446,39 +506,31 @@
     "Hubungi"
    ],
    [
-    2.573166,
+    2.607875,
     "dokter"
    ],
    [
-    2.897208,
+    2.989833,
     "Vidya"
    ],
    [
-    3.267583,
+    3.4875,
     "Cecilia"
    ],
    [
-    3.823166,
-    "di"
-   ],
-   [
-    3.99675,
-    "0812-2441-8906"
-   ],
-   [
-    9.367125,
+    5.073166,
     "Sampai"
    ],
    [
-    9.969,
+    5.663416,
     "besok"
    ]
   ],
   "marks": {
    "q": 0.1,
    "doc": 2.099,
-   "num": 3.997,
-   "bye": 9.367
+   "num": 2.99,
+   "bye": 5.073
   },
   "cues": [
    [
@@ -487,10 +539,10 @@
    ],
    [
     2.099,
-    "Hubungi dokter Vidya Cecilia di 0812-2441-8906."
+    "Hubungi dokter Vidya Cecilia."
    ],
    [
-    9.367,
+    5.073,
     "Sampai besok!"
    ]
   ]

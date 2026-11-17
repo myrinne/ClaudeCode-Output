@@ -1,25 +1,42 @@
 window.TIMINGS = {
  "b1": {
-  "dur": 7.776,
+  "dur": 5.566,
   "marks": {
    "besok": 0.1,
    "pem": 1.755,
-   "inst": 3.549,
-   "four": 5.513
+   "inst": 3.549
   },
   "cues": [
    [
     0.1,
     "Besok Bapak dan Ibu ada pemeriksaan kulit dan panas di Instalasi Gizi."
-   ],
-   [
-    5.513,
-    "Ingat empat hal ya."
    ]
   ]
  },
  "b2": {
-  "dur": 9.576,
+  "dur": 9.6,
+  "marks": {
+   "shift": 0.1,
+   "blood": 3.314,
+   "four": 7.319
+  },
+  "cues": [
+   [
+    0.1,
+    "Pemeriksaannya setelah shift selesai."
+   ],
+   [
+    3.314,
+    "Darah diambil 30 menit setelah shift berakhir."
+   ],
+   [
+    7.319,
+    "Ingat empat hal ya."
+   ]
+  ]
+ },
+ "b3": {
+  "dur": 9.598,
   "marks": {
    "num": 1.257,
    "no": 3.688,
@@ -36,8 +53,8 @@ window.TIMINGS = {
    ]
   ]
  },
- "b3": {
-  "dur": 10.08,
+ "b4": {
+  "dur": 10.102,
   "marks": {
    "num": 1.084,
    "pill": 3.815,
@@ -53,8 +70,8 @@ window.TIMINGS = {
    ]
   ]
  },
- "b4": {
-  "dur": 4.872,
+ "b5": {
+  "dur": 4.894,
   "marks": {
    "num": 1.014,
    "blood": 2.01,
@@ -67,8 +84,8 @@ window.TIMINGS = {
    ]
   ]
  },
- "b5": {
-  "dur": 5.88,
+ "b6": {
+  "dur": 5.902,
   "marks": {
    "num": 1.049,
    "no": 2.947,
@@ -81,8 +98,8 @@ window.TIMINGS = {
    ]
   ]
  },
- "b6": {
-  "dur": 7.44,
+ "b7": {
+  "dur": 7.462,
   "marks": {
    "a": 0.1,
    "b": 3.846,
@@ -99,13 +116,13 @@ window.TIMINGS = {
    ]
   ]
  },
- "b7": {
-  "dur": 11.28,
+ "b8": {
+  "dur": 6.96,
   "marks": {
    "q": 0.1,
    "doc": 2.099,
-   "num": 3.997,
-   "bye": 9.367
+   "num": 2.99,
+   "bye": 5.073
   },
   "cues": [
    [
@@ -114,10 +131,10 @@ window.TIMINGS = {
    ],
    [
     2.099,
-    "Hubungi dokter Vidya Cecilia di 0812-2441-8906."
+    "Hubungi dokter Vidya Cecilia."
    ],
    [
-    9.367,
+    5.073,
     "Sampai besok!"
    ]
   ]
