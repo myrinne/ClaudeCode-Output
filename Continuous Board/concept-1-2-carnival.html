@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Step Right Up - Hospital Carnival Care Corridor</title>
+<style>
+  :root{--navy:#0E3B47;--teal:#2B8791;--coral:#F26A4B;--yellow:#FFC93C;--pink:#E8478B;--cream:#F4EFE6;--ink:#2B5560}
+  html,body{margin:0;background:var(--navy)}
+  .board{position:relative;width:4800px;height:2090px;background:var(--cream);font-family:'Bahnschrift','Segoe UI',Arial,sans-serif;color:var(--navy);overflow:hidden}
+  .head{position:absolute;left:0;top:0;width:4800px;height:340px;background:radial-gradient(circle at 18% 40%,#16586a 0,#0E3B47 70%)}
+  .foot{position:absolute;left:0;top:1832px;width:4800px;height:258px;background:radial-gradient(circle at 80% 50%,#16586a 0,#0E3B47 70%)}
+  .strip{position:absolute;left:0;top:340px;width:4800px;height:1492px;background:url(images/corridor-long.png) 0 -33px/4800px auto no-repeat}
+  .h1{position:absolute;left:90px;top:0;font-size:160px;line-height:1;font-weight:800;letter-spacing:2px;color:var(--yellow);text-shadow:8px 8px 0 var(--coral);white-space:nowrap}
+  .h2{position:absolute;left:96px;top:150px;font-size:76px;line-height:1;font-weight:800;color:#fff;letter-spacing:2px;white-space:nowrap}
+  .h2 span{color:var(--yellow)}
+  .h3{position:absolute;left:100px;top:222px;font-size:30px;color:#BFD9D8;letter-spacing:3px;white-space:nowrap}
+  .badge{position:absolute;right:130px;top:40px;transform:rotate(4deg);background:var(--yellow);color:var(--navy);padding:22px 46px;text-align:center;font-weight:800;border-radius:16px;box-shadow:10px 10px 0 var(--coral)}
+  .badge b{display:block;font-size:30px;letter-spacing:6px}
+  .badge span{display:block;font-size:68px;letter-spacing:2px;line-height:1.05}
+  .badge i{display:block;font-style:normal;font-size:28px;letter-spacing:3px;margin-top:4px}
+  .sign{position:absolute;top:365px;height:96px;transform:translateX(-50%);background:var(--navy);color:var(--yellow);border-radius:20px;display:flex;align-items:center;gap:22px;padding:0 44px;font-weight:800;font-size:60px;letter-spacing:5px;white-space:nowrap;box-shadow:0 8px 0 rgba(0,0,0,.18)}
+  .sign em{font-style:normal;background:var(--coral);color:#fff;border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;font-size:44px;letter-spacing:0}
+  .bulbs{position:absolute;left:0;width:4800px;height:34px;background:radial-gradient(circle,#FFE98A 0 9px,rgba(255,201,60,.0) 10px) 0 0/52px 34px repeat-x;filter:drop-shadow(0 0 6px #FFC93C)}
+  .ticket{position:absolute;top:1868px;width:880px;height:150px;transform:translateX(-50%);color:var(--navy);text-align:center;display:flex;flex-direction:column;justify-content:center;
+    background:radial-gradient(circle at left center,#0E3B47 30px,transparent 31px) left/51% 100% no-repeat,radial-gradient(circle at right center,#0E3B47 30px,transparent 31px) right/51% 100% no-repeat,var(--yellow);border-radius:12px}
+  .ticket b{font-size:46px;letter-spacing:4px;font-weight:800}
+  .ticket span{font-size:30px;color:#5a4a12;margin-top:4px}
+  .ticket small{position:absolute;left:56px;top:12px;font-size:18px;letter-spacing:4px;font-weight:800;color:var(--coral)}
+  .flow{position:absolute;left:0;width:4800px;text-align:center;top:2040px;font-size:32px;letter-spacing:4px;color:#BFD9D8;white-space:nowrap}
+  .flow em{font-style:normal;color:var(--yellow);font-weight:800}
+  .note{position:absolute;right:60px;top:2056px;font-size:20px;color:#BFD9D8;opacity:.8;letter-spacing:2px}
+  svg.fx{position:absolute;left:0;top:0;width:4800px;height:2090px;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="board">
+  <div class="head"></div>
+  <div class="strip"></div>
+  <div class="foot"></div>
+  <div class="bulbs" style="top:323px"></div>
+  <div class="bulbs" style="top:1815px"></div>
+
+  <div class="h1">STEP RIGHT UP!</div>
+  <div class="h2">ONE BODY. <span>ONE LINE OF CARE.</span></div>
+  <div class="h3">FOUR CLINICIANS  ·  ONE CORRIDOR  ·  ONE RIBBON  —  FIND YOUR BOOTH</div>
+  <div class="badge"><b>HOSPITAL CARNIVAL</b><span>ADMIT ONE</span><i>[year · venue · date]</i></div>
+
+  <svg class="fx" id="fx" viewBox="0 0 4800 2090"></svg>
+
+  <div class="sign" style="left:700px"><em>1</em>ORTHOPAEDICS</div>
+  <div class="sign" style="left:1985px"><em>2</em>REHABILITATION</div>
+  <div class="sign" style="left:3280px"><em>3</em>VACCINE</div>
+  <div class="sign" style="left:4260px"><em>4</em>ACUPUNCTURE</div>
+
+  <div class="ticket" style="left:700px"><small>BOOTH 1</small><b>DIAGNOSE AND REPAIR</b><span>Bone, joint and spine</span></div>
+  <div class="ticket" style="left:1985px"><small>BOOTH 2</small><b>RESTORE MOVEMENT</b><span>Gait, strength, stairs</span></div>
+  <div class="ticket" style="left:3280px"><small>BOOTH 3</small><b>PREVENT FIRST</b><span>Vaccines for the job's exposures</span></div>
+  <div class="ticket" style="left:4260px"><small>BOOTH 4</small><b>EASE THE ACHE</b><span>Acupuncture for lingering pain</span></div>
+
+  <div class="flow"><em>COLLECT ALL FOUR STAMPS</em>   ·   Injury → Diagnose → Rehabilitate → Prevent → Ease → <em>Back to work</em></div>
+  <div class="note">Illustration: AI-generated draft · wording to be confirmed</div>
+</div>
+<script>
+const NS='http://www.w3.org/2000/svg';let out='';
+const col=['#F26A4B','#FFC93C','#2B8791','#E8478B','#FFFFFF'];
+// --- bunting: two sagging strings with flags
+function bunting(y0,sag,segW,x0,x1,flip){
+  for(let sx=x0;sx<x1;sx+=segW){
+    const ex=Math.min(sx+segW,x1);
+    out+=`<path d="M${sx},${y0} Q${(sx+ex)/2},${y0+sag*2} ${ex},${y0}" fill="none" stroke="#0A2B35" stroke-width="5"/>`;
+    const n=Math.floor((ex-sx)/70);
+    for(let i=0;i<n;i++){const t=(i+.5)/n,x=sx+(ex-sx)*t,y=y0+2*sag*t*(1-t)*1; // quad bezier sag point
+      const c=col[(Math.floor(sx/segW)+i)%col.length];
+      out+=`<polygon points="${x-30},${y} ${x+30},${y} ${x},${y+(flip?-70:70)}" fill="${c}"/>`}
+  }}
+bunting(262,34,700,0,4800,false);
+// --- awnings
+function awning(x0,x1,c,top){
+  const w=70,n=Math.ceil((x1-x0)/w),B=top+55,fl=22;
+  // valance bar
+  out+=`<rect x="${x0-fl-6}" y="${top-14}" width="${x1-x0+2*fl+12}" height="16" rx="6" fill="#0A2B35"/>`;
+  for(let i=0;i<n;i++){const a=x0+i*w,b=Math.min(a+w,x1),f=i%2?'#FFFFFF':c;
+    const ta=a,tb=b,ba=a+(a-(x0+x1)/2)*0.03,bb=b+(b-(x0+x1)/2)*0.03;
+    out+=`<polygon points="${ta},${top} ${tb},${top} ${bb},${B} ${ba},${B}" fill="${f}"/>`;
+    out+=`<path d="M${ba},${B} a${(bb-ba)/2},34 0 0 0 ${bb-ba},0Z" fill="${f}"/>`}
+  out+=`<rect x="${x0}" y="${top}" width="${x1-x0}" height="10" fill="#000" opacity=".12"/>`;
+}
+awning(140,1260,'#F26A4B',480);
+awning(1280,2740,'#2B8791',480);
+awning(2760,3800,'#FFC93C',480);
+awning(3820,4700,'#E8478B',480);
+// --- balloons (header + footer corners)
+function balloon(x,y,r,c){out+=`<line x1="${x}" y1="${y+r*1.25}" x2="${x+10}" y2="${y+r*3.2}" stroke="#fff" stroke-width="3" opacity=".7"/><ellipse cx="${x}" cy="${y}" rx="${r}" ry="${r*1.25}" fill="${c}"/><ellipse cx="${x-r*.35}" cy="${y-r*.45}" rx="${r*.22}" ry="${r*.38}" fill="#fff" opacity=".35"/><polygon points="${x-8},${y+r*1.25} ${x+8},${y+r*1.25} ${x},${y+r*1.25+14}" fill="${c}"/>`}
+[[3700,90,50,'#F26A4B'],[3790,60,42,'#2B8791'],[3860,120,46,'#E8478B'],[3950,80,38,'#FFC93C']].forEach(b=>balloon(...b));
+[[60,1980,40,'#F26A4B'],[120,1950,36,'#FFC93C'],[4620,1970,38,'#2B8791']].forEach(b=>balloon(...b));
+// --- confetti
+let s=7;const rnd=()=>(s=(s*16807)%2147483647)/2147483647;
+function conf(y0,y1,n){for(let i=0;i<n;i++){const x=rnd()*4800,y=y0+rnd()*(y1-y0),c=col[Math.floor(rnd()*4)],r=rnd()*360,k=rnd();if(y<300&&x<1800)continue;
+  if(k<.4)out+=`<rect x="${x}" y="${y}" width="${10+rnd()*10}" height="${22+rnd()*14}" fill="${c}" transform="rotate(${r} ${x} ${y})" opacity=".9"/>`;
+  else if(k<.75)out+=`<circle cx="${x}" cy="${y}" r="${6+rnd()*6}" fill="${c}" opacity=".9"/>`;
+  else out+=`<polygon points="${x},${y} ${x+18},${y+8} ${x+4},${y+22}" fill="${c}" transform="rotate(${r} ${x} ${y})" opacity=".9"/>`}}
+conf(10,250,70);conf(1840,2080,70);conf(345,470,14);
+document.getElementById('fx').innerHTML=out;
+</script>
+</body>
+</html>
