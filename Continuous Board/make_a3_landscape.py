@@ -53,6 +53,19 @@ if knee.exists():
     sl.save(img_dir / "a3-slice-1.jpg", quality=92, optimize=True)
     kimg.close()
 
+# posters 2, 3, 4: her newer regenerated corridor (sharper, better anatomy). Poster 1 stays on the knee image.
+v3 = img_dir / "corridor-long-v3.jpg"
+if v3.exists():
+    vimg = Image.open(v3).convert("RGB")
+    W3, H3 = vimg.size
+    y0, y1 = round(0.1243 * H3), round(0.9116 * H3)          # same rows as the old crop (90..660 of 724)
+    for idx in (1, 2, 3):
+        x0, x1 = round(idx * W3 / 4), round((idx + 1) * W3 / 4)
+        sl = vimg.crop((x0, y0, x1, y1)).resize((2172, 2280), Image.LANCZOS)
+        sl = sl.filter(ImageFilter.UnsharpMask(radius=1.6, percent=28, threshold=6))
+        sl.save(img_dir / f"a3-slice-{idx+1}.jpg", quality=92, optimize=True)
+    vimg.close()
+
 PAGE_W, PAGE_H = 1588, 1123           # CSS px for 420 x 297 mm
 PANEL_W = 518                         # left text column
 SCALE = PAGE_H / 570.0                # source rows 90..660 -> full page height
