@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>One Line of Care - Continuous Board Prototype</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  html,body{margin:0;background:#F4EFE6}
+  svg{display:block;width:4800px;height:1400px}
+  text{font-family:'Bahnschrift','Segoe UI',Arial,sans-serif}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+// ---------- palette ----------
+const C={navy:'#0E3B47',teal:'#1F6F78',teal2:'#2B8791',mist:'#BFD9D8',cream:'#F4EFE6',sand:'#E9E0D0',coral:'#F26A4B',coral2:'#FF9A7E',ivory:'#F8F3E8'};
+const W=4800,H=1400,RW=1200,WALL_T=250,WALL_B=1030,FLOOR_B=1250;
+
+let defs='',body='',gid=0;
+const add=s=>body+=s;
+function lg(c1,c2,dir='v'){const id='g'+(gid++);defs+=`<linearGradient id="${id}" x1="0" y1="0" x2="${dir==='h'?1:0}" y2="${dir==='h'?0:1}"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>`;return `url(#${id})`}
+function rg(c1,c2){const id='g'+(gid++);defs+=`<radialGradient id="${id}" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></radialGradient>`;return `url(#${id})`}
+function shade(hex,a){let n=parseInt(hex.slice(1),16),r=(n>>16)&255,g=(n>>8)&255,b=n&255;const f=v=>Math.max(0,Math.min(255,Math.round(a>0?v+(255-v)*a:v*(1+a))));return '#'+[f(r),f(g),f(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+const sg=c=>lg(shade(c,.18),shade(c,-.18));            // semi-flat gradient from one colour
+const R=(x,y,w,h,r,f,x2='')=>add(`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${f}" ${x2}/>`);
+const CI=(x,y,r,f,x2='')=>add(`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}" ${x2}/>`);
+const P=(d,f,x2='')=>add(`<path d="${d}" fill="${f}" ${x2}/>`);
+const T=(x,y,s,txt,f,x2='')=>add(`<text x="${x}" y="${y}" font-size="${s}" fill="${f}" ${x2}>${txt}</text>`);
+
+// ---------- people (semi-flat, no outlines, minimal faces) ----------
+function person(x,fy,s,o){
+  const sk=o.skin,top=o.top,bot=o.bot;
+  let g=`<g transform="translate(${x},${fy}) scale(${s})">`;
+  g+=`<ellipse cx="0" cy="6" rx="110" ry="16" fill="#0E3B47" opacity=".16"/>`;
+  g+=`<rect x="-46" y="-250" width="38" height="244" rx="18" fill="${sg(bot)}"/><rect x="8" y="-250" width="38" height="244" rx="18" fill="${sg(shade(bot,-.08))}"/>`;
+  g+=`<ellipse cx="-30" cy="-2" rx="34" ry="14" fill="${shade(o.shoe||'#0E3B47',0)}"/><ellipse cx="34" cy="-2" rx="34" ry="14" fill="${shade(o.shoe||'#0E3B47',0)}"/>`;
+  (o.arms||[]).forEach(a=>{const sx=a.s*62,sy=-452;
+    g+=`<g transform="rotate(${a.a} ${sx} ${sy})"><rect x="${sx-15}" y="${sy-10}" width="30" height="${a.l||210}" rx="15" fill="${sg(top)}"/><circle cx="${sx}" cy="${sy+(a.l||210)-6}" r="18" fill="${sk}"/>${a.extra||''}</g>`});
+  g+=`<rect x="-62" y="-478" width="124" height="250" rx="46" fill="${sg(top)}"/>`;
+  if(o.apron)g+=`<rect x="-46" y="-400" width="92" height="170" rx="22" fill="${o.apron}" opacity=".9"/>`;
+  if(o.vest)g+=`<path d="M-54,-470 L-20,-470 L0,-410 L20,-470 L54,-470 L54,-250 L-54,-250Z" fill="${o.vest}" opacity=".95"/>`;
+  g+=`<rect x="-14" y="-516" width="28" height="44" rx="12" fill="${shade(sk,-.08)}"/>`;
+  if(o.hair&&o.hairStyle!=='none')g+=`<circle cx="0" cy="${o.hairStyle==='long'?-542:-548}" r="46" fill="${sg(o.hair)}"/>`;
+  if(o.hairStyle==='long')g+=`<rect x="-46" y="-548" width="92" height="96" rx="40" fill="${sg(o.hair)}"/>`;
+  if(o.hairStyle==='bun')g+=`<circle cx="0" cy="-602" r="22" fill="${sg(o.hair)}"/>`;
+  g+=`<circle cx="0" cy="-534" r="42" fill="${sg(sk)}"/>`;
+  if(o.hairStyle==='long'||o.hairStyle==='bun'||o.hairStyle==='short')g+=`<path d="M-44,-546 a44,44 0 0 1 88,0 q-44,-26 -88,0Z" fill="${sg(o.hair)}"/>`;
+  if(o.hat==='hard')g+=`<path d="M-52,-552 a52,50 0 0 1 104,0Z" fill="${sg(o.hatc||'#F4EFE6')}"/><rect x="-60" y="-556" width="120" height="14" rx="7" fill="${sg(o.hatc||'#F4EFE6')}"/><rect x="-8" y="-600" width="16" height="30" rx="6" fill="${shade(o.hatc||'#F4EFE6',-.15)}"/>`;
+  if(o.hat==='cap')g+=`<path d="M-48,-548 a48,46 0 0 1 96,0Z" fill="${sg(o.hatc||C.navy)}"/>`;
+  if(o.mask)g+=`<path d="M-30,-536 h60 v26 q-30,14 -60,0Z" fill="#EAF1F0"/>`;
+  g+='</g>';add(g);
+}
+
+// ---------- scene setup ----------
+// backwalls per room
+const roomCols=[['#EFE7DA','#E2D7C4'],['#D2E5E3','#B8D3D1'],['#EFE7DA','#E2D7C4'],['#D2E5E3','#B8D3D1']];
+for(let i=0;i<4;i++){R(i*RW,WALL_T,RW,WALL_B-WALL_T,0,lg(roomCols[i][0],roomCols[i][1]));
+  // wainscot
+  R(i*RW,880,RW,150,0,lg(shade(roomCols[i][1],-.04),shade(roomCols[i][1],-.12)));}
+// ceiling beam
+R(0,WALL_T-40,W,70,0,lg('#14505B','#0E3B47'));
+for(let i=0;i<60;i++)R(i*80+10,WALL_T-30,44,10,5,'#2B8791','opacity=".35"');
+// floor with receding tile lines
+R(0,WALL_B,W,FLOOR_B-WALL_B,0,lg('#D8CDB9','#C5B8A1'));
+let fl='';for(let x=-4000;x<=W+4000;x+=200){const x2=2400+(x-2400)*1.55;fl+=`<line x1="${x}" y1="${WALL_B}" x2="${x2}" y2="${FLOOR_B}" stroke="#fff" stroke-opacity=".32" stroke-width="3"/>`}
+fl+=`<line x1="0" y1="1100" x2="${W}" y2="1100" stroke="#fff" stroke-opacity=".28" stroke-width="3"/><line x1="0" y1="1170" x2="${W}" y2="1170" stroke="#fff" stroke-opacity=".24" stroke-width="3"/>`;
+add(`<g clip-path="url(#floorClip)">${fl}</g>`);
+defs+=`<clipPath id="floorClip"><rect x="0" y="${WALL_B}" width="${W}" height="${FLOOR_B-WALL_B}"/></clipPath>`;
+// floor edge lip
+R(0,FLOOR_B,W,22,0,lg('#14505B','#0E3B47'));
+
+// big ghost numerals on walls
+const ghost=['01','02','03','04'];
+ghost.forEach((n,i)=>T(i*RW+70,560,330,n,C.navy,`font-weight="800" opacity=".05" letter-spacing="-10"`));
+
+// ---------- dividers with doorways ----------
+for(let i=1;i<4;i++){const x=i*RW-26;
+  R(x,WALL_T,52,220,0,lg('#1F6F78','#14505B','h'));            // above door
+  R(x,930,52,WALL_B-930,0,lg('#1F6F78','#14505B','h'));        // below door
+  R(x-34,WALL_T+196,120,30,6,'#0E3B47');                       // lintel
+  R(x+52,470,26,460,0,'#0E3B47','opacity=".12"');              // door depth shadow
+}
+
+// ---------- the ONE LINE ----------
+const pts=[[-30,730],[260,720],[420,640],[600,745],[780,620],[960,700],[1200,700],[1450,650],[1700,690],[1900,765],[2150,700],[2400,690],[2650,650],[3000,640],[3350,650],[3600,700],[3800,745],[4200,745],[4650,745],[4830,745]];
+function cr(p){let d=`M${p[0][0]},${p[0][1]}`;for(let i=0;i<p.length-1;i++){const p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;
+  d+=` C${p1[0]+(p2[0]-p0[0])/6},${p1[1]+(p2[1]-p0[1])/6} ${p2[0]-(p3[0]-p1[0])/6},${p2[1]-(p3[1]-p1[1])/6} ${p2[0]},${p2[1]}`}return d}
+const LD=cr(pts);
+defs+=`<path id="lp" d="${LD}"/>`;
+// helper: sample the path (done after DOM build) -> we precompute using a hidden svg path
+const probe=document.createElementNS('http://www.w3.org/2000/svg','svg');const pp=document.createElementNS('http://www.w3.org/2000/svg','path');pp.setAttribute('d',LD);probe.appendChild(pp);document.body.appendChild(probe);
+const LEN=pp.getTotalLength();
+const samples=[];for(let l=0;l<=LEN;l+=2){const q=pp.getPointAtLength(l);samples.push([l,q.x,q.y])}
+function atX(x){for(const s of samples)if(s[1]>=x)return s;return samples[samples.length-1]}
+function frame(l){const a=pp.getPointAtLength(l),b=pp.getPointAtLength(l+3);return {x:a.x,y:a.y,ang:Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI}}
+document.body.removeChild(probe);
+
+// ===== ROOM 1: Orthopaedics =====
+// X-ray lightbox
+R(300,420,740,470,26,'#0E3B47','opacity=".18" transform="translate(0,12)"');
+R(300,420,740,470,26,lg('#14505B','#0A2B35'));
+R(324,444,692,422,16,rg('#2B7C86','#0E3B47'));
+for(let i=0;i<5;i++)R(324+i*0,444+i*85,692,2,0,'#fff','opacity=".05"');
+// ghost pelvis/ribs hints
+CI(920,800,120,'#7FC1C4','opacity=".10"');CI(920,800,70,'#0E3B47','opacity=".25"');
+for(let i=0;i<4;i++)P(`M${380+i*0},${470+i*0}`,'none');
+// fracture marker ring
+add(`<circle cx="610" cy="690" r="62" fill="none" stroke="${C.coral2}" stroke-width="5" stroke-dasharray="10 9"/>`);
+// people room 1 (behind the line)
+person(150,1135,1.0,{skin:'#CF9470',hair:'#2B2320',hairStyle:'short',top:'#8FB8B6',bot:'#35506A',arms:[{s:-1,a:6},{s:1,a:-34,l:170}]});
+// crutches for patient
+add(`<g stroke="#8A6A4A" stroke-width="12" stroke-linecap="round"><line x1="60" y1="1130" x2="96" y2="720"/><line x1="40" y1="850" x2="110" y2="850"/></g>`);
+person(1095,1135,1.02,{skin:'#E3B896',hair:'#6B4A32',hairStyle:'short',hat:'cap',hatc:C.teal,mask:true,top:C.teal,bot:'#14505B',arms:[{s:-1,a:66,l:205},{s:1,a:-5}]});
+// ortho prop: bone model on stand
+R(1005,860,16,170,6,'#0E3B47');R(985,1020,56,14,7,'#0E3B47');
+
+// ===== ROOM 2: Rehabilitation =====
+// parallel bars
+add(`<g><rect x="1500" y="1000" width="16" height="130" rx="8" fill="#0E3B47"/><rect x="1990" y="1000" width="16" height="130" rx="8" fill="#0E3B47"/>
+<rect x="1486" y="780" width="540" height="22" rx="11" fill="${lg('#2B8791','#14505B')}"/>
+<rect x="1500" y="800" width="14" height="230" rx="6" fill="#14505B"/><rect x="2000" y="800" width="14" height="230" rx="6" fill="#14505B"/>
+<rect x="1472" y="900" width="560" height="14" rx="7" fill="${lg('#2B8791','#14505B')}" opacity=".0"/></g>`);
+// wall: stairs + gait chart
+for(let i=0;i<4;i++)R(2230+i*50,1030-(i+1)*52,260-i*50,52,0,lg('#2B8791','#14505B'));
+
+// people room 2
+person(1620,1135,1.0,{skin:'#B97D58',hair:'#1E1714',hairStyle:'bun',top:'#E7D9BE',bot:'#35506A',arms:[{s:-1,a:-40,l:190},{s:1,a:36,l:190}]});
+person(2230,1135,0.98,{skin:'#E8C3A2',hair:'#3A2A22',hairStyle:'short',top:C.navy,bot:'#2B8791',arms:[{s:-1,a:50,l:200},{s:1,a:10}]});
+// ===== ROOM 3: Occupational vaccination =====
+// shield behind lens
+P('M3000,330 C3150,380 3290,380 3330,370 C3340,640 3250,860 3000,980 C2750,860 2660,640 2670,370 C2710,380 2850,380 3000,330Z',lg('#FFB7A3','#F26A4B'),'opacity=".35"');
+// vial shelf
+R(2430,560,170,14,7,'#14505B');
+[0,1,2,3].forEach(i=>{R(2442+i*38,480,28,70,9,sg(i%2?C.teal2:C.mist));R(2446+i*38,468,20,16,4,'#0E3B47');R(2442+i*38,505,28,20,0,C.coral,'opacity=".9"')});
+// people room 3
+person(2600,1135,1.0,{skin:'#E3B896',hair:'#2B2320',hairStyle:'long',top:'#EEF4F3',bot:'#2B8791',arms:[{s:-1,a:12},{s:1,a:-72,l:200,extra:''}]});
+person(3380,1135,1.02,{skin:'#A8714F',hair:'#1E1714',hairStyle:'none',hat:'hard',hatc:'#F4EFE6',top:'#4C6A5A',vest:'#F0A23B',bot:'#35506A',arms:[{s:-1,a:58,l:190},{s:1,a:4}]});
+
+// ===== ROOM 4: Acupuncture =====
+// wall chart
+R(4580,350,220,330,18,sg('#F4EFE6'));
+add(`<g stroke="${C.teal}" stroke-width="5" stroke-linecap="round" fill="none"><path d="M4690,400 v50 M4650,440 h80 M4690,450 v110 M4690,560 l-34,90 M4690,560 l34,90"/></g>`);
+[[4690,420],[4690,500],[4660,450],[4720,450],[4690,560]].forEach(p=>CI(p[0],p[1],8,C.coral));
+// lantern / moxa glow
+
+// treatment table
+R(3760,820,1000,66,22,lg('#2B8791','#14505B'));
+R(3800,886,26,150,8,'#14505B');R(4690,886,26,150,8,'#14505B');
+R(3800,1000,180,30,0,'#0E3B47','opacity=".0"');
+// prone patient (torso + legs + head)
+R(3840,720,640,98,48,sg('#EFD7BC'));            // towel/back
+R(4440,742,260,70,34,sg('#C9906C'));            // legs
+R(3790,726,92,88,44,sg('#C9906C'));             // head side
+add(`<path d="M3790,740 q40,-34 92,-6 l0,40Z" fill="#2B2320"/>`);
+// acupuncturist
+person(3750,1135,1.0,{skin:'#E8C3A2',hair:'#2B2320',hairStyle:'bun',top:'#EEF4F3',bot:'#14505B',arms:[{s:-1,a:-14,l:210},{s:1,a:-8,l:210}]});
+// needles on acupoints
+const acu=[3920,4040,4160,4280,4400,4520];
+acu.forEach((x,i)=>{const y=745;add(`<line x1="${x}" y1="${y}" x2="${x+6}" y2="${y-112}" stroke="#0E3B47" stroke-width="3"/><circle cx="${x+6}" cy="${y-116}" r="8" fill="#0E3B47"/>`)});
+
+// ---------- the line itself ----------
+// halo + core
+add(`<use href="#lp" fill="none" stroke="#F4EFE6" stroke-width="40" stroke-linecap="round" opacity=".8"/>`);
+// Room 1 beads first (spine) over halo
+const s1=atX(330)[0],e1=atX(1010)[0];
+add(`<use href="#lp" fill="none" stroke="${C.coral}" stroke-width="16" stroke-linecap="round"/>`);
+let n=0;for(let l=s1;l<e1;l+=64,n++){const f=frame(l),k=0.82+0.45*(l-s1)/(e1-s1);
+  add(`<g transform="translate(${f.x},${f.y}) rotate(${f.ang})"><rect x="${-22*k}" y="${-38*k}" width="${44*k}" height="${76*k}" rx="12" fill="${lg('#FFB09A','#F26A4B')}"/><rect x="${-6}" y="${-38*k-18}" width="12" height="22" rx="5" fill="${C.coral2}"/><rect x="${-22*k}" y="${38*k+8}" width="${44*k}" height="10" rx="5" fill="#FFD4C6" opacity=".75"/></g>`)}
+// Room 2 knee lens
+CI(1900,765,205,'#0E3B47','opacity=".15" transform="translate(0,14)"');
+defs+=`<clipPath id="lens2"><circle cx="1900" cy="765" r="195"/></clipPath>`;
+add(`<g clip-path="url(#lens2)"><rect x="1700" y="565" width="400" height="400" fill="${rg('#2B7C86','#0E3B47')}"/><use href="#lp" fill="none" stroke="#F8F3E8" stroke-width="64" stroke-linecap="round"/><use href="#lp" fill="none" stroke="${C.coral}" stroke-width="16" stroke-linecap="round"/></g>`);
+CI(1900,765,56,sg('#F8F3E8'));CI(1900,765,26,C.coral);
+add(`<circle cx="1900" cy="765" r="195" fill="none" stroke="#14505B" stroke-width="12"/>`);
+// ROM arc gauge
+add(`<path d="M1900,765 L2088,700 A200,200 0 0 0 2095,830Z" fill="${C.coral}" opacity=".16"/><path d="M2088,700 A200,200 0 0 1 2095,830" fill="none" stroke="${C.coral}" stroke-width="7" stroke-dasharray="3 12" stroke-linecap="round" transform="translate(0,0)"/>`);
+T(1800,985,44,'ROM','#0E3B47','font-weight="700" opacity="0"');
+// Room 3 arm lens
+defs+=`<clipPath id="lens3"><circle cx="3000" cy="640" r="250"/></clipPath>`;
+CI(3000,640,262,'#0E3B47','opacity=".15" transform="translate(0,16)"');
+CI(3000,640,250,'#E5B494');CI(3000,640,232,'#F5DFC4');CI(3000,640,205,rg('#E9998A','#C9605A'));
+P('M2870,470 C2940,440 3090,440 3150,500 C3110,560 2990,570 2900,560Z','#C9605A','opacity=".55"');
+add(`<g clip-path="url(#lens3)"><use href="#lp" fill="none" stroke="#F8F3E8" stroke-width="78" stroke-linecap="round"/></g>`);
+add(`<g clip-path="url(#lens3)"><use href="#lp" fill="none" stroke="${C.coral}" stroke-width="16" stroke-linecap="round"/></g>`);
+add(`<circle cx="3000" cy="640" r="250" fill="none" stroke="#14505B" stroke-width="12"/>`);
+// syringe at lens
+add(`<g transform="translate(2905,500) rotate(-32) scale(.8)"><line x1="0" y1="0" x2="0" y2="-84" stroke="#0E3B47" stroke-width="5"/><rect x="-22" y="-262" width="44" height="182" rx="12" fill="${lg('#FFFFFF','#CFE3E1','h')}"/><rect x="-22" y="-210" width="44" height="130" rx="10" fill="${C.coral}" opacity=".8"/><rect x="-46" y="-268" width="92" height="14" rx="7" fill="#14505B"/><rect x="-6" y="-340" width="12" height="76" rx="5" fill="#14505B"/><rect x="-30" y="-352" width="60" height="16" rx="8" fill="#14505B"/></g>`);
+[[2885,545,6],[2870,568,4]].forEach(d=>CI(d[0],d[1],d[2],C.coral2));
+defs+=`<clipPath id="r4clip"><rect x="3640" y="600" width="1160" height="300"/></clipPath>`;
+// Room 4: meridian dots
+add(`<g clip-path="url(#r4clip)"><use href="#lp" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="1 26" stroke-linecap="round" opacity=".9"/></g>`);
+acu.forEach(x=>{CI(x+0,745,22,C.coral2,'opacity=".35"');CI(x+0,745,13,'#fff')});
+CI(4180,745,0,'none');
+// start / end caps
+CI(24,730,34,C.coral);T(86,690,34,'INJURY','#0E3B47','font-weight="800" letter-spacing="3"');
+CI(4750,745,36,C.coral);add(`<path d="M4738,745 h24 m-10,-10 l10,10 l-10,10" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`);
+
+// ---------- callouts (leader lines into the line) ----------
+function call(x,y,tx,ty,title,sub,align='start',w=330){
+  add(`<line x1="${x}" y1="${y}" x2="${tx}" y2="${ty}" stroke="#0E3B47" stroke-width="3"/><circle cx="${tx}" cy="${ty}" r="8" fill="#0E3B47"/>`);
+  const ax=align==='start'?x+14:x-14;
+  T(ax,y-34,34,title,'#0E3B47',`font-weight="800" text-anchor="${align}"`);
+  const lines=sub.split('|');lines.forEach((l,i)=>T(ax,y+4+i*30,24,l,'#2B5560',`text-anchor="${align}"`));
+}
+// room 1
+call(380,350,500,590,'33 VERTEBRAE','Stack, curve, protect|the line of the body');
+call(760,350,610,630,'FRACTURE · DISC','Find it. Fix it.|Stabilise the line.');
+// room 2
+call(1340,470,1700,730,'HINGE','Knee flexion up to ~135°|Every degree is practised.','start');
+call(2060,350,1940,600,'GAIT RETURNS','Rails, stairs, steps:|rebuild the walk.');
+// room 3
+call(2440,400,2790,610,'DELTOID','Intramuscular vaccine|goes where the line goes.','start');
+call(3290,360,3170,500,'HEP B · FLU · Td','Match the vaccine|to the work exposure.','start');
+// room 4
+call(3940,350,3926,730,'361 ACUPOINTS','Chronic pain: ease the|line that still aches.');
+call(4440,350,4406,730,'MERIDIAN','One continuous channel:|back to work.');
+
+// ---------- header + footer ----------
+T(80,150,150,'ONE BODY.','#0E3B47','font-weight="800" letter-spacing="-3"');
+T(870,150,150,'ONE LINE OF CARE.',C.coral,'font-weight="800" letter-spacing="-3"');
+T(80,205,38,'Orthopaedics  ·  Rehabilitation  ·  Occupational vaccination  ·  Acupuncture   —   from injury to back at work','#2B5560','letter-spacing="1"');
+// room captions in footer
+const caps=[['01','ORTHOPAEDICS','Diagnose and repair'],['02','REHABILITATION','Restore movement'],['03','VACCINE','Prevent before it happens'],['04','ACUPUNCTURE','Ease what still aches']];
+caps.forEach((c,i)=>{const x=i*RW+80;T(x,1328,64,c[0],C.coral,'font-weight="800"');T(x+110,1304,34,c[1],'#0E3B47','font-weight="800" letter-spacing="3"');T(x+110,1342,28,c[2],'#2B5560','')});
+// chevrons between footers
+[1,2,3].forEach(i=>add(`<path d="M${i*RW-18},1296 l22,22 l-22,22" stroke="#0E3B47" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/>`));
+T(4560,205,26,'PROTOTYPE v1 · concept 1+2','#2B5560','text-anchor="end" opacity=".7" letter-spacing="2"');
+
+// ---------- mount ----------
+document.getElementById('stage').innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"><defs>${defs}</defs><rect width="${W}" height="${H}" fill="#F4EFE6"/>${body}</svg>`;
+</script>
+</body>
+</html>
