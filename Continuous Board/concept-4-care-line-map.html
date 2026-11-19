@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Care Line Map - Concept 4 Prototype</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  html,body{margin:0;background:#F4EFE6}
+  svg{display:block;width:4800px;height:1400px}
+  text{font-family:'Bahnschrift','Segoe UI',Arial,sans-serif}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const C={navy:'#0E3B47',teal:'#2B8791',coral:'#F26A4B',gold:'#D9962E',cream:'#F4EFE6',ink:'#2B5560'};
+const W=4800,H=1400;
+let body='';const add=s=>body+=s;
+const T=(x,y,s,t,f,x2='')=>add(`<text x="${x}" y="${y}" font-size="${s}" fill="${f}" ${x2}>${t}</text>`);
+const CI=(x,y,r,f,x2='')=>add(`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}" ${x2}/>`);
+
+// ---------- background: quiet dot grid + ghost zone words ----------
+let dots='';for(let x=40;x<W;x+=80)for(let y=300;y<1260;y+=80)dots+=`<circle cx="${x}" cy="${y}" r="3" fill="#0E3B47" opacity=".07"/>`;
+add(dots);add('<g transform="translate(0,90)">');
+[['TREAT',820],['DECIDE',2400],['RETURN',3950]].forEach(z=>T(z[1],1010,260,z[0],C.navy,'font-weight="800" text-anchor="middle" opacity=".045" letter-spacing="10"'));
+// central hero halo
+add(`<circle cx="2400" cy="690" r="400" fill="${C.coral}" opacity=".08"/><circle cx="2400" cy="690" r="290" fill="${C.coral}" opacity=".09"/>`);
+
+// ---------- lines (octilinear, 45-degree bends) ----------
+const L=[
+ {n:1,name:'ORTHOPAEDICS',sub:'Bone, joint, spine',c:C.coral,
+  pts:[[150,420],[1500,420],[1640,560],[3160,560],[3300,420],[4640,420]],
+  L:[[560,'Injury'],[880,'X-ray · MRI'],[1180,'Surgery / cast'],[1400,'Post-op review']],
+  R:[[3560,'Healing check'],[3960,'Load testing'],[4300,'Job clearance']]},
+ {n:2,name:'REHABILITATION',sub:'Restore function',c:C.teal,
+  pts:[[150,600],[1700,600],[1740,640],[3060,640],[3100,600],[4640,600]],
+  L:[[560,'Referral'],[880,'Assessment'],[1180,'Physio'],[1450,'Gait & balance']],
+  R:[[3560,'Strength'],[3960,'Work conditioning'],[4300,'Job simulation']]},
+ {n:3,name:'VACCINE',sub:'Prevent work-related infection',c:C.navy,
+  pts:[[150,780],[1700,780],[1740,740],[3060,740],[3100,780],[4640,780]],
+  L:[[560,'Exposure review'],[880,'Immunity screening'],[1180,'Hep B series'],[1450,'Influenza']],
+  R:[[3560,'Td booster'],[3960,'Titre check'],[4300,'Annual recall']]},
+ {n:4,name:'ACUPUNCTURE',sub:'Manage chronic pain',c:C.gold,
+  pts:[[150,960],[1500,960],[1640,820],[3160,820],[3300,960],[4640,960]],
+  L:[[560,'Chronic pain'],[880,'Assessment'],[1180,'First session'],[1400,'Needling course']],
+  R:[[3560,'Maintenance'],[3960,'Sleep & stress'],[4300,'Self-care plan']]}
+];
+const path=p=>'M'+p.map(q=>q.join(',')).join(' L');
+// halo then colour
+L.forEach(l=>add(`<path d="${path(l.pts)}" fill="none" stroke="#F4EFE6" stroke-width="40" stroke-linejoin="round" stroke-linecap="round"/>`));
+L.forEach(l=>add(`<path d="${path(l.pts)}" fill="none" stroke="${l.c}" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>`));
+// y of a line at x
+function yAt(l,x){const p=l.pts;for(let i=0;i<p.length-1;i++){const[a,b]=[p[i],p[i+1]];if(x>=a[0]&&x<=b[0]){return b[0]===a[0]?a[1]:a[1]+(b[1]-a[1])*(x-a[0])/(b[0]-a[0])}}return p[p.length-1][1]}
+// stations + labels
+L.forEach(l=>{[...l.L,...l.R].forEach(s=>{const y=yAt(l,s[0]);
+  CI(s[0],y,16,'#fff',`stroke="${l.c}" stroke-width="9"`);
+  T(s[0],y-40,30,s[1],C.navy,'font-weight="700" text-anchor="middle"')})});
+// line start badges (big numbered discs) + names above
+L.forEach(l=>{const y=l.pts[0][1];
+  CI(120,y,52,l.c);CI(120,y,52,'none','stroke="#F4EFE6" stroke-width="8"');
+  T(120,y+22,64,l.n,'#fff','font-weight="800" text-anchor="middle"');
+  T(70,y-98,38,l.name,l.c==C.gold?'#9A6410':l.c,'font-weight="800" letter-spacing="4"');
+  T(70,y-66,24,l.sub,C.ink,'')});
+
+// ---------- hub (hero) ----------
+add(`<rect x="2330" y="500" width="140" height="380" rx="70" fill="#fff" stroke="${C.navy}" stroke-width="12"/>`);
+[560,640,740,820].forEach((y,i)=>CI(2400,y,26,'#fff',`stroke="${[C.coral,C.teal,C.navy,C.gold][i]}" stroke-width="14"`));
+T(2400,395,120,'FIT TO WORK?',C.navy,'font-weight="800" text-anchor="middle" letter-spacing="-2"');
+T(2400,452,38,'Four specialties. One decision. Every line passes through here.',C.ink,'text-anchor="middle"');
+T(2400,960,34,'RETURN-TO-WORK ASSESSMENT',C.navy,'font-weight="800" text-anchor="middle" letter-spacing="5"');
+T(2400,1000,26,'Function · immunity · pain · job demands',C.ink,'text-anchor="middle"');
+
+// ---------- end hub ----------
+add(`<line x1="4640" y1="420" x2="4640" y2="960" stroke="${C.navy}" stroke-width="14"/>`);
+L.forEach(l=>CI(4640,l.pts[l.pts.length-1][1],30,'#fff',`stroke="${C.navy}" stroke-width="12"`));
+add(`<g transform="translate(4640,690)"><rect x="-18" y="-88" width="36" height="176" rx="18" fill="#fff" opacity="0"/></g>`);
+T(4560,340,68,'BACK TO WORK',C.coral,'font-weight="800" text-anchor="end" letter-spacing="-1"');
+add(`<path d="M4580,330 h60 m-20,-22 l22,22 l-22,22" fill="none" stroke="${C.coral}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>`);
+
+// ---------- YOU ARE HERE pin at Injury ----------
+add(`<g transform="translate(560,268)"><path d="M0,70 C-60,10 -52,-48 0,-48 C52,-48 60,10 0,70Z" fill="${C.navy}"/><circle cx="0" cy="-10" r="22" fill="${C.cream}"/></g>`);
+T(560,184,28,'YOU ARE HERE','#0E3B47','font-weight="800" text-anchor="middle" letter-spacing="3"');
+
+add('</g>');
+// ---------- header ----------
+T(80,150,150,'THE CARE LINE MAP.',C.navy,'font-weight="800" letter-spacing="-3"');
+T(1760,150,150,'ONE DESTINATION.',C.coral,'font-weight="800" letter-spacing="-3"');
+T(80,205,38,'Orthopaedics  ·  Rehabilitation  ·  Occupational vaccination  ·  Acupuncture   —   four lines, shared stations, one destination','#2B5560','letter-spacing="1"');
+T(4720,205,26,'PROTOTYPE · concept 4 · Health Transit Map','#2B5560','text-anchor="end" opacity=".7" letter-spacing="2"');
+
+// ---------- legend ----------
+add(`<rect x="0" y="1190" width="${W}" height="210" fill="#E9E0D0"/>`);
+L.forEach((l,i)=>{const x=80+i*1180;
+  CI(x+40,1290,40,l.c);T(x+40,1312,56,l.n,'#fff','font-weight="800" text-anchor="middle"');
+  T(x+100,1282,36,l.name,C.navy,'font-weight="800" letter-spacing="3"');
+  T(x+100,1322,28,['Diagnose and repair','Restore movement','Prevent before it happens','Ease what still aches'][i],C.ink,'')});
+T(80,1380,22,'Ring = station   ·   Capsule = interchange (shared service)   ·   Bends at 45 degrees like a metro map',C.ink,'opacity=".8"');
+
+document.getElementById('stage').innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="#F4EFE6"/>${body}</svg>`;
+</script>
+</body>
+</html>

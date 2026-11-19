@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
   html,body{margin:0;background:#F4EFE6}
-  svg{display:block;width:4800px;height:1800px}
+  svg{display:block;width:4800px;height:1400px}
   text{font-family:'Bahnschrift','Segoe UI',Arial,sans-serif}
 </style>
 </head>
@@ -15,7 +15,7 @@
 <script>
 // ---------- palette ----------
 const C={navy:'#0E3B47',teal:'#1F6F78',teal2:'#2B8791',mist:'#BFD9D8',cream:'#F4EFE6',sand:'#E9E0D0',coral:'#F26A4B',coral2:'#FF9A7E',ivory:'#F8F3E8'};
-const W=4800,H=1800,RW=1200,WALL_T=250,WALL_B=1030,FLOOR_B=1250;
+const W=4800,H=1400,RW=1200,WALL_T=250,WALL_B=1030,FLOOR_B=1250;
 
 let defs='',body='',gid=0;
 const add=s=>body+=s;
@@ -225,34 +225,7 @@ const caps=[['01','ORTHOPAEDICS','Diagnose and repair'],['02','REHABILITATION','
 caps.forEach((c,i)=>{const x=i*RW+80;T(x,1328,64,c[0],C.coral,'font-weight="800"');T(x+110,1304,34,c[1],'#0E3B47','font-weight="800" letter-spacing="3"');T(x+110,1342,28,c[2],'#2B5560','')});
 // chevrons between footers
 [1,2,3].forEach(i=>add(`<path d="M${i*RW-18},1296 l22,22 l-22,22" stroke="#0E3B47" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/>`));
-T(4560,205,26,'PROTOTYPE v2 · concepts 1+2+4','#2B5560','text-anchor="end" opacity=".7" letter-spacing="2"');
-
-// ---------- transit map (concept 4) ----------
-R(0,1400,W,400,0,lg('#EDE5D6','#E4DAC8'));
-T(80,1462,30,'HOW THE FOUR SERVICES CONNECT','#0E3B47','font-weight="800" letter-spacing="4"');
-T(80,1496,22,'Four lines, shared stations: one worker moves between them.','#2B5560','');
-const lanes=[
- {n:'ORTHO',c:C.coral,y:1560,x0:300,x1:2600,st:[300,700,1100,1250,2600]},
- {n:'REHAB',c:C.teal2,y:1620,x0:1250,x1:4650,st:[1250,1750,2150,2600,3300,4650]},
- {n:'VACCINE',c:C.navy,y:1680,x0:2300,x1:4650,st:[2300,2600,3000,3400,3800,4650]},
- {n:'ACUPUNCTURE',c:'#D9962E',y:1740,x0:1250,x1:4650,st:[1250,4100,4650]}
-];
-lanes.forEach(l=>{
-  add(`<line x1="300" y1="${l.y}" x2="4650" y2="${l.y}" stroke="${l.c}" stroke-opacity=".18" stroke-width="10" stroke-linecap="round"/>`);
-  R(80,l.y-22,190,44,22,l.c);T(175,l.y+8,22,l.n,'#fff','font-weight="800" text-anchor="middle" letter-spacing="2"');
-  add(`<line x1="${l.x0}" y1="${l.y}" x2="${l.x1}" y2="${l.y}" stroke="${l.c}" stroke-width="16" stroke-linecap="round"/>`);
-});
-// interchanges: vertical capsules spanning the lanes that meet
-const ix=[{x:1250,n:'PAIN',a:[0,1,3]},{x:2600,n:'PREVENTION',a:[0,1,2]},{x:4650,n:'BACK TO WORK',a:[1,2,3]}];
-ix.forEach(i=>{const ys=i.a.map(k=>lanes[k].y),y0=Math.min(...ys),y1=Math.max(...ys);
-  add(`<line x1="${i.x}" y1="${y0}" x2="${i.x}" y2="${y1}" stroke="#0E3B47" stroke-width="10"/>`);
-  ys.forEach(y=>CI(i.x,y,22,'#fff','stroke="#0E3B47" stroke-width="8"'));
-  T(i.x,1530,26,i.n,'#0E3B47','font-weight="800" text-anchor="middle" letter-spacing="3"')});
-// plain stations
-lanes.forEach(l=>l.st.forEach(x=>{if(!ix.some(i=>i.x===x&&Math.abs(l.y-l.y)<1&&i.a.some(k=>lanes[k]===l)))CI(x,l.y,13,'#fff',`stroke="${l.c}" stroke-width="7"`)}));
-// station names (small, above own line)
-[[300,0,'Injury'],[700,0,'X-ray'],[1100,0,'Surgery'],[1750,1,'Gait'],[2150,1,'Stairs'],[3300,1,'Work conditioning'],[2300,2,'Screening'],[3000,2,'Hep B'],[3400,2,'Flu'],[3800,2,'Td booster'],[4100,3,'Meridian']].forEach(a=>T(a[0],lanes[a[1]].y-24,20,a[2],'#0E3B47','text-anchor="middle" font-weight="600"'));
-
+T(4560,205,26,'PROTOTYPE v1 · concept 1+2','#2B5560','text-anchor="end" opacity=".7" letter-spacing="2"');
 
 // ---------- mount ----------
 document.getElementById('stage').innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"><defs>${defs}</defs><rect width="${W}" height="${H}" fill="#F4EFE6"/>${body}</svg>`;
