@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Run Strong, Recover Stronger - Fun Run Hospital Board</title>
+<style>
+  :root{--navy:#0E3B47;--teal:#2B8791;--coral:#F26A4B;--cream:#F4EFE6;--ink:#2B5560;--mist:#BFD9D8}
+  html,body{margin:0;background:var(--navy)}
+  .board{position:relative;width:4800px;height:2290px;background:var(--cream);font-family:'Bahnschrift','Segoe UI',Arial,sans-serif;color:var(--navy);overflow:hidden}
+  .head{position:absolute;left:0;top:0;width:4800px;height:340px;background:linear-gradient(100deg,#0A2B35 0,#0E3B47 60%,#14505B 100%)}
+  .strip{position:absolute;left:0;top:340px;width:4800px;height:1492px;background:url(images/corridor-long.png) 0 -33px/4800px auto no-repeat}
+  .foot{position:absolute;left:0;top:1832px;width:4800px;height:458px;background:var(--navy)}
+  .h1{position:absolute;left:90px;top:10px;font-size:176px;line-height:1;font-weight:800;letter-spacing:2px;color:#fff;white-space:nowrap;font-style:italic}
+  .h2{position:absolute;left:94px;top:178px;font-size:112px;line-height:1;font-weight:800;color:var(--coral);letter-spacing:2px;white-space:nowrap;font-style:italic}
+  .h3{position:absolute;left:98px;top:296px;font-size:34px;color:var(--mist);letter-spacing:2px;white-space:nowrap}
+  .logo{position:absolute;right:110px;top:38px;width:560px;height:170px;border:5px dashed rgba(255,255,255,.55);border-radius:20px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:44px;letter-spacing:6px;font-weight:800;opacity:.9}
+  .visit{position:absolute;right:60px;top:236px;width:660px;text-align:center;color:#fff;font-size:34px;white-space:nowrap;letter-spacing:4px;font-weight:800}
+  .visit span{color:var(--coral)}
+  .sign{position:absolute;top:372px;height:100px;transform:translateX(-50%);background:var(--navy);color:#fff;border-radius:50px;display:flex;align-items:center;gap:22px;padding:0 50px 0 12px;font-weight:800;font-size:62px;letter-spacing:5px;white-space:nowrap;box-shadow:0 8px 0 rgba(14,59,71,.2)}
+  .sign em{font-style:italic;background:var(--coral);color:#fff;border-radius:40px;height:76px;padding:0 28px;display:flex;align-items:center;font-size:50px;letter-spacing:2px}
+  .route{position:absolute;left:0;top:1772px;width:4800px;height:40px}
+  .card{position:absolute;top:1868px;width:1147px;height:250px;background:#fff;border-radius:18px;border-top:14px solid var(--coral);box-sizing:border-box;padding:26px 36px;box-shadow:0 10px 0 rgba(0,0,0,.18)}
+  .card b{display:block;font-size:50px;letter-spacing:4px;font-weight:800}
+  .card b i{font-style:normal;color:var(--coral);margin-right:14px}
+  .card span{display:block;font-size:36px;color:var(--ink);margin-top:12px;line-height:1.25}
+  .cta{position:absolute;left:0;top:2150px;width:4800px;height:140px;background:var(--coral);color:#fff;display:flex;align-items:center;padding:0 80px;gap:60px;box-sizing:border-box}
+  .cta .big{font-size:70px;font-weight:800;letter-spacing:3px;white-space:nowrap;font-style:italic}
+  .cta .mid{font-size:38px;letter-spacing:2px;line-height:1.2;flex:1}
+  .qr{flex:none;width:110px;height:110px;background:#fff;color:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;letter-spacing:2px}
+  .note{position:absolute;right:60px;top:2118px;font-size:20px;color:var(--mist);opacity:.85;letter-spacing:2px}
+  svg.fx{position:absolute;left:0;top:0;width:4800px;height:2290px;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="board">
+  <div class="head"></div>
+  <div class="strip"></div>
+  <div class="foot"></div>
+  <svg class="fx" id="fx" viewBox="0 0 4800 2290"></svg>
+
+  <div class="h1">RUN STRONG.</div>
+  <div class="h2">RECOVER STRONGER.</div>
+  <div class="h3">YOUR COMPLETE CARE ROUTE UNDER ONE ROOF  ·  ORTHOPAEDICS  ·  REHABILITATION  ·  VACCINATION  ·  ACUPUNCTURE</div>
+  <div class="logo">[ HOSPITAL LOGO ]</div>
+  <div class="visit">VISIT OUR BOOTH  <span>[ no. / location ]</span></div>
+
+  <div class="sign" style="left:700px"><em>KM 1</em>ORTHOPAEDICS</div>
+  <div class="sign" style="left:1985px"><em>KM 2</em>REHABILITATION</div>
+  <div class="sign" style="left:3280px"><em>KM 3</em>VACCINATION</div>
+  <div class="sign" style="left:4260px"><em>KM 4</em>ACUPUNCTURE</div>
+
+  <div class="card" style="left:60px"><b><i>01</i>ORTHOPAEDICS</b><span>Knee, ankle or back pain? Get it checked before it stops your next run.</span></div>
+  <div class="card" style="left:1237px"><b><i>02</i>REHABILITATION</b><span>Back to running safely: gait, strength and a step-by-step return plan.</span></div>
+  <div class="card" style="left:2414px"><b><i>03</i>VACCINATION</b><span>Stay protected for training, travel and work.</span></div>
+  <div class="card" style="left:3591px"><b><i>04</i>ACUPUNCTURE</b><span>Ease sore muscles and pain that will not go away.</span></div>
+
+  <div class="cta">
+    <div class="big">COME SAY HI.</div>
+    <div class="mid">Free quick check at our booth [confirm offer]  ·  Ask about check-up packages  ·  [hospital name]  ·  [phone / website]</div>
+    <div class="qr">QR</div>
+  </div>
+  <div class="note">Illustration: AI-generated draft · wording and offers to be confirmed</div>
+</div>
+<script>
+let o='';
+// speed stripes in header
+[[3000,3500,'#F26A4B',.95],[3560,3640,'#2B8791',.9],[3700,3760,'#F26A4B',.7],[3800,3830,'#BFD9D8',.5]].forEach(s=>{
+  o+=`<polygon points="${s[0]},0 ${s[1]},0 ${s[1]-300},340 ${s[0]-300},340" fill="${s[2]}" opacity="${s[3]}"/>`});
+// route line + km nodes under the corridor
+const nodes=[[110,''],[700,'1'],[1985,'2'],[3280,'3'],[4260,'4'],[4690,'']];
+o+=`<line x1="110" y1="1792" x2="4690" y2="1792" stroke="#F26A4B" stroke-width="12" stroke-linecap="round"/>`;
+for(let x=300;x<4600;x+=120)o+=`<path d="M${x},1776 l16,16 l-16,16" fill="none" stroke="#F4EFE6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>`;
+nodes.forEach(n=>{o+=`<circle cx="${n[0]}" cy="1792" r="30" fill="#0E3B47" stroke="#F26A4B" stroke-width="10"/>`;
+  o+=`<text x="${n[0]}" y="1804" font-size="30" font-weight="800" fill="#fff" text-anchor="middle" style="font-family:Bahnschrift,'Segoe UI',Arial">${n[1]}</text>`});
+// finish flag chequer
+for(let r=0;r<3;r++)for(let c=0;c<4;c++)o+=`<rect x="${4730+c*16}" y="${1740+r*16}" width="16" height="16" fill="${(r+c)%2?'#fff':'#0E3B47'}"/>`;
+document.getElementById('fx').innerHTML=o;
+</script>
+</body>
+</html>
