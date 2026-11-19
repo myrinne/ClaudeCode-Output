@@ -9,7 +9,7 @@ output: concept-fun-run-a3-landscape.html + 'Fun Run A3 Landscape - EDITABLE (Ca
 """
 import sys
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageFilter
 from playwright.sync_api import sync_playwright
 from pypdf import PdfReader, PdfWriter
 
@@ -42,6 +42,16 @@ for k in range(4):
     sl = big.crop((k * 543 * 4, 90 * 4, (k + 1) * 543 * 4, 660 * 4))
     sl.save(img_dir / f"a3-slice-{k+1}.jpg", quality=92, optimize=True)
 big.close()
+
+# poster 1 ONLY: her regenerated corridor with a KNEE x-ray (the old one showed a spine scan)
+knee = img_dir / "corridor-long-v2-knee.jpg"
+if knee.exists():
+    kimg = Image.open(knee).convert("RGB")
+    k = kimg.width / 8688.0                      # same crop geometry as the 4x slices
+    sl = kimg.crop((0, round(360 * k), round(2172 * k), round(2640 * k))).resize((2172, 2280), Image.LANCZOS)
+    sl = sl.filter(ImageFilter.UnsharpMask(radius=1.6, percent=28, threshold=6))
+    sl.save(img_dir / "a3-slice-1.jpg", quality=92, optimize=True)
+    kimg.close()
 
 PAGE_W, PAGE_H = 1588, 1123           # CSS px for 420 x 297 mm
 PANEL_W = 518                         # left text column
