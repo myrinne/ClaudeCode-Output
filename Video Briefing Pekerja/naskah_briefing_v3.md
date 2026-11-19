@@ -1,16 +1,16 @@
 # Naskah v3 (video utama, ± 4 menit): Pemeriksaan Kulit dan Panas di Dapur Gizi
 
-Revisi dr. Vidya (2026-11-19) atas v2: suara 1,15× dari sebelumnya; salam tanpa koma; "Video ini menjelaskan semuanya" dihapus; latar belakang (dapur panas) sebelum manfaat; kalimat pengelompokan dan "kami tanyakan satu per satu" dihapus; persiapan diurutkan 24 jam, 24 jam, 3 jam, 2 jam; "empat langkah yang akan dilakukan"; kalimat kuesioner diganti; "boleh dilewati" dihapus; "hasil tidak akan ditelusuri ke perorangan"; "tidak ikut pun tidak memengaruhi pekerjaan" di penutup diganti "partisipasi sangat diharapkan"; nama dan nomor HP hanya di layar. Pernyataan "tidak memengaruhi pekerjaan" tetap satu kali, di adegan 4. Tambahan (2026-11-19, ide untuk pekerja area sejuk/administrasi): kalimat "untuk seluruh pekerja ... data dari semua area sama pentingnya, untuk melindungi rekan-rekan di dapur" (adegan 3); manfaat 1 menyebut berat badan, kulit, darah; manfaat 2 "di tempat panas atau di ruang ber-AC"; manfaat 3 "di dapur maupun di luar kerja"; penutup "Hasil akhirnya akan kami sampaikan kepada semua peserta".
+Revisi dr. Vidya (2026-11-19) atas v2: suara 1,15× dari sebelumnya; salam tanpa koma; "Video ini menjelaskan semuanya" dihapus; latar belakang (dapur panas) sebelum manfaat; kalimat pengelompokan dan "kami tanyakan satu per satu" dihapus; persiapan diurutkan 24 jam, 24 jam, 3 jam, 2 jam; "empat langkah yang akan dilakukan"; kalimat kuesioner diganti; "boleh dilewati" dihapus; "hasil tidak akan ditelusuri ke perorangan"; "tidak ikut pun tidak memengaruhi pekerjaan" di penutup diganti "partisipasi sangat diharapkan"; nama dan nomor HP hanya di layar. Pernyataan "tidak memengaruhi pekerjaan" tetap satu kali, di adegan 4. Revisi 2026-11-19 sore: "stres oksidatif" (adegan 2 dan 3); adegan 7: "selama menunggu" kuesioner + timbang, lalu dilanjutkan pemeriksaan; "empat langkah" tidak diucapkan (tetap di gambar); "ukur sebelumnya, dan tidak mengganggu pekerjaan". Tambahan (2026-11-19, ide untuk pekerja area sejuk/administrasi): kalimat "untuk seluruh pekerja ... data dari semua area sama pentingnya, untuk melindungi rekan-rekan di dapur" (adegan 3); manfaat 1 menyebut berat badan, kulit, darah; manfaat 2 "di tempat panas atau di ruang ber-AC"; manfaat 3 "di dapur maupun di luar kerja"; penutup "Hasil akhirnya akan kami sampaikan kepada semua peserta".
 
 ## Adegan 1. Salam
 > Selamat pagi Bapak Ibu. Saya dokter Vidya Cecilia dari Fakultas Kedokteran Universitas Indonesia. Saya mengajak Bapak dan Ibu ikut pemeriksaan kulit dan panas di dapur gizi, untuk kesehatan pekerja.
 
 ## Adegan 2. Kenapa dapur dan panas
-> Dapur itu panas, kompor menyala setiap hari. Kami ingin tahu apakah panas memengaruhi kulit, dan apakah itu berkaitan dengan keadaan tubuh yang bisa dilihat dari darah.
+> Dapur itu panas, kompor menyala setiap hari. Kami ingin tahu apakah panas memengaruhi kulit, dan apakah itu berkaitan dengan keadaan stres oksidatif tubuh yang bisa dilihat dari darah.
 > Harapannya, hasilnya jadi dasar kajian kesehatan dan bahaya di tempat kerja, supaya perlindungan pekerja dapur makin baik.
 
 ## Adegan 3. Apa yang Bapak dan Ibu dapat
-> Pertama, apa yang Bapak dan Ibu dapat. Satu: tahu hasil pemeriksaan sendiri, termasuk berat badan, kulit, dan darah, dan bisa bertanya artinya langsung kepada saya. Dua: tahu cara merawat kulit, setelah bekerja di tempat panas atau di ruang ber-AC. Tiga: tahu tanda tubuh kepanasan dan cara mengurangi, di dapur maupun di luar kerja. Empat: kalau ada yang perlu perhatian, saya kabari secara pribadi dan sarankan pemeriksaan lanjutan.
+> Pertama, apa yang Bapak dan Ibu dapat. Satu: tahu hasil pemeriksaan sendiri, termasuk berat badan, kulit, dan stres oksidatif dari darah, dan bisa bertanya artinya langsung kepada saya. Dua: tahu cara merawat kulit, setelah bekerja di tempat panas atau di ruang ber-AC. Tiga: tahu tanda tubuh kepanasan dan cara mengurangi, di dapur maupun di luar kerja. Empat: kalau ada yang perlu perhatian, saya kabari secara pribadi dan sarankan pemeriksaan lanjutan.
 > Ada juga konsumsi dan satu pelembap kulit sebagai tanda terima kasih. Semua biaya saya yang tanggung.
 > Pemeriksaan ini untuk seluruh pekerja Instalasi Gizi, di area mana pun Bapak dan Ibu bekerja. Data dari semua area sama pentingnya, untuk melindungi rekan-rekan di dapur.
 
@@ -28,8 +28,8 @@ Revisi dr. Vidya (2026-11-19) atas v2: suara 1,15× dari sebelumnya; salam tanpa
 > Kalau ada yang tidak sempat, katakan terus terang. Tidak ada sanksi.
 
 ## Adegan 7. Hari pemeriksaan
-> Setelah jam kerja selesai, Bapak dan Ibu istirahat 15 sampai 30 menit di ruangan sejuk. Lalu ada empat langkah yang akan dilakukan, sekitar 30 menit.
-> Isi kuesioner. Ditimbang dan diukur tinggi badan. Pemeriksaan kulit lengan bawah dengan alat kecil, tidak sakit. Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali. Panas dan udara di dapur kami ukur di hari lain.
+> Setelah jam kerja selesai, Bapak dan Ibu istirahat 15 sampai 30 menit di ruangan sejuk. Selama menunggu, isi kuesioner, lalu ditimbang dan diukur tinggi badan.
+> Setelah itu dilanjutkan dengan pemeriksaan kulit lengan bawah dengan alat kecil, tidak sakit. Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali. Panas dan udara di dapur kami ukur sebelumnya, dan tidak mengganggu pekerjaan Bapak dan Ibu.
 
 ## Adegan 8. Cara mengisi kuesioner
 > Pengisian kuesioner singkat, namun yang perlu diperhatikan adalah jam kerja di tiap area dan jenis kegiatan. Jumlahnya harus sama dengan lama kerja Bapak dan Ibu sehari.

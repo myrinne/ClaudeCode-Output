@@ -42,16 +42,18 @@ function scene2(p, D) {
   const bodyHi = mk('path', { d: 'M-100,-70 Q-100,-96 -60,-96 H60 Q100,-96 100,-70 V90 H-100 Z', fill: 'none', stroke: GRN, 'stroke-width': 10 }, body);
   const vial = prop(ins, `<g filter="url(#paper)"><rect x="-44" y="-120" width="88" height="250" rx="22" fill="#e6f3f8" stroke="#bcd9e5" stroke-width="5"/><rect x="-50" y="-132" width="100" height="26" rx="10" fill="#c8322f"/><path d="M-38,40 H38 V108 Q38,122 24,122 H-24 Q-38,122 -38,108 Z" fill="#c8322f"/></g>`);
   const dropB = prop(ins, `<g filter="url(#paper)"><path d="M0,-34 C22,-6 26,14 0,28 C-26,14 -22,-6 0,-34 Z" fill="${RED}"/><ellipse cx="-7" cy="6" rx="5" ry="9" fill="#e8736f"/></g>`);
+  const stres = prop(ins, `<g filter="url(#paper)"><rect x="-290" y="-46" width="580" height="92" rx="22" fill="#fffaf0"/><path d="M-240,-30 C-220,-6 -216,12 -240,26 C-264,12 -260,-6 -240,-30 Z" fill="${RED}"/></g>`);
+  stres.insertAdjacentHTML('beforeend', T('Stres oksidatif', -195, 14, 38, INK, 'start'));
   const arrow = prop(ins, `<g filter="url(#paper)"><path d="M-60,0 H40 M10,-34 L50,0 L10,34" fill="none" stroke="${GRN}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></g>`);
   const lab = prop(ins, `<g filter="url(#paper)"><rect x="-500" y="-50" width="1000" height="100" rx="24" fill="#fffaf0"/></g>`);
   const t1 = mk('g', {}, lab), t2 = mk('g', {}, lab), t3 = mk('g', {}, lab);
   t1.innerHTML = T('Panas dapur', -460, 22, 56, RED, 'start'); t2.innerHTML = T('→ kulit', -55, 22, 56, INK, 'start'); t3.innerHTML = T('→ tubuh', 185, 22, 56, GRN, 'start');
   // waktu kata (words.txt, klip s02a/s02b) dikurangi ~0,22 s; W(t) = PRE2 + t
-  const ph = { wide: [0, W(3.6)], arm: [W(3.6), W(6.45)], body: [W(6.45), W(11.4)] };
+  const ph = { wide: [0, W(3.6)], arm: [W(3.6), W(6.51)], body: [W(6.51), W(12.2)] };
   cam.cut({ x: 600, y: 540, z: 1.2 }, 0);
-  cam.cut({ x: 900, y: 520, z: 1.1 }, W(11.4));
-  const tHot = W(.83 - .22), tKompor = W(1.59 - .22), tPanasI = W(5.11 - .22), tKulit = W(5.94 - .22), tTubuh = W(8.7 - .22), tDarah = W(10.25 - .22);
-  const tBoard = W(13.91 - .22), tShield = W(16.82 - .22), tPoint = W(13.5);
+  cam.cut({ x: 900, y: 520, z: 1.1 }, W(12.2));
+  const tHot = W(.83 - .22), tKompor = W(1.59 - .22), tPanasI = W(5.11 - .22), tKulit = W(5.94 - .22), tTubuh = W(9.51 - .22), tStres = W(8.68 - .22), tDarah = W(11.12 - .22);
+  const tBoard = W(14.78 - .22), tShield = W(17.68 - .22), tPoint = W(14.3);
   const pop = (g, q, t0, x, y, s = 1, d = .3) => { if (q < t0) { vis(g, false); return; } const u = span(q, t0, t0 + d); vis(g, true); tf(g, `translate(${x} ${y}) scale(${(s * (.7 + .3 * u + .08 * Math.sin(u * Math.PI))).toFixed(3)})`); g.setAttribute('opacity', Math.min(1, u * 1.8).toFixed(2)); };
   // sfx (tools/briefing/add_sfx.py)
   sfx('scene2', 0, 'room', 0.25, { loop: true });
@@ -90,6 +92,7 @@ function scene2(p, D) {
     tf(hotFlame, `translate(430 200) scale(${(1.3 * fl(5)).toFixed(3)})`);
     vis(body, inBody); tf(body, `translate(500 400) scale(1)`);
     bodyHi.setAttribute('opacity', q >= tTubuh ? (.6 + .4 * Math.sin((q - tTubuh) * 7)).toFixed(2) : 0);
+    pop(stres, q, tStres, 1180, 660, 1); vis(stres, inBody && q >= tStres);
     pop(arrow, q, tDarah - .1, 880, 400, 1); vis(arrow, inBody && q >= tDarah - .1);
     pop(vial, q, tDarah - .1, 1150, 400, 1); vis(vial, inBody && q >= tDarah - .1);
     const fall = span(q, tDarah, tDarah + .9);
