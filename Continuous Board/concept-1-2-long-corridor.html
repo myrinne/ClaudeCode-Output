@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>One Body, One Line of Care - Long Corridor Board</title>
+<style>
+  :root{--navy:#0E3B47;--teal:#2B8791;--coral:#F26A4B;--ink:#2B5560;--cream:#F4EFE6}
+  html,body{margin:0;background:var(--cream)}
+  .board{position:relative;width:4800px;height:2000px;background:var(--cream);font-family:'Bahnschrift','Segoe UI',Arial,sans-serif;color:var(--navy);overflow:hidden}
+  h1{position:absolute;left:80px;top:40px;margin:0;font-size:150px;line-height:1;font-weight:800;letter-spacing:-3px;white-space:nowrap}
+  h1 span{color:var(--coral)}
+  .sub{position:absolute;left:80px;top:205px;font-size:38px;color:var(--ink);letter-spacing:1px}
+  .tag{position:absolute;right:80px;top:70px;font-size:26px;letter-spacing:3px;color:var(--ink);opacity:.7;text-align:right}
+  /* corridor image, cropped: source y 15..690 of 724 at scale 4800/2172 */
+  .strip{position:absolute;left:0;top:250px;width:4800px;height:1492px;background:url(images/corridor-long.png) 0 -33px/4800px auto no-repeat}
+  .st{position:absolute;top:262px;transform:translateX(-50%);display:flex;align-items:center;gap:20px;white-space:nowrap}
+  .st .c{width:88px;height:88px;border-radius:50%;background:var(--coral);color:#fff;font-weight:800;font-size:48px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px rgba(244,239,230,.95)}
+  .st b{font-size:62px;letter-spacing:5px;background:rgba(244,239,230,.94);padding:6px 24px;border-radius:12px}
+  .caps{position:absolute;left:0;top:1770px;width:4800px}
+  .cap{position:absolute;transform:translateX(-50%);text-align:center;width:900px}
+  .cap b{display:block;font-size:44px;letter-spacing:4px}
+  .cap span{display:block;font-size:32px;color:var(--ink);margin-top:6px}
+  .flow{position:absolute;left:80px;bottom:44px;font-size:30px;letter-spacing:2px;color:var(--ink)}
+  .flow em{font-style:normal;color:var(--coral);font-weight:800}
+  .foot{position:absolute;right:80px;bottom:44px;font-size:22px;color:var(--ink);opacity:.7;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="board">
+  <h1>ONE BODY. <span>ONE LINE OF CARE.</span></h1>
+  <div class="sub">One corridor, one continuous ribbon, four clinicians — orthopaedics · rehabilitation · occupational vaccination · acupuncture</div>
+  <div class="tag">PROTOTYPE · CONCEPT 1+2<br>Long corridor (wraps left to right)</div>
+  <div class="strip"></div>
+
+  <div class="st" style="left:710px"><div class="c">1</div><b>ORTHOPAEDICS</b></div>
+  <div class="st" style="left:1880px"><div class="c">2</div><b>REHABILITATION</b></div>
+  <div class="st" style="left:3095px"><div class="c">3</div><b>VACCINE</b></div>
+  <div class="st" style="left:4090px"><div class="c">4</div><b>ACUPUNCTURE</b></div>
+
+  <div class="caps">
+    <div class="cap" style="left:710px"><b>DIAGNOSE AND REPAIR</b><span>Orthopaedic review, imaging, surgery</span></div>
+    <div class="cap" style="left:1880px"><b>RESTORE MOVEMENT</b><span>Gait, strength, stairs, work tolerance</span></div>
+    <div class="cap" style="left:3095px"><b>PREVENT BEFORE IT HAPPENS</b><span>Vaccines matched to the job's exposures</span></div>
+    <div class="cap" style="left:4090px"><b>EASE WHAT STILL ACHES</b><span>Acupuncture for lingering pain</span></div>
+  </div>
+  <div class="flow"><em>Injury</em> → Diagnose → Rehabilitate → Prevent → Ease → <em>Back to work</em></div>
+  <div class="foot">Illustration: AI-generated draft · wording to be confirmed</div>
+</div>
+</body>
+</html>

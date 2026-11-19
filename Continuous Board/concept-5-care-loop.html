@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Care Loop - Concept 5 Prototype</title>
+<style>
+  :root{--navy:#0E3B47;--teal:#2B8791;--coral:#F26A4B;--ink:#2B5560;--cream:#F4EFE6}
+  html,body{margin:0;background:var(--cream)}
+  .board{position:relative;width:2400px;height:3000px;background:var(--cream);font-family:'Bahnschrift','Segoe UI',Arial,sans-serif;color:var(--navy);overflow:hidden}
+  h1{position:absolute;left:176px;top:70px;margin:0;font-size:150px;line-height:1;font-weight:800;letter-spacing:-3px}
+  h1 span{color:var(--coral)}
+  .sub{position:absolute;left:176px;top:250px;font-size:44px;color:var(--ink);letter-spacing:1px}
+  .tag{position:absolute;right:176px;top:96px;font-size:26px;letter-spacing:3px;color:var(--ink);opacity:.7;text-align:right}
+  .card{position:absolute;left:176px;top:400px;width:2048px;height:2048px;border-radius:36px;overflow:hidden;box-shadow:0 30px 70px rgba(14,59,71,.22)}
+  .card img{display:block;width:100%;height:100%}
+  .chip{position:absolute;width:76px;height:76px;border-radius:50%;background:var(--coral);color:#fff;font-weight:800;font-size:40px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px rgba(244,239,230,.95)}
+  .lab{position:absolute;font-size:34px;font-weight:800;letter-spacing:3px;background:rgba(244,239,230,.92);padding:8px 18px;border-radius:10px}
+  .legend{position:absolute;left:176px;top:2520px;width:2048px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .item{display:flex;gap:20px;align-items:flex-start}
+  .n{flex:none;width:68px;height:68px;border-radius:50%;background:var(--coral);color:#fff;font-weight:800;font-size:36px;display:flex;align-items:center;justify-content:center}
+  .item b{display:block;font-size:34px;letter-spacing:3px}
+  .item span{display:block;font-size:27px;color:var(--ink);margin-top:6px;line-height:1.25}
+  .loopline{position:absolute;left:176px;top:2780px;width:2048px;font-size:30px;letter-spacing:2px;color:var(--ink)}
+  .loopline em{font-style:normal;color:var(--coral);font-weight:800}
+  .foot{position:absolute;left:176px;bottom:50px;font-size:22px;color:var(--ink);opacity:.7;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="board">
+  <h1>THE CARE <span>LOOP.</span></h1>
+  <div class="sub">One worker. Four services. No start, no end.</div>
+  <div class="tag">PROTOTYPE · CONCEPT 5<br>Wraparound board</div>
+
+  <div class="card"><img src="images/loop-hero.jpg" alt="Care loop illustration"></div>
+  <!-- numbered chips placed over the image (card origin 176,400; image px = displayed*1.06) -->
+  <div class="chip" style="left:560px;top:690px">1</div>
+  <div class="chip" style="left:1100px;top:1010px">2</div>
+  <div class="chip" style="left:1500px;top:2230px">3</div>
+  <div class="chip" style="left:290px;top:1530px">4</div>
+  <div class="lab" style="left:1610px;top:2240px">REHABILITATION</div>
+
+  <div class="legend">
+    <div class="item"><div class="n">1</div><div><b>PREVENT</b><span>Vaccinate for the exposures of the job</span></div></div>
+    <div class="item"><div class="n">2</div><div><b>DIAGNOSE</b><span>Orthopaedic review and imaging</span></div></div>
+    <div class="item"><div class="n">3</div><div><b>REHABILITATE</b><span>Rebuild strength, gait and work tolerance</span></div></div>
+    <div class="item"><div class="n">4</div><div><b>EASE</b><span>Acupuncture for pain that lingers</span></div></div>
+  </div>
+  <div class="loopline"><em>Prevent</em> → Diagnose → Rehabilitate → Ease → <em>Back to work</em> → and around again</div>
+  <div class="foot">Illustration: AI-generated draft · station names and wording to be confirmed</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Lari Kuat, Pulih Lebih Kuat - 4 Poster Fun Run</title>
+<style>
+  :root{--navy:#0A2B35;--teal:#2B8791;--coral:#F26A4B;--hot:#FF5A36;--yellow:#FFD23F;--mist:#BFD9D8}
+  html,body{margin:0;background:var(--navy)}
+  .board{position:relative;width:4800px;height:2290px;background:var(--navy);font-family:'Bahnschrift','Segoe UI',Arial,sans-serif;color:var(--navy);overflow:hidden}
+  .hd{position:absolute;top:0;width:1200px;height:400px;overflow:hidden}
+  .hd.a{background:linear-gradient(100deg,#FF5A36 0,#F26A4B 60%,#FF8A3D 100%)}
+  .hd.b{background:linear-gradient(100deg,#0A2B35 0,#0E3B47 100%)}
+  .word{position:absolute;left:50px;top:0;line-height:1;font-weight:800;font-style:italic;white-space:nowrap;letter-spacing:2px}
+  .a .word{color:#fff;text-shadow:10px 10px 0 var(--navy)}
+  .b .word{color:var(--yellow);text-shadow:10px 10px 0 #000}
+  .sub{position:absolute;left:56px;top:308px;font-size:32px;font-weight:700;letter-spacing:4px;white-space:nowrap}
+  .a .sub{color:#fff}.b .sub{color:var(--mist)}
+  .pn{position:absolute;right:30px;top:318px;font-size:26px;font-weight:800;letter-spacing:4px;opacity:.8}
+  .a .pn{color:#fff}.b .pn{color:var(--yellow)}
+  .strip{position:absolute;left:0;top:400px;width:4800px;height:1260px;background:url(images/corridor-long.png) 0 -199px/4800px auto no-repeat;filter:saturate(1.55) contrast(1.1) brightness(1.02)}
+  .edge{position:absolute;left:0;width:4800px;height:16px;background:var(--yellow)}
+  .sign{position:absolute;top:340px;height:116px;transform:translateX(-50%);background:var(--yellow);color:var(--navy);border-radius:58px;display:flex;align-items:center;gap:24px;padding:0 52px 0 14px;font-weight:800;font-size:64px;letter-spacing:4px;white-space:nowrap;box-shadow:0 10px 0 var(--navy)}
+  .sign em{font-style:italic;background:var(--navy);color:var(--yellow);border-radius:44px;height:88px;padding:0 32px;display:flex;align-items:center;font-size:52px;letter-spacing:2px}
+  .card{position:absolute;top:1800px;width:1120px;height:290px;border-radius:22px;box-sizing:border-box;padding:34px 44px;overflow:hidden;box-shadow:0 12px 0 rgba(0,0,0,.35)}
+  .card .n{position:absolute;right:24px;top:-14px;font-size:230px;font-weight:800;font-style:italic;opacity:.22;line-height:1}
+  .card b{display:block;font-size:64px;letter-spacing:4px;font-weight:800;font-style:italic;position:relative}
+  .card span{display:block;font-size:40px;margin-top:14px;line-height:1.22;position:relative;max-width:760px;font-weight:600}
+  .c1{background:var(--coral);color:#fff}.c2{background:var(--teal);color:#fff}.c3{background:var(--yellow);color:var(--navy)}.c4{background:#fff;color:var(--navy)}
+  .c4 .n{color:var(--coral);opacity:.35}
+  .ft{position:absolute;top:2120px;width:1200px;height:170px;background:var(--yellow);display:flex;align-items:center;gap:26px;padding:0 40px;box-sizing:border-box}
+  .lg{flex:none;width:250px;height:110px;border:5px dashed rgba(10,43,53,.45);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;letter-spacing:3px;color:var(--navy);opacity:.8}
+  .tx{flex:1;font-size:34px;font-weight:700;line-height:1.25;color:var(--navy)}
+  .tx b{display:block;font-size:30px;letter-spacing:3px;font-weight:800;color:#8a3b25}
+  .qr{flex:none;width:120px;height:120px;background:#fff;border:5px solid var(--navy);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;color:var(--navy);box-sizing:border-box}
+  .note{position:absolute;right:20px;top:2098px;font-size:18px;color:var(--mist);opacity:.8;letter-spacing:2px}
+  svg.fx{position:absolute;left:0;top:0;width:4800px;height:2290px;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="board" id="b">
+  <div class="hd a" style="left:0"><div class="word" data-w="LARI"></div><div class="sub">RUTE PERAWATAN LENGKAP DI SATU ATAP</div><div class="pn">1 / 4</div></div>
+  <div class="hd b" style="left:1200px"><div class="word" data-w="KUAT."></div><div class="sub">DARI CEDERA SAMPAI BERLARI LAGI</div><div class="pn">2 / 4</div></div>
+  <div class="hd a" style="left:2400px"><div class="word" data-w="PULIH"></div><div class="sub">CEGAH SEBELUM TERJADI</div><div class="pn">3 / 4</div></div>
+  <div class="hd b" style="left:3600px"><div class="word" data-w="LEBIH KUAT."></div><div class="sub">REDAKAN NYERI, JAGA PERFORMA</div><div class="pn">4 / 4</div></div>
+
+  <div class="strip"></div>
+  <div class="edge" style="top:400px"></div>
+  <div class="edge" style="top:1644px"></div>
+  <svg class="fx" id="fx" viewBox="0 0 4800 2290"></svg>
+  <div style="position:absolute;left:3196px;top:548px;width:168px;height:80px;background:#F3F1E8;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:25px;line-height:1.1;color:#0E3B47">Jadwal<br>Vaksinasi</div>
+
+  <div class="sign" style="left:600px"><em>KM 1</em>ORTOPEDI</div>
+  <div class="sign" style="left:1800px"><em>KM 2</em>REHABILITASI</div>
+  <div class="sign" style="left:3000px"><em>KM 3</em>VAKSINASI</div>
+  <div class="sign" style="left:4200px"><em>KM 4</em>AKUPUNKTUR</div>
+
+  <div class="card c1" style="left:40px"><div class="n">01</div><b>ORTOPEDI</b><span>Nyeri lutut, pergelangan kaki, atau punggung? Periksakan sebelum mengganggu lari berikutnya.</span></div>
+  <div class="card c2" style="left:1240px"><div class="n">02</div><b>REHABILITASI</b><span>Kembali berlari dengan aman: cara jalan, kekuatan, dan program pemulihan bertahap.</span></div>
+  <div class="card c3" style="left:2440px"><div class="n">03</div><b>VAKSINASI</b><span>Tetap terlindungi untuk latihan, perjalanan, dan pekerjaan.</span></div>
+  <div class="card c4" style="left:3640px"><div class="n">04</div><b>AKUPUNKTUR</b><span>Redakan otot pegal dan nyeri yang tak kunjung hilang.</span></div>
+
+  <div class="ft" style="left:0"><div class="lg">[ LOGO RS ]</div><div class="tx"><b>KUNJUNGI BOOTH KAMI</b>[nama RS] · [telepon / web]</div><div class="qr">QR</div></div>
+  <div class="ft" style="left:1200px"><div class="lg">[ LOGO RS ]</div><div class="tx"><b>KUNJUNGI BOOTH KAMI</b>[nama RS] · [telepon / web]</div><div class="qr">QR</div></div>
+  <div class="ft" style="left:2400px"><div class="lg">[ LOGO RS ]</div><div class="tx"><b>KUNJUNGI BOOTH KAMI</b>[nama RS] · [telepon / web]</div><div class="qr">QR</div></div>
+  <div class="ft" style="left:3600px"><div class="lg">[ LOGO RS ]</div><div class="tx"><b>KUNJUNGI BOOTH KAMI</b>[nama RS] · [telepon / web]</div><div class="qr">QR</div></div>
+  <div class="note">Ilustrasi: draf buatan AI · teks dan lokasi booth perlu dikonfirmasi</div>
+</div>
+<script>
+// fit each headline word to its poster width
+document.querySelectorAll('.word').forEach(w=>{
+  w.textContent=w.dataset.w;let fs=250;w.style.fontSize=fs+'px';
+  while(w.scrollWidth>1000&&fs>60){fs-=4;w.style.fontSize=fs+'px'}
+  w.style.top=(250-fs)/2+34+'px';
+});
+let o='';
+// corner accents in each header
+[0,1,2,3].forEach(i=>{const x=i*1200,c=i%2?'#FFD23F':'#0A2B35';
+  o+=`<polygon points="${x+1200},250 ${x+1200},400 ${x+1050},400" fill="${c}" opacity="${i%2?0.95:0.9}"/>`});
+// trim guides between posters
+[1200,2400,3600].forEach(x=>o+=`<line x1="${x}" y1="0" x2="${x}" y2="2290" stroke="#fff" stroke-width="4" stroke-dasharray="18 14" opacity=".55"/>`);
+// route line + nodes
+o+=`<line x1="110" y1="1722" x2="4690" y2="1722" stroke="#FFD23F" stroke-width="14" stroke-linecap="round"/>`;
+for(let x=300;x<4600;x+=120)o+=`<path d="M${x},1704 l18,18 l-18,18" fill="none" stroke="#0A2B35" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>`;
+[[110,''],[600,'1'],[1800,'2'],[3000,'3'],[4200,'4'],[4690,'']].forEach(n=>{
+  o+=`<circle cx="${n[0]}" cy="1722" r="34" fill="#FFD23F" stroke="#0A2B35" stroke-width="8"/>`;
+  o+=`<text x="${n[0]}" y="1736" font-size="38" font-weight="800" fill="#0A2B35" text-anchor="middle" style="font-family:Bahnschrift,'Segoe UI',Arial">${n[1]}</text>`});
+for(let r=0;r<3;r++)for(let c=0;c<4;c++)o+=`<rect x="${4730+c*18}" y="${1668+r*18}" width="18" height="18" fill="${(r+c)%2?'#fff':'#0A2B35'}"/>`;
+document.getElementById('fx').innerHTML=o;
+</script>
+</body>
+</html>
