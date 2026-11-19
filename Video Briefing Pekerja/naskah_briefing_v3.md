@@ -29,7 +29,7 @@ Revisi dr. Vidya (2026-11-19) atas v2: suara 1,15× dari sebelumnya; salam tanpa
 
 ## Adegan 7. Hari pemeriksaan
 > Setelah jam kerja selesai, Bapak dan Ibu istirahat 15 sampai 30 menit di ruangan sejuk. Selama menunggu, isi kuesioner, lalu ditimbang dan diukur tinggi badan.
-> Setelah itu dilanjutkan dengan pemeriksaan kulit lengan bawah dengan alat kecil, tidak sakit. Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali. Panas dan udara di dapur kami ukur sebelumnya, dan tidak mengganggu pekerjaan Bapak dan Ibu.
+> Setelah itu dilanjutkan dengan pemeriksaan kelembaban di lengan bawah, tidak sakit. Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali. Panas dan udara di dapur kami ukur sebelumnya, dan tidak mengganggu pekerjaan Bapak dan Ibu.
 
 ## Adegan 8. Cara mengisi kuesioner
 > Pengisian kuesioner singkat, namun yang perlu diperhatikan adalah jam kerja di tiap area dan jenis kegiatan. Jumlahnya harus sama dengan lama kerja Bapak dan Ibu sehari.
