@@ -1,6 +1,6 @@
 'use strict';
 /* Adegan 7: hari pemeriksaan. Shot 1: ruang sejuk, bapak dan ibu duduk istirahat 15-30 menit. Shot 2: garis waktu empat langkah
-   (kuesioner, timbang + tinggi badan, kulit lengan bawah, darah) dan kartu terpisah "panas dan udara dapur diukur di hari lain".
+   (kuesioner, timbang + tinggi badan, kelembaban lengan bawah, darah) dan kartu terpisah "panas dan udara dapur diukur di hari lain".
    Waktu kata: narration.id.words.txt (jam beat = PRE7 + waktu). */
 const PRE7 = 0.8;
 // waktu kata (klip adegan) dikurangi 0,22 s; sumber: narration.id.words.txt
@@ -9,9 +9,9 @@ const T7 = {
   end: wd7(.64), rest: wd7(2.74), n15: wd7(3.26), dash: wd7(3.77), n30: wd7(4.02), menit: wd7(4.34), ruangan: wd7(4.92),
   cut: 6.0, sel: wd7(6.28), menung: wd7(6.66),
   s1: wd7(7.5), s1b: wd7(7.72), s2: wd7(8.93), s2b: wd7(9.94),
-  lanjut: wd7(13.42), s3: wd7(13.91), s3b: wd7(14.47), s3alat: wd7(15.11), s3sakit: wd7(16.32),
-  s4: wd7(18.2), s4ml: wd7(18.99), s4sdk: wd7(21.24), s4sekali: wd7(22.67),
-  other: wd7(24.36), otherb: wd7(25.96), cal: wd7(26.26), noint: wd7(27.37)
+  lanjut: wd7(13.48), s3: wd7(14.03), s3b: wd7(14.61), s3sakit: wd7(15.54),
+  s4: wd7(17.69), s4ml: wd7(18.49), s4sdk: wd7(20.73), s4sekali: wd7(22.16),
+  other: wd7(23.83), otherb: wd7(25.43), cal: wd7(25.73), noint: wd7(26.84)
 };
 function scene7(p, D) {
   const cam = paperCam(p, 'ruang'), S = cam.stage, W = t => PRE7 + t;
@@ -79,9 +79,9 @@ function scene7(p, D) {
     [{ s: 'Isi', x: 0, y: 92, size: 46, at: T7.s1 }, { s: 'kuesioner', x: 0, y: 140, size: 46, at: T7.s1b }]);
   const st2 = stepCard(1, [{ svg: `<g transform="translate(-48 -74) scale(1.2)">${scale()}</g>`, at: T7.s2 }, { svg: `<g transform="translate(84 -78) scale(1.2)">${ruler()}</g>`, at: T7.s2b }],
     [{ s: 'Timbang &', x: 0, y: 92, size: 46, at: T7.s2 }, { s: 'tinggi badan', x: 0, y: 140, size: 46, at: T7.s2b }]);
-  const st3 = stepCard(2, [{ svg: `<g transform="translate(0 -92) scale(.85)">${arm()}</g>`, at: T7.s3 }, { svg: `<g transform="translate(0 -92) scale(.85) translate(10 -4)">${tewl()}</g>`, at: T7.s3alat },
+  const st3 = stepCard(2, [{ svg: `<g transform="translate(0 -92) scale(.85)">${arm()}</g>`, at: T7.s3 }, { svg: `<g transform="translate(0 -92) scale(.85) translate(10 -4)">${tewl()}</g>`, at: T7.s3 },
       pill(2, 176, 300, '#d6efdf'), { svg: `<g transform="translate(-122 176) scale(.5)">${smile()}</g>`, at: T7.s3sakit }],
-    [{ s: 'Kulit lengan', x: 0, y: 62, size: 46, at: T7.s3 }, { s: 'bawah', x: 0, y: 110, size: 46, at: T7.s3b }, { s: 'Tidak sakit', x: 30, y: 190, size: 40, at: T7.s3sakit, fill: '#1f5a36' }]);
+    [{ s: 'Kelembaban', x: 0, y: 62, size: 46, at: T7.s3 }, { s: 'lengan bawah', x: 0, y: 110, size: 46, at: T7.s3b }, { s: 'Tidak sakit', x: 30, y: 190, size: 40, at: T7.s3sakit, fill: '#1f5a36' }]);
   const st4 = stepCard(3, [{ svg: `<g transform="translate(-66 -88)">${tube()}</g>`, at: T7.s4 }, { svg: `<g transform="translate(58 -78) scale(.9)">${teaspoon()}</g>`, at: T7.s4sdk },
       { svg: `<g transform="translate(0 168)">${paper(280, 58, '#fbe3e0', 29)}</g>`, at: T7.s4sdk }, { svg: `<g transform="translate(122 -194)">${pf(`<circle r="34" fill="${GREEN}"/>`)}</g>`, at: T7.s4sekali }],
     [{ s: 'Darah', x: 0, y: 58, size: 46, at: T7.s4 }, { s: '3–5 mL', x: 0, y: 118, size: 62, at: T7.s4ml, fill: RED }, { s: '± 1 sendok teh', x: 0, y: 183, size: 38, at: T7.s4sdk, fill: '#7a1f1c' },
