@@ -20,41 +20,41 @@ const S10_TUBE = `<g filter="url(#paper)"><rect x="-34" y="-120" width="68" heig
 function scene10(p, D) {
   const W = t => PRE10 + t, cam = paperCam(p, 'kertas'), items = [];
   const add = (svg, t0, x, y, s = 1, r = 0, t1 = 1e9) => { const g = prop(cam.stage, svg); vis(g, false); items.push({ g, t0: W(t0), t1: W(t1), x, y, s, r, k: items.length + 10 }); return g; };
-  const C1 = 5.5, C2 = 13.7;   // potongan antar shot
+  const C1 = 4.75, C2 = 12.05;   // potongan antar shot
   // ----- shot 1: nama tidak ditulis, hanya kode; lemari terkunci -----
-  add(S10_TAG + s8T('Nama', 0, 8, 46), 0.58, 330, 400, 1.15, -3, C1);
-  add(`<g transform="scale(.62)">${S8_BAN}</g>`, 1.5, 330, 400, 1, 0, C1);
-  add(s8T('Nama Bapak dan Ibu', 0, 0, 40, '#2b2b2b'), 0.22, 330, 520, 1, 0, C1);
-  add(`<g transform="scale(.95)">${S10_SHEET}</g>`, 2.42, 900, 450, 1, 0, C1);
-  add(s8T('LEMBAR DATA', 0, 0, 46, '#fff'), 2.42, 900, 240, 1, 0, C1);
-  add(s8Card(330, 130, '#3f9d6b') + s8T('Kode 017', 0, 28, 76, '#fff'), 3.92, 905, 480, 1, -3, C1);
-  add(`<g transform="scale(.95)">${S10_CABINET}</g><g transform="translate(0,20)">${S10_LOCK}</g>`, 4.45, 1385, 470, 1, 0, C1);
+  add(S10_TAG + s8T('Nama', 0, 8, 46), 0.0, 330, 400, 1.15, -3, C1);
+  add(`<g transform="scale(.62)">${S8_BAN}</g>`, 1.36, 330, 400, 1, 0, C1);
+  add(s8T('Nama Bapak dan Ibu', 0, 0, 40, '#2b2b2b'), 0.0, 330, 520, 1, 0, C1);
+  add(`<g transform="scale(.95)">${S10_SHEET}</g>`, 1.92, 900, 450, 1, 0, C1);
+  add(s8T('LEMBAR DATA', 0, 0, 46, '#fff'), 1.92, 900, 240, 1, 0, C1);
+  add(s8Card(330, 130, '#3f9d6b') + s8T('Kode 017', 0, 28, 76, '#fff'), 3.23, 905, 480, 1, -3, C1);
+  add(`<g transform="scale(.95)">${S10_CABINET}</g><g transform="translate(0,20)">${S10_LOCK}</g>`, 3.7, 1385, 470, 1, 0, C1);
   // ----- shot 2: gabungan, tidak ditelusuri, atasan -----
   const bars = [[-120, 90, '#6fb1c4'], [-40, 170, '#3d7f8f'], [40, 130, '#6fb1c4'], [120, 220, '#3d7f8f']];
-  add(s8Card(480, 400, '#fffdf4') + `<rect x="-190" y="150" width="380" height="10" rx="5" fill="#c9c3b3"/>`, 5.73, 400, 440, 1, 0, C2);
-  const barG = add(bars.map(([x, , c], i) => `<rect class="b${i}" x="${x - 26}" y="150" width="52" height="0" rx="6" fill="${c}"/>`).join(''), 6.82, 400, 440, 1, 0, C2);
-  add(s8T('Hasil gabungan', 0, 0, 46), 6.25, 400, 690 - 10, 1, 0, C2);
-  add(`<g transform="translate(-60,0) scale(1.25)">${S10_PERSON}</g>`, 9.03, 890, 420, 1, 0, C2);
-  add(`<g transform="scale(1.3)">${S10_MAGNIFIER}</g>`, 8.36, 930, 370, 1, 0, C2);
-  add(`<g transform="scale(.95)">${S8_BAN}</g>`, 9.5, 880, 420, 1, 0, C2);
-  add(s8T('Tidak bisa ditelusuri', 0, 0, 42), 8.36, 885, 640, 1, 0, C2);
-  add(`<g transform="scale(1.15)">${S10_BOSS}</g>`, 11.2, 1300, 330, 1, 0, C2);
-  add(`<g transform="scale(.62)">${S8_BAN}</g>`, 11.69, 1300, 350, 1, 0, C2);
-  add(s8T('ke atasan', 0, 0, 42), 11.2, 1300, 490, 1, 0, C2);
-  add(`<g transform="scale(.62)">${S10_PERMIT}</g>`, 12.03, 1210, 625, 1, -4, C2);
-  add(s8T('Izin tertulis', 0, 0, 42, '#3f7d56'), 12.03, 1410, 640, 1, 0, C2);
+  add(s8Card(480, 400, '#fffdf4') + `<rect x="-190" y="150" width="380" height="10" rx="5" fill="#c9c3b3"/>`, 4.84, 400, 440, 1, 0, C2);
+  const barG = add(bars.map(([x, , c], i) => `<rect class="b${i}" x="${x - 26}" y="150" width="52" height="0" rx="6" fill="${c}"/>`).join(''), 5.77, 400, 440, 1, 0, C2);
+  add(s8T('Hasil gabungan', 0, 0, 46), 5.77, 400, 690 - 10, 1, 0, C2);
+  add(`<g transform="translate(-60,0) scale(1.25)">${S10_PERSON}</g>`, 7.66, 890, 420, 1, 0, C2);
+  add(`<g transform="scale(1.3)">${S10_MAGNIFIER}</g>`, 7.1, 930, 370, 1, 0, C2);
+  add(`<g transform="scale(.95)">${S8_BAN}</g>`, 8.4, 880, 420, 1, 0, C2);
+  add(s8T('Tidak akan ditelusuri', 0, 0, 42), 6.6, 885, 640, 1, 0, C2);
+  add(`<g transform="scale(1.15)">${S10_BOSS}</g>`, 9.56, 1300, 330, 1, 0, C2);
+  add(`<g transform="scale(.62)">${S8_BAN}</g>`, 9.97, 1300, 350, 1, 0, C2);
+  add(s8T('ke atasan', 0, 0, 42), 9.56, 1300, 490, 1, 0, C2);
+  add(`<g transform="scale(.62)">${S10_PERMIT}</g>`, 10.26, 1210, 625, 1, -4, C2);
+  add(s8T('Izin tertulis', 0, 0, 42, '#3f7d56'), 10.26, 1410, 640, 1, 0, C2);
   // ----- shot 3: darah hanya untuk pemeriksaan ini -----
-  add(`<g transform="scale(1.4)">${S10_TUBE}</g>`, 14.04, 560, 450, 1, 6);
-  add(s8Card(640, 220, '#fffdf4') + s8T('Hanya untuk', 0, -8, 62), 14.43, 1070, 400);
-  add(s8T('pemeriksaan ini', 0, 0, 62, '#3f7d56'), 15.63, 1070, 470);
-  add(`<g transform="scale(1.1)">${S8_CHECK}</g>`, 16.28, 1070, 600);
+  add(`<g transform="scale(1.4)">${S10_TUBE}</g>`, 12.01, 560, 450, 1, 6);
+  add(s8Card(640, 220, '#fffdf4') + s8T('Hanya untuk', 0, -8, 62), 12.35, 1070, 400);
+  add(s8T('pemeriksaan ini', 0, 0, 62, '#3f7d56'), 13.4, 1070, 470);
+  add(`<g transform="scale(1.1)">${S8_CHECK}</g>`, 13.96, 1070, 600);
 
-  cam.to({ z: 1.035 }, 0, W(C1)); cam.cut({ x: 800, y: 450, z: 1 }, W(C1)); cam.to({ z: 1.035 }, W(C1), 8.2);
-  cam.cut({ x: 800, y: 450, z: 1 }, W(C2)); cam.to({ z: 1.04 }, W(C2), 4.5);
+  cam.to({ z: 1.035 }, 0, W(C1)); cam.cut({ x: 800, y: 450, z: 1 }, W(C1)); cam.to({ z: 1.035 }, W(C1), 7.3);
+  cam.cut({ x: 800, y: 450, z: 1 }, W(C2)); cam.to({ z: 1.04 }, W(C2), 3.2);
   const rects = [0, 1, 2, 3].map(i => barG.querySelector('.b' + i));
 
   // sfx (tools/briefing/add_sfx.py)
-  sfx('scene10', 4.72, 'chime', .5);
+  sfx('scene10', 4.84, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     const j = k => .7 * jit(f >> 1, k);
@@ -65,6 +65,6 @@ function scene10(p, D) {
       tf(it.g, `translate(${(it.x + j(it.k)).toFixed(1)},${(it.y + j(it.k + 50)).toFixed(1)}) rotate(${it.r}) scale(${sc.toFixed(3)})`);
     }
     // batang tumbuh pada "gabungan"
-    bars.forEach(([, h], i) => { const g = span(q, W(6.82 + .12 * i), W(7.3 + .12 * i)) * h; rects[i].setAttribute('height', g.toFixed(1)); rects[i].setAttribute('y', (150 - g).toFixed(1)); });
+    bars.forEach(([, h], i) => { const g = span(q, W(5.77 + .12 * i), W(6.25 + .12 * i)) * h; rects[i].setAttribute('height', g.toFixed(1)); rects[i].setAttribute('y', (150 - g).toFixed(1)); });
   });
 }
