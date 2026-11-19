@@ -1,37 +1,37 @@
-scene1 dur 19.95 (scene-clip times; the beat clock adds the scene's pre)
-   s01a @0  | Selamat@0.22 pagi@0.73 Bapak@1.57 dan@2.07 Ibu@2.3 Saya@3.63 dokter@4.09 Vidya@4.5 Cecilia@4.87 dari@5.47 Fakultas@5.7 Kedokteran@6.27 Universitas@6.74 Indonesia@7.61
-   s01b @9.542  | Saya@9.76 mengajak@10.19 Bapak@10.6 dan@11.01 Ibu@11.16 ikut@11.53 pemeriksaan@11.91 kulit@12.48 dan@12.82 panas@12.99 di@13.43 dapur@13.54 gizi@13.82 untuk@14.65 kesehatan@14.91 pekerja@15.47 Video@16.93 ini@17.36 menjelaskan@17.73 semuanya@18.39
-scene2 dur 37.168 (scene-clip times; the beat clock adds the scene's pre)
-   s02a @0  | Pertama@0.22 apa@1.35 yang@1.63 Bapak@1.79 dan@2.21 Ibu@2.42 dapat@2.77 Satu@3.93 tahu@5.04 hasil@5.34 pemeriksaan@5.71 sendiri@6.33 dan@7.25 bisa@7.46 bertanya@7.75 artinya@8.19 langsung@8.68 kepada@9.2 saya@9.53 Dua@10.85 tahu@11.76 cara@12.08 merawat@12.39 kulit@12.72 setelah@13.06 bekerja@13.39 di@13.98 tempat@14.14 panas@14.52
-   s02b @16.236  | Tiga@16.46 tahu@17.38 tanda@17.71 tubuh@18.0 kepanasan@18.39 dan@19.0 cara@19.26 mengurangi@19.57 Empat@21.09 kalau@21.96 ada@22.37 yang@22.68 perlu@22.86 perhatian@23.11 saya@24.15 kabari@24.5 secara@24.94 pribadi@25.27 dan@25.79 sarankan@25.99 pemeriksaan@26.52 lanjutan@27.18
-   s02c @28.92  | Ada@29.14 juga@29.52 konsumsi@29.81 dan@30.45 satu@30.64 pelembap@30.96 kulit@31.3 sebagai@31.74 tanda@32.13 terima@32.5 kasih@32.84 Semua@34.18 biaya@34.7 saya@35.11 yang@35.54 tanggung@35.79
-scene3 dur 22.206 (scene-clip times; the beat clock adds the scene's pre)
-   s03a @0  | Dapur@0.22 itu@0.64 panas@0.93 kompor@1.79 menyala@2.21 setiap@2.65 hari@3.11 Kami@4.38 ingin@4.79 tahu@5.1 apakah@5.41 panas@5.85 memengaruhi@6.29 kulit@6.8 dan@7.73 apakah@7.9 itu@8.29 berkaitan@8.6 dengan@9.21 keadaan@9.52 tubuh@9.97 yang@10.51 bisa@10.75 dilihat@11.05 dari@11.54 darah@11.75
-   s03b @13.284  | Harapannya@13.5 hasilnya@14.74 jadi@15.33 dasar@15.59 kajian@15.9 kesehatan@16.3 dan@16.86 bahaya@17.0 di@17.4 tempat@17.53 kerja@17.88 supaya@18.78 perlindungan@19.23 pekerja@19.79 dapur@20.26 makin@20.7 baik@21.11
-scene4 dur 15.654 (scene-clip times; the beat clock adds the scene's pre)
-   s04a @0  | Pemeriksaan@0.22 ini@0.89 tidak@1.19 memberikan@1.52 obat@1.93 dan@2.45 tidak@2.64 ada@2.96 tindakan@3.23 pengobatan@3.83 Hanya@5.42 satu@5.88 kali@6.22 setelah@7.02 jam@7.52 kerja@7.81
-   s04b @9.42  | Ikut@9.64 atau@10.01 tidak@10.31 adalah@10.69 pilihan@11.04 Bapak@11.48 dan@11.85 Ibu@12.0 dan@12.86 tidak@13.07 memengaruhi@13.45 pekerjaan@14.04
-scene5 dur 34.672 (scene-clip times; the beat clock adds the scene's pre)
-   s05a @0  | Yang@0.22 diundang@0.47 adalah@0.95 pekerja@1.33 Instalasi@1.75 Gizi@2.38 usia@2.72 18@3.11 sampai@3.76 55@4.1 tahun@4.86 yang@5.67 sudah@5.87 bekerja@6.11 di@6.59 posisi@6.69 sekarang@7.19 minimal@7.6 3@8.08 bulan@8.4 Bapak@9.73 dan@10.22 Ibu@10.38 dikelompokkan@10.7 menurut@11.37 tempat@11.74 bekerja@12.1 hanya@13.04 untuk@13.4 pencatatan@13.82
-   s05b @15.756  | Beberapa@15.98 kondisi@16.46 seperti@17.46 sakit@17.87 jantung@18.28 stroke@19.18 kencing@19.91 manis@20.29 atau@21.13 kelainan@21.39 kulit@21.81 dan@22.13 tato@22.31 di@22.65 lengan@22.77 bawah@23.06 belum@23.83 memungkinkan@24.08 untuk@24.71 ikut@25.12
-   s05c @26.57  | Kami@26.79 tanyakan@27.22 satu@27.77 per@28.14 satu@28.29 di@28.82 hari@29.0 pemeriksaan@29.35 Daftar@31.05 lengkapnya@31.54 ada@32.09 di@32.48 lembar@32.61 penjelasan@32.99
-scene6 dur 39.712 (scene-clip times; the beat clock adds the scene's pre)
-   s06a @0  | Ada@0.22 empat@0.61 persiapan@1.04 Satu@2.66 24@3.83 jam@4.65 sebelumnya@4.85 jangan@5.88 oleskan@6.25 losion@6.73 pelembap@7.64 minyak@8.46 atau@9.22 tabir@9.48 surya@9.81 di@10.32 lengan@10.49 bawah@10.83 Dua@12.16 2@13.08 jam@13.39 sebelumnya@13.61 jangan@14.6 cuci@14.98 atau@15.39 basahi@15.73 lengan@16.22 bawah@16.59
-   s06b @18.18  | Tiga@18.4 3@19.31 jam@19.67 sebelum@19.93 darah@20.31 diambil@20.58 jangan@21.44 merokok@21.9 Empat@23.15 24@24.13 jam@24.95 sebelumnya@25.14 jangan@26.16 minum@26.52 suplemen@26.86 vitamin@27.31 C@27.82 vitamin@28.5 E@29.0 glutation@29.67 atau@30.78 obat@31.05 pengencer@31.42 dahak@31.93
-   s06c @33.384  | Kalau@33.6 ada@33.95 yang@34.25 tidak@34.46 sempat@34.76 katakan@35.48 terus@36.03 terang@36.37 Tidak@37.64 ada@37.99 sanksi@38.29
-scene7 dur 33.856 (scene-clip times; the beat clock adds the scene's pre)
-   s07a @0  | Setelah@0.22 jam@0.71 kerja@0.93 selesai@1.22 Bapak@2.25 dan@2.65 Ibu@2.79 istirahat@3.13 15@3.73 sampai@4.32 30 menit@4.61 di@5.52 ruangan@5.64 sejuk@6.04 Lalu@7.21 ada@7.65 empat@7.99 langkah@8.39 sekitar@9.21 30 menit@9.68
-   s07b @11.748  | Isi@11.97 kuesioner@12.35 Ditimbang@14.06 dan@14.73 diukur@14.92 tinggi@15.33 badan@15.78 Pemeriksaan@17.15 kulit@17.89 lengan@18.22 bawah@18.48 dengan@18.89 alat@19.19 kecil@19.48 tidak@20.26 sakit@20.61
-   s07c @22.08  | Terakhir@22.3 darah@23.25 dari@23.64 lengan@23.86 3@24.16 sampai@24.52 5@24.88 mililiter@25.24 kira-kira@26.24 satu@26.71 sendok@27.07 teh@27.42 hanya@27.94 sekali@28.34 Panas@29.74 dan@30.3 udara@30.44 di@30.88 dapur@31.01 kami@31.36 ukur@31.66 di@32.11 hari@32.28 lain@32.55
-scene8 dur 33.808 (scene-clip times; the beat clock adds the scene's pre)
-   s08a @0  | Kuesioner@0.22 sebagian@0.9 besar@1.42 mudah@1.78 Ada@3.1 satu@3.41 aturan@3.78 penting@4.19 jam@5.12 kerja@5.39 di@5.76 tiap@5.86 area@6.18 dan@7.15 jam@7.43 untuk@7.62 tiap@7.96 jenis@8.26 kegiatan@8.51 jumlahnya@9.56 harus@10.04 sama@10.34 dengan@10.67 lama@10.96 kerja@11.23 Bapak@11.55 dan@12.01 Ibu@12.21 sehari@12.53
-   s08b @14.172  | Misalnya@14.39 kerja@14.98 8@15.36 jam@15.79 5@16.46 jam@16.8 memasak@17.04 2@17.92 jam@18.18 pemorsian@18.39 1@19.37 jam@19.84 persiapan@20.11 Jumlahnya@21.7 delapan@22.42 Perkiraan@23.94 saja@24.67 sudah@25.19 cukup@25.57
-   s08c @27.0  | Tidak@27.22 ada@27.53 jawaban@27.85 benar@28.28 atau@28.63 salah@28.98 dan@29.87 pertanyaan@30.08 yang@30.67 tidak@30.8 ingin@31.07 dijawab@31.4 boleh@31.9 dilewati@32.27
-scene9 dur 15.98 (scene-clip times; the beat clock adds the scene's pre)
-   s09a @0  | Saat@0.22 darah@0.69 diambil@0.96 ada@1.45 nyeri@1.77 ringan@2.06 kadang@2.87 memar@3.19 kecil@3.44 yang@3.83 hilang@3.99 sendiri@4.38 Jarumnya@5.75 sekali@6.36 pakai@6.74 oleh@7.64 petugas@7.88 terlatih@8.4 Kalau@9.95 ada@10.32 keluhan@10.6 hubungi@11.47 saya@11.99 Penanganannya@13.3 tanpa@14.15 biaya@14.59
-scene10 dur 17.502 (scene-clip times; the beat clock adds the scene's pre)
-   s10a @0  | Nama@0.22 Bapak@0.58 dan@0.97 Ibu@1.13 tidak@1.5 ditulis@1.78 di@2.3 lembar@2.42 data@2.73 hanya@3.53 kode@3.92
-   s10b @5.51  | Hasil@5.73 dilaporkan@6.25 gabungan@6.82 tidak@7.78 bisa@8.07 ditelusuri@8.36 ke@8.92 perorangan@9.03 dan@10.1 tidak@10.31 diberikan@10.6 ke@11.12 atasan@11.2 tanpa@11.69 izin@12.03 tertulis@12.48 Darah@14.04 hanya@14.43 dipakai@14.72 untuk@15.23 pemeriksaan@15.63 ini@16.28
-scene11 dur 24.15 (scene-clip times; the beat clock adds the scene's pre)
-   s11a @0  | Bapak@0.22 dan@0.69 Ibu@0.83 boleh@1.19 berhenti@1.49 kapan@1.92 saja@2.29 tanpa@2.62 alasan@2.99 dan@4.04 tidak@4.24 ikut@4.48 pun@4.75 tidak@5.0 memengaruhi@5.35 pekerjaan@5.93
-   s11b @7.788  | Video@8.01 ini@8.51 ringkasan@8.92 Silakan@10.55 baca@11.13 lembar@11.38 penjelasan@11.66 dan@12.29 tanyakan@12.43 apa@12.87 saja@13.19 kepada@13.56 saya@13.92 dokter@14.79 Vidya@15.16 Cecilia@15.54 di@16.6 nomor@16.73 0812-2441-8906@17.06 Terima@22.33 kasih@22.75
+scene1 dur 13.652 (scene-clip times; the beat clock adds the scene's pre)
+   s01a @0  | Selamat@0.22 pagi@0.7 Bapak@1.05 Ibu@1.4 Saya@2.52 dokter@2.92 Vidya@3.27 Cecilia@3.59 dari@4.11 Fakultas@4.31 Kedokteran@4.81 Universitas@5.22 Indonesia@5.98 Saya@7.46 mengajak@7.83 Bapak@8.18 dan@8.55 Ibu@8.68 ikut@8.99 pemeriksaan@9.32 kulit@9.84 dan@10.12 panas@10.27 di@10.65 dapur@10.74 gizi@11.01 untuk@11.72 kesehatan@11.95 pekerja@12.44
+scene2 dur 19.422 (scene-clip times; the beat clock adds the scene's pre)
+   s02a @0  | Dapur@0.22 itu@0.58 panas@0.83 kompor@1.59 menyala@1.95 setiap@2.34 hari@2.74 Kami@3.83 ingin@4.18 tahu@4.46 apakah@4.73 panas@5.11 memengaruhi@5.5 kulit@5.94 dan@6.75 apakah@6.9 itu@7.24 berkaitan@7.51 dengan@8.04 keadaan@8.31 tubuh@8.7 yang@9.17 bisa@9.38 dilihat@9.64 dari@10.07 darah@10.25
+   s02b @11.628  | Harapannya@11.85 hasilnya@12.93 jadi@13.44 dasar@13.66 kajian@13.93 kesehatan@14.29 dan@14.77 bahaya@14.89 di@15.25 tempat@15.36 kerja@15.66 supaya@16.44 perlindungan@16.84 pekerja@17.32 dapur@17.74 makin@18.12 baik@18.47
+scene3 dur 50.09 (scene-clip times; the beat clock adds the scene's pre)
+   s03a @0  | Pertama@0.22 apa@1.22 yang@1.46 Bapak@1.6 dan@1.96 Ibu@2.15 dapat@2.45 Satu@3.46 tahu@4.42 hasil@4.7 pemeriksaan@5.02 sendiri@5.55 termasuk@6.32 berat@6.78 badan@6.97 kulit@7.67 dan@8.31 darah@8.51 dan@9.24 bisa@9.41 bertanya@9.66 artinya@10.03 langsung@10.43 kepada@10.89 saya@11.18 Dua@12.33 tahu@13.11 cara@13.42 merawat@13.69 kulit@13.98 setelah@14.62 bekerja@14.94 di@15.34 tempat@15.43 panas@15.69 atau@16.06 di@16.42 ruang@16.55 ber-AC@16.81
+   s03b @18.302  | Tiga@18.52 tahu@19.33 tanda@19.62 tubuh@19.87 kepanasan@20.22 dan@20.7 cara@20.86 mengurangi@21.08 di@21.97 dapur@22.07 maupun@22.38 di@22.87 luar@22.98 kerja@23.23 Empat@24.4 kalau@25.15 ada@25.5 yang@25.77 perlu@25.93 perhatian@26.14 saya@27.05 kabari@27.35 secara@27.74 pribadi@28.03 dan@28.48 sarankan@28.65 pemeriksaan@29.12 lanjutan@29.69
+   s03c @31.228  | Ada@31.45 juga@31.78 konsumsi@32.03 dan@32.59 satu@32.76 pelembap@33.03 kulit@33.33 sebagai@33.72 tanda@34.05 terima@34.37 kasih@34.67 Semua@35.83 biaya@36.29 saya@36.64 yang@37.01 tanggung@37.23
+   s03d @38.728  | Pemeriksaan@38.94 ini@39.54 untuk@39.82 seluruh@40.1 pekerja@40.43 Instalasi@40.81 Gizi@41.39 di@42.14 area@42.25 mana@42.53 pun@42.77 Bapak@42.96 dan@43.38 Ibu@43.57 bekerja@43.85 Data@45.1 dari@45.5 semua@45.69 area@46.02 sama@46.31 pentingnya@46.61 untuk@47.51 melindungi@47.78 rekan-rekan@48.18 di@48.78 dapur@48.88
+scene4 dur 13.686 (scene-clip times; the beat clock adds the scene's pre)
+   s04a @0  | Pemeriksaan@0.21 ini@0.8 tidak@1.06 memberikan@1.35 obat@1.7 dan@2.16 tidak@2.32 ada@2.6 tindakan@2.83 pengobatan@3.36 Hanya@4.75 satu@5.14 kali@5.44 setelah@6.14 jam@6.57 kerja@6.82
+   s04b @8.244  | Ikut@8.46 atau@8.79 tidak@9.05 adalah@9.38 pilihan@9.68 Bapak@10.07 dan@10.39 Ibu@10.52 dan@11.27 tidak@11.45 memengaruhi@11.78 pekerjaan@12.29
+scene5 dur 21.102 (scene-clip times; the beat clock adds the scene's pre)
+   s05a @0  | Yang@0.22 diundang@0.44 adalah@0.86 pekerja@1.18 Instalasi@1.54 Gizi@2.1 usia@2.39 18@2.73 sampai@3.28 55@3.58 tahun@4.22 yang@4.93 sudah@5.1 bekerja@5.31 di@5.72 posisi@5.81 sekarang@6.25 minimal@6.61 3@7.02 bulan@7.32
+   s05b @8.724  | Beberapa@8.94 kondisi@9.37 seperti@10.23 sakit@10.6 jantung@10.95 stroke@11.74 kencing@12.37 manis@12.7 atau@13.44 kelainan@13.67 kulit@14.03 dan@14.33 tato@14.48 di@14.78 lengan@14.89 bawah@15.14 belum@15.82 memungkinkan@16.03 untuk@16.59 ikut@16.94 Daftar@17.98 lengkapnya@18.41 ada@18.88 di@19.23 lembar@19.34 penjelasan@19.67
+scene6 dur 35.21 (scene-clip times; the beat clock adds the scene's pre)
+   s06a @0  | Ada@0.22 empat@0.57 persiapan@0.95 Satu@2.35 24@3.36 jam@4.08 sebelumnya@4.25 jangan@5.14 oleskan@5.46 losion@5.89 pelembap@6.68 minyak@7.4 atau@8.06 tabir@8.28 surya@8.58 di@9.02 lengan@9.17 bawah@9.46
+   s06b @10.884  | Dua@11.1 24@11.96 jam@12.67 sebelumnya@12.84 jangan@13.72 minum@14.04 suplemen@14.34 vitamin@14.73 C@15.18 vitamin@15.77 E@16.21 glutation@16.8 atau@17.78 obat@18.0 pengencer@18.31 dahak@18.75
+   s06c @20.04  | Tiga@20.26 3@21.06 jam@21.37 sebelum@21.59 darah@21.92 diambil@22.16 jangan@22.91 merokok@23.3 Empat@24.38 2@25.21 jam@25.46 sebelumnya@25.66 jangan@26.52 cuci@26.85 atau@27.21 basahi@27.5 lengan@27.93 bawah@28.25
+   s06d @29.652  | Kalau@29.87 ada@30.17 yang@30.44 tidak@30.62 sempat@30.88 katakan@31.51 terus@31.99 terang@32.28 Tidak@33.38 ada@33.68 sanksi@33.95
+scene7 dur 30.52 (scene-clip times; the beat clock adds the scene's pre)
+   s07a @0  | Setelah@0.22 jam@0.64 kerja@0.83 selesai@1.09 Bapak@1.98 dan@2.34 Ibu@2.46 istirahat@2.75 15@3.27 sampai@3.79 30 menit@4.04 di@4.84 ruangan@4.94 sejuk@5.29 Lalu@6.3 ada@6.69 empat@6.98 langkah@7.29 yang@7.65 akan@7.79 dilakukan@8.09 sekitar@8.97 30 menit@9.37
+   s07b @11.196  | Isi@11.42 kuesioner@11.75 Ditimbang@13.23 dan@13.82 diukur@13.98 tinggi@14.34 badan@14.73 Pemeriksaan@15.91 kulit@16.56 lengan@16.85 bawah@17.07 dengan@17.43 alat@17.7 kecil@17.95 tidak@18.62 sakit@18.93
+   s07c @20.256  | Terakhir@20.48 darah@21.3 dari@21.65 lengan@21.84 3@22.1 sampai@22.41 5@22.72 mililiter@23.04 kira-kira@23.9 satu@24.32 sendok@24.63 teh@24.93 hanya@25.39 sekali@25.74 Panas@26.94 dan@27.43 udara@27.56 di@27.94 dapur@28.05 kami@28.35 ukur@28.61 di@29.01 hari@29.16 lain@29.39
+scene8 dur 25.384 (scene-clip times; the beat clock adds the scene's pre)
+   s08a @0  | Pengisian@0.21 kuesioner@0.77 singkat@1.22 namun@2.0 yang@2.33 perlu@2.45 diperhatikan@2.68 adalah@3.26 jam@3.6 kerja@3.81 di@4.12 tiap@4.22 area@4.49 dan@4.99 jenis@5.22 kegiatan@5.55 Jumlahnya@6.88 harus@7.43 sama@7.69 dengan@7.98 lama@8.23 kerja@8.48 Bapak@8.77 dan@9.17 Ibu@9.34 sehari@9.65
+   s08b @11.1  | Misalnya@11.32 kerja@11.83 8@12.17 jam@12.54 5@13.12 jam@13.42 memasak@13.63 2@14.39 jam@14.62 pemorsian@14.8 1@15.65 jam@16.07 persiapan@16.3 Jumlahnya@17.68 delapan@18.31 Perkiraan@19.63 saja@20.26 sudah@20.72 cukup@21.04
+   s08c @22.344  | Tidak@22.56 ada@22.85 jawaban@23.11 benar@23.5 atau@23.84 salah@24.24
+scene9 dur 13.94 (scene-clip times; the beat clock adds the scene's pre)
+   s09a @0  | Saat@0.22 darah@0.63 diambil@0.87 ada@1.29 nyeri@1.57 ringan@1.82 kadang@2.53 memar@2.81 kecil@3.02 yang@3.37 hilang@3.51 sendiri@3.84 Jarumnya@5.03 sekali@5.56 pakai@5.9 oleh@6.67 petugas@6.88 terlatih@7.34 Kalau@8.69 ada@9.01 keluhan@9.25 hubungi@10.01 saya@10.46 Penanganannya@11.6 tanpa@12.34 biaya@12.72
+scene10 dur 15.222 (scene-clip times; the beat clock adds the scene's pre)
+   s10a @0  | Nama@0.22 Bapak@0.53 dan@0.88 Ibu@1.02 tidak@1.34 ditulis@1.58 di@2.03 lembar@2.14 data@2.41 hanya@3.1 kode@3.45
+   s10b @4.86  | Hasil@5.08 dilaporkan@5.53 gabungan@6.01 tidak@6.84 akan@7.08 ditelusuri@7.34 ke@7.81 perorangan@7.9 dan@8.84 tidak@9.02 diberikan@9.27 ke@9.73 atasan@9.8 tanpa@10.21 izin@10.5 tertulis@10.9 Darah@12.25 hanya@12.59 dipakai@12.84 untuk@13.29 pemeriksaan@13.64 ini@14.2
+scene11 dur 20.238 (scene-clip times; the beat clock adds the scene's pre)
+   s11a @0  | Bapak@0.22 dan@0.63 Ibu@0.75 boleh@1.07 berhenti@1.35 kapan@1.75 saja@2.07 tanpa@2.44 alasan@2.82 Namun@4.06 partisipasi@4.87 Bapak@5.53 dan@5.94 Ibu@6.08 sangat@6.38 diharapkan@6.77
+   s11b @8.412  | Video@8.63 ini@9.07 ringkasan@9.43 Silakan@10.84 baca@11.36 lembar@11.61 penjelasan@11.87 dan@12.51 tanyakan@12.71 kepada@13.2 saya@13.56 Hasil@14.71 akhirnya@15.13 akan@15.56 kami@15.87 sampaikan@16.09 kepada@16.69 semua@17.03 peserta@17.38 Terima@18.64 kasih@19.01

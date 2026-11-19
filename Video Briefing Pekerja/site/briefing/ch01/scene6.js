@@ -1,7 +1,17 @@
 'use strict';
-/* Adegan 6: empat persiapan. Empat kartu besar (24 jam, 2 jam, 3 jam, 24 jam), tiap bagian muncul pada katanya;
+/* Adegan 6: empat persiapan. Empat kartu besar (24 jam losion, 24 jam suplemen, 3 jam rokok, 2 jam basahi), tiap bagian muncul pada katanya;
    di akhir ibu mengacungkan jempol pada "katakan terus terang". Waktu kata: narration.id.words.txt (jam beat = PRE6 + waktu). */
 const PRE6 = 0.8;
+// waktu kata (klip adegan) dikurangi 0,22 s; sumber: narration.id.words.txt
+const wd6 = t => +(t - .22).toFixed(2);
+const T6 = {
+  empat: wd6(.57),
+  a_satu: wd6(2.35), a_24: wd6(3.36), a_jam: wd6(4.08), a_jangan: wd6(5.14), a_oleskan: wd6(5.46), a_losion: wd6(5.89), a_pelembap: wd6(6.68), a_minyak: wd6(7.4), a_tabir: wd6(8.28),
+  b_dua: wd6(11.08), b_24: wd6(11.94), b_jam: wd6(12.64), b_jangan: wd6(13.7), b_suplemen: wd6(14.32), b_C: wd6(15.15), b_E: wd6(16.19), b_gluta: wd6(16.78), b_syrup: wd6(18.29),
+  c_tiga: wd6(20.22), c_3: wd6(21.01), c_jam: wd6(21.32), c_sebelum: wd6(21.55), c_darah: wd6(21.88), c_diambil: wd6(22.11), c_jangan: wd6(22.87), c_merokok: wd6(23.26),
+  d_empat: wd6(24.34), d_2: wd6(25.17), d_jam: wd6(25.42), d_jangan: wd6(26.48), d_cuci: wd6(26.81), d_basahi: wd6(27.45), d_lengan: wd6(27.89),
+  katakan: wd6(31.44), sanksi: wd6(33.31)
+};
 function scene6(p, D) {
   const cam = paperCam(p, 'kertas'), S = cam.stage, W = t => PRE6 + t;
   const INK = '#2b2b2b', RED = '#c8322f', GREEN = '#3f9d6b', FONT = "'Segoe UI','Helvetica Neue',Arial,sans-serif";
@@ -23,7 +33,7 @@ function scene6(p, D) {
   const blink = (q, off, per = 3.6) => ((q + off) % per) < 2 / FPS;
 
   /* ---------- icons ---------- */
-  const arm = () => pf(`<rect x="-100" y="-38" width="190" height="76" rx="38" fill="#e8be98"/><ellipse cx="82" cy="0" rx="30" ry="34" fill="#e8be98"/>`);
+  const arm = () => FOREARM();
   const cream = () => pf(`<path d="M-70,-8 q20,-22 44,-4 q22,16 46,-2 q24,-14 44,6 q-6,26 -36,22 q-30,12 -52,-2 q-24,6 -46,-20 Z" fill="#fffdf6" opacity=".92"/>`);
   const faucet = () => pf(`<rect x="-14" y="-64" width="28" height="30" rx="6" fill="#7f8c95"/><path d="M-60,-34 H34 a22,22 0 0 1 22,22 V8 H34 V-12 H-60 Z" fill="#a6b3bb"/><rect x="26" y="4" width="36" height="14" rx="5" fill="#7f8c95"/>`);
   const drops = () => pf([0, 1, 2].map(i => `<path d="M${44 + (i - 1) * 3},${34 + i * 34} c0,0 -14,16 -14,24 a14,14 0 0 0 28,0 c0,-8 -14,-24 -14,-24 Z" fill="#4aa3d6"/>`).join(''));
@@ -59,23 +69,22 @@ function scene6(p, D) {
   };
   const place = [0, 1, 2, 3].map(i => item(S, TX[i], TY, [{ svg: holder() }]));
   const T1 = tile(0, '24', ['Jangan dioles', 'lengan bawah'],
-    [{ svg: `<g transform="translate(0 -55) scale(.75)">${arm()}</g>`, at: 2.66 }, { svg: `<g transform="translate(0 -55) scale(.75)">${cream()}</g>`, at: 6.25 }],
-    [[-117, 'losion', 6.73], [-39, 'pelembap', 7.64], [39, 'minyak', 8.46], [117, 'tabir', 9.48]].map(([x, k, at]) => ({ svg: `<g transform="translate(${x} 58) scale(.95)">${mini[k]()}</g>`, at })),
-    2.66, 3.83, 4.65, 5.88);
-  const T2 = tile(1, '2', ['Jangan dibasahi', 'lengan bawah'],
-    [{ svg: `<g transform="translate(0 -8) scale(.62)">${arm()}</g>`, at: 12.16 }, { svg: `<g transform="translate(-6 -96) scale(.6)">${faucet()}</g>`, at: 14.98 }, { svg: `<g transform="translate(-6 -100) scale(.6)">${drops()}</g>`, at: 15.73 }],
-    [{ svg: `<g transform="translate(0 70) scale(.8)">${clock()}</g>`, at: 13.39 }],
-    12.16, 13.08, 13.39, 14.6);
+    [{ svg: `<g transform="translate(0 -55) scale(.75)">${arm()}</g>`, at: T6.a_jangan }, { svg: `<g transform="translate(0 -55) scale(.75)">${cream()}</g>`, at: T6.a_oleskan }],
+    [[-117, 'losion', T6.a_losion], [-39, 'pelembap', T6.a_pelembap], [39, 'minyak', T6.a_minyak], [117, 'tabir', T6.a_tabir]].map(([x, k, at]) => ({ svg: `<g transform="translate(${x} 58) scale(.95)">${mini[k]()}</g>`, at })),
+    T6.a_satu, T6.a_24, T6.a_jam, T6.a_jangan);
+  const T2 = tile(1, '24', ['Jangan minum', 'suplemen & obat'],
+    [{ svg: `<g transform="translate(0 -55) scale(.85)">${mini.pill()}</g>`, at: T6.b_suplemen }],
+    [[-117, 'vitC', T6.b_C], [-39, 'vitE', T6.b_E], [39, 'gluta', T6.b_gluta], [117, 'syrup', T6.b_syrup]].map(([x, k, at]) => ({ svg: `<g transform="translate(${x} 58) scale(.95)">${mini[k]()}</g>`, at })),
+    T6.b_dua, T6.b_24, T6.b_jam, T6.b_jangan);
   const T3 = tile(2, '3', ['', ''],
-    [{ svg: `<g transform="translate(-30 -55) scale(.95)">${cig()}</g>`, at: 18.4 }, { svg: `<g transform="translate(96 -46) scale(.62)">${bloodDrop()}</g>`, at: 20.31 }],
-    [{ svg: `<g transform="translate(0 58) scale(.62)">${clock()}</g>`, at: 19.67 }],
-    18.4, 19.31, 19.67, 21.44, [{ s: 'Jangan merokok', x: 0, y: 136, size: 40, at: 21.44 }, { s: 'sebelum darah', x: 0, y: 178, size: 38, at: 19.93 }, { s: 'diambil', x: 0, y: 220, size: 38, at: 20.58 }]);
-  const T4 = tile(3, '24', ['Jangan minum', 'suplemen & obat'],
-    [{ svg: `<g transform="translate(0 -55) scale(.85)">${mini.pill()}</g>`, at: 23.15 }],
-    [[-117, 'vitC', 27.82], [-39, 'vitE', 29.0], [39, 'gluta', 29.67], [117, 'syrup', 31.42]].map(([x, k, at]) => ({ svg: `<g transform="translate(${x} 58) scale(.95)">${mini[k]()}</g>`, at })),
-    23.15, 24.13, 24.95, 26.16);
-  // tile 3 has a one-line label: second line empty; "sebelum darah diambil" sits small beneath
-  const tiles = [[T1, 2.66], [T2, 12.16], [T3, 18.4], [T4, 23.15]];
+    [{ svg: `<g transform="translate(-30 -55) scale(.95)">${cig()}</g>`, at: T6.c_merokok }, { svg: `<g transform="translate(96 -46) scale(.62)">${bloodDrop()}</g>`, at: T6.c_darah }],
+    [{ svg: `<g transform="translate(0 58) scale(.62)">${clock()}</g>`, at: T6.c_jam }],
+    T6.c_tiga, T6.c_3, T6.c_jam, T6.c_jangan, [{ s: 'Jangan merokok', x: 0, y: 136, size: 40, at: T6.c_merokok }, { s: 'sebelum darah', x: 0, y: 178, size: 38, at: T6.c_sebelum }, { s: 'diambil', x: 0, y: 220, size: 38, at: T6.c_diambil }]);
+  const T4 = tile(3, '2', ['Jangan dibasahi', 'lengan bawah'],
+    [{ svg: `<g transform="translate(-6 -96) scale(.6)">${faucet()}</g>`, at: T6.d_cuci }, { svg: `<g transform="translate(-6 -100) scale(.6)">${drops()}</g>`, at: T6.d_basahi }, { svg: `<g transform="translate(0 -8) scale(.62)">${arm()}</g>`, at: T6.d_lengan }],
+    [{ svg: `<g transform="translate(0 70) scale(.8)">${clock()}</g>`, at: T6.d_jam }],
+    T6.d_empat, T6.d_2, T6.d_jam, T6.d_jangan);
+  const tiles = [[T1, T6.a_satu], [T2, T6.b_dua], [T3, T6.c_tiga], [T4, T6.d_empat]];
 
   const chipT = item(S, 800, 628, [{ svg: paper(640, 92, GREEN, 46) }], [{ s: 'Katakan terus terang', x: 0, y: 17, size: 52, fill: '#fff' }]);
   const chipS = item(S, 800, 628, [{ svg: paper(640, 92, '#fffaf0', 46) }, { svg: `<circle cx="-270" cy="0" r="30" fill="${GREEN}"/><path d="M-284,0 l10,11 l20,-24" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>` }], [{ s: 'Tidak ada sanksi', x: 30, y: 17, size: 52, fill: '#1f5a36' }]);
@@ -85,25 +94,25 @@ function scene6(p, D) {
   const ph = { b: 0.9, i: 2.3 };
 
   // the camera drifts in and, once the four cards are said (33.4), pushes slowly down toward the two workers and the words
-  cam.to({ z: 1.04, x: 805, y: 450 }, 0, W(33.3));
-  cam.to({ z: 1.03, x: 800, y: 500 }, W(33.4), 6.2);
+  cam.to({ z: 1.04, x: 805, y: 450 }, 0, W(T6.katakan - .3));
+  cam.to({ z: 1.03, x: 800, y: 500 }, W(T6.katakan - .2), 5);
 
   // sfx (tools/briefing/add_sfx.py)
-  sfx('scene6', 3.46, 'chime', .5);
-  sfx('scene6', 12.96, 'chime', .5);
-  sfx('scene6', 19.2, 'chime', .5);
-  sfx('scene6', 23.95, 'chime', .5);
+  sfx('scene6', W(T6.a_24), 'chime', .5);
+  sfx('scene6', W(T6.b_24), 'chime', .5);
+  sfx('scene6', W(T6.c_3), 'chime', .5);
+  sfx('scene6', W(T6.d_2), 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     // four dashed places from "empat" (0.61); each is taken by its card
-    place.forEach((pl, i) => { show(pl, q, 0.61 + i * .1, 1, 0); vis(pl.g, q >= W(0.61 + i * .1) && q < W(tiles[i][1])); });
+    place.forEach((pl, i) => { show(pl, q, T6.empat + i * .1, 1, 0); vis(pl.g, q >= W(T6.empat + i * .1) && q < W(tiles[i][1])); });
     tiles.forEach(([t, t0]) => show(t, q, t0, 1, .6));
-    show(chipT, q, 35.48, 1, 0); vis(chipT.g, q >= W(35.48) && q < W(37.64)); show(chipS, q, 37.64, 1, 0);
+    show(chipT, q, T6.katakan, 1, 0); vis(chipT.g, q >= W(T6.katakan) && q < W(T6.sanksi)); show(chipS, q, T6.sanksi, 1, 0);
     const T = q * 2.1;
-    const up = span(q, W(35.48), W(35.9));
+    const up = span(q, W(T6.katakan), W(T6.katakan + .42));
     ibu.pose({ x: 330, y: 850, s: .8, look: .3, eyeX: .5, bob: Math.sin(T) * 2, shut: blink(q, ph.i), mouth: up > .5 ? 'smile' : 'X',
       armR: 100 * up, reachR: 1 + .4 * up, hold: up > .05 ? 'up' : null, headR: 3 * Math.sin(T * .6) }, f);
-    bapak.pose({ x: 1270, y: 850, s: .8, look: -.3, eyeX: -.5, bob: Math.sin(T + 1.4) * 2, shut: blink(q, ph.b), headR: q > W(37.64) ? 4 * Math.sin((q - W(37.64)) * 5) * .5 - 2 : 0,
-      mouth: q > W(37.64) ? 'smile' : 'X' }, f);
+    bapak.pose({ x: 1270, y: 850, s: .8, look: -.3, eyeX: -.5, bob: Math.sin(T + 1.4) * 2, shut: blink(q, ph.b), headR: q > W(T6.sanksi) ? 4 * Math.sin((q - W(T6.sanksi)) * 5) * .5 - 2 : 0,
+      mouth: q > W(T6.sanksi) ? 'smile' : 'X' }, f);
   });
 }

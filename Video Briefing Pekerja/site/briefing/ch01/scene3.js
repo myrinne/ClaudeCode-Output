@@ -1,95 +1,139 @@
 'use strict';
-// Adegan 3: Kenapa dapur dan panas. Dapur (ibu berkeringat, kompor) -> insert lengan -> insert tubuh + darah -> dokter menunjuk papan.
+// Adegan 3: Apa yang Bapak dan Ibu dapat. Empat kartu manfaat berurutan, konsumsi + pelembap + "biaya ditanggung", lalu shot penutup "seluruh pekerja".
 const PRE3 = 0.8;
 function scene3(p, D) {
-  const cam = paperCam(p, 'dapur'), S = 'scene3', W = t => PRE3 + t;   // t = detik pada klip adegan (words.txt)
+  const cam = paperCam(p, 'kertas'), S = 'scene3', W = (t) => PRE3 + t;   // t = detik pada klip adegan (kata di narration.id.words.txt)
   const stage = cam.stage;
-  const FONT = 'Arial Black, Arial, sans-serif', GRN = '#3f9d6b', RED = '#c8322f', INK = '#2b2b2b';
-  const T = (s, x, y, size, fill = INK, anchor = 'middle') => `<text x="${x}" y="${y}" text-anchor="${anchor}" font-family="${FONT}" font-weight="900" font-size="${size}" fill="${fill}">${s}</text>`;
-  const blink = (q, per, off) => ((q + off) % per) < 2 / FPS;
-  const wavy = (x, y0, y1, amp, ph, n = 14) => { let d = ''; for (let i = 0; i <= n; i++) { const u = i / n, y = y0 + (y1 - y0) * u, xx = x + amp * Math.sin(u * 9 + ph) * (.4 + u * .6); d += (i ? 'L' : 'M') + xx.toFixed(1) + ',' + y.toFixed(1); } return d; };
-  const ladle = '<g filter="url(#paper)"><rect x="-4" y="-16" width="8" height="78" rx="4" fill="#8b949a"/><ellipse cy="66" rx="19" ry="13" fill="#b9c2c7"/></g>';
+  const FONT = 'Arial Black, Arial, sans-serif';
+  const T = (s, x, y, size, fill = '#2b2b2b', anchor = 'middle') => `<text x="${x}" y="${y}" text-anchor="${anchor}" font-family="${FONT}" font-weight="900" font-size="${size}" fill="${fill}">${s}</text>`;
+  const GRN = '#3f9d6b', RED = '#c8322f', INK = '#2b2b2b';
+  // satu benda: grup (x, y, s) yang muncul pada t0 (memantul kecil)
+  const thing = (svg, live = '') => { const g = mk('g', {}, stage); const b = prop(g, svg); if (live) g.insertAdjacentHTML('beforeend', live); vis(g, false); return g; };
+  const place = (g, q, t0, x, y, s = 1) => {
+    if (q < t0) { vis(g, false); return; }
+    const u = span(q, t0, t0 + .32); vis(g, true);
+    tf(g, `translate(${x} ${y}) scale(${(s * (.72 + .28 * u + .07 * Math.sin(u * Math.PI))).toFixed(3)})`); g.setAttribute('opacity', Math.min(1, u * 1.6).toFixed(2));
+  };
+  const cardSvg = n => `<g filter="url(#paper)"><rect x="-270" y="-165" width="540" height="330" rx="22" fill="#fffaf0"/><circle cx="-214" cy="-110" r="40" fill="${GRN}"/></g>`;
+  const card = (n, title) => thing(cardSvg(n), T(n, -214, -94, 52, '#fff') + T(title, -160, -92, 40, INK, 'start'));
+  const C = [[330, 215], [900, 215], [330, 575], [900, 575]];
+  const cards = [card(1, 'Hasil sendiri'), card(2, 'Rawat kulit'), card(3, 'Tanda kepanasan'), card(4, 'Saran lanjutan')];
+  // waktu kata (narration.id.words.txt, detik pada klip adegan) dikurangi 0,22 s
+  const K = { card: [3.46, 12.33, 18.52, 24.4],
+    sheet: 4.7, scale: 6.78, skin: 7.67, drop: 8.51, bub: 9.66,
+    tube: 13.69, hand: 14.94, wet: 15.69, ac: 16.81, swap: 17.0,
+    flame: 19.87, therm: 20.22, glass: 21.08, label: 22.07, house: 22.98,
+    mail: 27.35, point: 28.65, pointEnd: 31.0, clinic: 29.12,
+    food: 32.03, cream: 33.03, free: 36.29,
+    fin: 38.94, seluruh: 40.1, area: 42.25, rekan: 47.78 };
+  const A = (t) => W(t - .22);
+  const tCard = K.card.map(A);
 
-  // ---- dapur: panci di kompor, api besar, gelombang panas, ibu berkeringat ----
-  const pot = prop(stage, `<g filter="url(#paper)"><path d="M-60,-62 h120 v66 q0,14 -14,14 h-92 q-14,0 -14,-14 Z" fill="#9aa4ab"/><rect x="-68" y="-72" width="136" height="16" rx="7" fill="#c9d1d6"/></g>`, { transform: 'translate(490 436)' });
-  const flames = [230, 360].map(x => prop(stage, `<g filter="url(#paper)"><path d="M0,-58 C24,-30 30,-6 18,10 C10,20 -10,20 -18,10 C-30,-8 -12,-26 0,-58 Z" fill="#f08a2c"/><path d="M0,-24 C12,-10 14,0 6,8 C0,12 -8,10 -10,2 C-10,-6 -4,-12 0,-24 Z" fill="#ffd36b"/></g>`));
-  const flame3 = prop(stage, `<g filter="url(#paper)"><path d="M0,-58 C24,-30 30,-6 18,10 C10,20 -10,20 -18,10 C-30,-8 -12,-26 0,-58 Z" fill="#f08a2c"/><path d="M0,-24 C12,-10 14,0 6,8 C0,12 -8,10 -10,2 C-10,-6 -4,-12 0,-24 Z" fill="#ffd36b"/></g>`);
-  const waves = mk('g', { fill: 'none', 'stroke-linecap': 'round', 'stroke-width': 10 }, stage);
-  const wv = [[250, '#f08a2c'], [350, '#e8613a'], [450, '#f08a2c']].map(([x, c]) => mk('path', { stroke: c, opacity: .75 }, waves));
-  const steam = smoke(stage, 490, 360, 4, 3.0);
-  const drops = Array.from({ length: 3 }, () => prop(stage, `<g filter="url(#paper)"><path d="M0,-18 C12,-2 14,8 0,14 C-14,8 -12,-2 0,-18 Z" fill="#7ec0e0"/></g>`));
-  const ibu = ibuPuppet(stage, { holds: { ladle } });
+  // ---- ikon kartu (koordinat lokal kartu; pusat kartu = 0,0) ----
+  const sheet = thing(`<g filter="url(#paper)"><rect x="-62" y="-84" width="124" height="160" rx="8" fill="#fff" stroke="#d9cfb4" stroke-width="3"/>
+    <rect x="-42" y="-62" width="84" height="10" rx="4" fill="#b9c2c7"/><rect x="-42" y="-40" width="60" height="10" rx="4" fill="#b9c2c7"/>
+    <rect x="-42" y="-14" width="14" height="50" fill="${GRN}"/><rect x="-20" y="6" width="14" height="30" fill="#f08a2c"/><rect x="2" y="-4" width="14" height="40" fill="${GRN}"/><rect x="24" y="14" width="14" height="22" fill="#7ec0e0"/></g>`);
+  const bubble = thing(`<g filter="url(#paper)"><ellipse rx="44" ry="38" fill="#fff" stroke="${GRN}" stroke-width="5"/><path d="M-18,30 l-12,26 l32,-18 Z" fill="#fff" stroke="${GRN}" stroke-width="5" stroke-linejoin="round"/><ellipse rx="40" ry="34" fill="#fff"/><path d="M-18,32 l-8,16 l22,-12 Z" fill="#fff"/></g>`, T('?', 0, 20, 62, GRN));
+  const bapak = bapakPuppet(stage);
+  const tube = thing(`<g filter="url(#paper)"><rect x="-26" y="-60" width="52" height="106" rx="12" fill="#7ec0e0"/><rect x="-18" y="-82" width="36" height="26" rx="7" fill="#f4f1ea"/><rect x="-26" y="-14" width="52" height="30" fill="#fff" opacity=".85"/><path d="M-12,48 h24 l-4,14 h-16 Z" fill="#7ec0e0"/></g>`);
+  const hand = thing(`<g filter="url(#paper)"><rect x="-34" y="-8" width="68" height="84" rx="26" fill="#e8be98"/><rect x="-34" y="-62" width="14" height="66" rx="7" fill="#e8be98"/><rect x="-16" y="-76" width="14" height="76" rx="7" fill="#e8be98"/><rect x="2" y="-74" width="14" height="74" rx="7" fill="#e8be98"/><rect x="20" y="-60" width="14" height="62" rx="7" fill="#e8be98"/><ellipse cx="-40" cy="26" rx="10" ry="24" fill="#e8be98" transform="rotate(30 -40 26)"/></g><circle cx="-14" cy="-84" r="0"/>`);
+  const shirt = col => `<g filter="url(#paper)"><path d="M-50,-44 L-22,-58 Q0,-40 22,-58 L50,-44 L70,-6 L44,6 L36,-10 L36,56 L-36,56 L-36,-10 L-44,6 L-70,-6 Z" fill="${col}"/></g>`;
+  const wet = thing(shirt('#6c9fc4') + `<g filter="url(#paper)"><path d="M-14,20 q-10,16 0,24 q10,-8 0,-24 Z M16,6 q-8,12 0,18 q8,-6 0,-18 Z" fill="#cfe9f7"/></g>`);
+  const swap = thing(`<g filter="url(#paper)"><path d="M-34,0 h50 M2,-22 l24,22 l-24,22" fill="none" stroke="${GRN}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></g>`);
+  const clean = thing(shirt('#8fcf9f') + `<g filter="url(#paper)"><path d="M-6,22 l10,12 l22,-28" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></g>`);
+  const therm = thing(`<g filter="url(#paper)"><rect x="-17" y="-96" width="34" height="154" rx="17" fill="#fff" stroke="#d9cfb4" stroke-width="3"/><circle cy="64" r="30" fill="${RED}"/><rect x="-8" y="-50" width="16" height="116" rx="8" fill="${RED}"/></g>`);
+  const flame = thing(`<g filter="url(#paper)"><path d="M0,-40 C26,-14 34,10 22,30 C14,42 -14,42 -22,30 C-34,8 -14,-8 0,-40 Z" fill="#f08a2c"/><path d="M0,-6 C12,8 14,20 6,28 C0,32 -8,30 -10,22 C-10,12 -4,4 0,-6 Z" fill="#ffd36b"/></g>`);
+  const glass = thing(`<g filter="url(#paper)"><path d="M-40,-60 h80 l-12,118 q-1,10 -12,10 h-32 q-11,0 -12,-10 Z" fill="#e6f3f8" stroke="#bcd9e5" stroke-width="3"/><path d="M-34,-22 h68 l-8,80 h-52 Z" fill="#7ec0e0"/></g>`);
+  const clock = thing(`<g filter="url(#paper)"><circle r="54" fill="#fff" stroke="${GRN}" stroke-width="9"/><path d="M0,-34 V0 L22,16" fill="none" stroke="${INK}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>`);
+  const mail = thing(`<g filter="url(#paper)"><rect x="-76" y="-50" width="152" height="104" rx="10" fill="#fff" stroke="#d9cfb4" stroke-width="3"/><path d="M-72,-44 L0,16 L72,-44" fill="none" stroke="#b9a77c" stroke-width="7" stroke-linejoin="round"/></g><g filter="url(#paper)"><circle cx="60" cy="48" r="24" fill="${GRN}"/><path d="M48,48 l9,9 l16,-18" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>`);
+  const clinic = thing(`<g filter="url(#paper)"><rect x="-90" y="-50" width="180" height="120" rx="6" fill="#e9eef0"/><rect x="-100" y="-62" width="200" height="22" rx="6" fill="#7ec0e0"/><rect x="-22" y="20" width="44" height="50" fill="#9a7b58"/><rect x="-74" y="-20" width="36" height="34" fill="#bfe0ee"/><rect x="38" y="-20" width="36" height="34" fill="#bfe0ee"/><rect x="-20" y="-96" width="40" height="40" rx="6" fill="#fff"/><path d="M0,-90 v28 M-14,-76 h28" stroke="${RED}" stroke-width="10"/></g>`);
+  // ---- bonus: konsumsi, pelembap, biaya ditanggung (kanan atas) ----
+  const food = thing(`<g filter="url(#paper)"><rect x="-56" y="-30" width="112" height="70" rx="12" fill="#f08a2c"/><rect x="-56" y="-40" width="112" height="24" rx="10" fill="#d9731a"/><circle cx="-18" cy="10" r="14" fill="#ffd36b"/><circle cx="18" cy="14" r="12" fill="#8fcf9f"/></g>`, T('Konsumsi', 80, 16, 38, INK, 'start'));
+  const cream = thing(`<g filter="url(#paper)"><rect x="-54" y="-26" width="108" height="52" rx="14" fill="#7ec0e0"/><rect x="-74" y="-18" width="26" height="36" rx="7" fill="#f4f1ea"/></g>`, T('Pelembap', 80, 14, 38, INK, 'start'));
+  const free = thing(`<g filter="url(#paper)"><rect x="-196" y="-34" width="392" height="68" rx="20" fill="${GRN}"/></g>`, T('Biaya ditanggung', 0, 14, 38, '#fff'));
+
+  // ---- ikon kecil baru ----
+  const scale = thing(`<g filter="url(#paper)"><rect x="-44" y="10" width="88" height="22" rx="8" fill="#9aa5ab"/><rect x="-38" y="-34" width="76" height="48" rx="12" fill="#f4f1ea" stroke="#d9cfb4" stroke-width="3"/><path d="M-22,-8 A22,22 0 0 1 22,-8" fill="none" stroke="${RED}" stroke-width="6"/><path d="M0,-8 L10,-24" stroke="${INK}" stroke-width="5" stroke-linecap="round"/></g>`);
+  const skin = thing(`<g filter="url(#paper)"><rect x="-46" y="-26" width="92" height="52" rx="22" fill="#e8be98"/><circle cx="-14" cy="-4" r="5" fill="#d9a77c"/><circle cx="12" cy="8" r="6" fill="#d9a77c"/><circle cx="20" cy="-10" r="4" fill="#d9a77c"/></g>`);
+  const drop = thing(`<g filter="url(#paper)"><path d="M0,-40 C22,-10 30,6 22,22 C14,38 -14,38 -22,22 C-30,6 -22,-10 0,-40 Z" fill="${RED}"/><path d="M-10,8 q2,10 10,12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".7"/></g>`);
+  const ac = thing(`<g filter="url(#paper)"><rect x="-56" y="-30" width="112" height="46" rx="10" fill="#f4f1ea" stroke="#d9cfb4" stroke-width="3"/><rect x="-40" y="2" width="80" height="6" rx="3" fill="#b9c2c7"/><circle cx="36" cy="-14" r="5" fill="${GRN}"/><path d="M-30,24 q10,14 0,26 M0,24 q10,14 0,26 M30,24 q10,14 0,26" fill="none" stroke="#7ec0e0" stroke-width="6" stroke-linecap="round"/></g>`);
+  const house = thing(`<g filter="url(#paper)"><path d="M-54,6 L0,-44 L54,6 Z" fill="#c8322f"/><rect x="-40" y="6" width="80" height="50" fill="#f4f1ea" stroke="#d9cfb4" stroke-width="3"/><rect x="-10" y="22" width="20" height="34" fill="#9a7b58"/></g>`);
+  const labelT = thing('', T('di dapur maupun di luar kerja', 0, 0, 26, INK));
+  // ---- shot penutup: tiga pekerja, "seluruh pekerja", tiga area, perisai ----
+  const fin = mk('g', {}, stage); vis(fin, false);
+  mk('rect', { x: -400, y: -300, width: 2400, height: 1500, fill: '#fbf3e0' }, fin);
+  const banner = thing(`<g filter="url(#paper)"><rect x="-370" y="-48" width="740" height="96" rx="26" fill="${GRN}"/></g>`, T('Untuk SELURUH pekerja Instalasi Gizi', 0, 12, 31, '#fff'));
+  const areaTile = (col, glyph) => thing(`<g filter="url(#paper)"><rect x="-62" y="-62" width="124" height="124" rx="24" fill="${col}"/>${glyph}</g>`);
+  const tiles = [areaTile('#f08a2c', `<path d="M0,-34 C20,-12 26,6 18,22 C10,34 -10,34 -18,22 C-26,6 -10,-8 0,-34 Z" fill="#ffd36b"/>`),
+    areaTile('#7ec0e0', `<rect x="-34" y="-8" width="68" height="14" rx="5" fill="#fff"/><path d="M-26,-16 l52,-24" stroke="#fff" stroke-width="8" stroke-linecap="round"/>`),
+    areaTile('#8fcf9f', `<ellipse cy="12" rx="38" ry="12" fill="#fff"/><path d="M-30,6 q30,-44 60,0 Z" fill="#fff"/>`),
+    areaTile('#b9a3dc', `<rect x="-32" y="-28" width="64" height="44" rx="7" fill="#fff"/><rect x="-6" y="16" width="12" height="12" fill="#fff"/><rect x="-22" y="28" width="44" height="7" rx="3" fill="#fff"/>`)];
+  const AREA_NAMES = ['Memasak', 'Penyajian', 'Persiapan', 'Administrasi'];
+  const areaLabels = AREA_NAMES.map(n => thing('', T(n, 0, 0, 27, INK)));
+  const shieldBanner = thing(`<g filter="url(#paper)"><rect x="-290" y="-44" width="580" height="88" rx="24" fill="#fff" stroke="${GRN}" stroke-width="6"/></g>`, T('Melindungi rekan di dapur', 40, 12, 32, INK));
+  const shield = thing(`<g filter="url(#paper)"><path d="M0,-52 L46,-34 V6 C46,34 24,50 0,60 C-24,50 -46,34 -46,6 V-34 Z" fill="${GRN}"/><path d="M-18,4 l13,14 l26,-30" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g>`);
+  const fB = bapakPuppet(fin), fI = ibuPuppet(fin), fD = dokterPuppet(fin);
   const dok = dokterPuppet(stage);
-  // papan "Kesehatan pekerja" + perisai
-  const board = mk('g', {}, stage);
-  prop(board, `<g filter="url(#paper)"><rect x="-150" y="-100" width="300" height="200" rx="16" fill="#fffaf0"/><rect x="-150" y="-100" width="300" height="38" rx="14" fill="${GRN}"/></g><g filter="url(#paper)"><rect x="-6" y="100" width="12" height="150" fill="#8a6a46"/></g>`);
-  board.insertAdjacentHTML('beforeend', T('Kesehatan', 0, 2, 44) + T('pekerja', 0, 54, 48));
-  const shield = prop(stage, `<g filter="url(#paper)"><path d="M0,-52 L44,-34 V6 C44,36 22,52 0,62 C-22,52 -44,36 -44,6 V-34 Z" fill="${GRN}"/></g><g filter="url(#paper)"><path d="M-18,4 l13,14 l24,-30" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/></g>`);
-
-  // ---- insert: lengan, tubuh, darah (lapisan layar di atas kamera) ----
-  const ins = mk('g', {}, p);
-  mk('rect', { width: 1600, height: 900, fill: '#f6efdc' }, ins);
-  prop(ins, `<g filter="url(#paper)"><path d="M-100,120 Q400,80 800,130 T1700,110 V-40 H-100 Z" fill="#ecdfc0"/></g>`);
-  const ARM = 'M-330,-84 C-200,-100 0,-74 130,-64 L130,64 C0,84 -200,104 -330,92 Z';
-  const arm = prop(ins, `<g filter="url(#paper)"><path d="${ARM}" fill="#e8be98"/><ellipse cx="190" cy="0" rx="92" ry="84" fill="#e8be98"/>${[-62, -22, 18, 58].map((y, i) => `<rect x="230" y="${y - 17}" width="${150 - 8 * (i === 0 || i === 3)}" height="36" rx="18" fill="#e8be98"/>`).join('')}<rect x="150" y="-128" width="40" height="110" rx="20" fill="#e8be98" transform="rotate(-24 170 -80)"/><path d="M-250,-40 q80,-8 160,6" fill="none" stroke="#d9a77c" stroke-width="6" stroke-linecap="round"/></g>`);
-  const armHi = mk('path', { d: ARM, fill: 'none', stroke: GRN, 'stroke-width': 12, 'stroke-linejoin': 'round' }, arm);
-  const hot = mk('g', { fill: 'none', 'stroke-linecap': 'round', 'stroke-width': 14 }, ins);
-  const hp = [0, 1, 2, 3].map(i => mk('path', { stroke: i % 2 ? '#e8613a' : '#f08a2c' }, hot));
-  const hotFlame = prop(ins, `<g filter="url(#paper)"><path d="M0,-70 C32,-36 40,-8 24,14 C14,28 -14,28 -24,14 C-40,-10 -16,-32 0,-70 Z" fill="#f08a2c"/><path d="M0,-30 C16,-12 18,2 8,12 C0,16 -10,14 -12,4 C-12,-8 -6,-14 0,-30 Z" fill="#ffd36b"/></g>`);
-  const body = prop(ins, `<g filter="url(#paper)"><circle cx="0" cy="-150" r="62" fill="#e8be98"/><path d="M-100,-70 Q-100,-96 -60,-96 H60 Q100,-96 100,-70 V90 H-100 Z" fill="#8fcf9f"/><rect x="-100" y="90" width="82" height="170" rx="20" fill="#34584a"/><rect x="-146" y="-90" width="48" height="170" rx="24" fill="#8fcf9f"/><circle cx="-122" cy="92" r="27" fill="#e8be98"/><rect x="98" y="-90" width="48" height="170" rx="24" fill="#8fcf9f"/><circle cx="122" cy="92" r="27" fill="#e8be98"/><rect x="18" y="90" width="82" height="170" rx="20" fill="#34584a"/></g>`);
-  const bodyHi = mk('path', { d: 'M-100,-70 Q-100,-96 -60,-96 H60 Q100,-96 100,-70 V90 H-100 Z', fill: 'none', stroke: GRN, 'stroke-width': 10 }, body);
-  const vial = prop(ins, `<g filter="url(#paper)"><rect x="-44" y="-120" width="88" height="250" rx="22" fill="#e6f3f8" stroke="#bcd9e5" stroke-width="5"/><rect x="-50" y="-132" width="100" height="26" rx="10" fill="#c8322f"/><path d="M-38,40 H38 V108 Q38,122 24,122 H-24 Q-38,122 -38,108 Z" fill="#c8322f"/></g>`);
-  const dropB = prop(ins, `<g filter="url(#paper)"><path d="M0,-34 C22,-6 26,14 0,28 C-26,14 -22,-6 0,-34 Z" fill="${RED}"/><ellipse cx="-7" cy="6" rx="5" ry="9" fill="#e8736f"/></g>`);
-  const arrow = prop(ins, `<g filter="url(#paper)"><path d="M-60,0 H40 M10,-34 L50,0 L10,34" fill="none" stroke="${GRN}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></g>`);
-  const lab = prop(ins, `<g filter="url(#paper)"><rect x="-500" y="-50" width="1000" height="100" rx="24" fill="#fffaf0"/></g>`);
-  const t1 = mk('g', {}, lab), t2 = mk('g', {}, lab), t3 = mk('g', {}, lab);
-  t1.innerHTML = T('Panas dapur', -460, 22, 56, RED, 'start'); t2.innerHTML = T('→ kulit', -55, 22, 56, INK, 'start'); t3.innerHTML = T('→ tubuh', 185, 22, 56, GRN, 'start');
-  const ph = { wide: [0, W(4.38)], arm: [W(4.38), W(10.32)], body: [W(10.32), W(13.2)] };
-  cam.cut({ x: 600, y: 540, z: 1.2 }, 0);
-  cam.cut({ x: 900, y: 520, z: 1.1 }, W(13.2));
-  const tHot = W(.93), tKompor = W(1.79), tPanasI = W(5.85), tKulit = W(6.8), tTubuh = W(9.97), tDarah = W(11.75);
-  const tBoard = W(16.3), tShield = W(19.23), tPoint = W(15.9);
-  const pop = (g, q, t0, x, y, s = 1, d = .3) => { if (q < t0) { vis(g, false); return; } const u = span(q, t0, t0 + d); vis(g, true); tf(g, `translate(${x} ${y}) scale(${(s * (.7 + .3 * u + .08 * Math.sin(u * Math.PI))).toFixed(3)})`); g.setAttribute('opacity', Math.min(1, u * 1.8).toFixed(2)); };
+  const blink = (q, per, off) => ((q + off) % per) < 2 / FPS;
+  const at = (i, dx, dy) => [C[i][0] + dx, C[i][1] + dy];
+  const tT = { sheet: A(K.sheet), scale: A(K.scale), skin: A(K.skin), drop: A(K.drop), bub: A(K.bub),
+    tube: A(K.tube), hand: A(K.hand), wet: A(K.wet), ac: A(K.ac), clean: A(K.swap),
+    flame: A(K.flame), therm: A(K.therm), glass: A(K.glass), label: A(K.label), house: A(K.house),
+    mail: A(K.mail), clinic: A(K.clinic), food: A(K.food), cream: A(K.cream), free: A(K.free),
+    fin: A(K.fin), seluruh: A(K.seluruh), area: A(K.area), rekan: A(K.rekan) };
   // sfx (tools/briefing/add_sfx.py)
-  sfx('scene3', 0, 'room', 0.25, { loop: true });
+  tCard.forEach(t => sfx('scene3', t, 'chime', .5));
   stopClock(D, (q, f) => {
-    const inWide = q < ph.arm[0] || q >= ph.body[1], inArm = between(q, ...ph.arm), inBody = between(q, ...ph.body);
-    vis(cam.root, inWide); vis(ins, !inWide);
     cam.apply(q, f);
-    // ---------- dapur ----------
-    steam(q);
-    const fl = k => 1 + .14 * Math.sin(q * 11 + k) + .08 * Math.sin(q * 17 + 2 * k);
-    pop(flames[0], q, tKompor, 230, 446, 1.5 * fl(0)); pop(flames[1], q, tKompor + .15, 360, 446, 1.5 * fl(2)); vis(flame3, false);
-    vis(waves, q >= tHot);
-    wv.forEach((e, i) => { e.setAttribute('d', wavy(250 + i * 130 + (i === 2 ? 40 : 0), 400, 150 + i * 20, 22, q * 4 - i * 1.3)); e.setAttribute('opacity', (.35 + .4 * span(q, tHot, tHot + .8)).toFixed(2)); });
-    drops.forEach((d, i) => { const t = q - W(.93) - i * .45, u = ((t % 1.35) + 1.35) % 1.35 / 1.35;
-      vis(d, q >= tHot + .3 && inWide); tf(d, `translate(${(i === 1 ? 760 : i === 0 ? 590 : 780) + 6 * i} ${(430 + (i % 2) * 14 + 150 * u).toFixed(1)}) scale(${(.9 - .3 * u).toFixed(2)})`); d.setAttribute('opacity', (1 - u * u).toFixed(2)); });
-    const stir = Math.sin(q * 4.4);
-    ibu.pose({ x: 690, y: 800, s: 1.05, look: -.5, eyeX: -.6, eyeY: -.1, brow: q > tHot ? .6 : 0, bob: 1.8 * Math.sin(q * 2.1), holdL: 'ladle', armL: 66 + 8 * stir, armR: 14 + 5 * Math.sin(q * 3), mouth: q > tHot ? 'wobble' : 'X', shut: blink(q, 4.1, 1.1), lean: -1.5 + stir }, f);
-    // dokter muncul setelah kembali ke dapur
-    const dokOn = q >= ph.body[1];
-    vis(dok.g, dokOn);
-    const talk = lips(q, S, PRE3, 's03b'), pointing = q >= tPoint;
-    dok.pose({ x: 1130, y: 800, s: 1.03, look: pointing ? .4 : -.2, eyeX: pointing ? .7 : -.4, bob: 1.6 * Math.sin(q * 2.2 + 1), mouth: talk, shut: blink(q, 3.5, .6), headR: 2 * Math.sin(q * 1.2),
-      armR: pointing ? 96 + 4 * Math.sin(q * 2) : 10, reachR: pointing ? 1.15 : 1, armL: 10 + (talk !== 'X' ? 6 * Math.sin(q * 5) : 0) }, f);
-    pop(board, q, tBoard, 1440, 330, 1);
-    pop(shield, q, tShield, 1235, 300, 1.0, .35);
-    vis(shield, q >= tShield);
-    // ---------- insert ----------
-    const lbl = inArm || inBody;
-    vis(lab, lbl); tf(lab, 'translate(800 810)');
-    vis(t1, q >= tPanasI); vis(t2, q >= tKulit); vis(t3, q >= tTubuh);
-    vis(arm, inArm); vis(hot, inArm && q >= tPanasI); vis(hotFlame, inArm && q >= tPanasI);
-    const pulse = 1 + .012 * Math.sin(q * 3);
-    tf(arm, `translate(700 500) scale(${pulse.toFixed(3)})`);
-    armHi.setAttribute('opacity', q >= tKulit ? (.55 + .45 * Math.sin((q - tKulit) * 7)).toFixed(2) : 0);
-    hp.forEach((e, i) => { e.setAttribute('d', wavy(250 + i * 150, 130 + 12 * Math.sin(q * 3 + i), 410, 18, q * 5 - i)); e.setAttribute('opacity', q >= tPanasI ? (span(q, tPanasI, tPanasI + .5) * .9).toFixed(2) : 0); });
-    tf(hotFlame, `translate(180 150) scale(${(1.3 * fl(5)).toFixed(3)})`);
-    vis(body, inBody); tf(body, `translate(500 400) scale(1)`);
-    bodyHi.setAttribute('opacity', q >= tTubuh ? (.6 + .4 * Math.sin((q - tTubuh) * 7)).toFixed(2) : 0);
-    pop(arrow, q, tDarah - .1, 880, 400, 1); vis(arrow, inBody && q >= tDarah - .1);
-    pop(vial, q, tDarah - .1, 1150, 400, 1); vis(vial, inBody && q >= tDarah - .1);
-    const fall = span(q, tDarah, tDarah + .9);
-    vis(dropB, inBody && q >= tDarah); tf(dropB, `translate(1150 ${(150 + 230 * fall).toFixed(1)}) scale(${(1.1 - .1 * fall).toFixed(2)})`);
+    cards.forEach((c, i) => place(c, q, tCard[i], C[i][0], C[i][1], 1));
+    place(sheet, q, tT.sheet, ...at(0, -170, 40), .95);
+    place(scale, q, tT.scale, ...at(0, 30, -42), .5);
+    place(skin, q, tT.skin, ...at(0, 95, -42), .5);
+    place(drop, q, tT.drop, ...at(0, 160, -42), .5);
+    place(bubble, q, tT.bub, ...at(0, 215, 60), .7);
+    place(tube, q, tT.tube, ...at(1, -190, 40), .9);
+    place(hand, q, tT.hand, ...at(1, -110, 58), .8);
+    place(wet, q, tT.wet, ...at(1, -20, 50), .8);
+    place(ac, q, tT.ac, ...at(1, 195, -34), .6);
+    place(swap, q, tT.clean, ...at(1, 70, 56), .8);
+    place(clean, q, tT.clean + .15, ...at(1, 150, 52), .8);
+    place(therm, q, tT.therm, ...at(2, -180, 4), .85);
+    place(flame, q, tT.flame, ...at(2, -90, 0), .85);
+    place(glass, q, tT.glass, ...at(2, 10, 14), .85);
+    place(house, q, tT.house, ...at(2, 130, 14), .8);
+    place(labelT, q, tT.label, ...at(2, 0, 124), 1);
+    place(mail, q, tT.mail, ...at(3, -140, 36), .95);
+    place(clinic, q, tT.clinic, ...at(3, 120, 30), .9);
+    place(food, q, tT.food, 1262, 98, 1);
+    place(cream, q, tT.cream, 1262, 218, 1);
+    place(free, q, tT.free, 1380, 362, 1);
+    // ---- shot penutup ----
+    const inFin = q >= tT.fin;
+    vis(fin, inFin);
+    if (inFin) {
+      fin.setAttribute('opacity', span(q, tT.fin, tT.fin + .35).toFixed(2));
+      place(banner, q, tT.seluruh, 800, 90, 1);
+      tiles.forEach((t, i) => { place(t, q, tT.area + i * .22, 425 + i * 250, 240, .8); place(areaLabels[i], q, tT.area + i * .22, 425 + i * 250, 318, 1); });
+      place(shieldBanner, q, tT.rekan, 800, 395, 1);
+      place(shield, q, tT.rekan, 560, 395, .6);
+      const fb = { y: 800, s: 1.0, look: 0, mouth: 'smile', armR: 8, armL: 8 };
+      fB.pose({ ...fb, x: 440, bob: 1.5 * Math.sin(q * 2), shut: blink(q, 3.6, .3) }, f);
+      fI.pose({ ...fb, x: 800, bob: 1.5 * Math.sin(q * 2 + 1), shut: blink(q, 3.1, 1.1) }, f);
+      fD.pose({ ...fb, x: 1160, bob: 1.5 * Math.sin(q * 2 + 2), shut: blink(q, 3.9, 2) }, f);
+    }
+    // bapak kecil di kartu 1: muncul bersama kertas, membaca
+    const bs = .38, bx = C[0][0] + 80, by = C[0][1] + 150;
+    vis(bapak.g, q >= tT.sheet && q < tT.fin);
+    bapak.pose({ x: bx, y: by, s: bs * (.8 + .2 * span(q, tT.sheet, tT.sheet + .3)), look: q < tT.bub ? -.9 : .2, eyeX: q < tT.bub ? -.9 : -.2, eyeY: q < tT.bub ? .5 : 0,
+      bob: 1.6 * Math.sin(q * 2.2), mouth: q > tT.bub ? 'smile' : 'X', shut: blink(q, 3.9, .5), armR: q < tT.bub ? 40 : 8 + 5 * Math.sin(q * 3), armL: 8 }, f);
+    // dokter di sudut: mendengarkan, mengangguk, menunjuk ke klinik pada kata 'sarankan'
+    const tPoint = A(K.point), pointing = q >= tPoint && q < A(K.pointEnd);
+    const base = { x: 1310, y: 800, s: 1.0, bob: 1.6 * Math.sin(q * 2.1 + 2), look: -.7, eyeX: -.7, shut: blink(q, 3.4, .9), mouth: q > A(K.pointEnd) ? 'smile' : 'X' };
+    const nod = tCard.some(t => between(q, t, t + .5)) ? 5 * Math.sin((q % .5) * 12.6) : 0;
+    const pose = { ...base, headR: -2 + nod * .5, headY: nod > 0 ? 4 : 0, armR: 8 };
+    if (pointing) Object.assign(pose, dok.aim({ ...pose }, 'L', [1160, 640]), { look: -1, eyeX: -1 });
+    else pose.armL = between(q, tCard[0], tCard[0] + 5) || between(q, tCard[1], tCard[1] + 4) || between(q, tCard[2], tCard[2] + 4) ? 48 + 6 * Math.sin(q * 2) : 8;
+    dok.pose(pose, f);
+    vis(dok.g, q < tT.fin);
   });
 }
