@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>One Line of Care - Illustrated Corridor Prototype</title>
+<style>
+  :root{--navy:#0E3B47;--teal:#2B8791;--coral:#F26A4B;--ink:#2B5560;--cream:#F4EFE6}
+  html,body{margin:0;background:var(--cream)}
+  .board{position:relative;width:4800px;height:960px;background:var(--cream);font-family:'Bahnschrift','Segoe UI',Arial,sans-serif;color:var(--navy);overflow:hidden}
+  h1{position:absolute;left:80px;top:40px;margin:0;font-size:150px;line-height:1;font-weight:800;letter-spacing:-3px;white-space:nowrap}
+  h1 span{color:var(--coral)}
+  .sub{position:absolute;left:80px;top:205px;font-size:38px;color:var(--ink);letter-spacing:1px}
+  .tag{position:absolute;right:80px;top:70px;font-size:26px;letter-spacing:3px;color:var(--ink);opacity:.7;text-align:right}
+  .strip{position:absolute;left:0;top:290px;width:4800px;height:400px;display:flex}
+  .panel{position:relative;width:1200px;height:400px;flex:none}
+  .panel img{display:block;width:1200px;height:400px}
+  .ph{background:repeating-linear-gradient(45deg,#E9E0D0,#E9E0D0 18px,#EFE7DA 18px,#EFE7DA 36px);box-shadow:inset 0 0 0 4px rgba(14,59,71,.18)}
+  .ph .ribbon{position:absolute;left:0;top:140px;width:1200px;height:58px;background:var(--coral);opacity:.9}
+  .ph .t{position:absolute;left:0;right:0;top:215px;text-align:center;font-size:40px;font-weight:800;letter-spacing:4px;color:var(--navy)}
+  .ph .s{position:absolute;left:0;right:0;top:268px;text-align:center;font-size:26px;color:var(--ink)}
+  .caps{position:absolute;left:0;top:720px;width:4800px;display:flex}
+  .cap{width:1200px;display:flex;gap:22px;align-items:center;padding-left:80px;box-sizing:border-box}
+  .n{flex:none;font-size:84px;font-weight:800;color:var(--coral)}
+  .cap b{display:block;font-size:40px;letter-spacing:4px}
+  .cap span{display:block;font-size:30px;color:var(--ink)}
+  .foot{position:absolute;left:80px;bottom:34px;font-size:22px;color:var(--ink);opacity:.7;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="board">
+  <h1>ONE BODY. <span>ONE LINE OF CARE.</span></h1>
+  <div class="sub">Orthopaedics · Rehabilitation · Occupational vaccination · Acupuncture — one continuous ribbon through four rooms</div>
+  <div class="tag">PROTOTYPE · CONCEPT 1+2<br>Illustrated corridor (panel 1 of 4)</div>
+  <div class="strip">
+    <div class="panel"><img src="images/corridor-01-ortho.png" alt="Orthopaedic room"></div>
+    <div class="panel ph"><div class="ribbon"></div><div class="t">02 REHABILITATION</div><div class="s">illustration to generate</div></div>
+    <div class="panel ph"><div class="ribbon"></div><div class="t">03 VACCINE</div><div class="s">illustration to generate</div></div>
+    <div class="panel ph"><div class="ribbon"></div><div class="t">04 ACUPUNCTURE</div><div class="s">illustration to generate</div></div>
+  </div>
+  <div class="caps">
+    <div class="cap"><div class="n">01</div><div><b>ORTHOPAEDICS</b><span>Diagnose and repair</span></div></div>
+    <div class="cap"><div class="n">02</div><div><b>REHABILITATION</b><span>Restore movement</span></div></div>
+    <div class="cap"><div class="n">03</div><div><b>VACCINE</b><span>Prevent before it happens</span></div></div>
+    <div class="cap"><div class="n">04</div><div><b>ACUPUNCTURE</b><span>Ease what still aches</span></div></div>
+  </div>
+  <div class="foot">Panel 1 illustration: AI-generated draft · panels 2-4 pending</div>
+</div>
+</body>
+</html>

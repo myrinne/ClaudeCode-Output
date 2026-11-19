@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Run Strong, Recover Stronger - Fun Run Poster</title>
+<style>
+  :root{--navy:#0A2B35;--navy2:#0E3B47;--teal:#2B8791;--coral:#F26A4B;--hot:#FF5A36;--yellow:#FFD23F;--cream:#F4EFE6;--mist:#BFD9D8}
+  html,body{margin:0;background:var(--navy)}
+  .board{position:relative;width:4800px;height:2290px;background:var(--navy);font-family:'Bahnschrift','Segoe UI',Arial,sans-serif;color:var(--navy);overflow:hidden}
+  .head{position:absolute;left:0;top:0;width:4800px;height:400px;background:linear-gradient(100deg,#FF5A36 0,#F26A4B 55%,#FF8A3D 100%)}
+  /* corridor: crop source rows 90..660, punch the colour */
+  .strip{position:absolute;left:0;top:400px;width:4800px;height:1260px;background:url(images/corridor-long.png) 0 -199px/4800px auto no-repeat;filter:saturate(1.55) contrast(1.1) brightness(1.02)}
+  .edge{position:absolute;left:0;width:4800px;height:16px;background:var(--yellow)}
+  .h1{position:absolute;left:84px;top:-6px;font-size:236px;line-height:1;font-weight:800;font-style:italic;color:#fff;letter-spacing:2px;white-space:nowrap;text-shadow:10px 10px 0 var(--navy)}
+  .h2{position:absolute;left:92px;top:212px;font-size:140px;line-height:1;font-weight:800;font-style:italic;color:var(--navy);letter-spacing:2px;white-space:nowrap}
+  .h2 span{background:var(--yellow);padding:0 24px;margin-left:-6px;box-shadow:10px 10px 0 var(--navy)}
+  .h3{position:absolute;left:96px;top:352px;font-size:34px;font-weight:700;color:#fff;letter-spacing:4px;white-space:nowrap}
+  .logo{position:absolute;right:60px;top:40px;width:780px;height:190px;background:#fff;border-radius:22px;color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:46px;letter-spacing:6px;font-weight:800;box-shadow:12px 12px 0 var(--navy);border:6px dashed #b9c9cb;box-sizing:border-box}
+  .visit{position:absolute;right:60px;top:262px;width:780px;height:84px;background:var(--navy);color:#fff;border-radius:42px;display:flex;align-items:center;justify-content:center;font-size:36px;letter-spacing:4px;font-weight:800;white-space:nowrap}
+  .visit span{color:var(--yellow);margin-left:12px}
+  .sign{position:absolute;top:340px;height:116px;transform:translateX(-50%);background:var(--yellow);color:var(--navy);border-radius:58px;display:flex;align-items:center;gap:24px;padding:0 56px 0 14px;font-weight:800;font-size:68px;letter-spacing:5px;white-space:nowrap;box-shadow:0 10px 0 var(--navy)}
+  .sign em{font-style:italic;background:var(--navy);color:var(--yellow);border-radius:44px;height:88px;padding:0 34px;display:flex;align-items:center;font-size:54px;letter-spacing:2px}
+  .card{position:absolute;top:1800px;width:1147px;height:290px;border-radius:22px;box-sizing:border-box;padding:34px 44px;overflow:hidden;box-shadow:0 12px 0 rgba(0,0,0,.35)}
+  .card .n{position:absolute;right:26px;top:-14px;font-size:230px;font-weight:800;font-style:italic;opacity:.22;line-height:1}
+  .card b{display:block;font-size:66px;letter-spacing:4px;font-weight:800;font-style:italic;position:relative}
+  .card span{display:block;font-size:42px;margin-top:14px;line-height:1.22;position:relative;max-width:760px;font-weight:600}
+  .c1{background:var(--coral);color:#fff}.c2{background:var(--teal);color:#fff}.c3{background:var(--yellow);color:var(--navy)}.c4{background:#fff;color:var(--navy)}
+  .c4 .n{color:var(--coral);opacity:.35}
+  .cta{position:absolute;left:0;top:2120px;width:4800px;height:170px;background:var(--hot);color:#fff;display:flex;align-items:center;padding:0 80px;gap:70px;box-sizing:border-box}
+  .cta .big{font-size:96px;font-weight:800;letter-spacing:3px;white-space:nowrap;font-style:italic;text-shadow:6px 6px 0 var(--navy)}
+  .cta .mid{font-size:42px;letter-spacing:2px;line-height:1.25;flex:1;font-weight:700}
+  .qr{flex:none;width:130px;height:130px;background:#fff;color:var(--navy);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;letter-spacing:2px}
+  .note{position:absolute;right:50px;top:2096px;font-size:20px;color:var(--mist);opacity:.85;letter-spacing:2px}
+  .burst{position:absolute;left:2260px;top:1290px;width:420px;height:420px;display:flex;align-items:center;justify-content:center;text-align:center;transform:rotate(-10deg);color:var(--navy);font-weight:800;line-height:1.05}
+  .burst b{display:block;font-size:84px;font-style:italic;letter-spacing:1px}
+  .burst span{display:block;font-size:46px;letter-spacing:2px;margin-top:6px}
+  .burst i{display:block;font-size:26px;font-style:normal;margin-top:8px;letter-spacing:2px}
+  svg.fx{position:absolute;left:0;top:0;width:4800px;height:2290px;pointer-events:none}
+  svg.fx2{position:absolute;left:0;top:0;width:4800px;height:2290px;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="board">
+  <div class="head"></div>
+  <svg class="fx" id="fx" viewBox="0 0 4800 2290"></svg>
+  <div class="strip"></div>
+  <div class="edge" style="top:400px"></div>
+  <div class="edge" style="top:1644px"></div>
+  <svg class="fx2" id="fx2" viewBox="0 0 4800 2290"></svg>
+
+  <div class="h1">RUN STRONG.</div>
+  <div class="h2"><span>RECOVER STRONGER.</span></div>
+  <div class="logo">[ HOSPITAL LOGO ]</div>
+  <div class="visit">VISIT OUR BOOTH <span>[ no. / location ]</span></div>
+
+  <div class="sign" style="left:700px"><em>KM 1</em>ORTHOPAEDICS</div>
+  <div class="sign" style="left:1985px"><em>KM 2</em>REHABILITATION</div>
+  <div class="sign" style="left:3280px"><em>KM 3</em>VACCINATION</div>
+  <div class="sign" style="left:4260px"><em>KM 4</em>ACUPUNCTURE</div>
+
+  <div class="burst"><div><b>FREE</b><span>QUICK CHECK</span><i>[confirm offer]</i></div></div>
+
+  <div class="card c1" style="left:60px"><div class="n">01</div><b>ORTHOPAEDICS</b><span>Knee, ankle or back pain? Get it checked before it stops your next run.</span></div>
+  <div class="card c2" style="left:1237px"><div class="n">02</div><b>REHABILITATION</b><span>Back to running safely: gait, strength and a step-by-step return plan.</span></div>
+  <div class="card c3" style="left:2414px"><div class="n">03</div><b>VACCINATION</b><span>Stay protected for training, travel and work.</span></div>
+  <div class="card c4" style="left:3591px"><div class="n">04</div><b>ACUPUNCTURE</b><span>Ease sore muscles and pain that will not go away.</span></div>
+
+  <div class="cta">
+    <div class="big">COME SAY HI.</div>
+    <div class="mid">Orthopaedics · Rehabilitation · Vaccination · Acupuncture — one hospital, one route  ·  [hospital name]  ·  [phone / website]</div>
+    <div class="qr">QR</div>
+  </div>
+  <div class="note">Illustration: AI-generated draft · wording and offers to be confirmed</div>
+</div>
+<script>
+let a='';
+// header slashes
+[[2760,3200,'#0A2B35',1],[3240,3330,'#FFD23F',1],[3370,3410,'#fff',.9],[3450,3470,'#0A2B35',1]].forEach(s=>{
+  a+=`<polygon points="${s[0]},0 ${s[1]},0 ${s[1]-330},400 ${s[0]-330},400" fill="${s[2]}" opacity="${s[3]}"/>`});
+document.getElementById('fx').innerHTML=a;
+// route bar + starburst (drawn above strip)
+let o='';
+o+=`<line x1="110" y1="1722" x2="4690" y2="1722" stroke="#FFD23F" stroke-width="14" stroke-linecap="round"/>`;
+for(let x=300;x<4600;x+=120)o+=`<path d="M${x},1704 l18,18 l-18,18" fill="none" stroke="#0A2B35" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>`;
+[[110,''],[700,'1'],[1985,'2'],[3280,'3'],[4260,'4'],[4690,'']].forEach(n=>{
+  o+=`<circle cx="${n[0]}" cy="1722" r="34" fill="#FFD23F" stroke="#0A2B35" stroke-width="8"/>`;
+  o+=`<text x="${n[0]}" y="1736" font-size="38" font-weight="800" fill="#0A2B35" text-anchor="middle" style="font-family:Bahnschrift,'Segoe UI',Arial">${n[1]}</text>`});
+for(let r=0;r<3;r++)for(let c=0;c<4;c++)o+=`<rect x="${4730+c*18}" y="${1668+r*18}" width="18" height="18" fill="${(r+c)%2?'#fff':'#0A2B35'}"/>`;
+// starburst behind the sticker text
+const cx=2470,cy=1500,R1=250,R2=205,N=18;let pts=[];
+for(let i=0;i<N*2;i++){const ang=i*Math.PI/N-Math.PI/2,r=i%2?R2:R1;pts.push((cx+r*Math.cos(ang)).toFixed(1)+','+(cy+r*Math.sin(ang)).toFixed(1))}
+o+=`<g transform="rotate(-10 ${cx} ${cy})"><polygon points="${pts.join(' ')}" fill="#FFD23F" stroke="#0A2B35" stroke-width="10" stroke-linejoin="round"/></g>`;
+document.getElementById('fx2').innerHTML=o;
+</script>
+</body>
+</html>
