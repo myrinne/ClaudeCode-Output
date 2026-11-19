@@ -137,8 +137,8 @@
   ]
  },
  "s02a": {
-  "key": "6ab57753c1cf91ff7e7dd0069e32e0855d32df56",
-  "dur": 11.278,
+  "key": "20feb70838288dda4c147350fbe7ec0651809d6d",
+  "dur": 12.12,
   "words": [
    [
     0.1,
@@ -177,11 +177,11 @@
     "ingin"
    ],
    [
-    4.337083,
+    4.327,
     "tahu"
    ],
    [
-    4.609291,
+    4.599208,
     "apakah"
    ],
    [
@@ -189,31 +189,31 @@
     "panas"
    ],
    [
-    5.375416,
+    5.365333,
     "memengaruhi"
    ],
    [
-    5.818958,
+    5.808875,
     "kulit"
    ],
    [
-    6.625416,
+    6.60525,
     "dan"
    ],
    [
-    6.776625,
+    6.756458,
     "apakah"
    ],
    [
-    7.119375,
+    7.099208,
     "itu"
    ],
    [
-    7.391541,
+    7.371375,
     "berkaitan"
    ],
    [
-    7.915708,
+    7.905625,
     "dengan"
    ],
    [
@@ -221,27 +221,35 @@
     "keadaan"
    ],
    [
-    8.581041,
+    8.560875,
+    "stres"
+   ],
+   [
+    8.873375,
+    "oksidatif"
+   ],
+   [
+    9.3875,
     "tubuh"
    ],
    [
-    9.054833,
+    9.911708,
     "yang"
    ],
    [
-    9.256458,
+    10.113291,
     "bisa"
    ],
    [
-    9.518541,
+    10.375416,
     "dilihat"
    ],
    [
-    9.952,
+    10.808875,
     "dari"
    ],
    [
-    10.133458,
+    11.000416,
     "darah"
    ]
   ],
@@ -253,7 +261,7 @@
    ],
    [
     3.712,
-    "Kami ingin tahu apakah panas memengaruhi kulit, dan apakah itu berkaitan dengan keadaan tubuh yang bisa dilihat dari darah."
+    "Kami ingin tahu apakah panas memengaruhi kulit, dan apakah itu berkaitan dengan keadaan stres oksidatif tubuh yang bisa dilihat dari darah."
    ]
   ]
  },
@@ -339,164 +347,120 @@
   ]
  },
  "s03a": {
-  "key": "95fa6344f06c871078b3e2d1440bad0279d99322",
-  "dur": 17.952,
+  "key": "5f3e43f52b18c6b5f3ab44cd7d0e1f4acdd0723a",
+  "dur": 13.248,
   "words": [
    [
     0.1,
     "Pertama"
    ],
    [
-    1.098,
+    1.087916,
     "apa"
    ],
    [
-    1.339916,
+    1.329833,
     "yang"
    ],
    [
-    1.481041,
+    1.470958,
     "Bapak"
    ],
    [
-    1.843958,
+    1.833875,
     "dan"
    ],
    [
-    2.025416,
+    2.015333,
     "Ibu"
    ],
    [
-    2.327833,
+    2.31775,
     "dapat"
    ],
    [
-    3.336291,
+    3.326208,
     "Satu"
    ],
    [
-    4.304041,
+    4.273791,
     "tahu"
    ],
    [
-    4.576208,
+    4.545958,
     "hasil"
    ],
    [
-    4.898791,
+    4.868541,
     "pemeriksaan"
    ],
    [
-    5.433083,
+    5.39275,
     "sendiri"
    ],
    [
-    6.199208,
+    6.158875,
     "termasuk"
    ],
    [
-    6.662916,
+    6.622583,
     "berat"
    ],
    [
-    6.854416,
+    6.814125,
     "badan"
    ],
    [
-    7.55,
+    7.509666,
     "kulit"
    ],
    [
-    8.185083,
+    8.134666,
     "dan"
    ],
    [
-    8.386708,
+    8.306041,
+    "stres"
+   ],
+   [
+    8.598375,
+    "oksidatif"
+   ],
+   [
+    9.203208,
+    "dari"
+   ],
+   [
+    9.414916,
     "darah"
    ],
    [
-    9.122583,
+    10.140708,
     "dan"
    ],
    [
-    9.293958,
+    10.322166,
     "bisa"
    ],
    [
-    9.535875,
+    10.554041,
     "bertanya"
    ],
    [
-    9.908875,
+    10.927,
     "artinya"
    ],
    [
-    10.312083,
+    11.3605,
     "langsung"
    ],
    [
-    10.765708,
+    11.804041,
     "kepada"
    ],
    [
-    11.058083,
+    12.096375,
     "saya"
-   ],
-   [
-    12.20725,
-    "Dua"
-   ],
-   [
-    12.993541,
-    "tahu"
-   ],
-   [
-    13.295958,
-    "cara"
-   ],
-   [
-    13.568125,
-    "merawat"
-   ],
-   [
-    13.8605,
-    "kulit"
-   ],
-   [
-    14.495583,
-    "setelah"
-   ],
-   [
-    14.818125,
-    "bekerja"
-   ],
-   [
-    15.221375,
-    "di"
-   ],
-   [
-    15.312083,
-    "tempat"
-   ],
-   [
-    15.574208,
-    "panas"
-   ],
-   [
-    15.937083,
-    "atau"
-   ],
-   [
-    16.3,
-    "di"
-   ],
-   [
-    16.431041,
-    "ruang"
-   ],
-   [
-    16.693125,
-    "ber-AC"
    ]
   ],
   "marks": {},
@@ -506,129 +470,181 @@
     "Pertama, apa yang Bapak dan Ibu dapat."
    ],
    [
-    3.336,
-    "Satu: tahu hasil pemeriksaan sendiri, termasuk berat badan, kulit, dan darah, dan bisa bertanya artinya langsung kepada saya."
-   ],
-   [
-    12.207,
-    "Dua: tahu cara merawat kulit, setelah bekerja di tempat panas atau di ruang ber-AC."
+    3.326,
+    "Satu: tahu hasil pemeriksaan sendiri, termasuk berat badan, kulit, dan stres oksidatif dari darah, dan bisa bertanya artinya langsung kepada saya."
    ]
   ]
  },
  "s03b": {
-  "key": "53647e278b8d9ef172935137baf565621f5c0dae",
-  "dur": 12.576,
+  "key": "34637e953a8ac953407758a19e9c35daad46232b",
+  "dur": 18.312,
   "words": [
    [
     0.1,
-    "Tiga"
+    "Dua"
    ],
    [
-    0.906458,
+    0.886291,
     "tahu"
    ],
    [
-    1.198791,
-    "tanda"
-   ],
-   [
-    1.450791,
-    "tubuh"
-   ],
-   [
-    1.793541,
-    "kepanasan"
-   ],
-   [
-    2.277416,
-    "dan"
-   ],
-   [
-    2.438708,
+    1.188708,
     "cara"
    ],
    [
-    2.6605,
-    "mengurangi"
+    1.460875,
+    "merawat"
    ],
    [
-    3.547583,
+    1.753208,
+    "kulit"
+   ],
+   [
+    2.388291,
+    "setelah"
+   ],
+   [
+    2.720958,
+    "bekerja"
+   ],
+   [
+    3.124208,
     "di"
    ],
    [
-    3.648375,
-    "dapur"
+    3.214916,
+    "tempat"
    ],
    [
-    3.960875,
-    "maupun"
+    3.466916,
+    "panas"
    ],
    [
-    4.44475,
+    3.829833,
+    "atau"
+   ],
+   [
+    4.19275,
     "di"
    ],
    [
-    4.555625,
-    "luar"
+    4.323791,
+    "ruang"
    ],
    [
-    4.807666,
-    "kerja"
+    4.585875,
+    "ber-AC"
    ],
    [
-    5.977416,
-    "Empat"
+    5.836291,
+    "Tiga"
    ],
    [
-    6.723375,
-    "kalau"
+    6.64275,
+    "tahu"
    ],
    [
-    7.076208,
-    "ada"
+    6.925,
+    "tanda"
    ],
    [
-    7.348375,
-    "yang"
+    7.177,
+    "tubuh"
    ],
    [
-    7.509666,
-    "perlu"
+    7.51975,
+    "kepanasan"
    ],
    [
-    7.721375,
-    "perhatian"
-   ],
-   [
-    8.628625,
-    "saya"
-   ],
-   [
-    8.931041,
-    "kabari"
-   ],
-   [
-    9.314125,
-    "secara"
-   ],
-   [
-    9.606458,
-    "pribadi"
-   ],
-   [
-    10.060083,
+    8.003625,
     "dan"
    ],
    [
-    10.231458,
+    8.164916,
+    "cara"
+   ],
+   [
+    8.386708,
+    "mengurangi"
+   ],
+   [
+    9.263708,
+    "di"
+   ],
+   [
+    9.3645,
+    "dapur"
+   ],
+   [
+    9.677,
+    "maupun"
+   ],
+   [
+    10.160875,
+    "di"
+   ],
+   [
+    10.271791,
+    "luar"
+   ],
+   [
+    10.523791,
+    "kerja"
+   ],
+   [
+    11.703208,
+    "Empat"
+   ],
+   [
+    12.449208,
+    "kalau"
+   ],
+   [
+    12.802,
+    "ada"
+   ],
+   [
+    13.074208,
+    "yang"
+   ],
+   [
+    13.2355,
+    "perlu"
+   ],
+   [
+    13.447166,
+    "perhatian"
+   ],
+   [
+    14.3645,
+    "saya"
+   ],
+   [
+    14.677,
+    "kabari"
+   ],
+   [
+    15.060083,
+    "secara"
+   ],
+   [
+    15.352416,
+    "pribadi"
+   ],
+   [
+    15.806041,
+    "dan"
+   ],
+   [
+    15.977416,
     "sarankan"
    ],
    [
-    10.695166,
+    16.441125,
     "pemeriksaan"
    ],
    [
-    11.26975,
+    17.025791,
     "lanjutan"
    ]
   ],
@@ -636,10 +652,14 @@
   "cues": [
    [
     0.1,
+    "Dua: tahu cara merawat kulit, setelah bekerja di tempat panas atau di ruang ber-AC."
+   ],
+   [
+    5.836,
     "Tiga: tahu tanda tubuh kepanasan dan cara mengurangi, di dapur maupun di luar kerja."
    ],
    [
-    5.977,
+    11.703,
     "Empat: kalau ada yang perlu perhatian, saya kabari secara pribadi dan sarankan pemeriksaan lanjutan."
    ]
   ]
@@ -727,7 +747,7 @@
  },
  "s03d": {
   "key": "b6b6dbaceb43a1c77a5927e58573b85e4a843876",
-  "dur": 11.208,
+  "dur": 11.23,
   "words": [
    [
     0.090333,
@@ -1519,8 +1539,8 @@
   ]
  },
  "s07a": {
-  "key": "f4fc459506c07fa24ca992cdf4c5981019bbb00f",
-  "dur": 10.846,
+  "key": "6bf667ee1fec4c55a32e2b3a9fc6d58f517e42d3",
+  "dur": 11.376,
   "words": [
    [
     0.1,
@@ -1531,88 +1551,92 @@
     "jam"
    ],
    [
-    0.714916,
+    0.704833,
     "kerja"
    ],
    [
-    0.966916,
+    0.956875,
     "selesai"
    ],
    [
-    1.864125,
+    1.854041,
     "Bapak"
    ],
    [
-    2.216916,
+    2.206875,
     "dan"
    ],
    [
-    2.337916,
+    2.327833,
     "Ibu"
    ],
    [
-    2.63025,
+    2.620166,
     "istirahat"
    ],
    [
-    3.154416,
+    3.144375,
     "15"
    ],
    [
-    3.668541,
+    3.648375,
     "sampai"
    ],
    [
-    3.920583,
+    3.900416,
     "30 menit"
    ],
    [
-    4.716916,
+    4.696791,
     "di"
    ],
    [
-    4.81775,
+    4.797583,
     "ruangan"
    ],
    [
-    5.170583,
+    5.150416,
     "sejuk"
    ],
    [
-    6.179041,
-    "Lalu"
+    6.158875,
+    "Selama"
    ],
    [
-    6.572166,
-    "ada"
+    6.541916,
+    "menunggu"
    ],
    [
-    6.8645,
-    "empat"
+    7.378625,
+    "isi"
    ],
    [
-    7.166916,
-    "langkah"
+    7.600416,
+    "kuesioner"
    ],
    [
-    7.529833,
-    "yang"
+    8.548,
+    "lalu"
    ],
    [
-    7.670958,
-    "akan"
+    8.810083,
+    "ditimbang"
    ],
    [
-    7.973375,
-    "dilakukan"
+    9.314125,
+    "dan"
    ],
    [
-    8.850416,
-    "sekitar"
+    9.465333,
+    "diukur"
    ],
    [
-    9.253625,
-    "30 menit"
+    9.818125,
+    "tinggi"
+   ],
+   [
+    10.181041,
+    "badan"
    ]
   ],
   "marks": {},
@@ -1622,206 +1646,206 @@
     "Setelah jam kerja selesai, Bapak dan Ibu istirahat 15 sampai 30 menit di ruangan sejuk."
    ],
    [
-    6.179,
-    "Lalu ada empat langkah yang akan dilakukan, sekitar 30 menit."
+    6.159,
+    "Selama menunggu, isi kuesioner, lalu ditimbang dan diukur tinggi badan."
    ]
   ]
  },
  "s07b": {
-  "key": "c67764389eac63059cccc8edcd41db6b20bf6587",
-  "dur": 8.71,
+  "key": "d2a1823a07ad60d7f4f90cb761cfbcb634dcee5e",
+  "dur": 12.072,
   "words": [
    [
     0.1,
-    "Isi"
+    "Setelah"
    ],
    [
-    0.432666,
-    "kuesioner"
+    0.462916,
+    "itu"
    ],
    [
-    1.914916,
-    "Ditimbang"
+    0.745166,
+    "dilanjutkan"
    ],
    [
-    2.499583,
-    "dan"
-   ],
-   [
-    2.660875,
-    "diukur"
-   ],
-   [
-    3.023791,
-    "tinggi"
-   ],
-   [
-    3.416916,
-    "badan"
-   ],
-   [
-    4.596791,
-    "Pemeriksaan"
-   ],
-   [
-    5.241916,
-    "kulit"
-   ],
-   [
-    5.534291,
-    "lengan"
-   ],
-   [
-    5.756041,
-    "bawah"
-   ],
-   [
-    6.118958,
+    1.299583,
     "dengan"
    ],
    [
-    6.381041,
+    1.571791,
+    "pemeriksaan"
+   ],
+   [
+    2.065708,
+    "kulit"
+   ],
+   [
+    2.398375,
+    "lengan"
+   ],
+   [
+    2.620166,
+    "bawah"
+   ],
+   [
+    3.003208,
+    "dengan"
+   ],
+   [
+    3.265333,
     "alat"
    ],
    [
-    6.633083,
+    3.517333,
     "kecil"
    ],
    [
-    7.308458,
+    4.182666,
     "tidak"
    ],
    [
-    7.610875,
+    4.475,
     "sakit"
+   ],
+   [
+    5.533875,
+    "Terakhir"
+   ],
+   [
+    6.350416,
+    "darah"
+   ],
+   [
+    6.693125,
+    "dari"
+   ],
+   [
+    6.884666,
+    "lengan"
+   ],
+   [
+    7.146791,
+    "3"
+   ],
+   [
+    7.469375,
+    "sampai"
+   ],
+   [
+    7.781875,
+    "5"
+   ],
+   [
+    8.094375,
+    "mililiter"
+   ],
+   [
+    8.981458,
+    "kira-kira"
+   ],
+   [
+    9.39475,
+    "satu"
+   ],
+   [
+    9.717333,
+    "sendok"
+   ],
+   [
+    10.029833,
+    "teh"
+   ],
+   [
+    10.473375,
+    "hanya"
+   ],
+   [
+    10.826208,
+    "sekali"
    ]
   ],
   "marks": {},
   "cues": [
    [
     0.1,
-    "Isi kuesioner."
+    "Setelah itu dilanjutkan dengan pemeriksaan kulit lengan bawah dengan alat kecil, tidak sakit."
    ],
    [
-    1.915,
-    "Ditimbang dan diukur tinggi badan."
-   ],
-   [
-    4.597,
-    "Pemeriksaan kulit lengan bawah dengan alat kecil, tidak sakit."
+    5.534,
+    "Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali."
    ]
   ]
  },
  "s07c": {
-  "key": "8b60d977b13969666dab73a44955680ccfe7afe4",
-  "dur": 10.198,
+  "key": "b3d48057c7e79e0c8262df460205c7e9586d847b",
+  "dur": 5.976,
   "words": [
    [
-    0.1,
-    "Terakhir"
-   ],
-   [
-    0.926625,
-    "darah"
-   ],
-   [
-    1.269375,
-    "dari"
-   ],
-   [
-    1.460875,
-    "lengan"
-   ],
-   [
-    1.723,
-    "3"
-   ],
-   [
-    2.0355,
-    "sampai"
-   ],
-   [
-    2.348,
-    "5"
-   ],
-   [
-    2.6605,
-    "mililiter"
-   ],
-   [
-    3.527416,
-    "kira-kira"
-   ],
-   [
-    3.940708,
-    "satu"
-   ],
-   [
-    4.253208,
-    "sendok"
-   ],
-   [
-    4.555625,
-    "teh"
-   ],
-   [
-    5.009291,
-    "hanya"
-   ],
-   [
-    5.362083,
-    "sekali"
-   ],
-   [
-    6.564916,
+    0.09275,
     "Panas"
    ],
    [
-    7.058875,
+    0.576625,
     "dan"
    ],
    [
-    7.179833,
+    0.6875,
     "udara"
    ],
    [
-    7.562916,
+    1.050416,
     "di"
    ],
    [
-    7.673791,
+    1.151208,
     "dapur"
    ],
    [
-    7.976208,
+    1.443541,
     "kami"
    ],
    [
-    8.238291,
+    1.695583,
     "ukur"
    ],
    [
-    8.631458,
-    "di"
+    1.987916,
+    "sebelumnya"
    ],
    [
-    8.782666,
-    "hari"
+    2.925416,
+    "dan"
    ],
    [
-    9.0145,
-    "lain"
+    3.106875,
+    "tidak"
+   ],
+   [
+    3.358875,
+    "mengganggu"
+   ],
+   [
+    3.772166,
+    "pekerjaan"
+   ],
+   [
+    4.276208,
+    "Bapak"
+   ],
+   [
+    4.669375,
+    "dan"
+   ],
+   [
+    4.840708,
+    "Ibu"
    ]
   ],
   "marks": {},
   "cues": [
    [
-    0.1,
-    "Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali."
-   ],
-   [
-    6.565,
-    "Panas dan udara di dapur kami ukur di hari lain."
+    0.093,
+    "Panas dan udara di dapur kami ukur sebelumnya, dan tidak mengganggu pekerjaan Bapak dan Ibu."
    ]
   ]
  },
@@ -2454,7 +2478,7 @@
  },
  "s11b": {
   "key": "1a8e50fd4a1e5daebec599818a9c6aead553af40",
-  "dur": 11.76,
+  "dur": 11.782,
   "words": [
    [
     0.1,

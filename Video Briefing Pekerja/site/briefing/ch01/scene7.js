@@ -6,12 +6,12 @@ const PRE7 = 0.8;
 // waktu kata (klip adegan) dikurangi 0,22 s; sumber: narration.id.words.txt
 const wd7 = t => +(t - .22).toFixed(2);
 const T7 = {
-  end: wd7(.64), rest: wd7(2.75), n15: wd7(3.27), dash: wd7(3.79), n30: wd7(4.04), menit: wd7(4.34), ruangan: wd7(4.94),
-  cut: 6.1, empat: wd7(6.98), sekitar: wd7(8.97),
-  s1: wd7(11.39), s1b: wd7(11.73), s2: wd7(13.21), s2b: wd7(14.32),
-  s3: wd7(16.54), s3b: wd7(17.05), s3alat: wd7(17.68), s3sakit: wd7(18.6),
-  s4: wd7(21.26), s4ml: wd7(22.05), s4sdk: wd7(24.59), s4sekali: wd7(25.34),
-  other: wd7(26.9), otherb: wd7(28.57), cal: wd7(29.11)
+  end: wd7(.64), rest: wd7(2.74), n15: wd7(3.26), dash: wd7(3.77), n30: wd7(4.02), menit: wd7(4.34), ruangan: wd7(4.92),
+  cut: 6.0, sel: wd7(6.28), menung: wd7(6.66),
+  s1: wd7(7.5), s1b: wd7(7.72), s2: wd7(8.93), s2b: wd7(9.94),
+  lanjut: wd7(13.42), s3: wd7(13.91), s3b: wd7(14.47), s3alat: wd7(15.11), s3sakit: wd7(16.32),
+  s4: wd7(18.2), s4ml: wd7(18.99), s4sdk: wd7(21.24), s4sekali: wd7(22.67),
+  other: wd7(24.36), otherb: wd7(25.96), cal: wd7(26.26), noint: wd7(27.37)
 };
 function scene7(p, D) {
   const cam = paperCam(p, 'ruang'), S = cam.stage, W = t => PRE7 + t;
@@ -60,18 +60,19 @@ function scene7(p, D) {
   const chipRest = item(g1, 800, 100, [{ svg: paper(760, 92, GREEN, 46) }],
     [{ s: 'Istirahat', x: -372, y: 21, a: 'start', size: 60, at: T7.rest, fill: '#fff' }, { s: '15', x: -88, y: 21, a: 'start', size: 60, at: T7.n15, fill: '#fff' }, { s: '–', x: -6, y: 21, a: 'start', size: 60, at: T7.dash, fill: '#fff' },
      { s: '30', x: 44, y: 21, a: 'start', size: 60, at: T7.n30, fill: '#fff' }, { s: 'menit', x: 134, y: 21, a: 'start', size: 60, at: T7.menit, fill: '#fff' }]);
-  const chipCool = item(g1, 800, 880, [{ svg: paper(560, 84, '#fffaf0', 42) }, { svg: `<g transform="translate(-220 0) scale(.62)">${flake()}</g>` }], [{ s: 'Ruangan sejuk', x: 30, y: 17, size: 50 }]);
+  const chipCool = item(g1, 400, 820, [{ svg: paper(560, 84, '#fffaf0', 42) }, { svg: `<g transform="translate(-220 0) scale(.62)">${flake()}</g>` }], [{ s: 'Ruangan sejuk', x: 30, y: 17, size: 50 }]);
 
   /* ---------- shot 2: the four steps ---------- */
   const g2 = mk('g', {}, S);
   mk('rect', { x: -100, y: -60, width: 1800, height: 762, fill: '#e3efec' }, g2);   // a plain panel over the wall: the steps read on a quiet ground
-  const TX = [230, 610, 990, 1370], CY = 452, CH = 470;
+  const TX = [230, 610, 990, 1370], CY = 462, CH = 440;
   // the line and its four stations from "empat" (7.99), stretched between the circle centres
-  const seg = [0, 1, 2].map(i => ({ g: prop(mk('g', {}, g2), pf(`<rect x="${TX[i]}" y="143" width="${TX[i + 1] - TX[i]}" height="14" rx="7" fill="${GREEN}"/>`)), at: T7.empat + .14 + i * .2 }));
+  const seg = [0, 1, 2].map(i => ({ g: prop(mk('g', {}, g2), pf(`<rect x="${TX[i]}" y="143" width="${TX[i + 1] - TX[i]}" height="14" rx="7" fill="${GREEN}"/>`)), at: T7.sel + .14 + i * .2 }));
   const dots = TX.map((x, i) => item(g2, x, 150, [{ svg: pf(`<circle r="38" fill="${GREEN}"/>`) }], [{ s: String(i + 1), x: 0, y: 19, size: 54, fill: '#fff' }]));
-  const dotAt = [0, 1, 2, 3].map(i => T7.empat + i * .2);
+  const dotAt = [0, 1, 2, 3].map(i => T7.sel + i * .2);
   const title4 = item(g2, 800, 62, [{ svg: paper(900, 78, GREEN, 39) }], [{ s: '4 langkah yang akan dilakukan', x: 0, y: 17, size: 48, fill: '#fff' }]);
-  const chip30 = item(g2, 800, 62, [{ svg: paper(540, 78, '#fffaf0', 39) }, { svg: `<g transform="translate(-220 0) scale(.55)">${clock()}</g>` }], [{ s: 'Sekitar 30 menit', x: 30, y: 16, size: 46 }]);
+  const chipW = item(g2, 420, 214, [{ svg: paper(520, 46, '#fffaf0', 23) }], [{ s: 'Selama menunggu', x: 0, y: 13, size: 36 }]);
+  const chipN = item(g2, 1180, 214, [{ svg: paper(700, 46, '#fffaf0', 23) }], [{ s: 'Dilanjutkan dengan pemeriksaan', x: 0, y: 13, size: 36 }]);
   const stepCard = (i, parts, texts) => item(g2, TX[i], CY, [{ svg: paper(340, CH) }, ...parts], texts);
   const pill = (i, y, w, fill) => ({ svg: `<g transform="translate(0 ${y})">${paper(w, 58, fill, 29)}</g>` });
   const st1 = stepCard(0, [{ svg: `<g transform="translate(0 -78) scale(1.35)">${clip()}</g>`, at: T7.s1 }],
@@ -85,12 +86,13 @@ function scene7(p, D) {
       { svg: `<g transform="translate(0 168)">${paper(280, 58, '#fbe3e0', 29)}</g>`, at: T7.s4sdk }, { svg: `<g transform="translate(122 -194)">${pf(`<circle r="34" fill="${GREEN}"/>`)}</g>`, at: T7.s4sekali }],
     [{ s: 'Darah', x: 0, y: 58, size: 46, at: T7.s4 }, { s: '3–5 mL', x: 0, y: 118, size: 62, at: T7.s4ml, fill: RED }, { s: '± 1 sendok teh', x: 0, y: 183, size: 38, at: T7.s4sdk, fill: '#7a1f1c' },
      { s: '1×', x: 122, y: -179, size: 40, at: T7.s4sekali, fill: '#fff' }]);
-  const holder = () => pf(`<rect x="-170" y="-235" width="340" height="470" rx="28" fill="#cfe0dc" opacity=".85"/>`) + `<rect x="-156" y="-221" width="312" height="442" rx="22" fill="none" stroke="#9fb9b3" stroke-width="7" stroke-dasharray="26 16"/>`;
+  const holder = () => pf(`<rect x="-170" y="-220" width="340" height="440" rx="28" fill="#cfe0dc" opacity=".85"/>`) + `<rect x="-156" y="-206" width="312" height="412" rx="22" fill="none" stroke="#9fb9b3" stroke-width="7" stroke-dasharray="26 16"/>`;
   const place = TX.map((x, i) => item(g2, x, CY, [{ svg: holder() }]));
   const steps = [[st1, T7.s1], [st2, T7.s2], [st3, T7.s3], [st4, T7.s4]];
-  const other = item(g2, 800, 800, [{ svg: pf(`<rect x="-640" y="-78" width="1280" height="156" rx="30" fill="#fffaf0"/>`) + `<rect x="-628" y="-66" width="1256" height="132" rx="22" fill="none" stroke="#4aa3d6" stroke-width="6" stroke-dasharray="22 14"/>` },
-      { svg: `<g transform="translate(-560 0) scale(.9)">${thermo()}</g>`, at: T7.other }, { svg: `<g transform="translate(560 0) scale(.95)">${calendar()}</g>`, at: T7.cal }],
-    [{ s: 'Panas dan udara dapur', x: 0, y: -4, size: 46, at: T7.other }, { s: 'diukur di hari lain', x: 0, y: 52, size: 46, at: T7.otherb, fill: '#1c5f86' }]);
+  const other = item(g2, 800, 752, [{ svg: pf(`<rect x="-640" y="-48" width="1280" height="96" rx="30" fill="#fffaf0"/>`) + `<rect x="-628" y="-38" width="1256" height="76" rx="22" fill="none" stroke="#4aa3d6" stroke-width="6" stroke-dasharray="22 14"/>` },
+      { svg: `<g transform="translate(-570 0) scale(.6)">${thermo()}</g>`, at: T7.other }, { svg: `<g transform="translate(570 0) scale(.7)">${calendar()}</g>`, at: T7.cal }],
+    [{ s: 'Panas dan udara dapur', x: 10, y: 15, a: 'end', size: 44, at: T7.other }, { s: 'diukur sebelumnya', x: 36, y: 15, a: 'start', size: 44, at: T7.otherb, fill: '#1c5f86' }]);
+  const noint = item(g2, 800, 850, [{ svg: paper(840, 72, '#d6efdf', 36) }, { svg: `<g transform="translate(-370 0) scale(.9)">${smile()}</g>` }], [{ s: 'Tidak mengganggu pekerjaan', x: 30, y: 15, size: 42, fill: '#1f5a36' }]);
 
   // continuity: shot 1 holds both seated; a cut to the timeline at 7.0 (before "Lalu ada empat langkah")
   cam.to({ z: 1.06, x: 830, y: 460 }, 0, W(T7.cut - .1));
@@ -126,10 +128,10 @@ function scene7(p, D) {
     } else {
       dots.forEach((d, i) => show(d, q, dotAt[i], 1, 0));
       seg.forEach(sg => vis(sg.g, q >= W(sg.at)));
-      show(title4, q, T7.empat, 1, 0); vis(title4.g, q >= W(T7.empat) && q < W(T7.sekitar)); show(chip30, q, T7.sekitar, 1, 0);
-      place.forEach((pl, i) => { show(pl, q, T7.empat + .2 + i * .12, 1, 0); vis(pl.g, q >= W(T7.empat + .2 + i * .12) && q < W(steps[i][1])); });
+      show(title4, q, T7.sel, 1, 0); show(chipW, q, T7.menung, 1, 0); show(chipN, q, T7.lanjut, 1, 0);
+      place.forEach((pl, i) => { show(pl, q, T7.sel + .2 + i * .12, 1, 0); vis(pl.g, q >= W(T7.sel + .2 + i * .12) && q < W(steps[i][1])); });
       steps.forEach(([st, t0]) => show(st, q, t0, 1, .5));
-      show(other, q, T7.other, 1, 0);
+      show(other, q, T7.other, 1, 0); show(noint, q, T7.noint, 1, 0);
     }
   });
 }
