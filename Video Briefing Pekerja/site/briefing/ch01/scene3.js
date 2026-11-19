@@ -19,13 +19,13 @@ function scene3(p, D) {
   const C = [[330, 215], [900, 215], [330, 575], [900, 575]];
   const cards = [card(1, 'Hasil sendiri'), card(2, 'Rawat kulit'), card(3, 'Tanda kepanasan'), card(4, 'Saran lanjutan')];
   // waktu kata (narration.id.words.txt, detik pada klip adegan) dikurangi 0,22 s
-  const K = { card: [3.46, 12.33, 18.52, 24.4],
-    sheet: 4.7, scale: 6.78, skin: 7.67, drop: 8.51, bub: 9.66,
-    tube: 13.69, hand: 14.94, wet: 15.69, ac: 16.81, swap: 17.0,
-    flame: 19.87, therm: 20.22, glass: 21.08, label: 22.07, house: 22.98,
-    mail: 27.35, point: 28.65, pointEnd: 31.0, clinic: 29.12,
-    food: 32.03, cream: 33.03, free: 36.29,
-    fin: 38.94, seluruh: 40.1, area: 42.25, rekan: 47.78 };
+  const K = { card: [3.45, 13.82, 19.55, 25.42],
+    sheet: 4.67, scale: 6.74, skin: 7.63, drop: 8.43, bub: 10.67,
+    tube: 14.6, hand: 15.47, wet: 16.44, ac: 18.04, swap: 18.3,
+    flame: 20.36, therm: 20.64, glass: 22.1, label: 23.08, house: 23.88,
+    mail: 28.39, point: 29.7, pointEnd: 32.0, clinic: 30.16,
+    food: 33.06, cream: 34.06, free: 37.32,
+    fin: 39.97, seluruh: 41.13, area: 43.29, rekan: 48.81 };
   const A = (t) => W(t - .22);
   const tCard = K.card.map(A);
 
@@ -56,6 +56,7 @@ function scene3(p, D) {
   const scale = thing(`<g filter="url(#paper)"><rect x="-44" y="10" width="88" height="22" rx="8" fill="#9aa5ab"/><rect x="-38" y="-34" width="76" height="48" rx="12" fill="#f4f1ea" stroke="#d9cfb4" stroke-width="3"/><path d="M-22,-8 A22,22 0 0 1 22,-8" fill="none" stroke="${RED}" stroke-width="6"/><path d="M0,-8 L10,-24" stroke="${INK}" stroke-width="5" stroke-linecap="round"/></g>`);
   const skin = thing(`<g filter="url(#paper)"><rect x="-46" y="-26" width="92" height="52" rx="22" fill="#e8be98"/><circle cx="-14" cy="-4" r="5" fill="#d9a77c"/><circle cx="12" cy="8" r="6" fill="#d9a77c"/><circle cx="20" cy="-10" r="4" fill="#d9a77c"/></g>`);
   const drop = thing(`<g filter="url(#paper)"><path d="M0,-40 C22,-10 30,6 22,22 C14,38 -14,38 -22,22 C-30,6 -22,-10 0,-40 Z" fill="${RED}"/><path d="M-10,8 q2,10 10,12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".7"/></g>`);
+  const stresL = thing('', T('Stres oksidatif', 0, 0, 25, RED));
   const ac = thing(`<g filter="url(#paper)"><rect x="-56" y="-30" width="112" height="46" rx="10" fill="#f4f1ea" stroke="#d9cfb4" stroke-width="3"/><rect x="-40" y="2" width="80" height="6" rx="3" fill="#b9c2c7"/><circle cx="36" cy="-14" r="5" fill="${GRN}"/><path d="M-30,24 q10,14 0,26 M0,24 q10,14 0,26 M30,24 q10,14 0,26" fill="none" stroke="#7ec0e0" stroke-width="6" stroke-linecap="round"/></g>`);
   const house = thing(`<g filter="url(#paper)"><path d="M-54,6 L0,-44 L54,6 Z" fill="#c8322f"/><rect x="-40" y="6" width="80" height="50" fill="#f4f1ea" stroke="#d9cfb4" stroke-width="3"/><rect x="-10" y="22" width="20" height="34" fill="#9a7b58"/></g>`);
   const labelT = thing('', T('di dapur maupun di luar kerja', 0, 0, 26, INK));
@@ -76,7 +77,7 @@ function scene3(p, D) {
   const dok = dokterPuppet(stage);
   const blink = (q, per, off) => ((q + off) % per) < 2 / FPS;
   const at = (i, dx, dy) => [C[i][0] + dx, C[i][1] + dy];
-  const tT = { sheet: A(K.sheet), scale: A(K.scale), skin: A(K.skin), drop: A(K.drop), bub: A(K.bub),
+  const tT = { sheet: A(K.sheet), scale: A(K.scale), skin: A(K.skin), drop: A(K.drop), stres: A(K.drop), bub: A(K.bub),
     tube: A(K.tube), hand: A(K.hand), wet: A(K.wet), ac: A(K.ac), clean: A(K.swap),
     flame: A(K.flame), therm: A(K.therm), glass: A(K.glass), label: A(K.label), house: A(K.house),
     mail: A(K.mail), clinic: A(K.clinic), food: A(K.food), cream: A(K.cream), free: A(K.free),
@@ -90,6 +91,7 @@ function scene3(p, D) {
     place(scale, q, tT.scale, ...at(0, 30, -42), .5);
     place(skin, q, tT.skin, ...at(0, 95, -42), .5);
     place(drop, q, tT.drop, ...at(0, 160, -42), .5);
+    place(stresL, q, tT.stres, ...at(0, 140, 8), 1);
     place(bubble, q, tT.bub, ...at(0, 215, 60), .7);
     place(tube, q, tT.tube, ...at(1, -190, 40), .9);
     place(hand, q, tT.hand, ...at(1, -110, 58), .8);
@@ -122,7 +124,7 @@ function scene3(p, D) {
       fD.pose({ ...fb, x: 1160, bob: 1.5 * Math.sin(q * 2 + 2), shut: blink(q, 3.9, 2) }, f);
     }
     // bapak kecil di kartu 1: muncul bersama kertas, membaca
-    const bs = .38, bx = C[0][0] + 80, by = C[0][1] + 150;
+    const bs = .38, bx = C[0][0] - 45, by = C[0][1] + 150;
     vis(bapak.g, q >= tT.sheet && q < tT.fin);
     bapak.pose({ x: bx, y: by, s: bs * (.8 + .2 * span(q, tT.sheet, tT.sheet + .3)), look: q < tT.bub ? -.9 : .2, eyeX: q < tT.bub ? -.9 : -.2, eyeY: q < tT.bub ? .5 : 0,
       bob: 1.6 * Math.sin(q * 2.2), mouth: q > tT.bub ? 'smile' : 'X', shut: blink(q, 3.9, .5), armR: q < tT.bub ? 40 : 8 + 5 * Math.sin(q * 3), armL: 8 }, f);
