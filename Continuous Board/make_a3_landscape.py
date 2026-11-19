@@ -9,7 +9,7 @@ output: concept-fun-run-a3-landscape.html + 'Fun Run A3 Landscape - EDITABLE (Ca
 """
 import sys
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageFilter
 from playwright.sync_api import sync_playwright
 from pypdf import PdfReader, PdfWriter
 
@@ -35,6 +35,23 @@ if src_logo.exists():
                 f = 1.0 / max(a, 1e-3)
                 po[x, y] = (min(255, int(r * f)), min(255, int(g * f)), min(255, int(b * f)), int(al * 255))
     out.save(logo_out)
+
+# 2) one 4x-upscaled slice per poster (run upscale_classical.py first) -> small, sharp backgrounds
+big = Image.open(img_dir / "corridor-long-4x.png").convert("RGB")
+for k in range(4):
+    sl = big.crop((k * 543 * 4, 90 * 4, (k + 1) * 543 * 4, 660 * 4))
+    sl.save(img_dir / f"a3-slice-{k+1}.jpg", quality=92, optimize=True)
+big.close()
+
+# poster 1 ONLY: her regenerated corridor with a KNEE x-ray (the old one showed a spine scan)
+knee = img_dir / "corridor-long-v2-knee.jpg"
+if knee.exists():
+    kimg = Image.open(knee).convert("RGB")
+    k = kimg.width / 8688.0                      # same crop geometry as the 4x slices
+    sl = kimg.crop((0, round(360 * k), round(2172 * k), round(2640 * k))).resize((2172, 2280), Image.LANCZOS)
+    sl = sl.filter(ImageFilter.UnsharpMask(radius=1.6, percent=28, threshold=6))
+    sl.save(img_dir / "a3-slice-1.jpg", quality=92, optimize=True)
+    kimg.close()
 
 PAGE_W, PAGE_H = 1588, 1123           # CSS px for 420 x 297 mm
 PANEL_W = 518                         # left text column
@@ -62,7 +79,7 @@ for i, p in enumerate(posters):
     sub = f'<div class="sub">{p["sub"]}</div>' if p["sub"] else ""
     pages.append(f"""
 <section class="page">
-  <div class="img" style="background-position:{-i*SLICE:.1f}px {-90*SCALE:.1f}px"></div>
+  <div class="img" style="background:url(images/a3-slice-{i+1}.jpg) 0 0/100% 100% no-repeat"></div>
   {'<div class="patch">Jadwal<br>Vaksinasi</div>' if i == 2 else ''}
   <div class="bar"></div>
   <div class="panel">
@@ -89,7 +106,6 @@ html = f"""<!doctype html>
   html,body{{margin:0;background:var(--navy);font-family:'Barlow Semi Condensed',Arial,sans-serif;color:var(--navy)}}
   .page{{position:relative;width:{PAGE_W}px;height:{PAGE_H}px;overflow:hidden;background:var(--navy);page-break-after:always;break-after:page}}
   .img{{position:absolute;left:{PANEL_W}px;top:0;width:{PAGE_W-PANEL_W}px;height:{PAGE_H}px;
-        background:url(images/corridor-long.png) 0 0/{2172*SCALE:.1f}px {724*SCALE:.1f}px no-repeat;
         filter:saturate(1.55) contrast(1.1) brightness(1.02)}}
   .bar{{position:absolute;left:{PANEL_W-7}px;top:0;width:14px;height:{PAGE_H}px;background:var(--yellow)}}
   .panel{{position:absolute;left:0;top:0;width:{PANEL_W}px;height:{PAGE_H}px}}
