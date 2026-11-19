@@ -138,7 +138,7 @@
  },
  "s02a": {
   "key": "20feb70838288dda4c147350fbe7ec0651809d6d",
-  "dur": 12.12,
+  "dur": 12.142,
   "words": [
    [
     0.1,
@@ -348,7 +348,7 @@
  },
  "s03a": {
   "key": "5f3e43f52b18c6b5f3ab44cd7d0e1f4acdd0723a",
-  "dur": 13.248,
+  "dur": 13.27,
   "words": [
    [
     0.1,
@@ -477,7 +477,7 @@
  },
  "s03b": {
   "key": "34637e953a8ac953407758a19e9c35daad46232b",
-  "dur": 18.312,
+  "dur": 18.334,
   "words": [
    [
     0.1,
@@ -1540,7 +1540,7 @@
  },
  "s07a": {
   "key": "6bf667ee1fec4c55a32e2b3a9fc6d58f517e42d3",
-  "dur": 11.376,
+  "dur": 11.398,
   "words": [
    [
     0.1,
@@ -1652,115 +1652,107 @@
   ]
  },
  "s07b": {
-  "key": "d2a1823a07ad60d7f4f90cb761cfbcb634dcee5e",
-  "dur": 12.072,
+  "key": "bd559d69bebda111330736d3ba25e06b5237e307",
+  "dur": 11.52,
   "words": [
    [
     0.1,
     "Setelah"
    ],
    [
-    0.462916,
+    0.473,
     "itu"
    ],
    [
-    0.745166,
+    0.75525,
     "dilanjutkan"
    ],
    [
-    1.299583,
+    1.329833,
     "dengan"
    ],
    [
-    1.571791,
+    1.612083,
     "pemeriksaan"
    ],
    [
-    2.065708,
-    "kulit"
+    2.166541,
+    "kelembaban"
    ],
    [
-    2.398375,
+    2.63025,
+    "di"
+   ],
+   [
+    2.741125,
     "lengan"
-   ],
-   [
-    2.620166,
-    "bawah"
    ],
    [
     3.003208,
-    "dengan"
+    "bawah"
    ],
    [
-    3.265333,
-    "alat"
-   ],
-   [
-    3.517333,
-    "kecil"
-   ],
-   [
-    4.182666,
+    3.668541,
     "tidak"
    ],
    [
-    4.475,
+    3.970958,
     "sakit"
    ],
    [
-    5.533875,
+    5.009666,
     "Terakhir"
    ],
    [
-    6.350416,
+    5.826208,
     "darah"
    ],
    [
-    6.693125,
+    6.168958,
     "dari"
    ],
    [
-    6.884666,
+    6.3605,
     "lengan"
    ],
    [
-    7.146791,
+    6.622583,
     "3"
    ],
    [
-    7.469375,
+    6.945166,
     "sampai"
    ],
    [
-    7.781875,
+    7.257666,
     "5"
    ],
    [
-    8.094375,
+    7.570166,
     "mililiter"
    ],
    [
-    8.981458,
+    8.447166,
     "kira-kira"
    ],
    [
-    9.39475,
+    8.8605,
     "satu"
    ],
    [
-    9.717333,
+    9.183083,
     "sendok"
    ],
    [
-    10.029833,
+    9.4855,
     "teh"
    ],
    [
-    10.473375,
+    9.939125,
     "hanya"
    ],
    [
-    10.826208,
+    10.291916,
     "sekali"
    ]
   ],
@@ -1768,17 +1760,17 @@
   "cues": [
    [
     0.1,
-    "Setelah itu dilanjutkan dengan pemeriksaan kulit lengan bawah dengan alat kecil, tidak sakit."
+    "Setelah itu dilanjutkan dengan pemeriksaan kelembaban di lengan bawah, tidak sakit."
    ],
    [
-    5.534,
+    5.01,
     "Terakhir, darah dari lengan 3 sampai 5 mililiter, kira-kira satu sendok teh, hanya sekali."
    ]
   ]
  },
  "s07c": {
   "key": "b3d48057c7e79e0c8262df460205c7e9586d847b",
-  "dur": 5.976,
+  "dur": 5.998,
   "words": [
    [
     0.09275,
