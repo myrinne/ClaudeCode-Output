@@ -14,6 +14,7 @@
 <script src="../lib/paper.js"></script>
 <script src="../lib/cast.js"></script>
 <script src="../lib/cast_briefing.js"></script>
+<script src="../lib/forearm.js"></script>
 <script src="audio/id/timings.js"></script>
 <script src="audio/id/mouths.js"></script>
 <script src="audio/id/shots.js"></script>
@@ -35,8 +36,8 @@ const CHAPTER = { number: 1, title: 'Cek Kulit dan Panas di Dapur Gizi', minutes
 try { if (localStorage.getItem('captions') === null) setCaptions(true, false); } catch {}
 const BEATS = [
   ['scene1', 'Salam', (m, D) => scene1(panel(0), D), { lead: false, pre: PRE1 }],
-  ['scene2', 'Apa yang Bapak dan Ibu dapat', (m, D) => scene2(panel(0), D), { lead: false, pre: PRE2 }],
-  ['scene3', 'Kenapa dapur dan panas', (m, D) => scene3(panel(0), D), { lead: false, pre: PRE3 }],
+  ['scene2', 'Kenapa dapur dan panas', (m, D) => scene2(panel(0), D), { lead: false, pre: PRE2 }],
+  ['scene3', 'Apa yang Bapak dan Ibu dapat', (m, D) => scene3(panel(0), D), { lead: false, pre: PRE3 }],
   ['scene4', 'Bukan pengobatan', (m, D) => scene4(panel(0), D), { lead: false, pre: PRE4 }],
   ['scene5', 'Siapa yang bisa ikut', (m, D) => scene5(panel(0), D), { lead: false, pre: PRE5 }],
   ['scene6', 'Persiapan', (m, D) => scene6(panel(0), D), { lead: false, pre: PRE6 }],

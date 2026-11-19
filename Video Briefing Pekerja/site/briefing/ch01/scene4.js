@@ -8,7 +8,7 @@ function scene4(p, D) {
   const blink = (q, per, off) => ((q + off) % per) < 2 / FPS;
   const dok = dokterPuppet(cam.stage);
   cam.cut({ x: 640, y: 610, z: 1.3 }, 0);
-  cam.to({ x: 600, y: 600, z: 1.38 }, W(9.4), 6);   // dorong pelan sampai akhir
+  cam.to({ x: 600, y: 600, z: 1.38 }, W(7.5), 6);   // dorong pelan sampai akhir
   // ikon di lapisan layar (kanan); tiap benda = grup kertas + teks hidup
   const ov = mk('g', {}, p);
   const thing = (svg, live = '') => { const g = mk('g', {}, ov); prop(g, svg); if (live) g.insertAdjacentHTML('beforeend', live); vis(g, false); return g; };
@@ -27,9 +27,10 @@ function scene4(p, D) {
   const no = thing(`<g filter="url(#paper)"><rect x="-100" y="-54" width="200" height="108" rx="26" fill="#8b949a"/></g>`, T('Tidak', 0, 24, 58, '#fff'));
   const bag = thing(`<g filter="url(#paper)"><rect x="-62" y="-36" width="124" height="90" rx="14" fill="#9a7b58"/><path d="M-26,-36 v-16 q0,-10 10,-10 h32 q10,0 10,10 v16" fill="none" stroke="#7d6044" stroke-width="10"/><rect x="-62" y="2" width="124" height="10" fill="#7d6044"/><rect x="-12" y="-4" width="24" height="24" rx="5" fill="#d9a05b"/></g>`);
   const shield = thing(`<g filter="url(#paper)"><path d="M0,-56 L48,-36 V6 C48,38 24,56 0,66 C-24,56 -48,38 -48,6 V-36 Z" fill="${GRN}" stroke="#fff" stroke-width="7"/></g><g filter="url(#paper)"><path d="M-18,6 l14,15 l26,-32" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/></g>`);
-  const tTidak = W(1.19), tObat = W(1.93), tTind = W(3.23), tSatu = W(5.88), tJam = W(7.52), tYa = W(9.64), tNo = W(10.31), tBag = W(14.04);
+  // waktu kata (words.txt, klip s04a/s04b) dikurangi ~0,22 s
+  const tTidak = W(1.06 - .22), tObat = W(1.7 - .22), tTind = W(2.83 - .22), tSatu = W(5.14 - .22), tJam = W(6.14 - .22), tYa = W(8.44 - .22), tNo = W(9.03 - .22), tBag = W(12.27 - .22);
   // sfx (tools/briefing/add_sfx.py)
-  sfx('scene4', 6.68, 'chime', .5);
+  sfx('scene4', tSatu, 'chime', .5);
   stopClock(D, (q, f) => {
     cam.apply(q, f);
     place(banner, q, tTidak, 1190, 118, 1);
@@ -44,7 +45,7 @@ function scene4(p, D) {
     // dokter: bicara dengan gerak kecil; menggeleng saat "tidak", tangan terbuka saat "pilihan"
     const talk = lips(q, S, PRE4, 's04a', 's04b');
     const shake = between(q, tTidak, tTidak + 1.4) ? 5 * Math.sin((q - tTidak) * 10) : 0;
-    const one = between(q, tSatu - .1, tSatu + 1.6), open = between(q, W(10.6), W(14.8));
+    const one = between(q, tSatu - .1, tSatu + 1.6), open = between(q, W(8.4), W(13.2));
     dok.pose({ x: 420, y: 800, s: 1.02, look: .35, eyeX: .5, bob: 1.6 * Math.sin(q * 2.1), headR: shake || 2 * Math.sin(q * 1.1), mouth: talk, shut: blink(q, 3.6, 1.2),
       armR: one ? 100 + 6 * Math.sin(q * 3) : open ? 52 + 6 * Math.sin(q * 2.2) : 10, armL: open ? 50 + 6 * Math.sin(q * 2.2 + 1) : 10 + (talk !== 'X' ? 5 * Math.sin(q * 4) : 0) }, f);
   });

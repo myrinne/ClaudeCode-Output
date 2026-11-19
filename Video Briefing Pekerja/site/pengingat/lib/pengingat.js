@@ -4,7 +4,7 @@
 const INK = '#2b2b2b', GREEN = '#3f9d6b';
 
 const IC = {
-  arm: () => pf(`<rect x="-100" y="-38" width="190" height="76" rx="38" fill="#e8be98"/><ellipse cx="82" cy="0" rx="30" ry="34" fill="#e8be98"/>`),
+  arm: () => FOREARM(),
   cream: () => pf(`<path d="M-70,-8 q20,-22 44,-4 q22,16 46,-2 q24,-14 44,6 q-6,26 -36,22 q-30,12 -52,-2 q-24,6 -46,-20 Z" fill="#fffdf6" opacity=".92"/>`),
   faucet: () => pf(`<rect x="-14" y="-64" width="28" height="30" rx="6" fill="#7f8c95"/><path d="M-60,-34 H34 a22,22 0 0 1 22,22 V8 H34 V-12 H-60 Z" fill="#a6b3bb"/><rect x="26" y="4" width="36" height="14" rx="5" fill="#7f8c95"/>`),
   drops: () => pf([0, 1, 2].map(i => `<path d="M${44 + (i - 1) * 3},${34 + i * 34} c0,0 -14,16 -14,24 a14,14 0 0 0 28,0 c0,-8 -14,-24 -14,-24 Z" fill="#4aa3d6"/>`).join('')),
