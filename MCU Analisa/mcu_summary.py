@@ -75,6 +75,24 @@ def xl_trim(v) -> str:
     return re.sub(" +", " ", str(v).strip(" "))
 
 
+# Kesimpulan text copied from PDFs can hold ligatures ("pro\ufb01l lemak", U+FB01). LibreOffice SEARCH folds them to
+# "fi", Python and Excel do not: normalise them in every twin (Garda Medika 2026-11-21).
+LIGATURES = {"\ufb01": "fi", "\ufb02": "fl"}
+
+
+def no_lig(v):
+    if isinstance(v, str):
+        for a, b in LIGATURES.items():
+            v = v.replace(a, b)
+    return v
+
+
+def xl_no_lig(x) -> str:
+    for a, b in LIGATURES.items():
+        x = f'SUBSTITUTE({x},"{a}","{b}")'
+    return x
+
+
 def U(v) -> str:
     return xl_trim(v).upper()
 
@@ -94,6 +112,24 @@ def xl_uf(ref) -> str:
 
 def is_num(v) -> bool:
     return isinstance(v, (int, float)) and not isinstance(v, bool)
+
+
+# --angka-teks (Garda Medika 2026-11-21, approved by Vidya): numeric variables stored as text ("4.6") are read as
+# numbers. Excel twin: NUMBERVALUE with "." as decimal and "'" as group separator, so "1,5" stays text (= missing).
+NUM_VARS = ("hba1c", "hdl", "tg", "imt", "lp", "umur")
+NUM_TEXT = re.compile(r"\s*-?\d+(?:\.\d+)?\s*")
+ANGKA_TEKS_MARK = "ANGKA-TEKS: ya"
+
+
+def as_number(v):
+    """Python twin of xl_number(): numeric text -> float, anything else unchanged."""
+    if isinstance(v, str) and NUM_TEXT.fullmatch(v):
+        return float(v)
+    return v
+
+
+def xl_number(x) -> str:
+    return f'IF(ISNUMBER({x}),{x},IF(TRIM({x}&"")="","",IFERROR(_xlfn.NUMBERVALUE({x},".","\'"),{x})))'
 
 
 def q(s) -> str:
@@ -273,8 +309,10 @@ def vendor_headers(wb):
 
 
 def judul_fitness(header) -> str | None:
-    """Vendor 'Status Akhir' is reported under that name, not as fitness/kelaikan (Vidya 2026-11-10)."""
-    return "Status Akhir" if header and " ".join(str(header).lower().split()) == "status akhir" else None
+    """Vendor 'Status Akhir' is reported under that name, not as fitness/kelaikan (Vidya 2026-11-10);
+    likewise Garda Medika's 'STATUS KESIAPAN KERJA' (vendor column name as is, 2026-11-21)."""
+    h = " ".join(str(header).lower().split()) if header else ""
+    return {"status akhir": "Status Akhir", "status kesiapan kerja": "Status Kesiapan Kerja"}.get(h)
 
 
 def read_existing_dicts(wb, spec, reset=False):
@@ -381,9 +419,13 @@ def date_formula(ref, pat):
 
 # ================================================================ builder
 class Builder:
-    def __init__(self, path: Path, grup_args, spec, reset=False, bersih_args=()):
+    def __init__(self, path: Path, grup_args, spec, reset=False, bersih_args=(), angka_teks=False):
         self.path = path
         self.wb = openpyxl.load_workbook(path)
+        # kept from an earlier run unless --reset-dict
+        prev_mark = (not reset and "DICT_BERSIH" in self.wb.sheetnames
+                     and str(self.wb["DICT_BERSIH"]["H1"].value or "").startswith(ANGKA_TEKS_MARK))
+        self.angka_teks = bool(angka_teks or prev_mark)
         self.first, self.last, self.cols, self.labels = read_map(self.wb)
         self.vheader = vendor_headers(self.wb)
         self.bersih = read_bersih(self.wb, bersih_args, reset)
@@ -433,7 +475,10 @@ class Builder:
 
     def rv(self, r, key):
         L = self.cols.get(key)
-        return None if not L else self.raw(r, col_index(L) - 1)
+        v = None if not L else self.raw(r, col_index(L) - 1)
+        if key == "kesimpulan":
+            v = no_lig(v)
+        return as_number(v) if self.angka_teks and key in NUM_VARS else v
 
     def exp(self, sheet, row, col, value):
         self.expected[(sheet, row, col)] = value
@@ -551,6 +596,18 @@ class Builder:
         wd["A2"] = ("Tambah baris (Variabel = kode MAP: kolom grup, tgl_mcu, tgl_lahir), simpan, tutup Excel, jalankan ulang mcu_summary.py. "
                     "Tanggal ditulis sebagai tanggal Excel.")
         wd["A2"].font = Font(italic=True, color="595959")
+        if self.angka_teks:
+            conv = []
+            for k in NUM_VARS:
+                if k in self.cols:
+                    idx = col_index(self.cols[k]) - 1
+                    n = sum(1 for rr in self.rows if isinstance(self.raw(rr, idx), str) and NUM_TEXT.fullmatch(self.raw(rr, idx)))
+                    if n:
+                        conv.append(f"{k} {n} sel")
+            wd["H1"] = (f"{ANGKA_TEKS_MARK} (--angka-teks). Angka yang disimpan vendor sebagai teks (mis. '4.6') dibaca sebagai angka "
+                        f"untuk {', '.join(NUM_VARS)}; teks lain tetap dianggap tidak terukur. Terpakai: "
+                        + (", ".join(conv) if conv else "tidak ada") + ".")
+            wd["H1"].font = Font(italic=True, color="595959")
         self.head(wd, BERSIH_ROW0 - 1, ["Variabel", "Nilai asli", "Nilai bersih", "Alasan", "Kunci (rumus, abaikan)",
                                         "Jumlah sel di RAW (rumus)"])
         for i, (var, orig, new, why) in enumerate(self.bersih):
@@ -621,7 +678,8 @@ class Builder:
         C = self.cols
 
         def ref(key, r):
-            return f"RAW!${C[key]}{r}"
+            x = f"RAW!${C[key]}{r}"
+            return xl_number(x) if self.angka_teks and key in NUM_VARS else x
 
         add("no_mcu", "No MCU", lambda r: f'={ref("no_mcu", r)}&""' if "no_mcu" in C else '=""',
             lambda r: xl_trim_keep(self.rv(r, "no_mcu")) if "no_mcu" in C else "")
@@ -679,7 +737,7 @@ class Builder:
             return f"DICT_TEMUAN!${CL(col0)}${dr}:${CL(col0 + n - 1)}${dr}"
 
         def hits(rng, r):
-            return f'SUMPRODUCT(ISNUMBER(SEARCH({rng},TRIM(RAW!${K}{r})&" "))*({rng}<>""))'
+            return f'SUMPRODUCT(ISNUMBER(SEARCH({rng},TRIM({xl_no_lig(f"RAW!${K}{r}")})&" "))*({rng}<>""))'
 
         tmap = {t["key"]: t for t in self.temuan}
         lp_cut = self.cutoff["lp_l"].get("dasar") == "cutoff" and "lp" in C and "jk" in self.pcol
@@ -710,7 +768,7 @@ class Builder:
                     imt = self.rv(r, "imt")
                     return (any(w in s for w in words) and not any(w in s for w in numbered) and is_num(imt)
                             and imt >= lo and (hi is None or imt < hi))
-                return (lambda r: f'AND(SUMPRODUCT(--ISNUMBER(SEARCH({gen},TRIM(RAW!${K}{r})&" ")))>0,{hits(n1, r)}+{hits(n2, r)}=0,'
+                return (lambda r: f'AND(SUMPRODUCT(--ISNUMBER(SEARCH({gen},TRIM({xl_no_lig(f"RAW!${K}{r}")})&" ")))>0,{hits(n1, r)}+{hits(n2, r)}=0,'
                                   f'ISNUMBER({ref("imt", r)}),{ref("imt", r)}>={lo}' + (f',{ref("imt", r)}<{hi}' if hi else "") + ")"), fv
             return None
 
@@ -1260,7 +1318,8 @@ class Builder:
         bersih = [{"var": v, "asli": o.isoformat() if isinstance(o, dt.date) else o,
                    "bersih": n.isoformat() if isinstance(n, dt.date) else n, "alasan": w} for v, o, n, w in self.bersih]
         side.write_text(json.dumps({"grup": self.grups, "N": self.N, "blok": self.cells,
-                                    "judul_fitness": getattr(self, "judul_fitness", "Status kelaikan kerja"), "bersih": bersih},
+                                    "judul_fitness": getattr(self, "judul_fitness", "Status kelaikan kerja"), "bersih": bersih,
+                                    "angka_teks": self.angka_teks},
                                    ensure_ascii=False, indent=1), encoding="utf-8")
 
 
@@ -1353,15 +1412,18 @@ def main():
     ap.add_argument("--cek", action="store_true")
     ap.add_argument("--reset-dict", action="store_true",
                     help="buang isi DICT_* di workbook dan pakai ulang default JSON (editan DICT hilang)")
+    ap.add_argument("--angka-teks", action="store_true",
+                    help="baca angka yang disimpan sebagai teks ('4.6') sebagai angka untuk " + ", ".join(NUM_VARS))
     ap.add_argument("--bersih", action="append", default=[],
                     help="VAR:ASLI=BERSIH[#alasan], mis. bagian:TAMANAN=TANAMAN atau tgl_mcu:2026-07-10=2026-10-07 "
                          "(disimpan di DICT_BERSIH, tetap dipakai di putaran berikutnya)")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     if not args.grup:
-        sys.exit("Tentukan minimal satu --grup (mis. --grup bagian).")
+        # allowed: a vendor file without any division column, or Vidya asks for no per-group slides (Garda Medika 2026-11-21)
+        print("  (catatan: tanpa --grup, tidak ada tabel/slide per divisi)")
     spec = json.loads((HERE / "temuan_standar.json").read_text(encoding="utf-8"))
-    b = Builder(args.analisa.resolve(), args.grup, spec, args.reset_dict, args.bersih)
+    b = Builder(args.analisa.resolve(), args.grup, spec, args.reset_dict, args.bersih, args.angka_teks)
     b.write_dicts()
     b.write_pekerja()
     b.write_summary()
