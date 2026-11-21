@@ -42,7 +42,7 @@ from openpyxl.utils import get_column_letter as CL
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from mcu_ppt import SOFFICE, Summary, untuk_pembaca  # noqa: E402
-from mcu_summary import KOMB, PAK_KOSONG, as_date, date_pattern, read_map, xl_serial, xl_uf  # noqa: E402
+from mcu_summary import KOMB, PAK_KOSONG, as_date, date_pattern, read_map, xl_no_lig, xl_serial, xl_uf  # noqa: E402
 
 TEAL, DARK, SAND = "307F7F", "112929", "D1B984"
 PALETTE = [TEAL, SAND, DARK, "7FB8B8", "EADBB4", "A3A3A3", "4F9A9A", "BFA36A"]
@@ -119,7 +119,7 @@ class F:
         K = self.R("kesimpulan")
         # "--" turns TRUE/FALSE into 1/0: in Excel FALSE>0 is TRUE (logicals sort above numbers), so a
         # single-keyword test without it would count every worker
-        return "--((" + "+".join(f'--ISNUMBER(SEARCH({q(w)},TRIM({K})&" "))' for w in words) + ")>0)"
+        return "--((" + "+".join(f'--ISNUMBER(SEARCH({q(w)},TRIM({xl_no_lig(K)})&" "))' for w in words) + ")>0)"
 
     def flag(self, key):
         t = self.t[key]
