@@ -17,7 +17,14 @@ The vendor file is never modified. Re-running keeps the corrections she typed
 in MAP's 'Koreksi' column (a column letter forces that column, X = not available).
 
 Usage:
-    uv run --with openpyxl python mcu_reader.py "<vendor.xlsx>" [--sheet NAME] [--cek]
+    uv run --with openpyxl python mcu_reader.py "<vendor.xlsx>" [--sheet NAME] [--gabung SHEET] [--cek]
+
+--gabung SHEET appends another vendor sheet with the SAME workers in the SAME rows (e.g. Garda Medika:
+'LAB, NON LAB' + 'FISIK') to the right of RAW. Every data row must have the same identity values (name,
+NPK, ...) in both sheets, otherwise the script stops. MAP!B8 records where each sheet starts in RAW so the
+vendor Ringkasan can point straight at the vendor's own sheets.
+Two-level headers (group in one row, parameter names in the row below, e.g. 'Hematologi Lengkap' over
+'Hemoglobin (g/dL)') are detected: the lower row becomes the header, the upper row the vendor section.
 
 --cek recalculates the output with LibreOffice (headless) and compares every
 formula result with an independent Python count. It must report 0 differences.
@@ -119,7 +126,69 @@ def load_vendor(path: Path, sheet_name: str | None, keys: set[str]):
         main = max(good, key=lambda s: (s["nrows"], s["score"]))
     if main["header"] is None:
         sys.exit(f"Header di sheet '{main['name']}' tidak ketemu.")
+    two_level(main)
     return main, sheets
+
+
+def two_level(sh):
+    """Vendor header split over two rows (group above, parameter below): make the lower row the header.
+    The header row keeps the group text where the lower row is empty (NAME, NPK, KESIMPULAN ...);
+    the upper row stays above it and is read as the vendor section."""
+    h = sh["header"]
+    rows = sh["rows"]
+    if h is None or h + 1 >= len(rows) or sh.get("two_level"):
+        return
+    top, low = rows[h], rows[h + 1]
+    only_low = sum(1 for a, b in zip(top, low) if is_blank(a) and not is_blank(b))
+    if only_low < 5 or not is_blank(low[0]):
+        return
+    rows[h + 1] = [b if not is_blank(b) else a for a, b in zip(top, low)]
+    sh["header"] = h + 1
+    sh["two_level"] = True
+
+
+def merge_sheets(main, sheets, names, keys):
+    """Append the columns of other sheets (same workers, same rows) to the right of the main sheet."""
+    main["parts"] = [(main["name"], 0)]
+    main["skip"] = set()
+    for name in names:
+        ex = next((s for s in sheets if s["name"].strip() == name.strip()), None)
+        if ex is None:
+            sys.exit(f"--gabung: sheet '{name}' tidak ada. Sheet tersedia: {[s['name'] for s in sheets]}")
+        if ex is main:
+            sys.exit(f"--gabung: '{name}' adalah sheet utama.")
+        two_level(ex)
+        if ex["header"] != main["header"]:
+            sys.exit(f"--gabung: header '{name}' di baris {ex['header'] + 1}, sheet utama di baris {main['header'] + 1}; "
+                     "baris tidak sejajar, tidak bisa digabung.")
+        hm, hx = main["rows"][main["header"]], ex["rows"][ex["header"]]
+        # identity columns present in both sheets (same header text, first 10 columns) must match on every row
+        ident = [(i, j) for i, a in enumerate(hm[:10]) for j, b in enumerate(hx[:10])
+                 if not is_blank(a) and norm(a) == norm(b)]
+        if not ident:
+            sys.exit(f"--gabung: tidak ada kolom identitas yang sama di '{name}' dan '{main['name']}'.")
+        n = max(len(main["rows"]), len(ex["rows"]))
+        for r in range(main["header"] + 1, n):
+            a = main["rows"][r] if r < len(main["rows"]) else []
+            b = ex["rows"][r] if r < len(ex["rows"]) else []
+            for i, j in ident:
+                va = a[i] if i < len(a) else None
+                vb = b[j] if j < len(b) else None
+                if str(va if va is not None else "").strip() != str(vb if vb is not None else "").strip():
+                    sys.exit(f"--gabung: baris {r + 1} beda di kolom '{hm[i]}': '{va}' ({main['name']}) vs '{vb}' ({name}). "
+                             "Urutan pekerja tidak sama, tidak bisa digabung per baris.")
+        start = main["ncols"]
+        main["parts"].append((ex["name"], start))
+        main["skip"].update(start + j for _, j in ident)
+        width = start + ex["ncols"]
+        while len(main["rows"]) < len(ex["rows"]):
+            main["rows"].append([None] * start)
+        for r in range(len(main["rows"])):
+            row = main["rows"][r] + [None] * (start - len(main["rows"][r]))
+            row += ex["rows"][r] if r < len(ex["rows"]) else []
+            main["rows"][r] = row + [None] * (width - len(row))
+        main["ncols"] = width
+        main["nrows"] = len(main["rows"])
 
 
 def build_columns(main):
@@ -128,9 +197,14 @@ def build_columns(main):
     hdr = main["rows"][h]
     above = main["rows"][h - 1] if h > 0 else [None] * len(hdr)
     filled = sum(1 for v in above if not is_blank(v))
-    use_sections = 0 < filled <= max(3, int(0.3 * len(hdr)))
+    use_sections = 0 < filled <= max(3, int(0.3 * len(hdr))) or bool(main.get("two_level"))
+    starts = {s for _, s in main.get("parts", [])}
     cols, sec = [], ""
     for j, v in enumerate(hdr):
+        if j in starts:
+            sec = ""
+        if j in main.get("skip", ()):
+            continue  # identity column repeated in a merged sheet (checked equal row by row)
         if use_sections and not is_blank(above[j]):
             sec = str(above[j]).strip()
         if is_blank(v) and not (use_sections and not is_blank(above[j])):
@@ -146,6 +220,10 @@ def data_range(main, name_idx: int | None):
     h = main["header"]
     rows = main["rows"]
     first = h + 2
+    # skip non-worker rows right under the header (e.g. a 'Nilai Normal' reference row)
+    while name_idx is not None and first - 1 < len(rows) and is_blank(rows[first - 1][name_idx]) \
+            and any(not is_blank(r[name_idx]) for r in rows[first:]):
+        first += 1
     last = first - 1
     for i in range(h + 1, len(rows)):
         r = rows[i]
@@ -251,7 +329,8 @@ def read_overrides(out_path: Path) -> dict[str, str]:
     except Exception as e:  # unreadable previous output: start fresh
         print(f"  (catatan: koreksi lama tidak terbaca: {e})")
         return {}
-    hdr_i = next((i for i, r in enumerate(rows) if r and r[0] == "Kode variabel"), None)
+    # header row = "Grup | Kode variabel | ..." (column A is Grup, so look in any cell)
+    hdr_i = next((i for i, r in enumerate(rows) if r and "Kode variabel" in r), None)
     if hdr_i is None:
         return {}
     hdr = list(rows[hdr_i])
@@ -317,6 +396,10 @@ def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results
         m.cell(row=i, column=1, value=k).font = BOLD
         m.cell(row=i, column=2, value=v)
     m.cell(row=7, column=2).alignment = Alignment(wrap_text=True)
+    if len(main.get("parts", [])) > 1:
+        m.cell(row=8, column=1, value="Sheet digabung").font = BOLD
+        m.cell(row=8, column=2, value="; ".join(f"{n}|{col_letter(s + 1)}" for n, s in main["parts"]))
+        m.cell(row=8, column=3, value="sheet vendor | kolom RAW tempat sheet itu mulai (baris sama dengan sheet vendor)")
     m.merge_cells(start_row=7, start_column=2, end_row=7, end_column=11)
     m.row_dimensions[7].height = 45
     expected[("MAP", 5, 2)] = n_rows_named(main, results, first, last)
@@ -458,7 +541,9 @@ def write_workbook(out_path, src_path, main, sheets, cols, use_sections, results
     head_row(sl, 1, ["Sheet vendor", "Baris (dibaca skrip)", "Kolom (dibaca skrip)", "Baris header terdeteksi", "Peran"])
     for s in sheets:
         sl.append([s["name"], s["nrows"], s["ncols"], (s["header"] + 1) if s["header"] is not None and s["score"] >= 3 else "-",
-                   "SHEET UTAMA (disalin ke RAW)" if s is main else "lampiran vendor (belum dipakai)"])
+                   "SHEET UTAMA (disalin ke RAW)" if s is main else
+                   "DIGABUNG ke RAW (--gabung)" if s["name"] in [n for n, _ in main.get("parts", [])] else
+                   "lampiran vendor (belum dipakai)"])
     set_widths(sl, [26, 18, 18, 22, 34])
 
     wb.active = 0
@@ -524,6 +609,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("excel", type=Path)
     ap.add_argument("--sheet", help="nama sheet utama (bila deteksi otomatis salah)")
+    ap.add_argument("--gabung", action="append", default=[],
+                    help="sheet vendor lain dengan pekerja yang sama di baris yang sama (mis. FISIK); kolomnya ditambahkan ke RAW")
     ap.add_argument("--cek", action="store_true", help="hitung ulang dengan LibreOffice dan bandingkan")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
@@ -536,6 +623,8 @@ def main():
     out_path = out_dir / f"{src.stem.strip()} - Analisa.xlsx"
 
     main_sheet, sheets = load_vendor(src, args.sheet, keys)
+    if args.gabung:
+        merge_sheets(main_sheet, sheets, args.gabung, keys)
     cols, use_sections = build_columns(main_sheet)
     overrides = read_overrides(out_path)
     results, used = match_variables(spec["variabel"], cols, use_sections, overrides)

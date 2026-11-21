@@ -558,7 +558,10 @@ class Deck:
         stat = self.judul_fit if self.judul_fit != "Status kelaikan kerja" else "Status Kelaikan Kerja"
         if self.S.meta["blok"].get("pak_dugaan"):
             stat += " & Dugaan PAK"  # the template has 10 TOC slots, all used
-        return [stat if x == "Status Kelaikan Kerja" else x for x in self.k["daftar_isi"]]
+        items = [stat if x == "Status Kelaikan Kerja" else x for x in self.k["daftar_isi"]]
+        if not self.S.meta["grup"]:  # no division slides (Garda Medika 2026-11-21: "langsung temuan")
+            items = [x for x in items if x != "Temuan per Grup"]
+        return items
 
     def kebiasaan(self, hab):
         boxes = [f"{fmt_n(r['C'])} dari {fmt_n(self.N)} pekerja ({fmt_pct(r['D'])})" for lab, r, _ in hab]
@@ -708,6 +711,8 @@ class Deck:
             return
         items = [r for r in rows if not str(r["B"]).startswith(("Salah satu", "Tanpa"))]
         anyr = next(r for r in rows if str(r["B"]).startswith("Salah satu"))
+        if not (anyr["C"] or 0):
+            return  # no worker with this finding (or not examined): no slide (Vidya, Garda Medika 2026-11-21)
         s = self.new(T_ABOUT2)
         t = shape_by_id(s, 36)
         t.width, t.height = Inches(9.4), Inches(2.4)
@@ -1039,6 +1044,8 @@ def main():
     ap.add_argument("analisa", type=Path)
     ap.add_argument("--template", type=Path, required=True)
     ap.add_argument("--aset", type=Path, help="folder gambar edukasi berisi aset_edukasi.json (opsional)")
+    ap.add_argument("--perusahaan", default="", help="nama perusahaan di sampul bila RAW A1 bukan nama perusahaan "
+                    "(mis. vendor template '<Nama Perusahaan>')")
     ap.add_argument("--penyedia", default="", help="nama penyedia MCU untuk kartu Personal Tracker, mis. \"Hermina Samarinda\"")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
@@ -1048,6 +1055,10 @@ def main():
     S = Summary(args.analisa.resolve())
     if S.check_beda not in (0, None):
         sys.exit(f"Sheet CHECK menunjukkan {S.check_beda} BEDA: perbaiki SUMMARY dulu sebelum membuat PPT.")
+    if args.perusahaan:
+        S.company = args.perusahaan
+    elif "<" in S.company:
+        sys.exit(f"Nama perusahaan dari RAW A1 = '{S.company}' (isian template vendor). Pakai --perusahaan \"...\".")
     sys.path.insert(0, str(HERE))
     import mcu_ppt_navy  # navy/orange template ('Untitled design (1).pptx'), Vidya 2026-11-10
     cls = mcu_ppt_navy.DeckNavy if mcu_ppt_navy.is_navy_template(Presentation(str(args.template))) else Deck
