@@ -42,7 +42,7 @@ from openpyxl.utils import get_column_letter as CL
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from mcu_ppt import SOFFICE, Summary, untuk_pembaca  # noqa: E402
-from mcu_summary import KOMB, PAK_KOSONG, as_date, date_pattern, read_map, xl_no_lig, xl_serial, xl_uf  # noqa: E402
+from mcu_summary import KOMB, PAK_KOSONG, as_date, date_pattern, read_map, xl_number, xl_serial, xl_uf, NUM_VARS  # noqa: E402
 
 TEAL, DARK, SAND = "307F7F", "112929", "D1B984"
 PALETTE = [TEAL, SAND, DARK, "7FB8B8", "EADBB4", "A3A3A3", "4F9A9A", "BFA36A"]
@@ -89,17 +89,28 @@ def read_dicts(wb):
 class F:
     """Builds array expressions over the vendor sheet (used inside SUMPRODUCT/AGGREGATE)."""
 
-    def __init__(self, sheet, first, last, cols, nilai, temuan, cutoff, pat_mcu, pat_lahir, bersih=()):
+    def __init__(self, sheet, first, last, cols, nilai, temuan, cutoff, pat_mcu, pat_lahir, bersih=(), parts=None,
+                 angka_teks=False):
         self.V = "'" + sheet.replace("'", "''") + "'!"
+        # merged vendor sheets (mcu_reader --gabung, MAP!B8): [(sheet, first RAW column index 1-based)], same rows
+        self.parts = sorted(parts or [(sheet, 1)], key=lambda p: p[1])
+        self.angka_teks = angka_teks
         self.a, self.b = first, last
         self.cols, self.nilai, self.cutoff = cols, nilai, cutoff
         self.t = {t["key"]: t for t in temuan}
         self.pat_mcu, self.pat_lahir = pat_mcu, pat_lahir
         self.bersih = list(bersih)  # same clean-ups as DICT_BERSIH of the Analisa file (summary_cells.json)
 
+    def where(self, L):
+        """RAW column letter -> (vendor sheet prefix 'Name'!, column letter in that sheet)."""
+        idx = col_index(L)
+        name, start = [p for p in self.parts if p[1] <= idx][-1]
+        return "'" + name.replace("'", "''") + "'!", CL(idx - start + 1)
+
     def R(self, key):
-        L = self.cols[key]
-        return f"{self.V}${L}${self.a}:${L}${self.b}"
+        V, L = self.where(self.cols[key])
+        rng = f"{V}${L}${self.a}:${L}${self.b}"
+        return xl_number(rng) if self.angka_teks and key in NUM_VARS else rng
 
     def U(self, key):
         u = f"UPPER(TRIM({self.R(key)}))"
@@ -119,7 +130,15 @@ class F:
         K = self.R("kesimpulan")
         # "--" turns TRUE/FALSE into 1/0: in Excel FALSE>0 is TRUE (logicals sort above numbers), so a
         # single-keyword test without it would count every worker
-        return "--((" + "+".join(f'--ISNUMBER(SEARCH({q(w)},TRIM({xl_no_lig(K)})&" "))' for w in words) + ")>0)"
+        # PDF ligatures in the vendor text ("proﬁl lemak"): search the ligature spelling too instead of SUBSTITUTE on
+        # the text, which repeated per keyword pushed formulas past Excel's 8192-character limit (Garda Medika 2026-11-21)
+        terms = []
+        for w in words:
+            terms.append(w)
+            lw = w.replace("fi", "ﬁ").replace("fl", "ﬂ")
+            if lw != w:
+                terms.append(lw)
+        return "--((" + "+".join(f'--ISNUMBER(SEARCH({q(w)},TRIM({K})&" "))' for w in terms) + ")>0)"
 
     def flag(self, key):
         t = self.t[key]
@@ -230,6 +249,9 @@ class Ringkasan:
             wa = openpyxl.load_workbook(tmp)
         self.vendor = Path(str(wa["MAP"]["B1"].value))
         self.main = str(wa["MAP"]["B2"].value)
+        b8 = str(wa["MAP"]["B8"].value or "") if str(wa["MAP"]["A8"].value or "") == "Sheet digabung" else ""
+        self.parts = [(p.rsplit("|", 1)[0], col_index(p.rsplit("|", 1)[1]))
+                      for p in b8.split("; ") if "|" in p] or [(self.main, 1)]
         first, last, cols, labels = read_map(wa)
         temuan, nilai, cutoff = read_dicts(wa)
         self.temuan = temuan
@@ -239,10 +261,16 @@ class Ringkasan:
             tmp = Path(tempfile.gettempdir()) / f"ringkas_{self.vendor.name}"
             shutil.copy2(self.vendor, tmp)
             self.wb = openpyxl.load_workbook(tmp)
-        main_ws = self.wb[self.main]
-        vals = lambda key: [main_ws[f"{cols[key]}{r}"].value for r in range(first, last + 1)] if key in cols else []  # noqa: E731
-        self.f = F(self.main, first, last, cols, nilai, temuan, cutoff,
-                   date_pattern(vals("tgl_mcu")), date_pattern(vals("tgl_lahir")), self.S.meta.get("bersih", []))
+        self.f = F(self.main, first, last, cols, nilai, temuan, cutoff, "none", "none", self.S.meta.get("bersih", []),
+                   self.parts, bool(self.S.meta.get("angka_teks")))
+
+        def vals(key):
+            if key not in cols:
+                return []
+            V, L = self.f.where(cols[key])
+            ws = self.wb[V[1:-2].replace("''", "'")]
+            return [ws[f"{L}{r}"].value for r in range(first, last + 1)]
+        self.f.pat_mcu, self.f.pat_lahir = date_pattern(vals("tgl_mcu")), date_pattern(vals("tgl_lahir"))
         for name in ("Ringkasan", "SUMMARY", "PEKERJA", "DICT_TEMUAN", "DICT_NILAI", "DICT_CUTOFF", "CHECK"):
             if name in self.wb.sheetnames:
                 del self.wb[name]
@@ -387,7 +415,8 @@ class Ringkasan:
         ws["A1"].font = BOLD
         ws["A2"] = S.company
         ws["A2"].font = BOLD
-        ws["A3"] = f"Setiap angka di sheet ini adalah rumus yang menghitung langsung dari sheet '{self.main}'."
+        src = " dan ".join(f"'{n}'" for n, _ in self.parts)
+        ws["A3"] = f"Setiap angka di sheet ini adalah rumus yang menghitung langsung dari sheet {src}."
         ws["A5"] = "Jumlah peserta MCU (N)"
         self.put(5, 3, f"=SUMPRODUCT(--{f.named()})", "C3", "0")
         a, b = S.meta["blok"]["S3_periode"].split("!")[-1].split(":")
@@ -770,9 +799,12 @@ def main():
     ap.add_argument("analisa", type=Path)
     ap.add_argument("--cek-excel", action="store_true",
                     help="hitung ulang salinan di Excel tersembunyi dan bandingkan semua sel rumus (perlu izin membuka Excel)")
+    ap.add_argument("--perusahaan", default="", help="nama perusahaan di judul bila RAW A1 bukan nama perusahaan")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     R = Ringkasan(args.analisa.resolve())
+    if args.perusahaan:
+        R.S.company = args.perusahaan
     R.build()
     out = R.save()
     bad = verify(out, R.S, R.expected)
