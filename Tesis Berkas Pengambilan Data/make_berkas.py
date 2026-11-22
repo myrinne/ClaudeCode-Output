@@ -6,7 +6,7 @@ Okupasi_RSCM.docx" (Lampiran 3 kuesioner, Lampiran 4 skoring beban kerja,
 Bab 3.6). The informed consent is copied unchanged from the ethics-approved
 v02 (3 Nov 2026).
 
-Usage:  python make_berkas.py [output_dir]
+Usage:  python make_berkas.py [output_dir|-] [file numbers, e.g. 03 04]
 Output defaults to the thesis folder in OneDrive (the repo is public, so the
 generated documents are not stored in it).
 """
@@ -22,7 +22,7 @@ from docx.oxml.ns import qn
 from docx.shared import Cm, Pt
 
 DOCS = Path(r"C:\Users\vidya\OneDrive\Documents")
-OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else DOCS / "PPDS Okupasi/Usulan Thesis/Gizi/Berkas Pengambilan Data"
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1] != "-" else DOCS / "PPDS Okupasi/Usulan Thesis/Gizi/Berkas Pengambilan Data"
 IC_SRC = DOCS / ("PPDS Okupasi/Usulan Thesis/Redcap/Etik UI/Perbaikan/"
                  "Lembar Penjelasan dan Persetujuan (Informed Consent) - Vidya Cecilia_v02_3 Nov 2026.docx")
 
@@ -31,10 +31,10 @@ JUDUL = ("Hubungan Pajanan Panas (WBGT) terhadap Beban Oksidatif Sistemik (H\u20
 LOKASI = "Instalasi Gizi RSUPN Dr. Cipto Mangunkusumo"
 HARI = [  # (kode hari, label tanggal, shift, tanggal singkat)
     ("H1", "Hari 1 \u2013 Senin, 30 November 2026", "Shift Pagi", "30/11/2026"),
-    ("H2", "Hari 2 \u2013 Selasa, 1 Desember 2026", "Shift Siang", "01/12/2026"),
+    ("H2", "Hari 2 \u2013 Selasa, 1 Desember 2026", "Shift Pagi", "01/12/2026"),
     ("H3", "Hari 3 \u2013 Rabu, 2 Desember 2026", "Shift Subuh", "02/12/2026"),
 ]
-PER_HARI = 25
+JUMLAH = {"H1": 25, "H2": 35, "H3": 25}  # kode per hari
 BOX = "\u2610"
 FONT = "Arial"
 
@@ -219,7 +219,7 @@ def dashed_grid(t):
 
 def kode_list():
     return [(h, f"{h}-{i:02d}", lbl, shift, tgl)
-            for h, lbl, shift, tgl in HARI for i in range(1, PER_HARI + 1)]
+            for h, lbl, shift, tgl in HARI for i in range(1, JUMLAH[h] + 1)]
 
 
 # ---------------------------------------------------------------- 1. kuesioner
@@ -363,44 +363,22 @@ def make_lembar_data(path):
           [1.2, 10.2, 6.0], header=["No", "Butir", "Isian"], row_h=0.75)
     gap(d)
 
-    section_head(d, "4. Indeks Brinkman (G4)")
-    table(d, [["G4", "Rata-rata batang per hari (G2) \u00d7 lama merokok dalam tahun (G3)", "____ \u00d7 ____ = ________"]],
-          [1.2, 10.2, 6.0], row_h=0.75)
-    gap(d)
-
-    section_head(d, "5. Skoring beban kerja fisik (Lampiran 4, SNI 7269:2009) \u2013 tidak diperlihatkan kepada subjek")
-    table(d, [["F1", "1,00", "", ""],
-              ["F2", "1,30", "", ""],
-              ["F3", "3,30", "", ""],
-              ["F4", "5,25", "", ""],
-              ["Jumlah", "", "", ""]],
-          [2.4, 3.0, 6.0, 6.0], header=["Kode", "Nilai", "Jam (dari Bagian F)", "Nilai \u00d7 Jam"], row_h=0.65)
-    gap(d, 3)
-    table(d, [["Rerata beban kerja = [\u03a3(nilai \u00d7 jam) \u00f7 \u03a3 jam] \u00d7 60", "________ kkal/jam"],
-              ["Metabolisme basal = BB \u00d7 1 (laki-laki) atau BB \u00d7 0,9 (perempuan)", "________ kkal/jam"],
-              ["Total beban kerja = rerata beban kerja + metabolisme basal", "________ kkal/jam"],
-              ["Kategori", f"{BOX} Ringan (100\u2013200)   {BOX} Sedang (>200\u2013350)   {BOX} Berat (>350\u2013500)"]],
-          [9.4, 8.0], row_h=0.7)
     gap(d, 10)
     t = d.add_table(rows=1, cols=2)
     no_borders(t)
     set_grid(t, [10.4, 7.0])
     cell_text(t.rows[0].cells[1], "Petugas,\n\n\n(______________________)", align=WD_ALIGN_PARAGRAPH.CENTER)
-    footer(d, "Lembar Data Pengukuran (Bagian C, J, G4, Lampiran 4) \u2013 versi 22 Nov 2026")
+    footer(d, "Lembar Data Pengukuran (Bagian C dan J) \u2013 versi 22 Nov 2026")
     d.save(path)
 
 
 # ---------------------------------------------------------------- 3. kartu alur
 LANGKAH = [
-    "Daftar hadir",
-    "Lembar persetujuan ditandatangani",
+    "Daftar hadir dan lembar persetujuan ditandatangani",
     "Penyaring (Bagian H, G5) diperiksa",
     "Timbang berat badan dan ukur tinggi badan",
-    "Istirahat di ruang sejuk mulai jam ______ (15\u201330 menit), sambil mengisi kuesioner",
-    "Pemeriksaan kulit (TEWL) jam ______",
-    "Pengambilan darah jam ______\n(shift selesai jam ______)",
-    "Kuesioner diperiksa lengkap",
-    "Edukasi perawatan kulit dan kerja di tempat panas",
+    "Pemeriksaan kulit (TEWL)",
+    "Pengambilan darah",
     "Konsumsi dan souvenir diterima",
 ]
 
@@ -439,7 +417,7 @@ def fill_card(cell, kode, lbl, shift):
         shade(c)
     for i, step in enumerate(LANGKAH, 1):
         row = t.rows[i]
-        row.height = Cm(0.62)
+        row.height = Cm(0.7)
         row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
         vals = [BOX, f"{i}. {step}", ""]
         for j, v in enumerate(vals):
@@ -457,15 +435,15 @@ def fill_card(cell, kode, lbl, shift):
 def make_kartu(path):
     d = new_doc(margin_cm=0.9)
     kodes = kode_list()
-    per_page = 4
+    per_page = 6
     for start in range(0, len(kodes), per_page):
         if start:
             d.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
         chunk = kodes[start:start + per_page]
-        t = d.add_table(rows=2, cols=2)
+        t = d.add_table(rows=3, cols=2)
         dashed_grid(t)
         t.autofit = False
-        for k in range(4):
+        for k in range(per_page):
             c = t.rows[k // 2].cells[k % 2]
             c.width = Cm(9.6)
             if k < len(chunk):
@@ -473,7 +451,7 @@ def make_kartu(path):
                 fill_card(c, kode, lbl, shift)
         set_grid(t, [9.6, 9.6])
         for row in t.rows:
-            row.height = Cm(13.4)
+            row.height = Cm(9.0)
             row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
     # remove the leading empty paragraph python-docx adds
     first = d.paragraphs[0]
@@ -578,17 +556,17 @@ def make_label_tabung(path):
 
 
 # ---------------------------------------------------------------- 6. daftar hadir
-def make_absen(path, baris=30):
+def make_absen(path):
     d = new_doc(margin_cm=1.5)
-    for n, (_, lbl, shift, _) in enumerate(HARI):
+    for n, (hk, lbl, shift, _) in enumerate(HARI):
         if n:
             d.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
         para(d, "DAFTAR HADIR PESERTA PEMERIKSAAN", bold=True, size=13, align=WD_ALIGN_PARAGRAPH.CENTER, after=1)
         para(d, LOKASI, size=10, align=WD_ALIGN_PARAGRAPH.CENTER, after=1)
         para(d, f"{lbl} \u00b7 {shift}", bold=True, size=10.5, align=WD_ALIGN_PARAGRAPH.CENTER, after=8)
-        rows = [[str(i), "", "", "", ""] for i in range(1, baris + 1)]
+        rows = [[str(i), "", "", "", ""] for i in range(1, max(30, JUMLAH[hk]) + 1)]
         t = table(d, rows, [1.1, 7.4, 2.6, 3.4, 3.5],
-                  header=["No", "Nama", "Jam Datang", "TTD Hadir", "TTD Terima Souvenir"], row_h=0.74)
+                  header=["No", "Nama", "Jam Datang", "TTD Hadir", "TTD Terima Souvenir"], row_h=0.66)
         for row in t.rows:
             row.cells[0].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
             row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
@@ -599,14 +577,24 @@ def make_absen(path, baris=30):
 # ---------------------------------------------------------------- main
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    make_kuesioner(OUT / "01 Kuesioner Penelitian.docx")
-    shutil.copy2(IC_SRC, OUT / "02 Lembar Penjelasan dan Persetujuan (IC) v02 - disetujui etik.docx")
-    make_lembar_data(OUT / "03 Lembar Data Pengukuran.docx")
-    make_kartu(OUT / "04 Kartu Alur Peserta (H1-01 sd H3-25).docx")
-    make_label_nama(OUT / "05 Label Nama Peserta (75).docx")
-    make_label_tabung(OUT / "06 Label Tabung EDTA dan Mikrotube (225).docx")
-    make_absen(OUT / "07 Daftar Hadir 3 Hari (kosong).docx")
-    print("Saved to", OUT)
+    jobs = [
+        ("01 Kuesioner Penelitian.docx", make_kuesioner),
+        ("02 Lembar Penjelasan dan Persetujuan (IC) v02 - disetujui etik.docx", lambda p: shutil.copy2(IC_SRC, p)),
+        ("03 Lembar Data Pengukuran.docx", make_lembar_data),
+        ("04 Kartu Alur Peserta.docx", make_kartu),
+        ("05 Label Nama Peserta.docx", make_label_nama),
+        ("06 Label Tabung EDTA dan Mikrotube.docx", make_label_tabung),
+        ("07 Daftar Hadir 3 Hari (kosong).docx", make_absen),
+    ]
+    only = sys.argv[2:]  # optional file-number filter, e.g. 03 04
+    for name, fn in jobs:
+        if only and name[:2] not in only:
+            continue
+        try:
+            fn(OUT / name)
+            print("ok  ", name)
+        except PermissionError:
+            print("SKIP (file sedang terbuka di Word):", name)
 
 
 if __name__ == "__main__":
