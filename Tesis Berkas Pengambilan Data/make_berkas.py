@@ -30,7 +30,7 @@ JUDUL = ("Hubungan Pajanan Panas (WBGT) terhadap Beban Oksidatif Sistemik (H\u20
          "melalui Gangguan Sawar Kulit pada Pekerja Penyelenggaraan Makanan Institusional")
 LOKASI = "Instalasi Gizi RSUPN Dr. Cipto Mangunkusumo"
 HARI = [  # (kode hari, label tanggal, shift, tanggal singkat)
-    ("H1", "Hari 1 \u2013 Senin, 30 November 2026", "Shift Pagi", "30/11/2026"),
+    ("H1", "Hari 1 \u2013 Senin, 30 November 2026", "Shift Siang", "30/11/2026"),
     ("H2", "Hari 2 \u2013 Selasa, 1 Desember 2026", "Shift Pagi", "01/12/2026"),
     ("H3", "Hari 3 \u2013 Rabu, 2 Desember 2026", "Shift Subuh", "02/12/2026"),
 ]
