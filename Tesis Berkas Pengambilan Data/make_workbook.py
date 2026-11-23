@@ -22,10 +22,14 @@ from openpyxl.worksheet.datavalidation import DataValidation
 
 OUT_DIR = Path(r"C:\Users\vidya\OneDrive\Documents\PPDS Okupasi\Usulan Thesis\Gizi\Data Penelitian")
 FILE_NAME = "Data Mentah Tesis WBGT-TEWL-H2O2.xlsx"
-FIRST, LAST = 2, 101                      # subject rows (85 codes + 15 spare rows)
-DAYS = [("H1", date(2026, 11, 30), "pagi", 25), ("H2", date(2026, 12, 1), "pagi", 35),
-        ("H3", date(2026, 12, 2), "subuh", 25)]
-SHIFTS = ["subuh", "pagi", "siang"]
+FIRST, LAST = 2, 111                      # subject rows (95 codes + 15 spare rows)
+# Two collection days (Prodia only 30 Nov and 2 Des); each day covers all three shifts,
+# so the shift is chosen per subject on 1_Subjek (from the data sheet), not prefilled per day.
+DAYS = [("H1", date(2026, 11, 30), 60), ("H2", date(2026, 12, 2), 35)]
+SHIFTS = ["subuh", "pagi", "sore"]
+SHIFT_JAM = {"subuh": ((5, 0), (12, 30)), "pagi": ((7, 0), (14, 30)), "sore": ((11, 30), (19, 0))}  # jadwal Gizi
+# WBGT/PM2.5 rotation (vault "Thesis Perlu diubah.md"): 4 rounds a day, E1->E8 then back, 26 min per point
+ROUNDS = [(1, False, (5, 10)), (2, True, (8, 40)), (3, False, (12, 10)), (4, True, (15, 40))]
 ZONES = [("E1", "Zona memasak makanan utama", "Panas"), ("E2", "Zona memasak makanan selingan", "Panas"),
          ("E3", "Dapur susu / enteral", "Panas"), ("E4", "Zona pemorsian, penyajian, dan pencucian", "Panas"),
          ("E5", "Ruang persiapan bahan sayuran", "Tidak panas"),
@@ -49,7 +53,6 @@ SUBJ = [
     ("tanggal", "A2 Tanggal data", "date", None),
     ("shift", "Shift", "list", SHIFTS),
     ("partisipasi", "Status partisipasi", "list", ["Ikut", "Tidak bersedia", "Tereksklusi saat skrining"]),
-    ("enum", "A3 Enumerator", "text", None),
     ("jabatan", "A4 Departemen / jabatan", "text", None),
     ("lahir", "B1 Tanggal lahir", "date", None),
     ("jk", "B2 Jenis kelamin (L/P)", "list", ["L", "P"]),
@@ -58,8 +61,8 @@ SUBJ = [
     ("tb", "C2 Tinggi badan (cm)", "num", (130, 200)),
     ("masa_th", "D1 Masa kerja (tahun)", "num", (0, 40)),
     ("masa_bl", "D1 Masa kerja (bulan)", "num", (0, 11)),
-    ("jam_mulai", "D2 Jam mulai kerja", "time", None),
-    ("jam_selesai", "D3 Jam selesai kerja", "time", None),
+    ("jam_mulai", "D2 Jam mulai kerja hari ini", "time", None),
+    ("jam_selesai", "D3 Jam selesai kerja hari ini", "time", None),
     ("lama", "D4 Lama kerja per hari (jam)", "num", (1, 16)),
     ("hari_mg", "D5 Hari kerja per minggu", "num", (1, 7)),
     *[(z, f"{z} {n} (jam)", "num", (0, 16)) for z, n, _ in ZONES],
@@ -147,12 +150,11 @@ def entry_sheet(ws, cols, prefill=True):
         validate(ws, col, FIRST, LAST, kind, spec)
     if prefill:
         r = FIRST
-        for day, tgl, shift, n in DAYS:
+        for day, tgl, n in DAYS:
             for j in range(1, n + 1):
                 ws[f"{S['kode']}{r}"] = f"{day}-{j:02d}"
                 ws[f"{S['hari']}{r}"] = day
                 ws[f"{S['tanggal']}{r}"] = tgl
-                ws[f"{S['shift']}{r}"] = shift
                 r += 1
 
 
@@ -200,24 +202,46 @@ wsc.freeze_panes = "B4"
 
 # ---------------------------------------------------------------- 2_Lingkungan
 wsl = wb.create_sheet("2_Lingkungan")
-LCOL = ["Shift", "Tanggal ukur", "Putaran", "Zona", "Nama zona", "Jam pasang/pindah alat", "Jam baca",
+LCOL = ["Hari", "Tanggal ukur", "Putaran", "Zona", "Nama zona", "Jam pasang/pindah alat", "Jam baca",
         "WBGT 1 (°C)", "WBGT 2", "WBGT 3", "Suhu kering Ta (°C)", "RH (%)", "Tg (°C)", "PM2.5 1 (µg/m³)",
-        "PM2.5 2", "PM2.5 3", "Catatan", "WBGT rerata", "PM2.5 rerata", "Tren bacaan", "Ekuilibrasi (menit)"]
-header(wsl, 1, LCOL, [8, 12, 8, 7, 30, 11, 9, 9, 9, 9, 10, 8, 8, 10, 9, 9, 22, 10, 10, 26, 12])
+        "PM2.5 2", "PM2.5 3", "Catatan", "WBGT rerata", "PM2.5 rerata", "Tren bacaan", "Ekuilibrasi (menit)",
+        "Jam rencana", *[f"Masuk shift {sh} (1/0)" for sh in SHIFTS]]
+header(wsl, 1, LCOL, [6, 12, 8, 7, 30, 11, 9, 9, 9, 9, 10, 8, 8, 10, 9, 9, 22, 10, 10, 26, 12, 9, 9, 9, 9])
 wsl.freeze_panes = "F2"
+LSPARE = 16                                   # extra readings (repeat a zone, extra round)
+ZNAME = {z: nm for z, nm, _ in ZONES}
 r = 2
-for sh in SHIFTS:
-    for put in (1, 2):
-        for z, nm, _ in ZONES:
-            wsl[f"A{r}"], wsl[f"C{r}"], wsl[f"D{r}"], wsl[f"E{r}"] = sh, put, z, nm
+PLAN = []                                     # (row, minutes after midnight) for the test fill
+for day, tgl, _ in DAYS:
+    for put, back, (hh, mm) in ROUNDS:
+        order = ZONES[::-1] if back else ZONES
+        for i, (z, nm, _) in enumerate(order):
+            t = hh * 60 + mm + 26 * i
+            wsl[f"A{r}"], wsl[f"B{r}"], wsl[f"C{r}"], wsl[f"D{r}"], wsl[f"E{r}"] = day, tgl, put, z, nm
+            wsl[f"V{r}"] = time(t // 60, t % 60)
+            PLAN.append((r, t))
             r += 1
+SPARE_FIRST = r
+r += LSPARE
 LROWS = range(2, r)
 LLAST = r - 1
 for rr in LROWS:
-    for c in "BFGHIJKLMNOPQ":
+    spare = rr >= SPARE_FIRST
+    for c in ("ABCD" if spare else "") + "BFGHIJKLMNOPQ":
         wsl[f"{c}{rr}"].fill, wsl[f"{c}{rr}"].border = INPUT, THIN
+    if spare:
+        wsl[f"E{rr}"] = (f'=IF(D{rr}="","",IFERROR(CHOOSE(MATCH(D{rr},{{"E1","E2","E3","E4","E5","E6","E7","E8"}},0),'
+                         + ",".join(f'"{ZNAME[z]}"' for z, *_ in ZONES) + '),"kode zona salah"))')
+        wsl[f"E{rr}"].fill = CALC
     wsl[f"B{rr}"].number_format = "DD/MM/YYYY"
-    wsl[f"F{rr}"].number_format = wsl[f"G{rr}"].number_format = "HH:MM"
+    wsl[f"F{rr}"].number_format = wsl[f"G{rr}"].number_format = wsl[f"V{rr}"].number_format = "HH:MM"
+    wsl[f"V{rr}"].fill = CALC
+    for j, sh in enumerate(SHIFTS):
+        (h1, m1), (h2, m2) = SHIFT_JAM[sh]
+        col = get_column_letter(23 + j)
+        wsl[f"{col}{rr}"] = (f'=IF(G{rr}="","",IF(AND(G{rr}>=TIME({h1},{m1},0),'
+                             f'G{rr}<=TIME({h2},{m2},0)),1,0))')
+        wsl[f"{col}{rr}"].fill = CALC
     wsl[f"R{rr}"] = f'=IF(COUNT(H{rr}:J{rr})=0,"",ROUND(AVERAGE(H{rr}:J{rr}),2))'
     wsl[f"S{rr}"] = f'=IF(COUNT(N{rr}:P{rr})=0,"",ROUND(AVERAGE(N{rr}:P{rr}),1))'
     wsl[f"T{rr}"] = (f'=IF(COUNT(H{rr}:J{rr})<3,"",IF(OR(AND(H{rr}<I{rr},I{rr}<J{rr}),'
@@ -230,6 +254,8 @@ for c, lo, hi in (("H", 10, 45), ("I", 10, 45), ("J", 10, 45), ("K", 10, 50), ("
                   ("M", 10, 70), ("N", 0, 5000), ("O", 0, 5000), ("P", 0, 5000)):
     validate(wsl, c, 2, LLAST, "num", (lo, hi))
 validate(wsl, "B", 2, LLAST, "date", None)
+validate(wsl, "A", SPARE_FIRST, LLAST, "list", [d for d, *_ in DAYS])
+validate(wsl, "D", SPARE_FIRST, LLAST, "list", [z for z, *_ in ZONES])
 validate(wsl, "F", 2, LLAST, "time", None)
 validate(wsl, "G", 2, LLAST, "time", None)
 wsl.conditional_formatting.add(f"T2:U{LLAST}", FormulaRule(formula=['OR(LEFT(T2,4)="TREN",ISNUMBER(SEARCH("<20",U2)))'],
@@ -237,7 +263,8 @@ wsl.conditional_formatting.add(f"T2:U{LLAST}", FormulaRule(formula=['OR(LEFT(T2,
 
 # ---------------------------------------------------------------- 3_Matriks_Zona
 wsm = wb.create_sheet("3_Matriks_Zona")
-wsm["A1"] = "Rerata per zona dan shift (dari 2_Lingkungan). Dipakai untuk WBGT/PM2.5 individual dan Tabel 4.2."
+wsm["A1"] = ("Rerata per zona dan shift (dari 2_Lingkungan, kedua hari digabung). Bacaan masuk ke setiap shift "
+             "yang sedang dinas pada jam baca. Dipakai untuk WBGT/PM2.5 individual dan Tabel 4.2.")
 wsm["A1"].font = Font(bold=True)
 wsm["D3"], wsm["G3"], wsm["J3"] = "WBGT (°C)", "PM2.5 setara-optik (µg/m³)", "Rerata semua shift"
 for c in ("D3", "G3", "J3"):
@@ -250,8 +277,9 @@ for i, (z, nm, area) in enumerate(ZONES):
     for j, sh in enumerate(SHIFTS):
         for base, src in ((4, "R"), (7, "S")):
             col = get_column_letter(base + j)
+            flag = get_column_letter(23 + j)
             wsm[f"{col}{rr}"] = (f"=IFERROR(ROUND(AVERAGEIFS('2_Lingkungan'!${src}$2:${src}${LLAST},"
-                                 f"'2_Lingkungan'!$A$2:$A${LLAST},\"{sh}\",'2_Lingkungan'!$D$2:$D${LLAST},$A{rr}),2),\"\")")
+                                 f"'2_Lingkungan'!${flag}$2:${flag}${LLAST},1,'2_Lingkungan'!$D$2:$D${LLAST},$A{rr}),2),\"\")")
             wsm[f"{col}{rr}"].fill = CALC
     for col, src in (("J", "L"), ("K", "K")):
         wsm[f"{col}{rr}"] = (f"=IFERROR(ROUND(AVERAGEIFS('2_Lingkungan'!${src}$2:${src}${LLAST},"
@@ -288,7 +316,7 @@ for c in ("B5", "B6", "B7", "B8"):
 header(wsh, 20, ["Kode subjek", "Sumur", "Abs 1", "Abs 2", "Rerata Abs", "CV duplo (%)",
                  "Kadar hitung (mmol/L)", "Kadar dari lab (mmol/L)", "Hemolisis", "Catatan",
                  "H2O2 final (mmol/L)", "Peringatan"], [12, 8, 9, 9, 10, 10, 12, 12, 10, 22, 12, 30], height=30)
-HFIRST, HLAST = 21, 120
+HFIRST, HLAST = 21, 130
 for rr in range(HFIRST, HLAST + 1):
     for c in "ABCDHIJ":
         wsh[f"{c}{rr}"].fill, wsh[f"{c}{rr}"].border = INPUT, THIN
@@ -447,8 +475,9 @@ for k in ("peringatan", "eksklusi", "alasan"):
 # ---------------------------------------------------------------- 6_Ekspor_SPSS
 EXP = [  # (spss name, label, source formula on 5_Hitung / 1_Subjek)
     ("kode", "Kode subjek", lambda r: f"'5_Hitung'!{K['kode']}{r}"),
-    ("hari", "Hari (1-3)", lambda r: f"VALUE(MID({s('hari', r)},2,1))"),
-    ("shift", "Shift (1 subuh, 2 pagi, 3 siang)", lambda r: f"MATCH({s('shift', r)},{{\"subuh\",\"pagi\",\"siang\"}},0)"),
+    ("hari", "Hari (1 = 30 Nov, 2 = 2 Des)", lambda r: f"VALUE(MID({s('hari', r)},2,1))"),
+    ("shift", "Shift (1 subuh, 2 pagi, 3 sore)",
+     lambda r: f"IFERROR(MATCH({s('shift', r)},{{\"subuh\",\"pagi\",\"sore\"}},0),\"\")"),
     ("ikut", "Ikut pemeriksaan (1/0)", lambda r: f'IF({s("partisipasi", r)}="Ikut",1,0)'),
     ("analisis", "Dianalisis (1/0)", lambda r: f"'5_Hitung'!{K['analisis']}{r}"),
     ("area", "Area (1 panas, 0 tidak panas)", lambda r: f"'5_Hitung'!{K['area01']}{r}"),
@@ -553,8 +582,8 @@ wst.column_dimensions["J"].width = 40
 # ---------------------------------------------------------------- Codebook
 wcb = wb.create_sheet("Codebook", 0)
 header(wcb, 1, ["Nama SPSS", "Label", "Jenis data", "Kode / satuan", "Sumber"], [12, 44, 12, 34, 36], height=20)
-CB = {"kode": ("teks", "H1-01 … H3-25", "Kuesioner A1"), "hari": ("kategorik", "1 = 30 Nov, 2 = 1 Des, 3 = 2 Des", "1_Subjek"),
-      "shift": ("kategorik", "1 subuh, 2 pagi, 3 siang", "1_Subjek"), "ikut": ("kategorik", "1 ikut, 0 tidak", "Status partisipasi"),
+CB = {"kode": ("teks", "H1-01 … H1-60, H2-01 … H2-35", "Kuesioner A1"), "hari": ("kategorik", "1 = 30 Nov, 2 = 2 Des", "1_Subjek"),
+      "shift": ("kategorik", "1 subuh 05.00–12.30, 2 pagi 07.00–14.30, 3 sore 11.30–19.00", "Lembar data (shift hari ini)"), "ikut": ("kategorik", "1 ikut, 0 tidak", "Status partisipasi"),
       "analisis": ("kategorik", "1 dianalisis, 0 tidak", "5_Hitung"), "area": ("kategorik", "1 panas (E1–E4 >6 jam), 0 tidak panas", "Kuesioner E"),
       "usia": ("numerik", "tahun", "B1 dan A2"), "jk": ("kategorik", "1 laki-laki, 0 perempuan", "B2"),
       "imt": ("numerik", "kg/m²", "C1, C2"), "masakrj": ("numerik", "tahun", "D1"),
@@ -578,14 +607,18 @@ for i, (k, lab, _) in enumerate(EXP, 2):
 wp = wb.create_sheet("Petunjuk", 0)
 wp.column_dimensions["A"].width = 110
 TEXT = [
-    ("Data Mentah Tesis WBGT–TEWL–H2O2 (Instalasi Gizi RSCM, 30 Nov – 2 Des 2026)", True),
+    ("Data Mentah Tesis WBGT–TEWL–H2O2 (Instalasi Gizi RSCM, Sen 30 Nov dan Rab 2 Des 2026)", True),
     ("Warna sel: krem = diisi manual; abu-abu = rumus, jangan diketik.", False),
     ("", False),
     ("Urutan kerja", True),
-    ("1. 1_Subjek: entri lembar data petugas + kuesioner per subjek. Kode H1-01 … H3-25 sudah terisi; baris 87–101 cadangan.", False),
-    ("   Ya/Tidak, L/P, shift, dan status dipilih dari daftar. Jam ditulis hh:mm, tanggal dd/mm/yyyy.", False),
+    ("1. 1_Subjek: entri lembar data petugas + kuesioner per subjek. Kode H1-01 … H1-60 (30 Nov) dan H2-01 … H2-35 (2 Des) sudah terisi;", False),
+    ("   baris 97–111 cadangan. Shift WAJIB dipilih per subjek (subuh/pagi/sore) dari lembar data, karena tiap hari mencakup tiga shift.", False),
+    ("   Ya/Tidak, L/P, shift, dan status dipilih dari daftar. Jam ditulis hh:mm, tanggal dd/mm/yyyy. Nama tidak diketik di sini.", False),
     ("2. 1b_Entri_Ulang: orang kedua mengetik ulang kolom kunci tanpa melihat entri pertama. Cek_Entri menghitung sel BEDA.", False),
-    ("3. 2_Lingkungan: WBGT dan PM2.5 per shift × putaran × zona (3 bacaan). Kolom Tren memberi tanda bila bacaan masih naik/turun.", False),
+    ("3. 2_Lingkungan: WBGT dan PM2.5 per hari × putaran (1–4) × zona, 3 bacaan, urutan sesuai jadwal keliling (kolom Jam rencana).", False),
+    ("   Isi Jam baca: dari jam itu rumus menandai shift mana yang sedang dinas (kolom W–Y), lalu 3_Matriks_Zona merata-ratakan", False),
+    ("   bacaan kedua hari per zona × shift. Bacaan tambahan ditulis di 16 baris cadangan paling bawah (isi Hari dan Zona).", False),
+    ("   Kolom Tren memberi tanda bila bacaan masih naik/turun.", False),
     ("4. 4_Lab_H2O2: kurva standar + absorbans sampel, ATAU kadar akhir dari lab di kolom H.", False),
     ("5. 5_Hitung (rumus): usia, IMT, proporsi zona, WBGT/PM2.5 individual, Indeks Brinkman, beban kerja SNI 7269, TEWL, ", False),
     ("   H2O2, peringatan protokol, alasan eksklusi, dan status dianalisis. Baca kolom merah sebelum analisis.", False),
@@ -625,15 +658,18 @@ def fill_test():
             4: dict(partisipasi="Ikut", lahir=date(1995, 12, 31), jk="P", bb=60, tb=155, masa_th=0, masa_bl=6,
                     lama=8, E8=8, F1=7, F2=1, g1="Tidak pernah", g5="Tidak", j1=time(12, 0),
                     j2=time(12, 0), j3=time(12, 20), tewl1=8, tewl2=9, tewl3=10, j6=time(12, 40), sampel="Layak")}
+    for r, sh in ((2, "subuh"), (3, "pagi"), (4, "sore")):
+        rows[r]["shift"] = sh
     for h in range(1, 8):
         for r in rows:
             rows[r][f"h{h}"] = "Tidak"
     for r, vals in rows.items():
         for k, v in vals.items():
             ws1[f"{S[k]}{r}"] = v
-    for rr in LROWS:          # WBGT reading = 30 - zone index (+0.1, +0.2 except E3), PM = 100 + 10*index
+    for rr, t in PLAN:        # WBGT = 30 - zone index (+1 from 12.00; +0.1, +0.2 except E3), PM = 100 + 10*index
         zi = int(wsl[f"D{rr}"].value[1])
-        base = 30 - zi + (1 if wsl[f"A{rr}"].value == "siang" else 0)
+        base = 30 - zi + (1 if t >= 12 * 60 else 0)
+        wsl[f"F{rr}"], wsl[f"G{rr}"] = time((t - 23) // 60, (t - 23) % 60), time(t // 60, t % 60)
         wsl[f"H{rr}"], wsl[f"I{rr}"], wsl[f"J{rr}"] = (base, base, base) if zi == 3 else (base, base + .1, base + .2)
         wsl[f"N{rr}"] = wsl[f"O{rr}"] = wsl[f"P{rr}"] = 100 + 10 * zi
         wsl[f"K{rr}"], wsl[f"L{rr}"] = 32, 60
