@@ -29,13 +29,17 @@ IC_SRC = DOCS / ("PPDS Okupasi/Usulan Thesis/Redcap/Etik UI/Perbaikan/"
 JUDUL = ("Hubungan Pajanan Panas (WBGT) terhadap Beban Oksidatif Sistemik (H\u2082O\u2082) "
          "melalui Gangguan Sawar Kulit pada Pekerja Penyelenggaraan Makanan Institusional")
 LOKASI = "Instalasi Gizi RSUPN Dr. Cipto Mangunkusumo"
-HARI = [  # (kode hari, label tanggal, shift, tanggal singkat)
-    ("H1", "Hari 1 \u2013 Senin, 30 November 2026", "Shift Pagi", "30/11/2026"),
-    ("H2", "Hari 2 \u2013 Selasa, 1 Desember 2026", "Shift Pagi", "01/12/2026"),
-    ("H3", "Hari 3 \u2013 Rabu, 2 Desember 2026", "Shift Subuh", "02/12/2026"),
-]
-JUMLAH = {"H1": 25, "H2": 35, "H3": 25}  # kode per hari
 BOX = "\u2610"
+# Two collection days (Prodia only available 30 Nov and 2 Des). Each day covers
+# the subuh, pagi and sore shifts; the shift is ticked per subject on the data
+# sheet. Day 1 takes as many workers as possible (about 61 on duty), day 2 the rest.
+HARI = [  # (kode hari, label tanggal, tanggal singkat)
+    ("H1", "Hari 1 \u2013 Senin, 30 November 2026", "30/11/2026"),
+    ("H2", "Hari 2 \u2013 Rabu, 2 Desember 2026", "02/12/2026"),
+]
+JUMLAH = {"H1": 60, "H2": 35}  # kode per hari
+SHIFT_JAM = (f"{BOX} Subuh (05.00\u201312.30)   {BOX} Pagi (07.00\u201314.30)   "
+             f"{BOX} Sore (11.30\u201319.00)")
 FONT = "Arial"
 
 
@@ -218,8 +222,8 @@ def dashed_grid(t):
 
 
 def kode_list():
-    return [(h, f"{h}-{i:02d}", lbl, shift, tgl)
-            for h, lbl, shift, tgl in HARI for i in range(1, JUMLAH[h] + 1)]
+    return [(h, f"{h}-{i:02d}", lbl, tgl)
+            for h, lbl, tgl in HARI for i in range(1, JUMLAH[h] + 1)]
 
 
 # ---------------------------------------------------------------- 1. kuesioner
@@ -227,14 +231,14 @@ def make_kuesioner(path):
     d = new_doc(margin_cm=1.8)
     doc_header(d, "KUESIONER PENELITIAN", JUDUL)
     para(d, "Petunjuk: mohon isi atau beri tanda \u2713 pada kotak yang sesuai. Tidak ada jawaban benar atau "
-            "salah. Bila ada pertanyaan yang kurang jelas, silakan tanyakan kepada petugas. Bagian C "
-            "(antropometri) dan J (dokumentasi pengukuran) dicatat petugas pada Lembar Data.",
+            "salah. Bila ada pertanyaan yang kurang jelas, silakan tanyakan kepada petugas.",
          size=9, italic=True, after=6)
 
     W3 = [1.2, 8.6, 7.6]
     section_head(d, "BAGIAN A. Identitas")
     table(d, [["A1", "Kode subjek (diisi petugas)", "H___ \u2013 ___"],
               ["A2", "Tanggal pengambilan data", "____ / ____ / 2026"],
+              ["A3", "Nama", ""],
               ["A4", "Departemen / jabatan sesuai penugasan", ""]],
           W3, header=["No", "Butir", "Isian"], row_h=0.75)
     gap(d)
@@ -248,8 +252,8 @@ def make_kuesioner(path):
 
     section_head(d, "BAGIAN D. Data Pekerjaan")
     table(d, [["D1", "Sudah berapa lama bekerja pada posisi ini?", "______ tahun ______ bulan"],
-              ["D2", "Jam mulai kerja", "________"],
-              ["D3", "Jam selesai kerja", "________"],
+              ["D2", "Jam mulai kerja hari ini", "________"],
+              ["D3", "Jam selesai kerja hari ini", "________"],
               ["D4", "Lama kerja per hari", "________ jam"],
               ["D5", "Berapa hari kerja per minggu?", "________ hari"]],
           W3, header=["No", "Butir", "Isian"], row_h=0.75)
@@ -328,17 +332,19 @@ def make_kuesioner(path):
 def make_lembar_data(path):
     d = new_doc(margin_cm=1.8, font_pt=10)
     doc_header(d, "LEMBAR DATA PENGUKURAN", "Diisi oleh petugas. Tidak memuat nama subjek, hanya kode subjek.")
-    table(d, [["Tanggal", "____ / ____ / 2026", "Shift", f"{BOX} Subuh   {BOX} Pagi   {BOX} Siang"],
-              ["A3. Enumerator", "", "Jenis kelamin", f"{BOX} Laki-laki   {BOX} Perempuan"]],
+    table(d, [["Tanggal", f"{BOX} Sen 30/11   {BOX} Rab 02/12", "Jenis kelamin", f"{BOX} Laki-laki   {BOX} Perempuan"],
+              ["Shift hari ini", SHIFT_JAM, "", ""]],
           [3.0, 5.4, 2.8, 6.2], row_h=0.75, bold_first_col=True)
-    for r in d.tables[-1].rows:
-        r.cells[2].paragraphs[0].runs[0].bold = True
+    t = d.tables[-1]
+    t.rows[0].cells[2].paragraphs[0].runs[0].bold = True
+    merged = t.rows[1].cells[1].merge(t.rows[1].cells[3])
+    for p in merged.paragraphs[1:]:
+        if not p.text:
+            p._p.getparent().remove(p._p)
     gap(d)
 
-    section_head(d, "1. Verifikasi penyaring (kuesioner Bagian H dan G5), sebelum pemeriksaan")
-    table(d, [["H1\u2013H5", f"{BOX} Semua \u201cTidak\u201d    {BOX} Ada \u201cYa\u201d (butir: ______) \u2192 tidak diikutsertakan"],
-              ["H6\u2013H7", f"{BOX} Semua \u201cTidak\u201d    {BOX} Ada \u201cYa\u201d (butir: ______)  Catatan: ______________"],
-              ["G5", f"{BOX} Tidak merokok 3 jam terakhir    {BOX} Ya \u2192 pengambilan darah ditunda"]],
+    section_head(d, "1. Verifikasi penyaring (kuesioner Bagian G5), sebelum pemeriksaan")
+    table(d, [["G5", f"{BOX} Tidak merokok 3 jam terakhir    {BOX} Ya \u2192 pengambilan darah ditunda"]],
           [2.4, 15.0], row_h=0.75, bold_first_col=True)
     gap(d)
 
@@ -357,25 +363,18 @@ def make_lembar_data(path):
               ["J4", "Suhu ruang dan kelembapan relatif saat pengukuran", "______ \u00b0C  /  ______ %"],
               ["J5", "Nilai TEWL bacaan 1 / 2 / 3 (g/m\u00b2/jam)", "______ / ______ / ______"],
               ["", "Rerata TEWL", "________ g/m\u00b2/jam"],
-              ["J6", "Jam pengambilan darah (target 30\u201360 menit setelah J1)", "________  (selang ____ menit)"],
+              ["J6", "Jam pengambilan darah", "________"],
               ["J7", "Catatan (hemolisis, kekeruhan plasma, kendala lain)",
                f"Hemolisis: {BOX} Tidak  {BOX} Ya\n\n"]],
           [1.2, 10.2, 6.0], header=["No", "Butir", "Isian"], row_h=0.75)
-    gap(d)
-
-    gap(d, 10)
-    t = d.add_table(rows=1, cols=2)
-    no_borders(t)
-    set_grid(t, [10.4, 7.0])
-    cell_text(t.rows[0].cells[1], "Petugas,\n\n\n(______________________)", align=WD_ALIGN_PARAGRAPH.CENTER)
-    footer(d, "Lembar Data Pengukuran (Bagian C dan J) \u2013 versi 22 Nov 2026")
+    footer(d, "Lembar Data Pengukuran (Bagian C dan J) \u2013 versi 23 Nov 2026")
     d.save(path)
 
 
 # ---------------------------------------------------------------- 3. kartu alur
 LANGKAH = [
     "Daftar hadir dan lembar persetujuan ditandatangani",
-    "Penyaring (Bagian H, G5) diperiksa",
+    "Penyaring (Bagian G5) diperiksa petugas",
     "Timbang berat badan dan ukur tinggi badan",
     "Pemeriksaan kulit (TEWL)",
     "Pengambilan darah",
@@ -383,7 +382,7 @@ LANGKAH = [
 ]
 
 
-def fill_card(cell, kode, lbl, shift):
+def fill_card(cell, kode, lbl):
     cell.text = ""
     p = cell.paragraphs[0]
     r = p.add_run("KARTU ALUR PEMERIKSAAN")
@@ -392,7 +391,7 @@ def fill_card(cell, kode, lbl, shift):
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_after = Pt(1)
     p = cell.add_paragraph()
-    r = p.add_run(f"{lbl} \u00b7 {shift}")
+    r = p.add_run(lbl)
     r.font.size = Pt(7.5)
     r.italic = True
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -447,8 +446,8 @@ def make_kartu(path):
             c = t.rows[k // 2].cells[k % 2]
             c.width = Cm(9.6)
             if k < len(chunk):
-                _, kode, lbl, shift, _ = chunk[k]
-                fill_card(c, kode, lbl, shift)
+                _, kode, lbl, _ = chunk[k]
+                fill_card(c, kode, lbl)
         set_grid(t, [9.6, 9.6])
         for row in t.rows:
             row.height = Cm(9.0)
@@ -478,7 +477,7 @@ def make_label_nama(path):
             c.width = Cm(6.3)
             if k >= len(chunk):
                 continue
-            _, kode, lbl, shift, _ = chunk[k]
+            _, kode, lbl, _ = chunk[k]
             c.text = ""
             p = c.paragraphs[0]
             r = p.add_run(kode)
@@ -492,7 +491,7 @@ def make_label_nama(path):
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             p.paragraph_format.space_after = Pt(3)
             p = c.add_paragraph()
-            r = p.add_run(f"{lbl.split(' \u2013 ')[0]} \u00b7 {shift}")
+            r = p.add_run(lbl.split(" \u2013 ")[1])
             r.font.size = Pt(7.5)
             r.italic = True
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -511,7 +510,7 @@ def make_label_nama(path):
 def make_label_tabung(path):
     d = new_doc(margin_cm=1.0, font_pt=9)
     items = []
-    for _, kode, _, _, tgl in kode_list():
+    for _, kode, _, tgl in kode_list():
         for jenis in ("EDTA", "P1", "P2"):
             items.append((kode, jenis, tgl))
     cols, rows = 6, 13
@@ -558,19 +557,23 @@ def make_label_tabung(path):
 # ---------------------------------------------------------------- 6. daftar hadir
 def make_absen(path):
     d = new_doc(margin_cm=1.5)
-    for n, (hk, lbl, shift, _) in enumerate(HARI):
+    for n, (hk, lbl, _) in enumerate(HARI):
         if n:
             d.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
         para(d, "DAFTAR HADIR PESERTA PEMERIKSAAN", bold=True, size=13, align=WD_ALIGN_PARAGRAPH.CENTER, after=1)
         para(d, LOKASI, size=10, align=WD_ALIGN_PARAGRAPH.CENTER, after=1)
-        para(d, f"{lbl} \u00b7 {shift}", bold=True, size=10.5, align=WD_ALIGN_PARAGRAPH.CENTER, after=8)
-        rows = [[str(i), "", "", "", ""] for i in range(1, max(30, JUMLAH[hk]) + 1)]
-        t = table(d, rows, [1.1, 7.4, 2.6, 3.4, 3.5],
-                  header=["No", "Nama", "Jam Datang", "TTD Hadir", "TTD Terima Souvenir"], row_h=0.66)
+        para(d, f"{lbl} \u00b7 Shift: SB = Subuh, P = Pagi, S = Sore", bold=True, size=10.5,
+             align=WD_ALIGN_PARAGRAPH.CENTER, after=8)
+        rows = [[str(i), "", "", "", "", ""] for i in range(1, max(30, JUMLAH[hk]) + 1)]
+        t = table(d, rows, [1.0, 6.6, 1.6, 2.4, 3.2, 3.2],
+                  header=["No", "Nama", "Shift", "Jam Datang", "TTD Hadir", "TTD Terima Souvenir"], row_h=0.66)
         for row in t.rows:
             row.cells[0].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
             row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
         t.rows[0].height = Cm(0.9)
+        rep = OxmlElement("w:tblHeader")  # repeat header row on page 2 (day 1 has 60 rows)
+        rep.set(qn("w:val"), "true")
+        t.rows[0]._tr.get_or_add_trPr().append(rep)
     d.save(path)
 
 
@@ -582,11 +585,13 @@ def main():
         ("02 Lembar Penjelasan dan Persetujuan (IC) v02 - disetujui etik.docx", lambda p: shutil.copy2(IC_SRC, p)),
         ("03 Lembar Data Pengukuran.docx", make_lembar_data),
         ("04 Kartu Alur Peserta.docx", make_kartu),
-        ("05 Label Nama Peserta.docx", make_label_nama),
+        # 05 Label Nama Peserta: dropped by her on 22 Nov ("tidak usah"); run with "05" to make it anyway.
         ("06 Label Tabung EDTA dan Mikrotube.docx", make_label_tabung),
-        ("07 Daftar Hadir 3 Hari (kosong).docx", make_absen),
+        ("07 Daftar Hadir 2 Hari (kosong).docx", make_absen),
     ]
     only = sys.argv[2:]  # optional file-number filter, e.g. 03 04
+    if "05" in only:
+        jobs.append(("05 Label Nama Peserta.docx", make_label_nama))
     for name, fn in jobs:
         if only and name[:2] not in only:
             continue
