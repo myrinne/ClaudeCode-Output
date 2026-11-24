@@ -18,7 +18,7 @@ POSISI = (
 
 LANGKAH2 = (
     "Langkah 2 — Cek FEV1/FVC: bila FEV1/FVC < LLN → obstruksi (ERS/ATS 2022: FEV1 tidak harus < LLN; penyebut "
-    "terbaik adalah VC terbesar dari FVC/EVC/IVC). Bila FEV1/FVC ≥ LLN tetapi FEV1 dan/atau FVC < LLN → PRISm / "
+    "yang dianjurkan FVC, bukan VC seperti anjuran 2005). Bila FEV1/FVC ≥ LLN tetapi FEV1 dan/atau FVC < LLN → PRISm / "
     "pola non-spesifik (perlu TLC untuk membedakan dari restriksi sejati).")
 
 H74 = "7.4 Grading Severity Skema Klasik (Versi Paru Materi Ujian dan ATS/ERS 2005)"
