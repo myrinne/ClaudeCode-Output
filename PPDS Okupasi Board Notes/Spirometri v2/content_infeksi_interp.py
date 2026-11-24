@@ -50,49 +50,66 @@ INFEKSI = [
 ]
 
 INTERP2022 = [
-    ("h2", "7.10 Pola Spirometri menurut ERS/ATS 2022: Obstruksi, PRISm/Pola Non-spesifik, Restriksi, Campuran, Dysanapsis"),
-    ("new", "Sumber: ERS/ATS technical standard on interpretive strategies for routine lung function tests (Stanojevic "
-            "dkk., Eur Respir J 2022), Spirometry in Occupational Health 2020 (Townsend/ACOEM), Guideline for Office "
-            "Spirometry in Adults 2012, Y. Sim 2017."),
+    ("h2", "7.10 Pola Spirometri menurut ERS/ATS 2022: Obstruksi, Pola Non-spesifik/PRISm, Restriksi, Campuran, Dysanapsis"),
+    ("new", "Diverifikasi langsung dari PDF ERS/ATS technical standard on interpretive strategies for routine lung "
+            "function tests (Stanojevic dkk., Eur Respir J 2022;60:2101499) milik Anda: Tabel 1 (hlm. 3), hlm. 11–14 "
+            "(BDR, perubahan waktu, severity), Gambar 8 dan Tabel 5 (hlm. 17–18), hlm. 19–20."),
+    ("p", "**Algoritma ERS/ATS 2022 (Gambar 8):** (1) FEV1/FVC > persentil ke-5? Tidak → (2) FVC > persentil ke-5? "
+          "Ya = obstruksi; Tidak = kemungkinan gangguan campuran → ukur volume paru. Bila rasio normal: FVC normal = "
+          "spirometri normal; FVC rendah = kemungkinan restriksi ATAU pola non-spesifik → ukur volume paru (TLC)."),
     ("table", [
-        ["Pola", "Kriteria", "Catatan dan tindak lanjut"],
-        ["Obstruksi", "FEV1/VC < LLN (z < −1,645). VC = nilai terbesar dari FVC, EVC, atau IVC. "
-                      "FEV1 tidak harus < LLN.",
-         "Kolaps dinamis saat manuver paksa mengecilkan FVC sehingga FEV1/FVC bisa naik palsu. Penyebut VC terbesar "
-         "membuat obstruksi tersembunyi lebih mudah terdeteksi."],
-        ["PRISm / pola non-spesifik", "FEV1/VC ≥ LLN, tetapi FEV1 dan/atau FVC < LLN. Disebut pola non-spesifik bila "
-                                      "TLC terukur normal.",
-         "Penyebab: obesitas, penyakit saluran napas kecil dini, kelemahan otot napas ringan, inspirasi/usaha "
-         "submaksimal. Lanjutan: ulang dengan kualitas baik, uji bronkodilator, TLC (body plethysmography/dilusi "
-         "gas), DLCO, HRCT bila curiga kelainan parenkim akibat kerja."],
-        ["Kemungkinan restriksi", "FEV1/VC ≥ LLN dan FVC < LLN pada spirometri saja.",
-         "Spirometri tidak bisa menegakkan restriksi. Sebut \"pola restriksi / kemungkinan restriksi\"."],
-        ["Restriksi terkonfirmasi", "TLC < LLN.", "Butuh pengukuran volume paru statis."],
-        ["Campuran", "FEV1/VC < LLN DAN TLC < LLN.",
-         "Bila hanya ada spirometri (rasio < LLN dan FVC < LLN): sebut \"obstruksi dengan FVC rendah, dugaan pola "
-         "campuran\" dan rujuk untuk TLC."],
-        ["Dysanapsis (varian fisiologis)", "FEV1/FVC < LLN dengan FEV1 ≥100% prediksi (ACOEM 2020).",
-         "Pertumbuhan saluran napas tidak sebanding dengan volume paru; sering pada orang sangat bugar (atlet, "
-         "pemadam kebakaran, tentara). Pada pekerja terpajan, tetap waspadai obstruksi awal dan ikuti longitudinal."],
-    ]),
-    ("p", "**Grading keparahan ERS/ATS 2022 (z-score):** ringan −1,65 sampai −2,5; sedang −2,51 sampai −4,0; berat "
-          "< −4,1. Parameter utama tetap **z-score FEV1** dan berlaku untuk obstruksi maupun restriksi (\"Using FEV1 "
-          "(includes obstruction or restriction)\"); skema yang sama dapat diterapkan pada FVC, TLC, dan DLCO. Skema "
-          "lama ATS/ERS 2005 (5 tingkat, %prediksi FEV1): ringan >70%, sedang 60–69%, sedang-berat 50–59%, berat "
-          "35–49%, sangat berat <35%."),
-    ("p", "**Perubahan dari waktu ke waktu (dewasa):** ERS/ATS 2022 menyebut perubahan FEV1 >15% dalam periode "
-          "pendek (±1 tahun) sering dipakai sebagai ambang di luar variabilitas biologis; variabilitas FEV1 tahun ke "
-          "tahun pada orang sehat biasanya 6–8% (ini latar belakang angka ≥8% di kriteria PERDOKI). Perubahan harus "
-          "ditafsirkan bersama riwayat klinis."),
-    ("src", "Kutipan ERS/ATS 2022 di bagian ini diperoleh lewat NotebookLM yang dibatasi pada PDF ERS/ATS 2022 di "
-            "notebook Anda; dysanapsis hanya disebut di Tabel 1 dokumen tersebut tanpa definisi naratif, sehingga "
-            "definisinya (FEV1/FVC < LLN dengan FEV1 ≥100% prediksi) diambil dari ACOEM 2020."),
-    ("p", "**FEF25-75%:** tidak dianjurkan untuk diagnosis rutin atau skrining penyakit saluran napas kecil; "
-          "variabilitasnya sangat besar (±20% vs ±3% pada FEV1) dan LLN-nya sekitar 50% prediksi."),
-    ("p", "**Rasio tetap 0,70:** tidak dianjurkan untuk mendefinisikan obstruksi. FEV1/FVC turun fisiologis ±10% "
-          "antara usia 20–70 tahun; LLN ±0,74 pada usia 20 tahun (underdiagnosis pekerja muda) dan ±0,64 pada usia "
-          "70 tahun (overdiagnosis pekerja senior). Rasio 0,70 hanya pas di sekitar usia 40 tahun."),
+        ["Pola (Tabel 5)", "FEV1", "FVC", "FEV1/FVC", "Keterangan"],
+        ["Obstruktif", "Normal/↓", "Normal", "↓", "FEV1/FVC (atau VC) < LLN; FEV1 tidak harus < LLN"],
+        ["Restriktif", "↓", "↓", "Normal/↑", "Konfirmasi dengan TLC rendah (restriksi simpel vs kompleks)"],
+        ["Non-spesifik", "↓", "↓", "Normal", "TLC normal; uji tambahan (BDR, Raw) bisa membantu. Bila TLC tidak "
+                                             "tersedia, pada perokok/mantan perokok disebut PRISm"],
+        ["Kelemahan otot", "↓", "↓", "Normal", "Tidak ada PEF yang tajam"],
+        ["Usaha submaksimal", "↓", "↓", "Normal", "Tidak ada PEF yang tajam"],
+        ["Campuran", "↓", "↓", "↓", "Perlu volume paru untuk konfirmasi"],
+        ["Dysanapsis", "Normal", "Normal/↑", "↓", "Bisa varian normal"],
+    ], [3.0, 1.7, 1.7, 1.7, 7.1]),
+    ("b", "**Penyebut rasio:** ERS/ATS 2022 menganjurkan **FEV1/FVC**. FEV1/VC (VC terbesar dari SVC dan FVC) "
+          "dianjurkan pada 2005; lebih sensitif tetapi kurang spesifik, VC sulit distandarkan (alat, riwayat volume), "
+          "dan tidak ada persamaan referensi kuat untuk FEV1/VC, sehingga pemakaiannya menambah ketidakpastian "
+          "diagnosis, terutama pada lansia. Pada orang sehat FVC tidak berbeda bermakna dari VC."),
+    ("b", "**Pola non-spesifik:** FVC dan/atau FEV1 rendah, rasio normal, TLC normal. Bisa mencerminkan usaha kurang, "
+          "restriksi dini (FVC turun sebelum RV), atau obstruksi dini/air trapping (kolaps saluran napas kecil "
+          "menurunkan FVC sebelum rasio turun). Pada pemantauan 3 tahun, ±2/3 tetap non-spesifik dan ±1/3 menjadi "
+          "penyakit obstruktif atau restriktif yang jelas. Bila usaha maksimal: ulang setelah bronkodilator; atau "
+          "bandingkan dengan SVC (SVC > FVC lebih dari 100 mL berarti ada kolaps saluran napas saat ekspirasi paksa). "
+          "PRISm berhubungan dengan munculnya pola restriktif maupun obstruktif yang lebih khas di kemudian hari."),
+    ("b", "**Restriksi:** spirometri hanya bisa MENDUGA; konfirmasi TLC < persentil ke-5. Campuran: FEV1/FVC < LLN "
+          "dan TLC < LLN."),
+    ("b", "**Dysanapsis:** FEV1/FVC rendah dengan FEV1 dalam batas normal (FVC normal atau di atas prediksi; sering "
+          "pada laki-laki, usia muda, bertubuh tinggi). Dulu dianggap varian fisiologis normal, tetapi data baru "
+          "menunjukkan pola ini mungkin berkaitan dengan kecenderungan penyakit obstruktif; tafsirkan sesuai "
+          "probabilitas pra-tes dan bila perlu BDR, DLCO, kekuatan otot, atau uji latih. (ACOEM 2020 memakai "
+          "batasan FEV1 ≥100% prediksi.)"),
+    ("p", "**Grading keparahan ERS/ATS 2022 (z-score), untuk SEMUA parameter:** normal > −1,645; ringan −1,65 s.d. "
+          "−2,5; sedang −2,51 s.d. −4; berat < −4,1. Dasarnya: hazard ratio mortalitas pada z-score FEV1, FVC, dan "
+          "DLCO; z −1,65 s.d. −2,5 risikonya hampir sama sehingga digabung menjadi \"ringan\". Derajat gangguan fungsi "
+          "paru tidak sama dengan derajat penyakit (dipengaruhi juga gejala, anemia, kelemahan otot, dll.). Skema "
+          "2005 (\"Using FEV1, includes obstruction or restriction\"): ringan >70%, sedang 60–69%, sedang-berat "
+          "50–59%, berat 35–49%, sangat berat <35% prediksi."),
+    ("p", "**Respons bronkodilator 2022:** (post − pre) / nilai prediksi GLI × 100%; >10% untuk FEV1 atau FVC = "
+          "bermakna. Contoh dokumen: laki-laki 50 tahun, TB 170 cm, FEV1 2,0 → 2,4 L, prediksi 3,32 L → 12,1% → "
+          "bermakna. Ini BUKAN sama dengan perubahan 10% dari nilai pre-BD. PEF dan FEF25-75 tidak dipakai untuk "
+          "menilai respons karena sangat bervariasi."),
+    ("p", "**Perubahan dari waktu ke waktu (dewasa):** pada bukan perokok >25 tahun FEV1 turun ±30 mL/tahun. Dulu "
+          "dipakai perubahan absolut (mis. 100 mL) atau relatif (mis. 10% dari baseline). **Di kedokteran okupasi, "
+          "dengan pemeriksaan tahunan atau lebih jarang, ambang 15% diusulkan** sebagai perubahan di luar variabilitas "
+          "biologis. Penurunan yang terlihat dari banyak pengukuran lebih meyakinkan daripada dua pengukuran saja. "
+          "Alternatif: **FEV1Q** = FEV1 (L) / 0,5 L (laki-laki) atau / 0,4 L (perempuan); normalnya 1 unit hilang "
+          "±tiap 18 tahun (±10 tahun pada perokok dan lansia), jadi dalam setahun FEV1Q seharusnya stabil; contoh: "
+          "perempuan 70 tahun FEV1 0,9 L → FEV1Q 2,25 (makin dekat 1, makin tinggi risiko kematian). Anak: "
+          "conditional change score, normal bila dalam ±1,96."),
+    ("p", "**FEF25-75%:** sangat bervariasi, sulit direproduksi, tidak spesifik untuk penyakit saluran napas kecil, "
+          "dan tidak menambah keputusan klinis di luar FEV1, FVC, dan FEV1/FVC."),
+    ("p", "**Rasio tetap 0,70 dan 80% prediksi:** tidak dianjurkan; batas normal = LLN persentil ke-5 (dan ULN "
+          "persentil ke-95). FEV1/FVC turun fisiologis ±10% antara usia 20–70 tahun; LLN ±0,74 pada usia 20 tahun "
+          "dan ±0,64 pada usia 70 tahun (ACOEM 2020)."),
     ("flag", "Konsensus PERDOKI 2019 untuk ujian board tetap memakai 75%/80% (versi paru) dan NNT (versi okupasi), "
-             "bersifat dikotomis tanpa gradasi. Sebutkan konsep 2022 sebagai pengetahuan pembanding, lalu simpulkan "
-             "dengan lafaz PERDOKI."),
+             "dikotomis tanpa gradasi. Sebutkan konsep 2022 sebagai pengetahuan pembanding, lalu simpulkan dengan "
+             "lafaz PERDOKI."),
 ]
+
