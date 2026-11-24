@@ -157,12 +157,16 @@ SVC = [
     ("b", "FVC rendah dengan kesan pola campuran: SVC yang jauh lebih besar dari FVC menunjukkan restriksi semu "
           "(pseudo-restriksi akibat air trapping)."),
     ("b", "Menilai hiperinflasi lewat IC, termasuk respons bronkodilator dan efek latihan."),
-    ("p", "**Rasio FEV1/VC:** penyebut terbaik untuk mendeteksi obstruksi adalah **VC terbesar** dari FVC, EVC, atau "
-          "IVC. Bila FVC mengecil akibat air trapping, FEV1/FVC naik palsu dan obstruksi bisa terlewat; FEV1/VC "
-          "lebih sensitif."),
-    ("flag", "Konsensus PERDOKI 2019 untuk surveilans rutin tetap memakai KVP, VEP1, dan rasio VEP1/KVP terhadap NNT. "
-             "Tidak ada NNT untuk SVC atau IC di sumber Indonesia. Di ujian: sebut FEV1/VC sebagai konsep fisiologis "
-             "ATS/ERS, lalu tetap simpulkan dengan kriteria PERDOKI."),
+    ("b", "Pola non-spesifik (FEV1/FVC normal, FVC rendah) pada pasien yang sudah berusaha maksimal: **SVC lebih besar "
+          "dari FVC >100 mL** menandakan kolaps saluran napas saat ekspirasi paksa (ERS/ATS 2022)."),
+    ("p", "**FEV1/VC vs FEV1/FVC:** ATS/ERS 2005 menganjurkan rasio FEV1/VC dengan VC terbesar dari SVC dan FVC "
+          "(lebih sensitif bila FVC mengecil akibat air trapping). **ERS/ATS 2022 kembali menganjurkan FEV1/FVC**: "
+          "FEV1/VC kurang spesifik, VC sulit distandarkan, dan tidak ada persamaan referensi kuat untuk FEV1/VC, "
+          "sehingga diagnosis obstruksi dengan FEV1/VC menambah ketidakpastian, terutama pada lansia. SVC tetap "
+          "berguna sebagai pemeriksaan tambahan untuk menunjukkan air trapping."),
+    ("flag", "Konsensus PERDOKI 2019 untuk surveilans rutin memakai KVP, VEP1, dan rasio VEP1/KVP terhadap NNT; tidak "
+             "ada NNT untuk SVC atau IC di sumber Indonesia. Di ujian: rasio yang dipakai VEP1/KVP; sebut SVC sebagai "
+             "pemeriksaan tambahan untuk air trapping."),
 ]
 
 GRADING = [

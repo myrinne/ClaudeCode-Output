@@ -78,7 +78,7 @@ class Cursor:
                 _runs(p, b[1], color=color if body_colored else None,
                       italic=kind in ("src", "new", "fix"))
             elif kind == "table":
-                self._table(b[1])
+                self._table(b[1], b[2] if len(b) > 2 else None)
             elif kind == "img":
                 p = self._para()
                 p.alignment = 1
@@ -94,10 +94,12 @@ class Cursor:
                 raise ValueError(kind)
         return self
 
-    def _table(self, rows):
+    def _table(self, rows, widths_cm=None):
         ncol = max(len(r) for r in rows)
         t = self.doc.add_table(rows=0, cols=ncol)
         t.style = self.doc.styles["Table Grid"]
+        if widths_cm:
+            t.autofit = False
         for i, row in enumerate(rows):
             cells = t.add_row().cells
             for j in range(ncol):
@@ -113,6 +115,11 @@ class Cursor:
                     cells[j]._tc.get_or_add_tcPr().append(shd)
                 else:
                     _runs(par, txt)
+                if widths_cm:
+                    cells[j].width = Cm(widths_cm[j])
+        if widths_cm:
+            for j, col in enumerate(t.columns):
+                col.width = Cm(widths_cm[j])
         self._place(t._tbl)
         # spacer paragraph after a table, like the original layout
         self._para()

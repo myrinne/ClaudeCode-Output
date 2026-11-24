@@ -100,6 +100,14 @@ c.add([("img", FIG / "fig_pola_flow_volume.png", 16.5),
        ("cap", "Gambar v2: galeri bentuk kurva flow-volume (skematis). Garis putus-putus abu = kurva normal.")])
 c.add(L.ASMA_KERJA)
 
+# 6.3: VC-as-denominator is the 2005 recommendation
+after(find_par(doc, "Implikasi klinis-okupasi"), [
+    ("fix", "Anjuran memakai VC terbesar sebagai penyebut rasio adalah ATS/ERS 2005. ERS/ATS 2022 kembali "
+            "menganjurkan FEV1/FVC: FEV1/VC lebih sensitif tetapi kurang spesifik, VC sulit distandarkan, dan tidak "
+            "ada persamaan referensi kuat untuk FEV1/VC. Perbandingan SVC dengan FVC tetap berguna: SVC lebih besar "
+            "dari FVC >100 mL menandakan kolaps saluran napas saat ekspirasi paksa."),
+])
+
 # B5 7.1 langkah 2
 rewrite("Langkah 2 — Cek FEV1/FVC", L.LANGKAH2)
 
