@@ -17,6 +17,9 @@ uvx --from python-docx python build_v2.py "<...>\Catatan_Spirometri.docx" "<...>
 `build_v2.py` stops with `FAILED:` if an anchor paragraph is not found, so edits to the
 original notes show up immediately.
 
+After every rebuild run `patch_perdoki.py FILE.docx`: it corrects the PERDOKI 2019 citations (checked
+against the 18-page PDF). The original notes were in the Recycle Bin on 2026-11-24, so v2 was patched in place.
+
 ## Files
 
 - `build_v2.py`: fixes, cross-reference replacement, insert positions
