@@ -30,7 +30,7 @@ JUDUL = ("Hubungan Pajanan Panas (WBGT) terhadap Beban Oksidatif Sistemik (H\u20
          "melalui Gangguan Sawar Kulit pada Pekerja Penyelenggaraan Makanan Institusional")
 LOKASI = "Instalasi Gizi RSUPN Dr. Cipto Mangunkusumo"
 BOX = "\u2610"
-# Two collection days (Prodia only available 30 Nov and 2 Des). Each day covers
+# Two collection days (vendor only available 30 Nov and 2 Des). Each day covers
 # the subuh, pagi and sore shifts; the shift is ticked per subject on the data
 # sheet. Day 1 takes as many workers as possible (about 61 on duty), day 2 the rest.
 HARI = [  # (kode hari, label tanggal, tanggal singkat)
