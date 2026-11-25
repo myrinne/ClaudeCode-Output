@@ -23,7 +23,7 @@ from openpyxl.worksheet.datavalidation import DataValidation
 OUT_DIR = Path(r"C:\Users\vidya\OneDrive\Documents\PPDS Okupasi\Usulan Thesis\Gizi\Data Penelitian")
 FILE_NAME = "Data Mentah Tesis WBGT-TEWL-H2O2.xlsx"
 FIRST, LAST = 2, 111                      # subject rows (95 codes + 15 spare rows)
-# Two collection days (Prodia only 30 Nov and 2 Des); each day covers all three shifts,
+# Two collection days (vendor only 30 Nov and 2 Des); each day covers all three shifts,
 # so the shift is chosen per subject on 1_Subjek (from the data sheet), not prefilled per day.
 DAYS = [("H1", date(2026, 11, 30), 60), ("H2", date(2026, 12, 2), 35)]
 SHIFTS = ["subuh", "pagi", "sore"]
