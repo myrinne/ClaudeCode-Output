@@ -182,11 +182,14 @@ VISI = ("Menjadi program studi yang mandiri dan unggul di tingkat global dalam p
         "bersinambung bagi Indonesia dan dunia.")
 
 
+SECT = {"head": 8.6, "body": 7.9, "gap": 7.5}
+
+
 def sect(title, body_runs, Pl, first=False):
-    """Subheading + body paragraphs for a flowing text box."""
-    out = [P(title, bold=True, size=8.6, color=Pl["dark"], before=0 if first else 7.5, after=1.5)]
+    """Subheading + body paragraphs for a flowing text box (sizes from SECT)."""
+    out = [P(title, bold=True, size=SECT["head"], color=Pl["dark"], before=0 if first else SECT["gap"], after=1.5)]
     for runs in body_runs:
-        out.append(P(runs=runs if isinstance(runs, list) else [(runs, {})], size=7.9, color=Pl["text"], after=1))
+        out.append(P(runs=runs if isinstance(runs, list) else [(runs, {})], size=SECT["body"], color=Pl["text"], after=1))
     return out
 
 
@@ -227,20 +230,20 @@ def biaya_paras(Pl):
     return p
 
 
-def doing_grid(sl, x, y, Pl, cw=42, rh=19):
-    for i, (ic, t, d) in enumerate(DOING):
+def doing_grid(sl, x, y, Pl, cw=42, rh=19, ts=8, ds=7, d=8.5):
+    for i, (ic, t, dd) in enumerate(DOING):
         cx, cy = x + (i % 2) * (cw + 2), y + (i // 2) * rh
-        icon_disc(sl, ic, cx, cy, 8.5, Pl["disc"], "FFFFFF")
-        text(sl, cx + 10.5, cy - 0.3, cw - 10.5, rh - 1,
-             [P(t, bold=True, size=8, color=Pl["dark"], after=1, ls=1.0),
-              P(d, size=7, color=Pl["text"], ls=1.05)])
+        icon_disc(sl, ic, cx, cy, d, Pl["disc"], "FFFFFF")
+        text(sl, cx + d + 2, cy - 0.3, cw - d - 2, rh - 1,
+             [P(t, bold=True, size=ts, color=Pl["dark"], after=1, ls=1.0),
+              P(dd, size=ds, color=Pl["text"], ls=1.05)])
 
 
-def workplaces_list(sl, x, y, Pl, rh=7.4, w=84):
+def workplaces_list(sl, x, y, Pl, rh=7.4, w=84, d=6, fs=8.4):
     for i, (ic, t) in enumerate(WORKPLACES):
         cy = y + i * rh
-        icon_disc(sl, ic, x, cy, 6, Pl["disc"], "FFFFFF")
-        text(sl, x + 8.5, cy, w - 8.5, 6, [P(t, size=8.4, color=Pl["text"], bold=False)], anchor="m")
+        icon_disc(sl, ic, x, cy, d, Pl["disc"], "FFFFFF")
+        text(sl, x + d + 2.5, cy, w - d - 2.5, d, [P(t, size=fs, color=Pl["text"], bold=False)], anchor="m")
 
 
 def contact_block(sl, x, y, w, Pl, col_text, col_head, icol):
@@ -306,6 +309,7 @@ PA = dict(dark="0E4D2F", accent="D9A400", bg1="FBF7EC", bg2="EAF0DF", text="2233
 
 def concept_a():
     Pl = PA
+    SECT.update(head=9.3, body=8.4, gap=8)
     prs = new_deck()
 
     # ---------------- OUTSIDE: flap | back | cover
@@ -313,30 +317,32 @@ def concept_a():
     # flap 0-97 : Sehari sebagai Sp.Ok
     box(sl, 0, 0, 97, 210, fill=Pl["bg2"], name="Latar panel lipat")
     heading(sl, 7, 10, 84, "Sehari sebagai Sp.Ok", Pl)
-    text(sl, 7, 24, 84, 8, [P("Dari lapangan, klinik, sampai ruang diskusi kasus.", size=8.2, italic=True, color=Pl["muted"])])
+    text(sl, 7, 24, 84, 8, [P("Dari lapangan, klinik, sampai ruang diskusi kasus.", size=8.6, italic=True, color=Pl["muted"])])
     rows = [("07.30", "Turun ke lapangan", "Safety briefing dan walk-through survey untuk mengenali bahaya di area kerja.", "lapangan_briefing", .55, .5),
             ("10.00", "Penilaian laik kerja", "Pemeriksaan klinis untuk keputusan fit, unfit, atau fit dengan restriksi.", "periksa_fisik", .5, .45),
             ("13.00", "Diskusi radiograf toraks", "Menelaah kasus pajanan debu dan penyakit paru akibat kerja.", "radiograf_close", .55, .4),
             ("15.00", "Edukasi pekerja", "Promosi kesehatan dan pencegahan penyakit akibat kerja.", "edukasi_pekerja", .8, .5)]
-    y0, rh = 35, 39.5
-    line(sl, 45, y0 + 2, 45, y0 + 3 * rh + 2, "9BBF5A", 1.25)
+    y0, rh = 33, 41.5
+    line(sl, 50.5, y0 + 2, 50.5, y0 + 3 * rh + 2, "9BBF5A", 1.5)
     for i, (tm, tt, dd, ph, fx, fy) in enumerate(rows):
         yy = y0 + i * rh
-        photo(sl, ph, 7, yy, 34, 31, fx, fy)
-        box(sl, 43.2, yy + 0.4, 3.6, 3.6, fill=Pl["accent"], shape=MSO_SHAPE.OVAL, line="FFFFFF", lw=1)
-        text(sl, 49, yy, 42, 31, [P(tm, bold=True, size=8, color=Pl["accent"], after=1),
-                                   P(tt, font=HEAD, bold=True, size=10, color=Pl["dark"], after=2, ls=1.0),
-                                   P(dd, size=7.5, color=Pl["text"])])
-    text(sl, 7, 195, 84, 6, [P("Ilustrasi kegiatan; ritme kerja menyesuaikan tempat kerja.", size=6.5, italic=True, color=Pl["muted"])])
+        photo(sl, ph, 0, yy, 47, 37, fx, fy)
+        box(sl, 48.5, yy + 0.4, 4, 4, fill=Pl["accent"], shape=MSO_SHAPE.OVAL, line="FFFFFF", lw=1)
+        text(sl, 55, yy, 37, 37, [P(tm, bold=True, size=8.6, color=Pl["accent"], after=1),
+                                   P(tt, font=HEAD, bold=True, size=11, color=Pl["dark"], after=2, ls=1.0),
+                                   P(dd, size=8, color=Pl["text"], ls=1.1)])
+    text(sl, 7, 201, 84, 5, [P("Ilustrasi kegiatan; ritme kerja menyesuaikan tempat kerja.", size=6.5, italic=True, color=Pl["muted"])])
 
     # back 97-197 : tempat kerja + informasi
     box(sl, 97, 0, 100, 210, fill=Pl["bg1"], name="Latar panel belakang")
-    photo(sl, "lapangan_gudang", 97, 0, 100, 40, .55, .55)
-    heading(sl, 104, 46, 86, "Tempat kerja lulusan", Pl)
-    workplaces_list(sl, 104, 61, Pl)
-    heading(sl, 104, 117, 86, "Informasi", Pl)
-    contact_block(sl, 104, 131, 86, Pl, Pl["text"], Pl["dark"], "0E4D2F")
-    qr_pair(sl, 104, 158, Pl, Pl["dark"], Pl["text"])
+    photo(sl, "lapangan_gudang", 97, 0, 100, 47, .55, .55)
+    heading(sl, 104, 52, 86, "Tempat kerja lulusan", Pl)
+    workplaces_list(sl, 104, 66.5, Pl, rh=8.1, d=6.6, fs=9)
+    box(sl, 97, 127, 100, 83, fill=Pl["dark"], name="Blok informasi")
+    text(sl, 104, 132, 86, 9, [P("Informasi", font=HEAD, bold=True, size=17, color="FFFFFF", ls=1.0)])
+    box(sl, 104, 142.2, 12, 0.9, fill=Pl["yellow"])
+    contact_block(sl, 104, 146.5, 86, Pl, "D6E3DA", "FFFFFF", "FFC20E")
+    qr_pair(sl, 104, 174, Pl, "FFFFFF", "D6E3DA", s=19, gap=24)
 
     # cover 197-297
     photo(sl, "cover_radiograf", 197, 0, 100, 130, .42, .5)
@@ -347,47 +353,47 @@ def concept_a():
     text(sl, 205, 143, 86, 20, [P("Spesialis Kedokteran Okupasi", font=HEAD, bold=True, size=20, color="FFFFFF", ls=0.95)])
     text(sl, 205, 160.5, 86, 8, [P("(Sp.Ok)", font=HEAD, bold=True, size=15, color=Pl["yellow"])])
     box(sl, 205, 171, 12, 0.9, fill=Pl["yellow"])
-    text(sl, 205, 175, 86, 9, [P("Dokter bagi pekerja, dokter bagi tempat kerja.", size=9, italic=True, color="FFFFFF")])
+    text(sl, 205, 175, 86, 9, [P("Dokter bagi pekerja, dokter bagi tempat kerja.", size=9.5, italic=True, color="FFFFFF")])
     badge(sl, 205, 192, 31, "Akreditasi UNGGUL", Pl["yellow"], "FFFFFF")
     badge(sl, 238.5, 192, 50, "Prodi Sp.Ok pertama di Indonesia", Pl["yellow"], "FFFFFF")
 
     # ---------------- INSIDE: P1 | P2 | P3
     sl = blank(prs, "Dalam")
     box(sl, 0, 0, 100, 210, fill=Pl["bg1"], name="Latar panel 1")
-    heading(sl, 7, 10, 86, "Apa yang dikerjakan Sp.Ok?", Pl, size=16)
+    heading(sl, 7, 10, 86, "Apa yang dikerjakan Sp.Ok?", Pl, size=16.5)
     text(sl, 7, 24, 86, 9, [P("Melayani tiga sasaran: komunitas pekerja, individu, dan masyarakat sekitar industri.",
-                              size=7.9, color=Pl["text"])])
-    doing_grid(sl, 7, 36, Pl)
-    box(sl, 7, 114, 86, 33, fill=Pl["bg2"], name="Kotak visi")
-    box(sl, 7, 114, 1.4, 33, fill=Pl["accent"])
-    text(sl, 12, 117.5, 78, 28, [P("VISI", bold=True, size=7.5, color=Pl["accent"], spc=150, after=2),
-                               P("“" + VISI + "”", italic=True, size=7.6, color=Pl["dark"], ls=1.15)])
-    box(sl, 7, 151, 86, 21, fill=Pl["dark"], name="Kotak gelar")
-    text(sl, 12, 154, 78, 16, [P("GELAR LULUSAN", bold=True, size=7.5, color=Pl["yellow"], spc=150, after=2),
-                               P(runs=[("Spesialis Kedokteran Okupasi ", {}), ("(Sp.Ok)", {"color": Pl["yellow"]})],
-                                 font=HEAD, bold=True, size=11.5, color="FFFFFF", ls=1.0)])
-    photo(sl, "lab_pipet", 7, 176, 86, 27, .55, .4)
+                              size=8.4, color=Pl["text"])])
+    doing_grid(sl, 7, 35.5, Pl, rh=20.5, ts=8.3, ds=7.6, d=8.5)
+    box(sl, 0, 119, 100, 64, fill=Pl["dark"], name="Blok visi dan gelar")
+    text(sl, 7, 124, 86, 5, [P("VISI", bold=True, size=7.5, color=Pl["yellow"], spc=200)])
+    text(sl, 7, 129.5, 86, 32, [P("“" + VISI + "”", font=HEAD, italic=True, size=9, color="FFFFFF", ls=1.12)])
+    box(sl, 7, 163.5, 86, 0.4, fill="5E8C70")
+    text(sl, 7, 166, 86, 15, [P("GELAR LULUSAN", bold=True, size=7.5, color=Pl["yellow"], spc=200, after=1.5),
+                              P(runs=[("Spesialis Kedokteran Okupasi ", {}), ("(Sp.Ok)", {"color": Pl["yellow"]})],
+                                font=HEAD, bold=True, size=11.5, color="FFFFFF", ls=1.0)])
+    photo(sl, "lab_pipet", 0, 183, 100, 27, .55, .38)
 
     box(sl, 100, 0, 100, 210, fill=Pl["bg2"], name="Latar panel 2")
     heading(sl, 107, 10, 86, "Persyaratan peserta", Pl)
-    text(sl, 107, 26, 86, 132, persyaratan_paras(Pl), name="Teks persyaratan")
-    photo(sl, "diskusi_toraks", 107, 143, 86, 58, .45, .45)
+    text(sl, 107, 26, 86, 125, persyaratan_paras(Pl), name="Teks persyaratan")
+    photo(sl, "diskusi_toraks", 100, 152, 100, 58, .45, .45)
 
     box(sl, 200, 0, 97, 210, fill=Pl["bg1"], name="Latar panel 3")
     heading(sl, 207, 10, 83, "Pembelajaran dan biaya", Pl)
     for i, (big, sub) in enumerate([("7 semester · 98 SKS", "Lulusan dokter umum"),
                                     ("4 semester · tambahan 65 SKS", "Lulusan Magister Kedokteran Kerja")]):
-        yy = 26 + i * 17
-        box(sl, 207, yy, 83, 15, fill=Pl["bg2"])
-        box(sl, 207, yy, 1.4, 15, fill=Pl["dark"])
-        text(sl, 211, yy + 1.8, 77, 12, [P(big, font=HEAD, bold=True, size=11.5, color=Pl["dark"], after=1, ls=1.0),
-                                         P(sub, size=7.4, color=Pl["text"])])
-    text(sl, 207, 64, 83, 80, biaya_paras(Pl), name="Teks pembelajaran dan biaya")
-    photo(sl, "radiograf_dosen", 207, 146, 83, 32, .45, .5)
-    cta(sl, 207, 180, 83, 21, Pl["dark"], Pl["yellow"], "FFFFFF")
+        yy = 26 + i * 18
+        box(sl, 207, yy, 83, 16, fill=Pl["bg2"])
+        box(sl, 207, yy, 1.4, 16, fill=Pl["dark"])
+        text(sl, 211, yy + 2, 77, 13, [P(big, font=HEAD, bold=True, size=12.5, color=Pl["dark"], after=1, ls=1.0),
+                                       P(sub, size=8, color=Pl["text"])])
+    text(sl, 207, 66, 83, 82, biaya_paras(Pl), name="Teks pembelajaran dan biaya")
+    photo(sl, "radiograf_dosen", 200, 150, 97, 60, .45, .5)
+    cta(sl, 207, 181, 83, 22, Pl["dark"], Pl["yellow"], "FFFFFF")
 
     out = os.path.join(HERE, "Flyer Sp.Ok - Konsep A (Hijau UI x Sehari sebagai Sp.Ok).pptx")
     prs.save(out)
+    SECT.update(head=8.6, body=7.9, gap=7.5)
     return out
 
 
@@ -456,34 +462,27 @@ def concept_b():
     qr_pair(sl, 104, 157, Pl, "FFFFFF", "D5DBD7")
     hazard_stripe(sl, 97, 203, 100, 7)
 
-    # cover: factory skyline with lit door
-    box(sl, 197, 0, 100, 210, fill=Pl["dark"], name="Latar sampul")
-    logo_plate(sl, 203, 7)
-    text(sl, 204, 42, 88, 9, [P("Di balik setiap tempat kerja,", font=HEAD, size=15, color="FFFFFF", ls=1.0)])
-    text(sl, 204, 51, 88, 11, [P("ada dokter okupasi.", font=HEAD, bold=True, italic=True, size=20, color=Pl["accent"], ls=1.0)])
-    text(sl, 204, 66, 88, 12, [P("PROGRAM STUDI SPESIALIS", bold=True, size=8, color="D5DBD7", spc=150),
-                               P("KEDOKTERAN OKUPASI (Sp.Ok)", bold=True, size=10, color="FFFFFF", spc=60)])
-    badge(sl, 204, 82, 31, "Akreditasi UNGGUL", Pl["accent"], "FFFFFF")
-    badge(sl, 237.5, 82, 50, "Prodi Sp.Ok pertama di Indonesia", Pl["accent"], "FFFFFF")
-    # skyline
-    sky = "2A3833"
-    box(sl, 199, 116, 18, 87, fill=sky)                       # left block
-    box(sl, 203, 100, 4.5, 18, fill=sky)                      # chimney
-    box(sl, 210, 106, 4, 12, fill=sky)                        # chimney 2
-    for k, (sx, sy, sd) in enumerate([(205.5, 95, 3.5), (207.5, 90, 4.5)]):
-        box(sl, sx, sy, sd, sd, fill="5E6B66", alpha=0.5 - 0.15 * k, shape=MSO_SHAPE.OVAL)
-    box(sl, 219, 117, 66, 86, fill=Pl["deep"], name="Gedung pabrik")
-    for k in range(3):                                         # saw-tooth roof
-        box(sl, 219 + k * 22, 104, 22, 13.2, fill=Pl["deep"], shape=MSO_SHAPE.RIGHT_TRIANGLE)
-    box(sl, 287, 136, 10, 67, fill=sky)                        # right block
-    for wx in (201.5, 208.5):
-        for wy in (124, 134, 144, 154, 164):
-            box(sl, wx, wy, 4, 5, fill=Pl["accent"], alpha=0.55)
-    for wy in (142, 152, 162):
-        box(sl, 289.5, wy, 4, 5, fill=Pl["accent"], alpha=0.55)
-    box(sl, 229, 138, 44, 65, fill=Pl["accent"], alpha=0.28, name="Cahaya pintu")
-    photo(sl, "edukasi_pekerja", 232, 141, 38, 62, .82, .55, zoom=1.35)
-    box(sl, 232, 141, 38, 62, line=Pl["accent"], lw=2.25, name="Bingkai pintu")
+    # cover: corrugated factory wall, steel door swung open, light from inside
+    import door_art
+    bg, js = door_art.build(A)
+    pic = sl.shapes.add_picture(bg, Mm(197), Mm(0), Mm(100), Mm(210))
+    pic.name = "Latar dinding dan pintu"
+    logo_plate(sl, 203, 7, w=52)
+    text(sl, 204, 33, 88, 8, [P("Di balik setiap tempat kerja,", font=HEAD, size=14, color="FFFFFF", ls=1.0)])
+    text(sl, 204, 40.5, 88, 11, [P("ada dokter okupasi.", font=HEAD, bold=True, italic=True, size=20, color=Pl["accent"], ls=1.0)])
+    text(sl, 204, 53, 88, 10, [P("PROGRAM STUDI SPESIALIS", bold=True, size=7.2, color="D5DBD7", spc=150),
+                               P("KEDOKTERAN OKUPASI (Sp.Ok)", bold=True, size=9.5, color="FFFFFF", spc=60)])
+    badge(sl, 204, 64.5, 31, "Akreditasi UNGGUL", Pl["accent"], "FFFFFF", h=6)
+    badge(sl, 237.5, 64.5, 50, "Prodi Sp.Ok pertama di Indonesia", Pl["accent"], "FFFFFF", h=6)
+    ox0, oy0, ox1, oy1 = 197 + door_art.OX0, door_art.OY0, 197 + door_art.OX1, door_art.OY1
+    photo(sl, "edukasi_pekerja", ox0, oy0, ox1 - ox0, oy1 - oy0, .82, .55, zoom=1.2)
+    sh = sl.shapes.add_picture(js, Mm(ox0), Mm(oy0), Mm(ox1 - ox0), Mm(oy1 - oy0))
+    sh.name = "Bayangan kusen"
+    # K3-style door sign above the frame
+    box(sl, 230, 74, 46, 7.6, fill="00843D", line="FFFFFF", lw=0.9, name="Papan K3")
+    icon(sl, "tabler_stethoscope", "FFFFFF", 231.8, 75.3, 5)
+    text(sl, 237.5, 74, 37.5, 7.6, [P("Sp.Ok SEDANG BERTUGAS", bold=True, size=7.4, color="FFFFFF", spc=40, align="c")], anchor="m")
+    hazard_stripe(sl, ox0, oy1, ox1 - ox0, 2.6, step=5)
     hazard_stripe(sl, 197, 203, 100, 7)
 
     # ---------------- INSIDE
