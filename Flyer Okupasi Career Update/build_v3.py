@@ -36,6 +36,13 @@ def ph(n):
     return os.path.join(bf.PH, n + ".jpg")
 
 
+MIX = False   # V1: mixed shapes (some rounded, some square, some outlined)
+
+
+def sq(sl, x, y, w, h, fill=None, line=None, lw=0.9, name="Kotak"):
+    return box(sl, x, y, w, h, fill=fill, line=line, lw=lw, name=name)
+
+
 def cap(sl, x, y, w, h, fill, r=None, name="Kapsul", line=None):
     s = box(sl, x, y, w, h, fill=fill, shape=MSO_SHAPE.ROUNDED_RECTANGLE, name=name, line=line)
     r = min(w, h) / 2 if r is None else r
@@ -144,13 +151,21 @@ def outside(prs):
     box(sl, 6, 22.5, 12, 0.9, fill=Y)
     for i, (t, d, ph_, fx, fy) in enumerate(DOK):
         y = 26.5 + i * 44.5
-        cap(sl, 4, y, 89, 42, SAGE, name="Kapsul " + t)
-        framed(sl, ph(ph_), 6, y + 3, 36, 36, (18, 18, 18, 18), fx, fy, tag="v3")
+        if MIX and i % 2 == 1:
+            sq(sl, 4, y, 89, 42, line=G, lw=1.0, name="Kotak " + t)
+            framed(sl, ph(ph_), 4, y, 38, 42, (0, 0, 0, 0), fx, fy, tag="v3sq")
+        else:
+            cap(sl, 4, y, 89, 42, SAGE, name="Kapsul " + t)
+            framed(sl, ph(ph_), 6, y + 3, 36, 36, (18, 18, 18, 18), fx, fy, tag="v3")
         text(sl, 45, y + 3, 44, 36, [P(t, font=HEAD, bold=True, size=9.4, color=G, after=1.5, ls=1.0),
                                      P(d, size=7.2, color=INK, ls=1.08)], anchor="m")
 
     # back: peluang karir + kontak
-    cap(sl, 101, 5, 92, 98, SAGE, r=18, name="Kapsul peluang karir")
+    if MIX:
+        sq(sl, 101, 5, 92, 98, fill=SAGE, name="Kotak peluang karir")
+        sq(sl, 101, 5, 2.2, 98, fill=Y, name="Aksen kuning")
+    else:
+        cap(sl, 101, 5, 92, 98, SAGE, r=18, name="Kapsul peluang karir")
     ttl(sl, 109, 12, 78, "Peluang karir")
     for i, (ic, t) in enumerate(KARIR):
         yy = 28 + i * 9.6
@@ -172,7 +187,9 @@ def outside(prs):
 
     # cover
     box(sl, 197, 0, 100, 210, fill=G, name="Latar sampul")
-    framed(sl, ph("gedung"), 197, 0, 100, 92, (0, 0, 40, 40), .5, .5, tag="v3")
+    framed(sl, ph("gedung"), 197, 0, 100, 92, (0, 0, 0, 0) if MIX else (0, 0, 40, 40), .5, .5, tag="v3" + ("sq" if MIX else ""))
+    if MIX:
+        sq(sl, 197, 91, 100, 1.4, fill=Y, name="Garis kuning")
     logo = sl.shapes.add_picture(os.path.join(A, "pdf", "p1_x184_290x122.png"), Mm(246), Mm(6), Mm(46), Mm(46 / 2.377))
     logo.name = "Logo FKUI"
     text(sl, 204, 96, 88, 5, [P("PROGRAM STUDI", bold=True, size=8.6, color=Y, spc=200)])
@@ -183,7 +200,10 @@ def outside(prs):
     text(sl, 204, 127, 88, 11, [P("Dari klinik ke industri,", italic=True, size=9.6, color="FFFFFF", ls=1.05),
                                 P("luaskan peranmu sebagai dokter.", italic=True, size=9.6, color="FFFFFF", ls=1.05)])
     for i, (n, fx, fy) in enumerate([("cover_lab", .5, .4), ("cover_industri", .62, .5), ("cover_periksa", .5, .5)]):
-        framed(sl, ph(n), 204 + i * 30, 141, 28.5, 42, (14.25,) * 4, fx, fy, tag="v3")
+        if MIX and i != 1:
+            framed(sl, ph(n), 204 + i * 30, 141, 28.5, 42, (0, 0, 0, 0), fx, fy, ring="FFFFFF", tag="v3sq")
+        else:
+            framed(sl, ph(n), 204 + i * 30, 141, 28.5, 42, (14.25,) * 4, fx, fy, tag="v3")
     icon(sl, "tabler_award", "FFD200", 204, 187.4, 4.4)
     text(sl, 209.5, 187, 52, 5.4, [P("Terakreditasi LAM-PTKes: Unggul", bold=True, size=7.4, color="FFFFFF")], anchor="m")
     cap(sl, 262, 186.2, 30.5, 7.2, Y, name="Apply now")
@@ -203,7 +223,10 @@ def inside(prs, v):
                                 P("“" + VISI + "”", font=HEAD, italic=True, size=8.2, color="FFFFFF", align="c", ls=1.1)],
          anchor="m")
     misi_h = 78 if v == "V1" else 84
-    cap(sl, 4, 63, 92, misi_h, SAGE, r=14, name="Kapsul misi")
+    if MIX:
+        sq(sl, 4, 63, 92, misi_h, line=G, lw=1.0, name="Kotak misi")
+    else:
+        cap(sl, 4, 63, 92, misi_h, SAGE, r=14, name="Kapsul misi")
     text(sl, 10, 65.5, 80, 5, [P("MISI", bold=True, size=7.6, color=G, spc=200)])
     step = (misi_h - 9) / 5
     for i, (ic, t, d) in enumerate(MISI):
@@ -212,7 +235,7 @@ def inside(prs, v):
         text(sl, 18, yy - 0.4, 75, step, [P(t, bold=True, size=8, color=G, after=0.3, ls=1.0),
                                          P(d, size=6.9, color=INK, ls=1.05)])
     if v == "V1":
-        cap(sl, 4, 144, 92, 62, G, r=16, name="Kapsul dosen")
+        sq(sl, 4, 144, 92, 62, fill=G, name="Kotak dosen") if MIX else cap(sl, 4, 144, 92, 62, G, r=16, name="Kapsul dosen")
         text(sl, 4, 146.5, 92, 6, [P("Dosen pengajar", font=HEAD, bold=True, size=10, color="FFFFFF", align="c")])
         d = 15
         spots = [(4 + 92 * (i + .5) / 4, 153.5, 22.5) for i in range(4)] + [(4 + 92 * (i + .5) / 3, 177.5, 29) for i in range(3)]
@@ -226,11 +249,14 @@ def inside(prs, v):
 
     # P2 persyaratan dan biaya
     ttl(sl, 106, 7, 88, "Persyaratan dan Biaya")
-    cap(sl, 104, 20, 92, 112, SAGE, r=14, name="Kapsul persyaratan")
+    if MIX:
+        sq(sl, 104, 20, 92, 112, fill=SAGE, name="Kotak persyaratan")
+    else:
+        cap(sl, 104, 20, 92, 112, SAGE, r=14, name="Kapsul persyaratan")
     text(sl, 110, 23.5, 81, 107, syarat(), name="Teks persyaratan")
     cap(sl, 104, 135, 92, 40, G, r=14, name="Kapsul biaya")
     text(sl, 110, 137.5, 81, 35, biaya(), name="Teks biaya", anchor="m")
-    framed(sl, ph("lab_pipet"), 104, 178, 92, 28, (14,) * 4, .55, .4, tag="v3")
+    framed(sl, ph("lab_pipet"), 104, 178, 92, 28, (0, 0, 0, 0) if MIX else (14,) * 4, .55, .4, tag="v3" + ("sq" if MIX else ""))
 
     # P3 kurikulum dan fasilitas
     text(sl, 205, 7, 88, 8, [P("Kurikulum dan Fasilitas Pendidikan", font=HEAD, bold=True, size=14, color=G, ls=0.98)])
@@ -238,10 +264,10 @@ def inside(prs, v):
     for i, (big, sub) in enumerate([("7 semester (98 SKS)", "Lulusan dokter umum"),
                                     ("4 semester (65 SKS)", "Lulusan Magister Kedokteran Kerja")]):
         x = 204 + i * 46
-        cap(sl, x, 25, 44, 18, Y, name="Kapsul kurikulum")
+        sq(sl, x, 25, 44, 18, fill=Y, name="Kotak kurikulum") if MIX else cap(sl, x, 25, 44, 18, Y, name="Kapsul kurikulum")
         text(sl, x + 3, 25, 38, 18, [P(big, font=HEAD, bold=True, size=9.6, color=G, align="c", ls=1.0, after=0.5),
                                      P(sub, size=6.6, color=G, align="c", ls=1.0)], anchor="m")
-    cap(sl, 204, 46, 90, 31, "FFFFFF", r=10, name="Kapsul tahap")
+    sq(sl, 204, 46, 90, 31, fill="FFFFFF", line=G, lw=0.9, name="Kotak tahap") if MIX else cap(sl, 204, 46, 90, 31, "FFFFFF", r=10, name="Kapsul tahap")
     tp = sl.shapes.add_picture(os.path.join(A, "pdf", "p2_x220_652x218.png"), Mm(207), Mm(47.5), Mm(84), Mm(84 / 2.99))
     tp.name = "Tahap pendidikan"
     cap(sl, 204, 80, 90, 66, SAGE, r=12, name="Kapsul fasilitas")
@@ -254,7 +280,7 @@ def inside(prs, v):
     else:
         text(sl, 210, 89.5, 80, 56, [P(f"{i}. {t}", size=7.5, color=INK, ls=1.05, after=1.35)
                                    for i, (_, t) in enumerate(FASILITAS, 1)])
-    cap(sl, 204, 149, 90, 57, "FFFFFF", r=12, name="Kapsul kerjasama")
+    sq(sl, 204, 149, 90, 57, fill="FFFFFF", line=G, lw=0.9, name="Kotak kerjasama") if MIX else cap(sl, 204, 149, 90, 57, "FFFFFF", r=12, name="Kapsul kerjasama")
     text(sl, 208, 151.5, 82, 9, [P("Kerjasama program studi dengan universitas dan lembaga dalam penyelenggaraan pendidikan",
                                    bold=True, size=7.6, color=G, align="c", ls=1.05)])
     a = sl.shapes.add_picture(os.path.join(A, "pdf", "p2_x221_392x56.png"), Mm(213), Mm(162), Mm(72), Mm(72 / 7.0))
@@ -264,6 +290,8 @@ def inside(prs, v):
 
 
 def build(v):
+    global MIX
+    MIX = (v == "V1")
     bf.SECT.update(head=8.6, body=7.9, gap=7.5)
     prs = new_deck()
     outside(prs)
