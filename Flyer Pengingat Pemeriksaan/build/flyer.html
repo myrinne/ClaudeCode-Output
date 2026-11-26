@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080">
+<title>Flyer: Sebelum Pemeriksaan Kulit dan Panas</title>
+<style>
+@font-face { font-family: 'Oswald'; font-weight: 500; src: url(fonts/Oswald-normal-500-latin.woff2) format('woff2'); }
+@font-face { font-family: 'Oswald'; font-weight: 600; src: url(fonts/Oswald-normal-600-latin.woff2) format('woff2'); }
+:root { --cream: #ece4d3; --card: #f7f2e6; --red: #c8281e; --dark: #1f1b16; --teal: #2f6f73; --green: #3f9d6b; --muted: #6f6453; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; background: var(--cream); }
+body { font-family: 'Oswald', 'Arial Narrow', sans-serif; color: var(--dark); position: relative; overflow: hidden; }
+
+/* header */
+.head { position: absolute; left: 60px; top: 56px; width: 640px; }
+.kicker { display: inline-block; white-space: nowrap; background: var(--teal); color: #fff; font-weight: 600; font-size: 27px; letter-spacing: .3px; padding: 4px 16px; }
+.title-1 { font-weight: 600; font-size: 64px; line-height: 1; margin-top: 26px; text-transform: uppercase; }
+.title-2 { font-weight: 600; font-size: 118px; line-height: .95; color: var(--red); text-transform: uppercase; }
+.title-3 { font-weight: 500; font-size: 46px; line-height: 1.1; margin-top: 10px; text-transform: uppercase; }
+.dates { position: absolute; left: 60px; top: 432px; display: flex; gap: 14px; align-items: center; }
+.date { background: var(--dark); color: #fff; font-weight: 600; font-size: 34px; padding: 6px 18px; text-transform: uppercase; }
+.dates .or { font-weight: 500; font-size: 30px; color: var(--muted); }
+.doc { position: absolute; right: 44px; top: 96px; height: 326px; }
+
+/* the five don'ts */
+.rows { position: absolute; left: 40px; right: 40px; top: 520px; display: flex; flex-direction: column; gap: 14px; }
+.row { position: relative; background: var(--card); border-radius: 22px; height: 196px; display: grid; grid-template-columns: 74px 178px 250px 1fr; align-items: center;
+  box-shadow: 2px 4px 8px rgba(42, 22, 8, .16); }
+.row:nth-child(3), .row:nth-child(5) { height: 186px; } .row:nth-child(4) { height: 216px; }
+.num { width: 58px; height: 58px; border-radius: 50%; background: var(--green); color: #fff; font-weight: 600; font-size: 38px; display: grid; place-items: center; margin-left: 16px; }
+.hrs { text-align: center; line-height: .9; }
+.hrs b { display: block; font-weight: 600; font-size: 104px; color: var(--red); }
+.hrs span { display: block; font-weight: 600; font-size: 40px; margin-top: 4px; }
+.hrs.word b { font-size: 50px; line-height: 1; }
+.hrs.word span { font-size: 30px; margin-top: 6px; }
+.ico { width: 250px; height: 190px; }
+.txt { padding-right: 24px; }
+.band { display: inline-block; background: var(--red); color: #fff; font-weight: 600; font-size: 36px; line-height: 1.48; padding: 3px 12px; text-transform: uppercase; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.detail { font-weight: 500; font-size: 28px; line-height: 1.2; margin-top: 6px; }
+.ok { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; background: var(--green); color: #fff; font-weight: 600; font-size: 27px; padding: 2px 12px 2px 6px; text-transform: uppercase; }
+.ok i { width: 30px; height: 30px; border-radius: 50%; background: #fff; display: grid; place-items: center; }
+.ok i::after { content: ''; width: 12px; height: 7px; border-left: 5px solid var(--green); border-bottom: 5px solid var(--green); transform: translateY(-2px) rotate(-45deg); }
+
+/* what will be checked */
+.steps-h { position: absolute; left: 60px; top: 1586px; display: flex; align-items: baseline; gap: 16px; }
+.steps-h b { font-weight: 600; font-size: 46px; text-transform: uppercase; color: var(--teal); }
+.steps-h span { font-weight: 500; font-size: 28px; color: var(--muted); }
+.steps { position: absolute; left: 40px; top: 1652px; width: 744px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.step { background: var(--card); border-radius: 18px; height: 222px; text-align: center; padding-top: 6px; box-shadow: 2px 4px 8px rgba(42, 22, 8, .14); position: relative; }
+.step .n { position: absolute; left: 10px; top: 10px; width: 38px; height: 38px; border-radius: 50%; background: var(--green); color: #fff; font-weight: 600; font-size: 25px; display: grid; place-items: center; }
+.step svg { width: 160px; height: 118px; }
+.step p { font-weight: 600; font-size: 25px; line-height: 1.1; text-transform: uppercase; padding: 0 6px; }
+.step small { display: block; font-weight: 500; font-size: 21px; color: var(--muted); text-transform: none; margin-top: 3px; }
+.workers { position: absolute; right: 16px; bottom: 56px; display: flex; align-items: flex-end; }
+.workers img { height: 214px; margin-left: 2px; }
+.ask { position: absolute; right: 40px; bottom: 14px; font-weight: 500; font-size: 24px; color: var(--muted); text-align: right; }
+.ask b { color: var(--teal); font-weight: 600; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <filter id="paper" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3" result="warp"/>
+    <feDisplacementMap in="SourceGraphic" in2="warp" scale="3.5" xChannelSelector="R" yChannelSelector="G" result="cut"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="7" result="fib"/>
+    <feColorMatrix in="fib" type="matrix" values="0 0 0 0 .25  0 0 0 0 .17  0 0 0 0 .08  .5 0 0 0 -.14" result="tint"/>
+    <feComposite in="tint" in2="cut" operator="in" result="grain"/>
+    <feMerge result="tex"><feMergeNode in="cut"/><feMergeNode in="grain"/></feMerge>
+    <feDropShadow in="tex" dx="2.5" dy="3.5" stdDeviation="2.2" flood-color="#2a1608" flood-opacity=".38"/>
+  </filter>
+</defs></svg>
+
+<div class="head">
+  <span class="kicker">PEMERIKSAAN KULIT DAN PANAS · INSTALASI GIZI</span>
+  <div class="title-1">Sebelum pemeriksaan,</div>
+  <div class="title-2">Ingat 5 hal</div>
+  <div class="title-3">yang tidak boleh dilakukan</div>
+</div>
+<img class="doc" src="puppet_dokter.png" alt="">
+<div class="dates"><span class="date">Senin, 30 November 2026</span><span class="or">atau</span><span class="date">Rabu, 2 Desember 2026</span></div>
+
+<div class="rows">
+  <div class="row"><div class="num">1</div><div class="hrs"><b>24</b><span>JAM</span></div><svg class="ico" id="i1" viewBox="-160 -112 320 224"></svg>
+    <div class="txt"><span class="band">Jangan dioles di lengan bawah</span><p class="detail">Losion, pelembap, minyak, atau tabir surya, 24 jam sebelumnya.</p></div></div>
+  <div class="row"><div class="num">2</div><div class="hrs"><b>24</b><span>JAM</span></div><svg class="ico" id="i2" viewBox="-160 -112 320 224"></svg>
+    <div class="txt"><span class="band">Jangan minum suplemen &amp; obat</span><p class="detail">Vitamin C, vitamin E, glutation, atau obat pengencer dahak, 24 jam sebelumnya.</p></div></div>
+  <div class="row"><div class="num">3</div><div class="hrs"><b>3</b><span>JAM</span></div><svg class="ico" id="i3" viewBox="-160 -112 320 224"></svg>
+    <div class="txt"><span class="band">Jangan merokok</span><p class="detail">3 jam sebelum darah diambil.</p></div></div>
+  <div class="row"><div class="num">4</div><div class="hrs"><b>2</b><span>JAM</span></div><svg class="ico" id="i4" viewBox="-160 -112 320 224"></svg>
+    <div class="txt"><span class="band">Jangan cuci / basahi lengan bawah</span><p class="detail">2 jam sebelum pemeriksaan.</p><span class="ok"><i></i>Telapak tangan boleh basah</span></div></div>
+  <div class="row"><div class="num">5</div><div class="hrs word"><b>SETELAH SHIFT</b><span>sebelum diperiksa</span></div><svg class="ico" id="i5" viewBox="-160 -112 320 224"></svg>
+    <div class="txt"><span class="band">Jangan mandi dulu</span><p class="detail">Tunggu sampai pemeriksaan kulit selesai. Mandi sesudahnya.</p></div></div>
+</div>
+
+<div class="steps-h"><b>Yang akan diperiksa</b><span>setelah shift selesai</span></div>
+<div class="steps">
+  <div class="step"><span class="n">1</span><svg id="s1" viewBox="-110 -84 220 168"></svg><p>Isi kuesioner</p></div>
+  <div class="step"><span class="n">2</span><svg id="s2" viewBox="-110 -84 220 168"></svg><p>Timbang &amp; tinggi badan</p></div>
+  <div class="step"><span class="n">3</span><svg id="s3" viewBox="-150 -114 300 228"></svg><p>Kelembaban lengan bawah<small>tidak sakit</small></p></div>
+  <div class="step"><span class="n">4</span><svg id="s4" viewBox="-110 -84 220 168"></svg><p>Darah 3–5 <span style="text-transform:none">mL</span><small>± 1 sendok teh</small></p></div>
+</div>
+<div class="workers"><img src="puppet_bapak.png" alt=""><img src="puppet_ibu.png" alt=""></div>
+<div class="ask">Ada pertanyaan? Tanyakan kepada <b>dr. Vidya Cecilia</b></div>
+
+<script>
+'use strict';
+// Paper icons copied from the reminder film (Video Briefing Pekerja/site/pengingat/lib/pengingat.js, forearm.js, ch01/scene7.js)
+const INK = '#2b2b2b', GREEN = '#3f9d6b', RED = '#c8281e';
+const pf = body => `<g filter="url(#paper)">${body}</g>`;
+function FOREARM() {
+  const skin = '#e8be98', light = '#f3d6b8', shade = '#cf9f79';
+  const fingers = [[-22, 50], [-7, 56], [8, 50], [22, 40]].map(([y, len]) => `<rect x="92" y="${y - 7}" width="${len}" height="14" rx="7" fill="${skin}"/>`).join('');
+  const thumb = `<ellipse cx="60" cy="-31" rx="25" ry="11" transform="rotate(-32 60 -31)" fill="${skin}"/>`;
+  const body = `<path d="M-112,-30 Q-112,-44 -96,-43 C-50,-44 0,-34 42,-27 L42,27 C0,34 -50,44 -96,43 Q-112,44 -112,30 Z" fill="${skin}"/>`;
+  const inner = `<path d="M-92,-9 C-40,-19 0,-15 40,-9 L40,9 C0,15 -40,19 -92,9 Z" fill="${light}" opacity=".6"/>`;
+  const palm = `<ellipse cx="72" cy="0" rx="34" ry="30" fill="${skin}"/>`;
+  const crease = `<path d="M44,-24 q8,24 0,48" stroke="${shade}" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M58,-6 q18,6 34,-2" stroke="${shade}" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>`;
+  return pf(thumb + fingers + palm + body + inner + crease);
+}
+const IC = {
+  arm: () => FOREARM(),
+  cream: () => pf(`<path d="M-70,-8 q20,-22 44,-4 q22,16 46,-2 q24,-14 44,6 q-6,26 -36,22 q-30,12 -52,-2 q-24,6 -46,-20 Z" fill="#fffdf6" opacity=".92"/>`),
+  faucet: () => pf(`<rect x="-14" y="-64" width="28" height="30" rx="6" fill="#7f8c95"/><path d="M-60,-34 H34 a22,22 0 0 1 22,22 V8 H34 V-12 H-60 Z" fill="#a6b3bb"/><rect x="26" y="4" width="36" height="14" rx="5" fill="#7f8c95"/>`),
+  drops: () => pf([0, 1, 2].map(i => `<path d="M${44 + (i - 1) * 3},${34 + i * 34} c0,0 -14,16 -14,24 a14,14 0 0 0 28,0 c0,-8 -14,-24 -14,-24 Z" fill="#4aa3d6"/>`).join('')),
+  cig: () => pf(`<g transform="rotate(-28)"><rect x="-80" y="-14" width="116" height="28" rx="5" fill="#f7f3ea"/><rect x="36" y="-14" width="44" height="28" rx="5" fill="#d98a3a"/><rect x="-92" y="-14" width="16" height="28" rx="4" fill="#c8322f"/></g>`)
+    + pf(`<path d="M-76,-28 C-100,-60 -60,-72 -82,-100" stroke="#b9bfc4" stroke-width="9" fill="none" stroke-linecap="round"/>`),
+  blood: () => pf(`<path d="M0,-44 C0,-44 -36,2 -36,22 A36,36 0 0 0 36,22 C36,2 0,-44 0,-44 Z" fill="${RED}"/>`) + pf(`<path d="M-14,16 q0,14 12,18" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" opacity=".8"/>`),
+  clock: () => pf(`<circle r="40" fill="#fff"/><circle r="40" fill="none" stroke="#e0a02f" stroke-width="9"/>`) + pf(`<path d="M0,0 V-24 M0,0 L17,10" stroke="${INK}" stroke-width="7" stroke-linecap="round"/>`),
+  losion: () => pf(`<rect x="-20" y="-6" width="40" height="42" rx="9" fill="#7ec0e0"/><rect x="-8" y="-24" width="16" height="18" rx="4" fill="#4a7f99"/><rect x="-8" y="-30" width="30" height="9" rx="4" fill="#4a7f99"/>`),
+  pelembap: () => pf(`<rect x="-30" y="-6" width="60" height="34" rx="9" fill="#f2a6c0"/><rect x="-33" y="-20" width="66" height="16" rx="6" fill="#fff"/>`),
+  minyak: () => pf(`<rect x="-18" y="-10" width="36" height="46" rx="10" fill="#e8b923"/><rect x="-8" y="-28" width="16" height="20" rx="4" fill="#9a7a10"/><path d="M0,2 c0,0 -9,10 -9,15 a9,9 0 0 0 18,0 c0,-5 -9,-15 -9,-15 Z" fill="#fff4c4"/>`),
+  tabir: () => pf(`<circle r="20" fill="#f08a2c"/>${Array.from({ length: 8 }, (_, i) => { const a = i * Math.PI / 4; return `<path d="M${(Math.cos(a) * 28).toFixed(1)},${(Math.sin(a) * 28).toFixed(1)} L${(Math.cos(a) * 38).toFixed(1)},${(Math.sin(a) * 38).toFixed(1)}" stroke="#f08a2c" stroke-width="7" stroke-linecap="round"/>`; }).join('')}`),
+  vitC: () => pf(`<circle r="30" fill="#f08a2c"/>`) + `<text y="14" text-anchor="middle" font-size="40" font-weight="800" font-family="Arial,sans-serif" fill="#fff">C</text>`,
+  vitE: () => pf(`<circle r="30" fill="#e8c030"/>`) + `<text y="14" text-anchor="middle" font-size="40" font-weight="800" font-family="Arial,sans-serif" fill="#fff">E</text>`,
+  gluta: () => pf(`<g transform="rotate(-35)"><rect x="-34" y="-15" width="68" height="30" rx="15" fill="#fff"/><path d="M-34,0 a15,15 0 0 1 15,-15 H0 V15 H-19 a15,15 0 0 1 -15,-15 Z" fill="#9b6bc2"/></g>`),
+  syrup: () => pf(`<rect x="-18" y="-14" width="36" height="50" rx="9" fill="#5aa77a"/><rect x="-10" y="-30" width="20" height="18" rx="4" fill="#2f6f4c"/><rect x="-12" y="2" width="24" height="18" rx="4" fill="#f4f1ea"/>`),
+  pill: () => pf(`<g transform="rotate(-35)"><rect x="-56" y="-22" width="112" height="44" rx="22" fill="#fff"/><path d="M-56,0 a22,22 0 0 1 22,-22 H0 V22 H-34 a22,22 0 0 1 -22,-22 Z" fill="#9b6bc2"/></g>`)
+    + pf(`<circle cx="46" cy="40" r="22" fill="#f08a2c"/><circle cx="-26" cy="50" r="18" fill="#e8c030"/>`),
+  no: r => pf(`<circle r="${r}" fill="none" stroke="${RED}" stroke-width="${Math.max(16, r / 6) * .5}"/><path d="M${-r * .7},${-r * .7} L${r * .7},${r * .7}" stroke="${RED}" stroke-width="${Math.max(16, r / 6) * .5}" stroke-linecap="round"/>`),
+  // new for the flyer, same paper style: a shower head on a pipe, with falling water
+  shower: () => pf(`<path d="M70,-96 V-70 a26,26 0 0 1 -26,26 H6" stroke="#a6b3bb" stroke-width="16" fill="none" stroke-linecap="round"/>`)
+    + pf(`<path d="M-54,-30 a40,26 0 0 1 80,0 Z" fill="#7f8c95"/><rect x="-58" y="-32" width="88" height="12" rx="6" fill="#a6b3bb"/>`)
+    + pf([[-44, 4], [-22, 14], [0, 4], [22, 14], [-34, 46], [-10, 54], [12, 46]].map(([x, y]) => `<path d="M${x},${y} c0,0 -10,12 -10,18 a10,10 0 0 0 20,0 c0,-6 -10,-18 -10,-18 Z" fill="#4aa3d6"/>`).join('')),
+  // scene 7 step icons
+  clip: () => pf(`<rect x="-52" y="-66" width="104" height="132" rx="12" fill="#fff"/><rect x="-26" y="-76" width="52" height="22" rx="8" fill="#7f8c95"/>`)
+    + pf(`<path d="M-30,-26 h60 M-30,-4 h60 M-30,18 h36" stroke="#9aa9aa" stroke-width="8" stroke-linecap="round"/><path d="M12,36 l12,14 l24,-28" stroke="${GREEN}" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`),
+  scale: () => pf(`<rect x="-62" y="-4" width="124" height="52" rx="14" fill="#7ec0e0"/><rect x="-36" y="6" width="72" height="30" rx="9" fill="#fff"/>`) + pf(`<path d="M-22,22 a22,22 0 0 1 44,0" stroke="${RED}" stroke-width="6" fill="none"/><path d="M0,22 L10,10" stroke="${INK}" stroke-width="5" stroke-linecap="round"/>`),
+  ruler: () => pf(`<rect x="-14" y="-70" width="28" height="140" rx="7" fill="#e0a02f"/>`) + pf(`<path d="M-14,-50 h14 M-14,-30 h20 M-14,-10 h14 M-14,10 h20 M-14,30 h14 M-14,50 h20" stroke="#7a5a10" stroke-width="4"/>`),
+  probe: () => pf(`<rect x="-22" y="-70" width="44" height="60" rx="14" fill="#8a97a0"/><ellipse cx="0" cy="-10" rx="26" ry="10" fill="#5f6b73"/>`) + pf(`<circle cx="0" cy="-44" r="9" fill="#4aa3d6"/>`),
+  tube: () => pf(`<rect x="-22" y="-60" width="44" height="120" rx="20" fill="#eef6fa"/><rect x="-22" y="-60" width="44" height="20" rx="8" fill="#4aa3d6"/>`) + pf(`<path d="M-22,0 H22 V40 a22,22 0 0 1 -44,0 Z" fill="${RED}"/>`),
+};
+const at = (svg, x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})">${svg}</g>`;
+const NO = (x, y, r) => at(IC.no(r), x, y);
+const put = (id, html) => { document.getElementById(id).innerHTML = html; };
+
+put('i1', at(IC.arm(), 0, -30, .95) + at(IC.cream(), 12, -36, .9) + NO(14, -30, 74)
+  + ['losion', 'pelembap', 'minyak', 'tabir'].map((k, i) => at(IC[k](), -96 + i * 64, 74, .78)).join(''));
+put('i2', at(IC.pill(), -6, -26, 1) + NO(-6, -26, 70)
+  + ['vitC', 'vitE', 'gluta', 'syrup'].map((k, i) => at(IC[k](), -96 + i * 64, 78, .74)).join(''));
+put('i3', at(IC.cig(), -30, 0, 1) + NO(-30, 4, 76) + at(IC.blood(), 104, -10, .9) + at(IC.clock(), 104, 74, .62));
+put('i4', at(IC.arm(), 6, 44, .95) + at(IC.faucet(), -4, -24, .78) + at(IC.drops(), 16, -24, .78) + NO(-4, 14, 66) + at(IC.clock(), -126, 70, .5));
+put('i5', at(IC.shower(), -6, -8, 1.05) + NO(-6, 0, 86));
+put('s1', at(IC.clip(), 0, 4, .95));
+put('s2', at(IC.scale(), -26, 18, 1) + at(IC.ruler(), 66, 0, .95));
+put('s3', at(IC.arm(), 0, 46, .95) + at(IC.probe(), -10, 8, 1.1));
+put('s4', at(IC.tube(), -24, 4, .95) + at(IC.blood(), 50, 14, .7));
+</script>
+</body>
+</html>
