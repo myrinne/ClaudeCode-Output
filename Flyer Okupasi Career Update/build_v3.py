@@ -151,7 +151,7 @@ def outside(prs):
     box(sl, 6, 22.5, 12, 0.9, fill=Y)
     for i, (t, d, ph_, fx, fy) in enumerate(DOK):
         y = 26.5 + i * 44.5
-        if MIX and i % 2 == 1:
+        if MIX:
             sq(sl, 4, y, 89, 42, line=G, lw=1.0, name="Kotak " + t)
             framed(sl, ph(ph_), 4, y, 38, 42, (0, 0, 0, 0), fx, fy, tag="v3sq")
         else:
