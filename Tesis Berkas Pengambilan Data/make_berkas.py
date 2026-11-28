@@ -554,6 +554,102 @@ def make_label_tabung(path):
     d.save(path)
 
 
+# ---------------------------------------------------------------- 5b. label EDTA (Tom & Jerry 108)
+# Her revision 28 Nov: EDTA tubes only (microtubes get a waterproof label).
+# Sheet 210 x 165 mm, label 38 x 18 mm, 5 x 8 = 40 per sheet, 3 mm horizontal and
+# 2 mm vertical gap. Grid 202 x 158 mm, centred -> 4 mm left/right, 3.5 mm top.
+# One table: label cells alternate with empty spacer columns/rows (all twips, so
+# Word cannot drift). Bottom margin is a little smaller than the top so the 158 mm
+# grid plus the 1 pt closing paragraph fit and each sheet breaks exactly.
+TJ_TW = {"lab_w": 2154, "lab_h": 1020, "gap_w": 170, "gap_h": 113}  # 38, 18, 3, 2 mm
+TJ_COLS, TJ_ROWS = 5, 8
+
+
+def _tw(el, tag, **attrs):
+    e = OxmlElement(tag)
+    for k, v in attrs.items():
+        e.set(qn(f"w:{k}"), str(v))
+    el.append(e)
+    return e
+
+
+def make_label_edta_tj108(path):
+    d = new_doc(font_pt=9)
+    s = d.sections[0]
+    s.page_width, s.page_height = Cm(21.0), Cm(16.5)
+    s.left_margin = s.right_margin = Cm(0.4)
+    s.top_margin, s.bottom_margin = Cm(0.35), Cm(0.25)
+    s.header_distance = s.footer_distance = Cm(0)
+    per = TJ_COLS * TJ_ROWS
+    sheets = []  # each day starts on a fresh sheet
+    for h, _, tgl in HARI:
+        kodes = [(f"{h}-{i:02d}", tgl) for i in range(1, JUMLAH[h] + 1)]
+        for st in range(0, len(kodes), per):
+            sheets.append(kodes[st:st + per])
+    ncols = TJ_COLS * 2 - 1
+    nrows = (TJ_ROWS * 2 - 1) * len(sheets)
+    t = d.add_table(rows=nrows, cols=ncols)
+    no_borders(t)
+    tblPr = t._tbl.tblPr
+    _tw(tblPr, "w:tblW", w=TJ_COLS * TJ_TW["lab_w"] + (TJ_COLS - 1) * TJ_TW["gap_w"], type="dxa")
+    _tw(tblPr, "w:tblInd", w=0, type="dxa")
+    mar = _tw(tblPr, "w:tblCellMar")
+    for side in ("top", "left", "bottom", "right"):
+        _tw(mar, f"w:{side}", w=0, type="dxa")
+    widths = [TJ_TW["lab_w"] if j % 2 == 0 else TJ_TW["gap_w"] for j in range(ncols)]
+    set_grid(t, [w / 567 for w in widths])
+    for gc, w in zip(t._tbl.tblGrid, widths):  # exact twips, not cm-rounded
+        gc.set(qn("w:w"), str(w))
+    order = ["tblStyle", "tblW", "jc", "tblInd", "tblBorders", "tblLayout", "tblCellMar", "tblLook"]
+    kids = {}
+    for e in list(tblPr):
+        tag = e.tag.split("}")[1]
+        tblPr.remove(e)
+        if tag == "tblW" and e.get(qn("w:type")) != "dxa":
+            continue  # drop python-docx's auto width, keep ours
+        kids.setdefault(tag, e)
+    for tag in order:
+        if tag in kids:
+            tblPr.append(kids[tag])
+    rows_per_sheet = TJ_ROWS * 2 - 1
+    for ri, row in enumerate(t.rows):
+        local = ri % rows_per_sheet
+        is_label = local % 2 == 0
+        trPr = row._tr.get_or_add_trPr()
+        _tw(trPr, "w:cantSplit")
+        _tw(trPr, "w:trHeight", val=TJ_TW["lab_h"] if is_label else TJ_TW["gap_h"], hRule="exact")
+        sheet = sheets[ri // rows_per_sheet]
+        for cj, c in enumerate(row.cells):
+            c._tc.get_or_add_tcPr()
+            c.width = Cm(widths[cj] / 567)
+            p = c.paragraphs[0]
+            p.paragraph_format.space_after = Pt(0)
+            if not is_label or cj % 2:
+                r = p.add_run()
+                r.font.size = Pt(1)
+                continue
+            k = (local // 2) * TJ_COLS + cj // 2
+            c.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+            if k >= len(sheet):
+                continue
+            kode, tgl = sheet[k]
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            r = p.add_run(kode)
+            r.bold = True
+            r.font.size = Pt(16)
+            p2 = c.add_paragraph()
+            p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            p2.paragraph_format.space_after = Pt(0)
+            r = p2.add_run(f"EDTA · {tgl}")
+            r.font.size = Pt(7.5)
+    # closing paragraph after the table: as small as Word allows
+    last = d.add_paragraph()
+    last.paragraph_format.space_after = Pt(0)
+    last.paragraph_format.line_spacing = Pt(1)
+    last.add_run().font.size = Pt(1)
+    d.save(path)
+
+
 # ---------------------------------------------------------------- 6. daftar hadir
 def make_absen(path):
     d = new_doc(margin_cm=1.5)
@@ -586,7 +682,8 @@ def main():
         ("03 Lembar Data Pengukuran.docx", make_lembar_data),
         ("04 Kartu Alur Peserta.docx", make_kartu),
         # 05 Label Nama Peserta: dropped by her on 22 Nov ("tidak usah"); run with "05" to make it anyway.
-        ("06 Label Tabung EDTA dan Mikrotube.docx", make_label_tabung),
+        # 06 revised 28 Nov: EDTA only, Tom & Jerry 108 sheet (microtubes get a waterproof label).
+        ("06 Label Tabung EDTA (Tom&Jerry 108).docx", make_label_edta_tj108),
         ("07 Daftar Hadir 2 Hari (kosong).docx", make_absen),
     ]
     only = sys.argv[2:]  # optional file-number filter, e.g. 03 04
