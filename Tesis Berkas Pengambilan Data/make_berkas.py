@@ -580,12 +580,29 @@ def make_label_edta_tj108(path):
     s.left_margin = s.right_margin = Cm(0.4)
     s.top_margin, s.bottom_margin = Cm(0.35), Cm(0.25)
     s.header_distance = s.footer_distance = Cm(0)
+    # Each sheet = 40 slots (row-major), slot = (kode, small line) or None.
+    # Each day starts on a fresh sheet. EDTA sheets come first, then plasma.
     per = TJ_COLS * TJ_ROWS
-    sheets = []  # each day starts on a fresh sheet
+    sheets = []
     for h, _, tgl in HARI:
-        kodes = [(f"{h}-{i:02d}", tgl) for i in range(1, JUMLAH[h] + 1)]
-        for st in range(0, len(kodes), per):
-            sheets.append(kodes[st:st + per])
+        slots = [(f"{h}-{i:02d}", f"EDTA · {tgl}") for i in range(1, JUMLAH[h] + 1)]
+        for st in range(0, len(slots), per):
+            chunk = slots[st:st + per]
+            sheets.append(chunk + [None] * (per - len(chunk)))
+    # Plasma (added 28 Nov): Plasma 1 and 2 side by side per code, two pairs per
+    # row in columns 1-4, column 5 left blank so no pair breaks across rows.
+    pairs_per_row = TJ_COLS // 2
+    for h, _, tgl in HARI:
+        rows = []
+        for i in range(1, JUMLAH[h] + 1):
+            if i % pairs_per_row == 1 or pairs_per_row == 1:
+                rows.append([])
+            for n in (1, 2):
+                rows[-1].append((f"{h}-{i:02d}", f"Plasma {n} · {tgl}"))
+        rows = [r + [None] * (TJ_COLS - len(r)) for r in rows]
+        for st in range(0, len(rows), TJ_ROWS):
+            chunk = [x for r in rows[st:st + TJ_ROWS] for x in r]
+            sheets.append(chunk + [None] * (per - len(chunk)))
     ncols = TJ_COLS * 2 - 1
     nrows = (TJ_ROWS * 2 - 1) * len(sheets)
     t = d.add_table(rows=nrows, cols=ncols)
@@ -630,9 +647,9 @@ def make_label_edta_tj108(path):
                 continue
             k = (local // 2) * TJ_COLS + cj // 2
             c.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
-            if k >= len(sheet):
+            if sheet[k] is None:
                 continue
-            kode, tgl = sheet[k]
+            kode, line2 = sheet[k]
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             r = p.add_run(kode)
             r.bold = True
@@ -640,7 +657,7 @@ def make_label_edta_tj108(path):
             p2 = c.add_paragraph()
             p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
             p2.paragraph_format.space_after = Pt(0)
-            r = p2.add_run(f"EDTA · {tgl}")
+            r = p2.add_run(line2)
             r.font.size = Pt(7.5)
     # closing paragraph after the table: as small as Word allows
     last = d.add_paragraph()
@@ -682,8 +699,8 @@ def main():
         ("03 Lembar Data Pengukuran.docx", make_lembar_data),
         ("04 Kartu Alur Peserta.docx", make_kartu),
         # 05 Label Nama Peserta: dropped by her on 22 Nov ("tidak usah"); run with "05" to make it anyway.
-        # 06 revised 28 Nov: EDTA only, Tom & Jerry 108 sheet (microtubes get a waterproof label).
-        ("06 Label Tabung EDTA (Tom&Jerry 108).docx", make_label_edta_tj108),
+        # 06 revised 28 Nov: EDTA sheets, then Plasma 1+2 side by side, Tom & Jerry 108 sheet.
+        ("06 Label Tabung EDTA dan Plasma (Tom&Jerry 108).docx", make_label_edta_tj108),
         ("07 Daftar Hadir 2 Hari (kosong).docx", make_absen),
     ]
     only = sys.argv[2:]  # optional file-number filter, e.g. 03 04
